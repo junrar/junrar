@@ -337,9 +337,6 @@ public class Archive implements Closeable {
 		    int fhsize = rof.readFully(fileHeaderBuffer, toRead);
 
 		    FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
-		    // if (DEBUG) {
-		    // fh.print();
-		    // }
 		    headers.add(fh);
 		    newpos = fh.getPositionInFile() + fh.getHeaderSize()
 			    + fh.getFullPackSize();
@@ -354,9 +351,8 @@ public class Archive implements Closeable {
 		    int phsize = rof.readFully(protectHeaderBuffer, toRead);
 		    ProtectHeader ph = new ProtectHeader(blockHead,
 			    protectHeaderBuffer);
-
-		    // logger.info("totalblocks"+ph.getTotalBlocks());
-		    newpos = ph.getPositionInFile() + ph.getHeaderSize();
+		    
+		    newpos = ph.getPositionInFile() + ph.getHeaderSize() + ph.getDataSize();
 		    rof.setPosition(newpos);
 		    break;
 

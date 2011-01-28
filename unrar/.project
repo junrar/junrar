@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>unrar</name>
+	<name>java-unrar</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -11,19 +11,13 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.devzuz.q.maven.jdt.core.mavenIncrementalBuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
 			<name>org.maven.ide.eclipse.maven2Builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>org.maven.ide.eclipse.maven2Nature</nature>
-		<nature>org.devzuz.q.maven.jdt.core.mavenNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.maven.ide.eclipse.maven2Nature</nature>
 	</natures>
 </projectDescription>

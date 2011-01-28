@@ -4,17 +4,21 @@
 	<groupId>de.innosystec</groupId>
 	<artifactId>java-unrar</artifactId>
 	<packaging>jar</packaging>
-	<version>0.3</version>
+	<version>0.4-SNAPSHOT</version>
 	<name>java-unrar</name>
-	<url>http://sourceforge.net/projects/java-unrar</url>
+	<url>https://github.com/edmund-wagner/junrar</url>
+	
+	<properties>
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <maven.compiler.source>1.6</maven.compiler.source>
+                <maven.compiler.target>1.6</maven.compiler.target>
+        </properties>
+
+
 	<developers>
 		<developer>
 			<id>edmund_wagner</id>
 			<name>Edmund Wagner</name>
-			<email>edmund_wagner@users.sourceforge.net</email>
-			<roles>
-				<role></role>
-			</roles>
 		</developer>
 	</developers>
 	<dependencies>
