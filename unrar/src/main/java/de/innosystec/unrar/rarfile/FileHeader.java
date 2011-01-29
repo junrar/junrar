@@ -89,7 +89,7 @@ public class FileHeader extends BlockHeader {
 	super(bh);
 
 	int position = 0;
-	unpSize = Raw.readIntLittleEndian(fileHeader, position);
+	unpSize = Raw.readIntLittleEndianAsLong(fileHeader, position);
 	position += 4;
 	hostOS = HostSystem.findHostSystem(fileHeader[4]);
 	position++;
