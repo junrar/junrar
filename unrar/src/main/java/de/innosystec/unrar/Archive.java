@@ -20,6 +20,7 @@ package de.innosystec.unrar;
 
 import java.io.Closeable;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
@@ -114,14 +115,18 @@ public class Archive implements Closeable {
 	return file;
     }
 
-    void setFile(File file) throws IOException {
+	void setFile(File file) throws IOException {
 	this.file = file;
+	setFile(new ReadOnlyAccessFile(file), file.length());
+	}
+	
+    void setFile(IReadOnlyAccess file, long length) throws IOException {
 	totalPackedSize = 0L;
 	totalPackedRead = 0L;
 	close();
-	rof = new ReadOnlyAccessFile(file);
+	rof = file;
 	try {
-	    readHeaders();
+	    readHeaders(length);
 	} catch (Exception e) {
 	    logger.log(Level.WARNING,
 		    "exception in archive constructor maybe file is encrypted "
@@ -197,18 +202,17 @@ public class Archive implements Closeable {
 
     /**
      * Read the headers of the archive
-     * 
+     *
+     * @param fileLength Length of file.
      * @throws RarException
      */
-    private void readHeaders() throws IOException, RarException {
+    private void readHeaders(long fileLength) throws IOException, RarException {
 	markHead = null;
 	newMhd = null;
 	endHeader = null;
 	headers.clear();
 	currentHeaderIndex = 0;
 	int toRead = 0;
-
-	long fileLength = this.file.length();
 
 	while (true) {
 	    int size = 0;
