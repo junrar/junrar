@@ -31,16 +31,9 @@
 			<optional>false</optional>
 		</dependency>
 		<dependency>
-			<groupId>org.javolution</groupId>
-			<artifactId>javolution</artifactId>
-			<version>5.2.6</version>
-			<type>jar</type>
-			<optional>false</optional>
-		</dependency>
-		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging-api</artifactId>
-			<version>1.0.4</version>
+			<version>1.1</version>
 			<type>jar</type>
 			<optional>false</optional>
 		</dependency>

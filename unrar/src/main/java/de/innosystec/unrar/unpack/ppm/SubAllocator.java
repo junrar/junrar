@@ -19,8 +19,6 @@ package de.innosystec.unrar.unpack.ppm;
 
 import java.util.Arrays;
 
-import javolution.context.ArrayFactory;
-
 /**
  * DOCUMENT ME
  * 
@@ -115,7 +113,6 @@ public class SubAllocator {
     public void stopSubAllocator() {
 	if (subAllocatorSize != 0) {
 	    subAllocatorSize = 0;
-	    ArrayFactory.BYTES_FACTORY.recycle(heap);
 	    heap = null;
 	    heapStart = 1;
 	    // rarfree(HeapStart);
@@ -146,7 +143,7 @@ public class SubAllocator {
 	tempMemBlockPos = realAllocSize;
 	realAllocSize += RarMemBlock.size;
 
-	heap = ArrayFactory.BYTES_FACTORY.array(realAllocSize);
+	heap = new byte[realAllocSize];
 	heapStart = 1;
 	heapEnd = heapStart + allocSize - UNIT_SIZE;
 	subAllocatorSize = t;
