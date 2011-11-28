@@ -15,6 +15,14 @@
 		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 
+	<licenses>
+		<license>
+			<name>UnRar License</name>
+			<url>https://raw.github.com/edmund-wagner/junrar/master/license.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
 	<scm>
 		<connection>scm:git:git@github.com:edmund_wagner/junrar.git</connection>
 		<developerConnection>scm:git:git@github.com:edmund_wagner/junrar.git</developerConnection>
@@ -27,7 +35,7 @@
 			<name>Edmund Wagner</name>
 		</developer>
 	</developers>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
