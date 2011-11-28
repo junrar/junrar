@@ -28,7 +28,6 @@ import java.io.InputStream;
  * @version $LastChangedRevision$
  */
 public class ReadOnlyAccessInputStream extends InputStream {
-
 	private IReadOnlyAccess file;
 	
 	private long curPos;

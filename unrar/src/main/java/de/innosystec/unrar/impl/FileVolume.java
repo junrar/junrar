@@ -14,30 +14,51 @@
  * You should have received a copy of the GNU General Public License
  * along with seedbox.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.innosystec.unrar;
+package de.innosystec.unrar.impl;
 
+import java.io.File;
 import java.io.IOException;
 
+import de.innosystec.unrar.Archive;
+import de.innosystec.unrar.Volume;
 import de.innosystec.unrar.io.IReadOnlyAccess;
+import de.innosystec.unrar.io.ReadOnlyAccessFile;
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  * 
  */
-public interface Volume {
-	/**
-	 * @return the access
-	 * @throws IOException
-	 */
-	IReadOnlyAccess getReadOnlyAccess() throws IOException;
+public class FileVolume implements Volume {
+	private final Archive archive;
+	private final File file;
 
 	/**
-	 * @return the data length
+	 * @param file
 	 */
-	long getLength();
-	
+	public FileVolume(Archive archive, File file) {
+		this.archive = archive;
+		this.file = file;
+	}
+
+	@Override
+	public IReadOnlyAccess getReadOnlyAccess() throws IOException {
+		return new ReadOnlyAccessFile(file);
+	}
+
+	@Override
+	public long getLength() {
+		return file.length();
+	}
+
+	@Override
+	public Archive getArchive() {
+		return archive;
+	}
+
 	/**
-	 * @return the archive this volume belongs to
+	 * @return the file
 	 */
-	Archive getArchive();
+	public File getFile() {
+		return file;
+	}
 }

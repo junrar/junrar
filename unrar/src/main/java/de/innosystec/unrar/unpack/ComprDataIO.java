@@ -17,16 +17,19 @@
  */
 package de.innosystec.unrar.unpack;
 
-import de.innosystec.unrar.Archive;
-import de.innosystec.unrar.Volume;
-import de.innosystec.unrar.crc.RarCRC;
-import de.innosystec.unrar.exception.RarException;
-import de.innosystec.unrar.io.ReadOnlyAccessInputStream;
-import de.innosystec.unrar.rarfile.FileHeader;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+
+import de.innosystec.unrar.Archive;
+import de.innosystec.unrar.UnrarCallback;
+import de.innosystec.unrar.Volume;
+import de.innosystec.unrar.crc.RarCRC;
+import de.innosystec.unrar.exception.RarException;
+import de.innosystec.unrar.exception.RarException.RarExceptionType;
+import de.innosystec.unrar.io.ReadOnlyAccessInputStream;
+import de.innosystec.unrar.rarfile.FileHeader;
 
 /**
  * DOCUMENT ME
@@ -47,7 +50,6 @@ public class ComprDataIO {
 	private InputStream inputStream;
 
 	private OutputStream outputStream;
-
 
 	private FileHeader subHead;
 
@@ -102,60 +104,75 @@ public class ComprDataIO {
 		processedArcSize = totalArcSize = 0;
 	}
 
-    public void init(FileHeader hd) throws IOException {
-        long startPos = hd.getPositionInFile() + hd.getHeaderSize();
-        unpPackedSize = hd.getFullPackSize();
-        inputStream = new ReadOnlyAccessInputStream(
-                archive.getRof(),
-                startPos,
-                startPos + unpPackedSize);
+	public void init(FileHeader hd) throws IOException {
+		long startPos = hd.getPositionInFile() + hd.getHeaderSize();
+		unpPackedSize = hd.getFullPackSize();
+		inputStream = new ReadOnlyAccessInputStream(archive.getRof(), startPos,
+				startPos + unpPackedSize);
 		subHead = hd;
-        curUnpRead = 0;
-        curPackWrite = 0;
-        packedCRC = 0xFFffFFff;
-    }
+		curUnpRead = 0;
+		curPackWrite = 0;
+		packedCRC = 0xFFffFFff;
+	}
 
-    public int unpRead(byte[] addr, int offset, int count)
-            throws IOException, RarException {
-        int retCode=0, totalRead=0;
-        while (count > 0) {
-            int readSize = (count > unpPackedSize) ? (int)unpPackedSize : count;
-            retCode = inputStream.read(addr, offset, readSize);
-            if (retCode < 0) {
-                throw new EOFException();
-            }
-            if (subHead.isSplitAfter()){
-                packedCRC = RarCRC.checkCrc(
-                        (int)packedCRC, addr, offset, retCode);
-            }
+	public int unpRead(byte[] addr, int offset, int count) throws IOException,
+			RarException {
+		int retCode = 0, totalRead = 0;
+		while (count > 0) {
+			int readSize = (count > unpPackedSize) ? (int) unpPackedSize
+					: count;
+			retCode = inputStream.read(addr, offset, readSize);
+			if (retCode < 0) {
+				throw new EOFException();
+			}
+			if (subHead.isSplitAfter()) {
+				packedCRC = RarCRC.checkCrc((int) packedCRC, addr, offset,
+						retCode);
+			}
 
-            curUnpRead += retCode;
-            totalRead += retCode;
-            offset += retCode;
-            count -= retCode;
-            unpPackedSize -= retCode;
-            archive.bytesReadRead(retCode);
-            if (unpPackedSize == 0 && subHead.isSplitAfter()) {
-                if (!Volume.mergeArchive(archive, this)) {
-                    nextVolumeMissing=true;
-                    return -1;
-                }
-            }
-            else {
-                break;
-            }
-        }
+			curUnpRead += retCode;
+			totalRead += retCode;
+			offset += retCode;
+			count -= retCode;
+			unpPackedSize -= retCode;
+			archive.bytesReadRead(retCode);
+			if (unpPackedSize == 0 && subHead.isSplitAfter()) {
+				Volume nextVolume = archive.getVolumeManager().nextArchive(
+						archive, archive.getVolume());
+				if (nextVolume == null) {
+					nextVolumeMissing = true;
+					return -1;
+				}
 
-        if (retCode != -1) {
-            retCode = totalRead;
-        }
-        return retCode;
+				FileHeader hd = this.getSubHeader();
+				if (hd.getUnpVersion() >= 20 && hd.getFileCRC() != 0xffffffff
+						&& this.getPackedCRC() != ~hd.getFileCRC()) {
+					throw new RarException(RarExceptionType.crcError);
+				}
+				UnrarCallback callback = archive.getUnrarCallback();
+				if ((callback != null)
+						&& !callback.isNextVolumeReady(nextVolume)) {
+					return -1;
+				}
+				archive.setVolume(nextVolume);
+				hd = archive.nextFileHeader();
+				if (hd == null) {
+					return -1;
+				}
+				this.init(hd);
+			} else {
+				break;
+			}
+		}
 
+		if (retCode != -1) {
+			retCode = totalRead;
+		}
+		return retCode;
 
 	}
 
-	public void unpWrite(byte[] addr, int offset, int count)
-            throws IOException {
+	public void unpWrite(byte[] addr, int offset, int count) throws IOException {
 		if (!testMode) {
 			// DestFile->Write(Addr,Count);
 			outputStream.write(addr, offset, count);
@@ -163,109 +180,90 @@ public class ComprDataIO {
 
 		curUnpWrite += count;
 
-		if (!skipUnpCRC){
-			if (archive.isOldFormat()){
-				unpFileCRC = RarCRC.checkOldCrc(
-                        (short)unpFileCRC, addr, count);
-			}
-			else{
-				unpFileCRC = RarCRC.checkCrc(
-                        (int)unpFileCRC, addr,offset, count);
+		if (!skipUnpCRC) {
+			if (archive.isOldFormat()) {
+				unpFileCRC = RarCRC
+						.checkOldCrc((short) unpFileCRC, addr, count);
+			} else {
+				unpFileCRC = RarCRC.checkCrc((int) unpFileCRC, addr, offset,
+						count);
 			}
 		}
-//            if (!skipArcCRC) {
-//                archive.updateDataCRC(Addr, offset, ReadSize);
-//            }
+		// if (!skipArcCRC) {
+		// archive.updateDataCRC(Addr, offset, ReadSize);
+		// }
 	}
 
-	public void setPackedSizeToRead(long size)
-	{
+	public void setPackedSizeToRead(long size) {
 		unpPackedSize = size;
 	}
 
-	public void setTestMode(boolean mode)
-	{
+	public void setTestMode(boolean mode) {
 		testMode = mode;
 	}
 
-	public void setSkipUnpCRC(boolean skip)
-	{
+	public void setSkipUnpCRC(boolean skip) {
 		skipUnpCRC = skip;
 	}
 
-	public void setSubHeader(FileHeader hd)
-	{
+	public void setSubHeader(FileHeader hd) {
 		subHead = hd;
 
 	}
 
-	public long getCurPackRead()
-	{
+	public long getCurPackRead() {
 		return curPackRead;
 	}
 
-	public void setCurPackRead(long curPackRead)
-	{
+	public void setCurPackRead(long curPackRead) {
 		this.curPackRead = curPackRead;
 	}
 
-	public long getCurPackWrite()
-	{
+	public long getCurPackWrite() {
 		return curPackWrite;
 	}
 
-	public void setCurPackWrite(long curPackWrite)
-	{
+	public void setCurPackWrite(long curPackWrite) {
 		this.curPackWrite = curPackWrite;
 	}
 
-	public long getCurUnpRead()
-	{
+	public long getCurUnpRead() {
 		return curUnpRead;
 	}
 
-	public void setCurUnpRead(long curUnpRead)
-	{
+	public void setCurUnpRead(long curUnpRead) {
 		this.curUnpRead = curUnpRead;
 	}
 
-	public long getCurUnpWrite()
-	{
+	public long getCurUnpWrite() {
 		return curUnpWrite;
 	}
 
-	public void setCurUnpWrite(long curUnpWrite)
-	{
+	public void setCurUnpWrite(long curUnpWrite) {
 		this.curUnpWrite = curUnpWrite;
 	}
 
-	public int getDecryption()
-	{
+	public int getDecryption() {
 		return decryption;
 	}
 
-	public void setDecryption(int decryption)
-	{
+	public void setDecryption(int decryption) {
 		this.decryption = decryption;
 	}
 
-	public int getEncryption()
-	{
+	public int getEncryption() {
 		return encryption;
 	}
 
-	public void setEncryption(int encryption)
-	{
+	public void setEncryption(int encryption) {
 		this.encryption = encryption;
 	}
 
-	public boolean isNextVolumeMissing()
-	{
+	public boolean isNextVolumeMissing() {
 		return nextVolumeMissing;
 	}
 
-	public void setNextVolumeMissing(boolean nextVolumeMissing)
-	{
+	public void setNextVolumeMissing(boolean nextVolumeMissing) {
 		this.nextVolumeMissing = nextVolumeMissing;
 	}
 
@@ -273,110 +271,91 @@ public class ComprDataIO {
 		return packedCRC;
 	}
 
-    public void setPackedCRC(long packedCRC) {
-        this.packedCRC = packedCRC;
-    }
+	public void setPackedCRC(long packedCRC) {
+		this.packedCRC = packedCRC;
+	}
 
-	public long getPackFileCRC()
-	{
+	public long getPackFileCRC() {
 		return packFileCRC;
 	}
 
-	public void setPackFileCRC(long packFileCRC)
-	{
+	public void setPackFileCRC(long packFileCRC) {
 		this.packFileCRC = packFileCRC;
 	}
 
-	public boolean isPackVolume()
-	{
+	public boolean isPackVolume() {
 		return packVolume;
 	}
 
-	public void setPackVolume(boolean packVolume)
-	{
+	public void setPackVolume(boolean packVolume) {
 		this.packVolume = packVolume;
 	}
 
-	public long getProcessedArcSize()
-	{
+	public long getProcessedArcSize() {
 		return processedArcSize;
 	}
 
-	public void setProcessedArcSize(long processedArcSize)
-	{
+	public void setProcessedArcSize(long processedArcSize) {
 		this.processedArcSize = processedArcSize;
 	}
 
-	public long getTotalArcSize()
-	{
+	public long getTotalArcSize() {
 		return totalArcSize;
 	}
 
-	public void setTotalArcSize(long totalArcSize)
-	{
+	public void setTotalArcSize(long totalArcSize) {
 		this.totalArcSize = totalArcSize;
 	}
 
-	public long getTotalPackRead()
-	{
+	public long getTotalPackRead() {
 		return totalPackRead;
 	}
 
-	public void setTotalPackRead(long totalPackRead)
-	{
+	public void setTotalPackRead(long totalPackRead) {
 		this.totalPackRead = totalPackRead;
 	}
 
-	public long getUnpArcSize()
-	{
+	public long getUnpArcSize() {
 		return unpArcSize;
 	}
 
-	public void setUnpArcSize(long unpArcSize)
-	{
+	public void setUnpArcSize(long unpArcSize) {
 		this.unpArcSize = unpArcSize;
 	}
 
-	public long getUnpFileCRC()
-	{
+	public long getUnpFileCRC() {
 		return unpFileCRC;
 	}
 
-	public void setUnpFileCRC(long unpFileCRC)
-	{
+	public void setUnpFileCRC(long unpFileCRC) {
 		this.unpFileCRC = unpFileCRC;
 	}
 
-	public boolean isUnpVolume()
-	{
+	public boolean isUnpVolume() {
 		return unpVolume;
 	}
 
-	public void setUnpVolume(boolean unpVolume)
-	{
+	public void setUnpVolume(boolean unpVolume) {
 		this.unpVolume = unpVolume;
 	}
 
-	public FileHeader getSubHeader()
-	{
+	public FileHeader getSubHeader() {
 		return subHead;
 	}
 
-	
-	
-//	public void setEncryption(int method, char[] Password, byte[] Salt,
-//			boolean encrypt, boolean handsOffHash)
-//	{
-//
-//	}
-//
-//	public void setAV15Encryption()
-//	{
-//
-//	}
-//
-//	public void setCmt13Encryption()
-//	{
-//
-//	}
+	// public void setEncryption(int method, char[] Password, byte[] Salt,
+	// boolean encrypt, boolean handsOffHash)
+	// {
+	//
+	// }
+	//
+	// public void setAV15Encryption()
+	// {
+	//
+	// }
+	//
+	// public void setCmt13Encryption()
+	// {
+	//
+	// }
 }

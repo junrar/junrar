@@ -1,6 +1,5 @@
 package de.innosystec.unrar;
 
-import java.io.File;
 
 /**
  *
@@ -12,7 +11,7 @@ public interface UnrarCallback {
      * Return <tt>true</tt> if the next volume is ready to be processed,
      * <tt>false</tt> otherwise.
      */
-    boolean isNextVolumeReady(File nextVolume);
+    boolean isNextVolumeReady(Volume nextVolume);
 
     /**
      * This method is invoked each time the progress of the current

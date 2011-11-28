@@ -18,26 +18,11 @@ package de.innosystec.unrar;
 
 import java.io.IOException;
 
-import de.innosystec.unrar.io.IReadOnlyAccess;
-
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  * 
  */
-public interface Volume {
-	/**
-	 * @return the access
-	 * @throws IOException
-	 */
-	IReadOnlyAccess getReadOnlyAccess() throws IOException;
-
-	/**
-	 * @return the data length
-	 */
-	long getLength();
-	
-	/**
-	 * @return the archive this volume belongs to
-	 */
-	Archive getArchive();
+public interface VolumeManager {
+	public Volume nextArchive(Archive archive, Volume lastVolume)
+			throws IOException;
 }
