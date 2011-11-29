@@ -28,7 +28,6 @@ import com.github.junrar.util.VolumeHelper;
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
- * 
  */
 public class VFSVolumeManager implements VolumeManager {
 	private final FileObject firstVolume;

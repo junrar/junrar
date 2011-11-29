@@ -31,10 +31,9 @@ import com.github.junrar.rarfile.FileHeader;
 
 
 /**
- * A file in a Zip file system.
+ * A file in a RAR file system.
  * 
- * @author <a href="http://commons.apache.org/vfs/team-list.html">Commons VFS
- *         team</a>
+ * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class RARFileObject extends AbstractFileObject implements FileObject {
 	/**
@@ -58,7 +57,7 @@ public class RARFileObject extends AbstractFileObject implements FileObject {
 
 	@Override
 	public boolean doIsWriteable() throws FileSystemException {
-		return true;
+		return false;
 	}
 
 	@Override

@@ -31,7 +31,6 @@ import com.github.junrar.io.InputStreamReadOnlyAccessFile;
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
- * 
  */
 public class VFSVolume implements Volume {
 	private final Archive archive;
