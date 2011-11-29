@@ -38,10 +38,9 @@ import com.github.junrar.rarfile.FileHeader;
 
 
 /**
- * A read-only file system for Zip/Jar files.
+ * A read-only file system for RAR files.
  * 
- * @author <a href="http://commons.apache.org/vfs/team-list.html">Commons VFS
- *         team</a>
+ * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class RARFileSystem extends AbstractFileSystem implements FileSystem {
 	private final FileObject parentLayer;

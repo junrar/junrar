@@ -33,10 +33,9 @@ import org.apache.commons.vfs2.provider.FileProvider;
 import org.apache.commons.vfs2.provider.LayeredFileName;
 
 /**
- * A file system provider for Zip files. Provides read-only file systems.
+ * A file system provider for RAR files. Provides read-only file systems.
  * 
- * @author <a href="http://commons.apache.org/vfs/team-list.html">Commons VFS
- *         team</a>
+ * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class RARFileProvider extends AbstractLayeredFileProvider implements
 		FileProvider {
