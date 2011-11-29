@@ -16,7 +16,7 @@
  * ">":  "&#062;" or "&gt;"
  * "@":  "&#064;" 
  */
-package de.innosystec.unrar.testutil;
+package com.github.junrar.testutil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -28,11 +28,11 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import de.innosystec.unrar.Archive;
-import de.innosystec.unrar.exception.RarException;
-import de.innosystec.unrar.exception.RarException.RarExceptionType;
-import de.innosystec.unrar.io.ReadOnlyAccessFile;
-import de.innosystec.unrar.rarfile.FileHeader;
+import com.github.junrar.Archive;
+import com.github.junrar.exception.RarException;
+import com.github.junrar.exception.RarException.RarExceptionType;
+import com.github.junrar.io.ReadOnlyAccessFile;
+import com.github.junrar.rarfile.FileHeader;
 
 /**
  * DOCUMENT ME
@@ -157,10 +157,6 @@ public class JUnRarTestUtil
 						
 						logger.info("end: "+new Date());
 					}
-				}else{
-					logger.error("archive object is null");
-					errorFiles.add(file.toString());
-					return;
 				}
 				logger.info("successfully tested archive: "+file);
 				successfulFiles.add(file.toString());
