@@ -1,4 +1,4 @@
-package com.github.junrar.testutil;
+package com.github.junrar.extract;
 
 import java.io.File;
 import java.io.FileOutputStream;

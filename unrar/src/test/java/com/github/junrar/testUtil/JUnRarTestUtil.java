@@ -16,7 +16,7 @@
  * ">":  "&#062;" or "&gt;"
  * "@":  "&#064;" 
  */
-package com.github.junrar.testutil;
+package com.github.junrar.testUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
