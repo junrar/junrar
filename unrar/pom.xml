@@ -24,9 +24,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:git@github.com:edmund_wagner/junrar.git</connection>
-		<developerConnection>scm:git:git@github.com:edmund_wagner/junrar.git</developerConnection>
-		<url>git@github.com:edmund_wagner/junrar.git</url>
+		<connection>scm:git:git@github.com:edmund-wagner/junrar.git</connection>
+		<developerConnection>scm:git:git@github.com:edmund-wagner/junrar.git</developerConnection>
+		<url>git@github.com:edmund-wagner/junrar.git</url>
 	</scm>
 
 	<developers>
