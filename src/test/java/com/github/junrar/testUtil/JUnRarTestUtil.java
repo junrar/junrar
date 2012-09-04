@@ -153,6 +153,7 @@ public class JUnRarTestUtil
 							return;
 						}finally{
 							os.close();
+							arc.close();
 						}
 						
 						logger.info("end: "+new Date());

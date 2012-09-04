@@ -803,6 +803,7 @@ public class RarVM extends BitInput {
 
 	}
 
+	@SuppressWarnings("incomplete-switch")
 	private void optimize(VMPreparedProgram prg) {
 		List<VMPreparedCommand> commands = prg.getCmd();
 
@@ -912,6 +913,7 @@ public class RarVM extends BitInput {
 		return(VMStandardFilters.VMSF_NONE);
 	}
 
+	@SuppressWarnings("incomplete-switch")
 	private void ExecuteStandardFilter(VMStandardFilters filterType) {
 		switch(filterType)
 		  {

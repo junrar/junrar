@@ -67,8 +67,6 @@ public final class Unpack extends Unpack20 {
 
     private BlockTypes unpBlockType;
 
-    private boolean externalWindow;
-
     private long writtenFileSize;
 
     private boolean fileExtracted;
@@ -85,7 +83,6 @@ public final class Unpack extends Unpack20 {
     public Unpack(ComprDataIO DataIO) {
 	unpIO = DataIO;
 	window = null;
-	externalWindow = false;
 	suspended = false;
 	unpAllBuf = false;
 	unpSomeRead = false;
@@ -96,7 +93,6 @@ public final class Unpack extends Unpack20 {
 	    this.window = new byte[Compress.MAXWINSIZE];
 	} else {
 	    this.window = window;
-	    externalWindow = true;
 	}
 	inAddr = 0;
 	unpInitData(false);

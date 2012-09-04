@@ -50,7 +50,7 @@ public class ModelPPM
 
 	private SEE2Context dummySEE2Cont;
 
-	private PPMContext minContext, medContext, maxContext;
+	private PPMContext minContext, maxContext;
 
 	private State foundState; // found next state transition
 
@@ -93,7 +93,6 @@ public class ModelPPM
 	{
 		minContext = null;
 		maxContext = null;
-		medContext = null;
 	}
 
 	public SubAllocator getSubAlloc()
@@ -215,7 +214,6 @@ public class ModelPPM
 			}
 			subAlloc.startSubAllocator(MaxMB + 1);
 			minContext = new PPMContext(getHeap());
-			medContext = new PPMContext(getHeap());
 			maxContext = new PPMContext(getHeap());
 			foundState = new State(getHeap());
 			dummySEE2Cont = new SEE2Context();

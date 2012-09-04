@@ -31,14 +31,12 @@ public class ReadOnlyAccessInputStream extends InputStream {
 	private IReadOnlyAccess file;
 	
 	private long curPos;
-	private final long startPos;
 	private final long endPos;
 	
 	public ReadOnlyAccessInputStream(IReadOnlyAccess file, long startPos,
             long endPos) throws IOException {
 		super();
 		this.file = file;
-		this.startPos = startPos;
 		curPos = startPos;
 		this.endPos = endPos;
 		file.setPosition(curPos);

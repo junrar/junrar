@@ -27,12 +27,6 @@ import com.github.junrar.io.Raw;
  */
 public class EndArcHeader extends BaseBlock{
 	
-	private static final short EARC_NEXT_VOLUME = 0x0001;
-	private static final short EARC_DATACRC = 0x0002;
-	private static final short EARC_REVSPACE = 0x0004;
-	private static final short EARC_VOLNUMBER = 0x0008;
-	
-	private static final short endArcHeaderSize = 6;
 	public static final short endArcArchiveDataCrcSize = 4;
 	public static final short endArcVolumeNumberSize = 2;
 	

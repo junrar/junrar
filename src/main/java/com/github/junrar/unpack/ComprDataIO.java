@@ -76,9 +76,6 @@ public class ComprDataIO {
 
 	private int decryption;
 
-	private int lastPercent;
-
-	private char currentCommand;
 
 	public ComprDataIO(Archive arc) {
 		this.archive = arc;
@@ -98,10 +95,7 @@ public class ComprDataIO {
 		totalPackRead = 0;
 		curPackRead = curPackWrite = curUnpRead = curUnpWrite = 0;
 		packFileCRC = unpFileCRC = packedCRC = 0xffffffff;
-		lastPercent = -1;
 		subHead = null;
-
-		currentCommand = 0;
 		processedArcSize = totalArcSize = 0;
 	}
 
