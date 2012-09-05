@@ -1,4 +1,4 @@
-unrar
+Junrar
 =====
 
 Adds support to read and extract a rar.
