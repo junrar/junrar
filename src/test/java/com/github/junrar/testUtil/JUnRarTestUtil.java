@@ -176,6 +176,7 @@ public class JUnRarTestUtil
 						if(fh.isEncrypted()){
 							logger.warn("file is encrypted cannot extract: "+fh.getFileNameString());
 							unsupportedFiles.add(file.toString());
+							arc.close();
 							return;
 						}
 						logger.info("extracting file: "+fh.getFileNameString());
@@ -197,6 +198,7 @@ public class JUnRarTestUtil
 							}
 							error("error extracting file: "+fh.getFileNameString(),e);
 							errorFiles.add(file.toString());
+							arc.close();
 							return;
 						}finally{
 							os.close();
