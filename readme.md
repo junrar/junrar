@@ -1,8 +1,11 @@
 unrar
 =====
 
-Adds support to read a rar from a given InputStream.
+Adds support to read and extract a rar.
 
-Additional dependencies
------------------------
-* ij: http://rsbweb.nih.gov/ij/
+Usage:
+
+final File rar = new File("foo.rar");
+final File destinationFolder = new File("destinationFolder");
+ExtractArchive extractArchive = new ExtractArchive();
+extractArchive.extractArchive(rar, destinationFolder);
