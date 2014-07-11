@@ -36,34 +36,42 @@ public class ExtractArchive {
 		}
 		if (arch != null) {
 			if (arch.isEncrypted()) {
-				logWarn("archive is encrypted cannot extreact");
+				logWarn("archive is encrypted cannot extract");
 				return;
 			}
-			FileHeader fh = null;
-			while (true) {
-				fh = arch.nextFileHeader();
-				if (fh == null) {
-					break;
-				}
-				String fileNameString = fh.getFileNameString();
-				if (fh.isEncrypted()) {
-					logWarn("file is encrypted cannot extract: "+ fileNameString);
-					continue;
-				}
-				logInfo("extracting: " + fileNameString);
-				try {
-					if (fh.isDirectory()) {
-						createDirectory(fh, destination);
-					} else {
-						File f = createFile(fh, destination);
-						OutputStream stream = new FileOutputStream(f);
-						arch.extractFile(fh, stream);
-						stream.close();
+			try{
+				FileHeader fh = null;
+				while (true) {
+					fh = arch.nextFileHeader();
+					if (fh == null) {
+						break;
 					}
+					String fileNameString = fh.getFileNameString();
+					if (fh.isEncrypted()) {
+						logWarn("file is encrypted cannot extract: "+ fileNameString);
+						continue;
+					}
+					logInfo("extracting: " + fileNameString);
+					try {
+						if (fh.isDirectory()) {
+							createDirectory(fh, destination);
+						} else {
+							File f = createFile(fh, destination);
+							OutputStream stream = new FileOutputStream(f);
+							arch.extractFile(fh, stream);
+							stream.close();
+						}
+					} catch (IOException e) {
+						logError(e, "error extracting the file");
+					} catch (RarException e) {
+						logError(e,"error extraction the file");
+					}
+				}
+			}finally {
+				try {
+					arch.close();
 				} catch (IOException e) {
-					logError(e, "error extracting the file");
-				} catch (RarException e) {
-					logError(e,"error extraction the file");
+					logError(e);
 				}
 			}
 		}
