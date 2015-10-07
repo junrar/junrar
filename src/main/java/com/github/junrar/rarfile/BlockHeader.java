@@ -35,8 +35,8 @@ public class BlockHeader extends BaseBlock{
 	
 	private Log logger = LogFactory.getLog(BlockHeader.class.getName());
 	
-	private int dataSize;
-	private int packSize;
+	private long dataSize;
+	private long packSize;
     
     public BlockHeader(){
     	
@@ -53,15 +53,15 @@ public class BlockHeader extends BaseBlock{
     {
     	super(bb);
     	
-    	this.packSize = Raw.readIntLittleEndian(blockHeader, 0);
+    	this.packSize = Raw.readIntLittleEndianAsLong(blockHeader, 0);
     	this.dataSize  = this.packSize;
     }
     
-	public int getDataSize() {
+	public long getDataSize() {
 		return dataSize;
 	}
 	
-	public int getPackSize() {
+	public long getPackSize() {
 		return packSize;
 	}
     
