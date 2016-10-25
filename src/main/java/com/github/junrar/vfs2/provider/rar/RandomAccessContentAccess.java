@@ -28,48 +28,50 @@ import com.github.junrar.io.IReadOnlyAccess;
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
- * 
+ *
  */
 public class RandomAccessContentAccess implements IReadOnlyAccess {
-	private final RandomAccessContent rac;
 
-	/**
-	 * @param rac
-	 */
-	public RandomAccessContentAccess(RandomAccessContent rac) {
-		this.rac = rac;
-	}
+  private final RandomAccessContent rac;
 
-	/**
-	 * @param rac
-	 * @throws FileSystemException
-	 */
-	public RandomAccessContentAccess(FileObject file)
-			throws FileSystemException {
-		this(file.getContent().getRandomAccessContent(RandomAccessMode.READ));
-	}
+  /**
+   * @param rac
+   */
+  public RandomAccessContentAccess(RandomAccessContent rac) {
+    this.rac = rac;
+  }
 
-	public long getPosition() throws IOException {
-		return rac.getFilePointer();
-	}
+  /**
+   * @param rac
+   * @throws FileSystemException
+   */
+  public RandomAccessContentAccess(FileObject file)
+      throws FileSystemException {
+    this(file.getContent().getRandomAccessContent(RandomAccessMode.READ));
+  }
 
-	public void setPosition(long pos) throws IOException {
-		rac.seek(pos);
-	}
+  public long getPosition() throws IOException {
+    return rac.getFilePointer();
+  }
 
-	public int read() throws IOException {
-		return rac.readByte();
-	}
+  public void setPosition(long pos) throws IOException {
+    rac.seek(pos);
+  }
 
-	public int read(byte[] buffer, int off, int count) throws IOException {
-		return rac.getInputStream().read(buffer, off, count);
-	}
+  public int read() throws IOException {
+    return rac.readByte();
+  }
 
-	public int readFully(byte[] buffer, int count) throws IOException {
-		return rac.getInputStream().read(buffer, 0, count);
-	}
+  public int read(byte[] buffer, int off, int count) throws IOException {
+    return rac.getInputStream().read(buffer, off, count);
+  }
 
-	public void close() throws IOException {
-		rac.close();
-	}
+  public int readFully(byte[] buffer, int count) throws IOException {
+    return rac.getInputStream().read(buffer, 0, count);
+  }
+
+  public void close() throws IOException {
+    rac.close();
+  }
+
 }

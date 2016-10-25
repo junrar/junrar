@@ -39,125 +39,126 @@ import com.github.junrar.rarfile.FileHeader;
 
 /**
  * A read-only file system for RAR files.
- * 
+ *
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class RARFileSystem extends AbstractFileSystem implements FileSystem {
-	private final FileObject parentLayer;
+  private final FileObject parentLayer;
 
-	private Archive archive;
-	private Map<String, FileHeader> files = new HashMap<String, FileHeader>();
+  private Archive archive;
+  private Map<String, FileHeader> files = new HashMap<String, FileHeader>();
 
-	public RARFileSystem(final AbstractFileName rootName,
-			final FileObject parentLayer,
-			final FileSystemOptions fileSystemOptions)
-			throws FileSystemException {
-		super(rootName, parentLayer, fileSystemOptions);
-		this.parentLayer = parentLayer;
-	}
+  public RARFileSystem(final AbstractFileName rootName,
+      final FileObject parentLayer,
+      final FileSystemOptions fileSystemOptions)
+      throws FileSystemException {
+    super(rootName, parentLayer, fileSystemOptions);
+    this.parentLayer = parentLayer;
+  }
 
-	@Override
-	public void init() throws FileSystemException {
-		super.init();
+  @Override
+  public void init() throws FileSystemException {
+    super.init();
 
-		try {
-			try {
-				archive = new Archive(new VFSVolumeManager(parentLayer));
-				// Build the index
-				List<RARFileObject> strongRef = new ArrayList<RARFileObject>(
-						100);
-				for (final FileHeader header : archive.getFileHeaders()) {
-					AbstractFileName name = (AbstractFileName) getFileSystemManager()
-							.resolveName(
-									getRootName(),
-									UriParser.encode(header.getFileNameString()));
+    try {
+      try {
+        archive = new Archive(new VFSVolumeManager(parentLayer));
+        // Build the index
+        List<RARFileObject> strongRef = new ArrayList<RARFileObject>(
+            100);
+        for (final FileHeader header : archive.getFileHeaders()) {
+          AbstractFileName name = (AbstractFileName) getFileSystemManager()
+              .resolveName(
+                  getRootName(),
+                  UriParser.encode(header.getFileNameString()));
 
-					// Create the file
-					RARFileObject fileObj;
-					if (header.isDirectory() && getFileFromCache(name) != null) {
-						fileObj = (RARFileObject) getFileFromCache(name);
-						fileObj.setHeader(header);
-						continue;
-					}
+          // Create the file
+          RARFileObject fileObj;
+          if (header.isDirectory() && getFileFromCache(name) != null) {
+            fileObj = (RARFileObject) getFileFromCache(name);
+            fileObj.setHeader(header);
+            continue;
+          }
 
-					fileObj = createRARFileObject(name, header);
-					putFileToCache(fileObj);
-					strongRef.add(fileObj);
-					fileObj.holdObject(strongRef);
+          fileObj = createRARFileObject(name, header);
+          putFileToCache(fileObj);
+          strongRef.add(fileObj);
+          fileObj.holdObject(strongRef);
 
-					// Make sure all ancestors exist
-					RARFileObject parent;
-					for (AbstractFileName parentName = (AbstractFileName) name
-							.getParent(); parentName != null; fileObj = parent, parentName = (AbstractFileName) parentName
-							.getParent()) {
-						// Locate the parent
-						parent = (RARFileObject) getFileFromCache(parentName);
-						if (parent == null) {
-							parent = createRARFileObject(parentName, null);
-							putFileToCache(parent);
-							strongRef.add(parent);
-							parent.holdObject(strongRef);
-						}
+          // Make sure all ancestors exist
+          RARFileObject parent;
+          for (AbstractFileName parentName = (AbstractFileName) name
+              .getParent(); parentName != null; fileObj = parent, parentName = (AbstractFileName) parentName
+              .getParent()) {
+            // Locate the parent
+            parent = (RARFileObject) getFileFromCache(parentName);
+            if (parent == null) {
+              parent = createRARFileObject(parentName, null);
+              putFileToCache(parent);
+              strongRef.add(parent);
+              parent.holdObject(strongRef);
+            }
 
-						// Attach child to parent
-						parent.attachChild(fileObj.getName());
-					}
-				}
+            // Attach child to parent
+            parent.attachChild(fileObj.getName());
+          }
+        }
 
-			} catch (RarException e) {
-				throw new FileSystemException(e);
-			} catch (IOException e) {
-				throw new FileSystemException(e);
-			}
-		} finally {
-			// closeCommunicationLink();
-		}
-	}
+      } catch (RarException e) {
+        throw new FileSystemException(e);
+      } catch (IOException e) {
+        throw new FileSystemException(e);
+      }
+    } finally {
+      // closeCommunicationLink();
+    }
+  }
 
-	protected RARFileObject createRARFileObject(final AbstractFileName name,
-			final FileHeader header) throws FileSystemException {
-		return new RARFileObject(name, archive, header, this);
-	}
+  protected RARFileObject createRARFileObject(final AbstractFileName name,
+      final FileHeader header) throws FileSystemException {
+    return new RARFileObject(name, archive, header, this);
+  }
 
-	@Override
-	protected void doCloseCommunicationLink() {
-		try {
-			archive.close();
-		} catch (FileSystemException e) {
-			throw new RuntimeException(e);
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
+  @Override
+  protected void doCloseCommunicationLink() {
+    try {
+      archive.close();
+    } catch (FileSystemException e) {
+      throw new RuntimeException(e);
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
 
-	/**
-	 * Returns the capabilities of this file system.
-	 */
-	@Override
-	protected void addCapabilities(final Collection<Capability> caps) {
-		caps.addAll(RARFileProvider.capabilities);
-	}
+  /**
+   * Returns the capabilities of this file system.
+   */
+  @Override
+  protected void addCapabilities(final Collection<Capability> caps) {
+    caps.addAll(RARFileProvider.capabilities);
+  }
 
-	/**
-	 * Creates a file object.
-	 */
-	@Override
-	protected FileObject createFile(final AbstractFileName name)
-			throws FileSystemException {
-		String path = name.getPath().substring(1);
-		if (path.length() == 0) {
-			return new RARFileObject(name, archive, null, this);
-		} else if (files.containsKey(name.getPath())) {
-			return new RARFileObject(name, archive, files.get(name.getPath()),
-					this);
-		}
-		return null;
-	}
+  /**
+   * Creates a file object.
+   */
+  @Override
+  protected FileObject createFile(final AbstractFileName name)
+      throws FileSystemException {
+    String path = name.getPath().substring(1);
+    if (path.length() == 0) {
+      return new RARFileObject(name, archive, null, this);
+    } else if (files.containsKey(name.getPath())) {
+      return new RARFileObject(name, archive, files.get(name.getPath()),
+          this);
+    }
+    return null;
+  }
 
-	/**
-	 * will be called after all file-objects closed their streams.
-	 */
-	protected void notifyAllStreamsClosed() {
-		closeCommunicationLink();
-	}
+  /**
+   * will be called after all file-objects closed their streams.
+   */
+  protected void notifyAllStreamsClosed() {
+    closeCommunicationLink();
+  }
+
 }

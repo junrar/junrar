@@ -33,50 +33,51 @@ import com.github.junrar.io.InputStreamReadOnlyAccessFile;
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class VFSVolume implements Volume {
-	private final Archive archive;
-	private final FileObject file;
+  private final Archive archive;
+  private final FileObject file;
 
-	/**
-	 * @param archive
-	 * @param firstVolume
-	 */
-	public VFSVolume(Archive archive, FileObject file) {
-		this.archive = archive;
-		this.file = file;
-	}
+  /**
+   * @param archive
+   * @param firstVolume
+   */
+  public VFSVolume(Archive archive, FileObject file) {
+    this.archive = archive;
+    this.file = file;
+  }
 
-	@Override
-	public IReadOnlyAccess getReadOnlyAccess() throws IOException {
-		IReadOnlyAccess input = null;
-		try {
-			RandomAccessContent rac = file.getContent().getRandomAccessContent(
-					RandomAccessMode.READ);
-			input = new RandomAccessContentAccess(rac);
-		} catch (Exception e) {
-			input = new InputStreamReadOnlyAccessFile(file.getContent()
-					.getInputStream());
-		}
-		return input;
-	}
+  @Override
+  public IReadOnlyAccess getReadOnlyAccess() throws IOException {
+    IReadOnlyAccess input = null;
+    try {
+      RandomAccessContent rac = file.getContent().getRandomAccessContent(
+          RandomAccessMode.READ);
+      input = new RandomAccessContentAccess(rac);
+    } catch (Exception e) {
+      input = new InputStreamReadOnlyAccessFile(file.getContent()
+          .getInputStream());
+    }
+    return input;
+  }
 
-	@Override
-	public long getLength() {
-		try {
-			return file.getContent().getSize();
-		} catch (FileSystemException e) {
-			return -1;
-		}
-	}
+  @Override
+  public long getLength() {
+    try {
+      return file.getContent().getSize();
+    } catch (FileSystemException e) {
+      return -1;
+    }
+  }
 
-	@Override
-	public Archive getArchive() {
-		return archive;
-	}
+  @Override
+  public Archive getArchive() {
+    return archive;
+  }
 
-	/**
-	 * @return the file
-	 */
-	public FileObject getFile() {
-		return file;
-	}
+  /**
+   * @return the file
+   */
+  public FileObject getFile() {
+    return file;
+  }
+
 }

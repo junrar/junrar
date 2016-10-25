@@ -5,60 +5,61 @@
  *
  * Source: $HeadURL$
  * Last changed: $LastChangedDate$
- * 
- * the unrar licence applies to all junrar source and binary distributions 
+ *
+ * the unrar licence applies to all junrar source and binary distributions
  * you are not allowed to use this source to re-create the RAR compression algorithm
- * 
+ *
  * Here some html entities which can be used for escaping javadoc tags:
  * "&":  "&#038;" or "&amp;"
  * "<":  "&#060;" or "&lt;"
  * ">":  "&#062;" or "&gt;"
- * "@":  "&#064;" 
+ * "@":  "&#064;"
  */
 package com.github.junrar.unpack.vm;
 
 /**
  * DOCUMENT ME
- * 
+ *
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
 public class VMStandardFilterSignature {
-	private int length;
 
-	private int CRC;
+  private int length;
 
-	private VMStandardFilters type;
+  private int CRC;
 
-	public VMStandardFilterSignature(int length, int crc, VMStandardFilters type) {
-		super();
-		this.length = length;
-		CRC = crc;
-		this.type = type;
-	}
+  private VMStandardFilters type;
 
-	public int getCRC() {
-		return CRC;
-	}
+  public VMStandardFilterSignature(int length, int crc, VMStandardFilters type) {
+    super();
+    this.length = length;
+    CRC = crc;
+    this.type = type;
+  }
 
-	public void setCRC(int crc) {
-		CRC = crc;
-	}
+  public int getCRC() {
+    return CRC;
+  }
 
-	public int getLength() {
-		return length;
-	}
+  public void setCRC(int crc) {
+    CRC = crc;
+  }
 
-	public void setLength(int length) {
-		this.length = length;
-	}
+  public int getLength() {
+    return length;
+  }
 
-	public VMStandardFilters getType() {
-		return type;
-	}
+  public void setLength(int length) {
+    this.length = length;
+  }
 
-	public void setType(VMStandardFilters type) {
-		this.type = type;
-	}
+  public VMStandardFilters getType() {
+    return type;
+  }
+
+  public void setType(VMStandardFilters type) {
+    this.type = type;
+  }
 
 }
