@@ -168,6 +168,15 @@ public class Archive implements Closeable {
 	}
 
 	/**
+	 * Gets all of the headers in the archive.
+	 *
+	 * @return returns the headers.
+	 */
+	public List<BaseBlock> getHeaders() {
+		return new ArrayList<BaseBlock>(headers);
+	}
+
+	/**
 	 * @return returns all file headers of the archive
 	 */
 	public List<FileHeader> getFileHeaders() {
