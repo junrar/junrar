@@ -931,7 +931,7 @@ public class RarVM extends BitInput {
 		        for (int curPos=0;curPos<dataSize-4;)
 		        {
 		          byte curByte=mem[curPos++];
-		          if (curByte==0xe8 || curByte==cmpByte2)
+		          if (curByte==((byte) 0xe8) || curByte==cmpByte2)
 		          {
 //		#ifdef PRESENT_INT32
 //		            sint32 Offset=CurPos+FileOffset;

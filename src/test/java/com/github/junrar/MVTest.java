@@ -38,6 +38,7 @@ public class MVTest {
 					System.out.println(out.getAbsolutePath());
 					FileOutputStream os = new FileOutputStream(out);
 					a.extractFile(fh, os);
+					os.flush();
 					os.close();
 				} catch (FileNotFoundException e) {
 					// TODO Auto-generated catch block
