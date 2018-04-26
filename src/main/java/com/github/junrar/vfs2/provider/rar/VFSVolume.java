@@ -38,7 +38,7 @@ public class VFSVolume implements Volume {
 
 	/**
 	 * @param archive
-	 * @param firstVolume
+	 * @param file
 	 */
 	public VFSVolume(Archive archive, FileObject file) {
 		this.archive = archive;

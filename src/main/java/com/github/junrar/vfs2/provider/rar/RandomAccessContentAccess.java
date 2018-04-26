@@ -41,7 +41,7 @@ public class RandomAccessContentAccess implements IReadOnlyAccess {
 	}
 
 	/**
-	 * @param rac
+	 * @param file
 	 * @throws FileSystemException
 	 */
 	public RandomAccessContentAccess(FileObject file)

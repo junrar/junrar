@@ -438,7 +438,7 @@ public class Archive implements Closeable {
 	 * Extract the file specified by the given header and write it to the
 	 * supplied output stream
 	 * 
-	 * @param header
+	 * @param hd
 	 *            the header to be extracted
 	 * @param os
 	 *            the outputstream
@@ -464,7 +464,7 @@ public class Archive implements Closeable {
 	 * stream it. Please note that this method will create a new Thread and an a
 	 * pair of Pipe streams.
 	 * 
-	 * @param header
+	 * @param hd
 	 *            the header to be extracted
 	 * @throws RarException
 	 * @throws IOException
