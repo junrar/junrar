@@ -35,7 +35,7 @@ import com.github.junrar.rarfile.FileHeader;
  * 
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
-public class RARFileObject extends AbstractFileObject implements FileObject {
+public class RARFileObject extends AbstractFileObject<RARFileSystem> implements FileObject {
 	/**
 	 * The TFile.
 	 */

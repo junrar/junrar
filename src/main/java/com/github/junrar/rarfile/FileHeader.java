@@ -178,8 +178,8 @@ public class FileHeader extends BlockHeader {
 	    }
 
 	    if (NewSubHeaderType.SUBHEAD_TYPE_RR.byteEquals(fileNameBytes)) {
-		recoverySectors = subData[8] + (subData[9] << 8)
-			+ (subData[10] << 16) + (subData[11] << 24);
+		recoverySectors = (subData[8] & 0xff) + ((subData[9] & 0xff) << 8)
+			+ ((subData[10] & 0xff) << 16) + ((subData[11] & 0xff) << 24);
 	    }
 	}
 
