@@ -93,7 +93,7 @@ public class JUnRarTestUtil
 	}
 	
 	@Test
-	public void unrarFile_FileContentsShouldMatchExpected() throws IOException{
+	public void unrarFile_FileContentsShouldMatchExpected() throws IOException, RarException {
 		InputStream resourceAsStream = JUnRarTestUtil.class.getResourceAsStream("test.rar");
 		File testRar = new File(tempFolder,"test.rar");
         FileUtils.writeByteArrayToFile(testRar, IOUtils.toByteArray(resourceAsStream));
