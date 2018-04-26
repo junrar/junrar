@@ -10,7 +10,7 @@ import java.io.InputStream;
 /**
  * InputStream based implementation of the <code>IReadOnlyAccess</code> interface.
  * 
- * @see http://rsbweb.nih.gov/ij/
+ * http://rsbweb.nih.gov/ij/
  * @author martinr
  */
 public class InputStreamReadOnlyAccessFile implements IReadOnlyAccess {
