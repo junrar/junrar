@@ -17,6 +17,6 @@ Dependency on maven:
 <dependency>  
   <groupId>com.github.junrar</groupId>  
   <artifactId>junrar</artifactId>
-  <version>0.7</version>  
+  <version>1.0.0</version>  
 </dependency>  
 ```
