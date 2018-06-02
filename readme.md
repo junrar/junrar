@@ -1,16 +1,11 @@
 Junrar
 =====
 
-Adds support to read and extract a rar.
+Read and extracts from a .rar file. This is a fork of the junrar codebase, formerly on sourceforge.
 
-Usage:
-```
+Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
-final File rar = new File("foo.rar");  
-final File destinationFolder = new File("destinationFolder");  
-ExtractArchive extractArchive = new ExtractArchive();  
-extractArchive.extractArchive(rar, destinationFolder);  
-```
+
 Dependency on maven:  
 ```
 
@@ -21,4 +16,25 @@ Dependency on maven:
 </dependency>  
 ```
 
-This is a fork of the junrar codebase formerly on sourceforge
+
+Extract from files:
+```java
+Junrar.extract("/tmp/foo.rar", "/tmp");
+//or
+final File rar = new File("foo.rar");  
+final File destinationFolder = new File("destinationFolder");
+Junrar.extract(rar, destinationFolder);    
+//or
+final InputStream resourceAsStream = Foo.class.getResourceAsStream("foo.rar");//only for a single rar file
+Junrar.extract(resourceAsStream, tempFolder);
+```
+
+List files:
+```java
+final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);    
+```
+
+
+
+
+

@@ -102,8 +102,11 @@ public class ComprDataIO {
 	public void init(FileHeader hd) throws IOException {
 		long startPos = hd.getPositionInFile() + hd.getHeaderSize();
 		unpPackedSize = hd.getFullPackSize();
-		inputStream = new ReadOnlyAccessInputStream(archive.getRof(), startPos,
-				startPos + unpPackedSize);
+		inputStream = new ReadOnlyAccessInputStream(
+			archive.getRof(), 
+			startPos,
+			startPos + unpPackedSize
+		);
 		subHead = hd;
 		curUnpRead = 0;
 		curPackWrite = 0;
@@ -132,8 +135,7 @@ public class ComprDataIO {
 			unpPackedSize -= retCode;
 			archive.bytesReadRead(retCode);
 			if (unpPackedSize == 0 && subHead.isSplitAfter()) {
-				Volume nextVolume = archive.getVolumeManager().nextArchive(
-						archive, archive.getVolume());
+				Volume nextVolume = archive.getVolumeManager().nextArchive(archive, archive.getVolume());
 				if (nextVolume == null) {
 					nextVolumeMissing = true;
 					return -1;

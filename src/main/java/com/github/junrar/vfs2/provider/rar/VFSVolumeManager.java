@@ -14,26 +14,26 @@ import com.github.junrar.util.VolumeHelper;
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class VFSVolumeManager implements VolumeManager {
+
 	private final FileObject firstVolume;
 
 	/**
 	 * @param firstVolume
 	 */
-	public VFSVolumeManager(FileObject firstVolume) {
+	public VFSVolumeManager(final FileObject firstVolume) {
 		this.firstVolume = firstVolume;
 	}
 
 	@Override
-	public Volume nextArchive(Archive archive, Volume last) throws IOException {
-		if (last == null)
-			return new VFSVolume(archive, firstVolume);
+	public Volume nextArchive(final Archive archive, final Volume last) throws IOException {
+		if (last == null) return new VFSVolume(archive, this.firstVolume);
 
-		VFSVolume vfsVolume = (VFSVolume) last;
-		boolean oldNumbering = !archive.getMainHeader().isNewNumbering()
+		final VFSVolume vfsVolume = (VFSVolume) last;
+		final boolean oldNumbering = !archive.getMainHeader().isNewNumbering()
 				|| archive.isOldFormat();
-		String nextName = VolumeHelper.nextVolumeName(vfsVolume.getFile()
+		final String nextName = VolumeHelper.nextVolumeName(vfsVolume.getFile()
 				.getName().getBaseName(), oldNumbering);
-		FileObject nextVolumeFile = firstVolume.getParent().resolveFile(
+		final FileObject nextVolumeFile = this.firstVolume.getParent().resolveFile(
 				nextName);
 
 		return new VFSVolume(archive, nextVolumeFile);

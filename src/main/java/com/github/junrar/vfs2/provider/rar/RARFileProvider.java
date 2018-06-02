@@ -34,22 +34,21 @@ import org.apache.commons.vfs2.provider.LayeredFileName;
 
 /**
  * A file system provider for RAR files. Provides read-only file systems.
- * 
+ *
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
-public class RARFileProvider extends AbstractLayeredFileProvider implements
-		FileProvider {
+public class RARFileProvider extends AbstractLayeredFileProvider implements FileProvider {
 	/** The list of capabilities this provider supports */
 	protected static final Collection<Capability> capabilities = Collections
-			.unmodifiableCollection(Arrays.asList(new Capability[] {
-					Capability.GET_LAST_MODIFIED,
-					Capability.GET_TYPE,
-					Capability.LIST_CHILDREN,
-					Capability.READ_CONTENT,
-					Capability.URI,
-					Capability.COMPRESS,
-					Capability.VIRTUAL
-				}));
+		.unmodifiableCollection(Arrays.asList(new Capability[] {
+			Capability.GET_LAST_MODIFIED,
+			Capability.GET_TYPE,
+			Capability.LIST_CHILDREN,
+			Capability.READ_CONTENT,
+			Capability.URI,
+			Capability.COMPRESS,
+			Capability.VIRTUAL
+		}));
 
 	public RARFileProvider() {
 		super();
@@ -58,7 +57,7 @@ public class RARFileProvider extends AbstractLayeredFileProvider implements
 	/**
 	 * Creates a layered file system. This method is called if the file system
 	 * is not cached.
-	 * 
+	 *
 	 * @param scheme
 	 *            The URI scheme.
 	 * @param file
@@ -66,14 +65,27 @@ public class RARFileProvider extends AbstractLayeredFileProvider implements
 	 * @return The file system.
 	 */
 	@Override
-	protected FileSystem doCreateFileSystem(final String scheme,
-			final FileObject file, final FileSystemOptions fileSystemOptions)
-			throws FileSystemException {
-		final AbstractFileName rootName = new LayeredFileName(scheme,
-				file.getName(), FileName.ROOT_PATH, FileType.FOLDER);
-		return new RARFileSystem(rootName, file, fileSystemOptions);
+	protected FileSystem doCreateFileSystem(
+		final String scheme,
+		final FileObject file,
+		final FileSystemOptions fileSystemOptions
+	) throws FileSystemException {
+
+		final AbstractFileName rootName = new LayeredFileName(
+			scheme,
+			file.getName(),
+			FileName.ROOT_PATH,
+			FileType.FOLDER
+		);
+
+		return new RARFileSystem(
+			rootName,
+			file,
+			fileSystemOptions
+		);
 	}
 
+	@Override
 	public Collection<Capability> getCapabilities() {
 		return capabilities;
 	}

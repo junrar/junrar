@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,42 +16,72 @@ import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
 
 public class Junrar {
-	
+
 	private static Log logger = LogFactory.getLog(Junrar.class.getName());
-	
+
 	public static void extract(final String rarPath, final String destinationPath) throws IOException, RarException {
 		if (rarPath == null || destinationPath == null) {
 			throw new RuntimeException("archive and destination must me set");
 		}
-		File arch = new File(rarPath);
-		File dest = new File(destinationPath);
+		final File arch = new File(rarPath);
+		final File dest = new File(destinationPath);
 		extract(arch, dest);
 	}
-	
+
 	public static void extract(final File rar, final File destinationFolder) throws RarException, IOException {
 		validateRarPath(rar);
 		validateDestinationPath(destinationFolder);
-		extractArchive(rar, destinationFolder);  
+		extractFileTo(rar, destinationFolder);
+	}
+
+	public static void extract(final InputStream resourceAsStream, final File destinationFolder) throws RarException, IOException {
+		validateDestinationPath(destinationFolder);
+		final Archive arch = createArchiveOrThrowException(logger, resourceAsStream);
+		extractArchiveTo(arch, destinationFolder);
 	}
 
 	public static List<ContentDescription> getContentsDescription(final File rar) throws RarException, IOException {
 		validateRarPath(rar);
-		
-		List<ContentDescription> contents = new ArrayList<ContentDescription>();
-		
-		Archive arch = createArchiveOrThrowException(logger, rar);		
+
+		final Archive arch = createArchiveOrThrowException(logger, rar);
+
+		final List<ContentDescription> contents = new ArrayList<ContentDescription>();
 		try{
 			if (arch.isEncrypted()) {
 				logger.warn("archive is encrypted cannot extract");
 				return new ArrayList<ContentDescription>();
 			}
-			for(FileHeader fileHeader : arch ) {
+			for(final FileHeader fileHeader : arch ) {
 				contents.add(new ContentDescription(fileHeader.getFileNameString(), fileHeader.getUnpSize()));
 			}
 		}finally {
 			arch.close();
 		}
 		return contents;
+	}
+
+	private static Archive createArchiveOrThrowException(final Log logger, final InputStream rarAsStream) throws RarException, IOException {
+		try {
+			return new Archive(rarAsStream);
+		} catch (final RarException e) {
+			logger.error(e);
+			throw e;
+		} catch (final IOException e1) {
+			logger.error(e1);
+			throw e1;
+		}
+	}
+
+	private static Archive createArchiveOrThrowException(final Log logger, final File archive) throws RarException, IOException {
+		try {
+			return new Archive(archive);
+		} catch (final RarException e) {
+			logger.error(e);
+			throw e;
+		} catch (final IOException e1) {
+			logger.error(e1);
+			throw e1;
+		}
 	}
 
 	private static void validateDestinationPath(final File destinationFolder) {
@@ -73,24 +104,27 @@ public class Junrar {
 			throw new IllegalArgumentException("First argument should be a file but was "+rar.getAbsolutePath());
 		}
 	}
-	
-	private static void extractArchive(File archive, File destination) throws RarException, IOException {
-		Archive arch = createArchiveOrThrowException(logger, archive);
-		
+
+	private static void extractFileTo(final File file, final File destination) throws RarException, IOException {
+		final Archive archive = createArchiveOrThrowException(logger, file);
+		extractArchiveTo(archive, destination);
+	}
+
+	private static void extractArchiveTo(final Archive arch, final File destination) throws IOException, RarException {
 		if (arch.isEncrypted()) {
 			logger.warn("archive is encrypted cannot extract");
 			arch.close();
 			return;
 		}
-		
+
 		try{
-			for(FileHeader fh : arch ) {
+			for(final FileHeader fh : arch ) {
 				try {
 					tryToExtract(logger, destination, arch, fh);
-				} catch (IOException e) {
+				} catch (final IOException e) {
 					logger.error("error extracting the file", e);
 					throw e;
-				} catch (RarException e) {
+				} catch (final RarException e) {
 					logger.error("error extraction the file", e);
 					throw e;
 				}
@@ -99,9 +133,9 @@ public class Junrar {
 			arch.close();
 		}
 	}
-	
-	private static void tryToExtract(Log logger,File destination, Archive arch, FileHeader fileHeader) throws IOException, RarException {
-		String fileNameString = fileHeader.getFileNameString();
+
+	private static void tryToExtract(final Log logger,final File destination, final Archive arch, final FileHeader fileHeader) throws IOException, RarException {
+		final String fileNameString = fileHeader.getFileNameString();
 		if (fileHeader.isEncrypted()) {
 			logger.warn("file is encrypted cannot extract: "+ fileNameString);
 			return;
@@ -114,26 +148,14 @@ public class Junrar {
 		}
 	}
 
-	private static void extract(Log logger, Archive arch, File destination, FileHeader fileHeader) throws FileNotFoundException, RarException, IOException {
-		File f = createFile(logger, fileHeader, destination);
-		OutputStream stream = new FileOutputStream(f);
+	private static void extract(final Log logger, final Archive arch, final File destination, final FileHeader fileHeader) throws FileNotFoundException, RarException, IOException {
+		final File f = createFile(logger, fileHeader, destination);
+		final OutputStream stream = new FileOutputStream(f);
 		arch.extractFile(fileHeader, stream);
 		stream.close();
 	}
 
-	private static Archive createArchiveOrThrowException(Log logger, File archive) throws RarException, IOException {
-		try {
-			return new Archive(archive);
-		} catch (RarException e) {
-			logger.error(e);
-			throw e;
-		} catch (IOException e1) {
-			logger.error(e1);
-			throw e1;
-		}
-	}
-
-	private static File createFile(Log logger, FileHeader fh, File destination) {
+	private static File createFile(final Log logger, final FileHeader fh, final File destination) {
 		File f = null;
 		String name = null;
 		if (fh.isFileHeader() && fh.isUnicode()) {
@@ -145,20 +167,20 @@ public class Junrar {
 		if (!f.exists()) {
 			try {
 				f = makeFile(destination, name);
-			} catch (IOException e) {
+			} catch (final IOException e) {
 				logger.error("error creating the new file: " + f.getName(), e);
 			}
 		}
 		return f;
 	}
 
-	private static File makeFile(File destination, String name) throws IOException {
-		String[] dirs = name.split("\\\\");
+	private static File makeFile(final File destination, final String name) throws IOException {
+		final String[] dirs = name.split("\\\\");
 		if (dirs == null) {
 			return null;
 		}
 		String path = "";
-		int size = dirs.length;
+		final int size = dirs.length;
 		if (size == 1) {
 			return new File(destination, name);
 		} else if (size > 1) {
@@ -167,7 +189,7 @@ public class Junrar {
 				new File(destination, path).mkdir();
 			}
 			path = path + File.separator + dirs[dirs.length - 1];
-			File f = new File(destination, path);
+			final File f = new File(destination, path);
 			f.createNewFile();
 			return f;
 		} else {
@@ -175,7 +197,7 @@ public class Junrar {
 		}
 	}
 
-	private static void createDirectory(FileHeader fh, File destination) {
+	private static void createDirectory(final FileHeader fh, final File destination) {
 		File f = null;
 		if (fh.isDirectory() && fh.isUnicode()) {
 			f = new File(destination, fh.getFileNameW());
@@ -190,17 +212,17 @@ public class Junrar {
 		}
 	}
 
-	private static void makeDirectory(File destination, String fileName) {
-		String[] dirs = fileName.split("\\\\");
+	private static void makeDirectory(final File destination, final String fileName) {
+		final String[] dirs = fileName.split("\\\\");
 		if (dirs == null) {
 			return;
 		}
 		String path = "";
-		for (String dir : dirs) {
+		for (final String dir : dirs) {
 			path = path + File.separator + dir;
 			new File(destination, path).mkdir();
 		}
 
 	}
-	
+
 }
