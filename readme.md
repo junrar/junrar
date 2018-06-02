@@ -17,6 +17,8 @@ Dependency on maven:
 <dependency>  
   <groupId>com.github.junrar</groupId>  
   <artifactId>junrar</artifactId>
-  <version>1.0.0</version>  
+  <version>1.0.1</version>  
 </dependency>  
 ```
+
+This is a fork of the junrar codebase formerly on sourceforge
