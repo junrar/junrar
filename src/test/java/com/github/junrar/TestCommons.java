@@ -19,8 +19,13 @@ public class TestCommons {
 	}
 
 	public static File writeTestRarToFolder(File tmp) throws IOException {
-		InputStream resourceAsStream = JUnRarTestUtil.class.getResourceAsStream("test.rar");
-		File testRar = new File(tmp,"test.rar");
+		String resourcePath = "test.rar";
+		return writeResourceToFolder(tmp, resourcePath);
+	}
+
+	public static File writeResourceToFolder(File destination, String resourcePath) throws IOException {
+		InputStream resourceAsStream = JUnRarTestUtil.class.getResourceAsStream(resourcePath);
+		File testRar = new File(destination,resourcePath);
 	    FileUtils.writeByteArrayToFile(testRar, IOUtils.toByteArray(resourceAsStream));
 		return testRar;
 	}

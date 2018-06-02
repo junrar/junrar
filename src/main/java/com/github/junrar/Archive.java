@@ -27,6 +27,7 @@ import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
@@ -61,7 +62,8 @@ import com.github.junrar.unpack.Unpack;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class Archive implements Closeable {
+public class Archive implements Closeable, Iterable<FileHeader> {
+	
 	private static Logger logger = Logger.getLogger(Archive.class.getName());
 
 	private static int MAX_HEADER_SIZE = 20971520;//20MB
@@ -91,6 +93,8 @@ public class Archive implements Closeable {
 	private VolumeManager volumeManager;
 	private Volume volume;
 
+	private FileHeader nextFileHeader;
+	
 	public Archive(VolumeManager volumeManager) throws RarException,
 			IOException {
 		this(volumeManager, null);
@@ -616,4 +620,28 @@ public class Archive implements Closeable {
 		this.volume = volume;
 		setFile(volume.getReadOnlyAccess(), volume.getLength());
 	}
+
+	@Override
+	public Iterator<FileHeader> iterator() {
+		return new Iterator<FileHeader>() {
+			
+			@Override
+			public FileHeader next() {
+				FileHeader next;
+				if(nextFileHeader != null) {
+					next =  nextFileHeader;
+				}else {
+					next = nextFileHeader();
+				}
+				return next;
+			}
+			
+			@Override
+			public boolean hasNext() {
+				nextFileHeader = nextFileHeader();
+				return nextFileHeader != null;
+			}
+		};
+	}
+
 }
