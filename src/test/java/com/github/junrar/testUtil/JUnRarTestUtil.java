@@ -25,13 +25,11 @@ import static org.junit.Assert.fail;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.AfterClass;
@@ -39,6 +37,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.github.junrar.Archive;
+import com.github.junrar.TestCommons;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.RarException.RarExceptionType;
 import com.github.junrar.io.ReadOnlyAccessFile;
@@ -87,31 +86,34 @@ public class JUnRarTestUtil
 	
 	@BeforeClass
 	public static void setupFunctionalTests() throws IOException{
-		tempFolder = File.createTempFile("FOOOOOOO", "BAAAARRRR");
-		tempFolder.delete();
-		tempFolder.mkdir();
+		tempFolder = TestCommons.createTempDir();
 	}
-	
+
 	@Test
 	public void unrarFile_FileContentsShouldMatchExpected() throws IOException, RarException {
-		InputStream resourceAsStream = JUnRarTestUtil.class.getResourceAsStream("test.rar");
-		File testRar = new File(tempFolder,"test.rar");
-        FileUtils.writeByteArrayToFile(testRar, IOUtils.toByteArray(resourceAsStream));
+		File testRar = TestCommons.writeTestRarToFolder(tempFolder);
+        
         String[] args = new String[]{tempFolder.getAbsolutePath()};
+        
         JUnRarTestUtil.errorsOcurred = false;
+        
         ExtractArchive.main(new String[]{testRar.getAbsolutePath(), tempFolder.getAbsolutePath() });
 		JUnRarTestUtil.main(args);
+		
 		File fooDir = new File(tempFolder,"foo");
 		assertTrue(fooDir.exists());
+		
 		File barFile = new File(fooDir,"bar.txt");
-		assertTrue(fooDir.exists());
+		assertTrue(barFile.exists());
+		
 		String barTxtContents = FileUtils.readFileToString(barFile);
 		assertEquals("baz\n", barTxtContents);
+		
 		if(errorsOcurred){
 			fail("Test failed, see output for details...");
 		}
 	}
-	
+
 	@AfterClass
 	public static void tearDownFunctionalTests() throws IOException{
 		FileUtils.deleteDirectory(tempFolder);
@@ -168,6 +170,7 @@ public class JUnRarTestUtil
 					if(arc.isEncrypted()){
 						logger.warn("archive is encrypted cannot extreact");
 						unsupportedFiles.add(file.toString());
+						arc.close();
 						return;
 					}
 					List<FileHeader> files = arc.getFileHeaders();
