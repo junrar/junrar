@@ -13,7 +13,7 @@ public class Junrar {
 			throw new IllegalArgumentException("First argument should be a file but was "+rar.getAbsolutePath());
 		}
 		if(!destinationFolder.isDirectory()) {
-			throw new IllegalArgumentException("Second argument should be a dierctory but was "+destinationFolder.getAbsolutePath());
+			throw new IllegalArgumentException("Second argument should be a directory but was "+destinationFolder.getAbsolutePath());
 		}
 		ExtractArchive extractArchive = new ExtractArchive();  
 		extractArchive.extractArchive(rar, destinationFolder);  
