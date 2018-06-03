@@ -39,19 +39,20 @@ import com.github.junrar.rarfile.FileHeader;
 
 /**
  * A read-only file system for RAR files.
- * 
+ *
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class RARFileSystem extends AbstractFileSystem implements FileSystem {
 	private final FileObject parentLayer;
 
 	private Archive archive;
-	private Map<String, FileHeader> files = new HashMap<String, FileHeader>();
+	private final Map<String, FileHeader> files = new HashMap<String, FileHeader>();
 
-	public RARFileSystem(final AbstractFileName rootName,
-			final FileObject parentLayer,
-			final FileSystemOptions fileSystemOptions)
-			throws FileSystemException {
+	public RARFileSystem(
+		final AbstractFileName rootName,
+		final FileObject parentLayer,
+		final FileSystemOptions fileSystemOptions
+	) throws FileSystemException {
 		super(rootName, parentLayer, fileSystemOptions);
 		this.parentLayer = parentLayer;
 	}
@@ -62,12 +63,12 @@ public class RARFileSystem extends AbstractFileSystem implements FileSystem {
 
 		try {
 			try {
-				archive = new Archive(new VFSVolumeManager(parentLayer));
+				this.archive = new Archive(new VFSVolumeManager(this.parentLayer));
 				// Build the index
-				List<RARFileObject> strongRef = new ArrayList<RARFileObject>(
+				final List<RARFileObject> strongRef = new ArrayList<RARFileObject>(
 						100);
-				for (final FileHeader header : archive.getFileHeaders()) {
-					AbstractFileName name = (AbstractFileName) getFileSystemManager()
+				for (final FileHeader header : this.archive.getFileHeaders()) {
+					final AbstractFileName name = (AbstractFileName) getFileSystemManager()
 							.resolveName(
 									getRootName(),
 									UriParser.encode(header.getFileNameString()));
@@ -104,9 +105,9 @@ public class RARFileSystem extends AbstractFileSystem implements FileSystem {
 					}
 				}
 
-			} catch (RarException e) {
+			} catch (final RarException e) {
 				throw new FileSystemException(e);
-			} catch (IOException e) {
+			} catch (final IOException e) {
 				throw new FileSystemException(e);
 			}
 		} finally {
@@ -116,16 +117,16 @@ public class RARFileSystem extends AbstractFileSystem implements FileSystem {
 
 	protected RARFileObject createRARFileObject(final AbstractFileName name,
 			final FileHeader header) throws FileSystemException {
-		return new RARFileObject(name, archive, header, this);
+		return new RARFileObject(name, this.archive, header, this);
 	}
 
 	@Override
 	protected void doCloseCommunicationLink() {
 		try {
-			archive.close();
-		} catch (FileSystemException e) {
+			this.archive.close();
+		} catch (final FileSystemException e) {
 			throw new RuntimeException(e);
-		} catch (IOException e) {
+		} catch (final IOException e) {
 			throw new RuntimeException(e);
 		}
 	}
@@ -144,11 +145,11 @@ public class RARFileSystem extends AbstractFileSystem implements FileSystem {
 	@Override
 	protected FileObject createFile(final AbstractFileName name)
 			throws FileSystemException {
-		String path = name.getPath().substring(1);
+		final String path = name.getPath().substring(1);
 		if (path.length() == 0) {
-			return new RARFileObject(name, archive, null, this);
-		} else if (files.containsKey(name.getPath())) {
-			return new RARFileObject(name, archive, files.get(name.getPath()),
+			return new RARFileObject(name, this.archive, null, this);
+		} else if (this.files.containsKey(name.getPath())) {
+			return new RARFileObject(name, this.archive, this.files.get(name.getPath()),
 					this);
 		}
 		return null;
@@ -157,6 +158,7 @@ public class RARFileSystem extends AbstractFileSystem implements FileSystem {
 	/**
 	 * will be called after all file-objects closed their streams.
 	 */
+	@Override
 	protected void notifyAllStreamsClosed() {
 		closeCommunicationLink();
 	}

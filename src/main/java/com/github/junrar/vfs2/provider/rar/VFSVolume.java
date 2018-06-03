@@ -24,7 +24,7 @@ public class VFSVolume implements Volume {
 	 * @param archive
 	 * @param file
 	 */
-	public VFSVolume(Archive archive, FileObject file) {
+	public VFSVolume(final Archive archive, final FileObject file) {
 		this.archive = archive;
 		this.file = file;
 	}
@@ -33,12 +33,10 @@ public class VFSVolume implements Volume {
 	public IReadOnlyAccess getReadOnlyAccess() throws IOException {
 		IReadOnlyAccess input = null;
 		try {
-			RandomAccessContent rac = file.getContent().getRandomAccessContent(
-					RandomAccessMode.READ);
+			final RandomAccessContent rac = this.file.getContent().getRandomAccessContent(RandomAccessMode.READ);
 			input = new RandomAccessContentAccess(rac);
-		} catch (Exception e) {
-			input = new InputStreamReadOnlyAccessFile(file.getContent()
-					.getInputStream());
+		} catch (final Exception e) {
+			input = new InputStreamReadOnlyAccessFile(this.file.getContent().getInputStream());
 		}
 		return input;
 	}
@@ -46,21 +44,21 @@ public class VFSVolume implements Volume {
 	@Override
 	public long getLength() {
 		try {
-			return file.getContent().getSize();
-		} catch (FileSystemException e) {
+			return this.file.getContent().getSize();
+		} catch (final FileSystemException e) {
 			return -1;
 		}
 	}
 
 	@Override
 	public Archive getArchive() {
-		return archive;
+		return this.archive;
 	}
 
 	/**
 	 * @return the file
 	 */
 	public FileObject getFile() {
-		return file;
+		return this.file;
 	}
 }
