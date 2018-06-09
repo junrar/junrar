@@ -56,7 +56,8 @@ public class RarException extends Exception
 		headerNotInArchive,
 		wrongHeaderType,
 		ioError,
-		rarEncryptedException ;
+		rarEncryptedException,
+		mainHeaderNull;
 	}
 
 
