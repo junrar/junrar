@@ -120,10 +120,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 		this.dataIO = new ComprDataIO(this);
 	}
 
-	public Archive(final File firstVolume) throws RarException, IOException {
-		this(new FileVolumeManager(firstVolume), null);
-	}
-
 	public Archive(
 		final File firstVolume,
 		final UnrarCallback unrarCallback
