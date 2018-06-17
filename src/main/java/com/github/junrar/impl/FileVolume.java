@@ -18,7 +18,8 @@ public class FileVolume implements Volume {
 	private final File file;
 
 	/**
-	 * @param file
+	 * @param archive .
+	 * @param file .
 	 */
 	public FileVolume(Archive archive, File file) {
 		this.archive = archive;
