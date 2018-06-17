@@ -22,7 +22,7 @@ public class LocalFolderExtractor implements ExtractDestination{
 	}
 	
 	@Override
-	public void createDirectory(final FileHeader fh, final ExtractDestination destination) {
+	public void createDirectory(final FileHeader fh) {
 		File f = null;
 		if (fh.isDirectory() && fh.isUnicode()) {
 			f = new File(folderDestination, fh.getFileNameW());

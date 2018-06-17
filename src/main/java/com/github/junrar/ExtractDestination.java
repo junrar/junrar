@@ -8,10 +8,7 @@ import com.github.junrar.rarfile.FileHeader;
 
 public interface ExtractDestination {
 	
-	public void createDirectory(
-		FileHeader fileHeader, 
-		ExtractDestination destination
-	);
+	public void createDirectory(FileHeader fileHeader);
 	
 	public void extract(
 		final Archive arch, 
