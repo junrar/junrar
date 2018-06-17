@@ -156,7 +156,7 @@ public class Junrar {
 		}
 		logger.info("extracting: " + fileNameString);
 		if (fileHeader.isDirectory()) {
-			destination.createDirectory(fileHeader, destination);
+			destination.createDirectory(fileHeader);
 		} else {
 			destination.extract(arch, fileHeader);
 		}
