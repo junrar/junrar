@@ -17,11 +17,17 @@
 package com.github.junrar.testUtil;
 
 import com.github.junrar.Archive;
+import com.github.junrar.Junrar;
+import com.github.junrar.TestCommons;
+import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URISyntaxException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -57,5 +63,26 @@ public class SimpleTest {
             archive.close();
         }
 
+    }
+
+    @Test(expected = RarException.class)
+    public void nullMainHeaderFile_throwsRarException() throws URISyntaxException, IOException, RarException {
+        final File tempDir = TestCommons.createTempDir();
+        final File f = new File(getClass().getResource("test-mainHeaderNull.rar").toURI());
+        Junrar.extract(f, tempDir);
+    }
+
+    @Test(expected = RarException.class)
+    public void nullMainHeaderInputStream_throwsRarException() throws IOException, RarException {
+        final File tempDir = TestCommons.createTempDir();
+        InputStream stream = null;
+        try {
+            stream = getClass().getResource("test-mainHeaderNull.rar").openStream();
+            Junrar.extract(stream, tempDir);
+        } finally {
+            if (stream != null) {
+                stream.close();
+            }
+        }
     }
 }

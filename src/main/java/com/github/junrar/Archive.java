@@ -222,14 +222,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	}
 
 	/**
-	 *
 	 * @return whether the archive is encrypted
+	 * @throws RarException when the main header is not present
 	 */
-	public boolean isEncrypted() {
+	public boolean isEncrypted() throws RarException {
 		if (this.newMhd != null) {
 			return this.newMhd.isEncrypted();
 		} else {
-			throw new NullPointerException("mainheader is null");
+			throw new RarException(RarExceptionType.mainHeaderNull);
 		}
 	}
 
