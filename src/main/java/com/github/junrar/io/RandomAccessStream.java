@@ -41,7 +41,12 @@ public final class RandomAccessStream extends InputStream {
 		src = inputstream;
 	}
 
-	/** Constructs a RandomAccessStream from an RandomAccessFile. */
+	/** 
+	 * Constructs a RandomAccessStream from an RandomAccessFile.
+	 * 
+	 * @param ras ras
+	 *  
+	 */
 	public RandomAccessStream(RandomAccessFile ras) {
 		this.ras = ras;
 	}

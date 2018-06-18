@@ -32,7 +32,7 @@ public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAcc
 
 	/**
 	 * @param file the file
-	 * @throws FileNotFoundException
+	 * @throws FileNotFoundException .
 	 */
 	public ReadOnlyAccessFile(final File file) throws FileNotFoundException {
 		super(file, "r");

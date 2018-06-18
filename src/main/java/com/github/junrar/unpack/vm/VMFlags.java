@@ -24,17 +24,8 @@ package com.github.junrar.unpack.vm;
  * @version $LastChangedRevision$
  */
 public enum VMFlags {
-	/**
-	 * 
-	 */
 	VM_FC (1),
-	/**
-	 * 
-	 */
 	VM_FZ (2),
-	/**
-	 * 
-	 */
 	VM_FS (0x80000000);
 	
 	private int flag;
@@ -63,12 +54,13 @@ public enum VMFlags {
 	
 	/**
 	 * Returns true if the flag provided as int is equal to the enum
-	 * @param flag
+	 * @param flag .
 	 * @return returns true if the flag is equal to the enum
 	 */
 	public boolean equals(int flag){
 		return this.flag == flag;
 	}
+	
 	/**
 	 * @return the flag as int
 	 */

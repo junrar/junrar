@@ -111,9 +111,6 @@ public class RARFileObject extends AbstractFileObject<RARFileSystem> implements 
 		children.add(childName.getBaseName());
 	}
 
-	/**
-	 * @param header
-	 */
 	public void setHeader(FileHeader header) {
 		this.header = header;
 	}

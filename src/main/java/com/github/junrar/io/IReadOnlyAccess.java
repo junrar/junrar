@@ -46,8 +46,9 @@ public interface IReadOnlyAccess {
     /** 
      * Read a single byte of data.
      * 
-     * @return read
+     * @return read read
      *  
+	 * @throws IOException .
      */
     public int read() throws IOException;
 
@@ -58,7 +59,7 @@ public interface IReadOnlyAccess {
      * @param off .
      * @param count .
      * 
-     * @return read
+     * @return read read
      * 
      * @throws IOException .
      * 
@@ -70,10 +71,15 @@ public interface IReadOnlyAccess {
      *
 	 * @param buffer where to store the read data
 	 * @param count how many bytes to read
-	 * @return bytes read || -1 if  IO problem 
+	 * @return bytes read || -1 if  IO problem
+	 * 
+     * @throws IOException . 
 	 */
 	public int readFully(byte[] buffer, int count) throws IOException;
 
-    /** Close this file. */
+    /** 
+     * Close this file.
+     * @throws IOException . 
+     */
     public void close() throws IOException;
 }

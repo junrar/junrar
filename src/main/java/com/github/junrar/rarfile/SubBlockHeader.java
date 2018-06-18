@@ -50,16 +50,10 @@ extends BlockHeader
 		level |= subblock[position]&0xff;
 	}
 
-	/**
-	 * @return
-	 */
 	public byte getLevel() {
 		return level;
 	}
 
-	/**
-	 * @return
-	 */
 	public SubBlockHeaderType getSubType() {
 		return SubBlockHeaderType.findSubblockHeaderType(subType);
 	}
