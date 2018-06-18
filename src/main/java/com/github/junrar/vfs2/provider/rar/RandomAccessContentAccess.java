@@ -17,17 +17,10 @@ import com.github.junrar.io.IReadOnlyAccess;
 public class RandomAccessContentAccess implements IReadOnlyAccess {
 	private final RandomAccessContent rac;
 
-	/**
-	 * @param rac
-	 */
 	public RandomAccessContentAccess(RandomAccessContent rac) {
 		this.rac = rac;
 	}
 
-	/**
-	 * @param file
-	 * @throws FileSystemException
-	 */
 	public RandomAccessContentAccess(FileObject file)
 			throws FileSystemException {
 		this(file.getContent().getRandomAccessContent(RandomAccessMode.READ));

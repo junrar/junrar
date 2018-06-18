@@ -60,7 +60,7 @@ public class MainHeader extends BaseBlock {
 	}
 	/**
 	 * the version the the encryption 
-	 * @return
+	 * @return . 
 	 */
 	public byte getEncryptVersion() {
 		return encryptVersion;
@@ -76,23 +76,23 @@ public class MainHeader extends BaseBlock {
 	
 	/**
 	 * returns whether the archive is encrypted 
-	 * @return
+	 * @return .
 	 */
 	public boolean isEncrypted(){
 		return (this.flags & BaseBlock.MHD_PASSWORD)!=0;
 	}
 	
 	/**
-	 * return whether the archive is a multivolume archive
-	 * @return
+	 * 
+	 * @return whether the archive is a multivolume archive
 	 */
 	public boolean isMultiVolume(){
 		return (this.flags & BaseBlock.MHD_VOLUME)!=0;
 	}
 	
 	/**
-	 * if the archive is a multivolume archive this method returns whether this instance is the first part of the multivolume archive
-	 * @return
+	 * 
+	 * @return if the archive is a multivolume archive this method returns whether this instance is the first part of the multivolume archive
 	 */
 	public boolean isFirstVolume(){
 		return (this.flags & BaseBlock.MHD_FIRSTVOLUME)!=0;
@@ -116,8 +116,7 @@ public class MainHeader extends BaseBlock {
 	}
 	
 	/**
-	 * returns whether this archive is solid. in this case you can only extract all file at once
-	 * @return
+	 * @return whether this archive is solid. in this case you can only extract all file at once
 	 */
 	public boolean isSolid(){
 		return (this.flags&MHD_SOLID)!=0;
@@ -135,8 +134,8 @@ public class MainHeader extends BaseBlock {
 		return (this.flags&MHD_AV)!=0;
 	}
 	/**
-	 * the numbering format a multivolume archive
-	 * @return
+	 * 
+	 * @return the numbering format a multivolume archive
 	 */
 	public boolean isNewNumbering(){
 		return (this.flags&MHD_NEWNUMBERING)!=0;

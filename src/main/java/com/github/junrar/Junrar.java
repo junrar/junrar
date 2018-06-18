@@ -1,11 +1,8 @@
 package com.github.junrar;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +10,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
 
 public class Junrar {
@@ -31,13 +29,26 @@ public class Junrar {
 	public static void extract(final File rar, final File destinationFolder) throws RarException, IOException {
 		validateRarPath(rar);
 		validateDestinationPath(destinationFolder);
-		extractFileTo(rar, destinationFolder);
+		
+		final Archive archive = createArchiveOrThrowException(logger, rar);
+		LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+		extractArchiveTo(archive, lfe);
 	}
-
+	
 	public static void extract(final InputStream resourceAsStream, final File destinationFolder) throws RarException, IOException {
 		validateDestinationPath(destinationFolder);
+		
 		final Archive arch = createArchiveOrThrowException(logger, resourceAsStream);
-		extractArchiveTo(arch, destinationFolder);
+		LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+		extractArchiveTo(arch, lfe);
+	}
+	
+	public static void extract(
+		final ExtractDestination destination, 
+		final VolumeManager volumeManager
+	) throws RarException, IOException {
+		final Archive archive = new Archive(volumeManager);
+		extractArchiveTo(archive, destination);
 	}
 
 	public static List<ContentDescription> getContentsDescription(final File rar) throws RarException, IOException {
@@ -72,9 +83,12 @@ public class Junrar {
 		}
 	}
 
-	private static Archive createArchiveOrThrowException(final Log logger, final File archive) throws RarException, IOException {
+	private static Archive createArchiveOrThrowException(
+		final Log logger, 
+		final File file
+	) throws RarException, IOException {
 		try {
-			return new Archive(archive);
+			return new Archive(new FileVolumeManager(file));
 		} catch (final RarException e) {
 			logger.error(e);
 			throw e;
@@ -105,12 +119,7 @@ public class Junrar {
 		}
 	}
 
-	private static void extractFileTo(final File file, final File destination) throws RarException, IOException {
-		final Archive archive = createArchiveOrThrowException(logger, file);
-		extractArchiveTo(archive, destination);
-	}
-
-	private static void extractArchiveTo(final Archive arch, final File destination) throws IOException, RarException {
+	private static void extractArchiveTo(final Archive arch, final ExtractDestination destination) throws IOException, RarException {
 		if (arch.isEncrypted()) {
 			logger.warn("archive is encrypted cannot extract");
 			arch.close();
@@ -134,7 +143,12 @@ public class Junrar {
 		}
 	}
 
-	private static void tryToExtract(final Log logger,final File destination, final Archive arch, final FileHeader fileHeader) throws IOException, RarException {
+	private static void tryToExtract(
+		final Log logger,
+		final ExtractDestination destination, 
+		final Archive arch, 
+		final FileHeader fileHeader
+	) throws IOException, RarException {
 		final String fileNameString = fileHeader.getFileNameString();
 		if (fileHeader.isEncrypted()) {
 			logger.warn("file is encrypted cannot extract: "+ fileNameString);
@@ -142,87 +156,10 @@ public class Junrar {
 		}
 		logger.info("extracting: " + fileNameString);
 		if (fileHeader.isDirectory()) {
-			createDirectory(fileHeader, destination);
+			destination.createDirectory(fileHeader);
 		} else {
-			extract(logger, arch, destination, fileHeader);
+			destination.extract(arch, fileHeader);
 		}
-	}
-
-	private static void extract(final Log logger, final Archive arch, final File destination, final FileHeader fileHeader) throws FileNotFoundException, RarException, IOException {
-		final File f = createFile(logger, fileHeader, destination);
-		final OutputStream stream = new FileOutputStream(f);
-		arch.extractFile(fileHeader, stream);
-		stream.close();
-	}
-
-	private static File createFile(final Log logger, final FileHeader fh, final File destination) {
-		File f = null;
-		String name = null;
-		if (fh.isFileHeader() && fh.isUnicode()) {
-			name = fh.getFileNameW();
-		} else {
-			name = fh.getFileNameString();
-		}
-		f = new File(destination, name);
-		if (!f.exists()) {
-			try {
-				f = makeFile(destination, name);
-			} catch (final IOException e) {
-				logger.error("error creating the new file: " + f.getName(), e);
-			}
-		}
-		return f;
-	}
-
-	private static File makeFile(final File destination, final String name) throws IOException {
-		final String[] dirs = name.split("\\\\");
-		if (dirs == null) {
-			return null;
-		}
-		String path = "";
-		final int size = dirs.length;
-		if (size == 1) {
-			return new File(destination, name);
-		} else if (size > 1) {
-			for (int i = 0; i < dirs.length - 1; i++) {
-				path = path + File.separator + dirs[i];
-				new File(destination, path).mkdir();
-			}
-			path = path + File.separator + dirs[dirs.length - 1];
-			final File f = new File(destination, path);
-			f.createNewFile();
-			return f;
-		} else {
-			return null;
-		}
-	}
-
-	private static void createDirectory(final FileHeader fh, final File destination) {
-		File f = null;
-		if (fh.isDirectory() && fh.isUnicode()) {
-			f = new File(destination, fh.getFileNameW());
-			if (!f.exists()) {
-				makeDirectory(destination, fh.getFileNameW());
-			}
-		} else if (fh.isDirectory() && !fh.isUnicode()) {
-			f = new File(destination, fh.getFileNameString());
-			if (!f.exists()) {
-				makeDirectory(destination, fh.getFileNameString());
-			}
-		}
-	}
-
-	private static void makeDirectory(final File destination, final String fileName) {
-		final String[] dirs = fileName.split("\\\\");
-		if (dirs == null) {
-			return;
-		}
-		String path = "";
-		for (final String dir : dirs) {
-			path = path + File.separator + dir;
-			new File(destination, path).mkdir();
-		}
-
-	}
+	}		
 
 }

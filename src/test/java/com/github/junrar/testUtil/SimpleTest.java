@@ -20,6 +20,7 @@ import com.github.junrar.Archive;
 import com.github.junrar.Junrar;
 import com.github.junrar.TestCommons;
 import com.github.junrar.exception.RarException;
+import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
 import org.junit.Test;
 
@@ -49,7 +50,7 @@ public class SimpleTest {
         File f = new File(getClass().getResource("test-documents.rar").toURI());
         Archive archive = null;
         try {
-            archive = new Archive(f);
+            archive = new Archive(new FileVolumeManager(f));
 
             FileHeader fileHeader = archive.nextFileHeader();
             int i = 0;

@@ -27,54 +27,15 @@ package com.github.junrar.rarfile;
 public enum UnrarHeadertype {
 	
 	
-	/**
-	 * 
-	 */
 	MainHeader		((byte)0x73),
-	
-	/**
-	 * 
-	 */
 	MarkHeader		((byte)0x72),
-	
-	/**
-	 * 
-	 */
 	FileHeader 		((byte) 0x74),
-	
-	/**
-	 * 
-	 */
 	CommHeader  	((byte) 0x75),
-	
-	/**
-	 * 
-	 */
 	AvHeader 		((byte) 0x76),
-	
-	/**
-	 * 
-	 */
 	SubHeader 		((byte)  0x77),
-	
-	/**
-	 * 
-	 */
 	ProtectHeader  	((byte) 0x78),
-	
-	/**
-	 * 
-	 */
 	SignHeader 		((byte)  0x79),
-	
-	/**
-	 * 
-	 */
 	NewSubHeader 	((byte) 0x7a),
-	
-	/**
-	 * 
-	 */
 	EndArcHeader 	((byte)  0x7b);
 	
 	/**
@@ -128,8 +89,6 @@ public enum UnrarHeadertype {
 		}
 		return null;
 	}
-
-	
 	
 	private byte headerByte;
 	
@@ -137,11 +96,10 @@ public enum UnrarHeadertype {
 	{
 		this.headerByte = headerByte;
 	}
-
 	
 	/**
 	 * Return true if the given byte is equal to the enum's byte
-	 * @param header
+	 * @param header header
 	 * @return true if the given byte is equal to the enum's byte
 	 */
 	public boolean equals(byte header)
@@ -149,16 +107,12 @@ public enum UnrarHeadertype {
 		return headerByte == header;
 	}
 
-
 	/**
 	 * the header byte of this enum
 	 * @return the header byte of this enum
 	 */
 	public byte getHeaderByte() {
 		return headerByte;
-	}
-
-
-	
+	}	
 	
 }

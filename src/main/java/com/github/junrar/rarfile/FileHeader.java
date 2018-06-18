@@ -357,7 +357,7 @@ public class FileHeader extends BlockHeader {
     /**
      * the file will be continued in the next archive part
      * 
-     * @return
+     * @return isSplitAfter
      */
     public boolean isSplitAfter() {
 	return (this.flags & BlockHeader.LHD_SPLIT_AFTER) != 0;
@@ -366,7 +366,7 @@ public class FileHeader extends BlockHeader {
     /**
      * the file is continued in this archive
      * 
-     * @return
+     * @return isSplitBefore
      */
     public boolean isSplitBefore() {
 	return (this.flags & LHD_SPLIT_BEFORE) != 0;
@@ -375,7 +375,7 @@ public class FileHeader extends BlockHeader {
     /**
      * this file is compressed as solid (all files handeled as one)
      * 
-     * @return
+     * @return isSolid
      */
     public boolean isSolid() {
 	return (this.flags & LHD_SOLID) != 0;
@@ -384,7 +384,7 @@ public class FileHeader extends BlockHeader {
     /**
      * the file is encrypted
      * 
-     * @return
+     * @return isEncrypted
      */
     public boolean isEncrypted() {
 	return (this.flags & BlockHeader.LHD_PASSWORD) != 0;
@@ -393,7 +393,7 @@ public class FileHeader extends BlockHeader {
     /**
      * the filename is also present in unicode
      * 
-     * @return
+     * @return isUnicode
      */
     public boolean isUnicode() {
 	return (flags & LHD_UNICODE) != 0;
@@ -414,7 +414,7 @@ public class FileHeader extends BlockHeader {
     /**
      * whether this fileheader represents a directory
      * 
-     * @return
+     * @return isDirectory
      */
     public boolean isDirectory() {
 	return (flags & LHD_WINDOWMASK) == LHD_DIRECTORY;

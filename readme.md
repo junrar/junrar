@@ -5,6 +5,7 @@ Read and extracts from a .rar file. This is a fork of the junrar codebase, forme
 
 Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
+If you are using a version below 1.0.1 please upgrade
 
 Dependency on maven:  
 ```
@@ -12,7 +13,7 @@ Dependency on maven:
 <dependency>  
   <groupId>com.github.junrar</groupId>  
   <artifactId>junrar</artifactId>
-  <version>1.0.1</version>  
+  <version>2.0.0</version>  
 </dependency>  
 ```
 

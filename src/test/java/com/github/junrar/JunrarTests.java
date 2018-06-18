@@ -16,6 +16,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.testUtil.JUnRarTestUtil;
 
 public class JunrarTests {
@@ -36,6 +37,17 @@ public class JunrarTests {
 		final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
 
 		Junrar.extract(rarFileOnTemp, tempFolder);
+
+		final File fooDir = new File(tempFolder,"foo");
+		assertTrue(fooDir.exists());
+		assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir,"bar.txt")));
+	}
+	
+	@Test
+	public void extractionFromFileWithVolumeManagerAndExtractorHappyDay() throws RarException, IOException {
+		final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
+
+		Junrar.extract(new LocalFolderExtractor(tempFolder), new FileVolumeManager(rarFileOnTemp));
 
 		final File fooDir = new File(tempFolder,"foo");
 		assertTrue(fooDir.exists());

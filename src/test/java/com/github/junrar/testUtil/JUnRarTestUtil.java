@@ -40,6 +40,7 @@ import com.github.junrar.Archive;
 import com.github.junrar.TestCommons;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.RarException.RarExceptionType;
+import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.io.ReadOnlyAccessFile;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.testutil.ExtractArchive;
@@ -160,7 +161,7 @@ public class JUnRarTestUtil
 			try {
 //				readFile = new ReadOnlyAccessFile(file);
 				try {
-					arc = new Archive(file);
+					arc = new Archive(new FileVolumeManager(file));
 				} catch (RarException e) {
 					error("archive consturctor error",e);
 					errorFiles.add(file.toString());

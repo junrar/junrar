@@ -106,7 +106,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	 * @param volumeManager
 	 *            the the {@link VolumeManager} that will provide volume stream
 	 *            data
-	 * @throws RarException
+	 * @param unrarCallback
+	 * 			gets feedback on the extraction progress            
+	 *            
+	 * @throws RarException .
+	 * @throws IOException .
 	 */
 	public Archive(
 		final VolumeManager volumeManager,
@@ -118,10 +122,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
 		setVolume(this.volumeManager.nextArchive(this, null));
 		this.dataIO = new ComprDataIO(this);
-	}
-
-	public Archive(final File firstVolume) throws RarException, IOException {
-		this(new FileVolumeManager(firstVolume), null);
 	}
 
 	public Archive(
@@ -482,7 +482,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	 *            the header to be extracted
 	 * @param os
 	 *            the outputstream
-	 * @throws RarException
+	 * @throws RarException .
 	 */
 	public void extractFile(final FileHeader hd, final OutputStream os) throws RarException {
 		if (!this.headers.contains(hd)) {
@@ -506,9 +506,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	 *
 	 * @param hd
 	 *            the header to be extracted
-	 * @throws RarException
+	 * @throws RarException .
 	 * @throws IOException
 	 *             if any IO error occur
+	 *             
+	 * @return inputstream
 	 */
 	public InputStream getInputStream(final FileHeader hd) throws RarException,
 			IOException {
@@ -625,7 +627,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	/**
 	 * @param volume
 	 *            the volume to set
-	 * @throws IOException
+	 * @throws IOException .
 	 */
 	public void setVolume(final Volume volume) throws IOException {
 		this.volume = volume;

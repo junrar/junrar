@@ -8,14 +8,22 @@ package com.github.junrar;
 public interface UnrarCallback {
 
     /**
-     * Return <tt>true</tt> if the next volume is ready to be processed,
+     * @param nextVolume ,
+     * 
+     * @return <tt>true</tt> if the next volume is ready to be processed,
      * <tt>false</tt> otherwise.
+     * 
+     * 
      */
     boolean isNextVolumeReady(Volume nextVolume);
 
     /**
      * This method is invoked each time the progress of the current
      * volume changes.
+     * 
+     * @param current .
+     * @param total .
+     * 
      */
     void volumeProgressChanged(long current, long total);
 }

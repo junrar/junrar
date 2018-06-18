@@ -129,9 +129,9 @@ public class Raw {
      * Read an long value(unsigned int) from the byte array at the given
      * position (little Endian)
      * 
-     * @param array
-     * @param pos
-     * @return
+     * @param array .
+     * @param pos .
+     * @return .
      */
     public static final long readIntLittleEndianAsLong(byte[] array, int pos) {
 	return (((long) array[pos + 3] & 0xff) << 24)
@@ -250,6 +250,11 @@ public class Raw {
     /**
      * Increment a short value at the specified position by the specified amount
      * (little endian).
+     * 
+     * @param array .
+	 * @param pos .
+	 * @param dv .
+     * 
      */
     public static final void incShortLittleEndian(byte[] array, int pos, int dv) {
 	int c = ((array[pos] & 0xff) + (dv & 0xff)) >>> 8;

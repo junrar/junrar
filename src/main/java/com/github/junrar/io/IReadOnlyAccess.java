@@ -30,19 +30,39 @@ public interface IReadOnlyAccess {
 
 	/**
 	 * @return the current position in the file
+	 * 
+	 * @throws IOException .
+	 * 
 	 */
 	public long getPosition() throws IOException;
 		
 	/**
 	 * @param pos the position in the file 
+	 * 
+	 * @throws IOException .
 	 */
 	public void setPosition(long pos) throws IOException;
 
-    /** Read a single byte of data. */
+    /** 
+     * Read a single byte of data.
+     * 
+     * @return read read
+     *  
+	 * @throws IOException .
+     */
     public int read() throws IOException;
 
 	/**
      * Read up to <tt>count</tt> bytes to the specified buffer.
+     * 
+     * @param buffer .
+     * @param off .
+     * @param count .
+     * 
+     * @return read read
+     * 
+     * @throws IOException .
+     * 
      */
     public int read(byte[] buffer, int off, int count) throws IOException;
 
@@ -51,10 +71,15 @@ public interface IReadOnlyAccess {
      *
 	 * @param buffer where to store the read data
 	 * @param count how many bytes to read
-	 * @return bytes read || -1 if  IO problem 
+	 * @return bytes read || -1 if  IO problem
+	 * 
+     * @throws IOException . 
 	 */
 	public int readFully(byte[] buffer, int count) throws IOException;
 
-    /** Close this file. */
+    /** 
+     * Close this file.
+     * @throws IOException . 
+     */
     public void close() throws IOException;
 }

@@ -29,6 +29,9 @@ public final class RandomAccessStream extends InputStream {
 	/**
 	 * Constructs a RandomAccessStream from an InputStream. Seeking backwards is
 	 * supported using a memory cache.
+	 * 
+	 * @param inputstream .
+	 * 
 	 */
 	public RandomAccessStream(InputStream inputstream) {
 		pointer = 0L;
@@ -38,7 +41,12 @@ public final class RandomAccessStream extends InputStream {
 		src = inputstream;
 	}
 
-	/** Constructs a RandomAccessStream from an RandomAccessFile. */
+	/** 
+	 * Constructs a RandomAccessStream from an RandomAccessFile.
+	 * 
+	 * @param ras ras
+	 *  
+	 */
 	public RandomAccessStream(RandomAccessFile ras) {
 		this.ras = ras;
 	}

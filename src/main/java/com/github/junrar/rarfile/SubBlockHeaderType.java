@@ -37,7 +37,7 @@ public enum SubBlockHeaderType
 	
 	/**
 	 * Return true if the given value is equal to the enum's value
-	 * @param subblocktype
+	 * @param subblocktype .
 	 * @return true if the given value is equal to the enum's value
 	 */
 	public boolean equals(short subblocktype)

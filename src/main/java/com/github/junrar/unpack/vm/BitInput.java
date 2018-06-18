@@ -24,6 +24,7 @@ package com.github.junrar.unpack.vm;
  * @version $LastChangedRevision$
  */
 public class BitInput {
+	
 	/**
 	 * the max size of the input
 	 */
@@ -32,16 +33,14 @@ public class BitInput {
 	protected int inBit;
 	protected byte[] inBuf;
 	
-	/**
-	 * 
-	 */
+
 	public void InitBitInput()
     {
       inAddr=0;
       inBit=0;
     }
     /**
-     * @param Bits 
+     * @param Bits .
      */
     public void addbits(int Bits)
     {

@@ -21,8 +21,8 @@ public class VFSVolume implements Volume {
 	private final FileObject file;
 
 	/**
-	 * @param archive
-	 * @param file
+	 * @param archive .
+	 * @param file .
 	 */
 	public VFSVolume(final Archive archive, final FileObject file) {
 		this.archive = archive;

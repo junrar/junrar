@@ -17,9 +17,6 @@ public class VFSVolumeManager implements VolumeManager {
 
 	private final FileObject firstVolume;
 
-	/**
-	 * @param firstVolume
-	 */
 	public VFSVolumeManager(final FileObject firstVolume) {
 		this.firstVolume = firstVolume;
 	}
