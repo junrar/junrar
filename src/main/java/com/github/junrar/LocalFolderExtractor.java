@@ -22,7 +22,7 @@ public class LocalFolderExtractor implements ExtractDestination{
 	}
 	
 	@Override
-	public void createDirectory(final FileHeader fh) {
+	public File createDirectory(final FileHeader fh) {
 		File f = null;
 		if (fh.isDirectory() && fh.isUnicode()) {
 			f = new File(folderDestination, fh.getFileNameW());
@@ -35,10 +35,11 @@ public class LocalFolderExtractor implements ExtractDestination{
 				makeDirectory(folderDestination, fh.getFileNameString());
 			}
 		}
+		return f;
 	}
 	
 	@Override
-	public void extract(
+	public File extract(
 		final Archive arch, 
 		final FileHeader fileHeader
 	) throws FileNotFoundException, RarException, IOException {
@@ -46,6 +47,7 @@ public class LocalFolderExtractor implements ExtractDestination{
 		final OutputStream stream = new FileOutputStream(f);
 		arch.extractFile(fileHeader, stream);
 		stream.close();
+		return f;
 	}
 	
 	private void makeDirectory(final File destination, final String fileName) {

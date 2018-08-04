@@ -1,5 +1,6 @@
 package com.github.junrar;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -8,9 +9,9 @@ import com.github.junrar.rarfile.FileHeader;
 
 public interface ExtractDestination {
 	
-	public void createDirectory(FileHeader fileHeader);
+	public File createDirectory(FileHeader fileHeader);
 	
-	public void extract(
+	public File extract(
 		final Archive arch, 
 		final FileHeader fileHeader
 	) throws FileNotFoundException, RarException, IOException;
