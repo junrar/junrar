@@ -42,7 +42,19 @@ public class JunrarTests {
 		assertTrue(fooDir.exists());
 		assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir,"bar.txt")));
 	}
-	
+
+	@Test
+	public void extractionFromFileHappyDayAndValidateExtractedFiles() throws RarException, IOException {
+		final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
+
+		final List<File> extractedFiles = Junrar.extract(rarFileOnTemp, tempFolder);
+
+		final File fooDir = new File(tempFolder,"foo");
+		assertEquals(new File(fooDir, "bar.txt"), extractedFiles.get(0));
+		assertEquals(fooDir, extractedFiles.get(1));
+	}
+
+
 	@Test
 	public void extractionFromFileWithVolumeManagerAndExtractorHappyDay() throws RarException, IOException {
 		final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
