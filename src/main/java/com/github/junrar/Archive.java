@@ -18,13 +18,13 @@
  */
 package com.github.junrar;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.PipedInputStream;
-import java.io.PipedOutputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -501,8 +501,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
 	/**
 	 * Returns an {@link InputStream} that will allow to read the file and
-	 * stream it. Please note that this method will create a new Thread and an a
-	 * pair of Pipe streams.
+	 * stream it. 
 	 *
 	 * @param hd
 	 *            the header to be extracted
@@ -512,29 +511,22 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	 *             
 	 * @return inputstream
 	 */
-	public InputStream getInputStream(final FileHeader hd) throws RarException,
-			IOException {
-		final PipedInputStream in = new PipedInputStream(32 * 1024);
-		final PipedOutputStream out = new PipedOutputStream(in);
+	public InputStream getInputStream(final FileHeader hd) throws IOException {
+		final ByteArrayOutputStream out = new ByteArrayOutputStream();
 
-		// creates a new thread that will write data to the pipe. Data will be
-		// available in another InputStream, connected to the OutputStream.
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					extractFile(hd, out);
-				} catch (final RarException e) {
-				} finally {
-					try {
-						out.close();
-					} catch (final IOException e) {
-					}
-				}
+		try {
+			extractFile(hd, out);
+		} catch (RarException e) {
+			throw new IOException("RAR extracting issue", e);
+		} finally {
+			try {
+				out.close();
+			} catch (IOException e) {
+				System.err.println(e);
 			}
-		}).start();
+		}
 
-		return in;
+		return new ByteArrayInputStream(out.toByteArray());
 	}
 
 	private void doExtractFile(FileHeader hd, final OutputStream os)
