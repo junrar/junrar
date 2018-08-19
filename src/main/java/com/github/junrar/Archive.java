@@ -506,23 +506,22 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	 * @param hd
 	 *            the header to be extracted
 	 * @throws RarException .
-	 * @throws IOException
 	 *             if any IO error occur
 	 *             
 	 * @return inputstream
 	 */
-	public InputStream getInputStream(final FileHeader hd) throws IOException {
+	public InputStream getInputStream(final FileHeader hd) throws RarException {
 		final ByteArrayOutputStream out = new ByteArrayOutputStream();
 
 		try {
 			extractFile(hd, out);
 		} catch (RarException e) {
-			throw new IOException("RAR extracting issue", e);
+			throw new RarException(e, RarException.RarExceptionType.ioError);
 		} finally {
 			try {
 				out.close();
 			} catch (IOException e) {
-				System.err.println(e);
+				throw new RarException(e, RarException.RarExceptionType.ioError);
 			}
 		}
 

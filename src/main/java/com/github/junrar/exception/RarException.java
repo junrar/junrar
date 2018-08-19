@@ -33,6 +33,11 @@ public class RarException extends Exception
 		this.type = RarExceptionType.unkownError;
 	}
 	
+	public RarException(Exception e, RarExceptionType type){
+		super(type.name(),e);
+		this.type = type;
+	}
+	
 	public RarException(RarException e)
 	{
 		
