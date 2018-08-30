@@ -31,7 +31,7 @@ import com.github.junrar.io.Raw;
  * @version $LastChangedRevision$
  */
 public class MainHeader extends BaseBlock {
-	private Log logger = LogFactory.getLog(MainHeader.class.getName());
+	private static final Log logger = LogFactory.getLog(MainHeader.class);
 	public static final short mainHeaderSizeWithEnc = 7;
 	public static final short mainHeaderSize = 6;
 	private short highPosAv;

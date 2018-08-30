@@ -33,7 +33,7 @@ import com.github.junrar.io.Raw;
 public class BlockHeader extends BaseBlock{
 	public static final short blockHeaderSize = 4;
 	
-	private Log logger = LogFactory.getLog(BlockHeader.class.getName());
+	private static final Log logger = LogFactory.getLog(BlockHeader.class);
 	
 	private long dataSize;
 	private long packSize;

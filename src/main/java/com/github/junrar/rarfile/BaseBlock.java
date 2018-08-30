@@ -33,7 +33,7 @@ import com.github.junrar.io.Raw;
  */
 public class BaseBlock{
 	
-	Log logger = LogFactory.getLog(BaseBlock.class.getName());
+	private static final Log logger = LogFactory.getLog(BaseBlock.class);
 	
 	public static final short BaseBlockSize = 7;
 	

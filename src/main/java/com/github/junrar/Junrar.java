@@ -15,7 +15,7 @@ import com.github.junrar.rarfile.FileHeader;
 
 public class Junrar {
 
-	private static Log logger = LogFactory.getLog(Junrar.class.getName());
+	private static final Log logger = LogFactory.getLog(Junrar.class);
 
 	public static List<File> extract(final String rarPath, final String destinationPath) throws IOException, RarException {
 		if (rarPath == null || destinationPath == null) {

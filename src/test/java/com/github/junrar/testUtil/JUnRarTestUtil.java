@@ -53,7 +53,7 @@ import com.github.junrar.testutil.ExtractArchive;
  */
 public class JUnRarTestUtil
 {
-	private static Log logger = LogFactory.getLog(JUnRarTestUtil.class.getName());
+	private static final Log logger = LogFactory.getLog(JUnRarTestUtil.class);
 	/**
 	 * @param args
 	 */
