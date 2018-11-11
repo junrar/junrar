@@ -1,7 +1,7 @@
 Junrar
 =====
 
-Read and extracts from a .rar file. This is a fork of the junrar codebase, formerly on sourceforge.
+Read and extracts from a .rar file. Supported RAR formats are V4 and lower. This is a fork of the junrar codebase, formerly on sourceforge.
 
 Code may not be used to develop a RAR (WinRAR) compatible archiver.
 

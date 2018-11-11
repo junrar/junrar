@@ -49,6 +49,7 @@ import com.github.junrar.rarfile.MacInfoHeader;
 import com.github.junrar.rarfile.MainHeader;
 import com.github.junrar.rarfile.MarkHeader;
 import com.github.junrar.rarfile.ProtectHeader;
+import com.github.junrar.rarfile.RARVersion;
 import com.github.junrar.rarfile.SignHeader;
 import com.github.junrar.rarfile.SubBlockHeader;
 import com.github.junrar.rarfile.UnixOwnersHeader;
@@ -144,7 +145,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 		this(new InputStreamVolumeManager(rarAsStream), null);
 	}
 
-	private void setFile(final IReadOnlyAccess file, final long length) throws IOException {
+	private void setFile(final IReadOnlyAccess file, final long length) throws IOException, RarException {
 		this.totalPackedSize = 0L;
 		this.totalPackedRead = 0L;
 		close();
@@ -153,9 +154,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 			readHeaders(length);
 		} catch (final Exception e) {
 			logger.log(Level.WARNING,
-					"exception in archive constructor maybe file is encrypted "
-							+ "or currupt", e);
-			// ignore exceptions to allow exraction of working files in
+					"exception in archive constructor maybe file is encrypted, "
+							+ "corrupt or support not yet implemented", e);
+			// Rethrow unsupportedRarException
+			if (e instanceof RarException && ((RarException) e).getType() == RarExceptionType.unsupportedRarArchive) {
+				throw (RarException) e;
+			}
+			// ignore exceptions to allow extraction of working files in
 			// corrupt archive
 		}
 		// Calculate size of packed data
@@ -275,8 +280,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 			case MarkHeader:
 				this.markHead = new MarkHeader(block);
 				if (!this.markHead.isSignature()) {
-					throw new RarException(
-							RarException.RarExceptionType.badRarArchive);
+					if (markHead.getVersion() == RARVersion.V5) {
+						logger.warning("Support for rar version 5 is not yet implemented!");
+						throw new RarException(RarExceptionType.unsupportedRarArchive);
+					} else {
+						throw new RarException(
+								RarException.RarExceptionType.badRarArchive);
+					}
 				}
 				this.headers.add(this.markHead);
 				// markHead.print();
@@ -620,7 +630,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 	 *            the volume to set
 	 * @throws IOException .
 	 */
-	public void setVolume(final Volume volume) throws IOException {
+	public void setVolume(final Volume volume) throws IOException, RarException {
 		this.volume = volume;
 		setFile(volume.getReadOnlyAccess(), volume.getLength());
 	}
