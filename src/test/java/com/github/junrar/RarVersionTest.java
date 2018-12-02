@@ -38,8 +38,8 @@ public class RarVersionTest {
                 stream.close();
             }
         }
-        final File file1 = new File(tempDir, "FILE1.txt");
-        final File file2 = new File(tempDir, "FILE2.txt");
+        final File file1 = new File(tempDir, "FILE1.TXT");
+        final File file2 = new File(tempDir, "FILE2.TXT");
         assertTrue(file1.exists());
         assertEquals(7, file1.length());
         assertTrue(file2.exists());
