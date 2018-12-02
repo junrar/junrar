@@ -152,9 +152,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 		try {
 			readHeaders(length);
 		} catch (final Exception e) {
-			logger.log(Level.WARNING,
-					"exception in archive constructor maybe file is encrypted, "
-							+ "corrupt or support not yet implemented", e);
+			logger.warn( "exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
 			// Rethrow unsupportedRarException
 			if (e instanceof RarException && ((RarException) e).getType() == RarExceptionType.unsupportedRarArchive) {
 				throw (RarException) e;
@@ -280,11 +278,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 				this.markHead = new MarkHeader(block);
 				if (!this.markHead.isSignature()) {
 					if (markHead.getVersion() == RARVersion.V5) {
-						logger.warning("Support for rar version 5 is not yet implemented!");
+						logger.warn("Support for rar version 5 is not yet implemented!");
 						throw new RarException(RarExceptionType.unsupportedRarArchive);
 					} else {
-						throw new RarException(
-								RarException.RarExceptionType.badRarArchive);
+						throw new RarException(RarException.RarExceptionType.badRarArchive);
 					}
 				}
 				this.headers.add(this.markHead);
