@@ -9,7 +9,7 @@ import com.github.junrar.io.Raw;
 public class UnixOwnersHeader 
 extends SubBlockHeader 
 {
-	private Log logger = LogFactory.getLog(UnixOwnersHeader.class);
+	private static final Log logger = LogFactory.getLog(UnixOwnersHeader.class);
 	private int ownerNameSize;
 	private int groupNameSize;
 	private String owner;

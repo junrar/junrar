@@ -30,8 +30,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.RarException.RarExceptionType;
@@ -56,7 +54,8 @@ import com.github.junrar.rarfile.UnixOwnersHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
-
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 /**
  * The Main Rar Class; represents a rar Archive
@@ -66,7 +65,7 @@ import com.github.junrar.unpack.Unpack;
  */
 public class Archive implements Closeable, Iterable<FileHeader> {
 
-	private static Logger logger = Logger.getLogger(Archive.class.getName());
+	private static final Log logger = LogFactory.getLog(Archive.class);
 
 	private static int MAX_HEADER_SIZE = 20971520;//20MB
 
@@ -465,7 +464,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 					break;
 				}
 				default:
-					logger.warning("Unknown Header");
+					logger.warn("Unknown Header");
 					throw new RarException(RarExceptionType.notRarArchive);
 
 				}

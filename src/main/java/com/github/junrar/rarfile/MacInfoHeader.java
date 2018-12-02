@@ -31,7 +31,7 @@ import com.github.junrar.io.Raw;
 public class MacInfoHeader 
 extends SubBlockHeader 
 {
-	private Log logger = LogFactory.getLog(getClass());
+	private static final Log logger = LogFactory.getLog(MacInfoHeader.class);
 	
 	public static final short MacInfoHeaderSize = 8;
 	

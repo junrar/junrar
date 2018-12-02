@@ -27,7 +27,7 @@ import com.github.junrar.io.Raw;
 public class SubBlockHeader 
 extends BlockHeader 
 {
-	private Log logger = LogFactory.getLog(getClass());
+	private static final Log logger = LogFactory.getLog(SubBlockHeader.class);
 	
 	public static final short SubBlockHeaderSize = 3;
 	
