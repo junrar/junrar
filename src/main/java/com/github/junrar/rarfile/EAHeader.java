@@ -31,7 +31,7 @@ import com.github.junrar.io.Raw;
 public class EAHeader 
 extends SubBlockHeader 
 {
-	private Log logger = LogFactory.getLog(getClass());
+	private static final Log logger = LogFactory.getLog(EAHeader.class);
 	
 	public static final short EAHeaderSize = 10;
 	

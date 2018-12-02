@@ -35,7 +35,7 @@ import com.github.junrar.io.Raw;
  */
 public class FileHeader extends BlockHeader {
 
-    private final Log logger = LogFactory.getLog(FileHeader.class.getName());
+    private static final Log logger = LogFactory.getLog(FileHeader.class);
 
     private static final byte SALT_SIZE = 8;
 

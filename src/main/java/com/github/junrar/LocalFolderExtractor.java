@@ -15,7 +15,7 @@ import com.github.junrar.rarfile.FileHeader;
 public class LocalFolderExtractor implements ExtractDestination{
 
 	private File folderDestination;
-	private static Log logger = LogFactory.getLog(LocalFolderExtractor.class.getName());
+	private static final Log logger = LogFactory.getLog(LocalFolderExtractor.class);
 
 	public LocalFolderExtractor(final File destination) {
 		this.folderDestination = destination;

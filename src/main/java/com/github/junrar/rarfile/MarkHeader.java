@@ -32,7 +32,7 @@ import com.github.junrar.io.Raw;
  */
 public class MarkHeader extends BaseBlock {
 	
-	private Log logger = LogFactory.getLog(MarkHeader.class.getName());
+	private static final Log logger = LogFactory.getLog(MarkHeader.class);
 	private boolean oldFormat = false;
 	
 	public MarkHeader(BaseBlock bb){
