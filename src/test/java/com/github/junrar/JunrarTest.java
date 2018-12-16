@@ -19,7 +19,7 @@ import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.testUtil.JUnRarTestUtil;
 
-public class JunrarTests {
+public class JunrarTest {
 	private static File tempFolder;
 
 	@BeforeClass
