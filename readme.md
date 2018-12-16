@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/junrar/junrar.svg?branch=master)](https://travis-ci.com/junrar/junrar)
+[![Release](https://img.shields.io/github/release/junrar/junrar.svg)](../../releases/latest)
 
 Junrar
 =====
