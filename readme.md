@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/junrar/junrar.svg?branch=master)](https://travis-ci.com/junrar/junrar)
+
 Junrar
 =====
 
