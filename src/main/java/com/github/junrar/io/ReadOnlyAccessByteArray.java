@@ -27,7 +27,7 @@ import java.io.IOException;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class ReadOnlyAccessByteArray implements IReadOnlyAccess{
+public class ReadOnlyAccessByteArray implements IReadOnlyAccess {
 
     private int positionInFile;
     private byte[] file;
@@ -36,8 +36,8 @@ public class ReadOnlyAccessByteArray implements IReadOnlyAccess{
      * Initialize with byte[ ]
      * @param file the file given as byte array
      */
-    public ReadOnlyAccessByteArray(byte[] file){
-        if(file == null){
+    public ReadOnlyAccessByteArray(byte[] file) {
+        if (file == null) {
             throw new NullPointerException("file must not be null!!");
         }
         this.file = file;
@@ -49,10 +49,10 @@ public class ReadOnlyAccessByteArray implements IReadOnlyAccess{
     }
 
     public void setPosition(long pos) throws IOException {
-        if (pos < file.length && pos >= 0){
-            this.positionInFile = (int)pos;
+        if (pos < file.length && pos >= 0) {
+            this.positionInFile = (int) pos;
         }
-        else{
+        else {
             throw new EOFException();
         }
     }
@@ -66,22 +66,22 @@ public class ReadOnlyAccessByteArray implements IReadOnlyAccess{
      * Read up to <tt>count</tt> bytes to the specified buffer.
      */
     public int read(byte[] buffer, int off, int count) throws IOException {
-        int read = Math.min(count, file.length-positionInFile);
+        int read = Math.min(count, file.length - positionInFile);
         System.arraycopy(file, positionInFile, buffer, off, read);
         positionInFile += read;
         return read;
     }
 
     public int readFully(byte[] buffer, int count) throws IOException {
-        if(buffer == null ){
+        if (buffer == null) {
             throw new NullPointerException("buffer must not be null");
         }
-        if(count == 0){
+        if (count == 0) {
             throw new IllegalArgumentException("cannot read 0 bytes ;-)");
         }
-        int read = Math.min(count, file.length-(int)positionInFile-1);
-        System.arraycopy(file, (int)positionInFile, buffer, 0, read );
-        positionInFile+=read;
+        int read = Math.min(count, file.length - (int) positionInFile - 1);
+        System.arraycopy(file, (int) positionInFile, buffer, 0, read);
+        positionInFile += read;
         return read;
     }
 

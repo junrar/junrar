@@ -46,27 +46,27 @@ public class RarMemBlock extends Pointer
         RarMemBlock temp = new RarMemBlock(mem);
         setPrev(p.getAddress());
         temp.setAddress(getPrev());
-        setNext(temp.getNext());// prev.getNext();
-        temp.setNext(this);// prev.setNext(this);
+        setNext(temp.getNext()); // prev.getNext();
+        temp.setNext(this); // prev.setNext(this);
         temp.setAddress(getNext());
-        temp.setPrev(this);// next.setPrev(this);
+        temp.setPrev(this); // next.setPrev(this);
     }
 
     public void remove()
     {
         RarMemBlock temp = new RarMemBlock(mem);
         temp.setAddress(getPrev());
-        temp.setNext(getNext());// prev.setNext(next);
+        temp.setNext(getNext()); // prev.setNext(next);
         temp.setAddress(getNext());
-        temp.setPrev(getPrev());// next.setPrev(prev);
+        temp.setPrev(getPrev()); // next.setPrev(prev);
 //        next = -1;
 //        prev = -1;
     }
 
     public int getNext()
     {
-        if(mem!=null){
-            next = Raw.readIntLittleEndian(mem,  pos+4);
+        if (mem != null) {
+            next = Raw.readIntLittleEndian(mem,  pos + 4);
         }
         return next;
     }
@@ -86,24 +86,24 @@ public class RarMemBlock extends Pointer
 
     public int getNU()
     {
-        if(mem!=null){
-            NU = Raw.readShortLittleEndian(mem,  pos+2)&0xffff;
+        if (mem != null) {
+            NU = Raw.readShortLittleEndian(mem,  pos + 2) & 0xffff;
         }
         return NU;
     }
 
     public void setNU(int nu)
     {
-        NU = nu&0xffff;
+        NU = nu & 0xffff;
         if (mem != null) {
-            Raw.writeShortLittleEndian(mem, pos + 2, (short)nu);
+            Raw.writeShortLittleEndian(mem, pos + 2, (short) nu);
         }
     }
 
     public int getPrev()
     {
-        if(mem!=null){
-            prev = Raw.readIntLittleEndian(mem,  pos+8);
+        if (mem != null) {
+            prev = Raw.readIntLittleEndian(mem,  pos + 8);
         }
         return prev;
     }
@@ -123,8 +123,8 @@ public class RarMemBlock extends Pointer
 
     public int getStamp()
     {
-        if(mem!=null){
-            stamp =  Raw.readShortLittleEndian(mem,  pos)&0xffff;
+        if (mem != null) {
+            stamp =  Raw.readShortLittleEndian(mem,  pos) & 0xffff;
         }
         return stamp;
     }
@@ -133,7 +133,7 @@ public class RarMemBlock extends Pointer
     {
         this.stamp = stamp;
         if (mem != null) {
-            Raw.writeShortLittleEndian(mem, pos, (short)stamp);
+            Raw.writeShortLittleEndian(mem, pos, (short) stamp);
         }
     }
 }

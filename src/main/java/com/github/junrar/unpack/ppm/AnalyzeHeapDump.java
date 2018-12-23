@@ -39,7 +39,7 @@ public class AnalyzeHeapDump {
         long len = Math.min(clen, jlen);
         InputStream cin = null;
         InputStream jin = null;
-        int bufferLen = 256*1024;
+        int bufferLen = 256 * 1024;
         try {
             cin = new BufferedInputStream(
                     new FileInputStream(cfile), bufferLen);
@@ -86,8 +86,8 @@ public class AnalyzeHeapDump {
     }
 
     private static void printMismatch(long startOff, long bytesRead) {
-        System.out.println("Mismatch: off=" + startOff +
-                "(0x" + Long.toHexString(startOff) +
-                "), len=" + (bytesRead - startOff));
+        System.out.println("Mismatch: off=" + startOff
+                + "(0x" + Long.toHexString(startOff)
+                + "), len=" + (bytesRead - startOff));
     }
 }

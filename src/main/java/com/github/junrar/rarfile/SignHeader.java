@@ -30,19 +30,19 @@ public class SignHeader extends BaseBlock {
 
     public static final short signHeaderSize = 8;
 
-    private int creationTime=0;
-    private short arcNameSize=0;
-    private short userNameSize=0;
+    private int creationTime = 0;
+    private short arcNameSize = 0;
+    private short userNameSize = 0;
 
 
-    public SignHeader(BaseBlock bb, byte[] signHeader){
+    public SignHeader(BaseBlock bb, byte[] signHeader) {
         super(bb);
 
         int pos = 0;
         creationTime = Raw.readIntLittleEndian(signHeader, pos);
-        pos +=4;
+        pos += 4;
         arcNameSize = Raw.readShortLittleEndian(signHeader, pos);
-        pos+=2;
+        pos += 2;
         userNameSize = Raw.readShortLittleEndian(signHeader, pos);
     }
 

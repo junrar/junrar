@@ -40,7 +40,7 @@ public class StateRef {
     }
 
     public void setSymbol(int symbol) {
-        this.symbol = symbol&0xff;
+        this.symbol = symbol & 0xff;
     }
 
     public int getFreq() {
@@ -48,18 +48,18 @@ public class StateRef {
     }
 
     public void setFreq(int freq) {
-        this.freq = freq&0xff;
+        this.freq = freq & 0xff;
     }
 
     public void incFreq(int dFreq) {
-        freq = (freq + dFreq)&0xff;
+        freq = (freq + dFreq) & 0xff;
     }
 
     public void decFreq(int dFreq) {
-        freq = (freq - dFreq)&0xff;
+        freq = (freq - dFreq) & 0xff;
     }
 
-    public void setValues(State statePtr){
+    public void setValues(State statePtr) {
         setFreq(statePtr.getFreq());
         setSuccessor(statePtr.getSuccessor());
         setSymbol(statePtr.getSymbol());

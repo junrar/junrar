@@ -75,63 +75,63 @@ public abstract class Unpack15 extends BitInput
 
     private static final int STARTL1 = 2;
 
-    private static int DecL1[] = { 0x8000, 0xa000, 0xc000, 0xd000, 0xe000,
+    private static int DecL1[] = {0x8000, 0xa000, 0xc000, 0xd000, 0xe000,
             0xea00, 0xee00, 0xf000, 0xf200, 0xf200, 0xffff };
 
-    private static int PosL1[] = { 0, 0, 0, 2, 3, 5, 7, 11, 16, 20, 24, 32, 32 };
+    private static int PosL1[] = {0, 0, 0, 2, 3, 5, 7, 11, 16, 20, 24, 32, 32 };
 
     private static final int STARTL2 = 3;
 
-    private static int DecL2[] = { 0xa000, 0xc000, 0xd000, 0xe000, 0xea00,
+    private static int DecL2[] = {0xa000, 0xc000, 0xd000, 0xe000, 0xea00,
             0xee00, 0xf000, 0xf200, 0xf240, 0xffff };
 
-    private static int PosL2[] = { 0, 0, 0, 0, 5, 7, 9, 13, 18, 22, 26, 34, 36 };
+    private static int PosL2[] = {0, 0, 0, 0, 5, 7, 9, 13, 18, 22, 26, 34, 36 };
 
     private static final int STARTHF0 = 4;
 
-    private static int DecHf0[] = { 0x8000, 0xc000, 0xe000, 0xf200, 0xf200,
+    private static int DecHf0[] = {0x8000, 0xc000, 0xe000, 0xf200, 0xf200,
             0xf200, 0xf200, 0xf200, 0xffff };
 
-    private static int PosHf0[] = { 0, 0, 0, 0, 0, 8, 16, 24, 33, 33, 33, 33,
+    private static int PosHf0[] = {0, 0, 0, 0, 0, 8, 16, 24, 33, 33, 33, 33,
             33 };
 
     private static final int STARTHF1 = 5;
 
-    private static int DecHf1[] = { 0x2000, 0xc000, 0xe000, 0xf000, 0xf200,
+    private static int DecHf1[] = {0x2000, 0xc000, 0xe000, 0xf000, 0xf200,
             0xf200, 0xf7e0, 0xffff };
 
-    private static int PosHf1[] = { 0, 0, 0, 0, 0, 0, 4, 44, 60, 76, 80, 80,
+    private static int PosHf1[] = {0, 0, 0, 0, 0, 0, 4, 44, 60, 76, 80, 80,
             127 };
 
     private static final int STARTHF2 = 5;
 
-    private static int DecHf2[] = { 0x1000, 0x2400, 0x8000, 0xc000, 0xfa00,
+    private static int DecHf2[] = {0x1000, 0x2400, 0x8000, 0xc000, 0xfa00,
             0xffff, 0xffff, 0xffff };
 
-    private static int PosHf2[] = { 0, 0, 0, 0, 0, 0, 2, 7, 53, 117, 233, 0, 0 };
+    private static int PosHf2[] = {0, 0, 0, 0, 0, 0, 2, 7, 53, 117, 233, 0, 0 };
 
     private static final int STARTHF3 = 6;
 
-    private static int DecHf3[] = { 0x800, 0x2400, 0xee00, 0xfe80, 0xffff,
+    private static int DecHf3[] = {0x800, 0x2400, 0xee00, 0xfe80, 0xffff,
             0xffff, 0xffff };
 
-    private static int PosHf3[] = { 0, 0, 0, 0, 0, 0, 0, 2, 16, 218, 251, 0, 0 };
+    private static int PosHf3[] = {0, 0, 0, 0, 0, 0, 0, 2, 16, 218, 251, 0, 0 };
 
     private static final int STARTHF4 = 8;
 
-    private static int DecHf4[] = { 0xff00, 0xffff, 0xffff, 0xffff, 0xffff,
+    private static int DecHf4[] = {0xff00, 0xffff, 0xffff, 0xffff, 0xffff,
             0xffff };
 
-    private static int PosHf4[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0 };
+    private static int PosHf4[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0 };
 
-    static int ShortLen1[] = { 1, 3, 4, 4, 5, 6, 7, 8, 8, 4, 4, 5, 6, 6, 4, 0 };
+    static int ShortLen1[] = {1, 3, 4, 4, 5, 6, 7, 8, 8, 4, 4, 5, 6, 6, 4, 0 };
 
-    static int ShortXor1[] = { 0, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8, 0xfc, 0xfe,
+    static int ShortXor1[] = {0, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8, 0xfc, 0xfe,
             0xff, 0xc0, 0x80, 0x90, 0x98, 0x9c, 0xb0 };
 
-    static int ShortLen2[] = { 2, 3, 3, 3, 4, 4, 5, 6, 6, 4, 4, 5, 6, 6, 4, 0 };
+    static int ShortLen2[] = {2, 3, 3, 3, 4, 4, 5, 6, 6, 4, 4, 5, 6, 6, 4, 0 };
 
-    static int ShortXor2[] = { 0, 0x40, 0x60, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8,
+    static int ShortXor2[] = {0, 0x40, 0x60, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8,
             0xfc, 0xc0, 0x80, 0x90, 0x98, 0x9c, 0xb0 };
 
     protected abstract void unpInitData(boolean solid);
@@ -213,31 +213,31 @@ public abstract class Unpack15 extends BitInput
 
     protected boolean unpReadBuf() throws IOException, RarException
     {
-          int dataSize=readTop-inAddr;
-          if (dataSize<0){
-            return(false);
+          int dataSize = readTop - inAddr;
+          if (dataSize < 0) {
+            return (false);
           }
-          if (inAddr>BitInput.MAX_SIZE/2) {
-            if (dataSize>0){
+          if (inAddr > BitInput.MAX_SIZE / 2) {
+            if (dataSize > 0) {
               //memmove(InBuf,InBuf+InAddr,DataSize);
 //                for (int i = 0; i < dataSize; i++) {
 //                    inBuf[i] = inBuf[inAddr + i];
 //                }
                 System.arraycopy(inBuf, inAddr, inBuf, 0, dataSize);
             }
-            inAddr=0;
-            readTop=dataSize;
+            inAddr = 0;
+            readTop = dataSize;
           }
-          else{
-            dataSize=readTop;
+          else {
+            dataSize = readTop;
           }
           //int readCode=UnpIO->UnpRead(InBuf+DataSize,(BitInput::MAX_SIZE-DataSize)&~0xf);
-          int readCode=unpIO.unpRead(inBuf, dataSize, (BitInput.MAX_SIZE-dataSize)&~0xf);
-          if (readCode>0){
-            readTop+=readCode;
+          int readCode = unpIO.unpRead(inBuf, dataSize, (BitInput.MAX_SIZE - dataSize) & ~0xf);
+          if (readCode > 0) {
+            readTop += readCode;
           }
-          readBorder=readTop-30;
-          return(readCode!=-1);
+          readBorder = readTop - 30;
+          return (readCode != -1);
     }
 
     private int getShortLen1(int pos)
@@ -538,7 +538,7 @@ public abstract class Unpack15 extends BitInput
 
     protected void oldUnpInitData(boolean Solid)
     {
-        if (!Solid ) {
+        if (!Solid) {
             AvrPlcB = AvrLn1 = AvrLn2 = AvrLn3 = NumHuf = Buf60 = 0;
             AvrPlc = 0x3500;
             MaxDist3 = 0x2001;
@@ -561,7 +561,7 @@ public abstract class Unpack15 extends BitInput
             ChSetC[I] = ((~I + 1) & 0xff) << 8;
         }
 
-        Arrays.fill(NToPl, 0);// memset(NToPl,0,sizeof(NToPl));
+        Arrays.fill(NToPl, 0); // memset(NToPl,0,sizeof(NToPl));
         Arrays.fill(NToPlB, 0); // memset(NToPlB,0,sizeof(NToPlB));
         Arrays.fill(NToPlC, 0); // memset(NToPlC,0,sizeof(NToPlC));
         corrHuff(ChSetB, NToPlB);
@@ -572,11 +572,11 @@ public abstract class Unpack15 extends BitInput
         int I, J, pos = 0;
         for (I = 7; I >= 0; I--) {
             for (J = 0; J < 32; J++, pos++) {
-                CharSet[pos] = ((CharSet[pos] & ~0xff) | I);// *CharSet=(*CharSet
+                CharSet[pos] = ((CharSet[pos] & ~0xff) | I); // *CharSet=(*CharSet
                 // & ~0xff) | I;
             }
         }
-        Arrays.fill(NumToPlace, 0);// memset(NumToPlace,0,sizeof(NToPl));
+        Arrays.fill(NumToPlace, 0); // memset(NumToPlace,0,sizeof(NToPl));
         for (I = 6; I >= 0; I--) {
             NumToPlace[I] = (7 - I) * 32;
         }

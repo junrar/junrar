@@ -27,16 +27,16 @@ package com.github.junrar.rarfile;
 public enum UnrarHeadertype {
 
 
-    MainHeader      ((byte)0x73),
-    MarkHeader      ((byte)0x72),
-    FileHeader      ((byte) 0x74),
-    CommHeader      ((byte) 0x75),
-    AvHeader        ((byte) 0x76),
-    SubHeader       ((byte)  0x77),
-    ProtectHeader   ((byte) 0x78),
-    SignHeader      ((byte)  0x79),
-    NewSubHeader    ((byte) 0x7a),
-    EndArcHeader    ((byte)  0x7b);
+    MainHeader((byte) 0x73),
+    MarkHeader((byte) 0x72),
+    FileHeader((byte) 0x74),
+    CommHeader((byte) 0x75),
+    AvHeader((byte) 0x76),
+    SubHeader((byte) 0x77),
+    ProtectHeader((byte) 0x78),
+    SignHeader((byte) 0x79),
+    NewSubHeader((byte) 0x7a),
+    EndArcHeader((byte) 0x7b);
 
     /**
      * Returns the enum according to the given byte or null
@@ -45,46 +45,46 @@ public enum UnrarHeadertype {
      */
     public static UnrarHeadertype findType(byte headerType)
     {
-        if(UnrarHeadertype.MarkHeader.equals(headerType)){
+        if (UnrarHeadertype.MarkHeader.equals(headerType)) {
             return UnrarHeadertype.MarkHeader;
         }
-        if(UnrarHeadertype.MainHeader.equals(headerType)){
+        if (UnrarHeadertype.MainHeader.equals(headerType)) {
             return UnrarHeadertype.MainHeader;
         }
-        if(UnrarHeadertype.FileHeader.equals(headerType)){
+        if (UnrarHeadertype.FileHeader.equals(headerType)) {
             return UnrarHeadertype.FileHeader;
         }
-        if(UnrarHeadertype.EndArcHeader.equals(headerType)){
+        if (UnrarHeadertype.EndArcHeader.equals(headerType)) {
             return UnrarHeadertype.EndArcHeader;
         }
-        if(UnrarHeadertype.NewSubHeader.equals(headerType)){
+        if (UnrarHeadertype.NewSubHeader.equals(headerType)) {
             return UnrarHeadertype.NewSubHeader;
         }
-        if(UnrarHeadertype.SubHeader.equals(headerType)){
+        if (UnrarHeadertype.SubHeader.equals(headerType)) {
             return UnrarHeadertype.SubHeader;
         }
-        if(UnrarHeadertype.SignHeader.equals(headerType)){
+        if (UnrarHeadertype.SignHeader.equals(headerType)) {
             return UnrarHeadertype.SignHeader;
         }
-        if(UnrarHeadertype.ProtectHeader.equals(headerType)){
+        if (UnrarHeadertype.ProtectHeader.equals(headerType)) {
             return UnrarHeadertype.ProtectHeader;
         }
-        if(UnrarHeadertype.MarkHeader.equals(headerType)){
+        if (UnrarHeadertype.MarkHeader.equals(headerType)) {
             return UnrarHeadertype.MarkHeader;
         }
-        if(UnrarHeadertype.MainHeader.equals(headerType)){
+        if (UnrarHeadertype.MainHeader.equals(headerType)) {
             return UnrarHeadertype.MainHeader;
         }
-        if(UnrarHeadertype.FileHeader.equals(headerType)){
+        if (UnrarHeadertype.FileHeader.equals(headerType)) {
             return UnrarHeadertype.FileHeader;
         }
-        if(UnrarHeadertype.EndArcHeader.equals(headerType)){
+        if (UnrarHeadertype.EndArcHeader.equals(headerType)) {
             return UnrarHeadertype.EndArcHeader;
         }
-        if(UnrarHeadertype.CommHeader.equals(headerType)){
+        if (UnrarHeadertype.CommHeader.equals(headerType)) {
             return UnrarHeadertype.CommHeader;
         }
-        if(UnrarHeadertype.AvHeader.equals(headerType)){
+        if (UnrarHeadertype.AvHeader.equals(headerType)) {
             return UnrarHeadertype.AvHeader;
         }
         return null;

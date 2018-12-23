@@ -30,7 +30,7 @@ import com.github.junrar.io.Raw;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class BlockHeader extends BaseBlock{
+public class BlockHeader extends BaseBlock {
     public static final short blockHeaderSize = 4;
 
     private static final Log logger = LogFactory.getLog(BlockHeader.class);
@@ -38,11 +38,11 @@ public class BlockHeader extends BaseBlock{
     private long dataSize;
     private long packSize;
     
-    public BlockHeader(){
+    public BlockHeader() {
 
     }
     
-    public BlockHeader(BlockHeader bh){
+    public BlockHeader(BlockHeader bh) {
         super(bh);
         this.packSize = bh.getDataSize();
         this.dataSize = packSize;
@@ -65,9 +65,9 @@ public class BlockHeader extends BaseBlock{
         return packSize;
     }
     
-    public void print(){
+    public void print() {
         super.print();
-        String s = "DataSize: "+getDataSize()+" packSize: "+getPackSize();
+        String s = "DataSize: " + getDataSize() + " packSize: " + getPackSize();
         logger.info(s);
     }
 }

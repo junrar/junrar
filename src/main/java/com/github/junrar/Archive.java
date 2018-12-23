@@ -67,7 +67,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private static final Log logger = LogFactory.getLog(Archive.class);
 
-    private static int MAX_HEADER_SIZE = 20971520;//20MB
+    private static int MAX_HEADER_SIZE = 20971520; //20MB
 
     private IReadOnlyAccess rof;
 
@@ -140,7 +140,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     // setFile(new ReadOnlyAccessFile(file), file.length());
     // }
 
-    public Archive(final InputStream rarAsStream) throws RarException, IOException{
+    public Archive(final InputStream rarAsStream) throws RarException, IOException {
         this(new InputStreamVolumeManager(rarAsStream), null);
     }
 
@@ -152,7 +152,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         try {
             readHeaders(length);
         } catch (final Exception e) {
-            logger.warn( "exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
+            logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
             // Rethrow unsupportedRarException
             if (e instanceof RarException && ((RarException) e).getType() == RarExceptionType.unsupportedRarArchive) {
                 throw (RarException) e;
@@ -477,7 +477,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         if (len < 0 || len > maxSize) {
             throw new RarException(RarExceptionType.badRarArchive);
         }
-        return new byte[(int)len];
+        return new byte[(int) len];
     }
 
     /**
@@ -638,9 +638,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             @Override
             public FileHeader next() {
                 FileHeader next;
-                if(Archive.this.nextFileHeader != null) {
+                if (Archive.this.nextFileHeader != null) {
                     next =  Archive.this.nextFileHeader;
-                }else {
+                } else {
                     next = nextFileHeader();
                 }
                 return next;

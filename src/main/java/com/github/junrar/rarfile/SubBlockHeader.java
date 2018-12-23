@@ -46,8 +46,8 @@ extends BlockHeader
         super(bh);
         int position = 0;
         subType = Raw.readShortLittleEndian(subblock, position);
-        position +=2;
-        level |= subblock[position]&0xff;
+        position += 2;
+        level |= subblock[position] & 0xff;
     }
 
     public byte getLevel() {
@@ -61,7 +61,7 @@ extends BlockHeader
     public void print()
     {
         super.print();
-        logger.info("subtype: "+getSubType());
-        logger.info("level: "+level);
+        logger.info("subtype: " + getSubType());
+        logger.info("level: " + level);
     }
 }

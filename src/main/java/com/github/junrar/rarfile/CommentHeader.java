@@ -37,18 +37,18 @@ public class CommentHeader extends BaseBlock {
     private short commCRC;
 
 
-    public CommentHeader(BaseBlock bb, byte[] commentHeader){
+    public CommentHeader(BaseBlock bb, byte[] commentHeader) {
         super(bb);
 
-        int pos =0;
+        int pos = 0;
         unpSize = Raw.readShortLittleEndian(commentHeader, pos);
         pos += 2;
-        unpVersion |= commentHeader[pos]&0xff;
+        unpVersion |= commentHeader[pos] & 0xff;
         pos++;
 
-        unpMethod |= commentHeader[pos]&0xff;
+        unpMethod |= commentHeader[pos] & 0xff;
         pos++;
-        commCRC =Raw.readShortLittleEndian(commentHeader, pos);
+        commCRC = Raw.readShortLittleEndian(commentHeader, pos);
 
     }
 

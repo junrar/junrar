@@ -17,11 +17,11 @@
  */
 package com.github.junrar.unpack.vm;
 
-import java.util.List;
-import java.util.Vector;
-
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.io.Raw;
+
+import java.util.List;
+import java.util.Vector;
 
 
 /**
@@ -44,7 +44,7 @@ public class RarVM extends BitInput {
 
     private static final int regCount = 8;
 
-    private static final long UINT_MASK = 0xffffFFFF;//((long)2*(long)Integer.MAX_VALUE);
+    private static final long UINT_MASK = 0xffffFFFF; //((long)2*(long)Integer.MAX_VALUE);
 
     private byte[] mem;
 
@@ -124,10 +124,10 @@ public class RarVM extends BitInput {
 //        mem[offset + 3] = (byte) ((value >>> 24)&0xff);
     }
     public void setLowEndianValue(Vector<Byte> mem, int offset, int value) {
-        mem.set(offset + 0, Byte.valueOf((byte) (value&0xff))) ;
-        mem.set(offset + 1, Byte.valueOf((byte) ((value >>> 8)&0xff)));
-        mem.set(offset + 2, Byte.valueOf((byte) ((value >>> 16)&0xff) ));
-        mem.set(offset + 3, Byte.valueOf((byte) ((value >>> 24)&0xff))) ;
+        mem.set(offset + 0, Byte.valueOf((byte) (value & 0xff)));
+        mem.set(offset + 1, Byte.valueOf((byte) ((value >>> 8) & 0xff)));
+        mem.set(offset + 2, Byte.valueOf((byte) ((value >>> 16) & 0xff)));
+        mem.set(offset + 3, Byte.valueOf((byte) ((value >>> 24) & 0xff)));
     }
     private int getOperand(VMPreparedOperand cmdOp) {
         int ret = 0;
@@ -321,7 +321,7 @@ public class RarVM extends BitInput {
                 flags = (result == 0) ? VMFlags.VM_FZ.getFlag()
                         : (result > value1) ? 1 : 0 | (result & VMFlags.VM_FS
                                 .getFlag());
-                setValue(cmd.isByteMode(), mem, op1, result);// (Cmd->ByteMode,Op1,Result);
+                setValue(cmd.isByteMode(), mem, op1, result); // (Cmd->ByteMode,Op1,Result);
             }
                 break;
 
@@ -658,7 +658,7 @@ public class RarVM extends BitInput {
                 curCmd.getOp2().setType(VMOpType.VM_OPNONE);
                 codeSize = 0;
                 prg.getCmd().add(curCmd);
-                prg.setCmdCount(prg.getCmdCount()+1);
+                prg.setCmdCount(prg.getCmdCount() + 1);
                 // TODO
                 // curCmd->Op1.Data=FilterType;
                 // >>>>>> CurCmd->Op1.Addr=&CurCmd->Op1.Data; <<<<<<<<<< not set
@@ -756,7 +756,7 @@ public class RarVM extends BitInput {
         // }
 
         prg.getCmd().add(curCmd);
-        prg.setCmdCount(prg.getCmdCount()+1);
+        prg.setCmdCount(prg.getCmdCount() + 1);
         // #ifdef VM_OPTIMIZE
         if (codeSize != 0) {
             optimize(prg);
@@ -894,7 +894,7 @@ public class RarVM extends BitInput {
     }
 
     private VMStandardFilters IsStandardFilter(byte[] code, int codeSize) {
-        VMStandardFilterSignature stdList[]={
+        VMStandardFilterSignature stdList[] = {
                 new VMStandardFilterSignature(53, 0xad576887, VMStandardFilters.VMSF_E8),
                 new VMStandardFilterSignature(57, 0x3cd7e57e, VMStandardFilters.VMSF_E8E9),
                 new VMStandardFilterSignature(120, 0x3769893f, VMStandardFilters.VMSF_ITANIUM),
@@ -903,35 +903,35 @@ public class RarVM extends BitInput {
                 new VMStandardFilterSignature(216, 0xbc85e701, VMStandardFilters.VMSF_AUDIO),
                 new VMStandardFilterSignature(40, 0x46b9c560, VMStandardFilters.VMSF_UPCASE)
         };
-        int CodeCRC = RarCRC.checkCrc(0xffffffff,code,0,code.length)^0xffffffff;
-        for (int i=0;i<stdList.length;i++){
-            if (stdList[i].getCRC()==CodeCRC && stdList[i].getLength()==code.length){
-                return(stdList[i].getType());
+        int CodeCRC = RarCRC.checkCrc(0xffffffff, code, 0, code.length) ^ 0xffffffff;
+        for (int i = 0; i < stdList.length; i++) {
+            if (stdList[i].getCRC() == CodeCRC && stdList[i].getLength() == code.length) {
+                return (stdList[i].getType());
             }
 
         }
-        return(VMStandardFilters.VMSF_NONE);
+        return (VMStandardFilters.VMSF_NONE);
     }
 
     @SuppressWarnings("incomplete-switch")
     private void ExecuteStandardFilter(VMStandardFilters filterType) {
-        switch(filterType)
+        switch (filterType)
           {
             case VMSF_E8:
             case VMSF_E8E9:
               {
-                int dataSize=R[4];
-                long fileOffset=R[6]&0xFFffFFff;
+                int dataSize = R[4];
+                long fileOffset = R[6] & 0xFFffFFff;
 
-                if (dataSize>=VM_GLOBALMEMADDR){
+                if (dataSize >= VM_GLOBALMEMADDR) {
                   break;
                 }
-                int fileSize=0x1000000;
-                byte cmpByte2=(byte) ((filterType==VMStandardFilters.VMSF_E8E9) ? 0xe9:0xe8);
-                for (int curPos=0;curPos<dataSize-4;)
+                int fileSize = 0x1000000;
+                byte cmpByte2 = (byte) ((filterType == VMStandardFilters.VMSF_E8E9) ? 0xe9 : 0xe8);
+                for (int curPos = 0; curPos < dataSize - 4;)
                 {
-                  byte curByte=mem[curPos++];
-                  if (curByte==((byte) 0xe8) || curByte==cmpByte2)
+                  byte curByte = mem[curPos++];
+                  if (curByte == ((byte) 0xe8) || curByte == cmpByte2)
                   {
 //        #ifdef PRESENT_INT32
 //                    sint32 Offset=CurPos+FileOffset;
@@ -945,20 +945,20 @@ public class RarVM extends BitInput {
 //                      if (Addr<FileSize)
 //                        SET_VALUE(false,Data,Addr-Offset);
 //        #else
-                    long offset=curPos+fileOffset;
-                    long Addr=getValue(false,mem,curPos);
-                    if ((Addr & 0x80000000)!=0)
+                    long offset = curPos + fileOffset;
+                    long Addr = getValue(false, mem, curPos);
+                    if ((Addr & 0x80000000) != 0)
                     {
-                      if (((Addr+offset) & 0x80000000)==0)
-                        setValue(false,mem,curPos,(int)Addr+fileSize);
+                      if (((Addr + offset) & 0x80000000) == 0)
+                        setValue(false, mem, curPos, (int) Addr + fileSize);
                     }
                     else {
-                      if (((Addr-fileSize) & 0x80000000)!=0){
-                        setValue(false,mem,curPos,(int)(Addr-offset));
+                      if (((Addr - fileSize) & 0x80000000) != 0) {
+                        setValue(false, mem, curPos, (int) (Addr - offset));
                       }
                     }
 //        #endif
-                    curPos+=4;
+                    curPos += 4;
                   }
                 }
               }
@@ -966,59 +966,59 @@ public class RarVM extends BitInput {
             case VMSF_ITANIUM:
               {
 
-                int dataSize=R[4];
-                long fileOffset=R[6]&0xFFffFFff;
+                int dataSize = R[4];
+                long fileOffset = R[6] & 0xFFffFFff;
 
-                if (dataSize>=VM_GLOBALMEMADDR){
+                if (dataSize >= VM_GLOBALMEMADDR) {
                   break;
                 }
-                int curPos=0;
-                final byte Masks[]={4,4,6,6,0,0,7,7,4,4,0,0,4,4,0,0};
-                fileOffset>>>=4;
+                int curPos = 0;
+                final byte Masks[] = {4, 4, 6, 6, 0, 0, 7, 7, 4, 4, 0, 0, 4, 4, 0, 0};
+                fileOffset >>>= 4;
 
-                while (curPos<dataSize-21)
+                while (curPos < dataSize - 21)
                 {
-                  int Byte=(mem[curPos]&0x1f)-0x10;
-                  if (Byte>=0)
+                  int Byte = (mem[curPos] & 0x1f) - 0x10;
+                  if (Byte >= 0)
                   {
 
-                    byte cmdMask=Masks[Byte];
-                    if (cmdMask!=0)
-                      for (int i=0;i<=2;i++)
-                        if ((cmdMask & (1<<i))!=0)
+                    byte cmdMask = Masks[Byte];
+                    if (cmdMask != 0)
+                      for (int i = 0; i <= 2; i++)
+                        if ((cmdMask & (1 << i)) != 0)
                         {
-                          int startPos=i*41+5;
-                          int opType=filterItanium_GetBits(curPos,startPos+37,4);
-                          if (opType==5)
+                          int startPos = i * 41 + 5;
+                          int opType = filterItanium_GetBits(curPos, startPos + 37, 4);
+                          if (opType == 5)
                           {
-                            int offset=filterItanium_GetBits(curPos,startPos+13,20);
-                            filterItanium_SetBits(curPos,(int)(offset-fileOffset)&0xfffff,startPos+13,20);
+                            int offset = filterItanium_GetBits(curPos, startPos + 13, 20);
+                            filterItanium_SetBits(curPos, (int) (offset - fileOffset) & 0xfffff, startPos + 13, 20);
                           }
                         }
                   }
-                  curPos+=16;
+                  curPos += 16;
                   fileOffset++;
                 }
               }
               break;
             case VMSF_DELTA:
               {
-                int dataSize=R[4]&0xFFffFFff;
-                int channels=R[0]&0xFFffFFff;
-                int srcPos=0;
-                int border=(dataSize*2) &0xFFffFFff;
-                setValue(false,mem,VM_GLOBALMEMADDR+0x20,(int)dataSize);
-                if (dataSize>=VM_GLOBALMEMADDR/2){
+                int dataSize = R[4] & 0xFFffFFff;
+                int channels = R[0] & 0xFFffFFff;
+                int srcPos = 0;
+                int border = (dataSize * 2) & 0xFFffFFff;
+                setValue(false, mem, VM_GLOBALMEMADDR + 0x20, (int) dataSize);
+                if (dataSize >= VM_GLOBALMEMADDR / 2) {
                   break;
                 }
 //         bytes from same channels are grouped to continual data blocks,
 //         so we need to place them back to their interleaving positions
 
-                for (int curChannel=0;curChannel<channels;curChannel++)
+                for (int curChannel = 0; curChannel < channels; curChannel++)
                 {
-                  byte PrevByte=0;
-                  for (int destPos=dataSize+curChannel;destPos<border;destPos+=channels){
-                      mem[destPos]=(PrevByte-=mem[srcPos++]);
+                  byte PrevByte = 0;
+                  for (int destPos = dataSize + curChannel; destPos < border; destPos += channels) {
+                      mem[destPos] = (PrevByte -= mem[srcPos++]);
                   }
 
                 }
@@ -1027,124 +1027,124 @@ public class RarVM extends BitInput {
             case VMSF_RGB:
               {
                  // byte *SrcData=Mem,*DestData=SrcData+DataSize;
-                int dataSize=R[4],width=R[0]-3,posR=R[1];
-                int channels=3;
+                int dataSize = R[4], width = R[0] - 3, posR = R[1];
+                int channels = 3;
                 int srcPos = 0;
                 int destDataPos = dataSize;
-                setValue(false,mem,VM_GLOBALMEMADDR+0x20,dataSize);
-                if (dataSize>=VM_GLOBALMEMADDR/2 || posR<0){
+                setValue(false, mem, VM_GLOBALMEMADDR + 0x20, dataSize);
+                if (dataSize >= VM_GLOBALMEMADDR / 2 || posR < 0) {
                   break;
                 }
-                for (int curChannel=0;curChannel<channels;curChannel++)
+                for (int curChannel = 0; curChannel < channels; curChannel++)
                 {
-                  long prevByte=0;
+                  long prevByte = 0;
 
-                  for (int i=curChannel;i<dataSize;i+=channels)
+                  for (int i = curChannel; i < dataSize; i += channels)
                   {
                     long predicted;
-                    int upperPos=i-width;
-                    if (upperPos>=3)
+                    int upperPos = i - width;
+                    if (upperPos >= 3)
                     {
-                      int upperDataPos=destDataPos+upperPos;
-                      int  upperByte=mem[(int)upperDataPos]&0xff;
-                      int upperLeftByte=mem[upperDataPos-3]&0xff;
-                      predicted=prevByte+upperByte-upperLeftByte;
-                      int pa=Math.abs((int)(predicted-prevByte));
-                      int pb=Math.abs((int)(predicted-upperByte));
-                      int pc=Math.abs((int)(predicted-upperLeftByte));
-                      if (pa<=pb && pa<=pc){
-                        predicted=prevByte;
+                      int upperDataPos = destDataPos + upperPos;
+                      int  upperByte = mem[(int) upperDataPos] & 0xff;
+                      int upperLeftByte = mem[upperDataPos - 3] & 0xff;
+                      predicted = prevByte + upperByte - upperLeftByte;
+                      int pa = Math.abs((int) (predicted - prevByte));
+                      int pb = Math.abs((int) (predicted - upperByte));
+                      int pc = Math.abs((int) (predicted - upperLeftByte));
+                      if (pa <= pb && pa <= pc) {
+                        predicted = prevByte;
                       }
-                      else{
-                        if (pb<=pc){
-                          predicted=upperByte;
+                      else {
+                        if (pb <= pc) {
+                          predicted = upperByte;
                         }
-                        else{
-                          predicted=upperLeftByte;
+                        else {
+                          predicted = upperLeftByte;
                         }
                       }
                     }
-                    else{
-                      predicted=prevByte;
+                    else {
+                      predicted = prevByte;
                     }
 
-                    prevByte=(predicted-mem[srcPos++]&0xff)&0xff;
-                    mem[destDataPos+i]=(byte)(prevByte&0xff);
+                    prevByte = (predicted - mem[srcPos++] & 0xff) & 0xff;
+                    mem[destDataPos + i] = (byte) (prevByte & 0xff);
 
                   }
                 }
-                for (int i=posR,border=dataSize-2;i<border;i+=3)
+                for (int i = posR, border = dataSize - 2; i < border; i += 3)
                 {
-                  byte G=mem[destDataPos+i+1];
-                  mem[destDataPos+i]+=G;
-                  mem[destDataPos+i+2]+=G;
+                  byte G = mem[destDataPos + i + 1];
+                  mem[destDataPos + i] += G;
+                  mem[destDataPos + i + 2] += G;
                 }
               }
               break;
             case VMSF_AUDIO:
               {
-                int dataSize=R[4],channels=R[0];
+                int dataSize = R[4], channels = R[0];
                 int srcPos = 0;
                 int destDataPos = dataSize;
                 //byte *SrcData=Mem,*DestData=SrcData+DataSize;
-                setValue(false,mem,VM_GLOBALMEMADDR+0x20,dataSize);
-                if (dataSize>=VM_GLOBALMEMADDR/2){
+                setValue(false, mem, VM_GLOBALMEMADDR + 0x20, dataSize);
+                if (dataSize >= VM_GLOBALMEMADDR / 2) {
                   break;
                 }
-                for (int curChannel=0;curChannel<channels;curChannel++)
+                for (int curChannel = 0; curChannel < channels; curChannel++)
                 {
-                  long prevByte=0;
-                  long prevDelta=0;
+                  long prevByte = 0;
+                  long prevDelta = 0;
                   long Dif[] = new long[7];
-                  int D1=0,D2=0,D3;
-                  int K1=0,K2=0,K3=0;
+                  int D1 = 0, D2 = 0, D3;
+                  int K1 = 0, K2 = 0, K3 = 0;
 
-                  for (int i=curChannel,byteCount=0;i<dataSize;i+=channels,byteCount++)
+                  for (int i = curChannel, byteCount = 0; i < dataSize; i += channels, byteCount++)
                   {
-                    D3=D2;
-                    D2=(int)prevDelta-D1;
-                    D1=(int)prevDelta;
+                    D3 = D2;
+                    D2 = (int) prevDelta - D1;
+                    D1 = (int) prevDelta;
 
-                    long predicted=8*prevByte+K1*D1+K2*D2+K3*D3;
-                    predicted=(predicted>>>3) & 0xff;
+                    long predicted = 8 * prevByte + K1 * D1 + K2 * D2 + K3 * D3;
+                    predicted = (predicted >>> 3) & 0xff;
 
-                    long curByte=mem[srcPos++]&0xff;
+                    long curByte = mem[srcPos++] & 0xff;
 
-                    predicted = (predicted - curByte)&UINT_MASK;
-                    mem[destDataPos+i]=(byte)predicted;
-                    prevDelta=(byte)(predicted-prevByte);
-                    prevByte=predicted;
+                    predicted = (predicted - curByte) & UINT_MASK;
+                    mem[destDataPos + i] = (byte) predicted;
+                    prevDelta = (byte) (predicted - prevByte);
+                    prevByte = predicted;
 
-                    int D=((byte)curByte)<<3;
+                    int D = ((byte) curByte) << 3;
 
-                    Dif[0]+=Math.abs(D);
-                    Dif[1]+=Math.abs(D-D1);
-                    Dif[2]+=Math.abs(D+D1);
-                    Dif[3]+=Math.abs(D-D2);
-                    Dif[4]+=Math.abs(D+D2);
-                    Dif[5]+=Math.abs(D-D3);
-                    Dif[6]+=Math.abs(D+D3);
+                    Dif[0] += Math.abs(D);
+                    Dif[1] += Math.abs(D - D1);
+                    Dif[2] += Math.abs(D + D1);
+                    Dif[3] += Math.abs(D - D2);
+                    Dif[4] += Math.abs(D + D2);
+                    Dif[5] += Math.abs(D - D3);
+                    Dif[6] += Math.abs(D + D3);
 
-                    if ((byteCount & 0x1f)==0)
+                    if ((byteCount & 0x1f) == 0)
                     {
-                      long minDif=Dif[0], numMinDif=0;
-                      Dif[0]=0;
-                      for (int j=1;j<Dif.length;j++)
+                      long minDif = Dif[0], numMinDif = 0;
+                      Dif[0] = 0;
+                      for (int j = 1; j < Dif.length; j++)
                       {
-                        if (Dif[j]<minDif)
+                        if (Dif[j] < minDif)
                         {
-                          minDif=Dif[j];
-                          numMinDif=j;
+                          minDif = Dif[j];
+                          numMinDif = j;
                         }
-                        Dif[j]=0;
+                        Dif[j] = 0;
                       }
-                      switch((int)numMinDif)
+                      switch ((int) numMinDif)
                       {
-                        case 1: if (K1>=-16) K1--; break;
+                        case 1: if (K1 >= -16) K1--; break;
                         case 2: if (K1 < 16) K1++; break;
-                        case 3: if (K2>=-16) K2--; break;
+                        case 3: if (K2 >= -16) K2--; break;
                         case 4: if (K2 < 16) K2++; break;
-                        case 5: if (K3>=-16) K3--; break;
+                        case 5: if (K3 >= -16) K3--; break;
                         case 6: if (K3 < 16) K3++; break;
                       }
                     }
@@ -1154,20 +1154,20 @@ public class RarVM extends BitInput {
               break;
             case VMSF_UPCASE:
               {
-                int dataSize=R[4],srcPos=0,destPos=dataSize;
-                if (dataSize>=VM_GLOBALMEMADDR/2){
+                int dataSize = R[4], srcPos = 0, destPos = dataSize;
+                if (dataSize >= VM_GLOBALMEMADDR / 2) {
                   break;
                 }
-                while (srcPos<dataSize)
+                while (srcPos < dataSize)
                 {
-                  byte curByte=mem[srcPos++];
-                  if (curByte==2 && (curByte=mem[srcPos++])!=2){
-                    curByte-=32;
+                  byte curByte = mem[srcPos++];
+                  if (curByte == 2 && (curByte = mem[srcPos++]) != 2) {
+                    curByte -= 32;
                   }
-                  mem[destPos++]=curByte;
+                  mem[destPos++] = curByte;
                 }
-                setValue(false,mem,VM_GLOBALMEMADDR+0x1c,destPos-dataSize);
-                setValue(false,mem,VM_GLOBALMEMADDR+0x20,dataSize);
+                setValue(false, mem, VM_GLOBALMEMADDR + 0x1c, destPos - dataSize);
+                setValue(false, mem, VM_GLOBALMEMADDR + 0x20, dataSize);
               }
               break;
           }
@@ -1175,44 +1175,44 @@ public class RarVM extends BitInput {
     }
 
     private void filterItanium_SetBits(int curPos, int bitField, int bitPos, int bitCount) {
-        int inAddr=bitPos/8;
-          int inBit=bitPos&7;
-          int andMask=0xffffffff>>>(32-bitCount);
-          andMask=~(andMask<<inBit);
+        int inAddr = bitPos / 8;
+          int inBit = bitPos & 7;
+          int andMask = 0xffffffff >>> (32 - bitCount);
+          andMask = ~(andMask << inBit);
 
-          bitField<<=inBit;
+          bitField <<= inBit;
 
-          for (int i=0;i<4;i++)
+          for (int i = 0; i < 4; i++)
           {
-            mem[curPos+inAddr+i]&=andMask;
-            mem[curPos+inAddr+i]|=bitField;
-            andMask=(andMask>>>8)|0xff000000;
-            bitField>>>=8;
+            mem[curPos + inAddr + i] &= andMask;
+            mem[curPos + inAddr + i] |= bitField;
+            andMask = (andMask >>> 8) | 0xff000000;
+            bitField >>>= 8;
           }
 
     }
 
     private int filterItanium_GetBits(int curPos, int bitPos, int bitCount) {
-         int inAddr=bitPos/8;
-          int inBit=bitPos&7;
-          int bitField=(int)(mem[curPos+inAddr++]&0xff);
-          bitField|=(int) ((mem[curPos+inAddr++]&0xff) << 8);
-          bitField|=(int) ((mem[curPos+inAddr++]&0xff) << 16);
-          bitField|=(int) ((mem[curPos+inAddr]&0xff) << 24);
+         int inAddr = bitPos / 8;
+          int inBit = bitPos & 7;
+          int bitField = (int) (mem[curPos + inAddr++] & 0xff);
+          bitField |= (int) ((mem[curPos + inAddr++] & 0xff) << 8);
+          bitField |= (int) ((mem[curPos + inAddr++] & 0xff) << 16);
+          bitField |= (int) ((mem[curPos + inAddr] & 0xff) << 24);
           bitField >>>= inBit;
-          return(bitField & (0xffffffff>>>(32-bitCount)));
+          return (bitField & (0xffffffff >>> (32 - bitCount)));
     }
 
 
-    public void setMemory(int pos,byte[] data,int offset,int dataSize)
+    public void setMemory(int pos, byte[] data, int offset, int dataSize)
     {
-      if (pos<VM_MEMSIZE){ //&& data!=Mem+Pos)
+      if (pos < VM_MEMSIZE) { //&& data!=Mem+Pos)
         //memmove(Mem+Pos,Data,Min(DataSize,VM_MEMSIZE-Pos));
-        for (int i = 0; i < Math.min(data.length-offset,dataSize); i++) {
-            if((VM_MEMSIZE-pos)<i){
+        for (int i = 0; i < Math.min(data.length - offset, dataSize); i++) {
+            if ((VM_MEMSIZE - pos) < i) {
                 break;
             }
-            mem[pos+i] = data[offset+i];
+            mem[pos + i] = data[offset + i];
         }
       }
     }

@@ -57,15 +57,15 @@ public class Junrar {
         final Archive arch = createArchiveOrThrowException(logger, rar);
 
         final List<ContentDescription> contents = new ArrayList<ContentDescription>();
-        try{
+        try {
             if (arch.isEncrypted()) {
                 logger.warn("archive is encrypted cannot extract");
                 return new ArrayList<ContentDescription>();
             }
-            for(final FileHeader fileHeader : arch ) {
+            for (final FileHeader fileHeader : arch) {
                 contents.add(new ContentDescription(fileHeader.getFileNameString(), fileHeader.getUnpSize()));
             }
-        }finally {
+        } finally {
             arch.close();
         }
         return contents;
@@ -114,8 +114,8 @@ public class Junrar {
         if (!rar.exists()) {
             throw new IllegalArgumentException("the archive does not exit: " + rar);
         }
-        if(!rar.isFile()) {
-            throw new IllegalArgumentException("First argument should be a file but was "+rar.getAbsolutePath());
+        if (!rar.isFile()) {
+            throw new IllegalArgumentException("First argument should be a file but was " + rar.getAbsolutePath());
         }
     }
 
@@ -127,8 +127,8 @@ public class Junrar {
         }
 
         final List<File> extractedFiles = new ArrayList<File>();
-        try{
-            for(final FileHeader fh : arch ) {
+        try {
+            for (final FileHeader fh : arch) {
                 try {
                     final File file = tryToExtract(logger, destination, arch, fh);
                     if (file != null) {
@@ -142,7 +142,7 @@ public class Junrar {
                     throw e;
                 }
             }
-        }finally {
+        } finally {
             arch.close();
         }
         return extractedFiles;
@@ -156,7 +156,7 @@ public class Junrar {
     ) throws IOException, RarException {
         final String fileNameString = fileHeader.getFileNameString();
         if (fileHeader.isEncrypted()) {
-            logger.warn("file is encrypted cannot extract: "+ fileNameString);
+            logger.warn("file is encrypted cannot extract: " + fileNameString);
             return null;
         }
         logger.info("extracting: " + fileNameString);

@@ -36,8 +36,8 @@ public class SEE2Context {
     private int count;
 
     public void init(int initVal) {
-        shift = (ModelPPM.PERIOD_BITS - 4)&0xff;
-        summ = (initVal << shift)&0xffff;
+        shift = (ModelPPM.PERIOD_BITS - 4) & 0xff;
+        summ = (initVal << shift) & 0xffff;
         count = 4;
     }
 
@@ -62,7 +62,7 @@ public class SEE2Context {
     }
 
     public void setCount(int count) {
-        this.count = count&0xff;
+        this.count = count & 0xff;
     }
 
     public int getShift() {
@@ -70,7 +70,7 @@ public class SEE2Context {
     }
 
     public void setShift(int shift) {
-        this.shift = shift&0xff;
+        this.shift = shift & 0xff;
     }
 
     public int getSumm() {
@@ -78,7 +78,7 @@ public class SEE2Context {
     }
 
     public void setSumm(int summ) {
-        this.summ = summ&0xffff;
+        this.summ = summ & 0xffff;
     }
 
     public void incSumm(int dSumm) {

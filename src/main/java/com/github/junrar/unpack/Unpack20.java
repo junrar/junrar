@@ -60,26 +60,26 @@ public abstract class Unpack20 extends Unpack15
 
     protected BitDecode BD = new BitDecode();
 
-    public static final int[] LDecode = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12,
+    public static final int[] LDecode = {0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12,
             14, 16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192,
             224 };
 
-    public static final byte[] LBits = { 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2,
+    public static final byte[] LBits = {0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2,
             2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5 };
 
-    public static final int[] DDecode = { 0, 1, 2, 3, 4, 6, 8, 12, 16, 24, 32,
+    public static final int[] DDecode = {0, 1, 2, 3, 4, 6, 8, 12, 16, 24, 32,
             48, 64, 96, 128, 192, 256, 384, 512, 768, 1024, 1536, 2048, 3072,
             4096, 6144, 8192, 12288, 16384, 24576, 32768, 49152, 65536, 98304,
             131072, 196608, 262144, 327680, 393216, 458752, 524288, 589824,
             655360, 720896, 786432, 851968, 917504, 983040 };
 
-    public static final int[] DBits = { 0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5,
+    public static final int[] DBits = {0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5,
             5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14,
             15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16 };
 
-    public static final int[] SDDecode = { 0, 4, 8, 16, 32, 64, 128, 192 };
+    public static final int[] SDDecode = {0, 4, 8, 16, 32, 64, 128, 192 };
 
-    public static final int[] SDBits = { 2, 2, 3, 4, 5, 6, 6, 6 };
+    public static final int[] SDBits = {2, 2, 3, 4, 5, 6, 6, 6 };
 
     protected void unpack20(boolean solid) throws IOException, RarException
     {
@@ -231,9 +231,9 @@ public abstract class Unpack20 extends Unpack15
         int i;
         long M, N;
 
-        Arrays.fill(lenCount, 0);// memset(LenCount,0,sizeof(LenCount));
+        Arrays.fill(lenCount, 0); // memset(LenCount,0,sizeof(LenCount));
 
-        Arrays.fill(dec.getDecodeNum(), 0);// memset(Dec->DecodeNum,0,Size*sizeof(*Dec->DecodeNum));
+        Arrays.fill(dec.getDecodeNum(), 0); // memset(Dec->DecodeNum,0,Size*sizeof(*Dec->DecodeNum));
 
         for (i = 0; i < size; i++) {
             lenCount[(int) (lenTab[offset + i] & 0xF)]++;
@@ -498,9 +498,9 @@ public abstract class Unpack20 extends Unpack15
         AudioVariables v = AudV[UnpCurChannel];
         v.setByteCount(v.getByteCount() + 1);
         v.setD4(v.getD3());
-        v.setD3(v.getD2());// ->D3=V->D2;
-        v.setD2(v.getLastDelta() - v.getD1());// ->D2=V->LastDelta-V->D1;
-        v.setD1(v.getLastDelta());// V->D1=V->LastDelta;
+        v.setD3(v.getD2()); // ->D3=V->D2;
+        v.setD2(v.getLastDelta() - v.getD1()); // ->D2=V->LastDelta-V->D1;
+        v.setD1(v.getLastDelta()); // V->D1=V->LastDelta;
         // int PCh=8*V->LastChar+V->K1*V->D1 +V->K2*V->D2 +V->K3*V->D3
         // +V->K4*V->D4+ V->K5*UnpChannelDelta;
         int PCh = 8 * v.getLastChar() + v.getK1() * v.getD1();
@@ -512,25 +512,25 @@ public abstract class Unpack20 extends Unpack15
 
         int D = ((byte) Delta) << 3;
 
-        v.getDif()[0] += Math.abs(D);// V->Dif[0]+=abs(D);
-        v.getDif()[1] += Math.abs(D - v.getD1());// V->Dif[1]+=abs(D-V->D1);
-        v.getDif()[2] += Math.abs(D + v.getD1());// V->Dif[2]+=abs(D+V->D1);
-        v.getDif()[3] += Math.abs(D - v.getD2());// V->Dif[3]+=abs(D-V->D2);
-        v.getDif()[4] += Math.abs(D + v.getD2());// V->Dif[4]+=abs(D+V->D2);
-        v.getDif()[5] += Math.abs(D - v.getD3());// V->Dif[5]+=abs(D-V->D3);
-        v.getDif()[6] += Math.abs(D + v.getD3());// V->Dif[6]+=abs(D+V->D3);
-        v.getDif()[7] += Math.abs(D - v.getD4());// V->Dif[7]+=abs(D-V->D4);
-        v.getDif()[8] += Math.abs(D + v.getD4());// V->Dif[8]+=abs(D+V->D4);
-        v.getDif()[9] += Math.abs(D - UnpChannelDelta);// V->Dif[9]+=abs(D-UnpChannelDelta);
-        v.getDif()[10] += Math.abs(D + UnpChannelDelta);// V->Dif[10]+=abs(D+UnpChannelDelta);
+        v.getDif()[0] += Math.abs(D); // V->Dif[0]+=abs(D);
+        v.getDif()[1] += Math.abs(D - v.getD1()); // V->Dif[1]+=abs(D-V->D1);
+        v.getDif()[2] += Math.abs(D + v.getD1()); // V->Dif[2]+=abs(D+V->D1);
+        v.getDif()[3] += Math.abs(D - v.getD2()); // V->Dif[3]+=abs(D-V->D2);
+        v.getDif()[4] += Math.abs(D + v.getD2()); // V->Dif[4]+=abs(D+V->D2);
+        v.getDif()[5] += Math.abs(D - v.getD3()); // V->Dif[5]+=abs(D-V->D3);
+        v.getDif()[6] += Math.abs(D + v.getD3()); // V->Dif[6]+=abs(D+V->D3);
+        v.getDif()[7] += Math.abs(D - v.getD4()); // V->Dif[7]+=abs(D-V->D4);
+        v.getDif()[8] += Math.abs(D + v.getD4()); // V->Dif[8]+=abs(D+V->D4);
+        v.getDif()[9] += Math.abs(D - UnpChannelDelta); // V->Dif[9]+=abs(D-UnpChannelDelta);
+        v.getDif()[10] += Math.abs(D + UnpChannelDelta); // V->Dif[10]+=abs(D+UnpChannelDelta);
 
         v.setLastDelta((byte) (Ch - v.getLastChar()));
         UnpChannelDelta = v.getLastDelta();
-        v.setLastChar(Ch);// V->LastChar=Ch;
+        v.setLastChar(Ch); // V->LastChar=Ch;
 
         if ((v.getByteCount() & 0x1F) == 0) {
             int MinDif = v.getDif()[0], NumMinDif = 0;
-            v.getDif()[0] = 0;// ->Dif[0]=0;
+            v.getDif()[0] = 0; // ->Dif[0]=0;
             for (int I = 1; I < v.getDif().length; I++) {
                 if (v.getDif()[I] < MinDif) {
                     MinDif = v.getDif()[I];
@@ -541,22 +541,22 @@ public abstract class Unpack20 extends Unpack15
             switch (NumMinDif) {
             case 1:
                 if (v.getK1() >= -16) {
-                    v.setK1(v.getK1() - 1);// V->K1--;
+                    v.setK1(v.getK1() - 1); // V->K1--;
                 }
                 break;
             case 2:
                 if (v.getK1() < 16) {
-                    v.setK1(v.getK1() + 1);// V->K1++;
+                    v.setK1(v.getK1() + 1); // V->K1++;
                 }
                 break;
             case 3:
                 if (v.getK2() >= -16) {
-                    v.setK2(v.getK2() - 1);// V->K2--;
+                    v.setK2(v.getK2() - 1); // V->K2--;
                 }
                 break;
             case 4:
                 if (v.getK2() < 16) {
-                    v.setK2(v.getK2() + 1);// V->K2++;
+                    v.setK2(v.getK2() + 1); // V->K2++;
                 }
                 break;
             case 5:

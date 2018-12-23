@@ -24,13 +24,13 @@ package com.github.junrar.unpack.vm;
  * @version $LastChangedRevision$
  */
 public enum VMFlags {
-    VM_FC (1),
-    VM_FZ (2),
-    VM_FS (0x80000000);
+    VM_FC(1),
+    VM_FZ(2),
+    VM_FS(0x80000000);
 
     private int flag;
 
-    private VMFlags(int flag){
+    private VMFlags(int flag) {
         this.flag = flag;
     }
 
@@ -39,14 +39,14 @@ public enum VMFlags {
      * @param flag as int
      * @return VMFlag of the int value
      */
-    public static VMFlags findFlag(int flag){
-        if(VM_FC.equals(flag)){
+    public static VMFlags findFlag(int flag) {
+        if (VM_FC.equals(flag)) {
             return VM_FC;
         }
-        if(VM_FS.equals(flag)){
+        if (VM_FS.equals(flag)) {
             return VM_FS;
         }
-        if(VM_FZ.equals(flag)){
+        if (VM_FZ.equals(flag)) {
             return VM_FZ;
         }
         return null;
@@ -57,7 +57,7 @@ public enum VMFlags {
      * @param flag .
      * @return returns true if the flag is equal to the enum
      */
-    public boolean equals(int flag){
+    public boolean equals(int flag) {
         return this.flag == flag;
     }
 

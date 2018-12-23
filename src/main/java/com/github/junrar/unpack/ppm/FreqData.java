@@ -25,7 +25,7 @@ import com.github.junrar.io.Raw;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class FreqData extends Pointer{
+public class FreqData extends Pointer {
 
     public static final int size = 6;
 
@@ -35,7 +35,7 @@ public class FreqData extends Pointer{
 //        STATE _PACK_ATTR * Stats;
 //    };
 
-    public FreqData(byte[]mem){
+    public FreqData(byte[]mem) {
         super(mem);
     }
 
@@ -46,11 +46,11 @@ public class FreqData extends Pointer{
     }
 
     public int getSummFreq() {
-        return Raw.readShortLittleEndian(mem,  pos)&0xffff;
+        return Raw.readShortLittleEndian(mem,  pos) & 0xffff;
     }
 
     public void setSummFreq(int summFreq) {
-        Raw.writeShortLittleEndian(mem, pos, (short)summFreq);
+        Raw.writeShortLittleEndian(mem, pos, (short) summFreq);
     }
 
     public void incSummFreq(int dSummFreq) {
@@ -58,7 +58,7 @@ public class FreqData extends Pointer{
     }
 
     public int getStats() {
-        return Raw.readIntLittleEndian(mem,  pos+2);
+        return Raw.readIntLittleEndian(mem,  pos + 2);
     }
 
     public void setStats(State state) {
@@ -66,7 +66,7 @@ public class FreqData extends Pointer{
     }
 
     public void setStats(int state) {
-        Raw.writeIntLittleEndian(mem, pos+2, state);
+        Raw.writeIntLittleEndian(mem, pos + 2, state);
     }
 
     public String toString() {

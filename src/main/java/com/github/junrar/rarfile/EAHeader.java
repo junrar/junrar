@@ -45,10 +45,10 @@ extends SubBlockHeader
         super(sb);
         int pos = 0;
         unpSize = Raw.readIntLittleEndian(eahead, pos);
-        pos+=4;
-        unpVer |= eahead[pos]&0xff;
+        pos += 4;
+        unpVer |= eahead[pos] & 0xff;
         pos++;
-        method |= eahead[pos]&0xff;
+        method |= eahead[pos] & 0xff;
         pos++;
         EACRC = Raw.readIntLittleEndian(eahead, pos);
     }
@@ -84,9 +84,9 @@ extends SubBlockHeader
     public void print()
     {
         super.print();
-        logger.info("unpSize: "+unpSize);
+        logger.info("unpSize: " + unpSize);
         logger.info("unpVersion: " + unpVer);
-        logger.info("method: "+method);
+        logger.info("method: " + method);
         logger.info("EACRC:" + EACRC);
     }
 }

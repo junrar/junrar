@@ -63,7 +63,7 @@ public class ReadOnlyAccessInputStream extends InputStream {
             return -1;
         }
         int bytesRead = file.read(b, off,
-                (int)Math.min(len, endPos - curPos));
+                (int) Math.min(len, endPos - curPos));
         curPos += bytesRead;
         return bytesRead;
     }

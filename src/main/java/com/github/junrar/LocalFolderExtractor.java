@@ -12,7 +12,7 @@ import org.apache.commons.logging.LogFactory;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
 
-public class LocalFolderExtractor implements ExtractDestination{
+public class LocalFolderExtractor implements ExtractDestination {
 
     private File folderDestination;
     private static final Log logger = LogFactory.getLog(LocalFolderExtractor.class);

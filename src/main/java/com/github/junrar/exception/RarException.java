@@ -28,31 +28,31 @@ public class RarException extends Exception
     private static final long serialVersionUID = 1L;
     private RarExceptionType type;
 
-    public RarException(Exception e){
-        super(RarExceptionType.unkownError.name(),e);
+    public RarException(Exception e) {
+        super(RarExceptionType.unkownError.name(), e);
         this.type = RarExceptionType.unkownError;
     }
 
-    public RarException(Exception e, RarExceptionType type){
-        super(type.name(),e);
+    public RarException(Exception e, RarExceptionType type) {
+        super(type.name(), e);
         this.type = type;
     }
 
     public RarException(RarException e)
     {
 
-        super(e.getMessage(),e);
+        super(e.getMessage(), e);
         this.type = e.getType();
     }
 
-    public RarException(RarExceptionType type){
+    public RarException(RarExceptionType type) {
         super(type.name());
         this.type = type;
     }
 
 
 
-    public enum RarExceptionType{
+    public enum RarExceptionType {
         notImplementedYet,
         crcError,
         notRarArchive,

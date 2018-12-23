@@ -40,19 +40,19 @@ public class State extends Pointer {
     }
 
     public int getSymbol() {
-        return mem[pos]&0xff;
+        return mem[pos] & 0xff;
     }
 
     public void setSymbol(int symbol) {
-        mem[pos] = (byte)symbol;
+        mem[pos] = (byte) symbol;
     }
 
     public int getFreq() {
-        return mem[pos+1]&0xff;
+        return mem[pos + 1] & 0xff;
     }
 
     public void setFreq(int freq) {
-        mem[pos + 1] = (byte)freq;
+        mem[pos + 1] = (byte) freq;
     }
 
     public void incFreq(int dFreq) {
@@ -60,7 +60,7 @@ public class State extends Pointer {
     }
 
     public int getSuccessor() {
-        return Raw.readIntLittleEndian(mem, pos+2);
+        return Raw.readIntLittleEndian(mem, pos + 2);
     }
 
     public void setSuccessor(PPMContext successor) {
@@ -71,29 +71,29 @@ public class State extends Pointer {
         Raw.writeIntLittleEndian(mem, pos + 2, successor);
     }
 
-    public void setValues(StateRef state){
+    public void setValues(StateRef state) {
         setSymbol(state.getSymbol());
         setFreq(state.getFreq());
         setSuccessor(state.getSuccessor());
     }
 
-    public void setValues(State ptr){
+    public void setValues(State ptr) {
         System.arraycopy(ptr.mem, ptr.pos, mem, pos, size);
     }
 
-    public State decAddress(){
-        setAddress(pos-size);
+    public State decAddress() {
+        setAddress(pos - size);
         return this;
     }
 
-    public State incAddress(){
-        setAddress(pos+size);
+    public State incAddress() {
+        setAddress(pos + size);
         return this;
     }
 
     public static void ppmdSwap(State ptr1, State ptr2) {
-        byte[] mem1=ptr1.mem, mem2=ptr2.mem;
-        for (int i=0, pos1=ptr1.pos, pos2=ptr2.pos; i < size; i++, pos1++, pos2++) {
+        byte[] mem1 = ptr1.mem, mem2 = ptr2.mem;
+        for (int i = 0, pos1 = ptr1.pos, pos2 = ptr2.pos; i < size; i++, pos1++, pos2++) {
             byte temp = mem1[pos1];
             mem1[pos1] = mem2[pos2];
             mem2[pos2] = temp;

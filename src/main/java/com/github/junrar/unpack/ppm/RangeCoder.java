@@ -56,26 +56,26 @@ public class RangeCoder
         low = code = 0L;
         range = 0xFFFFffffL;
         for (int i = 0; i < 4; i++) {
-            code = ((code << 8) | getChar())&uintMask;
+            code = ((code << 8) | getChar()) & uintMask;
         }
     }
 
     public int getCurrentCount()
     {
-        range = (range / subRange.getScale())&uintMask;
-        return (int)((code - low) / (range));
+        range = (range / subRange.getScale()) & uintMask;
+        return (int) ((code - low) / (range));
     }
 
     public long getCurrentShiftCount(int SHIFT)
     {
-        range = range >>>SHIFT;
-        return ((code - low) / (range))&uintMask;
+        range = range >>> SHIFT;
+        return ((code - low) / (range)) & uintMask;
     }
 
     public void decode()
     {
-        low = (low + (range * subRange.getLowCount()))&uintMask;
-        range = (range * (subRange.getHighCount() - subRange.getLowCount()))&uintMask;
+        low = (low + (range * subRange.getLowCount())) & uintMask;
+        range = (range * (subRange.getHighCount() - subRange.getLowCount())) & uintMask;
     }
 
     private int getChar() throws IOException, RarException
@@ -96,12 +96,12 @@ public class RangeCoder
         boolean c2 = false;
         while ((low ^ (low + range)) < TOP || (c2 = range < BOT)) {
             if (c2) {
-                range = (-low & (BOT - 1))&uintMask;
+                range = (-low & (BOT - 1)) & uintMask;
                 c2 = false;
             }
-            code = ((code << 8) | getChar())&uintMask;
-            range = (range << 8)&uintMask;
-            low = (low << 8)&uintMask;
+            code = ((code << 8) | getChar()) & uintMask;
+            range = (range << 8) & uintMask;
+            low = (low << 8) & uintMask;
         }
     }
 
@@ -133,17 +133,17 @@ public class RangeCoder
 
         public void setHighCount(long highCount)
         {
-            this.highCount = highCount&uintMask;
+            this.highCount = highCount & uintMask;
         }
 
         public long getLowCount()
         {
-            return lowCount&uintMask;
+            return lowCount & uintMask;
         }
 
         public void setLowCount(long lowCount)
         {
-            this.lowCount = lowCount&uintMask;
+            this.lowCount = lowCount & uintMask;
         }
 
         public long getScale()
@@ -153,7 +153,7 @@ public class RangeCoder
 
         public void setScale(long scale)
         {
-            this.scale = scale&uintMask;
+            this.scale = scale & uintMask;
         }
 
         public void incScale(int dScale) {

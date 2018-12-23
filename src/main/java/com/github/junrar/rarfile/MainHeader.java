@@ -18,10 +18,9 @@
  */
 package com.github.junrar.rarfile;
 
+import com.github.junrar.io.Raw;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
-import com.github.junrar.io.Raw;
 
 
 /**
@@ -44,10 +43,10 @@ public class MainHeader extends BaseBlock {
         highPosAv = Raw.readShortLittleEndian(mainHeader, pos);
         pos += 2;
         posAv = Raw.readIntLittleEndian(mainHeader, pos);
-        pos+=4;
+        pos += 4;
 
-        if(hasEncryptVersion()){
-            encryptVersion |= mainHeader[pos]&0xff;
+        if (hasEncryptVersion()) {
+            encryptVersion |= mainHeader[pos] & 0xff;
         }
     }
 
@@ -55,8 +54,8 @@ public class MainHeader extends BaseBlock {
      * old cmt block is present
      * @return true if has cmt block
      */
-    public boolean hasArchCmt(){
-        return (this.flags & BaseBlock.MHD_COMMENT)!=0;
+    public boolean hasArchCmt() {
+        return (this.flags & BaseBlock.MHD_COMMENT) != 0;
     }
     /**
      * the version the the encryption
@@ -78,66 +77,67 @@ public class MainHeader extends BaseBlock {
      * returns whether the archive is encrypted
      * @return .
      */
-    public boolean isEncrypted(){
-        return (this.flags & BaseBlock.MHD_PASSWORD)!=0;
+    public boolean isEncrypted() {
+        return (this.flags & BaseBlock.MHD_PASSWORD) != 0;
     }
 
     /**
      *
      * @return whether the archive is a multivolume archive
      */
-    public boolean isMultiVolume(){
-        return (this.flags & BaseBlock.MHD_VOLUME)!=0;
+    public boolean isMultiVolume() {
+        return (this.flags & BaseBlock.MHD_VOLUME) != 0;
     }
 
     /**
      *
      * @return if the archive is a multivolume archive this method returns whether this instance is the first part of the multivolume archive
      */
-    public boolean isFirstVolume(){
-        return (this.flags & BaseBlock.MHD_FIRSTVOLUME)!=0;
+    public boolean isFirstVolume() {
+        return (this.flags & BaseBlock.MHD_FIRSTVOLUME) != 0;
     }
 
-    public void print(){
+    public void print() {
         super.print();
-        StringBuilder str=new StringBuilder();
-        str.append("posav: "+getPosAv());
-        str.append("\nhighposav: "+getHighPosAv());
-        str.append("\nhasencversion: "+hasEncryptVersion()+(hasEncryptVersion()?getEncryptVersion():""));
-        str.append("\nhasarchcmt: "+hasArchCmt());
-        str.append("\nisEncrypted: "+isEncrypted());
-        str.append("\nisMultivolume: "+isMultiVolume());
-        str.append("\nisFirstvolume: "+isFirstVolume());
-        str.append("\nisSolid: "+isSolid());
-        str.append("\nisLocked: "+isLocked());
-        str.append("\nisProtected: "+isProtected());
-        str.append("\nisAV: "+isAV());
+        StringBuilder str = new StringBuilder();
+        str.append("posav: " + getPosAv());
+        str.append("\nhighposav: " + getHighPosAv());
+        str.append("\nhasencversion: " + hasEncryptVersion() + (hasEncryptVersion() ? getEncryptVersion() : ""));
+        str.append("\nhasarchcmt: " + hasArchCmt());
+        str.append("\nisEncrypted: " + isEncrypted());
+        str.append("\nisMultivolume: " + isMultiVolume());
+        str.append("\nisFirstvolume: " + isFirstVolume());
+        str.append("\nisSolid: " + isSolid());
+        str.append("\nisLocked: " + isLocked());
+        str.append("\nisProtected: " + isProtected());
+        str.append("\nisAV: " + isAV());
         logger.info(str.toString());
     }
 
     /**
      * @return whether this archive is solid. in this case you can only extract all file at once
      */
-    public boolean isSolid(){
-        return (this.flags&MHD_SOLID)!=0;
+    public boolean isSolid() {
+        return (this.flags & MHD_SOLID) != 0;
     }
 
-    public boolean isLocked(){
-        return (this.flags&MHD_LOCK)!=0;
+    public boolean isLocked() {
+        return (this.flags & MHD_LOCK) != 0;
     }
 
-    public boolean isProtected(){
-        return (this.flags&MHD_PROTECT)!=0;
+    public boolean isProtected() {
+        return (this.flags & MHD_PROTECT) != 0;
     }
 
-    public boolean isAV(){
-        return (this.flags&MHD_AV)!=0;
+    public boolean isAV() {
+        return (this.flags & MHD_AV) != 0;
     }
+
     /**
      *
      * @return the numbering format a multivolume archive
      */
-    public boolean isNewNumbering(){
-        return (this.flags&MHD_NEWNUMBERING)!=0;
+    public boolean isNewNumbering() {
+        return (this.flags & MHD_NEWNUMBERING) != 0;
     }
 }

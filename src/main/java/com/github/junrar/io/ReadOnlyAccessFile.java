@@ -28,7 +28,7 @@ import java.io.RandomAccessFile;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAccess{
+public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAccess {
 
     /**
      * @param file the file

@@ -31,7 +31,7 @@ import com.github.junrar.io.Raw;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class BaseBlock{
+public class BaseBlock {
 
     private static final Log logger = LogFactory.getLog(BaseBlock.class);
 
@@ -89,45 +89,45 @@ public class BaseBlock{
     protected short headCRC = 0;
     protected byte headerType = 0;
     protected short flags = 0;
-    protected short headerSize = 0 ;
+    protected short headerSize = 0;
 
     /**
      *
      */
-    public BaseBlock(){
+    public BaseBlock() {
 
     }
 
-    public BaseBlock(BaseBlock bb){
+    public BaseBlock(BaseBlock bb) {
         this.flags = bb.getFlags();
         this.headCRC = bb.getHeadCRC();
         this.headerType = bb.getHeaderType().getHeaderByte();
         this.headerSize = bb.getHeaderSize();
         this.positionInFile = bb.getPositionInFile();
     }
-    public BaseBlock(byte[] baseBlockHeader){
+    public BaseBlock(byte[] baseBlockHeader) {
 
         int pos = 0;
         this.headCRC = Raw.readShortLittleEndian(baseBlockHeader, pos);
-        pos+=2;
-        this.headerType |= baseBlockHeader[pos]&0xff;
+        pos += 2;
+        this.headerType |= baseBlockHeader[pos] & 0xff;
         pos++;
         this.flags = Raw.readShortLittleEndian(baseBlockHeader, pos);
-        pos+=2;
+        pos += 2;
         this.headerSize = Raw.readShortLittleEndian(baseBlockHeader, pos);
     }
 
 
-    public boolean hasArchiveDataCRC(){
-        return (this.flags & EARC_DATACRC)!=0;
+    public boolean hasArchiveDataCRC() {
+        return (this.flags & EARC_DATACRC) != 0;
     }
 
-    public boolean hasVolumeNumber(){
-        return (this.flags & EARC_VOLNUMBER)!=0;
+    public boolean hasVolumeNumber() {
+        return (this.flags & EARC_VOLNUMBER) != 0;
     }
 
-    public boolean hasEncryptVersion(){
-        return (flags & MHD_ENCRYPTVER)!=0;
+    public boolean hasEncryptVersion() {
+        return (flags & MHD_ENCRYPTVER) != 0;
     }
 
     /**
@@ -135,14 +135,14 @@ public class BaseBlock{
      */
     public boolean isSubBlock()
     {
-         if (UnrarHeadertype.SubHeader.equals(headerType)){
-             return(true);
+         if (UnrarHeadertype.SubHeader.equals(headerType)) {
+             return (true);
          }
-         if (UnrarHeadertype.NewSubHeader.equals(headerType) && (flags & LHD_SOLID)!=0)
+         if (UnrarHeadertype.NewSubHeader.equals(headerType) && (flags & LHD_SOLID) != 0)
          {
-             return(true);
+             return (true);
          }
-         return(false);
+         return (false);
 
     }
 
@@ -170,13 +170,13 @@ public class BaseBlock{
         this.positionInFile = positionInFile;
     }
 
-    public void print(){
-        StringBuilder str  =new StringBuilder();
+    public void print() {
+        StringBuilder str = new StringBuilder();
         str.append("HeaderType: " + getHeaderType());
-        str.append("\nHeadCRC: "+Integer.toHexString(getHeadCRC()));
-        str.append("\nFlags: "+Integer.toHexString(getFlags()));
-        str.append("\nHeaderSize: "+getHeaderSize());
-        str.append("\nPosition in file: "+getPositionInFile());
+        str.append("\nHeadCRC: " + Integer.toHexString(getHeadCRC()));
+        str.append("\nFlags: " + Integer.toHexString(getFlags()));
+        str.append("\nHeaderSize: " + getHeaderSize());
+        str.append("\nPosition in file: " + getPositionInFile());
         logger.info(str.toString());
     }
 }

@@ -17,11 +17,11 @@
  */
 package com.github.junrar.unpack.ppm;
 
-import java.io.IOException;
-import java.util.Arrays;
-
 import com.github.junrar.exception.RarException;
 import com.github.junrar.unpack.Unpack;
+
+import java.io.IOException;
+import java.util.Arrays;
 
 
 /**
@@ -73,7 +73,7 @@ public class ModelPPM
 
     private SubAllocator subAlloc = new SubAllocator();
 
-    private static int InitBinEsc[] = { 0x3CDD, 0x1F3F, 0x59BF, 0x48F3,
+    private static int InitBinEsc[] = {0x3CDD, 0x1F3F, 0x59BF, 0x48F3,
             0x64A1, 0x5ABC, 0x6632, 0x6051 };
 
     // Temp fields
@@ -111,7 +111,7 @@ public class ModelPPM
         minContext.setSuffix(0);
         orderFall = maxOrder;
         minContext.setNumStats(256);
-        minContext.getFreqData().setSummFreq(minContext.getNumStats()+1);
+        minContext.getFreqData().setSummFreq(minContext.getNumStats() + 1);
 
         addr = subAlloc.allocUnits(256 / 2);
         foundState.setAddress(addr);
@@ -253,7 +253,7 @@ public class ModelPPM
             coder.ariDecNormalize();
             do {
                 orderFall++;
-                minContext.setAddress(minContext.getSuffix());// =MinContext->Suffix;
+                minContext.setAddress(minContext.getSuffix()); // =MinContext->Suffix;
                 if (minContext.getAddress() <= subAlloc.getPText()
                         || minContext.getAddress() > subAlloc.getHeapEnd()) {
                     return (-1);
@@ -277,7 +277,7 @@ public class ModelPPM
                 clearMask();
             }
         }
-        coder.ariDecNormalize();// ARI_DEC_NORMALIZE(Coder.code,Coder.low,Coder.range,Coder.UnpackRead);
+        coder.ariDecNormalize(); // ARI_DEC_NORMALIZE(Coder.code,Coder.low,Coder.range,Coder.UnpackRead);
         return (Symbol);
     }
 
@@ -298,7 +298,7 @@ public class ModelPPM
 
     public void setEscCount(int escCount)
     {
-        this.escCount = escCount&0xff;
+        this.escCount = escCount & 0xff;
     }
 
     public int getEscCount()
@@ -327,7 +327,7 @@ public class ModelPPM
 
     public void setPrevSuccess(int prevSuccess)
     {
-        this.prevSuccess = prevSuccess&0xff;
+        this.prevSuccess = prevSuccess & 0xff;
     }
 
     public int getInitEsc()
@@ -366,7 +366,7 @@ public class ModelPPM
 
     public void setHiBitsFlag(int hiBitsFlag)
     {
-        this.hiBitsFlag = hiBitsFlag&0xff;
+        this.hiBitsFlag = hiBitsFlag & 0xff;
     }
 
     public int[][] getBinSumm()
@@ -428,7 +428,7 @@ public class ModelPPM
         boolean noLoop = false;
 
         if (!Skip) {
-            ps[pps++] = foundState.getAddress();// *pps++ = FoundState;
+            ps[pps++] = foundState.getAddress(); // *pps++ = FoundState;
             if (pc.getSuffix() == 0) {
                 noLoop = true;
             }
@@ -437,26 +437,26 @@ public class ModelPPM
             boolean loopEntry = false;
             if (p1.getAddress() != 0) {
                 p.setAddress(p1.getAddress());
-                pc.setAddress(pc.getSuffix());// =pc->Suffix;
+                pc.setAddress(pc.getSuffix()); // =pc->Suffix;
                 loopEntry = true;
             }
             do {
                 if (!loopEntry) {
-                    pc.setAddress(pc.getSuffix());// pc=pc->Suffix;
+                    pc.setAddress(pc.getSuffix()); // pc=pc->Suffix;
                     if (pc.getNumStats() != 1) {
-                        p.setAddress(pc.getFreqData().getStats());// p=pc->U.Stats
+                        p.setAddress(pc.getFreqData().getStats()); // p=pc->U.Stats
                         if (p.getSymbol() != foundState.getSymbol()) {
                             do {
                                 p.incAddress();
                             } while (p.getSymbol() != foundState.getSymbol());
                         }
                     } else {
-                        p.setAddress(pc.getOneState().getAddress());// p=&(pc->OneState);
+                        p.setAddress(pc.getOneState().getAddress()); // p=&(pc->OneState);
                     }
-                }// LOOP_ENTRY:
+                } // LOOP_ENTRY:
                 loopEntry = false;
                 if (p.getSuccessor() != upBranch.getAddress()) {
-                    pc.setAddress(p.getSuccessor());// =p->Successor;
+                    pc.setAddress(p.getSuccessor()); // =p->Successor;
                     break;
                 }
                 ps[pps++] = p.getAddress();
@@ -466,8 +466,8 @@ public class ModelPPM
         if (pps == 0) {
             return pc.getAddress();
         }
-        upState.setSymbol(getHeap()[upBranch.getAddress()]);// UpState.Symbol=*(byte*)
-                                                            // UpBranch;
+        upState.setSymbol(getHeap()[upBranch.getAddress()]); // UpState.Symbol=*(byte*)
+                                                             // UpBranch;
         // UpState.Successor=(PPM_CONTEXT*) (((byte*) UpBranch)+1);
         upState.setSuccessor(upBranch.getAddress() + 1); //TODO check if +1 necessary
         if (pc.getNumStats() != 1) {
@@ -483,10 +483,10 @@ public class ModelPPM
             int cf = p.getFreq() - 1;
             int s0 = pc.getFreqData().getSummFreq() - pc.getNumStats() - cf;
             // UpState.Freq=1+((2*cf <= s0)?(5*cf > s0):((2*cf+3*s0-1)/(2*s0)));
-            upState.setFreq(1 + ((2 * cf <= s0) ? (5 * cf > s0 ? 1 : 0) :
-                    ((2 * cf + 3 * s0 - 1) / (2 * s0))));
+            upState.setFreq(1 + ((2 * cf <= s0) ? (5 * cf > s0 ? 1 : 0)
+                    : ((2 * cf + 3 * s0 - 1) / (2 * s0))));
         } else {
-            upState.setFreq(pc.getOneState().getFreq());// UpState.Freq=pc->OneState.Freq;
+            upState.setFreq(pc.getOneState().getFreq()); // UpState.Freq=pc->OneState.Freq;
         }
         do {
             // pc = pc->createChild(this,*--pps,UpState);
@@ -553,7 +553,7 @@ public class ModelPPM
             }
             return;
         }
-        subAlloc.getHeap()[subAlloc.getPText()] = (byte)fs.getSymbol();
+        subAlloc.getHeap()[subAlloc.getPText()] = (byte) fs.getSymbol();
         subAlloc.incPText();
         successor.setAddress(subAlloc.getPText());
         if (subAlloc.getPText() >= subAlloc.getFakeUnitsStart()) {
@@ -604,8 +604,8 @@ public class ModelPPM
 //                        2 * ((4 * ((ns1 <= ns) ? 1 : 0)) & ((pc.getFreqData()
 //                              .getSummFreq() <= 8 * ns1) ? 1 : 0));
                 int sum = ((2 * ns1 < ns) ? 1 : 0) + 2 * (
-                        ((4 * ns1 <= ns) ? 1 : 0) &
-                        ((pc.getFreqData().getSummFreq() <= 8 * ns1) ? 1 : 0)
+                        ((4 * ns1 <= ns) ? 1 : 0)
+                        & ((pc.getFreqData().getSummFreq() <= 8 * ns1) ? 1 : 0)
                         );
                 pc.getFreqData().incSummFreq(sum);
             }
@@ -633,11 +633,11 @@ public class ModelPPM
                 pc.getFreqData().incSummFreq(3);
             }
             else {
-                cf = 4 + (cf >= 9 * sf ? 1 : 0) + (cf >= 12 * sf ? 1 : 0) +
-                        (cf >= 15 * sf ? 1 : 0);
+                cf = 4 + (cf >= 9 * sf ? 1 : 0) + (cf >= 12 * sf ? 1 : 0)
+                        + (cf >= 15 * sf ? 1 : 0);
                 pc.getFreqData().incSummFreq(cf);
             }
-            p.setAddress(pc.getFreqData().getStats() + ns1*State.size);
+            p.setAddress(pc.getFreqData().getStats() + ns1 * State.size);
             p.setSuccessor(successor);
             p.setSymbol(fs.getSymbol());
             p.setFreq(cf);

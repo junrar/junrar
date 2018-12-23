@@ -36,20 +36,20 @@ public class MarkHeader extends BaseBlock {
 
     private RARVersion version;
 
-    public MarkHeader(BaseBlock bb){
+    public MarkHeader(BaseBlock bb) {
         super(bb);
     }
-    public boolean isValid(){
-        if(!(getHeadCRC() == 0x6152)){
+    public boolean isValid() {
+        if (!(getHeadCRC() == 0x6152)) {
             return false;
         }
-        if(!(getHeaderType() == UnrarHeadertype.MarkHeader)){
+        if (!(getHeaderType() == UnrarHeadertype.MarkHeader)) {
             return false;
         }
-        if(!(getFlags() == 0x1a21)){
+        if (!(getFlags() == 0x1a21)) {
             return false;
         }
-        if(!(getHeaderSize() == BaseBlockSize)){
+        if (!(getHeaderSize() == BaseBlockSize)) {
             return false;
         }
         return true;
@@ -84,8 +84,8 @@ public class MarkHeader extends BaseBlock {
         return version;
     }
     
-    public void print(){
+    public void print() {
         super.print();
-        logger.info("valid: "+isValid());
+        logger.info("valid: " + isValid());
     }
 }

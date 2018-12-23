@@ -24,15 +24,15 @@ package com.github.junrar.unpack.vm;
  * @version $LastChangedRevision$
  */
 public enum VMOpType {
-    VM_OPREG (0),
-    VM_OPINT (1),
-    VM_OPREGMEM (2),
-    VM_OPNONE (3);
+    VM_OPREG(0),
+    VM_OPINT(1),
+    VM_OPREGMEM(2),
+    VM_OPNONE(3);
 
     private int opType;
 
-    private VMOpType(int opType){
-        this.opType=opType;
+    private VMOpType(int opType) {
+        this.opType = opType;
     }
 
     public int getOpType() {
@@ -40,10 +40,10 @@ public enum VMOpType {
     }
 
 
-    public boolean equals(int opType){
+    public boolean equals(int opType) {
         return this.opType == opType;
     }
-    public static VMOpType findOpType(int opType){
+    public static VMOpType findOpType(int opType) {
 
         if (VM_OPREG.equals(opType)) {
             return VM_OPREG;

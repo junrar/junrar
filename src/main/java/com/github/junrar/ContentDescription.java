@@ -39,7 +39,7 @@ public class ContentDescription {
 
     @Override
     public String toString() {
-        return path + ": "+size;
+        return path + ": " + size;
     }
 
 

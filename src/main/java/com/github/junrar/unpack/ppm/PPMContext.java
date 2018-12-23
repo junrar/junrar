@@ -45,7 +45,7 @@ public class PPMContext extends Pointer
     private int suffix; // pointer ppmcontext
 
     public final static int[] ExpEscape =
-            { 25, 14, 9, 7, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2 };
+            {25, 14, 9, 7, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2 };
 
     // Temp fields
     private final State tempState1 = new State(null);
@@ -84,17 +84,17 @@ public class PPMContext extends Pointer
 
     public final int getNumStats()
     {
-        if (mem!=null){
-            numStats = Raw.readShortLittleEndian(mem,  pos)&0xffff;
+        if (mem != null) {
+            numStats = Raw.readShortLittleEndian(mem,  pos) & 0xffff;
         }
         return numStats;
     }
 
     public final void setNumStats(int numStats)
     {
-        this.numStats = numStats&0xffff;
+        this.numStats = numStats & 0xffff;
         if (mem != null) {
-            Raw.writeShortLittleEndian(mem, pos, (short)numStats);
+            Raw.writeShortLittleEndian(mem, pos, (short) numStats);
         }
     }
 
@@ -110,8 +110,8 @@ public class PPMContext extends Pointer
 
     public int getSuffix()
     {
-        if(mem!=null){
-            suffix = Raw.readIntLittleEndian(mem,  pos+8);
+        if (mem != null) {
+            suffix = Raw.readIntLittleEndian(mem, pos + 8);
         }
         return suffix;
     }
@@ -133,8 +133,8 @@ public class PPMContext extends Pointer
     public void setAddress(int pos)
     {
         super.setAddress(pos);
-        oneState.setAddress(pos+2);
-        freqData.setAddress(pos+2);
+        oneState.setAddress(pos + 2);
+        freqData.setAddress(pos + 2);
     }
 
     private PPMContext getTempPPMContext(byte[] mem) {
@@ -218,7 +218,7 @@ public class PPMContext extends Pointer
                     tmp.decFreq(tmp.getFreq() >>> 1);
                     EscFreq >>>= 1;
                 } while (EscFreq > 1);
-                model.getSubAlloc().freeUnits(freqData.getStats(),(OldNS + 1) >>> 1);
+                model.getSubAlloc().freeUnits(freqData.getStats(), (OldNS + 1) >>> 1);
                 oneState.setValues(tmp);
                 model.getFoundState().setAddress(oneState.getAddress());
                 return;
@@ -240,20 +240,20 @@ public class PPMContext extends Pointer
         int ret = 0;
         ret += Model.getPrevSuccess();
         ret += Model.getNS2BSIndx()[tempSuffix.getNumStats() - 1];
-        ret += Model.getHiBitsFlag() + 2* Model.getHB2Flag()[rs.getSymbol()];
+        ret += Model.getHiBitsFlag() + 2 * Model.getHB2Flag()[rs.getSymbol()];
         ret += ((Model.getRunLength() >>> 26) & 0x20);
         return ret;
     }
 
     public int getMean(int summ, int shift, int round)
     {
-        return ( (summ + (1 << (shift - round) ) ) >>> (shift) );
+        return ((summ + (1 << (shift - round))) >>> (shift));
     }
 
     public void decodeBinSymbol(ModelPPM model)
     {
         State rs = tempState1.init(model.getHeap());
-        rs.setAddress(oneState.getAddress());// State&
+        rs.setAddress(oneState.getAddress()); // State&
         model.setHiBitsFlag(model.getHB2Flag()[model.getFoundState().getSymbol()]);
         int off1 = rs.getFreq() - 1;
         int off2 = getArrayIndex(model, rs);
@@ -328,7 +328,7 @@ public class PPMContext extends Pointer
 
         do {
             do {
-                p.incAddress();// p++;
+                p.incAddress(); // p++;
             } while (model.getCharMask()[p.getSymbol()] == model.getEscCount());
             hiCnt += p.getFreq();
             ps[pps++] = p.getAddress();
@@ -343,7 +343,7 @@ public class PPMContext extends Pointer
         if (count < hiCnt) {
             hiCnt = 0;
             while ((hiCnt += p.getFreq()) <= count) {
-                p.setAddress(ps[++pps]);// p=*++pps;
+                p.setAddress(ps[++pps]); // p=*++pps;
             }
             coder.getSubRange().setHighCount(hiCnt);
             coder.getSubRange().setLowCount(hiCnt - p.getFreq());
@@ -352,13 +352,13 @@ public class PPMContext extends Pointer
         } else {
             coder.getSubRange().setLowCount(hiCnt);
             coder.getSubRange().setHighCount(coder.getSubRange().getScale());
-            i = getNumStats() - model.getNumMasked();// ->NumMasked;
+            i = getNumStats() - model.getNumMasked(); // ->NumMasked;
             pps--;
             do {
-                temp.setAddress(ps[++pps]);// (*++pps)
+                temp.setAddress(ps[++pps]); // (*++pps)
                 model.getCharMask()[temp.getSymbol()] = model.getEscCount();
             } while (--i != 0);
-            psee2c.incSumm((int)coder.getSubRange().getScale());
+            psee2c.incSumm((int) coder.getSubRange().getScale());
             model.setNumMasked(getNumStats());
         }
         return (true);
@@ -449,7 +449,7 @@ public class PPMContext extends Pointer
                 return (true);
             }
         }
-        coder.getSubRange().setLowCount(HiCnt-p.getFreq());
+        coder.getSubRange().setLowCount(HiCnt - p.getFreq());
         coder.getSubRange().setHighCount(HiCnt);
         update1(model, p.getAddress());
         return (true);

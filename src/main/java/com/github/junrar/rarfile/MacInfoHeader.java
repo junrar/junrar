@@ -43,7 +43,7 @@ extends SubBlockHeader
         super(sb);
         int pos = 0;
         fileType = Raw.readIntLittleEndian(macHeader, pos);
-        pos+=4;
+        pos += 4;
         fileCreator = Raw.readIntLittleEndian(macHeader, pos);
     }
 
@@ -75,10 +75,10 @@ extends SubBlockHeader
         this.fileType = fileType;
     }
 
-    public void print(){
+    public void print() {
         super.print();
-        logger.info("filetype: "+fileType);
-        logger.info("creator :"+fileCreator);
+        logger.info("filetype: " + fileType);
+        logger.info("creator :" + fileCreator);
     }
 
 }

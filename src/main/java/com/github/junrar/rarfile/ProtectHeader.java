@@ -39,17 +39,17 @@ public class ProtectHeader extends BlockHeader {
     private byte mark;
 
 
-    public ProtectHeader(BlockHeader bh, byte[] protectHeader){
+    public ProtectHeader(BlockHeader bh, byte[] protectHeader) {
         super(bh);
 
         int pos = 0;
-        version |= protectHeader[pos]&0xff;
+        version |= protectHeader[pos] & 0xff;
 
         recSectors = Raw.readShortLittleEndian(protectHeader, pos);
         pos += 2;
         totalBlocks = Raw.readIntLittleEndian(protectHeader, pos);
         pos += 4;
-        mark |= protectHeader[pos]&0xff;
+        mark |= protectHeader[pos] & 0xff;
     }
 
 

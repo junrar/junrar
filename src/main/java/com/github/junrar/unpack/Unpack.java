@@ -77,7 +77,7 @@ public final class Unpack extends Unpack20 {
 
     private int lowDistRepCount;
 
-    public static int[] DBitLengthCounts = { 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+    public static int[] DBitLengthCounts = {4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
         2, 2, 2, 2, 2, 14, 0, 12 };
 
     public Unpack(ComprDataIO DataIO) {
@@ -361,11 +361,11 @@ public final class Unpack extends Unpack20 {
         continue;
         }
         if (flt.isNextWindow()) {
-        flt.setNextWindow(false);// ->NextWindow=false;
+        flt.setNextWindow(false); // ->NextWindow=false;
         continue;
         }
-        int BlockStart = flt.getBlockStart();// ->BlockStart;
-        int BlockLength = flt.getBlockLength();// ->BlockLength;
+        int BlockStart = flt.getBlockStart(); // ->BlockStart;
+        int BlockLength = flt.getBlockLength(); // ->BlockLength;
         if (((BlockStart - WrittenBorder) & Compress.MAXWINMASK) < WriteSize) {
         if (WrittenBorder != BlockStart) {
             UnpWriteArea(WrittenBorder, BlockStart);
@@ -414,7 +414,7 @@ public final class Unpack extends Unpack20 {
             if (ParentPrg.getGlobalData().size() < Prg
                 .getGlobalData().size()) {
                 ParentPrg.getGlobalData().setSize(
-                    Prg.getGlobalData().size());// ->GlobalData.Alloc(Prg->GlobalData.Size());
+                    Prg.getGlobalData().size()); // ->GlobalData.Alloc(Prg->GlobalData.Size());
             }
             // memcpy(&ParentPrg->GlobalData[VM_FIXEDGLOBALSIZE],&Prg->GlobalData[VM_FIXEDGLOBALSIZE],Prg->GlobalData.Size()-VM_FIXEDGLOBALSIZE);
             for (int i = 0; i < Prg.getGlobalData().size()
@@ -433,7 +433,7 @@ public final class Unpack extends Unpack20 {
             byte[] FilteredData = new byte[FilteredDataSize];
 
             for (int i = 0; i < FilteredDataSize; i++) {
-            FilteredData[i] = rarVM.getMem()[FilteredDataOffset + i];// Prg.getGlobalData().get(FilteredDataOffset
+            FilteredData[i] = rarVM.getMem()[FilteredDataOffset + i]; // Prg.getGlobalData().get(FilteredDataOffset
                                          // +
                                          // i);
             }
@@ -449,7 +449,7 @@ public final class Unpack extends Unpack20 {
             }
             // apply several filters to same data block
 
-            rarVM.setMemory(0, FilteredData, 0, FilteredDataSize);// .SetMemory(0,FilteredData,FilteredDataSize);
+            rarVM.setMemory(0, FilteredData, 0, FilteredDataSize); // .SetMemory(0,FilteredData,FilteredDataSize);
 
             VMPreparedProgram pPrg = filters.get(
                 NextFilter.getParentFilter()).getPrg();
@@ -596,7 +596,7 @@ public final class Unpack extends Unpack20 {
         lastDist = 0;
         lastLength = 0;
 
-        Arrays.fill(unpOldTable, (byte) 0);// memset(UnpOldTable,0,sizeof(UnpOldTable));
+        Arrays.fill(unpOldTable, (byte) 0); // memset(UnpOldTable,0,sizeof(UnpOldTable));
 
         unpPtr = 0;
         wrPtr = 0;
@@ -657,7 +657,7 @@ public final class Unpack extends Unpack20 {
     lowDistRepCount = 0;
 
     if ((bitField & 0x4000) == 0) {
-        Arrays.fill(unpOldTable, (byte) 0);// memset(UnpOldTable,0,sizeof(UnpOldTable));
+        Arrays.fill(unpOldTable, (byte) 0); // memset(UnpOldTable,0,sizeof(UnpOldTable));
     }
     faddbits(2);
 
@@ -791,7 +791,7 @@ public final class Unpack extends Unpack20 {
         if (Ch == -1) {
         return (false);
         }
-        vmCode.add(Byte.valueOf((byte) Ch));// VMCode[I]=Ch;
+        vmCode.add(Byte.valueOf((byte) Ch)); // VMCode[I]=Ch;
     }
     return (addVMCode(FirstByte, vmCode, Length));
     }
@@ -843,11 +843,11 @@ public final class Unpack extends Unpack20 {
     {
         Filter = filters.get(FiltPos);
         StackFilter.setParentFilter(FiltPos);
-        Filter.setExecCount(Filter.getExecCount() + 1);// ->ExecCount++;
+        Filter.setExecCount(Filter.getExecCount() + 1); // ->ExecCount++;
     }
 
     prgStack.add(StackFilter);
-    StackFilter.setExecCount(Filter.getExecCount());// ->ExecCount;
+    StackFilter.setExecCount(Filter.getExecCount()); // ->ExecCount;
 
     int BlockStart = RarVM.ReadData(Inp);
     if ((firstByte & 0x40) != 0) {
@@ -872,9 +872,9 @@ public final class Unpack extends Unpack20 {
 
     // memset(StackFilter->Prg.InitR,0,sizeof(StackFilter->Prg.InitR));
     Arrays.fill(StackFilter.getPrg().getInitR(), 0);
-    StackFilter.getPrg().getInitR()[3] = RarVM.VM_GLOBALMEMADDR;// StackFilter->Prg.InitR[3]=VM_GLOBALMEMADDR;
-    StackFilter.getPrg().getInitR()[4] = StackFilter.getBlockLength();// StackFilter->Prg.InitR[4]=StackFilter->BlockLength;
-    StackFilter.getPrg().getInitR()[5] = StackFilter.getExecCount();// StackFilter->Prg.InitR[5]=StackFilter->ExecCount;
+    StackFilter.getPrg().getInitR()[3] = RarVM.VM_GLOBALMEMADDR; // StackFilter->Prg.InitR[3]=VM_GLOBALMEMADDR;
+    StackFilter.getPrg().getInitR()[4] = StackFilter.getBlockLength(); // StackFilter->Prg.InitR[4]=StackFilter->BlockLength;
+    StackFilter.getPrg().getInitR()[5] = StackFilter.getExecCount(); // StackFilter->Prg.InitR[5]=StackFilter->ExecCount;
 
     if ((firstByte & 0x10) != 0) // set registers to optional parameters
     // if any
@@ -905,8 +905,8 @@ public final class Unpack extends Unpack20 {
         // VM.Prepare(&VMCode[0],VMCodeSize,&Filter->Prg);
         rarVM.prepare(VMCode, VMCodeSize, Filter.getPrg());
     }
-    StackFilter.getPrg().setAltCmd(Filter.getPrg().getCmd());// StackFilter->Prg.AltCmd=&Filter->Prg.Cmd[0];
-    StackFilter.getPrg().setCmdCount(Filter.getPrg().getCmdCount());// StackFilter->Prg.CmdCount=Filter->Prg.CmdCount;
+    StackFilter.getPrg().setAltCmd(Filter.getPrg().getCmd()); // StackFilter->Prg.AltCmd=&Filter->Prg.Cmd[0];
+    StackFilter.getPrg().setCmdCount(Filter.getPrg().getCmdCount()); // StackFilter->Prg.CmdCount=Filter->Prg.CmdCount;
 
     int StaticDataSize = Filter.getPrg().getStaticData().size();
     if (StaticDataSize > 0 && StaticDataSize < RarVM.VM_GLOBALMEMSIZE) {

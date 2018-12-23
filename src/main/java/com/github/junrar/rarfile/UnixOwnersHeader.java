@@ -1,9 +1,8 @@
 package com.github.junrar.rarfile;
 
+import com.github.junrar.io.Raw;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
-import com.github.junrar.io.Raw;
 
 
 public class UnixOwnersHeader 
@@ -18,17 +17,17 @@ extends SubBlockHeader
     public  UnixOwnersHeader(SubBlockHeader sb, byte[] uoHeader) {
         super(sb);
         int pos = 0;
-        ownerNameSize = Raw.readShortLittleEndian(uoHeader, pos)&0xFFFF;
-        pos+=2;
-        groupNameSize = Raw.readShortLittleEndian(uoHeader, pos)&0xFFFF;
-        pos+=2;
-        if(pos+ownerNameSize<uoHeader.length){
+        ownerNameSize = Raw.readShortLittleEndian(uoHeader, pos) & 0xFFFF;
+        pos += 2;
+        groupNameSize = Raw.readShortLittleEndian(uoHeader, pos) & 0xFFFF;
+        pos += 2;
+        if (pos + ownerNameSize < uoHeader.length) {
             byte[] ownerBuffer = new byte[ownerNameSize];
             System.arraycopy(uoHeader, pos, ownerBuffer, 0, ownerNameSize);
             owner = new String(ownerBuffer);
         }
-        pos+=ownerNameSize;
-        if(pos+groupNameSize<uoHeader.length){
+        pos += ownerNameSize;
+        if (pos + groupNameSize < uoHeader.length) {
             byte[] groupBuffer = new byte[groupNameSize];
             System.arraycopy(uoHeader, pos, groupBuffer, 0, groupNameSize);
             group = new String(groupBuffer);
@@ -86,11 +85,11 @@ extends SubBlockHeader
     /* (non-Javadoc)
      * @see de.innosystec.unrar.rarfile.SubBlockHeader#print()
      */
-    public void print(){
+    public void print() {
         super.print();
-        logger.info("ownerNameSize: "+ownerNameSize);
-        logger.info("owner: "+owner);
-        logger.info("groupNameSize: "+groupNameSize);
-        logger.info("group: "+group);
+        logger.info("ownerNameSize: " + ownerNameSize);
+        logger.info("owner: " + owner);
+        logger.info("groupNameSize: " + groupNameSize);
+        logger.info("group: " + group);
     }
 }

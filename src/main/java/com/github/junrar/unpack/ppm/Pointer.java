@@ -32,14 +32,14 @@ public abstract class Pointer
      * Initialize the object with the array (may be null)
      * @param mem the byte array
      */
-    public Pointer(byte[] mem){
+    public Pointer(byte[] mem) {
         this.mem = mem;
     }
     /**
      * returns the position of this object in the byte[]
      * @return the address of this object
      */
-    public int getAddress(){
+    public int getAddress() {
         assert (mem != null);
         return pos;
     }

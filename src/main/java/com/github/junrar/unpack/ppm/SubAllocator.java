@@ -178,10 +178,10 @@ public class SubAllocator {
     }
     for (i = 0, s0.setPrev(s0), s0.setNext(s0); i < N_INDEXES; i++) {
         while (freeList[i].getNext() != 0) {
-        p.setAddress(removeNode(i));// =(RAR_MEM_BLK*)RemoveNode(i);
-        p.insertAt(s0);// p->insertAt(&s0);
-        p.setStamp(0xFFFF);// p->Stamp=0xFFFF;
-        p.setNU(indx2Units[i]);// p->NU=Indx2Units[i];
+        p.setAddress(removeNode(i)); // =(RAR_MEM_BLK*)RemoveNode(i);
+        p.insertAt(s0); // p->insertAt(&s0);
+        p.setStamp(0xFFFF); // p->Stamp=0xFFFF;
+        p.setNU(indx2Units[i]); // p->NU=Indx2Units[i];
         }
     }
     for (p.setAddress(s0.getNext()); p.getAddress() != s0.getAddress(); p
@@ -192,7 +192,7 @@ public class SubAllocator {
         p1.setAddress(MBPtr(p.getAddress(), p.getNU()));
         while (p1.getStamp() == 0xFFFF && p.getNU() + p1.getNU() < 0x10000) {
         p1.remove();
-        p.setNU(p.getNU() + p1.getNU());// ->NU += p1->NU;
+        p.setNU(p.getNU() + p1.getNU()); // ->NU += p1->NU;
         p1.setAddress(MBPtr(p.getAddress(), p.getNU()));
         }
     }

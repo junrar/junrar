@@ -30,7 +30,7 @@ import java.util.Vector;
 public class VMPreparedProgram 
 {
     private List<VMPreparedCommand> Cmd  = new ArrayList<VMPreparedCommand>();
-    private List<VMPreparedCommand> AltCmd  =new ArrayList<VMPreparedCommand>();
+    private List<VMPreparedCommand> AltCmd  = new ArrayList<VMPreparedCommand>();
     private int CmdCount;
 
 
@@ -44,7 +44,7 @@ public class VMPreparedProgram
 
     public VMPreparedProgram()
     {
-        AltCmd=null;
+        AltCmd = null;
     }
 
 
