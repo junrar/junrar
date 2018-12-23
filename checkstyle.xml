@@ -65,7 +65,7 @@
     <!--   <property name="fileExtensions" value="java"/> -->
     <!-- </module> -->
 
-    <!--<module name="TreeWalker">-->
+    <module name="TreeWalker">
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
@@ -88,12 +88,12 @@
 
         <!-- Checks for imports                              -->
         <!-- See http://checkstyle.sf.net/config_import.html -->
-        <!--<module name="AvoidStarImport"/>-->
-        <!--<module name="IllegalImport"/> &lt;!&ndash; defaults to sun.* packages &ndash;&gt;-->
-        <!--<module name="RedundantImport"/>-->
-        <!--<module name="UnusedImports">-->
-            <!--<property name="processJavadoc" value="false"/>-->
-        <!--</module>-->
+        <module name="AvoidStarImport"/>
+        <module name="IllegalImport"/> <!-- defaults to sun.* packages -->
+        <module name="RedundantImport"/>
+        <module name="UnusedImports">
+            <property name="processJavadoc" value="false"/>
+        </module>
 
         <!-- Checks for Size Violations.                    -->
         <!-- See http://checkstyle.sf.net/config_sizes.html -->
@@ -155,6 +155,6 @@
         <!--<module name="TodoComment"/>-->
         <!--<module name="UpperEll"/>-->
 
-    <!--</module>-->
+    </module>
 
 </module>
