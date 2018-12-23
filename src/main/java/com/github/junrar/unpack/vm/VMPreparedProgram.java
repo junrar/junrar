@@ -27,8 +27,7 @@ import java.util.Vector;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class VMPreparedProgram 
-{
+public class VMPreparedProgram {
     private List<VMPreparedCommand> Cmd  = new ArrayList<VMPreparedCommand>();
     private List<VMPreparedCommand> AltCmd  = new ArrayList<VMPreparedCommand>();
     private int CmdCount;
@@ -42,8 +41,7 @@ public class VMPreparedProgram
     private int FilteredDataOffset;
     private int FilteredDataSize;
 
-    public VMPreparedProgram()
-    {
+    public VMPreparedProgram() {
         AltCmd = null;
     }
 

@@ -51,8 +51,7 @@ public class ReadOnlyAccessByteArray implements IReadOnlyAccess {
     public void setPosition(long pos) throws IOException {
         if (pos < file.length && pos >= 0) {
             this.positionInFile = (int) pos;
-        }
-        else {
+        } else {
             throw new EOFException();
         }
     }

@@ -23,8 +23,7 @@ package com.github.junrar.unpack.decode;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class Decode
-{
+public class Decode {
     private int maxNum;
 
     private final int[] decodeLen = new int[16];
@@ -37,8 +36,7 @@ public class Decode
      * returns the decode Length array
      * @return decodeLength
      */
-    public int[] getDecodeLen()
-    {
+    public int[] getDecodeLen() {
         return decodeLen;
     }
 
@@ -46,8 +44,7 @@ public class Decode
      * returns the decode num array
      * @return decodeNum
      */
-    public int[] getDecodeNum()
-    {
+    public int[] getDecodeNum() {
         return decodeNum;
     }
 
@@ -55,8 +52,7 @@ public class Decode
      * returns the decodePos array
      * @return decodePos
      */
-    public int[] getDecodePos()
-    {
+    public int[] getDecodePos() {
         return decodePos;
     }
 
@@ -64,8 +60,7 @@ public class Decode
      * returns the max num
      * @return maxNum
      */
-    public int getMaxNum()
-    {
+    public int getMaxNum() {
         return maxNum;
     }
 
@@ -73,8 +68,7 @@ public class Decode
      * sets the max num
      * @param maxNum to be set to maxNum
      */
-    public void setMaxNum(int maxNum)
-    {
+    public void setMaxNum(int maxNum) {
         this.maxNum = maxNum;
     }
 

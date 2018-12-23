@@ -25,8 +25,7 @@ import com.github.junrar.io.Raw;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class PPMContext extends Pointer
-{
+public class PPMContext extends Pointer {
 
     private static final int unionSize = Math.max(FreqData.size, State.size);
 
@@ -56,8 +55,7 @@ public class PPMContext extends Pointer
     private PPMContext tempPPMContext = null;
     private final int[] ps = new int[256];
 
-    public PPMContext(byte[] mem)
-    {
+    public PPMContext(byte[] mem) {
         super(mem);
         oneState = new State(mem);
         freqData = new FreqData(mem);
@@ -71,58 +69,49 @@ public class PPMContext extends Pointer
         return this;
     }
 
-    public FreqData getFreqData()
-    {
+    public FreqData getFreqData() {
         return freqData;
     }
 
-    public void setFreqData(FreqData freqData)
-    {
+    public void setFreqData(FreqData freqData) {
         this.freqData.setSummFreq(freqData.getSummFreq());
         this.freqData.setStats(freqData.getStats());
     }
 
-    public final int getNumStats()
-    {
+    public final int getNumStats() {
         if (mem != null) {
             numStats = Raw.readShortLittleEndian(mem,  pos) & 0xffff;
         }
         return numStats;
     }
 
-    public final void setNumStats(int numStats)
-    {
+    public final void setNumStats(int numStats) {
         this.numStats = numStats & 0xffff;
         if (mem != null) {
             Raw.writeShortLittleEndian(mem, pos, (short) numStats);
         }
     }
 
-    public State getOneState()
-    {
+    public State getOneState() {
         return oneState;
     }
 
-    public void setOneState(StateRef oneState)
-    {
+    public void setOneState(StateRef oneState) {
         this.oneState.setValues(oneState);
     }
 
-    public int getSuffix()
-    {
+    public int getSuffix() {
         if (mem != null) {
             suffix = Raw.readIntLittleEndian(mem, pos + 8);
         }
         return suffix;
     }
 
-    public void setSuffix(PPMContext suffix)
-    {
+    public void setSuffix(PPMContext suffix) {
         setSuffix(suffix.getAddress());
     }
 
-    public void setSuffix(int suffix)
-    {
+    public void setSuffix(int suffix) {
         this.suffix = suffix;
         if (mem != null) {
             Raw.writeIntLittleEndian(mem, pos + 8, suffix);
@@ -130,8 +119,7 @@ public class PPMContext extends Pointer
     }
 
     @Override
-    public void setAddress(int pos)
-    {
+    public void setAddress(int pos) {
         super.setAddress(pos);
         oneState.setAddress(pos + 2);
         freqData.setAddress(pos + 2);
@@ -145,8 +133,7 @@ public class PPMContext extends Pointer
     }
 
     public int createChild(ModelPPM model, State pStats/* ptr */,
-            StateRef firstState /* ref */)
-    {
+            StateRef firstState /* ref */) {
         PPMContext pc = getTempPPMContext(model.getSubAlloc().getHeap());
         pc.setAddress(model.getSubAlloc().allocContext());
         if (pc != null) {
@@ -158,8 +145,7 @@ public class PPMContext extends Pointer
         return pc.getAddress();
     }
 
-    public void rescale(ModelPPM model)
-    {
+    public void rescale(ModelPPM model) {
         int OldNS = getNumStats(), i = getNumStats() - 1, Adder, EscFreq;
         // STATE* p1, * p;
         State p1 = new State(model.getHeap());
@@ -233,8 +219,7 @@ public class PPMContext extends Pointer
         model.getFoundState().setAddress(freqData.getStats());
     }
 
-    private int getArrayIndex(ModelPPM Model, State rs)
-    {
+    private int getArrayIndex(ModelPPM Model, State rs) {
         PPMContext tempSuffix = getTempPPMContext(Model.getSubAlloc().getHeap());
         tempSuffix.setAddress(getSuffix());
         int ret = 0;
@@ -245,13 +230,11 @@ public class PPMContext extends Pointer
         return ret;
     }
 
-    public int getMean(int summ, int shift, int round)
-    {
+    public int getMean(int summ, int shift, int round) {
         return ((summ + (1 << (shift - round))) >>> (shift));
     }
 
-    public void decodeBinSymbol(ModelPPM model)
-    {
+    public void decodeBinSymbol(ModelPPM model) {
         State rs = tempState1.init(model.getHeap());
         rs.setAddress(oneState.getAddress()); // State&
         model.setHiBitsFlag(model.getHB2Flag()[model.getFoundState().getSymbol()]);
@@ -296,8 +279,7 @@ public class PPMContext extends Pointer
 //        state2.setAddress(p2);
 //    }
 
-    public void update1(ModelPPM model, int p/* ptr */)
-    {
+    public void update1(ModelPPM model, int p/* ptr */) {
         model.getFoundState().setAddress(p);
         model.getFoundState().incFreq(4);
         freqData.incSummFreq(4);
@@ -308,13 +290,13 @@ public class PPMContext extends Pointer
         if (p0.getFreq() > p1.getFreq()) {
             State.ppmdSwap(p0, p1);
             model.getFoundState().setAddress(p1.getAddress());
-            if (p1.getFreq() > ModelPPM.MAX_FREQ)
+            if (p1.getFreq() > ModelPPM.MAX_FREQ) {
                 rescale(model);
+            }
         }
     }
 
-    public boolean decodeSymbol2(ModelPPM model)
-    {
+    public boolean decodeSymbol2(ModelPPM model) {
         long count;
         int hiCnt, i = getNumStats() - model.getNumMasked();
         SEE2Context psee2c = makeEscFreq2(model, i);
@@ -364,8 +346,7 @@ public class PPMContext extends Pointer
         return (true);
     }
 
-    public void update2(ModelPPM model, int p/* state ptr */)
-    {
+    public void update2(ModelPPM model, int p/* state ptr */) {
         State temp = tempState5.init(model.getHeap());
         temp.setAddress(p);
         model.getFoundState().setAddress(p);
@@ -378,8 +359,7 @@ public class PPMContext extends Pointer
         model.setRunLength(model.getInitRL());
     }
 
-    private SEE2Context makeEscFreq2(ModelPPM model, int Diff)
-    {
+    private SEE2Context makeEscFreq2(ModelPPM model, int Diff) {
         SEE2Context psee2c;
         int numStats = getNumStats();
         if (numStats != 256) {
@@ -400,8 +380,7 @@ public class PPMContext extends Pointer
         return psee2c;
     }
 
-    public boolean decodeSymbol1(ModelPPM model)
-    {
+    public boolean decodeSymbol1(ModelPPM model) {
 
         RangeCoder coder = model.getCoder();
         coder.getSubRange().setScale(freqData.getSummFreq());
@@ -433,8 +412,7 @@ public class PPMContext extends Pointer
         model.setPrevSuccess(0);
         int numStats = getNumStats();
         i = numStats - 1;
-        while ((HiCnt += p.incAddress().getFreq()) <= count)
-        {
+        while ((HiCnt += p.incAddress().getFreq()) <= count) {
             if (--i == 0) {
                 model.setHiBitsFlag(model.getHB2Flag()[model.getFoundState().getSymbol()]);
                 coder.getSubRange().setLowCount(HiCnt);

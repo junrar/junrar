@@ -24,9 +24,7 @@ import org.apache.commons.logging.LogFactory;
 import com.github.junrar.io.Raw;
 
 
-public class SubBlockHeader 
-extends BlockHeader 
-{
+public class SubBlockHeader extends BlockHeader {
     private static final Log logger = LogFactory.getLog(SubBlockHeader.class);
 
     public static final short SubBlockHeaderSize = 3;
@@ -34,15 +32,13 @@ extends BlockHeader
     private short subType;
     private byte level;
 
-    public SubBlockHeader(SubBlockHeader sb)
-    {
+    public SubBlockHeader(SubBlockHeader sb) {
         super(sb);
         subType = sb.getSubType().getSubblocktype();
         level = sb.getLevel();
     }
 
-    public SubBlockHeader(BlockHeader bh, byte[] subblock)
-    {
+    public SubBlockHeader(BlockHeader bh, byte[] subblock) {
         super(bh);
         int position = 0;
         subType = Raw.readShortLittleEndian(subblock, position);
@@ -58,8 +54,7 @@ extends BlockHeader
         return SubBlockHeaderType.findSubblockHeaderType(subType);
     }
 
-    public void print()
-    {
+    public void print() {
         super.print();
         logger.info("subtype: " + getSubType());
         logger.info("level: " + level);

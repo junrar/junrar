@@ -24,29 +24,24 @@ package com.github.junrar.unpack.ppm;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public enum BlockTypes
-{
+public enum BlockTypes {
     BLOCK_LZ(0), BLOCK_PPM(1);
 
     private int blockType;
 
-    BlockTypes(int blockType)
-    {
+    BlockTypes(int blockType) {
         this.blockType = blockType;
     }
 
-    public int getBlockType()
-    {
+    public int getBlockType() {
         return blockType;
     }
 
-    public boolean equals(int blockType)
-    {
+    public boolean equals(int blockType) {
         return this.blockType == blockType;
     }
 
-    public static BlockTypes findBlockType(int blockType)
-    {
+    public static BlockTypes findBlockType(int blockType) {
         if (BLOCK_LZ.equals(blockType)) {
             return BLOCK_LZ;
         }

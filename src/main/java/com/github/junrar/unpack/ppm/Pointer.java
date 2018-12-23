@@ -23,8 +23,7 @@ package com.github.junrar.unpack.ppm;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public abstract class Pointer
-{
+public abstract class Pointer {
     protected byte[] mem;
     protected int pos;
 

@@ -255,8 +255,9 @@ public class SubAllocator {
     }
 
     public int allocContext() {
-    if (hiUnit != loUnit)
+    if (hiUnit != loUnit) {
         return (hiUnit -= UNIT_SIZE);
+    }
     if (freeList[0].getNext() != 0) {
         return removeNode(0);
     }

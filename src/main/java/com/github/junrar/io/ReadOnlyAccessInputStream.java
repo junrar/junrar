@@ -46,8 +46,7 @@ public class ReadOnlyAccessInputStream extends InputStream {
     public int read() throws IOException {
         if (curPos == endPos) {
             return -1;
-        }
-        else {
+        } else {
             int b = file.read();
             curPos++;
             return b;

@@ -56,8 +56,7 @@ public class AnalyzeHeapDump {
                         matching = false;
                         mismatchFound = true;
                     }
-                }
-                else { // match
+                } else { // match
                     if (!matching) {
                         printMismatch(startOff, off);
                         matching = true;
@@ -72,8 +71,7 @@ public class AnalyzeHeapDump {
                 System.out.println("Files are identical");
             }
             System.out.println("Done");
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {

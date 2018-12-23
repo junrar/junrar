@@ -23,14 +23,12 @@ package com.github.junrar.unpack.decode;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class LowDistDecode extends Decode
-{
+public class LowDistDecode extends Decode {
 
     /**
      *
      */
-    public LowDistDecode()
-    {
+    public LowDistDecode() {
         decodeNum = new int[Compress.LDC];
     }
 

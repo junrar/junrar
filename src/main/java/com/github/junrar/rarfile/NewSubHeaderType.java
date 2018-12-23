@@ -43,8 +43,7 @@ public class NewSubHeaderType {
     
     private byte[] headerTypes;
     
-    private NewSubHeaderType(byte[] headerTypes)
-    {
+    private NewSubHeaderType(byte[] headerTypes) {
         this.headerTypes = headerTypes;
     }
     
@@ -52,14 +51,12 @@ public class NewSubHeaderType {
      * @param toCompare .
      * @return Returns true if the given byte array matches to the internal byte array of this header.
      */
-    public boolean byteEquals(byte[] toCompare)
-    {
+    public boolean byteEquals(byte[] toCompare) {
         return Arrays.equals(this.headerTypes, toCompare);
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return new String(this.headerTypes);
     }
 }

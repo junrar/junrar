@@ -29,8 +29,7 @@ import com.github.junrar.unpack.Unpack;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class RangeCoder
-{
+public class RangeCoder {
     public static final int TOP = 1 << 24;
 
     public static final int BOT = 1 << 15;
@@ -44,13 +43,11 @@ public class RangeCoder
 
     private Unpack unpackRead;
 
-    public SubRange getSubRange()
-    {
+    public SubRange getSubRange() {
         return subRange;
     }
 
-    public void initDecoder(Unpack unpackRead) throws IOException, RarException
-    {
+    public void initDecoder(Unpack unpackRead) throws IOException, RarException {
         this.unpackRead = unpackRead;
 
         low = code = 0L;
@@ -60,31 +57,26 @@ public class RangeCoder
         }
     }
 
-    public int getCurrentCount()
-    {
+    public int getCurrentCount() {
         range = (range / subRange.getScale()) & uintMask;
         return (int) ((code - low) / (range));
     }
 
-    public long getCurrentShiftCount(int SHIFT)
-    {
+    public long getCurrentShiftCount(int SHIFT) {
         range = range >>> SHIFT;
         return ((code - low) / (range)) & uintMask;
     }
 
-    public void decode()
-    {
+    public void decode() {
         low = (low + (range * subRange.getLowCount())) & uintMask;
         range = (range * (subRange.getHighCount() - subRange.getLowCount())) & uintMask;
     }
 
-    private int getChar() throws IOException, RarException
-    {
+    private int getChar() throws IOException, RarException {
         return (unpackRead.getChar());
     }
 
-    public void ariDecNormalize() throws IOException, RarException
-    {
+    public void ariDecNormalize() throws IOException, RarException {
 //        while ((low ^ (low + range)) < TOP || range < BOT && ((range = -low & (BOT - 1)) != 0 ? true : true))
 //        {
 //            code = ((code << 8) | unpackRead.getChar()&0xff)&uintMask;
@@ -121,38 +113,31 @@ public class RangeCoder
         return buffer.toString();
     }
 
-    public static class SubRange
-    {
+    public static class SubRange {
         // uint LowCount, HighCount, scale;
         private long lowCount, highCount, scale;
 
-        public long getHighCount()
-        {
+        public long getHighCount() {
             return highCount;
         }
 
-        public void setHighCount(long highCount)
-        {
+        public void setHighCount(long highCount) {
             this.highCount = highCount & uintMask;
         }
 
-        public long getLowCount()
-        {
+        public long getLowCount() {
             return lowCount & uintMask;
         }
 
-        public void setLowCount(long lowCount)
-        {
+        public void setLowCount(long lowCount) {
             this.lowCount = lowCount & uintMask;
         }
 
-        public long getScale()
-        {
+        public long getScale() {
             return scale;
         }
 
-        public void setScale(long scale)
-        {
+        public void setScale(long scale) {
             this.scale = scale & uintMask;
         }
 

@@ -23,14 +23,12 @@ package com.github.junrar.unpack.decode;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class MultDecode extends Decode
-{
+public class MultDecode extends Decode {
 
     /**
      *
      */
-    public MultDecode()
-    {
+    public MultDecode() {
         decodeNum = new int[Compress.MC20];
     }
 

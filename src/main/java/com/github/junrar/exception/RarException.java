@@ -23,8 +23,7 @@ package com.github.junrar.exception;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class RarException extends Exception
-{
+public class RarException extends Exception {
     private static final long serialVersionUID = 1L;
     private RarExceptionType type;
 
@@ -38,8 +37,7 @@ public class RarException extends Exception
         this.type = type;
     }
 
-    public RarException(RarException e)
-    {
+    public RarException(RarException e) {
 
         super(e.getMessage(), e);
         this.type = e.getType();
@@ -68,13 +66,11 @@ public class RarException extends Exception
 
 
 
-    public RarExceptionType getType()
-    {
+    public RarExceptionType getType() {
         return type;
     }
 
-    public void setType(RarExceptionType type)
-    {
+    public void setType(RarExceptionType type) {
         this.type = type;
     }
 }

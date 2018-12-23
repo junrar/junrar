@@ -23,14 +23,12 @@ package com.github.junrar.unpack.decode;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class DistDecode extends Decode
-{
+public class DistDecode extends Decode {
 
     /**
      *
      */
-    public DistDecode()
-    {
+    public DistDecode() {
         decodeNum = new int[Compress.DC];
     }
 

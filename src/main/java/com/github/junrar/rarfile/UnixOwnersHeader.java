@@ -5,9 +5,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 
-public class UnixOwnersHeader 
-extends SubBlockHeader 
-{
+public class UnixOwnersHeader extends SubBlockHeader {
     private static final Log logger = LogFactory.getLog(UnixOwnersHeader.class);
     private int ownerNameSize;
     private int groupNameSize;

@@ -43,8 +43,7 @@ public enum UnrarHeadertype {
      * @param headerType the headerbyte
      * @return the enum or null
      */
-    public static UnrarHeadertype findType(byte headerType)
-    {
+    public static UnrarHeadertype findType(byte headerType) {
         if (UnrarHeadertype.MarkHeader.equals(headerType)) {
             return UnrarHeadertype.MarkHeader;
         }
@@ -92,8 +91,7 @@ public enum UnrarHeadertype {
 
     private byte headerByte;
 
-    UnrarHeadertype(byte headerByte)
-    {
+    UnrarHeadertype(byte headerByte) {
         this.headerByte = headerByte;
     }
 
@@ -102,8 +100,7 @@ public enum UnrarHeadertype {
      * @param header header
      * @return true if the given byte is equal to the enum's byte
      */
-    public boolean equals(byte header)
-    {
+    public boolean equals(byte header) {
         return headerByte == header;
     }
 

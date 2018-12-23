@@ -123,12 +123,14 @@ public final class Unpack extends Unpack20 {
     while (true) {
         int code = unpIO.unpRead(buffer, 0, (int) Math.min(buffer.length,
             destUnpSize));
-        if (code == 0 || code == -1)
-        break;
+        if (code == 0 || code == -1) {
+            break;
+        }
         code = code < destUnpSize ? code : (int) destUnpSize;
         unpIO.unpWrite(buffer, 0, code);
-        if (destUnpSize >= 0)
-        destUnpSize -= code;
+        if (destUnpSize >= 0) {
+            destUnpSize -= code;
+        }
     }
 
     }
@@ -577,14 +579,15 @@ public final class Unpack extends Unpack20 {
 
         window[unpPtr++] = window[destPtr++];
 
-        while (--length > 0)
-
-        window[unpPtr++] = window[destPtr++];
-    } else
+        while (--length > 0) {
+            window[unpPtr++] = window[destPtr++];
+        }
+    } else {
         while (length-- != 0) {
         window[unpPtr] = window[destPtr++ & Compress.MAXWINMASK];
         unpPtr = (unpPtr + 1) & Compress.MAXWINMASK;
         }
+    }
     }
 
     protected void unpInitData(boolean solid) {
@@ -813,8 +816,9 @@ public final class Unpack extends Unpack20 {
         } else {
         FiltPos--;
         }
-    } else
+    } else {
         FiltPos = lastFilter; // use the same filter as last time
+    }
 
     if (FiltPos > filters.size() || FiltPos > oldFilterLengths.size()) {
         return (false);
@@ -826,8 +830,7 @@ public final class Unpack extends Unpack20 {
     // PrgStack
 
     UnpackFilter Filter;
-    if (NewFilter) // new filter code, never used before since VM reset
-    {
+    if (NewFilter) { // new filter code, never used before since VM reset
         // too many different filters, corrupt archive
         if (FiltPos > 1024) {
         return (false);
@@ -839,8 +842,7 @@ public final class Unpack extends Unpack20 {
         StackFilter.setParentFilter(filters.size() - 1);
         oldFilterLengths.add(0);
         Filter.setExecCount(0);
-    } else // filter was used in the past
-    {
+    } else { // filter was used in the past
         Filter = filters.get(FiltPos);
         StackFilter.setParentFilter(FiltPos);
         Filter.setExecCount(Filter.getExecCount() + 1); // ->ExecCount++;
@@ -876,9 +878,8 @@ public final class Unpack extends Unpack20 {
     StackFilter.getPrg().getInitR()[4] = StackFilter.getBlockLength(); // StackFilter->Prg.InitR[4]=StackFilter->BlockLength;
     StackFilter.getPrg().getInitR()[5] = StackFilter.getExecCount(); // StackFilter->Prg.InitR[5]=StackFilter->ExecCount;
 
-    if ((firstByte & 0x10) != 0) // set registers to optional parameters
+    if ((firstByte & 0x10) != 0) { // set registers to optional parameters
     // if any
-    {
         int InitMask = Inp.fgetbits() >>> 9;
         Inp.faddbits(7);
         for (int I = 0; I < 7; I++) {
@@ -946,8 +947,7 @@ public final class Unpack extends Unpack20 {
     for (int i = 0; i < 16; i++) {
         globalData.set(0x30 + i, Byte.valueOf((byte) (0)));
     }
-    if ((firstByte & 8) != 0) // put data block passed as parameter if any
-    {
+    if ((firstByte & 8) != 0) { // put data block passed as parameter if any
         if (Inp.Overflow(3)) {
         return (false);
         }

@@ -49,8 +49,7 @@ public class BlockHeader extends BaseBlock {
         this.positionInFile = bh.getPositionInFile();
     }
     
-    public BlockHeader(BaseBlock bb, byte[] blockHeader) 
-    {
+    public BlockHeader(BaseBlock bb, byte[] blockHeader) {
         super(bb);
 
         this.packSize = Raw.readIntLittleEndianAsLong(blockHeader, 0);

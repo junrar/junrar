@@ -19,8 +19,7 @@
 
 package com.github.junrar.rarfile;
 
-public enum SubBlockHeaderType 
-{
+public enum SubBlockHeaderType {
     EA_HEAD((short) 0x100),
     UO_HEAD((short) 0x101),
     MAC_HEAD((short) 0x102),
@@ -30,8 +29,7 @@ public enum SubBlockHeaderType
 
     private short subblocktype;
 
-    SubBlockHeaderType(short subblocktype)
-    {
+    SubBlockHeaderType(short subblocktype) {
         this.subblocktype = subblocktype;
     }
 
@@ -40,8 +38,7 @@ public enum SubBlockHeaderType
      * @param subblocktype .
      * @return true if the given value is equal to the enum's value
      */
-    public boolean equals(short subblocktype)
-    {
+    public boolean equals(short subblocktype) {
         return this.subblocktype == subblocktype;
     }
 
@@ -50,8 +47,7 @@ public enum SubBlockHeaderType
      * @param subType the short value
      * @return the corresponding enum or null
      */
-    public static SubBlockHeaderType findSubblockHeaderType(short subType)
-    {
+    public static SubBlockHeaderType findSubblockHeaderType(short subType) {
         if (EA_HEAD.equals(subType)) {
             return EA_HEAD;
         } else if (UO_HEAD.equals(subType)) {

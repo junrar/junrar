@@ -133,13 +133,11 @@ public class BaseBlock {
     /**
      * @return is it a sub block
      */
-    public boolean isSubBlock()
-    {
+    public boolean isSubBlock() {
          if (UnrarHeadertype.SubHeader.equals(headerType)) {
              return (true);
          }
-         if (UnrarHeadertype.NewSubHeader.equals(headerType) && (flags & LHD_SOLID) != 0)
-         {
+         if (UnrarHeadertype.NewSubHeader.equals(headerType) && (flags & LHD_SOLID) != 0) {
              return (true);
          }
          return (false);

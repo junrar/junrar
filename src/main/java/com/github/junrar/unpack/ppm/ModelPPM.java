@@ -30,8 +30,7 @@ import java.util.Arrays;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class ModelPPM
-{
+public class ModelPPM {
     public static final int MAX_O = 64; /* maximum allowed model order */
 
     public static final int INT_BITS = 7;
@@ -89,19 +88,16 @@ public class ModelPPM
     private final PPMContext tempPPMContext4 = new PPMContext(null);
     private final int[] ps = new int[MAX_O];
 
-    public ModelPPM()
-    {
+    public ModelPPM() {
         minContext = null;
         maxContext = null;
     }
 
-    public SubAllocator getSubAlloc()
-    {
+    public SubAllocator getSubAlloc() {
         return subAlloc;
     }
 
-    private void restartModelRare()
-    {
+    private void restartModelRare() {
         Arrays.fill(charMask, 0);
         subAlloc.initSubAllocator();
         initRL = -(maxOrder < 12 ? maxOrder : 12) - 1;
@@ -142,8 +138,7 @@ public class ModelPPM
         }
     }
 
-    private void startModelRare(int MaxOrder)
-    {
+    private void startModelRare(int MaxOrder) {
         int i, k, m, Step;
         escCount = 1;
         this.maxOrder = MaxOrder;
@@ -177,15 +172,13 @@ public class ModelPPM
 
     }
 
-    private void clearMask()
-    {
+    private void clearMask() {
         escCount = 1;
         Arrays.fill(charMask, 0);
     }
 
     public boolean decodeInit(Unpack unpackRead, int escChar/* ref */)
-            throws IOException, RarException
-    {
+            throws IOException, RarException {
 
         int MaxOrder = unpackRead.getChar() & 0xff;
         boolean reset = ((MaxOrder & 0x20) != 0);
@@ -227,8 +220,7 @@ public class ModelPPM
         return (minContext.getAddress() != 0);
     }
 
-    public int decodeChar() throws IOException, RarException
-    {
+    public int decodeChar() throws IOException, RarException {
         // Debug
         //subAlloc.dumpHeap();
 
@@ -281,28 +273,23 @@ public class ModelPPM
         return (Symbol);
     }
 
-    public SEE2Context[][] getSEE2Cont()
-    {
+    public SEE2Context[][] getSEE2Cont() {
         return SEE2Cont;
     }
 
-    public SEE2Context getDummySEE2Cont()
-    {
+    public SEE2Context getDummySEE2Cont() {
         return dummySEE2Cont;
     }
 
-    public int getInitRL()
-    {
+    public int getInitRL() {
         return initRL;
     }
 
-    public void setEscCount(int escCount)
-    {
+    public void setEscCount(int escCount) {
         this.escCount = escCount & 0xff;
     }
 
-    public int getEscCount()
-    {
+    public int getEscCount() {
         return escCount;
     }
 
@@ -310,43 +297,35 @@ public class ModelPPM
         setEscCount(getEscCount() + dEscCount);
     }
 
-    public int[] getCharMask()
-    {
+    public int[] getCharMask() {
         return charMask;
     }
 
-    public int getNumMasked()
-    {
+    public int getNumMasked() {
         return numMasked;
     }
 
-    public void setNumMasked(int numMasked)
-    {
+    public void setNumMasked(int numMasked) {
         this.numMasked = numMasked;
     }
 
-    public void setPrevSuccess(int prevSuccess)
-    {
+    public void setPrevSuccess(int prevSuccess) {
         this.prevSuccess = prevSuccess & 0xff;
     }
 
-    public int getInitEsc()
-    {
+    public int getInitEsc() {
         return initEsc;
     }
 
-    public void setInitEsc(int initEsc)
-    {
+    public void setInitEsc(int initEsc) {
         this.initEsc = initEsc;
     }
 
-    public void setRunLength(int runLength)
-    {
+    public void setRunLength(int runLength) {
         this.runLength = runLength;
     }
 
-    public int getRunLength()
-    {
+    public int getRunLength() {
         return runLength;
     }
 
@@ -354,58 +333,47 @@ public class ModelPPM
         setRunLength(getRunLength() + dRunLength);
     }
 
-    public int getPrevSuccess()
-    {
+    public int getPrevSuccess() {
         return prevSuccess;
     }
 
-    public int getHiBitsFlag()
-    {
+    public int getHiBitsFlag() {
         return hiBitsFlag;
     }
 
-    public void setHiBitsFlag(int hiBitsFlag)
-    {
+    public void setHiBitsFlag(int hiBitsFlag) {
         this.hiBitsFlag = hiBitsFlag & 0xff;
     }
 
-    public int[][] getBinSumm()
-    {
+    public int[][] getBinSumm() {
         return binSumm;
     }
 
-    public RangeCoder getCoder()
-    {
+    public RangeCoder getCoder() {
         return coder;
     }
 
-    public int[] getHB2Flag()
-    {
+    public int[] getHB2Flag() {
         return HB2Flag;
     }
 
-    public int[] getNS2BSIndx()
-    {
+    public int[] getNS2BSIndx() {
         return NS2BSIndx;
     }
 
-    public int[] getNS2Indx()
-    {
+    public int[] getNS2Indx() {
         return NS2Indx;
     }
 
-    public State getFoundState()
-    {
+    public State getFoundState() {
         return foundState;
     }
 
-    public byte[] getHeap()
-    {
+    public byte[] getHeap() {
         return subAlloc.getHeap();
     }
 
-    public int getOrderFall()
-    {
+    public int getOrderFall() {
         return orderFall;
     }
 
@@ -499,14 +467,12 @@ public class ModelPPM
         return pc.getAddress();
     }
 
-    private void updateModelRestart()
-    {
+    private void updateModelRestart() {
         restartModelRare();
         escCount = 0;
     }
 
-    private void updateModel()
-    {
+    private void updateModel() {
         //System.out.println("ModelPPM.updateModel()");
         // STATE fs = *FoundState, *p = NULL;
         StateRef fs = tempStateRef1;
@@ -576,8 +542,7 @@ public class ModelPPM
                     subAlloc.decPText(1);
                 }
             }
-        }
-        else {
+        } else {
             foundState.setSuccessor(successor.getAddress());
             fs.setSuccessor(minContext);
         }
@@ -608,8 +573,7 @@ public class ModelPPM
                         & ((pc.getFreqData().getSummFreq() <= 8 * ns1) ? 1 : 0)
                         );
                 pc.getFreqData().incSummFreq(sum);
-            }
-            else {
+            } else {
                 p.setAddress(subAlloc.allocUnits(1));
                 if (p.getAddress() == 0) {
                     updateModelRestart();
@@ -619,8 +583,7 @@ public class ModelPPM
                 pc.getFreqData().setStats(p);
                 if (p.getFreq() < MAX_FREQ / 4 - 1) {
                     p.incFreq(p.getFreq());
-                }
-                else {
+                } else {
                     p.setFreq(MAX_FREQ - 4);
                 }
                 pc.getFreqData().setSummFreq(
@@ -631,8 +594,7 @@ public class ModelPPM
             if (cf < 6 * sf) {
                 cf = 1 + (cf > sf ? 1 : 0) + (cf >= 4 * sf ? 1 : 0);
                 pc.getFreqData().incSummFreq(3);
-            }
-            else {
+            } else {
                 cf = 4 + (cf >= 9 * sf ? 1 : 0) + (cf >= 12 * sf ? 1 : 0)
                         + (cf >= 15 * sf ? 1 : 0);
                 pc.getFreqData().incSummFreq(cf);

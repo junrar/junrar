@@ -31,8 +31,7 @@ import com.github.junrar.unpack.vm.BitInput;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public abstract class Unpack15 extends BitInput
-{
+public abstract class Unpack15 extends BitInput {
 
     protected int readBorder;
 
@@ -136,8 +135,7 @@ public abstract class Unpack15 extends BitInput
 
     protected abstract void unpInitData(boolean solid);
 
-    protected void unpack15(boolean solid) throws IOException, RarException
-    {
+    protected void unpack15(boolean solid) throws IOException, RarException {
         if (suspended) {
             unpPtr = wrPtr;
         } else {
@@ -211,8 +209,7 @@ public abstract class Unpack15 extends BitInput
 
 
 
-    protected boolean unpReadBuf() throws IOException, RarException
-    {
+    protected boolean unpReadBuf() throws IOException, RarException {
           int dataSize = readTop - inAddr;
           if (dataSize < 0) {
             return (false);
@@ -227,8 +224,7 @@ public abstract class Unpack15 extends BitInput
             }
             inAddr = 0;
             readTop = dataSize;
-          }
-          else {
+          } else {
             dataSize = readTop;
           }
           //int readCode=UnpIO->UnpRead(InBuf+DataSize,(BitInput::MAX_SIZE-DataSize)&~0xf);
@@ -240,18 +236,15 @@ public abstract class Unpack15 extends BitInput
           return (readCode != -1);
     }
 
-    private int getShortLen1(int pos)
-    {
+    private int getShortLen1(int pos) {
         return pos == 1 ? Buf60 + 3 : ShortLen1[pos];
     }
 
-    private int getShortLen2(int pos)
-    {
+    private int getShortLen2(int pos) {
         return pos == 3 ? Buf60 + 3 : ShortLen2[pos];
     }
 
-    protected void shortLZ()
-    {
+    protected void shortLZ() {
         int Length, SaveLength;
         int LastDistance;
         int Distance;
@@ -310,10 +303,12 @@ public abstract class Unpack15 extends BitInput
                 Buf60 ^= 1;
                 return;
             }
-            if (Distance > 256)
+            if (Distance > 256) {
                 Length++;
-            if (Distance >= MaxDist3)
+            }
+            if (Distance >= MaxDist3) {
                 Length++;
+            }
 
             oldDist[oldDistPtr++] = Distance;
             oldDistPtr = oldDistPtr & 3;
@@ -344,8 +339,7 @@ public abstract class Unpack15 extends BitInput
         oldCopyString(Distance, Length);
     }
 
-    protected void longLZ()
-    {
+    protected void longLZ() {
         int Length;
         int Distance;
         int DistancePlace, NewDistancePlace;
@@ -438,8 +432,7 @@ public abstract class Unpack15 extends BitInput
         oldCopyString(Distance, Length);
     }
 
-    protected void huffDecode()
-    {
+    protected void huffDecode() {
         int CurByte, NewBytePlace;
         int Length;
         int Distance;
@@ -517,8 +510,7 @@ public abstract class Unpack15 extends BitInput
         ChSet[NewBytePlace] = CurByte;
     }
 
-    protected void getFlagsBuf()
-    {
+    protected void getFlagsBuf() {
         int Flags, NewFlagsPlace;
         int FlagsPlace = decodeNum(fgetbits(), STARTHF2, DecHf2, PosHf2);
 
@@ -536,8 +528,7 @@ public abstract class Unpack15 extends BitInput
         ChSetC[NewFlagsPlace] = Flags;
     }
 
-    protected void oldUnpInitData(boolean Solid)
-    {
+    protected void oldUnpInitData(boolean Solid) {
         if (!Solid) {
             AvrPlcB = AvrLn1 = AvrLn2 = AvrLn3 = NumHuf = Buf60 = 0;
             AvrPlc = 0x3500;
@@ -551,8 +542,7 @@ public abstract class Unpack15 extends BitInput
         readTop = 0;
     }
 
-    protected void initHuff()
-    {
+    protected void initHuff() {
         for (int I = 0; I < 256; I++) {
             Place[I] = PlaceA[I] = PlaceB[I] = I;
             PlaceC[I] = (~I + 1) & 0xff;
@@ -567,8 +557,7 @@ public abstract class Unpack15 extends BitInput
         corrHuff(ChSetB, NToPlB);
     }
 
-    protected void corrHuff(int[] CharSet, int[] NumToPlace)
-    {
+    protected void corrHuff(int[] CharSet, int[] NumToPlace) {
         int I, J, pos = 0;
         for (I = 7; I >= 0; I--) {
             for (J = 0; J < 32; J++, pos++) {
@@ -582,8 +571,7 @@ public abstract class Unpack15 extends BitInput
         }
     }
 
-    protected void oldCopyString(int Distance, int Length)
-    {
+    protected void oldCopyString(int Distance, int Length) {
         destUnpSize -= Length;
         while ((Length--) != 0) {
             window[unpPtr] = window[(unpPtr - Distance) & Compress.MAXWINMASK];
@@ -591,8 +579,7 @@ public abstract class Unpack15 extends BitInput
         }
     }
 
-    protected int decodeNum(int Num, int StartPos, int[] DecTab, int[] PosTab)
-    {
+    protected int decodeNum(int Num, int StartPos, int[] DecTab, int[] PosTab) {
         int I;
         for (Num &= 0xfff0, I = 0; DecTab[I] <= Num; I++) {
             StartPos++;
@@ -601,8 +588,7 @@ public abstract class Unpack15 extends BitInput
         return (((Num - (I != 0 ? DecTab[I - 1] : 0)) >>> (16 - StartPos)) + PosTab[StartPos]);
     }
 
-    protected void oldUnpWriteBuf() throws IOException
-    {
+    protected void oldUnpWriteBuf() throws IOException {
         if (unpPtr != wrPtr) {
             unpSomeRead = true;
         }

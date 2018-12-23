@@ -35,8 +35,7 @@ public class RarCRC {
                 if ((c & 1) != 0) {
                     c >>>= 1;
                     c ^= 0xEDB88320;
-                }
-                else {
+                } else {
                     c >>>= 1;
                 }
             }
@@ -81,8 +80,7 @@ public class RarCRC {
             size -= 8;
         }*/
 
-        for (int i = 0; i < size; i++)
-        {
+        for (int i = 0; i < size; i++) {
 /*
             // (byte)(StartCRC^Data[I])
             int pos = 0; // pos=0x00000000

@@ -23,13 +23,11 @@ package com.github.junrar.unpack.decode;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class BitDecode extends Decode
-{
+public class BitDecode extends Decode {
     /**
      *
      */
-    public BitDecode()
-    {
+    public BitDecode() {
         decodeNum = new int[Compress.BC];
     }
 }

@@ -17,9 +17,6 @@
  */
 package com.github.junrar.unpack;
 
-import java.io.IOException;
-import java.util.Arrays;
-
 import com.github.junrar.exception.RarException;
 import com.github.junrar.unpack.decode.AudioVariables;
 import com.github.junrar.unpack.decode.BitDecode;
@@ -31,6 +28,9 @@ import com.github.junrar.unpack.decode.LowDistDecode;
 import com.github.junrar.unpack.decode.MultDecode;
 import com.github.junrar.unpack.decode.RepDecode;
 
+import java.io.IOException;
+import java.util.Arrays;
+
 
 
 /**
@@ -39,8 +39,7 @@ import com.github.junrar.unpack.decode.RepDecode;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public abstract class Unpack20 extends Unpack15
-{
+public abstract class Unpack20 extends Unpack15 {
 
     protected MultDecode[] MD = new MultDecode[4];
 
@@ -81,8 +80,7 @@ public abstract class Unpack20 extends Unpack15
 
     public static final int[] SDBits = {2, 2, 3, 4, 5, 6, 6, 6 };
 
-    protected void unpack20(boolean solid) throws IOException, RarException
-    {
+    protected void unpack20(boolean solid) throws IOException, RarException {
 
         int Bits;
 
@@ -104,26 +102,31 @@ public abstract class Unpack20 extends Unpack15
         while (destUnpSize >= 0) {
             unpPtr &= Compress.MAXWINMASK;
 
-            if (inAddr > readTop - 30)
-                if (!unpReadBuf())
+            if (inAddr > readTop - 30) {
+                if (!unpReadBuf()) {
                     break;
+                }
+            }
             if (((wrPtr - unpPtr) & Compress.MAXWINMASK) < 270
                     && wrPtr != unpPtr) {
                 oldUnpWriteBuf();
-                if (suspended)
+                if (suspended) {
                     return;
+                }
             }
             if (UnpAudioBlock != 0) {
                 int AudioNumber = decodeNumber(MD[UnpCurChannel]);
 
                 if (AudioNumber == 256) {
-                    if (!ReadTables20())
+                    if (!ReadTables20()) {
                         break;
+                    }
                     continue;
                 }
                 window[unpPtr++] = DecodeAudio(AudioNumber);
-                if (++UnpCurChannel == UnpChannels)
+                if (++UnpCurChannel == UnpChannels) {
                     UnpCurChannel = 0;
+                }
                 --destUnpSize;
                 continue;
             }
@@ -150,16 +153,18 @@ public abstract class Unpack20 extends Unpack15
 
                 if (Distance >= 0x2000) {
                     Length++;
-                    if (Distance >= 0x40000L)
+                    if (Distance >= 0x40000L) {
                         Length++;
+                    }
                 }
 
                 CopyString20(Length, Distance);
                 continue;
             }
             if (Number == 269) {
-                if (!ReadTables20())
+                if (!ReadTables20()) {
                     break;
+                }
                 continue;
             }
             if (Number == 256) {
@@ -178,8 +183,9 @@ public abstract class Unpack20 extends Unpack15
                     Length++;
                     if (Distance >= 0x2000) {
                         Length++;
-                        if (Distance >= 0x40000)
+                        if (Distance >= 0x40000) {
                             Length++;
+                        }
                     }
                 }
                 CopyString20(Length, Distance);
@@ -200,8 +206,7 @@ public abstract class Unpack20 extends Unpack15
 
     }
 
-    protected void CopyString20(int Length, int Distance)
-    {
+    protected void CopyString20(int Length, int Distance) {
         lastDist = oldDist[oldDistPtr++ & 3] = Distance;
         lastLength = Length;
         destUnpSize -= Length;
@@ -224,8 +229,7 @@ public abstract class Unpack20 extends Unpack15
     }
 
     protected void makeDecodeTables(byte[] lenTab, int offset, Decode dec,
-            int size)
-    {
+            int size) {
         int[] lenCount = new int[16];
         int[] tmpPos = new int[16];
         int i;
@@ -258,8 +262,7 @@ public abstract class Unpack20 extends Unpack15
         dec.setMaxNum(size);
     }
 
-    protected int decodeNumber(Decode dec)
-    {
+    protected int decodeNumber(Decode dec) {
         int bits;
         long bitField = getbits() & 0xfffe;
 //        if (bitField < dec.getDecodeLen()[8]) {
@@ -339,10 +342,11 @@ public abstract class Unpack20 extends Unpack15
                 }
             } else {
                 if (bitField < decodeLen[6]) {
-                    if (bitField < decodeLen[5])
+                    if (bitField < decodeLen[5]) {
                         bits = 5;
-                    else
+                    } else {
                         bits = 6;
+                    }
                 } else {
                     if (bitField < decodeLen[7]) {
                         bits = 7;
@@ -353,15 +357,17 @@ public abstract class Unpack20 extends Unpack15
             }
         } else {
             if (bitField < decodeLen[12]) {
-                if (bitField < decodeLen[10])
-                    if (bitField < decodeLen[9])
+                if (bitField < decodeLen[10]) {
+                    if (bitField < decodeLen[9]) {
                         bits = 9;
-                    else
+                    } else {
                         bits = 10;
-                else if (bitField < decodeLen[11])
+                    }
+                } else if (bitField < decodeLen[11]) {
                     bits = 11;
-                else
+                } else {
                     bits = 12;
+                }
             } else {
                 if (bitField < decodeLen[14]) {
                     if (bitField < decodeLen[13]) {
@@ -383,8 +389,7 @@ public abstract class Unpack20 extends Unpack15
         return (dec.getDecodeNum()[N]);
     }
 
-    protected boolean ReadTables20() throws IOException, RarException
-    {
+    protected boolean ReadTables20() throws IOException, RarException {
         byte[] BitLength = new byte[Compress.BC20];
         byte[] Table = new byte[Compress.MC20 * 4];
         int TableSize, N, I;
@@ -443,17 +448,19 @@ public abstract class Unpack20 extends Unpack15
                     N = (getbits() >>> 9) + 11;
                     addbits(7);
                 }
-                while (N-- > 0 && I < TableSize)
+                while (N-- > 0 && I < TableSize) {
                     Table[I++] = 0;
+                }
             }
         }
         if (inAddr > readTop) {
             return (true);
         }
-        if (UnpAudioBlock != 0)
-            for (I = 0; I < UnpChannels; I++)
+        if (UnpAudioBlock != 0) {
+            for (I = 0; I < UnpChannels; I++) {
                 makeDecodeTables(Table, I * Compress.MC20, MD[I], Compress.MC20);
-        else {
+            }
+        } else {
             makeDecodeTables(Table, 0, LD, Compress.NC20);
             makeDecodeTables(Table, Compress.NC20, DD, Compress.DC20);
             makeDecodeTables(Table, Compress.NC20 + Compress.DC20, RD,
@@ -466,8 +473,7 @@ public abstract class Unpack20 extends Unpack15
         return (true);
     }
 
-    protected void unpInitData20(boolean Solid)
-    {
+    protected void unpInitData20(boolean Solid) {
         if (!Solid) {
             UnpChannelDelta = UnpCurChannel = 0;
             UnpChannels = 1;
@@ -478,8 +484,7 @@ public abstract class Unpack20 extends Unpack15
         }
     }
 
-    protected void ReadLastTables() throws IOException, RarException
-    {
+    protected void ReadLastTables() throws IOException, RarException {
         if (readTop >= inAddr + 5) {
             if (UnpAudioBlock != 0) {
                 if (decodeNumber(MD[UnpCurChannel]) == 256) {
@@ -493,8 +498,7 @@ public abstract class Unpack20 extends Unpack15
         }
     }
 
-    protected byte DecodeAudio(int Delta)
-    {
+    protected byte DecodeAudio(int Delta) {
         AudioVariables v = AudV[UnpCurChannel];
         v.setByteCount(v.getByteCount() + 1);
         v.setD4(v.getD3());

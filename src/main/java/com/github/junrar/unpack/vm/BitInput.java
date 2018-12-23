@@ -34,16 +34,14 @@ public class BitInput {
     protected byte[] inBuf;
 
 
-    public void InitBitInput()
-    {
+    public void InitBitInput() {
       inAddr = 0;
       inBit = 0;
     }
     /**
      * @param Bits .
      */
-    public void addbits(int Bits)
-    {
+    public void addbits(int Bits) {
       Bits += inBit;
       inAddr += Bits >> 3;
       inBit = Bits & 7;
@@ -52,8 +50,7 @@ public class BitInput {
     /**
      * @return the bits (unsigned short)
      */
-    public int getbits()
-    {
+    public int getbits() {
 //      int BitField=0;
 //      BitField|=(int)(inBuf[inAddr] << 16)&0xFF0000;
 //      BitField|=(int)(inBuf[inAddr+1] << 8)&0xff00;
@@ -68,16 +65,14 @@ public class BitInput {
     /**
      *  
      */
-    public BitInput()
-    {
+    public BitInput() {
       inBuf = new byte[MAX_SIZE];
     }
 
     /**
      * @param Bits add the bits
      */
-    public void faddbits(int Bits)
-    {
+    public void faddbits(int Bits) {
       addbits(Bits);
     }
 
@@ -85,8 +80,7 @@ public class BitInput {
     /**
      * @return get the bits
      */
-    public int fgetbits()
-    {
+    public int fgetbits() {
       return (getbits());
     }
     
@@ -98,8 +92,7 @@ public class BitInput {
     public boolean Overflow(int IncPtr) {
         return (inAddr + IncPtr >= MAX_SIZE);
     }
-    public byte[] getInBuf()
-    {
+    public byte[] getInBuf() {
         return inBuf;
     }
     

@@ -28,9 +28,7 @@ import com.github.junrar.io.Raw;
  * Mac File attribute header
  *
  */
-public class MacInfoHeader 
-extends SubBlockHeader 
-{
+public class MacInfoHeader extends SubBlockHeader {
     private static final Log logger = LogFactory.getLog(MacInfoHeader.class);
 
     public static final short MacInfoHeaderSize = 8;
@@ -38,8 +36,7 @@ extends SubBlockHeader
     private int fileType;
     private int fileCreator;
 
-    public MacInfoHeader(SubBlockHeader sb, byte[] macHeader)
-    {
+    public MacInfoHeader(SubBlockHeader sb, byte[] macHeader) {
         super(sb);
         int pos = 0;
         fileType = Raw.readIntLittleEndian(macHeader, pos);

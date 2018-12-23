@@ -28,9 +28,7 @@ import com.github.junrar.io.Raw;
  * extended archive CRC header
  *
  */
-public class EAHeader 
-extends SubBlockHeader 
-{
+public class EAHeader extends SubBlockHeader {
     private static final Log logger = LogFactory.getLog(EAHeader.class);
 
     public static final short EAHeaderSize = 10;
@@ -40,8 +38,7 @@ extends SubBlockHeader
     private byte method;
     private int EACRC;
 
-    public EAHeader(SubBlockHeader sb, byte[] eahead)
-    {
+    public EAHeader(SubBlockHeader sb, byte[] eahead) {
         super(sb);
         int pos = 0;
         unpSize = Raw.readIntLittleEndian(eahead, pos);
@@ -81,8 +78,7 @@ extends SubBlockHeader
         return unpVer;
     }
 
-    public void print()
-    {
+    public void print() {
         super.print();
         logger.info("unpSize: " + unpSize);
         logger.info("unpVersion: " + unpVer);

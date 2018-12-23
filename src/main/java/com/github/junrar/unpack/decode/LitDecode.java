@@ -23,13 +23,11 @@ package com.github.junrar.unpack.decode;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class LitDecode extends Decode
-{
+public class LitDecode extends Decode {
     /**
      *
      */
-    public LitDecode()
-    {
+    public LitDecode() {
         decodeNum = new int[Compress.NC];
     }
 
