@@ -17,12 +17,12 @@
  */
 package com.github.junrar.unpack;
 
-import java.io.IOException;
-import java.util.Arrays;
-
 import com.github.junrar.exception.RarException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.vm.BitInput;
+
+import java.io.IOException;
+import java.util.Arrays;
 
 
 /**
@@ -208,15 +208,14 @@ public abstract class Unpack15 extends BitInput {
     }
 
 
-
     protected boolean unpReadBuf() throws IOException, RarException {
-          int dataSize = readTop - inAddr;
-          if (dataSize < 0) {
+        int dataSize = readTop - inAddr;
+        if (dataSize < 0) {
             return (false);
-          }
-          if (inAddr > BitInput.MAX_SIZE / 2) {
+        }
+        if (inAddr > BitInput.MAX_SIZE / 2) {
             if (dataSize > 0) {
-              //memmove(InBuf,InBuf+InAddr,DataSize);
+                //memmove(InBuf,InBuf+InAddr,DataSize);
 //                for (int i = 0; i < dataSize; i++) {
 //                    inBuf[i] = inBuf[inAddr + i];
 //                }
@@ -224,16 +223,16 @@ public abstract class Unpack15 extends BitInput {
             }
             inAddr = 0;
             readTop = dataSize;
-          } else {
+        } else {
             dataSize = readTop;
-          }
-          //int readCode=UnpIO->UnpRead(InBuf+DataSize,(BitInput::MAX_SIZE-DataSize)&~0xf);
-          int readCode = unpIO.unpRead(inBuf, dataSize, (BitInput.MAX_SIZE - dataSize) & ~0xf);
-          if (readCode > 0) {
+        }
+        //int readCode=UnpIO->UnpRead(InBuf+DataSize,(BitInput::MAX_SIZE-DataSize)&~0xf);
+        int readCode = unpIO.unpRead(inBuf, dataSize, (BitInput.MAX_SIZE - dataSize) & ~0xf);
+        if (readCode > 0) {
             readTop += readCode;
-          }
-          readBorder = readTop - 30;
-          return (readCode != -1);
+        }
+        readBorder = readTop - 30;
+        return (readCode != -1);
     }
 
     private int getShortLen1(int pos) {

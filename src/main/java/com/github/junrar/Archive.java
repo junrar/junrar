@@ -18,19 +18,6 @@
  */
 package com.github.junrar;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.Closeable;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.RarException.RarExceptionType;
 import com.github.junrar.impl.FileVolumeManager;
@@ -56,6 +43,19 @@ import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.Closeable;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 /**
  * The Main Rar Class; represents a rar Archive
@@ -274,197 +274,197 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
             switch (block.getHeaderType()) {
 
-            case MarkHeader:
-                this.markHead = new MarkHeader(block);
-                if (!this.markHead.isSignature()) {
-                    if (markHead.getVersion() == RARVersion.V5) {
-                        logger.warn("Support for rar version 5 is not yet implemented!");
-                        throw new RarException(RarExceptionType.unsupportedRarArchive);
+                case MarkHeader:
+                    this.markHead = new MarkHeader(block);
+                    if (!this.markHead.isSignature()) {
+                        if (markHead.getVersion() == RARVersion.V5) {
+                            logger.warn("Support for rar version 5 is not yet implemented!");
+                            throw new RarException(RarExceptionType.unsupportedRarArchive);
+                        } else {
+                            throw new RarException(RarException.RarExceptionType.badRarArchive);
+                        }
+                    }
+                    this.headers.add(this.markHead);
+                    // markHead.print();
+                    break;
+
+                case MainHeader:
+                    toRead = block.hasEncryptVersion() ? MainHeader.mainHeaderSizeWithEnc
+                            : MainHeader.mainHeaderSize;
+                    final byte[] mainbuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                    this.rof.readFully(mainbuff, toRead);
+                    final MainHeader mainhead = new MainHeader(block, mainbuff);
+                    this.headers.add(mainhead);
+                    this.newMhd = mainhead;
+                    if (this.newMhd.isEncrypted()) {
+                        throw new RarException(
+                                RarExceptionType.rarEncryptedException);
+                    }
+                    // mainhead.print();
+                    break;
+
+                case SignHeader:
+                    toRead = SignHeader.signHeaderSize;
+                    final byte[] signBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                    this.rof.readFully(signBuff, toRead);
+                    final SignHeader signHead = new SignHeader(block, signBuff);
+                    this.headers.add(signHead);
+                    // logger.info("HeaderType: SignHeader");
+
+                    break;
+
+                case AvHeader:
+                    toRead = AVHeader.avHeaderSize;
+                    final byte[] avBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                    this.rof.readFully(avBuff, toRead);
+                    final AVHeader avHead = new AVHeader(block, avBuff);
+                    this.headers.add(avHead);
+                    // logger.info("headertype: AVHeader");
+                    break;
+
+                case CommHeader:
+                    toRead = CommentHeader.commentHeaderSize;
+                    final byte[] commBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                    this.rof.readFully(commBuff, toRead);
+                    final CommentHeader commHead = new CommentHeader(block, commBuff);
+                    this.headers.add(commHead);
+                    // logger.info("method: "+commHead.getUnpMethod()+"; 0x"+
+                    // Integer.toHexString(commHead.getUnpMethod()));
+                    newpos = commHead.getPositionInFile()
+                            + commHead.getHeaderSize();
+                    if (processedPositions.contains(newpos)) {
+                        throw new RarException(RarExceptionType.badRarArchive);
+                    }
+                    processedPositions.add(newpos);
+                    this.rof.setPosition(newpos);
+
+                    break;
+                case EndArcHeader:
+
+                    toRead = 0;
+                    if (block.hasArchiveDataCRC()) {
+                        toRead += EndArcHeader.endArcArchiveDataCrcSize;
+                    }
+                    if (block.hasVolumeNumber()) {
+                        toRead += EndArcHeader.endArcVolumeNumberSize;
+                    }
+                    EndArcHeader endArcHead;
+                    if (toRead > 0) {
+                        final byte[] endArchBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                        this.rof.readFully(endArchBuff, toRead);
+                        endArcHead = new EndArcHeader(block, endArchBuff);
+                        // logger.info("HeaderType: endarch\ndatacrc:"+
+                        // endArcHead.getArchiveDataCRC());
                     } else {
-                        throw new RarException(RarException.RarExceptionType.badRarArchive);
+                        // logger.info("HeaderType: endarch - no Data");
+                        endArcHead = new EndArcHeader(block, null);
                     }
-                }
-                this.headers.add(this.markHead);
-                // markHead.print();
-                break;
+                    this.headers.add(endArcHead);
+                    // logger.info("\n--------end header--------");
+                    return;
 
-            case MainHeader:
-                toRead = block.hasEncryptVersion() ? MainHeader.mainHeaderSizeWithEnc
-                        : MainHeader.mainHeaderSize;
-                final byte[] mainbuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                this.rof.readFully(mainbuff, toRead);
-                final MainHeader mainhead = new MainHeader(block, mainbuff);
-                this.headers.add(mainhead);
-                this.newMhd = mainhead;
-                if (this.newMhd.isEncrypted()) {
-                    throw new RarException(
-                            RarExceptionType.rarEncryptedException);
-                }
-                // mainhead.print();
-                break;
-
-            case SignHeader:
-                toRead = SignHeader.signHeaderSize;
-                final byte[] signBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                this.rof.readFully(signBuff, toRead);
-                final SignHeader signHead = new SignHeader(block, signBuff);
-                this.headers.add(signHead);
-                // logger.info("HeaderType: SignHeader");
-
-                break;
-
-            case AvHeader:
-                toRead = AVHeader.avHeaderSize;
-                final byte[] avBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                this.rof.readFully(avBuff, toRead);
-                final AVHeader avHead = new AVHeader(block, avBuff);
-                this.headers.add(avHead);
-                // logger.info("headertype: AVHeader");
-                break;
-
-            case CommHeader:
-                toRead = CommentHeader.commentHeaderSize;
-                final byte[] commBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                this.rof.readFully(commBuff, toRead);
-                final CommentHeader commHead = new CommentHeader(block, commBuff);
-                this.headers.add(commHead);
-                // logger.info("method: "+commHead.getUnpMethod()+"; 0x"+
-                // Integer.toHexString(commHead.getUnpMethod()));
-                newpos = commHead.getPositionInFile()
-                        + commHead.getHeaderSize();
-                if (processedPositions.contains(newpos)) {
-                    throw new RarException(RarExceptionType.badRarArchive);
-                }
-                processedPositions.add(newpos);
-                this.rof.setPosition(newpos);
-
-                break;
-            case EndArcHeader:
-
-                toRead = 0;
-                if (block.hasArchiveDataCRC()) {
-                    toRead += EndArcHeader.endArcArchiveDataCrcSize;
-                }
-                if (block.hasVolumeNumber()) {
-                    toRead += EndArcHeader.endArcVolumeNumberSize;
-                }
-                EndArcHeader endArcHead;
-                if (toRead > 0) {
-                    final byte[] endArchBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    this.rof.readFully(endArchBuff, toRead);
-                    endArcHead = new EndArcHeader(block, endArchBuff);
-                    // logger.info("HeaderType: endarch\ndatacrc:"+
-                    // endArcHead.getArchiveDataCRC());
-                } else {
-                    // logger.info("HeaderType: endarch - no Data");
-                    endArcHead = new EndArcHeader(block, null);
-                }
-                this.headers.add(endArcHead);
-                // logger.info("\n--------end header--------");
-                return;
-
-            default:
-                final byte[] blockHeaderBuffer = safelyAllocate(BlockHeader.blockHeaderSize, MAX_HEADER_SIZE);
-                this.rof.readFully(blockHeaderBuffer, BlockHeader.blockHeaderSize);
-                final BlockHeader blockHead = new BlockHeader(block,
-                        blockHeaderBuffer);
-
-                switch (blockHead.getHeaderType()) {
-                case NewSubHeader:
-                case FileHeader:
-                    toRead = blockHead.getHeaderSize()
-                            - BlockHeader.BaseBlockSize
-                            - BlockHeader.blockHeaderSize;
-                    final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    this.rof.readFully(fileHeaderBuffer, toRead);
-
-                    final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
-                    this.headers.add(fh);
-                    newpos = fh.getPositionInFile() + fh.getHeaderSize()
-                            + fh.getFullPackSize();
-                    if (processedPositions.contains(newpos)) {
-                        throw new RarException(RarExceptionType.badRarArchive);
-                    }
-                    processedPositions.add(newpos);
-                    this.rof.setPosition(newpos);
-                    break;
-
-                case ProtectHeader:
-                    toRead = blockHead.getHeaderSize()
-                            - BlockHeader.BaseBlockSize
-                            - BlockHeader.blockHeaderSize;
-                    final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    this.rof.readFully(protectHeaderBuffer, toRead);
-                    final ProtectHeader ph = new ProtectHeader(blockHead,
-                            protectHeaderBuffer);
-                    newpos = ph.getPositionInFile() + ph.getHeaderSize()
-                            + ph.getDataSize();
-                    if (processedPositions.contains(newpos)) {
-                        throw new RarException(RarExceptionType.badRarArchive);
-                    }
-                    processedPositions.add(newpos);
-                    this.rof.setPosition(newpos);
-                    break;
-
-                case SubHeader: {
-                    final byte[] subHeadbuffer = safelyAllocate(SubBlockHeader.SubBlockHeaderSize, MAX_HEADER_SIZE);
-                    this.rof.readFully(subHeadbuffer,
-                            SubBlockHeader.SubBlockHeaderSize);
-                    final SubBlockHeader subHead = new SubBlockHeader(blockHead,
-                            subHeadbuffer);
-                    subHead.print();
-                    switch (subHead.getSubType()) {
-                    case MAC_HEAD: {
-                        final byte[] macHeaderbuffer = safelyAllocate(MacInfoHeader.MacInfoHeaderSize, MAX_HEADER_SIZE);
-                        this.rof.readFully(macHeaderbuffer,
-                                MacInfoHeader.MacInfoHeaderSize);
-                        final MacInfoHeader macHeader = new MacInfoHeader(subHead,
-                                macHeaderbuffer);
-                        macHeader.print();
-                        this.headers.add(macHeader);
-
-                        break;
-                    }
-                    // TODO implement other subheaders
-                    case BEEA_HEAD:
-                        break;
-                    case EA_HEAD: {
-                        final byte[] eaHeaderBuffer = safelyAllocate(EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
-                        this.rof.readFully(eaHeaderBuffer, EAHeader.EAHeaderSize);
-                        final EAHeader eaHeader = new EAHeader(subHead,
-                                eaHeaderBuffer);
-                        eaHeader.print();
-                        this.headers.add(eaHeader);
-
-                        break;
-                    }
-                    case NTACL_HEAD:
-                        break;
-                    case STREAM_HEAD:
-                        break;
-                    case UO_HEAD:
-                        toRead = subHead.getHeaderSize();
-                        toRead -= BaseBlock.BaseBlockSize;
-                        toRead -= BlockHeader.blockHeaderSize;
-                        toRead -= SubBlockHeader.SubBlockHeaderSize;
-                        final byte[] uoHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                        this.rof.readFully(uoHeaderBuffer, toRead);
-                        final UnixOwnersHeader uoHeader = new UnixOwnersHeader(
-                                subHead, uoHeaderBuffer);
-                        uoHeader.print();
-                        this.headers.add(uoHeader);
-                        break;
-                    default:
-                        break;
-                    }
-
-                    break;
-                }
                 default:
-                    logger.warn("Unknown Header");
-                    throw new RarException(RarExceptionType.notRarArchive);
+                    final byte[] blockHeaderBuffer = safelyAllocate(BlockHeader.blockHeaderSize, MAX_HEADER_SIZE);
+                    this.rof.readFully(blockHeaderBuffer, BlockHeader.blockHeaderSize);
+                    final BlockHeader blockHead = new BlockHeader(block,
+                            blockHeaderBuffer);
 
-                }
+                    switch (blockHead.getHeaderType()) {
+                        case NewSubHeader:
+                        case FileHeader:
+                            toRead = blockHead.getHeaderSize()
+                                    - BlockHeader.BaseBlockSize
+                                    - BlockHeader.blockHeaderSize;
+                            final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                            this.rof.readFully(fileHeaderBuffer, toRead);
+
+                            final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
+                            this.headers.add(fh);
+                            newpos = fh.getPositionInFile() + fh.getHeaderSize()
+                                    + fh.getFullPackSize();
+                            if (processedPositions.contains(newpos)) {
+                                throw new RarException(RarExceptionType.badRarArchive);
+                            }
+                            processedPositions.add(newpos);
+                            this.rof.setPosition(newpos);
+                            break;
+
+                        case ProtectHeader:
+                            toRead = blockHead.getHeaderSize()
+                                    - BlockHeader.BaseBlockSize
+                                    - BlockHeader.blockHeaderSize;
+                            final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                            this.rof.readFully(protectHeaderBuffer, toRead);
+                            final ProtectHeader ph = new ProtectHeader(blockHead,
+                                    protectHeaderBuffer);
+                            newpos = ph.getPositionInFile() + ph.getHeaderSize()
+                                    + ph.getDataSize();
+                            if (processedPositions.contains(newpos)) {
+                                throw new RarException(RarExceptionType.badRarArchive);
+                            }
+                            processedPositions.add(newpos);
+                            this.rof.setPosition(newpos);
+                            break;
+
+                        case SubHeader: {
+                            final byte[] subHeadbuffer = safelyAllocate(SubBlockHeader.SubBlockHeaderSize, MAX_HEADER_SIZE);
+                            this.rof.readFully(subHeadbuffer,
+                                    SubBlockHeader.SubBlockHeaderSize);
+                            final SubBlockHeader subHead = new SubBlockHeader(blockHead,
+                                    subHeadbuffer);
+                            subHead.print();
+                            switch (subHead.getSubType()) {
+                                case MAC_HEAD: {
+                                    final byte[] macHeaderbuffer = safelyAllocate(MacInfoHeader.MacInfoHeaderSize, MAX_HEADER_SIZE);
+                                    this.rof.readFully(macHeaderbuffer,
+                                            MacInfoHeader.MacInfoHeaderSize);
+                                    final MacInfoHeader macHeader = new MacInfoHeader(subHead,
+                                            macHeaderbuffer);
+                                    macHeader.print();
+                                    this.headers.add(macHeader);
+
+                                    break;
+                                }
+                                // TODO implement other subheaders
+                                case BEEA_HEAD:
+                                    break;
+                                case EA_HEAD: {
+                                    final byte[] eaHeaderBuffer = safelyAllocate(EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
+                                    this.rof.readFully(eaHeaderBuffer, EAHeader.EAHeaderSize);
+                                    final EAHeader eaHeader = new EAHeader(subHead,
+                                            eaHeaderBuffer);
+                                    eaHeader.print();
+                                    this.headers.add(eaHeader);
+
+                                    break;
+                                }
+                                case NTACL_HEAD:
+                                    break;
+                                case STREAM_HEAD:
+                                    break;
+                                case UO_HEAD:
+                                    toRead = subHead.getHeaderSize();
+                                    toRead -= BaseBlock.BaseBlockSize;
+                                    toRead -= BlockHeader.blockHeaderSize;
+                                    toRead -= SubBlockHeader.SubBlockHeaderSize;
+                                    final byte[] uoHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                                    this.rof.readFully(uoHeaderBuffer, toRead);
+                                    final UnixOwnersHeader uoHeader = new UnixOwnersHeader(
+                                            subHead, uoHeaderBuffer);
+                                    uoHeader.print();
+                                    this.headers.add(uoHeader);
+                                    break;
+                                default:
+                                    break;
+                            }
+
+                            break;
+                        }
+                        default:
+                            logger.warn("Unknown Header");
+                            throw new RarException(RarExceptionType.notRarArchive);
+
+                    }
             }
             // logger.info("\n--------end header--------");
         }

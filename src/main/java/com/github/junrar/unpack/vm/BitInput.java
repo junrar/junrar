@@ -5,15 +5,15 @@
  *
  * Source: $HeadURL$
  * Last changed: $LastChangedDate$
- * 
- * the unrar licence applies to all junrar source and binary distributions 
+ *
+ * the unrar licence applies to all junrar source and binary distributions
  * you are not allowed to use this source to re-create the RAR compression algorithm
- * 
+ *
  * Here some html entities which can be used for escaping javadoc tags:
  * "&":  "&#038;" or "&amp;"
  * "<":  "&#060;" or "&lt;"
  * ">":  "&#062;" or "&gt;"
- * "@":  "&#064;" 
+ * "@":  "&#064;"
  */
 package com.github.junrar.unpack.vm;
 
@@ -35,18 +35,18 @@ public class BitInput {
 
 
     public void InitBitInput() {
-      inAddr = 0;
-      inBit = 0;
+        inAddr = 0;
+        inBit = 0;
     }
     /**
      * @param Bits .
      */
     public void addbits(int Bits) {
-      Bits += inBit;
-      inAddr += Bits >> 3;
-      inBit = Bits & 7;
+        Bits += inBit;
+        inAddr += Bits >> 3;
+        inBit = Bits & 7;
     }
-    
+
     /**
      * @return the bits (unsigned short)
      */
@@ -57,23 +57,23 @@ public class BitInput {
 //      BitField|=(int)(inBuf[inAddr+2])&0xFF;
 //      BitField >>>= (8-inBit);
 //      return (BitField & 0xffff);
-      return (((((inBuf[inAddr] & 0xff) << 16)
-              + ((inBuf[inAddr + 1] & 0xff) << 8)
-              + ((inBuf[inAddr + 2] & 0xff))) >>> (8 - inBit)) & 0xffff);
+        return (((((inBuf[inAddr] & 0xff) << 16)
+                + ((inBuf[inAddr + 1] & 0xff) << 8)
+                + ((inBuf[inAddr + 2] & 0xff))) >>> (8 - inBit)) & 0xffff);
     }
 
     /**
-     *  
+     *
      */
     public BitInput() {
-      inBuf = new byte[MAX_SIZE];
+        inBuf = new byte[MAX_SIZE];
     }
 
     /**
      * @param Bits add the bits
      */
     public void faddbits(int Bits) {
-      addbits(Bits);
+        addbits(Bits);
     }
 
 
@@ -81,9 +81,9 @@ public class BitInput {
      * @return get the bits
      */
     public int fgetbits() {
-      return (getbits());
+        return (getbits());
     }
-    
+
     /**
      * Indicates an Overfow
      * @param IncPtr how many bytes to inc
@@ -95,6 +95,6 @@ public class BitInput {
     public byte[] getInBuf() {
         return inBuf;
     }
-    
-    
+
+
 }

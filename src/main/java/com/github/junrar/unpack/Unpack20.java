@@ -543,56 +543,56 @@ public abstract class Unpack20 extends Unpack15 {
                 v.getDif()[I] = 0;
             }
             switch (NumMinDif) {
-            case 1:
-                if (v.getK1() >= -16) {
-                    v.setK1(v.getK1() - 1); // V->K1--;
-                }
-                break;
-            case 2:
-                if (v.getK1() < 16) {
-                    v.setK1(v.getK1() + 1); // V->K1++;
-                }
-                break;
-            case 3:
-                if (v.getK2() >= -16) {
-                    v.setK2(v.getK2() - 1); // V->K2--;
-                }
-                break;
-            case 4:
-                if (v.getK2() < 16) {
-                    v.setK2(v.getK2() + 1); // V->K2++;
-                }
-                break;
-            case 5:
-                if (v.getK3() >= -16) {
-                    v.setK3(v.getK3() - 1);
-                }
-                break;
-            case 6:
-                if (v.getK3() < 16) {
-                    v.setK3(v.getK3() + 1);
-                }
-                break;
-            case 7:
-                if (v.getK4() >= -16) {
-                    v.setK4(v.getK4() - 1);
-                }
-                break;
-            case 8:
-                if (v.getK4() < 16) {
-                    v.setK4(v.getK4() + 1);
-                }
-                break;
-            case 9:
-                if (v.getK5() >= -16) {
-                    v.setK5(v.getK5() - 1);
-                }
-                break;
-            case 10:
-                if (v.getK5() < 16) {
-                    v.setK5(v.getK5() + 1);
-                }
-                break;
+                case 1:
+                    if (v.getK1() >= -16) {
+                        v.setK1(v.getK1() - 1); // V->K1--;
+                    }
+                    break;
+                case 2:
+                    if (v.getK1() < 16) {
+                        v.setK1(v.getK1() + 1); // V->K1++;
+                    }
+                    break;
+                case 3:
+                    if (v.getK2() >= -16) {
+                        v.setK2(v.getK2() - 1); // V->K2--;
+                    }
+                    break;
+                case 4:
+                    if (v.getK2() < 16) {
+                        v.setK2(v.getK2() + 1); // V->K2++;
+                    }
+                    break;
+                case 5:
+                    if (v.getK3() >= -16) {
+                        v.setK3(v.getK3() - 1);
+                    }
+                    break;
+                case 6:
+                    if (v.getK3() < 16) {
+                        v.setK3(v.getK3() + 1);
+                    }
+                    break;
+                case 7:
+                    if (v.getK4() >= -16) {
+                        v.setK4(v.getK4() - 1);
+                    }
+                    break;
+                case 8:
+                    if (v.getK4() < 16) {
+                        v.setK4(v.getK4() + 1);
+                    }
+                    break;
+                case 9:
+                    if (v.getK5() >= -16) {
+                        v.setK5(v.getK5() - 1);
+                    }
+                    break;
+                case 10:
+                    if (v.getK5() < 16) {
+                        v.setK5(v.getK5() + 1);
+                    }
+                    break;
             }
         }
         return ((byte) Ch);

@@ -43,8 +43,7 @@ public class PPMContext extends Pointer {
 
     private int suffix; // pointer ppmcontext
 
-    public static final int[] ExpEscape =
-            {25, 14, 9, 7, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2 };
+    public static final int[] ExpEscape = {25, 14, 9, 7, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2 };
 
     // Temp fields
     private final State tempState1 = new State(null);

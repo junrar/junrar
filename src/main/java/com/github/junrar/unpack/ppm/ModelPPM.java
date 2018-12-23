@@ -72,8 +72,7 @@ public class ModelPPM {
 
     private SubAllocator subAlloc = new SubAllocator();
 
-    private static int[] InitBinEsc = {0x3CDD, 0x1F3F, 0x59BF, 0x48F3,
-            0x64A1, 0x5ABC, 0x6632, 0x6051 };
+    private static int[] InitBinEsc = {0x3CDD, 0x1F3F, 0x59BF, 0x48F3, 0x64A1, 0x5ABC, 0x6632, 0x6051};
 
     // Temp fields
     private final State tempState1 = new State(null);
