@@ -43,7 +43,7 @@ public enum VMCommands {
 
     private int vmCommand;
 
-    private VMCommands(int vmCommand) {
+    VMCommands(int vmCommand) {
         this.vmCommand = vmCommand;
     }
 

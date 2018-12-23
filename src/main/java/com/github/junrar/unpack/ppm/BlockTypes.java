@@ -30,7 +30,7 @@ public enum BlockTypes
 
     private int blockType;
 
-    private BlockTypes(int blockType)
+    BlockTypes(int blockType)
     {
         this.blockType = blockType;
     }

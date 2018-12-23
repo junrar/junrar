@@ -9,10 +9,10 @@ import com.github.junrar.rarfile.FileHeader;
 
 public interface ExtractDestination {
 
-    public File createDirectory(FileHeader fileHeader);
+    File createDirectory(FileHeader fileHeader);
 
-    public File extract(
-        final Archive arch,
-        final FileHeader fileHeader
+    File extract(
+        Archive arch,
+        FileHeader fileHeader
     ) throws FileNotFoundException, RarException, IOException;
 }

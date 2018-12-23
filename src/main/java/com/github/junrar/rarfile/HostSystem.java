@@ -57,7 +57,7 @@ public enum HostSystem {
     }
 
 
-    private HostSystem(byte hostByte) {
+    HostSystem(byte hostByte) {
         this.hostByte = hostByte;
     }
 

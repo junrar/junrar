@@ -104,11 +104,11 @@ public final class RandomAccessStream extends InputStream {
         }
     }
 
-    public final void readFully(byte[] bytes) throws IOException {
+    public void readFully(byte[] bytes) throws IOException {
         readFully(bytes, bytes.length);
     }
 
-    public final void readFully(byte[] bytes, int len) throws IOException {
+    public void readFully(byte[] bytes, int len) throws IOException {
         int read = 0;
         do {
             int l = read(bytes, read, len - read);
@@ -170,7 +170,7 @@ public final class RandomAccessStream extends InputStream {
             pointer = lloc;
     }
 
-    public final int readInt() throws IOException {
+    public int readInt() throws IOException {
         int i = read();
         int j = read();
         int k = read();
@@ -181,15 +181,15 @@ public final class RandomAccessStream extends InputStream {
             return (i << 24) + (j << 16) + (k << 8) + l;
     }
 
-    public final long readLong() throws IOException {
+    public long readLong() throws IOException {
         return ((long) readInt() << 32) + ((long) readInt() & 0xffffffffL);
     }
 
-    public final double readDouble() throws IOException {
+    public double readDouble() throws IOException {
         return Double.longBitsToDouble(readLong());
     }
 
-    public final short readShort() throws IOException {
+    public short readShort() throws IOException {
         int i = read();
         int j = read();
         if ((i | j) < 0)
@@ -198,7 +198,7 @@ public final class RandomAccessStream extends InputStream {
             return (short) ((i << 8) + j);
     }
 
-    public final float readFloat() throws IOException {
+    public float readFloat() throws IOException {
         return Float.intBitsToFloat(readInt());
     }
 
