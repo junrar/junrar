@@ -891,7 +891,7 @@ public class RarVM extends BitInput {
     }
 
     private VMStandardFilters IsStandardFilter(byte[] code, int codeSize) {
-        VMStandardFilterSignature stdList[] = {
+        VMStandardFilterSignature[] stdList = {
                 new VMStandardFilterSignature(53, 0xad576887, VMStandardFilters.VMSF_E8),
                 new VMStandardFilterSignature(57, 0x3cd7e57e, VMStandardFilters.VMSF_E8E9),
                 new VMStandardFilterSignature(120, 0x3769893f, VMStandardFilters.VMSF_ITANIUM),
@@ -964,7 +964,7 @@ public class RarVM extends BitInput {
                   break;
                 }
                 int curPos = 0;
-                final byte Masks[] = {4, 4, 6, 6, 0, 0, 7, 7, 4, 4, 0, 0, 4, 4, 0, 0};
+                final byte[] Masks = {4, 4, 6, 6, 0, 0, 7, 7, 4, 4, 0, 0, 4, 4, 0, 0};
                 fileOffset >>>= 4;
 
                 while (curPos < dataSize - 21) {
@@ -1072,7 +1072,7 @@ public class RarVM extends BitInput {
                 for (int curChannel = 0; curChannel < channels; curChannel++) {
                   long prevByte = 0;
                   long prevDelta = 0;
-                  long Dif[] = new long[7];
+                  long[] Dif = new long[7];
                   int D1 = 0, D2 = 0, D3;
                   int K1 = 0, K2 = 0, K3 = 0;
 

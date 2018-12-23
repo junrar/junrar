@@ -26,7 +26,7 @@ package com.github.junrar.crc;
  */
 public class RarCRC {
 
-    private static final int crcTab[];
+    private static final int[] crcTab;
     static {
         crcTab = new int[256];
         for (int i = 0; i < 256; i++) {

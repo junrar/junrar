@@ -34,7 +34,7 @@ public class VMCmdFlags {
     public static final byte VMCF_USEFLAGS = 32;
     public static final byte VMCF_CHFLAGS  = 64;
 
-    public static byte VM_CmdFlags[] =
+    public static byte[] VM_CmdFlags =
     {
       /* VM_MOV   */ VMCF_OP2 | VMCF_BYTEMODE,
       /* VM_CMP   */ VMCF_OP2 | VMCF_BYTEMODE | VMCF_CHFLAGS,
