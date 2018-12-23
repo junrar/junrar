@@ -25,5 +25,5 @@ package com.github.junrar.unsigned;
  * @version $LastChangedRevision$
  */
 public class UnsignedInteger {
-	
+
 }

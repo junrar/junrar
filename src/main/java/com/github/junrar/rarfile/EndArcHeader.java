@@ -26,32 +26,32 @@ import com.github.junrar.io.Raw;
  * 
  */
 public class EndArcHeader extends BaseBlock{
-	
-	public static final short endArcArchiveDataCrcSize = 4;
-	public static final short endArcVolumeNumberSize = 2;
-	
-	private int archiveDataCRC;
-	private short volumeNumber;
-	
-	
-	public EndArcHeader(BaseBlock bb, byte[] endArcHeader){
-		super(bb);
-		
-		int pos = 0;
-		if(hasArchiveDataCRC()){
-			archiveDataCRC =Raw.readIntLittleEndian(endArcHeader, pos);
-			pos+=4;
-		}
-		if(hasVolumeNumber()){
-			volumeNumber = Raw.readShortLittleEndian(endArcHeader, pos);
-		}
-	}
-	
-	public int getArchiveDataCRC() {
-		return archiveDataCRC;
-	}
 
-	public short getVolumeNumber() {
-		return volumeNumber;
-	}
+    public static final short endArcArchiveDataCrcSize = 4;
+    public static final short endArcVolumeNumberSize = 2;
+
+    private int archiveDataCRC;
+    private short volumeNumber;
+
+
+    public EndArcHeader(BaseBlock bb, byte[] endArcHeader){
+        super(bb);
+
+        int pos = 0;
+        if(hasArchiveDataCRC()){
+            archiveDataCRC =Raw.readIntLittleEndian(endArcHeader, pos);
+            pos+=4;
+        }
+        if(hasVolumeNumber()){
+            volumeNumber = Raw.readShortLittleEndian(endArcHeader, pos);
+        }
+    }
+
+    public int getArchiveDataCRC() {
+        return archiveDataCRC;
+    }
+
+    public short getVolumeNumber() {
+        return volumeNumber;
+    }
 }

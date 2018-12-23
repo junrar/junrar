@@ -24,17 +24,17 @@ package com.github.junrar.unpack.vm;
  * @version $LastChangedRevision$
  */
 public class BitInput {
-	
-	/**
-	 * the max size of the input
-	 */
-	public static final int MAX_SIZE = 0x8000;
-	protected int inAddr;
-	protected int inBit;
-	protected byte[] inBuf;
-	
 
-	public void InitBitInput()
+    /**
+     * the max size of the input
+     */
+    public static final int MAX_SIZE = 0x8000;
+    protected int inAddr;
+    protected int inBit;
+    protected byte[] inBuf;
+
+
+    public void InitBitInput()
     {
       inAddr=0;
       inBit=0;
@@ -96,12 +96,12 @@ public class BitInput {
      * @return true if an Oververflow would occur
      */
     public boolean Overflow(int IncPtr) {
-    	return(inAddr+IncPtr>=MAX_SIZE);
+        return(inAddr+IncPtr>=MAX_SIZE);
     }
-	public byte[] getInBuf()
-	{
-		return inBuf;
-	}
+    public byte[] getInBuf()
+    {
+        return inBuf;
+    }
     
     
 }

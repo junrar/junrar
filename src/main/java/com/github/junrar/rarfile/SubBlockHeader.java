@@ -27,41 +27,41 @@ import com.github.junrar.io.Raw;
 public class SubBlockHeader 
 extends BlockHeader 
 {
-	private static final Log logger = LogFactory.getLog(SubBlockHeader.class);
-	
-	public static final short SubBlockHeaderSize = 3;
-	
-	private short subType;
-	private byte level;
-	
-	public SubBlockHeader(SubBlockHeader sb)
-	{
-		super(sb);
-		subType = sb.getSubType().getSubblocktype();
-		level = sb.getLevel();
-	}
-	
-	public SubBlockHeader(BlockHeader bh, byte[] subblock)
-	{
-		super(bh);
-		int position = 0;
-		subType = Raw.readShortLittleEndian(subblock, position);
-		position +=2;
-		level |= subblock[position]&0xff;
-	}
+    private static final Log logger = LogFactory.getLog(SubBlockHeader.class);
 
-	public byte getLevel() {
-		return level;
-	}
+    public static final short SubBlockHeaderSize = 3;
 
-	public SubBlockHeaderType getSubType() {
-		return SubBlockHeaderType.findSubblockHeaderType(subType);
-	}
+    private short subType;
+    private byte level;
 
-	public void print()
-	{
-		super.print();
-		logger.info("subtype: "+getSubType());
-		logger.info("level: "+level);
-	}
+    public SubBlockHeader(SubBlockHeader sb)
+    {
+        super(sb);
+        subType = sb.getSubType().getSubblocktype();
+        level = sb.getLevel();
+    }
+
+    public SubBlockHeader(BlockHeader bh, byte[] subblock)
+    {
+        super(bh);
+        int position = 0;
+        subType = Raw.readShortLittleEndian(subblock, position);
+        position +=2;
+        level |= subblock[position]&0xff;
+    }
+
+    public byte getLevel() {
+        return level;
+    }
+
+    public SubBlockHeaderType getSubType() {
+        return SubBlockHeaderType.findSubblockHeaderType(subType);
+    }
+
+    public void print()
+    {
+        super.print();
+        logger.info("subtype: "+getSubType());
+        logger.info("level: "+level);
+    }
 }

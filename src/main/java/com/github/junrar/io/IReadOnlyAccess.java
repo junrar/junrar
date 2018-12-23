@@ -28,31 +28,31 @@ import java.io.IOException;
  */
 public interface IReadOnlyAccess {
 
-	/**
-	 * @return the current position in the file
-	 * 
-	 * @throws IOException .
-	 * 
-	 */
-	public long getPosition() throws IOException;
-		
-	/**
-	 * @param pos the position in the file 
-	 * 
-	 * @throws IOException .
-	 */
-	public void setPosition(long pos) throws IOException;
+    /**
+     * @return the current position in the file
+     *
+     * @throws IOException .
+     *
+     */
+    public long getPosition() throws IOException;
+
+    /**
+     * @param pos the position in the file
+     *
+     * @throws IOException .
+     */
+    public void setPosition(long pos) throws IOException;
 
     /** 
      * Read a single byte of data.
      * 
      * @return read read
      *  
-	 * @throws IOException .
+     * @throws IOException .
      */
     public int read() throws IOException;
 
-	/**
+    /**
      * Read up to <tt>count</tt> bytes to the specified buffer.
      * 
      * @param buffer .
@@ -69,13 +69,13 @@ public interface IReadOnlyAccess {
     /**
      * Read exactly <tt>count</tt> bytes to the specified buffer.
      *
-	 * @param buffer where to store the read data
-	 * @param count how many bytes to read
-	 * @return bytes read || -1 if  IO problem
-	 * 
+     * @param buffer where to store the read data
+     * @param count how many bytes to read
+     * @return bytes read || -1 if  IO problem
+     *
      * @throws IOException . 
-	 */
-	public int readFully(byte[] buffer, int count) throws IOException;
+     */
+    public int readFully(byte[] buffer, int count) throws IOException;
 
     /** 
      * Close this file.

@@ -15,38 +15,38 @@ import com.github.junrar.io.IReadOnlyAccess;
  * 
  */
 public class RandomAccessContentAccess implements IReadOnlyAccess {
-	private final RandomAccessContent rac;
+    private final RandomAccessContent rac;
 
-	public RandomAccessContentAccess(RandomAccessContent rac) {
-		this.rac = rac;
-	}
+    public RandomAccessContentAccess(RandomAccessContent rac) {
+        this.rac = rac;
+    }
 
-	public RandomAccessContentAccess(FileObject file)
-			throws FileSystemException {
-		this(file.getContent().getRandomAccessContent(RandomAccessMode.READ));
-	}
+    public RandomAccessContentAccess(FileObject file)
+            throws FileSystemException {
+        this(file.getContent().getRandomAccessContent(RandomAccessMode.READ));
+    }
 
-	public long getPosition() throws IOException {
-		return rac.getFilePointer();
-	}
+    public long getPosition() throws IOException {
+        return rac.getFilePointer();
+    }
 
-	public void setPosition(long pos) throws IOException {
-		rac.seek(pos);
-	}
+    public void setPosition(long pos) throws IOException {
+        rac.seek(pos);
+    }
 
-	public int read() throws IOException {
-		return rac.readByte();
-	}
+    public int read() throws IOException {
+        return rac.readByte();
+    }
 
-	public int read(byte[] buffer, int off, int count) throws IOException {
-		return rac.getInputStream().read(buffer, off, count);
-	}
+    public int read(byte[] buffer, int off, int count) throws IOException {
+        return rac.getInputStream().read(buffer, off, count);
+    }
 
-	public int readFully(byte[] buffer, int count) throws IOException {
-		return rac.getInputStream().read(buffer, 0, count);
-	}
+    public int readFully(byte[] buffer, int count) throws IOException {
+        return rac.getInputStream().read(buffer, 0, count);
+    }
 
-	public void close() throws IOException {
-		rac.close();
-	}
+    public void close() throws IOException {
+        rac.close();
+    }
 }

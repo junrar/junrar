@@ -24,41 +24,41 @@ package com.github.junrar.unpack.vm;
  * @version $LastChangedRevision$
  */
 public class VMStandardFilterSignature {
-	private int length;
+    private int length;
 
-	private int CRC;
+    private int CRC;
 
-	private VMStandardFilters type;
+    private VMStandardFilters type;
 
-	public VMStandardFilterSignature(int length, int crc, VMStandardFilters type) {
-		super();
-		this.length = length;
-		CRC = crc;
-		this.type = type;
-	}
+    public VMStandardFilterSignature(int length, int crc, VMStandardFilters type) {
+        super();
+        this.length = length;
+        CRC = crc;
+        this.type = type;
+    }
 
-	public int getCRC() {
-		return CRC;
-	}
+    public int getCRC() {
+        return CRC;
+    }
 
-	public void setCRC(int crc) {
-		CRC = crc;
-	}
+    public void setCRC(int crc) {
+        CRC = crc;
+    }
 
-	public int getLength() {
-		return length;
-	}
+    public int getLength() {
+        return length;
+    }
 
-	public void setLength(int length) {
-		this.length = length;
-	}
+    public void setLength(int length) {
+        this.length = length;
+    }
 
-	public VMStandardFilters getType() {
-		return type;
-	}
+    public VMStandardFilters getType() {
+        return type;
+    }
 
-	public void setType(VMStandardFilters type) {
-		this.type = type;
-	}
+    public void setType(VMStandardFilters type) {
+        this.type = type;
+    }
 
 }

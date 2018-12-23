@@ -14,37 +14,37 @@ import com.github.junrar.io.ReadOnlyAccessFile;
  * 
  */
 public class FileVolume implements Volume {
-	private final Archive archive;
-	private final File file;
+    private final Archive archive;
+    private final File file;
 
-	/**
-	 * @param archive .
-	 * @param file .
-	 */
-	public FileVolume(Archive archive, File file) {
-		this.archive = archive;
-		this.file = file;
-	}
+    /**
+     * @param archive .
+     * @param file .
+     */
+    public FileVolume(Archive archive, File file) {
+        this.archive = archive;
+        this.file = file;
+    }
 
-	@Override
-	public IReadOnlyAccess getReadOnlyAccess() throws IOException {
-		return new ReadOnlyAccessFile(file);
-	}
+    @Override
+    public IReadOnlyAccess getReadOnlyAccess() throws IOException {
+        return new ReadOnlyAccessFile(file);
+    }
 
-	@Override
-	public long getLength() {
-		return file.length();
-	}
+    @Override
+    public long getLength() {
+        return file.length();
+    }
 
-	@Override
-	public Archive getArchive() {
-		return archive;
-	}
+    @Override
+    public Archive getArchive() {
+        return archive;
+    }
 
-	/**
-	 * @return the file
-	 */
-	public File getFile() {
-		return file;
-	}
+    /**
+     * @return the file
+     */
+    public File getFile() {
+        return file;
+    }
 }

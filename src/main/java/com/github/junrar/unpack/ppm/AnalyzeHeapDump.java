@@ -75,14 +75,13 @@ public class AnalyzeHeapDump {
         }
         catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
-				cin.close();
-				jin.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+                cin.close();
+                jin.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

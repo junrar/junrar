@@ -28,31 +28,31 @@ import com.github.junrar.io.Raw;
  * @version $LastChangedRevision$
  */
 public class RarNode extends Pointer{
-	private int next; //rarnode pointer
+    private int next; //rarnode pointer
 
-	public static final int size = 4;
-	
-	public RarNode(byte[] mem){
-		super(mem);
-	}
-	
-	public int getNext() {
-		if(mem!=null){
-			next = Raw.readIntLittleEndian(mem,  pos);
-		}
-		return next;
-	}
+    public static final int size = 4;
 
-	public void setNext(RarNode next) {
-		setNext(next.getAddress());
-	}
-	
-	public void setNext(int next) {
-		this.next = next;
-		if(mem!=null){
-			Raw.writeIntLittleEndian(mem, pos, next);
-		}
-	}
+    public RarNode(byte[] mem){
+        super(mem);
+    }
+
+    public int getNext() {
+        if(mem!=null){
+            next = Raw.readIntLittleEndian(mem,  pos);
+        }
+        return next;
+    }
+
+    public void setNext(RarNode next) {
+        setNext(next.getAddress());
+    }
+
+    public void setNext(int next) {
+        this.next = next;
+        if(mem!=null){
+            Raw.writeIntLittleEndian(mem, pos, next);
+        }
+    }
 
     public String toString() {
         StringBuilder buffer = new StringBuilder();

@@ -28,22 +28,22 @@ import java.io.InputStream;
  * @version $LastChangedRevision$
  */
 public class ReadOnlyAccessInputStream extends InputStream {
-	private IReadOnlyAccess file;
-	
-	private long curPos;
-	private final long endPos;
-	
-	public ReadOnlyAccessInputStream(IReadOnlyAccess file, long startPos,
-            long endPos) throws IOException {
-		super();
-		this.file = file;
-		curPos = startPos;
-		this.endPos = endPos;
-		file.setPosition(curPos);
-	}
+    private IReadOnlyAccess file;
 
-	@Override
-	public int read() throws IOException {
+    private long curPos;
+    private final long endPos;
+
+    public ReadOnlyAccessInputStream(IReadOnlyAccess file, long startPos,
+            long endPos) throws IOException {
+        super();
+        this.file = file;
+        curPos = startPos;
+        this.endPos = endPos;
+        file.setPosition(curPos);
+    }
+
+    @Override
+    public int read() throws IOException {
         if (curPos == endPos) {
             return -1;
         }
@@ -52,10 +52,10 @@ public class ReadOnlyAccessInputStream extends InputStream {
             curPos++;
             return b;
         }
-	}
+    }
 
-	@Override
-	public int read(byte[] b, int off, int len) throws IOException {
+    @Override
+    public int read(byte[] b, int off, int len) throws IOException {
         if (len == 0) {
             return 0;
         }
@@ -66,12 +66,12 @@ public class ReadOnlyAccessInputStream extends InputStream {
                 (int)Math.min(len, endPos - curPos));
         curPos += bytesRead;
         return bytesRead;
-	}
+    }
 
-	@Override
-	public int read(byte[] b) throws IOException {
+    @Override
+    public int read(byte[] b) throws IOException {
         return read(b, 0, b.length);
-	}
+    }
 //
 //    public void close() throws IOException {
 //        file.close();

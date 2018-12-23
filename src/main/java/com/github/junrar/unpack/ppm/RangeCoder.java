@@ -31,78 +31,78 @@ import com.github.junrar.unpack.Unpack;
  */
 public class RangeCoder
 {
-	public static final int TOP = 1 << 24;
+    public static final int TOP = 1 << 24;
 
-	public static final int BOT = 1 << 15;
+    public static final int BOT = 1 << 15;
 
-	private static final long uintMask = 0xFFFFffffL;
+    private static final long uintMask = 0xFFFFffffL;
 
     // uint low, code, range;
-	private long low, code, range;
+    private long low, code, range;
 
-	private final SubRange subRange = new SubRange();
+    private final SubRange subRange = new SubRange();
 
-	private Unpack unpackRead;
+    private Unpack unpackRead;
 
-	public SubRange getSubRange()
-	{
-		return subRange;
-	}
+    public SubRange getSubRange()
+    {
+        return subRange;
+    }
 
-	public void initDecoder(Unpack unpackRead) throws IOException, RarException
-	{
-		this.unpackRead = unpackRead;
+    public void initDecoder(Unpack unpackRead) throws IOException, RarException
+    {
+        this.unpackRead = unpackRead;
 
-		low = code = 0L;
-		range = 0xFFFFffffL;
-		for (int i = 0; i < 4; i++) {
-			code = ((code << 8) | getChar())&uintMask;
-		}
-	}
+        low = code = 0L;
+        range = 0xFFFFffffL;
+        for (int i = 0; i < 4; i++) {
+            code = ((code << 8) | getChar())&uintMask;
+        }
+    }
 
-	public int getCurrentCount()
-	{
-		range = (range / subRange.getScale())&uintMask;
-		return (int)((code - low) / (range));
-	}
+    public int getCurrentCount()
+    {
+        range = (range / subRange.getScale())&uintMask;
+        return (int)((code - low) / (range));
+    }
 
-	public long getCurrentShiftCount(int SHIFT)
-	{
-		range = range >>>SHIFT;
-		return ((code - low) / (range))&uintMask;
-	}
+    public long getCurrentShiftCount(int SHIFT)
+    {
+        range = range >>>SHIFT;
+        return ((code - low) / (range))&uintMask;
+    }
 
-	public void decode()
-	{
-		low = (low + (range * subRange.getLowCount()))&uintMask;
-		range = (range * (subRange.getHighCount() - subRange.getLowCount()))&uintMask;
-	}
+    public void decode()
+    {
+        low = (low + (range * subRange.getLowCount()))&uintMask;
+        range = (range * (subRange.getHighCount() - subRange.getLowCount()))&uintMask;
+    }
 
     private int getChar() throws IOException, RarException
-	{
-		return (unpackRead.getChar());
-	}
+    {
+        return (unpackRead.getChar());
+    }
 
-	public void ariDecNormalize() throws IOException, RarException
-	{
-//		while ((low ^ (low + range)) < TOP || range < BOT && ((range = -low & (BOT - 1)) != 0 ? true : true)) 
-//		{
-//			code = ((code << 8) | unpackRead.getChar()&0xff)&uintMask;
-//			range = (range << 8)&uintMask;
-//			low = (low << 8)&uintMask;
-//		}
+    public void ariDecNormalize() throws IOException, RarException
+    {
+//        while ((low ^ (low + range)) < TOP || range < BOT && ((range = -low & (BOT - 1)) != 0 ? true : true))
+//        {
+//            code = ((code << 8) | unpackRead.getChar()&0xff)&uintMask;
+//            range = (range << 8)&uintMask;
+//            low = (low << 8)&uintMask;
+//        }
 
         // Rewrote for clarity
         boolean c2 = false;
-		while ((low ^ (low + range)) < TOP || (c2 = range < BOT)) {
+        while ((low ^ (low + range)) < TOP || (c2 = range < BOT)) {
             if (c2) {
                 range = (-low & (BOT - 1))&uintMask;
                 c2 = false;
             }
-			code = ((code << 8) | getChar())&uintMask;
-			range = (range << 8)&uintMask;
-			low = (low << 8)&uintMask;
-		}
+            code = ((code << 8) | getChar())&uintMask;
+            range = (range << 8)&uintMask;
+            low = (low << 8)&uintMask;
+        }
     }
 
     // Debug
@@ -121,40 +121,40 @@ public class RangeCoder
         return buffer.toString();
     }
 
-	public static class SubRange
-	{
+    public static class SubRange
+    {
         // uint LowCount, HighCount, scale;
-		private long lowCount, highCount, scale;
+        private long lowCount, highCount, scale;
 
-		public long getHighCount()
-		{
-			return highCount;
-		}
+        public long getHighCount()
+        {
+            return highCount;
+        }
 
-		public void setHighCount(long highCount)
-		{
-			this.highCount = highCount&uintMask;
-		}
+        public void setHighCount(long highCount)
+        {
+            this.highCount = highCount&uintMask;
+        }
 
-		public long getLowCount()
-		{
-			return lowCount&uintMask;
-		}
+        public long getLowCount()
+        {
+            return lowCount&uintMask;
+        }
 
-		public void setLowCount(long lowCount)
-		{
-			this.lowCount = lowCount&uintMask;
-		}
+        public void setLowCount(long lowCount)
+        {
+            this.lowCount = lowCount&uintMask;
+        }
 
-		public long getScale()
-		{
-			return scale;
-		}
+        public long getScale()
+        {
+            return scale;
+        }
 
-		public void setScale(long scale)
-		{
-			this.scale = scale&uintMask;
-		}
+        public void setScale(long scale)
+        {
+            this.scale = scale&uintMask;
+        }
 
         public void incScale(int dScale) {
             setScale(getScale() + dScale);
@@ -173,5 +173,5 @@ public class RangeCoder
             buffer.append("]");
             return buffer.toString();
         }
-	}
+    }
 }

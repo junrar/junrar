@@ -29,40 +29,40 @@ import java.io.IOException;
  */
 public class ReadOnlyAccessByteArray implements IReadOnlyAccess{
 
-	private int positionInFile;
-	private byte[] file;
-	
-	/**
-	 * Initialize with byte[ ]
-	 * @param file the file given as byte array
-	 */
-	public ReadOnlyAccessByteArray(byte[] file){
-		if(file == null){
-			throw new NullPointerException("file must not be null!!");
-		}
-		this.file = file;
-		this.positionInFile = 0;
-	}
+    private int positionInFile;
+    private byte[] file;
+
+    /**
+     * Initialize with byte[ ]
+     * @param file the file given as byte array
+     */
+    public ReadOnlyAccessByteArray(byte[] file){
+        if(file == null){
+            throw new NullPointerException("file must not be null!!");
+        }
+        this.file = file;
+        this.positionInFile = 0;
+    }
 
     public long getPosition() throws IOException {
-		return positionInFile;
-	}
+        return positionInFile;
+    }
 
-	public void setPosition(long pos) throws IOException {
-		if (pos < file.length && pos >= 0){
-			this.positionInFile = (int)pos;
-		}
+    public void setPosition(long pos) throws IOException {
+        if (pos < file.length && pos >= 0){
+            this.positionInFile = (int)pos;
+        }
         else{
-			throw new EOFException();
-		}
-	}
+            throw new EOFException();
+        }
+    }
 
     /** Read a single byte of data. */
     public int read() throws IOException {
         return file[positionInFile++];
     }
 
-	/**
+    /**
      * Read up to <tt>count</tt> bytes to the specified buffer.
      */
     public int read(byte[] buffer, int off, int count) throws IOException {
@@ -72,18 +72,18 @@ public class ReadOnlyAccessByteArray implements IReadOnlyAccess{
         return read;
     }
 
-	public int readFully(byte[] buffer, int count) throws IOException {
-		if(buffer == null ){
-			throw new NullPointerException("buffer must not be null");
-		}
-		if(count == 0){
-			throw new IllegalArgumentException("cannot read 0 bytes ;-)");
-		}
-		int read = Math.min(count, file.length-(int)positionInFile-1);	
-		System.arraycopy(file, (int)positionInFile, buffer, 0, read );
-		positionInFile+=read;
-		return read;
-	}
+    public int readFully(byte[] buffer, int count) throws IOException {
+        if(buffer == null ){
+            throw new NullPointerException("buffer must not be null");
+        }
+        if(count == 0){
+            throw new IllegalArgumentException("cannot read 0 bytes ;-)");
+        }
+        int read = Math.min(count, file.length-(int)positionInFile-1);
+        System.arraycopy(file, (int)positionInFile, buffer, 0, read );
+        positionInFile+=read;
+        return read;
+    }
 
     public void close() throws IOException {
     }

@@ -10,20 +10,20 @@ import com.github.junrar.io.IReadOnlyAccess;
  * 
  */
 public interface Volume {
-	/**
-	 * @throws IOException .
-	 * 
-	 * @return IReadOnlyAccess the access
-	 */
-	IReadOnlyAccess getReadOnlyAccess() throws IOException;
+    /**
+     * @throws IOException .
+     *
+     * @return IReadOnlyAccess the access
+     */
+    IReadOnlyAccess getReadOnlyAccess() throws IOException;
 
-	/**
-	 * @return the data length
-	 */
-	long getLength();
-	
-	/**
-	 * @return the archive this volume belongs to
-	 */
-	Archive getArchive();
+    /**
+     * @return the data length
+     */
+    long getLength();
+
+    /**
+     * @return the archive this volume belongs to
+     */
+    Archive getArchive();
 }

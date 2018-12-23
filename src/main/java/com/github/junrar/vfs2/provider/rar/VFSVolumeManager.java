@@ -15,24 +15,24 @@ import com.github.junrar.util.VolumeHelper;
  */
 public class VFSVolumeManager implements VolumeManager {
 
-	private final FileObject firstVolume;
+    private final FileObject firstVolume;
 
-	public VFSVolumeManager(final FileObject firstVolume) {
-		this.firstVolume = firstVolume;
-	}
+    public VFSVolumeManager(final FileObject firstVolume) {
+        this.firstVolume = firstVolume;
+    }
 
-	@Override
-	public Volume nextArchive(final Archive archive, final Volume last) throws IOException {
-		if (last == null) return new VFSVolume(archive, this.firstVolume);
+    @Override
+    public Volume nextArchive(final Archive archive, final Volume last) throws IOException {
+        if (last == null) return new VFSVolume(archive, this.firstVolume);
 
-		final VFSVolume vfsVolume = (VFSVolume) last;
-		final boolean oldNumbering = !archive.getMainHeader().isNewNumbering()
-				|| archive.isOldFormat();
-		final String nextName = VolumeHelper.nextVolumeName(vfsVolume.getFile()
-				.getName().getBaseName(), oldNumbering);
-		final FileObject nextVolumeFile = this.firstVolume.getParent().resolveFile(
-				nextName);
+        final VFSVolume vfsVolume = (VFSVolume) last;
+        final boolean oldNumbering = !archive.getMainHeader().isNewNumbering()
+                || archive.isOldFormat();
+        final String nextName = VolumeHelper.nextVolumeName(vfsVolume.getFile()
+                .getName().getBaseName(), oldNumbering);
+        final FileObject nextVolumeFile = this.firstVolume.getParent().resolveFile(
+                nextName);
 
-		return new VFSVolume(archive, nextVolumeFile);
-	}
+        return new VFSVolume(archive, nextVolumeFile);
+    }
 }
