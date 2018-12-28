@@ -139,6 +139,7 @@
 						<configuration>
 							<configLocation>checkstyle.xml</configLocation>
 							<encoding>UTF-8</encoding>
+							<includeTestSourceDirectory>true</includeTestSourceDirectory>
 							<consoleOutput>true</consoleOutput>
 							<failsOnError>true</failsOnError>
 						</configuration>
@@ -210,6 +211,7 @@
 				<configuration>
 					<configLocation>checkstyle.xml</configLocation>
 					<encoding>UTF-8</encoding>
+					<includeTestSourceDirectory>true</includeTestSourceDirectory>
 				</configuration>
 				<reportSets>
 					<reportSet>
