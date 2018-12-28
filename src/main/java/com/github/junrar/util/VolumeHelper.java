@@ -1,7 +1,7 @@
 package com.github.junrar.util;
 
 /**
- * 
+ *
  * @author alban
  */
 public class VolumeHelper {

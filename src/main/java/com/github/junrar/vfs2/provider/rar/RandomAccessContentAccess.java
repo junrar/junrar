@@ -12,7 +12,7 @@ import com.github.junrar.io.IReadOnlyAccess;
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
- * 
+ *
  */
 public class RandomAccessContentAccess implements IReadOnlyAccess {
     private final RandomAccessContent rac;

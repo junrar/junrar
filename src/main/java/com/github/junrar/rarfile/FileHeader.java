@@ -5,16 +5,16 @@
  *
  * Source: $HeadURL$
  * Last changed: $LastChangedDate$
- * 
- * 
- * the unrar licence applies to all junrar source and binary distributions 
+ *
+ *
+ * the unrar licence applies to all junrar source and binary distributions
  * you are not allowed to use this source to re-create the RAR compression algorithm
  *
  * Here some html entities which can be used for escaping javadoc tags:
  * "&":  "&#038;" or "&amp;"
  * "<":  "&#060;" or "&lt;"
  * ">":  "&#062;" or "&gt;"
- * "@":  "&#064;" 
+ * "@":  "&#064;"
  */
 package com.github.junrar.rarfile;
 
@@ -28,7 +28,7 @@ import java.util.Date;
 
 /**
  * DOCUMENT ME
- * 
+ *
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
@@ -355,7 +355,7 @@ public class FileHeader extends BlockHeader {
 
     /**
      * the file will be continued in the next archive part
-     * 
+     *
      * @return isSplitAfter
      */
     public boolean isSplitAfter() {
@@ -364,7 +364,7 @@ public class FileHeader extends BlockHeader {
 
     /**
      * the file is continued in this archive
-     * 
+     *
      * @return isSplitBefore
      */
     public boolean isSplitBefore() {
@@ -373,7 +373,7 @@ public class FileHeader extends BlockHeader {
 
     /**
      * this file is compressed as solid (all files handeled as one)
-     * 
+     *
      * @return isSolid
      */
     public boolean isSolid() {
@@ -382,7 +382,7 @@ public class FileHeader extends BlockHeader {
 
     /**
      * the file is encrypted
-     * 
+     *
      * @return isEncrypted
      */
     public boolean isEncrypted() {
@@ -391,7 +391,7 @@ public class FileHeader extends BlockHeader {
 
     /**
      * the filename is also present in unicode
-     * 
+     *
      * @return isUnicode
      */
     public boolean isUnicode() {
@@ -412,7 +412,7 @@ public class FileHeader extends BlockHeader {
 
     /**
      * whether this fileheader represents a directory
-     * 
+     *
      * @return isDirectory
      */
     public boolean isDirectory() {

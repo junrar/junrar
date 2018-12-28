@@ -5,28 +5,28 @@
  *
  * Source: $HeadURL$
  * Last changed: $LastChangedDate$
- * 
- * the unrar licence applies to all junrar source and binary distributions 
+ *
+ * the unrar licence applies to all junrar source and binary distributions
  * you are not allowed to use this source to re-create the RAR compression algorithm
- * 
+ *
  * Here some html entities which can be used for escaping javadoc tags:
  * "&":  "&#038;" or "&amp;"
  * "<":  "&#060;" or "&lt;"
  * ">":  "&#062;" or "&gt;"
- * "@":  "&#064;" 
+ * "@":  "&#064;"
  */
 package com.github.junrar.io;
 
 /**
  * Read / write numbers to a byte[] regarding the endianness of the array
- * 
+ *
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
 public class Raw {
     /**
      * Read a short value from the byte array at the given position (Big Endian)
-     * 
+     *
      * @param array
      *            the array to read from
      * @param pos
@@ -43,7 +43,7 @@ public class Raw {
 
     /**
      * Read a int value from the byte array at the given position (Big Endian)
-     * 
+     *
      * @param array
      *            the array to read from
      * @param pos
@@ -64,7 +64,7 @@ public class Raw {
 
     /**
      * Read a long value from the byte array at the given position (Big Endian)
-     * 
+     *
      * @param array
      *            the array to read from
      * @param pos
@@ -94,7 +94,7 @@ public class Raw {
     /**
      * Read a short value from the byte array at the given position (little
      * Endian)
-     * 
+     *
      * @param array
      *            the array to read from
      * @param pos
@@ -112,7 +112,7 @@ public class Raw {
     /**
      * Read an int value from the byte array at the given position (little
      * Endian)
-     * 
+     *
      * @param array
      *            the array to read from
      * @param pos
@@ -128,7 +128,7 @@ public class Raw {
     /**
      * Read an long value(unsigned int) from the byte array at the given
      * position (little Endian)
-     * 
+     *
      * @param array .
      * @param pos .
      * @return .
@@ -143,7 +143,7 @@ public class Raw {
     /**
      * Read a long value from the byte array at the given position (little
      * Endian)
-     * 
+     *
      * @param array
      *            the array to read from
      * @param pos
@@ -173,7 +173,7 @@ public class Raw {
     /**
      * Write a short value into the byte array at the given position (Big
      * endian)
-     * 
+     *
      * @param array
      *            the array
      * @param pos
@@ -188,7 +188,7 @@ public class Raw {
 
     /**
      * Write an int value into the byte array at the given position (Big endian)
-     * 
+     *
      * @param array
      *            the array
      * @param pos
@@ -205,7 +205,7 @@ public class Raw {
 
     /**
      * Write a long value into the byte array at the given position (Big endian)
-     * 
+     *
      * @param array
      *            the array
      * @param pos
@@ -227,7 +227,7 @@ public class Raw {
     /**
      * Write a short value into the byte array at the given position (little
      * endian)
-     * 
+     *
      * @param array
      *            the array
      * @param pos
@@ -243,11 +243,11 @@ public class Raw {
     /**
      * Increment a short value at the specified position by the specified amount
      * (little endian).
-     * 
+     *
      * @param array .
      * @param pos .
      * @param dv .
-     * 
+     *
      */
     public static final void incShortLittleEndian(byte[] array, int pos, int dv) {
         int c = ((array[pos] & 0xff) + (dv & 0xff)) >>> 8;
@@ -260,7 +260,7 @@ public class Raw {
     /**
      * Write an int value into the byte array at the given position (little
      * endian)
-     * 
+     *
      * @param array
      *            the array
      * @param pos
@@ -278,7 +278,7 @@ public class Raw {
     /**
      * Write a long value into the byte array at the given position (little
      * endian)
-     * 
+     *
      * @param array
      *            the array
      * @param pos

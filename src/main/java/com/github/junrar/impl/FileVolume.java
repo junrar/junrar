@@ -11,7 +11,7 @@ import com.github.junrar.io.ReadOnlyAccessFile;
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
- * 
+ *
  */
 public class FileVolume implements Volume {
     private final Archive archive;

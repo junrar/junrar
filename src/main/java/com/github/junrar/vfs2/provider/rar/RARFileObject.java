@@ -32,7 +32,7 @@ import com.github.junrar.rarfile.FileHeader;
 
 /**
  * A file in a RAR file system.
- * 
+ *
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class RARFileObject extends AbstractFileObject<RARFileSystem> implements FileObject {

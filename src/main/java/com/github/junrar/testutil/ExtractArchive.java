@@ -7,9 +7,9 @@ import com.github.junrar.exception.RarException;
 
 /**
  * extract an archive to the given location
- * 
+ *
  * @author edmund wagner
- * 
+ *
  */
 public class ExtractArchive {
 

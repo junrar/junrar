@@ -5,15 +5,15 @@
  *
  * Source: $HeadURL$
  * Last changed: $LastChangedDate$
- * 
- * the unrar licence applies to all junrar source and binary distributions 
+ *
+ * the unrar licence applies to all junrar source and binary distributions
  * you are not allowed to use this source to re-create the RAR compression algorithm
- * 
+ *
  * Here some html entities which can be used for escaping javadoc tags:
  * "&":  "&#038;" or "&amp;"
  * "<":  "&#060;" or "&lt;"
  * ">":  "&#062;" or "&gt;"
- * "@":  "&#064;" 
+ * "@":  "&#064;"
  */
 package com.github.junrar.io;
 
@@ -43,26 +43,26 @@ public interface IReadOnlyAccess {
      */
     void setPosition(long pos) throws IOException;
 
-    /** 
+    /**
      * Read a single byte of data.
-     * 
+     *
      * @return read read
-     *  
+     *
      * @throws IOException .
      */
     int read() throws IOException;
 
     /**
      * Read up to <tt>count</tt> bytes to the specified buffer.
-     * 
+     *
      * @param buffer .
      * @param off .
      * @param count .
-     * 
+     *
      * @return read read
-     * 
+     *
      * @throws IOException .
-     * 
+     *
      */
     int read(byte[] buffer, int off, int count) throws IOException;
 
@@ -73,13 +73,13 @@ public interface IReadOnlyAccess {
      * @param count how many bytes to read
      * @return bytes read || -1 if  IO problem
      *
-     * @throws IOException . 
+     * @throws IOException .
      */
     int readFully(byte[] buffer, int count) throws IOException;
 
-    /** 
+    /**
      * Close this file.
-     * @throws IOException . 
+     * @throws IOException .
      */
     void close() throws IOException;
 }
