@@ -126,7 +126,9 @@
         <!--<module name="AvoidNestedBlocks"/>-->
         <!--<module name="EmptyBlock"/>-->
         <module name="LeftCurly"/>
-        <module name="NeedBraces"/>
+        <module name="NeedBraces">
+            <property name="allowSingleLineStatement" value="true"/>
+        </module>
         <module name="RightCurly"/>
 
         <!-- Checks for common coding problems               -->

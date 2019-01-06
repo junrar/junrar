@@ -23,9 +23,7 @@ public class VFSVolumeManager implements VolumeManager {
 
     @Override
     public Volume nextArchive(final Archive archive, final Volume last) throws IOException {
-        if (last == null) {
-            return new VFSVolume(archive, this.firstVolume);
-        }
+        if (last == null) return new VFSVolume(archive, this.firstVolume);
 
         final VFSVolume vfsVolume = (VFSVolume) last;
         final boolean oldNumbering = !archive.getMainHeader().isNewNumbering()
