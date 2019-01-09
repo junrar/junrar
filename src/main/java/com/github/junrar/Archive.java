@@ -120,7 +120,23 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 		this.volumeManager = volumeManager;
 		this.unrarCallback = unrarCallback;
 
-		setVolume(this.volumeManager.nextArchive(this, null));
+		try {
+                    setVolume(this.volumeManager.nextArchive(this, null));
+                } catch (IOException e) {
+                    try {
+                        close();
+                    } catch (IOException e1) {
+                        logger.error("Failed to close the archive after an internal error!");
+                    }
+                    throw e;
+                } catch (RarException e) {
+                    try {
+                        close();
+                    } catch (IOException e1) {
+                        logger.error("Failed to close the archive after an internal error!");
+                    }
+                    throw e;
+                }
 		this.dataIO = new ComprDataIO(this);
 	}
 
