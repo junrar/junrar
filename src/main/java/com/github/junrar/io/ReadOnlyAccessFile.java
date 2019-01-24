@@ -28,30 +28,30 @@ import java.io.RandomAccessFile;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAccess{
+public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAccess {
 
-	/**
-	 * @param file the file
-	 * @throws FileNotFoundException .
-	 */
-	public ReadOnlyAccessFile(final File file) throws FileNotFoundException {
-		super(file, "r");
-	}
+    /**
+     * @param file the file
+     * @throws FileNotFoundException .
+     */
+    public ReadOnlyAccessFile(final File file) throws FileNotFoundException {
+        super(file, "r");
+    }
 
-	@Override
-	public int readFully(final byte[] buffer, final int count) throws IOException {
+    @Override
+    public int readFully(final byte[] buffer, final int count) throws IOException {
         assert count > 0 : count;
         this.readFully(buffer, 0, count);
         return count;
     }
 
-	@Override
-	public long getPosition() throws IOException {
+    @Override
+    public long getPosition() throws IOException {
         return this.getFilePointer();
-	}
+    }
 
-	@Override
-	public void setPosition(final long pos) throws IOException {
+    @Override
+    public void setPosition(final long pos) throws IOException {
         this.seek(pos);
-	}
+    }
 }

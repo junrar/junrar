@@ -5,33 +5,31 @@
  *
  * Source: $HeadURL$
  * Last changed: $LastChangedDate$
- * 
- * the unrar licence applies to all junrar source and binary distributions 
+ *
+ * the unrar licence applies to all junrar source and binary distributions
  * you are not allowed to use this source to re-create the RAR compression algorithm
- * 
+ *
  * Here some html entities which can be used for escaping javadoc tags:
  * "&":  "&#038;" or "&amp;"
  * "<":  "&#060;" or "&lt;"
  * ">":  "&#062;" or "&gt;"
- * "@":  "&#064;" 
+ * "@":  "&#064;"
  */
 package com.github.junrar.unpack.decode;
 
 /**
  * DOCUMENT ME
- * 
+ *
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class LowDistDecode extends Decode
-{
+public class LowDistDecode extends Decode {
 
-	/**
-	 * 
-	 */
-	public LowDistDecode()
-	{
-		decodeNum = new int[Compress.LDC];
-	}
+    /**
+     *
+     */
+    public LowDistDecode() {
+        decodeNum = new int[Compress.LDC];
+    }
 
 }

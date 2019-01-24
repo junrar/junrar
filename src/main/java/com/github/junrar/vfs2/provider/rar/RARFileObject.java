@@ -32,86 +32,86 @@ import com.github.junrar.rarfile.FileHeader;
 
 /**
  * A file in a RAR file system.
- * 
+ *
  * @author <a href="http://www.rogiel.com">Rogiel</a>
  */
 public class RARFileObject extends AbstractFileObject<RARFileSystem> implements FileObject {
-	/**
-	 * The TFile.
-	 */
-	protected Archive archive;
-	protected FileHeader header;
-	@SuppressWarnings("unused")
-	private final RARFileSystem fs;
+    /**
+     * The TFile.
+     */
+    protected Archive archive;
+    protected FileHeader header;
+    @SuppressWarnings("unused")
+    private final RARFileSystem fs;
 
-	private final HashSet<String> children = new HashSet<String>();
+    private final HashSet<String> children = new HashSet<String>();
 
-	protected RARFileObject(AbstractFileName name, Archive archive,
-			FileHeader header, RARFileSystem fs) throws FileSystemException {
-		super(name, fs);
-		this.fs = fs;
-		this.archive = archive;
-		this.header = header;
-		archive.getMainHeader().isFirstVolume();
-	}
+    protected RARFileObject(AbstractFileName name, Archive archive,
+            FileHeader header, RARFileSystem fs) throws FileSystemException {
+        super(name, fs);
+        this.fs = fs;
+        this.archive = archive;
+        this.header = header;
+        archive.getMainHeader().isFirstVolume();
+    }
 
-	@Override
-	public boolean doIsWriteable() throws FileSystemException {
-		return false;
-	}
+    @Override
+    public boolean doIsWriteable() throws FileSystemException {
+        return false;
+    }
 
-	@Override
-	protected FileType doGetType() {
-		if (header == null || header.isDirectory()) {
-			return FileType.FOLDER;
-		} else {
-			return FileType.FILE;
-		}
-	}
+    @Override
+    protected FileType doGetType() {
+        if (header == null || header.isDirectory()) {
+            return FileType.FOLDER;
+        } else {
+            return FileType.FILE;
+        }
+    }
 
-	@Override
-	protected String[] doListChildren() {
-		try {
-			if (!getType().hasChildren()) {
-				return null;
-			}
-		} catch (FileSystemException e) {
-			// should not happen as the type has already been cached.
-			throw new RuntimeException(e);
-		}
-		return children.toArray(new String[children.size()]);
-	}
+    @Override
+    protected String[] doListChildren() {
+        try {
+            if (!getType().hasChildren()) {
+                return null;
+            }
+        } catch (FileSystemException e) {
+            // should not happen as the type has already been cached.
+            throw new RuntimeException(e);
+        }
+        return children.toArray(new String[children.size()]);
+    }
 
-	@Override
-	protected long doGetContentSize() {
-		return header.getFullUnpackSize();
-	}
+    @Override
+    protected long doGetContentSize() {
+        return header.getFullUnpackSize();
+    }
 
-	@Override
-	protected long doGetLastModifiedTime() throws Exception {
-		return header.getMTime().getTime();
-	}
+    @Override
+    protected long doGetLastModifiedTime() throws Exception {
+        return header.getMTime().getTime();
+    }
 
-	@Override
-	protected InputStream doGetInputStream() throws Exception {
-		if (!getType().hasContent()) {
-			throw new FileSystemException("vfs.provider/read-not-file.error",
-					getName());
-		}
-		return archive.getInputStream(header);
-	}
+    @Override
+    protected InputStream doGetInputStream() throws Exception {
+        if (!getType().hasContent()) {
+            throw new FileSystemException("vfs.provider/read-not-file.error",
+                    getName());
+        }
+        return archive.getInputStream(header);
+    }
 
-	/**
-	 * Attaches a child.
-	 * 
-	 * @param childName
-	 *            The name of the child.
-	 */
-	public void attachChild(FileName childName) {
-		children.add(childName.getBaseName());
-	}
+    /**
+     * Attaches a child.
+     *
+     * @param childName
+     *            The name of the child.
+     */
+    public void attachChild(FileName childName) {
+        children.add(childName.getBaseName());
+    }
 
-	public void setHeader(FileHeader header) {
-		this.header = header;
-	}
+    public void setHeader(FileHeader header) {
+        this.header = header;
+    }
 }
