@@ -49,9 +49,9 @@ public class LocalFolderExtractor implements ExtractDestination {
             stream = new FileOutputStream(f);
             arch.extractFile(fileHeader, stream);
         } finally {
-          if (stream != null) {
-            stream.close();
-          }
+            if (stream != null) {
+                stream.close();
+            }
         }
         return f;
     }

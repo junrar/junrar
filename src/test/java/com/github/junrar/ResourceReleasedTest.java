@@ -95,7 +95,7 @@ public class ResourceReleasedTest {
     @Test
     public void extractRar4FromVolumeManager() throws IOException, RarException {
         final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir);
-        final VolumeManager volumeManager  =new FileVolumeManager(rar4TestFile);
+        final VolumeManager volumeManager = new FileVolumeManager(rar4TestFile);
         Junrar.extract(extractDestination, volumeManager);
     }
 }
