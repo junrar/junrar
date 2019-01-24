@@ -44,9 +44,15 @@ public class LocalFolderExtractor implements ExtractDestination {
         final FileHeader fileHeader
     ) throws FileNotFoundException, RarException, IOException {
         final File f = createFile(fileHeader, folderDestination);
-        final OutputStream stream = new FileOutputStream(f);
-        arch.extractFile(fileHeader, stream);
-        stream.close();
+        OutputStream stream = null;
+        arch.extractFile(fileHeader, stream);			try {
+        stream.close();				stream = new FileOutputStream(f);
+          arch.extractFile(fileHeader, stream);
+        } finally {
+          if (stream != null) {
+            stream.close();
+          }
+        }
         return f;
     }
 
@@ -104,6 +110,4 @@ public class LocalFolderExtractor implements ExtractDestination {
             return null;
         }
     }
-
-
 }
