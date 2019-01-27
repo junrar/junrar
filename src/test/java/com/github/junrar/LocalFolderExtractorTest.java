@@ -16,7 +16,7 @@ public class LocalFolderExtractorTest {
 
     @Test
     public void rarWithDirectoriesOutsideTarget_ShouldThrowException() throws IOException, RarException {
-        File file = new File("/foo");
+        File file = TestCommons.createTempDir();
         FileSystem mockFileSystem = mock(FileSystem.class);
         LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(file, mockFileSystem);
 
@@ -29,7 +29,8 @@ public class LocalFolderExtractorTest {
         try {
             localFolderExtractor.extract(archive, fileHeader);
         } catch (IllegalStateException e) {
-            Assert.assertEquals("Rar contains file with invalid path: '/../ops'", e.getMessage());
+            File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
+            Assert.assertEquals("Rar contains file with invalid path: '" + expectedInvalidPath + "'", e.getMessage());
             return;
         }
         Assert.fail("Should have thrown 'java.lang.IllegalStateException: Detected path traversal! Stop extracting.'");
@@ -37,7 +38,7 @@ public class LocalFolderExtractorTest {
 
     @Test
     public void rarWithFileOutsideTarget_ShouldThrowException() throws IOException, RarException {
-        File file = new File("/foo");
+        File file = TestCommons.createTempDir();
         FileSystem mockFileSystem = mock(FileSystem.class);
         LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(file, mockFileSystem);
 
@@ -49,7 +50,8 @@ public class LocalFolderExtractorTest {
         try {
             localFolderExtractor.createDirectory(fileHeader);
         } catch (IllegalStateException e) {
-            Assert.assertEquals("Rar contains invalid path: '/../ops'", e.getMessage());
+            File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
+            Assert.assertEquals("Rar contains invalid path: '" + expectedInvalidPath + "'", e.getMessage());
             return;
         }
         Assert.fail("Should have thrown 'java.lang.IllegalStateException: Detected path traversal! Stop extracting.'");
