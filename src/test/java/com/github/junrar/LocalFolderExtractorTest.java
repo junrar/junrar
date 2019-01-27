@@ -14,7 +14,7 @@ import static org.mockito.Mockito.when;
 
 public class LocalFolderExtractorTest {
 
-    @Test
+    @Test(expected = InvalidExtractionPath.class)
     public void rarWithDirectoriesOutsideTarget_ShouldThrowException() throws IOException, RarException {
         File file = new File("/foo");
         FileSystem mockFileSystem = mock(FileSystem.class);
@@ -25,17 +25,10 @@ public class LocalFolderExtractorTest {
         when(fileHeader.isFileHeader()).thenReturn(true);
         when(fileHeader.isUnicode()).thenReturn(true);
         when(fileHeader.getFileNameW()).thenReturn("../../ops");
-
-        try {
-            localFolderExtractor.extract(archive, fileHeader);
-        } catch (IllegalStateException e) {
-            Assert.assertEquals("Rar contains file with invalid path: '/../ops'", e.getMessage());
-            return;
-        }
-        Assert.fail("Should have thrown 'java.lang.IllegalStateException: Detected path traversal! Stop extracting.'");
+        localFolderExtractor.extract(archive, fileHeader);
     }
 
-    @Test
+    @Test(expected = InvalidExtractionPath.class)
     public void rarWithFileOutsideTarget_ShouldThrowException() throws IOException, RarException {
         File file = new File("/foo");
         FileSystem mockFileSystem = mock(FileSystem.class);
@@ -45,14 +38,7 @@ public class LocalFolderExtractorTest {
         when(fileHeader.isDirectory()).thenReturn(true);
         when(fileHeader.isUnicode()).thenReturn(true);
         when(fileHeader.getFileNameW()).thenReturn("../../ops/");
-
-        try {
-            localFolderExtractor.createDirectory(fileHeader);
-        } catch (IllegalStateException e) {
-            Assert.assertEquals("Rar contains invalid path: '/../ops'", e.getMessage());
-            return;
-        }
-        Assert.fail("Should have thrown 'java.lang.IllegalStateException: Detected path traversal! Stop extracting.'");
+        localFolderExtractor.createDirectory(fileHeader);
     }
 
 }

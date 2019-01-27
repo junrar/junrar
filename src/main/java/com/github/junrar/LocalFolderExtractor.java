@@ -42,8 +42,7 @@ public class LocalFolderExtractor implements ExtractDestination {
         try {
             String fileCanonPath = f.getCanonicalPath();
             if (!fileCanonPath.startsWith(folderDestination.getCanonicalPath())) {
-                String errorMessage = "Rar contains invalid path: '" + fileCanonPath + "'";
-                throw new IllegalStateException(errorMessage);
+                throw new InvalidExtractionPath(f);
             }
         } catch (IOException e) {
             throw new IllegalStateException(e);
@@ -80,8 +79,7 @@ public class LocalFolderExtractor implements ExtractDestination {
         File f = new File(destination, name);
         String dirCanonPath = f.getCanonicalPath();
         if (!dirCanonPath.startsWith(destination.getCanonicalPath())) {
-            String errorMessage = "Rar contains file with invalid path: '" + dirCanonPath + "'";
-            throw new IllegalStateException(errorMessage);
+            throw new InvalidExtractionPath(f);
         }
         if (!f.exists()) {
             try {
