@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.github.junrar.vfs2.provider.rar.FileSystem;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -16,6 +17,7 @@ import com.github.junrar.rarfile.FileHeader;
 public class Junrar {
 
     private static final Log logger = LogFactory.getLog(Junrar.class);
+    private static FileSystem fileSystem = new FileSystem();
 
     public static List<File> extract(final String rarPath, final String destinationPath) throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
@@ -31,7 +33,7 @@ public class Junrar {
         validateDestinationPath(destinationFolder);
 
         final Archive archive = createArchiveOrThrowException(logger, rar);
-        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder, fileSystem);
         return extractArchiveTo(archive, lfe);
     }
 
@@ -39,7 +41,7 @@ public class Junrar {
         validateDestinationPath(destinationFolder);
 
         final Archive arch = createArchiveOrThrowException(logger, resourceAsStream);
-        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder, fileSystem);
         return extractArchiveTo(arch, lfe);
     }
 

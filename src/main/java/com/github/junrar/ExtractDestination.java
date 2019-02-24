@@ -1,7 +1,6 @@
 package com.github.junrar;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import com.github.junrar.exception.RarException;
@@ -14,5 +13,5 @@ public interface ExtractDestination {
     File extract(
         Archive arch,
         FileHeader fileHeader
-    ) throws FileNotFoundException, RarException, IOException;
+    ) throws RarException, IOException;
 }

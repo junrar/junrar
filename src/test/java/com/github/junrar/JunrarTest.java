@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+import com.github.junrar.vfs2.provider.rar.FileSystem;
 import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -21,6 +22,7 @@ import com.github.junrar.testUtil.JUnRarTestUtil;
 
 public class JunrarTest {
     private static File tempFolder;
+    private FileSystem fileSystem = new FileSystem();
 
     @BeforeClass
     public static void setupFunctionalTests() throws IOException {
@@ -59,7 +61,7 @@ public class JunrarTest {
     public void extractionFromFileWithVolumeManagerAndExtractorHappyDay() throws RarException, IOException {
         final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
 
-        Junrar.extract(new LocalFolderExtractor(tempFolder), new FileVolumeManager(rarFileOnTemp));
+        Junrar.extract(new LocalFolderExtractor(tempFolder, fileSystem), new FileVolumeManager(rarFileOnTemp));
 
         final File fooDir = new File(tempFolder, "foo");
         assertTrue(fooDir.exists());
