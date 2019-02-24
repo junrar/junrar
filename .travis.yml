@@ -8,5 +8,4 @@ install:
 
 ## Build and release to maven central
 script:
-#  mvn clean deploy --settings .maven.xml -DskipTests=true -B -U -Prelease
-  mvn release:prepare -B --settings .maven.xml && mvn release:perform -B --settings .maven.xml
+  mvn clean deploy --settings .maven.xml -DskipTests=true -B -U -Prelease
