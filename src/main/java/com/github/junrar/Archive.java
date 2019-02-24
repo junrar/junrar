@@ -641,6 +641,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @param volume
      *            the volume to set
      * @throws IOException .
+     * @throws RarException .
      */
     public void setVolume(final Volume volume) throws IOException, RarException {
         this.volume = volume;
