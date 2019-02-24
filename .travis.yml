@@ -8,4 +8,4 @@ install:
 
 ## Build and release to maven central
 script:
-  mvn --settings .maven.xml release:perform -B
+  mvn --settings .maven.xml release:prepare -B && mvn --settings .maven.xml release:perform -B
