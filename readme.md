@@ -8,15 +8,13 @@ Read and extracts from a .rar file. Supported RAR formats are V4 and lower. This
 
 Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
-If you are using a version below 1.0.1 please upgrade
-
 Dependency on maven:  
 ```
 
 <dependency>  
   <groupId>com.github.junrar</groupId>  
   <artifactId>junrar</artifactId>
-  <version>3.1.0</version>  
+  <version>4.0.0</version>  
 </dependency>  
 ```
 
