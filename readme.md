@@ -19,7 +19,7 @@ Dependency on maven:
 ```
 
 
-Extract from files:
+### Extract from a file to a directory:
 ```java
 Junrar.extract("/tmp/foo.rar", "/tmp");
 //or
@@ -31,7 +31,20 @@ final InputStream resourceAsStream = Foo.class.getResourceAsStream("foo.rar");//
 Junrar.extract(resourceAsStream, tempFolder);
 ```
 
-List files:
+### Extract from an InputStream to an OutputStream 
+```java
+// Assuming you already have an InputStream from the rar file and an OutputStream for writing to
+final Archive a = new Archive(inputStream);
+  while (true) {
+      FileHeader fh = a.nextFileHeader();
+      if (fh == null) {
+          break;
+      }
+      a.extractFile(fh, outputStream)); 
+  }
+```
+
+### List files:
 ```java
 final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);    
 ```
