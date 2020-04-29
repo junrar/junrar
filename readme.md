@@ -34,13 +34,13 @@ Junrar.extract(resourceAsStream, tempFolder);
 ### Extract from an InputStream to an OutputStream 
 ```java
 // Assuming you already have an InputStream from the rar file and an OutputStream for writing to
-final Archive a = new Archive(inputStream);
+final Archive archive = new Archive(inputStream);
   while (true) {
-      FileHeader fh = a.nextFileHeader();
-      if (fh == null) {
+      FileHeader fileHeader = archive.nextFileHeader();
+      if (fileHeader == null) {
           break;
       }
-      a.extractFile(fh, outputStream)); 
+      archive.extractFile(fileHeader, outputStream)); 
   }
 ```
 
