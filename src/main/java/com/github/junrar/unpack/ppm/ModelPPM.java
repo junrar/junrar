@@ -185,6 +185,8 @@ public class ModelPPM {
         int MaxMB = 0;
         if (reset) {
             MaxMB = unpackRead.getChar();
+            final int MaxMBLimit = 1;
+            if (MaxMB > MaxMBLimit) MaxMB = MaxMBLimit;
         } else {
             if (subAlloc.GetAllocatedMemory() == 0) {
                 return (false);
