@@ -2,27 +2,28 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import org.apache.commons.io.FileUtils;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class RarVersionTest {
 
-    private File tempDir;
+  private File tempDir;
 
-    @Before
-    public void createTempDir() throws IOException {
-        tempDir = TestCommons.createTempDir();
-    }
+  @BeforeEach
+  public void createTempDir() throws IOException {
+    tempDir = TestCommons.createTempDir();
+  }
 
-    @After
+  @AfterEach
     public void cleanupTempDir() throws IOException {
         FileUtils.deleteDirectory(tempDir);
     }
@@ -46,7 +47,7 @@ public class RarVersionTest {
         assertEquals(7, file2.length());
     }
 
-    @Test(expected = RarException.class)
+  @Test
     public void extractRarV5() throws Exception {
         InputStream stream = null;
         try {
@@ -54,7 +55,6 @@ public class RarVersionTest {
             Junrar.extract(stream, tempDir);
         } catch (RarException e) {
             assertEquals(RarException.RarExceptionType.unsupportedRarArchive, e.getType());
-            throw e;
         } finally {
             if (stream != null) {
                 stream.close();

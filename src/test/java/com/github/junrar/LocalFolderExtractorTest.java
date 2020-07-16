@@ -2,7 +2,7 @@ package com.github.junrar;
 
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.vfs2.provider.rar.FileSystem;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;

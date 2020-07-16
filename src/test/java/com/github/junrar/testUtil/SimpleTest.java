@@ -22,24 +22,27 @@ import com.github.junrar.TestCommons;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class SimpleTest {
 
-    @Test
-    public void testTikaDocs() throws Exception {
-        String[] expected = {"testEXCEL.xls", "13824",
-                "testHTML.html", "167",
-                "testOpenOffice2.odt", "26448",
-                "testPDF.pdf", "34824",
+  @Test
+  public void testTikaDocs() throws Exception {
+    String[] expected = {"testEXCEL.xls", "13824",
+      "testHTML.html", "167",
+      "testOpenOffice2.odt", "26448",
+      "testPDF.pdf", "34824",
                 "testPPT.ppt", "16384",
                 "testRTF.rtf", "3410",
                 "testTXT.txt", "49",
@@ -55,34 +58,35 @@ public class SimpleTest {
             FileHeader fileHeader = archive.nextFileHeader();
             int i = 0;
             while (fileHeader != null) {
-                assertTrue(fileHeader.getFileNameString().contains(expected[i++]));
-                assertEquals(Long.parseLong(expected[i++]), fileHeader.getUnpSize());
-                fileHeader = archive.nextFileHeader();
+              assertTrue(fileHeader.getFileNameString().contains(expected[i++]));
+              assertEquals(Long.parseLong(expected[i++]), fileHeader.getUnpSize());
+              fileHeader = archive.nextFileHeader();
             }
         } finally {
-            archive.close();
+          archive.close();
         }
 
-    }
+  }
 
-    @Test(expected = RarException.class)
-    public void nullMainHeaderFile_throwsRarException() throws URISyntaxException, IOException, RarException {
-        final File tempDir = TestCommons.createTempDir();
-        final File f = new File(getClass().getResource("test-mainHeaderNull.rar").toURI());
-        Junrar.extract(f, tempDir);
-    }
+  @Test
+  public void nullMainHeaderFile_throwsRarException() throws URISyntaxException, IOException {
+    final File tempDir = TestCommons.createTempDir();
+    final File f = new File(getClass().getResource("test-mainHeaderNull.rar").toURI());
 
-    @Test(expected = RarException.class)
-    public void nullMainHeaderInputStream_throwsRarException() throws IOException, RarException {
-        final File tempDir = TestCommons.createTempDir();
-        InputStream stream = null;
-        try {
-            stream = getClass().getResource("test-mainHeaderNull.rar").openStream();
-            Junrar.extract(stream, tempDir);
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
-        }
-    }
+    Throwable thrown = catchThrowable(() -> Junrar.extract(f, tempDir));
+
+    assertThat(thrown).isInstanceOf(RarException.class);
+  }
+
+  @Test
+  public void nullMainHeaderInputStream_throwsRarException() throws IOException {
+    final File tempDir = TestCommons.createTempDir();
+    InputStream stream = getClass().getResource("test-mainHeaderNull.rar").openStream();
+
+    Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
+
+    assertThat(thrown).isInstanceOf(RarException.class);
+
+    stream.close();
+  }
 }

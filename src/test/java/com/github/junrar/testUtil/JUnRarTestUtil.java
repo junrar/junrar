@@ -29,9 +29,9 @@ import com.github.junrar.testutil.ExtractArchive;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -40,9 +40,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 /**
  * DOCUMENT ME
@@ -84,7 +83,7 @@ public class JUnRarTestUtil {
 
     }
 
-    @BeforeClass
+  @BeforeAll
     public static void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
     }
@@ -114,7 +113,7 @@ public class JUnRarTestUtil {
         }
     }
 
-    @AfterClass
+  @AfterAll
     public static void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }

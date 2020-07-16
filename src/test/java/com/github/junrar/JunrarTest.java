@@ -1,35 +1,31 @@
 package com.github.junrar;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import com.github.junrar.exception.RarException;
+import com.github.junrar.impl.FileVolumeManager;
+import com.github.junrar.testUtil.JUnRarTestUtil;
+import com.github.junrar.vfs2.provider.rar.FileSystem;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import com.github.junrar.vfs2.provider.rar.FileSystem;
-import org.apache.commons.io.FileUtils;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import com.github.junrar.exception.RarException;
-import com.github.junrar.impl.FileVolumeManager;
-import com.github.junrar.testUtil.JUnRarTestUtil;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JunrarTest {
     private static File tempFolder;
     private FileSystem fileSystem = new FileSystem();
 
-    @BeforeClass
+  @BeforeAll
     public static void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
     }
 
-    @AfterClass
+  @AfterAll
     public static void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }
