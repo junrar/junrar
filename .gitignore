@@ -4,6 +4,22 @@
 .settings/
 target/
 
-# IntelliJ
-.idea/
+### IntelliJ IDEA
+!.idea/
+.idea/*
+!/.idea/runConfigurations/
+*.iws
 *.iml
+*.ipr
+
+### NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Gradle
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
