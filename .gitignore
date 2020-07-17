@@ -23,3 +23,6 @@ nbdist/
 ### Gradle
 .gradle
 !gradle/wrapper/gradle-wrapper.jar
+
+### NodeJS
+node_modules
