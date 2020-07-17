@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
+    id 'checkstyle'
     id 'com.github.ben-manes.versions' version '0.28.0'
     id 'com.autonomousapps.dependency-analysis' version '0.52.0'
     id 'dev.jacomet.logging-capabilities' version '0.9.0'
@@ -58,4 +59,9 @@ tasks.wrapper {
 
 test {
   useJUnitPlatform()
+}
+
+checkstyle {
+    configFile = file("${rootDir}/checkstyle.xml")
+    toolVersion = '8.29'
 }
