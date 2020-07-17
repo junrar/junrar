@@ -5,8 +5,10 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Paths;
 
 public class TestCommons {
 
@@ -28,6 +30,16 @@ public class TestCommons {
         File testRar = new File(destination, resourcePath);
         FileUtils.writeByteArrayToFile(testRar, IOUtils.toByteArray(resourceAsStream));
         return testRar;
+    }
+
+    public static void copyRarsToFolder(File destination, File srcDir) throws IOException {
+        String[] fileNames = srcDir.list();
+        for (String fileName : fileNames) {
+            File srcFile = Paths.get(srcDir.getPath(), fileName).toFile();
+            InputStream resourceAsStream = new FileInputStream(srcFile);
+            File destFile = new File(destination, srcFile.getName());
+            FileUtils.writeByteArrayToFile(destFile, IOUtils.toByteArray(resourceAsStream));
+        }
     }
 
 }
