@@ -40,9 +40,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.fail;
 
 
 /**
@@ -102,13 +101,13 @@ public class JUnRarTestUtil {
         JUnRarTestUtil.main(args);
 
         File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
+        assertThat(fooDir).exists();
 
         File barFile = new File(fooDir, "bar.txt");
-        assertTrue(barFile.exists());
+        assertThat(barFile).exists();
 
         String barTxtContents = FileUtils.readFileToString(barFile);
-        assertEquals("baz\n", barTxtContents);
+        assertThat(barTxtContents).isEqualTo("baz\n");
 
         if (errorsOcurred) {
             fail("Test failed, see output for details...");

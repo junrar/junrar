@@ -14,10 +14,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 public class JunrarTest {
     private static File tempFolder;
@@ -40,8 +38,10 @@ public class JunrarTest {
         Junrar.extract(rarFileOnTemp, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
-        assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir, "bar.txt")));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+
+        assertThat(fooDir).exists();
+        assertThat(barFileContent).isEqualTo("baz\n");
     }
 
     @Test
@@ -51,8 +51,10 @@ public class JunrarTest {
         final List<File> extractedFiles = Junrar.extract(rarFileOnTemp, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        assertEquals(new File(fooDir, "bar.txt"), extractedFiles.get(0));
-        assertEquals(fooDir, extractedFiles.get(1));
+        File barFile = new File(fooDir, "bar.txt");
+
+        assertThat(extractedFiles.get(0)).isEqualTo(barFile);
+        assertThat(extractedFiles.get(1)).isEqualTo(fooDir);
     }
 
 
@@ -63,8 +65,10 @@ public class JunrarTest {
         Junrar.extract(new LocalFolderExtractor(tempFolder, fileSystem), new FileVolumeManager(rarFileOnTemp));
 
         final File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
-        assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir, "bar.txt")));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+
+        assertThat(fooDir).exists();
+        assertThat(barFileContent).isEqualTo("baz\n");
     }
 
     @Test
@@ -73,8 +77,10 @@ public class JunrarTest {
         Junrar.extract(resourceAsStream, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
-        assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir, "bar.txt")));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+
+        assertThat(fooDir).exists();
+        assertThat(barFileContent).isEqualTo("baz\n");
     }
 
     @Test
@@ -94,30 +100,27 @@ public class JunrarTest {
             c("test-documents\\testXML.xml", 766)
         };
 
-        assertArrayEquals(expected, contentDescriptions.toArray());
+        assertThat(contentDescriptions.toArray()).isEqualTo(expected);
     }
 
     @Test
-    public void ifIsDirInsteadOfFile_ThrowException() throws RarException, IOException {
-        try {
-            Junrar.extract(tempFolder, tempFolder);
-        } catch (final IllegalArgumentException e) {
-            assertEquals("First argument should be a file but was " + tempFolder.getAbsolutePath(), e.getMessage());
-            return;
-        }
-        fail();
+    public void ifIsDirInsteadOfFile_ThrowException() {
+        Throwable thrown = catchThrowable(() -> Junrar.extract(tempFolder, tempFolder));
+
+        assertThat(thrown)
+            .isInstanceOf(IllegalArgumentException.class)
+            .hasMessageContaining("First argument should be a file but was " + tempFolder.getAbsolutePath());
     }
 
     @Test
-    public void ifIsFileInsteadOfDir_ThrowException() throws RarException, IOException {
+    public void ifIsFileInsteadOfDir_ThrowException() throws IOException {
         final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
-        try {
-            Junrar.extract(rarFileOnTemp, rarFileOnTemp);
-        } catch (final IllegalArgumentException e) {
-            assertEquals("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath(), e.getMessage());
-            return;
-        }
-        fail();
+
+        Throwable thrown = catchThrowable(() -> Junrar.extract(rarFileOnTemp, rarFileOnTemp));
+
+        assertThat(thrown)
+            .isInstanceOf(IllegalArgumentException.class)
+            .hasMessageContaining("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath());
     }
 
     private static ContentDescription c(final String name, final long size) {

@@ -10,8 +10,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 
 public class RarVersionTest {
@@ -30,35 +30,24 @@ public class RarVersionTest {
 
     @Test
     public void extractRarV4() throws Exception {
-        InputStream stream = null;
-        try {
-            stream = getClass().getResource("rar4.rar").openStream();
+        try (InputStream stream = getClass().getResourceAsStream("rar4.rar")) {
             Junrar.extract(stream, tempDir);
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
         }
         final File file1 = new File(tempDir, "FILE1.TXT");
         final File file2 = new File(tempDir, "FILE2.TXT");
-        assertTrue(file1.exists());
-        assertEquals(7, file1.length());
-        assertTrue(file2.exists());
-        assertEquals(7, file2.length());
+
+        assertThat(file1).exists();
+        assertThat(file1.length()).isEqualTo(7);
+        assertThat(file2).exists();
+        assertThat(file2.length()).isEqualTo(7);
     }
 
     @Test
     public void extractRarV5() throws Exception {
-        InputStream stream = null;
-        try {
-            stream = getClass().getResource("rar5.rar").openStream();
-            Junrar.extract(stream, tempDir);
-        } catch (RarException e) {
-            assertEquals(RarException.RarExceptionType.unsupportedRarArchive, e.getType());
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
+        try (InputStream stream = getClass().getResourceAsStream("rar5.rar")) {
+            Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
+            assertThat(thrown).isInstanceOf(RarException.class);
+            assertThat(((RarException) thrown).getType()).isEqualTo(RarException.RarExceptionType.unsupportedRarArchive);
         }
     }
 }

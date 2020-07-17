@@ -31,8 +31,6 @@ import java.net.URISyntaxException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class SimpleTest {
@@ -51,21 +49,15 @@ public class SimpleTest {
 
 
         File f = new File(getClass().getResource("test-documents.rar").toURI());
-        Archive archive = null;
-        try {
-            archive = new Archive(new FileVolumeManager(f));
-
+        try (Archive archive = new Archive(new FileVolumeManager(f))) {
             FileHeader fileHeader = archive.nextFileHeader();
             int i = 0;
             while (fileHeader != null) {
-                assertTrue(fileHeader.getFileNameString().contains(expected[i++]));
-                assertEquals(Long.parseLong(expected[i++]), fileHeader.getUnpSize());
+                assertThat(fileHeader.getFileNameString()).contains(expected[i++]);
+                assertThat(fileHeader.getUnpSize()).isEqualTo(Long.parseLong(expected[i++]));
                 fileHeader = archive.nextFileHeader();
             }
-        } finally {
-            archive.close();
         }
-
     }
 
     @Test
