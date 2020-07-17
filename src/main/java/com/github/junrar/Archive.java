@@ -288,7 +288,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
             block.setPositionInFile(position);
 
-            switch (block.getHeaderType()) {
+            UnrarHeadertype headerType = block.getHeaderType();
+            if (headerType == null) {
+                throw new RarException(RarException.RarExceptionType.badRarArchive);
+            }
+            switch (headerType) {
 
                 case MarkHeader:
                     this.markHead = new MarkHeader(block);
