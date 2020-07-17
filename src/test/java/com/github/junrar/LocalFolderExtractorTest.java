@@ -30,7 +30,8 @@ public class LocalFolderExtractorTest {
             localFolderExtractor.extract(archive, fileHeader);
         } catch (IllegalStateException e) {
             File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
-            Assert.assertEquals("Rar contains file with invalid path: '" + expectedInvalidPath + "'", e.getMessage());
+            Assert.assertTrue(e.getMessage().contains("Rar contains file with invalid path"));
+            Assert.assertTrue(e.getMessage().contains(expectedInvalidPath.toString()));
             return;
         }
         Assert.fail("Should have thrown 'java.lang.IllegalStateException: Detected path traversal! Stop extracting.'");
@@ -51,7 +52,8 @@ public class LocalFolderExtractorTest {
             localFolderExtractor.createDirectory(fileHeader);
         } catch (IllegalStateException e) {
             File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
-            Assert.assertEquals("Rar contains invalid path: '" + expectedInvalidPath + "'", e.getMessage());
+            Assert.assertTrue(e.getMessage().contains("Rar contains invalid path"));
+            Assert.assertTrue(e.getMessage().contains(expectedInvalidPath.toString()));
             return;
         }
         Assert.fail("Should have thrown 'java.lang.IllegalStateException: Detected path traversal! Stop extracting.'");

@@ -1,11 +1,13 @@
+os: linux
 language: java
-## export GPG details
-before_install:
-  - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
-  - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
-install:
-  mvn --settings .maven.xml install -Dgpg.skip -B -V
 
-## Build and release to maven central
-script:
-  mvn --settings .maven.xml release:prepare -B && mvn --settings .maven.xml release:perform -B
+### export GPG details
+#before_install:
+#  - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
+#  - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
+#install:
+#  mvn --settings .maven.xml install -Dgpg.skip -B -V
+#
+### Build and release to maven central
+#script:
+#  mvn --settings .maven.xml release:prepare -B && mvn --settings .maven.xml release:perform -B
