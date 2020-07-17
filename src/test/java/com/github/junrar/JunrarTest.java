@@ -14,18 +14,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class JunrarTest {
     private static File tempFolder;
     private FileSystem fileSystem = new FileSystem();
 
-  @BeforeAll
+    @BeforeAll
     public static void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
     }
 
-  @AfterAll
+    @AfterAll
     public static void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }
@@ -80,15 +83,15 @@ public class JunrarTest {
         final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);
 
         final ContentDescription[] expected = {
-                c("test-documents\\testEXCEL.xls", 13824),
-                c("test-documents\\testHTML.html", 167),
-                c("test-documents\\testOpenOffice2.odt", 26448),
-                c("test-documents\\testPDF.pdf", 34824),
-                c("test-documents\\testPPT.ppt", 16384),
-                c("test-documents\\testRTF.rtf", 3410),
-                c("test-documents\\testTXT.txt", 49),
-                c("test-documents\\testWORD.doc", 19456),
-                c("test-documents\\testXML.xml", 766)
+            c("test-documents\\testEXCEL.xls", 13824),
+            c("test-documents\\testHTML.html", 167),
+            c("test-documents\\testOpenOffice2.odt", 26448),
+            c("test-documents\\testPDF.pdf", 34824),
+            c("test-documents\\testPPT.ppt", 16384),
+            c("test-documents\\testRTF.rtf", 3410),
+            c("test-documents\\testTXT.txt", 49),
+            c("test-documents\\testWORD.doc", 19456),
+            c("test-documents\\testXML.xml", 766)
         };
 
         assertArrayEquals(expected, contentDescriptions.toArray());

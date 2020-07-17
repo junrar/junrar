@@ -40,7 +40,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 
 /**
@@ -83,7 +85,7 @@ public class JUnRarTestUtil {
 
     }
 
-  @BeforeAll
+    @BeforeAll
     public static void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
     }
@@ -92,11 +94,11 @@ public class JUnRarTestUtil {
     public void unrarFile_FileContentsShouldMatchExpected() throws IOException, RarException {
         File testRar = TestCommons.writeTestRarToFolder(tempFolder);
 
-        String[] args = new String[]{tempFolder.getAbsolutePath()};
+        String[] args = new String[] {tempFolder.getAbsolutePath()};
 
         JUnRarTestUtil.errorsOcurred = false;
 
-        ExtractArchive.main(new String[]{testRar.getAbsolutePath(), tempFolder.getAbsolutePath()});
+        ExtractArchive.main(new String[] {testRar.getAbsolutePath(), tempFolder.getAbsolutePath()});
         JUnRarTestUtil.main(args);
 
         File fooDir = new File(tempFolder, "foo");
@@ -113,7 +115,7 @@ public class JUnRarTestUtil {
         }
     }
 
-  @AfterAll
+    @AfterAll
     public static void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }

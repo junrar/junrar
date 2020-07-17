@@ -9,9 +9,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UnsignedByteTest {
 
-  @Test
-  public void addTest() {
-    assertEquals(-1, add((byte) 0xfe, (byte) 0x01));
+    @Test
+    public void addTest() {
+        assertEquals(-1, add((byte) 0xfe, (byte) 0x01));
         assertEquals(0, add((byte) 0xff, (byte) 0x01));
         assertEquals(128, add((byte) 0x7f, (byte) 0x01));
         assertEquals(-2, add((byte) 0xff, (byte) 0xff));

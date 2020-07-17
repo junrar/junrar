@@ -16,14 +16,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RarVersionTest {
 
-  private File tempDir;
+    private File tempDir;
 
-  @BeforeEach
-  public void createTempDir() throws IOException {
-    tempDir = TestCommons.createTempDir();
-  }
+    @BeforeEach
+    public void createTempDir() throws IOException {
+        tempDir = TestCommons.createTempDir();
+    }
 
-  @AfterEach
+    @AfterEach
     public void cleanupTempDir() throws IOException {
         FileUtils.deleteDirectory(tempDir);
     }
@@ -47,7 +47,7 @@ public class RarVersionTest {
         assertEquals(7, file2.length());
     }
 
-  @Test
+    @Test
     public void extractRarV5() throws Exception {
         InputStream stream = null;
         try {
