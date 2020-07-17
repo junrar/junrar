@@ -1,11 +1,10 @@
 package com.github.junrar;
 
-import static org.junit.Assert.assertArrayEquals;
-
+import static org.junit.Assert.assertEquals;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
@@ -46,25 +45,24 @@ public class VolumeExtractorTest {
     }
 
     private void checkContent(File unpackedDir) {
+        final Map<String, ContentDescription> expected = new HashMap<String, ContentDescription>();
+        expected.put("testEXCEL.xls", new ContentDescription("testEXCEL.xls", 13824));
+        expected.put("testHTML.html", new ContentDescription("testHTML.html", 167));
+        expected.put("testOpenOffice2.odt", new ContentDescription("testOpenOffice2.odt", 26448));
+        expected.put("testPDF.pdf", new ContentDescription("testPDF.pdf", 34824));
+        expected.put("testPPT.ppt", new ContentDescription("testPPT.ppt", 16384));
+        expected.put("testRTF.rtf", new ContentDescription("testRTF.rtf", 3410));
+        expected.put("testTXT.txt", new ContentDescription("testTXT.txt", 49));
+        expected.put("testWORD.doc", new ContentDescription("testWORD.doc", 19456));
+        expected.put("testXML.xml", new ContentDescription("testXML.xml", 766));
+
+        // file sort differ from os,so use the hash to do comparison
         String[] fileNames = unpackedDir.list();
-        List<ContentDescription> contentDescriptions = new ArrayList<ContentDescription>();
         for (String fileName : fileNames) {
             File file = new File(unpackedDir, fileName);
-            contentDescriptions.add(new ContentDescription(file.getName(), file.length()));
+            ContentDescription filedesc = new ContentDescription(file.getName(), file.length());
+            ContentDescription expectedDesc = expected.get(fileName);
+            assertEquals(expectedDesc, filedesc);
         }
-
-        final ContentDescription[] expected = {
-                new ContentDescription("testEXCEL.xls", 13824),
-                new ContentDescription("testHTML.html", 167),
-                new ContentDescription("testOpenOffice2.odt", 26448),
-                new ContentDescription("testPDF.pdf", 34824),
-                new ContentDescription("testPPT.ppt", 16384),
-                new ContentDescription("testRTF.rtf", 3410),
-                new ContentDescription("testTXT.txt", 49),
-                new ContentDescription("testWORD.doc", 19456),
-                new ContentDescription("testXML.xml", 766)
-        };
-
-        assertArrayEquals(expected, contentDescriptions.toArray());
     }
 }
