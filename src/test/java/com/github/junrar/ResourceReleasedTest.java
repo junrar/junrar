@@ -2,7 +2,6 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
-import com.github.junrar.vfs2.provider.rar.FileSystem;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.AfterEach;
@@ -28,7 +27,6 @@ public class ResourceReleasedTest {
     private File rar5TestFile;
 
     private File extractDir;
-    private FileSystem fileSystem = new FileSystem();
 
     @BeforeEach
     public void setup() throws IOException {
@@ -71,7 +69,7 @@ public class ResourceReleasedTest {
 
     @Test
     public void extractRar5FromVolumeManager() {
-        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir, fileSystem);
+        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir);
         final VolumeManager volumeManager = new FileVolumeManager(rar5TestFile);
 
         Throwable thrown = catchThrowable(() -> Junrar.extract(extractDestination, volumeManager));
@@ -104,7 +102,7 @@ public class ResourceReleasedTest {
 
     @Test
     public void extractRar4FromVolumeManager() throws IOException, RarException {
-        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir, fileSystem);
+        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir);
         final VolumeManager volumeManager = new FileVolumeManager(rar4TestFile);
         Junrar.extract(extractDestination, volumeManager);
     }

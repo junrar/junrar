@@ -1,7 +1,6 @@
 package com.github.junrar;
 
 import com.github.junrar.rarfile.FileHeader;
-import com.github.junrar.vfs2.provider.rar.FileSystem;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -17,8 +16,7 @@ public class LocalFolderExtractorTest {
     @Test
     public void rarWithDirectoriesOutsideTarget_ShouldThrowException() throws IOException {
         File file = TestCommons.createTempDir();
-        FileSystem mockFileSystem = mock(FileSystem.class);
-        LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(file, mockFileSystem);
+        LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(file);
 
         Archive archive = mock(Archive.class);
         FileHeader fileHeader = mock(FileHeader.class);
@@ -40,8 +38,7 @@ public class LocalFolderExtractorTest {
     @Test
     public void rarWithFileOutsideTarget_ShouldThrowException() throws IOException {
         File file = TestCommons.createTempDir();
-        FileSystem mockFileSystem = mock(FileSystem.class);
-        LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(file, mockFileSystem);
+        LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(file);
 
         FileHeader fileHeader = mock(FileHeader.class);
         when(fileHeader.isDirectory()).thenReturn(true);

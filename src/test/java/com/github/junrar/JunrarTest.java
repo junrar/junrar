@@ -3,7 +3,6 @@ package com.github.junrar;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.testUtil.JUnRarTestUtil;
-import com.github.junrar.vfs2.provider.rar.FileSystem;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -19,7 +18,6 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 
 public class JunrarTest {
     private static File tempFolder;
-    private FileSystem fileSystem = new FileSystem();
 
     @BeforeAll
     public static void setupFunctionalTests() throws IOException {
@@ -62,7 +60,7 @@ public class JunrarTest {
     public void extractionFromFileWithVolumeManagerAndExtractorHappyDay() throws RarException, IOException {
         final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
 
-        Junrar.extract(new LocalFolderExtractor(tempFolder, fileSystem), new FileVolumeManager(rarFileOnTemp));
+        Junrar.extract(new LocalFolderExtractor(tempFolder), new FileVolumeManager(rarFileOnTemp));
 
         final File fooDir = new File(tempFolder, "foo");
         String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
