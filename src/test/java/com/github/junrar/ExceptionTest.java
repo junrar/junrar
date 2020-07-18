@@ -1,62 +1,54 @@
 package com.github.junrar;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import com.github.junrar.exception.RarException;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.apache.commons.io.FileUtils;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
-import com.github.junrar.exception.RarException;
+
 
 public class ExceptionTest {
 
     private File tempDir;
 
-    @Before
+    @BeforeEach
     public void createTempDir() throws IOException {
         tempDir = TestCommons.createTempDir();
     }
 
-    @After
+    @AfterEach
     public void cleanupTempDir() throws IOException {
         FileUtils.deleteDirectory(tempDir);
     }
 
-    @Test(expected = RarException.class)
-    public void extractRarV5() throws Exception {
-        InputStream stream = null;
-        try {
-            stream = getClass().getResource("abnormal/rar5.rar").openStream();
+    @Test
+    public void extractRarV4() throws Exception {
+        try (InputStream stream = getClass().getResourceAsStream("rar4.rar")) {
             Junrar.extract(stream, tempDir);
-        } catch (RarException e) {
-            assertEquals(RarException.RarExceptionType.unsupportedRarArchive, e.getType());
-            throw e;
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
         }
+        final File file1 = new File(tempDir, "FILE1.TXT");
+        final File file2 = new File(tempDir, "FILE2.TXT");
+
+        assertThat(file1).exists();
+        assertThat(file1.length()).isEqualTo(7);
+        assertThat(file2).exists();
+        assertThat(file2.length()).isEqualTo(7);
     }
 
-    @Test(expected = RarException.class)
-    public void extractCorruptFile() throws Exception {
-        InputStream stream = null;
-        try {
-            stream = getClass().getResource("abnormal/badRarArchive.rar").openStream();
-            Junrar.extract(stream, tempDir);
-        } catch (RarException e) {
-            assertEquals(RarException.RarExceptionType.unsupportedRarArchive, e.getType());
-            throw e;
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
+    @Test
+    public void extractRarV5() throws Exception {
+        try (InputStream stream = getClass().getResourceAsStream("rar5.rar")) {
+            Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
+            assertThat(thrown).isInstanceOf(RarException.class);
+            assertThat(((RarException) thrown).getType()).isEqualTo(RarException.RarExceptionType.unsupportedRarArchive);
         }
     }
 

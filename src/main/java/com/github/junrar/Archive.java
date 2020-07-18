@@ -85,10 +85,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private int currentHeaderIndex;
 
-    /** Size of packed data in current file. */
+    /**
+     * Size of packed data in current file.
+     */
     private long totalPackedSize = 0L;
 
-    /** Number of bytes of compressed data read from current file. */
+    /**
+     * Number of bytes of compressed data read from current file.
+     */
     private long totalPackedRead = 0L;
 
     private VolumeManager volumeManager;
@@ -103,14 +107,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     /**
      * create a new archive object using the given {@link VolumeManager}
      *
-     * @param volumeManager
-     *            the the {@link VolumeManager} that will provide volume stream
-     *            data
-     * @param unrarCallback
-     *          gets feedback on the extraction progress
-     *
+     * @param volumeManager the the {@link VolumeManager} that will provide volume stream
+     *                      data
+     * @param unrarCallback gets feedback on the extraction progress
      * @throws RarException .
-     * @throws IOException .
+     * @throws IOException  .
      */
     public Archive(
         final VolumeManager volumeManager,
@@ -169,8 +170,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             readHeaders(length);
         } catch (final Exception e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
-            // Rethrow unsupportedRarException
-            if (e instanceof RarException && ((RarException) e).getType() == RarExceptionType.unsupportedRarArchive) {
+            // Rethrow unsupportedRarException and corruptHeaderException
+            if (e instanceof RarException && (((RarException) e).getType() == RarExceptionType.unsupportedRarArchive
+                || ((RarException) e).getType() == RarExceptionType.corruptHeader)) {
                 throw (RarException) e;
             }
             // ignore exceptions to allow extraction of working files in
@@ -184,7 +186,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         }
         if (this.unrarCallback != null) {
             this.unrarCallback.volumeProgressChanged(this.totalPackedRead,
-                    this.totalPackedSize);
+                this.totalPackedSize);
         }
     }
 
@@ -193,7 +195,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             this.totalPackedRead += count;
             if (this.unrarCallback != null) {
                 this.unrarCallback.volumeProgressChanged(this.totalPackedRead,
-                        this.totalPackedSize);
+                    this.totalPackedSize);
             }
         }
     }
@@ -254,8 +256,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     /**
      * Read the headers of the archive
      *
-     * @param fileLength
-     *            Length of file.
+     * @param fileLength Length of file.
      * @throws RarException
      */
     private void readHeaders(final long fileLength) throws IOException, RarException {
@@ -291,7 +292,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             UnrarHeadertype headerType = block.getHeaderType();
             if (headerType == null) {
                 logger.warn("unkonwn block header!");
-                throw new RarException(RarException.RarExceptionType.unsupportedRarArchive);
+                throw new RarException(RarExceptionType.corruptHeader);
             }
             switch (headerType) {
 
@@ -311,7 +312,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
                 case MainHeader:
                     toRead = block.hasEncryptVersion() ? MainHeader.mainHeaderSizeWithEnc
-                            : MainHeader.mainHeaderSize;
+                        : MainHeader.mainHeaderSize;
                     final byte[] mainbuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
                     this.rof.readFully(mainbuff, toRead);
                     final MainHeader mainhead = new MainHeader(block, mainbuff);
@@ -319,7 +320,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     this.newMhd = mainhead;
                     if (this.newMhd.isEncrypted()) {
                         throw new RarException(
-                                RarExceptionType.rarEncryptedException);
+                            RarExceptionType.rarEncryptedException);
                     }
                     // mainhead.print();
                     break;
@@ -352,7 +353,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     // logger.info("method: "+commHead.getUnpMethod()+"; 0x"+
                     // Integer.toHexString(commHead.getUnpMethod()));
                     newpos = commHead.getPositionInFile()
-                            + commHead.getHeaderSize();
+                        + commHead.getHeaderSize();
                     if (processedPositions.contains(newpos)) {
                         throw new RarException(RarExceptionType.badRarArchive);
                     }
@@ -388,21 +389,21 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     final byte[] blockHeaderBuffer = safelyAllocate(BlockHeader.blockHeaderSize, MAX_HEADER_SIZE);
                     this.rof.readFully(blockHeaderBuffer, BlockHeader.blockHeaderSize);
                     final BlockHeader blockHead = new BlockHeader(block,
-                            blockHeaderBuffer);
+                        blockHeaderBuffer);
 
                     switch (blockHead.getHeaderType()) {
                         case NewSubHeader:
                         case FileHeader:
                             toRead = blockHead.getHeaderSize()
-                                    - BlockHeader.BaseBlockSize
-                                    - BlockHeader.blockHeaderSize;
+                                - BlockHeader.BaseBlockSize
+                                - BlockHeader.blockHeaderSize;
                             final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
                             this.rof.readFully(fileHeaderBuffer, toRead);
 
                             final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
                             this.headers.add(fh);
                             newpos = fh.getPositionInFile() + fh.getHeaderSize()
-                                    + fh.getFullPackSize();
+                                + fh.getFullPackSize();
                             if (processedPositions.contains(newpos)) {
                                 throw new RarException(RarExceptionType.badRarArchive);
                             }
@@ -412,14 +413,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
                         case ProtectHeader:
                             toRead = blockHead.getHeaderSize()
-                                    - BlockHeader.BaseBlockSize
-                                    - BlockHeader.blockHeaderSize;
+                                - BlockHeader.BaseBlockSize
+                                - BlockHeader.blockHeaderSize;
                             final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
                             this.rof.readFully(protectHeaderBuffer, toRead);
                             final ProtectHeader ph = new ProtectHeader(blockHead,
-                                    protectHeaderBuffer);
+                                protectHeaderBuffer);
                             newpos = ph.getPositionInFile() + ph.getHeaderSize()
-                                    + ph.getDataSize();
+                                + ph.getDataSize();
                             if (processedPositions.contains(newpos)) {
                                 throw new RarException(RarExceptionType.badRarArchive);
                             }
@@ -430,17 +431,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                         case SubHeader: {
                             final byte[] subHeadbuffer = safelyAllocate(SubBlockHeader.SubBlockHeaderSize, MAX_HEADER_SIZE);
                             this.rof.readFully(subHeadbuffer,
-                                    SubBlockHeader.SubBlockHeaderSize);
+                                SubBlockHeader.SubBlockHeaderSize);
                             final SubBlockHeader subHead = new SubBlockHeader(blockHead,
-                                    subHeadbuffer);
+                                subHeadbuffer);
                             subHead.print();
                             switch (subHead.getSubType()) {
                                 case MAC_HEAD: {
                                     final byte[] macHeaderbuffer = safelyAllocate(MacInfoHeader.MacInfoHeaderSize, MAX_HEADER_SIZE);
                                     this.rof.readFully(macHeaderbuffer,
-                                            MacInfoHeader.MacInfoHeaderSize);
+                                        MacInfoHeader.MacInfoHeaderSize);
                                     final MacInfoHeader macHeader = new MacInfoHeader(subHead,
-                                            macHeaderbuffer);
+                                        macHeaderbuffer);
                                     macHeader.print();
                                     this.headers.add(macHeader);
 
@@ -453,7 +454,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     final byte[] eaHeaderBuffer = safelyAllocate(EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
                                     this.rof.readFully(eaHeaderBuffer, EAHeader.EAHeaderSize);
                                     final EAHeader eaHeader = new EAHeader(subHead,
-                                            eaHeaderBuffer);
+                                        eaHeaderBuffer);
                                     eaHeader.print();
                                     this.headers.add(eaHeader);
 
@@ -471,7 +472,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     final byte[] uoHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
                                     this.rof.readFully(uoHeaderBuffer, toRead);
                                     final UnixOwnersHeader uoHeader = new UnixOwnersHeader(
-                                            subHead, uoHeaderBuffer);
+                                        subHead, uoHeaderBuffer);
                                     uoHeader.print();
                                     this.headers.add(uoHeader);
                                     break;
@@ -505,10 +506,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * Extract the file specified by the given header and write it to the
      * supplied output stream
      *
-     * @param hd
-     *            the header to be extracted
-     * @param os
-     *            the outputstream
+     * @param hd the header to be extracted
+     * @param os the outputstream
      * @throws RarException .
      */
     public void extractFile(final FileHeader hd, final OutputStream os) throws RarException {
@@ -537,7 +536,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @throws IOException  if any IO error occur
      */
     public InputStream getInputStream(final FileHeader hd) throws RarException,
-            IOException {
+        IOException {
         final PipedInputStream in = new PipedInputStream(32 * 1024);
         final PipedOutputStream out = new PipedOutputStream(in);
 
@@ -562,7 +561,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     private void doExtractFile(FileHeader hd, final OutputStream os)
-            throws RarException, IOException {
+        throws RarException, IOException {
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
@@ -578,7 +577,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             // Verify file CRC
             hd = this.dataIO.getSubHeader();
             final long actualCRC = hd.isSplitAfter() ? ~this.dataIO.getPackedCRC()
-                    : ~this.dataIO.getUnpFileCRC();
+                : ~this.dataIO.getUnpFileCRC();
             final int expectedCRC = hd.getFileCRC();
             if (actualCRC != expectedCRC) {
                 throw new RarException(RarExceptionType.crcError);
@@ -614,7 +613,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         return this.markHead.isOldFormat();
     }
 
-    /** Close the underlying compressed file. */
+    /**
+     * Close the underlying compressed file.
+     */
     @Override
     public void close() throws IOException {
         if (this.rof != null) {
@@ -634,8 +635,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * @param volumeManager
-     *            the volumeManager to set
+     * @param volumeManager the volumeManager to set
      */
     public void setVolumeManager(final VolumeManager volumeManager) {
         this.volumeManager = volumeManager;
@@ -649,9 +649,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * @param volume
-     *            the volume to set
-     * @throws IOException .
+     * @param volume the volume to set
+     * @throws IOException  .
      * @throws RarException .
      */
     public void setVolume(final Volume volume) throws IOException, RarException {
@@ -667,7 +666,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             public FileHeader next() {
                 FileHeader next;
                 if (Archive.this.nextFileHeader != null) {
-                    next =  Archive.this.nextFileHeader;
+                    next = Archive.this.nextFileHeader;
                 } else {
                     next = nextFileHeader();
                 }

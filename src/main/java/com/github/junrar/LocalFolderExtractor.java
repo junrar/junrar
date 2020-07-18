@@ -1,26 +1,22 @@
 package com.github.junrar;
 
+import com.github.junrar.exception.RarException;
+import com.github.junrar.rarfile.FileHeader;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.github.junrar.vfs2.provider.rar.FileSystem;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import com.github.junrar.exception.RarException;
-import com.github.junrar.rarfile.FileHeader;
-
 public class LocalFolderExtractor implements ExtractDestination {
 
     private File folderDestination;
-    private FileSystem fileSystem;
     private static final Log logger = LogFactory.getLog(LocalFolderExtractor.class);
 
-    public LocalFolderExtractor(final File destination, final FileSystem fileSystem) {
+    public LocalFolderExtractor(final File destination) {
         this.folderDestination = destination;
-        this.fileSystem = fileSystem;
     }
 
     @Override
@@ -106,11 +102,11 @@ public class LocalFolderExtractor implements ExtractDestination {
             for (int i = 0; i < dirs.length - 1; i++) {
                 path = path + File.separator + dirs[i];
                 File dir = new File(destination, path);
-                fileSystem.mkdir(dir);
+                dir.mkdir();
             }
             path = path + File.separator + dirs[dirs.length - 1];
             final File f = new File(destination, path);
-            fileSystem.createNewFile(f);
+            f.createNewFile();
             return f;
         } else {
             return null;

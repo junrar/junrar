@@ -1,34 +1,32 @@
 package com.github.junrar;
 
-import static org.junit.Assert.assertEquals;
+import com.github.junrar.exception.RarException;
+import com.github.junrar.impl.FileVolumeManager;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.io.FileUtils;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import com.github.junrar.exception.RarException;
-import com.github.junrar.impl.FileVolumeManager;
-import com.github.junrar.vfs2.provider.rar.FileSystem;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class VolumeExtractorTest {
-    private FileSystem fileSystem = new FileSystem();
     private static File tempFolder;
-    private static String volumesDirName = "volumes";
-    private static String firstVolume = "test-documents.part1.rar";
+    private static final String volumesDirName = "volumes";
+    private static final String firstVolume = "test-documents.part1.rar";
 
-    @BeforeClass
+    @BeforeAll
     public static void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
-        File dir = new File(VolumeExtractorTest.class.getResource("").getPath(), volumesDirName);
+        File dir = new File(VolumeExtractorTest.class.getResource(volumesDirName).getPath());
         TestCommons.copyRarsToFolder(tempFolder, dir);
     }
 
-    @AfterClass
+    @AfterAll
     public static void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }
@@ -39,13 +37,13 @@ public class VolumeExtractorTest {
         final File unpackedDir = new File(tempFolder, "test-documents");
         unpackedDir.delete();
         unpackedDir.mkdir();
-        Junrar.extract(new LocalFolderExtractor(unpackedDir, fileSystem), new FileVolumeManager(rarFileOnTemp));
+        Junrar.extract(new LocalFolderExtractor(unpackedDir), new FileVolumeManager(rarFileOnTemp));
 
         checkContent(unpackedDir);
     }
 
     private void checkContent(File unpackedDir) {
-        final Map<String, ContentDescription> expected = new HashMap<String, ContentDescription>();
+        final Map<String, ContentDescription> expected = new HashMap<>();
         expected.put("testEXCEL.xls", new ContentDescription("testEXCEL.xls", 13824));
         expected.put("testHTML.html", new ContentDescription("testHTML.html", 167));
         expected.put("testOpenOffice2.odt", new ContentDescription("testOpenOffice2.odt", 26448));
@@ -62,7 +60,7 @@ public class VolumeExtractorTest {
             File file = new File(unpackedDir, fileName);
             ContentDescription filedesc = new ContentDescription(file.getName(), file.length());
             ContentDescription expectedDesc = expected.get(fileName);
-            assertEquals(expectedDesc, filedesc);
+            assertThat(filedesc).isEqualTo(expectedDesc);
         }
     }
 }

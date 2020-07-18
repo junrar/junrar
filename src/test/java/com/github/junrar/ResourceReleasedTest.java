@@ -2,17 +2,19 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
-import com.github.junrar.vfs2.provider.rar.FileSystem;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * This test will have the rar file which will be extracted and the extracted content in the same directory. This directory is newly setup and deleted for every test method
@@ -25,9 +27,8 @@ public class ResourceReleasedTest {
     private File rar5TestFile;
 
     private File extractDir;
-    private FileSystem fileSystem = new FileSystem();
 
-    @Before
+    @BeforeEach
     public void setup() throws IOException {
         extractDir = TestCommons.createTempDir();
         rar5TestFile = new File(extractDir, "test5.rar");
@@ -36,39 +37,44 @@ public class ResourceReleasedTest {
         FileUtils.writeByteArrayToFile(rar4TestFile, IOUtils.toByteArray(getClass().getResource("testUtil/rar4.rar").openStream()));
     }
 
-    @After
+    @AfterEach
     public void cleanup() throws IOException {
         FileUtils.cleanDirectory(extractDir);
     }
 
-    @Test(expected = RarException.class)
-    public void extractRar5FromFile() throws IOException, RarException {
-        Junrar.extract(rar5TestFile, extractDir);
+    @Test
+    public void extractRar5FromFile() {
+        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile, extractDir));
+
+        assertThat(thrown).isInstanceOf(RarException.class);
     }
 
-    @Test(expected = RarException.class)
-    public void extractRar5FromInputStream() throws IOException, RarException {
-        InputStream input = null;
-        try {
-            input = new FileInputStream(rar5TestFile);
-            Junrar.extract(input, extractDir);
-        } finally {
-            if (input != null) {
-                input.close();
-            }
-        }
+    @Test
+    public void extractRar5FromInputStream() throws IOException {
+        final InputStream input = new FileInputStream(rar5TestFile);
+
+        Throwable thrown = catchThrowable(() -> Junrar.extract(input, extractDir));
+
+        assertThat(thrown).isInstanceOf(RarException.class);
+
+        input.close();
     }
 
-    @Test(expected = RarException.class)
-    public void extractRar5FromString() throws IOException, RarException {
-        Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath());
+    @Test
+    public void extractRar5FromString() {
+        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath()));
+
+        assertThat(thrown).isInstanceOf(RarException.class);
     }
 
-    @Test(expected = RarException.class)
-    public void extractRar5FromVolumeManager() throws IOException, RarException {
-        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir, fileSystem);
+    @Test
+    public void extractRar5FromVolumeManager() {
+        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir);
         final VolumeManager volumeManager = new FileVolumeManager(rar5TestFile);
-        Junrar.extract(extractDestination, volumeManager);
+
+        Throwable thrown = catchThrowable(() -> Junrar.extract(extractDestination, volumeManager));
+
+        assertThat(thrown).isInstanceOf(RarException.class);
     }
 
     @Test
@@ -96,7 +102,7 @@ public class ResourceReleasedTest {
 
     @Test
     public void extractRar4FromVolumeManager() throws IOException, RarException {
-        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir, fileSystem);
+        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir);
         final VolumeManager volumeManager = new FileVolumeManager(rar4TestFile);
         Junrar.extract(extractDestination, volumeManager);
     }

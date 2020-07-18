@@ -29,9 +29,9 @@ import com.github.junrar.testutil.ExtractArchive;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -40,9 +40,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.fail;
+
 
 /**
  * DOCUMENT ME
@@ -84,7 +84,7 @@ public class JUnRarTestUtil {
 
     }
 
-    @BeforeClass
+    @BeforeAll
     public static void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
     }
@@ -93,28 +93,28 @@ public class JUnRarTestUtil {
     public void unrarFile_FileContentsShouldMatchExpected() throws IOException, RarException {
         File testRar = TestCommons.writeTestRarToFolder(tempFolder);
 
-        String[] args = new String[]{tempFolder.getAbsolutePath()};
+        String[] args = new String[] {tempFolder.getAbsolutePath()};
 
         JUnRarTestUtil.errorsOcurred = false;
 
-        ExtractArchive.main(new String[]{testRar.getAbsolutePath(), tempFolder.getAbsolutePath()});
+        ExtractArchive.main(new String[] {testRar.getAbsolutePath(), tempFolder.getAbsolutePath()});
         JUnRarTestUtil.main(args);
 
         File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
+        assertThat(fooDir).exists();
 
         File barFile = new File(fooDir, "bar.txt");
-        assertTrue(barFile.exists());
+        assertThat(barFile).exists();
 
         String barTxtContents = FileUtils.readFileToString(barFile);
-        assertEquals("baz\n", barTxtContents);
+        assertThat(barTxtContents).isEqualTo("baz\n");
 
         if (errorsOcurred) {
             fail("Test failed, see output for details...");
         }
     }
 
-    @AfterClass
+    @AfterAll
     public static void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }

@@ -1,36 +1,31 @@
 package com.github.junrar;
 
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import com.github.junrar.exception.RarException;
+import com.github.junrar.impl.FileVolumeManager;
+import com.github.junrar.testUtil.JUnRarTestUtil;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import com.github.junrar.vfs2.provider.rar.FileSystem;
-import org.apache.commons.io.FileUtils;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import com.github.junrar.exception.RarException;
-import com.github.junrar.impl.FileVolumeManager;
-import com.github.junrar.testUtil.JUnRarTestUtil;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 public class JunrarTest {
     private static File tempFolder;
-    private FileSystem fileSystem = new FileSystem();
 
-    @Before
-    public void setupFunctionalTests() throws IOException {
+    @BeforeAll
+    public static void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
     }
 
-    @After
-    public void tearDownFunctionalTests() throws IOException {
+    @AfterAll
+    public static void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }
 
@@ -41,8 +36,10 @@ public class JunrarTest {
         Junrar.extract(rarFileOnTemp, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
-        assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir, "bar.txt")));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+
+        assertThat(fooDir).exists();
+        assertThat(barFileContent).isEqualTo("baz\n");
     }
 
     @Test
@@ -52,8 +49,10 @@ public class JunrarTest {
         final List<File> extractedFiles = Junrar.extract(rarFileOnTemp, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        assertEquals(new File(fooDir, "bar.txt"), extractedFiles.get(0));
-        assertEquals(fooDir, extractedFiles.get(1));
+        File barFile = new File(fooDir, "bar.txt");
+
+        assertThat(extractedFiles.get(0)).isEqualTo(barFile);
+        assertThat(extractedFiles.get(1)).isEqualTo(fooDir);
     }
 
 
@@ -61,11 +60,13 @@ public class JunrarTest {
     public void extractionFromFileWithVolumeManagerAndExtractorHappyDay() throws RarException, IOException {
         final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
 
-        Junrar.extract(new LocalFolderExtractor(tempFolder, fileSystem), new FileVolumeManager(rarFileOnTemp));
+        Junrar.extract(new LocalFolderExtractor(tempFolder), new FileVolumeManager(rarFileOnTemp));
 
         final File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
-        assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir, "bar.txt")));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+
+        assertThat(fooDir).exists();
+        assertThat(barFileContent).isEqualTo("baz\n");
     }
 
     @Test
@@ -74,8 +75,10 @@ public class JunrarTest {
         Junrar.extract(resourceAsStream, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        assertTrue(fooDir.exists());
-        assertEquals("baz\n", FileUtils.readFileToString(new File(fooDir, "bar.txt")));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+
+        assertThat(fooDir).exists();
+        assertThat(barFileContent).isEqualTo("baz\n");
     }
 
     @Test
@@ -84,38 +87,38 @@ public class JunrarTest {
         final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);
 
         final ContentDescription[] expected = {
-                c("test-documents\\testEXCEL.xls", 13824),
-                c("test-documents\\testHTML.html", 167),
-                c("test-documents\\testOpenOffice2.odt", 26448),
-                c("test-documents\\testPDF.pdf", 34824),
-                c("test-documents\\testPPT.ppt", 16384),
-                c("test-documents\\testRTF.rtf", 3410),
-                c("test-documents\\testTXT.txt", 49),
-                c("test-documents\\testWORD.doc", 19456),
-                c("test-documents\\testXML.xml", 766)
+            c("test-documents\\testEXCEL.xls", 13824),
+            c("test-documents\\testHTML.html", 167),
+            c("test-documents\\testOpenOffice2.odt", 26448),
+            c("test-documents\\testPDF.pdf", 34824),
+            c("test-documents\\testPPT.ppt", 16384),
+            c("test-documents\\testRTF.rtf", 3410),
+            c("test-documents\\testTXT.txt", 49),
+            c("test-documents\\testWORD.doc", 19456),
+            c("test-documents\\testXML.xml", 766)
         };
 
-        assertArrayEquals(expected, contentDescriptions.toArray());
+        assertThat(contentDescriptions.toArray()).isEqualTo(expected);
     }
 
     @Test
-    public void extractRarV4() throws Exception {
-        InputStream stream = null;
-        try {
-            final File rarV4 = TestCommons.writeResourceToFolder(tempFolder, "rar4.rar");
-            stream = new FileInputStream(rarV4);
-            Junrar.extract(stream, tempFolder);
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
-        }
-        final File file1 = new File(tempFolder, "FILE1.TXT");
-        final File file2 = new File(tempFolder, "FILE2.TXT");
-        assertTrue(file1.exists());
-        assertEquals(7, file1.length());
-        assertTrue(file2.exists());
-        assertEquals(7, file2.length());
+    public void ifIsDirInsteadOfFile_ThrowException() {
+        Throwable thrown = catchThrowable(() -> Junrar.extract(tempFolder, tempFolder));
+
+        assertThat(thrown)
+            .isInstanceOf(IllegalArgumentException.class)
+            .hasMessageContaining("First argument should be a file but was " + tempFolder.getAbsolutePath());
+    }
+
+    @Test
+    public void ifIsFileInsteadOfDir_ThrowException() throws IOException {
+        final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
+
+        Throwable thrown = catchThrowable(() -> Junrar.extract(rarFileOnTemp, rarFileOnTemp));
+
+        assertThat(thrown)
+            .isInstanceOf(IllegalArgumentException.class)
+            .hasMessageContaining("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath());
     }
 
     private static ContentDescription c(final String name, final long size) {
