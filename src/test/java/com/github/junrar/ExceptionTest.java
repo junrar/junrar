@@ -51,7 +51,7 @@ public class ExceptionTest {
             stream = getClass().getResource("abnormal/badRarArchive.rar").openStream();
             Junrar.extract(stream, tempDir);
         } catch (RarException e) {
-            assertEquals(RarException.RarExceptionType.badRarArchive, e.getType());
+            assertEquals(RarException.RarExceptionType.unsupportedRarArchive, e.getType());
             throw e;
         } finally {
             if (stream != null) {

@@ -169,11 +169,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             readHeaders(length);
         } catch (final Exception e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
-            // if RarException is thrown,we should stop the extraction
-            // if need to ignore corrupt file,the code should be refactored
-            if (e instanceof RarException) {
+            // Rethrow unsupportedRarException
+            if (e instanceof RarException && ((RarException) e).getType() == RarExceptionType.unsupportedRarArchive) {
                 throw (RarException) e;
             }
+            // ignore exceptions to allow extraction of working files in
+            // corrupt archive
         }
         // Calculate size of packed data
         for (final BaseBlock block : this.headers) {
@@ -289,7 +290,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
             UnrarHeadertype headerType = block.getHeaderType();
             if (headerType == null) {
-                throw new RarException(RarException.RarExceptionType.badRarArchive);
+                logger.warn("unkonwn block header!");
+                throw new RarException(RarException.RarExceptionType.unsupportedRarArchive);
             }
             switch (headerType) {
 
