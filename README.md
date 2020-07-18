@@ -40,6 +40,8 @@ where `{version}` corresponds to version as below:
 - Java 8 Version: [![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/_latestVersion)
 - Java 6 Compatible Version: [![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg?version=4.0.0) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/4.0.0/link)
 
+Apache Commons VFS support has been removed from `5.0.0`, and moved to a dedicated repo: https://github.com/junrar/commons-vfs-rar
+
 ## Usage
 
 ### Extract from a file to a directory:
