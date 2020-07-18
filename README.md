@@ -1,23 +1,46 @@
 [![Build Status](https://travis-ci.com/junrar/junrar.svg?branch=master)](https://travis-ci.com/junrar/junrar)
-[![Release](https://img.shields.io/github/release/junrar/junrar.svg)](../../releases/latest)
+[![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/_latestVersion)
+[![codecov](https://codecov.io/gh/junrar/junrar/branch/master/graph/badge.svg)](https://codecov.io/gh/junrar/junrar)
 
-Junrar
-=====
+# Junrar
 
 Read and extracts from a .rar file. Supported RAR formats are V4 and lower. This is a fork of the junrar codebase, formerly on sourceforge.
 
 Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
-Dependency on maven:  
-```
+## Installation
 
-<dependency>  
-  <groupId>com.github.junrar</groupId>  
-  <artifactId>junrar</artifactId>
-  <version>4.0.0</version>  
-</dependency>  
-```
+<table>
+<tr>
+    <td>Gradle</td>
+    <td>
+        <pre>implementation "com.github.junrar:junrar:{version}"</pre>
+    </td>
+</tr>
+<tr>
+    <td>Gradle (Kotlin DSL)</td>
+    <td>
+        <pre>implementation("com.github.junrar:junrar:{version}")</pre>
+        </td>
+</tr>
+<tr>
+    <td>Maven</td>
+    <td>
+        <pre>&lt;dependency&gt;
+    &lt;groupId&gt;com.github.junrar&lt;/groupId&gt;
+    &lt;artifactId&gt;junrar&lt;/artifactId&gt;
+    &lt;version&gt;{version}&lt;/version&gt;
+&lt;/dependency&gt;</pre>
+    </td>
+</tr>
+</table>
 
+where `{version}` corresponds to version as below:
+
+- Java 8 Version: [![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/_latestVersion)
+- Java 6 Compatible Version: [![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg?version=4.0.0) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/4.0.0/link)
+
+## Usage
 
 ### Extract from a file to a directory:
 ```java
