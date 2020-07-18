@@ -18,7 +18,7 @@ public class Junrar {
 
     public static List<File> extract(final String rarPath, final String destinationPath) throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
-            throw new RuntimeException("archive and destination must me set");
+            throw new RuntimeException("archive and destination must be set");
         }
         final File arch = new File(rarPath);
         final File dest = new File(destinationPath);
