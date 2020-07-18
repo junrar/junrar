@@ -32,9 +32,9 @@ public class ResourceReleasedTest {
     public void setup() throws IOException {
         extractDir = TestCommons.createTempDir();
         rar5TestFile = new File(extractDir, "test5.rar");
-        FileUtils.writeByteArrayToFile(rar5TestFile, IOUtils.toByteArray(getClass().getResource("abnormal/rar5.rar").openStream()));
+        FileUtils.writeByteArrayToFile(rar5TestFile, IOUtils.toByteArray(getClass().getResource("rar5.rar").openStream()));
         rar4TestFile = new File(extractDir, "test4.rar");
-        FileUtils.writeByteArrayToFile(rar4TestFile, IOUtils.toByteArray(getClass().getResource("testUtil/rar4.rar").openStream()));
+        FileUtils.writeByteArrayToFile(rar4TestFile, IOUtils.toByteArray(getClass().getResource("rar4.rar").openStream()));
     }
 
     @AfterEach
