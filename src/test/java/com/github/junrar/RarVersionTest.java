@@ -1,6 +1,7 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.exception.UnsupportedRarV5Exception;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -47,7 +48,7 @@ public class RarVersionTest {
         try (InputStream stream = getClass().getResourceAsStream("rar5.rar")) {
             Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
             assertThat(thrown).isInstanceOf(RarException.class);
-            assertThat(((RarException) thrown).getType()).isEqualTo(RarException.RarExceptionType.unsupportedRarArchive);
+            assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
         }
     }
 }

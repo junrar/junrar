@@ -17,19 +17,19 @@
  */
 package com.github.junrar.unpack;
 
-import java.io.EOFException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-
 import com.github.junrar.Archive;
 import com.github.junrar.UnrarCallback;
 import com.github.junrar.Volume;
 import com.github.junrar.crc.RarCRC;
+import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.exception.RarException.RarExceptionType;
 import com.github.junrar.io.ReadOnlyAccessInputStream;
 import com.github.junrar.rarfile.FileHeader;
+
+import java.io.EOFException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 
 /**
@@ -144,7 +144,7 @@ public class ComprDataIO {
                 FileHeader hd = this.getSubHeader();
                 if (hd.getUnpVersion() >= 20 && hd.getFileCRC() != 0xffffffff
                         && this.getPackedCRC() != ~hd.getFileCRC()) {
-                    throw new RarException(RarExceptionType.crcError);
+                    throw new CrcErrorException();
                 }
                 UnrarCallback callback = archive.getUnrarCallback();
                 if ((callback != null)

@@ -1,5 +1,7 @@
 package com.github.junrar;
 
+import com.github.junrar.exception.CorruptHeaderException;
+import com.github.junrar.exception.MainHeaderNullException;
 import com.github.junrar.exception.RarException;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
@@ -34,32 +36,31 @@ public class AbnormalFilesTest {
 
     @ParameterizedTest
     @MethodSource("provideFilesAndExpectedExceptionType")
-    public void extractFile(Map.Entry<String, RarException.RarExceptionType> fileAndResult) throws Exception {
+    public void extractFile(Map.Entry<String, Class> fileAndResult) throws Exception {
         File file = new File(getClass().getResource(fileAndResult.getKey()).toURI());
 
         Throwable thrown = catchThrowable(() -> Junrar.extract(file, tempDir));
 
         assertThat(thrown).isInstanceOf(RarException.class);
-        assertThat(((RarException) thrown).getType()).isEqualTo(fileAndResult.getValue());
-
+        assertThat(((RarException) thrown)).isExactlyInstanceOf(fileAndResult.getValue());
     }
 
     @ParameterizedTest
     @MethodSource("provideFilesAndExpectedExceptionType")
-    public void extractFromStream(Map.Entry<String, RarException.RarExceptionType> fileAndResult) throws Exception {
+    public void extractFromStream(Map.Entry<String, Class> fileAndResult) throws Exception {
         try (InputStream stream = getClass().getResourceAsStream(fileAndResult.getKey())) {
             Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
 
             assertThat(thrown).isInstanceOf(RarException.class);
-            assertThat(((RarException) thrown).getType()).isEqualTo(fileAndResult.getValue());
+            assertThat(((RarException) thrown)).isExactlyInstanceOf(fileAndResult.getValue());
         }
     }
 
-    private static Stream<Map.Entry<String, RarException.RarExceptionType>> provideFilesAndExpectedExceptionType() {
-        Map<String, RarException.RarExceptionType> map = new HashMap<>();
+    private static Stream<Map.Entry<String, Class>> provideFilesAndExpectedExceptionType() {
+        Map<String, Class> map = new HashMap<>();
 
-        map.put("abnormal/corrupt-header.rar", RarException.RarExceptionType.corruptHeader);
-        map.put("abnormal/mainHeaderNull.rar", RarException.RarExceptionType.mainHeaderNull);
+        map.put("abnormal/corrupt-header.rar", CorruptHeaderException.class);
+        map.put("abnormal/mainHeaderNull.rar", MainHeaderNullException.class);
 
         return map.entrySet().stream();
     }

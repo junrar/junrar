@@ -18,8 +18,15 @@
  */
 package com.github.junrar;
 
+import com.github.junrar.exception.BadRarArchiveException;
+import com.github.junrar.exception.CorruptHeaderException;
+import com.github.junrar.exception.CrcErrorException;
+import com.github.junrar.exception.HeaderNotInArchiveException;
+import com.github.junrar.exception.MainHeaderNullException;
+import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.exception.RarException.RarExceptionType;
+import com.github.junrar.exception.UnsupportedRarEncryptedException;
+import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.impl.InputStreamVolumeManager;
 import com.github.junrar.io.IReadOnlyAccess;
@@ -168,15 +175,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.rof = file;
         try {
             readHeaders(length);
+        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException e) {
+            logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
+            throw e;
         } catch (final Exception e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
-            // Rethrow unsupportedRarException and corruptHeaderException
-            if (e instanceof RarException && (((RarException) e).getType() == RarExceptionType.unsupportedRarArchive
-                || ((RarException) e).getType() == RarExceptionType.corruptHeader)) {
-                throw (RarException) e;
-            }
-            // ignore exceptions to allow extraction of working files in
-            // corrupt archive
+            // ignore exceptions to allow extraction of working files in corrupt archive
         }
         // Calculate size of packed data
         for (final BaseBlock block : this.headers) {
@@ -249,7 +253,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         if (this.newMhd != null) {
             return this.newMhd.isEncrypted();
         } else {
-            throw new RarException(RarExceptionType.mainHeaderNull);
+            throw new MainHeaderNullException();
         }
     }
 
@@ -292,7 +296,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             UnrarHeadertype headerType = block.getHeaderType();
             if (headerType == null) {
                 logger.warn("unkonwn block header!");
-                throw new RarException(RarExceptionType.corruptHeader);
+                throw new CorruptHeaderException();
             }
             switch (headerType) {
 
@@ -301,9 +305,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     if (!this.markHead.isSignature()) {
                         if (markHead.getVersion() == RARVersion.V5) {
                             logger.warn("Support for rar version 5 is not yet implemented!");
-                            throw new RarException(RarExceptionType.unsupportedRarArchive);
+                            throw new UnsupportedRarV5Exception();
                         } else {
-                            throw new RarException(RarException.RarExceptionType.badRarArchive);
+                            throw new BadRarArchiveException();
                         }
                     }
                     this.headers.add(this.markHead);
@@ -319,8 +323,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     this.headers.add(mainhead);
                     this.newMhd = mainhead;
                     if (this.newMhd.isEncrypted()) {
-                        throw new RarException(
-                            RarExceptionType.rarEncryptedException);
+                        throw new UnsupportedRarEncryptedException();
                     }
                     // mainhead.print();
                     break;
@@ -355,7 +358,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     newpos = commHead.getPositionInFile()
                         + commHead.getHeaderSize();
                     if (processedPositions.contains(newpos)) {
-                        throw new RarException(RarExceptionType.badRarArchive);
+                        throw new BadRarArchiveException();
                     }
                     processedPositions.add(newpos);
                     this.rof.setPosition(newpos);
@@ -405,7 +408,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             newpos = fh.getPositionInFile() + fh.getHeaderSize()
                                 + fh.getFullPackSize();
                             if (processedPositions.contains(newpos)) {
-                                throw new RarException(RarExceptionType.badRarArchive);
+                                throw new BadRarArchiveException();
                             }
                             processedPositions.add(newpos);
                             this.rof.setPosition(newpos);
@@ -422,7 +425,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             newpos = ph.getPositionInFile() + ph.getHeaderSize()
                                 + ph.getDataSize();
                             if (processedPositions.contains(newpos)) {
-                                throw new RarException(RarExceptionType.badRarArchive);
+                                throw new BadRarArchiveException();
                             }
                             processedPositions.add(newpos);
                             this.rof.setPosition(newpos);
@@ -484,7 +487,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                         }
                         default:
                             logger.warn("Unknown Header");
-                            throw new RarException(RarExceptionType.notRarArchive);
+                            throw new NotRarArchiveException();
 
                     }
             }
@@ -497,7 +500,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             throw new IllegalArgumentException("maxsize must be >= 0");
         }
         if (len < 0 || len > maxSize) {
-            throw new RarException(RarExceptionType.badRarArchive);
+            throw new BadRarArchiveException();
         }
         return new byte[(int) len];
     }
@@ -512,7 +515,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     public void extractFile(final FileHeader hd, final OutputStream os) throws RarException {
         if (!this.headers.contains(hd)) {
-            throw new RarException(RarExceptionType.headerNotInArchive);
+            throw new HeaderNotInArchiveException();
         }
         try {
             doExtractFile(hd, os);
@@ -580,7 +583,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 : ~this.dataIO.getUnpFileCRC();
             final int expectedCRC = hd.getFileCRC();
             if (actualCRC != expectedCRC) {
-                throw new RarException(RarExceptionType.crcError);
+                throw new CrcErrorException();
             }
             // if (!hd.isSplitAfter()) {
             // // Verify file CRC
