@@ -15,12 +15,13 @@ cache:
 jdk:
   - openjdk8
 
-script:
-  - ./gradlew check
-  - ./gradlew jacocoTestReport
-
 jobs:
   include:
+    - stage: tests
+      jdk: openjdk8
+      script:
+        - ./gradlew check
+        - ./gradlew jacocoTestReport
     - stage: release
       jdk: openjdk8
       install:
