@@ -25,12 +25,12 @@ public class JunrarTest {
     private FileSystem fileSystem = new FileSystem();
 
     @Before
-    public static void setupFunctionalTests() throws IOException {
+    public void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
     }
 
     @After
-    public static void tearDownFunctionalTests() throws IOException {
+    public void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }
 
