@@ -2,6 +2,7 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'checkstyle'
+    id 'jacoco'
     id 'com.github.ben-manes.versions' version '0.28.0'
     id 'com.autonomousapps.dependency-analysis' version '0.52.0'
     id 'dev.jacomet.logging-capabilities' version '0.9.0'
@@ -102,5 +103,12 @@ bintray {
             released  = new Date()
             vcsTag = "v${project.version}"
         }
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
     }
 }
