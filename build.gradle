@@ -92,6 +92,7 @@ bintray {
     user = System.getenv('BINTRAY_USER')
     key = System.getenv('BINTRAY_KEY')
     publications = ['maven']
+    publish = true
     pkg {
         repo = 'junrar'
         name = "${project.group}:${project.name}"
@@ -102,6 +103,12 @@ bintray {
             desc = "${project.description}"
             released  = new Date()
             vcsTag = "v${project.version}"
+            gpg {
+                sign = true
+            }
+            mavenCentralSync {
+                sync = true
+            }
         }
     }
 }
