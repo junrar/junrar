@@ -1,6 +1,9 @@
 os: linux
 language: java
 
+before_install:
+  - nvm install 13
+
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -15,6 +18,15 @@ jdk:
 script:
   - ./gradlew check
   - ./gradlew jacocoTestReport
+
+jobs:
+  include:
+    - stage: release
+      jdk: openjdk8
+      install:
+        - npm install --only=production
+      script:
+        - npx semantic-release
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
