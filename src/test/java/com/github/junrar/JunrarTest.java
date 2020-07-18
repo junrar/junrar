@@ -2,7 +2,6 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
-import com.github.junrar.testUtil.JUnRarTestUtil;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -71,7 +70,7 @@ public class JunrarTest {
 
     @Test
     public void extractionFromStreamHappyDay() throws IOException, RarException {
-        final InputStream resourceAsStream = JUnRarTestUtil.class.getResourceAsStream(TestCommons.SIMPLE_RAR_RESOURCE_PATH);
+        final InputStream resourceAsStream = JunrarTest.class.getResourceAsStream(TestCommons.SIMPLE_RAR_RESOURCE_PATH);
         Junrar.extract(resourceAsStream, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
@@ -83,19 +82,19 @@ public class JunrarTest {
 
     @Test
     public void listContents() throws IOException, RarException {
-        final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "test-documents.rar");
+        final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar");
         final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);
 
         final ContentDescription[] expected = {
-            c("test-documents\\testEXCEL.xls", 13824),
-            c("test-documents\\testHTML.html", 167),
-            c("test-documents\\testOpenOffice2.odt", 26448),
-            c("test-documents\\testPDF.pdf", 34824),
-            c("test-documents\\testPPT.ppt", 16384),
-            c("test-documents\\testRTF.rtf", 3410),
-            c("test-documents\\testTXT.txt", 49),
-            c("test-documents\\testWORD.doc", 19456),
-            c("test-documents\\testXML.xml", 766)
+            new ContentDescription("test-documents\\testEXCEL.xls", 13824),
+            new ContentDescription("test-documents\\testHTML.html", 167),
+            new ContentDescription("test-documents\\testOpenOffice2.odt", 26448),
+            new ContentDescription("test-documents\\testPDF.pdf", 34824),
+            new ContentDescription("test-documents\\testPPT.ppt", 16384),
+            new ContentDescription("test-documents\\testRTF.rtf", 3410),
+            new ContentDescription("test-documents\\testTXT.txt", 49),
+            new ContentDescription("test-documents\\testWORD.doc", 19456),
+            new ContentDescription("test-documents\\testXML.xml", 766)
         };
 
         assertThat(contentDescriptions.toArray()).isEqualTo(expected);
@@ -121,7 +120,4 @@ public class JunrarTest {
             .hasMessageContaining("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath());
     }
 
-    private static ContentDescription c(final String name, final long size) {
-        return new ContentDescription(name, size);
-    }
 }

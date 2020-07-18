@@ -14,26 +14,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.junrar.testUtil;
+package com.github.junrar;
 
-import com.github.junrar.Archive;
-import com.github.junrar.Junrar;
-import com.github.junrar.TestCommons;
-import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URISyntaxException;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 
-public class SimpleTest {
+public class ArchiveTest {
 
     @Test
     public void testTikaDocs() throws Exception {
@@ -48,7 +40,7 @@ public class SimpleTest {
             "testXML.xml", "766"};
 
 
-        File f = new File(getClass().getResource("test-documents.rar").toURI());
+        File f = new File(getClass().getResource("tika-documents.rar").toURI());
         try (Archive archive = new Archive(new FileVolumeManager(f))) {
             FileHeader fileHeader = archive.nextFileHeader();
             int i = 0;
@@ -58,27 +50,5 @@ public class SimpleTest {
                 fileHeader = archive.nextFileHeader();
             }
         }
-    }
-
-    @Test
-    public void nullMainHeaderFile_throwsRarException() throws URISyntaxException, IOException {
-        final File tempDir = TestCommons.createTempDir();
-        final File f = new File(getClass().getResource("test-mainHeaderNull.rar").toURI());
-
-        Throwable thrown = catchThrowable(() -> Junrar.extract(f, tempDir));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
-    }
-
-    @Test
-    public void nullMainHeaderInputStream_throwsRarException() throws IOException {
-        final File tempDir = TestCommons.createTempDir();
-        InputStream stream = getClass().getResource("test-mainHeaderNull.rar").openStream();
-
-        Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
-
-        stream.close();
     }
 }

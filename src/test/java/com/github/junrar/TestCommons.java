@@ -1,6 +1,5 @@
 package com.github.junrar;
 
-import com.github.junrar.testUtil.JUnRarTestUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
@@ -26,7 +25,7 @@ public class TestCommons {
     }
 
     public static File writeResourceToFolder(File destination, String resourcePath) throws IOException {
-        InputStream resourceAsStream = JUnRarTestUtil.class.getResourceAsStream(resourcePath);
+        InputStream resourceAsStream = TestCommons.class.getResourceAsStream(resourcePath);
         File testRar = new File(destination, resourcePath);
         FileUtils.writeByteArrayToFile(testRar, IOUtils.toByteArray(resourceAsStream));
         return testRar;

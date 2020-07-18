@@ -35,8 +35,21 @@ public class AbnormalFilesTest {
     @ParameterizedTest
     @MethodSource("provideFilesAndExpectedExceptionType")
     public void extractFile(Map.Entry<String, RarException.RarExceptionType> fileAndResult) throws Exception {
+        File file = new File(getClass().getResource(fileAndResult.getKey()).toURI());
+
+        Throwable thrown = catchThrowable(() -> Junrar.extract(file, tempDir));
+
+        assertThat(thrown).isInstanceOf(RarException.class);
+        assertThat(((RarException) thrown).getType()).isEqualTo(fileAndResult.getValue());
+
+    }
+
+    @ParameterizedTest
+    @MethodSource("provideFilesAndExpectedExceptionType")
+    public void extractFromStream(Map.Entry<String, RarException.RarExceptionType> fileAndResult) throws Exception {
         try (InputStream stream = getClass().getResourceAsStream(fileAndResult.getKey())) {
             Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
+
             assertThat(thrown).isInstanceOf(RarException.class);
             assertThat(((RarException) thrown).getType()).isEqualTo(fileAndResult.getValue());
         }
@@ -46,6 +59,7 @@ public class AbnormalFilesTest {
         Map<String, RarException.RarExceptionType> map = new HashMap<>();
 
         map.put("abnormal/corrupt-header.rar", RarException.RarExceptionType.corruptHeader);
+        map.put("abnormal/mainHeaderNull.rar", RarException.RarExceptionType.mainHeaderNull);
 
         return map.entrySet().stream();
     }
