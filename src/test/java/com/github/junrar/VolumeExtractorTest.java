@@ -3,36 +3,39 @@ package com.github.junrar;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class VolumeExtractorTest {
     private static File tempFolder;
-    private static final String volumesDirName = "volumes";
-    private static final String firstVolume = "test-documents.part1.rar";
 
-    @BeforeAll
-    public static void setupFunctionalTests() throws IOException {
+    @BeforeEach
+    public void setupFunctionalTests() throws IOException {
         tempFolder = TestCommons.createTempDir();
-        File dir = new File(VolumeExtractorTest.class.getResource(volumesDirName).getPath());
-        TestCommons.copyRarsToFolder(tempFolder, dir);
     }
 
-    @AfterAll
-    public static void tearDownFunctionalTests() throws IOException {
+    @AfterEach
+    public void tearDownFunctionalTests() throws IOException {
         FileUtils.deleteDirectory(tempFolder);
     }
 
-    @Test
-    public void extractionFromvolumedFile() throws RarException, IOException {
+    @ParameterizedTest
+    @MethodSource("volumeArgs")
+    public void extractionFromvolumedFile(String ressourceDir, String firstVolume) throws RarException, IOException {
+        File dir = new File(VolumeExtractorTest.class.getResource(ressourceDir).getPath());
+        TestCommons.copyRarsToFolder(tempFolder, dir);
+
         final File rarFileOnTemp = new File(tempFolder, firstVolume);
         final File unpackedDir = new File(tempFolder, "test-documents");
         unpackedDir.delete();
@@ -42,7 +45,14 @@ public class VolumeExtractorTest {
         checkContent(unpackedDir);
     }
 
-    private void checkContent(File unpackedDir) {
+    private static Stream<Arguments> volumeArgs() {
+        return Stream.of(
+            Arguments.of("volumes/new-numbers", "test-documents.000.rar"),
+            Arguments.of("volumes/new-part", "test-documents.part1.rar")
+        );
+    }
+
+    private static void checkContent(File unpackedDir) {
         final Map<String, ContentDescription> expected = new HashMap<>();
         expected.put("testEXCEL.xls", new ContentDescription("testEXCEL.xls", 13824));
         expected.put("testHTML.html", new ContentDescription("testHTML.html", 167));
