@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -35,7 +36,7 @@ public class JunrarTest {
         Junrar.extract(rarFileOnTemp, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"), Charset.defaultCharset());
 
         assertThat(fooDir).exists();
         assertThat(barFileContent).isEqualTo("baz\n");
@@ -62,7 +63,7 @@ public class JunrarTest {
         Junrar.extract(new LocalFolderExtractor(tempFolder), new FileVolumeManager(rarFileOnTemp));
 
         final File fooDir = new File(tempFolder, "foo");
-        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"), Charset.defaultCharset());
 
         assertThat(fooDir).exists();
         assertThat(barFileContent).isEqualTo("baz\n");
@@ -74,7 +75,7 @@ public class JunrarTest {
         Junrar.extract(resourceAsStream, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"));
+        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"), Charset.defaultCharset());
 
         assertThat(fooDir).exists();
         assertThat(barFileContent).isEqualTo("baz\n");
