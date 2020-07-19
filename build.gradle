@@ -114,6 +114,9 @@ bintray {
             }
             mavenCentralSync {
                 sync = true
+                user = System.getenv('MAVENCENTRAL_USER')
+                password = System.getenv('MAVENCENTRAL_PASSWORD')
+                close = '1'
             }
         }
     }
