@@ -36,28 +36,28 @@ public class AbnormalFilesTest {
 
     @ParameterizedTest
     @MethodSource("provideFilesAndExpectedExceptionType")
-    public void extractFile(Map.Entry<String, Class> fileAndResult) throws Exception {
+    public void extractFile(Map.Entry<String, Class<?>> fileAndResult) throws Exception {
         File file = new File(getClass().getResource(fileAndResult.getKey()).toURI());
 
         Throwable thrown = catchThrowable(() -> Junrar.extract(file, tempDir));
 
         assertThat(thrown).isInstanceOf(RarException.class);
-        assertThat(((RarException) thrown)).isExactlyInstanceOf(fileAndResult.getValue());
+        assertThat(thrown).isExactlyInstanceOf(fileAndResult.getValue());
     }
 
     @ParameterizedTest
     @MethodSource("provideFilesAndExpectedExceptionType")
-    public void extractFromStream(Map.Entry<String, Class> fileAndResult) throws Exception {
+    public void extractFromStream(Map.Entry<String, Class<?>> fileAndResult) throws Exception {
         try (InputStream stream = getClass().getResourceAsStream(fileAndResult.getKey())) {
             Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
 
             assertThat(thrown).isInstanceOf(RarException.class);
-            assertThat(((RarException) thrown)).isExactlyInstanceOf(fileAndResult.getValue());
+            assertThat(thrown).isExactlyInstanceOf(fileAndResult.getValue());
         }
     }
 
-    private static Stream<Map.Entry<String, Class>> provideFilesAndExpectedExceptionType() {
-        Map<String, Class> map = new HashMap<>();
+    private static Stream<Map.Entry<String, Class<?>>> provideFilesAndExpectedExceptionType() {
+        Map<String, Class<?>> map = new HashMap<>();
 
         map.put("abnormal/corrupt-header.rar", CorruptHeaderException.class);
         map.put("abnormal/mainHeaderNull.rar", MainHeaderNullException.class);

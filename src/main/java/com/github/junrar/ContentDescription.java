@@ -37,10 +37,7 @@ public class ContentDescription {
         } else if (!path.equals(other.path)) {
             return false;
         }
-        if (size != other.size) {
-            return false;
-        }
-        return true;
+        return size == other.size;
     }
 
     @Override

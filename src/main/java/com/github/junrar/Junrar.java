@@ -55,11 +55,11 @@ public class Junrar {
 
         final Archive arch = createArchiveOrThrowException(rar);
 
-        final List<ContentDescription> contents = new ArrayList<ContentDescription>();
+        final List<ContentDescription> contents = new ArrayList<>();
         try {
             if (arch.isEncrypted()) {
                 logger.warn("archive is encrypted cannot extract");
-                return new ArrayList<ContentDescription>();
+                return new ArrayList<>();
             }
             for (final FileHeader fileHeader : arch) {
                 contents.add(new ContentDescription(fileHeader.getFileNameString(), fileHeader.getUnpSize()));
@@ -113,14 +113,14 @@ public class Junrar {
         if (arch.isEncrypted()) {
             logger.warn("archive is encrypted cannot extract");
             arch.close();
-            return new ArrayList<File>();
+            return new ArrayList<>();
         }
 
-        final List<File> extractedFiles = new ArrayList<File>();
+        final List<File> extractedFiles = new ArrayList<>();
         try {
             for (final FileHeader fh : arch) {
                 try {
-                    final File file = tryToExtract(logger, destination, arch, fh);
+                    final File file = tryToExtract(destination, arch, fh);
                     if (file != null) {
                         extractedFiles.add(file);
                     }
@@ -139,17 +139,16 @@ public class Junrar {
     }
 
     private static File tryToExtract(
-        final Logger logger,
         final ExtractDestination destination,
         final Archive arch,
         final FileHeader fileHeader
     ) throws IOException, RarException {
         final String fileNameString = fileHeader.getFileNameString();
         if (fileHeader.isEncrypted()) {
-            logger.warn("file is encrypted cannot extract: " + fileNameString);
+            Junrar.logger.warn("file is encrypted cannot extract: " + fileNameString);
             return null;
         }
-        logger.info("extracting: " + fileNameString);
+        Junrar.logger.info("extracting: " + fileNameString);
         if (fileHeader.isDirectory()) {
             return destination.createDirectory(fileHeader);
         } else {

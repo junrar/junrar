@@ -74,7 +74,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private static final Logger logger = LoggerFactory.getLogger(Archive.class);
 
-    private static int MAX_HEADER_SIZE = 20971520; //20MB
+    private static final int MAX_HEADER_SIZE = 20971520; //20MB
 
     private IReadOnlyAccess rof;
 
@@ -82,7 +82,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private final ComprDataIO dataIO;
 
-    private final List<BaseBlock> headers = new ArrayList<BaseBlock>();
+    private final List<BaseBlock> headers = new ArrayList<>();
 
     private MarkHeader markHead = null;
 
@@ -130,14 +130,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
         try {
             setVolume(this.volumeManager.nextArchive(this, null));
-        } catch (IOException e) {
-            try {
-                close();
-            } catch (IOException e1) {
-                logger.error("Failed to close the archive after an internal error!");
-            }
-            throw e;
-        } catch (RarException e) {
+        } catch (IOException | RarException e) {
             try {
                 close();
             } catch (IOException e1) {
@@ -214,14 +207,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @return returns the headers.
      */
     public List<BaseBlock> getHeaders() {
-        return new ArrayList<BaseBlock>(this.headers);
+        return new ArrayList<>(this.headers);
     }
 
     /**
      * @return returns all file headers of the archive
      */
     public List<FileHeader> getFileHeaders() {
-        final List<FileHeader> list = new ArrayList<FileHeader>();
+        final List<FileHeader> list = new ArrayList<>();
         for (final BaseBlock block : this.headers) {
             if (block.getHeaderType().equals(UnrarHeadertype.FileHeader)) {
                 list.add((FileHeader) block);
@@ -261,7 +254,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * Read the headers of the archive
      *
      * @param fileLength Length of file.
-     * @throws RarException
+     * @throws IOException, RarException
      */
     private void readHeaders(final long fileLength) throws IOException, RarException {
         this.markHead = null;
@@ -271,7 +264,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         int toRead = 0;
         //keep track of positions already processed for
         //more robustness against corrupt files
-        final Set<Long> processedPositions = new HashSet<Long>();
+        final Set<Long> processedPositions = new HashSet<>();
         while (true) {
             int size = 0;
             long newpos = 0;
@@ -538,24 +531,20 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @throws RarException .
      * @throws IOException  if any IO error occur
      */
-    public InputStream getInputStream(final FileHeader hd) throws RarException,
-        IOException {
+    public InputStream getInputStream(final FileHeader hd) throws RarException, IOException {
         final PipedInputStream in = new PipedInputStream(32 * 1024);
         final PipedOutputStream out = new PipedOutputStream(in);
 
         // creates a new thread that will write data to the pipe. Data will be
         // available in another InputStream, connected to the OutputStream.
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
+        new Thread(() -> {
+            try {
+                extractFile(hd, out);
+            } catch (final RarException e) {
+            } finally {
                 try {
-                    extractFile(hd, out);
-                } catch (final RarException e) {
-                } finally {
-                    try {
-                        out.close();
-                    } catch (final IOException e) {
-                    }
+                    out.close();
+                } catch (final IOException e) {
                 }
             }
         }).start();

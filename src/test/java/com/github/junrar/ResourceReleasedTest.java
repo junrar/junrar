@@ -84,14 +84,8 @@ public class ResourceReleasedTest {
 
     @Test
     public void extractRar4FromInputStream() throws IOException, RarException {
-        InputStream input = null;
-        try {
-            input = new FileInputStream(rar4TestFile);
+        try (InputStream input = new FileInputStream(rar4TestFile)) {
             Junrar.extract(input, extractDir);
-        } finally {
-            if (input != null) {
-                input.close();
-            }
         }
     }
 

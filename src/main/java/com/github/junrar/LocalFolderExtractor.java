@@ -12,7 +12,7 @@ import java.io.OutputStream;
 
 public class LocalFolderExtractor implements ExtractDestination {
 
-    private File folderDestination;
+    private final File folderDestination;
     private static final Logger logger = LoggerFactory.getLogger(LocalFolderExtractor.class);
 
     public LocalFolderExtractor(final File destination) {
@@ -54,14 +54,8 @@ public class LocalFolderExtractor implements ExtractDestination {
             final FileHeader fileHeader
     ) throws RarException, IOException {
         final File f = createFile(fileHeader, folderDestination);
-        OutputStream stream = null;
-        try {
-            stream = new FileOutputStream(f);
+        try (OutputStream stream = new FileOutputStream(f)) {
             arch.extractFile(fileHeader, stream);
-        } finally {
-            if (stream != null) {
-                stream.close();
-            }
         }
         return f;
     }
@@ -91,9 +85,6 @@ public class LocalFolderExtractor implements ExtractDestination {
 
     private File makeFile(final File destination, final String name) throws IOException {
         final String[] dirs = name.split("\\\\");
-        if (dirs == null) {
-            return null;
-        }
         String path = "";
         final int size = dirs.length;
         if (size == 1) {
