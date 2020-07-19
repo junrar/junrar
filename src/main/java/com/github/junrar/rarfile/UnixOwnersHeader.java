@@ -1,12 +1,12 @@
 package com.github.junrar.rarfile;
 
 import com.github.junrar.io.Raw;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class UnixOwnersHeader extends SubBlockHeader {
-    private static final Log logger = LogFactory.getLog(UnixOwnersHeader.class);
+    private static final Logger logger = LoggerFactory.getLogger(UnixOwnersHeader.class);
     private int ownerNameSize;
     private int groupNameSize;
     private String owner;

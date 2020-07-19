@@ -3,8 +3,8 @@ package com.github.junrar;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.util.List;
 
 public class Junrar {
 
-    private static final Log logger = LogFactory.getLog(Junrar.class);
+    private static final Logger logger = LoggerFactory.getLogger(Junrar.class);
 
     public static List<File> extract(final String rarPath, final String destinationPath) throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
@@ -29,7 +29,7 @@ public class Junrar {
         validateRarPath(rar);
         validateDestinationPath(destinationFolder);
 
-        final Archive archive = createArchiveOrThrowException(logger, rar);
+        final Archive archive = createArchiveOrThrowException(rar);
         LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
         return extractArchiveTo(archive, lfe);
     }
@@ -37,7 +37,7 @@ public class Junrar {
     public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder) throws RarException, IOException {
         validateDestinationPath(destinationFolder);
 
-        final Archive arch = createArchiveOrThrowException(logger, resourceAsStream);
+        final Archive arch = createArchiveOrThrowException(resourceAsStream);
         LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
         return extractArchiveTo(arch, lfe);
     }
@@ -53,7 +53,7 @@ public class Junrar {
     public static List<ContentDescription> getContentsDescription(final File rar) throws RarException, IOException {
         validateRarPath(rar);
 
-        final Archive arch = createArchiveOrThrowException(logger, rar);
+        final Archive arch = createArchiveOrThrowException(rar);
 
         final List<ContentDescription> contents = new ArrayList<ContentDescription>();
         try {
@@ -70,30 +70,21 @@ public class Junrar {
         return contents;
     }
 
-    private static Archive createArchiveOrThrowException(final Log logger, final InputStream rarAsStream) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(final InputStream rarAsStream) throws RarException, IOException {
         try {
             return new Archive(rarAsStream);
-        } catch (final RarException e) {
-            logger.error(e);
+        } catch (final RarException | IOException e) {
+            Junrar.logger.error("Error while creating archive", e);
             throw e;
-        } catch (final IOException e1) {
-            logger.error(e1);
-            throw e1;
         }
     }
 
-    private static Archive createArchiveOrThrowException(
-        final Log logger,
-        final File file
-    ) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(final File file) throws RarException, IOException {
         try {
             return new Archive(new FileVolumeManager(file));
-        } catch (final RarException e) {
-            logger.error(e);
+        } catch (final RarException | IOException e) {
+            Junrar.logger.error("Error while creating archive", e);
             throw e;
-        } catch (final IOException e1) {
-            logger.error(e1);
-            throw e1;
         }
     }
 
@@ -148,7 +139,7 @@ public class Junrar {
     }
 
     private static File tryToExtract(
-        final Log logger,
+        final Logger logger,
         final ExtractDestination destination,
         final Archive arch,
         final FileHeader fileHeader

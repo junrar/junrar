@@ -18,14 +18,13 @@
  */
 package com.github.junrar.rarfile;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import com.github.junrar.io.Raw;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class SubBlockHeader extends BlockHeader {
-    private static final Log logger = LogFactory.getLog(SubBlockHeader.class);
+    private static final Logger logger = LoggerFactory.getLogger(SubBlockHeader.class);
 
     public static final short SubBlockHeaderSize = 3;
 

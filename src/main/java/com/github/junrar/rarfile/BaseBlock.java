@@ -19,8 +19,8 @@
 package com.github.junrar.rarfile;
 
 import com.github.junrar.io.Raw;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 
@@ -32,7 +32,7 @@ import org.apache.commons.logging.LogFactory;
  */
 public class BaseBlock {
 
-    private static final Log logger = LogFactory.getLog(BaseBlock.class);
+    private static final Logger logger = LoggerFactory.getLogger(BaseBlock.class);
 
     public static final short BaseBlockSize = 7;
 

@@ -2,8 +2,8 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,7 +13,7 @@ import java.io.OutputStream;
 public class LocalFolderExtractor implements ExtractDestination {
 
     private File folderDestination;
-    private static final Log logger = LogFactory.getLog(LocalFolderExtractor.class);
+    private static final Logger logger = LoggerFactory.getLogger(LocalFolderExtractor.class);
 
     public LocalFolderExtractor(final File destination) {
         this.folderDestination = destination;

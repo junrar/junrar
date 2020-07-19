@@ -48,8 +48,8 @@ import com.github.junrar.rarfile.UnixOwnersHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.Closeable;
 import java.io.File;
@@ -72,7 +72,7 @@ import java.util.Set;
  */
 public class Archive implements Closeable, Iterable<FileHeader> {
 
-    private static final Log logger = LogFactory.getLog(Archive.class);
+    private static final Logger logger = LoggerFactory.getLogger(Archive.class);
 
     private static int MAX_HEADER_SIZE = 20971520; //20MB
 

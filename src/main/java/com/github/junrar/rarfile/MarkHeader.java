@@ -18,10 +18,9 @@
  */
 package com.github.junrar.rarfile;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import com.github.junrar.io.Raw;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -32,7 +31,7 @@ import com.github.junrar.io.Raw;
  */
 public class MarkHeader extends BaseBlock {
 
-    private Log logger = LogFactory.getLog(MarkHeader.class.getName());
+    private Logger logger = LoggerFactory.getLogger(MarkHeader.class.getName());
 
     private RARVersion version;
 

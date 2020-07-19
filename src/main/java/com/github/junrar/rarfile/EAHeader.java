@@ -18,10 +18,9 @@
  */
 package com.github.junrar.rarfile;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import com.github.junrar.io.Raw;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -29,7 +28,7 @@ import com.github.junrar.io.Raw;
  *
  */
 public class EAHeader extends SubBlockHeader {
-    private static final Log logger = LogFactory.getLog(EAHeader.class);
+    private static final Logger logger = LoggerFactory.getLogger(EAHeader.class);
 
     public static final short EAHeaderSize = 10;
 
