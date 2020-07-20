@@ -16,13 +16,19 @@
  */
 package com.github.junrar;
 
+import com.github.junrar.exception.UnsupportedRarEncryptedException;
+import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.io.InputStream;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 
 public class ArchiveTest {
@@ -48,6 +54,59 @@ public class ArchiveTest {
                 assertThat(fileHeader.getFileNameString()).contains(expected[i++]);
                 assertThat(fileHeader.getUnpSize()).isEqualTo(Long.parseLong(expected[i++]));
                 fileHeader = archive.nextFileHeader();
+            }
+        }
+    }
+
+    /**
+     * This class will test archives that are encrypted or password protected.
+     * <p>
+     * Encrypted archives are password protected, but also encrypt the list of files,
+     * so you need the password to list the content.
+     * <p>
+     * You can list the content of a password protected archive, but you cannot extract
+     * without the password.
+     */
+    @Nested
+    class PasswordProtected {
+        @Test
+        public void givenEncryptedRar4File_whenCreatingArchive_thenUnsupportedRarEncryptedExceptionIsThrown() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar4-encrypted-junrar.rar")) {
+                Throwable thrown = catchThrowable(() -> new Archive(is));
+
+                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarEncryptedException.class);
+            }
+        }
+
+        @Test
+        public void givenPasswordProtectedRar4File_whenCreatingArchive_then() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar4-password-junrar.rar")) {
+                try (Archive archive = new Archive(is)) {
+                    List<FileHeader> fileHeaders = archive.getFileHeaders();
+                    assertThat(fileHeaders).hasSize(1);
+
+                    FileHeader fileHeader = fileHeaders.get(0);
+                    assertThat(fileHeader.isEncrypted()).isTrue();
+                    assertThat(fileHeader.getFileNameString()).isEqualTo("file1.txt");
+                }
+            }
+        }
+
+        @Test
+        public void givenEncryptedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar5-encrypted-junrar.rar")) {
+                Throwable thrown = catchThrowable(() -> new Archive(is));
+
+                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
+            }
+        }
+
+        @Test
+        public void givenPasswordProtectedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar5-password-junrar.rar")) {
+                Throwable thrown = catchThrowable(() -> new Archive(is));
+
+                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
             }
         }
     }

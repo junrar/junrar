@@ -25,3 +25,5 @@ Commit messages are enforced using commit hooks ran on the developer's PC. To in
 The project uses Gradle for the build. You do not need to install Gradle, the Gradle wrapepr will install the required version for you.
 
 To run the tests, just run `./gradlew check`.
+
+Before committing, run `./gradlew build` to ensure the build and tests run correctly.
