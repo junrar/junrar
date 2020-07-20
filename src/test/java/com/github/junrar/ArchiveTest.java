@@ -16,6 +16,7 @@
  */
 package com.github.junrar;
 
+import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.impl.FileVolumeManager;
@@ -23,6 +24,7 @@ import com.github.junrar.rarfile.FileHeader;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.util.List;
@@ -54,6 +56,59 @@ public class ArchiveTest {
                 assertThat(fileHeader.getFileNameString()).contains(expected[i++]);
                 assertThat(fileHeader.getUnpSize()).isEqualTo(Long.parseLong(expected[i++]));
                 fileHeader = archive.nextFileHeader();
+            }
+        }
+    }
+
+    @Nested
+    class Solid {
+        @Test
+        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
+                try (Archive archive = new Archive(is)) {
+                    assertThat(archive.getMainHeader().isSolid());
+
+                    List<FileHeader> fileHeaders = archive.getFileHeaders();
+                    assertThat(fileHeaders).hasSize(9);
+
+                    for (int i = 0; i < fileHeaders.size(); i++) {
+                        int index = i + 1;
+                        FileHeader fileHeader = fileHeaders.get(i);
+                        assertThat(fileHeader.getFileNameString()).isEqualTo("file" + index + ".txt");
+
+                        try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                            archive.extractFile(fileHeaders.get(i), baos);
+                            assertThat(baos.toString()).isEqualTo("file" + index + "\n");
+                        }
+                    }
+                }
+            }
+        }
+
+        @Test
+        public void givenSolidRar4File_whenExtractingOutOfOrder_thenExceptionIsThrown() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
+                try (Archive archive = new Archive(is)) {
+                    assertThat(archive.getMainHeader().isSolid());
+
+                    List<FileHeader> fileHeaders = archive.getFileHeaders();
+                    assertThat(fileHeaders).hasSize(9);
+
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        Throwable thrown = catchThrowable(() -> archive.extractFile(fileHeaders.get(4), baos));
+
+                        assertThat(thrown).isExactlyInstanceOf(CrcErrorException.class);
+                    }
+                }
+            }
+        }
+
+        @Test
+        public void givenSolidRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("solid/rar5-solid.rar")) {
+                Throwable thrown = catchThrowable(() -> new Archive(is));
+
+                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
             }
         }
     }
