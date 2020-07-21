@@ -229,6 +229,7 @@ public class FileHeader extends BlockHeader {
         cal.set(Calendar.HOUR_OF_DAY, (time >>> 11) & 0x1f);
         cal.set(Calendar.MINUTE, (time >>> 5) & 0x3f);
         cal.set(Calendar.SECOND, (time & 0x1f) * 2);
+        cal.set(Calendar.MILLISECOND, 0);
         return cal.getTime();
     }
 
