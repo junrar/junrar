@@ -506,10 +506,10 @@ public class RarVM extends BitInput {
                 case VM_SAR: {
                     int value1 = getValue(cmd.isByteMode(), mem, op1);
                     int value2 = getValue(cmd.isByteMode(), mem, op2);
-                    int result = ((int) value1) >> value2;
+                    int result = ((int) value1) >>> value2;
                     flags = (result == 0 ? VMFlags.VM_FZ.getFlag()
-                            : (result & VMFlags.VM_FS.getFlag()))
-                            | ((value1 >> (value2 - 1)) & VMFlags.VM_FC.getFlag());
+                        : (result & VMFlags.VM_FS.getFlag()))
+                        | ((value1 >>> (value2 - 1)) & VMFlags.VM_FC.getFlag());
                     setValue(cmd.isByteMode(), mem, op1, result);
                 }
                 break;
@@ -675,7 +675,7 @@ public class RarVM extends BitInput {
                 long dataSize = (long) ((long) ReadData(this) & 0xffFFffFF + 1);
                 for (int i = 0; inAddr < codeSize && i < dataSize; i++) {
                     prg.getStaticData().add(
-                            Byte.valueOf((byte) (fgetbits() >> 8)));
+                        Byte.valueOf((byte) (fgetbits() >>> 8)));
                     faddbits(8);
                 }
             }
@@ -684,15 +684,15 @@ public class RarVM extends BitInput {
                 VMPreparedCommand curCmd = new VMPreparedCommand();
                 int data = fgetbits();
                 if ((data & 0x8000) == 0) {
-                    curCmd.setOpCode(VMCommands.findVMCommand((data >> 12)));
+                    curCmd.setOpCode(VMCommands.findVMCommand((data >>> 12)));
                     faddbits(4);
                 } else {
                     curCmd.setOpCode(VMCommands
-                            .findVMCommand((data >> 10) - 24));
+                        .findVMCommand((data >>> 10) - 24));
                     faddbits(6);
                 }
                 if ((VMCmdFlags.VM_CmdFlags[curCmd.getOpCode().getVMCommand()] & VMCmdFlags.VMCF_BYTEMODE) != 0) {
-                    curCmd.setByteMode((fgetbits() >> 15) == 1 ? true : false);
+                    curCmd.setByteMode((fgetbits() >>> 15) == 1 ? true : false);
                     faddbits(1);
                 } else {
                     curCmd.setByteMode(false);
@@ -764,14 +764,14 @@ public class RarVM extends BitInput {
         int data = fgetbits();
         if ((data & 0x8000) != 0) {
             op.setType(VMOpType.VM_OPREG);
-            op.setData((data >> 12) & 7);
+            op.setData((data >>> 12) & 7);
             op.setOffset(op.getData());
             faddbits(4);
         } else {
             if ((data & 0xc000) == 0) {
                 op.setType(VMOpType.VM_OPINT);
                 if (byteMode) {
-                    op.setData((data >> 6) & 0xff);
+                    op.setData((data >>> 6) & 0xff);
                     faddbits(10);
                 } else {
                     faddbits(2);
@@ -780,13 +780,13 @@ public class RarVM extends BitInput {
             } else {
                 op.setType(VMOpType.VM_OPREGMEM);
                 if ((data & 0x2000) == 0) {
-                    op.setData((data >> 10) & 7);
+                    op.setData((data >>> 10) & 7);
                     op.setOffset(op.getData());
                     op.setBase(0);
                     faddbits(6);
                 } else {
                     if ((data & 0x1000) == 0) {
-                        op.setData((data >> 9) & 7);
+                        op.setData((data >>> 9) & 7);
                         op.setOffset(op.getData());
                         faddbits(7);
                     } else {
@@ -865,13 +865,13 @@ public class RarVM extends BitInput {
         switch (data & 0xc000) {
             case 0:
                 rarVM.faddbits(6);
-                return ((data >> 10) & 0xf);
+                return ((data >>> 10) & 0xf);
             case 0x4000:
                 if ((data & 0x3c00) == 0) {
-                    data = 0xffffff00 | ((data >> 2) & 0xff);
+                    data = 0xffffff00 | ((data >>> 2) & 0xff);
                     rarVM.faddbits(14);
                 } else {
-                    data = (data >> 6) & 0xff;
+                    data = (data >>> 6) & 0xff;
                     rarVM.faddbits(10);
                 }
                 return (data);

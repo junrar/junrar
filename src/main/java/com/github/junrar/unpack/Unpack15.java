@@ -270,7 +270,7 @@ public abstract class Unpack15 extends BitInput {
             faddbits(getShortLen1(Length));
         } else {
             for (Length = 0;; Length++) {
-                if (((BitField ^ ShortXor2[Length]) & (~(0xff >> getShortLen2(Length)))) == 0) {
+                if (((BitField ^ ShortXor2[Length]) & (~(0xff >>> getShortLen2(Length)))) == 0) {
                     break;
                 }
             }
@@ -286,7 +286,7 @@ public abstract class Unpack15 extends BitInput {
             if (Length == 14) {
                 LCount = 0;
                 Length = decodeNum(fgetbits(), STARTL2, DecL2, PosL2) + 5;
-                Distance = (fgetbits() >> 1) | 0x8000;
+                Distance = (fgetbits() >>> 1) | 0x8000;
                 faddbits(15);
                 lastLength = Length;
                 lastDist = Distance;
@@ -319,7 +319,7 @@ public abstract class Unpack15 extends BitInput {
 
         LCount = 0;
         AvrLn1 += Length;
-        AvrLn1 -= AvrLn1 >> 4;
+        AvrLn1 -= AvrLn1 >>> 4;
 
         DistancePlace = decodeNum(fgetbits(), STARTHF2, DecHf2, PosHf2) & 0xff;
         Distance = ChSetA[DistancePlace];
@@ -384,7 +384,7 @@ public abstract class Unpack15 extends BitInput {
             }
         }
         AvrPlcB += DistancePlace;
-        AvrPlcB -= AvrPlcB >> 8;
+        AvrPlcB -= AvrPlcB >>> 8;
         while (true) {
             Distance = ChSetB[DistancePlace & 0xff];
             NewDistancePlace = NToPlB[Distance++ & 0xff]++;
@@ -405,7 +405,7 @@ public abstract class Unpack15 extends BitInput {
         if (Length != 1 && Length != 4) {
             if (Length == 0 && Distance <= MaxDist3) {
                 AvrLn3++;
-                AvrLn3 -= AvrLn3 >> 8;
+                AvrLn3 -= AvrLn3 >>> 8;
             } else {
                 if (AvrLn3 > 0) {
                     AvrLn3--;

@@ -78,7 +78,7 @@ public final class RandomAccessStream extends InputStream {
         long l1 = readUntil(l);
         if (l1 >= l) {
             byte[] abyte0 = (byte[]) data
-                    .elementAt((int) (pointer >> BLOCK_SHIFT));
+                .elementAt((int) (pointer >>> BLOCK_SHIFT));
             return abyte0[(int) (pointer++ & BLOCK_MASK)] & 0xff;
         } else {
             return -1;
@@ -103,7 +103,7 @@ public final class RandomAccessStream extends InputStream {
             return -1;
         } else {
             byte[] abyte1 = (byte[]) data
-                    .elementAt((int) (pointer >> BLOCK_SHIFT));
+                .elementAt((int) (pointer >>> BLOCK_SHIFT));
             int k = Math.min(len, BLOCK_SIZE - (int) (pointer & BLOCK_MASK));
             System.arraycopy(abyte1, (int) (pointer & BLOCK_MASK), bytes, off,
                     k);
@@ -135,8 +135,8 @@ public final class RandomAccessStream extends InputStream {
         if (foundEOS) {
             return length;
         }
-        int i = (int) (l >> BLOCK_SHIFT);
-        int j = length >> BLOCK_SHIFT;
+        int i = (int) (l >>> BLOCK_SHIFT);
+        int j = length >>> BLOCK_SHIFT;
         for (int k = j; k <= i; k++) {
             byte[] abyte0 = new byte[BLOCK_SIZE];
             data.addElement(abyte0);
