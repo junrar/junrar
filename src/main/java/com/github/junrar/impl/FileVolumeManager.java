@@ -15,11 +15,11 @@ public class FileVolumeManager implements VolumeManager {
     private final File firstVolume;
     private final String password;
 
-    public FileVolumeManager(final File firstVolume,final String password) {
+    public FileVolumeManager(final File firstVolume, final String password) {
         this.firstVolume = firstVolume;
         this.password = password;
     }
-    
+
     public FileVolumeManager(final File firstVolume) {
         this.firstVolume = firstVolume;
         this.password = null;

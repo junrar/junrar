@@ -20,13 +20,8 @@ package com.github.junrar.io;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.security.AlgorithmParameters;
 import java.util.LinkedList;
 import java.util.Queue;
-
-import javax.crypto.Cipher;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
 
 import com.github.junrar.rarfile.FileHeader;
 
@@ -39,7 +34,7 @@ import gnu.crypto.cipher.Rijndael;
  * @version $LastChangedRevision$
  */
 public class ReadOnlyAccessInputStream extends InputStream {
-    
+
     private IReadOnlyAccess file;
 
     private long curPos;
@@ -78,7 +73,7 @@ public class ReadOnlyAccessInputStream extends InputStream {
             } else {
                 b = file.read();
             }
-//file.     
+
             curPos++;
             return b;
         }
@@ -123,10 +118,7 @@ public class ReadOnlyAccessInputStream extends InputStream {
                 byte[] tr = new byte[16];
                 file.readFully(tr, 0, 16);
 
-                /**
-                 * decrypt & add to data list
-                 * 
-                 */
+                // decrypt & add to data list
                 byte[] out = new byte[16];
                 this.rin.decryptBlock(tr, 0, out, 0);
                 for (int j = 0; j < out.length; j++) {

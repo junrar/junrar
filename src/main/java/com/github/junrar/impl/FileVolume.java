@@ -27,8 +27,8 @@ public class FileVolume implements Volume {
         this.file = file;
         this.password = null;
     }
-    
-    public FileVolume(Archive archive, File file,String password) {
+
+    public FileVolume(Archive archive, File file, String password) {
         this.archive = archive;
         this.file = file;
         this.password = password;

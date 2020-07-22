@@ -72,10 +72,6 @@ public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAcc
                     byte[] tr = new byte[16];
                     this.readFully(tr, 0, 16);
 
-                    /**
-                     * decrypt & add to data list
-                     * 
-                     */
                     byte[] out = new byte[16];
                     this.rin.decryptBlock(tr, 0, out, 0);
                     for (int j = 0; j < out.length; j++) {
@@ -143,7 +139,7 @@ public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAcc
 
             for (int i = 0; i < HashRounds; i++) {
                 bout.write(rawpsw);
-                bout.write(new byte[] { (byte) i, (byte) (i >> 8), (byte) (i >> 16) });
+                bout.write(new byte[] {(byte) i, (byte) (i >> 8), (byte) (i >> 16)});
 
                 if (i % xh == 0) {
                     byte[] input = bout.toByteArray();
@@ -155,11 +151,14 @@ public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAcc
 
             sha.update(bout.toByteArray());
             digest = sha.digest();
-            for (int i = 0; i < 4; i++)
-                for (int j = 0; j < 4; j++)
+            for (int i = 0; i < 4; i++) {
+                for (int j = 0; j < 4; j++) {
                     AESKey[i * 4 + j] = (byte) (((digest[i * 4] * 0x1000000) & 0xff000000
-                            | ((digest[i * 4 + 1] * 0x10000) & 0xff0000) | ((digest[i * 4 + 2] * 0x100) & 0xff00)
+                            | ((digest[i * 4 + 1] * 0x10000) & 0xff0000)
+                            | ((digest[i * 4 + 2] * 0x100) & 0xff00)
                             | digest[i * 4 + 3] & 0xff) >> (j * 8));
+                }
+            }
 
         } catch (Exception e) {
             e.printStackTrace();

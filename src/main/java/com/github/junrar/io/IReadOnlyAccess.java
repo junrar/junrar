@@ -19,10 +19,7 @@ package com.github.junrar.io;
 
 import java.io.IOException;
 
-import javax.crypto.Cipher;
-
 import gnu.crypto.cipher.Rijndael;
-
 
 /**
  * DOCUMENT ME
@@ -35,21 +32,21 @@ public interface IReadOnlyAccess {
     /**
      * @return the current position in the file
      */
-    public long getPosition() throws IOException;
+    long getPosition() throws IOException;
 
     /**
      * @param pos the position in the file
      * @return success ? true : false
      */
-    public void setPosition(long pos) throws IOException;
+    void setPosition(long pos) throws IOException;
 
     /** Read a single byte of data. */
-    public int read() throws IOException;
+    int read() throws IOException;
 
     /**
      * Read up to <tt>count</tt> bytes to the specified buffer.
      */
-    public int read(byte[] buffer, int off, int count) throws IOException;
+    int read(byte[] buffer, int off, int count) throws IOException;
 
     /**
      * Read exactly <tt>count</tt> bytes to the specified buffer.
@@ -58,22 +55,20 @@ public interface IReadOnlyAccess {
      * @param count  how many bytes to read
      * @return bytes read || -1 if IO problem
      */
-    public int readFully(byte[] buffer, int count) throws IOException;
+    int readFully(byte[] buffer, int count) throws IOException;
 
     /** Close this file. */
-    public void close() throws IOException;
+    void close() throws IOException;
 
-    default void setSalt(byte[] salt) {
-        
-    }
+    default void setSalt(byte[] salt) { }
 
-    default void initAES(Rijndael rin, byte[] salt, byte[] AESInit, byte[] AESKey) {}
+    default void initAES(Rijndael rin, byte[] salt, byte[] AESInit, byte[] AESKey) { }
 
     default void readFully(byte[] tr, int i, int j) throws IOException {
         throw new IOException("need to be imply");
     }
 
-    default void resetData() {}
+    default void resetData() { }
 
     default int paddedSize() {
         return 0;
