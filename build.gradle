@@ -15,7 +15,7 @@ repositories {
 
 dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.9'
-
+    compile files('3rd/gnu-crypto.jar')
     testRuntimeOnly 'ch.qos.logback:logback-classic:1.2.3'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
     testImplementation 'commons-io:commons-io:2.7'

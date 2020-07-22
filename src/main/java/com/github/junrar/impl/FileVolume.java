@@ -16,6 +16,7 @@ import com.github.junrar.io.ReadOnlyAccessFile;
 public class FileVolume implements Volume {
     private final Archive archive;
     private final File file;
+    private String password;
 
     /**
      * @param archive .
@@ -24,11 +25,18 @@ public class FileVolume implements Volume {
     public FileVolume(Archive archive, File file) {
         this.archive = archive;
         this.file = file;
+        this.password = null;
+    }
+    
+    public FileVolume(Archive archive, File file,String password) {
+        this.archive = archive;
+        this.file = file;
+        this.password = password;
     }
 
     @Override
     public IReadOnlyAccess getReadOnlyAccess() throws IOException {
-        return new ReadOnlyAccessFile(file);
+        return new ReadOnlyAccessFile(file, password);
     }
 
     @Override

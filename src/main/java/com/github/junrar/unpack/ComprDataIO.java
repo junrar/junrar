@@ -104,6 +104,7 @@ public class ComprDataIO {
         unpPackedSize = hd.getFullPackSize();
         inputStream = new ReadOnlyAccessInputStream(
             archive.getRof(),
+            hd,
             startPos,
             startPos + unpPackedSize
         );
