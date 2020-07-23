@@ -1,8 +1,8 @@
 package com.github.junrar;
 
-import java.io.IOException;
+import com.github.junrar.io.SeekableReadOnlyByteChannel;
 
-import com.github.junrar.io.IReadOnlyAccess;
+import java.io.IOException;
 
 
 /**
@@ -11,11 +11,10 @@ import com.github.junrar.io.IReadOnlyAccess;
  */
 public interface Volume {
     /**
+     * @return SeekableReadOnlyByteChannel the channel
      * @throws IOException .
-     *
-     * @return IReadOnlyAccess the access
      */
-    IReadOnlyAccess getReadOnlyAccess() throws IOException;
+    SeekableReadOnlyByteChannel getChannel() throws IOException;
 
     /**
      * @return the data length

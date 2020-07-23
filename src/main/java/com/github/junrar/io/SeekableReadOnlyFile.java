@@ -28,30 +28,47 @@ import java.io.RandomAccessFile;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class ReadOnlyAccessFile extends RandomAccessFile implements IReadOnlyAccess {
+public class SeekableReadOnlyFile implements SeekableReadOnlyByteChannel {
+    private final RandomAccessFile file;
+
 
     /**
      * @param file the file
      * @throws FileNotFoundException .
      */
-    public ReadOnlyAccessFile(final File file) throws FileNotFoundException {
-        super(file, "r");
+    public SeekableReadOnlyFile(final File file) throws FileNotFoundException {
+        this.file = new RandomAccessFile(file, "r");
     }
 
     @Override
     public int readFully(final byte[] buffer, final int count) throws IOException {
         assert count > 0 : count;
-        this.readFully(buffer, 0, count);
+        file.readFully(buffer, 0, count);
         return count;
     }
 
     @Override
+    public void close() throws IOException {
+        file.close();
+    }
+
+    @Override
     public long getPosition() throws IOException {
-        return this.getFilePointer();
+        return file.getFilePointer();
     }
 
     @Override
     public void setPosition(final long pos) throws IOException {
-        this.seek(pos);
+        file.seek(pos);
+    }
+
+    @Override
+    public int read() throws IOException {
+        return file.read();
+    }
+
+    @Override
+    public int read(byte[] buffer, int off, int count) throws IOException {
+        return file.read(buffer, off, count);
     }
 }

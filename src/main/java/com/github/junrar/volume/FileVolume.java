@@ -1,12 +1,12 @@
-package com.github.junrar.impl;
-
-import java.io.File;
-import java.io.IOException;
+package com.github.junrar.volume;
 
 import com.github.junrar.Archive;
 import com.github.junrar.Volume;
-import com.github.junrar.io.IReadOnlyAccess;
-import com.github.junrar.io.ReadOnlyAccessFile;
+import com.github.junrar.io.SeekableReadOnlyByteChannel;
+import com.github.junrar.io.SeekableReadOnlyFile;
+
+import java.io.File;
+import java.io.IOException;
 
 
 /**
@@ -27,8 +27,8 @@ public class FileVolume implements Volume {
     }
 
     @Override
-    public IReadOnlyAccess getReadOnlyAccess() throws IOException {
-        return new ReadOnlyAccessFile(file);
+    public SeekableReadOnlyByteChannel getChannel() throws IOException {
+        return new SeekableReadOnlyFile(file);
     }
 
     @Override

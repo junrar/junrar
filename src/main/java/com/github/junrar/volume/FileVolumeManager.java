@@ -1,4 +1,4 @@
-package com.github.junrar.impl;
+package com.github.junrar.volume;
 
 import com.github.junrar.Archive;
 import com.github.junrar.Volume;

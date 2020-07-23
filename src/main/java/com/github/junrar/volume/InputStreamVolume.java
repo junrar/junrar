@@ -1,9 +1,9 @@
-package com.github.junrar.impl;
+package com.github.junrar.volume;
 
 import com.github.junrar.Archive;
 import com.github.junrar.Volume;
-import com.github.junrar.io.IReadOnlyAccess;
-import com.github.junrar.io.InputStreamReadOnlyAccessFile;
+import com.github.junrar.io.SeekableReadOnlyByteChannel;
+import com.github.junrar.io.SeekableReadOnlyInputStream;
 
 import java.io.InputStream;
 
@@ -18,8 +18,8 @@ public class InputStreamVolume implements Volume {
     }
 
     @Override
-    public IReadOnlyAccess getReadOnlyAccess() {
-        return new InputStreamReadOnlyAccessFile(this.inputStream);
+    public SeekableReadOnlyByteChannel getChannel() {
+        return new SeekableReadOnlyInputStream(this.inputStream);
     }
 
     @Override

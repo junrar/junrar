@@ -23,12 +23,10 @@ import com.github.junrar.Volume;
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.io.ReadOnlyAccessInputStream;
 import com.github.junrar.rarfile.FileHeader;
 
 import java.io.EOFException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 
 
@@ -47,8 +45,6 @@ public class ComprDataIO {
     private boolean testMode;
 
     private boolean skipUnpCRC;
-
-    private InputStream inputStream;
 
     private OutputStream outputStream;
 
@@ -102,11 +98,7 @@ public class ComprDataIO {
     public void init(FileHeader hd) throws IOException {
         long startPos = hd.getPositionInFile() + hd.getHeaderSize();
         unpPackedSize = hd.getFullPackSize();
-        inputStream = new ReadOnlyAccessInputStream(
-            archive.getRof(),
-            startPos,
-            startPos + unpPackedSize
-        );
+        archive.getChannel().setPosition(startPos);
         subHead = hd;
         curUnpRead = 0;
         curPackWrite = 0;
@@ -119,7 +111,7 @@ public class ComprDataIO {
         while (count > 0) {
             int readSize = (count > unpPackedSize) ? (int) unpPackedSize
                     : count;
-            retCode = inputStream.read(addr, offset, readSize);
+            retCode = archive.getChannel().read(addr, offset, readSize);
             if (retCode < 0) {
                 throw new EOFException();
             }
