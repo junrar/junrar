@@ -19,8 +19,6 @@ package com.github.junrar.io;
 
 import java.io.IOException;
 
-import gnu.crypto.cipher.Rijndael;
-
 /**
  * DOCUMENT ME
  *
@@ -83,22 +81,4 @@ public interface IReadOnlyAccess {
      * @throws IOException .
      */
     void close() throws IOException;
-
-    default void setSalt(byte[] salt) { }
-
-    default void initAES(Rijndael rin, byte[] salt, byte[] AESInit, byte[] AESKey) { }
-
-    default void readFully(byte[] tr, int i, int j) throws IOException {
-        throw new IOException("need to be imply");
-    }
-
-    default void resetData() { }
-
-    default int paddedSize() {
-        return 0;
-    }
-
-    default boolean isSalted() {
-        return false;
-    }
 }

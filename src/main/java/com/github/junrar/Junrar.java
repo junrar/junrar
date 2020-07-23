@@ -1,5 +1,4 @@
 package com.github.junrar;
-
 import com.github.junrar.exception.RarException;
 import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
@@ -16,26 +15,6 @@ public class Junrar {
 
     private static final Logger logger = LoggerFactory.getLogger(Junrar.class);
 
-    public static List<File> extract(final String rarPath, final String destinationPath, final String password)
-            throws IOException, RarException {
-        if (rarPath == null || destinationPath == null) {
-            throw new RuntimeException("archive and destination must be set");
-        }
-        final File arch = new File(rarPath);
-        final File dest = new File(destinationPath);
-        return extract(arch, dest, password);
-    }
-
-    public static List<File> extract(final File rar, final File destinationFolder, final String password)
-            throws RarException, IOException {
-        validateRarPath(rar);
-        validateDestinationPath(destinationFolder);
-
-        final Archive archive = createArchiveOrThrowException(rar, password);
-        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
-        return extractArchiveTo(archive, lfe);
-    }
-
     public static List<File> extract(final String rarPath, final String destinationPath) throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
             throw new RuntimeException("archive and destination must be set");
@@ -50,6 +29,16 @@ public class Junrar {
         validateDestinationPath(destinationFolder);
 
         final Archive archive = createArchiveOrThrowException(rar, null);
+        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+        return extractArchiveTo(archive, lfe);
+    }
+
+    public static List<File> extract(final File rar, final File destinationFolder, final String password)
+            throws RarException, IOException {
+        validateRarPath(rar);
+        validateDestinationPath(destinationFolder);
+
+        final Archive archive = createArchiveOrThrowException(rar, password);
         LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
         return extractArchiveTo(archive, lfe);
     }
@@ -90,8 +79,7 @@ public class Junrar {
         return contents;
     }
 
-    private static Archive createArchiveOrThrowException(final InputStream rarAsStream)
-            throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(final InputStream rarAsStream) throws RarException, IOException {
         try {
             return new Archive(rarAsStream);
         } catch (final RarException | IOException e) {
@@ -100,9 +88,9 @@ public class Junrar {
         }
     }
 
-    private static Archive createArchiveOrThrowException(final File file, String password) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(final File file, final String password) throws RarException, IOException {
         try {
-            return new Archive(new FileVolumeManager(file, password));
+            return new Archive(new FileVolumeManager(file), null, password);
         } catch (final RarException | IOException e) {
             Junrar.logger.error("Error while creating archive", e);
             throw e;
@@ -165,6 +153,7 @@ public class Junrar {
         final FileHeader fileHeader
     ) throws IOException, RarException {
         final String fileNameString = fileHeader.getFileNameString();
+
         Junrar.logger.info("extracting: " + fileNameString);
         if (fileHeader.isDirectory()) {
             return destination.createDirectory(fileHeader);

@@ -17,15 +17,18 @@
  * "@":  "&#064;"
  */
 package com.github.junrar.io;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+
+import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.rarfile.FileHeader;
 
-import gnu.crypto.cipher.Rijndael;
 
 /**
  * DOCUMENT ME
@@ -42,22 +45,22 @@ public class ReadOnlyAccessInputStream extends InputStream {
     private final long endPos;
     private FileHeader hd;
     private Queue<Byte> data = new LinkedList<Byte>();
-    private Rijndael rin = new Rijndael();
-    private byte[] AESKey = new byte[16];
-    private byte[] AESInit = new byte[16];
+    private Cipher cipher;
+    private long readedCount = 0;
 
-    public ReadOnlyAccessInputStream(IReadOnlyAccess file, FileHeader hd, long startPos, long endPos)
+    public ReadOnlyAccessInputStream(IReadOnlyAccess file, FileHeader hd, long startPos, long endPos, final String password)
             throws IOException {
         super();
         this.file = file;
         this.hd = hd;
-        if (hd.isEncrypted()) {
-            file.initAES(rin, hd.getSalt(), AESInit, AESKey);
-        }
         this.startPos = startPos;
         curPos = startPos;
         this.endPos = endPos;
         file.setPosition(curPos);
+
+        if (hd.isEncrypted()) {
+            cipher = Rijndael.buildDecoder(password, hd.getSalt());
+        }
     }
 
     @Override
@@ -68,7 +71,11 @@ public class ReadOnlyAccessInputStream extends InputStream {
             int b = 0;
             if (hd.isEncrypted()) {
                 byte[] bx = new byte[1];
-                this.deRead(bx, 0, bx.length);
+                try {
+                    this.deRead(bx, 0, bx.length);
+                } catch (Exception e) {
+                    // TODO: handle exception
+                }
                 b = bx[0];
             } else {
                 b = file.read();
@@ -89,8 +96,16 @@ public class ReadOnlyAccessInputStream extends InputStream {
         }
         int bytesRead = 0;
         if (hd.isEncrypted()) {
-            // byte[] bx = new byte[(int)Math.min(len, endPos - curPos)];
-            bytesRead = this.deRead(b, off, (int) Math.min(len, endPos - curPos));
+            try {
+                bytesRead = this.deRead(b, off, (int) Math.min(len, endPos - curPos));
+            } catch (IOException e) {
+                throw e;
+            } catch (IllegalBlockSizeException e) {
+                e.printStackTrace();
+            } catch (BadPaddingException e) {
+                e.printStackTrace();
+            }
+
         } else {
             bytesRead = file.read(b, off, (int) Math.min(len, endPos - curPos));
         }
@@ -103,32 +118,33 @@ public class ReadOnlyAccessInputStream extends InputStream {
         return read(b, 0, b.length);
     }
 
-//
-//    public void close() throws IOException {
-//        file.close();
-//    }
-    private int deRead(byte[] b, int off, int len) throws IOException {
+    private int deRead(byte[] b, int off, int len) throws IOException, IllegalBlockSizeException, BadPaddingException {
         int cs = data.size();
         int sizeToRead = len - cs;
 
         if (sizeToRead > 0) {
             int alignedSize = sizeToRead + ((~sizeToRead + 1) & 0xf);
+            byte[] tr = new byte[16];
+
             for (int i = 0; i < alignedSize / 16; i++) {
-                // long ax = System.currentTimeMillis();
-                byte[] tr = new byte[16];
-                file.readFully(tr, 0, 16);
+                while (true) {
+                    byte[] out = null;
+                    // reach the end of content
+                    if ((startPos + readedCount) == endPos) {
+                        out = cipher.doFinal();
+                    } else {
+                        file.readFully(tr, 16);
+                        readedCount += 16;
+                        out = cipher.update(tr);
+                    }
 
-                // decrypt & add to data list
-                byte[] out = new byte[16];
-                this.rin.decryptBlock(tr, 0, out, 0);
-                for (int j = 0; j < out.length; j++) {
-                    this.data.add((byte) (out[j] ^ AESInit[j % 16])); // 32:114, 33:101
+                    if (out != null && out.length > 0) {
+                        for (int j = 0; j < out.length; j++) {
+                            this.data.add(out[j]);
+                        }
+                        break;
+                    }
                 }
-
-                for (int j = 0; j < AESInit.length; j++) {
-                    AESInit[j] = tr[j];
-                }
-                // System.out.println(System.currentTimeMillis()-ax);
             }
         }
 

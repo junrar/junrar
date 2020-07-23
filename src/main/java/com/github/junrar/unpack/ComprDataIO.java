@@ -106,7 +106,8 @@ public class ComprDataIO {
             archive.getRof(),
             hd,
             startPos,
-            startPos + unpPackedSize
+            startPos + unpPackedSize,
+            this.archive.getPassword()
         );
         subHead = hd;
         curUnpRead = 0;
