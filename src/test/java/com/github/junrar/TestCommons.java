@@ -7,6 +7,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
 import java.nio.file.Paths;
 
 public class TestCommons {
@@ -14,10 +16,9 @@ public class TestCommons {
     public static String SIMPLE_RAR_RESOURCE_PATH = "test.rar";
 
     public static File createTempDir() throws IOException {
-        final File tmp = File.createTempFile("Junrar", "test");
-        tmp.delete();
-        tmp.mkdir();
-        return tmp;
+        return Files.createTempDirectory("Junrar")
+            .toRealPath(LinkOption.NOFOLLOW_LINKS)
+            .toFile();
     }
 
     public static File writeTestRarToFolder(File tmp) throws IOException {
