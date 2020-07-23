@@ -99,7 +99,7 @@ public class ComprDataIO {
         processedArcSize = totalArcSize = 0;
     }
 
-    public void init(FileHeader hd) throws IOException {
+    public void init(FileHeader hd) throws IOException, RarException {
         long startPos = hd.getPositionInFile() + hd.getHeaderSize();
         unpPackedSize = hd.getFullPackSize();
         inputStream = new ReadOnlyAccessInputStream(

@@ -17,9 +17,14 @@
 package com.github.junrar.crypt;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import javax.crypto.Cipher;
+import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
@@ -30,7 +35,8 @@ import javax.crypto.spec.SecretKeySpec;
  * @version $LastChangedRevision$
  */
 public class Rijndael {
-    public static Cipher buildDecoder(final String password, byte[] salt) {
+    public static Cipher buildDecipherer(final String password, byte[] salt) throws IOException,
+            NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, NoSuchPaddingException {
         byte[] AESInit = new byte[16];
         byte[] AESKey = new byte[16];
         int rawLength = 2 * password.length();
@@ -44,48 +50,38 @@ public class Rijndael {
             rawpsw[i + rawLength] = salt[i];
         }
 
-        // SHA-1
-        try {
-            MessageDigest sha = MessageDigest.getInstance("sha-1");
+        MessageDigest sha = MessageDigest.getInstance("sha-1");
 
-            final int HashRounds = 0x40000;
-            final int xh = HashRounds / 16;
+        final int HashRounds = 0x40000;
+        final int xh = HashRounds / 16;
 
-            ByteArrayOutputStream bout = new ByteArrayOutputStream();
-            byte[] digest = null;
+        ByteArrayOutputStream bout = new ByteArrayOutputStream();
+        byte[] digest = null;
 
-            for (int i = 0; i < HashRounds; i++) {
-                bout.write(rawpsw);
-                bout.write(new byte[] {(byte) i, (byte) (i >> 8), (byte) (i >> 16)});
+        for (int i = 0; i < HashRounds; i++) {
+            bout.write(rawpsw);
+            bout.write(new byte[] {(byte) i, (byte) (i >> 8), (byte) (i >> 16)});
 
-                if (i % xh == 0) {
-                    byte[] input = bout.toByteArray();
-                    sha.update(input);
-                    digest = sha.digest();
-                    AESInit[i / xh] = digest[19];
-                }
+            if (i % xh == 0) {
+                byte[] input = bout.toByteArray();
+                sha.update(input);
+                digest = sha.digest();
+                AESInit[i / xh] = digest[19];
             }
-
-            sha.update(bout.toByteArray());
-            digest = sha.digest();
-            for (int i = 0; i < 4; i++) {
-                for (int j = 0; j < 4; j++) {
-                    AESKey[i * 4 + j] = (byte) (((digest[i * 4] * 0x1000000) & 0xff000000
-                            | ((digest[i * 4 + 1] * 0x10000) & 0xff0000)
-                            | ((digest[i * 4 + 2] * 0x100) & 0xff00)
-                            | digest[i * 4 + 3] & 0xff) >> (j * 8));
-                }
-            }
-
-            Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
-            cipher.init(Cipher.DECRYPT_MODE,
-                    new SecretKeySpec(AESKey, "AES"),
-                    new IvParameterSpec(AESInit));
-            return cipher;
-
-        } catch (Exception e) {
-            e.printStackTrace();
         }
-        return null;
+
+        sha.update(bout.toByteArray());
+        digest = sha.digest();
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                AESKey[i * 4 + j] = (byte) (((digest[i * 4] * 0x1000000) & 0xff000000
+                        | ((digest[i * 4 + 1] * 0x10000) & 0xff0000) | ((digest[i * 4 + 2] * 0x100) & 0xff00)
+                        | digest[i * 4 + 3] & 0xff) >> (j * 8));
+            }
+        }
+
+        Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
+        cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(AESKey, "AES"), new IvParameterSpec(AESInit));
+        return cipher;
     }
 }

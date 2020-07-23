@@ -27,6 +27,8 @@ import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 
 import com.github.junrar.crypt.Rijndael;
+import com.github.junrar.exception.InitDeciphererFailedException;
+import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
 
 
@@ -49,7 +51,7 @@ public class ReadOnlyAccessInputStream extends InputStream {
     private long readedCount = 0;
 
     public ReadOnlyAccessInputStream(IReadOnlyAccess file, FileHeader hd, long startPos, long endPos, final String password)
-            throws IOException {
+            throws IOException, RarException {
         super();
         this.file = file;
         this.hd = hd;
@@ -59,31 +61,17 @@ public class ReadOnlyAccessInputStream extends InputStream {
         file.setPosition(curPos);
 
         if (hd.isEncrypted()) {
-            cipher = Rijndael.buildDecoder(password, hd.getSalt());
+            try {
+                cipher = Rijndael.buildDecipherer(password, hd.getSalt());
+            } catch (Exception e) {
+                throw new InitDeciphererFailedException(e);
+            }
         }
     }
 
     @Override
     public int read() throws IOException {
-        if (curPos == endPos) {
-            return -1;
-        } else {
-            int b = 0;
-            if (hd.isEncrypted()) {
-                byte[] bx = new byte[1];
-                try {
-                    this.deRead(bx, 0, bx.length);
-                } catch (Exception e) {
-                    // TODO: handle exception
-                }
-                b = bx[0];
-            } else {
-                b = file.read();
-            }
-
-            curPos++;
-            return b;
-        }
+        throw new IOException("Not needed,implement it when needed");
     }
 
     @Override
@@ -98,12 +86,12 @@ public class ReadOnlyAccessInputStream extends InputStream {
         if (hd.isEncrypted()) {
             try {
                 bytesRead = this.deRead(b, off, (int) Math.min(len, endPos - curPos));
-            } catch (IOException e) {
-                throw e;
-            } catch (IllegalBlockSizeException e) {
-                e.printStackTrace();
-            } catch (BadPaddingException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                if (e instanceof IOException) {
+                    throw (IOException) e;
+                } else {
+                    throw new IOException("exception happen when decrypting");
+                }
             }
 
         } else {
@@ -132,6 +120,9 @@ public class ReadOnlyAccessInputStream extends InputStream {
                     // reach the end of content
                     if ((startPos + readedCount) == endPos) {
                         out = cipher.doFinal();
+                        if (out.length == 0) {
+                            throw new IOException("No data to read");
+                        }
                     } else {
                         file.readFully(tr, 16);
                         readedCount += 16;
