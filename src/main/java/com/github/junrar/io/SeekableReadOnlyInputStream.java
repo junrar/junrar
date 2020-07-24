@@ -8,21 +8,22 @@ import java.io.InputStream;
 
 
 /**
- * InputStream based implementation of the <code>IReadOnlyAccess</code> interface.
- *
+ * InputStream based implementation of the <code>SeekableReadOnlyByteChannel</code> interface.
+ * <p>
  * http://rsbweb.nih.gov/ij/
+ *
  * @author martinr
  */
-public class InputStreamReadOnlyAccessFile implements IReadOnlyAccess {
-    private RandomAccessStream is;
+public class SeekableReadOnlyInputStream implements SeekableReadOnlyByteChannel {
+    private final RandomAccessInputStream is;
 
     /**
      * Create new instance.
      *
      * @param is The input stream to wrap.
      */
-    public InputStreamReadOnlyAccessFile(final InputStream is) {
-        this.is = new RandomAccessStream(new BufferedInputStream(is));
+    public SeekableReadOnlyInputStream(final InputStream is) {
+        this.is = new RandomAccessInputStream(new BufferedInputStream(is));
     }
 
     @Override

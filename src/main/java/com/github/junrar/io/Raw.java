@@ -27,13 +27,11 @@ public class Raw {
     /**
      * Read a short value from the byte array at the given position (Big Endian)
      *
-     * @param array
-     *            the array to read from
-     * @param pos
-     *            the position
+     * @param array the array to read from
+     * @param pos   the position
      * @return the value
      */
-    public static final short readShortBigEndian(byte[] array, int pos) {
+    public static short readShortBigEndian(byte[] array, int pos) {
         short temp = 0;
         temp |= array[pos] & 0xff;
         temp <<= 8;
@@ -50,7 +48,7 @@ public class Raw {
      *            the offset
      * @return the value
      */
-    public static final int readIntBigEndian(byte[] array, int pos) {
+    public static int readIntBigEndian(byte[] array, int pos) {
         int temp = 0;
         temp |= array[pos] & 0xff;
         temp <<= 8;
@@ -71,7 +69,7 @@ public class Raw {
      *            the offset
      * @return the value
      */
-    public static final long readLongBigEndian(byte[] array, int pos) {
+    public static long readLongBigEndian(byte[] array, int pos) {
         int temp = 0;
         temp |= array[pos] & 0xff;
         temp <<= 8;
@@ -101,7 +99,7 @@ public class Raw {
      *            the offset
      * @return the value
      */
-    public static final short readShortLittleEndian(byte[] array, int pos) {
+    public static short readShortLittleEndian(byte[] array, int pos) {
         short result = 0;
         result += array[pos + 1] & 0xff;
         result <<= 8;
@@ -119,10 +117,10 @@ public class Raw {
      *            the offset
      * @return the value
      */
-    public static final int readIntLittleEndian(byte[] array, int pos) {
+    public static int readIntLittleEndian(byte[] array, int pos) {
         return ((array[pos + 3] & 0xff) << 24)
-                | ((array[pos + 2] & 0xff) << 16)
-                | ((array[pos + 1] & 0xff) << 8) | ((array[pos] & 0xff));
+            | ((array[pos + 2] & 0xff) << 16)
+            | ((array[pos + 1] & 0xff) << 8) | ((array[pos] & 0xff));
     }
 
     /**
@@ -133,11 +131,11 @@ public class Raw {
      * @param pos .
      * @return .
      */
-    public static final long readIntLittleEndianAsLong(byte[] array, int pos) {
+    public static long readIntLittleEndianAsLong(byte[] array, int pos) {
         return (((long) array[pos + 3] & 0xff) << 24)
-                | (((long) array[pos + 2] & 0xff) << 16)
-                | (((long) array[pos + 1] & 0xff) << 8)
-                | (((long) array[pos] & 0xff));
+            | (((long) array[pos + 2] & 0xff) << 16)
+            | (((long) array[pos + 1] & 0xff) << 8)
+            | (((long) array[pos] & 0xff));
     }
 
     /**
@@ -150,7 +148,7 @@ public class Raw {
      *            the offset
      * @return the value
      */
-    public static final long readLongLittleEndian(byte[] array, int pos) {
+    public static long readLongLittleEndian(byte[] array, int pos) {
         long temp = 0;
         temp |= array[pos + 7] & 0xff;
         temp <<= 8;
@@ -181,7 +179,7 @@ public class Raw {
      * @param value
      *            the value to write
      */
-    public static final void writeShortBigEndian(byte[] array, int pos, short value) {
+    public static void writeShortBigEndian(byte[] array, int pos, short value) {
         array[pos] = (byte) (value >>> 8);
         array[pos + 1] = (byte) (value & 0xFF);
     }
@@ -196,7 +194,7 @@ public class Raw {
      * @param value
      *            the value to write
      */
-    public static final void writeIntBigEndian(byte[] array, int pos, int value) {
+    public static void writeIntBigEndian(byte[] array, int pos, int value) {
         array[pos] = (byte) ((value >>> 24) & 0xff);
         array[pos + 1] = (byte) ((value >>> 16) & 0xff);
         array[pos + 2] = (byte) ((value >>> 8) & 0xff);
@@ -213,7 +211,7 @@ public class Raw {
      * @param value
      *            the value to write
      */
-    public static final void writeLongBigEndian(byte[] array, int pos, long value) {
+    public static void writeLongBigEndian(byte[] array, int pos, long value) {
         array[pos] = (byte) (value >>> 56);
         array[pos + 1] = (byte) (value >>> 48);
         array[pos + 2] = (byte) (value >>> 40);
@@ -235,7 +233,7 @@ public class Raw {
      * @param value
      *            the value to write
      */
-    public static final void writeShortLittleEndian(byte[] array, int pos, short value) {
+    public static void writeShortLittleEndian(byte[] array, int pos, short value) {
         array[pos + 1] = (byte) (value >>> 8);
         array[pos] = (byte) (value & 0xFF);
     }
@@ -249,7 +247,7 @@ public class Raw {
      * @param dv .
      *
      */
-    public static final void incShortLittleEndian(byte[] array, int pos, int dv) {
+    public static void incShortLittleEndian(byte[] array, int pos, int dv) {
         int c = ((array[pos] & 0xff) + (dv & 0xff)) >>> 8;
         array[pos] += dv & 0xff;
         if ((c > 0) || ((dv & 0xff00) != 0)) {
@@ -268,7 +266,7 @@ public class Raw {
      * @param value
      *            the value to write
      */
-    public static final void writeIntLittleEndian(byte[] array, int pos, int value) {
+    public static void writeIntLittleEndian(byte[] array, int pos, int value) {
         array[pos + 3] = (byte) (value >>> 24);
         array[pos + 2] = (byte) (value >>> 16);
         array[pos + 1] = (byte) (value >>> 8);
@@ -286,7 +284,7 @@ public class Raw {
      * @param value
      *            the value to write
      */
-    public static final void writeLongLittleEndian(byte[] array, int pos, long value) {
+    public static void writeLongLittleEndian(byte[] array, int pos, long value) {
         array[pos + 7] = (byte) (value >>> 56);
         array[pos + 6] = (byte) (value >>> 48);
         array[pos + 5] = (byte) (value >>> 40);

@@ -28,7 +28,7 @@ public enum VMFlags {
     VM_FZ(2),
     VM_FS(0x80000000);
 
-    private int flag;
+    private final int flag;
 
     VMFlags(int flag) {
         this.flag = flag;

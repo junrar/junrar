@@ -41,7 +41,7 @@ public class NewSubHeaderType {
     public static final NewSubHeaderType SUBHEAD_TYPE_OS2EA = new NewSubHeaderType(new byte[]{'E', 'A', '2'});
     public static final NewSubHeaderType SUBHEAD_TYPE_BEOSEA = new NewSubHeaderType(new byte[]{'E', 'A', 'B', 'E'});
 
-    private byte[] headerTypes;
+    private final byte[] headerTypes;
 
     private NewSubHeaderType(byte[] headerTypes) {
         this.headerTypes = headerTypes;

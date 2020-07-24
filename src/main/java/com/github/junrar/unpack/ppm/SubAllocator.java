@@ -39,8 +39,8 @@ public class SubAllocator {
     private int subAllocatorSize;
 
     // byte Indx2Units[N_INDEXES], Units2Indx[128], GlueCount;
-    private int[] indx2Units = new int[N_INDEXES];
-    private int[] units2Indx = new int[128];
+    private final int[] indx2Units = new int[N_INDEXES];
+    private final int[] units2Indx = new int[128];
     private int glueCount;
 
     // byte *HeapStart,*LoUnit, *HiUnit;

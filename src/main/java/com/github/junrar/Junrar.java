@@ -1,7 +1,7 @@
 package com.github.junrar;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.volume.FileVolumeManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

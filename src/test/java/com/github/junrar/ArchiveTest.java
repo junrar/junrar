@@ -19,8 +19,8 @@ package com.github.junrar;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
-import com.github.junrar.impl.FileVolumeManager;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.volume.FileVolumeManager;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 

@@ -32,7 +32,7 @@ public enum HostSystem {
     macos((byte) 4),
     beos((byte) 5);
 
-    private byte hostByte;
+    private final byte hostByte;
 
     public static HostSystem findHostSystem(byte hostByte) {
         if (HostSystem.msdos.equals(hostByte)) {

@@ -6,26 +6,22 @@ package com.github.junrar.io;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.RandomAccessFile;
 import java.util.Vector;
 
 /**
  * This is a class that uses a memory cache to allow seeking within an
- * InputStream. Based on the JAI MemoryCacheSeekableStream class. Can also be
- * constructed from a RandomAccessFile, which uses less memory since the memory
- * cache is not required.
+ * InputStream. Based on the JAI MemoryCacheSeekableStream class.
  */
 @SuppressWarnings("rawtypes")
-public final class RandomAccessStream extends InputStream {
+public final class RandomAccessInputStream extends InputStream {
 
     private static final int BLOCK_SIZE = 512;
     private static final int BLOCK_MASK = 511;
     private static final int BLOCK_SHIFT = 9;
 
-    private InputStream src;
-    private RandomAccessFile ras;
+    private final InputStream src;
     private long pointer;
-    private Vector data;
+    private final Vector data;
     private int length;
     private boolean foundEOS;
 
@@ -34,9 +30,8 @@ public final class RandomAccessStream extends InputStream {
      * supported using a memory cache.
      *
      * @param inputstream .
-     *
      */
-    public RandomAccessStream(InputStream inputstream) {
+    public RandomAccessInputStream(InputStream inputstream) {
         pointer = 0L;
         data = new Vector();
         length = 0;
@@ -44,36 +39,15 @@ public final class RandomAccessStream extends InputStream {
         src = inputstream;
     }
 
-    /**
-     * Constructs a RandomAccessStream from an RandomAccessFile.
-     *
-     * @param ras ras
-     *
-     */
-    public RandomAccessStream(RandomAccessFile ras) {
-        this.ras = ras;
-    }
-
     public int getFilePointer() throws IOException {
-        if (ras != null) {
-            return (int) ras.getFilePointer();
-        } else {
-            return (int) pointer;
-        }
+        return (int) pointer;
     }
 
     public long getLongFilePointer() throws IOException {
-        if (ras != null) {
-            return ras.getFilePointer();
-        } else {
-            return pointer;
-        }
+        return pointer;
     }
 
     public int read() throws IOException {
-        if (ras != null) {
-            return ras.read();
-        }
         long l = pointer + 1L;
         long l1 = readUntil(l);
         if (l1 >= l) {
@@ -89,9 +63,6 @@ public final class RandomAccessStream extends InputStream {
         if (bytes == null) {
             throw new NullPointerException();
         }
-        if (ras != null) {
-            return ras.read(bytes, off, len);
-        }
         if (off < 0 || len < 0 || off + len > bytes.length) {
             throw new IndexOutOfBoundsException();
         }
@@ -106,7 +77,7 @@ public final class RandomAccessStream extends InputStream {
                 .elementAt((int) (pointer >>> BLOCK_SHIFT));
             int k = Math.min(len, BLOCK_SIZE - (int) (pointer & BLOCK_MASK));
             System.arraycopy(abyte1, (int) (pointer & BLOCK_MASK), bytes, off,
-                    k);
+                k);
             pointer += k;
             return k;
         }
@@ -159,10 +130,6 @@ public final class RandomAccessStream extends InputStream {
     }
 
     public void seek(long loc) throws IOException {
-        if (ras != null) {
-            ras.seek(loc);
-            return;
-        }
         if (loc < 0L) {
             pointer = 0L;
         } else {
@@ -172,10 +139,6 @@ public final class RandomAccessStream extends InputStream {
 
     public void seek(int loc) throws IOException {
         long lloc = ((long) loc) & 0xffffffffL;
-        if (ras != null) {
-            ras.seek(lloc);
-            return;
-        }
         if (lloc < 0L) {
             pointer = 0L;
         } else {
@@ -218,12 +181,8 @@ public final class RandomAccessStream extends InputStream {
     }
 
     public void close() throws IOException {
-        if (ras != null) {
-            ras.close();
-        } else {
-            data.removeAllElements();
-            src.close();
-        }
+        data.removeAllElements();
+        src.close();
     }
 
 }

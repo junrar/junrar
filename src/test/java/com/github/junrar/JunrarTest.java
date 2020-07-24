@@ -1,7 +1,7 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.impl.FileVolumeManager;
+import com.github.junrar.volume.FileVolumeManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

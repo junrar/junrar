@@ -29,7 +29,7 @@ public enum VMOpType {
     VM_OPREGMEM(2),
     VM_OPNONE(3);
 
-    private int opType;
+    private final int opType;
 
     VMOpType(int opType) {
         this.opType = opType;

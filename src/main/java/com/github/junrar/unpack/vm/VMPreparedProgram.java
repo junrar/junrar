@@ -28,14 +28,13 @@ import java.util.Vector;
  * @version $LastChangedRevision$
  */
 public class VMPreparedProgram {
-    private List<VMPreparedCommand> Cmd  = new ArrayList<VMPreparedCommand>();
-    private List<VMPreparedCommand> AltCmd  = new ArrayList<VMPreparedCommand>();
+    private List<VMPreparedCommand> Cmd = new ArrayList<>();
+    private List<VMPreparedCommand> AltCmd;
     private int CmdCount;
 
 
-
-    private Vector<Byte> GlobalData = new Vector<Byte>();
-    private Vector<Byte> StaticData = new Vector<Byte>(); // static data contained in DB operators
+    private Vector<Byte> GlobalData = new Vector<>();
+    private Vector<Byte> StaticData = new Vector<>(); // static data contained in DB operators
     private int[] InitR = new int[7];
 
     private int FilteredDataOffset;

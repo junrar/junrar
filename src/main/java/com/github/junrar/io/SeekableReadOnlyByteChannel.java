@@ -26,19 +26,16 @@ import java.io.IOException;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public interface IReadOnlyAccess {
+public interface SeekableReadOnlyByteChannel {
 
     /**
-     * @return the current position in the file
-     *
+     * @return the current position in the channel
      * @throws IOException .
-     *
      */
     long getPosition() throws IOException;
 
     /**
-     * @param pos the position in the file
-     *
+     * @param pos the position in the channel
      * @throws IOException .
      */
     void setPosition(long pos) throws IOException;
@@ -78,7 +75,7 @@ public interface IReadOnlyAccess {
     int readFully(byte[] buffer, int count) throws IOException;
 
     /**
-     * Close this file.
+     * Close this channel.
      * @throws IOException .
      */
     void close() throws IOException;

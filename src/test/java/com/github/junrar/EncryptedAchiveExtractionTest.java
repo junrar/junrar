@@ -8,6 +8,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 /**
  * This class will test archives that are encrypted or password protected.
  * <p>
@@ -34,6 +36,10 @@ public class EncryptedAchiveExtractionTest {
     public void onlyFileContentEncryptedRar4File() throws Exception {
         File rarFile = new File(EncryptedAchiveExtractionTest.class.getResource("password/rar4-only-file-content-encrypted.rar").getPath());
         Junrar.extract(rarFile, tempFolder, "test");
+
+        File unpackFile = new File(tempFolder, "新建文本文档.txt");
+        assertThat(unpackFile.exists());
+        assertThat(unpackFile.length() == 10);
     }
 
 }

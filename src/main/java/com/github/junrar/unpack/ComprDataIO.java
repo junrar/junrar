@@ -21,16 +21,19 @@ import com.github.junrar.Archive;
 import com.github.junrar.UnrarCallback;
 import com.github.junrar.Volume;
 import com.github.junrar.crc.RarCRC;
+import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.CrcErrorException;
+import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.io.ReadOnlyAccessInputStream;
 import com.github.junrar.rarfile.FileHeader;
 
 import java.io.EOFException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.LinkedList;
+import java.util.Queue;
 
+import javax.crypto.Cipher;
 
 /**
  * DOCUMENT ME
@@ -47,8 +50,6 @@ public class ComprDataIO {
     private boolean testMode;
 
     private boolean skipUnpCRC;
-
-    private InputStream inputStream;
 
     private OutputStream outputStream;
 
@@ -76,6 +77,9 @@ public class ComprDataIO {
 
     private int decryption;
 
+    private Cipher cipher;
+
+    private Queue<Byte> decryptedDataBuffer = new LinkedList<Byte>();
 
     public ComprDataIO(Archive arc) {
         this.archive = arc;
@@ -102,40 +106,39 @@ public class ComprDataIO {
     public void init(FileHeader hd) throws IOException, RarException {
         long startPos = hd.getPositionInFile() + hd.getHeaderSize();
         unpPackedSize = hd.getFullPackSize();
-        inputStream = new ReadOnlyAccessInputStream(
-            archive.getRof(),
-            hd,
-            startPos,
-            startPos + unpPackedSize,
-            this.archive.getPassword()
-        );
+        archive.getChannel().setPosition(startPos);
         subHead = hd;
         curUnpRead = 0;
         curPackWrite = 0;
         packedCRC = 0xFFffFFff;
+
+        if (hd.isEncrypted()) {
+            try {
+                cipher = Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+            } catch (Exception e) {
+                throw new InitDeciphererFailedException(e);
+            }
+        }
     }
 
-    public int unpRead(byte[] addr, int offset, int count) throws IOException,
-            RarException {
+    public int unpRead(byte[] addr, int offset, int count) throws IOException, RarException {
         int retCode = 0, totalRead = 0;
         while (count > 0) {
-            int readSize = (count > unpPackedSize) ? (int) unpPackedSize
-                    : count;
-            retCode = inputStream.read(addr, offset, readSize);
+            int readSize = (count > unpPackedSize) ? (int) unpPackedSize : count;
+            retCode = read(addr, offset, readSize);
             if (retCode < 0) {
                 throw new EOFException();
             }
+
             if (subHead.isSplitAfter()) {
-                packedCRC = RarCRC.checkCrc((int) packedCRC, addr, offset,
-                        retCode);
+                packedCRC = RarCRC.checkCrc((int) packedCRC, addr, offset, retCode);
             }
 
-            curUnpRead += retCode;
             totalRead += retCode;
-            offset += retCode;
             count -= retCode;
-            unpPackedSize -= retCode;
+            offset += retCode;
             archive.bytesReadRead(retCode);
+
             if (unpPackedSize == 0 && subHead.isSplitAfter()) {
                 Volume nextVolume = archive.getVolumeManager().nextArchive(archive, archive.getVolume());
                 if (nextVolume == null) {
@@ -149,8 +152,7 @@ public class ComprDataIO {
                     throw new CrcErrorException();
                 }
                 UnrarCallback callback = archive.getUnrarCallback();
-                if ((callback != null)
-                        && !callback.isNextVolumeReady(nextVolume)) {
+                if ((callback != null) && !callback.isNextVolumeReady(nextVolume)) {
                     return -1;
                 }
                 archive.setVolume(nextVolume);
@@ -181,11 +183,9 @@ public class ComprDataIO {
 
         if (!skipUnpCRC) {
             if (archive.isOldFormat()) {
-                unpFileCRC = RarCRC
-                        .checkOldCrc((short) unpFileCRC, addr, count);
+                unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, count);
             } else {
-                unpFileCRC = RarCRC.checkCrc((int) unpFileCRC, addr, offset,
-                        count);
+                unpFileCRC = RarCRC.checkCrc((int) unpFileCRC, addr, offset, count);
             }
         }
         // if (!skipArcCRC) {
@@ -342,19 +342,40 @@ public class ComprDataIO {
         return subHead;
     }
 
-    // public void setEncryption(int method, char[] Password, byte[] Salt,
-    // boolean encrypt, boolean handsOffHash)
-    // {
-    //
-    // }
-    //
-    // public void setAV15Encryption()
-    // {
-    //
-    // }
-    //
-    // public void setCmt13Encryption()
-    // {
-    //
-    // }
+    private int read(byte[] buffer, int offset, int count) throws IOException {
+        if (subHead.isEncrypted()) {
+            int notConsumptedLen = decryptedDataBuffer.size();
+            int sizeToRead = count - notConsumptedLen;
+            byte[] tmp = new byte[16];
+
+            if (sizeToRead > 0) {
+                int alignedSize = sizeToRead + ((~sizeToRead + 1) & 0xf);
+                for (int i = 0; i < alignedSize / 16; i++) {
+                    int retCode = archive.getChannel().read(tmp, 0, 16);
+                    if (retCode == 0) {
+                        break;
+                    }
+                    unpPackedSize -= retCode;
+                    curUnpRead += retCode;
+                    byte[] out = cipher.update(tmp);
+
+                    for (int j = 0; j < 16; j++) {
+                        decryptedDataBuffer.add(out[j]);
+                    }
+                }
+            }
+
+            int real = 0;
+            for (int i = 0; i < count && !decryptedDataBuffer.isEmpty(); i++) {
+                buffer[offset + i] = decryptedDataBuffer.poll();
+                real++;
+            }
+            return real;
+        } else {
+            int retCode = archive.getChannel().read(buffer, offset, count);
+            unpPackedSize -= retCode;
+            curUnpRead += retCode;
+            return retCode;
+        }
+    }
 }
