@@ -1,7 +1,6 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.volume.FileVolumeManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -34,52 +33,32 @@ public class JunrarTest {
     public void extractionFromFileHappyDay() throws RarException, IOException {
         final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
 
-        Junrar.extract(rarFileOnTemp, tempFolder);
-
-        final File fooDir = new File(tempFolder, "foo");
-        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"), Charset.defaultCharset());
-
-        assertThat(fooDir).exists();
-        assertThat(barFileContent).isEqualTo("baz\n");
-    }
-
-    @Test
-    public void extractionFromFileHappyDayAndValidateExtractedFiles() throws RarException, IOException {
-        final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
-
         final List<File> extractedFiles = Junrar.extract(rarFileOnTemp, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
         File barFile = new File(fooDir, "bar.txt");
-
-        assertThat(extractedFiles.get(0)).isEqualTo(barFile);
-        assertThat(extractedFiles.get(1)).isEqualTo(fooDir);
-    }
-
-
-    @Test
-    public void extractionFromFileWithVolumeManagerAndExtractorHappyDay() throws RarException, IOException {
-        final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
-
-        Junrar.extract(new LocalFolderExtractor(tempFolder), new FileVolumeManager(rarFileOnTemp));
-
-        final File fooDir = new File(tempFolder, "foo");
-        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"), Charset.defaultCharset());
+        String barFileContent = FileUtils.readFileToString(barFile, Charset.defaultCharset());
 
         assertThat(fooDir).exists();
         assertThat(barFileContent).isEqualTo("baz\n");
+        assertThat(extractedFiles.get(0)).isEqualTo(barFile);
+        assertThat(extractedFiles.get(1)).isEqualTo(fooDir);
     }
 
     @Test
     public void extractionFromStreamHappyDay() throws IOException, RarException {
         final InputStream resourceAsStream = JunrarTest.class.getResourceAsStream(TestCommons.SIMPLE_RAR_RESOURCE_PATH);
-        Junrar.extract(resourceAsStream, tempFolder);
+
+        final List<File> extractedFiles = Junrar.extract(resourceAsStream, tempFolder);
 
         final File fooDir = new File(tempFolder, "foo");
-        String barFileContent = FileUtils.readFileToString(new File(fooDir, "bar.txt"), Charset.defaultCharset());
+        File barFile = new File(fooDir, "bar.txt");
+        String barFileContent = FileUtils.readFileToString(barFile, Charset.defaultCharset());
 
         assertThat(fooDir).exists();
         assertThat(barFileContent).isEqualTo("baz\n");
+        assertThat(extractedFiles.get(0)).isEqualTo(barFile);
+        assertThat(extractedFiles.get(1)).isEqualTo(fooDir);
     }
 
     @Test

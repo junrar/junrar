@@ -10,17 +10,16 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class LocalFolderExtractor implements ExtractDestination {
+class LocalFolderExtractor {
 
     private final File folderDestination;
     private static final Logger logger = LoggerFactory.getLogger(LocalFolderExtractor.class);
 
-    public LocalFolderExtractor(final File destination) {
+    LocalFolderExtractor(final File destination) {
         this.folderDestination = destination;
     }
 
-    @Override
-    public File createDirectory(final FileHeader fh) {
+    File createDirectory(final FileHeader fh) {
         String fileName = null;
         if (fh.isDirectory()) {
             if (fh.isUnicode()) {
@@ -48,10 +47,9 @@ public class LocalFolderExtractor implements ExtractDestination {
         return f;
     }
 
-    @Override
-    public File extract(
-            final Archive arch,
-            final FileHeader fileHeader
+    File extract(
+        final Archive arch,
+        final FileHeader fileHeader
     ) throws RarException, IOException {
         final File f = createFile(fileHeader, folderDestination);
         try (OutputStream stream = new FileOutputStream(f)) {

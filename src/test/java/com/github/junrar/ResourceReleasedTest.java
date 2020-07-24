@@ -1,7 +1,6 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.volume.FileVolumeManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.AfterEach;
@@ -68,16 +67,6 @@ public class ResourceReleasedTest {
     }
 
     @Test
-    public void extractRar5FromVolumeManager() {
-        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir);
-        final VolumeManager volumeManager = new FileVolumeManager(rar5TestFile);
-
-        Throwable thrown = catchThrowable(() -> Junrar.extract(extractDestination, volumeManager));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
-    }
-
-    @Test
     public void extractRar4FromFile() throws IOException, RarException {
         Junrar.extract(rar4TestFile, extractDir);
     }
@@ -92,12 +81,5 @@ public class ResourceReleasedTest {
     @Test
     public void extractRar4FromString() throws IOException, RarException {
         Junrar.extract(rar4TestFile.getAbsolutePath(), extractDir.getAbsolutePath());
-    }
-
-    @Test
-    public void extractRar4FromVolumeManager() throws IOException, RarException {
-        final ExtractDestination extractDestination = new LocalFolderExtractor(extractDir);
-        final VolumeManager volumeManager = new FileVolumeManager(rar4TestFile);
-        Junrar.extract(extractDestination, volumeManager);
     }
 }

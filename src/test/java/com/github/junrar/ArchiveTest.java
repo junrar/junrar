@@ -20,7 +20,6 @@ import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
-import com.github.junrar.volume.FileVolumeManager;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
@@ -49,7 +48,7 @@ public class ArchiveTest {
 
 
         File f = new File(getClass().getResource("tika-documents.rar").toURI());
-        try (Archive archive = new Archive(new FileVolumeManager(f))) {
+        try (Archive archive = new Archive(f)) {
             assertThat(archive.isPasswordProtected()).isFalse();
             assertThat(archive.isEncrypted()).isFalse();
 

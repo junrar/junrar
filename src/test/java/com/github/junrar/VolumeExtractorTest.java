@@ -1,7 +1,6 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.volume.FileVolumeManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,15 +31,16 @@ public class VolumeExtractorTest {
 
     @ParameterizedTest
     @MethodSource("volumeArgs")
-    public void extractionFromvolumedFile(String ressourceDir, String firstVolume) throws RarException, IOException {
-        File dir = new File(VolumeExtractorTest.class.getResource(ressourceDir).getPath());
+    public void extractionFromVolumedFile(String ressourceDir, String firstVolume) throws RarException, IOException {
+        File dir = new File(getClass().getResource(ressourceDir).getPath());
         TestCommons.copyRarsToFolder(tempFolder, dir);
 
         final File rarFileOnTemp = new File(tempFolder, firstVolume);
         final File unpackedDir = new File(tempFolder, "test-documents");
         unpackedDir.delete();
         unpackedDir.mkdir();
-        Junrar.extract(new LocalFolderExtractor(unpackedDir), new FileVolumeManager(rarFileOnTemp));
+
+        Junrar.extract(rarFileOnTemp, unpackedDir);
 
         checkContent(unpackedDir);
     }

@@ -108,35 +108,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private FileHeader nextFileHeader;
     private String password;
 
-    public Archive(final VolumeManager volumeManager) throws RarException, IOException {
-        this(volumeManager, null);
-    }
-
-
-    /**
-     * create a new archive object using the given {@link VolumeManager}
-     *
-     * @param volumeManager the the {@link VolumeManager} that will provide volume stream
-     *                      data
-     * @param unrarCallback gets feedback on the extraction progress
-     * @throws RarException .
-     * @throws IOException  .
-     */
     public Archive(
         final VolumeManager volumeManager,
-        final UnrarCallback unrarCallback
-    ) throws RarException, IOException {
-        this(volumeManager, unrarCallback, null);
-    }
-    public Archive(
-            final VolumeManager volumeManager,
-            final UnrarCallback unrarCallback,
-            final String paasword
+        final UnrarCallback unrarCallback,
+        final String password
     ) throws RarException, IOException {
 
         this.volumeManager = volumeManager;
         this.unrarCallback = unrarCallback;
-        this.password = paasword;
+        this.password = password;
 
         try {
             setVolume(this.volumeManager.nextArchive(this, null));
@@ -151,28 +131,36 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.dataIO = new ComprDataIO(this);
     }
 
-    public Archive(
-        final File firstVolume,
-        final UnrarCallback unrarCallback
-    ) throws RarException, IOException {
-        this(new FileVolumeManager(firstVolume), unrarCallback);
+    public Archive(final File firstVolume) throws RarException, IOException {
+        this(new FileVolumeManager(firstVolume), null, null);
     }
 
-    // public File getFile() {
-    // return file;
-    // }
-    //
-    // void setFile(File file) throws IOException {
-    // this.file = file;
-    // setFile(new ReadOnlyAccessFile(file), file.length());
-    // }
+    public Archive(final File firstVolume, final UnrarCallback unrarCallback) throws RarException, IOException {
+        this(new FileVolumeManager(firstVolume), unrarCallback, null);
+    }
+
+    public Archive(final File firstVolume, final String password) throws RarException, IOException {
+        this(new FileVolumeManager(firstVolume), null, password);
+    }
+
+    public Archive(final File firstVolume, final UnrarCallback unrarCallback, final String password) throws RarException, IOException {
+        this(new FileVolumeManager(firstVolume), unrarCallback, password);
+    }
 
     public Archive(final InputStream rarAsStream) throws RarException, IOException {
-        this(new InputStreamVolumeManager(rarAsStream), null);
+        this(new InputStreamVolumeManager(rarAsStream), null, null);
     }
 
-    public Archive(InputStream rarAsStream, String password) throws IOException, RarException {
+    public Archive(final InputStream rarAsStream, final UnrarCallback unrarCallback) throws RarException, IOException {
+        this(new InputStreamVolumeManager(rarAsStream), unrarCallback, null);
+    }
+
+    public Archive(final InputStream rarAsStream, final String password) throws IOException, RarException {
         this(new InputStreamVolumeManager(rarAsStream), null, password);
+    }
+
+    public Archive(final InputStream rarAsStream, final UnrarCallback unrarCallback, final String password) throws IOException, RarException {
+        this(new InputStreamVolumeManager(rarAsStream), unrarCallback, password);
     }
 
     private void setChannel(final SeekableReadOnlyByteChannel channel, final long length) throws IOException, RarException {
