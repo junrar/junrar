@@ -251,6 +251,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
+     * @return whether the archive content is password protected
+     * @throws RarException when the main header is not present
+     */
+    public boolean isPasswordProtected() throws RarException {
+        if (isEncrypted()) return true;
+        return getFileHeaders().stream().anyMatch(FileHeader::isEncrypted);
+    }
+
+    /**
      * Read the headers of the archive
      *
      * @param fileLength Length of file.

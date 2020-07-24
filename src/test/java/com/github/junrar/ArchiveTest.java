@@ -50,6 +50,9 @@ public class ArchiveTest {
 
         File f = new File(getClass().getResource("tika-documents.rar").toURI());
         try (Archive archive = new Archive(new FileVolumeManager(f))) {
+            assertThat(archive.isPasswordProtected()).isFalse();
+            assertThat(archive.isEncrypted()).isFalse();
+
             FileHeader fileHeader = archive.nextFileHeader();
             int i = 0;
             while (fileHeader != null) {
@@ -134,9 +137,11 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenPasswordProtectedRar4File_whenCreatingArchive_then() throws Exception {
+        public void givenPasswordProtectedRar4File_whenCreatingArchive_thenItCanListContent() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("password/rar4-password-junrar.rar")) {
                 try (Archive archive = new Archive(is)) {
+                    assertThat(archive.isEncrypted()).isFalse();
+                    assertThat(archive.isPasswordProtected()).isTrue();
                     List<FileHeader> fileHeaders = archive.getFileHeaders();
                     assertThat(fileHeaders).hasSize(1);
 
