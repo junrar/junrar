@@ -153,6 +153,27 @@ public class ArchiveTest {
         }
 
         @Test
+        public void givenPasswordProtectedRar4File_whenCreatingArchiveWithPassword_thenItCanExtractContent() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar4-password-junrar.rar")) {
+                try (Archive archive = new Archive(is, "junrar")) {
+                    assertThat(archive.isEncrypted()).isFalse();
+                    assertThat(archive.isPasswordProtected()).isTrue();
+                    List<FileHeader> fileHeaders = archive.getFileHeaders();
+                    assertThat(fileHeaders).hasSize(1);
+
+                    FileHeader fileHeader = fileHeaders.get(0);
+                    assertThat(fileHeader.isEncrypted()).isTrue();
+                    assertThat(fileHeader.getFileNameString()).isEqualTo("file1.txt");
+
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(fileHeader, baos);
+                        assertThat(baos.toString()).isEqualTo("file1\n");
+                    }
+                }
+            }
+        }
+
+        @Test
         public void givenEncryptedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("password/rar5-encrypted-junrar.rar")) {
                 Throwable thrown = catchThrowable(() -> new Archive(is));

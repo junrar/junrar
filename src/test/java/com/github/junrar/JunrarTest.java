@@ -5,6 +5,7 @@ import com.github.junrar.volume.FileVolumeManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -101,24 +102,59 @@ public class JunrarTest {
         assertThat(contentDescriptions.toArray()).isEqualTo(expected);
     }
 
-    @Test
-    public void ifIsDirInsteadOfFile_ThrowException() {
-        Throwable thrown = catchThrowable(() -> Junrar.extract(tempFolder, tempFolder));
+    @Nested
+    class DirectoryTraversal {
+        @Test
+        public void ifIsDirInsteadOfFile_ThrowException() {
+            Throwable thrown = catchThrowable(() -> Junrar.extract(tempFolder, tempFolder));
 
-        assertThat(thrown)
-            .isInstanceOf(IllegalArgumentException.class)
-            .hasMessageContaining("First argument should be a file but was " + tempFolder.getAbsolutePath());
+            assertThat(thrown)
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("First argument should be a file but was " + tempFolder.getAbsolutePath());
+        }
+
+        @Test
+        public void ifIsFileInsteadOfDir_ThrowException() throws IOException {
+            final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
+
+            Throwable thrown = catchThrowable(() -> Junrar.extract(rarFileOnTemp, rarFileOnTemp));
+
+            assertThat(thrown)
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath());
+        }
     }
 
-    @Test
-    public void ifIsFileInsteadOfDir_ThrowException() throws IOException {
-        final File rarFileOnTemp = TestCommons.writeTestRarToFolder(tempFolder);
+    /**
+     * This class will test archives that are encrypted or password protected.
+     * <p>
+     * Encrypted archives are password protected, but also encrypt the list of files,
+     * so you need the password to list the content.
+     * <p>
+     * You can list the content of a password protected archive, but you cannot extract
+     * without the password.
+     */
+    @Nested
+    class PasswordProtected {
+        @Test
+        public void onlyFileContentEncryptedRar4File() throws Exception {
+            File rarFile = new File(getClass().getResource("password/rar4-only-file-content-encrypted.rar").getPath());
+            Junrar.extract(rarFile, tempFolder, "test");
 
-        Throwable thrown = catchThrowable(() -> Junrar.extract(rarFileOnTemp, rarFileOnTemp));
+            File unpackFile = new File(tempFolder, "新建文本文档.txt");
+            assertThat(unpackFile.exists());
+            assertThat(unpackFile.length() == 10);
+        }
 
-        assertThat(thrown)
-            .isInstanceOf(IllegalArgumentException.class)
-            .hasMessageContaining("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath());
+        @Test
+        public void onlyFileContentEncryptedRar4FileAsStream() throws Exception {
+            InputStream rarStream = getClass().getResourceAsStream("password/rar4-only-file-content-encrypted.rar");
+            Junrar.extract(rarStream, tempFolder, "test");
+
+            File unpackFile = new File(tempFolder, "新建文本文档.txt");
+            assertThat(unpackFile.exists());
+            assertThat(unpackFile.length() == 10);
+        }
     }
 
 }
