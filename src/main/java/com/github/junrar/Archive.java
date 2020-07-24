@@ -106,10 +106,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private Volume volume;
 
     private FileHeader nextFileHeader;
+    private String password;
 
     public Archive(final VolumeManager volumeManager) throws RarException, IOException {
         this(volumeManager, null);
     }
+
 
     /**
      * create a new archive object using the given {@link VolumeManager}
@@ -124,9 +126,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         final VolumeManager volumeManager,
         final UnrarCallback unrarCallback
     ) throws RarException, IOException {
+        this(volumeManager, unrarCallback, null);
+    }
+    public Archive(
+            final VolumeManager volumeManager,
+            final UnrarCallback unrarCallback,
+            final String paasword
+    ) throws RarException, IOException {
 
         this.volumeManager = volumeManager;
         this.unrarCallback = unrarCallback;
+        this.password = paasword;
 
         try {
             setVolume(this.volumeManager.nextArchive(this, null));
@@ -648,6 +658,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     public Volume getVolume() {
         return this.volume;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 
     /**
      * @param volume the volume to set
