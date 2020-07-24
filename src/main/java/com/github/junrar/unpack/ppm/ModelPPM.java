@@ -45,7 +45,7 @@ public class ModelPPM {
 
     public static final int MAX_FREQ = 124;
 
-    private SEE2Context[][] SEE2Cont = new SEE2Context[25][16];
+    private final SEE2Context[][] SEE2Cont = new SEE2Context[25][16];
 
     private SEE2Context dummySEE2Cont;
 
@@ -55,24 +55,24 @@ public class ModelPPM {
 
     private int numMasked, initEsc, orderFall, maxOrder, runLength, initRL;
 
-    private int[] charMask = new int[256];
+    private final int[] charMask = new int[256];
 
-    private int[] NS2Indx = new int[256];
+    private final int[] NS2Indx = new int[256];
 
-    private int[] NS2BSIndx = new int[256];
+    private final int[] NS2BSIndx = new int[256];
 
-    private int[] HB2Flag = new int[256];
+    private final int[] HB2Flag = new int[256];
 
     // byte EscCount, PrevSuccess, HiBitsFlag;
     private int escCount, prevSuccess, hiBitsFlag;
 
-    private int[][] binSumm = new int[128][64]; // binary SEE-contexts
+    private final int[][] binSumm = new int[128][64]; // binary SEE-contexts
 
-    private RangeCoder coder = new RangeCoder();
+    private final RangeCoder coder = new RangeCoder();
 
-    private SubAllocator subAlloc = new SubAllocator();
+    private final SubAllocator subAlloc = new SubAllocator();
 
-    private static int[] InitBinEsc = {0x3CDD, 0x1F3F, 0x59BF, 0x48F3, 0x64A1, 0x5ABC, 0x6632, 0x6051};
+    private static final int[] InitBinEsc = {0x3CDD, 0x1F3F, 0x59BF, 0x48F3, 0x64A1, 0x5ABC, 0x6632, 0x6051};
 
     // Temp fields
     private final State tempState1 = new State(null);
@@ -617,7 +617,6 @@ public class ModelPPM {
 //        pos+=State.size;
 //        a.setAddress(pos);
         //--dbg end
-        return;
     }
 
     // Debug

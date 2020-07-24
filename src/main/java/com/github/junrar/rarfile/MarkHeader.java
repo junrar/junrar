@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
  */
 public class MarkHeader extends BaseBlock {
 
-    private Logger logger = LoggerFactory.getLogger(MarkHeader.class.getName());
+    private final Logger logger = LoggerFactory.getLogger(MarkHeader.class.getName());
 
     private RARVersion version;
 
@@ -48,10 +48,7 @@ public class MarkHeader extends BaseBlock {
         if (!(getFlags() == 0x1a21)) {
             return false;
         }
-        if (!(getHeaderSize() == BaseBlockSize)) {
-            return false;
-        }
-        return true;
+        return getHeaderSize() == BaseBlockSize;
     }
 
     public boolean isSignature() {

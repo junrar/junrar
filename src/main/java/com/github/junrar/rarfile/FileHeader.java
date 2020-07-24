@@ -54,7 +54,7 @@ public class FileHeader extends BlockHeader {
 
     private short nameSize;
 
-    private int highPackSize;
+    private final int highPackSize;
 
     private int highUnpackSize;
 
@@ -119,8 +119,6 @@ public class FileHeader extends BlockHeader {
             highPackSize = 0;
             highUnpackSize = 0;
             if (unpSize == 0xffffffff) {
-
-                unpSize = 0xffffffff;
                 highUnpackSize = Integer.MAX_VALUE;
             }
 

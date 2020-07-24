@@ -31,10 +31,10 @@ public class CommentHeader extends BaseBlock {
 
     public static final short commentHeaderSize = 6;
 
-    private short unpSize;
+    private final short unpSize;
     private byte unpVersion;
     private byte unpMethod;
-    private short commCRC;
+    private final short commCRC;
 
 
     public CommentHeader(BaseBlock bb, byte[] commentHeader) {

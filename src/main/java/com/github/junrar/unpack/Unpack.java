@@ -45,25 +45,25 @@ public final class Unpack extends Unpack20 {
 
     private int ppmEscChar;
 
-    private RarVM rarVM = new RarVM();
+    private final RarVM rarVM = new RarVM();
 
     /* Filters code, one entry per filter */
-    private List<UnpackFilter> filters = new ArrayList<UnpackFilter>();
+    private final List<UnpackFilter> filters = new ArrayList<>();
 
     /* Filters stack, several entrances of same filter are possible */
-    private List<UnpackFilter> prgStack = new ArrayList<UnpackFilter>();
+    private final List<UnpackFilter> prgStack = new ArrayList<>();
 
     /*
      * lengths of preceding blocks, one length per filter. Used to reduce size
      * required to write block length if lengths are repeating
      */
-    private List<Integer> oldFilterLengths = new ArrayList<Integer>();
+    private final List<Integer> oldFilterLengths = new ArrayList<>();
 
     private int lastFilter;
 
     private boolean tablesRead;
 
-    private byte[] unpOldTable = new byte[Compress.HUFF_TABLE_SIZE];
+    private final byte[] unpOldTable = new byte[Compress.HUFF_TABLE_SIZE];
 
     private BlockTypes unpBlockType;
 
@@ -753,7 +753,7 @@ public final class Unpack extends Unpack20 {
             Length = getbits();
             addbits(16);
         }
-        List<Byte> vmCode = new ArrayList<Byte>();
+        List<Byte> vmCode = new ArrayList<>();
         for (int I = 0; I < Length; I++) {
             if (inAddr >= readTop - 1 && !unpReadBuf() && I < Length - 1) {
                 return (false);
@@ -787,7 +787,7 @@ public final class Unpack extends Unpack20 {
             }
             Length = B1 * 256 + B2;
         }
-        List<Byte> vmCode = new ArrayList<Byte>();
+        List<Byte> vmCode = new ArrayList<>();
         for (int I = 0; I < Length; I++) {
             int Ch = ppm.decodeChar();
             if (Ch == -1) {

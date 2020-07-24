@@ -48,7 +48,7 @@ public class RarVM extends BitInput {
 
     private byte[] mem;
 
-    private int[] R = new int[regCount];
+    private final int[] R = new int[regCount];
 
     private int flags;
 

@@ -27,7 +27,7 @@ public enum SubBlockHeaderType {
     NTACL_HEAD((short) 0x104),
     STREAM_HEAD((short) 0x105);
 
-    private short subblocktype;
+    private final short subblocktype;
 
     SubBlockHeaderType(short subblocktype) {
         this.subblocktype = subblocktype;

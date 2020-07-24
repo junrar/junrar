@@ -74,54 +74,54 @@ public abstract class Unpack15 extends BitInput {
 
     private static final int STARTL1 = 2;
 
-    private static int[] DecL1 = {0x8000, 0xa000, 0xc000, 0xd000, 0xe000,
-            0xea00, 0xee00, 0xf000, 0xf200, 0xf200, 0xffff };
+    private static final int[] DecL1 = {0x8000, 0xa000, 0xc000, 0xd000, 0xe000,
+        0xea00, 0xee00, 0xf000, 0xf200, 0xf200, 0xffff};
 
-    private static int[] PosL1 = {0, 0, 0, 2, 3, 5, 7, 11, 16, 20, 24, 32, 32 };
+    private static final int[] PosL1 = {0, 0, 0, 2, 3, 5, 7, 11, 16, 20, 24, 32, 32};
 
     private static final int STARTL2 = 3;
 
-    private static int[] DecL2 = {0xa000, 0xc000, 0xd000, 0xe000, 0xea00,
-            0xee00, 0xf000, 0xf200, 0xf240, 0xffff };
+    private static final int[] DecL2 = {0xa000, 0xc000, 0xd000, 0xe000, 0xea00,
+        0xee00, 0xf000, 0xf200, 0xf240, 0xffff};
 
-    private static int[] PosL2 = {0, 0, 0, 0, 5, 7, 9, 13, 18, 22, 26, 34, 36 };
+    private static final int[] PosL2 = {0, 0, 0, 0, 5, 7, 9, 13, 18, 22, 26, 34, 36};
 
     private static final int STARTHF0 = 4;
 
-    private static int[] DecHf0 = {0x8000, 0xc000, 0xe000, 0xf200, 0xf200,
-            0xf200, 0xf200, 0xf200, 0xffff };
+    private static final int[] DecHf0 = {0x8000, 0xc000, 0xe000, 0xf200, 0xf200,
+        0xf200, 0xf200, 0xf200, 0xffff};
 
-    private static int[] PosHf0 = {0, 0, 0, 0, 0, 8, 16, 24, 33, 33, 33, 33,
-            33 };
+    private static final int[] PosHf0 = {0, 0, 0, 0, 0, 8, 16, 24, 33, 33, 33, 33,
+        33};
 
     private static final int STARTHF1 = 5;
 
-    private static int[] DecHf1 = {0x2000, 0xc000, 0xe000, 0xf000, 0xf200,
-            0xf200, 0xf7e0, 0xffff };
+    private static final int[] DecHf1 = {0x2000, 0xc000, 0xe000, 0xf000, 0xf200,
+        0xf200, 0xf7e0, 0xffff};
 
-    private static int[] PosHf1 = {0, 0, 0, 0, 0, 0, 4, 44, 60, 76, 80, 80,
-            127 };
+    private static final int[] PosHf1 = {0, 0, 0, 0, 0, 0, 4, 44, 60, 76, 80, 80,
+        127};
 
     private static final int STARTHF2 = 5;
 
-    private static int[] DecHf2 = {0x1000, 0x2400, 0x8000, 0xc000, 0xfa00,
-            0xffff, 0xffff, 0xffff };
+    private static final int[] DecHf2 = {0x1000, 0x2400, 0x8000, 0xc000, 0xfa00,
+        0xffff, 0xffff, 0xffff};
 
-    private static int[] PosHf2 = {0, 0, 0, 0, 0, 0, 2, 7, 53, 117, 233, 0, 0 };
+    private static final int[] PosHf2 = {0, 0, 0, 0, 0, 0, 2, 7, 53, 117, 233, 0, 0};
 
     private static final int STARTHF3 = 6;
 
-    private static int[] DecHf3 = {0x800, 0x2400, 0xee00, 0xfe80, 0xffff,
-            0xffff, 0xffff };
+    private static final int[] DecHf3 = {0x800, 0x2400, 0xee00, 0xfe80, 0xffff,
+        0xffff, 0xffff};
 
-    private static int[] PosHf3 = {0, 0, 0, 0, 0, 0, 0, 2, 16, 218, 251, 0, 0 };
+    private static final int[] PosHf3 = {0, 0, 0, 0, 0, 0, 0, 2, 16, 218, 251, 0, 0};
 
     private static final int STARTHF4 = 8;
 
-    private static int[] DecHf4 = {0xff00, 0xffff, 0xffff, 0xffff, 0xffff,
-            0xffff };
+    private static final int[] DecHf4 = {0xff00, 0xffff, 0xffff, 0xffff, 0xffff,
+        0xffff};
 
-    private static int[] PosHf4 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0 };
+    private static final int[] PosHf4 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0};
 
     static int[] ShortLen1 = {1, 3, 4, 4, 5, 6, 7, 8, 8, 4, 4, 5, 6, 6, 4, 0 };
 

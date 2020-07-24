@@ -33,8 +33,8 @@ public class MainHeader extends BaseBlock {
     private static final Logger logger = LoggerFactory.getLogger(MainHeader.class);
     public static final short mainHeaderSizeWithEnc = 7;
     public static final short mainHeaderSize = 6;
-    private short highPosAv;
-    private int posAv;
+    private final short highPosAv;
+    private final int posAv;
     private byte encryptVersion;
 
     public MainHeader(BaseBlock bb, byte[] mainHeader) {

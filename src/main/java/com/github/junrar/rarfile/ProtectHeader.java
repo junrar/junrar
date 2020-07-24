@@ -34,8 +34,8 @@ public class ProtectHeader extends BlockHeader {
     public static final int protectHeaderSize = 8;
 
     private byte version;
-    private short recSectors;
-    private int totalBlocks;
+    private final short recSectors;
+    private final int totalBlocks;
     private byte mark;
 
 
