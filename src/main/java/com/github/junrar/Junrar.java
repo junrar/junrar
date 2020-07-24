@@ -46,7 +46,15 @@ public class Junrar {
     public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder) throws RarException, IOException {
         validateDestinationPath(destinationFolder);
 
-        final Archive arch = createArchiveOrThrowException(resourceAsStream);
+        final Archive arch = createArchiveOrThrowException(resourceAsStream, null);
+        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+        return extractArchiveTo(arch, lfe);
+    }
+
+    public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder, final String password) throws RarException, IOException {
+        validateDestinationPath(destinationFolder);
+
+        final Archive arch = createArchiveOrThrowException(resourceAsStream, password);
         LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
         return extractArchiveTo(arch, lfe);
     }
@@ -79,9 +87,9 @@ public class Junrar {
         return contents;
     }
 
-    private static Archive createArchiveOrThrowException(final InputStream rarAsStream) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(final InputStream rarAsStream, final String password) throws RarException, IOException {
         try {
-            return new Archive(rarAsStream);
+            return new Archive(rarAsStream, password);
         } catch (final RarException | IOException e) {
             Junrar.logger.error("Error while creating archive", e);
             throw e;

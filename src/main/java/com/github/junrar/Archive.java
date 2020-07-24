@@ -171,6 +171,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new InputStreamVolumeManager(rarAsStream), null);
     }
 
+    public Archive(InputStream rarAsStream, String password) throws IOException, RarException {
+        this(new InputStreamVolumeManager(rarAsStream), null, password);
+    }
+
     private void setChannel(final SeekableReadOnlyByteChannel channel, final long length) throws IOException, RarException {
         this.totalPackedSize = 0L;
         this.totalPackedRead = 0L;
@@ -307,7 +311,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
             UnrarHeadertype headerType = block.getHeaderType();
             if (headerType == null) {
-                logger.warn("unkonwn block header!");
+                logger.warn("unknown block header!");
                 throw new CorruptHeaderException();
             }
             switch (headerType) {
