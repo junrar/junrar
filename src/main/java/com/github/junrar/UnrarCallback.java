@@ -1,8 +1,9 @@
 package com.github.junrar;
 
 
+import com.github.junrar.volume.Volume;
+
 /**
- *
  * @author alban
  */
 public interface UnrarCallback {

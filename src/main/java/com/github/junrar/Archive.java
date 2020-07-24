@@ -48,6 +48,8 @@ import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
 import com.github.junrar.volume.FileVolumeManager;
 import com.github.junrar.volume.InputStreamVolumeManager;
+import com.github.junrar.volume.Volume;
+import com.github.junrar.volume.VolumeManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

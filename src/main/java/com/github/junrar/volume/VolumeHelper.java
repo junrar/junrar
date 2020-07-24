@@ -1,4 +1,4 @@
-package com.github.junrar.util;
+package com.github.junrar.volume;
 
 /**
  *

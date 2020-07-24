@@ -19,21 +19,20 @@ package com.github.junrar.unpack;
 
 import com.github.junrar.Archive;
 import com.github.junrar.UnrarCallback;
-import com.github.junrar.Volume;
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.volume.Volume;
 
+import javax.crypto.Cipher;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.LinkedList;
 import java.util.Queue;
-
-import javax.crypto.Cipher;
 
 /**
  * DOCUMENT ME

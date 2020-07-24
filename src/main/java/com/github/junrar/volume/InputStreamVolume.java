@@ -1,7 +1,6 @@
 package com.github.junrar.volume;
 
 import com.github.junrar.Archive;
-import com.github.junrar.Volume;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
 import com.github.junrar.io.SeekableReadOnlyInputStream;
 
