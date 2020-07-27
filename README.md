@@ -12,6 +12,7 @@ Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
 - RAR 4 and lower (there is no RAR 5 support)
 - password protected archives. Archives with encrypted headers are not yet supported.
+- multi-part archives
 - extract from `File` and `InputStream`
 - extract to `File` and `OutputStream`
 
@@ -91,4 +92,9 @@ Junrar.extract(rar, destinationFolder, "password");
 //or
 final InputStream resourceAsStream = Foo.class.getResourceAsStream("foo.rar");//only for a single rar file
 Junrar.extract(resourceAsStream, tempFolder, "password");
+```
+
+### Extract a multi-volume archive
+```java
+Junrar.extract("/tmp/foo.001.rar", "/tmp");
 ```
