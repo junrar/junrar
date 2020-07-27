@@ -139,7 +139,7 @@ public class ComprDataIO {
             archive.bytesReadRead(retCode);
 
             if (unpPackedSize == 0 && subHead.isSplitAfter()) {
-                Volume nextVolume = archive.getVolumeManager().nextArchive(archive, archive.getVolume());
+                Volume nextVolume = archive.getVolumeManager().nextVolume(archive, archive.getVolume());
                 if (nextVolume == null) {
                     nextVolumeMissing = true;
                     return -1;

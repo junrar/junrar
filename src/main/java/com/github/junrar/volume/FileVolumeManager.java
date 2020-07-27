@@ -16,7 +16,7 @@ public class FileVolumeManager implements VolumeManager {
     }
 
     @Override
-    public Volume nextArchive(final Archive archive, final Volume last) {
+    public Volume nextVolume(final Archive archive, final Volume last) {
         if (last == null) return new FileVolume(archive, this.firstVolume);
 
         final FileVolume lastFileVolume = (FileVolume) last;

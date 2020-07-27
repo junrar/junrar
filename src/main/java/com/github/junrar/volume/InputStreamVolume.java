@@ -10,10 +10,12 @@ public class InputStreamVolume implements Volume {
 
     private final Archive archive;
     private final InputStream inputStream;
+    private final int position;
 
-    public InputStreamVolume(final Archive archive, final InputStream inputStream) {
+    public InputStreamVolume(final Archive archive, final InputStream inputStream, final int position) {
         this.archive = archive;
         this.inputStream = inputStream;
+        this.position = position;
     }
 
     @Override
@@ -31,4 +33,7 @@ public class InputStreamVolume implements Volume {
         return this.archive;
     }
 
+    public int getPosition() {
+        return position;
+    }
 }

@@ -1,6 +1,7 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.volume.InputStreamVolumeManager;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,9 +10,15 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -41,6 +48,32 @@ public class VolumeExtractorTest {
         unpackedDir.mkdir();
 
         Junrar.extract(rarFileOnTemp, unpackedDir);
+
+        checkContent(unpackedDir);
+    }
+
+    @ParameterizedTest
+    @MethodSource("volumeArgs")
+    public void extractionFromVolumedStream(String ressourceDir, String firstVolume) throws Exception {
+        File dir = new File(getClass().getResource(ressourceDir).getPath());
+        TestCommons.copyRarsToFolder(tempFolder, dir);
+
+        List<File> files = Arrays.stream(tempFolder.listFiles())
+            .filter(File::isFile)
+            .sorted()
+            .collect(Collectors.toList());
+        System.out.println(files);
+
+        List<InputStream> streams = new ArrayList<>();
+        for (File f : files) {
+            streams.add(new FileInputStream(f));
+        }
+
+        final File unpackedDir = new File(tempFolder, "test-documents");
+        unpackedDir.delete();
+        unpackedDir.mkdir();
+
+        Junrar.extract(new InputStreamVolumeManager(streams), unpackedDir);
 
         checkContent(unpackedDir);
     }

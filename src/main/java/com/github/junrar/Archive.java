@@ -121,7 +121,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.password = password;
 
         try {
-            setVolume(this.volumeManager.nextArchive(this, null));
+            setVolume(this.volumeManager.nextVolume(this, null));
         } catch (IOException | RarException e) {
             try {
                 close();

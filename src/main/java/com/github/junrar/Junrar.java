@@ -2,6 +2,7 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.volume.VolumeManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -52,6 +53,22 @@ public class Junrar {
         return extractArchiveTo(arch, lfe);
     }
 
+    public static List<File> extract(final VolumeManager volumeManager, final File destinationFolder) throws IOException, RarException {
+        validateDestinationPath(destinationFolder);
+
+        final Archive arch = createArchiveOrThrowException(volumeManager, null);
+        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+        return extractArchiveTo(arch, lfe);
+    }
+
+    public static List<File> extract(final VolumeManager volumeManager, final File destinationFolder, final String password) throws IOException, RarException {
+        validateDestinationPath(destinationFolder);
+
+        final Archive arch = createArchiveOrThrowException(volumeManager, password);
+        LocalFolderExtractor lfe = new LocalFolderExtractor(destinationFolder);
+        return extractArchiveTo(arch, lfe);
+    }
+
 
     public static List<ContentDescription> getContentsDescription(final File rar) throws RarException, IOException {
         validateRarPath(rar);
@@ -71,6 +88,15 @@ public class Junrar {
             arch.close();
         }
         return contents;
+    }
+
+    private static Archive createArchiveOrThrowException(final VolumeManager volumeManager, final String password) throws RarException, IOException {
+        try {
+            return new Archive(volumeManager, null, password);
+        } catch (final RarException | IOException e) {
+            Junrar.logger.error("Error while creating archive", e);
+            throw e;
+        }
     }
 
     private static Archive createArchiveOrThrowException(final InputStream rarAsStream, final String password) throws RarException, IOException {
