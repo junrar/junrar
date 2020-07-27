@@ -62,6 +62,15 @@ public class ArchiveTest {
         }
     }
 
+    @Test
+    public void chineseFileName() throws Exception {
+        File f = new File(getClass().getResource("password/rar4-only-file-content-encrypted.rar").getPath());
+        try (Archive archive = new Archive(f, "test")) {
+            FileHeader fileHeader = archive.nextFileHeader();
+            assertThat(fileHeader.getFileNameString().equals("新建文本文档.txt"));
+        }
+    }
+
     @Nested
     class Solid {
         @Test

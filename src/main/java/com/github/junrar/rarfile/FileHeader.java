@@ -159,6 +159,10 @@ public class FileHeader extends BlockHeader {
                 fileName = new String(fileNameBytes);
                 fileNameW = "";
             }
+            // support Chinese characters
+            if (fileNameW.length() > 0) {
+                fileName = fileNameW;
+            }
         }
 
         if (UnrarHeadertype.NewSubHeader.equals(headerType)) {
