@@ -1,3 +1,10 @@
+# [7.2.0](https://github.com/junrar/junrar/compare/v7.1.0...v7.2.0) (2020-07-28)
+
+
+### Features
+
+* add FileHeader.getFileName ([b6da583](https://github.com/junrar/junrar/commit/b6da583ffbb861219fe20877fb78bf5092996914)), closes [#34](https://github.com/junrar/junrar/issues/34) [#53](https://github.com/junrar/junrar/issues/53)
+
 # [7.1.0](https://github.com/junrar/junrar/compare/v7.0.0...v7.1.0) (2020-07-27)
 
 
