@@ -82,7 +82,7 @@ public class Junrar {
                 return new ArrayList<>();
             }
             for (final FileHeader fileHeader : arch) {
-                contents.add(new ContentDescription(fileHeader.getFileNameString(), fileHeader.getUnpSize()));
+                contents.add(new ContentDescription(fileHeader.getFileName(), fileHeader.getUnpSize()));
             }
         } finally {
             arch.close();
@@ -169,7 +169,7 @@ public class Junrar {
         final Archive arch,
         final FileHeader fileHeader
     ) throws IOException, RarException {
-        final String fileNameString = fileHeader.getFileNameString();
+        final String fileNameString = fileHeader.getFileName();
 
         Junrar.logger.info("extracting: " + fileNameString);
         if (fileHeader.isDirectory()) {

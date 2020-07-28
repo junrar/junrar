@@ -198,7 +198,8 @@ public class FileHeader extends BlockHeader {
         str.append("unpSize: " + getUnpSize());
         str.append("\nHostOS: " + hostOS.name());
         str.append("\nMDate: " + mTime);
-        str.append("\nFileName: " + getFileNameString());
+        str.append("\nFileName: " + fileName);
+        str.append("\nFileNameW: " + fileNameW);
         str.append("\nunpMethod: " + Integer.toHexString(getUnpMethod()));
         str.append("\nunpVersion: " + Integer.toHexString(getUnpVersion()));
         str.append("\nfullpackedsize: " + getFullPackSize());
@@ -271,6 +272,13 @@ public class FileHeader extends BlockHeader {
         return fileNameBytes;
     }
 
+    /**
+     * The ASCII filename.
+     *
+     * @return the ASCII filename
+     * @deprecated As of 7.2.0, replaced by {@link #getFileName()}
+     */
+    @Deprecated
     public String getFileNameString() {
         return fileName;
     }
@@ -279,6 +287,13 @@ public class FileHeader extends BlockHeader {
         this.fileName = fileName;
     }
 
+    /**
+     * The unicode filename.
+     *
+     * @return the Unicode filename, or null if the filename is ASCII only
+     * @deprecated As of 7.2.0, replaced by {@link #getFileName()}
+     */
+    @Deprecated
     public String getFileNameW() {
         return fileNameW;
     }
@@ -416,5 +431,15 @@ public class FileHeader extends BlockHeader {
      */
     public boolean isDirectory() {
         return (flags & LHD_WINDOWMASK) == LHD_DIRECTORY;
+    }
+
+    /**
+     * The filename either in Unicode or ASCII.
+     *
+     * @return the Unicode filename if it exists, else the ASCII filename
+     * @since 7.2.0
+     */
+    public String getFileName() {
+        return isUnicode() ? fileNameW : fileName;
     }
 }

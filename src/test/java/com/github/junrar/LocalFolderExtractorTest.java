@@ -22,7 +22,7 @@ public class LocalFolderExtractorTest {
         FileHeader fileHeader = mock(FileHeader.class);
         when(fileHeader.isFileHeader()).thenReturn(true);
         when(fileHeader.isUnicode()).thenReturn(true);
-        when(fileHeader.getFileNameW()).thenReturn("../../ops");
+        when(fileHeader.getFileName()).thenReturn("../../ops");
 
 
         File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
@@ -43,7 +43,7 @@ public class LocalFolderExtractorTest {
         FileHeader fileHeader = mock(FileHeader.class);
         when(fileHeader.isDirectory()).thenReturn(true);
         when(fileHeader.isUnicode()).thenReturn(true);
-        when(fileHeader.getFileNameW()).thenReturn("../../ops/");
+        when(fileHeader.getFileName()).thenReturn("../../ops/");
 
 
         File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");

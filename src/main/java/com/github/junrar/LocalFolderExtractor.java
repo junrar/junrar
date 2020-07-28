@@ -22,11 +22,7 @@ class LocalFolderExtractor {
     File createDirectory(final FileHeader fh) {
         String fileName = null;
         if (fh.isDirectory()) {
-            if (fh.isUnicode()) {
-                fileName = fh.getFileNameW();
-            } else {
-                fileName = fh.getFileNameString();
-            }
+            fileName = fh.getFileName();
         }
 
         if (fileName == null) {
@@ -59,12 +55,7 @@ class LocalFolderExtractor {
     }
 
     private File createFile(final FileHeader fh, final File destination) throws IOException {
-        String name;
-        if (fh.isFileHeader() && fh.isUnicode()) {
-            name = fh.getFileNameW();
-        } else {
-            name = fh.getFileNameString();
-        }
+        String name = fh.getFileName();
         File f = new File(destination, name);
         String dirCanonPath = f.getCanonicalPath();
         if (!dirCanonPath.startsWith(destination.getCanonicalPath())) {

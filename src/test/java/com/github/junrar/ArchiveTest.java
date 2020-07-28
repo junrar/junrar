@@ -27,6 +27,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -55,7 +56,7 @@ public class ArchiveTest {
             FileHeader fileHeader = archive.nextFileHeader();
             int i = 0;
             while (fileHeader != null) {
-                assertThat(fileHeader.getFileNameString()).contains(expected[i++]);
+                assertThat(fileHeader.getFileName()).contains(expected[i++]);
                 assertThat(fileHeader.getUnpSize()).isEqualTo(Long.parseLong(expected[i++]));
                 fileHeader = archive.nextFileHeader();
             }
@@ -76,7 +77,7 @@ public class ArchiveTest {
                     for (int i = 0; i < fileHeaders.size(); i++) {
                         int index = i + 1;
                         FileHeader fileHeader = fileHeaders.get(i);
-                        assertThat(fileHeader.getFileNameString()).isEqualTo("file" + index + ".txt");
+                        assertThat(fileHeader.getFileName()).isEqualTo("file" + index + ".txt");
 
                         try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
                             archive.extractFile(fileHeaders.get(i), baos);
@@ -146,7 +147,7 @@ public class ArchiveTest {
 
                     FileHeader fileHeader = fileHeaders.get(0);
                     assertThat(fileHeader.isEncrypted()).isTrue();
-                    assertThat(fileHeader.getFileNameString()).isEqualTo("file1.txt");
+                    assertThat(fileHeader.getFileName()).isEqualTo("file1.txt");
                 }
             }
         }
@@ -162,7 +163,7 @@ public class ArchiveTest {
 
                     FileHeader fileHeader = fileHeaders.get(0);
                     assertThat(fileHeader.isEncrypted()).isTrue();
-                    assertThat(fileHeader.getFileNameString()).isEqualTo("file1.txt");
+                    assertThat(fileHeader.getFileName()).isEqualTo("file1.txt");
 
                     try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
                         archive.extractFile(fileHeader, baos);
@@ -187,6 +188,21 @@ public class ArchiveTest {
                 Throwable thrown = catchThrowable(() -> new Archive(is));
 
                 assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
+            }
+        }
+    }
+
+    @Nested
+    class Unicode {
+        @Test
+        public void unicodeFileNamesAreDecodedProperly() throws Exception {
+            File f = new File(getClass().getResource("unicode.rar").getPath());
+            try (Archive archive = new Archive(f)) {
+                List<String> names = archive.getFileHeaders().stream()
+                    .map(FileHeader::getFileName)
+                    .collect(Collectors.toList());
+
+                assertThat(names).containsExactlyInAnyOrder("新建文本文档.txt", "ウニコド.txt");
             }
         }
     }
