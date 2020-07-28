@@ -18,10 +18,12 @@
  */
 package com.github.junrar;
 
+import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.HeaderNotInArchiveException;
+import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.MainHeaderNullException;
 import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
@@ -53,6 +55,10 @@ import com.github.junrar.volume.VolumeManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.ShortBufferException;
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
@@ -263,18 +269,41 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         return getFileHeaders().stream().anyMatch(FileHeader::isEncrypted);
     }
 
+    private int readFully(SeekableReadOnlyByteChannel channel, Cipher cipher, byte[] buffer, int count)
+        throws IOException, ShortBufferException, IllegalBlockSizeException, BadPaddingException {
+        if (cipher == null) {
+            return channel.readFully(buffer, count);
+        }
+
+        // pad the input
+        int alignedSize = count + ((~count + 1) & 0xf);
+
+        final long pos = channel.getPosition();
+        final byte[] decrypt = new byte[alignedSize];
+        final byte[] decrypted = new byte[alignedSize];
+        channel.readFully(decrypt, alignedSize);
+        channel.setPosition(pos + count);
+
+        cipher.update(decrypt, 0, alignedSize, decrypted);
+
+        System.arraycopy(decrypted, 0, buffer, 0, count);
+
+        return count;
+    }
+
     /**
      * Read the headers of the archive
      *
      * @param fileLength Length of file.
      * @throws IOException, RarException
      */
-    private void readHeaders(final long fileLength) throws IOException, RarException {
+    private void readHeaders(final long fileLength) throws IOException, RarException, BadPaddingException, ShortBufferException, IllegalBlockSizeException {
         this.markHead = null;
         this.newMhd = null;
         this.headers.clear();
         this.currentHeaderIndex = 0;
         int toRead = 0;
+        Cipher cipher = null;
         //keep track of positions already processed for
         //more robustness against corrupt files
         final Set<Long> processedPositions = new HashSet<>();
@@ -291,7 +320,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             }
 
             // logger.info("\n--------reading header--------");
-            size = this.channel.readFully(baseBlockBuffer, BaseBlock.BaseBlockSize);
+            size = readFully(channel, cipher, baseBlockBuffer, BaseBlock.BaseBlockSize);
             if (size == 0) {
                 break;
             }
@@ -324,12 +353,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     toRead = block.hasEncryptVersion() ? MainHeader.mainHeaderSizeWithEnc
                         : MainHeader.mainHeaderSize;
                     final byte[] mainbuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    this.channel.readFully(mainbuff, toRead);
+                    readFully(channel, cipher, mainbuff, toRead);
                     final MainHeader mainhead = new MainHeader(block, mainbuff);
                     this.headers.add(mainhead);
                     this.newMhd = mainhead;
                     if (this.newMhd.isEncrypted()) {
-                        throw new UnsupportedRarEncryptedException();
+                        final byte[] mainsalt = new byte[8];
+                        channel.readFully(mainsalt, 8);
+                        try {
+                            cipher = Rijndael.buildDecipherer(password, mainsalt);
+                        } catch (Exception e) {
+                            throw new InitDeciphererFailedException(e);
+                        }
                     }
                     // mainhead.print();
                     break;
@@ -337,7 +372,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 case SignHeader:
                     toRead = SignHeader.signHeaderSize;
                     final byte[] signBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    this.channel.readFully(signBuff, toRead);
+                    readFully(channel, cipher, signBuff, toRead);
                     final SignHeader signHead = new SignHeader(block, signBuff);
                     this.headers.add(signHead);
                     // logger.info("HeaderType: SignHeader");
@@ -347,7 +382,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 case AvHeader:
                     toRead = AVHeader.avHeaderSize;
                     final byte[] avBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    this.channel.readFully(avBuff, toRead);
+                    readFully(channel, cipher, avBuff, toRead);
                     final AVHeader avHead = new AVHeader(block, avBuff);
                     this.headers.add(avHead);
                     // logger.info("headertype: AVHeader");
@@ -356,7 +391,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 case CommHeader:
                     toRead = CommentHeader.commentHeaderSize;
                     final byte[] commBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    this.channel.readFully(commBuff, toRead);
+                    readFully(channel, cipher, commBuff, toRead);
                     final CommentHeader commHead = new CommentHeader(block, commBuff);
                     this.headers.add(commHead);
                     // logger.info("method: "+commHead.getUnpMethod()+"; 0x"+
@@ -382,7 +417,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     EndArcHeader endArcHead;
                     if (toRead > 0) {
                         final byte[] endArchBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                        this.channel.readFully(endArchBuff, toRead);
+                        readFully(channel, cipher, endArchBuff, toRead);
                         endArcHead = new EndArcHeader(block, endArchBuff);
                         // logger.info("HeaderType: endarch\ndatacrc:"+
                         // endArcHead.getArchiveDataCRC());
@@ -396,7 +431,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
                 default:
                     final byte[] blockHeaderBuffer = safelyAllocate(BlockHeader.blockHeaderSize, MAX_HEADER_SIZE);
-                    this.channel.readFully(blockHeaderBuffer, BlockHeader.blockHeaderSize);
+                    readFully(channel, cipher, blockHeaderBuffer, BlockHeader.blockHeaderSize);
                     final BlockHeader blockHead = new BlockHeader(block,
                         blockHeaderBuffer);
 
@@ -407,7 +442,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                 - BlockHeader.BaseBlockSize
                                 - BlockHeader.blockHeaderSize;
                             final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                            this.channel.readFully(fileHeaderBuffer, toRead);
+                            readFully(channel, cipher, fileHeaderBuffer, toRead);
 
                             final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
                             this.headers.add(fh);
@@ -425,7 +460,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                 - BlockHeader.BaseBlockSize
                                 - BlockHeader.blockHeaderSize;
                             final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                            this.channel.readFully(protectHeaderBuffer, toRead);
+                            readFully(channel, cipher, protectHeaderBuffer, toRead);
                             final ProtectHeader ph = new ProtectHeader(blockHead,
                                 protectHeaderBuffer);
                             newpos = ph.getPositionInFile() + ph.getHeaderSize()
@@ -439,7 +474,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
                         case SubHeader: {
                             final byte[] subHeadbuffer = safelyAllocate(SubBlockHeader.SubBlockHeaderSize, MAX_HEADER_SIZE);
-                            this.channel.readFully(subHeadbuffer,
+                            readFully(channel, cipher, subHeadbuffer,
                                 SubBlockHeader.SubBlockHeaderSize);
                             final SubBlockHeader subHead = new SubBlockHeader(blockHead,
                                 subHeadbuffer);
@@ -447,7 +482,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             switch (subHead.getSubType()) {
                                 case MAC_HEAD: {
                                     final byte[] macHeaderbuffer = safelyAllocate(MacInfoHeader.MacInfoHeaderSize, MAX_HEADER_SIZE);
-                                    this.channel.readFully(macHeaderbuffer,
+                                    readFully(channel, cipher, macHeaderbuffer,
                                         MacInfoHeader.MacInfoHeaderSize);
                                     final MacInfoHeader macHeader = new MacInfoHeader(subHead,
                                         macHeaderbuffer);
@@ -461,7 +496,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     break;
                                 case EA_HEAD: {
                                     final byte[] eaHeaderBuffer = safelyAllocate(EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
-                                    this.channel.readFully(eaHeaderBuffer, EAHeader.EAHeaderSize);
+                                    readFully(channel, cipher, eaHeaderBuffer, EAHeader.EAHeaderSize);
                                     final EAHeader eaHeader = new EAHeader(subHead,
                                         eaHeaderBuffer);
                                     eaHeader.print();
@@ -479,7 +514,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     toRead -= BlockHeader.blockHeaderSize;
                                     toRead -= SubBlockHeader.SubBlockHeaderSize;
                                     final byte[] uoHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                                    this.channel.readFully(uoHeaderBuffer, toRead);
+                                    readFully(channel, cipher, uoHeaderBuffer, toRead);
                                     final UnixOwnersHeader uoHeader = new UnixOwnersHeader(
                                         subHead, uoHeaderBuffer);
                                     uoHeader.print();
