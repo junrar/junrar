@@ -37,6 +37,9 @@ import javax.crypto.spec.SecretKeySpec;
 public class Rijndael {
     public static Cipher buildDecipherer(final String password, byte[] salt) throws IOException,
             NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, NoSuchPaddingException {
+        if (password == null) {
+            throw new InvalidAlgorithmParameterException("password should be specified");
+        }
         byte[] AESInit = new byte[16];
         byte[] AESKey = new byte[16];
         int rawLength = 2 * password.length();

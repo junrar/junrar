@@ -139,11 +139,6 @@ public class Junrar {
     }
 
     private static List<File> extractArchiveTo(final Archive arch, final LocalFolderExtractor destination) throws IOException, RarException {
-        if (arch.isEncrypted()) {
-            logger.warn("archive is encrypted cannot extract");
-            arch.close();
-            return new ArrayList<>();
-        }
 
         final List<File> extractedFiles = new ArrayList<>();
         try {

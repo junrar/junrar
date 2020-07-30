@@ -159,6 +159,10 @@ public class BaseBlock {
         return headerSize;
     }
 
+    public short getHeaderPaddingSize() {
+        return (short) ((~headerSize + 1) & 0xF);
+    }
+
     public UnrarHeadertype getHeaderType() {
         return UnrarHeadertype.findType(headerType);
     }

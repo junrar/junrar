@@ -104,6 +104,9 @@ public class ComprDataIO {
 
     public void init(FileHeader hd) throws IOException, RarException {
         long startPos = hd.getPositionInFile() + hd.getHeaderSize();
+        if (archive.isEncrypted()) {
+            startPos += hd.getHeaderPaddingSize();
+        }
         unpPackedSize = hd.getFullPackSize();
         archive.getChannel().setPosition(startPos);
         subHead = hd;

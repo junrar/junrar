@@ -134,6 +134,26 @@ public class JunrarTest {
             assertThat(unpackFile.exists());
             assertThat(unpackFile.length() == 10);
         }
+
+        @Test
+        public void headerEncryptedRar4File() throws Exception {
+            File rarFile = new File(getClass().getResource("password/rar4-encrypted-junrar.rar").getPath());
+            Junrar.extract(rarFile, tempFolder, "junrar");
+
+            File unpackFile = new File(tempFolder, "file1.txt");
+            assertThat(unpackFile.exists());
+            assertThat(unpackFile.length() == 6);
+        }
+
+        @Test
+        public void headerEncryptedRar4FileAsStream() throws Exception {
+            InputStream rarStream = getClass().getResourceAsStream("password/rar4-encrypted-junrar.rar");
+            Junrar.extract(rarStream, tempFolder, "junrar");
+
+            File unpackFile = new File(tempFolder, "file1.txt");
+            assertThat(unpackFile.exists());
+            assertThat(unpackFile.length() == 6);
+        }
     }
 
 }
