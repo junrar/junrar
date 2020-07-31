@@ -1,16 +1,15 @@
 package com.github.junrar.io;
 
+import javax.crypto.Cipher;
 import java.io.IOException;
 import java.util.LinkedList;
 
-import javax.crypto.Cipher;
-
 public class RawDataIo implements SeekableReadOnlyByteChannel {
     private Cipher cipher = null;
-    private SeekableReadOnlyByteChannel underlyingByteChannel;
+    private final SeekableReadOnlyByteChannel underlyingByteChannel;
     private boolean isEncrypted = false;
-    private LinkedList<Byte> dataPool = new LinkedList<Byte>();
-    private byte[] reused = new byte[1];
+    private final LinkedList<Byte> dataPool = new LinkedList<>();
+    private final byte[] reused = new byte[1];
 
     public RawDataIo(SeekableReadOnlyByteChannel channel) {
         this.underlyingByteChannel = channel;
