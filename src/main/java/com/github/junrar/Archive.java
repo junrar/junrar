@@ -177,7 +177,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.channel = channel;
         try {
             readHeaders(length);
-        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException e) {
+        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException | BadRarArchiveException e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
             throw e;
         } catch (final Exception e) {

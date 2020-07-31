@@ -1,7 +1,7 @@
 package com.github.junrar;
 
+import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.CorruptHeaderException;
-import com.github.junrar.exception.MainHeaderNullException;
 import com.github.junrar.exception.RarException;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
@@ -58,7 +58,7 @@ public class AbnormalFilesTest {
     private static Stream<Arguments> provideFilesAndExpectedExceptionType() {
         return Stream.of(
             Arguments.of("abnormal/corrupt-header.rar", CorruptHeaderException.class),
-            Arguments.of("abnormal/mainHeaderNull.rar", MainHeaderNullException.class)
+            Arguments.of("abnormal/mainHeaderNull.rar", BadRarArchiveException.class)
         );
     }
 }
