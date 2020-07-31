@@ -127,15 +127,6 @@ public class ArchiveTest {
     @Nested
     class PasswordProtected {
         @Test
-        public void givenEncryptedRar4File_whenCreatingArchive_thenUnsupportedRarEncryptedExceptionIsThrown() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("password/rar4-encrypted-junrar.rar")) {
-                Throwable thrown = catchThrowable(() -> new Archive(is));
-
-                // assertThat(thrown).isExactlyInstanceOf(InitDeciphererFailedException.class);
-            }
-        }
-
-        @Test
         public void givenEncryptedRar4File_whenCreatingArchiveWithPassword_thenItCanExtractContent() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("password/rar4-encrypted-junrar.rar")) {
                 try (Archive archive = new Archive(is, "junrar")) {
