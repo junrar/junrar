@@ -139,7 +139,6 @@ public class Junrar {
     }
 
     private static List<File> extractArchiveTo(final Archive arch, final LocalFolderExtractor destination) throws IOException, RarException {
-
         final List<File> extractedFiles = new ArrayList<>();
         try {
             for (final FileHeader fh : arch) {

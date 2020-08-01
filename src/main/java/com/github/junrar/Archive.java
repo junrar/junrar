@@ -56,10 +56,7 @@ import com.github.junrar.volume.VolumeManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.ShortBufferException;
 import java.io.Closeable;
 import java.io.File;
 import java.io.IOException;
@@ -177,7 +174,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.channel = channel;
         try {
             readHeaders(length);
-        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException e) {
+        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException | BadRarArchiveException e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
             throw e;
         } catch (final Exception e) {
@@ -274,7 +271,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @param fileLength Length of file.
      * @throws IOException, RarException
      */
-    private void readHeaders(final long fileLength) throws IOException, RarException, BadPaddingException, ShortBufferException, IllegalBlockSizeException {
+    private void readHeaders(final long fileLength) throws IOException, RarException {
         this.markHead = null;
         this.newMhd = null;
         this.headers.clear();
@@ -528,10 +525,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      *
      * @param hd the header to be extracted
      * @return inputstream
-     * @throws RarException .
-     * @throws IOException  if any IO error occur
+     * @throws IOException if any IO error occur
      */
-    public InputStream getInputStream(final FileHeader hd) throws RarException, IOException {
+    public InputStream getInputStream(final FileHeader hd) throws IOException {
         final PipedInputStream in = new PipedInputStream(32 * 1024);
         final PipedOutputStream out = new PipedOutputStream(in);
 
