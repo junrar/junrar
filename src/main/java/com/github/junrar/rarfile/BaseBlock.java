@@ -159,6 +159,14 @@ public class BaseBlock {
         return headerSize;
     }
 
+    public short getHeaderSize(boolean encrypted) {
+        if (encrypted) {
+            return (short) (getHeaderSize() + getHeaderPaddingSize());
+        } else {
+            return getHeaderSize();
+        }
+    }
+
     public short getHeaderPaddingSize() {
         return (short) ((~headerSize + 1) & 0xF);
     }

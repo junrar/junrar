@@ -24,6 +24,7 @@ import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
+import com.github.junrar.io.RawDataIo;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.volume.Volume;
 
@@ -31,8 +32,6 @@ import javax.crypto.Cipher;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * DOCUMENT ME
@@ -76,9 +75,7 @@ public class ComprDataIO {
 
     private int decryption;
 
-    private Cipher cipher;
-
-    private Queue<Byte> decryptedDataBuffer = new LinkedList<Byte>();
+    private RawDataIo underlyingDataIo;
 
     public ComprDataIO(Archive arc) {
         this.archive = arc;
@@ -103,12 +100,10 @@ public class ComprDataIO {
     }
 
     public void init(FileHeader hd) throws IOException, RarException {
-        long startPos = hd.getPositionInFile() + hd.getHeaderSize();
-        if (archive.isEncrypted()) {
-            startPos += hd.getHeaderPaddingSize();
-        }
+        long startPos = hd.getPositionInFile() + hd.getHeaderSize(archive.isEncrypted());
         unpPackedSize = hd.getFullPackSize();
         archive.getChannel().setPosition(startPos);
+        this.underlyingDataIo = new RawDataIo(archive.getChannel());
         subHead = hd;
         curUnpRead = 0;
         curPackWrite = 0;
@@ -116,7 +111,8 @@ public class ComprDataIO {
 
         if (hd.isEncrypted()) {
             try {
-                cipher = Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+                Cipher cipher = Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+                this.underlyingDataIo.setCipher(cipher);
             } catch (Exception e) {
                 throw new InitDeciphererFailedException(e);
             }
@@ -127,7 +123,7 @@ public class ComprDataIO {
         int retCode = 0, totalRead = 0;
         while (count > 0) {
             int readSize = (count > unpPackedSize) ? (int) unpPackedSize : count;
-            retCode = read(addr, offset, readSize);
+            retCode = underlyingDataIo.read(addr, offset, readSize);
             if (retCode < 0) {
                 throw new EOFException();
             }
@@ -139,6 +135,9 @@ public class ComprDataIO {
             totalRead += retCode;
             count -= retCode;
             offset += retCode;
+            unpPackedSize -= retCode;
+            curUnpRead += retCode;
+
             archive.bytesReadRead(retCode);
 
             if (unpPackedSize == 0 && subHead.isSplitAfter()) {
@@ -342,42 +341,5 @@ public class ComprDataIO {
 
     public FileHeader getSubHeader() {
         return subHead;
-    }
-
-    private int read(byte[] buffer, int offset, int count) throws IOException {
-        if (subHead.isEncrypted()) {
-            int notConsumptedLen = decryptedDataBuffer.size();
-            int sizeToRead = count - notConsumptedLen;
-            byte[] tmp = new byte[16];
-
-            if (sizeToRead > 0) {
-                int alignedSize = sizeToRead + ((~sizeToRead + 1) & 0xf);
-                for (int i = 0; i < alignedSize / 16; i++) {
-                    int retCode = archive.getChannel().read(tmp, 0, 16);
-                    if (retCode == 0) {
-                        break;
-                    }
-                    unpPackedSize -= retCode;
-                    curUnpRead += retCode;
-                    byte[] out = cipher.update(tmp);
-
-                    for (int j = 0; j < 16; j++) {
-                        decryptedDataBuffer.add(out[j]);
-                    }
-                }
-            }
-
-            int real = 0;
-            for (int i = 0; i < count && !decryptedDataBuffer.isEmpty(); i++) {
-                buffer[offset + i] = decryptedDataBuffer.poll();
-                real++;
-            }
-            return real;
-        } else {
-            int retCode = archive.getChannel().read(buffer, offset, count);
-            unpPackedSize -= retCode;
-            curUnpRead += retCode;
-            return retCode;
-        }
     }
 }

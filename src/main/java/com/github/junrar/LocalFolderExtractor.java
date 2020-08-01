@@ -50,6 +50,9 @@ class LocalFolderExtractor {
         final File f = createFile(fileHeader, folderDestination);
         try (OutputStream stream = new FileOutputStream(f)) {
             arch.extractFile(fileHeader, stream);
+        } catch (Exception e) {
+            System.out.println(e);
+            throw e;
         }
         return f;
     }

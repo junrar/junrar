@@ -57,25 +57,24 @@ public class RawDataIo implements SeekableReadOnlyByteChannel {
             int realRead = toRead + ((~toRead + 1) & 0xF);
             byte[] tmp = new byte[realRead];
 
-            int offset = 0;
-            for (int i = 0; i < count && !dataPool.isEmpty(); i++) {
-                buffer[offset] = dataPool.poll();
-                offset++;
-            }
-
             if (realRead > 0) {
                 underlyingByteChannel.readFully(tmp, realRead);
                 byte[] decrypted = cipher.update(tmp);
-                System.arraycopy(decrypted, 0, buffer, offset, count - offset);
-                for (int i = count - offset; i < realRead; i++) {
+                for (int i = 0; i < decrypted.length; i++) {
                     dataPool.add(decrypted[i]);
                 }
             }
 
+            int realReadSize = 0;
+            for (int i = 0; i < count && !dataPool.isEmpty(); i++) {
+                buffer[i] = dataPool.poll();
+                realReadSize++;
+            }
+            return realReadSize;
+
         } else {
-            underlyingByteChannel.readFully(buffer, count);
+            return underlyingByteChannel.readFully(buffer, count);
         }
-        return count;
     }
 
     @Override

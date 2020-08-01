@@ -370,10 +370,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     final CommentHeader commHead = new CommentHeader(block, commBuff);
                     this.headers.add(commHead);
 
-                    newpos = commHead.getPositionInFile() + commHead.getHeaderSize();
-                    if (isEncrypted()) {
-                        newpos += commHead.getHeaderPaddingSize();
-                    }
+                    newpos = commHead.getPositionInFile() + commHead.getHeaderSize(isEncrypted());
                     this.channel.setPosition(newpos);
 
                     break;
@@ -414,10 +411,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
                             final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
                             this.headers.add(fh);
-                            newpos = fh.getPositionInFile() + fh.getHeaderSize() + fh.getFullPackSize();
-                            if (isEncrypted()) {
-                                newpos += fh.getHeaderPaddingSize();
-                            }
+                            newpos = fh.getPositionInFile() + fh.getHeaderSize(isEncrypted()) + fh.getFullPackSize();
                             this.channel.setPosition(newpos);
                             break;
 
@@ -428,10 +422,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
                             rawData.readFully(protectHeaderBuffer, protectHeaderBuffer.length);
                             final ProtectHeader ph = new ProtectHeader(blockHead, protectHeaderBuffer);
-                            newpos = ph.getPositionInFile() + ph.getHeaderSize() + ph.getDataSize();
-                            if (isEncrypted()) {
-                                newpos += ph.getHeaderPaddingSize();
-                            }
+                            newpos = ph.getPositionInFile() + ph.getHeaderSize(isEncrypted()) + ph.getDataSize();
                             this.channel.setPosition(newpos);
                             break;
 
