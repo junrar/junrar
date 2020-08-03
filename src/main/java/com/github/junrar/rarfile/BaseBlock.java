@@ -101,7 +101,7 @@ public class BaseBlock {
         this.flags = bb.getFlags();
         this.headCRC = bb.getHeadCRC();
         this.headerType = bb.getHeaderType().getHeaderByte();
-        this.headerSize = bb.getHeaderSize();
+        this.headerSize = bb.getHeaderSize(false);
         this.positionInFile = bb.getPositionInFile();
     }
     public BaseBlock(byte[] baseBlockHeader) {
@@ -155,8 +155,33 @@ public class BaseBlock {
         return headCRC;
     }
 
+    /**
+     * The header size.
+     *
+     * @return the header size
+     * @deprecated As of 7.3.0, replaced by {@link #getHeaderSize(boolean)}
+     */
+    @Deprecated
     public short getHeaderSize() {
         return headerSize;
+    }
+
+    /**
+     * The header size, padded if encrypted.
+     *
+     * @param encrypted if the header is encrypted.
+     * @return the header size, and the padded header size if the header is encrypted.
+     */
+    public short getHeaderSize(boolean encrypted) {
+        if (encrypted) {
+            return (short) (headerSize + getHeaderPaddingSize());
+        } else {
+            return headerSize;
+        }
+    }
+
+    private short getHeaderPaddingSize() {
+        return (short) ((~headerSize + 1) & 0xF);
     }
 
     public UnrarHeadertype getHeaderType() {
@@ -172,7 +197,7 @@ public class BaseBlock {
         str.append("HeaderType: " + getHeaderType());
         str.append("\nHeadCRC: " + Integer.toHexString(getHeadCRC()));
         str.append("\nFlags: " + Integer.toHexString(getFlags()));
-        str.append("\nHeaderSize: " + getHeaderSize());
+        str.append("\nHeaderSize: " + getHeaderSize(false));
         str.append("\nPosition in file: " + getPositionInFile());
         logger.info(str.toString());
     }

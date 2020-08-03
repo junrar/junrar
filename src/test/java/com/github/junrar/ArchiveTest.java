@@ -17,7 +17,6 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.CrcErrorException;
-import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
 import org.junit.jupiter.api.Nested;
@@ -128,11 +127,23 @@ public class ArchiveTest {
     @Nested
     class PasswordProtected {
         @Test
-        public void givenEncryptedRar4File_whenCreatingArchive_thenUnsupportedRarEncryptedExceptionIsThrown() throws Exception {
+        public void givenEncryptedRar4File_whenCreatingArchiveWithPassword_thenItCanExtractContent() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("password/rar4-encrypted-junrar.rar")) {
-                Throwable thrown = catchThrowable(() -> new Archive(is));
+                try (Archive archive = new Archive(is, "junrar")) {
+                    assertThat(archive.isEncrypted()).isTrue();
+                    assertThat(archive.isPasswordProtected()).isTrue();
+                    List<FileHeader> fileHeaders = archive.getFileHeaders();
+                    assertThat(fileHeaders).hasSize(1);
 
-                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarEncryptedException.class);
+                    FileHeader fileHeader = fileHeaders.get(0);
+                    assertThat(fileHeader.isEncrypted()).isTrue();
+                    assertThat(fileHeader.getFileName()).isEqualTo("file1.txt");
+
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(fileHeader, baos);
+                        assertThat(baos.toString()).isEqualTo("file1\n");
+                    }
+                }
             }
         }
 

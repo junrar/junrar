@@ -42,7 +42,7 @@ public class SeekableReadOnlyFile implements SeekableReadOnlyByteChannel {
 
     @Override
     public int readFully(final byte[] buffer, final int count) throws IOException {
-        assert count > 0 : count;
+        assert count >= 0 : count;
         file.readFully(buffer, 0, count);
         return count;
     }

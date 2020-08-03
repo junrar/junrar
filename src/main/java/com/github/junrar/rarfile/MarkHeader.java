@@ -48,7 +48,7 @@ public class MarkHeader extends BaseBlock {
         if (!(getFlags() == 0x1a21)) {
             return false;
         }
-        return getHeaderSize() == BaseBlockSize;
+        return getHeaderSize(false) == BaseBlockSize;
     }
 
     public boolean isSignature() {
