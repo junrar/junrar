@@ -21,6 +21,7 @@ dependencies {
     testImplementation 'commons-io:commons-io:2.7'
     testImplementation 'org.mockito:mockito-core:3.4.4'
     testImplementation 'org.assertj:assertj-core:3.16.1'
+     testImplementation("com.tngtech.archunit:archunit-junit5:0.14.1")
 }
 
 group = 'com.github.junrar'

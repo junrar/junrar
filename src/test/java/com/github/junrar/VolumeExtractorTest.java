@@ -62,7 +62,6 @@ public class VolumeExtractorTest {
             .filter(File::isFile)
             .sorted()
             .collect(Collectors.toList());
-        System.out.println(files);
 
         List<InputStream> streams = new ArrayList<>();
         for (File f : files) {

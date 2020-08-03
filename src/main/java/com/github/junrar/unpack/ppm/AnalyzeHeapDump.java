@@ -1,5 +1,9 @@
 package com.github.junrar.unpack.ppm;
 
+import com.github.junrar.rarfile.MainHeader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,6 +16,7 @@ import java.io.InputStream;
  * @author alban
  */
 public class AnalyzeHeapDump {
+    private static final Logger logger = LoggerFactory.getLogger(MainHeader.class);
 
     /** Creates a new instance of AnalyzeHeapDump */
     public AnalyzeHeapDump() {
@@ -21,19 +26,19 @@ public class AnalyzeHeapDump {
         File cfile = new File("P:\\test\\heapdumpc");
         File jfile = new File("P:\\test\\heapdumpj");
         if (!cfile.exists()) {
-            System.err.println("File not found: " + cfile.getAbsolutePath());
+            logger.error("File not found: " + cfile.getAbsolutePath());
             return;
         }
         if (!jfile.exists()) {
-            System.err.println("File not found: " + jfile.getAbsolutePath());
+            logger.error("File not found: " + jfile.getAbsolutePath());
             return;
         }
         long clen = cfile.length();
         long jlen = jfile.length();
         if (clen != jlen) {
-            System.out.println("File size mismatch");
-            System.out.println("clen = " + clen);
-            System.out.println("jlen = " + jlen);
+            logger.info("File size mismatch");
+            logger.info("clen = " + clen);
+            logger.info("jlen = " + jlen);
         }
         // Do byte comparison
         long len = Math.min(clen, jlen);
@@ -68,24 +73,24 @@ public class AnalyzeHeapDump {
                 printMismatch(startOff, off);
             }
             if (!mismatchFound) {
-                System.out.println("Files are identical");
+                logger.info("Files are identical");
             }
-            System.out.println("Done");
+            logger.info("Done");
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("", e);
         } finally {
             try {
                 cin.close();
                 jin.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.error("", e);
             }
         }
     }
 
     private static void printMismatch(long startOff, long bytesRead) {
-        System.out.println("Mismatch: off=" + startOff
-                + "(0x" + Long.toHexString(startOff)
-                + "), len=" + (bytesRead - startOff));
+        logger.info("Mismatch: off=" + startOff
+            + "(0x" + Long.toHexString(startOff)
+            + "), len=" + (bytesRead - startOff));
     }
 }
