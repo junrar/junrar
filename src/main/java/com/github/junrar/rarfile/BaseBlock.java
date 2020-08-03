@@ -155,10 +155,23 @@ public class BaseBlock {
         return headCRC;
     }
 
+    /**
+     * The header size.
+     *
+     * @return the header size
+     * @deprecated As of 7.3.0, replaced by {@link #getHeaderSize(boolean)}
+     */
+    @Deprecated
     public short getHeaderSize() {
         return headerSize;
     }
 
+    /**
+     * The header size, padded if encrypted.
+     *
+     * @param encrypted if the header is encrypted.
+     * @return the header size, and the padded header size if the header is encrypted.
+     */
     public short getHeaderSize(boolean encrypted) {
         if (encrypted) {
             return (short) (headerSize + getHeaderPaddingSize());
