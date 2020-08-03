@@ -11,7 +11,7 @@ Code may not be used to develop a RAR (WinRAR) compatible archiver.
 ## Supported features
 
 - RAR 4 and lower (there is no RAR 5 support)
-- password protected archives. Archives with encrypted headers are not yet supported.
+- password protected archives (also with encrypted headers)
 - multi-part archives
 - extract from `File` and `InputStream`
 - extract to `File` and `OutputStream`
