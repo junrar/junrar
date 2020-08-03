@@ -101,7 +101,7 @@ public class BaseBlock {
         this.flags = bb.getFlags();
         this.headCRC = bb.getHeadCRC();
         this.headerType = bb.getHeaderType().getHeaderByte();
-        this.headerSize = bb.getHeaderSize();
+        this.headerSize = bb.getHeaderSize(false);
         this.positionInFile = bb.getPositionInFile();
     }
     public BaseBlock(byte[] baseBlockHeader) {
@@ -161,13 +161,13 @@ public class BaseBlock {
 
     public short getHeaderSize(boolean encrypted) {
         if (encrypted) {
-            return (short) (getHeaderSize() + getHeaderPaddingSize());
+            return (short) (headerSize + getHeaderPaddingSize());
         } else {
-            return getHeaderSize();
+            return headerSize;
         }
     }
 
-    public short getHeaderPaddingSize() {
+    private short getHeaderPaddingSize() {
         return (short) ((~headerSize + 1) & 0xF);
     }
 
@@ -184,7 +184,7 @@ public class BaseBlock {
         str.append("HeaderType: " + getHeaderType());
         str.append("\nHeadCRC: " + Integer.toHexString(getHeadCRC()));
         str.append("\nFlags: " + Integer.toHexString(getFlags()));
-        str.append("\nHeaderSize: " + getHeaderSize());
+        str.append("\nHeaderSize: " + getHeaderSize(false));
         str.append("\nPosition in file: " + getPositionInFile());
         logger.info(str.toString());
     }

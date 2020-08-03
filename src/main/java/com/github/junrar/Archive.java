@@ -65,8 +65,10 @@ import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 /**
  * The Main Rar Class; represents a rar Archive
@@ -278,6 +280,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.currentHeaderIndex = 0;
         int toRead = 0;
 
+        //keep track of positions already processed for
+        //more robustness against corrupt files
+        final Set<Long> processedPositions = new HashSet<>();
         while (true) {
             int size = 0;
             long newpos = 0;
@@ -370,6 +375,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     newpos = commHead.getPositionInFile() + commHead.getHeaderSize(isEncrypted());
                     this.channel.setPosition(newpos);
 
+                    if (processedPositions.contains(newpos)) {
+                        throw new BadRarArchiveException();
+                    }
+                    processedPositions.add(newpos);
+
                     break;
                 case EndArcHeader:
 
@@ -400,7 +410,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     switch (blockHead.getHeaderType()) {
                         case NewSubHeader:
                         case FileHeader:
-                            toRead = blockHead.getHeaderSize()
+                            toRead = blockHead.getHeaderSize(false)
                                 - BlockHeader.BaseBlockSize
                                 - BlockHeader.blockHeaderSize;
                             final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
@@ -410,10 +420,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             this.headers.add(fh);
                             newpos = fh.getPositionInFile() + fh.getHeaderSize(isEncrypted()) + fh.getFullPackSize();
                             this.channel.setPosition(newpos);
+
+                            if (processedPositions.contains(newpos)) {
+                                throw new BadRarArchiveException();
+                            }
+                            processedPositions.add(newpos);
                             break;
 
                         case ProtectHeader:
-                            toRead = blockHead.getHeaderSize()
+                            toRead = blockHead.getHeaderSize(false)
                                 - BlockHeader.BaseBlockSize
                                 - BlockHeader.blockHeaderSize;
                             final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
@@ -421,6 +436,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             final ProtectHeader ph = new ProtectHeader(blockHead, protectHeaderBuffer);
                             newpos = ph.getPositionInFile() + ph.getHeaderSize(isEncrypted()) + ph.getDataSize();
                             this.channel.setPosition(newpos);
+
+                            if (processedPositions.contains(newpos)) {
+                                throw new BadRarArchiveException();
+                            }
+                            processedPositions.add(newpos);
                             break;
 
                         case SubHeader: {
@@ -458,7 +478,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                 case STREAM_HEAD:
                                     break;
                                 case UO_HEAD:
-                                    toRead = subHead.getHeaderSize();
+                                    toRead = subHead.getHeaderSize(false);
                                     toRead -= BaseBlock.BaseBlockSize;
                                     toRead -= BlockHeader.blockHeaderSize;
                                     toRead -= SubBlockHeader.SubBlockHeaderSize;
