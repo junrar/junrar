@@ -1,3 +1,10 @@
+# [7.3.0](https://github.com/junrar/junrar/compare/v7.2.0...v7.3.0) (2020-08-03)
+
+
+### Features
+
+* support header-encrypted archive ([c2a24f3](https://github.com/junrar/junrar/commit/c2a24f3c509c4a10b8a03377e117a50013fdb16b))
+
 # [7.2.0](https://github.com/junrar/junrar/compare/v7.1.0...v7.2.0) (2020-07-28)
 
 
