@@ -7,11 +7,14 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.List;
+import java.util.zip.ZipInputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -79,6 +82,27 @@ public class JunrarTest {
         };
 
         assertThat(contentDescriptions.toArray()).isEqualTo(expected);
+    }
+
+    @Test
+    public void listContentsFromStream() throws IOException, RarException {
+        final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar");
+        try (InputStream fi = new FileInputStream(testDocuments)) {
+            final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(fi);
+            final ContentDescription[] expected = {
+                    new ContentDescription("test-documents\\testEXCEL.xls", 13824),
+                    new ContentDescription("test-documents\\testHTML.html", 167),
+                    new ContentDescription("test-documents\\testOpenOffice2.odt", 26448),
+                    new ContentDescription("test-documents\\testPDF.pdf", 34824),
+                    new ContentDescription("test-documents\\testPPT.ppt", 16384),
+                    new ContentDescription("test-documents\\testRTF.rtf", 3410),
+                    new ContentDescription("test-documents\\testTXT.txt", 49),
+                    new ContentDescription("test-documents\\testWORD.doc", 19456),
+                    new ContentDescription("test-documents\\testXML.xml", 766)
+            };
+
+            assertThat(contentDescriptions.toArray()).isEqualTo(expected);
+        }
     }
 
     @Nested

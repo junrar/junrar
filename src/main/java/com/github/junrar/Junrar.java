@@ -90,6 +90,24 @@ public class Junrar {
         return contents;
     }
 
+    public static List<ContentDescription> getContentsDescription(final InputStream resourceAsStream) throws RarException, IOException {
+        final Archive arch = createArchiveOrThrowException(resourceAsStream, null);
+
+        final List<ContentDescription> contents = new ArrayList<>();
+        try {
+            if (arch.isEncrypted()) {
+                logger.warn("archive is encrypted cannot extract");
+                return new ArrayList<>();
+            }
+            for (final FileHeader fileHeader : arch) {
+                contents.add(new ContentDescription(fileHeader.getFileName(), fileHeader.getUnpSize()));
+            }
+        } finally {
+            arch.close();
+        }
+        return contents;
+    }
+
     private static Archive createArchiveOrThrowException(final VolumeManager volumeManager, final String password) throws RarException, IOException {
         try {
             return new Archive(volumeManager, null, password);
