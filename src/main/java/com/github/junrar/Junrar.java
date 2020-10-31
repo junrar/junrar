@@ -3,6 +3,7 @@ package com.github.junrar;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.volume.VolumeManager;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +33,7 @@ public class Junrar {
     }
 
     public static List<File> extract(final File rar, final File destinationFolder, final String password)
-        throws RarException, IOException {
+            throws RarException, IOException {
         validateRarPath(rar);
         validateDestinationPath(destinationFolder);
 
@@ -72,27 +73,16 @@ public class Junrar {
 
     public static List<ContentDescription> getContentsDescription(final File rar) throws RarException, IOException {
         validateRarPath(rar);
-
         final Archive arch = createArchiveOrThrowException(rar, null);
-
-        final List<ContentDescription> contents = new ArrayList<>();
-        try {
-            if (arch.isEncrypted()) {
-                logger.warn("archive is encrypted cannot extract");
-                return new ArrayList<>();
-            }
-            for (final FileHeader fileHeader : arch) {
-                contents.add(new ContentDescription(fileHeader.getFileName(), fileHeader.getUnpSize()));
-            }
-        } finally {
-            arch.close();
-        }
-        return contents;
+        return getContentsDescriptionFromArchive(arch);
     }
 
     public static List<ContentDescription> getContentsDescription(final InputStream resourceAsStream) throws RarException, IOException {
         final Archive arch = createArchiveOrThrowException(resourceAsStream, null);
+        return getContentsDescriptionFromArchive(arch);
+    }
 
+    private static List<ContentDescription> getContentsDescriptionFromArchive(final Archive arch) throws RarException, IOException {
         final List<ContentDescription> contents = new ArrayList<>();
         try {
             if (arch.isEncrypted()) {
@@ -177,9 +167,9 @@ public class Junrar {
     }
 
     private static File tryToExtract(
-        final LocalFolderExtractor destination,
-        final Archive arch,
-        final FileHeader fileHeader
+            final LocalFolderExtractor destination,
+            final Archive arch,
+            final FileHeader fileHeader
     ) throws IOException, RarException {
         final String fileNameString = fileHeader.getFileName();
 
