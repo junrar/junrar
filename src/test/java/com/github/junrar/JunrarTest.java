@@ -1,20 +1,19 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
+
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.List;
-import java.util.zip.ZipInputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -70,15 +69,15 @@ public class JunrarTest {
         final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);
 
         final ContentDescription[] expected = {
-            new ContentDescription("test-documents\\testEXCEL.xls", 13824),
-            new ContentDescription("test-documents\\testHTML.html", 167),
-            new ContentDescription("test-documents\\testOpenOffice2.odt", 26448),
-            new ContentDescription("test-documents\\testPDF.pdf", 34824),
-            new ContentDescription("test-documents\\testPPT.ppt", 16384),
-            new ContentDescription("test-documents\\testRTF.rtf", 3410),
-            new ContentDescription("test-documents\\testTXT.txt", 49),
-            new ContentDescription("test-documents\\testWORD.doc", 19456),
-            new ContentDescription("test-documents\\testXML.xml", 766)
+                new ContentDescription("test-documents\\testEXCEL.xls", 13824),
+                new ContentDescription("test-documents\\testHTML.html", 167),
+                new ContentDescription("test-documents\\testOpenOffice2.odt", 26448),
+                new ContentDescription("test-documents\\testPDF.pdf", 34824),
+                new ContentDescription("test-documents\\testPPT.ppt", 16384),
+                new ContentDescription("test-documents\\testRTF.rtf", 3410),
+                new ContentDescription("test-documents\\testTXT.txt", 49),
+                new ContentDescription("test-documents\\testWORD.doc", 19456),
+                new ContentDescription("test-documents\\testXML.xml", 766)
         };
 
         assertThat(contentDescriptions.toArray()).isEqualTo(expected);
@@ -112,8 +111,8 @@ public class JunrarTest {
             Throwable thrown = catchThrowable(() -> Junrar.extract(tempFolder, tempFolder));
 
             assertThat(thrown)
-                .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("First argument should be a file but was " + tempFolder.getAbsolutePath());
+                    .isInstanceOf(IllegalArgumentException.class)
+                    .hasMessageContaining("First argument should be a file but was " + tempFolder.getAbsolutePath());
         }
 
         @Test
@@ -123,8 +122,8 @@ public class JunrarTest {
             Throwable thrown = catchThrowable(() -> Junrar.extract(rarFileOnTemp, rarFileOnTemp));
 
             assertThat(thrown)
-                .isInstanceOf(IllegalArgumentException.class)
-                .hasMessageContaining("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath());
+                    .isInstanceOf(IllegalArgumentException.class)
+                    .hasMessageContaining("the destination must exist and point to a directory: " + rarFileOnTemp.getAbsolutePath());
         }
     }
 
