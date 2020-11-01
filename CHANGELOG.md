@@ -1,3 +1,10 @@
+# [7.4.0](https://github.com/junrar/junrar/compare/v7.3.0...v7.4.0) (2020-11-01)
+
+
+### Features
+
+* make getContentsDescription usable with a Stream ([7a221f7](https://github.com/junrar/junrar/commit/7a221f7686e79d6d5fbd5fbc7573796b4057119d)), closes [#56](https://github.com/junrar/junrar/issues/56)
+
 # [7.3.0](https://github.com/junrar/junrar/compare/v7.2.0...v7.3.0) (2020-08-03)
 
 
