@@ -177,7 +177,7 @@ public class Junrar {
                         || contentToExtract.stream().anyMatch(c -> c.path.equalsIgnoreCase(fh.getFileName()))
                         // We got a containing folder for a file that has been asked for
                         || (fh.isDirectory() && contentToExtract.stream().anyMatch(c -> c.path.startsWith(fh.getFileName())))
-                )
+                ) {
                     try {
                         final File file = tryToExtract(destination, arch, fh);
                         if (file != null) {
@@ -187,6 +187,7 @@ public class Junrar {
                         logger.error("error extracting the file", e);
                         throw e;
                     }
+                }
             }
         } finally {
             arch.close();
