@@ -162,7 +162,10 @@ public class Junrar {
         final List<File> extractedFiles = new ArrayList<>();
         try {
             for (final FileHeader fh : arch) {
-                if (null == contentToExtract || contentToExtract.stream().anyMatch(c -> c.path.equalsIgnoreCase(fh.getFileName())))
+                if (null == contentToExtract
+                        || contentToExtract.stream().anyMatch(c -> c.path.equalsIgnoreCase(fh.getFileName())) // We got a file that has been asked for
+                        || (fh.isDirectory() && contentToExtract.stream().anyMatch(c -> c.path.startsWith(fh.getFileName()))) // We got a containing folder for a file that has been asked for
+                )
                     try {
                         final File file = tryToExtract(destination, arch, fh);
                         if (file != null) {

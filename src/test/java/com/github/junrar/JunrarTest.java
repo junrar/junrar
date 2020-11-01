@@ -13,6 +13,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -61,6 +62,46 @@ public class JunrarTest {
         assertThat(barFileContent).isEqualTo("baz\n");
         assertThat(extractedFiles.get(0)).isEqualTo(barFile);
         assertThat(extractedFiles.get(1)).isEqualTo(fooDir);
+    }
+
+    @Test
+    public void extractionSelectiveFile() throws IOException, RarException {
+        final InputStream resourceAsStream = JunrarTest.class.getResourceAsStream("tika-documents.rar");
+
+        final List<ContentDescription> contentToExtract = new ArrayList<>();
+        contentToExtract.add(new ContentDescription("test-documents\\testHTML.html", 0));
+        contentToExtract.add(new ContentDescription("test-documents\\testTXT.txt", 0));
+        contentToExtract.add(new ContentDescription("test-documents\\testXML.xml", 0));
+
+        final List<File> extractedFiles = Junrar.extractContent(resourceAsStream, tempFolder, contentToExtract);
+
+        final File fooDir = new File(tempFolder, "test-documents");
+        File htmlFile = new File(fooDir, "testHTML.html");
+        File txtFile = new File(fooDir, "testTXT.txt");
+        File xmlFile = new File(fooDir, "testXML.xml");
+
+        assertThat(fooDir).exists();
+        assertThat(3 == extractedFiles.size());
+        assertThat(3 == fooDir.list().length);
+        assertThat(extractedFiles.contains(htmlFile));
+        assertThat(extractedFiles.contains(txtFile));
+        assertThat(extractedFiles.contains(xmlFile));
+    }
+
+    @Test
+    public void extractionSelectiveFolder() throws IOException, RarException {
+        final InputStream resourceAsStream = JunrarTest.class.getResourceAsStream("tika-documents.rar");
+
+        final List<ContentDescription> contentToExtract = new ArrayList<>();
+        contentToExtract.add(new ContentDescription("test-documents", 0));
+
+        final List<File> extractedFiles = Junrar.extractContent(resourceAsStream, tempFolder, contentToExtract);
+
+        final File fooDir = new File(tempFolder, "test-documents");
+
+        assertThat(fooDir).exists();
+        assertThat(9 == extractedFiles.size());
+        assertThat(9 == fooDir.list().length);
     }
 
     @Test
