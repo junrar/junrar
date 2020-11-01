@@ -4,5 +4,5 @@
 # 2: channel
 
 # publish release
-./gradlew bintrayUpload
+#./gradlew bintrayUpload
 ./gradlew bintrayPublish
