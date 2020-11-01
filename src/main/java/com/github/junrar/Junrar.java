@@ -54,11 +54,18 @@ public class Junrar {
         return extractArchiveTo(arch, lfe, null);
     }
 
-    public static List<File> extractContent(final InputStream resourceAsStream, final File destinationFolder, final List<ContentDescription> contentToExtract) throws RarException, IOException {
+    public static List<File> extractContent(
+            final InputStream resourceAsStream,
+            final File destinationFolder,
+            final List<ContentDescription> contentToExtract) throws RarException, IOException {
         return extractContent(resourceAsStream, destinationFolder, contentToExtract, null);
     }
 
-    public static List<File> extractContent(final InputStream resourceAsStream, final File destinationFolder, final List<ContentDescription> contentToExtract, final String password) throws RarException, IOException {
+    public static List<File> extractContent(
+            final InputStream resourceAsStream,
+            final File destinationFolder,
+            final List<ContentDescription> contentToExtract,
+            final String password) throws RarException, IOException {
         validateDestinationPath(destinationFolder);
 
         final Archive arch = createArchiveOrThrowException(resourceAsStream, password);
@@ -158,13 +165,18 @@ public class Junrar {
         }
     }
 
-    private static List<File> extractArchiveTo(final Archive arch, final LocalFolderExtractor destination, final List<ContentDescription> contentToExtract) throws IOException, RarException {
+    private static List<File> extractArchiveTo(
+            final Archive arch,
+            final LocalFolderExtractor destination,
+            final List<ContentDescription> contentToExtract) throws IOException, RarException {
         final List<File> extractedFiles = new ArrayList<>();
         try {
             for (final FileHeader fh : arch) {
                 if (null == contentToExtract
-                        || contentToExtract.stream().anyMatch(c -> c.path.equalsIgnoreCase(fh.getFileName())) // We got a file that has been asked for
-                        || (fh.isDirectory() && contentToExtract.stream().anyMatch(c -> c.path.startsWith(fh.getFileName()))) // We got a containing folder for a file that has been asked for
+                        // We got a file that has been asked for
+                        || contentToExtract.stream().anyMatch(c -> c.path.equalsIgnoreCase(fh.getFileName()))
+                        // We got a containing folder for a file that has been asked for
+                        || (fh.isDirectory() && contentToExtract.stream().anyMatch(c -> c.path.startsWith(fh.getFileName())))
                 )
                     try {
                         final File file = tryToExtract(destination, arch, fh);
