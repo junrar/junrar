@@ -73,7 +73,7 @@ final Archive archive = new Archive(inputStream);
       if (fileHeader == null) {
           break;
       }
-      archive.extractFile(fileHeader, outputStream)); 
+      archive.extractFile(fileHeader, outputStream); 
   }
 ```
 
