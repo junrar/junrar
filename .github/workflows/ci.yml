@@ -19,6 +19,7 @@ jobs:
   release:
     name: semantic release
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - uses: actions/setup-node@v1
         with:
