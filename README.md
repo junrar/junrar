@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/junrar/junrar.svg?branch=master)](https://travis-ci.com/junrar/junrar)
+[![Build Status](https://github.com/junrar/junrar/workflows/CI/badge.svg?branch=master)](https://github.com/junrar/junrar/actions?query=workflow%3ACI+branch%3Amaster)
 [![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/_latestVersion)
 [![codecov](https://codecov.io/gh/junrar/junrar/branch/master/graph/badge.svg)](https://codecov.io/gh/junrar/junrar)
 
