@@ -68,7 +68,7 @@ public class ArchiveTest {
         public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
                 try (Archive archive = new Archive(is)) {
-                    assertThat(archive.getMainHeader().isSolid());
+                    assertThat(archive.getMainHeader().isSolid()).isTrue();
 
                     List<FileHeader> fileHeaders = archive.getFileHeaders();
                     assertThat(fileHeaders).hasSize(9);
@@ -91,7 +91,7 @@ public class ArchiveTest {
         public void givenSolidRar4File_whenExtractingOutOfOrder_thenExceptionIsThrown() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
                 try (Archive archive = new Archive(is)) {
-                    assertThat(archive.getMainHeader().isSolid());
+                    assertThat(archive.getMainHeader().isSolid()).isTrue();
 
                     List<FileHeader> fileHeaders = archive.getFileHeaders();
                     assertThat(fileHeaders).hasSize(9);

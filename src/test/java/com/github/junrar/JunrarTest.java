@@ -1,7 +1,6 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
-
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -144,8 +143,8 @@ public class JunrarTest {
             Junrar.extract(rarFile, tempFolder, "test");
 
             File unpackFile = new File(tempFolder, "新建文本文档.txt");
-            assertThat(unpackFile.exists());
-            assertThat(unpackFile.length() == 10);
+            assertThat(unpackFile).exists();
+            assertThat(unpackFile.length()).isEqualTo(10);
         }
 
         @Test
@@ -154,8 +153,8 @@ public class JunrarTest {
             Junrar.extract(rarStream, tempFolder, "test");
 
             File unpackFile = new File(tempFolder, "新建文本文档.txt");
-            assertThat(unpackFile.exists());
-            assertThat(unpackFile.length() == 10);
+            assertThat(unpackFile).exists();
+            assertThat(unpackFile.length()).isEqualTo(10);
         }
 
         @Test
@@ -164,8 +163,8 @@ public class JunrarTest {
             Junrar.extract(rarFile, tempFolder, "junrar");
 
             File unpackFile = new File(tempFolder, "file1.txt");
-            assertThat(unpackFile.exists());
-            assertThat(unpackFile.length() == 6);
+            assertThat(unpackFile).exists();
+            assertThat(unpackFile.length()).isEqualTo(6);
         }
 
         @Test
@@ -174,8 +173,8 @@ public class JunrarTest {
             Junrar.extract(rarStream, tempFolder, "junrar");
 
             File unpackFile = new File(tempFolder, "file1.txt");
-            assertThat(unpackFile.exists());
-            assertThat(unpackFile.length() == 6);
+            assertThat(unpackFile).exists();
+            assertThat(unpackFile.length()).isEqualTo(6);
         }
     }
 
