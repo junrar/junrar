@@ -1,12 +1,13 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
+    id 'signing'
     id 'checkstyle'
     id 'jacoco'
     id 'com.github.ben-manes.versions' version '0.38.0'
     id 'com.autonomousapps.dependency-analysis' version '0.71.0'
     id 'dev.jacomet.logging-capabilities' version '0.9.0'
-    id 'com.jfrog.bintray' version '1.8.5'
+    id 'io.github.gradle-nexus.publish-plugin' version '1.0.0'
 }
 
 repositories {
@@ -37,8 +38,12 @@ java {
 }
 
 publishing {
+    repositories {
+        mavenLocal()
+    }
+
     publications {
-        maven(MavenPublication) {
+        mavenJava(MavenPublication) {
             from components.java
             versionMapping {
                 usage('java-api') {
@@ -70,8 +75,18 @@ publishing {
             }
         }
     }
+}
+
+signing {
+    def signingKey = findProperty('signingKey')
+    def signingPassword = findProperty('signingPassword')
+    useInMemoryPgpKeys(signingKey, signingPassword)
+    sign publishing.publications.mavenJava
+}
+
+nexusPublishing {
     repositories {
-        mavenLocal()
+        sonatype()
     }
 }
 
@@ -91,36 +106,6 @@ test {
 checkstyle {
     configFile = file("${rootDir}/checkstyle.xml")
     toolVersion = '8.29'
-}
-
-bintray {
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_KEY')
-    publications = ['maven']
-    publish = true
-//    override = true
-    pkg {
-        repo = 'junrar'
-        name = "${project.group}:${project.name}"
-//        licenses = ['Unrar']
-        vcsUrl = 'https://github.com/junrar/junrar.git'
-        version {
-            name = "${project.version}"
-            desc = "${project.description}"
-            released = new Date()
-            vcsTag = "v${project.version}"
-            gpg {
-                sign = true
-                passphrase = System.getenv('GPG_PASSPHRASE')
-            }
-            mavenCentralSync {
-                sync = true
-                user = System.getenv('MAVENCENTRAL_USER')
-                password = System.getenv('MAVENCENTRAL_PASSWORD')
-                close = '1'
-            }
-        }
-    }
 }
 
 jacocoTestReport {

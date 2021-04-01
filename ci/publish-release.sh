@@ -4,5 +4,4 @@
 # 2: channel
 
 # publish release
-#./gradlew bintrayUpload
-./gradlew bintrayPublish
+./gradlew closeAndReleaseSonatypeStagingRepository
