@@ -50,7 +50,7 @@ public interface SeekableReadOnlyByteChannel {
     int read() throws IOException;
 
     /**
-     * Read up to <tt>count</tt> bytes to the specified buffer.
+     * Read up to {@code count} bytes to the specified buffer.
      *
      * @param buffer .
      * @param off .
@@ -64,7 +64,7 @@ public interface SeekableReadOnlyByteChannel {
     int read(byte[] buffer, int off, int count) throws IOException;
 
     /**
-     * Read exactly <tt>count</tt> bytes to the specified buffer.
+     * Read exactly {@code count} bytes to the specified buffer.
      *
      * @param buffer where to store the read data
      * @param count how many bytes to read
