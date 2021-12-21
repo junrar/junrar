@@ -21,7 +21,9 @@ jobs:
         run: ./gradlew build
       - name: Jacoco
         run: ./gradlew jacocoTestReport
-      - uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v2
+        if: matrix.java == '8'
+
   release:
     name: semantic release
     runs-on: ubuntu-latest
