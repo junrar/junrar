@@ -1,5 +1,5 @@
 [![Build Status](https://github.com/junrar/junrar/workflows/CI/badge.svg?branch=master)](https://github.com/junrar/junrar/actions?query=workflow%3ACI+branch%3Amaster)
-[![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/_latestVersion)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.junrar/junrar)](https://search.maven.org/artifact/com.github.junrar/junrar)
 [![codecov](https://codecov.io/gh/junrar/junrar/branch/master/graph/badge.svg)](https://codecov.io/gh/junrar/junrar)
 
 # Junrar
@@ -45,8 +45,8 @@ Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
 where `{version}` corresponds to version as below:
 
-- Java 8 Version: [![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/_latestVersion)
-- Java 6 Compatible Version: [![Download](https://api.bintray.com/packages/bintray/jcenter/com.github.junrar%3Ajunrar/images/download.svg?version=4.0.0) ](https://bintray.com/bintray/jcenter/com.github.junrar%3Ajunrar/4.0.0/link)
+- Java 8 Version: [![Maven Central](https://img.shields.io/maven-central/v/com.github.junrar/junrar)](https://search.maven.org/artifact/com.github.junrar/junrar)
+- Java 6 Compatible Version: [![Maven Central](https://img.shields.io/maven-central/v/com.github.junrar/junrar?versionPrefix=4.0.0)](https://search.maven.org/artifact/com.github.junrar/junrar/4.0.0/jar)
 
 Apache Commons VFS support has been removed from `5.0.0`, and moved to a dedicated repo: https://github.com/junrar/commons-vfs-rar
 
