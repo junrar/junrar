@@ -39,7 +39,7 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
       - name: Install dependencies
-        run: npm install
+        run: npm ci --omit=dev --ignore-scripts
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
