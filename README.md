@@ -1,5 +1,6 @@
 [![Build Status](https://github.com/junrar/junrar/workflows/CI/badge.svg?branch=master)](https://github.com/junrar/junrar/actions?query=workflow%3ACI+branch%3Amaster)
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.junrar/junrar)](https://search.maven.org/artifact/com.github.junrar/junrar)
+[![javadoc](https://javadoc.io/badge2/com.github.junrar/junrar/javadoc.svg)](https://javadoc.io/doc/com.github.junrar/junrar)
 [![codecov](https://codecov.io/gh/junrar/junrar/branch/master/graph/badge.svg)](https://codecov.io/gh/junrar/junrar)
 
 # Junrar
