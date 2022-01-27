@@ -4,4 +4,4 @@
 # 2: channel
 
 # publish release
-./gradlew closeAndReleaseSonatypeStagingRepository
+./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository

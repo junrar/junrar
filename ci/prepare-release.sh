@@ -8,5 +8,3 @@ echo version=$1 >gradle.properties
 
 # Build jars
 ./gradlew assemble
-# Prepare jars
-./gradlew publishToSonatype
