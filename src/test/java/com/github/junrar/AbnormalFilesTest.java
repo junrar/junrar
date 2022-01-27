@@ -58,7 +58,8 @@ public class AbnormalFilesTest {
     private static Stream<Arguments> provideFilesAndExpectedExceptionType() {
         return Stream.of(
             Arguments.of("abnormal/corrupt-header.rar", CorruptHeaderException.class),
-            Arguments.of("abnormal/mainHeaderNull.rar", BadRarArchiveException.class)
+            Arguments.of("abnormal/mainHeaderNull.rar", BadRarArchiveException.class),
+            Arguments.of("abnormal/loop.rar", CorruptHeaderException.class)
         );
     }
 }

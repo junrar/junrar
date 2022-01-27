@@ -45,6 +45,7 @@ import com.github.junrar.rarfile.ProtectHeader;
 import com.github.junrar.rarfile.RARVersion;
 import com.github.junrar.rarfile.SignHeader;
 import com.github.junrar.rarfile.SubBlockHeader;
+import com.github.junrar.rarfile.SubBlockHeaderType;
 import com.github.junrar.rarfile.UnixOwnersHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
 import com.github.junrar.unpack.ComprDataIO;
@@ -449,7 +450,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             final SubBlockHeader subHead = new SubBlockHeader(blockHead,
                                 subHeadbuffer);
                             subHead.print();
-                            switch (subHead.getSubType()) {
+                            SubBlockHeaderType subType = subHead.getSubType();
+                            if (subType == null) break;
+                            switch (subType) {
                                 case MAC_HEAD: {
                                     final byte[] macHeaderbuffer = safelyAllocate(MacInfoHeader.MacInfoHeaderSize, MAX_HEADER_SIZE);
                                     rawData.readFully(macHeaderbuffer, macHeaderbuffer.length);
