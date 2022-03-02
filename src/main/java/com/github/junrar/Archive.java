@@ -69,7 +69,14 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.function.Function;
 
 /**
  * The Main Rar Class; represents a rar Archive
@@ -82,6 +89,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private static final Logger logger = LoggerFactory.getLogger(Archive.class);
 
     private static final int MAX_HEADER_SIZE = 20971520; //20MB
+
+    private static final int PIPE_BUFFER_SIZE = getPropertyAs(
+        "junrar.extractor.buffer-size",
+        Integer::parseInt,
+        32 * 1024
+    );
+
+    private static final boolean USE_EXECUTOR = getPropertyAs(
+        "junrar.extractor.use-executor",
+        Boolean::parseBoolean,
+        true
+    );
 
     private SeekableReadOnlyByteChannel channel;
 
@@ -542,31 +561,112 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * Returns an {@link InputStream} that will allow to read the file and
-     * stream it. Please note that this method will create a new Thread and an a
-     * pair of Pipe streams.
+     * Class to ensure the lazy initialization of the {@link ThreadPoolExecutor} upon first usage.<br><br>
+     * <p>
+     * Using a cached thread pool executor is more efficient and creating a new thread for each extraction.
+     * The total number of threads will only increase if there are tasks on its queue and all current threads are busy.
+     * If there are available threads, those will be reused instead of a new one being created.
+     * <br><br>
+     * <p>
+     * Configuration options:
+     * <ul>
+     * <li>To avoid the possibility of too many simultaneous active threads being started, the maximum
+     * number of threads can be configured through the {@code junrar.extractor.max-threads} system property.
+     * The default maximum number of threads is unbounded.</li>
+     * <li>The keep alive time can be configured through the {@code junrar.extractor.thread-keep-alive-seconds} system property.
+     * The default is 5s.</li>
+     * </ul>
+     */
+    private static final class ExtractorExecutorHolder {
+        private ExtractorExecutorHolder() {
+        }
+
+        private static final AtomicLong threadIndex = new AtomicLong();
+
+        /**
+         * Equivalent to {@link java.util.concurrent.Executors#newCachedThreadPool()}, but customizable through system properties.
+         */
+        private static final ExecutorService cachedExecutorService = new ThreadPoolExecutor(
+            0, getMaxThreads(),
+            getThreadKeepAlive(), TimeUnit.SECONDS,
+            new SynchronousQueue<>(),
+            r -> {
+                Thread t = new Thread(r, "junrar-extractor-" + threadIndex.getAndIncrement());
+                t.setDaemon(true);
+                return t;
+            });
+
+        private static int getMaxThreads() {
+            return getPropertyAs("junrar.extractor.max-threads", Integer::parseInt, Integer.MAX_VALUE);
+        }
+
+        private static int getThreadKeepAlive() {
+            return getPropertyAs("junrar.extractor.thread-keep-alive-seconds", Integer::parseInt, 5);
+        }
+    }
+
+    private static <T> T getPropertyAs(String key, Function<String, T> function, T defaultValue) {
+        Objects.requireNonNull(defaultValue, "default value must not be null");
+        try {
+            String integerString = System.getProperty(key);
+            if (integerString != null && !integerString.isEmpty()) {
+                return function.apply(integerString);
+            }
+        } catch (SecurityException | NumberFormatException e) {
+            logger.error(
+                "Could not parse the System Property '{}' into an '{}'. Defaulting to '{}'",
+                key,
+                defaultValue.getClass().getTypeName(),
+                defaultValue,
+                e
+            );
+        }
+        return defaultValue;
+    }
+
+    /**
+     * Returns an {@link InputStream} that will allow to read the file and stream it. <br>
+     * Please note that this method will create a pair of Pipe streams and either: <br>
+     *
+     * <ul>
+     *     <li>delegate the work to a {@link ThreadPoolExecutor}, via {@link ExtractorExecutorHolder}; or</li>
+     *     <li>delegate the work to a newly created thread on each call</li>
+     * </ul>
+     *
+     * You can choose which strategy to use by setting the {@code junrar.extractor.use-executor} system property.<br>
+     * Defaults to using the {@link ThreadPoolExecutor}.
      *
      * @param hd the header to be extracted
-     * @return inputstream
-     * @throws IOException if any IO error occur
+     * @return an {@link InputStream} from which you can read the uncompressed bytes
+     * @throws IOException if any I/O error occur
+     * @see ExtractorExecutorHolder
      */
     public InputStream getInputStream(final FileHeader hd) throws IOException {
-        final PipedInputStream in = new PipedInputStream(32 * 1024);
+        // Small optimization to prevent the creation of large buffers for very small files
+        // Never allocate more than needed
+        final int bufferSize = (int) Math.min(hd.getFullUnpackSize(), PIPE_BUFFER_SIZE);
+
+        final PipedInputStream in = new PipedInputStream(bufferSize);
         final PipedOutputStream out = new PipedOutputStream(in);
 
-        // creates a new thread that will write data to the pipe. Data will be
-        // available in another InputStream, connected to the OutputStream.
-        new Thread(() -> {
+        // Data will be available in another InputStream, connected to the OutputStream
+        // Delegates execution to the cached executor service.
+        Runnable r = () -> {
             try {
                 extractFile(hd, out);
-            } catch (final RarException e) {
+            } catch (final RarException ignored) {
             } finally {
                 try {
                     out.close();
-                } catch (final IOException e) {
+                } catch (final IOException ignored) {
                 }
             }
-        }).start();
+        };
+        if (USE_EXECUTOR) {
+            ExtractorExecutorHolder.cachedExecutorService.submit(r);
+        } else {
+            new Thread(r).start();
+        }
 
         return in;
     }
