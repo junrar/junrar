@@ -323,9 +323,7 @@ public final class Unpack extends Unpack20 {
             if (Number < 263) {
                 int DistNum = Number - 259;
                 int Distance = oldDist[DistNum];
-                for (int I = DistNum; I > 0; I--) {
-                    oldDist[I] = oldDist[I - 1];
-                }
+                System.arraycopy(oldDist, 0, oldDist, 1, DistNum);
                 oldDist[0] = Distance;
 
                 int LengthNumber = decodeNumber(RD);
@@ -735,9 +733,7 @@ public final class Unpack extends Unpack20 {
                 Compress.RC);
 
         // memcpy(unpOldTable,table,sizeof(unpOldTable));
-        for (int i = 0; i < unpOldTable.length; i++) {
-            unpOldTable[i] = table[i];
-        }
+        System.arraycopy(table, 0, unpOldTable, 0, unpOldTable.length);
         return (true);
 
     }
@@ -758,7 +754,7 @@ public final class Unpack extends Unpack20 {
             if (inAddr >= readTop - 1 && !unpReadBuf() && I < Length - 1) {
                 return (false);
             }
-            vmCode.add(Byte.valueOf((byte) (getbits() >> 8)));
+            vmCode.add((byte) (getbits() >> 8));
             addbits(8);
         }
         return (addVMCode(FirstByte, vmCode, Length));
@@ -766,7 +762,7 @@ public final class Unpack extends Unpack20 {
 
     private boolean readVMCodePPM() throws IOException, RarException {
         int FirstByte = ppm.decodeChar();
-        if ((int) FirstByte == -1) {
+        if (FirstByte == -1) {
             return (false);
         }
         int Length = (FirstByte & 7) + 1;
@@ -793,7 +789,7 @@ public final class Unpack extends Unpack20 {
             if (Ch == -1) {
                 return (false);
             }
-            vmCode.add(Byte.valueOf((byte) Ch)); // VMCode[I]=Ch;
+            vmCode.add((byte) Ch); // VMCode[I]=Ch;
         }
         return (addVMCode(FirstByte, vmCode, Length));
     }
@@ -944,7 +940,7 @@ public final class Unpack extends Unpack20 {
         rarVM.setLowEndianValue(globalData, 0x2c, StackFilter.getExecCount());
         // memset(&GlobalData[0x30],0,16);
         for (int i = 0; i < 16; i++) {
-            globalData.set(0x30 + i, Byte.valueOf((byte) (0)));
+            globalData.set(0x30 + i, (byte) (0));
         }
         if ((firstByte & 8) != 0) { // put data block passed as parameter if any
             if (Inp.Overflow(3)) {
@@ -966,8 +962,7 @@ public final class Unpack extends Unpack20 {
                 if (Inp.Overflow(3)) {
                     return (false);
                 }
-                globalData.set(offset + I, Byte
-                        .valueOf((byte) (Inp.fgetbits() >>> 8)));
+                globalData.set(offset + I, (byte) (Inp.fgetbits() >>> 8));
                 Inp.faddbits(8);
             }
         }

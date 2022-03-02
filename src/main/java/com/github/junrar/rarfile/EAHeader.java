@@ -79,10 +79,12 @@ public class EAHeader extends SubBlockHeader {
 
     public void print() {
         super.print();
-        logger.info("unpSize: " + unpSize);
-        logger.info("unpVersion: " + unpVer);
-        logger.info("method: " + method);
-        logger.info("EACRC:" + EACRC);
+        if (logger.isInfoEnabled()) {
+            logger.info("unpSize: {}", unpSize);
+            logger.info("unpVersion: {}", unpVer);
+            logger.info("method: {}", method);
+            logger.info("EACRC: {}", EACRC);
+        }
     }
 }
 

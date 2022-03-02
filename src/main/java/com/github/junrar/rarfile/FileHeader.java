@@ -40,13 +40,11 @@ public class FileHeader extends BlockHeader {
 
     private static final byte NEWLHD_SIZE = 32;
 
-    private long unpSize;
+    private final long unpSize;
 
     private final HostSystem hostOS;
 
     private final int fileCRC;
-
-    private final int fileTime;
 
     private byte unpVersion;
 
@@ -97,7 +95,7 @@ public class FileHeader extends BlockHeader {
         fileCRC = Raw.readIntLittleEndian(fileHeader, position);
         position += 4;
 
-        fileTime = Raw.readIntLittleEndian(fileHeader, position);
+        int fileTime = Raw.readIntLittleEndian(fileHeader, position);
         position += 4;
 
         unpVersion |= fileHeader[13] & 0xff;
@@ -134,26 +132,22 @@ public class FileHeader extends BlockHeader {
         nameSize = nameSize > 4 * 1024 ? 4 * 1024 : nameSize;
 
         fileNameBytes = new byte[nameSize];
-        for (int i = 0; i < nameSize; i++) {
-            fileNameBytes[i] = fileHeader[position];
-            position++;
-        }
+        System.arraycopy(fileHeader, position, fileNameBytes, 0, nameSize);
+        position += nameSize;
 
         if (isFileHeader()) {
             if (isUnicode()) {
                 int length = 0;
-                fileName = "";
-                fileNameW = "";
                 while (length < fileNameBytes.length
                         && fileNameBytes[length] != 0) {
                     length++;
                 }
-                byte[] name = new byte[length];
-                System.arraycopy(fileNameBytes, 0, name, 0, name.length);
-                fileName = new String(name);
+                fileName = new String(fileNameBytes, 0, length);
                 if (length != nameSize) {
                     length++;
                     fileNameW = FileNameDecoder.decode(fileNameBytes, length);
+                } else {
+                    fileNameW = "";
                 }
             } else {
                 fileName = new String(fileNameBytes);
@@ -194,30 +188,32 @@ public class FileHeader extends BlockHeader {
     @Override
     public void print() {
         super.print();
-        StringBuilder str = new StringBuilder();
-        str.append("unpSize: " + getUnpSize());
-        str.append("\nHostOS: " + hostOS.name());
-        str.append("\nMDate: " + mTime);
-        str.append("\nFileName: " + fileName);
-        str.append("\nFileNameW: " + fileNameW);
-        str.append("\nunpMethod: " + Integer.toHexString(getUnpMethod()));
-        str.append("\nunpVersion: " + Integer.toHexString(getUnpVersion()));
-        str.append("\nfullpackedsize: " + getFullPackSize());
-        str.append("\nfullunpackedsize: " + getFullUnpackSize());
-        str.append("\nisEncrypted: " + isEncrypted());
-        str.append("\nisfileHeader: " + isFileHeader());
-        str.append("\nisSolid: " + isSolid());
-        str.append("\nisSplitafter: " + isSplitAfter());
-        str.append("\nisSplitBefore:" + isSplitBefore());
-        str.append("\nunpSize: " + getUnpSize());
-        str.append("\ndataSize: " + getDataSize());
-        str.append("\nisUnicode: " + isUnicode());
-        str.append("\nhasVolumeNumber: " + hasVolumeNumber());
-        str.append("\nhasArchiveDataCRC: " + hasArchiveDataCRC());
-        str.append("\nhasSalt: " + hasSalt());
-        str.append("\nhasEncryptVersions: " + hasEncryptVersion());
-        str.append("\nisSubBlock: " + isSubBlock());
-        logger.info(str.toString());
+        if (logger.isInfoEnabled()) {
+            StringBuilder str = new StringBuilder();
+            str.append("unpSize: ").append(getUnpSize());
+            str.append("\nHostOS: ").append(hostOS.name());
+            str.append("\nMDate: ").append(mTime);
+            str.append("\nFileName: ").append(fileName);
+            str.append("\nFileNameW: ").append(fileNameW);
+            str.append("\nunpMethod: ").append(Integer.toHexString(getUnpMethod()));
+            str.append("\nunpVersion: ").append(Integer.toHexString(getUnpVersion()));
+            str.append("\nfullpackedsize: ").append(getFullPackSize());
+            str.append("\nfullunpackedsize: ").append(getFullUnpackSize());
+            str.append("\nisEncrypted: ").append(isEncrypted());
+            str.append("\nisfileHeader: ").append(isFileHeader());
+            str.append("\nisSolid: ").append(isSolid());
+            str.append("\nisSplitafter: ").append(isSplitAfter());
+            str.append("\nisSplitBefore:").append(isSplitBefore());
+            str.append("\nunpSize: ").append(getUnpSize());
+            str.append("\ndataSize: ").append(getDataSize());
+            str.append("\nisUnicode: ").append(isUnicode());
+            str.append("\nhasVolumeNumber: ").append(hasVolumeNumber());
+            str.append("\nhasArchiveDataCRC: ").append(hasArchiveDataCRC());
+            str.append("\nhasSalt: ").append(hasSalt());
+            str.append("\nhasEncryptVersions: ").append(hasEncryptVersion());
+            str.append("\nisSubBlock: ").append(isSubBlock());
+            logger.info(str.toString());
+        }
     }
 
     private Date getDateDos(int time) {

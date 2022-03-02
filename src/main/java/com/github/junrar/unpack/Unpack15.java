@@ -363,8 +363,9 @@ public abstract class Unpack15 extends BitInput {
                     Length = BitField;
                     faddbits(16);
                 } else {
-                    for (Length = 0; ((BitField << Length) & 0x8000) == 0; Length++) {
-                        ;
+                    Length = 0;
+                    while (((BitField << Length) & 0x8000) == 0) {
+                        Length++;
                     }
                     faddbits(Length + 1);
                 }

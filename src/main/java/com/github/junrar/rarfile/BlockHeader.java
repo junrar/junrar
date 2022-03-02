@@ -65,7 +65,8 @@ public class BlockHeader extends BaseBlock {
 
     public void print() {
         super.print();
-        String s = "DataSize: " + getDataSize() + " packSize: " + getPackSize();
-        logger.info(s);
+        if (logger.isInfoEnabled()) {
+            logger.info("DataSize: {} packSize: {}", getDataSize(), getPackSize());
+        }
     }
 }
