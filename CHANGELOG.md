@@ -1,3 +1,10 @@
+## [7.4.1](https://github.com/andrebrait/junrar/compare/v7.4.0...v7.4.1) (2022-03-02)
+
+
+### Bug Fixes
+
+* invalid subheader type would throw npe and make the extract loop ([7b16b3d](https://github.com/andrebrait/junrar/commit/7b16b3d90b91445fd6af0adfed22c07413d4fab7)), closes [#73](https://github.com/andrebrait/junrar/issues/73)
+
 ## [7.4.1](https://github.com/junrar/junrar/compare/v7.4.0...v7.4.1) (2022-01-27)
 
 
