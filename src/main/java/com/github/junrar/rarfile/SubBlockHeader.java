@@ -55,7 +55,9 @@ public class SubBlockHeader extends BlockHeader {
 
     public void print() {
         super.print();
-        logger.info("subtype: " + getSubType());
-        logger.info("level: " + level);
+        if (logger.isInfoEnabled()) {
+            logger.info("subtype: {}", getSubType());
+            logger.info("level: {}", level);
+        }
     }
 }

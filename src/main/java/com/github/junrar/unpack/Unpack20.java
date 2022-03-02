@@ -467,9 +467,7 @@ public abstract class Unpack20 extends Unpack15 {
                     Compress.RC20);
         }
         // memcpy(UnpOldTable20,Table,sizeof(UnpOldTable20));
-        for (int i = 0; i < UnpOldTable20.length; i++) {
-            UnpOldTable20[i] = Table[i];
-        }
+        System.arraycopy(Table, 0, UnpOldTable20, 0, UnpOldTable20.length);
         return (true);
     }
 

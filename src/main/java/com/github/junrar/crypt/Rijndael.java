@@ -49,9 +49,7 @@ public class Rijndael {
             rawpsw[i * 2] = pwd[i];
             rawpsw[i * 2 + 1] = 0;
         }
-        for (int i = 0; i < salt.length; i++) {
-            rawpsw[i + rawLength] = salt[i];
-        }
+        System.arraycopy(salt, 0, rawpsw, rawLength, salt.length);
 
         MessageDigest sha = MessageDigest.getInstance("sha-1");
 

@@ -82,6 +82,8 @@ public class MarkHeader extends BaseBlock {
 
     public void print() {
         super.print();
-        logger.info("valid: " + isValid());
+        if (logger.isInfoEnabled()) {
+            logger.info("valid: {}", isValid());
+        }
     }
 }

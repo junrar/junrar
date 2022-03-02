@@ -99,7 +99,7 @@ public class ModelPPM {
     private void restartModelRare() {
         Arrays.fill(charMask, 0);
         subAlloc.initSubAllocator();
-        initRL = -(maxOrder < 12 ? maxOrder : 12) - 1;
+        initRL = -(Math.min(maxOrder, 12)) - 1;
         int addr = subAlloc.allocContext();
         minContext.setAddress(addr);
         maxContext.setAddress(addr);

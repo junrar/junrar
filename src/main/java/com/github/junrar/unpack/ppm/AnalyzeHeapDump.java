@@ -26,19 +26,19 @@ public class AnalyzeHeapDump {
         File cfile = new File("P:\\test\\heapdumpc");
         File jfile = new File("P:\\test\\heapdumpj");
         if (!cfile.exists()) {
-            logger.error("File not found: " + cfile.getAbsolutePath());
+            logger.error("File not found: {}", cfile.getAbsolutePath());
             return;
         }
         if (!jfile.exists()) {
-            logger.error("File not found: " + jfile.getAbsolutePath());
+            logger.error("File not found: {}", jfile.getAbsolutePath());
             return;
         }
         long clen = cfile.length();
         long jlen = jfile.length();
         if (clen != jlen) {
             logger.info("File size mismatch");
-            logger.info("clen = " + clen);
-            logger.info("jlen = " + jlen);
+            logger.info("clen = {}", clen);
+            logger.info("jlen = {}", jlen);
         }
         // Do byte comparison
         long len = Math.min(clen, jlen);
@@ -89,8 +89,8 @@ public class AnalyzeHeapDump {
     }
 
     private static void printMismatch(long startOff, long bytesRead) {
-        logger.info("Mismatch: off=" + startOff
-            + "(0x" + Long.toHexString(startOff)
-            + "), len=" + (bytesRead - startOff));
+        if (logger.isInfoEnabled()) {
+            logger.info("Mismatch: off={}(0x{}), len={}", startOff, Long.toHexString(startOff), (bytesRead - startOff));
+        }
     }
 }
