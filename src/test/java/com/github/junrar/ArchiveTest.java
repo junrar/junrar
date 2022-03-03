@@ -21,18 +21,39 @@ import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
+import java.nio.file.attribute.FileTime;
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 import java.util.stream.Collectors;
 
+import static java.util.Calendar.FEBRUARY;
+import static java.util.Calendar.MARCH;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 
 
 public class ArchiveTest {
+
+    private static Date toDate(int year, int month, int day, int hour, int minute, int second, int millis) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(year, month, day, hour, minute, second);
+        calendar.set(Calendar.MILLISECOND, millis);
+        return calendar.getTime();
+    }
+
+    private static FileTime toFileTime(Date date, long nanos) {
+        return FileTime.from(Instant.ofEpochMilli(date.getTime()).plus(nanos, ChronoUnit.NANOS));
+    }
 
     @Test
     public void testTikaDocs() throws Exception {
@@ -60,6 +81,49 @@ public class ArchiveTest {
                 fileHeader = archive.nextFileHeader();
             }
         }
+    }
+
+    /*
+     The file is shifted by 1-hour because it was created in Europe/Amsterdam.
+     Times in a RAR file are stored in the MS-DOS style, so the fields are always the same but the resulting timestamp is not.
+
+     Original timestamps:
+     MTime: 2022-02-23T09:24:19.191543300Z
+     CTime: 2022-02-23T09:34:59.759754700Z
+     ATime: 2022-03-02T17:45:18.694091100Z
+
+     Ensure the fields remain constant across timezones.
+     */
+    @ParameterizedTest
+    @ValueSource(strings = {"America/Los_Angeles", "America/Sao_Paulo", "Europe/Amsterdam", "Asia/Kolkata", "default"})
+    public void testArchiveExtTimes(String timeZone) throws Exception {
+        TimeZone defaultTimezone = TimeZone.getDefault();
+        if (!"default".equals(timeZone)) {
+            TimeZone.setDefault(TimeZone.getTimeZone(timeZone));
+        }
+        try (InputStream is = getClass().getResourceAsStream("rar4-ext_time.rar")) {
+            try (Archive archive = new Archive(is)) {
+                assertThat(archive.getMainHeader().isSolid()).isFalse();
+
+                FileHeader fileHeader = archive.getFileHeaders().stream()
+                    .filter(FileHeader::isFileHeader)
+                    .findFirst()
+                    .orElse(null);
+                assertThat(fileHeader).isNotNull();
+                assertThat(fileHeader.getFileName()).isEqualTo("files\\test\\short-text.txt");
+                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                    archive.extractFile(fileHeader, baos);
+                    assertThat(baos.toString()).isEqualTo("Short text for example");
+                }
+                assertThat(fileHeader.getMTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 24, 19, 191));
+                assertThat(fileHeader.getLastModifiedTime()).isEqualTo(toFileTime(fileHeader.getMTime(), 543300));
+                assertThat(fileHeader.getCTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 34, 59, 759));
+                assertThat(fileHeader.getCreationTime()).isEqualTo(toFileTime(fileHeader.getCTime(), 754700));
+                assertThat(fileHeader.getATime()).isEqualTo(toDate(2022, MARCH, 2, 18, 45, 18, 694));
+                assertThat(fileHeader.getLastAccessTime()).isEqualTo(toFileTime(fileHeader.getATime(), 91100));
+            }
+        }
+        TimeZone.setDefault(defaultTimezone);
     }
 
     @Nested
