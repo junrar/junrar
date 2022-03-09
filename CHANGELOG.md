@@ -1,3 +1,10 @@
+# [7.5.0](https://github.com/andrebrait/junrar/compare/v7.4.1...v7.5.0) (2022-03-09)
+
+
+### Features
+
+* allow disabling the thread pool executor ([8bd46f6](https://github.com/andrebrait/junrar/commit/8bd46f693f71f59b8010fb53b6acb0e6bd7e8509))
+
 ## [7.4.1](https://github.com/andrebrait/junrar/compare/v7.4.0...v7.4.1) (2022-03-02)
 
 
