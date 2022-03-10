@@ -481,6 +481,10 @@ public abstract class Unpack20 extends Unpack15 {
             Arrays.fill(AudV, new AudioVariables());
             // memset(UnpOldTable20,0,sizeof(UnpOldTable20));
             Arrays.fill(UnpOldTable20, (byte) 0);
+            // memset(MD,0,sizeof(MD));
+            for (int i = 0; i < MD.length; i++) {
+                MD[i] = new MultDecode();
+            }
         }
     }
 
