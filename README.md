@@ -69,13 +69,28 @@ Junrar.extract(resourceAsStream, tempFolder);
 ```java
 // Assuming you already have an InputStream from the rar file and an OutputStream for writing to
 final Archive archive = new Archive(inputStream);
-  while (true) {
-      FileHeader fileHeader = archive.nextFileHeader();
-      if (fileHeader == null) {
-          break;
-      }
-      archive.extractFile(fileHeader, outputStream); 
+while (true) {
+  FileHeader fileHeader = archive.nextFileHeader();
+  if (fileHeader == null) {
+      break;
   }
+  archive.extractFile(fileHeader, outputStream); 
+}
+```
+
+### Extract from an InputStream to an InputStream
+```java
+// Assuming you already have an InputStream from the rar file and an OutputStream for writing to
+final Archive archive = new Archive(inputStream);
+while (true) {
+  FileHeader fileHeader = archive.nextFileHeader();
+  if (fileHeader == null) {
+      break;
+  }
+  InputStream is = archive.getInputStream(fileHeader);
+  // Then use the InputStream for any method that uses that as an input, ex.:
+  Files.copy(is, Paths.get("destinationFile.txt"));
+}
 ```
 
 ### List files
@@ -99,3 +114,22 @@ Junrar.extract(resourceAsStream, tempFolder, "password");
 ```java
 Junrar.extract("/tmp/foo.001.rar", "/tmp");
 ```
+
+## Configuration
+
+Junrar allows for some tuning using System Properties:
+
+- Options for `Archive#getInputStream(FileHeader)`:
+  - `junrar.extractor.buffer-size`: accepts any positive integer. Defaults to `32 * 1024`. 
+    - Sets the maximum size used for the dynamic byte buffer in the `PipedInputStream`.
+  - `junrar.extractor.use-executor`: accepts either `true` or `false`. Defaults to `true`.
+    - If `true`, it uses a cached thread pool for extracting the contents, which is generally faster.
+    - If `false`, it will create a new thread on each call. This may be slower, but may require slightly less memory.
+    - Options for tuning the thread pool:
+      - `junrar.extractor.max-threads`: accepts any positive integer. Defaults to `2^31`.
+        - Sets the maximum number of threads to be used in the pool. By default, there is no hard limit on the number 
+          of threads, but they are only created when needed, so the maximum should not exceed the number of threads 
+          calling this method at any given moment. Use this if you need to restrict the number of threads.
+      - `junrar.extractor.thread-keep-alive-seconds`: accepts any positive integer. Defaults to `5`. 
+        - Sets the number of seconds a thread can be kept alive in the pool, waiting for a next extraction operation. 
+          After that time, the thread may be stopped.
