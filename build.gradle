@@ -15,23 +15,32 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
 
-    testRuntimeOnly 'ch.qos.logback:logback-classic:1.2.3'
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
-    testImplementation 'commons-io:commons-io:2.8.0'
-    testImplementation 'org.mockito:mockito-core:3.8.0'
-    testImplementation 'org.assertj:assertj-core:3.19.0'
-    testImplementation("com.tngtech.archunit:archunit-junit5:0.17.0")
+    testRuntimeOnly 'ch.qos.logback:logback-classic:1.2.11'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'commons-io:commons-io:2.11.0'
+    testImplementation 'org.mockito:mockito-core:4.3.1'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
+    testImplementation 'com.tngtech.archunit:archunit-junit5:0.23.0'
     testImplementation 'org.junit-pioneer:junit-pioneer:1.6.1'
 }
 
 group = 'com.github.junrar'
 description = 'rar decompression library in plain java'
 
+java {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
+// Set the '--release' compiler option if compiling on Java > 1.8.
+// Prevents the bytecode from being incompatible with Java 8.
+compileJava {
+    if (JavaVersion.current() > JavaVersion.VERSION_1_8) {
+        options.release.set(8)
+    }
+}
 
 java {
     withJavadocJar()
@@ -79,6 +88,7 @@ publishing {
 }
 
 signing {
+    required { false }
     def signingKey = findProperty('signingKey')
     def signingPassword = findProperty('signingPassword')
     useInMemoryPgpKeys(signingKey, signingPassword)
