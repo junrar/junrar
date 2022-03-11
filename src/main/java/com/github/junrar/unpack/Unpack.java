@@ -739,11 +739,11 @@ public final class Unpack extends Unpack20 {
     }
 
     private boolean readVMCode() throws IOException, RarException {
-        int FirstByte = getbits() >> 8;
+        int FirstByte = getbits() >>> 8;
         addbits(8);
         int Length = (FirstByte & 7) + 1;
         if (Length == 7) {
-            Length = (getbits() >> 8) + 7;
+            Length = (getbits() >>> 8) + 7;
             addbits(8);
         } else if (Length == 8) {
             Length = getbits();
@@ -754,7 +754,7 @@ public final class Unpack extends Unpack20 {
             if (inAddr >= readTop - 1 && !unpReadBuf() && I < Length - 1) {
                 return (false);
             }
-            vmCode.add((byte) (getbits() >> 8));
+            vmCode.add((byte) (getbits() >>> 8));
             addbits(8);
         }
         return (addVMCode(FirstByte, vmCode, Length));
@@ -895,7 +895,7 @@ public final class Unpack extends Unpack20 {
                 if (Inp.Overflow(3)) {
                     return (false);
                 }
-                VMCode[I] = (byte) (Inp.fgetbits() >> 8);
+                VMCode[I] = (byte) (Inp.fgetbits() >>> 8);
                 Inp.faddbits(8);
             }
             // VM.Prepare(&VMCode[0],VMCodeSize,&Filter->Prg);
