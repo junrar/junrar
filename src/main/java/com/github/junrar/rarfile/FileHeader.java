@@ -265,10 +265,10 @@ public class FileHeader extends BlockHeader {
         StringBuilder str = new StringBuilder();
         str.append("unpSize: " + getUnpSize());
         str.append("\nHostOS: " + hostOS.name());
-        str.append("\nMTime: " + mTime);
-        str.append("\nCTime: " + cTime);
-        str.append("\nATime: " + aTime);
-        str.append("\nArcTime: " + arcTime);
+        str.append("\nMTime: ").append(mTime);
+        str.append("\nCTime: ").append(cTime);
+        str.append("\nATime: ").append(aTime);
+        str.append("\nArcTime: ").append(arcTime);
         str.append("\nFileName: " + fileName);
         str.append("\nFileNameW: " + fileNameW);
         str.append("\nunpMethod: " + Integer.toHexString(getUnpMethod()));
