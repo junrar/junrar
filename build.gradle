@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
+    id 'signing'
     id 'checkstyle'
     id 'jacoco'
     id 'com.github.ben-manes.versions' version '0.38.0'
@@ -85,17 +86,12 @@ publishing {
     }
 }
 
-// Run Gradle with '-Pskip.signing' to skip signing the artifact
-// Useful for testing it locally on another project
-// Ex.: ./gradlew publishToMavenLocal "-Pskip.signing"
-if (!project.hasProperty('skip.signing')) {
-    apply plugin: 'signing'
-    signing {
-        def signingKey = findProperty('signingKey')
-        def signingPassword = findProperty('signingPassword')
-        useInMemoryPgpKeys(signingKey, signingPassword)
-        sign publishing.publications.mavenJava
-    }
+signing {
+    required { false }
+    def signingKey = findProperty('signingKey')
+    def signingPassword = findProperty('signingPassword')
+    useInMemoryPgpKeys(signingKey, signingPassword)
+    sign publishing.publications.mavenJava
 }
 
 nexusPublishing {
