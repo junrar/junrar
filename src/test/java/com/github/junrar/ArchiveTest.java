@@ -17,15 +17,16 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.CrcErrorException;
+import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junitpioneer.jupiter.DefaultTimeZone;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
@@ -43,17 +44,6 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 
 
 public class ArchiveTest {
-
-    private static Date toDate(int year, int month, int day, int hour, int minute, int second, int millis) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(year, month, day, hour, minute, second);
-        calendar.set(Calendar.MILLISECOND, millis);
-        return calendar.getTime();
-    }
-
-    private static FileTime toFileTime(Date date, long nanos) {
-        return FileTime.from(Instant.ofEpochMilli(date.getTime()).plus(nanos, ChronoUnit.NANOS));
-    }
 
     @Test
     public void testTikaDocs() throws Exception {
@@ -94,36 +84,71 @@ public class ArchiveTest {
 
      Ensure the fields remain constant across timezones.
      */
-    @ParameterizedTest
-    @ValueSource(strings = {"America/Los_Angeles", "America/Sao_Paulo", "Europe/Amsterdam", "Asia/Kolkata", "default"})
-    public void testArchiveExtTimes(String timeZone) throws Exception {
-        TimeZone defaultTimezone = TimeZone.getDefault();
-        if (!"default".equals(timeZone)) {
-            TimeZone.setDefault(TimeZone.getTimeZone(timeZone));
+    @Nested
+    class ExtendedTimeTest {
+        @Test
+        @DefaultTimeZone("America/Los_Angeles")
+        public void testArchiveExtTimes_LosAngeles() throws Exception {
+            assertThat(TimeZone.getDefault()).isEqualTo(TimeZone.getTimeZone("America/Los_Angeles"));
+            testArchiveExtTimes();
         }
-        try (InputStream is = getClass().getResourceAsStream("rar4-ext_time.rar")) {
-            try (Archive archive = new Archive(is)) {
-                assertThat(archive.getMainHeader().isSolid()).isFalse();
 
-                FileHeader fileHeader = archive.getFileHeaders().stream()
-                    .filter(FileHeader::isFileHeader)
-                    .findFirst()
-                    .orElse(null);
-                assertThat(fileHeader).isNotNull();
-                assertThat(fileHeader.getFileName()).isEqualTo("files\\test\\short-text.txt");
-                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                    archive.extractFile(fileHeader, baos);
-                    assertThat(baos.toString()).isEqualTo("Short text for example");
+        @Test
+        @DefaultTimeZone("America/Sao_Paulo")
+        public void testArchiveExtTimes_SaoPaulo() throws Exception {
+            assertThat(TimeZone.getDefault()).isEqualTo(TimeZone.getTimeZone("America/Sao_Paulo"));
+            testArchiveExtTimes();
+        }
+
+        @Test
+        @DefaultTimeZone("Europe/Amsterdam")
+        public void testArchiveExtTimes_Amsterdam() throws Exception {
+            assertThat(TimeZone.getDefault()).isEqualTo(TimeZone.getTimeZone("Europe/Amsterdam"));
+            testArchiveExtTimes();
+        }
+
+        @Test
+        @DefaultTimeZone("Asia/Kolkata")
+        public void testArchiveExtTimes_Kolkata() throws Exception {
+            assertThat(TimeZone.getDefault()).isEqualTo(TimeZone.getTimeZone("Asia/Kolkata"));
+            testArchiveExtTimes();
+        }
+
+        private void testArchiveExtTimes() throws IOException, RarException {
+            try (InputStream is = getClass().getResourceAsStream("rar4-ext_time.rar")) {
+                try (Archive archive = new Archive(is)) {
+                    assertThat(archive.getMainHeader().isSolid()).isFalse();
+
+                    FileHeader fileHeader = archive.getFileHeaders().stream()
+                        .filter(FileHeader::isFileHeader)
+                        .findFirst()
+                        .orElse(null);
+                    assertThat(fileHeader).isNotNull();
+                    assertThat(fileHeader.getFileName()).isEqualTo("files\\test\\short-text.txt");
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(fileHeader, baos);
+                        assertThat(baos.toString()).isEqualTo("Short text for example");
+                    }
+                    assertThat(fileHeader.getMTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 24, 19, 191));
+                    assertThat(fileHeader.getLastModifiedTime()).isEqualTo(toFileTime(fileHeader.getMTime(), 543300));
+                    assertThat(fileHeader.getCTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 34, 59, 759));
+                    assertThat(fileHeader.getCreationTime()).isEqualTo(toFileTime(fileHeader.getCTime(), 754700));
+                    assertThat(fileHeader.getATime()).isEqualTo(toDate(2022, MARCH, 2, 18, 45, 18, 694));
+                    assertThat(fileHeader.getLastAccessTime()).isEqualTo(toFileTime(fileHeader.getATime(), 91100));
                 }
-                assertThat(fileHeader.getMTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 24, 19, 191));
-                assertThat(fileHeader.getLastModifiedTime()).isEqualTo(toFileTime(fileHeader.getMTime(), 543300));
-                assertThat(fileHeader.getCTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 34, 59, 759));
-                assertThat(fileHeader.getCreationTime()).isEqualTo(toFileTime(fileHeader.getCTime(), 754700));
-                assertThat(fileHeader.getATime()).isEqualTo(toDate(2022, MARCH, 2, 18, 45, 18, 694));
-                assertThat(fileHeader.getLastAccessTime()).isEqualTo(toFileTime(fileHeader.getATime(), 91100));
             }
         }
-        TimeZone.setDefault(defaultTimezone);
+
+        private Date toDate(int year, int month, int day, int hour, int minute, int second, int millis) {
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(year, month, day, hour, minute, second);
+            calendar.set(Calendar.MILLISECOND, millis);
+            return calendar.getTime();
+        }
+
+        private FileTime toFileTime(Date date, long nanos) {
+            return FileTime.from(Instant.ofEpochMilli(date.getTime()).plus(nanos, ChronoUnit.NANOS));
+        }
     }
 
     @Nested
