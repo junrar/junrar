@@ -43,9 +43,7 @@ public class FileHeader extends BlockHeader {
 
     private static final byte NEWLHD_SIZE = 32;
 
-    private static final long NANOS_PER_SECOND = 1_000_000_000L;
     private static final long NANOS_PER_UNIT = 100L; // 100ns units
-    private static final long MILLIS_PER_SECOND = 1000L;
 
     private long unpSize;
 
@@ -239,7 +237,7 @@ public class FileHeader extends BlockHeader {
             if (baseTime != null) {
                 seconds = baseTime.to(TimeUnit.SECONDS);
             } else {
-                seconds = getDateDos(Raw.readIntLittleEndian(fileHeader, position)) / MILLIS_PER_SECOND;
+                seconds = TimeUnit.MILLISECONDS.toSeconds(getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
                 position += 4;
             }
             int count = flag & 0x3;
@@ -251,7 +249,7 @@ public class FileHeader extends BlockHeader {
             }
             long nanos = remainder * NANOS_PER_UNIT;
             if ((flag & 0x4) != 0) {
-                nanos += NANOS_PER_SECOND;
+                nanos += TimeUnit.SECONDS.toNanos(1);
             }
             FileTime time = FileTime.from(Instant.ofEpochSecond(seconds, nanos));
             return new TimePositionTuple(position, time);
