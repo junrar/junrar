@@ -26,6 +26,7 @@ import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -236,7 +237,7 @@ public class FileHeader extends BlockHeader {
         if ((flag & 0x8) != 0) {
             long seconds;
             if (baseTime != null) {
-                seconds = baseTime.toMillis() / MILLIS_PER_SECOND;
+                seconds = baseTime.to(TimeUnit.SECONDS);
             } else {
                 seconds = getDateDos(Raw.readIntLittleEndian(fileHeader, position)) / MILLIS_PER_SECOND;
                 position += 4;
