@@ -87,9 +87,10 @@ while (true) {
   if (fileHeader == null) {
       break;
   }
-  InputStream is = archive.getInputStream(fileHeader);
-  // Then use the InputStream for any method that uses that as an input, ex.:
-  Files.copy(is, Paths.get("destinationFile.txt"));
+  try (InputStream is = archive.getInputStream(fileHeader)) {
+      // Then use the InputStream for any method that uses that as an input, ex.:
+      Files.copy(is, Paths.get("destinationFile.txt"));
+  }
 }
 ```
 
