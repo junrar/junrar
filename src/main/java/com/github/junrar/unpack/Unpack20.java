@@ -467,9 +467,7 @@ public abstract class Unpack20 extends Unpack15 {
                     Compress.RC20);
         }
         // memcpy(UnpOldTable20,Table,sizeof(UnpOldTable20));
-        for (int i = 0; i < UnpOldTable20.length; i++) {
-            UnpOldTable20[i] = Table[i];
-        }
+        System.arraycopy(Table, 0, UnpOldTable20, 0, UnpOldTable20.length);
         return (true);
     }
 
@@ -478,9 +476,15 @@ public abstract class Unpack20 extends Unpack15 {
             UnpChannelDelta = UnpCurChannel = 0;
             UnpChannels = 1;
             // memset(AudV,0,sizeof(AudV));
-            Arrays.fill(AudV, new AudioVariables());
+            for (int i = 0; i < AudV.length; i++) {
+                AudV[i] = new AudioVariables();
+            }
             // memset(UnpOldTable20,0,sizeof(UnpOldTable20));
             Arrays.fill(UnpOldTable20, (byte) 0);
+            // memset(MD,0,sizeof(MD));
+            for (int i = 0; i < MD.length; i++) {
+                MD[i] = new MultDecode();
+            }
         }
     }
 

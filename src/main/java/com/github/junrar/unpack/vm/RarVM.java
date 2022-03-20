@@ -125,10 +125,10 @@ public class RarVM extends BitInput {
 //        mem[offset + 3] = (byte) ((value >>> 24)&0xff);
     }
     public void setLowEndianValue(Vector<Byte> mem, int offset, int value) {
-        mem.set(offset + 0, Byte.valueOf((byte) (value & 0xff)));
-        mem.set(offset + 1, Byte.valueOf((byte) ((value >>> 8) & 0xff)));
-        mem.set(offset + 2, Byte.valueOf((byte) ((value >>> 16) & 0xff)));
-        mem.set(offset + 3, Byte.valueOf((byte) ((value >>> 24) & 0xff)));
+        mem.set(offset + 0, (byte) (value & 0xff));
+        mem.set(offset + 1, (byte) ((value >>> 8) & 0xff));
+        mem.set(offset + 2, (byte) ((value >>> 16) & 0xff));
+        mem.set(offset + 3, (byte) ((value >>> 24) & 0xff));
     }
     private int getOperand(VMPreparedOperand cmdOp) {
         int ret = 0;
@@ -675,7 +675,7 @@ public class RarVM extends BitInput {
                 long dataSize = (long) ((long) ReadData(this) & 0xffFFffFF + 1);
                 for (int i = 0; inAddr < codeSize && i < dataSize; i++) {
                     prg.getStaticData().add(
-                        Byte.valueOf((byte) (fgetbits() >>> 8)));
+                            (byte) (fgetbits() >>> 8));
                     faddbits(8);
                 }
             }

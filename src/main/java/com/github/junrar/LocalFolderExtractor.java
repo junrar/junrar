@@ -66,7 +66,7 @@ class LocalFolderExtractor {
             try {
                 f = makeFile(destination, name);
             } catch (final IOException e) {
-                logger.error("error creating the new file: " + f.getName(), e);
+                logger.error("error creating the new file: {}", f.getName(), e);
             }
         }
         return f;

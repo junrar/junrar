@@ -19,9 +19,12 @@ package com.github.junrar;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.rarfile.HostSystem;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -53,13 +56,74 @@ public class ArchiveTest {
             assertThat(archive.isPasswordProtected()).isFalse();
             assertThat(archive.isEncrypted()).isFalse();
 
-            FileHeader fileHeader = archive.nextFileHeader();
-            int i = 0;
-            while (fileHeader != null) {
-                assertThat(fileHeader.getFileName()).contains(expected[i++]);
-                assertThat(fileHeader.getUnpSize()).isEqualTo(Long.parseLong(expected[i++]));
-                fileHeader = archive.nextFileHeader();
+            for (int i = 0; i < expected.length; i += 2) {
+                FileHeader fileHeader = archive.nextFileHeader();
+                assertThat(fileHeader).isNotNull();
+                assertThat(fileHeader.getFileName()).contains(expected[i]);
+                assertThat(fileHeader.getUnpSize()).isEqualTo(Long.parseLong(expected[i + 1]));
+                assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
             }
+
+            assertThat(archive.nextFileHeader()).isNull();
+        }
+    }
+
+    @ValueSource(strings = {
+        "audio/BoatModernEnglish-audio-text-unpack30.rar",  // special audio/text compression enabled, RAR 2.9
+        "audio/BoatModernEnglish-audio-text-unpack20.rar",  // special audio/text compression enabled, RAR 2.0
+        "audio/BoatModernEnglish-regular-unpack30.rar",     // special audio/text compression disabled, RAR 2.9
+        "audio/BoatModernEnglish-regular-unpack20.rar",     // special audio/text compression disabled, RAR 2.0
+        "audio/BoatModernEnglish-regular-unpack15-dos.rar", // special audio/text compression disabled, RAR 1.5 DOS
+        "audio/BoatModernEnglish-regular-unpack15-win.rar"  // special audio/text compression disabled, RAR 1.5 Windows
+    })
+    @ParameterizedTest
+    public void testAudioDecompression(String fileName) throws Exception {
+        File f = new File(getClass().getResource(fileName).toURI());
+        try (Archive archive = new Archive(f)) {
+            assertThat(archive.isPasswordProtected()).isFalse();
+            assertThat(archive.isEncrypted()).isFalse();
+
+            FileHeader fileHeader = archive.nextFileHeader();
+            boolean isDos = fileName.endsWith("-dos.rar");
+            if (isDos) {
+                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.msdos);
+                assertThat(fileHeader.getFileName()).isEqualTo("BOATMO~1.WAV");
+            } else {
+                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.win32);
+                assertThat(fileHeader.getFileName()).isEqualTo("BoatModernEnglish.wav");
+            }
+            assertThat(fileHeader.getUnpSize()).isEqualTo(56464);
+            assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
+            byte[] audioData;
+            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                archive.extractFile(fileHeader, baos);
+                audioData = baos.toByteArray();
+            }
+            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                try (InputStream is = getClass().getResource("audio/BoatModernEnglish.wav").openStream()) {
+                    IOUtils.copy(is, baos);
+                }
+                byte[] expectedAudioData = baos.toByteArray();
+                assertThat(audioData).containsExactly(expectedAudioData);
+            }
+
+            fileHeader = archive.nextFileHeader();
+            if (isDos) {
+                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.msdos);
+                assertThat(fileHeader.getFileName()).isEqualTo("LICENSE.TXT");
+            } else {
+                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.win32);
+                assertThat(fileHeader.getFileName()).isEqualTo("LICENSE.txt");
+            }
+            assertThat(fileHeader.getUnpSize()).isEqualTo(107);
+            assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
+            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                archive.extractFile(fileHeader, baos);
+                assertThat(baos.toString()).isEqualTo("UofG Language Modules, CC BY-SA 4.0 "
+                    + "<https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons");
+            }
+
+            assertThat(archive.nextFileHeader()).isNull();
         }
     }
 

@@ -99,19 +99,21 @@ public class MainHeader extends BaseBlock {
 
     public void print() {
         super.print();
-        StringBuilder str = new StringBuilder();
-        str.append("posav: " + getPosAv());
-        str.append("\nhighposav: " + getHighPosAv());
-        str.append("\nhasencversion: " + hasEncryptVersion() + (hasEncryptVersion() ? getEncryptVersion() : ""));
-        str.append("\nhasarchcmt: " + hasArchCmt());
-        str.append("\nisEncrypted: " + isEncrypted());
-        str.append("\nisMultivolume: " + isMultiVolume());
-        str.append("\nisFirstvolume: " + isFirstVolume());
-        str.append("\nisSolid: " + isSolid());
-        str.append("\nisLocked: " + isLocked());
-        str.append("\nisProtected: " + isProtected());
-        str.append("\nisAV: " + isAV());
-        logger.info(str.toString());
+        if (logger.isInfoEnabled()) {
+            StringBuilder str = new StringBuilder();
+            str.append("posav: ").append(getPosAv());
+            str.append("\nhighposav: ").append(getHighPosAv());
+            str.append("\nhasencversion: ").append(hasEncryptVersion()).append(hasEncryptVersion() ? getEncryptVersion() : "");
+            str.append("\nhasarchcmt: ").append(hasArchCmt());
+            str.append("\nisEncrypted: ").append(isEncrypted());
+            str.append("\nisMultivolume: ").append(isMultiVolume());
+            str.append("\nisFirstvolume: ").append(isFirstVolume());
+            str.append("\nisSolid: ").append(isSolid());
+            str.append("\nisLocked: ").append(isLocked());
+            str.append("\nisProtected: ").append(isProtected());
+            str.append("\nisAV: ").append(isAV());
+            logger.info(str.toString());
+        }
     }
 
     /**
