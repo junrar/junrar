@@ -22,8 +22,11 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.nio.file.attribute.FileTime;
+import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -39,6 +42,8 @@ public class FileHeader extends BlockHeader {
     private static final byte SALT_SIZE = 8;
 
     private static final byte NEWLHD_SIZE = 32;
+
+    private static final long NANOS_PER_UNIT = 100L; // 100ns units
 
     private final long unpSize;
 
@@ -65,13 +70,13 @@ public class FileHeader extends BlockHeader {
 
     private final byte[] salt = new byte[SALT_SIZE];
 
-    private Date mTime;
+    private FileTime mTime;
 
-    private Date cTime;
+    private FileTime cTime;
 
-    private Date aTime;
+    private FileTime aTime;
 
-    private Date arcTime;
+    private FileTime arcTime;
 
     private long fullPackSize;
 
@@ -180,9 +185,71 @@ public class FileHeader extends BlockHeader {
                 position++;
             }
         }
-        mTime = getDateDos(fileTime);
-        // TODO rartime -> extended
 
+        mTime = FileTime.fromMillis(getDateDos(fileTime));
+
+        if (hasExtTime()) {
+            short extTimeFlags = Raw.readShortLittleEndian(fileHeader, position);
+            position += 2;
+
+            TimePositionTuple mTimeTuple = parseExtTime(12, extTimeFlags, fileHeader, position, mTime);
+            mTime = mTimeTuple.time;
+            position = mTimeTuple.position;
+
+            TimePositionTuple cTimeTuple = parseExtTime(8, extTimeFlags, fileHeader, position);
+            cTime = cTimeTuple.time;
+            position = cTimeTuple.position;
+
+            TimePositionTuple aTimeTuple = parseExtTime(4, extTimeFlags, fileHeader, position);
+            aTime = aTimeTuple.time;
+            position = aTimeTuple.position;
+
+            TimePositionTuple arcTimeTuple = parseExtTime(0, extTimeFlags, fileHeader, position);
+            arcTime = arcTimeTuple.time;
+            position = arcTimeTuple.position;
+        }
+    }
+
+    private static final class TimePositionTuple {
+        private final int position;
+        private final FileTime time;
+
+        private TimePositionTuple(int position, FileTime time) {
+            this.position = position;
+            this.time = time;
+        }
+    }
+
+    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position) {
+        return parseExtTime(shift, flags, fileHeader, position, null);
+    }
+
+    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
+        int flag = flags >>> shift;
+        if ((flag & 0x8) != 0) {
+            long seconds;
+            if (baseTime != null) {
+                seconds = baseTime.to(TimeUnit.SECONDS);
+            } else {
+                seconds = TimeUnit.MILLISECONDS.toSeconds(getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
+                position += 4;
+            }
+            int count = flag & 0x3;
+            long remainder = 0;
+            for (int i = 0; i < count; i++) {
+                int b = fileHeader[position] & 0xff;
+                remainder = (b << 16) | (remainder >>> 8);
+                position++;
+            }
+            long nanos = remainder * NANOS_PER_UNIT;
+            if ((flag & 0x4) != 0) {
+                nanos += TimeUnit.SECONDS.toNanos(1);
+            }
+            FileTime time = FileTime.from(Instant.ofEpochSecond(seconds, nanos));
+            return new TimePositionTuple(position, time);
+        } else {
+            return new TimePositionTuple(position, baseTime);
+        }
     }
 
     @Override
@@ -192,7 +259,10 @@ public class FileHeader extends BlockHeader {
             StringBuilder str = new StringBuilder();
             str.append("unpSize: ").append(getUnpSize());
             str.append("\nHostOS: ").append(hostOS.name());
-            str.append("\nMDate: ").append(mTime);
+            str.append("\nMTime: ").append(mTime);
+            str.append("\nCTime: ").append(cTime);
+            str.append("\nATime: ").append(aTime);
+            str.append("\nArcTime: ").append(arcTime);
             str.append("\nFileName: ").append(fileName);
             str.append("\nFileNameW: ").append(fileNameW);
             str.append("\nunpMethod: ").append(Integer.toHexString(getUnpMethod()));
@@ -216,7 +286,7 @@ public class FileHeader extends BlockHeader {
         }
     }
 
-    private Date getDateDos(int time) {
+    private static long getDateDos(int time) {
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR, (time >>> 25) + 1980);
         cal.set(Calendar.MONTH, ((time >>> 21) & 0x0f) - 1);
@@ -225,31 +295,132 @@ public class FileHeader extends BlockHeader {
         cal.set(Calendar.MINUTE, (time >>> 5) & 0x3f);
         cal.set(Calendar.SECOND, (time & 0x1f) * 2);
         cal.set(Calendar.MILLISECOND, 0);
-        return cal.getTime();
+        return cal.getTimeInMillis();
     }
 
-    public Date getArcTime() {
+    private static Date toDate(FileTime time) {
+        return time != null ? new Date(time.toMillis()) : null;
+    }
+
+    private static FileTime toFileTime(Date time) {
+        return time != null ? FileTime.fromMillis(time.getTime()) : null;
+    }
+
+    /**
+     * The time in which the file was archived.
+     * Corresponds to te {@link FileHeader#arcTime} field.
+     *
+     * @return the timestamp, or null if absent.
+     */
+    public FileTime getArchivalTime() {
         return arcTime;
     }
 
-    public void setArcTime(Date arcTime) {
-        this.arcTime = arcTime;
+    /**
+     * Sets the time in which the file was archived.
+     * Corresponds to te {@link FileHeader#arcTime} field.
+     *
+     * @param archivalTime the timestamp, or null to clear it.
+     */
+    public void setArchivalTime(FileTime archivalTime) {
+        this.arcTime = archivalTime;
     }
 
-    public Date getATime() {
+    /**
+     * Gets {@link FileHeader#getArchivalTime()} as a {@link Date}.
+     * The maximum granularity is reduced from microseconds to milliseconds.
+     *
+     * @return the date, or null if absent.
+     */
+    public Date getArcTime() {
+        return toDate(getArchivalTime());
+    }
+
+    /**
+     * Sets {@link FileHeader#setArchivalTime(FileTime)} from a {@link Date}.
+     *
+     * @param arcTime the date, or null to clear it.
+     */
+    public void setArcTime(Date arcTime) {
+        setArchivalTime(toFileTime(arcTime));
+    }
+
+    /**
+     * The time in which the file was last accessed.
+     * Corresponds to te {@link FileHeader#aTime} field.
+     *
+     * @return the timestamp, or null if absent.
+     */
+    public FileTime getLastAccessTime() {
         return aTime;
     }
 
-    public void setATime(Date time) {
+    /**
+     * Sets the time in which the file was last accessed.
+     * Corresponds to te {@link FileHeader#aTime} field.
+     *
+     * @param time the timestamp, or null to clear it.
+     */
+    public void setLastAccessTime(FileTime time) {
         aTime = time;
     }
 
-    public Date getCTime() {
+    /**
+     * Gets {@link FileHeader#getLastAccessTime()} as a {@link Date}.
+     * The maximum granularity is reduced from microseconds to milliseconds.
+     *
+     * @return the date, or null if absent.
+     */
+    public Date getATime() {
+        return toDate(getLastAccessTime());
+    }
+
+    /**
+     * Sets {@link FileHeader#setLastAccessTime(FileTime)} from a {@link Date}.
+     *
+     * @param time the date, or null to clear it.
+     */
+    public void setATime(Date time) {
+        setLastAccessTime(toFileTime(time));
+    }
+
+    /**
+     * The time in which the file was created.
+     * Corresponds to te {@link FileHeader#cTime} field.
+     *
+     * @return the timestamp, or null if absent.
+     */
+    public FileTime getCreationTime() {
         return cTime;
     }
 
-    public void setCTime(Date time) {
+    /**
+     * Sets the time in which the file was created.
+     * Corresponds to te {@link FileHeader#cTime} field.
+     *
+     * @param time the timestamp, or null to clear it.
+     */
+    public void setCreationTime(FileTime time) {
         cTime = time;
+    }
+
+    /**
+     * Gets {@link FileHeader#getCreationTime()} as a {@link Date}.
+     * The maximum granularity is reduced from microseconds to milliseconds.
+     *
+     * @return the date, or null if absent.
+     */
+    public Date getCTime() {
+        return toDate(getCreationTime());
+    }
+
+    /**
+     * Sets {@link FileHeader#setCreationTime(FileTime)} from a {@link Date}.
+     *
+     * @param time the date, or null to clear it.
+     */
+    public void setCTime(Date time) {
+        setCreationTime(toFileTime(time));
     }
 
     public int getFileAttr() {
@@ -310,12 +481,43 @@ public class FileHeader extends BlockHeader {
         return hostOS;
     }
 
-    public Date getMTime() {
+    /**
+     * The time in which the file was last modified.
+     * Corresponds to te {@link FileHeader#mTime} field.
+     *
+     * @return the timestamp, or null if absent.
+     */
+    public FileTime getLastModifiedTime() {
         return mTime;
     }
 
-    public void setMTime(Date time) {
+    /**
+     * Sets the time in which the file was last modified.
+     * Corresponds to te {@link FileHeader#mTime} field.
+     *
+     * @param time the timestamp, or null to clear it.
+     */
+    public void setLastModifiedTime(FileTime time) {
         mTime = time;
+    }
+
+    /**
+     * Gets {@link FileHeader#getLastModifiedTime()} as a {@link Date}.
+     * The maximum granularity is reduced from microseconds to milliseconds.
+     *
+     * @return the date, or null if absent.
+     */
+    public Date getMTime() {
+        return toDate(getLastModifiedTime());
+    }
+
+    /**
+     * Sets {@link FileHeader#setLastModifiedTime(FileTime)} from a {@link Date}.
+     *
+     * @param time the date, or null to clear it.
+     */
+    public void setMTime(Date time) {
+        setLastModifiedTime(toFileTime(time));
     }
 
     public short getNameSize() {
@@ -414,6 +616,10 @@ public class FileHeader extends BlockHeader {
 
     public boolean hasSalt() {
         return (flags & LHD_SALT) != 0;
+    }
+
+    public boolean hasExtTime() {
+        return (flags & LHD_EXTTIME) != 0;
     }
 
     public boolean isLargeBlock() {
