@@ -153,6 +153,31 @@ public class ArchiveTest {
         }
 
         @Test
+        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone_withInputStream() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
+                try (Archive archive = new Archive(is)) {
+                    assertThat(archive.getMainHeader().isSolid()).isTrue();
+
+                    List<FileHeader> fileHeaders = archive.getFileHeaders();
+                    assertThat(fileHeaders).hasSize(9);
+
+                    for (int i = 0; i < fileHeaders.size(); i++) {
+                        int index = i + 1;
+                        FileHeader fileHeader = fileHeaders.get(i);
+                        assertThat(fileHeader.getFileName()).isEqualTo("file" + index + ".txt");
+
+                        try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                            try (InputStream fis = archive.getInputStream(fileHeaders.get(i))) {
+                                IOUtils.copy(fis, baos);
+                            }
+                            assertThat(baos.toString()).isEqualTo("file" + index + "\n");
+                        }
+                    }
+                }
+            }
+        }
+
+        @Test
         public void givenSolidRar4File_whenExtractingOutOfOrder_thenExceptionIsThrown() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
                 try (Archive archive = new Archive(is)) {

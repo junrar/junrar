@@ -22,7 +22,7 @@ Commit messages are enforced using commit hooks ran on the developer's PC. To in
 
 ## Build process with Gradle
 
-The project uses Gradle for the build. You do not need to install Gradle, the Gradle wrapepr will install the required version for you.
+The project uses Gradle for the build. You do not need to install Gradle, the Gradle wrapper will install the required version for you.
 
 To run the tests, just run `./gradlew check`.
 
