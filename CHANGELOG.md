@@ -1,3 +1,23 @@
+# [7.5.0](https://github.com/junrar/junrar/compare/v7.4.1...v7.5.0) (2022-03-20)
+
+
+### Bug Fixes
+
+* crc errors on audio data decompression ([15f4afa](https://github.com/junrar/junrar/commit/15f4afa23eff69c2e0f3c906815777abf5ac267c))
+* NPE on audio data decompression ([952436b](https://github.com/junrar/junrar/commit/952436b204614a747fe8a401d213196cd326d818))
+
+
+### Features
+
+* parse extended time ([d5cc784](https://github.com/junrar/junrar/commit/d5cc784c937f461be1e71a7a92b4018af8aef8c7))
+* use thread pool for getInputStream ([a3383b0](https://github.com/junrar/junrar/commit/a3383b0dc4db5c5c29334abadd42688fa5ea583b))
+
+
+### Performance Improvements
+
+* performance optimizations ([36a5883](https://github.com/junrar/junrar/commit/36a58836c3abd042a9c2cb544d7bbf8aec7beeb7))
+* reduce array creation, unsigned shifts ([d276f93](https://github.com/junrar/junrar/commit/d276f937c0c328a4450164d138b3bc60db4f2542))
+
 ## [7.4.1](https://github.com/junrar/junrar/compare/v7.4.0...v7.4.1) (2022-01-27)
 
 
