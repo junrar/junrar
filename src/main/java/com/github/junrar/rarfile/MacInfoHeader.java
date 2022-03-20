@@ -73,8 +73,10 @@ public class MacInfoHeader extends SubBlockHeader {
 
     public void print() {
         super.print();
-        logger.info("filetype: " + fileType);
-        logger.info("creator :" + fileCreator);
+        if (logger.isInfoEnabled()) {
+            logger.info("filetype: {}", fileType);
+            logger.info("creator: {}", fileCreator);
+        }
     }
 
 }

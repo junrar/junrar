@@ -193,12 +193,14 @@ public class BaseBlock {
     }
 
     public void print() {
-        StringBuilder str = new StringBuilder();
-        str.append("HeaderType: " + getHeaderType());
-        str.append("\nHeadCRC: " + Integer.toHexString(getHeadCRC()));
-        str.append("\nFlags: " + Integer.toHexString(getFlags()));
-        str.append("\nHeaderSize: " + getHeaderSize(false));
-        str.append("\nPosition in file: " + getPositionInFile());
-        logger.info(str.toString());
+        if (logger.isInfoEnabled()) {
+            StringBuilder str = new StringBuilder();
+            str.append("HeaderType: ").append(getHeaderType());
+            str.append("\nHeadCRC: ").append(Integer.toHexString(getHeadCRC()));
+            str.append("\nFlags: ").append(Integer.toHexString(getFlags()));
+            str.append("\nHeaderSize: ").append(getHeaderSize(false));
+            str.append("\nPosition in file: ").append(getPositionInFile());
+            logger.info(str.toString());
+        }
     }
 }

@@ -49,9 +49,7 @@ public class Rijndael {
             rawpsw[i * 2] = pwd[i];
             rawpsw[i * 2 + 1] = 0;
         }
-        for (int i = 0; i < salt.length; i++) {
-            rawpsw[i + rawLength] = salt[i];
-        }
+        System.arraycopy(salt, 0, rawpsw, rawLength, salt.length);
 
         MessageDigest sha = MessageDigest.getInstance("sha-1");
 
@@ -63,7 +61,9 @@ public class Rijndael {
 
         for (int i = 0; i < HashRounds; i++) {
             bout.write(rawpsw);
-            bout.write(new byte[] {(byte) i, (byte) (i >> 8), (byte) (i >> 16)});
+            bout.write((byte) i);
+            bout.write((byte) (i >>> 8));
+            bout.write((byte) (i >>> 16));
 
             if (i % xh == 0) {
                 byte[] input = bout.toByteArray();
@@ -79,7 +79,7 @@ public class Rijndael {
             for (int j = 0; j < 4; j++) {
                 AESKey[i * 4 + j] = (byte) (((digest[i * 4] * 0x1000000) & 0xff000000
                         | ((digest[i * 4 + 1] * 0x10000) & 0xff0000) | ((digest[i * 4 + 2] * 0x100) & 0xff00)
-                        | digest[i * 4 + 3] & 0xff) >> (j * 8));
+                        | digest[i * 4 + 3] & 0xff) >>> (j * 8));
             }
         }
 
