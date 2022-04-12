@@ -21,11 +21,14 @@ jobs:
           java-version: ${{ matrix.java }}
           java-package: 'jdk'
           distribution: 'temurin'
-          cache: 'gradle'
       - name: Build
-        run: ./gradlew build
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: build
       - name: Jacoco
-        run: ./gradlew jacocoTestReport
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: jacocoTestReport
       - uses: codecov/codecov-action@v2
         if: matrix.java == '8'
 
