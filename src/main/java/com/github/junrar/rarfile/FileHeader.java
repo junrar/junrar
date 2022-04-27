@@ -189,8 +189,14 @@ public class FileHeader extends BlockHeader {
         mTime = FileTime.fromMillis(getDateDos(fileTime));
 
         if (hasExtTime()) {
-            short extTimeFlags = Raw.readShortLittleEndian(fileHeader, position);
-            position += 2;
+            short extTimeFlags;
+            if (position + 1 < fileHeader.length) {
+                extTimeFlags = Raw.readShortLittleEndian(fileHeader, position);
+                position += 2;
+            } else {
+                extTimeFlags = 0;
+                logger.warn("FileHeader for entry '{}' signals extended time data, but does not contain any", (getFileName()));
+            }
 
             TimePositionTuple mTimeTuple = parseExtTime(12, extTimeFlags, fileHeader, position, mTime);
             mTime = mTimeTuple.time;
@@ -642,6 +648,6 @@ public class FileHeader extends BlockHeader {
      * @since 7.2.0
      */
     public String getFileName() {
-        return isUnicode() ? fileNameW : fileName;
+        return isUnicode() && fileNameW != null && !fileNameW.isEmpty() ? fileNameW : fileName;
     }
 }
