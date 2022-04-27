@@ -7,4 +7,8 @@ public class CorruptHeaderException extends RarException {
 
     public CorruptHeaderException() {
     }
+
+    public CorruptHeaderException(String message) {
+        super(message);
+    }
 }

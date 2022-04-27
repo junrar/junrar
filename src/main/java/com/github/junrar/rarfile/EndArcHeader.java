@@ -47,6 +47,19 @@ public class EndArcHeader extends BaseBlock {
         }
     }
 
+    public boolean isValid() {
+        if (!(getHeadCRC() == 0x3DC4)) {
+            return false;
+        }
+        if (!(getHeaderType() == UnrarHeadertype.EndArcHeader)) {
+            return false;
+        }
+        if (!(getFlags() == 0x4000)) {
+            return false;
+        }
+        return getHeaderSize(false) == BaseBlockSize;
+    }
+
     public int getArchiveDataCRC() {
         return archiveDataCRC;
     }

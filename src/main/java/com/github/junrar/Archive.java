@@ -355,6 +355,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             throw new BadRarArchiveException();
                         }
                     }
+                    if (!markHead.isValid()) {
+                        throw new CorruptHeaderException("Invalid Mark Header");
+                    }
                     this.headers.add(this.markHead);
                     // markHead.print();
                     break;
@@ -417,6 +420,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                         endArcHead = new EndArcHeader(block, endArchBuff);
                     } else {
                         endArcHead = new EndArcHeader(block, null);
+                    }
+                    if (!this.newMhd.isMultiVolume() && !endArcHead.isValid()) {
+                        throw new CorruptHeaderException("Invalid End Archive Header");
                     }
                     this.headers.add(endArcHead);
                     return;
@@ -648,7 +654,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      *     <li>delegate the work to a {@link ThreadPoolExecutor}, via {@link ExtractorExecutorHolder}; or</li>
      *     <li>delegate the work to a newly created thread on each call</li>
      * </ul>
-     *
+     * <p>
      * You can choose which strategy to use by setting the {@code junrar.extractor.use-executor} system property.<br>
      * Defaults to using the {@link ThreadPoolExecutor}.
      *
