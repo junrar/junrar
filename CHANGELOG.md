@@ -1,3 +1,10 @@
+## [7.5.1](https://github.com/junrar/junrar/compare/v7.5.0...v7.5.1) (2022-04-28)
+
+
+### Bug Fixes
+
+* out of bounds read on corrupt extended time ([1d52d5d](https://github.com/junrar/junrar/commit/1d52d5d308afa607bce6fc5253bf950193e35852)), closes [#86](https://github.com/junrar/junrar/issues/86)
+
 # [7.5.0](https://github.com/junrar/junrar/compare/v7.4.1...v7.5.0) (2022-03-20)
 
 
