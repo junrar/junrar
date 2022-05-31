@@ -1,3 +1,10 @@
+## [7.5.2](https://github.com/junrar/junrar/compare/v7.5.1...v7.5.2) (2022-05-31)
+
+
+### Bug Fixes
+
+* cannot extract empty files to InputStream ([#90](https://github.com/junrar/junrar/issues/90)) ([c95a211](https://github.com/junrar/junrar/commit/c95a211a47466b2ca2f568edbb22dc976b22031d)), closes [#88](https://github.com/junrar/junrar/issues/88)
+
 ## [7.5.1](https://github.com/junrar/junrar/compare/v7.5.0...v7.5.1) (2022-04-28)
 
 
