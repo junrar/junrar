@@ -625,6 +625,22 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
+     * An empty {@link InputStream}.
+     */
+    private static final class EmptyInputStream extends InputStream {
+
+        @Override
+        public int available() {
+            return 0;
+        }
+
+        @Override
+        public int read() {
+            return -1;
+        }
+    }
+
+    /**
      * Returns an {@link InputStream} that will allow to read the file and stream it. <br>
      * Please note that this method will create a pair of Pipe streams and either: <br>
      *
@@ -642,9 +658,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @see ExtractorExecutorHolder
      */
     public InputStream getInputStream(final FileHeader hd) throws IOException {
+        // If the file is empty, return an empty InputStream
+        // This saves adding a task on the executor that will effectively do nothing
+        if (hd.getFullUnpackSize() <= 0) {
+            return new EmptyInputStream();
+        }
+
         // Small optimization to prevent the creation of large buffers for very small files
-        // Never allocate more than needed
-        final int bufferSize = (int) Math.min(hd.getFullUnpackSize(), PIPE_BUFFER_SIZE);
+        // Never allocate more than needed, but ensure the buffer will be at least 1-byte long
+        final int bufferSize = (int) Math.max(Math.min(hd.getFullUnpackSize(), PIPE_BUFFER_SIZE), 1);
 
         final PipedInputStream in = new PipedInputStream(bufferSize);
         final PipedOutputStream out = new PipedOutputStream(in);
