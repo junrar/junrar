@@ -19,7 +19,6 @@ package com.github.junrar.unpack.vm;
 
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.BadRarArchiveException;
-import com.github.junrar.exception.RarException;
 import com.github.junrar.io.Raw;
 
 import java.util.List;
