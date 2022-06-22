@@ -7,4 +7,8 @@ public class RarException extends Exception {
 
     public RarException() {
     }
+
+    public RarException(String msg) {
+        super(msg);
+    }
 }

@@ -18,6 +18,8 @@
 package com.github.junrar.unpack.vm;
 
 import com.github.junrar.crc.RarCRC;
+import com.github.junrar.exception.BadRarArchiveException;
+import com.github.junrar.exception.RarException;
 import com.github.junrar.io.Raw;
 
 import java.util.List;
@@ -142,7 +144,7 @@ public class RarVM extends BitInput {
         return ret;
     }
 
-    public void execute(VMPreparedProgram prg) {
+    public void execute(VMPreparedProgram prg) throws BadRarArchiveException {
         for (int i = 0; i < prg.getInitR().length; i++) { // memcpy(R,Prg->InitR,sizeof(Prg->InitR));
             R[i] = prg.getInitR()[i];
         }
@@ -204,7 +206,7 @@ public class RarVM extends BitInput {
         return mem;
     }
 
-    private boolean setIP(int ip) {
+    private boolean setIP(int ip) throws BadRarArchiveException {
         if ((ip) >= codeSize) {
             return (true);
         }
@@ -212,13 +214,15 @@ public class RarVM extends BitInput {
         if (--maxOpCount <= 0) {
             return (false);
         }
-
+        if (ip <= IP) {
+            throw new BadRarArchiveException("IP must be > than previous IP");
+        }
         IP = ip;
         return true;
     }
 
     private boolean ExecuteCode(List<VMPreparedCommand> preparedCode,
-            int cmdCount) {
+            int cmdCount) throws BadRarArchiveException {
 
         maxOpCount = 25000000;
         this.codeSize = cmdCount;

@@ -7,4 +7,8 @@ public class BadRarArchiveException extends RarException {
 
     public BadRarArchiveException() {
     }
+
+    public BadRarArchiveException(String msg) {
+        super(msg);
+    }
 }

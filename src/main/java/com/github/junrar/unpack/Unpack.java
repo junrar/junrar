@@ -17,6 +17,7 @@
  */
 package com.github.junrar.unpack;
 
+import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.ppm.BlockTypes;
@@ -352,7 +353,7 @@ public final class Unpack extends Unpack20 {
 
     }
 
-    private void UnpWriteBuf() throws IOException {
+    private void UnpWriteBuf() throws IOException, BadRarArchiveException {
         int WrittenBorder = wrPtr;
         int WriteSize = (unpPtr - WrittenBorder) & Compress.MAXWINMASK;
         for (int I = 0; I < prgStack.size(); I++) {
@@ -969,7 +970,7 @@ public final class Unpack extends Unpack20 {
         return (true);
     }
 
-    private void ExecuteCode(VMPreparedProgram Prg) {
+    private void ExecuteCode(VMPreparedProgram Prg) throws BadRarArchiveException {
         if (Prg.getGlobalData().size() > 0) {
             // Prg->InitR[6]=int64to32(WrittenFileSize);
             Prg.getInitR()[6] = (int) (writtenFileSize);
