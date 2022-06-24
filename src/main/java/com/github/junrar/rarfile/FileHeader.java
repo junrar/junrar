@@ -151,7 +151,7 @@ public class FileHeader extends BlockHeader {
             if (isUnicode()) {
                 int length = 0;
                 while (length < fileNameBytes.length
-                        && fileNameBytes[length] != 0) {
+                    && fileNameBytes[length] != 0) {
                     length++;
                 }
                 fileName = new String(fileNameBytes, 0, length);
@@ -166,10 +166,10 @@ public class FileHeader extends BlockHeader {
                 fileNameW = "";
             }
 
-            if(!isFilenameValid(fileName)) {
+            if (!isFilenameValid(fileName)) {
                 throw new CorruptHeaderException("Invalid filename: " + fileName);
             }
-            if(!isFilenameValid(fileNameW)) {
+            if (!isFilenameValid(fileNameW)) {
                 throw new CorruptHeaderException("Invalid filename: " + fileNameW);
             }
         }
@@ -189,7 +189,7 @@ public class FileHeader extends BlockHeader {
 
             if (NewSubHeaderType.SUBHEAD_TYPE_RR.byteEquals(fileNameBytes)) {
                 recoverySectors = (subData[8] & 0xff) + ((subData[9] & 0xff) << 8)
-                        + ((subData[10] & 0xff) << 16) + ((subData[11] & 0xff) << 24);
+                    + ((subData[10] & 0xff) << 16) + ((subData[11] & 0xff) << 24);
             }
         }
 
