@@ -18,10 +18,13 @@
  */
 package com.github.junrar.rarfile;
 
+import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.Calendar;
@@ -88,7 +91,7 @@ public class FileHeader extends BlockHeader {
 
     private int recoverySectors = -1;
 
-    public FileHeader(BlockHeader bh, byte[] fileHeader) {
+    public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
 
         int position = 0;
@@ -136,6 +139,10 @@ public class FileHeader extends BlockHeader {
 
         nameSize = nameSize > 4 * 1024 ? 4 * 1024 : nameSize;
 
+        if (nameSize <= 0) {
+            throw new CorruptHeaderException("Invalid file name with negative size");
+        }
+
         fileNameBytes = new byte[nameSize];
         System.arraycopy(fileHeader, position, fileNameBytes, 0, nameSize);
         position += nameSize;
@@ -157,6 +164,13 @@ public class FileHeader extends BlockHeader {
             } else {
                 fileName = new String(fileNameBytes);
                 fileNameW = "";
+            }
+
+            if(!isFilenameValid(fileName)) {
+                throw new CorruptHeaderException("Invalid filename: " + fileName);
+            }
+            if(!isFilenameValid(fileNameW)) {
+                throw new CorruptHeaderException("Invalid filename: " + fileNameW);
             }
         }
 
@@ -213,6 +227,15 @@ public class FileHeader extends BlockHeader {
             TimePositionTuple arcTimeTuple = parseExtTime(0, extTimeFlags, fileHeader, position);
             arcTime = arcTimeTuple.time;
             position = arcTimeTuple.position;
+        }
+    }
+
+    private static boolean isFilenameValid(String filename) {
+        try {
+            String ignored = new File(filename).getCanonicalPath();
+            return true;
+        } catch (IOException e) {
+            return false;
         }
     }
 

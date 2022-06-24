@@ -102,9 +102,9 @@ public class AbnormalFilesTest {
             Arguments.of("abnormal/corrupt-header.rar", CorruptHeaderException.class),
             Arguments.of("abnormal/mainHeaderNull.rar", BadRarArchiveException.class),
             Arguments.of("abnormal/loop.rar", CorruptHeaderException.class),
-            Arguments.of("abnormal/loop1.rar", CorruptHeaderException.class)
-//            Arguments.of("abnormal/loop2.rar", CorruptHeaderException.class)
-//            Arguments.of("abnormal/loop3.rar", CorruptHeaderException.class)
+            Arguments.of("abnormal/loop1.rar", CorruptHeaderException.class),
+            Arguments.of("abnormal/loop2.rar", CorruptHeaderException.class),
+            Arguments.of("abnormal/loop3.rar", CorruptHeaderException.class)
         );
     }
 }

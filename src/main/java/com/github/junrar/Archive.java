@@ -59,6 +59,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.crypto.Cipher;
 import java.io.Closeable;
+import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -440,7 +441,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                 - BlockHeader.BaseBlockSize
                                 - BlockHeader.blockHeaderSize;
                             final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                            rawData.readFully(fileHeaderBuffer, fileHeaderBuffer.length);
+                            try {
+                                rawData.readFully(fileHeaderBuffer, fileHeaderBuffer.length);
+                            } catch (EOFException e) {
+                                throw new CorruptHeaderException("Unexpected end of file");
+                            }
 
                             final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
                             this.headers.add(fh);
