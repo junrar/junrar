@@ -70,7 +70,7 @@ publishing {
                 licenses {
                     license {
                         name = 'UnRar License'
-                        url = 'https://github.com/junrar/junrar/LICENSE.md'
+                        url = 'https://github.com/junrar/junrar/blob/master/LICENSE'
                     }
                 }
                 developers {
