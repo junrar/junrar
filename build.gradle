@@ -116,7 +116,7 @@ test {
 
 checkstyle {
     configFile = file("${rootDir}/checkstyle.xml")
-    toolVersion = '8.29'
+    toolVersion = '10.3.2'
 }
 
 jacocoTestReport {
