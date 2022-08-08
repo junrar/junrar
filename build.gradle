@@ -110,8 +110,31 @@ tasks.wrapper {
     distributionType = Wrapper.DistributionType.ALL
 }
 
-test {
-    useJUnitPlatform()
+testing {
+    suites {
+        test {
+            useJUnitJupiter()
+        }
+
+        regressionTest(JvmTestSuite) {
+            dependencies {
+                implementation project
+                implementation 'org.assertj:assertj-core:3.22.0'
+                implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+                implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.3'
+            }
+
+            targets {
+                all {
+                    testTask.configure {
+                        sourceCompatibility = '17'
+                        targetCompatibility = '17'
+                        systemProperty 'regressionTest.resourcesDir', sourceSets.getByName('regressionTest').resources.getSrcDirs().first()
+                    }
+                }
+            }
+        }
+    }
 }
 
 checkstyle {
