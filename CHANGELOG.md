@@ -1,3 +1,11 @@
+## [7.5.3](https://github.com/junrar/junrar/compare/v7.5.2...v7.5.3) (2022-08-08)
+
+
+### Bug Fixes
+
+* check validity of mark header and end archive header ([6c7dc7a](https://github.com/junrar/junrar/commit/6c7dc7af33e8a77b16ab2b12731be739994592e1))
+* more checks on invalid headers ([cc33b6c](https://github.com/junrar/junrar/commit/cc33b6c179daa4a79899cec897857995bd6d1400))
+
 ## [7.5.2](https://github.com/junrar/junrar/compare/v7.5.1...v7.5.2) (2022-05-31)
 
 
