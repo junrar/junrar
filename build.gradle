@@ -35,14 +35,6 @@ java {
     }
 }
 
-// Set the '--release' compiler option if compiling on Java > 1.8.
-// Prevents the bytecode from being incompatible with Java 8.
-compileJava {
-    if (JavaVersion.current() > JavaVersion.VERSION_1_8) {
-        options.release.set(8)
-    }
-}
-
 java {
     withJavadocJar()
     withSourcesJar()
