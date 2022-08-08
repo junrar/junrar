@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331088572.109375000,
+    "creationTime" : null,
+    "fileCRC" : 1263558204,
+    "fileName" : "Template_MiG-3U_VVS\\Template_MiG-3U_VVS.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 11031920,
+    "fullUnpackSize" : 24410717,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

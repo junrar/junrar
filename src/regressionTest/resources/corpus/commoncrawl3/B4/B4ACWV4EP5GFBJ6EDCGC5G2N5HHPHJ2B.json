@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286185348.018151400,
+    "creationTime" : null,
+    "fileCRC" : -2145592091,
+    "fileName" : "Archiquarium2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2379498,
+    "fullUnpackSize" : 2712276,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

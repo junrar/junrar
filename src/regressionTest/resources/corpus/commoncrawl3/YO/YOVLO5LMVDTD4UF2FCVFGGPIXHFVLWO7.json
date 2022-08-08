@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366053169.073170700,
+    "creationTime" : null,
+    "fileCRC" : -485596533,
+    "fileName" : "Melanie.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 29750549,
+    "fullUnpackSize" : 44250607,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

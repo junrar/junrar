@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398151954.000000000,
+    "creationTime" : null,
+    "fileCRC" : -164785165,
+    "fileName" : "民意调查上手机说明及客户端\\民意调查.apk",
+    "hostOS" : "win32",
+    "fullPackSize" : 1013247,
+    "fullUnpackSize" : 1175578,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399274918.000000000,
+    "creationTime" : null,
+    "fileCRC" : 989423384,
+    "fileName" : "民意调查上手机说明及客户端\\民意调查上手机操作说明（手机版）.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 406378,
+    "fullUnpackSize" : 502272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

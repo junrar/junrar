@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285825414.776944500,
+    "creationTime" : null,
+    "fileCRC" : -648358736,
+    "fileName" : "random-100720193716-phpapp02.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 649393,
+    "fullUnpackSize" : 774204,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273466073.435452000,
+    "creationTime" : null,
+    "fileCRC" : -562620483,
+    "fileName" : "Презентации.url",
+    "hostOS" : "win32",
+    "fullPackSize" : 106,
+    "fullUnpackSize" : 107,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

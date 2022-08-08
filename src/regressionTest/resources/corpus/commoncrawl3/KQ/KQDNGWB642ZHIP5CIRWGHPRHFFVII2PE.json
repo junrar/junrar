@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1428020561.622172000,
+    "creationTime" : null,
+    "fileCRC" : -402766080,
+    "fileName" : "Сina_2014.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 238720,
+    "fullUnpackSize" : 253816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

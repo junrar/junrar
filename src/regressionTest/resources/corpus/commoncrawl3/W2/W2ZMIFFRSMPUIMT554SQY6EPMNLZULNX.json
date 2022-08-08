@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505264182.492538400,
+    "creationTime" : null,
+    "fileCRC" : -426951090,
+    "fileName" : "MiTongBu-0.1.40.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 60193579,
+    "fullUnpackSize" : 60948480,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

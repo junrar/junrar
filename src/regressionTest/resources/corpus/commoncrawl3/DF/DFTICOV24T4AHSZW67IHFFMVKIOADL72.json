@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368004716.390638800,
+    "creationTime" : null,
+    "fileCRC" : 744124075,
+    "fileName" : "music19.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2635871,
+    "fullUnpackSize" : 2721460,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

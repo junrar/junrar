@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450208060.786265300,
+    "creationTime" : null,
+    "fileCRC" : -1861001653,
+    "fileName" : "[MH] Touhou Project - Collection 2011 - Disc 3.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 1334073229,
+    "fullUnpackSize" : 4457037824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

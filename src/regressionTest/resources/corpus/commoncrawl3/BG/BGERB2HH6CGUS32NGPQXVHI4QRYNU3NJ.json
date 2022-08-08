@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444916439.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1049603733,
+    "fileName" : "2. ภาคเหนือตอนบน 2\\กลุ่มจังหวัด\\1 แผน 57-60 ทบทวน\\1 ส่วนที่  1 ข้อมูลทั่วไป (ใหม่).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2570473,
+    "fullUnpackSize" : 3347456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368519930.672851500,
+    "creationTime" : null,
+    "fileCRC" : 1458980909,
+    "fileName" : "Отчет Пресс-центр\\ПРЕСС-релиз на кругл стол_2013.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1756927,
+    "fullUnpackSize" : 2679296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

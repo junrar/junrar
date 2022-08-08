@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453088074.285816900,
+    "creationTime" : null,
+    "fileCRC" : 431061019,
+    "fileName" : "คะแนน ASU (รพ.+รพ.สต) 6 เดือนแรก\\คะแนน ASU = AGE โรงพยาบาล.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 3469489,
+    "fullUnpackSize" : 3621233,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523428563.693075800,
+    "creationTime" : null,
+    "fileCRC" : -1122592912,
+    "fileName" : "оповещение.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 44596,
+    "fullUnpackSize" : 46168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523427873.295748800,
+    "creationTime" : null,
+    "fileCRC" : -1239958229,
+    "fileName" : "ПП и МТ_Обоснование.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 15931895,
+    "fullUnpackSize" : 18533316,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

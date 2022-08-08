@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1226669849.050743200,
+    "creationTime" : null,
+    "fileCRC" : 1548821225,
+    "fileName" : "sprntl409-notv.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14599,
+    "fullUnpackSize" : 36509,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

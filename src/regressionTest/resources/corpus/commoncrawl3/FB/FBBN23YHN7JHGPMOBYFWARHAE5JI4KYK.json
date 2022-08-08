@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177489352.015000000,
+    "creationTime" : null,
+    "fileCRC" : 1207734118,
+    "fileName" : "008Enfal.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 28768961,
+    "fullUnpackSize" : 29219157,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

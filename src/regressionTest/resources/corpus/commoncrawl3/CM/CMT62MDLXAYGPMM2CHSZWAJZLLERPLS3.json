@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465348990.686000000,
+    "creationTime" : null,
+    "fileCRC" : 1737228902,
+    "fileName" : "záverečný účet 2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 40627,
+    "fullUnpackSize" : 296960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465348981.509251900,
+    "creationTime" : null,
+    "fileCRC" : -1143173916,
+    "fileName" : "Hodnotenie programov 2015.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 61157,
+    "fullUnpackSize" : 65062,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

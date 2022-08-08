@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411174473.869044400,
+    "creationTime" : null,
+    "fileCRC" : 1912715933,
+    "fileName" : "Educator.Biochemistry-2.Amino.Acids.And.Proteins.Primary.Structure-bitdownload.ir\\05 Amino Acid Sequencing of a Peptide Chain\\Amino Acid Sequencing of a Peptide Chain, Biochemi - CAM.mkv",
+    "hostOS" : "win32",
+    "fullPackSize" : 504139,
+    "fullUnpackSize" : 200230051,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411063754.974826000,
+    "creationTime" : null,
+    "fileCRC" : -147648835,
+    "fileName" : "Educator.Biochemistry-2.Amino.Acids.And.Proteins.Primary.Structure-bitdownload.ir\\05 Amino Acid Sequencing of a Peptide Chain\\Amino Acid Sequencing of a Peptide Chain, Biochemi - Tablet.flv",
+    "hostOS" : "win32",
+    "fullPackSize" : 49687232,
+    "fullUnpackSize" : 75750513,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

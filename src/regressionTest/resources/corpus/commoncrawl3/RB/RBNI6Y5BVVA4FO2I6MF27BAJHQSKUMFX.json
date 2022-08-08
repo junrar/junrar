@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453791215.716318500,
+    "creationTime" : null,
+    "fileCRC" : 2073347915,
+    "fileName" : "Правила организации хранения, комплектования, учёта и использования документов Архивного фонда Российской Федерации и других архивных документов в органах государственной власти, органах местного самоуправления и орг.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3895593,
+    "fullUnpackSize" : 4215839,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

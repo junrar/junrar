@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1080368550.845086400,
+    "creationTime" : null,
+    "fileCRC" : 1303282410,
+    "fileName" : "Small_icons_grey.vkp",
+    "hostOS" : "win32",
+    "fullPackSize" : 3670,
+    "fullUnpackSize" : 13057,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

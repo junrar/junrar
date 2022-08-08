@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290832298.000000000,
+    "creationTime" : null,
+    "fileCRC" : 792510557,
+    "fileName" : "Nami Ko\\Vulnerable\\1_3 Seasons in A Minor.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5105125,
+    "fullUnpackSize" : 5486689,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

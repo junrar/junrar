@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175766448.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1427429883,
+    "fileName" : "Правила и нормы техн. экспл. жилищного фонда.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 205945,
+    "fullUnpackSize" : 1842176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

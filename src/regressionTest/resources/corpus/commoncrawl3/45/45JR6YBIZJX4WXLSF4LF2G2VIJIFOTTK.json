@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1159630158.718750000,
+    "creationTime" : null,
+    "fileCRC" : -645678161,
+    "fileName" : "TO-vH-Agypt.unr",
+    "hostOS" : "win32",
+    "fullPackSize" : 1091150,
+    "fullUnpackSize" : 3110547,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

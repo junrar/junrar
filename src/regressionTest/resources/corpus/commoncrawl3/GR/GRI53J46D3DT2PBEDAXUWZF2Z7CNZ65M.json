@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531187828.333183700,
+    "creationTime" : null,
+    "fileCRC" : 161682477,
+    "fileName" : "25610706กองทุนฯ อ.ชูชัย.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 378558,
+    "fullUnpackSize" : 412265,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531120652.640000000,
+    "creationTime" : null,
+    "fileCRC" : 950152114,
+    "fileName" : "sum(พี่วี).pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4024839,
+    "fullUnpackSize" : 4254018,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

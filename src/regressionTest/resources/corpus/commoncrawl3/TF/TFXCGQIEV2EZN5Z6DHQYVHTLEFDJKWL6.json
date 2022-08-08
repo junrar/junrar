@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302428119.216904600,
+    "creationTime" : null,
+    "fileCRC" : -1378118872,
+    "fileName" : "Zeugnisse.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3899712,
+    "fullUnpackSize" : 4903987,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

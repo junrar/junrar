@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215586785.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1328116215,
+    "fileName" : "固定收益培训内容简介.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 221792,
+    "fullUnpackSize" : 245591,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

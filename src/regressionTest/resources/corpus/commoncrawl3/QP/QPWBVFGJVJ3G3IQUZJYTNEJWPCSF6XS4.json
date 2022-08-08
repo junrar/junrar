@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420952810.126901300,
+    "creationTime" : null,
+    "fileCRC" : -71970764,
+    "fileName" : "04UnaDulceMirada.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3709320,
+    "fullUnpackSize" : 3881495,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

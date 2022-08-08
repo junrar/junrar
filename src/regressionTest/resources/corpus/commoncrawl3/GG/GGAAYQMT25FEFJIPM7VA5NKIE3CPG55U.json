@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472819654.000000000,
+    "creationTime" : null,
+    "fileCRC" : -692829112,
+    "fileName" : "Всемирная история и пророчества Библии.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2251271,
+    "fullUnpackSize" : 2720052,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

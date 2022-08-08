@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221560208.795066500,
+    "creationTime" : null,
+    "fileCRC" : -254900781,
+    "fileName" : "Павел Шубин.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 18141,
+    "fullUnpackSize" : 103424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

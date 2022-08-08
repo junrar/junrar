@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1240498956.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1061427604,
+    "fileName" : "Леса  России.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 754618,
+    "fullUnpackSize" : 862720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1240498888.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1888212725,
+    "fileName" : "леса Росии 4 класс.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8373,
+    "fullUnpackSize" : 46080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

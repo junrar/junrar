@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399339534.000000000,
+    "creationTime" : null,
+    "fileCRC" : 491012881,
+    "fileName" : "2013年《慈护》杂志冬季刊.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14317465,
+    "fullUnpackSize" : 17644808,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

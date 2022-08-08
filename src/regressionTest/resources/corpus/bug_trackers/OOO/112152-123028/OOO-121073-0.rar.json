@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348210256.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1598184548,
+    "fileName" : "sample.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 214979,
+    "fullUnpackSize" : 1369600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

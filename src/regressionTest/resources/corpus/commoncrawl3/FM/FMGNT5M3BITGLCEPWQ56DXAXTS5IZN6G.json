@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359096883.000000000,
+    "creationTime" : null,
+    "fileCRC" : 244044690,
+    "fileName" : "Ace.Combat.Assault.Horizon-Enhanced.Edition.bitdownload.ir\\setup-8.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 134260889,
+    "fullUnpackSize" : 1000000000,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

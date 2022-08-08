@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272871454.328773500,
+    "creationTime" : null,
+    "fileCRC" : 759292128,
+    "fileName" : "Системный анализ в логистике.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2905127,
+    "fullUnpackSize" : 4453821,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

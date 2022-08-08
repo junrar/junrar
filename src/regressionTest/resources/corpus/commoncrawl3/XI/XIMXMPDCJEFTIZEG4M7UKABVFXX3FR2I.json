@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477293307.955415400,
+    "creationTime" : null,
+    "fileCRC" : -1800715827,
+    "fileName" : "ตัวอย่างกิจกรรม-หลักสูตรโรงเรียนสิ่งแวดล้อมศึกษาม6.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 555303,
+    "fullUnpackSize" : 661450,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477293299.240531500,
+    "creationTime" : null,
+    "fileCRC" : -1677260228,
+    "fileName" : "HNW_แผนการจัดการเรียนรู้ขยะหนว.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 38848,
+    "fullUnpackSize" : 42467,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

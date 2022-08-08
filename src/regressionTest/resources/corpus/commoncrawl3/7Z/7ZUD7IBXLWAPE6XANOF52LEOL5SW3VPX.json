@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235370056.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1599546097,
+    "fileName" : "CLP170-150.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3254069,
+    "fullUnpackSize" : 4767545,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

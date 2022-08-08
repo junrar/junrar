@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452234625.596154200,
+    "creationTime" : null,
+    "fileCRC" : -1299781447,
+    "fileName" : "DEMO02_IRsensorLED\\DEMO02_IRsensorLED.ino",
+    "hostOS" : "win32",
+    "fullPackSize" : 818,
+    "fullUnpackSize" : 1704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452234625.625155900,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "DEMO02_IRsensorLED",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

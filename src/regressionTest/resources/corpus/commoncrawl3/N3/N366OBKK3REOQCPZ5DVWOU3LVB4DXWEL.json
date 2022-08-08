@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407845850.942917200,
+    "creationTime" : null,
+    "fileCRC" : -413658874,
+    "fileName" : "elekektr_wzorce_zycia\\wzorce_zycia_01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5212082,
+    "fullUnpackSize" : 5212082,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

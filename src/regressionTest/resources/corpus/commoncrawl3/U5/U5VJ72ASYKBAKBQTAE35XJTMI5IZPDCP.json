@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512002991.942022300,
+    "creationTime" : null,
+    "fileCRC" : 292764765,
+    "fileName" : "oponentský posudek,MgA. Hledík.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 593270,
+    "fullUnpackSize" : 613760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512002949.201996900,
+    "creationTime" : null,
+    "fileCRC" : -1046406602,
+    "fileName" : "oponentský posudek,prof.Slivka.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 452816,
+    "fullUnpackSize" : 467727,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

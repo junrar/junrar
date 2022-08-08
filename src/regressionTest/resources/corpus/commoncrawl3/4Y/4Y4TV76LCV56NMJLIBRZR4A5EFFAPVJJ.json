@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461942368.039000000,
+    "creationTime" : null,
+    "fileCRC" : -2051144710,
+    "fileName" : "[01]ZUN – A Dream Transcending Space-Time.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 8972965,
+    "fullUnpackSize" : 9442156,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

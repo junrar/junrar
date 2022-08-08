@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482933287.000000000,
+    "creationTime" : null,
+    "fileCRC" : 563256701,
+    "fileName" : "Statuto.pdf",
+    "hostOS" : "unix",
+    "fullPackSize" : 17710811,
+    "fullUnpackSize" : 17924173,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

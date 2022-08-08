@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397922104.445754200,
+    "creationTime" : null,
+    "fileCRC" : -1143351202,
+    "fileName" : "minecraft.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2863040,
+    "fullUnpackSize" : 3468171,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

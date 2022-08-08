@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1192700158.000000000,
+    "creationTime" : null,
+    "fileCRC" : 616786486,
+    "fileName" : "gun_engine_v6.gm6",
+    "hostOS" : "win32",
+    "fullPackSize" : 525935,
+    "fullUnpackSize" : 568524,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215924214.000000000,
+    "creationTime" : null,
+    "fileCRC" : 676124671,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 40,
+    "fullUnpackSize" : 40,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

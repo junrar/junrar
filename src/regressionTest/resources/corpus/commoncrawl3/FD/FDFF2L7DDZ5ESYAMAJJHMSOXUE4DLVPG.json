@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444450219.486143800,
+    "creationTime" : null,
+    "fileCRC" : -1800707549,
+    "fileName" : "Vandkande i zink gammel.blend",
+    "hostOS" : "win32",
+    "fullPackSize" : 16537727,
+    "fullUnpackSize" : 18203524,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

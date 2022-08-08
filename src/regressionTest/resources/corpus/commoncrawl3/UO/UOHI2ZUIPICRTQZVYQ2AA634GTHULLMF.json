@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430894826.295519700,
+    "creationTime" : null,
+    "fileCRC" : 288134005,
+    "fileName" : "страхование\\ДОГОВОР.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 148764,
+    "fullUnpackSize" : 158081,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430974775.029146400,
+    "creationTime" : null,
+    "fileCRC" : 628130298,
+    "fileName" : "страхование\\договор.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 4644647,
+    "fullUnpackSize" : 5075465,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

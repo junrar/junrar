@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499312248.000000000,
+    "creationTime" : null,
+    "fileCRC" : 738609556,
+    "fileName" : "阅读.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 77656457,
+    "fullUnpackSize" : 219594302,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

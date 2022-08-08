@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160125260.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1422962460,
+    "fileName" : "36-RPS Lom\\Assessment\\36-RPS Lom-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3630917,
+    "fullUnpackSize" : 3915776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

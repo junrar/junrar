@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392089528.093000000,
+    "creationTime" : null,
+    "fileCRC" : -703045975,
+    "fileName" : "Письмо УО   № ____ - о переходе на ФГОС ООО в 2014 году.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 42687,
+    "fullUnpackSize" : 73728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391745112.000000000,
+    "creationTime" : null,
+    "fileCRC" : -101847913,
+    "fileName" : "1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1128867,
+    "fullUnpackSize" : 1169852,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442842216.243388500,
+    "creationTime" : null,
+    "fileCRC" : -982129608,
+    "fileName" : "Concrete_Revolutio_PV.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 1787,
+    "fullUnpackSize" : 6780,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442842208.653420200,
+    "creationTime" : null,
+    "fileCRC" : 204276759,
+    "fileName" : "Kautiva_Cyrillic_Black.ttf",
+    "hostOS" : "win32",
+    "fullPackSize" : 25499,
+    "fullUnpackSize" : 59604,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

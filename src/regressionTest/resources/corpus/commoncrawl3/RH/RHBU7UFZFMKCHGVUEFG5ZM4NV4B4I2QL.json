@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353652230.645964900,
+    "creationTime" : null,
+    "fileCRC" : 1984131990,
+    "fileName" : "Описание системы СКАУТ для клиентов.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5135589,
+    "fullUnpackSize" : 5372416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526443931.193359300,
+    "creationTime" : null,
+    "fileCRC" : -866402154,
+    "fileName" : "Mobile Architekturen im Außenraum.compressed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9549155,
+    "fullUnpackSize" : 10505729,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

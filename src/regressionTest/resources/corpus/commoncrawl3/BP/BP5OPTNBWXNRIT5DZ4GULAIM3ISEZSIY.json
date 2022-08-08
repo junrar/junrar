@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1279327979.169139400,
+    "creationTime" : null,
+    "fileCRC" : 237818021,
+    "fileName" : "php_xdebug-2.1-5.2.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 50121,
+    "fullUnpackSize" : 155648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

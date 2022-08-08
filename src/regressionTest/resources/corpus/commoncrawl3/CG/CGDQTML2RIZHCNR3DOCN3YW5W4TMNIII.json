@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489970953.123881500,
+    "creationTime" : null,
+    "fileCRC" : -1085250201,
+    "fileName" : "Particles of the virus.aep",
+    "hostOS" : "win32",
+    "fullPackSize" : 14867,
+    "fullUnpackSize" : 277912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

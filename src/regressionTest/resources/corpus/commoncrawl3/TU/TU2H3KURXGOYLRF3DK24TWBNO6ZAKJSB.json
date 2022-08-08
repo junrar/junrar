@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472882698.750202100,
+    "creationTime" : null,
+    "fileCRC" : -184807971,
+    "fileName" : "Правила_землепользования_и_застр.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2397670,
+    "fullUnpackSize" : 4351585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

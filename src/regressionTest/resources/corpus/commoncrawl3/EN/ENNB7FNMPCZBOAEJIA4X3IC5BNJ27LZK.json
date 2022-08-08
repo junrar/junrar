@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523354290.994419100,
+    "creationTime" : null,
+    "fileCRC" : 852306471,
+    "fileName" : "Tshirt-Dress-S.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 273801,
+    "fullUnpackSize" : 609990,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1113287766.000000000,
+    "creationTime" : null,
+    "fileCRC" : 654378495,
+    "fileName" : "dzieci_zwierzaki(www.rozrabiaki.pl).pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 760266,
+    "fullUnpackSize" : 860672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1111055960.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1105031423,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 145,
+    "fullUnpackSize" : 231,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

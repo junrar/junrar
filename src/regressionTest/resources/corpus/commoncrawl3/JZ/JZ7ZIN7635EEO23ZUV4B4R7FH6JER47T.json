@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1014098164.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2078666704,
+    "fileName" : "armor.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 388274,
+    "fullUnpackSize" : 799309,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1043347352.000000000,
+    "creationTime" : null,
+    "fileCRC" : -357923247,
+    "fileName" : "README.TXT",
+    "hostOS" : "win32",
+    "fullPackSize" : 568,
+    "fullUnpackSize" : 1351,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

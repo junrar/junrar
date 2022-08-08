@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510924645.436000000,
+    "creationTime" : null,
+    "fileCRC" : -1325642576,
+    "fileName" : "Dj DougMix - Podcast Dance Play [Ep.222].mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 85837820,
+    "fullUnpackSize" : 86978457,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

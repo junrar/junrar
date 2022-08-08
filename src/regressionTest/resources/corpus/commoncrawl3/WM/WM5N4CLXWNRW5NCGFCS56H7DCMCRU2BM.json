@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1372751530.640625000,
+    "creationTime" : null,
+    "fileCRC" : -1725448734,
+    "fileName" : "Beast Wars - The Gathering 02 rus\\acvra.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 576763,
+    "fullUnpackSize" : 592978,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1372917438.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1462643203,
+    "fileName" : "Beast Wars - The Gathering 02 rus\\acvrb.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 539546,
+    "fullUnpackSize" : 557426,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

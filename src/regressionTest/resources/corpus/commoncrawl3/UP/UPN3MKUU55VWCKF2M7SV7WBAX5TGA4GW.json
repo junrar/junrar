@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439253969.416720700,
+    "creationTime" : null,
+    "fileCRC" : 1138514564,
+    "fileName" : "mz_e86_4.4.2_esp8089_1680e+f_mma7660_stk8312_gc0328x2_v0.7.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 409510857,
+    "fullUnpackSize" : 701963264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

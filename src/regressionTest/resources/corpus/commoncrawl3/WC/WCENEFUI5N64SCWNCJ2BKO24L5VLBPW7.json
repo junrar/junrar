@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490340261.642943500,
+    "creationTime" : null,
+    "fileCRC" : -1648412177,
+    "fileName" : "AnimatableSubstance.sbsar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1191,
+    "fullUnpackSize" : 1191,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490337562.840741900,
+    "creationTime" : null,
+    "fileCRC" : 1711913719,
+    "fileName" : "AnimateSubstance.cs",
+    "hostOS" : "win32",
+    "fullPackSize" : 745,
+    "fullUnpackSize" : 1983,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

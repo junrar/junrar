@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393655023.991840800,
+    "creationTime" : null,
+    "fileCRC" : -334879340,
+    "fileName" : "Redist\\dxwebsetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 254024,
+    "fullUnpackSize" : 292184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393655066.978299500,
+    "creationTime" : null,
+    "fileCRC" : -647087478,
+    "fileName" : "Redist\\vcredist_x86.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1800265,
+    "fullUnpackSize" : 1821192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

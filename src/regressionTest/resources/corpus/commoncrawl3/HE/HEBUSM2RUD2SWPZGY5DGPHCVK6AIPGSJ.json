@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383208507.125000000,
+    "creationTime" : null,
+    "fileCRC" : -1894053366,
+    "fileName" : "北京市小微企业担保风险补偿资金专项业务操作规程.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 29796,
+    "fullUnpackSize" : 229376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383109459.593750000,
+    "creationTime" : null,
+    "fileCRC" : 58285666,
+    "fileName" : "北京市小微企业担保风险补偿资金专项业务操作规程附件2.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 5085,
+    "fullUnpackSize" : 29184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

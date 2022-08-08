@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530760697.296875000,
+    "creationTime" : null,
+    "fileCRC" : -691664015,
+    "fileName" : "решение проект от 27.04.2018   Правила благоустройства.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 294643,
+    "fullUnpackSize" : 297502,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

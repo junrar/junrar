@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520992763.410000000,
+    "creationTime" : null,
+    "fileCRC" : -840012106,
+    "fileName" : "Постановление от 06.03.2018 № 14_Сбытовая надбавка с 01.07.2018\\Постановление от 06.03.2018 № 14.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1525933,
+    "fullUnpackSize" : 1966898,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

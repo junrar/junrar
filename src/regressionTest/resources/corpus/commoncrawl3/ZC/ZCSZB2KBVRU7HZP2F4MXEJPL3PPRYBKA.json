@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308640044.000000000,
+    "creationTime" : null,
+    "fileCRC" : 922395234,
+    "fileName" : "Аукцион нежилое помещение Ф.Революции на 28 июля.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 22663,
+    "fullUnpackSize" : 56320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307666932.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2027416703,
+    "fileName" : "Аукционная док. Ф.Революции 28 июля 11г..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 20603,
+    "fullUnpackSize" : 120320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

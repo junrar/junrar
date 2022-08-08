@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323310479.608000000,
+    "creationTime" : null,
+    "fileCRC" : -883528206,
+    "fileName" : "Волгоград_АЗС_Справка.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3454082,
+    "fullUnpackSize" : 32480768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

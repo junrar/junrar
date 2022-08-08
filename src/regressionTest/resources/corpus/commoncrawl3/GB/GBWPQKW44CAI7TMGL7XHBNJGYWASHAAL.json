@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336714943.875000000,
+    "creationTime" : null,
+    "fileCRC" : 1937792974,
+    "fileName" : "Унипрок-Аккустика СЭЗ обратная сторона.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 454221,
+    "fullUnpackSize" : 455605,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336714943.875000000,
+    "creationTime" : null,
+    "fileCRC" : 1505887501,
+    "fileName" : "Унипрок-Аккустика СЭЗ лицевая сторона.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 486333,
+    "fullUnpackSize" : 487419,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

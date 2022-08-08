@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530584456.000000000,
+    "creationTime" : null,
+    "fileCRC" : -266439264,
+    "fileName" : "5 Unidad Prom. del Derecho a la Educ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 795168,
+    "fullUnpackSize" : 897936,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1014312072.000000000,
+    "creationTime" : null,
+    "fileCRC" : -351935222,
+    "fileName" : "Искушение Христа в пустыне rtf.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 152142,
+    "fullUnpackSize" : 1084416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

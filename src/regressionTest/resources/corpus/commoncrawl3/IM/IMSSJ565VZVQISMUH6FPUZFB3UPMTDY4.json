@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503370298.004639000,
+    "creationTime" : null,
+    "fileCRC" : -350894756,
+    "fileName" : "unit_cost_59\\1 ค่าใช้จ่ายต่อรายวิชา ปี 59.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 848952,
+    "fullUnpackSize" : 950850,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1429840055.006926900,
+    "creationTime" : null,
+    "fileCRC" : -1058665238,
+    "fileName" : "unit_cost_59\\2 เอกสาร ต้นทุนต่อหน่วยระดับหลักสูตร.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 980703,
+    "fullUnpackSize" : 1021547,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

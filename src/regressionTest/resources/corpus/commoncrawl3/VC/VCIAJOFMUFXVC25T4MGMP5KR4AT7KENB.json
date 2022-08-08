@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292663834.405915200,
+    "creationTime" : null,
+    "fileCRC" : 841430415,
+    "fileName" : "Boumort cansalada-bttmania.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14272,
+    "fullUnpackSize" : 67413,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

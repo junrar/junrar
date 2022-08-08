@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256864874.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1176969141,
+    "fileName" : "Falar Com Deus.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4016839,
+    "fullUnpackSize" : 4057720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

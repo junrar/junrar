@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532419358.646844600,
+    "creationTime" : null,
+    "fileCRC" : -1065435520,
+    "fileName" : "zsf-SpitfireMkIXe-341sqn-mouchotte-4k.dds",
+    "hostOS" : "win32",
+    "fullPackSize" : 7973117,
+    "fullUnpackSize" : 22369776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

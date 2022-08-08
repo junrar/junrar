@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346982763.588000000,
+    "creationTime" : null,
+    "fileCRC" : 1192286927,
+    "fileName" : "Изменения в регламент-пред.инф.о пассаж.перевозках.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 27044,
+    "fullUnpackSize" : 110080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

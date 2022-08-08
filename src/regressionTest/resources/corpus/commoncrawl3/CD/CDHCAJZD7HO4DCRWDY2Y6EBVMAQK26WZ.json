@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277890260.000000000,
+    "creationTime" : null,
+    "fileCRC" : 785276866,
+    "fileName" : "INVITO - Un Designer per le Imprese.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 198330,
+    "fullUnpackSize" : 235050,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1236675004.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1209480037,
+    "fileName" : "Инженерная_инфраструктура.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 785769,
+    "fullUnpackSize" : 25030308,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

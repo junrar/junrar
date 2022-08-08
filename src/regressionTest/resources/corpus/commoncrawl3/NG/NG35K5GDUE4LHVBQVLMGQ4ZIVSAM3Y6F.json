@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385811423.888223800,
+    "creationTime" : null,
+    "fileCRC" : 1080382230,
+    "fileName" : "大学生涯规划--大二上主题班会版.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1893198,
+    "fullUnpackSize" : 2283520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

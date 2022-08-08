@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529905098.720230400,
+    "creationTime" : null,
+    "fileCRC" : -1501064003,
+    "fileName" : "ENCUESTAS 3 Prog\\4.2.5PO10-002.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 451840,
+    "fullUnpackSize" : 859321,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529905098.813986900,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "ENCUESTAS 3 Prog",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

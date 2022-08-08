@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449567926.137742800,
+    "creationTime" : null,
+    "fileCRC" : 107967556,
+    "fileName" : "постановление 47.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 52761,
+    "fullUnpackSize" : 77824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

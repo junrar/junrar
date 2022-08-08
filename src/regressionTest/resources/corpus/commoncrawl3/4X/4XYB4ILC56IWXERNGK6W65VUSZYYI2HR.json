@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527881906.866991100,
+    "creationTime" : null,
+    "fileCRC" : 1116985920,
+    "fileName" : "Основные пункты вероучения АСД.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2699943,
+    "fullUnpackSize" : 3000145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

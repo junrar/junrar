@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255404972.687000000,
+    "creationTime" : null,
+    "fileCRC" : -872892173,
+    "fileName" : "СанПиН_2.1.4.2496-09 горячее водоснабжение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 20942,
+    "fullUnpackSize" : 107520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

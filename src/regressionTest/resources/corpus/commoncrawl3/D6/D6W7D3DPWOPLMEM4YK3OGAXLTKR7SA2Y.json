@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407399886.799532400,
+    "creationTime" : null,
+    "fileCRC" : 1108282940,
+    "fileName" : "Graphitt - inkjek 007.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2079209,
+    "fullUnpackSize" : 2112912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526635131.242053300,
+    "creationTime" : null,
+    "fileCRC" : -1805697607,
+    "fileName" : "ChuongtrinhMEDIC7.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 566870,
+    "fullUnpackSize" : 654848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526633598.659995600,
+    "creationTime" : null,
+    "fileCRC" : 427505475,
+    "fileName" : "LY THI XUAN trinh thay2.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 6471929,
+    "fullUnpackSize" : 6509418,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

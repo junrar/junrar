@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1262970021.979000000,
+    "creationTime" : null,
+    "fileCRC" : -1612825085,
+    "fileName" : "Ёхель - Музыка\\Ёхель - Песни и черновики 2000-2009\\FlyEr'n'Ёхель - Зима.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3907972,
+    "fullUnpackSize" : 3966976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

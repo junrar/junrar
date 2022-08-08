@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447254547.775000000,
+    "creationTime" : null,
+    "fileCRC" : -1118883559,
+    "fileName" : "Track (2).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1687536,
+    "fullUnpackSize" : 1804856,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

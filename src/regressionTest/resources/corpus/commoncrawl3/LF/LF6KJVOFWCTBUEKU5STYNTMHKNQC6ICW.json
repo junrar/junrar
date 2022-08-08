@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 956666558.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1649549602,
+    "fileName" : "darja.css",
+    "hostOS" : "win32",
+    "fullPackSize" : 230,
+    "fullUnpackSize" : 602,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 960190876.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1550809835,
+    "fileName" : "lebed.html",
+    "hostOS" : "win32",
+    "fullPackSize" : 16799,
+    "fullUnpackSize" : 40903,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

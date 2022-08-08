@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1171165884.484375000,
+    "creationTime" : null,
+    "fileCRC" : -961844346,
+    "fileName" : "Н. Н. Велецкая - Языческая символика славянских архаичных ритуалов.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1488621,
+    "fullUnpackSize" : 2293564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

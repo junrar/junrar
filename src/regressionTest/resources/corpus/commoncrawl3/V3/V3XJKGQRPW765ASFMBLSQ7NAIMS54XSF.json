@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430979246.894724600,
+    "creationTime" : null,
+    "fileCRC" : -1347087005,
+    "fileName" : "График отключения ЛЭП и оборудования на май 2015 Архэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3859247,
+    "fullUnpackSize" : 5112905,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

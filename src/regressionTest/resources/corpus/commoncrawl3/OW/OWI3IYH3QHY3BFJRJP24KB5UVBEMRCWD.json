@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533891714.225698700,
+    "creationTime" : null,
+    "fileCRC" : -1393582835,
+    "fileName" : "Samsung_NP-RV420_NP-RV520_NP-RV720-Scala2-R.rev.0.1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 630233,
+    "fullUnpackSize" : 675249,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

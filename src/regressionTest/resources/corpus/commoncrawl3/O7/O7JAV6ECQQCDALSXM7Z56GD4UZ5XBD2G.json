@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491186087.945000000,
+    "creationTime" : null,
+    "fileCRC" : -1124046366,
+    "fileName" : "catalog\\Белалко 2017 презентация.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 10492186,
+    "fullUnpackSize" : 17682432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1222108205.860500000,
+    "creationTime" : null,
+    "fileCRC" : -1896039718,
+    "fileName" : "Estoril_Pack\\READ ME.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 959,
+    "fullUnpackSize" : 1781,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1222107826.657375000,
+    "creationTime" : null,
+    "fileCRC" : -847291157,
+    "fileName" : "Estoril_Pack\\wad_2008\\hockenheim2001.wad",
+    "hostOS" : "win32",
+    "fullPackSize" : 17828938,
+    "fullUnpackSize" : 53908512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

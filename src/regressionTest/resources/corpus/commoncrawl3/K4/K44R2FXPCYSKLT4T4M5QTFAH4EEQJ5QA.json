@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504812756.100965600,
+    "creationTime" : null,
+    "fileCRC" : -101308598,
+    "fileName" : "17.9.1-W7-64\\Non-WHQL-Win7-64Bit-Radeon-Software-Crimson-ReLive-17.9.1-Sep7.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 494072672,
+    "fullUnpackSize" : 494072672,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

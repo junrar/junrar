@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1113186972.000000000,
+    "creationTime" : null,
+    "fileCRC" : 160815710,
+    "fileName" : "50706.3-94.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 119074,
+    "fullUnpackSize" : 125171,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

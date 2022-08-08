@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1179034544.890375000,
+    "creationTime" : null,
+    "fileCRC" : -1616740128,
+    "fileName" : "Supernatural - 221 - All Hell Breaks Loose (Part 1)\\Supernatural.S02E21.HDTV.XViD-Caph.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15140,
+    "fullUnpackSize" : 40567,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1179034643.656000000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Supernatural - 221 - All Hell Breaks Loose (Part 1)",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

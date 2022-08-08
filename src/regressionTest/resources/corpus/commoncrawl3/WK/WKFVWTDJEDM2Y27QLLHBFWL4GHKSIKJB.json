@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413055017.207000000,
+    "creationTime" : null,
+    "fileCRC" : 580997148,
+    "fileName" : "Greece plus 3.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 18280576,
+    "fullUnpackSize" : 45453824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

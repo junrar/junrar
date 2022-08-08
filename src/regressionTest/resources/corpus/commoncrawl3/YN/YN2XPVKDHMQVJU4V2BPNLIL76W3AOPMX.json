@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298954333.593750000,
+    "creationTime" : null,
+    "fileCRC" : -328549395,
+    "fileName" : "Metalicas\\cobre\\AC009 Antique Copper.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 623416,
+    "fullUnpackSize" : 633491,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298954313.578125000,
+    "creationTime" : null,
+    "fileCRC" : -1866735699,
+    "fileName" : "Metalicas\\cobre\\AC010 Antique Copper.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 832351,
+    "fullUnpackSize" : 843831,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

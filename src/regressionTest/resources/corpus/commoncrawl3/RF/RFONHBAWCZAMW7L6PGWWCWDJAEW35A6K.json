@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413794775.428059200,
+    "creationTime" : null,
+    "fileCRC" : 63172706,
+    "fileName" : "Комиэнерго 2015 Раскрытие ТП предложение.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 101662,
+    "fullUnpackSize" : 121629,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

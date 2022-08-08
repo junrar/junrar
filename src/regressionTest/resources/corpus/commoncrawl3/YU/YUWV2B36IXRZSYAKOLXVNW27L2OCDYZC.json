@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296718621.800000000,
+    "creationTime" : null,
+    "fileCRC" : -460200148,
+    "fileName" : "Exemption 9,10 _1_.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 15004,
+    "fullUnpackSize" : 22016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296718670.630000000,
+    "creationTime" : null,
+    "fileCRC" : -1592387010,
+    "fileName" : "LOK UPYOGI SEWA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 20669,
+    "fullUnpackSize" : 26536,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1339479559.541101700,
+    "creationTime" : null,
+    "fileCRC" : -1014388983,
+    "fileName" : "TF600x400x2000.dxf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1303687,
+    "fullUnpackSize" : 14067656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

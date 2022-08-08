@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410392134.000000000,
+    "creationTime" : null,
+    "fileCRC" : -539887954,
+    "fileName" : "lise-10-hzmuhammedinhayati-performansveproje-musaaydogdu.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 30436,
+    "fullUnpackSize" : 30436,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410392134.000000000,
+    "creationTime" : null,
+    "fileCRC" : 760472310,
+    "fileName" : "lise-9-hzmuhammedinhayati-performansveproje-musaaydogdu.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 31217,
+    "fullUnpackSize" : 31217,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

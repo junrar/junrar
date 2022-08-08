@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401428722.670231300,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "VPD_ann_hr_ascii\\VPD_ann_01.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401428721.983830000,
+    "creationTime" : null,
+    "fileCRC" : -491561993,
+    "fileName" : "VPD_ann_hr_ascii\\vpd_ann_01.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1234779,
+    "fullUnpackSize" : 21706848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

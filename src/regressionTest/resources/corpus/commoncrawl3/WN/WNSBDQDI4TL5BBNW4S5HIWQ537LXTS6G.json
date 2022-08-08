@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1373610884.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1170126157,
+    "fileName" : "Устав 2013 АСКОЛЬД.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 54116,
+    "fullUnpackSize" : 302592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

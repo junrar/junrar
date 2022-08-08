@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427422159.855250300,
+    "creationTime" : null,
+    "fileCRC" : 443375374,
+    "fileName" : "SIA-Reader-2.4.5.2-Linux-x86-Install",
+    "hostOS" : "win32",
+    "fullPackSize" : 18900738,
+    "fullUnpackSize" : 18935129,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221499705.234375000,
+    "creationTime" : null,
+    "fileCRC" : 293205818,
+    "fileName" : "Данилевский Н.Я. - Сравнение методов борьбы с филоксерою.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 559262,
+    "fullUnpackSize" : 564438,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

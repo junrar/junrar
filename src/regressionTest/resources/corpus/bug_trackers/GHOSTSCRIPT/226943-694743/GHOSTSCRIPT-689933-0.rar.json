@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1213970047.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1272430754,
+    "fileName" : "D35-100-A-28963303-MOR9.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14283880,
+    "fullUnpackSize" : 216041525,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

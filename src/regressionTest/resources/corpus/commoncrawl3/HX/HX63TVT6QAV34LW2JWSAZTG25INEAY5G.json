@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418283001.000000000,
+    "creationTime" : null,
+    "fileCRC" : 238541639,
+    "fileName" : "hqd6_01\\Obj\\01.obj",
+    "hostOS" : "win32",
+    "fullPackSize" : 845393,
+    "fullUnpackSize" : 3602386,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418450321.000000000,
+    "creationTime" : null,
+    "fileCRC" : 584080262,
+    "fileName" : "hqd6_01\\Max2010_Vray\\01.max",
+    "hostOS" : "win32",
+    "fullPackSize" : 1248978,
+    "fullUnpackSize" : 1564672,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

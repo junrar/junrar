@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194922397.902491600,
+    "creationTime" : null,
+    "fileCRC" : 498578683,
+    "fileName" : "alma_atinskaia_obl_1987_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 3697612,
+    "fullUnpackSize" : 3697612,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

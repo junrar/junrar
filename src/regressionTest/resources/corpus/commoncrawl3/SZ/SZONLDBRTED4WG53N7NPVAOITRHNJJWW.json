@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436023247.222931400,
+    "creationTime" : null,
+    "fileCRC" : -2107530269,
+    "fileName" : "1Z_dress_whitenobleness_neu2D.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 253765,
+    "fullUnpackSize" : 254584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

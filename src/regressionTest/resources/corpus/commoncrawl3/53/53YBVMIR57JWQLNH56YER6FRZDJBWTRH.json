@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160361360.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2090308375,
+    "fileName" : "83-RPS Dimitrovgrad\\Assessment\\83-RPS Dimitrovgrad-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4878124,
+    "fullUnpackSize" : 5177856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

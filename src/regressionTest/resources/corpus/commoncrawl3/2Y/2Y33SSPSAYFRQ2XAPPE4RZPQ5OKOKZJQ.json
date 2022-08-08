@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377838779.365000000,
+    "creationTime" : null,
+    "fileCRC" : -937378531,
+    "fileName" : "dotnetfx45_full_x86_x64.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 50352408,
+    "fullUnpackSize" : 50352408,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

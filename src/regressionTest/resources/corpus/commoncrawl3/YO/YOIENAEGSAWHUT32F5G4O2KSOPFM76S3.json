@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423712472.584862100,
+    "creationTime" : null,
+    "fileCRC" : -700432720,
+    "fileName" : "Agradoot   October 2014 .pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6617920,
+    "fullUnpackSize" : 6629002,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

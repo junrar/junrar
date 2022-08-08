@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353127670.184798000,
+    "creationTime" : null,
+    "fileCRC" : -711933037,
+    "fileName" : "Supernatural.S08E07.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17740,
+    "fullUnpackSize" : 45320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353140528.287447100,
+    "creationTime" : null,
+    "fileCRC" : 1900755922,
+    "fileName" : "Supernatural.S08E07.A.Little.Slice.Of.Kevin.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17455,
+    "fullUnpackSize" : 43555,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

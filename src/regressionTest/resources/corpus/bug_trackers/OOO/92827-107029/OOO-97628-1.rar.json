@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231317091.984375000,
+    "creationTime" : null,
+    "fileCRC" : 68773879,
+    "fileName" : "97628Scr.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1023524,
+    "fullUnpackSize" : 1192249,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

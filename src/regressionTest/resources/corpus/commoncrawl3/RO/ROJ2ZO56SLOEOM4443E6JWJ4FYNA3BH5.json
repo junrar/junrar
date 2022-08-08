@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478070912.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1717046650,
+    "fileName" : "Белорусский язык (проф. лексика)2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 523914,
+    "fullUnpackSize" : 577713,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478072944.000000000,
+    "creationTime" : null,
+    "fileCRC" : -317914364,
+    "fileName" : "Бизнес-статистика 2014.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 553721,
+    "fullUnpackSize" : 662711,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

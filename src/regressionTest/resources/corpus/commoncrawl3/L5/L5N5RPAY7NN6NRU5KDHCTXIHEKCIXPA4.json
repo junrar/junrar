@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496356352.573049000,
+    "creationTime" : null,
+    "fileCRC" : -70699355,
+    "fileName" : "Привью TS4.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 637122,
+    "fullUnpackSize" : 655374,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485852905.073036400,
+    "creationTime" : null,
+    "fileCRC" : -1771226924,
+    "fileName" : "Cabochon Tree by Anarchy-Cat.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 781270,
+    "fullUnpackSize" : 999722,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

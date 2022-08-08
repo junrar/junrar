@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298745652.119992200,
+    "creationTime" : null,
+    "fileCRC" : -660460823,
+    "fileName" : "Река слез.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 2470022,
+    "fullUnpackSize" : 2470022,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

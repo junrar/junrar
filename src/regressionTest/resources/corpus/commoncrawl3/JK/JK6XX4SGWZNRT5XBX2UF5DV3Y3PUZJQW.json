@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312864756.470839000,
+    "creationTime" : null,
+    "fileCRC" : 495492681,
+    "fileName" : "ISO14001.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 565712,
+    "fullUnpackSize" : 663225,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

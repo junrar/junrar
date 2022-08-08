@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460400278.067780500,
+    "creationTime" : null,
+    "fileCRC" : -928714581,
+    "fileName" : "Концепция проекта Красноярский хайкинг 2016.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 72351,
+    "fullUnpackSize" : 75601,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

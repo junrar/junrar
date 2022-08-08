@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292695551.984375000,
+    "creationTime" : null,
+    "fileCRC" : -1473273762,
+    "fileName" : "[Raws-4U] Tegami Bachi REVERSE - 02 (TX 1280x720 H.264 AAC Chap).ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 8893,
+    "fullUnpackSize" : 33605,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292695530.093750000,
+    "creationTime" : null,
+    "fileCRC" : 68410145,
+    "fileName" : "[Raws-4U] Tegami Bachi REVERSE - 01 (TX 1280x720 H.264 AAC Chap).ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 7497,
+    "fullUnpackSize" : 28221,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

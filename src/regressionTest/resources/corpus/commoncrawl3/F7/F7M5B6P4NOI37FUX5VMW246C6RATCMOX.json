@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528288450.154255300,
+    "creationTime" : null,
+    "fileCRC" : 1947288937,
+    "fileName" : "Haggy Year Of the Goat Decoration.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 1317524,
+    "fullUnpackSize" : 1323432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

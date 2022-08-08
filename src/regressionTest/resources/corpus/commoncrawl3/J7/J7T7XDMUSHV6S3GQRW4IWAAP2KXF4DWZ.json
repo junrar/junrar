@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426829358.254228800,
+    "creationTime" : null,
+    "fileCRC" : -1605999447,
+    "fileName" : "MFU620 software_20150319.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3154031,
+    "fullUnpackSize" : 3186652,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1202099498.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1330578338,
+    "fileName" : "Отчет об эффективном использовани недвижимости.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 814316,
+    "fullUnpackSize" : 1409775,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

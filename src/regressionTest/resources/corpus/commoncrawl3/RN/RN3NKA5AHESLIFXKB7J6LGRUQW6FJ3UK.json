@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423254118.533093300,
+    "creationTime" : null,
+    "fileCRC" : -335822663,
+    "fileName" : "Saporoschez SAS 968M Paper Car\\Page-01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1459313,
+    "fullUnpackSize" : 1531834,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

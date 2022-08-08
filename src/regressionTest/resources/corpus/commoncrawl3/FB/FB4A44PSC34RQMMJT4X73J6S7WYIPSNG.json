@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1282640501.151000000,
+    "creationTime" : null,
+    "fileCRC" : -967545239,
+    "fileName" : "SEDP_PR_DK\\Bai 1 Cap tinh.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 3921575,
+    "fullUnpackSize" : 4946432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

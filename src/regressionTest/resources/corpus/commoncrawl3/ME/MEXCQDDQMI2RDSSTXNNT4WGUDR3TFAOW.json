@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500441626.450631300,
+    "creationTime" : null,
+    "fileCRC" : -1117536981,
+    "fileName" : "7001 cenital.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2055420,
+    "fullUnpackSize" : 2246299,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

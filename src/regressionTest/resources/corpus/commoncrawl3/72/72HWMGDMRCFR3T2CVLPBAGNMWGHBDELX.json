@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489321641.524899900,
+    "creationTime" : null,
+    "fileCRC" : 15181817,
+    "fileName" : "Supernatural.S12E15.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16712,
+    "fullUnpackSize" : 42969,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489503383.775006600,
+    "creationTime" : null,
+    "fileCRC" : -756252375,
+    "fileName" : "Supernatural.S12E15.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16701,
+    "fullUnpackSize" : 42969,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

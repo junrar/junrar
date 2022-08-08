@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381715264.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1362765707,
+    "fileName" : "motivaciya.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 20577238,
+    "fullUnpackSize" : 21069631,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

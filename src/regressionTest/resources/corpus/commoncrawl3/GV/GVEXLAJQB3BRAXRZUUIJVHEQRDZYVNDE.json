@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324485363.011085900,
+    "creationTime" : null,
+    "fileCRC" : -545627953,
+    "fileName" : "3d anagraphic by mostpato.atn",
+    "hostOS" : "win32",
+    "fullPackSize" : 449,
+    "fullUnpackSize" : 1483,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324367312.980286400,
+    "creationTime" : null,
+    "fileCRC" : -122688706,
+    "fileName" : "for more resources visit mostpato on deviantART.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 22571,
+    "fullUnpackSize" : 121920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

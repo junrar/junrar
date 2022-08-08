@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390294506.753330600,
+    "creationTime" : null,
+    "fileCRC" : -880088701,
+    "fileName" : "пожарный_2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 194143,
+    "fullUnpackSize" : 194316,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390294485.398761800,
+    "creationTime" : null,
+    "fileCRC" : 852363818,
+    "fileName" : "пожарный_1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 209145,
+    "fullUnpackSize" : 209145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

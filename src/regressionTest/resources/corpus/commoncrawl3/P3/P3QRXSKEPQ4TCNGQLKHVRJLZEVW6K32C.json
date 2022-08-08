@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331894195.684739000,
+    "creationTime" : null,
+    "fileCRC" : -1019383744,
+    "fileName" : "bisericaspiritualaunica.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1893180,
+    "fullUnpackSize" : 2054904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

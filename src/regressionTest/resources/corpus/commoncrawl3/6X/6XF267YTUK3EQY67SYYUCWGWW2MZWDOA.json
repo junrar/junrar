@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507788767.575446200,
+    "creationTime" : null,
+    "fileCRC" : 641579527,
+    "fileName" : "Скан положения.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4422909,
+    "fullUnpackSize" : 4454769,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

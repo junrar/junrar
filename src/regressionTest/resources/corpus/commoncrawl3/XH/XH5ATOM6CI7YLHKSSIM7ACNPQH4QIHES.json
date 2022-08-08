@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415158076.000000000,
+    "creationTime" : null,
+    "fileCRC" : 378075150,
+    "fileName" : "安装说明.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 619,
+    "fullUnpackSize" : 913,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419266368.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1502776692,
+    "fileName" : "彩艺印刷5.01企业NEW版Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 8078023,
+    "fullUnpackSize" : 8349362,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

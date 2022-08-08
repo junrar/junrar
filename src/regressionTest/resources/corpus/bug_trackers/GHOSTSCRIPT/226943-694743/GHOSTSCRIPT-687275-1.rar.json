@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1075185027.500321300,
+    "creationTime" : null,
+    "fileCRC" : -1541415972,
+    "fileName" : "publisher.ps",
+    "hostOS" : "win32",
+    "fullPackSize" : 1979496,
+    "fullUnpackSize" : 5210816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

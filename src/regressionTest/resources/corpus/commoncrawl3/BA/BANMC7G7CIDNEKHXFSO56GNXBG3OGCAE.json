@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195790938.959695700,
+    "creationTime" : null,
+    "fileCRC" : -1823015287,
+    "fileName" : "belorusskaia_ssr_1947_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 2233014,
+    "fullUnpackSize" : 20593678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

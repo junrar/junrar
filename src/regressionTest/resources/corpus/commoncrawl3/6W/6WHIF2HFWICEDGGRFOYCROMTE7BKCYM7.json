@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369663763.480363800,
+    "creationTime" : null,
+    "fileCRC" : -423465689,
+    "fileName" : "The Lonely Shepherd.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4176895,
+    "fullUnpackSize" : 4275767,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

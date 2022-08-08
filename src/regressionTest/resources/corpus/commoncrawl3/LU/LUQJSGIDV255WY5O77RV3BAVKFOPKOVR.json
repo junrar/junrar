@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1386055200.000000000,
+    "creationTime" : null,
+    "fileCRC" : -735335696,
+    "fileName" : "93-G3-JGA-C-PLH-CRO_R05.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 174601,
+    "fullUnpackSize" : 443904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

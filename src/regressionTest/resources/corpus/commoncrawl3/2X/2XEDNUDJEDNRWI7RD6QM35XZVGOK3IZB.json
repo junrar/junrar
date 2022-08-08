@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141542870.000000000,
+    "creationTime" : null,
+    "fileCRC" : -227349868,
+    "fileName" : "I'm Looking For You.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4354247,
+    "fullUnpackSize" : 4468111,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436868827.752000000,
+    "creationTime" : null,
+    "fileCRC" : -111449410,
+    "fileName" : "List of Street Vendors.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 12985050,
+    "fullUnpackSize" : 17454027,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

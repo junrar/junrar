@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528166751.015625000,
+    "creationTime" : null,
+    "fileCRC" : 1287694841,
+    "fileName" : "45_2018_TT-BTC_370741 (1).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1419961,
+    "fullUnpackSize" : 1696762,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

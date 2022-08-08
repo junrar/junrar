@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395890932.895512200,
+    "creationTime" : null,
+    "fileCRC" : -1191573381,
+    "fileName" : "Sovetnik_ProTrader.ex4",
+    "hostOS" : "win32",
+    "fullPackSize" : 720442,
+    "fullUnpackSize" : 725832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388077515.825879300,
+    "creationTime" : null,
+    "fileCRC" : 1582551379,
+    "fileName" : "ProTrader.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 715010,
+    "fullUnpackSize" : 2348032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

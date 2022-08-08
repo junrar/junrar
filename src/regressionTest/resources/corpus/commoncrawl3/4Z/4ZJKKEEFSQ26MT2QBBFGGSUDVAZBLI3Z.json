@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1451523103.703125000,
+    "creationTime" : null,
+    "fileCRC" : 214894098,
+    "fileName" : "VNEN_6359_15.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 55244799,
+    "fullUnpackSize" : 55244799,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

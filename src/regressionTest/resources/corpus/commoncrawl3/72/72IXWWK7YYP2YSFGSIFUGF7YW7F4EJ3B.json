@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418868952.216988000,
+    "creationTime" : null,
+    "fileCRC" : -342479130,
+    "fileName" : "DC-718-072014\\firmware_DC7180720140001~4040.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 393173063,
+    "fullUnpackSize" : 393173063,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456226334.040665000,
+    "creationTime" : null,
+    "fileCRC" : 705493852,
+    "fileName" : "So_a_Haus_dann_EU-Gegner_zu_hause.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 38242,
+    "fullUnpackSize" : 40320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

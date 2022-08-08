@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506051272.545000000,
+    "creationTime" : null,
+    "fileCRC" : -2100371207,
+    "fileName" : "2016年第三季度报告.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 37574,
+    "fullUnpackSize" : 643806,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

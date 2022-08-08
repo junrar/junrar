@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367594796.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1424319363,
+    "fileName" : "HD Tune Pro.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 578055,
+    "fullUnpackSize" : 658988,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331274815.588963100,
+    "creationTime" : null,
+    "fileCRC" : 2037886149,
+    "fileName" : "hp5si.pcl",
+    "hostOS" : "win32",
+    "fullPackSize" : 6690,
+    "fullUnpackSize" : 13361,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331276526.613566400,
+    "creationTime" : null,
+    "fileCRC" : -533436949,
+    "fileName" : "PCL6.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 47361,
+    "fullUnpackSize" : 52175,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

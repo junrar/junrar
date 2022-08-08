@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1188400435.143853500,
+    "creationTime" : null,
+    "fileCRC" : -1515718257,
+    "fileName" : "armianskaia_ssr_1948_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 3999894,
+    "fullUnpackSize" : 6735228,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

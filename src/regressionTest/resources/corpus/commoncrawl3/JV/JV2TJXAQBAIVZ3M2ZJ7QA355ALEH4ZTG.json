@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1270030623.453125000,
+    "creationTime" : null,
+    "fileCRC" : 833036636,
+    "fileName" : "muzz028.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 742559,
+    "fullUnpackSize" : 741986,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1270030628.156250000,
+    "creationTime" : null,
+    "fileCRC" : 1701560383,
+    "fileName" : "muzz029.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 708263,
+    "fullUnpackSize" : 706856,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

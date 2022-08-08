@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1474868725.410849900,
+    "creationTime" : null,
+    "fileCRC" : -1854425126,
+    "fileName" : "C. BALTASAR-ESTANCIA ENCANTcopia.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 841519,
+    "fullUnpackSize" : 846216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

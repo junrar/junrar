@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379354268.298525700,
+    "creationTime" : null,
+    "fileCRC" : -1228892525,
+    "fileName" : "О текущем моменте 03(110).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 204025,
+    "fullUnpackSize" : 341504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

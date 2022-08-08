@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518573332.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1383309204,
+    "fileName" : "seadoggs-vs-lol123-mirage.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 74485803,
+    "fullUnpackSize" : 194362420,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

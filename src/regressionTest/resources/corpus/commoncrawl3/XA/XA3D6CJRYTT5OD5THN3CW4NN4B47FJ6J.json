@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456540486.796875000,
+    "creationTime" : null,
+    "fileCRC" : -1965915481,
+    "fileName" : "[HorribleSubs] Fairy Tail S2 - 98 [720p].rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 6494,
+    "fullUnpackSize" : 31855,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456541178.250000000,
+    "creationTime" : null,
+    "fileCRC" : 680798839,
+    "fileName" : "[Zero-Raws] Fairy Tail - 273 (TX 1280x720 x264 AAC).rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 2432,
+    "fullUnpackSize" : 31855,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

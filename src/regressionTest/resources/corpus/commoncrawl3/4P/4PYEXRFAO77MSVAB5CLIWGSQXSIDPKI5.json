@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1077390398.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1263536331,
+    "fileName" : "Scmdraft2.ini",
+    "hostOS" : "win32",
+    "fullPackSize" : 189,
+    "fullUnpackSize" : 237,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1080994260.000000000,
+    "creationTime" : null,
+    "fileCRC" : 558161692,
+    "fileName" : "Scmdraft 2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 449429,
+    "fullUnpackSize" : 1105924,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

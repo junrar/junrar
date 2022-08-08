@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414768758.000000000,
+    "creationTime" : null,
+    "fileCRC" : 15884023,
+    "fileName" : "karbalakhpnameh-yaqubi.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4109495,
+    "fullUnpackSize" : 4263184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

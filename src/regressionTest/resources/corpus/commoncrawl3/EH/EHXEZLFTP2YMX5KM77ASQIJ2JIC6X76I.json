@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1344598201.989633000,
+    "creationTime" : null,
+    "fileCRC" : -1119671740,
+    "fileName" : "ANNEX 2 participants list part  1 26 Junio.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2433096,
+    "fullUnpackSize" : 2433096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

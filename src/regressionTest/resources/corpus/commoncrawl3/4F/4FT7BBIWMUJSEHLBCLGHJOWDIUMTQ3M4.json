@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496862602.133245700,
+    "creationTime" : null,
+    "fileCRC" : 618401717,
+    "fileName" : "mIRC.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1085154,
+    "fullUnpackSize" : 1259913,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

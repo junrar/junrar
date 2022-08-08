@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412553900.156250000,
+    "creationTime" : null,
+    "fileCRC" : -1785758706,
+    "fileName" : "kk_male_v1.5.hak",
+    "hostOS" : "win32",
+    "fullPackSize" : 57248313,
+    "fullUnpackSize" : 243997280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

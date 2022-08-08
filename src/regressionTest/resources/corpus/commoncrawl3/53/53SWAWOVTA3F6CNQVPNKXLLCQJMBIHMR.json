@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1205643440.703125000,
+    "creationTime" : null,
+    "fileCRC" : -1507293471,
+    "fileName" : "volta montserrat.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20988,
+    "fullUnpackSize" : 106394,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

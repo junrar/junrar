@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1325061804.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1360792485,
+    "fileName" : "23 Андрей Буторин - Осада рая.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 562408,
+    "fullUnpackSize" : 1504666,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

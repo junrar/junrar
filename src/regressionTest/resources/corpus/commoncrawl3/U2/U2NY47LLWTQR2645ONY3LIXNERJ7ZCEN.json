@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1282406063.781250000,
+    "creationTime" : null,
+    "fileCRC" : -1777559043,
+    "fileName" : "Миллер Генри - Нексус - www.readfree.ru.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 266976,
+    "fullUnpackSize" : 692247,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

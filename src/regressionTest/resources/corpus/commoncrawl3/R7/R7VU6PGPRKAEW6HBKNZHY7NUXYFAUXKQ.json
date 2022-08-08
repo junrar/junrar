@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525225909.596485400,
+    "creationTime" : null,
+    "fileCRC" : -234876625,
+    "fileName" : "青海省疾控信息出版物2018年第二期.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10603084,
+    "fullUnpackSize" : 20990429,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

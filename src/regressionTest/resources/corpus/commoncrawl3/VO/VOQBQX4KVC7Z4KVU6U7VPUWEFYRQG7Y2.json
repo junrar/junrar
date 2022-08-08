@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449462064.300723000,
+    "creationTime" : null,
+    "fileCRC" : -1463723525,
+    "fileName" : "DC-1112\\DC-1112.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 575870300,
+    "fullUnpackSize" : 928346112,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

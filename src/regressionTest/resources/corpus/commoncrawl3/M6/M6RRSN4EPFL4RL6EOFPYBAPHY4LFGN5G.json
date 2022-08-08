@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504498009.983000000,
+    "creationTime" : null,
+    "fileCRC" : 1220136844,
+    "fileName" : "Прайс-лист на сайт (11.09.17).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 132916,
+    "fullUnpackSize" : 696320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433216358.020000000,
+    "creationTime" : null,
+    "fileCRC" : 1899918531,
+    "fileName" : "Новатор №05 (26) июнь 2015г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 809210,
+    "fullUnpackSize" : 835992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

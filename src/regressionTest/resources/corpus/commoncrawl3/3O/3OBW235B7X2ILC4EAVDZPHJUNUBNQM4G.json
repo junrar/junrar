@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1226486846.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2065818674,
+    "fileName" : "Fog of War2.gm6",
+    "hostOS" : "win32",
+    "fullPackSize" : 19173,
+    "fullUnpackSize" : 35836,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225801980.000000000,
+    "creationTime" : null,
+    "fileCRC" : -13390527,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 203,
+    "fullUnpackSize" : 231,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

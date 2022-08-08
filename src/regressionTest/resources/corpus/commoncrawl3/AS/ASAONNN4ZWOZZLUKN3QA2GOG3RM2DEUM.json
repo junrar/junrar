@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986828298.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2069935370,
+    "fileName" : "FILE_ID.DIZ",
+    "hostOS" : "win32",
+    "fullPackSize" : 239,
+    "fullUnpackSize" : 293,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 978610784.000000000,
+    "creationTime" : null,
+    "fileCRC" : -76873534,
+    "fileName" : "SUBBOTA.RTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 43425,
+    "fullUnpackSize" : 150812,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1150825856.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1701443560,
+    "fileName" : "Sudopla2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 189588,
+    "fullUnpackSize" : 1412608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

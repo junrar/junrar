@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410228962.000000000,
+    "creationTime" : null,
+    "fileCRC" : -936887554,
+    "fileName" : "VET 3PP S1000 DIN PN 40.x_t",
+    "hostOS" : "win32",
+    "fullPackSize" : 1084656,
+    "fullUnpackSize" : 4673840,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 998746842.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1937850790,
+    "fileName" : "Беседы о дхарме.RTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 8723,
+    "fullUnpackSize" : 48270,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

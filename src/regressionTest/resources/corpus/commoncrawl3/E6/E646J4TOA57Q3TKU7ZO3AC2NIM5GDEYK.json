@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 848667242.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1064428103,
+    "fileName" : "GEJNC.TXT",
+    "hostOS" : "msdos",
+    "fullPackSize" : 17564,
+    "fullUnpackSize" : 44610,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

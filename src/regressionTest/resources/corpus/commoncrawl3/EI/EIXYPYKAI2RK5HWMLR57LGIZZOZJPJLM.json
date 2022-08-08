@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359517959.241384300,
+    "creationTime" : null,
+    "fileCRC" : 682423092,
+    "fileName" : "SCHEDA N. 2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 556433,
+    "fullUnpackSize" : 570751,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

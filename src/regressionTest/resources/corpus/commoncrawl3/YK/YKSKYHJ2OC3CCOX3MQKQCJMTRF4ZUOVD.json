@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508312067.269927500,
+    "creationTime" : null,
+    "fileCRC" : -439620109,
+    "fileName" : "Вологдаэнерго предложения тарифы 2018 г.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 60550,
+    "fullUnpackSize" : 80668,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

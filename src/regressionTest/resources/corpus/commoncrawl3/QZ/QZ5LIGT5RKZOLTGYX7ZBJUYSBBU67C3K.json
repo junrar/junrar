@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497867407.608925800,
+    "creationTime" : null,
+    "fileCRC" : 382582219,
+    "fileName" : "models\\p_m4a1.mdl",
+    "hostOS" : "win32",
+    "fullPackSize" : 1780248,
+    "fullUnpackSize" : 4593292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

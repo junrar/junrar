@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385195092.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1736287139,
+    "fileName" : "osminog.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 13145901,
+    "fullUnpackSize" : 13214305,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

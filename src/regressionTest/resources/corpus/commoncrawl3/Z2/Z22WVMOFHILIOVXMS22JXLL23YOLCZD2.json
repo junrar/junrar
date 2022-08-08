@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1227104078.828125000,
+    "creationTime" : null,
+    "fileCRC" : -914131739,
+    "fileName" : "Simon Paskel - Di Karbones fun dem Trayengel Fayr 1913.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2744742,
+    "fullUnpackSize" : 3098496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

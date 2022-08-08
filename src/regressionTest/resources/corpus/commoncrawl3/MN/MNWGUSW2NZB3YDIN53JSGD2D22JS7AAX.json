@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514343082.000000000,
+    "creationTime" : null,
+    "fileCRC" : 319363319,
+    "fileName" : "深圳市建筑业新技术应用示范工程评审要求\\关于深圳市建筑业新技术应用示范工程新技术应用计划（2017版）的公告.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2985042,
+    "fullUnpackSize" : 3143093,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

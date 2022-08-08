@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304905884.000000000,
+    "creationTime" : null,
+    "fileCRC" : 25089176,
+    "fileName" : "公司资质\\1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 567490,
+    "fullUnpackSize" : 706043,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304906896.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1214180518,
+    "fileName" : "公司资质\\13.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 888226,
+    "fullUnpackSize" : 951915,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

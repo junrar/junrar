@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468411839.546875000,
+    "creationTime" : null,
+    "fileCRC" : 224341599,
+    "fileName" : "Blaupunkt-BSX-240.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2056100,
+    "fullUnpackSize" : 2326647,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

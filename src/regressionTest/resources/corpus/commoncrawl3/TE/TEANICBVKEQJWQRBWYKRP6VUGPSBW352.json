@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1332456993.343000000,
+    "creationTime" : null,
+    "fileCRC" : -2012799067,
+    "fileName" : "5.sinif_2.donem_1.yazili_2011_2012_musaaydogdu.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 39448,
+    "fullUnpackSize" : 113152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330899087.937500000,
+    "creationTime" : null,
+    "fileCRC" : -294830243,
+    "fileName" : "sda-musaaydogdu.PNG",
+    "hostOS" : "win32",
+    "fullPackSize" : 30995,
+    "fullUnpackSize" : 30995,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

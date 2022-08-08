@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488023028.150402100,
+    "creationTime" : null,
+    "fileCRC" : -1350693084,
+    "fileName" : "Supernatural.S12E13.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16298,
+    "fullUnpackSize" : 41570,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488151441.161762100,
+    "creationTime" : null,
+    "fileCRC" : -238035078,
+    "fileName" : "Supernatural.S12E13.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16287,
+    "fullUnpackSize" : 41570,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384742231.341986200,
+    "creationTime" : null,
+    "fileCRC" : 1668963055,
+    "fileName" : "15 - CCOeste - Compras Sustentáveis - 12.11.2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 436542,
+    "fullUnpackSize" : 479053,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384739820.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1546103527,
+    "fileName" : "GPP 2020 - Português.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 367180,
+    "fullUnpackSize" : 542751,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

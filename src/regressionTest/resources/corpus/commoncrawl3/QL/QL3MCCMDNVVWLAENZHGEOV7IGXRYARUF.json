@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528254203.238769000,
+    "creationTime" : null,
+    "fileCRC" : -1306535929,
+    "fileName" : "2. โล่รางวัล อสม.ที่มีผลการดำเนินงานควบคุมการบริโภคยาสูบดีเด่น ประจำปี 2561\\photothumb.db",
+    "hostOS" : "win32",
+    "fullPackSize" : 42883,
+    "fullUnpackSize" : 54272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528255306.230856500,
+    "creationTime" : null,
+    "fileCRC" : 1082603983,
+    "fileName" : "2. โล่รางวัล อสม.ที่มีผลการดำเนินงานควบคุมการบริโภคยาสูบดีเด่น ประจำปี 2561\\DSC_3218.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1036550,
+    "fullUnpackSize" : 1039839,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1103028600.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1208743767,
+    "fileName" : "wintc172.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 3177988,
+    "fullUnpackSize" : 3187558,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

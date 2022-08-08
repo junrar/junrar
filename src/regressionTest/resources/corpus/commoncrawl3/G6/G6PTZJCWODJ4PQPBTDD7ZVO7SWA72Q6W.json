@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466745906.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2113481561,
+    "fileName" : "РД01-363 от 13.06.2016 г..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 53988,
+    "fullUnpackSize" : 54828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392096480.000000000,
+    "creationTime" : null,
+    "fileCRC" : 325486075,
+    "fileName" : "МЕТОДИКА за определяне на индивидуалните потребности на хората с трайни увреждания.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 514792,
+    "fullUnpackSize" : 5815524,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

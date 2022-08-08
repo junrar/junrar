@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324444800.000000000,
+    "creationTime" : null,
+    "fileCRC" : 437163697,
+    "fileName" : "titulné strany práce.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14279,
+    "fullUnpackSize" : 34304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324444800.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2059419957,
+    "fileName" : "Pokyny k písaniu MP.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 24402,
+    "fullUnpackSize" : 89600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

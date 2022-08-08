@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310620758.000000000,
+    "creationTime" : null,
+    "fileCRC" : 396995750,
+    "fileName" : "declaratia de avere ghetina gheorghe pg. 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 669882,
+    "fullUnpackSize" : 727591,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310620812.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2107160416,
+    "fileName" : "declaratia de avere ghetina gheorghe pg. 3.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 649076,
+    "fullUnpackSize" : 715338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

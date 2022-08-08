@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486916351.548467600,
+    "creationTime" : null,
+    "fileCRC" : -434614103,
+    "fileName" : "Lineage\\Animations\\BG_EffectMeshes.ukx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1552461,
+    "fullUnpackSize" : 3850724,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

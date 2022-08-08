@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321079900.000000000,
+    "creationTime" : null,
+    "fileCRC" : 857578473,
+    "fileName" : "1-3.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 20728,
+    "fullUnpackSize" : 69255,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

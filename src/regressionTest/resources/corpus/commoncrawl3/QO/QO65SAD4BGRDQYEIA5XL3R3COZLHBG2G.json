@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 985423566.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2065549405,
+    "fileName" : "BandoftheHawk.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 355557,
+    "fullUnpackSize" : 368654,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1057107718.000000000,
+    "creationTime" : null,
+    "fileCRC" : -314573169,
+    "fileName" : "Berserk_v25c207p000 copy.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 950488,
+    "fullUnpackSize" : 1142915,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

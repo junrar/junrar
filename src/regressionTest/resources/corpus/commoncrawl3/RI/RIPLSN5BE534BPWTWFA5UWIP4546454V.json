@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1341565013.137460700,
+    "creationTime" : null,
+    "fileCRC" : -59003767,
+    "fileName" : "karta-rossii-s-gorodami-2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 754062,
+    "fullUnpackSize" : 755097,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

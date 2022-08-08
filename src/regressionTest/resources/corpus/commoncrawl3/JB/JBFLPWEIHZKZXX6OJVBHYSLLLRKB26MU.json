@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1018794686.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1579217101,
+    "fileName" : "ubyt.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 70544,
+    "fullUnpackSize" : 71610,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

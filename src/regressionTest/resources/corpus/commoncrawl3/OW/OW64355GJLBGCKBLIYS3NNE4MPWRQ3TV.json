@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275965280.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1203703700,
+    "fileName" : "bozena-riot-control-iso.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 99999914,
+    "fullUnpackSize" : 519733248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

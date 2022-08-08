@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1176209462.296875000,
+    "creationTime" : null,
+    "fileCRC" : 235159478,
+    "fileName" : "This Loving Game.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3097309,
+    "fullUnpackSize" : 3134822,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

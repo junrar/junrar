@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360042788.984375000,
+    "creationTime" : null,
+    "fileCRC" : 2040052732,
+    "fileName" : "درس في الجغرافيا حول الهند للسنة الثالثة ثانوي.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1210545,
+    "fullUnpackSize" : 1403708,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

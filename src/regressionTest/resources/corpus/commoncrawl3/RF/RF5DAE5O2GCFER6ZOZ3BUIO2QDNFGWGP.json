@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330618992.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2069158193,
+    "fileName" : "SKC.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 687689,
+    "fullUnpackSize" : 726528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358732692.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1002543786,
+    "fileName" : "sl-ud443_winxp-7_32-64bit\\DisplayLink-5.6.31870.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 12540956,
+    "fullUnpackSize" : 14443880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

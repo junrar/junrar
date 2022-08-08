@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292454306.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2090497168,
+    "fileName" : "SG-606\\SG-606.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1363183,
+    "fullUnpackSize" : 2419786,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

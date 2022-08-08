@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505433558.763200000,
+    "creationTime" : null,
+    "fileCRC" : 1777453112,
+    "fileName" : "almanac-16.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3115104,
+    "fullUnpackSize" : 3145197,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

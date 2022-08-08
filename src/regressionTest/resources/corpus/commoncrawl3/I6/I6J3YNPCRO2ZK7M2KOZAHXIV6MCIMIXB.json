@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1345686772.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1515322954,
+    "fileName" : "Пост по рекульт..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 16002,
+    "fullUnpackSize" : 74752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

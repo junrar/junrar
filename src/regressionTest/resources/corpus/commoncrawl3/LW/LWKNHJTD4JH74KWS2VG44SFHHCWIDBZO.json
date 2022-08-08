@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 967517150.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1008518991,
+    "fileName" : "SSP_181.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 3744478,
+    "fullUnpackSize" : 8576012,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392775252.188421700,
+    "creationTime" : null,
+    "fileCRC" : 2059312918,
+    "fileName" : "ЛифлетА4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5070463,
+    "fullUnpackSize" : 5208600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293099599.491367000,
+    "creationTime" : null,
+    "fileCRC" : -1073942970,
+    "fileName" : "mark.cfg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1953,
+    "fullUnpackSize" : 4680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

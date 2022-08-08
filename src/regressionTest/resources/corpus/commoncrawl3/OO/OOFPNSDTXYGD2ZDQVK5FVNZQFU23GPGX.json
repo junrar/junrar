@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506743713.884585000,
+    "creationTime" : null,
+    "fileCRC" : -1570721694,
+    "fileName" : "provvedimenti di rettifica\\DECRETO RETTIFICA REINSER CDS 3134-17  - privacy-signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1113186,
+    "fullUnpackSize" : 2047603,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

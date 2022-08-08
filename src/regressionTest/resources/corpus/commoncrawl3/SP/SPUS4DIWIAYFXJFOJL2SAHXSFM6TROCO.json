@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354916248.000000000,
+    "creationTime" : null,
+    "fileCRC" : -139044602,
+    "fileName" : "Виктор Ночкин - Слепое пятно.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 248826,
+    "fullUnpackSize" : 638271,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

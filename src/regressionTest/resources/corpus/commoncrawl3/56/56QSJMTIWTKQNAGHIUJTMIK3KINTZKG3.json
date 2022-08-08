@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501667860.389020400,
+    "creationTime" : null,
+    "fileCRC" : -1722182552,
+    "fileName" : "Об утверждении Правил землепользования и застройки городского округа Троицк\\решение СД 532 - ПЗЗ г.о.Троицк.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 23589,
+    "fullUnpackSize" : 54272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501667866.758384800,
+    "creationTime" : null,
+    "fileCRC" : -1257110244,
+    "fileName" : "Об утверждении Правил землепользования и застройки городского округа Троицк\\532 П. - ПЗЗ г.о.ТРОИЦК.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4568173,
+    "fullUnpackSize" : 5096408,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

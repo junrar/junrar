@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431917112.000000000,
+    "creationTime" : null,
+    "fileCRC" : 559903623,
+    "fileName" : "Отпуск (передача) электроэнергии план 2015г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 92749,
+    "fullUnpackSize" : 95183,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431917178.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1654539199,
+    "fileName" : "Отпуск (передача) электроэнергии план 2016г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 82020,
+    "fullUnpackSize" : 84641,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

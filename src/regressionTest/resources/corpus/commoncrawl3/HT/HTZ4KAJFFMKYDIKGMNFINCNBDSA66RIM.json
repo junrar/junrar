@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499734418.768232200,
+    "creationTime" : null,
+    "fileCRC" : -1238181519,
+    "fileName" : "rs-cross\\6201 copia.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 485133,
+    "fullUnpackSize" : 1134823,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499734421.302377300,
+    "creationTime" : null,
+    "fileCRC" : -1558384174,
+    "fileName" : "rs-cross\\6202 copia.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 567284,
+    "fullUnpackSize" : 1217891,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

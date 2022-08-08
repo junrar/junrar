@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417576882.777245700,
+    "creationTime" : null,
+    "fileCRC" : -55113985,
+    "fileName" : "16.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 11082,
+    "fullUnpackSize" : 13744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417576889.500552400,
+    "creationTime" : null,
+    "fileCRC" : 1964186565,
+    "fileName" : "прил к 16.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 61367,
+    "fullUnpackSize" : 222208,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

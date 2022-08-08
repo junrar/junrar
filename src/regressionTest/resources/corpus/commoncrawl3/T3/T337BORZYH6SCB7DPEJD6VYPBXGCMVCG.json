@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321846532.450448100,
+    "creationTime" : null,
+    "fileCRC" : 310919292,
+    "fileName" : "东北师大附小小升初数学试卷三.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9559,
+    "fullUnpackSize" : 36864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

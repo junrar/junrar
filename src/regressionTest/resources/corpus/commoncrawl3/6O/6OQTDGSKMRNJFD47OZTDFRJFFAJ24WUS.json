@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490942078.588251100,
+    "creationTime" : null,
+    "fileCRC" : -420707027,
+    "fileName" : "viz deti\\1.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 8725560,
+    "fullUnpackSize" : 15999076,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

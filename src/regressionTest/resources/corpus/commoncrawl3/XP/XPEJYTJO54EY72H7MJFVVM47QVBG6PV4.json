@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505292979.476878800,
+    "creationTime" : null,
+    "fileCRC" : -1425723144,
+    "fileName" : "447452.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 28185,
+    "fullUnpackSize" : 31082,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505292976.019681000,
+    "creationTime" : null,
+    "fileCRC" : 511319177,
+    "fileName" : "447451.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12355,
+    "fullUnpackSize" : 43520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

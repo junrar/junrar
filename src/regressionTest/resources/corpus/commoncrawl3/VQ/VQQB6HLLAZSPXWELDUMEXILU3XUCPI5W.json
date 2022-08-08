@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490258280.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1258711320,
+    "fileName" : "Julius Baer Multistock_2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 106974,
+    "fullUnpackSize" : 107634,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490258180.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1589291928,
+    "fileName" : "Julius Baer Multistock.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 106891,
+    "fullUnpackSize" : 107546,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

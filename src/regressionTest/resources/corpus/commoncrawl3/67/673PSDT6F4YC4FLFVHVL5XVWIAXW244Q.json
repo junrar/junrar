@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1143734400.000000000,
+    "creationTime" : null,
+    "fileCRC" : 10625560,
+    "fileName" : "newsletter2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2745151,
+    "fullUnpackSize" : 2897740,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

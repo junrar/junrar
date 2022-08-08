@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371172290.037065000,
+    "creationTime" : null,
+    "fileCRC" : -1668337739,
+    "fileName" : "Прайс.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12949,
+    "fullUnpackSize" : 16950,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

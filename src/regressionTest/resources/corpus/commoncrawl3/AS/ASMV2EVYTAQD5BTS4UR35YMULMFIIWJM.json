@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359517747.912889900,
+    "creationTime" : null,
+    "fileCRC" : 1696054019,
+    "fileName" : "N. 9 STRUTTURE RICETTIVE.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 447912,
+    "fullUnpackSize" : 450895,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458893987.473444600,
+    "creationTime" : null,
+    "fileCRC" : 1344222095,
+    "fileName" : "Andere_Hemmnisse_des_sind_mehr_Herren.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 26799,
+    "fullUnpackSize" : 28416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

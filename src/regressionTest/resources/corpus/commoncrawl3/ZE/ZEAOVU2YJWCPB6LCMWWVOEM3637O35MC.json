@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357260708.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1777851456,
+    "fileName" : "ahd-808a_cms\\General_CMS_Eng_V3.0.9.7.T.20121128.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5826348,
+    "fullUnpackSize" : 6338102,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

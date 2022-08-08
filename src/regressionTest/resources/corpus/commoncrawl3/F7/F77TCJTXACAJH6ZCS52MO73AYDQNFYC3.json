@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405845496.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1928502568,
+    "fileName" : "Imagens da América Latina-Leonardo D'Avila.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 825576,
+    "fullUnpackSize" : 859558,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405849012.000000000,
+    "creationTime" : null,
+    "fileCRC" : -416034326,
+    "fileName" : "Imagens da América Latina-Louisy de Limas.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 748746,
+    "fullUnpackSize" : 778190,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

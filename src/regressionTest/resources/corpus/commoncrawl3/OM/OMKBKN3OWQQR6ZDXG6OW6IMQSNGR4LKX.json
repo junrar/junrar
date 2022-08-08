@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352175939.796875000,
+    "creationTime" : null,
+    "fileCRC" : -266045440,
+    "fileName" : "Дисс.-1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 132424,
+    "fullUnpackSize" : 139751,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

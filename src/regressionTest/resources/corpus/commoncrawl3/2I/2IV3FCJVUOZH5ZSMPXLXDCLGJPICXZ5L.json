@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1006925772.000000000,
+    "creationTime" : null,
+    "fileCRC" : -153026108,
+    "fileName" : "Roland TR-909.drumkit",
+    "hostOS" : "win32",
+    "fullPackSize" : 531574,
+    "fullUnpackSize" : 986707,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

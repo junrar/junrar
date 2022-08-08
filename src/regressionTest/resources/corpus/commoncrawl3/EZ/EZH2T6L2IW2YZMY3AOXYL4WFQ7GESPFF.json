@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441730527.876065300,
+    "creationTime" : null,
+    "fileCRC" : 870256869,
+    "fileName" : "Accurate_English[www.liber.ir].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 122001808,
+    "fullUnpackSize" : 123300502,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

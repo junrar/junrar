@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1166792040.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1462657223,
+    "fileName" : "audit_proverka.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6850,
+    "fullUnpackSize" : 49152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

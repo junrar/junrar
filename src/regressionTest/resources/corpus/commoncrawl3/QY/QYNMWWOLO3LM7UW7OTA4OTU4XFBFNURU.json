@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333439924.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1849047103,
+    "fileName" : "Energ efekt\\CDG Snejanka ener efektivnost.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 694232,
+    "fullUnpackSize" : 1050165,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333440256.000000000,
+    "creationTime" : null,
+    "fileCRC" : -463541112,
+    "fileName" : "Energ efekt\\ODZ Kokice energ efet.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 711199,
+    "fullUnpackSize" : 1086482,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

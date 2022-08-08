@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352484811.634584100,
+    "creationTime" : null,
+    "fileCRC" : -864678495,
+    "fileName" : "Cara_Ngetop_Buat_Penulis_Pemula_1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1697034,
+    "fullUnpackSize" : 1907239,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

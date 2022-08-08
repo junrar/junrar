@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452544000.619922300,
+    "creationTime" : null,
+    "fileCRC" : 339235087,
+    "fileName" : "Adobe.Reader.11.0.10 (www.Downloadha.com)\\setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 75771312,
+    "fullUnpackSize" : 75858112,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

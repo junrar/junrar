@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1406214666.354055400,
+    "creationTime" : null,
+    "fileCRC" : -1371733547,
+    "fileName" : "6-лучевой Т-стягиватель (2).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 110317,
+    "fullUnpackSize" : 115804,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

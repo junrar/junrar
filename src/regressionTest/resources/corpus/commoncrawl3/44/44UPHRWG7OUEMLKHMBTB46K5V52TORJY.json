@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298384469.451842400,
+    "creationTime" : null,
+    "fileCRC" : 336650507,
+    "fileName" : "mp_ib_glass_v3\\mp_ib_glass_v3.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 23285540,
+    "fullUnpackSize" : 23332341,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

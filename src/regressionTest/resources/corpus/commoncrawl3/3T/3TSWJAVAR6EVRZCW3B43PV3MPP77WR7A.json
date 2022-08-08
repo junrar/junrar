@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456825336.277439400,
+    "creationTime" : null,
+    "fileCRC" : -1841268176,
+    "fileName" : "繞著地球跑-內文-01軟工.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3373251,
+    "fullUnpackSize" : 3890523,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

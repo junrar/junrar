@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305600125.334547100,
+    "creationTime" : null,
+    "fileCRC" : -633195906,
+    "fileName" : "mp_deathrun_watchit_v3\\mp_deathrun_watchit_v3.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 20104018,
+    "fullUnpackSize" : 20112011,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369799152.491000000,
+    "creationTime" : null,
+    "fileCRC" : -292259255,
+    "fileName" : "3 том АЛФАВИТНЫЙ СПРАВОЧНИК  СЕЛЬСКИХ НАСЕЛЁННЫХ ПУНКТОВ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1044383,
+    "fullUnpackSize" : 11306496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370230431.091000000,
+    "creationTime" : null,
+    "fileCRC" : -626693924,
+    "fileName" : "Обложка 3 тома.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 37459,
+    "fullUnpackSize" : 57856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

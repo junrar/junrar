@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395926811.478515600,
+    "creationTime" : null,
+    "fileCRC" : -788254757,
+    "fileName" : "polozhenie_o_auktsionnoy_komissi.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 62493,
+    "fullUnpackSize" : 111104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

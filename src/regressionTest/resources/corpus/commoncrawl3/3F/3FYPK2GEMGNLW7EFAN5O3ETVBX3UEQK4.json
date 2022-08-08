@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456653176.845563200,
+    "creationTime" : null,
+    "fileCRC" : -1004190485,
+    "fileName" : "2013 - Neptune☆Sagashite\\01. ネプテューヌ☆サガして.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 10761374,
+    "fullUnpackSize" : 10906862,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

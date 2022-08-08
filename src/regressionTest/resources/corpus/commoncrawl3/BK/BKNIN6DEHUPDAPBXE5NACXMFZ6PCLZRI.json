@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196654376.650786900,
+    "creationTime" : null,
+    "fileCRC" : -908612033,
+    "fileName" : "krasnoiarskii_krai_1972_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 2968175,
+    "fullUnpackSize" : 16738465,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

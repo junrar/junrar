@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290216468.000000000,
+    "creationTime" : null,
+    "fileCRC" : -320188978,
+    "fileName" : "AVITool\\AVITool.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 161358,
+    "fullUnpackSize" : 382464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1462265940.293103400,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "AVITool",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

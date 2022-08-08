@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299491973.479990500,
+    "creationTime" : null,
+    "fileCRC" : 957086479,
+    "fileName" : "mp_cave\\mp_cave.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 30012528,
+    "fullUnpackSize" : 30095902,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

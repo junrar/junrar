@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523857258.601271300,
+    "creationTime" : null,
+    "fileCRC" : 444691664,
+    "fileName" : "Pilotní testování\\ipn-metodika-pilot-test-bd1-submis-gdl-for-ro.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 661056,
+    "fullUnpackSize" : 837298,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523857211.160005300,
+    "creationTime" : null,
+    "fileCRC" : 433599366,
+    "fileName" : "Pilotní testování\\ipn-metodika-pilot-test-bd10-feedback-referees.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 441786,
+    "fullUnpackSize" : 588109,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

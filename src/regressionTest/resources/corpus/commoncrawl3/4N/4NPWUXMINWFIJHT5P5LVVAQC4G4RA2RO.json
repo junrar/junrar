@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422197850.000000000,
+    "creationTime" : null,
+    "fileCRC" : -102912809,
+    "fileName" : "مجلة العلوم الاجتماعية العدد السابع .فرنسية...pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 583669,
+    "fullUnpackSize" : 667585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422196590.000000000,
+    "creationTime" : null,
+    "fileCRC" : 218573054,
+    "fileName" : "مجلة العلوم الاجتماعية العدد السابع .عربية..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2630592,
+    "fullUnpackSize" : 3222271,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

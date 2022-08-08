@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389689968.225863900,
+    "creationTime" : null,
+    "fileCRC" : 1863931305,
+    "fileName" : "План проверок на 2014 год после согласования.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 36154,
+    "fullUnpackSize" : 205312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

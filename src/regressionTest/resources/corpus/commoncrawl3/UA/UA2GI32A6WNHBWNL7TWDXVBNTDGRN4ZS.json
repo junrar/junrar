@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329033928.444994900,
+    "creationTime" : null,
+    "fileCRC" : -694253348,
+    "fileName" : "Supernatural.S07E14.720p.WEB-DL.DD5.1.H.264.GFY.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17620,
+    "fullUnpackSize" : 42077,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328952061.043537000,
+    "creationTime" : null,
+    "fileCRC" : 785182627,
+    "fileName" : "Supernatural.S07E14.HDTV.XviD-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17647,
+    "fullUnpackSize" : 42120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

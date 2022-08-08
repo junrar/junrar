@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512435458.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1636234295,
+    "fileName" : "党内关爱帮扶\\党费管理及党内关爱帮扶专项资金1.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 224448,
+    "fullUnpackSize" : 235203,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511745516.721127300,
+    "creationTime" : null,
+    "fileCRC" : -579893231,
+    "fileName" : "党内关爱帮扶\\关于元旦春节集中发放党内关爱帮扶专项资金的通知.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1478516,
+    "fullUnpackSize" : 1478516,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

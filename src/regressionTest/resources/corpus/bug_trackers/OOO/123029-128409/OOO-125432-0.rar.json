@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407826802.000000000,
+    "creationTime" : null,
+    "fileCRC" : 268569508,
+    "fileName" : "Table name not updated while clicking back.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 129423,
+    "fullUnpackSize" : 182835,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407826612.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1525902067,
+    "fileName" : "Table name not updated.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 113030,
+    "fullUnpackSize" : 164783,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

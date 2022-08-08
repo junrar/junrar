@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464750720.502518400,
+    "creationTime" : null,
+    "fileCRC" : -1717125034,
+    "fileName" : "График на июнь 2016 Карелэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 162603,
+    "fullUnpackSize" : 211136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464744231.291018200,
+    "creationTime" : null,
+    "fileCRC" : -1272577998,
+    "fileName" : "График на июнь 2016 ЦУС Архэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1453584,
+    "fullUnpackSize" : 1816235,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

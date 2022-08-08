@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515515712.744140800,
+    "creationTime" : null,
+    "fileCRC" : -465106726,
+    "fileName" : "kzm_tinymountain_fykseN_0247.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 2385663,
+    "fullUnpackSize" : 10406835,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

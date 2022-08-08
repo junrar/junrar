@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530612680.980000000,
+    "creationTime" : null,
+    "fileCRC" : -1248917921,
+    "fileName" : "приложение (каз).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 42181,
+    "fullUnpackSize" : 683008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530612663.037000000,
+    "creationTime" : null,
+    "fileCRC" : 2129317439,
+    "fileName" : "Т-49-Г-2018 (каз).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 136185,
+    "fullUnpackSize" : 814592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

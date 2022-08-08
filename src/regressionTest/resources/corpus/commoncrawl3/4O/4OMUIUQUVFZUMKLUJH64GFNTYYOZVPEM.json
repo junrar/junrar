@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264670750.578125000,
+    "creationTime" : null,
+    "fileCRC" : 926344378,
+    "fileName" : "aaar.abr",
+    "hostOS" : "win32",
+    "fullPackSize" : 2390725,
+    "fullUnpackSize" : 3766602,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

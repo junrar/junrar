@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363578097.518719600,
+    "creationTime" : null,
+    "fileCRC" : -511907952,
+    "fileName" : "Marvel Zombies II  #2 (www.ElAbueloSawa.com)\\001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 613870,
+    "fullUnpackSize" : 633548,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363577982.280128300,
+    "creationTime" : null,
+    "fileCRC" : 282100179,
+    "fileName" : "Marvel Zombies II  #2 (www.ElAbueloSawa.com)\\002.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 744150,
+    "fullUnpackSize" : 758855,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380290985.640280800,
+    "creationTime" : null,
+    "fileCRC" : 1187093962,
+    "fileName" : "Руководство по ремонту.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3835531,
+    "fullUnpackSize" : 4652502,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

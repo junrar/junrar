@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452718645.233000000,
+    "creationTime" : null,
+    "fileCRC" : 1656227165,
+    "fileName" : "sesamestreet708_H.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 28104352,
+    "fullUnpackSize" : 29402396,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430374180.242168500,
+    "creationTime" : null,
+    "fileCRC" : 1969712661,
+    "fileName" : "Ener'Make_1_0_0_1\\Ener'Make.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 158468,
+    "fullUnpackSize" : 630272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430374348.477791000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Ener'Make_1_0_0_1",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

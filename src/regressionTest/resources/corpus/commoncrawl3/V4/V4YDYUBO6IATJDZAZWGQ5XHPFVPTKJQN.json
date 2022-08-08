@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399622760.930730900,
+    "creationTime" : null,
+    "fileCRC" : -486458138,
+    "fileName" : "SENAI_ALUNOS.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 16769207,
+    "fullUnpackSize" : 16769207,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

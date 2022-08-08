@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376491680.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1418277662,
+    "fileName" : "logcat_20130814174136.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 31113,
+    "fullUnpackSize" : 593020,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

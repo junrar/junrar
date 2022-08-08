@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436086608.404243300,
+    "creationTime" : null,
+    "fileCRC" : -180482655,
+    "fileName" : "poor ball.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 2970,
+    "fullUnpackSize" : 3521,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436086556.933299300,
+    "creationTime" : null,
+    "fileCRC" : 1574809869,
+    "fileName" : "poor ball.xex",
+    "hostOS" : "win32",
+    "fullPackSize" : 12396,
+    "fullUnpackSize" : 24966,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

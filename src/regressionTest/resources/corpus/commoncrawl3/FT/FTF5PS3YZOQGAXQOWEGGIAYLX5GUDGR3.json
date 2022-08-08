@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370954508.687500000,
+    "creationTime" : null,
+    "fileCRC" : -691390478,
+    "fileName" : "отчет 2012 год ул.Пулковская д.1 корп.2 лист 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 266931,
+    "fullUnpackSize" : 307286,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370954508.156250000,
+    "creationTime" : null,
+    "fileCRC" : 1251339306,
+    "fileName" : "отчет 2012 год ул.Пулковская д.1 корп.2 лист 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 347369,
+    "fullUnpackSize" : 385437,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

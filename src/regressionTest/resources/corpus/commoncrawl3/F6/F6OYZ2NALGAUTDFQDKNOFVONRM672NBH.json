@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367030873.869858400,
+    "creationTime" : null,
+    "fileCRC" : 238393817,
+    "fileName" : "psorbook v2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4741853,
+    "fullUnpackSize" : 5445526,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

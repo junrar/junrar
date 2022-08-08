@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491449160.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1819002526,
+    "fileName" : "hy-ex1_tx382b-chipset_windows_xp-vista-7-8_32-64bit\\Setup_1P.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3146653,
+    "fullUnpackSize" : 5400674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

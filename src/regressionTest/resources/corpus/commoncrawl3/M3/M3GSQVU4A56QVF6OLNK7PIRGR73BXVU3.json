@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528086266.636396400,
+    "creationTime" : null,
+    "fileCRC" : 1158344676,
+    "fileName" : "TVLogoPack\\TVLogoPack\\beINSPORTS.fbmod",
+    "hostOS" : "win32",
+    "fullPackSize" : 782,
+    "fullUnpackSize" : 2047,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528086266.640395100,
+    "creationTime" : null,
+    "fileCRC" : -1262187382,
+    "fileName" : "TVLogoPack\\TVLogoPack\\beINSPORTS_01.archive",
+    "hostOS" : "win32",
+    "fullPackSize" : 10001055,
+    "fullUnpackSize" : 10046990,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

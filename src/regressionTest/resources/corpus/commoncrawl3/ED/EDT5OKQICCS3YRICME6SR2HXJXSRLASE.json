@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1238049263.697200000,
+    "creationTime" : null,
+    "fileCRC" : 474471559,
+    "fileName" : "handling.dat",
+    "hostOS" : "win32",
+    "fullPackSize" : 6946,
+    "fullUnpackSize" : 37886,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1238049400.670200000,
+    "creationTime" : null,
+    "fileCRC" : -1953571896,
+    "fileName" : "weaponinfo.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 2204,
+    "fullUnpackSize" : 18829,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

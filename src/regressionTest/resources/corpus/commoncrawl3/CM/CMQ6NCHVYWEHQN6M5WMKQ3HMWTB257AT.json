@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1191897162.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2102894211,
+    "fileName" : "[3]_-_Ночные маски.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 202680,
+    "fullUnpackSize" : 550125,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

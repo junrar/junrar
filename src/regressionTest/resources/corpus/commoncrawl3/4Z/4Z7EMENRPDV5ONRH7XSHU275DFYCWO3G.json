@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427033902.799398800,
+    "creationTime" : null,
+    "fileCRC" : -1957731620,
+    "fileName" : "Родит. собрание о ЕГЭ.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 3918103,
+    "fullUnpackSize" : 4602368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

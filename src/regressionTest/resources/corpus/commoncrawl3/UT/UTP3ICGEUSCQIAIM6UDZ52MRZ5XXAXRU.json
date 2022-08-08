@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507537088.592437900,
+    "creationTime" : null,
+    "fileCRC" : 1936524089,
+    "fileName" : "İmar Mevzuatı Ve Erişilebilirlik Eğitim Sunumları\\Erişilebilirlik Mevzuatı.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 569192,
+    "fullUnpackSize" : 642625,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507537122.178510700,
+    "creationTime" : null,
+    "fileCRC" : -598065279,
+    "fileName" : "İmar Mevzuatı Ve Erişilebilirlik Eğitim Sunumları\\Erişilebilirlik Proje Örnekleri.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2002147,
+    "fullUnpackSize" : 2277447,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

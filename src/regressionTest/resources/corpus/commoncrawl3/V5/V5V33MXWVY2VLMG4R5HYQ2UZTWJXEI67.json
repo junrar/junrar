@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453456246.000000000,
+    "creationTime" : null,
+    "fileCRC" : 807443542,
+    "fileName" : "firmware.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 17942485,
+    "fullUnpackSize" : 34324480,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

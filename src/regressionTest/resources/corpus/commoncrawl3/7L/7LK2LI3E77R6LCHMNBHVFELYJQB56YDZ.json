@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1121322944.000000000,
+    "creationTime" : null,
+    "fileCRC" : -997132077,
+    "fileName" : "gm6_trajectory.gm6",
+    "hostOS" : "win32",
+    "fullPackSize" : 292356,
+    "fullUnpackSize" : 297601,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

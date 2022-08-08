@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1471233522.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1121214447,
+    "fileName" : "ozp64p_zapret_analog\\04_031-13.1-01-ТМ.06 от 21.03.2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 23392254,
+    "fullUnpackSize" : 32752388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369665202.761685900,
+    "creationTime" : null,
+    "fileCRC" : -565297252,
+    "fileName" : "Feelings.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9548047,
+    "fullUnpackSize" : 9559442,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

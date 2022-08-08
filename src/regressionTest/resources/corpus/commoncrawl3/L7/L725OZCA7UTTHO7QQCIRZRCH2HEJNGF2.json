@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1113186930.000000000,
+    "creationTime" : null,
+    "fileCRC" : -273883048,
+    "fileName" : "4329-77.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 118324,
+    "fullUnpackSize" : 132707,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

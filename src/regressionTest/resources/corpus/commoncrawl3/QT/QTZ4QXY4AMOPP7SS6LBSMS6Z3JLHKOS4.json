@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525837903.515747000,
+    "creationTime" : null,
+    "fileCRC" : 444881155,
+    "fileName" : "3_物聯網產業標準輔導說明_鄭資深顧問.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1440439,
+    "fullUnpackSize" : 1454918,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

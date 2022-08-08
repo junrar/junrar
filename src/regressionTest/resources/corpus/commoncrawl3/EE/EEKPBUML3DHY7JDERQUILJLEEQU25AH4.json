@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1147540001.296875000,
+    "creationTime" : null,
+    "fileCRC" : 1525515995,
+    "fileName" : "CLASS - Hooligans.Storm Over Europe installer.mod",
+    "hostOS" : "win32",
+    "fullPackSize" : 2189,
+    "fullUnpackSize" : 11066,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217327204.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1829108938,
+    "fileName" : "Poegle_Samouchitel_latyshskogo_jazyka_djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 2391493,
+    "fullUnpackSize" : 2395459,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

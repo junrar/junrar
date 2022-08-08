@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385201592.553609500,
+    "creationTime" : null,
+    "fileCRC" : 437767450,
+    "fileName" : "blaupunktCAR300.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 156052,
+    "fullUnpackSize" : 387072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

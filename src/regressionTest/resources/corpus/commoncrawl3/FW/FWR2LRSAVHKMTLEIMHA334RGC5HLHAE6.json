@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374248215.728197300,
+    "creationTime" : null,
+    "fileCRC" : -1777217841,
+    "fileName" : "Readme - The Introduction.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 687,
+    "fullUnpackSize" : 1256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374247474.730814700,
+    "creationTime" : null,
+    "fileCRC" : -373098755,
+    "fileName" : "takedown_theintroduction.map",
+    "hostOS" : "win32",
+    "fullPackSize" : 177692306,
+    "fullUnpackSize" : 365659824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

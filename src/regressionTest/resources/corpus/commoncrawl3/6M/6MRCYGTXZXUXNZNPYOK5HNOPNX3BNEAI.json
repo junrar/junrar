@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187448142.390625000,
+    "creationTime" : null,
+    "fileCRC" : -75280199,
+    "fileName" : "Azis Osman -Bez nade.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 256969,
+    "fullUnpackSize" : 1384448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

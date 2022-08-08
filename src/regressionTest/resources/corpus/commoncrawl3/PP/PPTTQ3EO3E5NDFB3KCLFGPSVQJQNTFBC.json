@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1202048487.890625000,
+    "creationTime" : null,
+    "fileCRC" : -328180914,
+    "fileName" : "csi.2x01.burked.ws_dvdrip_xvid-fov.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15498,
+    "fullUnpackSize" : 47581,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

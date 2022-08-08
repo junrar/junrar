@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384594754.307543400,
+    "creationTime" : null,
+    "fileCRC" : -1556001895,
+    "fileName" : "[MC]Karneval v11ch61[rus]\\[MC]Karneval v11ch61pg01[rus].jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1300458,
+    "fullUnpackSize" : 1300643,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

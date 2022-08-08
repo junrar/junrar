@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369722295.055987400,
+    "creationTime" : null,
+    "fileCRC" : -1178787204,
+    "fileName" : "Dreams.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4665970,
+    "fullUnpackSize" : 4685621,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

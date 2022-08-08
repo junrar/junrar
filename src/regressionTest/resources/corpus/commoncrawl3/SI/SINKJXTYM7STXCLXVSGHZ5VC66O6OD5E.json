@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273301912.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1704805345,
+    "fileName" : "OldPawn.u",
+    "hostOS" : "win32",
+    "fullPackSize" : 1003229,
+    "fullUnpackSize" : 2252075,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302139367.134500000,
+    "creationTime" : null,
+    "fileCRC" : -3654082,
+    "fileName" : "OldPawn.CX023.Dragon.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 383260,
+    "fullUnpackSize" : 383260,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

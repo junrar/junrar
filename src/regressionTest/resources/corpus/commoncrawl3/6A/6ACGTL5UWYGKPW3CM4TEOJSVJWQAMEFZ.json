@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534300001.904461800,
+    "creationTime" : null,
+    "fileCRC" : 385056306,
+    "fileName" : "2.int  report of govering bodies 2.2018sx.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 346709,
+    "fullUnpackSize" : 408332,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534233497.405847400,
+    "creationTime" : null,
+    "fileCRC" : 460974846,
+    "fileName" : "3. int. financial report 30.06.2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1118952,
+    "fullUnpackSize" : 1605301,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444654643.189027600,
+    "creationTime" : null,
+    "fileCRC" : 1733859403,
+    "fileName" : "CTF-arctic_ArenaBeta.unr",
+    "hostOS" : "win32",
+    "fullPackSize" : 5903743,
+    "fullUnpackSize" : 14749989,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

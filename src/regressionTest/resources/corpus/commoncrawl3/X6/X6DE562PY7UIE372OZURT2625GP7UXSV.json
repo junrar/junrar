@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461753794.626731400,
+    "creationTime" : null,
+    "fileCRC" : -2036062951,
+    "fileName" : "图说兰州统计\\1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 143843,
+    "fullUnpackSize" : 451538,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461753856.819640500,
+    "creationTime" : null,
+    "fileCRC" : 51581975,
+    "fileName" : "图说兰州统计\\10.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1189511,
+    "fullUnpackSize" : 1488388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

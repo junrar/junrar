@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 997630820.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1713893071,
+    "fileName" : "Дневник З.Г.Фоздик.DOC",
+    "hostOS" : "win32",
+    "fullPackSize" : 385578,
+    "fullUnpackSize" : 1949184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

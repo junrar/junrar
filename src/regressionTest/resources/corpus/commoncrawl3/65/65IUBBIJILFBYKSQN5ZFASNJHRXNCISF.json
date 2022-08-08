@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1237205982.734000000,
+    "creationTime" : null,
+    "fileCRC" : -153423210,
+    "fileName" : "кто зимою самый главный.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 30171,
+    "fullUnpackSize" : 122880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479452251.836420000,
+    "creationTime" : null,
+    "fileCRC" : -478925050,
+    "fileName" : "PARKCITY CMB800.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3338492,
+    "fullUnpackSize" : 3436106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

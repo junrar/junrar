@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528165022.066374400,
+    "creationTime" : null,
+    "fileCRC" : 209400576,
+    "fileName" : "КАТАЛОГ ТФИ по Чукотскому  АО .MDB",
+    "hostOS" : "win32",
+    "fullPackSize" : 4946537,
+    "fullUnpackSize" : 36126720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

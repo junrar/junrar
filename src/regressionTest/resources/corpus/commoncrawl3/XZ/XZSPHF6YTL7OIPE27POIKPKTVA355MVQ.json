@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352184090.343750000,
+    "creationTime" : null,
+    "fileCRC" : -1094575772,
+    "fileName" : "Социология управления.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 269640,
+    "fullUnpackSize" : 1360532,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

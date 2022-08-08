@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152440154.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1103430039,
+    "fileName" : "Parcare3.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 177140,
+    "fullUnpackSize" : 7474048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152440828.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1715095736,
+    "fileName" : "Parcare4.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 812148,
+    "fullUnpackSize" : 1187214,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

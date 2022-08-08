@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1287071526.965981600,
+    "creationTime" : null,
+    "fileCRC" : -1102168600,
+    "fileName" : "cover.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 11919,
+    "fullUnpackSize" : 12055,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292568779.408059200,
+    "creationTime" : null,
+    "fileCRC" : -42241873,
+    "fileName" : "stream.2010-12-16.214036.aac",
+    "hostOS" : "win32",
+    "fullPackSize" : 7217305,
+    "fullUnpackSize" : 7526779,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

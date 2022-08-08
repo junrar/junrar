@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300072460.234544400,
+    "creationTime" : null,
+    "fileCRC" : 360695994,
+    "fileName" : "mp_vs_gaps_v4\\mp_vs_gaps_v4.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 28182868,
+    "fullUnpackSize" : 28260181,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

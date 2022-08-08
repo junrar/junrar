@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1198666736.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1676322888,
+    "fileName" : "正念之道-向智尊者.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9088946,
+    "fullUnpackSize" : 9377371,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

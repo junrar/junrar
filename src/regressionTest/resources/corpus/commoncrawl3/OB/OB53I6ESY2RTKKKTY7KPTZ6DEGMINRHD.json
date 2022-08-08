@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1253851624.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1298760672,
+    "fileName" : "SAGEM_F@ST_9520_35_GLR_Install.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 8936957,
+    "fullUnpackSize" : 8940171,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

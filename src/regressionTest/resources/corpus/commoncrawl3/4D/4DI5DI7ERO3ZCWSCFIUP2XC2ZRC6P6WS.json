@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526111096.698665600,
+    "creationTime" : null,
+    "fileCRC" : 600921442,
+    "fileName" : "همایش بهبود بهره برداری اردیبهشت97\\Arghami.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4307205,
+    "fullUnpackSize" : 4833183,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

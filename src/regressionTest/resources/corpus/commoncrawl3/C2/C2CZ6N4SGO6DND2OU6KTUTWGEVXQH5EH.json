@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466691767.616000000,
+    "creationTime" : null,
+    "fileCRC" : 1619279333,
+    "fileName" : "Geralt Iz Rivije - Rawno Iz Rivije\\01 Geralt Iz Rivije - Rawno Iz Rivije (Prod. Kolak47).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 7695020,
+    "fullUnpackSize" : 7787165,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

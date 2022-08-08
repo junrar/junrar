@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519277194.750000000,
+    "creationTime" : null,
+    "fileCRC" : -1231246900,
+    "fileName" : "10 от 16.02.18 бюджетный прогноз.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12948,
+    "fullUnpackSize" : 16380,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519268554.671875000,
+    "creationTime" : null,
+    "fileCRC" : 1959528206,
+    "fileName" : "10. от 16.02.18 Бюджетный прогноз.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 20477,
+    "fullUnpackSize" : 23187,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

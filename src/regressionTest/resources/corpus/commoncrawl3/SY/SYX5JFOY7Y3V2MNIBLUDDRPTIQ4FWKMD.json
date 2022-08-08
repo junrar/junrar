@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390269783.187500000,
+    "creationTime" : null,
+    "fileCRC" : -715566722,
+    "fileName" : "奇瑞.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 337216,
+    "fullUnpackSize" : 358078,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

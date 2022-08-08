@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1145105544.000000000,
+    "creationTime" : null,
+    "fileCRC" : -233345315,
+    "fileName" : "transitionexample2.gm6",
+    "hostOS" : "win32",
+    "fullPackSize" : 3762,
+    "fullUnpackSize" : 11942,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217841766.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1546041719,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 37,
+    "fullUnpackSize" : 37,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

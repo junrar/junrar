@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523599199.440660600,
+    "creationTime" : null,
+    "fileCRC" : 1272236794,
+    "fileName" : "ge-ix-01-bolid (1.3).sbin",
+    "hostOS" : "win32",
+    "fullPackSize" : 245888,
+    "fullUnpackSize" : 245888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

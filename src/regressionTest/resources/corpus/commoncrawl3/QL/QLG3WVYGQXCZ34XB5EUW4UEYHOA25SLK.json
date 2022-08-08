@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366783439.532216100,
+    "creationTime" : null,
+    "fileCRC" : -1115893919,
+    "fileName" : "planse\\1.2-plan incadrare apateu.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6341561,
+    "fullUnpackSize" : 6514696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

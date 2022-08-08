@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473742418.000000000,
+    "creationTime" : null,
+    "fileCRC" : 542875745,
+    "fileName" : "CurrentWare Gateway.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 62669088,
+    "fullUnpackSize" : 67366584,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

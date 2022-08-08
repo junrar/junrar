@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290129997.453125000,
+    "creationTime" : null,
+    "fileCRC" : 1396752359,
+    "fileName" : "QUARTERLY REPORT Q3 2010.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 639500,
+    "fullUnpackSize" : 758316,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

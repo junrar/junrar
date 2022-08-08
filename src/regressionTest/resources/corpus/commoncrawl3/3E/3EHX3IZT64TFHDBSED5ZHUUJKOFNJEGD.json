@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420039901.403544000,
+    "creationTime" : null,
+    "fileCRC" : -924561487,
+    "fileName" : "GTA SA - Plymouth Roadrunner Superbird (RM23) 1970 [www.sanmods.com]\\blade.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1424755,
+    "fullUnpackSize" : 4503552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

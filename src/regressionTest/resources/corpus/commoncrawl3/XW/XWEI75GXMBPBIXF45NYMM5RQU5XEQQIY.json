@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528681992.890625000,
+    "creationTime" : null,
+    "fileCRC" : -521971001,
+    "fileName" : "HDan cac diem coi thi - Ky thi tuyen sinh lop 10 THPT nam hoc 2018-2019_Signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 217214,
+    "fullUnpackSize" : 244944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528681993.437500000,
+    "creationTime" : null,
+    "fileCRC" : 1664466707,
+    "fileName" : "Tailieu_phobien_taiphongthi_kythituyen sinh 10.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17849,
+    "fullUnpackSize" : 89088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413518779.184863200,
+    "creationTime" : null,
+    "fileCRC" : 1588014387,
+    "fileName" : "RC_ESXI.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 18265364,
+    "fullUnpackSize" : 18265364,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

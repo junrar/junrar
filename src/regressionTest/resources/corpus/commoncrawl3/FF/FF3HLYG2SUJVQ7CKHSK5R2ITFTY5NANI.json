@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293870155.050257200,
+    "creationTime" : null,
+    "fileCRC" : 588777252,
+    "fileName" : "J-Downloader.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 279983,
+    "fullUnpackSize" : 293176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

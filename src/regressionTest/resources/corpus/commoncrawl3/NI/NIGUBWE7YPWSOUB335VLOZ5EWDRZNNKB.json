@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410334416.700535300,
+    "creationTime" : null,
+    "fileCRC" : -1612241921,
+    "fileName" : "SR 180.x_t",
+    "hostOS" : "win32",
+    "fullPackSize" : 1875918,
+    "fullUnpackSize" : 6115883,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

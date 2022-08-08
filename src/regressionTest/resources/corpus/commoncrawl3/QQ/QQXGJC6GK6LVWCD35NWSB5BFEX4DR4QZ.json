@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333506568.187000000,
+    "creationTime" : null,
+    "fileCRC" : 2136155362,
+    "fileName" : "Постановление порядки, стоимость,объемы  март 2012.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 58336,
+    "fullUnpackSize" : 296448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

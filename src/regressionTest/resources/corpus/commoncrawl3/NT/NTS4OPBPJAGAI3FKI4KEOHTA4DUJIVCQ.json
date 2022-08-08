@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452529266.824016300,
+    "creationTime" : null,
+    "fileCRC" : -100745344,
+    "fileName" : "golden tracks_\\GT.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 1085862,
+    "fullUnpackSize" : 4219078,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

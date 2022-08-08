@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517280942.296807900,
+    "creationTime" : null,
+    "fileCRC" : -280633584,
+    "fileName" : "sx2018rv05oakland.ultralow.saf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5404320,
+    "fullUnpackSize" : 25318565,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468145614.211000000,
+    "creationTime" : null,
+    "fileCRC" : 1287487766,
+    "fileName" : "NODO TRAVE PILASTRO.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5783913,
+    "fullUnpackSize" : 49443913,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

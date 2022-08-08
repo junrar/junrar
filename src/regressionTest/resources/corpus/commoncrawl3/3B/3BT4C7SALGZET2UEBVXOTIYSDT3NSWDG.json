@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333874139.909756400,
+    "creationTime" : null,
+    "fileCRC" : 1911819223,
+    "fileName" : "co_08_bw_orf_kompanie_v0-4.Chernarus.pbo",
+    "hostOS" : "win32",
+    "fullPackSize" : 79657,
+    "fullUnpackSize" : 170782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

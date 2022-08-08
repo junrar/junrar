@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1446424597.959541700,
+    "creationTime" : null,
+    "fileCRC" : -1790474596,
+    "fileName" : "扁平设计PP模板.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 411175,
+    "fullUnpackSize" : 1353728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

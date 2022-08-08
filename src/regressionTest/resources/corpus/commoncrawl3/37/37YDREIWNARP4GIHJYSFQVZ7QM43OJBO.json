@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389242582.881895200,
+    "creationTime" : null,
+    "fileCRC" : -1640451140,
+    "fileName" : "Tarif__ABB_EUR_V.09.01.14.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 2156857,
+    "fullUnpackSize" : 18265088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

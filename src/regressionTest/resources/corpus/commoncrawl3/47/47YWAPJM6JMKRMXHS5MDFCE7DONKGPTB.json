@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136377788.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2084650856,
+    "fileName" : "Электропотребление.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 218209,
+    "fullUnpackSize" : 311296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

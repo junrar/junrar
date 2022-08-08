@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309431250.815031600,
+    "creationTime" : null,
+    "fileCRC" : 192208293,
+    "fileName" : "mp_lockup\\mp_lockup.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 24382726,
+    "fullUnpackSize" : 24596075,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

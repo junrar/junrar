@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1276071302.000000000,
+    "creationTime" : null,
+    "fileCRC" : 871239471,
+    "fileName" : "XP\\data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 1816772,
+    "fullUnpackSize" : 3560596,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

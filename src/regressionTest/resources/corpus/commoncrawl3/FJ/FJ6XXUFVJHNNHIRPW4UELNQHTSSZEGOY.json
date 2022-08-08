@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1270714990.109375000,
+    "creationTime" : null,
+    "fileCRC" : 912363820,
+    "fileName" : "Screenatorium - Takeoff for Naive\\infos.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 501,
+    "fullUnpackSize" : 733,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1269843492.109375000,
+    "creationTime" : null,
+    "fileCRC" : -679546314,
+    "fileName" : "Screenatorium - Takeoff for Naive\\Screenatorium - Takeoff For Naïve - 01 - Takeoff For Naïve.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 8018688,
+    "fullUnpackSize" : 10303825,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

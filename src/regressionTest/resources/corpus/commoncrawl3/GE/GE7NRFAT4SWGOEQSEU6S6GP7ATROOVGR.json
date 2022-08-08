@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363760584.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2040606427,
+    "fileName" : "Пояснит записка ПЗиЗ Алфёровское СП.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 158047,
+    "fullUnpackSize" : 1152512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362400804.551494000,
+    "creationTime" : null,
+    "fileCRC" : -1743785234,
+    "fileName" : "Алферовское схема ГЗ.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 14856042,
+    "fullUnpackSize" : 23558692,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

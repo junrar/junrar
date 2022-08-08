@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516435870.521619600,
+    "creationTime" : null,
+    "fileCRC" : 55995714,
+    "fileName" : "wintouch-Q93S-20180119-TW.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 386991031,
+    "fullUnpackSize" : 685579264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

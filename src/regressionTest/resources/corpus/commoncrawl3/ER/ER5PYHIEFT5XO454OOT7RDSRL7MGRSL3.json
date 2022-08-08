@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225791432.000000000,
+    "creationTime" : null,
+    "fileCRC" : -805562719,
+    "fileName" : "RED - My All Movies 1.6.3crk.XM",
+    "hostOS" : "win32",
+    "fullPackSize" : 3879,
+    "fullUnpackSize" : 10403,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

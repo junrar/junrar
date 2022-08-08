@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382345633.495461600,
+    "creationTime" : null,
+    "fileCRC" : -1934631376,
+    "fileName" : "inte2013v2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 24300162,
+    "fullUnpackSize" : 29947859,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

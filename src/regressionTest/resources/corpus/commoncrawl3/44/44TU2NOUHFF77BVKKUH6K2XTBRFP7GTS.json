@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517829212.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1261717470,
+    "fileName" : "Załącznik nr 3C - STWiOR\\STWiOR - ul. Świerkowa.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 614874,
+    "fullUnpackSize" : 651189,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517829112.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2030358789,
+    "fileName" : "Załącznik nr 3C - STWiOR\\STWiOR ul. Brata Zeno.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 606748,
+    "fullUnpackSize" : 641880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

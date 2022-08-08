@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1432300052.292044600,
+    "creationTime" : null,
+    "fileCRC" : -559823131,
+    "fileName" : "Sample_Ravan(Marazi)_Fasl-7_DLM_DMS5.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 12857961,
+    "fullUnpackSize" : 13247917,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433164010.525239200,
+    "creationTime" : null,
+    "fileCRC" : 622125726,
+    "fileName" : "Java SE Runtime Environment v8 (Update 45)\\jre-8u45-windows-i586.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 37328992,
+    "fullUnpackSize" : 37328992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

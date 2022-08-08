@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392977838.826729500,
+    "creationTime" : null,
+    "fileCRC" : 1430629116,
+    "fileName" : "Teddy_bear\\Maps\\hqd_teddy_bear_bump.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2091142,
+    "fullUnpackSize" : 2091142,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

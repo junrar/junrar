@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314846966.731034300,
+    "creationTime" : null,
+    "fileCRC" : 1477035717,
+    "fileName" : "Огурцов лекции по физике исправленные\\Квантовая физика.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 788183,
+    "fullUnpackSize" : 885720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314850570.878681900,
+    "creationTime" : null,
+    "fileCRC" : -1232146317,
+    "fileName" : "Огурцов лекции по физике исправленные\\Колебания и волны.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 600656,
+    "fullUnpackSize" : 677722,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

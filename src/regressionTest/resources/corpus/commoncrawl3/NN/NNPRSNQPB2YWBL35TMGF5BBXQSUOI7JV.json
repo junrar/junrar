@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333570203.407832600,
+    "creationTime" : null,
+    "fileCRC" : 1926379257,
+    "fileName" : "pantone colorist.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 46524,
+    "fullUnpackSize" : 60779,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

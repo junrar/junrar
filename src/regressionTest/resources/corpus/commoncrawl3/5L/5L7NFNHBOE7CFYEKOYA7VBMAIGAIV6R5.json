@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349334298.000000000,
+    "creationTime" : null,
+    "fileCRC" : -492172385,
+    "fileName" : "Ahlbayt2Update06-10-2012\\Ahlbayt2\\abl2Mktb.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 282703,
+    "fullUnpackSize" : 940544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348569912.000000000,
+    "creationTime" : null,
+    "fileCRC" : 735937994,
+    "fileName" : "Ahlbayt2Update06-10-2012\\Ahlbayt2\\abl2uni.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 840346,
+    "fullUnpackSize" : 3690496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

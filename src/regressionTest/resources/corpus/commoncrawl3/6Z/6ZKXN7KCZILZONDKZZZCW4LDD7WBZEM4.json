@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1245633819.918157900,
+    "creationTime" : null,
+    "fileCRC" : -628184902,
+    "fileName" : "sp1.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 764707,
+    "fullUnpackSize" : 1338880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369015590.258560200,
+    "creationTime" : null,
+    "fileCRC" : -665354432,
+    "fileName" : "Minutemen #4 (www.ElAbueloSawa.com)\\Before Watchmen - Minutemen Nº 4 - 000a.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 879553,
+    "fullUnpackSize" : 913386,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369015641.719503600,
+    "creationTime" : null,
+    "fileCRC" : 109166260,
+    "fileName" : "Minutemen #4 (www.ElAbueloSawa.com)\\Before Watchmen - Minutemen Nº 4 - 000b.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1057546,
+    "fullUnpackSize" : 1096035,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

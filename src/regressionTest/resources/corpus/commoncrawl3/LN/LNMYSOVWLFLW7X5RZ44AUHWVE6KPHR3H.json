@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473386192.007877300,
+    "creationTime" : null,
+    "fileCRC" : -147114295,
+    "fileName" : "KEHAN__Hi-Player.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5946428,
+    "fullUnpackSize" : 6012937,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

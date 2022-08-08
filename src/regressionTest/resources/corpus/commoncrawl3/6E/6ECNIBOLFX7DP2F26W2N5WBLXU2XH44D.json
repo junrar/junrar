@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180278230.515625000,
+    "creationTime" : null,
+    "fileCRC" : 1453843065,
+    "fileName" : "coduo_patch.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 121506833,
+    "fullUnpackSize" : 121506833,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

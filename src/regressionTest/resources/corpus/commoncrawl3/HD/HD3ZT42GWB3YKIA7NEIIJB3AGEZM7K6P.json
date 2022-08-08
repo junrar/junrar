@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448873542.331552000,
+    "creationTime" : null,
+    "fileCRC" : -1371328980,
+    "fileName" : "Durandal_G1NL-V2_Driver_V1.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 11704935,
+    "fullUnpackSize" : 12026126,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

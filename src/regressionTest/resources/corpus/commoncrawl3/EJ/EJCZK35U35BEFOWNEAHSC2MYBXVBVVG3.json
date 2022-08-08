@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1480929068.000000000,
+    "creationTime" : null,
+    "fileCRC" : -149912201,
+    "fileName" : "Сертифікати ЕтноПродукт\\Page1 (2).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3147888,
+    "fullUnpackSize" : 3372300,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

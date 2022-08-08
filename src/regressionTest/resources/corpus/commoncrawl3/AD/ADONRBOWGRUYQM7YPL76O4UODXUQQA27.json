@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235825979.265625000,
+    "creationTime" : null,
+    "fileCRC" : 1504530775,
+    "fileName" : "Cape Fear 1991 DvDrip[Eng]-greenbud1969.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 35983,
+    "fullUnpackSize" : 97009,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296039311.046875000,
+    "creationTime" : null,
+    "fileCRC" : 511334037,
+    "fileName" : "[isoHunt] Cape Fear 1991 DvDrip[Eng]-greenbud1969.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 16639,
+    "fullUnpackSize" : 16820,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

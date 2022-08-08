@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275831814.000000000,
+    "creationTime" : null,
+    "fileCRC" : -249615360,
+    "fileName" : "CATALOG_ENERGOPROM\\КАТАЛОГ-2000.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2564436,
+    "fullUnpackSize" : 4353366,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

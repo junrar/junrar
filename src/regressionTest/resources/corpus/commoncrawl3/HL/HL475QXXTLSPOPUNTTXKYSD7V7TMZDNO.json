@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395200198.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1097823935,
+    "fileName" : "CUSB3EXI_Driver\\EXE\\InstallShield 2010 SP1 Projects-101217.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 940798,
+    "fullUnpackSize" : 946075,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395200394.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1174827792,
+    "fileName" : "CUSB3EXI_Driver\\EXE\\RENESAS-USB3-Host-Driver-20320-setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 8639095,
+    "fullUnpackSize" : 9278488,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

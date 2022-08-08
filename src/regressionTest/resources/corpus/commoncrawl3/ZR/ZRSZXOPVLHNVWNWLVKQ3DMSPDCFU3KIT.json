@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512538920.859375000,
+    "creationTime" : null,
+    "fileCRC" : -1378585951,
+    "fileName" : "2017年11月学位成绩.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 3786,
+    "fullUnpackSize" : 22528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

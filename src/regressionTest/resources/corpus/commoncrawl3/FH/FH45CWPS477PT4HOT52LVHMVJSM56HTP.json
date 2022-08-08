@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521088859.854864700,
+    "creationTime" : null,
+    "fileCRC" : 684895020,
+    "fileName" : "Протокол итоговый РЭН-060-21-05-18.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 24155,
+    "fullUnpackSize" : 27779,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521106404.593564800,
+    "creationTime" : null,
+    "fileCRC" : 2122558536,
+    "fileName" : "Протокол итоговый РЭН-060-21-05-18.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 18084,
+    "fullUnpackSize" : 18592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

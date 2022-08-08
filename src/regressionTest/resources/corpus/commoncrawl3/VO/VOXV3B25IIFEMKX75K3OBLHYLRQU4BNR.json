@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235096892.859375000,
+    "creationTime" : null,
+    "fileCRC" : 1303502610,
+    "fileName" : "super_pi_mod.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 43996,
+    "fullUnpackSize" : 105496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

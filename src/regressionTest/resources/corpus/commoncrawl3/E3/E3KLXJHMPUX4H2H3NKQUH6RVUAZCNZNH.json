@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1375274408.875033900,
+    "creationTime" : null,
+    "fileCRC" : 2130393874,
+    "fileName" : "Загрузочный диск MS-DOS\\DOS5.0_bootdisk.iso.uibak",
+    "hostOS" : "win32",
+    "fullPackSize" : 473479,
+    "fullUnpackSize" : 2314240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1375274409.595075100,
+    "creationTime" : null,
+    "fileCRC" : 848236485,
+    "fileName" : "Загрузочный диск MS-DOS\\DOS6.0_bootdisk.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 12990988,
+    "fullUnpackSize" : 16674816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

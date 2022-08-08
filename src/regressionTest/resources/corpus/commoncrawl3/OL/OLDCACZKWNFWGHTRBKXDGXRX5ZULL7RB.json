@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1280721401.531250000,
+    "creationTime" : null,
+    "fileCRC" : 1834723118,
+    "fileName" : "Джойс Лидия. Тени в ночи.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 128481,
+    "fullUnpackSize" : 394292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

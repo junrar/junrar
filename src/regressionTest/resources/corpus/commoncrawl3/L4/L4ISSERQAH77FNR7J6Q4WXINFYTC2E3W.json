@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498702620.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1795955303,
+    "fileName" : "Petycja OR.152.1.2017\\Baner-konferencji.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 123662,
+    "fullUnpackSize" : 123662,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498703940.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1934344790,
+    "fileName" : "Petycja OR.152.1.2017\\IWAodours2017_CallForPapers3.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1686237,
+    "fullUnpackSize" : 1754210,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

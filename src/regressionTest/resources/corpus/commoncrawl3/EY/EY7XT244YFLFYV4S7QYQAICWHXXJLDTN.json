@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509447597.896623600,
+    "creationTime" : null,
+    "fileCRC" : -607101188,
+    "fileName" : "Iran Patent Center.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 228696,
+    "fullUnpackSize" : 252216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

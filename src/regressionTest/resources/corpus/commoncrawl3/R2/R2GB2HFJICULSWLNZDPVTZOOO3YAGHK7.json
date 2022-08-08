@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420087728.000000000,
+    "creationTime" : null,
+    "fileCRC" : -210506397,
+    "fileName" : "1420105815_mechanized_assault_flyer-tron-red.pdo",
+    "hostOS" : "win32",
+    "fullPackSize" : 393030,
+    "fullUnpackSize" : 1227314,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

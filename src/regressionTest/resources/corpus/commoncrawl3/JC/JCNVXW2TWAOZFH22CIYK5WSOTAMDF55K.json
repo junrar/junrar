@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1206292812.898387200,
+    "creationTime" : null,
+    "fileCRC" : -473458880,
+    "fileName" : "欢迎测试亿讯网络机房.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 67,
+    "fullUnpackSize" : 67,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177679795.406250000,
+    "creationTime" : null,
+    "fileCRC" : 1997136813,
+    "fileName" : "dotnetfx.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 23480334,
+    "fullUnpackSize" : 23510720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

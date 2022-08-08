@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362969808.000000000,
+    "creationTime" : null,
+    "fileCRC" : 934520733,
+    "fileName" : "2. Исход-Второзаконие\\02_Exodus\\01.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2464275,
+    "fullUnpackSize" : 2494424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

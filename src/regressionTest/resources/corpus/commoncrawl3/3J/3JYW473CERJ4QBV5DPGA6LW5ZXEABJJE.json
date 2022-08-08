@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986963388.000000000,
+    "creationTime" : null,
+    "fileCRC" : -21815253,
+    "fileName" : "FILE_ID.DIZ",
+    "hostOS" : "win32",
+    "fullPackSize" : 212,
+    "fullUnpackSize" : 236,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 985271692.000000000,
+    "creationTime" : null,
+    "fileCRC" : 601714651,
+    "fileName" : "OBJ-LESS.RTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 204941,
+    "fullUnpackSize" : 661039,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

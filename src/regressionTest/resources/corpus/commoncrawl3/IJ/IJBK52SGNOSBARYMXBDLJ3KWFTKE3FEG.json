@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1467245306.000000000,
+    "creationTime" : null,
+    "fileCRC" : -113479648,
+    "fileName" : "El meme de Cristiano Ronaldo riéndose de Messi por fallar el penalti.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 562442,
+    "fullUnpackSize" : 588680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

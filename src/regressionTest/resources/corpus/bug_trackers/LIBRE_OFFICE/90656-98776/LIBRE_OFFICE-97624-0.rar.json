@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454849846.812804400,
+    "creationTime" : null,
+    "fileCRC" : 1670602219,
+    "fileName" : "LIBRE OFFICE.PNG",
+    "hostOS" : "win32",
+    "fullPackSize" : 1586,
+    "fullUnpackSize" : 1586,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454849023.006550200,
+    "creationTime" : null,
+    "fileCRC" : 1703818556,
+    "fileName" : "OPEN OFFICE.PNG",
+    "hostOS" : "win32",
+    "fullPackSize" : 1430,
+    "fullUnpackSize" : 1430,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

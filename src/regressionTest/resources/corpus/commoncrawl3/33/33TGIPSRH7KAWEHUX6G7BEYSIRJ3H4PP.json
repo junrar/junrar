@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1143459903.980632000,
+    "creationTime" : null,
+    "fileCRC" : 855141417,
+    "fileName" : "Smiles.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 35729,
+    "fullUnpackSize" : 2142272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1197197139.937500000,
+    "creationTime" : null,
+    "fileCRC" : -2081731998,
+    "fileName" : "مجموعة الرسائل والمسائل لابن تيمية.bok",
+    "hostOS" : "win32",
+    "fullPackSize" : 443696,
+    "fullUnpackSize" : 1882112,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

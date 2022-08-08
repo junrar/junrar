@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477159417.345878900,
+    "creationTime" : null,
+    "fileCRC" : -1264824174,
+    "fileName" : "DWAD Las Vegas (No Dub)\\01 Intro.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4837706,
+    "fullUnpackSize" : 4870506,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487820662.000000000,
+    "creationTime" : null,
+    "fileCRC" : 537861898,
+    "fileName" : "Община Чипровци ВЕИ\\Копие на Forma_ZEVI_new_final.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 15372,
+    "fullUnpackSize" : 73216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456112640.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1007567685,
+    "fileName" : "Община Чипровци ВЕИ\\ПРОГРАМА ВЕИ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 11142082,
+    "fullUnpackSize" : 11875971,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

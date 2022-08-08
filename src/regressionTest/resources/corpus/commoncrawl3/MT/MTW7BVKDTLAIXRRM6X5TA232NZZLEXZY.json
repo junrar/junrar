@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1073551840.000000000,
+    "creationTime" : null,
+    "fileCRC" : -377923996,
+    "fileName" : "S1CT07.DAT",
+    "hostOS" : "win32",
+    "fullPackSize" : 39438,
+    "fullUnpackSize" : 88770,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1085669256.000000000,
+    "creationTime" : null,
+    "fileCRC" : 758188305,
+    "fileName" : "monaco2004.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6965907,
+    "fullUnpackSize" : 6987738,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

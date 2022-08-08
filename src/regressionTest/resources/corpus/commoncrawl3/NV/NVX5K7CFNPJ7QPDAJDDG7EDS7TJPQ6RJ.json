@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1269863180.484000000,
+    "creationTime" : null,
+    "fileCRC" : -1175301648,
+    "fileName" : "Свобода от смерти.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 270369,
+    "fullUnpackSize" : 1487360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

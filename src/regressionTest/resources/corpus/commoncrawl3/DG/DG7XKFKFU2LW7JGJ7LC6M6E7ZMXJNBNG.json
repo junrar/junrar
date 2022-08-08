@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473736829.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1423373582,
+    "fileName" : "2017-03-22-ispravka-Predmer Bajina Bašta prazan.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 492421,
+    "fullUnpackSize" : 723273,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490318312.247759500,
+    "creationTime" : null,
+    "fileCRC" : 1966186154,
+    "fileName" : "2017-03-22-ispravka-Predmer Šabac prazan.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 565886,
+    "fullUnpackSize" : 1076054,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

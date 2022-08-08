@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297215162.269737300,
+    "creationTime" : null,
+    "fileCRC" : 1559770258,
+    "fileName" : "FRZ014-Mobster-Mon-sommeil\\01 - Moon reflexions (introduction).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3588302,
+    "fullUnpackSize" : 4750151,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

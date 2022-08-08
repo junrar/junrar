@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383749852.906642000,
+    "creationTime" : null,
+    "fileCRC" : 720813459,
+    "fileName" : "Supernatural.S09E05.Dog.Dean.Afternoon.HDTV.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17773,
+    "fullUnpackSize" : 45186,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383925780.784789400,
+    "creationTime" : null,
+    "fileCRC" : -544783724,
+    "fileName" : "Supernatural.S09E05.Dog.Dean.Afternoon.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17800,
+    "fullUnpackSize" : 45249,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

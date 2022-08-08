@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473655277.228153400,
+    "creationTime" : null,
+    "fileCRC" : 1517151308,
+    "fileName" : "TheSkypeDialer.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2966982,
+    "fullUnpackSize" : 3049566,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384165596.000000000,
+    "creationTime" : null,
+    "fileCRC" : 130678845,
+    "fileName" : "Положение об организации общего образования детей, нуждающихся в длительном лечении, детей-инвалидов на дому.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 45888,
+    "fullUnpackSize" : 48677,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

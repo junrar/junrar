@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526515847.157220800,
+    "creationTime" : null,
+    "fileCRC" : -1921817964,
+    "fileName" : "140518N182D.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 54832,
+    "fullUnpackSize" : 59294,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526515694.235745700,
+    "creationTime" : null,
+    "fileCRC" : -2147276419,
+    "fileName" : "140518N182P.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 98157,
+    "fullUnpackSize" : 107608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

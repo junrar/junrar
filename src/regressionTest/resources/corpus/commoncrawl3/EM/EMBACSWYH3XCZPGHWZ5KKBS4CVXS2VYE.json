@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1224848241.281250000,
+    "creationTime" : null,
+    "fileCRC" : 1756398807,
+    "fileName" : "2001 pit update.tup",
+    "hostOS" : "win32",
+    "fullPackSize" : 3888208,
+    "fullUnpackSize" : 3888208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

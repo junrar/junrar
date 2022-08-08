@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357638951.931403000,
+    "creationTime" : null,
+    "fileCRC" : -510506276,
+    "fileName" : "Supernatural - 08x07 - A Little Slice of Kevin.480p.WEB-DL.English.C.orig.Addic7ed.com.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17222,
+    "fullUnpackSize" : 45663,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357638948.380199800,
+    "creationTime" : null,
+    "fileCRC" : 1031749386,
+    "fileName" : "Supernatural - 08x07 - A Little Slice of Kevin.LOL.English.C.orig.Addic7ed.com.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17207,
+    "fullUnpackSize" : 45663,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

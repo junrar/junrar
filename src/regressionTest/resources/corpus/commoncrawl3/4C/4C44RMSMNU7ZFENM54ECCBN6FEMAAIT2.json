@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1089018624.000000000,
+    "creationTime" : null,
+    "fileCRC" : -590563838,
+    "fileName" : "5zdjec(www.rozrabiaki.pl).pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 510674,
+    "fullUnpackSize" : 538624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

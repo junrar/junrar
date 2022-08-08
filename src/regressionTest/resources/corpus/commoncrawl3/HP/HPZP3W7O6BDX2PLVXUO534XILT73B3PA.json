@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466399697.330281900,
+    "creationTime" : null,
+    "fileCRC" : -1324970544,
+    "fileName" : "вторник на 21 июня.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1135652,
+    "fullUnpackSize" : 1505038,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

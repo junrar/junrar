@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529670672.104000000,
+    "creationTime" : null,
+    "fileCRC" : -634721899,
+    "fileName" : "IOVRF2001-2018.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 379721,
+    "fullUnpackSize" : 4349952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307966115.744880500,
+    "creationTime" : null,
+    "fileCRC" : -1295682655,
+    "fileName" : "mp_reizen\\mp_reizen.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 21067161,
+    "fullUnpackSize" : 21067161,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478819390.625663900,
+    "creationTime" : null,
+    "fileCRC" : -768899543,
+    "fileName" : "Supernatural.S12E02.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14987,
+    "fullUnpackSize" : 38071,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477186540.000000000,
+    "creationTime" : null,
+    "fileCRC" : 815110582,
+    "fileName" : "Supernatural.S12E02.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14997,
+    "fullUnpackSize" : 38071,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

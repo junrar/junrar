@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1205551375.047476100,
+    "creationTime" : null,
+    "fileCRC" : 1003620973,
+    "fileName" : "CLASS - FIFA 2002installer_1.mod",
+    "hostOS" : "win32",
+    "fullPackSize" : 115760,
+    "fullUnpackSize" : 207274,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1205551386.827476100,
+    "creationTime" : null,
+    "fileCRC" : -512772519,
+    "fileName" : "CLASS - FIFA 2002installer_2.mod",
+    "hostOS" : "win32",
+    "fullPackSize" : 63933,
+    "fullUnpackSize" : 114752,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

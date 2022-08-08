@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1202432494.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1893077442,
+    "fileName" : "Example_V1.02.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1153522,
+    "fullUnpackSize" : 1613842,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

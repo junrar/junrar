@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1446170230.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1486154537,
+    "fileName" : "Устав организации (новая редакция) от 11.03.2015г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5850160,
+    "fullUnpackSize" : 6298726,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

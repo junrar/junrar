@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420207961.411272600,
+    "creationTime" : null,
+    "fileCRC" : 667297037,
+    "fileName" : "Ziron.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1189180,
+    "fullUnpackSize" : 4821678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

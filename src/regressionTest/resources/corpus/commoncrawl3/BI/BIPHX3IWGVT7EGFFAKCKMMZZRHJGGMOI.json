@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1140189206.000000000,
+    "creationTime" : null,
+    "fileCRC" : -945269803,
+    "fileName" : "ciuchcia(www.rozrabiaki.pl).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 522078,
+    "fullUnpackSize" : 553271,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1113214874.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1821564123,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 149,
+    "fullUnpackSize" : 251,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

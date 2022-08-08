@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1429060932.578125000,
+    "creationTime" : null,
+    "fileCRC" : -117310910,
+    "fileName" : "P-13-15.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7275,
+    "fullUnpackSize" : 31232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

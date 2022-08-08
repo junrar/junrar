@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1162903368.000000000,
+    "creationTime" : null,
+    "fileCRC" : 955604404,
+    "fileName" : "Csd.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 950369,
+    "fullUnpackSize" : 2903040,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1162607976.000000000,
+    "creationTime" : null,
+    "fileCRC" : 596831909,
+    "fileName" : "csd.dat",
+    "hostOS" : "win32",
+    "fullPackSize" : 525838,
+    "fullUnpackSize" : 525838,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

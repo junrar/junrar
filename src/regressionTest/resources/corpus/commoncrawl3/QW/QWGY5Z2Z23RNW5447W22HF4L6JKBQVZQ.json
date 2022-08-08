@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362997224.968835100,
+    "creationTime" : null,
+    "fileCRC" : 1338378048,
+    "fileName" : "Время(1).swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1470640,
+    "fullUnpackSize" : 1470640,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

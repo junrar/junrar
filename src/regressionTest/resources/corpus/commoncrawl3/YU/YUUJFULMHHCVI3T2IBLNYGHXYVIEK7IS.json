@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511193455.372950100,
+    "creationTime" : null,
+    "fileCRC" : 1580151649,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 456,
+    "fullUnpackSize" : 692,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511193212.631910600,
+    "creationTime" : null,
+    "fileCRC" : -976310139,
+    "fileName" : "JAAJ.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 19,
+    "fullUnpackSize" : 19,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

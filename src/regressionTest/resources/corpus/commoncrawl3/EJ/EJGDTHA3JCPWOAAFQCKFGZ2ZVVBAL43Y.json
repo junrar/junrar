@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303139805.954618700,
+    "creationTime" : null,
+    "fileCRC" : -1326020413,
+    "fileName" : "mp_the_castle\\mp_the_castle.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 23108749,
+    "fullUnpackSize" : 23137244,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

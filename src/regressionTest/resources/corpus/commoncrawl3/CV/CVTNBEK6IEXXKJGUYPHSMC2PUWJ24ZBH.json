@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289030561.720385600,
+    "creationTime" : null,
+    "fileCRC" : 1217777991,
+    "fileName" : "Supernatural.S06E07.Hdtv.Xvid-2HD.avi.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15896,
+    "fullUnpackSize" : 38646,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297065226.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1336337632,
+    "fileName" : "Supernatural.S06E07.Family.Matters.720p.WEB-DL.DD5.1.AAC2.0.H264-SURFER.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15892,
+    "fullUnpackSize" : 39153,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

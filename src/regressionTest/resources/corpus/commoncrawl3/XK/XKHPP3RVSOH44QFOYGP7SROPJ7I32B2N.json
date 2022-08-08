@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1086510910.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1972912186,
+    "fileName" : "ImageBackUp.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1433130,
+    "fullUnpackSize" : 1440265,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

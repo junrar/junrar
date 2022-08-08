@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458104774.258415400,
+    "creationTime" : null,
+    "fileCRC" : -1223818055,
+    "fileName" : "SGM-RX7\\SGM-RX7.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3295062,
+    "fullUnpackSize" : 3373648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

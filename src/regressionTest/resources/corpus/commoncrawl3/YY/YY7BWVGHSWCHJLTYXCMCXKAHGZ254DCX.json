@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312167058.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1889401171,
+    "fileName" : "Информационное сообщение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4370,
+    "fullUnpackSize" : 28160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312166252.000000000,
+    "creationTime" : null,
+    "fileCRC" : 666096480,
+    "fileName" : "Документация по продаже имущества без обявления цены.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17733,
+    "fullUnpackSize" : 101376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1060033740.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1910060077,
+    "fileName" : "main-miha\\ch01.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 505964,
+    "fullUnpackSize" : 715841,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1060033740.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1602556426,
+    "fileName" : "main-miha\\ch02.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 772091,
+    "fullUnpackSize" : 978258,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

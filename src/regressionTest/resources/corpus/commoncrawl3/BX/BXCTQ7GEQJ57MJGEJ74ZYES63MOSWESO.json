@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483205547.713287500,
+    "creationTime" : null,
+    "fileCRC" : 1599874989,
+    "fileName" : "Champions of Anteria [FitGirl Repack].bitdownload.ir\\setup-fitgirl-01.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 1454960450,
+    "fullUnpackSize" : 3500364267,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

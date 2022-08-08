@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413475851.596730200,
+    "creationTime" : null,
+    "fileCRC" : 1181358322,
+    "fileName" : "Кондратий Фёдорович Рылеев Дума « Смерть Ермака» и её связь с русской историей.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1897611,
+    "fullUnpackSize" : 2112512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

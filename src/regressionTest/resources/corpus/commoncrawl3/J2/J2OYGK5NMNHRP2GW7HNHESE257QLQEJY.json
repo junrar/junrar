@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1338866326.307499400,
+    "creationTime" : null,
+    "fileCRC" : 617358231,
+    "fileName" : "InCroZKw.CAB",
+    "hostOS" : "win32",
+    "fullPackSize" : 14183773,
+    "fullUnpackSize" : 14183773,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

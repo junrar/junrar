@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264777194.984375000,
+    "creationTime" : null,
+    "fileCRC" : 80247731,
+    "fileName" : "covers.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 198620,
+    "fullUnpackSize" : 198620,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1258886782.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1793715967,
+    "fileName" : "Zimin_Slovo.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 8239985,
+    "fullUnpackSize" : 8239985,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

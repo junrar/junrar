@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1259749327.875000000,
+    "creationTime" : null,
+    "fileCRC" : -1833228984,
+    "fileName" : "Patria minha\\,patria.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 34163,
+    "fullUnpackSize" : 35811,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1259749394.765625000,
+    "creationTime" : null,
+    "fileCRC" : 864349396,
+    "fileName" : "Patria minha\\5579+-+Pá...mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2630440,
+    "fullUnpackSize" : 2772687,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

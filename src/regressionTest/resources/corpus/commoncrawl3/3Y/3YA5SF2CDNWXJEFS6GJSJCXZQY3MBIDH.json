@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379926398.515625000,
+    "creationTime" : null,
+    "fileCRC" : -1334401276,
+    "fileName" : "QC-785-siyah\\QC-785+Firmware\\update.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 463852160,
+    "fullUnpackSize" : 753530368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

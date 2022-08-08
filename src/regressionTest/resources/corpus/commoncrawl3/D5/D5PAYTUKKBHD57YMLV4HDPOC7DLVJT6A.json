@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422585133.801757800,
+    "creationTime" : null,
+    "fileCRC" : -1990845839,
+    "fileName" : "11fe.17.73raHge.Ep170de.Repack.R.G.Mechanics.EPIDEMZ.NET\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 63,
+    "fullUnpackSize" : 63,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422619230.446289000,
+    "creationTime" : null,
+    "fileCRC" : 975567591,
+    "fileName" : "11fe.17.73raHge.Ep170de.Repack.R.G.Mechanics.EPIDEMZ.NET\\data1.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 714216079,
+    "fullUnpackSize" : 714216079,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

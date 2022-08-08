@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530689660.822085000,
+    "creationTime" : null,
+    "fileCRC" : 844837393,
+    "fileName" : "report (vers10).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 63980,
+    "fullUnpackSize" : 348672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522816491.121000000,
+    "creationTime" : null,
+    "fileCRC" : -1948993015,
+    "fileName" : "Инструкция_услуги.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 226643,
+    "fullUnpackSize" : 282624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362969808.000000000,
+    "creationTime" : null,
+    "fileCRC" : 615328631,
+    "fileName" : "8. Осия-Малахия\\28_Hosea\\01.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1651917,
+    "fullUnpackSize" : 1697899,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

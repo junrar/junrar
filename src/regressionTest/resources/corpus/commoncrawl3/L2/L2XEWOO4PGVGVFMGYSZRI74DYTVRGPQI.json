@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1150384054.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1395019525,
+    "fileName" : "Permyakov.Koreshki.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 338220,
+    "fullUnpackSize" : 348564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

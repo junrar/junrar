@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388668316.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1405742595,
+    "fileName" : "EET_Dom_Kolejowy_Torun.cdp",
+    "hostOS" : "win32",
+    "fullPackSize" : 335064,
+    "fullUnpackSize" : 335064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

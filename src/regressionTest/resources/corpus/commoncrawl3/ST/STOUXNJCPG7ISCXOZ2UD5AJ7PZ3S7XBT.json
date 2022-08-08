@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1386242580.158918300,
+    "creationTime" : null,
+    "fileCRC" : -62138869,
+    "fileName" : "chucha.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 103127407,
+    "fullUnpackSize" : 103639474,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

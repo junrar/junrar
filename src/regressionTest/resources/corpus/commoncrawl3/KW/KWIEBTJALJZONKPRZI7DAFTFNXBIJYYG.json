@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308703660.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1408722606,
+    "fileName" : "SP_Drivers_v1.5\\amd64\\NOTICE",
+    "hostOS" : "win32",
+    "fullPackSize" : 186,
+    "fullUnpackSize" : 236,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308703660.000000000,
+    "creationTime" : null,
+    "fileCRC" : -95787318,
+    "fileName" : "SP_Drivers_v1.5\\amd64\\WdfCoInstaller01009.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 1676559,
+    "fullUnpackSize" : 1721576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1288033314.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1848480136,
+    "fileName" : "Halloween-Scary-postcard.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 527809,
+    "fullUnpackSize" : 572485,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

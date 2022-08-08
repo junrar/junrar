@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458566780.187002000,
+    "creationTime" : null,
+    "fileCRC" : -1868950237,
+    "fileName" : "Um_was_e_Sachwissen_en_Zipras_zusammen.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 33156,
+    "fullUnpackSize" : 34944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

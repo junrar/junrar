@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411971436.407816800,
+    "creationTime" : null,
+    "fileCRC" : -1947793304,
+    "fileName" : "Docs\\001-publichna_pokana.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3300511,
+    "fullUnpackSize" : 3300511,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

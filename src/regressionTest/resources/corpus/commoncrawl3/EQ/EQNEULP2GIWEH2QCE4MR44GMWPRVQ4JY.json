@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476419462.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2050949339,
+    "fileName" : "бизнес-проект Корнеевские помидоры doc.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2975788,
+    "fullUnpackSize" : 2984868,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

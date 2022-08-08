@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419435652.677215700,
+    "creationTime" : null,
+    "fileCRC" : 1446155449,
+    "fileName" : "1. Against the Odds (Extended Version).wav",
+    "hostOS" : "win32",
+    "fullPackSize" : 109969968,
+    "fullUnpackSize" : 130623618,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

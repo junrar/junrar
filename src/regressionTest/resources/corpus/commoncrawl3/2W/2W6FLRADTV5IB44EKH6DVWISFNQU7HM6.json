@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368004552.744295500,
+    "creationTime" : null,
+    "fileCRC" : 1184929428,
+    "fileName" : "music11.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4099153,
+    "fullUnpackSize" : 4165688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

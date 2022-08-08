@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329110478.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2060032241,
+    "fileName" : "отчет 4-2011.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 40385,
+    "fullUnpackSize" : 635995,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492015519.000000000,
+    "creationTime" : null,
+    "fileCRC" : 738096738,
+    "fileName" : "Bayonetta-FitGirl (www.Downloadha.com)\\setup-fitgirl-02.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 684371489,
+    "fullUnpackSize" : 2200867130,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1044402921.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1360811245,
+    "fileName" : "bird4.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 375647,
+    "fullUnpackSize" : 649216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

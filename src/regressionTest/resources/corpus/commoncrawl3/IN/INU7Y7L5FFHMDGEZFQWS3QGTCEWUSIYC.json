@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324953468.000000000,
+    "creationTime" : null,
+    "fileCRC" : 70649658,
+    "fileName" : "1390-1\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 111,
+    "fullUnpackSize" : 170,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324953486.000000000,
+    "creationTime" : null,
+    "fileCRC" : 385049744,
+    "fileName" : "1390-1\\فصلنامه  بهار.eBook",
+    "hostOS" : "win32",
+    "fullPackSize" : 53541545,
+    "fullUnpackSize" : 54523289,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

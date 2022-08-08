@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1108655590.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1611960459,
+    "fileName" : "МИР ОГНЕННЫЙ. ч.1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 185498,
+    "fullUnpackSize" : 971776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306292677.736706300,
+    "creationTime" : null,
+    "fileCRC" : -1010876390,
+    "fileName" : "Собрание законодательства Пермского края № 4, 05.04.2011.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5405789,
+    "fullUnpackSize" : 6598598,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

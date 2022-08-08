@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404034284.961569900,
+    "creationTime" : null,
+    "fileCRC" : -881943633,
+    "fileName" : "riazi-101-124-TabaTabeiyan-[www.konkur.in]\\riazi-101-124-TabaTabeiyan-[www.konkur.in].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1372768,
+    "fullUnpackSize" : 1642593,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312421645.085837600,
+    "creationTime" : null,
+    "fileCRC" : -584098202,
+    "fileName" : "FRZ025-ZeeCutter-90-battements-par-minute\\01-ZeeCutter-liberation_hope.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6031153,
+    "fullUnpackSize" : 6457785,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377752948.696000000,
+    "creationTime" : null,
+    "fileCRC" : -1252306941,
+    "fileName" : "Новатор №2_июнь 2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 663376,
+    "fullUnpackSize" : 682777,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

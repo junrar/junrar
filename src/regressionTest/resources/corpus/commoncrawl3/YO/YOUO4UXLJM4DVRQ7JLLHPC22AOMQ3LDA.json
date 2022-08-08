@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1218608430.887557100,
+    "creationTime" : null,
+    "fileCRC" : -126789452,
+    "fileName" : "DigiTVCodecs\\ffdshow.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4059916,
+    "fullUnpackSize" : 4075836,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

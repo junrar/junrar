@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1254298050.500000000,
+    "creationTime" : null,
+    "fileCRC" : 783891087,
+    "fileName" : "flasher.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 136921,
+    "fullUnpackSize" : 327680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1130048868.000000000,
+    "creationTime" : null,
+    "fileCRC" : -480127294,
+    "fileName" : "HexToBin.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 3651,
+    "fullUnpackSize" : 24576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305599271.045488700,
+    "creationTime" : null,
+    "fileCRC" : -1901187684,
+    "fileName" : "mp_deathrun_long\\mp_deathrun_long.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 20405929,
+    "fullUnpackSize" : 20422182,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

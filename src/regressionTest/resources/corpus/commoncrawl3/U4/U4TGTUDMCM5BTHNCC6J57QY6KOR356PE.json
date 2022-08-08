@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327653743.342508500,
+    "creationTime" : null,
+    "fileCRC" : 1115884719,
+    "fileName" : "mp_eb_randomz\\mp_eb_randomz.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 9117702,
+    "fullUnpackSize" : 9206220,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

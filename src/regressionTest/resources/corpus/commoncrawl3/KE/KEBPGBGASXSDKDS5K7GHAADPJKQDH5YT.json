@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529561296.819504600,
+    "creationTime" : null,
+    "fileCRC" : -717464674,
+    "fileName" : "CCF21062561_0006.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 654616,
+    "fullUnpackSize" : 779024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529561259.862390700,
+    "creationTime" : null,
+    "fileCRC" : 547523289,
+    "fileName" : "CCF21062561_0005.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 896324,
+    "fullUnpackSize" : 991294,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

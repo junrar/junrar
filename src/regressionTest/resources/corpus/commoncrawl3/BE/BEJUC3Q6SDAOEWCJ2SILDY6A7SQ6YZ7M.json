@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528620032.358295000,
+    "creationTime" : null,
+    "fileCRC" : 1630797039,
+    "fileName" : "Basic-English-Grammar-1_2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5756272,
+    "fullUnpackSize" : 6325139,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

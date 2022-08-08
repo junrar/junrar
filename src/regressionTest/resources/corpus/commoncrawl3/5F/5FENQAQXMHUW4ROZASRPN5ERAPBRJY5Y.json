@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508912999.405291600,
+    "creationTime" : null,
+    "fileCRC" : -1049970792,
+    "fileName" : "Anexo I - Croqui de Detalhes das passarelas com corrimao para os filtros.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 159975,
+    "fullUnpackSize" : 167717,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508914499.029873400,
+    "creationTime" : null,
+    "fileCRC" : -815280917,
+    "fileName" : "PP - 021-2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 317719,
+    "fullUnpackSize" : 336584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

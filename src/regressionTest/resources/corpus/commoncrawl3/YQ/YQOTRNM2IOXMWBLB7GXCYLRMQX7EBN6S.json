@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366090408.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1563275773,
+    "fileName" : "Album\\03.Double jeu.wav",
+    "hostOS" : "win32",
+    "fullPackSize" : 69367500,
+    "fullUnpackSize" : 77131630,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

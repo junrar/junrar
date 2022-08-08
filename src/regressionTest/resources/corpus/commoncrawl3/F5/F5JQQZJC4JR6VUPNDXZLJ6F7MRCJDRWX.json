@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1201723170.062500000,
+    "creationTime" : null,
+    "fileCRC" : 789829541,
+    "fileName" : "AD_BobDishrack_ButterflyGold.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 8864,
+    "fullUnpackSize" : 9904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

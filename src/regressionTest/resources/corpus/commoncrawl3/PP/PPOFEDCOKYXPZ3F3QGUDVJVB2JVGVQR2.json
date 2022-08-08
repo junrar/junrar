@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439447713.000000000,
+    "creationTime" : null,
+    "fileCRC" : -336170308,
+    "fileName" : "Projector_csw_20150813_143514_QPresenter-Broadcast.dmg",
+    "hostOS" : "win32",
+    "fullPackSize" : 6486525,
+    "fullUnpackSize" : 6759418,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

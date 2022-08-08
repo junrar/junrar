@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379407248.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1621768199,
+    "fileName" : "образовательные организации1\\ДОУ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 102808,
+    "fullUnpackSize" : 109502,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379407280.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1132369744,
+    "fileName" : "образовательные организации1\\ИМЦ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1088212,
+    "fullUnpackSize" : 1103774,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505973731.894089200,
+    "creationTime" : null,
+    "fileCRC" : -166712750,
+    "fileName" : "LEED认证市场概述.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1005557,
+    "fullUnpackSize" : 1111233,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

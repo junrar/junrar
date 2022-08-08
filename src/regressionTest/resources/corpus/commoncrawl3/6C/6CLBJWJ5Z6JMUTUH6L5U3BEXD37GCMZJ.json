@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334297668.829289500,
+    "creationTime" : null,
+    "fileCRC" : -175714481,
+    "fileName" : "Menovshikov_Eskimos.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 48936270,
+    "fullUnpackSize" : 55121399,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

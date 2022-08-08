@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465051933.948841100,
+    "creationTime" : null,
+    "fileCRC" : -1486718134,
+    "fileName" : "ЧГж-2016.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 16167,
+    "fullUnpackSize" : 85504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

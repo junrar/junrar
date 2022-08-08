@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457600443.446000000,
+    "creationTime" : null,
+    "fileCRC" : 662934412,
+    "fileName" : "re_vlagsu5d_2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2622412,
+    "fullUnpackSize" : 2925974,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

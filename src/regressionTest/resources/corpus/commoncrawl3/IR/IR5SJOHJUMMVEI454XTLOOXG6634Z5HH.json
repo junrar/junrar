@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440493095.000000000,
+    "creationTime" : null,
+    "fileCRC" : 31397405,
+    "fileName" : "paket_30-40-10.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 25871,
+    "fullUnpackSize" : 41315,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440773091.495320400,
+    "creationTime" : null,
+    "fileCRC" : 1205238125,
+    "fileName" : "paket_30-40-10.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 485917,
+    "fullUnpackSize" : 506991,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

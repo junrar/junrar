@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136043171.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1712898031,
+    "fileName" : "Результаты ГКО ОН - КС ОО Муниципальные районы Нижегородской.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 4483,
+    "fullUnpackSize" : 20992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

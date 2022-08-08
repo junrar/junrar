@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401095192.134696000,
+    "creationTime" : null,
+    "fileCRC" : -474307465,
+    "fileName" : "DC-710\\dc710\\Skype ahatası için dc-710.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 593934216,
+    "fullUnpackSize" : 1032052736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

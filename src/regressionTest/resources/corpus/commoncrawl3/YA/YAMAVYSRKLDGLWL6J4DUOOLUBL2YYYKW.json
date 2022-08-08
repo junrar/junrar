@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505278170.791900800,
+    "creationTime" : null,
+    "fileCRC" : 531556863,
+    "fileName" : "201709直軌型錄PDF.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 30997462,
+    "fullUnpackSize" : 33273386,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388460958.000000000,
+    "creationTime" : null,
+    "fileCRC" : -327423386,
+    "fileName" : "仕邦说法（第53期）.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 620044,
+    "fullUnpackSize" : 683340,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

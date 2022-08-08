@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454425703.170035100,
+    "creationTime" : null,
+    "fileCRC" : 1389884466,
+    "fileName" : "Steve Jobs 2015 BDRip x264-DRONES.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 65770,
+    "fullUnpackSize" : 186694,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454501377.303351900,
+    "creationTime" : null,
+    "fileCRC" : -2076458979,
+    "fileName" : "Steve Jobs 2015 BDRip x264-DRONES.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 70833,
+    "fullUnpackSize" : 75133,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

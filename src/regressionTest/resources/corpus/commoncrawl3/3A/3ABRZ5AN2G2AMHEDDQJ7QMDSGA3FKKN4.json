@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418116891.016660300,
+    "creationTime" : null,
+    "fileCRC" : -272795445,
+    "fileName" : "ar_ped\\АР_педагоги.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 127490,
+    "fullUnpackSize" : 1497600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418116892.368737600,
+    "creationTime" : null,
+    "fileCRC" : -715399146,
+    "fileName" : "ar_ped\\регламент 4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1588872,
+    "fullUnpackSize" : 1661359,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

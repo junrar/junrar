@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458011073.628944900,
+    "creationTime" : null,
+    "fileCRC" : -1551968507,
+    "fileName" : "P-34-15.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7971,
+    "fullUnpackSize" : 35328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331710052.750000000,
+    "creationTime" : null,
+    "fileCRC" : 1749737602,
+    "fileName" : "+matrix h860.abs",
+    "hostOS" : "win32",
+    "fullPackSize" : 714073,
+    "fullUnpackSize" : 1048576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

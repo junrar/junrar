@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438915714.622735600,
+    "creationTime" : null,
+    "fileCRC" : -113917345,
+    "fileName" : "Планы ремонтов ЛЭП и ЭЛТ НЭ на август 2015 год.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 576551,
+    "fullUnpackSize" : 727376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438571426.645443700,
+    "creationTime" : null,
+    "fileCRC" : 54054842,
+    "fileName" : "План-график отключений август 2015 Вологдаэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2103536,
+    "fullUnpackSize" : 2238800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

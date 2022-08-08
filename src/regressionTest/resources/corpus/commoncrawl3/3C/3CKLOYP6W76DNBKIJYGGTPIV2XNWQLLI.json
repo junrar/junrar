@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524719302.000000000,
+    "creationTime" : null,
+    "fileCRC" : -285441152,
+    "fileName" : "AMBIENTE LABORAL\\Encuesta Amb Laboral F-01.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 200432,
+    "fullUnpackSize" : 300032,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529903044.179974600,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "AMBIENTE LABORAL",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

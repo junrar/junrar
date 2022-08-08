@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272621210.000000000,
+    "creationTime" : null,
+    "fileCRC" : 273085179,
+    "fileName" : "Darth Bane - Rule of Two.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 312971,
+    "fullUnpackSize" : 1418240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

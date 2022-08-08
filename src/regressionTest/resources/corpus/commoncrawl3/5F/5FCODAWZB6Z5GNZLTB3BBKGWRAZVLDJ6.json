@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418832218.000000000,
+    "creationTime" : null,
+    "fileCRC" : -700566093,
+    "fileName" : "Route Z\\Route Z\\com.moonshark.routez\\main.29.com.moonshark.routez.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 43875996,
+    "fullUnpackSize" : 44467329,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1090298172.000000000,
+    "creationTime" : null,
+    "fileCRC" : 63424264,
+    "fileName" : "C110XEDG4_1.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 4179709,
+    "fullUnpackSize" : 7489300,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

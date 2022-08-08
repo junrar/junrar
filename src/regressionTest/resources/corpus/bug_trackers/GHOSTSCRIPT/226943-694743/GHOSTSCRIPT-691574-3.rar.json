@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1161744875.101875000,
+    "creationTime" : null,
+    "fileCRC" : 1299516851,
+    "fileName" : "simhei.ttf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4753079,
+    "fullUnpackSize" : 9751960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

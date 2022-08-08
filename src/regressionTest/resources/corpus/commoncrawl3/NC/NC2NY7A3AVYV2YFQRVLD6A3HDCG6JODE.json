@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256231172.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1970961090,
+    "fileName" : "八圣道-The Noble Eightfold Path.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 699368,
+    "fullUnpackSize" : 725000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256231210.000000000,
+    "creationTime" : null,
+    "fileCRC" : -221254804,
+    "fileName" : "八聖道-The Noble Eightfold Path.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 732163,
+    "fullUnpackSize" : 757403,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

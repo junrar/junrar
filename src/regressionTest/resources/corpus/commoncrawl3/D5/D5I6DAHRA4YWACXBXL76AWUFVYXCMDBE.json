@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391833136.732243900,
+    "creationTime" : null,
+    "fileCRC" : -329426208,
+    "fileName" : "Disclaimer.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1565,
+    "fullUnpackSize" : 4756,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391832436.778095500,
+    "creationTime" : null,
+    "fileCRC" : -116230783,
+    "fileName" : "9900M_PBr7.1.0_rel2940_PL5.1.0.705_A7.1.0.1098.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 274014598,
+    "fullUnpackSize" : 274139560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

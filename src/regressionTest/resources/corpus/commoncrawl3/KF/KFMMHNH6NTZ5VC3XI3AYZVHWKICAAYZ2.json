@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177045701.593750000,
+    "creationTime" : null,
+    "fileCRC" : -1202531074,
+    "fileName" : "Duran Duran-Virus (live 2003).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4026340,
+    "fullUnpackSize" : 4321280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1144986532.750000000,
+    "creationTime" : null,
+    "fileCRC" : -49943787,
+    "fileName" : "Supernatural - 115 - The Benders (Proper) - CZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11100,
+    "fullUnpackSize" : 29710,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1144986462.546875000,
+    "creationTime" : null,
+    "fileCRC" : -1700515970,
+    "fileName" : "Supernatural - 115 - The Benders - CZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11077,
+    "fullUnpackSize" : 29891,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1128360776.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1891703379,
+    "fileName" : "Metallica - Today Your Love, Tomorrow The World.gp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 1089,
+    "fullUnpackSize" : 18607,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

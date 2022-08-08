@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390269720.468750000,
+    "creationTime" : null,
+    "fileCRC" : -457587410,
+    "fileName" : "现代.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 1145184,
+    "fullUnpackSize" : 1195141,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

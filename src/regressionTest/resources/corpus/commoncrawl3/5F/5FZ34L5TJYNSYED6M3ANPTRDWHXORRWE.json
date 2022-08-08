@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443582848.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1092608065,
+    "fileName" : "1 полугодие 2015 Отчет 0503317.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 227128,
+    "fullUnpackSize" : 1334784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443582686.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1408635639,
+    "fileName" : "1 квартал 2015 Отчет 0503317.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 212636,
+    "fullUnpackSize" : 1260032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

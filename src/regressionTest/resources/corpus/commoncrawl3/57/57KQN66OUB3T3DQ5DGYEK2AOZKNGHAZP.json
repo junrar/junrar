@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1260437966.859375000,
+    "creationTime" : null,
+    "fileCRC" : -1448458515,
+    "fileName" : "4-16-2009\\Аннотация. 4-16, 2009.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 464326,
+    "fullUnpackSize" : 495554,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1260433505.906250000,
+    "creationTime" : null,
+    "fileCRC" : 1680670117,
+    "fileName" : "4-16-2009\\Номер 4 (16).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 820179,
+    "fullUnpackSize" : 951117,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

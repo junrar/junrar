@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302972824.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1379343419,
+    "fileName" : "[HorribleSubs] Fairy Tail - 75 [480p].rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 7531,
+    "fullUnpackSize" : 41819,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302972906.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1216588251,
+    "fileName" : "[Leopard-Raws] Fairy Tail - 75 RAW (TX 1280x720 x264 AAC).rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 3102,
+    "fullUnpackSize" : 41760,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318377360.000000000,
+    "creationTime" : null,
+    "fileCRC" : -861499733,
+    "fileName" : "TBB 13-16 EKİM 2011\\abdurrahman bey sunum\\ek-29,form-27.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 10059,
+    "fullUnpackSize" : 13252,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318829457.616000000,
+    "creationTime" : null,
+    "fileCRC" : -1051887925,
+    "fileName" : "TBB 13-16 EKİM 2011\\abdurrahman bey sunum\\tbb sunum çalışması yeni.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9114039,
+    "fullUnpackSize" : 10938312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

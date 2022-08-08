@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986635248.000000000,
+    "creationTime" : null,
+    "fileCRC" : 499112059,
+    "fileName" : "valaam-mza-05.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 154705,
+    "fullUnpackSize" : 171056,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

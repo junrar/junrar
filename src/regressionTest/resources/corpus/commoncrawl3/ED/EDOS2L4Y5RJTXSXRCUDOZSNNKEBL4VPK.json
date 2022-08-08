@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488781079.671875000,
+    "creationTime" : null,
+    "fileCRC" : -606106235,
+    "fileName" : "2017年4月统考辅导时间安排.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12039,
+    "fullUnpackSize" : 13608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

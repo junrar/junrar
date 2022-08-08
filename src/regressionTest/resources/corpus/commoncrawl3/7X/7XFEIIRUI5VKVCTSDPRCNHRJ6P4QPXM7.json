@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482851188.823294500,
+    "creationTime" : null,
+    "fileCRC" : -103125799,
+    "fileName" : "980540184600.rar.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 10528,
+    "fullUnpackSize" : 10472,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

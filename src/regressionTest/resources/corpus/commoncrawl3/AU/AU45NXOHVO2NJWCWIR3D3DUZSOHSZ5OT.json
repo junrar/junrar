@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331129467.875000000,
+    "creationTime" : null,
+    "fileCRC" : 974125054,
+    "fileName" : "炫紫夜景xp主题.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2304141,
+    "fullUnpackSize" : 2349904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235562142.000000000,
+    "creationTime" : null,
+    "fileCRC" : -724423674,
+    "fileName" : "LaHuida\\dxlib32v220redist.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1054610,
+    "fullUnpackSize" : 1078459,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

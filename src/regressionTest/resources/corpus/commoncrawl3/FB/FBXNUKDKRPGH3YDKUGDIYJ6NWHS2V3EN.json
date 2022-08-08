@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421935496.350206000,
+    "creationTime" : null,
+    "fileCRC" : -1573087402,
+    "fileName" : "Supernatural.S10E10.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16936,
+    "fullUnpackSize" : 43956,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422192798.200852300,
+    "creationTime" : null,
+    "fileCRC" : 780455851,
+    "fileName" : "Supernatural.S10E10.The.Hunter.Games.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17001,
+    "fullUnpackSize" : 44030,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

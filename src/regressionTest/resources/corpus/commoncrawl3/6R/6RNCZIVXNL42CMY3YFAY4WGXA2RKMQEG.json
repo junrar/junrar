@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314095247.543464400,
+    "creationTime" : null,
+    "fileCRC" : 96701201,
+    "fileName" : "mp_prisonbreak\\mp_prisonbreak.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 22720348,
+    "fullUnpackSize" : 22763046,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

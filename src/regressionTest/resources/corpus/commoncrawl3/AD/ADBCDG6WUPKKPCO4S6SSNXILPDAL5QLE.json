@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1098788078.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1316110309,
+    "fileName" : "Перечень документов для стенда по охране труда..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11825,
+    "fullUnpackSize" : 62976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

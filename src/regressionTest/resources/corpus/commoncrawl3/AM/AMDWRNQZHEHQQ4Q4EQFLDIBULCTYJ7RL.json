@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266777534.000000000,
+    "creationTime" : null,
+    "fileCRC" : -554419657,
+    "fileName" : "Гурвич Л.В. и др. - Термодинамические свойства индивидуальных веществ. т.4 кн.1.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 10237928,
+    "fullUnpackSize" : 10253723,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

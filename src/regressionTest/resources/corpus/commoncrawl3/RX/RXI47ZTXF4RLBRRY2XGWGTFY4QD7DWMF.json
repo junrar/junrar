@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318480237.062000000,
+    "creationTime" : null,
+    "fileCRC" : 618679761,
+    "fileName" : "Economics\\Vestnik3_2011.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1159714,
+    "fullUnpackSize" : 4203520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

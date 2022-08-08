@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323316828.187500000,
+    "creationTime" : null,
+    "fileCRC" : 1860534807,
+    "fileName" : "PCStyle222.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 47946,
+    "fullUnpackSize" : 209408,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

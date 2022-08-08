@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493264824.328000000,
+    "creationTime" : null,
+    "fileCRC" : -1659457808,
+    "fileName" : "Reshenie_ot_26-04-2017_N121.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10838,
+    "fullUnpackSize" : 39424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493264682.156250000,
+    "creationTime" : null,
+    "fileCRC" : -1721724527,
+    "fileName" : "pril_Reshenie_ot_26-04-2017_N121.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 75623,
+    "fullUnpackSize" : 82480,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

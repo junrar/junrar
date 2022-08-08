@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395773703.074740400,
+    "creationTime" : null,
+    "fileCRC" : -1190727208,
+    "fileName" : "businessplan-gaseta.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14860,
+    "fullUnpackSize" : 60928,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

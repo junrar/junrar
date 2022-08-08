@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1166791908.000000000,
+    "creationTime" : null,
+    "fileCRC" : -487376548,
+    "fileName" : "diler_usl.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6906,
+    "fullUnpackSize" : 52224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

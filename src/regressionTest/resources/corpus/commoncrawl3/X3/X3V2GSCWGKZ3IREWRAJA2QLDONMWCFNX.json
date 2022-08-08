@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511380455.370420400,
+    "creationTime" : null,
+    "fileCRC" : -1967088748,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 440,
+    "fullUnpackSize" : 670,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511380455.391978500,
+    "creationTime" : null,
+    "fileCRC" : 1381740351,
+    "fileName" : "JBLE.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 111,
+    "fullUnpackSize" : 111,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

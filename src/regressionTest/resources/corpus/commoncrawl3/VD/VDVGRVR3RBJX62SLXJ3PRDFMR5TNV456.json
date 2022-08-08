@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453874030.000000000,
+    "creationTime" : null,
+    "fileCRC" : -53633782,
+    "fileName" : "Публикации ИТЭБ РАН 2013г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 428311,
+    "fullUnpackSize" : 440001,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

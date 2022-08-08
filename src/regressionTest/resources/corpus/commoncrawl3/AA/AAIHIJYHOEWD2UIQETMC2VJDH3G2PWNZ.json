@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 998553600.000000000,
+    "creationTime" : null,
+    "fileCRC" : 708403224,
+    "fileName" : "msvbvm60.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 598935,
+    "fullUnpackSize" : 1388544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

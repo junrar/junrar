@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304567587.234375000,
+    "creationTime" : null,
+    "fileCRC" : -263201855,
+    "fileName" : "soccerjam.sma",
+    "hostOS" : "win32",
+    "fullPackSize" : 16235,
+    "fullUnpackSize" : 82560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

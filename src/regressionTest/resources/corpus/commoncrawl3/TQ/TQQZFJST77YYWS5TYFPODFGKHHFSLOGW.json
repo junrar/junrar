@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415595330.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1200861574,
+    "fileName" : "77-1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1133294,
+    "fullUnpackSize" : 1148582,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

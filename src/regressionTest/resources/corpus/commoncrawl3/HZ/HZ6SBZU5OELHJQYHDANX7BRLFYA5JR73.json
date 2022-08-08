@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359984910.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1771932380,
+    "fileName" : "10_Smokey Robinson Being With You.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3707247,
+    "fullUnpackSize" : 3761759,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

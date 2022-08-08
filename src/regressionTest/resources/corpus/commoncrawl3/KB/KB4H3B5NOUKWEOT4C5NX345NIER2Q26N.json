@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1451972052.389496400,
+    "creationTime" : null,
+    "fileCRC" : -1752119098,
+    "fileName" : "DN-TSR_Distressed Flared Jeans .package",
+    "hostOS" : "win32",
+    "fullPackSize" : 1028539,
+    "fullUnpackSize" : 1033637,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

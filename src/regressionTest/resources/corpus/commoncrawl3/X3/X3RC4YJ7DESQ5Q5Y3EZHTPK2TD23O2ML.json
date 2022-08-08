@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1029384872.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2040432879,
+    "fileName" : "Eden Demo.xex",
+    "hostOS" : "win32",
+    "fullPackSize" : 6604,
+    "fullUnpackSize" : 11115,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

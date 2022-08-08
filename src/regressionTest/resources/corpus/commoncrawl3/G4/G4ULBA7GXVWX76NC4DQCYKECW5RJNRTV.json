@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382668029.686000000,
+    "creationTime" : null,
+    "fileCRC" : -1085492749,
+    "fileName" : "Положение о педсовете учреждения ССО (22_07_2011 №106).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 15737,
+    "fullUnpackSize" : 56320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

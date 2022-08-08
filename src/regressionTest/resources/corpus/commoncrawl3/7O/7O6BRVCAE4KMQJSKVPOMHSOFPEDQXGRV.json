@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509888019.751395400,
+    "creationTime" : null,
+    "fileCRC" : -1452840895,
+    "fileName" : "29587\\29587.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 69614,
+    "fullUnpackSize" : 70034,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509887687.687402400,
+    "creationTime" : null,
+    "fileCRC" : -95300779,
+    "fileName" : "29587\\59f9484384810.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 100284776,
+    "fullUnpackSize" : 305483500,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

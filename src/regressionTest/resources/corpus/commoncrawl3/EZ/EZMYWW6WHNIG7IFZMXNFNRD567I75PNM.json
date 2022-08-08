@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377748231.527000000,
+    "creationTime" : null,
+    "fileCRC" : 567468880,
+    "fileName" : "Новатор №1 май 2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 317205,
+    "fullUnpackSize" : 344495,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293585274.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1364273100,
+    "fileName" : "弈典stonebase最新版_4.77\\弈典(StoneBase)说明.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 648718,
+    "fullUnpackSize" : 677743,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293583138.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1703863393,
+    "fileName" : "弈典stonebase最新版_4.77\\弈典(安装版)\\setup.4.7.7.2272.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 7793457,
+    "fullUnpackSize" : 7820001,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

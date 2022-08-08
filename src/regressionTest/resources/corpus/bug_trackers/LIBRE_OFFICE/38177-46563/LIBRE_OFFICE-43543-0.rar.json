@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336190962.449888600,
+    "creationTime" : null,
+    "fileCRC" : 1575665950,
+    "fileName" : "test_jap.odb",
+    "hostOS" : "win32",
+    "fullPackSize" : 1706,
+    "fullUnpackSize" : 2178,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336190715.020992800,
+    "creationTime" : null,
+    "fileCRC" : -1191722785,
+    "fileName" : "test1.db3",
+    "hostOS" : "win32",
+    "fullPackSize" : 198,
+    "fullUnpackSize" : 2048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

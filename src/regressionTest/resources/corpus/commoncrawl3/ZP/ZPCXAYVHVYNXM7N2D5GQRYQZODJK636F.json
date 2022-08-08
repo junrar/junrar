@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512721911.035630500,
+    "creationTime" : null,
+    "fileCRC" : -398913926,
+    "fileName" : "kz_man_ultrablock_fykseN_0230.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 2051257,
+    "fullUnpackSize" : 9486887,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

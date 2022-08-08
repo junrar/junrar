@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529030760.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1648692752,
+    "fileName" : "Сборник тезисов_ ИТЭБ 2018 (Часть II Биотехнология).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 974722,
+    "fullUnpackSize" : 1004889,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529030760.000000000,
+    "creationTime" : null,
+    "fileCRC" : 960937678,
+    "fileName" : "Сборник тезисов_ ИТЭБ 2018 (Часть I Биофизика).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1265334,
+    "fullUnpackSize" : 1304269,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

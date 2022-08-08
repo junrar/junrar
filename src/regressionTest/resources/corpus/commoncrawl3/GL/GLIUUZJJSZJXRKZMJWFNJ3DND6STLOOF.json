@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1254142545.828400000,
+    "creationTime" : null,
+    "fileCRC" : -1856392685,
+    "fileName" : "Tag3.gpx",
+    "hostOS" : "win32",
+    "fullPackSize" : 46426,
+    "fullUnpackSize" : 274612,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438189243.938483200,
+    "creationTime" : null,
+    "fileCRC" : -334879340,
+    "fileName" : "dxwebsetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 254439,
+    "fullUnpackSize" : 292184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

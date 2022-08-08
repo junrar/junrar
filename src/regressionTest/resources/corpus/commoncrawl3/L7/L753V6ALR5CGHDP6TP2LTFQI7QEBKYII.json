@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1258619381.750000000,
+    "creationTime" : null,
+    "fileCRC" : 1568154047,
+    "fileName" : "针织四纬编花色组织.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 28905,
+    "fullUnpackSize" : 13112832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

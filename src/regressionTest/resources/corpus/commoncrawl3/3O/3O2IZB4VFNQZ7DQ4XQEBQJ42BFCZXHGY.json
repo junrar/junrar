@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355549553.031250000,
+    "creationTime" : null,
+    "fileCRC" : -1988247870,
+    "fileName" : "asfar101.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6950992,
+    "fullUnpackSize" : 7118769,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

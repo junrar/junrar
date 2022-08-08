@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256911188.720703100,
+    "creationTime" : null,
+    "fileCRC" : 78010361,
+    "fileName" : "supernatural.s05e07.hdtv.xvid-fqm.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16862,
+    "fullUnpackSize" : 41319,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1257427964.187500000,
+    "creationTime" : null,
+    "fileCRC" : 860574168,
+    "fileName" : "supernatural.s05e07.the.curious.case.of.dean.winchester-sitv.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16852,
+    "fullUnpackSize" : 41300,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

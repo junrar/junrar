@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411577026.000000000,
+    "creationTime" : null,
+    "fileCRC" : -78963755,
+    "fileName" : "Poetry in 15 essays-by Dooman Maleki.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1628778,
+    "fullUnpackSize" : 1675509,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

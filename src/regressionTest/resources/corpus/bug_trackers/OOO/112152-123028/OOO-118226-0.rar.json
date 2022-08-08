@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309390596.437500000,
+    "creationTime" : null,
+    "fileCRC" : 240550749,
+    "fileName" : "openoffice writer - preview.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 18692,
+    "fullUnpackSize" : 26774,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309390516.421875000,
+    "creationTime" : null,
+    "fileCRC" : -1249316466,
+    "fileName" : "openoffice writer - scr.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 46005,
+    "fullUnpackSize" : 82322,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

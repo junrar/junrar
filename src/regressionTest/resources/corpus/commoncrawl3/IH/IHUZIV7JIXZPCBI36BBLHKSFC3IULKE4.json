@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532933238.918347000,
+    "creationTime" : null,
+    "fileCRC" : 2056756692,
+    "fileName" : "Коммунальное предприятие.ppsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4712488,
+    "fullUnpackSize" : 4856015,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

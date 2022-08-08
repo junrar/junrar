@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456395049.813604700,
+    "creationTime" : null,
+    "fileCRC" : 776126741,
+    "fileName" : "Archy's Adventure\\Archy's Adventure.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5530354,
+    "fullUnpackSize" : 16147968,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

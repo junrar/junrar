@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413281134.840264200,
+    "creationTime" : null,
+    "fileCRC" : -564334237,
+    "fileName" : "SUP1000Korekce1.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 21626,
+    "fullUnpackSize" : 56966,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

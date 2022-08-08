@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401405837.738456700,
+    "creationTime" : null,
+    "fileCRC" : -941198894,
+    "fileName" : "XI.4.6. Zpráva o výsledku přezkoumání hospodaření Svazku za rok 2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 281999,
+    "fullUnpackSize" : 298579,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401405837.720455700,
+    "creationTime" : null,
+    "fileCRC" : -1483606690,
+    "fileName" : "XI.4.5. Komentář k závěrečnému účtu.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 47635,
+    "fullUnpackSize" : 51366,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

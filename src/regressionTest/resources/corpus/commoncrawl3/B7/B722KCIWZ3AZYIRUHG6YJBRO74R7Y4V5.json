@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308493593.828000000,
+    "creationTime" : null,
+    "fileCRC" : 1884982192,
+    "fileName" : "Кратт Иван. Великий океан.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 439424,
+    "fullUnpackSize" : 2154496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

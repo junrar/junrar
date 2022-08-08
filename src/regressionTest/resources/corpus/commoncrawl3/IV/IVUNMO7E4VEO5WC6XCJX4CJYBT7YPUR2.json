@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1150537658.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1995389267,
+    "fileName" : "和尚与哲学家——佛教与西方思想的对话.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 696741,
+    "fullUnpackSize" : 705228,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

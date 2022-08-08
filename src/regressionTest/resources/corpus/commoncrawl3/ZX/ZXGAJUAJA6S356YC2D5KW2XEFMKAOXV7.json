@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417169611.252635600,
+    "creationTime" : null,
+    "fileCRC" : 748749738,
+    "fileName" : "912_E-VADER01.pdo",
+    "hostOS" : "win32",
+    "fullPackSize" : 283103,
+    "fullUnpackSize" : 1318944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

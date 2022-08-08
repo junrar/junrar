@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394430004.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1359010786,
+    "fileName" : "BIDANG EKONOMI\\1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 780421,
+    "fullUnpackSize" : 798773,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394430054.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1574660787,
+    "fileName" : "BIDANG EKONOMI\\2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 763334,
+    "fullUnpackSize" : 780668,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519609357.030681800,
+    "creationTime" : null,
+    "fileCRC" : -1632688830,
+    "fileName" : "The.Amazing.Race.S30E04E05.720p.HDTV.x264-BAJSKORV.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 45774,
+    "fullUnpackSize" : 125938,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519609354.086513400,
+    "creationTime" : null,
+    "fileCRC" : 1068047042,
+    "fileName" : "The.Amazing.Race.S30E04E05.WEB.x264-TBS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 45720,
+    "fullUnpackSize" : 125938,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

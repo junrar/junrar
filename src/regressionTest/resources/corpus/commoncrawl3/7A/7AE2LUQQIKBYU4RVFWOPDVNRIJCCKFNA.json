@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271061494.859733000,
+    "creationTime" : null,
+    "fileCRC" : -852008095,
+    "fileName" : "第四届大学生科研训练计划（SRTP）指南.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 84284,
+    "fullUnpackSize" : 140800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271061485.414087400,
+    "creationTime" : null,
+    "fileCRC" : 91462971,
+    "fileName" : "第四届大学生科研训练计划（SRTP）申请表.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 48837,
+    "fullUnpackSize" : 114176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

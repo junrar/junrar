@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520302620.000000000,
+    "creationTime" : null,
+    "fileCRC" : 564181900,
+    "fileName" : "ам-16_007-18.1.1-08_АМ-16_24_01_2018(ver1).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 243233,
+    "fullUnpackSize" : 260772,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520302620.000000000,
+    "creationTime" : null,
+    "fileCRC" : 975957274,
+    "fileName" : "Форма заявки на участие в Конференции.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 33265,
+    "fullUnpackSize" : 35988,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

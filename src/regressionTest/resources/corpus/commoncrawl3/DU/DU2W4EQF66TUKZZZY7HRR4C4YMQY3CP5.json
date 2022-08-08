@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366600514.679250500,
+    "creationTime" : null,
+    "fileCRC" : 376130874,
+    "fileName" : "EDIT.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6373102,
+    "fullUnpackSize" : 7208322,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

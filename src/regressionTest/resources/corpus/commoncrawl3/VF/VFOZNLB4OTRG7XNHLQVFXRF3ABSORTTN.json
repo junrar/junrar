@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459388562.370512000,
+    "creationTime" : null,
+    "fileCRC" : -2119287948,
+    "fileName" : "приложение к пояснениям за 2015г Промприбор.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 407949,
+    "fullUnpackSize" : 410481,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461221731.467163800,
+    "creationTime" : null,
+    "fileCRC" : 242553756,
+    "fileName" : "Аудиторское заключение.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2414935,
+    "fullUnpackSize" : 2441494,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

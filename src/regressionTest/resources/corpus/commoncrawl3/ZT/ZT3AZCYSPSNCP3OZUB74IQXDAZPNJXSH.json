@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1158596348.000000000,
+    "creationTime" : null,
+    "fileCRC" : 751605639,
+    "fileName" : "Бесплатные курсовые, котрольные и дипломы.url",
+    "hostOS" : "win32",
+    "fullPackSize" : 57,
+    "fullUnpackSize" : 45,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318262778.500000000,
+    "creationTime" : null,
+    "fileCRC" : -1162457687,
+    "fileName" : "МИНИСТЕРТВО ОБРАЗОВАНИЯ РЕСПУБЛИКИ БЕЛАРУС1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 82559,
+    "fullUnpackSize" : 203264,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

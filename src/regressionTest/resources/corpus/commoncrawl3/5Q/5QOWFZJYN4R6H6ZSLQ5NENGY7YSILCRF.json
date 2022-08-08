@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517446746.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1815261257,
+    "fileName" : "iConnectplus_update_0411\\iConnect Plus_FW UpdateTool_v1.0.2.15.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 1023122,
+    "fullUnpackSize" : 1033539,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517453308.000000000,
+    "creationTime" : null,
+    "fileCRC" : -553544333,
+    "fileName" : "iConnectplus_update_0411\\PQI iConnect Plus_(20180129)-a.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 107887,
+    "fullUnpackSize" : 115868,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298899132.592345500,
+    "creationTime" : null,
+    "fileCRC" : -1843788378,
+    "fileName" : "mp_jump_masterz\\mp_jump_masterz.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 25966005,
+    "fullUnpackSize" : 26012211,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

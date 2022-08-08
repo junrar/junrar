@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498641948.000000000,
+    "creationTime" : null,
+    "fileCRC" : 955210650,
+    "fileName" : "Moduli-edilizia-campania\\CFL-Campania-editabile-1.0.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2478293,
+    "fullUnpackSize" : 2485084,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

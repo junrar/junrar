@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486344703.930039700,
+    "creationTime" : null,
+    "fileCRC" : -522134389,
+    "fileName" : "سياست هاي کلان بيمارستان دکترشریعتی.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 355101,
+    "fullUnpackSize" : 802024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

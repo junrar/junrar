@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1201091119.421875000,
+    "creationTime" : null,
+    "fileCRC" : 1666742912,
+    "fileName" : "AD_EntablatureWallLight.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 1937,
+    "fullUnpackSize" : 3967,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

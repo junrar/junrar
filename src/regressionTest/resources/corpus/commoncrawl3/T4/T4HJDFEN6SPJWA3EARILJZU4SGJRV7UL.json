@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479223756.808464500,
+    "creationTime" : null,
+    "fileCRC" : -1678690885,
+    "fileName" : "ЧКтк-2016.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 15959,
+    "fullUnpackSize" : 72192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

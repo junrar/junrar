@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328421867.695649200,
+    "creationTime" : null,
+    "fileCRC" : 1507341640,
+    "fileName" : "tiger_blue_eye.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 85767,
+    "fullUnpackSize" : 86903,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1241675399.203125000,
+    "creationTime" : null,
+    "fileCRC" : 953453060,
+    "fileName" : "Тигр голубоглазый.xsd",
+    "hostOS" : "win32",
+    "fullPackSize" : 92410,
+    "fullUnpackSize" : 165467,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

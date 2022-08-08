@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389588720.000000000,
+    "creationTime" : null,
+    "fileCRC" : -35936412,
+    "fileName" : "поясн.записка 2-е пол 2013г.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2966,
+    "fullUnpackSize" : 24064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1372837884.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2138437612,
+    "fileName" : "Пояснительная записк 1-ое полуг. 2013 г..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3006,
+    "fullUnpackSize" : 24064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

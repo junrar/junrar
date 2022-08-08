@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516869423.406958100,
+    "creationTime" : null,
+    "fileCRC" : -2030309339,
+    "fileName" : "План ремонта и ТО МРСК С-З 2018.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 788737,
+    "fullUnpackSize" : 855570,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

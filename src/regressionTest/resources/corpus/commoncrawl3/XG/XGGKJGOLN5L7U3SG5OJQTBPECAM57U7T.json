@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497261724.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1847983219,
+    "fileName" : "评选优秀党员名额分配表.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 6353,
+    "fullUnpackSize" : 22016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497312624.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1624180562,
+    "fileName" : "优秀党员登记表.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 6080,
+    "fullUnpackSize" : 20992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

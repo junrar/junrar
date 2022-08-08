@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461562335.383295500,
+    "creationTime" : null,
+    "fileCRC" : 1807531267,
+    "fileName" : "вторник на 26 апреля.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 973674,
+    "fullUnpackSize" : 1333902,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

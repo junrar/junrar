@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527572174.857414000,
+    "creationTime" : null,
+    "fileCRC" : -460137932,
+    "fileName" : "[PS3] Shining Resonance Fonts .UFN\\DRG_0000\\UNICODE_FONT_ASCII.UFN",
+    "hostOS" : "win32",
+    "fullPackSize" : 5459,
+    "fullUnpackSize" : 19184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527572174.945419100,
+    "creationTime" : null,
+    "fileCRC" : -800751076,
+    "fileName" : "[PS3] Shining Resonance Fonts .UFN\\DRG_0000\\UNICODE_FONT_CH.UFN",
+    "hostOS" : "win32",
+    "fullPackSize" : 2044880,
+    "fullUnpackSize" : 4060512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

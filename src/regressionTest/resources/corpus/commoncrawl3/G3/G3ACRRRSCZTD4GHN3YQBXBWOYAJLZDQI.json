@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374458070.000000000,
+    "creationTime" : null,
+    "fileCRC" : 929823836,
+    "fileName" : "Заявка ВИДЕО.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10923,
+    "fullUnpackSize" : 49152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

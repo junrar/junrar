@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367198370.156250000,
+    "creationTime" : null,
+    "fileCRC" : -1296405507,
+    "fileName" : "Перечень муниципальных услуг Ругозерского сельского поселения.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8966,
+    "fullUnpackSize" : 54272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1167544789.203125000,
+    "creationTime" : null,
+    "fileCRC" : -1181836605,
+    "fileName" : "PLUS Update 2005.tup",
+    "hostOS" : "win32",
+    "fullPackSize" : 3863545,
+    "fullUnpackSize" : 3863545,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

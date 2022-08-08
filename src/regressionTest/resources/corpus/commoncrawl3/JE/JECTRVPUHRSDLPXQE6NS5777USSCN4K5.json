@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497180644.631860600,
+    "creationTime" : null,
+    "fileCRC" : -491268477,
+    "fileName" : "Cumbias Cañoneras Vol.76\\01 Vamos A La Cumbia.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3212915,
+    "fullUnpackSize" : 3292213,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

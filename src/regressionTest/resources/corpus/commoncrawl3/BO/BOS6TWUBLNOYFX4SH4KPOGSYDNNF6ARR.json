@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1080041846.000000000,
+    "creationTime" : null,
+    "fileCRC" : -3036452,
+    "fileName" : "M55_On_Pin_Net_Wait_Off_animation.vkp",
+    "hostOS" : "win32",
+    "fullPackSize" : 269762,
+    "fullUnpackSize" : 1225873,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

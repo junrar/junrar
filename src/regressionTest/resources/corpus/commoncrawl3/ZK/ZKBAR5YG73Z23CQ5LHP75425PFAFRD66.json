@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215586785.000000000,
+    "creationTime" : null,
+    "fileCRC" : -809606641,
+    "fileName" : "培训课程与教学软件模块对应表.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 190352,
+    "fullUnpackSize" : 225573,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

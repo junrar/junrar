@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505795189.057347100,
+    "creationTime" : null,
+    "fileCRC" : -1490836366,
+    "fileName" : "kznl_mountainpass_Sh00t!ng-St4r_0138.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 1490767,
+    "fullUnpackSize" : 6947449,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

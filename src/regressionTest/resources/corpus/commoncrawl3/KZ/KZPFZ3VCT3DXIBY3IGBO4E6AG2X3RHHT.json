@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307426484.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1024131075,
+    "fileName" : "04 - Клапаны латунные.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2149431,
+    "fullUnpackSize" : 2527571,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

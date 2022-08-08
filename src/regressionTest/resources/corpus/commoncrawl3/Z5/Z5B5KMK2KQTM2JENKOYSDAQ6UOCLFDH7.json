@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285672538.170898500,
+    "creationTime" : null,
+    "fileCRC" : -999895815,
+    "fileName" : "ServiceLauncher.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 38166,
+    "fullUnpackSize" : 342528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285610801.990202100,
+    "creationTime" : null,
+    "fileCRC" : 1189721959,
+    "fileName" : "ServiceLauncher.exe.config",
+    "hostOS" : "win32",
+    "fullPackSize" : 601,
+    "fullUnpackSize" : 3108,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

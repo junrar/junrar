@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272014821.828834200,
+    "creationTime" : null,
+    "fileCRC" : -684243209,
+    "fileName" : "Power Iso\\PowerISO47.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1616924,
+    "fullUnpackSize" : 1627352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

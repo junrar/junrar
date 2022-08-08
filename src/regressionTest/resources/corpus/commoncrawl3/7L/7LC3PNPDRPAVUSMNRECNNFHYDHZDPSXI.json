@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1226664134.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1368607463,
+    "fileName" : "pic2smi.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 16698,
+    "fullUnpackSize" : 49152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

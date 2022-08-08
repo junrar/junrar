@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491927138.425025700,
+    "creationTime" : null,
+    "fileCRC" : 1625988386,
+    "fileName" : "Старт после замены LM2902.mwf",
+    "hostOS" : "win32",
+    "fullPackSize" : 249758,
+    "fullUnpackSize" : 249758,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

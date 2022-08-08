@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502143330.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1102370829,
+    "fileName" : "Hellblade.Senuas.Sacrifice-RELOADED - www.ihomes.ir\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 48,
+    "fullUnpackSize" : 43,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502143154.000000000,
+    "creationTime" : null,
+    "fileCRC" : 546643628,
+    "fileName" : "Hellblade.Senuas.Sacrifice-RELOADED - www.ihomes.ir\\Crack\\Engine\\Binaries\\ThirdParty\\Steamworks\\Steamv132\\Win64\\steam000.wow",
+    "hostOS" : "win32",
+    "fullPackSize" : 59426512,
+    "fullUnpackSize" : 59426512,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

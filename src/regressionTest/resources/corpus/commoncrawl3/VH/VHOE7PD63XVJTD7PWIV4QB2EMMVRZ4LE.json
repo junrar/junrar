@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265155013.859375000,
+    "creationTime" : null,
+    "fileCRC" : -134690096,
+    "fileName" : "rasp_mech.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4264167,
+    "fullUnpackSize" : 4793093,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

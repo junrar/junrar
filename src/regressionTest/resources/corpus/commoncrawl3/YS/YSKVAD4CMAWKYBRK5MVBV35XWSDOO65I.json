@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300166124.298990700,
+    "creationTime" : null,
+    "fileCRC" : 1838031128,
+    "fileName" : "[FUNiGuys] Tegami Bachi REVERSE - 23 [720p].ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 7651,
+    "fullUnpackSize" : 30020,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301108976.359375000,
+    "creationTime" : null,
+    "fileCRC" : -74545359,
+    "fileName" : "[Raws-4U] Tegami Bachi REVERSE - 23 (TX 1280x720 H.264 AAC Chap).ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 7751,
+    "fullUnpackSize" : 30138,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

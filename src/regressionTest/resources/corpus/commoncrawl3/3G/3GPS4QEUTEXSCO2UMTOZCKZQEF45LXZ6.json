@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483430848.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2062427964,
+    "fileName" : "договор№11678 тепло от 01.01.17.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 2292373,
+    "fullUnpackSize" : 2526638,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

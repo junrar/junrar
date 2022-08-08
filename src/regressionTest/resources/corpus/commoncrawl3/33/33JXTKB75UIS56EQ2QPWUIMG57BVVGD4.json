@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187851376.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2002236459,
+    "fileName" : "1 TNYFBB\\01 MANDACARU.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1778981,
+    "fullUnpackSize" : 1849705,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

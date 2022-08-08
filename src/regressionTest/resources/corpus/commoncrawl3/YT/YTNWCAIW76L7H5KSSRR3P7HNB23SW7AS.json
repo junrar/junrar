@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1186482298.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1435248183,
+    "fileName" : "wab04rk.hex",
+    "hostOS" : "win32",
+    "fullPackSize" : 59389,
+    "fullUnpackSize" : 184333,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306897412.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1921463931,
+    "fileName" : "wab04kl.hex",
+    "hostOS" : "win32",
+    "fullPackSize" : 56514,
+    "fullUnpackSize" : 184333,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

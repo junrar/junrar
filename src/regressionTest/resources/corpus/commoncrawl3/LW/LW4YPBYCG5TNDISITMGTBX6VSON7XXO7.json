@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443228645.445129200,
+    "creationTime" : null,
+    "fileCRC" : 1091903475,
+    "fileName" : "Oix 15.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19594,
+    "fullUnpackSize" : 155063,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

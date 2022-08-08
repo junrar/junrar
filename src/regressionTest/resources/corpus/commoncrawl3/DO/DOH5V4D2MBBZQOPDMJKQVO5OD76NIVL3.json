@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141771538.000000000,
+    "creationTime" : null,
+    "fileCRC" : -802731107,
+    "fileName" : "IceAge2.jad",
+    "hostOS" : "win32",
+    "fullPackSize" : 221,
+    "fullUnpackSize" : 375,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141769910.000000000,
+    "creationTime" : null,
+    "fileCRC" : -272537167,
+    "fileName" : "IceAge2.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 185785,
+    "fullUnpackSize" : 191514,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

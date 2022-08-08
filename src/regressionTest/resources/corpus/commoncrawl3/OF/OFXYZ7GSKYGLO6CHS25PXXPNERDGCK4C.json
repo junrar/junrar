@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465725076.510687000,
+    "creationTime" : null,
+    "fileCRC" : -318625110,
+    "fileName" : "4. Последний Порог.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 944202,
+    "fullUnpackSize" : 2347065,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

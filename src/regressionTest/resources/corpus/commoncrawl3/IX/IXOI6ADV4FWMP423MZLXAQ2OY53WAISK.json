@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170310250.093000000,
+    "creationTime" : null,
+    "fileCRC" : -502201792,
+    "fileName" : "Паспорт 2005 год.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 157442,
+    "fullUnpackSize" : 4128768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

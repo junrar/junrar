@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349021939.477000000,
+    "creationTime" : null,
+    "fileCRC" : -1172714983,
+    "fileName" : "Тех_характеристики керамогранита SANY.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 52323,
+    "fullUnpackSize" : 58067,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

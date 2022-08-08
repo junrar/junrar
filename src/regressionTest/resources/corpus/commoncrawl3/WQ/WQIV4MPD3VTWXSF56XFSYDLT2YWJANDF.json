@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528084015.555920400,
+    "creationTime" : null,
+    "fileCRC" : -1329797242,
+    "fileName" : "Округ 04.06.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 44014213,
+    "fullUnpackSize" : 49717554,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

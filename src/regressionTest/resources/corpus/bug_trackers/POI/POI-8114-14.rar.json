@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1019359884.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1042462584,
+    "fileName" : "Ref3DPtg.java",
+    "hostOS" : "win32",
+    "fullPackSize" : 2109,
+    "fullUnpackSize" : 6268,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1019359850.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1464593569,
+    "fileName" : "Area3DPtg.java",
+    "hostOS" : "win32",
+    "fullPackSize" : 2324,
+    "fullUnpackSize" : 8249,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

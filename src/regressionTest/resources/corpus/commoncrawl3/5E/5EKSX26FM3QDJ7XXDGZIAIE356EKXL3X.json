@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1325587674.030169200,
+    "creationTime" : null,
+    "fileCRC" : 1775085973,
+    "fileName" : "Haryanna_Ai_como_eu_to_Bandida.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6643668,
+    "fullUnpackSize" : 7655700,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442890589.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1564874679,
+    "fileName" : "SU5D Server v1.3 [RU] setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 839366,
+    "fullUnpackSize" : 859252,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

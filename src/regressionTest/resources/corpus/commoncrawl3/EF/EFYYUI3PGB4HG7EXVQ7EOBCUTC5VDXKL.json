@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495284872.866000000,
+    "creationTime" : null,
+    "fileCRC" : -195633775,
+    "fileName" : "Tibor & Flowdeep - Pacino 2 (2017)\\01. Tibor & Flowdeep - Intro.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2245136,
+    "fullUnpackSize" : 2269490,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1249972013.421875000,
+    "creationTime" : null,
+    "fileCRC" : 346856533,
+    "fileName" : "dmi_sample\\bugatti_veyron.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 594877,
+    "fullUnpackSize" : 594877,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1249971842.421875000,
+    "creationTime" : null,
+    "fileCRC" : -114317334,
+    "fileName" : "dmi_sample\\ferrari_360_spider.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1341553,
+    "fullUnpackSize" : 1345852,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

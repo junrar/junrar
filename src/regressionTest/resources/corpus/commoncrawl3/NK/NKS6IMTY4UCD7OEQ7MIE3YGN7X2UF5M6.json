@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470182188.383111300,
+    "creationTime" : null,
+    "fileCRC" : 192641007,
+    "fileName" : "QD828.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2030642,
+    "fullUnpackSize" : 3961330,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314784403.613609800,
+    "creationTime" : null,
+    "fileCRC" : 849555070,
+    "fileName" : "mp_wireframe_r4\\mp_wireframe_r4.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 21774696,
+    "fullUnpackSize" : 21972659,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

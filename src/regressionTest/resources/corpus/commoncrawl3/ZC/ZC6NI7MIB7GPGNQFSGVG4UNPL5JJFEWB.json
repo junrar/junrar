@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382959880.113281200,
+    "creationTime" : null,
+    "fileCRC" : -1841144227,
+    "fileName" : "buffalo.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1192875,
+    "fullUnpackSize" : 3532800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

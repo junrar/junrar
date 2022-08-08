@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285732523.004388000,
+    "creationTime" : null,
+    "fileCRC" : -114700645,
+    "fileName" : "colorChooser.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 195359,
+    "fullUnpackSize" : 195359,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285732984.057388000,
+    "creationTime" : null,
+    "fileCRC" : -706948864,
+    "fileName" : "colour_calculator.html",
+    "hostOS" : "win32",
+    "fullPackSize" : 258,
+    "fullUnpackSize" : 377,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

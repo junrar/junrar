@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501374396.767937800,
+    "creationTime" : null,
+    "fileCRC" : -503422196,
+    "fileName" : "HD-200s F201_2.kuf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3171208,
+    "fullUnpackSize" : 3171208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514900840.464263100,
+    "creationTime" : null,
+    "fileCRC" : -715404017,
+    "fileName" : "px_pharoah_fykseN_0152.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 1676375,
+    "fullUnpackSize" : 9387306,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

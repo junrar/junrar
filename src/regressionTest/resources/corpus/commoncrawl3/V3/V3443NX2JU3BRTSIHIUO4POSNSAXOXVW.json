@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1226049600.000000000,
+    "creationTime" : null,
+    "fileCRC" : 502417442,
+    "fileName" : "m-495 инструкция по эксплуатации.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 804845,
+    "fullUnpackSize" : 853162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

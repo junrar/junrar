@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464331317.507000000,
+    "creationTime" : null,
+    "fileCRC" : -836983883,
+    "fileName" : "ПРЕДЛОЖЕНИЕ о размере цен на 2017 год.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 133781,
+    "fullUnpackSize" : 148966,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168144052.156250000,
+    "creationTime" : null,
+    "fileCRC" : -1735821430,
+    "fileName" : "gp4.gamer.nl 2004 season set.cuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 73929246,
+    "fullUnpackSize" : 73929246,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

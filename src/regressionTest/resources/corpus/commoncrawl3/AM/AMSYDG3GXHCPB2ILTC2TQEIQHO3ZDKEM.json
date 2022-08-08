@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1249384180.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1166812896,
+    "fileName" : "Dokumenty_Izoblicajut.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 7135852,
+    "fullUnpackSize" : 7260817,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

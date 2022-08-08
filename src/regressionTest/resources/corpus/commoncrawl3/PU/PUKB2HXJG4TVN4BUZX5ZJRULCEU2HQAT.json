@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453954932.949330000,
+    "creationTime" : null,
+    "fileCRC" : 1283226447,
+    "fileName" : "mp_edge\\mp_edge.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 16444348,
+    "fullUnpackSize" : 16640124,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

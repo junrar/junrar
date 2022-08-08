@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327645892.249275700,
+    "creationTime" : null,
+    "fileCRC" : -184669988,
+    "fileName" : "Dalmayi Ayginer H.Sanasaryan.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 441962,
+    "fullUnpackSize" : 469897,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

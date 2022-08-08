@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494032043.592271900,
+    "creationTime" : null,
+    "fileCRC" : 912240086,
+    "fileName" : "فصلنامه زمستان 1395.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 17131138,
+    "fullUnpackSize" : 30557984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

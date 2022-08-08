@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491886176.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1338125831,
+    "fileName" : "ПРОМЕЖУТОЧНЫЕ ОТЧЕТЫ ПО СОГЛАШЕНИЮ\\I квартал\\Отчет по соглашению2017 Крым.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 24615298,
+    "fullUnpackSize" : 28478795,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

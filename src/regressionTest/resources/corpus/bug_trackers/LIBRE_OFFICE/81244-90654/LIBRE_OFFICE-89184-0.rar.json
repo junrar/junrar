@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423224505.445597900,
+    "creationTime" : null,
+    "fileCRC" : -820517916,
+    "fileName" : "LES 5 WAARNEMINGSPERSPECTIEF_005 pp.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 24776,
+    "fullUnpackSize" : 62168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423224536.333652100,
+    "creationTime" : null,
+    "fileCRC" : -1291105151,
+    "fileName" : "LES 5 WAARNEMINGSPERSPECTIEF_005.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 20512,
+    "fullUnpackSize" : 26598,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

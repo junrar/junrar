@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348381503.136000000,
+    "creationTime" : null,
+    "fileCRC" : -1467210384,
+    "fileName" : "01 Blackbird.flac",
+    "hostOS" : "win32",
+    "fullPackSize" : 11047192,
+    "fullUnpackSize" : 11051417,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

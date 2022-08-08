@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217154306.670000000,
+    "creationTime" : null,
+    "fileCRC" : -1729501801,
+    "fileName" : "zebrwhnt.sys",
+    "hostOS" : "win32",
+    "fullPackSize" : 6580,
+    "fullUnpackSize" : 12160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

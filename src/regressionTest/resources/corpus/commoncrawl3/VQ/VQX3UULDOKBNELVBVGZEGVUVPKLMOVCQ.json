@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347195119.484375000,
+    "creationTime" : null,
+    "fileCRC" : -1668311525,
+    "fileName" : "透视《人民日报》系列.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 622064,
+    "fullUnpackSize" : 627726,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

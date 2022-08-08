@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455012429.752669800,
+    "creationTime" : null,
+    "fileCRC" : 7407306,
+    "fileName" : "Spotlight.2015.1080p.BluRay.x264-BLOW.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 52240,
+    "fullUnpackSize" : 153638,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455087008.961433600,
+    "creationTime" : null,
+    "fileCRC" : -1509017103,
+    "fileName" : "Spotlight.2015.1080p.bluray.x264.blow.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 101724,
+    "fullUnpackSize" : 101901,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

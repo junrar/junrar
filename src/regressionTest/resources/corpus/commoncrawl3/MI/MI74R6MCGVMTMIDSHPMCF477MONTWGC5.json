@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309333627.306610100,
+    "creationTime" : null,
+    "fileCRC" : 377886490,
+    "fileName" : "mp_vac_2\\mp_vac_2.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 28882349,
+    "fullUnpackSize" : 29004338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

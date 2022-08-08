@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329116278.531250000,
+    "creationTime" : null,
+    "fileCRC" : -1765788756,
+    "fileName" : "skyscraper.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 241445,
+    "fullUnpackSize" : 248847,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329115927.656250000,
+    "creationTime" : null,
+    "fileCRC" : 2083785230,
+    "fileName" : "P911GT.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 4032367,
+    "fullUnpackSize" : 5421477,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

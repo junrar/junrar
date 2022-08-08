@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1210969639.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1472388213,
+    "fileName" : "Christian Ethics.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 137902,
+    "fullUnpackSize" : 160274,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1210967116.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1641518459,
+    "fileName" : "Cover 1-4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 221977,
+    "fullUnpackSize" : 237350,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

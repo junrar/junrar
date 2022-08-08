@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268935276.203125000,
+    "creationTime" : null,
+    "fileCRC" : -495330104,
+    "fileName" : "2530 2x2CCC 3JP LRP LRZ 3JZ.rep",
+    "hostOS" : "win32",
+    "fullPackSize" : 121104,
+    "fullUnpackSize" : 124226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268936210.609375000,
+    "creationTime" : null,
+    "fileCRC" : -1201958372,
+    "fileName" : "2531 2x2CCC 3JZ LRZ 3JP LRP.rep",
+    "hostOS" : "win32",
+    "fullPackSize" : 74894,
+    "fullUnpackSize" : 77121,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

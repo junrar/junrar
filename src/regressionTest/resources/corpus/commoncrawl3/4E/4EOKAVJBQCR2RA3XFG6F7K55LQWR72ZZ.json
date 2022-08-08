@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1188173894.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1335150901,
+    "fileName" : "VERS-PK1-01.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 569051,
+    "fullUnpackSize" : 1240064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

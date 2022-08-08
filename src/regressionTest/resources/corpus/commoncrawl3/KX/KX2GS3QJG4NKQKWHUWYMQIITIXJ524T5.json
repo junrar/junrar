@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314691450.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1666454072,
+    "fileName" : "2011年国资委系统监管企业职工薪酬调查填报指导说明书.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1775079,
+    "fullUnpackSize" : 1890700,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

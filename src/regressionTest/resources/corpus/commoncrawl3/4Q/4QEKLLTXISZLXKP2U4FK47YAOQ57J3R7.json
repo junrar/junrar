@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1208486781.546875000,
+    "creationTime" : null,
+    "fileCRC" : -1864256078,
+    "fileName" : "第三卷(2008)\\3-1全文.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3279234,
+    "fullUnpackSize" : 4528986,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

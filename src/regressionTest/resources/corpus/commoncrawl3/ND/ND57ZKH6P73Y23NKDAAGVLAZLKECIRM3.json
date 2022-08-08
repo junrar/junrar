@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511837675.432808500,
+    "creationTime" : null,
+    "fileCRC" : 738502895,
+    "fileName" : "Колэнерго График ремонтов на декабрь 2017\\График ремонта на декабрь0001.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1347214,
+    "fullUnpackSize" : 1824547,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

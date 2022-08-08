@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1236100802.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1785529754,
+    "fileName" : "Belok.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 967182,
+    "fullUnpackSize" : 1462272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

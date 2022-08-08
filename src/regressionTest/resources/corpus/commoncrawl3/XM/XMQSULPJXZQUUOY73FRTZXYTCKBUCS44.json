@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382680991.231000000,
+    "creationTime" : null,
+    "fileCRC" : 949926476,
+    "fileName" : "Положение о совете руководителей колледжей (22_07_2011 №106).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14991,
+    "fullUnpackSize" : 53760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

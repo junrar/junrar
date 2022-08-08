@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505895793.949133300,
+    "creationTime" : null,
+    "fileCRC" : 1554021534,
+    "fileName" : "GD32 MCU Dfu Tool\\GD32 MCU Dfu Drivers_v1.0.1.2316\\x64\\GD32 MCU Dfu Drivers.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4802965,
+    "fullUnpackSize" : 11024896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

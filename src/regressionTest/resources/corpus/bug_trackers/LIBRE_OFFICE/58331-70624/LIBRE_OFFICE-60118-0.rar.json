@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359601150.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1978603219,
+    "fileName" : "folha_ponto.odb",
+    "hostOS" : "win32",
+    "fullPackSize" : 3081,
+    "fullUnpackSize" : 3848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359600510.000000000,
+    "creationTime" : null,
+    "fileCRC" : -735551189,
+    "fileName" : "Folha_Ponto_IFC-Luzerna_2013.ods",
+    "hostOS" : "win32",
+    "fullPackSize" : 62041,
+    "fullUnpackSize" : 63955,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

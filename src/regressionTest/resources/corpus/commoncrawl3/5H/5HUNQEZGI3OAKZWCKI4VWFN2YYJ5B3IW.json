@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445306759.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1394230335,
+    "fileName" : "CP-LIS\\data.cpack",
+    "hostOS" : "win32",
+    "fullPackSize" : 1042561299,
+    "fullUnpackSize" : 8248460958,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

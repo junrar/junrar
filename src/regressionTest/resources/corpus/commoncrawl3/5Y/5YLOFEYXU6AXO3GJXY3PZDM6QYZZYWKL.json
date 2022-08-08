@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476250412.480403100,
+    "creationTime" : null,
+    "fileCRC" : 712581683,
+    "fileName" : "! доработанный проект ИПР ПАО МРСК Северо-Запада 07.10.2016\\Обосновывающие материалы (абзац 5, 9, 11 п.11ж ПП 24).rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 2044722915,
+    "fullUnpackSize" : 13629550762,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

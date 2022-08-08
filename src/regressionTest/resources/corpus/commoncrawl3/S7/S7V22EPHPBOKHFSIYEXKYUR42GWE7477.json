@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473404463.036274200,
+    "creationTime" : null,
+    "fileCRC" : -1954538814,
+    "fileName" : "nasbud.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1119797,
+    "fullUnpackSize" : 1146473,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

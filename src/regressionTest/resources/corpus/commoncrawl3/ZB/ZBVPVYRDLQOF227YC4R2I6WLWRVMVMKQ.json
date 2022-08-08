@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336096503.669485600,
+    "creationTime" : null,
+    "fileCRC" : 1870842543,
+    "fileName" : "محاضرات فى زكاة الشركات pp\\أحكام زكاة الشركات الزراعيه    7.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 779299,
+    "fullUnpackSize" : 1187328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336097931.777993400,
+    "creationTime" : null,
+    "fileCRC" : -200574219,
+    "fileName" : "محاضرات فى زكاة الشركات pp\\أحكام زكاة الشـــركات   1.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1014787,
+    "fullUnpackSize" : 1403392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

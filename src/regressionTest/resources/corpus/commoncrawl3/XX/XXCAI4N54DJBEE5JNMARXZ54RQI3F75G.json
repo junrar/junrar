@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194365104.468750000,
+    "creationTime" : null,
+    "fileCRC" : 1511914588,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 959,
+    "fullUnpackSize" : 2691,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194364932.218750000,
+    "creationTime" : null,
+    "fileCRC" : -543000963,
+    "fileName" : "PLUS Season Update 2007.tup",
+    "hostOS" : "win32",
+    "fullPackSize" : 5890309,
+    "fullUnpackSize" : 5890309,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506568115.713144500,
+    "creationTime" : null,
+    "fileCRC" : -799313107,
+    "fileName" : "TSİM.jnlp",
+    "hostOS" : "win32",
+    "fullPackSize" : 1213,
+    "fullUnpackSize" : 3382,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

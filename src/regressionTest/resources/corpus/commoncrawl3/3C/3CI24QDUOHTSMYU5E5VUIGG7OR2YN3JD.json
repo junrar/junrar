@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524016790.599293300,
+    "creationTime" : null,
+    "fileCRC" : -923493122,
+    "fileName" : "download-gambar-kerja-2-lantai-6x9-idekreasirumah.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2357296,
+    "fullUnpackSize" : 2532023,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496392316.671343600,
+    "creationTime" : null,
+    "fileCRC" : -2039408222,
+    "fileName" : "关于创建全国文明城市的档案材料整理说明.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 9208,
+    "fullUnpackSize" : 11831,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

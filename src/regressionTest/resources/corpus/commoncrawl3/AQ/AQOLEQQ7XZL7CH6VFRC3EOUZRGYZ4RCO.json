@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415923676.990778900,
+    "creationTime" : null,
+    "fileCRC" : 743341187,
+    "fileName" : "Supernatural.S10E05.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17592,
+    "fullUnpackSize" : 46298,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416053924.460313400,
+    "creationTime" : null,
+    "fileCRC" : 1768417712,
+    "fileName" : "Supernatural.S10E05.Fan.Fiction.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17621,
+    "fullUnpackSize" : 46354,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

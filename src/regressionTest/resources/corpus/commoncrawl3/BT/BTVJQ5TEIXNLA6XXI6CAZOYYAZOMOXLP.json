@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509068607.742483000,
+    "creationTime" : null,
+    "fileCRC" : -1634095422,
+    "fileName" : "Peraturan kepala SKPD tentang RKT 2017 apbdp.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 137257,
+    "fullUnpackSize" : 140699,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508985073.730201900,
+    "creationTime" : null,
+    "fileCRC" : 991929672,
+    "fileName" : "RKT 2017 APBDP 24 okt.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 32048,
+    "fullUnpackSize" : 36335,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

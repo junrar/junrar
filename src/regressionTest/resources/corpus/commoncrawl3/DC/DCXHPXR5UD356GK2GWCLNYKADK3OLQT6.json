@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1023246922.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1543424658,
+    "fileName" : "XLead K'werkit.drumkit",
+    "hostOS" : "win32",
+    "fullPackSize" : 662583,
+    "fullUnpackSize" : 1012846,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

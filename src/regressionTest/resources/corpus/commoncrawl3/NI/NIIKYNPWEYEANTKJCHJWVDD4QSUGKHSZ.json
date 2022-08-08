@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346812845.453125000,
+    "creationTime" : null,
+    "fileCRC" : 1009305363,
+    "fileName" : "辊环4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8110516,
+    "fullUnpackSize" : 11349961,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

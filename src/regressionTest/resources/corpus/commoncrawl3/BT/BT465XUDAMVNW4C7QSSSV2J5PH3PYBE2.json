@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507543698.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2078500005,
+    "fileName" : "Аннотация к рабочей программе музыкального руководителя.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 220988,
+    "fullUnpackSize" : 228491,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

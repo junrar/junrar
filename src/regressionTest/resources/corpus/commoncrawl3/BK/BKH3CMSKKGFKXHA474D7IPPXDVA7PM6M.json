@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499671142.973806700,
+    "creationTime" : null,
+    "fileCRC" : 1785499662,
+    "fileName" : "DSkin.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 2827449,
+    "fullUnpackSize" : 4403076,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

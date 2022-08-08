@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1165824702.417525300,
+    "creationTime" : null,
+    "fileCRC" : 1607852867,
+    "fileName" : "сайдинг04.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 132348,
+    "fullUnpackSize" : 132568,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1165824574.990647800,
+    "creationTime" : null,
+    "fileCRC" : -44344349,
+    "fileName" : "сайдинг03.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 141120,
+    "fullUnpackSize" : 141328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

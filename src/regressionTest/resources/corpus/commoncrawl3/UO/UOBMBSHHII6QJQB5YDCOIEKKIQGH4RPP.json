@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312706507.937500000,
+    "creationTime" : null,
+    "fileCRC" : -2009198219,
+    "fileName" : "KG TREND ANALYSIS.ex4",
+    "hostOS" : "win32",
+    "fullPackSize" : 19277,
+    "fullUnpackSize" : 21856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

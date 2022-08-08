@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1345783257.199781300,
+    "creationTime" : null,
+    "fileCRC" : -691525677,
+    "fileName" : "Врата Бальдура.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 847895,
+    "fullUnpackSize" : 856427,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418035522.671520900,
+    "creationTime" : null,
+    "fileCRC" : 1732326007,
+    "fileName" : "Por la Via Romana.kml",
+    "hostOS" : "win32",
+    "fullPackSize" : 5196,
+    "fullUnpackSize" : 14356,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

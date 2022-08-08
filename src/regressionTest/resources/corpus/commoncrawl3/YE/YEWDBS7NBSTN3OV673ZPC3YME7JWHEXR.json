@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289885896.734375000,
+    "creationTime" : null,
+    "fileCRC" : -541243454,
+    "fileName" : "remark.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 3446708,
+    "fullUnpackSize" : 3462753,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

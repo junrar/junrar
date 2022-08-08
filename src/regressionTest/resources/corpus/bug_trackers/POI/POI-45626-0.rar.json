@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1218610864.679875000,
+    "creationTime" : null,
+    "fileCRC" : 1012003338,
+    "fileName" : "ResultadoPruebaIPXFigures.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 760822,
+    "fullUnpackSize" : 20956786,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

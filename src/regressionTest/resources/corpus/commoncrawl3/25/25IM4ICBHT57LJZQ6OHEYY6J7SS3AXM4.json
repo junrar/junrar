@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394622377.959315900,
+    "creationTime" : null,
+    "fileCRC" : -2110499606,
+    "fileName" : "mp_the_extreme_load.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 273,
+    "fullUnpackSize" : 273,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394622377.916313500,
+    "creationTime" : null,
+    "fileCRC" : 1946097540,
+    "fileName" : "mp_the_extreme.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 26667686,
+    "fullUnpackSize" : 26935920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

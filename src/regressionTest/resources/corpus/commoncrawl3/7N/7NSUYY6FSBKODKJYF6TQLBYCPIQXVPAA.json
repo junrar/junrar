@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207147020.000000000,
+    "creationTime" : null,
+    "fileCRC" : 418105676,
+    "fileName" : "zeko.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1684080,
+    "fullUnpackSize" : 1701512,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

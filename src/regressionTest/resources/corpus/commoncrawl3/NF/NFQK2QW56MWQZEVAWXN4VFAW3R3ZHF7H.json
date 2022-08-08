@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466036216.475012500,
+    "creationTime" : null,
+    "fileCRC" : -2040090875,
+    "fileName" : "Годовой отчет 2015 для раскрытия\\Годовой_отчет_МРСК_С-З_за_2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5193872,
+    "fullUnpackSize" : 5931674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

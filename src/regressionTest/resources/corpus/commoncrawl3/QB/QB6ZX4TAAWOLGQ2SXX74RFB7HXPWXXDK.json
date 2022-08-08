@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380373515.674480600,
+    "creationTime" : null,
+    "fileCRC" : 1175501280,
+    "fileName" : "IQ_CDV-800_sound_issue\\Manual.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 283,
+    "fullUnpackSize" : 389,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380372700.000000000,
+    "creationTime" : null,
+    "fileCRC" : -582831319,
+    "fileName" : "IQ_CDV-800_sound_issue\\SPHOST.BRN",
+    "hostOS" : "win32",
+    "fullPackSize" : 1721389,
+    "fullUnpackSize" : 6245978,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376382381.035000000,
+    "creationTime" : null,
+    "fileCRC" : 1090000505,
+    "fileName" : "ketoanthue.vn\\Thong_tu_so_47_2013_TT_BTC.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8472,
+    "fullUnpackSize" : 72192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

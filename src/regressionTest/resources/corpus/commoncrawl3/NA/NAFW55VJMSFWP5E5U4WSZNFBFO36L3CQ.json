@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418714107.524376800,
+    "creationTime" : null,
+    "fileCRC" : -340618952,
+    "fileName" : "Broshure_Sarjana_Matematika-ITS_dalam.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1166289,
+    "fullUnpackSize" : 1434860,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

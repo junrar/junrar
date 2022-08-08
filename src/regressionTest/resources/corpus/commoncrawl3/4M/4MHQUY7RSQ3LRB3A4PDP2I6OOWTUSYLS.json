@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433154826.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2081240900,
+    "fileName" : "Положение ГУ каз. рус\\кз.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2910164,
+    "fullUnpackSize" : 3473378,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

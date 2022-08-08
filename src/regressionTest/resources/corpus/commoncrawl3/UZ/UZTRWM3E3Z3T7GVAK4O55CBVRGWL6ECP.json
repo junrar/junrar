@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448024171.138512000,
+    "creationTime" : null,
+    "fileCRC" : -1473293084,
+    "fileName" : "其他产品.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1986635,
+    "fullUnpackSize" : 2063782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

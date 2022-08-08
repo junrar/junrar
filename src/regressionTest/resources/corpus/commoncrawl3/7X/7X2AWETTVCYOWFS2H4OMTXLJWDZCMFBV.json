@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334803752.000000000,
+    "creationTime" : null,
+    "fileCRC" : -810429204,
+    "fileName" : "Аудиторское заключение по итогам 2011.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 347519,
+    "fullUnpackSize" : 372019,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334632460.000000000,
+    "creationTime" : null,
+    "fileCRC" : 528262999,
+    "fileName" : "Баланс на 31.12.11_уточненный.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5163386,
+    "fullUnpackSize" : 6672407,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

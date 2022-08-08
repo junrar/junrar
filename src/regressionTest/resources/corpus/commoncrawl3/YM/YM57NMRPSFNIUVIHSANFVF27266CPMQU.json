@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529288186.256633300,
+    "creationTime" : null,
+    "fileCRC" : 458012408,
+    "fileName" : "Столовые приборы Eternum (Бельгия) Exxent (Швеция) Tramontina (Бразилия).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 353764,
+    "fullUnpackSize" : 691200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

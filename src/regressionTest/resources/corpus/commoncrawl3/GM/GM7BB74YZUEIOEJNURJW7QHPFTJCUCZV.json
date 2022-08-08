@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511854399.418866200,
+    "creationTime" : null,
+    "fileCRC" : 448209225,
+    "fileName" : "2017年公租房摇号.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 35303,
+    "fullUnpackSize" : 205824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228801062.406250000,
+    "creationTime" : null,
+    "fileCRC" : -905029595,
+    "fileName" : "gallery28.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 162003,
+    "fullUnpackSize" : 162900,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1220770092.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1645491842,
+    "fileName" : "euros.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1165418,
+    "fullUnpackSize" : 3910529,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

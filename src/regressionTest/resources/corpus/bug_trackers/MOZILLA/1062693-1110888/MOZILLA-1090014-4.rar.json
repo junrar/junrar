@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418955571.496083100,
+    "creationTime" : null,
+    "fileCRC" : 1972075598,
+    "fileName" : "mozilla_test_AIA_crlHttp.der",
+    "hostOS" : "win32",
+    "fullPackSize" : 1259,
+    "fullUnpackSize" : 1580,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

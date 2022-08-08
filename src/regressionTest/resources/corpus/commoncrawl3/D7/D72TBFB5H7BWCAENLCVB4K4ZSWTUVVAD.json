@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352903238.787108700,
+    "creationTime" : null,
+    "fileCRC" : -1707198449,
+    "fileName" : "henrythejedi.com_i_am_iron_man_volume_1_features_walkthrough.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 111869649,
+    "fullUnpackSize" : 146604228,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

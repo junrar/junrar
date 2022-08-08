@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1276761802.000000000,
+    "creationTime" : null,
+    "fileCRC" : 710014451,
+    "fileName" : "STi7101_03000700_golden_russia_amstar_interstar_ps_1_2_54_all.dld",
+    "hostOS" : "win32",
+    "fullPackSize" : 5096742,
+    "fullUnpackSize" : 5279674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

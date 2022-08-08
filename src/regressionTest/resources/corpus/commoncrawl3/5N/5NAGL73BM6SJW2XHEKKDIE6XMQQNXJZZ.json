@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1161441460.968750000,
+    "creationTime" : null,
+    "fileCRC" : -643844264,
+    "fileName" : "montreal1991.tuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 7931859,
+    "fullUnpackSize" : 7931859,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

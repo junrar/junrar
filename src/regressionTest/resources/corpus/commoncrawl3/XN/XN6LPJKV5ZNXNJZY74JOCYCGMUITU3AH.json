@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418355154.770358500,
+    "creationTime" : null,
+    "fileCRC" : -379277879,
+    "fileName" : "Marvel Zombies - Christmas Carol #002 (www.ElAbueloSawa.com)\\000.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1024449,
+    "fullUnpackSize" : 1039905,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418345868.537835400,
+    "creationTime" : null,
+    "fileCRC" : -265703002,
+    "fileName" : "Marvel Zombies - Christmas Carol #002 (www.ElAbueloSawa.com)\\001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 373996,
+    "fullUnpackSize" : 389261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1237974261.409382600,
+    "creationTime" : null,
+    "fileCRC" : -1424112347,
+    "fileName" : "present_w9.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 604833,
+    "fullUnpackSize" : 991232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

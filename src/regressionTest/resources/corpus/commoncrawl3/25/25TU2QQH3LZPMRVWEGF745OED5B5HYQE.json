@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986143172.000000000,
+    "creationTime" : null,
+    "fileCRC" : -466119200,
+    "fileName" : "CH_SERV.RTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 169357,
+    "fullUnpackSize" : 619944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986963026.000000000,
+    "creationTime" : null,
+    "fileCRC" : -258885225,
+    "fileName" : "FILE_ID.DIZ",
+    "hostOS" : "win32",
+    "fullPackSize" : 179,
+    "fullUnpackSize" : 210,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405582484.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2138652706,
+    "fileName" : "Projeto de Estrutura Metálica\\1410-01-MET-06-MC- PDF.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8785070,
+    "fullUnpackSize" : 17443311,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

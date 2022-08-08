@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527140546.210000000,
+    "creationTime" : null,
+    "fileCRC" : -1611085976,
+    "fileName" : "1110070_5.01000_01.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 62610,
+    "fullUnpackSize" : 94782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

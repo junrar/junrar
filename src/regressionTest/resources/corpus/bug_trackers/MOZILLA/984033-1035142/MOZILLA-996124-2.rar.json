@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397472010.053808300,
+    "creationTime" : null,
+    "fileCRC" : 1979865673,
+    "fileName" : "Bem-vindo ao Facebook - acesse, cadastre-se ou saiba mais.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 12130,
+    "fullUnpackSize" : 46135,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

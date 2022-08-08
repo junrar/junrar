@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457927732.027218800,
+    "creationTime" : null,
+    "fileCRC" : -1699582539,
+    "fileName" : "detskij-sad.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 6332723,
+    "fullUnpackSize" : 6353927,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

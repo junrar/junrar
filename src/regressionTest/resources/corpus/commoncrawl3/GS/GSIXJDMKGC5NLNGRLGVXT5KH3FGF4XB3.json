@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530589713.577725300,
+    "creationTime" : null,
+    "fileCRC" : -197697121,
+    "fileName" : "购买文件登记表(通用).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10412,
+    "fullUnpackSize" : 58368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

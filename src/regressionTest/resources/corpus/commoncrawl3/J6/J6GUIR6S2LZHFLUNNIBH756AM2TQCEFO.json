@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1241675921.419375000,
+    "creationTime" : null,
+    "fileCRC" : 938746059,
+    "fileName" : "Bangkok_medium_level_cycling_trip.gdb",
+    "hostOS" : "win32",
+    "fullPackSize" : 2443,
+    "fullUnpackSize" : 8130,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482893913.252431000,
+    "creationTime" : null,
+    "fileCRC" : 1978008431,
+    "fileName" : "Allergicheskie_i_infektsionnye_zabolevania_kozhi.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 807037,
+    "fullUnpackSize" : 815474,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1106405524.000000000,
+    "creationTime" : null,
+    "fileCRC" : 465663784,
+    "fileName" : "djvureader_2_0_0_26\\DjVuReader.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 928196,
+    "fullUnpackSize" : 2930176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

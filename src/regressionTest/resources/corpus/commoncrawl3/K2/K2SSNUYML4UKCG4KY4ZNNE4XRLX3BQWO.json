@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393208017.802334700,
+    "creationTime" : null,
+    "fileCRC" : 2080423250,
+    "fileName" : "ElitSoft.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 3221656,
+    "fullUnpackSize" : 3422208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

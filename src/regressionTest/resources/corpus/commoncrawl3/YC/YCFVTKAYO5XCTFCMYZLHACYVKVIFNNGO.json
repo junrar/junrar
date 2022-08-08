@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457876522.000000000,
+    "creationTime" : null,
+    "fileCRC" : -759294436,
+    "fileName" : "rld-codbo3aw\\setup-1.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 76226056,
+    "fullUnpackSize" : 9456699637,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

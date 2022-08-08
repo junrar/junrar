@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194844053.555743600,
+    "creationTime" : null,
+    "fileCRC" : 120524412,
+    "fileName" : "orenburgskaia_obl_1960_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599892,
+    "fullUnpackSize" : 18959341,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

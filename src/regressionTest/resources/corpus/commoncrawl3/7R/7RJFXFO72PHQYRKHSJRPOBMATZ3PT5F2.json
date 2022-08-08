@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366964132.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1491391322,
+    "fileName" : "color_5_13.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 18342174,
+    "fullUnpackSize" : 18423975,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

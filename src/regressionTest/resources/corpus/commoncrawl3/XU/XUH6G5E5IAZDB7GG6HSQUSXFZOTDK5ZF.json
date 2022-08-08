@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361660423.439612600,
+    "creationTime" : null,
+    "fileCRC" : -1696219304,
+    "fileName" : "TextPLAY.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4654453,
+    "fullUnpackSize" : 4804608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

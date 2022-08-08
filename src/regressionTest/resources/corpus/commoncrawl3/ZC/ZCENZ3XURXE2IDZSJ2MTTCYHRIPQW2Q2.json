@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1193095912.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1601553411,
+    "fileName" : "cyrusSHIRT_VECTOR_PACK_by_cyrusmuller.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 793334,
+    "fullUnpackSize" : 1608785,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

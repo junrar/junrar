@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477721744.203000000,
+    "creationTime" : null,
+    "fileCRC" : -1945888502,
+    "fileName" : "Архів сайту.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 592978,
+    "fullUnpackSize" : 1255424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

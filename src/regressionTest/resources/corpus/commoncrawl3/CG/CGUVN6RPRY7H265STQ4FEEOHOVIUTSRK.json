@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1311252167.421875000,
+    "creationTime" : null,
+    "fileCRC" : -785589972,
+    "fileName" : "Na_Imensidao\\NA_IMENSI...docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 15116,
+    "fullUnpackSize" : 17864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1311252331.218750000,
+    "creationTime" : null,
+    "fileCRC" : 1290413061,
+    "fileName" : "Na_Imensidao\\NA_IMENSI...mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3216100,
+    "fullUnpackSize" : 3266845,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

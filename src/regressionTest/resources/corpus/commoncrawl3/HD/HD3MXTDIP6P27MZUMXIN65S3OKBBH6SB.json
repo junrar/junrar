@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421659148.014000000,
+    "creationTime" : null,
+    "fileCRC" : 855967744,
+    "fileName" : "U.ACIK_YERLER_ICIN_TAAHUTNAME.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5854,
+    "fullUnpackSize" : 24064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

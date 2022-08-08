@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490029233.000000000,
+    "creationTime" : null,
+    "fileCRC" : -526457212,
+    "fileName" : "L.A. Noire - The Complete Edition [FitGirl Repack].bitdownload.ir\\setup-fitgirl-01.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 524287824,
+    "fullUnpackSize" : 10921642528,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

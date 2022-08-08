@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357833600.000000000,
+    "creationTime" : null,
+    "fileCRC" : 555662891,
+    "fileName" : "Fluid Mechanics\\Fluid Mechanics Lec 01.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2856617,
+    "fullUnpackSize" : 2984960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

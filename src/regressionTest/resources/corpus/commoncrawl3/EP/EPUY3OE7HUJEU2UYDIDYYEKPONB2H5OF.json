@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435035651.552000000,
+    "creationTime" : null,
+    "fileCRC" : 1997860297,
+    "fileName" : "Из МО РБ Письмо к началу   2015_2016 -19.06.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4222763,
+    "fullUnpackSize" : 4625408,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

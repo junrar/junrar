@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1169695690.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1952780120,
+    "fileName" : "Town_1911_Point.DAT",
+    "hostOS" : "win32",
+    "fullPackSize" : 1353796,
+    "fullUnpackSize" : 18832394,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

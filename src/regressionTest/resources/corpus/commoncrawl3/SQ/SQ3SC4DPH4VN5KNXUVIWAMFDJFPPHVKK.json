@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536888244.187500000,
+    "creationTime" : null,
+    "fileCRC" : 1661106002,
+    "fileName" : "CV_1705.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 690969,
+    "fullUnpackSize" : 795750,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536888244.406250000,
+    "creationTime" : null,
+    "fileCRC" : -750185641,
+    "fileName" : "bieumaudinhkembaocao-NĐ-06.CP.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 31245,
+    "fullUnpackSize" : 38867,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

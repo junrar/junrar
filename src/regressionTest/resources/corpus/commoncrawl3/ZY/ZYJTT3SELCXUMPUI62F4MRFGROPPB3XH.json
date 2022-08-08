@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426824280.677234500,
+    "creationTime" : null,
+    "fileCRC" : 549150688,
+    "fileName" : "Боевых дружин,5А.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 578692,
+    "fullUnpackSize" : 708639,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426824284.348444400,
+    "creationTime" : null,
+    "fileCRC" : -1208330248,
+    "fileName" : "Ефремова, 5.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 600861,
+    "fullUnpackSize" : 744144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

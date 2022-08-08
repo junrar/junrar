@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528946212.367054500,
+    "creationTime" : null,
+    "fileCRC" : 1834630950,
+    "fileName" : "รายงานประจำปีของสถานศึกษา  ปี 2560\\01ข้อมูลของโรงเรียน.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1293125,
+    "fullUnpackSize" : 1661684,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

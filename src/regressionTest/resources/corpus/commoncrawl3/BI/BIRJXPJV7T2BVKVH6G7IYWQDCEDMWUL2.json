@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388399269.275518300,
+    "creationTime" : null,
+    "fileCRC" : -1592597199,
+    "fileName" : "蟹肉卷.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 473747,
+    "fullUnpackSize" : 488620,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

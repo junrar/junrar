@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423017412.007344900,
+    "creationTime" : null,
+    "fileCRC" : -1715429526,
+    "fileName" : "КУРСОВАЯ РАБОТА - Медицина - Анализ понятия ВИЧ-инфекции и анализ распространенности заболевания в Сахалинской области\\Курсовая.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 76262,
+    "fullUnpackSize" : 99017,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423018402.634849600,
+    "creationTime" : null,
+    "fileCRC" : 1168097391,
+    "fileName" : "КУРСОВАЯ РАБОТА - Медицина - Анализ понятия ВИЧ-инфекции и анализ распространенности заболевания в Сахалинской области\\Презентация ВИЧ.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1450863,
+    "fullUnpackSize" : 1492297,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

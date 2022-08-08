@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1434594716.338768900,
+    "creationTime" : null,
+    "fileCRC" : 1211778594,
+    "fileName" : "План закупок товаров, работ услуг ОАО РТА на 2015 год ред. 2 от 16.06.2015.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 39878,
+    "fullUnpackSize" : 42821,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

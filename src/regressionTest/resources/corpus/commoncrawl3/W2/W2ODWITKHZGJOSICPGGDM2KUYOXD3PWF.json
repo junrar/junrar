@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318158072.000000000,
+    "creationTime" : null,
+    "fileCRC" : 195454210,
+    "fileName" : "технические ошибки юрлица.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9967,
+    "fullUnpackSize" : 70144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

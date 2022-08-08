@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337064343.701887400,
+    "creationTime" : null,
+    "fileCRC" : 1059642398,
+    "fileName" : "Приложение 3 к Ежеквартальному отчёту - Бухгалтерская отчётность за 1 кв. 2012 года\\Бухгалтерский баланс на 31.03.2012.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2755276,
+    "fullUnpackSize" : 3229008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

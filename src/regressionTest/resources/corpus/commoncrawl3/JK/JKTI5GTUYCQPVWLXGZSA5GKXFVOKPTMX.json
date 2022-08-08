@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380423872.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1102118301,
+    "fileName" : "静力学分析王禹程方法范例.gsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 3145,
+    "fullUnpackSize" : 23758,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

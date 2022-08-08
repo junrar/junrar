@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477752057.204392700,
+    "creationTime" : null,
+    "fileCRC" : -822544785,
+    "fileName" : "fıtrat 5-1-son.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 1169089,
+    "fullUnpackSize" : 1441419,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

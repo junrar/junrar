@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1386564173.578125000,
+    "creationTime" : null,
+    "fileCRC" : 838087414,
+    "fileName" : "Allegati_2013129 pug bun.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 5098463,
+    "fullUnpackSize" : 5098463,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

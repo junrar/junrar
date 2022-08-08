@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411700418.198173200,
+    "creationTime" : null,
+    "fileCRC" : 1762396446,
+    "fileName" : "Документация (Техническая часть)\\Лот № 2\\Проект.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 349847,
+    "fullUnpackSize" : 8047309,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411700330.997454000,
+    "creationTime" : null,
+    "fileCRC" : -33631939,
+    "fileName" : "Документация (Техническая часть)\\Лот № 1\\Проект.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 10396256,
+    "fullUnpackSize" : 10387830,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473409907.979726200,
+    "creationTime" : null,
+    "fileCRC" : 1242570418,
+    "fileName" : "sc-995__04-2017\\MID1008L-2016-MHZ152-#2-0912\\APDB_MT8127_S01_L1.MP8_W16.24",
+    "hostOS" : "win32",
+    "fullPackSize" : 11848,
+    "fullUnpackSize" : 126634,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473412334.627784200,
+    "creationTime" : null,
+    "fileCRC" : 10314159,
+    "fileName" : "sc-995__04-2017\\MID1008L-2016-MHZ152-#2-0912\\boot.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 4540324,
+    "fullUnpackSize" : 4540416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

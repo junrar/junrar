@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350880076.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2127584179,
+    "fileName" : "Diskplayer\\General_DiskPlayer_ENG_V1.2.0.0_20120912.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5938968,
+    "fullUnpackSize" : 6288356,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

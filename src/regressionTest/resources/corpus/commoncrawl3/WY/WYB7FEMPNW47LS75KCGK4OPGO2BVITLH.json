@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507426859.346329500,
+    "creationTime" : null,
+    "fileCRC" : -1438601109,
+    "fileName" : "拜厄104.mud",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599,
+    "fullUnpackSize" : 72538,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

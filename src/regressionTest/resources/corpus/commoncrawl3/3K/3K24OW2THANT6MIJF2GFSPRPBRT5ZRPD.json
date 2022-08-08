@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528824431.578547200,
+    "creationTime" : null,
+    "fileCRC" : 1414498023,
+    "fileName" : "S-Club ts4 WM Necklace F 201806.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 263062,
+    "fullUnpackSize" : 379907,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

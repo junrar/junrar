@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1241957040.312500000,
+    "creationTime" : null,
+    "fileCRC" : 768424223,
+    "fileName" : "CSI.S09E23.HDTV.XviD-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11782,
+    "fullUnpackSize" : 35705,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251708864.000000000,
+    "creationTime" : null,
+    "fileCRC" : -361999949,
+    "fileName" : "CSI.S09E23.Hog.Heaven.DVDRip.XviD-SAiNTS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11791,
+    "fullUnpackSize" : 35729,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

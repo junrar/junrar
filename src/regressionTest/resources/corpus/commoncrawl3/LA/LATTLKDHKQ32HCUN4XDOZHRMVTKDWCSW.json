@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504268631.000000000,
+    "creationTime" : null,
+    "fileCRC" : 662035371,
+    "fileName" : "Mr.Mercedes.S01E04.Gods.Who.Fall.720p.DTV.WEB-DL.DD2.0.x264-NTb.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17298,
+    "fullUnpackSize" : 44878,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504274051.154436700,
+    "creationTime" : null,
+    "fileCRC" : 1054500994,
+    "fileName" : "Mr.Mercedes.S01E04.Gods.Who.Fall.720p.DTV.WEB-DL.DD2.0.x264-NTb.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 109117,
+    "fullUnpackSize" : 109117,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

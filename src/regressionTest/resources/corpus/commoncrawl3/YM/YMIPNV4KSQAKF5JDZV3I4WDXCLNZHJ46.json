@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1156990686.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1263735300,
+    "fileName" : "1460-81.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 144072,
+    "fullUnpackSize" : 356864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

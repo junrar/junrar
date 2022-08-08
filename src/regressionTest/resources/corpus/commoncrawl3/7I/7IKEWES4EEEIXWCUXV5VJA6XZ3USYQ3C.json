@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374757976.400775400,
+    "creationTime" : null,
+    "fileCRC" : 623383383,
+    "fileName" : "Citadels (www.Downloadha.com)\\Citadels\\fairlight.nfo",
+    "hostOS" : "win32",
+    "fullPackSize" : 5298,
+    "fullUnpackSize" : 5298,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374758556.729968300,
+    "creationTime" : null,
+    "fileCRC" : -1405437321,
+    "fileName" : "Citadels (www.Downloadha.com)\\Citadels\\flt-cita.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 996442017,
+    "fullUnpackSize" : 2269806592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

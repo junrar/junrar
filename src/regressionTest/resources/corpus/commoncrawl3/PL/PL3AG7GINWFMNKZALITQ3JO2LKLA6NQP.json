@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177309312.296875000,
+    "creationTime" : null,
+    "fileCRC" : -546423924,
+    "fileName" : "Duran Duran - Too Much Information (live 1993).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5273874,
+    "fullUnpackSize" : 5654528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

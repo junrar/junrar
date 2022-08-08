@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1406079842.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1013991924,
+    "fileName" : "Рапоряжение муниципального района Чернянский район Белгородской области №480-р\\Распоряжение 001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 784065,
+    "fullUnpackSize" : 841220,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1406079940.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1337289307,
+    "fileName" : "Рапоряжение муниципального района Чернянский район Белгородской области №480-р\\Распоряжение 002.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 404174,
+    "fullUnpackSize" : 477527,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

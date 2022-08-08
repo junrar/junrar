@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384444228.404296800,
+    "creationTime" : null,
+    "fileCRC" : 191367916,
+    "fileName" : "ReadMe.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 791,
+    "fullUnpackSize" : 2015,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384443982.448242100,
+    "creationTime" : null,
+    "fileCRC" : -2067730689,
+    "fileName" : "banshee.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1237959,
+    "fullUnpackSize" : 3803136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

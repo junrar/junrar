@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1158742544.000000000,
+    "creationTime" : null,
+    "fileCRC" : -798268281,
+    "fileName" : "Заметки о калининградской энергетике.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 23973,
+    "fullUnpackSize" : 122880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

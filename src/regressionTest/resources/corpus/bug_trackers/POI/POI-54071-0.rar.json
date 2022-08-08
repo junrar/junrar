@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351588303.490426000,
+    "creationTime" : null,
+    "fileCRC" : 1214076957,
+    "fileName" : "a.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 6493,
+    "fullUnpackSize" : 9150,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351588280.196096800,
+    "creationTime" : null,
+    "fileCRC" : -1073684416,
+    "fileName" : "TestMain.java",
+    "hostOS" : "win32",
+    "fullPackSize" : 604,
+    "fullUnpackSize" : 1338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

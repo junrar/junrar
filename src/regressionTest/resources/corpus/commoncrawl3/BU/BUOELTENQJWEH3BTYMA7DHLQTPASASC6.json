@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177494445.859000000,
+    "creationTime" : null,
+    "fileCRC" : -652508750,
+    "fileName" : "090Beled.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2189202,
+    "fullUnpackSize" : 2241189,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

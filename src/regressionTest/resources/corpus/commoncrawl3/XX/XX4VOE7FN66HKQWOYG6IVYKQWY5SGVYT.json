@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1259120728.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1930167585,
+    "fileName" : "razgovor.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 2071948,
+    "fullUnpackSize" : 2445312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

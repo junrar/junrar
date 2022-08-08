@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505097776.110000100,
+    "creationTime" : null,
+    "fileCRC" : -499006001,
+    "fileName" : "简洁ppt模板1.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4240244,
+    "fullUnpackSize" : 14216342,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

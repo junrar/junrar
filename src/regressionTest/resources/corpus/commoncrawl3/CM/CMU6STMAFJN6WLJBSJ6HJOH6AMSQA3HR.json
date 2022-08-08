@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1192900115.671875000,
+    "creationTime" : null,
+    "fileCRC" : -904657675,
+    "fileName" : "supernatural.303-caph.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15420,
+    "fullUnpackSize" : 39947,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

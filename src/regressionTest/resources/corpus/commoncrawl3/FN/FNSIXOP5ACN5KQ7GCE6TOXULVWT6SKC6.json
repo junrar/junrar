@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529056883.562500000,
+    "creationTime" : null,
+    "fileCRC" : 1291129126,
+    "fileName" : "820卡升级操作方法.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 362737,
+    "fullUnpackSize" : 379496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496204671.750000000,
+    "creationTime" : null,
+    "fileCRC" : 759983180,
+    "fileName" : "pai-alps5.1-v1.9.1-full_v2.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 363930377,
+    "fullUnpackSize" : 367597743,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

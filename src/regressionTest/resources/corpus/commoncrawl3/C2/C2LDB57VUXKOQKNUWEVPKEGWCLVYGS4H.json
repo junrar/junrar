@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485693395.034000000,
+    "creationTime" : null,
+    "fileCRC" : 1111141751,
+    "fileName" : "Rise.of.the.Triad.DOOM.Edition-HI2U.bitdownload.ir\\hi-rottdoom.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 499365217,
+    "fullUnpackSize" : 9655549952,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

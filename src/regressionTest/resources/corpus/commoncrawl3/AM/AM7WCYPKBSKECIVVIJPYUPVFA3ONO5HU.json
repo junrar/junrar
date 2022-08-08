@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476240123.992240400,
+    "creationTime" : null,
+    "fileCRC" : 912880973,
+    "fileName" : "Project_Files\\Project.c4d",
+    "hostOS" : "win32",
+    "fullPackSize" : 3078187,
+    "fullUnpackSize" : 16556590,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

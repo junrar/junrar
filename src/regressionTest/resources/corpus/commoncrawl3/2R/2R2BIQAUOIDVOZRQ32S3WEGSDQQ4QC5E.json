@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496650128.153532000,
+    "creationTime" : null,
+    "fileCRC" : 1294752853,
+    "fileName" : "Röschen Herzlich.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 1922359,
+    "fullUnpackSize" : 2274868,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

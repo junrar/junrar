@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515741487.826319800,
+    "creationTime" : null,
+    "fileCRC" : -2083645781,
+    "fileName" : "Тимина С.А. Гимн\\анкета.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 38575,
+    "fullUnpackSize" : 41363,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515671088.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1102959190,
+    "fileName" : "Тимина С.А. Гимн\\озеро Ближнее текст.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1787623,
+    "fullUnpackSize" : 1936384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

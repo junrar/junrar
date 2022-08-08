@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478003396.000000000,
+    "creationTime" : null,
+    "fileCRC" : -670147904,
+    "fileName" : "opk 4 kl.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 178924,
+    "fullUnpackSize" : 361472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478748486.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1396787307,
+    "fileName" : "ORKCE.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10305,
+    "fullUnpackSize" : 42496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493901205.443757800,
+    "creationTime" : null,
+    "fileCRC" : -302767446,
+    "fileName" : "Split Hi Wall\\Split Hi Wall - Quente e Frio\\STX09N5VL\\FTX09N5VL-Vista.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1637845,
+    "fullUnpackSize" : 1678126,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

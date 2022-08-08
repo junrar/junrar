@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362197923.336691400,
+    "creationTime" : null,
+    "fileCRC" : -556625854,
+    "fileName" : "Fairy Tail Houou no Miko [Prologue].rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 3550,
+    "fullUnpackSize" : 14344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362231665.171614000,
+    "creationTime" : null,
+    "fileCRC" : -16224291,
+    "fileName" : "Fairy Tail movie Houou no Miko.rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 15683,
+    "fullUnpackSize" : 100561,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

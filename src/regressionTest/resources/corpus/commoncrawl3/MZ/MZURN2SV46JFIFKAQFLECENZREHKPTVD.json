@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314337065.888590400,
+    "creationTime" : null,
+    "fileCRC" : -1785194223,
+    "fileName" : "Eurovent_2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 88575,
+    "fullUnpackSize" : 95851,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314337054.206422300,
+    "creationTime" : null,
+    "fileCRC" : 1525741452,
+    "fileName" : "Eurovent_1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 88248,
+    "fullUnpackSize" : 95536,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

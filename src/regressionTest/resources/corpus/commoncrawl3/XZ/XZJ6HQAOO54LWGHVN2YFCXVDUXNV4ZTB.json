@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385997476.602525900,
+    "creationTime" : null,
+    "fileCRC" : -749041903,
+    "fileName" : "Replay_2013-12-02_21-25-12.db",
+    "hostOS" : "win32",
+    "fullPackSize" : 96725,
+    "fullUnpackSize" : 338944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

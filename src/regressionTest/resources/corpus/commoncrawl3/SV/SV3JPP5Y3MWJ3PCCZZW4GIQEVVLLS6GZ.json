@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1127378513.547929600,
+    "creationTime" : null,
+    "fileCRC" : -1510493141,
+    "fileName" : "Webcam.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 64481,
+    "fullUnpackSize" : 136704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

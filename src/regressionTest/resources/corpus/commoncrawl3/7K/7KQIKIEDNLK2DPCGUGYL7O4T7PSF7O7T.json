@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1311211722.398207100,
+    "creationTime" : null,
+    "fileCRC" : -977258100,
+    "fileName" : "KZsuvnat_23072011_2blek.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5879508,
+    "fullUnpackSize" : 5879508,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268729496.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1294553479,
+    "fileName" : "Медиарекламный рынок России в 2010 стагнация или восстановление.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3430364,
+    "fullUnpackSize" : 11598627,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487149218.758749700,
+    "creationTime" : null,
+    "fileCRC" : 584913255,
+    "fileName" : "ClearTool.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1953033,
+    "fullUnpackSize" : 2065560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310364705.721664100,
+    "creationTime" : null,
+    "fileCRC" : 1267713782,
+    "fileName" : "mp_office\\mp_office.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 24448941,
+    "fullUnpackSize" : 24466952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533396406.293933400,
+    "creationTime" : null,
+    "fileCRC" : -177451484,
+    "fileName" : "ATS_Scania-T_SUQ_v1.scs",
+    "hostOS" : "win32",
+    "fullPackSize" : 120339148,
+    "fullUnpackSize" : 126724065,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

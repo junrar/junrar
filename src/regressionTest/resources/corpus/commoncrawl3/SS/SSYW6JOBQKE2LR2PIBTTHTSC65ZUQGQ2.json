@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370897597.071375000,
+    "creationTime" : null,
+    "fileCRC" : 453750129,
+    "fileName" : "Get Ready for IELTS Writing Pre-Intermediate A2+[www.liber.ir].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 75177408,
+    "fullUnpackSize" : 80302888,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

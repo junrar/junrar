@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444786912.937500000,
+    "creationTime" : null,
+    "fileCRC" : -748866624,
+    "fileName" : "Reshenie_ot_23-09-2015_N50.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 58307,
+    "fullUnpackSize" : 64729,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443152169.062500000,
+    "creationTime" : null,
+    "fileCRC" : -614298934,
+    "fileName" : "Приложения.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 50139,
+    "fullUnpackSize" : 55443,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

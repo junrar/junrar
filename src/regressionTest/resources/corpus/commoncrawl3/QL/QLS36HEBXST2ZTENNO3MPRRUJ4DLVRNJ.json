@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457265566.923469400,
+    "creationTime" : null,
+    "fileCRC" : -1629016508,
+    "fileName" : "Rassistisch_des_isser.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 23470,
+    "fullUnpackSize" : 24960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468296404.119895000,
+    "creationTime" : null,
+    "fileCRC" : -1384609900,
+    "fileName" : "iso9001-2001_2013_p.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3279027,
+    "fullUnpackSize" : 3339782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

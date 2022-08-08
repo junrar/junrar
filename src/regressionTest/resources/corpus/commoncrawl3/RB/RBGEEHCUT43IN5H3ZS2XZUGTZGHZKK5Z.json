@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477668664.000000000,
+    "creationTime" : null,
+    "fileCRC" : -667025158,
+    "fileName" : "Relog_sin_RTC\\Relog_sin_RTC.ino",
+    "hostOS" : "unix",
+    "fullPackSize" : 1731,
+    "fullUnpackSize" : 5503,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477668664.000000000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Relog_sin_RTC",
+    "hostOS" : "unix",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

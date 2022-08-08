@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1451824679.500749200,
+    "creationTime" : null,
+    "fileCRC" : -811750435,
+    "fileName" : "vente_animaux_2016.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 181383,
+    "fullUnpackSize" : 186886,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

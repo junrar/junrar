@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1345368354.109375000,
+    "creationTime" : null,
+    "fileCRC" : 1368179294,
+    "fileName" : "Вопросы общей вирусологии.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10824145,
+    "fullUnpackSize" : 10824145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

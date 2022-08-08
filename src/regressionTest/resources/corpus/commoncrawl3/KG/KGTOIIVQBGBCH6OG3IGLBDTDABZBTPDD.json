@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368066396.170359300,
+    "creationTime" : null,
+    "fileCRC" : -509931715,
+    "fileName" : "Διορισμοί εκλεγμένων μελών ΔΕΠ 1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 18098,
+    "fullUnpackSize" : 40960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368066396.032664000,
+    "creationTime" : null,
+    "fileCRC" : 1768474028,
+    "fileName" : "apantisi&#32;gia&#32;mi&#32;diorismena&#32;meli&#32;DEP.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1485312,
+    "fullUnpackSize" : 2398961,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

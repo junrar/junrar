@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374341359.649672700,
+    "creationTime" : null,
+    "fileCRC" : -1677956738,
+    "fileName" : "mana-crusher-final_[Yasdl.com]\\CopyRight.nfo",
+    "hostOS" : "win32",
+    "fullPackSize" : 128,
+    "fullUnpackSize" : 128,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397783285.001143000,
+    "creationTime" : null,
+    "fileCRC" : 713570698,
+    "fileName" : "mana-crusher-final_[Yasdl.com]\\mana-crusher-final_[Yasdl.com].exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 65879120,
+    "fullUnpackSize" : 65900804,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

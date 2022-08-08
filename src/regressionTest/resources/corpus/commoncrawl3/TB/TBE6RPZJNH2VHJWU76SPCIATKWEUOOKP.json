@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508549311.206000000,
+    "creationTime" : null,
+    "fileCRC" : 809862625,
+    "fileName" : "Dj DougMix - Podcast Dance Play [Ep.218].mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 85950461,
+    "fullUnpackSize" : 86978457,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

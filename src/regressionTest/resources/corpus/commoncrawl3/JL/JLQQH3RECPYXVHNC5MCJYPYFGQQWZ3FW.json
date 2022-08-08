@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1219973576.909013000,
+    "creationTime" : null,
+    "fileCRC" : -1688311149,
+    "fileName" : "RedAlert1_AlliedDisc\\Click Here to Pre-Order Red Alert 3.url",
+    "hostOS" : "win32",
+    "fullPackSize" : 138,
+    "fullUnpackSize" : 143,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1219802748.266049600,
+    "creationTime" : null,
+    "fileCRC" : -1671476123,
+    "fileName" : "RedAlert1_AlliedDisc\\RedAlert1_AlliedDisc\\CD1_ALLIED_DISC.ISO",
+    "hostOS" : "win32",
+    "fullPackSize" : 454198368,
+    "fullUnpackSize" : 654348288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472818352.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1443396733,
+    "fileName" : "Дискуссия о субботе.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 943602,
+    "fullUnpackSize" : 1054404,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

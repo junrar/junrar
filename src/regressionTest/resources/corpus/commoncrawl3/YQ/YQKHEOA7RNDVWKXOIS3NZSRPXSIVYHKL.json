@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371452382.319161800,
+    "creationTime" : null,
+    "fileCRC" : 1713450133,
+    "fileName" : "Реализация металлопроката.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 84005,
+    "fullUnpackSize" : 91176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

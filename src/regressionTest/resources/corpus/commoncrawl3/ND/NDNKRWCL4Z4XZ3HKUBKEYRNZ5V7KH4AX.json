@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483488634.000000000,
+    "creationTime" : null,
+    "fileCRC" : 947690783,
+    "fileName" : "GERTAN JATENG - DIY Januari 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 265639,
+    "fullUnpackSize" : 387027,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482458496.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1333164207,
+    "fileName" : "Kebumen Jan17 HD.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3146624,
+    "fullUnpackSize" : 3565999,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

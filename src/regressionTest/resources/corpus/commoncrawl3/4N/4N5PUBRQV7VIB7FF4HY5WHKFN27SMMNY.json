@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529893535.293000000,
+    "creationTime" : null,
+    "fileCRC" : -1696090733,
+    "fileName" : "SERVICIOS ACADEMICOS\\2.2.4-PO-06-001.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1464784,
+    "fullUnpackSize" : 1520640,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

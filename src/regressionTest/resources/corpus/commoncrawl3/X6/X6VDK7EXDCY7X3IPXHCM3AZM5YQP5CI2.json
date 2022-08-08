@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354629520.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1546640336,
+    "fileName" : "CONFIG_VLAGOMER_055(setup).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5267987,
+    "fullUnpackSize" : 5627665,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

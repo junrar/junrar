@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1378212740.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1255310207,
+    "fileName" : "medsoftreg.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2970560,
+    "fullUnpackSize" : 3166208,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

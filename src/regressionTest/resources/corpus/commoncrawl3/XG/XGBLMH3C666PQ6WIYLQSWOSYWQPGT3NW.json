@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509608895.163552800,
+    "creationTime" : null,
+    "fileCRC" : -2006400545,
+    "fileName" : "N.F.S.PAYBACK\\Need for Speed Payback\\Data\\Win32\\configurations\\superbundleinstallpackage\\cas_05.cas",
+    "hostOS" : "win32",
+    "fullPackSize" : 845748775,
+    "fullUnpackSize" : 1074583294,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

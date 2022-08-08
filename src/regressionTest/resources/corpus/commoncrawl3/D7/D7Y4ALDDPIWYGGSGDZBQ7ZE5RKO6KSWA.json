@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170850254.984375000,
+    "creationTime" : null,
+    "fileCRC" : -898807695,
+    "fileName" : "Arcade Games Addon 09\\games\\acceleracers.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 833176,
+    "fullUnpackSize" : 833176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170912634.593750000,
+    "creationTime" : null,
+    "fileCRC" : 581338062,
+    "fileName" : "Arcade Games Addon 09\\games\\alienattack.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 493610,
+    "fullUnpackSize" : 493610,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

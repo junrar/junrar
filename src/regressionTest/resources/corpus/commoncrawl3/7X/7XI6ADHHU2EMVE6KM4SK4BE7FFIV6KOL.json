@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248831654.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1841660889,
+    "fileName" : "Build Your Own Firefox Extension\\Build Your Own Firefox Extension.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3298633,
+    "fullUnpackSize" : 3940369,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

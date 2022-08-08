@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414865278.000000000,
+    "creationTime" : null,
+    "fileCRC" : -450982935,
+    "fileName" : "2.Hosseini.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4345698,
+    "fullUnpackSize" : 4359024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

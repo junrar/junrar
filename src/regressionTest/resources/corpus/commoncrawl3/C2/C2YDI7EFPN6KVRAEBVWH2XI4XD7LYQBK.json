@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440144604.328000000,
+    "creationTime" : null,
+    "fileCRC" : -1816451692,
+    "fileName" : "Розпорядження № 172-р від 10.08.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9723,
+    "fullUnpackSize" : 40448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440144735.890000000,
+    "creationTime" : null,
+    "fileCRC" : -1761475875,
+    "fileName" : "Додаток до розпорядження № 172 від 10.08.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14096,
+    "fullUnpackSize" : 77312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

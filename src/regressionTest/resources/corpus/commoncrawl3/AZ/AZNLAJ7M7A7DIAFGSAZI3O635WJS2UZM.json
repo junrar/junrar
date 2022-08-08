@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1107362988.843750000,
+    "creationTime" : null,
+    "fileCRC" : 822914315,
+    "fileName" : "Stargate.Atlantis.S01E20-Projet-SG.sub",
+    "hostOS" : "win32",
+    "fullPackSize" : 14025,
+    "fullUnpackSize" : 32817,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1107362964.031250000,
+    "creationTime" : null,
+    "fileCRC" : -917904449,
+    "fileName" : "Stargate.Atlantis.S01E20-Projet-SG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16971,
+    "fullUnpackSize" : 45832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

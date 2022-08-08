@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336551158.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1818012574,
+    "fileName" : "271 v2.01.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3272514,
+    "fullUnpackSize" : 3385712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

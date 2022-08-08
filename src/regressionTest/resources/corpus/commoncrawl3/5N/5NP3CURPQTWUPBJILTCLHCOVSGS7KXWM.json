@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444879209.290390700,
+    "creationTime" : null,
+    "fileCRC" : 295650231,
+    "fileName" : "Каминскас.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3079055,
+    "fullUnpackSize" : 3261146,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

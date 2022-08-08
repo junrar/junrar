@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207471114.031000000,
+    "creationTime" : null,
+    "fileCRC" : -1678211235,
+    "fileName" : "priglashenie.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 51569,
+    "fullUnpackSize" : 98816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

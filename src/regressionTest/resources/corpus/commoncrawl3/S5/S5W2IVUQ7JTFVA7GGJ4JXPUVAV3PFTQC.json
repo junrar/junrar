@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525065369.518923600,
+    "creationTime" : null,
+    "fileCRC" : -1171788955,
+    "fileName" : "Fear.the.Walking.Dead.S04E03.1080p.WEB.H264-DEFLATE.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 10067,
+    "fullUnpackSize" : 26255,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525065203.060993300,
+    "creationTime" : null,
+    "fileCRC" : 233331643,
+    "fileName" : "Fear.the.Walking.Dead.S04E03.720p.HDTV.x264-AVS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 10303,
+    "fullUnpackSize" : 26805,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

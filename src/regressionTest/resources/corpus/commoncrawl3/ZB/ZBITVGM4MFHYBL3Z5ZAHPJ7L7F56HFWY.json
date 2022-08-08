@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1253288639.000000000,
+    "creationTime" : null,
+    "fileCRC" : 892029924,
+    "fileName" : "Virgin-mobile.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 14814609,
+    "fullUnpackSize" : 15174902,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

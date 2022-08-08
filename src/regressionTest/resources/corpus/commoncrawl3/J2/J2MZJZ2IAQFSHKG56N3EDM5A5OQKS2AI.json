@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194630249.875000000,
+    "creationTime" : null,
+    "fileCRC" : 412472159,
+    "fileName" : "Supernatural - 03x06 - Red sky in the morning.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14299,
+    "fullUnpackSize" : 40741,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

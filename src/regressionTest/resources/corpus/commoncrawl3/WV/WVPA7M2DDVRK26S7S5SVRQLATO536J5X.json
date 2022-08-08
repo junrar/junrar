@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442935619.852000000,
+    "creationTime" : null,
+    "fileCRC" : -1806171239,
+    "fileName" : "Текстовая Вышивка. Приложение.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 13300822,
+    "fullUnpackSize" : 13400604,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

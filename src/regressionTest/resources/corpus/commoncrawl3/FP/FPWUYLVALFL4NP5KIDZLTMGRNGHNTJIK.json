@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370307086.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1841888829,
+    "fileName" : "mathtypesetup.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 3965443,
+    "fullUnpackSize" : 4054331,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

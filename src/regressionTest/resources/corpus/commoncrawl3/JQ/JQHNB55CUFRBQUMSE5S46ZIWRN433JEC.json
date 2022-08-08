@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531444139.000000000,
+    "creationTime" : null,
+    "fileCRC" : 110770685,
+    "fileName" : "Danger.Zone.2-CODEX_YasDL.com\\codex-danger.zone.2.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 1022701559,
+    "fullUnpackSize" : 8600682496,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368004213.072885200,
+    "creationTime" : null,
+    "fileCRC" : 1208272379,
+    "fileName" : "music3.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4811671,
+    "fullUnpackSize" : 4848830,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

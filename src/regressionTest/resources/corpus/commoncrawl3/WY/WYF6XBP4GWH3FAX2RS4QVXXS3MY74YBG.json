@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530847264.500000000,
+    "creationTime" : null,
+    "fileCRC" : -2065548148,
+    "fileName" : "Указ Президента РБ (12_06_2018) о грантах на обуч ин_гражд и дополн в Правила приема.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 22008,
+    "fullUnpackSize" : 24531,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530851186.578000000,
+    "creationTime" : null,
+    "fileCRC" : -795988805,
+    "fileName" : "Указ о соц_поддержке обуч (ред 12_06_2018).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 33695,
+    "fullUnpackSize" : 242688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

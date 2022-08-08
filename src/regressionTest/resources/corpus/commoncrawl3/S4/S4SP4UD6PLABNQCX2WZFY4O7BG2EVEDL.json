@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510645104.466380200,
+    "creationTime" : null,
+    "fileCRC" : -95869583,
+    "fileName" : "Ежеквартальный_отчет_ПАО_'МРСК_Северо_Запада'_за_3_кваратал_2017.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 274173,
+    "fullUnpackSize" : 3483104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510645126.053854100,
+    "creationTime" : null,
+    "fileCRC" : 1670847463,
+    "fileName" : "Приложение к Ежеквартальному отчету ПАО МРСК Северо-Запада за 3 квартал 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10139822,
+    "fullUnpackSize" : 10139822,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

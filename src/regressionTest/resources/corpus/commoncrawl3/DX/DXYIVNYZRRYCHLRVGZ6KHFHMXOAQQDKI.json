@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285038460.066081600,
+    "creationTime" : null,
+    "fileCRC" : -993466836,
+    "fileName" : "LibroYungas.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2658102,
+    "fullUnpackSize" : 2756840,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

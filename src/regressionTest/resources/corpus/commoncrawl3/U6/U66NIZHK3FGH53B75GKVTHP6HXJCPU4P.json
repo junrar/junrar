@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517982380.842467000,
+    "creationTime" : null,
+    "fileCRC" : 1255455782,
+    "fileName" : "StrategyTester.gif",
+    "hostOS" : "win32",
+    "fullPackSize" : 8031,
+    "fullUnpackSize" : 8083,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517982381.141260800,
+    "creationTime" : null,
+    "fileCRC" : -2115449008,
+    "fileName" : "StrategyTester.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 207270,
+    "fullUnpackSize" : 8966448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

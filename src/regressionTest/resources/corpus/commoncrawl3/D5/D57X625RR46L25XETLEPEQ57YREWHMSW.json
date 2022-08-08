@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455760491.127374200,
+    "creationTime" : null,
+    "fileCRC" : -976478664,
+    "fileName" : "EXCALIBUR_Spectrum_G7SFL_Driver_V1.7.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 17323240,
+    "fullUnpackSize" : 17630028,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

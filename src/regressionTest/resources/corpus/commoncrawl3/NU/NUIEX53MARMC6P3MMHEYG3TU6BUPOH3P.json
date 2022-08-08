@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1107321092.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1008419811,
+    "fileName" : "GTA San Andreas\\anim\\anim.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 4039835,
+    "fullUnpackSize" : 10942464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

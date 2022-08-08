@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517977153.837494800,
+    "creationTime" : null,
+    "fileCRC" : -1342987555,
+    "fileName" : "Контрольные мероприятия 2017 год.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 19565,
+    "fullUnpackSize" : 22192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1246796882.046875000,
+    "creationTime" : null,
+    "fileCRC" : -1412025585,
+    "fileName" : "LianaSims3_Basics_Abstract_1_1.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 121618,
+    "fullUnpackSize" : 418293,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

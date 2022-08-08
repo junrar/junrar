@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487046299.000000000,
+    "creationTime" : null,
+    "fileCRC" : -473822857,
+    "fileName" : "w44\\1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 740545,
+    "fullUnpackSize" : 855432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487046296.000000000,
+    "creationTime" : null,
+    "fileCRC" : 687016082,
+    "fileName" : "w44\\2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 554997,
+    "fullUnpackSize" : 680921,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

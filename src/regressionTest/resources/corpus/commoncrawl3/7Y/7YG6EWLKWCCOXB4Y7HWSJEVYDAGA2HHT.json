@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221491892.000000000,
+    "creationTime" : null,
+    "fileCRC" : 212922645,
+    "fileName" : "История Древней Русской Словесности.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 152948,
+    "fullUnpackSize" : 715264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

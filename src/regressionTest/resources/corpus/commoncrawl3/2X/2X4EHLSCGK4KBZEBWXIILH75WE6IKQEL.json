@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1165997328.000000000,
+    "creationTime" : null,
+    "fileCRC" : -785751409,
+    "fileName" : "ВОЛШЕБНОЕ ЗЕРКАЛО.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14700,
+    "fullUnpackSize" : 75264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

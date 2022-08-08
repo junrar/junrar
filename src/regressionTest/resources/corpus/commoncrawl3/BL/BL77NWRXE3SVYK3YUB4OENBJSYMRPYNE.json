@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370798373.381103300,
+    "creationTime" : null,
+    "fileCRC" : -742318962,
+    "fileName" : "9300M_PBr6.0.0_rel3170_PL6.6.0.252_A6.0.0.756.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 164096859,
+    "fullUnpackSize" : 164369456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513812331.000000000,
+    "creationTime" : null,
+    "fileCRC" : -819965932,
+    "fileName" : "3. Dokumentacja techniczna ul. Ogrodowa\\DOKUMENTACJA TECHNICZNA , UL.OGRODOWA\\PB\\171115 Ogrodowa.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3735777,
+    "fullUnpackSize" : 4117235,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

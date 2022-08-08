@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1254989135.187500000,
+    "creationTime" : null,
+    "fileCRC" : 106022036,
+    "fileName" : "Схема проезда.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 276584,
+    "fullUnpackSize" : 642598,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

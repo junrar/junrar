@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1030259406.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1569404474,
+    "fileName" : "Montreal_2001_RL_1.1\\canada2001.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5507164,
+    "fullUnpackSize" : 5550518,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

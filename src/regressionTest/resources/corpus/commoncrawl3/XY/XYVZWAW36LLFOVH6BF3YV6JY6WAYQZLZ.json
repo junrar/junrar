@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484313237.076183400,
+    "creationTime" : null,
+    "fileCRC" : -126691568,
+    "fileName" : "[Leopard-Raws] Demi-chan wa Kataritai - 01 RAW (BS11 1280x720 x264 AAC).ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 14041,
+    "fullUnpackSize" : 55788,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485507891.914274900,
+    "creationTime" : null,
+    "fileCRC" : 292750481,
+    "fileName" : "[Leopard-Raws] Demi-chan wa Kataritai - 02 RAW (BS11 1280x720 x264 AAC).ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 9751,
+    "fullUnpackSize" : 47983,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

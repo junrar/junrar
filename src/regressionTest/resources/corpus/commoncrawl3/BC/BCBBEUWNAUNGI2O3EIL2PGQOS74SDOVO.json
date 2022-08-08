@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493346492.000000000,
+    "creationTime" : null,
+    "fileCRC" : 334463383,
+    "fileName" : "протокол публ слушаний 3.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 393780,
+    "fullUnpackSize" : 394162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493346492.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1398699062,
+    "fileName" : "протокол публ слушаний 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 347458,
+    "fullUnpackSize" : 348552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440227386.000000000,
+    "creationTime" : null,
+    "fileCRC" : 153044022,
+    "fileName" : "37ـ «يُوشِكُ الْفُرَاتُ أَنْ يَحْسِرَ عَنْ كَنْزٍ مِنْ ذَهَبٍ ».mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6179264,
+    "fullUnpackSize" : 6645368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

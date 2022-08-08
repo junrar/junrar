@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271903447.173343600,
+    "creationTime" : null,
+    "fileCRC" : -1818043965,
+    "fileName" : "Зимовка_статья_финальная.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 51909,
+    "fullUnpackSize" : 214528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

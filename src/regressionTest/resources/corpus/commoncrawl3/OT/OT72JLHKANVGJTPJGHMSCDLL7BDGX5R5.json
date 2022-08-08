@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508073698.847683900,
+    "creationTime" : null,
+    "fileCRC" : 1183765847,
+    "fileName" : "Mr.Mercedes.S01E10.Jibber-Jibber.Chicken.Dinner.720p.DTV.WEBRip.DD2.0.x264-NTb[rartv]-[rarbg.to].torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 112287,
+    "fullUnpackSize" : 112287,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508067218.000000000,
+    "creationTime" : null,
+    "fileCRC" : -982530900,
+    "fileName" : "Mr.Mercedes.S01E10.Jibber-Jibber.Chicken.Dinner.720p.DTV.WEB-DL.DD2.0.x264-NTb.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16699,
+    "fullUnpackSize" : 46625,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1033024312.000000000,
+    "creationTime" : null,
+    "fileCRC" : 517117434,
+    "fileName" : "С. Гроф, Д. Хэлифакс. Человек перед лицом смерти.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 213672,
+    "fullUnpackSize" : 1139712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

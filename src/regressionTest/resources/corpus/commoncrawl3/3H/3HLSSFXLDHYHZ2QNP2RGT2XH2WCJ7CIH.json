@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443113101.277680400,
+    "creationTime" : null,
+    "fileCRC" : -908073649,
+    "fileName" : "HiAsm_4.05b186.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 16977543,
+    "fullUnpackSize" : 17261922,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

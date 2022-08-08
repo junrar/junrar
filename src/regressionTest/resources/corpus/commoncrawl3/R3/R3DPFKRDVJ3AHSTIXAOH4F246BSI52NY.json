@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289693829.292649000,
+    "creationTime" : null,
+    "fileCRC" : -1992668549,
+    "fileName" : "اللباب في شرح الكتاب.bok",
+    "hostOS" : "win32",
+    "fullPackSize" : 543073,
+    "fullUnpackSize" : 2043904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

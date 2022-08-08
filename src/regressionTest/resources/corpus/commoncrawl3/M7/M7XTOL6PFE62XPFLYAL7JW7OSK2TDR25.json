@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1166759172.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2119382660,
+    "fileName" : "HTM Version\\The Art of Poetry (Ars Poetica), English tr_ Francis.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 20329,
+    "fullUnpackSize" : 62619,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286687108.790039000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "HTM Version",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

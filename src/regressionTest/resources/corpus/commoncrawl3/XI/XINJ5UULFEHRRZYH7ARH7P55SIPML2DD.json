@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347777236.500000000,
+    "creationTime" : null,
+    "fileCRC" : 457341626,
+    "fileName" : "陈诚回忆录之抗日战争",
+    "hostOS" : "win32",
+    "fullPackSize" : 859663,
+    "fullUnpackSize" : 865934,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

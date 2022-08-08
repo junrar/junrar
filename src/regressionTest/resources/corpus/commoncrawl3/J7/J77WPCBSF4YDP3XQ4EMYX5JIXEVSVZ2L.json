@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299808497.703125000,
+    "creationTime" : null,
+    "fileCRC" : 205334196,
+    "fileName" : "Config.SU5D.VM(setup).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6612524,
+    "fullUnpackSize" : 7062246,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

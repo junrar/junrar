@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514065489.063662700,
+    "creationTime" : null,
+    "fileCRC" : -17517369,
+    "fileName" : "鬼灯の冷徹 212ns.smi",
+    "hostOS" : "win32",
+    "fullPackSize" : 10413,
+    "fullUnpackSize" : 35216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514065461.423081700,
+    "creationTime" : null,
+    "fileCRC" : -2017114253,
+    "fileName" : "鬼灯の冷徹 212s.smi",
+    "hostOS" : "win32",
+    "fullPackSize" : 10408,
+    "fullUnpackSize" : 35219,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

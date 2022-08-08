@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399633913.897243600,
+    "creationTime" : null,
+    "fileCRC" : -261921903,
+    "fileName" : "copcarru.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 4151334,
+    "fullUnpackSize" : 11012096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

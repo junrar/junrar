@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502271082.312500000,
+    "creationTime" : null,
+    "fileCRC" : -861429810,
+    "fileName" : "А.В.Столяров Программирование введение в профессию. Том 3 системы и сети.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3423696,
+    "fullUnpackSize" : 3758150,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

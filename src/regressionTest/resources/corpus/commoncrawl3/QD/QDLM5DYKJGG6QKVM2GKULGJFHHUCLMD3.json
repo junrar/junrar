@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251081765.294932600,
+    "creationTime" : null,
+    "fileCRC" : 1084600607,
+    "fileName" : "qreport 2kv 2008.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 181407,
+    "fullUnpackSize" : 935424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

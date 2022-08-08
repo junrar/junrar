@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518855199.505213500,
+    "creationTime" : null,
+    "fileCRC" : 733464125,
+    "fileName" : "[MJR] Inazuman (17) BR.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 7047,
+    "fullUnpackSize" : 18131,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

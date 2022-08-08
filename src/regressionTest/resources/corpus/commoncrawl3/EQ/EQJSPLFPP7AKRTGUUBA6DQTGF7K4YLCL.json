@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398388106.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2028907206,
+    "fileName" : "17.Акт разграничения эксплуатационной ответственности сторон.RTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 4622,
+    "fullUnpackSize" : 42262,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

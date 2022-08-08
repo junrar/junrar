@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1018793640.000000000,
+    "creationTime" : null,
+    "fileCRC" : -553406145,
+    "fileName" : "imcard1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 49166,
+    "fullUnpackSize" : 50856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1018793582.000000000,
+    "creationTime" : null,
+    "fileCRC" : -287266967,
+    "fileName" : "imcard2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 50882,
+    "fullUnpackSize" : 52558,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501816743.514069500,
+    "creationTime" : null,
+    "fileCRC" : 604183170,
+    "fileName" : "Отчет о прибылях и убытках 01072017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 140438,
+    "fullUnpackSize" : 164165,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

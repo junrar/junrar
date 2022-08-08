@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426816514.592804000,
+    "creationTime" : null,
+    "fileCRC" : 247735608,
+    "fileName" : "cronograma_fisico_financ.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 2771,
+    "fullUnpackSize" : 18432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

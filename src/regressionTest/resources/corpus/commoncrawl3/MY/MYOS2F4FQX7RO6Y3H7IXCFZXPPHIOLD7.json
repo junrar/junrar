@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1234026810.899710700,
+    "creationTime" : null,
+    "fileCRC" : 147743931,
+    "fileName" : "kalender2009.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 316988,
+    "fullUnpackSize" : 566272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521934174.236072500,
+    "creationTime" : null,
+    "fileCRC" : 718256498,
+    "fileName" : "Hrabia tom I Karmannyj wor fragment.mobi",
+    "hostOS" : "win32",
+    "fullPackSize" : 633554,
+    "fullUnpackSize" : 691494,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

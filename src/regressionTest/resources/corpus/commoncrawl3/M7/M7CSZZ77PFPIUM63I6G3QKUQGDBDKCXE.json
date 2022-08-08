@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395105736.000000000,
+    "creationTime" : null,
+    "fileCRC" : -504858193,
+    "fileName" : "Cover Lampiran.pub",
+    "hostOS" : "win32",
+    "fullPackSize" : 11685,
+    "fullUnpackSize" : 86016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

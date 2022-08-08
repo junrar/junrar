@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299308246.146954600,
+    "creationTime" : null,
+    "fileCRC" : -1123018908,
+    "fileName" : "720p info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 75,
+    "fullUnpackSize" : 75,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303620863.004655500,
+    "creationTime" : null,
+    "fileCRC" : -1791118863,
+    "fileName" : "supernatural.s06e18.hdtv.xvid-asap.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16346,
+    "fullUnpackSize" : 39203,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

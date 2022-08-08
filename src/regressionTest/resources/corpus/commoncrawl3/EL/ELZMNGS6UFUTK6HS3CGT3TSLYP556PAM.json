@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488089846.626535600,
+    "creationTime" : null,
+    "fileCRC" : -802223392,
+    "fileName" : "pesni_s_ik_7\\01_cod_da_vetka.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3510495,
+    "fullUnpackSize" : 3526436,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

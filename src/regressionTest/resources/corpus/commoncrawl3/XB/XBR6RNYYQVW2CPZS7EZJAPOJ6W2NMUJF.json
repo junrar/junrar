@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505100352.750000000,
+    "creationTime" : null,
+    "fileCRC" : 233982427,
+    "fileName" : "114 Постановление по общим итогам голосования.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 13437,
+    "fullUnpackSize" : 41472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

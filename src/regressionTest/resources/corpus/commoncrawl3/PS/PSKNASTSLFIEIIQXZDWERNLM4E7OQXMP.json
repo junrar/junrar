@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1096706184.000000000,
+    "creationTime" : null,
+    "fileCRC" : -572539926,
+    "fileName" : "приказ о поощрении Т-11.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4417,
+    "fullUnpackSize" : 30208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

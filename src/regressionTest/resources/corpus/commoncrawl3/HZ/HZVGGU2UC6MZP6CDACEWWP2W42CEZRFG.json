@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490661068.504385000,
+    "creationTime" : null,
+    "fileCRC" : -1742898165,
+    "fileName" : "Dark.Souls.3.The.Ringed.City-CorePack (www.Downloadha.com)\\data.cpi",
+    "hostOS" : "win32",
+    "fullPackSize" : 2045403836,
+    "fullUnpackSize" : 21532655671,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

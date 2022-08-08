@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535653542.637000000,
+    "creationTime" : null,
+    "fileCRC" : 518580258,
+    "fileName" : "KM_prise_vid_opt_3108201822509.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 392534,
+    "fullUnpackSize" : 2821120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

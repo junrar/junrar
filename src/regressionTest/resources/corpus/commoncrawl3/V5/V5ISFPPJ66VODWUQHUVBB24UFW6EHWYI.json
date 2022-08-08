@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435886504.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1880650631,
+    "fileName" : "2011\\1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1117317,
+    "fullUnpackSize" : 1130822,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

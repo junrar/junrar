@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323857037.534440900,
+    "creationTime" : null,
+    "fileCRC" : 1041635806,
+    "fileName" : "serdca.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 867,
+    "fullUnpackSize" : 867,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323857088.762000000,
+    "creationTime" : null,
+    "fileCRC" : 1369040450,
+    "fileName" : "serdca.fla",
+    "hostOS" : "win32",
+    "fullPackSize" : 5991,
+    "fullUnpackSize" : 62464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

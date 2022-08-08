@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1287987778.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2017198859,
+    "fileName" : "Положение о кабинете здоровья МОУ ГСОШ Калязин.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7914,
+    "fullUnpackSize" : 47616,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

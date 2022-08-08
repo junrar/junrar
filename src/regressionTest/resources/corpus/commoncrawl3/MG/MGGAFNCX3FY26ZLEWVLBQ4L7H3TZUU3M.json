@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528419353.152000000,
+    "creationTime" : null,
+    "fileCRC" : 169743985,
+    "fileName" : "El Bombazo Musical\\1-Romeo Santos - Centavito.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6532673,
+    "fullUnpackSize" : 6581655,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

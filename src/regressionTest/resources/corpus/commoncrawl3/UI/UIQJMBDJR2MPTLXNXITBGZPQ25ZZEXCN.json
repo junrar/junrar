@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413426826.090000000,
+    "creationTime" : null,
+    "fileCRC" : -405042168,
+    "fileName" : "15\\2014-10-16 10-33-46_0076.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 878757,
+    "fullUnpackSize" : 1136467,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413426845.510000000,
+    "creationTime" : null,
+    "fileCRC" : 110818184,
+    "fileName" : "15\\2014-10-16 10-34-05_0077.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 339714,
+    "fullUnpackSize" : 487639,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

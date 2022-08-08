@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1200665836.000000000,
+    "creationTime" : null,
+    "fileCRC" : 222461416,
+    "fileName" : "MultiGoSetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1634473,
+    "fullUnpackSize" : 1675248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

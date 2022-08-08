@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500800841.431903800,
+    "creationTime" : null,
+    "fileCRC" : 464514162,
+    "fileName" : "BiPlan Greek.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1781867,
+    "fullUnpackSize" : 1968846,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

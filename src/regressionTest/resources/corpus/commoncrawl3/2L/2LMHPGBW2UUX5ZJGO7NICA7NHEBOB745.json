@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359108622.663000000,
+    "creationTime" : null,
+    "fileCRC" : -2136494389,
+    "fileName" : "cg_hitnrun_Sh00t!ng~St4r_0208.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 1918919,
+    "fullUnpackSize" : 8391697,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

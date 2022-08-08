@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394430338.000000000,
+    "creationTime" : null,
+    "fileCRC" : -606326578,
+    "fileName" : "BIDANG SOSBUD\\1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 769258,
+    "fullUnpackSize" : 789548,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394430488.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1403967757,
+    "fileName" : "BIDANG SOSBUD\\2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 761841,
+    "fullUnpackSize" : 780471,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

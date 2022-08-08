@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305871169.169000000,
+    "creationTime" : null,
+    "fileCRC" : 1458741757,
+    "fileName" : "Протокол  №1  2011.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9717,
+    "fullUnpackSize" : 37888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

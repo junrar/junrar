@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447255748.306494500,
+    "creationTime" : null,
+    "fileCRC" : 503403478,
+    "fileName" : "3-NEF-Pre.Int SB [www.liber.ir].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 25572384,
+    "fullUnpackSize" : 26341360,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

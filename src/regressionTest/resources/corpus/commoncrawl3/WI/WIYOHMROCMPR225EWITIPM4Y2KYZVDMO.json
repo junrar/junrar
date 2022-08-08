@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1245092101.765000000,
+    "creationTime" : null,
+    "fileCRC" : 1398838017,
+    "fileName" : "Смирнов Б.Л. - Моя встреча с Махабхаратой.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 526668,
+    "fullUnpackSize" : 949760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1245092640.828125000,
+    "creationTime" : null,
+    "fileCRC" : 1834151064,
+    "fileName" : "Смирнов Б.Л. - Моя встреча с Махабхаратой.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 1511176,
+    "fullUnpackSize" : 1512462,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

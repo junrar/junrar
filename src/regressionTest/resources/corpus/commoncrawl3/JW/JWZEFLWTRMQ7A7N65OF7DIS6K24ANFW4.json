@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1198510380.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1411260851,
+    "fileName" : "Hinne_Arapca.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3975392,
+    "fullUnpackSize" : 4078208,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

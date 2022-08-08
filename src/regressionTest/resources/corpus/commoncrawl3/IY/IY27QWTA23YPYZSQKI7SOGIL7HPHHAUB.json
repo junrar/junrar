@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392041280.672000000,
+    "creationTime" : null,
+    "fileCRC" : -965904438,
+    "fileName" : "пути движения.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1367819,
+    "fullUnpackSize" : 1455104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

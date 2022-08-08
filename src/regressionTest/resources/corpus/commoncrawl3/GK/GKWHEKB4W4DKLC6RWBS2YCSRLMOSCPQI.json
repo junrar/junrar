@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477012903.782177000,
+    "creationTime" : null,
+    "fileCRC" : -850154782,
+    "fileName" : "GEANT GN-2500HD PLUS_V1.71(V1.09.17341)_21102016.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 4322866,
+    "fullUnpackSize" : 5485206,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

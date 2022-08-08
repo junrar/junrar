@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272863729.442422400,
+    "creationTime" : null,
+    "fileCRC" : -1770755989,
+    "fileName" : "Кей Он! 2.0 - комментарии к переводу Primera Cuadrilla.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1518,
+    "fullUnpackSize" : 5234,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272862442.156649900,
+    "creationTime" : null,
+    "fileCRC" : -619528756,
+    "fileName" : "[Leopard-Raws] K-On!! - 04 RAW (TBS 1280x720 x264 AAC).PrCd.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 7527,
+    "fullUnpackSize" : 44101,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

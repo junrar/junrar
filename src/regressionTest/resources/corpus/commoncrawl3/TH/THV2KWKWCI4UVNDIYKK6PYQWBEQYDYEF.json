@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1475416975.719835200,
+    "creationTime" : null,
+    "fileCRC" : 37385761,
+    "fileName" : "Fireball 1920x1080.mov",
+    "hostOS" : "win32",
+    "fullPackSize" : 8541490,
+    "fullUnpackSize" : 9428334,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

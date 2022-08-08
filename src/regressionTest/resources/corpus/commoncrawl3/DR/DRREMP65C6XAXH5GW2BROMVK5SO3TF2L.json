@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457095788.746832500,
+    "creationTime" : null,
+    "fileCRC" : 1855023186,
+    "fileName" : "The.Hateful.Eight.2015.BRRip.XviD.MP3-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 50600,
+    "fullUnpackSize" : 147346,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457101817.966096700,
+    "creationTime" : null,
+    "fileCRC" : 543294919,
+    "fileName" : "The.Hateful.Eight.2015.BRRip.XviD.MP3-RARBG.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 34552,
+    "fullUnpackSize" : 34778,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

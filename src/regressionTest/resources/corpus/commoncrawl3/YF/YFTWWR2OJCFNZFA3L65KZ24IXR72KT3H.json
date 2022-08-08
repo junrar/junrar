@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292496696.418669400,
+    "creationTime" : null,
+    "fileCRC" : 1234460576,
+    "fileName" : "Aktive Notwehr Live Vechta 84\\01.Sweet home.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6723070,
+    "fullUnpackSize" : 6806817,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196799950.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1554202657,
+    "fileName" : "AsusNbKeys.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 21523,
+    "fullUnpackSize" : 49152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1216205658.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1222763888,
+    "fileName" : "AsusNbKeysCtrl.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 86288,
+    "fullUnpackSize" : 227840,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438485264.805647000,
+    "creationTime" : null,
+    "fileCRC" : -1204023218,
+    "fileName" : "darsnamekalam1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1361520,
+    "fullUnpackSize" : 1744338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

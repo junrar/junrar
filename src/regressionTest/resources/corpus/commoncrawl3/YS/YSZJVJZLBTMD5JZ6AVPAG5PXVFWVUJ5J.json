@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273329399.206054600,
+    "creationTime" : null,
+    "fileCRC" : -2054163019,
+    "fileName" : "www.henrythejedi.com_digitrans_dvd_promo_720p_hd.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 142284343,
+    "fullUnpackSize" : 143480180,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

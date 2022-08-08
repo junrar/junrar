@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403494042.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1773156235,
+    "fileName" : "Muster23-06-14-2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 68661,
+    "fullUnpackSize" : 69376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403494066.000000000,
+    "creationTime" : null,
+    "fileCRC" : 39198766,
+    "fileName" : "Muster23-06-14-2.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 145946,
+    "fullUnpackSize" : 264332,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

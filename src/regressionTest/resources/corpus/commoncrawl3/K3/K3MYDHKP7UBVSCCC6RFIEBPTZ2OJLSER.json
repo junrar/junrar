@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1220511278.937500000,
+    "creationTime" : null,
+    "fileCRC" : -1123265390,
+    "fileName" : "SlowTurningTurretWithSafe13.gmk",
+    "hostOS" : "win32",
+    "fullPackSize" : 14735,
+    "fullUnpackSize" : 21833,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217841766.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1546041719,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 37,
+    "fullUnpackSize" : 37,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

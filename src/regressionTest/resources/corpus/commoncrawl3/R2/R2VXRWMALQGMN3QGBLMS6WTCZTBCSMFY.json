@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330085771.866210900,
+    "creationTime" : null,
+    "fileCRC" : 1082634221,
+    "fileName" : "nMath.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 10401,
+    "fullUnpackSize" : 37376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330166725.792089600,
+    "creationTime" : null,
+    "fileCRC" : 1188459743,
+    "fileName" : "nMath.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1074673,
+    "fullUnpackSize" : 2416789,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

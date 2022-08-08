@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519788289.569254400,
+    "creationTime" : null,
+    "fileCRC" : -1113969634,
+    "fileName" : "BkavE12SetupOnline.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 130273,
+    "fullUnpackSize" : 402176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

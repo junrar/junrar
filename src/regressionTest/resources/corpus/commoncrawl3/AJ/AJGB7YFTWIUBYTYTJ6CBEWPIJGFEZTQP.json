@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388632732.000000000,
+    "creationTime" : null,
+    "fileCRC" : 558161692,
+    "fileName" : "Synaps_TSHD-2875_v20140102.AP",
+    "hostOS" : "unix",
+    "fullPackSize" : 3057541,
+    "fullUnpackSize" : 3211540,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

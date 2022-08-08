@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303286837.390178000,
+    "creationTime" : null,
+    "fileCRC" : 2059518910,
+    "fileName" : "Importer Readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 561,
+    "fullUnpackSize" : 934,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303169814.984375000,
+    "creationTime" : null,
+    "fileCRC" : -2063241241,
+    "fileName" : "smdimp.dli",
+    "hostOS" : "win32",
+    "fullPackSize" : 26940,
+    "fullUnpackSize" : 66560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

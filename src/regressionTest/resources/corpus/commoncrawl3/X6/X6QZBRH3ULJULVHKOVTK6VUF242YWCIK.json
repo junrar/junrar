@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501295986.687500000,
+    "creationTime" : null,
+    "fileCRC" : -1834725352,
+    "fileName" : "ProgDVB v7.20.0..txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 87,
+    "fullUnpackSize" : 87,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

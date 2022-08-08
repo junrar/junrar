@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152441950.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2077425341,
+    "fileName" : "Circuit1.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 611330,
+    "fullUnpackSize" : 4523074,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152446434.000000000,
+    "creationTime" : null,
+    "fileCRC" : 928682607,
+    "fileName" : "Startul.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 377959,
+    "fullUnpackSize" : 3883824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

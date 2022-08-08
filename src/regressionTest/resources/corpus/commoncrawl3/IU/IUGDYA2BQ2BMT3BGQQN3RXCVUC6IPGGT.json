@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527733731.039342900,
+    "creationTime" : null,
+    "fileCRC" : 469400820,
+    "fileName" : "Quyetdinh.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 260085,
+    "fullUnpackSize" : 276095,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527733702.239692300,
+    "creationTime" : null,
+    "fileCRC" : -924777676,
+    "fileName" : "kehoach.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 255218,
+    "fullUnpackSize" : 266942,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

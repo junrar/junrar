@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516593109.768000000,
+    "creationTime" : null,
+    "fileCRC" : 1661522011,
+    "fileName" : "181311-jadid.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 76439,
+    "fullUnpackSize" : 80704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

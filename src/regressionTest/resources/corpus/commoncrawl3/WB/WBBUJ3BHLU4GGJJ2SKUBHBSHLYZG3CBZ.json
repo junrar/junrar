@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486251138.963858800,
+    "creationTime" : null,
+    "fileCRC" : -2087604225,
+    "fileName" : "Supernatural.S12E10.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16195,
+    "fullUnpackSize" : 42024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486904868.781806600,
+    "creationTime" : null,
+    "fileCRC" : 1724844455,
+    "fileName" : "Supernatural.S12E10.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16203,
+    "fullUnpackSize" : 42024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

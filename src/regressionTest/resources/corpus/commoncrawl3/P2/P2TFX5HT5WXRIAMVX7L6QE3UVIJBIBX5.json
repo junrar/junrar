@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302880390.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1953740413,
+    "fileName" : "Главы из книги Злой властелин  А Рифеева.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 480284,
+    "fullUnpackSize" : 4046336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

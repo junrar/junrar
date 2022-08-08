@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507603580.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1200928176,
+    "fileName" : "распоряжение 248.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 13185,
+    "fullUnpackSize" : 15840,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507603678.000000000,
+    "creationTime" : null,
+    "fileCRC" : 470626253,
+    "fileName" : "приложение 248.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 42950,
+    "fullUnpackSize" : 46966,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

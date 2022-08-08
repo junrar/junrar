@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290746611.687500000,
+    "creationTime" : null,
+    "fileCRC" : 122313001,
+    "fileName" : "2000\\2000_yiligmsorulari1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 646419,
+    "fullUnpackSize" : 801280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290746623.437500000,
+    "creationTime" : null,
+    "fileCRC" : -646709393,
+    "fileName" : "2000\\2000_yiligmsorulari2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 601618,
+    "fullUnpackSize" : 757248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

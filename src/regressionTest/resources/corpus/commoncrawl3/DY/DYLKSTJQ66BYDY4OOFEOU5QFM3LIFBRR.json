@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527042732.928525400,
+    "creationTime" : null,
+    "fileCRC" : 1097854440,
+    "fileName" : "wgobzhtynwsq.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 21878,
+    "fullUnpackSize" : 24584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527042366.189549100,
+    "creationTime" : null,
+    "fileCRC" : 118418456,
+    "fileName" : "uhagrplxh pn czlt.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 32708,
+    "fullUnpackSize" : 156160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

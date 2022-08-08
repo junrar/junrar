@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355894557.936806800,
+    "creationTime" : null,
+    "fileCRC" : -298048057,
+    "fileName" : "atp.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3286045,
+    "fullUnpackSize" : 4557283,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

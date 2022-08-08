@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309415433.158313400,
+    "creationTime" : null,
+    "fileCRC" : -917004480,
+    "fileName" : "mp_jumper_1\\mp_jumper_1.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 21547060,
+    "fullUnpackSize" : 21559345,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

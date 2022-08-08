@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496196354.499032400,
+    "creationTime" : null,
+    "fileCRC" : 478472180,
+    "fileName" : "План-график отключений июнь 2017_Вологдаэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 372025,
+    "fullUnpackSize" : 402930,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496215054.236442600,
+    "creationTime" : null,
+    "fileCRC" : -2063333994,
+    "fileName" : "План-график_июнь_Карелэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2006701,
+    "fullUnpackSize" : 2274047,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

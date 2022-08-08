@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1119695918.828125000,
+    "creationTime" : null,
+    "fileCRC" : 323960606,
+    "fileName" : "booklet12x12.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 3453,
+    "fullUnpackSize" : 12928,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

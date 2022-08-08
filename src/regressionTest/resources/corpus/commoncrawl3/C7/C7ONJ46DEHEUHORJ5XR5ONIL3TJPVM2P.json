@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490322989.201886400,
+    "creationTime" : null,
+    "fileCRC" : 266621568,
+    "fileName" : "FACTURACIÓN HOTELERA.xlsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 519629,
+    "fullUnpackSize" : 524993,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

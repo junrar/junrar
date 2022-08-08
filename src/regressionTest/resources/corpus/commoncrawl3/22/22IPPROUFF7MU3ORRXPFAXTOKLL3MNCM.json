@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518072772.558571300,
+    "creationTime" : null,
+    "fileCRC" : 598610918,
+    "fileName" : "VS-6A類比輸入輸出模組使用說明.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 592941,
+    "fullUnpackSize" : 697294,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518072774.330575000,
+    "creationTime" : null,
+    "fileCRC" : 1805175408,
+    "fileName" : "VS-4AD類比輸入模組使用說明.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 576439,
+    "fullUnpackSize" : 675959,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520575450.530712500,
+    "creationTime" : null,
+    "fileCRC" : 1002566991,
+    "fileName" : "Brasão PMFI - FC - Monocromático.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 666945,
+    "fullUnpackSize" : 669475,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

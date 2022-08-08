@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1262186336.703125000,
+    "creationTime" : null,
+    "fileCRC" : 509677880,
+    "fileName" : "axis_ny2010.hak",
+    "hostOS" : "win32",
+    "fullPackSize" : 586377,
+    "fullUnpackSize" : 2563079,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

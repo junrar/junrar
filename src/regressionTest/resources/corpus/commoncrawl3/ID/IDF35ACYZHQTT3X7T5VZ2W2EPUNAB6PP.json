@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520403689.770029600,
+    "creationTime" : null,
+    "fileCRC" : 397591122,
+    "fileName" : "The.Amazing.Race.S30E06.WEB.x264-TBS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 23675,
+    "fullUnpackSize" : 60956,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520403684.963754700,
+    "creationTime" : null,
+    "fileCRC" : -1520665525,
+    "fileName" : "The.Amazing.Race.S30E06.720p.HDTV.x264-BAJSKORV.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 23631,
+    "fullUnpackSize" : 60956,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

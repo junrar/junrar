@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512567022.408174200,
+    "creationTime" : null,
+    "fileCRC" : 850860610,
+    "fileName" : "صوتيات.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 11628,
+    "fullUnpackSize" : 14855,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

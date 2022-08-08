@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1068912524.140625000,
+    "creationTime" : null,
+    "fileCRC" : 1468028277,
+    "fileName" : "FSM Kick.prs",
+    "hostOS" : "win32",
+    "fullPackSize" : 562,
+    "fullUnpackSize" : 1512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

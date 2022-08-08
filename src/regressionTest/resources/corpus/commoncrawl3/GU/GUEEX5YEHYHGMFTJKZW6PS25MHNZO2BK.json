@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160116920.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1833316874,
+    "fileName" : "09-RPS Karnobat\\Assessment\\09-RPS Karnobat-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1640033,
+    "fullUnpackSize" : 1908224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

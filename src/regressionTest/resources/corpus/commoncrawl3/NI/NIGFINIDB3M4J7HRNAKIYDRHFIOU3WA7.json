@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499751488.798293800,
+    "creationTime" : null,
+    "fileCRC" : 1458250453,
+    "fileName" : "4Videosoft.Video.Converter.Ultimate.6.2.20\\4Videosoft.Video.Converter.Ultimate.6.2.20.www.SoftP30.com.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 57932352,
+    "fullUnpackSize" : 64638416,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504077008.335223900,
+    "creationTime" : null,
+    "fileCRC" : -661515829,
+    "fileName" : "kz_giantbean_b15_Sh00t!ng-St4r_0153.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 1690946,
+    "fullUnpackSize" : 7826656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

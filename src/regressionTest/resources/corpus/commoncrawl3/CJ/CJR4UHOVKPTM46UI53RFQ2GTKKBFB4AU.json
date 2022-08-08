@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1342716760.371929200,
+    "creationTime" : null,
+    "fileCRC" : -1116087591,
+    "fileName" : "教程.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 47499160,
+    "fullUnpackSize" : 96959065,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

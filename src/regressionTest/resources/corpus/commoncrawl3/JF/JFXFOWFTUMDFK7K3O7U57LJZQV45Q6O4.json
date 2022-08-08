@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420104591.028887200,
+    "creationTime" : null,
+    "fileCRC" : -516761437,
+    "fileName" : "VideoGameCollectionTool.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 50123,
+    "fullUnpackSize" : 52720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

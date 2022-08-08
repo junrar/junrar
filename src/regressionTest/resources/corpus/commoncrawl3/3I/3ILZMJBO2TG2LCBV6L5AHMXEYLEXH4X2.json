@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266844198.000000000,
+    "creationTime" : null,
+    "fileCRC" : 223791569,
+    "fileName" : "Схема3.spl",
+    "hostOS" : "unix",
+    "fullPackSize" : 28565,
+    "fullUnpackSize" : 123481,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

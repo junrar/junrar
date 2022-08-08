@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308298943.138543100,
+    "creationTime" : null,
+    "fileCRC" : -1442604891,
+    "fileName" : "FRZ024-Fakear-PicturalEP\\01-Beach Volley.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5761810,
+    "fullUnpackSize" : 5945668,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

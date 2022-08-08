@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1345090394.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1096218155,
+    "fileName" : "06010397.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 16067,
+    "fullUnpackSize" : 16067,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

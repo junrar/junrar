@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350298561.579223100,
+    "creationTime" : null,
+    "fileCRC" : 1855596165,
+    "fileName" : "MidnaUI v1.1.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 35757,
+    "fullUnpackSize" : 41984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

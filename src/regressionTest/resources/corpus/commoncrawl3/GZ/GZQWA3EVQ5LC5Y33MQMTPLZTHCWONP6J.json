@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529974717.337390700,
+    "creationTime" : null,
+    "fileCRC" : -1602454023,
+    "fileName" : "9 SST\\SPECYFIKACJA ruciane zamienna.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 118624,
+    "fullUnpackSize" : 131157,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529974724.853015700,
+    "creationTime" : null,
+    "fileCRC" : 1539096274,
+    "fileName" : "9 SST\\SPECYFIKACJA TECHNICZNA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2193219,
+    "fullUnpackSize" : 2390158,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

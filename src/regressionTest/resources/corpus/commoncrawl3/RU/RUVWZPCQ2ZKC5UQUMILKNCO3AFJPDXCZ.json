@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397025923.993715600,
+    "creationTime" : null,
+    "fileCRC" : 1367121834,
+    "fileName" : "to_img\\elegy.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1066269,
+    "fullUnpackSize" : 2977792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

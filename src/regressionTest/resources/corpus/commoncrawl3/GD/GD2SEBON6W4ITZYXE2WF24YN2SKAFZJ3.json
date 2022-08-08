@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425709297.531250000,
+    "creationTime" : null,
+    "fileCRC" : -2042243709,
+    "fileName" : "The.Expendables.3chs.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 30074,
+    "fullUnpackSize" : 75573,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511839184.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1540187249,
+    "fileName" : "G502风火轮电竟游戏鼠.[20171110].exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4276349,
+    "fullUnpackSize" : 5167972,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

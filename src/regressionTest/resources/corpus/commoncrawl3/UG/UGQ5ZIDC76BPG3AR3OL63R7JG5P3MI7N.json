@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449224473.449056100,
+    "creationTime" : null,
+    "fileCRC" : 716691348,
+    "fileName" : "unnamedA3A7TU77.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 31452,
+    "fullUnpackSize" : 44855,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449224890.129291000,
+    "creationTime" : null,
+    "fileCRC" : 271719641,
+    "fileName" : "Drevers_misted_landscape_42.pspimage",
+    "hostOS" : "win32",
+    "fullPackSize" : 1083536,
+    "fullUnpackSize" : 1134315,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

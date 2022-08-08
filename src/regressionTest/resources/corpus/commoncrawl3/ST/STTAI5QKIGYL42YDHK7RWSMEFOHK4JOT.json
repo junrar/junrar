@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390269798.390625000,
+    "creationTime" : null,
+    "fileCRC" : -669592493,
+    "fileName" : "雷克萨斯.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 1252880,
+    "fullUnpackSize" : 1277496,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

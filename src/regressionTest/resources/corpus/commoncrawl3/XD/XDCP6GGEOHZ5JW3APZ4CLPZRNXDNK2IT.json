@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228097946.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1240350326,
+    "fileName" : "Моделирование течений в многосвязных областях с разрезами\\Neplotnost_1.1.3.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 223377,
+    "fullUnpackSize" : 587264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486959180.432558000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Моделирование течений в многосвязных областях с разрезами",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

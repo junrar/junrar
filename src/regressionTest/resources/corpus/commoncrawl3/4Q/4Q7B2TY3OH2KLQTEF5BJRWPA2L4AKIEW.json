@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225800627.312500000,
+    "creationTime" : null,
+    "fileCRC" : -725952739,
+    "fileName" : "EN 14214_2003.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 399013,
+    "fullUnpackSize" : 446168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

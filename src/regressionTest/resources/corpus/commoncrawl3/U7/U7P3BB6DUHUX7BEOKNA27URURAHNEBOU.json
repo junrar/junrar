@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440490409.000000000,
+    "creationTime" : null,
+    "fileCRC" : -220817196,
+    "fileName" : "paket_44-35-10.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 43754,
+    "fullUnpackSize" : 58337,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440773081.615306600,
+    "creationTime" : null,
+    "fileCRC" : 709045425,
+    "fileName" : "paket_44-35-10.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 501107,
+    "fullUnpackSize" : 520649,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

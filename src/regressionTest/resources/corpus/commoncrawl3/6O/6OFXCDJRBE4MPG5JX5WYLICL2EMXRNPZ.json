@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170617094.711375000,
+    "creationTime" : null,
+    "fileCRC" : 255827612,
+    "fileName" : "qryEMP.mdb",
+    "hostOS" : "win32",
+    "fullPackSize" : 14566,
+    "fullUnpackSize" : 172032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

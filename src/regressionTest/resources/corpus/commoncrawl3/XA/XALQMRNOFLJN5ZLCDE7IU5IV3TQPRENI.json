@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394503402.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1941873261,
+    "fileName" : "pagu anggaran 001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 807416,
+    "fullUnpackSize" : 822992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

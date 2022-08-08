@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490175068.498223000,
+    "creationTime" : null,
+    "fileCRC" : 1625576662,
+    "fileName" : "微·观肿瘤2016年4月刊.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 168604440,
+    "fullUnpackSize" : 172322221,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

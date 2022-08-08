@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360406105.258562500,
+    "creationTime" : null,
+    "fileCRC" : 343255050,
+    "fileName" : "mosahebe-nafarat-bartar-konkur92-[www.konkur.in]\\forum.konkur.in.URL",
+    "hostOS" : "win32",
+    "fullPackSize" : 176,
+    "fullUnpackSize" : 185,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 315505700.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1320178391,
+    "fileName" : "mosahebe-nafarat-bartar-konkur92-[www.konkur.in]\\mosahebe-nafarat-bartar-konkur92-[www.konkur.in].mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 16002416,
+    "fullUnpackSize" : 16217730,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490578028.445956200,
+    "creationTime" : null,
+    "fileCRC" : -1391789345,
+    "fileName" : "Gotovim k EGE po anglijskomu jazyku. Zadanie 40.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 2232775,
+    "fullUnpackSize" : 2509824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

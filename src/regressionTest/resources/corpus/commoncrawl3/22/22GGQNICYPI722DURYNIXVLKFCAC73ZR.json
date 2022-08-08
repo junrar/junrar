@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1274226342.000000000,
+    "creationTime" : null,
+    "fileCRC" : -102551452,
+    "fileName" : "Приказ 96.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 30488,
+    "fullUnpackSize" : 302592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

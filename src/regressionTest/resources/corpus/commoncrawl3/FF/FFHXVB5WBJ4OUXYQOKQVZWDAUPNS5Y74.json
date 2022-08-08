@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349443545.439759500,
+    "creationTime" : null,
+    "fileCRC" : -677778812,
+    "fileName" : "Supernatural.S08E01.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17845,
+    "fullUnpackSize" : 45226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362209695.523083200,
+    "creationTime" : null,
+    "fileCRC" : -677778812,
+    "fileName" : "Supernatural.S08E01.720p.WEB-DL.DD5.1.H.264-GFY.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17844,
+    "fullUnpackSize" : 45226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

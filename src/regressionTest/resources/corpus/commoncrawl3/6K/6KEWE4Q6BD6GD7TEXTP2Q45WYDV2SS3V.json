@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1313222164.370149200,
+    "creationTime" : null,
+    "fileCRC" : 207738991,
+    "fileName" : "mp_tampl\\mp_tampl.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 12814429,
+    "fullUnpackSize" : 13052982,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

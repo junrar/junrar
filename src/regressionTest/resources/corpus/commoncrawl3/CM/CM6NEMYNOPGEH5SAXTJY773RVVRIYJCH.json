@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445217487.768000000,
+    "creationTime" : null,
+    "fileCRC" : 1151774641,
+    "fileName" : "august\\1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1011323,
+    "fullUnpackSize" : 1029171,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445219690.704000000,
+    "creationTime" : null,
+    "fileCRC" : -1942391024,
+    "fileName" : "august\\10.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1131114,
+    "fullUnpackSize" : 1148123,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

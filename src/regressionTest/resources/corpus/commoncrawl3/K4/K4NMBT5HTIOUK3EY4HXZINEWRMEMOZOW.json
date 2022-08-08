@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535445374.017163100,
+    "creationTime" : null,
+    "fileCRC" : -1789827234,
+    "fileName" : "VtexStockSetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 86399601,
+    "fullUnpackSize" : 86465861,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

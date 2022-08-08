@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457675952.548828100,
+    "creationTime" : null,
+    "fileCRC" : -1932445221,
+    "fileName" : "Balans 2015 g..xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 408046,
+    "fullUnpackSize" : 3283456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

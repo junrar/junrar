@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1249866742.000000000,
+    "creationTime" : null,
+    "fileCRC" : 528897379,
+    "fileName" : "qreport2kv09.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 544117,
+    "fullUnpackSize" : 4908544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

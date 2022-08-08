@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1335936852.158523600,
+    "creationTime" : null,
+    "fileCRC" : -1863822312,
+    "fileName" : "04_Стрельцов.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 568734,
+    "fullUnpackSize" : 625710,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

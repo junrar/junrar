@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361653088.000000000,
+    "creationTime" : null,
+    "fileCRC" : 241760373,
+    "fileName" : "Бастион 1_2000 стр.20.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 248437,
+    "fullUnpackSize" : 265519,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361653064.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2019853894,
+    "fileName" : "Бастион 1_2000 стр.19.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 243537,
+    "fullUnpackSize" : 257388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

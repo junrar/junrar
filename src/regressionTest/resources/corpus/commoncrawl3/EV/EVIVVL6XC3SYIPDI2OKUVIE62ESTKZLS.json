@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426062773.718750000,
+    "creationTime" : null,
+    "fileCRC" : 1662260552,
+    "fileName" : "Lucy.dk.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17097,
+    "fullUnpackSize" : 43816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235388974.000000000,
+    "creationTime" : null,
+    "fileCRC" : 256210782,
+    "fileName" : "a12m.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 132852,
+    "fullUnpackSize" : 157995,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

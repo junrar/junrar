@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413284704.625000000,
+    "creationTime" : null,
+    "fileCRC" : -749696361,
+    "fileName" : "Kanai-kun_[KusoSekai]\\Kanai-kun_p000a.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 970951,
+    "fullUnpackSize" : 970951,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413295887.593750400,
+    "creationTime" : null,
+    "fileCRC" : 2018107050,
+    "fileName" : "Kanai-kun_[KusoSekai]\\Kanai-kun_p000b.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 633705,
+    "fullUnpackSize" : 663561,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228698676.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2018356015,
+    "fileName" : "Kasbi-03K_Setup_v.1.0.0.2.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 187537,
+    "fullUnpackSize" : 384512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

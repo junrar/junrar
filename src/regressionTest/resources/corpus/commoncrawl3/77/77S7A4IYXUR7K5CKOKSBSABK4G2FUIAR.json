@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321966559.813000000,
+    "creationTime" : null,
+    "fileCRC" : -1251992981,
+    "fileName" : "Top1-221111.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 46472,
+    "fullUnpackSize" : 50913,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321963681.778000000,
+    "creationTime" : null,
+    "fileCRC" : 972362529,
+    "fileName" : "Top1-221111Magic.sims3pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 749883,
+    "fullUnpackSize" : 2297402,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

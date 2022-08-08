@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509325134.211993700,
+    "creationTime" : null,
+    "fileCRC" : -829286703,
+    "fileName" : "Автореферат_Мальцев_АВ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3465545,
+    "fullUnpackSize" : 4297881,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

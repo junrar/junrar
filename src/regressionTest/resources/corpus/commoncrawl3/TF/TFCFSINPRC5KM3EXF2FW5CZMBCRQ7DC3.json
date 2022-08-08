@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476773675.652783800,
+    "creationTime" : null,
+    "fileCRC" : -1867005260,
+    "fileName" : "CMB800_20161019.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3358031,
+    "fullUnpackSize" : 3455529,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

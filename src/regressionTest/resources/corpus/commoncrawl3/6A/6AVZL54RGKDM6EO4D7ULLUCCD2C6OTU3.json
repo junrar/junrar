@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 987874936.000000000,
+    "creationTime" : null,
+    "fileCRC" : -653376967,
+    "fileName" : "FILE_ID.DIZ",
+    "hostOS" : "win32",
+    "fullPackSize" : 249,
+    "fullUnpackSize" : 295,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 987875068.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1671036269,
+    "fileName" : "gr_contr.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 406069,
+    "fullUnpackSize" : 1267342,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

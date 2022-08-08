@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518400816.000000000,
+    "creationTime" : null,
+    "fileCRC" : 459268799,
+    "fileName" : "otschet_popechitelskogo_soveta_2017\\отчет работы попечительского совета 2017-1.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 972479,
+    "fullUnpackSize" : 2060800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518400816.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2122228863,
+    "fileName" : "otschet_popechitelskogo_soveta_2017\\отчет работы попечительского совета 2017-2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 634467,
+    "fullUnpackSize" : 1728512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

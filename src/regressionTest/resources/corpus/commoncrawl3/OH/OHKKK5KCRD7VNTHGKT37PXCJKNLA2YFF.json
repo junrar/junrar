@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485069081.406491200,
+    "creationTime" : null,
+    "fileCRC" : 884246032,
+    "fileName" : "شرح دستورالعمل رضایتمندی.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 290670,
+    "fullUnpackSize" : 293762,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521447768.000000000,
+    "creationTime" : null,
+    "fileCRC" : -739547543,
+    "fileName" : "Prospectus\\abcd_20180319_0001.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2348002,
+    "fullUnpackSize" : 2427856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

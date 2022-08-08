@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498617826.465770300,
+    "creationTime" : null,
+    "fileCRC" : 294716301,
+    "fileName" : "PF6N1_i6_PCB6.0_FPGA4.54_20170311.hex",
+    "hostOS" : "win32",
+    "fullPackSize" : 567080,
+    "fullUnpackSize" : 1114192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

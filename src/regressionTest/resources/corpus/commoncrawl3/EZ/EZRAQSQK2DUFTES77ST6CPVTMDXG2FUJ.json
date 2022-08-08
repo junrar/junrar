@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1056446872.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1014147302,
+    "fileName" : "0189.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 206417,
+    "fullUnpackSize" : 206417,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

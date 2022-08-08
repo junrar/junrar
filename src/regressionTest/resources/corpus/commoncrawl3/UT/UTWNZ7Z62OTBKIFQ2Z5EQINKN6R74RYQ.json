@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1279363473.437500000,
+    "creationTime" : null,
+    "fileCRC" : 2005473354,
+    "fileName" : "Тайманов - Зарубежные встречи.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 9786275,
+    "fullUnpackSize" : 9795014,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

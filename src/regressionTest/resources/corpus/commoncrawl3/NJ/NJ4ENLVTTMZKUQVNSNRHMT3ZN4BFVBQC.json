@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302070792.495476700,
+    "creationTime" : null,
+    "fileCRC" : -1816513191,
+    "fileName" : "mp_jumpzone\\mp_jumpzone.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 31679703,
+    "fullUnpackSize" : 31713350,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

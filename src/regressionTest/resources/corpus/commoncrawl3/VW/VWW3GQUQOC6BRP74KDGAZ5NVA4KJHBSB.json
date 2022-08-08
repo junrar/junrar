@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483522829.278529600,
+    "creationTime" : null,
+    "fileCRC" : 2028152246,
+    "fileName" : "pl_PL.mo",
+    "hostOS" : "win32",
+    "fullPackSize" : 28792,
+    "fullUnpackSize" : 98162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483522829.174141800,
+    "creationTime" : null,
+    "fileCRC" : 419346465,
+    "fileName" : "pl_PL.po",
+    "hostOS" : "win32",
+    "fullPackSize" : 31214,
+    "fullUnpackSize" : 151443,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

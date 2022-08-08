@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255942281.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2038472629,
+    "fileName" : "Tekken.6.XBOX360.RF(www.Top2Download.com)\\Tekken 6.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 1022701558,
+    "fullUnpackSize" : 7838695424,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,8 @@
+{
+  "isRarV5" : true,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ ],
+  "exception" : "UnsupportedRarV5Exception"
+}

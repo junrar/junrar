@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520874479.000000000,
+    "creationTime" : null,
+    "fileCRC" : -697831258,
+    "fileName" : "ims0142000.iyf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5879095,
+    "fullUnpackSize" : 9802622,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

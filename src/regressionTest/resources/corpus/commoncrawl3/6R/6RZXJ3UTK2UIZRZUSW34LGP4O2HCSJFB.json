@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530089670.525632500,
+    "creationTime" : null,
+    "fileCRC" : 66420652,
+    "fileName" : "LadyFuOverrideEP05WoodenSwing.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 2641750,
+    "fullUnpackSize" : 2679485,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

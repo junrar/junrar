@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528682949.949798400,
+    "creationTime" : null,
+    "fileCRC" : -918312281,
+    "fileName" : "Declaratie de avere 2017\\Declaratie de avere Barbos Maria.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2120743,
+    "fullUnpackSize" : 2485339,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

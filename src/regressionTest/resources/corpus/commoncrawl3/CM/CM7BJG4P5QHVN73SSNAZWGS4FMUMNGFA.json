@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524010040.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1660658147,
+    "fileName" : "MOK Radlin LOGO\\wersja dopuszczalna 1 - w dowolnym ale jednolitym kolorze\\logo MOK w Radlinie-wersja dopuszczalna.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 18745,
+    "fullUnpackSize" : 37086,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524010040.000000000,
+    "creationTime" : null,
+    "fileCRC" : 319762836,
+    "fileName" : "MOK Radlin LOGO\\wersja dopuszczalna 1 - w dowolnym ale jednolitym kolorze\\logo MOK w Radlinie-wersja dopuszczalna.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 1408695,
+    "fullUnpackSize" : 1410126,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

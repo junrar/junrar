@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425365667.788964400,
+    "creationTime" : null,
+    "fileCRC" : -1332057155,
+    "fileName" : "Norton Antivirus Setup_Free 6 thang.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 431586,
+    "fullUnpackSize" : 549376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

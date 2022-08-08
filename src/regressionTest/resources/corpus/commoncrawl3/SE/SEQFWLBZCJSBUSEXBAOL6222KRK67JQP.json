@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297239135.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1594951587,
+    "fileName" : "W11_60х80.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1366018,
+    "fullUnpackSize" : 2257746,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

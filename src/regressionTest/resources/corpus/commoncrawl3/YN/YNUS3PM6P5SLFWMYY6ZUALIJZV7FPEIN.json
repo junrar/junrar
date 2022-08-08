@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439792635.388397100,
+    "creationTime" : null,
+    "fileCRC" : 719757365,
+    "fileName" : "ДЕС-3.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 6999908,
+    "fullUnpackSize" : 16469685,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

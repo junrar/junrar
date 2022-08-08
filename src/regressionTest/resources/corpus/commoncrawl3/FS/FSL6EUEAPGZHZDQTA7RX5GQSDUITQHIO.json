@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481609842.000000000,
+    "creationTime" : null,
+    "fileCRC" : 262268250,
+    "fileName" : "CUT\\relatorio-da-comissao-nacional-da-memoria-verdade-e-justica-da-cut.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4929705,
+    "fullUnpackSize" : 5253645,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

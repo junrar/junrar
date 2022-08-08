@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426561348.000000000,
+    "creationTime" : null,
+    "fileCRC" : 651189454,
+    "fileName" : "jboss-as-web-7.1.1.Final-RECOMPILE.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 431921,
+    "fullUnpackSize" : 466055,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

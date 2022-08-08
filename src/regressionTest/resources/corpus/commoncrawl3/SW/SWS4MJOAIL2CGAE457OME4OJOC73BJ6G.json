@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488242292.000000000,
+    "creationTime" : null,
+    "fileCRC" : -125580296,
+    "fileName" : "REVIT\\2015_Deposito_LAPESA_Master-Vertical-Inercia-MV-I.rfa",
+    "hostOS" : "win32",
+    "fullPackSize" : 496299,
+    "fullUnpackSize" : 606208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488242294.000000000,
+    "creationTime" : null,
+    "fileCRC" : -221127010,
+    "fileName" : "REVIT\\2015_Deposito_LAPESA_Master-Vertical-Inoxidable-MXV-RB.rfa",
+    "hostOS" : "win32",
+    "fullPackSize" : 578084,
+    "fullUnpackSize" : 708608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

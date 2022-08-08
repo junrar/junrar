@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496668072.465733200,
+    "creationTime" : null,
+    "fileCRC" : 2015399740,
+    "fileName" : "slide_kzfr_desert_Domino_0008.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 190847,
+    "fullUnpackSize" : 842358,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

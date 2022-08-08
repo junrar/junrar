@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396499220.711133400,
+    "creationTime" : null,
+    "fileCRC" : -1595472885,
+    "fileName" : "Εναλλακτικές Μορφές Τουρισμού - Ευκαιρίες Επιχειρηματηκότητας στη Νάξο.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 903180,
+    "fullUnpackSize" : 964924,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

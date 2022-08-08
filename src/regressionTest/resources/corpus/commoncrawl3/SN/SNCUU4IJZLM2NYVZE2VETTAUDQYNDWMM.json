@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1260366307.641750000,
+    "creationTime" : null,
+    "fileCRC" : -1408488916,
+    "fileName" : "1991 - Ys 3 PCE Game Recording & Redbook Audio\\01. Dancing on the Road.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1338427,
+    "fullUnpackSize" : 1344124,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

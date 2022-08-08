@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536907247.776201400,
+    "creationTime" : null,
+    "fileCRC" : 1276063071,
+    "fileName" : "ЧРК и МТ Кубок Семей 2018г.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 26115,
+    "fullUnpackSize" : 29569,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

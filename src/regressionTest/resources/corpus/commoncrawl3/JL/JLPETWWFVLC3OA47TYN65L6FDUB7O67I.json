@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217590303.625000000,
+    "creationTime" : null,
+    "fileCRC" : 1395923041,
+    "fileName" : "Дыхание.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 103721,
+    "fullUnpackSize" : 133120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497162420.000000000,
+    "creationTime" : null,
+    "fileCRC" : 383220253,
+    "fileName" : "4.Регламент по лицензиям министерства.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 45447,
+    "fullUnpackSize" : 280064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496908866.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1155917326,
+    "fileName" : "ПРИЛОЖЕНИЕ 1.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 17720,
+    "fullUnpackSize" : 20262,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

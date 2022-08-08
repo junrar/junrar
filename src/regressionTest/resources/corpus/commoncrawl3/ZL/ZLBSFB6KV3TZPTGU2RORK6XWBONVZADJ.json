@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1169198139.203125000,
+    "creationTime" : null,
+    "fileCRC" : -150633923,
+    "fileName" : "MRT_Hermann.eng",
+    "hostOS" : "win32",
+    "fullPackSize" : 164285,
+    "fullUnpackSize" : 312068,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

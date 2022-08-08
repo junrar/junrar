@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1237193732.000000000,
+    "creationTime" : null,
+    "fileCRC" : -833109951,
+    "fileName" : "Ланцов Лихва.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2433513,
+    "fullUnpackSize" : 4841536,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

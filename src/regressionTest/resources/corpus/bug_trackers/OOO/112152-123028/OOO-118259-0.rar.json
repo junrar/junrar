@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309970337.307286400,
+    "creationTime" : null,
+    "fileCRC" : -1517253050,
+    "fileName" : "membres.ods",
+    "hostOS" : "win32",
+    "fullPackSize" : 20854,
+    "fullUnpackSize" : 22591,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310043783.008070400,
+    "creationTime" : null,
+    "fileCRC" : -897867451,
+    "fileName" : "membres.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 4950,
+    "fullUnpackSize" : 25600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

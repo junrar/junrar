@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473388559.126404400,
+    "creationTime" : null,
+    "fileCRC" : 1187003513,
+    "fileName" : "Отчет по Московским Каникулам Август 2016 — Марьино филиал «Люблино»\\Отчет по Московским Каникулам Август 2016 — Марьино филиал «Люблино».docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 5693980,
+    "fullUnpackSize" : 5816382,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

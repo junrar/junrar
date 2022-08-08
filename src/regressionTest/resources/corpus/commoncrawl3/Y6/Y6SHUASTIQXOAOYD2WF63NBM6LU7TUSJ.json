@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292831351.281250000,
+    "creationTime" : null,
+    "fileCRC" : -180958308,
+    "fileName" : "FK06_db_ru.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 334572,
+    "fullUnpackSize" : 388198,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292832588.312500000,
+    "creationTime" : null,
+    "fileCRC" : 1159126427,
+    "fileName" : "FF06_db_ru.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 295584,
+    "fullUnpackSize" : 353751,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298329513.428294200,
+    "creationTime" : null,
+    "fileCRC" : 510724706,
+    "fileName" : "luat_thue_xnk_45_2005_QH11.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 13894,
+    "fullUnpackSize" : 96256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

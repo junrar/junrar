@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265974690.406250000,
+    "creationTime" : null,
+    "fileCRC" : -350738602,
+    "fileName" : "Park_Wars_Darth_Vader.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1098048,
+    "fullUnpackSize" : 1098048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

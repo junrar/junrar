@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437700793.651784400,
+    "creationTime" : null,
+    "fileCRC" : 2110964560,
+    "fileName" : "MicroBoxSamsung_V2.0.0.2_FINAL.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 28684580,
+    "fullUnpackSize" : 29341696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

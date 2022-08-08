@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491183728.243701000,
+    "creationTime" : null,
+    "fileCRC" : -1642236404,
+    "fileName" : "Mass.Effect.Andromeda-CPY.bitdownload.ir\\cpy-mea.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 524287855,
+    "fullUnpackSize" : 55024533504,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

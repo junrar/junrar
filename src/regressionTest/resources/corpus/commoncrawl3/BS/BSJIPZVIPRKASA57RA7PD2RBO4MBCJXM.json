@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430910763.862000000,
+    "creationTime" : null,
+    "fileCRC" : -890294600,
+    "fileName" : "counting up and down with graph bar.lsc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8314,
+    "fullUnpackSize" : 33078,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

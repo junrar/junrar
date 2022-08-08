@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383317646.732000000,
+    "creationTime" : null,
+    "fileCRC" : 223283404,
+    "fileName" : "DressSamtRöschen-Magic.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 38790,
+    "fullUnpackSize" : 39651,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383317791.447000000,
+    "creationTime" : null,
+    "fileCRC" : 1034943637,
+    "fileName" : "DressSamtRöschen-Magic.sims3pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 1612139,
+    "fullUnpackSize" : 2673582,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

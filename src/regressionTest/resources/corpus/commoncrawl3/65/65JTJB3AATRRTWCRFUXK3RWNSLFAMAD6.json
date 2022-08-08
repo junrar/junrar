@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413362545.346182000,
+    "creationTime" : null,
+    "fileCRC" : 1658172127,
+    "fileName" : "DC-706-072014\\SBDT06-DC-706.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 414587946,
+    "fullUnpackSize" : 850787328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

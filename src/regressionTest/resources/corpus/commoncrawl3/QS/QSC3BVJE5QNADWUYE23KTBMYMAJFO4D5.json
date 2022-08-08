@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275891886.703125000,
+    "creationTime" : null,
+    "fileCRC" : 262818922,
+    "fileName" : "sinkler.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 13338894,
+    "fullUnpackSize" : 15250803,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1471260235.216977700,
+    "creationTime" : null,
+    "fileCRC" : -807410819,
+    "fileName" : "winrar-faradabir.ir\\WinRAR.v5.40.x64\\Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2016788,
+    "fullUnpackSize" : 2185400,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

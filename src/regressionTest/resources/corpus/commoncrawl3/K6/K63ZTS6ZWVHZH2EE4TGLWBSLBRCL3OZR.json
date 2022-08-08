@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511162385.533361000,
+    "creationTime" : null,
+    "fileCRC" : -1644165941,
+    "fileName" : "IWUE4105.s19",
+    "hostOS" : "win32",
+    "fullPackSize" : 59141,
+    "fullUnpackSize" : 168496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

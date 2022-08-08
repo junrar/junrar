@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207479508.031250000,
+    "creationTime" : null,
+    "fileCRC" : -1375889475,
+    "fileName" : "zayavka.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 13715,
+    "fullUnpackSize" : 36864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

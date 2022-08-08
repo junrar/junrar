@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1378793980.096000000,
+    "creationTime" : null,
+    "fileCRC" : -1131697334,
+    "fileName" : "Fehreste Nashriate  ISI (JCR) 2012.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 431303,
+    "fullUnpackSize" : 1633792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

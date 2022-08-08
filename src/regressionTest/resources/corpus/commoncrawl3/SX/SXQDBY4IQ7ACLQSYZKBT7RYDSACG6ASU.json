@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453380840.864566500,
+    "creationTime" : null,
+    "fileCRC" : 202151989,
+    "fileName" : "jbe_fake_reality.sma",
+    "hostOS" : "win32",
+    "fullPackSize" : 738,
+    "fullUnpackSize" : 2152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453380530.568753700,
+    "creationTime" : null,
+    "fileCRC" : -650956337,
+    "fileName" : "jbe_fake_reality.amxx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4974,
+    "fullUnpackSize" : 4974,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521790864.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1023207343,
+    "fileName" : "FICHA_DE_INSCRICAO_MOSTRA_AGUA_NO_MEU_CAMINHO_VERSAO_FINAL_PARA_O_SITE.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 401584,
+    "fullUnpackSize" : 539866,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521790979.642352200,
+    "creationTime" : null,
+    "fileCRC" : 85332116,
+    "fileName" : "Regulamento VERSÃO FINAL PARA O SITE_VERSÃO APROVADA GENILSE 23 DE MARÇO.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 449891,
+    "fullUnpackSize" : 509275,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

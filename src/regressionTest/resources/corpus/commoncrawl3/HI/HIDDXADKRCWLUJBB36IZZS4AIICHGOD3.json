@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173518189.718750000,
+    "creationTime" : null,
+    "fileCRC" : -2009748124,
+    "fileName" : "Щелоков А.А - Увлекательная геральдика.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 9534561,
+    "fullUnpackSize" : 9661813,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

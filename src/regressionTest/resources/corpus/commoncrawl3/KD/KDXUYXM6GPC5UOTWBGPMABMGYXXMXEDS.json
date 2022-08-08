@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493908177.955674400,
+    "creationTime" : null,
+    "fileCRC" : 1302378750,
+    "fileName" : "mirc.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6143710,
+    "fullUnpackSize" : 6211303,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

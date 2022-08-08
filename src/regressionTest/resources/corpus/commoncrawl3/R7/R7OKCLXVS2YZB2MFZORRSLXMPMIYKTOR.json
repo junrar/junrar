@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519751364.658691700,
+    "creationTime" : null,
+    "fileCRC" : -1157861820,
+    "fileName" : "sx2018rr09atlanta.ultralow.saf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5693552,
+    "fullUnpackSize" : 25310491,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

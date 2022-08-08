@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1339640568.088362400,
+    "creationTime" : null,
+    "fileCRC" : -660977028,
+    "fileName" : "64KRows.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 14604,
+    "fullUnpackSize" : 1493504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

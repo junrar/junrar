@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299123224.194491600,
+    "creationTime" : null,
+    "fileCRC" : -1751007877,
+    "fileName" : "FRZ016-Kanchi-Velvet_chipset\\01 Kanchi - Beyond silence.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9246042,
+    "fullUnpackSize" : 9737489,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

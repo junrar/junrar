@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520221038.000000000,
+    "creationTime" : null,
+    "fileCRC" : 236891267,
+    "fileName" : "3. คู่มือหลักสูตรปฐมวัย 2560 อายุต่ำกว่า 3 ปี.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 54753224,
+    "fullUnpackSize" : 77288415,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297922452.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1530379950,
+    "fileName" : "W83R10_60х80.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1398770,
+    "fullUnpackSize" : 2315479,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

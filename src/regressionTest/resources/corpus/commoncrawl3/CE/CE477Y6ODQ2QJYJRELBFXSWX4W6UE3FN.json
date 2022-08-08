@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522031237.325134400,
+    "creationTime" : null,
+    "fileCRC" : -2075546458,
+    "fileName" : "30VN\\30VN.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1029172,
+    "fullUnpackSize" : 1045055,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522292317.516519400,
+    "creationTime" : null,
+    "fileCRC" : 78209238,
+    "fileName" : "30VN\\Phu luc.compressed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2039096,
+    "fullUnpackSize" : 2039096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

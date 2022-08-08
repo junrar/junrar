@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1241181631.702875000,
+    "creationTime" : null,
+    "fileCRC" : -464692696,
+    "fileName" : "UoDemo+.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 240,
+    "fullUnpackSize" : 322,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1241181122.702875000,
+    "creationTime" : null,
+    "fileCRC" : -1010135082,
+    "fileName" : "UoDemo+.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1139312,
+    "fullUnpackSize" : 2959360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1197100882.000000000,
+    "creationTime" : null,
+    "fileCRC" : -929122507,
+    "fileName" : "О МЕРАХ К ОБЕЗПЕЧЕНИЮ НАРОДНОГО ПРОДОВОЛЬСТВИЯ НА КРАЙНЕМСЕВЕРЕ РОССИИ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 133124,
+    "fullUnpackSize" : 823808,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

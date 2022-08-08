@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301468994.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1889477604,
+    "fileName" : "1.  Підготовка соціальних працівників до роботи з дітьми та молоддю у вищих навчальних закладах Швеції.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 234431,
+    "fullUnpackSize" : 246559,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268184700.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1809546772,
+    "fileName" : "2.  Підготовка соціальних працівників до роботи з дітьми та молоддю у вищих навчальних закладах Швеції.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 41056,
+    "fullUnpackSize" : 374264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

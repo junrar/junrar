@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445368574.254978700,
+    "creationTime" : null,
+    "fileCRC" : -632948224,
+    "fileName" : "ReadMe.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 518,
+    "fullUnpackSize" : 1529,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445368143.429174000,
+    "creationTime" : null,
+    "fileCRC" : 970910349,
+    "fileName" : "taxi.yft",
+    "hostOS" : "win32",
+    "fullPackSize" : 2150411,
+    "fullUnpackSize" : 2159844,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

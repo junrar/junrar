@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415447101.497366700,
+    "creationTime" : null,
+    "fileCRC" : 1178488230,
+    "fileName" : "Volta a Montserrat 2014.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 27921,
+    "fullUnpackSize" : 129961,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

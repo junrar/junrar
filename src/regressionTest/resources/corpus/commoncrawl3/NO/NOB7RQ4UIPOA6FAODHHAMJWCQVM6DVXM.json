@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330917450.921875000,
+    "creationTime" : null,
+    "fileCRC" : 2136062875,
+    "fileName" : "bao cao hop nhat quy III nam 2011.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 746556,
+    "fullUnpackSize" : 746556,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330917477.531250000,
+    "creationTime" : null,
+    "fileCRC" : 2025480554,
+    "fileName" : "BCTC III Cty me 2011.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 807971,
+    "fullUnpackSize" : 807971,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

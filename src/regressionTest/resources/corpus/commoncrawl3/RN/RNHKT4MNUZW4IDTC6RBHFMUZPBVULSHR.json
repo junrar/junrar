@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233569935.093750000,
+    "creationTime" : null,
+    "fileCRC" : -1364870078,
+    "fileName" : "hotring.col",
+    "hostOS" : "win32",
+    "fullPackSize" : 538,
+    "fullUnpackSize" : 896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233569004.718750000,
+    "creationTime" : null,
+    "fileCRC" : 1529749705,
+    "fileName" : "hotring.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1075777,
+    "fullUnpackSize" : 3338208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

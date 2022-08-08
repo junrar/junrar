@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445492654.895507800,
+    "creationTime" : null,
+    "fileCRC" : -1818684481,
+    "fileName" : "Tertib Administrasi Konsignasi\\IMG_20151022_0001.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1916903,
+    "fullUnpackSize" : 2773361,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532918852.770000000,
+    "creationTime" : null,
+    "fileCRC" : -1958644754,
+    "fileName" : "37-ЗО.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 22210,
+    "fullUnpackSize" : 44544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531884450.610000000,
+    "creationTime" : null,
+    "fileCRC" : -926042173,
+    "fileName" : "37-ЗО Приложения 1-3.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 13219,
+    "fullUnpackSize" : 90624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

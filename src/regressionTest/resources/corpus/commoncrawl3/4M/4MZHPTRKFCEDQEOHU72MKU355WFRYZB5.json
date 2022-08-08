@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478095836.000000000,
+    "creationTime" : null,
+    "fileCRC" : 878036423,
+    "fileName" : "18632_карта_град_зонирования_красное.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4329811,
+    "fullUnpackSize" : 7349903,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

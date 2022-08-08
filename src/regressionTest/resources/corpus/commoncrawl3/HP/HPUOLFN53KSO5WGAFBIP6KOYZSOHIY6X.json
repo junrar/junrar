@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292689949.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2129066028,
+    "fileName" : "100X100THUMB.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 13612,
+    "fullUnpackSize" : 13696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292380417.500955400,
+    "creationTime" : null,
+    "fileCRC" : 1905618073,
+    "fileName" : "CitySiege.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3254733,
+    "fullUnpackSize" : 3255206,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173929080.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1977729548,
+    "fileName" : "tel_slyj_p.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 90336,
+    "fullUnpackSize" : 1549824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

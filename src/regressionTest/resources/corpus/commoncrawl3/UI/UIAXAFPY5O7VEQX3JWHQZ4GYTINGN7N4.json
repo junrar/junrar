@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285864550.737232100,
+    "creationTime" : null,
+    "fileCRC" : 170885940,
+    "fileName" : "07.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 226574,
+    "fullUnpackSize" : 234251,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1276486996.798335200,
+    "creationTime" : null,
+    "fileCRC" : -408743473,
+    "fileName" : "426 ci with vinyl roof\\blade.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1778723,
+    "fullUnpackSize" : 4889093,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

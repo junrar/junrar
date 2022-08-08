@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506493102.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1839599136,
+    "fileName" : "06-17.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1665260,
+    "fullUnpackSize" : 12282368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

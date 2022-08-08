@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1252055612.000000000,
+    "creationTime" : null,
+    "fileCRC" : -446444103,
+    "fileName" : "file-autocad-gambar-kerja-by-argajogja.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 204528,
+    "fullUnpackSize" : 280052,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1186669800.000000000,
+    "creationTime" : null,
+    "fileCRC" : -546300300,
+    "fileName" : "pmj2884\\wwww.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 3881718,
+    "fullUnpackSize" : 19235804,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

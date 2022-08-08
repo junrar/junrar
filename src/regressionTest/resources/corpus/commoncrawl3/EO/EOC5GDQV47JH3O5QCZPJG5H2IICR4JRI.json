@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1208031940.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1990967698,
+    "fileName" : "stochastic_process_ch2\\Stochastic Processes Chapter 2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 646048,
+    "fullUnpackSize" : 1620601,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396442257.593750000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "stochastic_process_ch2",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493181626.687791200,
+    "creationTime" : null,
+    "fileCRC" : -1737419514,
+    "fileName" : "9691876_simple_items_q2pro_litrium.pak",
+    "hostOS" : "win32",
+    "fullPackSize" : 297437,
+    "fullUnpackSize" : 1210207,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401031522.462608700,
+    "creationTime" : null,
+    "fileCRC" : 1424301230,
+    "fileName" : "Информатика2013.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 11525,
+    "fullUnpackSize" : 14712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

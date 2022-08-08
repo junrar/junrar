@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460369450.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1609764110,
+    "fileName" : "Belegost.xex",
+    "hostOS" : "win32",
+    "fullPackSize" : 28555,
+    "fullUnpackSize" : 52261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

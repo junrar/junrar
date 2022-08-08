@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : 1409466869.725720700,
+    "lastModifiedTime" : 1409466855.202125000,
+    "creationTime" : 1409466869.725720700,
+    "fileCRC" : 1952045558,
+    "fileName" : "PhrozenSoft VirusTotal Uploader 3.1.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4476378,
+    "fullUnpackSize" : 7578220,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

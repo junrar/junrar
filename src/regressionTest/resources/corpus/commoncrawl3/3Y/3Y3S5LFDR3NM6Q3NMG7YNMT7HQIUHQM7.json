@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204187960.750000000,
+    "creationTime" : null,
+    "fileCRC" : -664316365,
+    "fileName" : "Td_reflection_nosurface.gm6",
+    "hostOS" : "win32",
+    "fullPackSize" : 17280,
+    "fullUnpackSize" : 44216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

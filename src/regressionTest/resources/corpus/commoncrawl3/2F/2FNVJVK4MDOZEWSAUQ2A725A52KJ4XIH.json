@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465698760.614077700,
+    "creationTime" : null,
+    "fileCRC" : 1369848303,
+    "fileName" : "Gundam Unicorn RE0096 11ns.smi",
+    "hostOS" : "win32",
+    "fullPackSize" : 8308,
+    "fullUnpackSize" : 25858,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465698706.771998100,
+    "creationTime" : null,
+    "fileCRC" : 1309436356,
+    "fileName" : "Gundam Unicorn RE0096 11s.smi",
+    "hostOS" : "win32",
+    "fullPackSize" : 8309,
+    "fullUnpackSize" : 25852,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

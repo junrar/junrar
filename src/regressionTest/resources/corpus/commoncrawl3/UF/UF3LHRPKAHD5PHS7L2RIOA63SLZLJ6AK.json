@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526089838.048845200,
+    "creationTime" : null,
+    "fileCRC" : 427637548,
+    "fileName" : "C0511_1047855175785_2_4.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 1140570467,
+    "fullUnpackSize" : 2039631782,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

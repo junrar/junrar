@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324263024.000000000,
+    "creationTime" : null,
+    "fileCRC" : -831466773,
+    "fileName" : "СБОРНИК  2011.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 178863,
+    "fullUnpackSize" : 2735104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

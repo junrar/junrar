@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411519114.224865100,
+    "creationTime" : null,
+    "fileCRC" : 1980394625,
+    "fileName" : "地藏菩萨本愿经讲录\\地藏菩萨本愿经讲录-内文.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2137236,
+    "fullUnpackSize" : 2371896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

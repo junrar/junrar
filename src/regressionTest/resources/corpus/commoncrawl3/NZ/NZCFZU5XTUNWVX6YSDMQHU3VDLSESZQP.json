@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500521006.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1198453887,
+    "fileName" : "ALT-REHBERLER\\KABIT-PRJ-EKB1-ProjeTeklifFormuSablonuRehberi.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 677891,
+    "fullUnpackSize" : 705007,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500520984.000000000,
+    "creationTime" : null,
+    "fileCRC" : 776600509,
+    "fileName" : "ALT-REHBERLER\\KABIT-PRJ-EKB2-KurumKurulusBITKapasitesiSablonuRehberi.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 468762,
+    "fullUnpackSize" : 491463,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

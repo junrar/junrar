@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487812127.552387600,
+    "creationTime" : null,
+    "fileCRC" : -866321655,
+    "fileName" : "BLL\\bin\\BLL.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3763213,
+    "fullUnpackSize" : 13813248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1242513002.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1883031902,
+    "fileName" : "3dcustom_sk_mima_090519\\mima_bousi.tah",
+    "hostOS" : "win32",
+    "fullPackSize" : 168689,
+    "fullUnpackSize" : 168949,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1242593718.000000000,
+    "creationTime" : null,
+    "fileCRC" : 27765303,
+    "fileName" : "3dcustom_sk_mima_090519\\mima_fuku.tah",
+    "hostOS" : "win32",
+    "fullPackSize" : 1699573,
+    "fullUnpackSize" : 1883685,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

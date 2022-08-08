@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301325486.887932600,
+    "creationTime" : null,
+    "fileCRC" : 79484748,
+    "fileName" : "mp_trauma\\mp_trauma.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 25657638,
+    "fullUnpackSize" : 25744065,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

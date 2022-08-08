@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1113186862.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1262743852,
+    "fileName" : "20298-74.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 742000,
+    "fullUnpackSize" : 791894,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405561320.355697100,
+    "creationTime" : null,
+    "fileCRC" : -579397460,
+    "fileName" : "THsetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 22007741,
+    "fullUnpackSize" : 22966704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

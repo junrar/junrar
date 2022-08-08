@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509355130.927000000,
+    "creationTime" : null,
+    "fileCRC" : 692407691,
+    "fileName" : "special_catalog.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 12864489,
+    "fullUnpackSize" : 13128845,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

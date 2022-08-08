@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479693914.000000000,
+    "creationTime" : null,
+    "fileCRC" : 381561048,
+    "fileName" : "SpeedCamData.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 248524,
+    "fullUnpackSize" : 387580,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

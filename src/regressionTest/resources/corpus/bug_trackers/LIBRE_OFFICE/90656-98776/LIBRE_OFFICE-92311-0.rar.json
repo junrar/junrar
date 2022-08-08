@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476959662.744627400,
+    "creationTime" : null,
+    "fileCRC" : 1362564076,
+    "fileName" : "mwords.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 654701,
+    "fullUnpackSize" : 5045433,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

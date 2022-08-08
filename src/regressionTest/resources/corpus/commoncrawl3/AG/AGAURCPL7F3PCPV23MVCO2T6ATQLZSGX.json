@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486113997.347003700,
+    "creationTime" : null,
+    "fileCRC" : 152420459,
+    "fileName" : "Macro MTPE.xlsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 193636,
+    "fullUnpackSize" : 362173,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

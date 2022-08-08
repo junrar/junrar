@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465185646.647767800,
+    "creationTime" : null,
+    "fileCRC" : 1232505977,
+    "fileName" : "Zpráva o výsledku přezkoumání hospodaření za rok 2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2874495,
+    "fullUnpackSize" : 3185113,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

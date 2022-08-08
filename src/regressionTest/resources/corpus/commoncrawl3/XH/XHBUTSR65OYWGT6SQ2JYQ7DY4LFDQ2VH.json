@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493173080.000000000,
+    "creationTime" : null,
+    "fileCRC" : -231456251,
+    "fileName" : "iip First Quarterly Report for 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4195537,
+    "fullUnpackSize" : 4543607,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

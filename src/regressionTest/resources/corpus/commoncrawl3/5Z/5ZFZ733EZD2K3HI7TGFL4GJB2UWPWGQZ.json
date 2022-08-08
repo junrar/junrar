@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1356165208.000000000,
+    "creationTime" : null,
+    "fileCRC" : -278295816,
+    "fileName" : "DPR Part -2\\Annexure 1 - Layout.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4686230,
+    "fullUnpackSize" : 6239461,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

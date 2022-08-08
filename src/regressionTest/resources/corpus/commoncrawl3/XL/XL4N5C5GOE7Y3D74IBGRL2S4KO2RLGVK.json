@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438308303.703836300,
+    "creationTime" : null,
+    "fileCRC" : 1168881721,
+    "fileName" : "ATA 19 FOX PNEUS.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2898966,
+    "fullUnpackSize" : 2987815,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

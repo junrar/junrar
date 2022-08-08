@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1129206668.000000000,
+    "creationTime" : null,
+    "fileCRC" : 93119202,
+    "fileName" : "neurochira1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 567656,
+    "fullUnpackSize" : 701874,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1129206668.000000000,
+    "creationTime" : null,
+    "fileCRC" : 191379845,
+    "fileName" : "neurochira2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 638248,
+    "fullUnpackSize" : 797994,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

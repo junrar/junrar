@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492339899.339076000,
+    "creationTime" : null,
+    "fileCRC" : 1778525320,
+    "fileName" : "Admiral Yamamoto 2011.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 41113,
+    "fullUnpackSize" : 111839,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492340346.085670200,
+    "creationTime" : null,
+    "fileCRC" : 209456128,
+    "fileName" : "Yamamoto film letöltés.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 70,
+    "fullUnpackSize" : 70,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

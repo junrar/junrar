@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1114843214.000000000,
+    "creationTime" : null,
+    "fileCRC" : -790003524,
+    "fileName" : "Первая картина мира.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 41219,
+    "fullUnpackSize" : 195072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1114843102.000000000,
+    "creationTime" : null,
+    "fileCRC" : 839591827,
+    "fileName" : "Картины мира.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8024,
+    "fullUnpackSize" : 56832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

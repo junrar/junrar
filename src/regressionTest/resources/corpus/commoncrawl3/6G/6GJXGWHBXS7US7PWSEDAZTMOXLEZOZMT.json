@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431675191.223921000,
+    "creationTime" : null,
+    "fileCRC" : -1978805312,
+    "fileName" : "pasport.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 7013,
+    "fullUnpackSize" : 41472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431675341.221500400,
+    "creationTime" : null,
+    "fileCRC" : 822041750,
+    "fileName" : "Паспорт оказания услуг по передаче электрической энергии (1).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12388,
+    "fullUnpackSize" : 48640,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

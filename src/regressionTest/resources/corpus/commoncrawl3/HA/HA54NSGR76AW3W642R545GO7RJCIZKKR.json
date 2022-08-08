@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414768512.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1589901113,
+    "fileName" : "manshodamnokarezinab-arefi.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3107286,
+    "fullUnpackSize" : 3224137,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

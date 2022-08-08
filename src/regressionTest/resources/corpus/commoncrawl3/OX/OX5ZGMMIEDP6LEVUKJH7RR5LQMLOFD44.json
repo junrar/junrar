@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459835501.526798100,
+    "creationTime" : null,
+    "fileCRC" : 1919874039,
+    "fileName" : "论坛演讲嘉宾PPT\\01邹蕾.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1867185,
+    "fullUnpackSize" : 2370714,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

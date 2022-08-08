@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1279703206.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1885352240,
+    "fileName" : "17_25.unr",
+    "hostOS" : "win32",
+    "fullPackSize" : 894535,
+    "fullUnpackSize" : 5644985,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255494668.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1118737376,
+    "fileName" : "19_21.unr",
+    "hostOS" : "win32",
+    "fullPackSize" : 1196299,
+    "fullUnpackSize" : 6296899,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

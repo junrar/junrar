@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1190187617.000000000,
+    "creationTime" : null,
+    "fileCRC" : 147770770,
+    "fileName" : "29-RPS Kyustendil\\Assessment\\29-RPS Kyustendil-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 805080,
+    "fullUnpackSize" : 1070080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1190187594.000000000,
+    "creationTime" : null,
+    "fileCRC" : -667639444,
+    "fileName" : "29-RPS Kyustendil\\Assessment\\PDF\\29-RPS Kyustendil-Assessment sheet.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1107602,
+    "fullUnpackSize" : 1131343,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

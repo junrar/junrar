@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508735369.187650400,
+    "creationTime" : null,
+    "fileCRC" : 1616612016,
+    "fileName" : "NetAssist.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 528491,
+    "fullUnpackSize" : 1427968,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

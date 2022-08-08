@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1253269168.000000000,
+    "creationTime" : null,
+    "fileCRC" : 451271127,
+    "fileName" : "03 您认识佛教吗.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1274222,
+    "fullUnpackSize" : 1364523,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

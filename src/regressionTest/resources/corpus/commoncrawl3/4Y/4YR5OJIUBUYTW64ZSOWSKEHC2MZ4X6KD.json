@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514022337.290492900,
+    "creationTime" : null,
+    "fileCRC" : 552486285,
+    "fileName" : "High G - Shaolin Kiffer 2\\00 Info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 759,
+    "fullUnpackSize" : 1505,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513078225.875109300,
+    "creationTime" : null,
+    "fileCRC" : -1347752357,
+    "fileName" : "High G - Shaolin Kiffer 2\\00 SK2_Cover.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1547034,
+    "fullUnpackSize" : 1547034,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

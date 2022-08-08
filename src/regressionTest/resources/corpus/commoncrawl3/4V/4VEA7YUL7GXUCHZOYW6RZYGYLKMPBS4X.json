@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503388726.092210700,
+    "creationTime" : null,
+    "fileCRC" : -544914999,
+    "fileName" : "IEM OP1-17.car",
+    "hostOS" : "win32",
+    "fullPackSize" : 732,
+    "fullUnpackSize" : 1352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

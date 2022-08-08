@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529395107.119737700,
+    "creationTime" : null,
+    "fileCRC" : 568734318,
+    "fileName" : "Vietnamese (1).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1760212,
+    "fullUnpackSize" : 2141691,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

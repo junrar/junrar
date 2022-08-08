@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526892645.743755000,
+    "creationTime" : null,
+    "fileCRC" : 1018698686,
+    "fileName" : "The.Amazing.Race.S30E11E12.WEB.x264-TBS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 48626,
+    "fullUnpackSize" : 145036,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526892644.090152100,
+    "creationTime" : null,
+    "fileCRC" : -943543421,
+    "fileName" : "The.Amazing.Race.S30E11E12.720p.HDTV.x264-BAJSKORV.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 48646,
+    "fullUnpackSize" : 145036,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

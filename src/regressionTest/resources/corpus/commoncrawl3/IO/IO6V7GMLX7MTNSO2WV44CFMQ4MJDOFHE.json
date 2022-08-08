@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267792616.000000000,
+    "creationTime" : null,
+    "fileCRC" : -368999268,
+    "fileName" : "S4IO4_v2.hex",
+    "hostOS" : "win32",
+    "fullPackSize" : 2464,
+    "fullUnpackSize" : 5573,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

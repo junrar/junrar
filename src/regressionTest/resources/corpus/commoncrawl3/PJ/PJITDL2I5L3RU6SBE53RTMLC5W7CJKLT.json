@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473844310.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1759038731,
+    "fileName" : "Estreno_Manga_839\\Capítulo 839 - Nunca olvidaré la deuda que te debo\\01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 501730,
+    "fullUnpackSize" : 554809,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473844332.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1427382178,
+    "fileName" : "Estreno_Manga_839\\Capítulo 839 - Nunca olvidaré la deuda que te debo\\02.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1229122,
+    "fullUnpackSize" : 1298807,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

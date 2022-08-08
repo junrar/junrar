@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479135590.678208800,
+    "creationTime" : null,
+    "fileCRC" : 1757244226,
+    "fileName" : "Samsung.USB.Drivers.for.Mobile.Phones.1.5.33.0.www.IR-DL.com\\(Asanflash.ir).txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 389,
+    "fullUnpackSize" : 1470,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391046734.508763600,
+    "creationTime" : null,
+    "fileCRC" : -618524818,
+    "fileName" : "Samsung.USB.Drivers.for.Mobile.Phones.1.5.33.0.www.IR-DL.com\\SAMSUNG_USB_Driver_for_Mobile_Phones_v1.5.33.0(asanflash.ir).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 15468489,
+    "fullUnpackSize" : 15477848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

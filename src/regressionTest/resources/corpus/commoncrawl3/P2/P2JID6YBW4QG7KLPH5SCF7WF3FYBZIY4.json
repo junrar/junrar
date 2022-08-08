@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271507937.557587700,
+    "creationTime" : null,
+    "fileCRC" : 1165043642,
+    "fileName" : "xiT^PlUs.Team.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 3562635,
+    "fullUnpackSize" : 15364865,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

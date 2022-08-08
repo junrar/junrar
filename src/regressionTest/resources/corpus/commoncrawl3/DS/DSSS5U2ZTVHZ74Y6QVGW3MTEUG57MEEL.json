@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986974012.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1488441458,
+    "fileName" : "FILE_ID.DIZ",
+    "hostOS" : "win32",
+    "fullPackSize" : 192,
+    "fullUnpackSize" : 222,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986974074.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1991132891,
+    "fileName" : "LI_DEATH.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 166185,
+    "fullUnpackSize" : 510620,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

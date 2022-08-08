@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352283433.796000000,
+    "creationTime" : null,
+    "fileCRC" : 125612948,
+    "fileName" : "ПРАЙС-ЛИСТ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 30332,
+    "fullUnpackSize" : 312320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

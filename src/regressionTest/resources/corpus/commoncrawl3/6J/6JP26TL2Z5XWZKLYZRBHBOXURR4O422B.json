@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217597413.171000000,
+    "creationTime" : null,
+    "fileCRC" : -442955599,
+    "fileName" : "Линейная функция.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 39303,
+    "fullUnpackSize" : 117760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

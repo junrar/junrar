@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1182495830.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1147131000,
+    "fileName" : "aktay_kazakhstan.wpt",
+    "hostOS" : "win32",
+    "fullPackSize" : 326,
+    "fullUnpackSize" : 639,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

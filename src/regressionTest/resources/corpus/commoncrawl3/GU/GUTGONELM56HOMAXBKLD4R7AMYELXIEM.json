@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1400114070.109375000,
+    "creationTime" : null,
+    "fileCRC" : -1415395687,
+    "fileName" : "протокол вскрытия конвертов по жилфонду.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4483,
+    "fullUnpackSize" : 28160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

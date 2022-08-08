@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1008841396.000000000,
+    "creationTime" : null,
+    "fileCRC" : 519055271,
+    "fileName" : "cs_doom2.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 399673,
+    "fullUnpackSize" : 1884364,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

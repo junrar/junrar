@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1216718390.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1313635610,
+    "fileName" : "Simple Delay V2.3.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1405569,
+    "fullUnpackSize" : 1557090,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

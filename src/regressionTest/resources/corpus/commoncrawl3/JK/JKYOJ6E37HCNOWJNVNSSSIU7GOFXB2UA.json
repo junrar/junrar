@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364383511.796000000,
+    "creationTime" : null,
+    "fileCRC" : -1609235016,
+    "fileName" : "Папа, мама, я - спортивная семья!(Булыкин А.А.)\\Папа, мама, я - спортивная семья!.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14200,
+    "fullUnpackSize" : 68096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327931856.507812500,
+    "creationTime" : null,
+    "fileCRC" : 1496175304,
+    "fileName" : "Папа, мама, я - спортивная семья!(Булыкин А.А.)\\Приложение\\01 - marshi-sportivnij_marsh.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4750060,
+    "fullUnpackSize" : 4770418,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

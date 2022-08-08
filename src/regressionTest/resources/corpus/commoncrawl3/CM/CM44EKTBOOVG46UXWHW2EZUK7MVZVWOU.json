@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521430417.270119700,
+    "creationTime" : null,
+    "fileCRC" : -1594174715,
+    "fileName" : "Dodatok č.2 k stratégií CLLD.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2374924,
+    "fullUnpackSize" : 2807593,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

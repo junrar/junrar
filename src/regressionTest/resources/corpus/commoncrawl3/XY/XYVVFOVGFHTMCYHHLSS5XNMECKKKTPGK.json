@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395558784.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1699331842,
+    "fileName" : "职称级别与所需条件对照表.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 33295,
+    "fullUnpackSize" : 34747,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

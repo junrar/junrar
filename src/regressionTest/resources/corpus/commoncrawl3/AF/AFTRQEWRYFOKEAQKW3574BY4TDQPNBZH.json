@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504143845.099599200,
+    "creationTime" : null,
+    "fileCRC" : -731311500,
+    "fileName" : "印链第二版白皮书英文版.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1265558,
+    "fullUnpackSize" : 1984876,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

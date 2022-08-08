@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439363705.416189300,
+    "creationTime" : null,
+    "fileCRC" : 988833097,
+    "fileName" : "168-р-2015.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12596,
+    "fullUnpackSize" : 15255,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492743792.880888300,
+    "creationTime" : null,
+    "fileCRC" : 1755690877,
+    "fileName" : "UV510A\\UV510A系列内页.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1421465,
+    "fullUnpackSize" : 2022462,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

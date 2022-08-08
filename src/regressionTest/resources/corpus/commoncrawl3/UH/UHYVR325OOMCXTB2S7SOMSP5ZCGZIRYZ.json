@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469604902.441376900,
+    "creationTime" : null,
+    "fileCRC" : 156960524,
+    "fileName" : "relatoriofimmapaapuracaoitem.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1624,
+    "fullUnpackSize" : 7135,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469605117.955000000,
+    "creationTime" : null,
+    "fileCRC" : -1056454358,
+    "fileName" : "ATA PREGÃO 059.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5633,
+    "fullUnpackSize" : 31744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

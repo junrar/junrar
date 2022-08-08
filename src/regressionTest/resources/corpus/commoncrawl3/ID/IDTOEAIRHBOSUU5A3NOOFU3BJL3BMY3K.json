@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235662286.671875000,
+    "creationTime" : null,
+    "fileCRC" : 1675233240,
+    "fileName" : "Xone_S2_edit_.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5300486,
+    "fullUnpackSize" : 10712065,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

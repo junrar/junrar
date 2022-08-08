@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531125634.791891900,
+    "creationTime" : null,
+    "fileCRC" : -1370150283,
+    "fileName" : "汇点股票期权交易系统.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 20434137,
+    "fullUnpackSize" : 23193399,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

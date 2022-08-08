@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1115007482.000000000,
+    "creationTime" : null,
+    "fileCRC" : -37624756,
+    "fileName" : "1979_readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 696,
+    "fullUnpackSize" : 1540,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1114920250.000000000,
+    "creationTime" : null,
+    "fileCRC" : -796766596,
+    "fileName" : "1979-b.1.0.cuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 62229008,
+    "fullUnpackSize" : 62229008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

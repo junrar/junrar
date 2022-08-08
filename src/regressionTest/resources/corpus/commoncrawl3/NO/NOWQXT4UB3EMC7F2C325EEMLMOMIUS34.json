@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 927626400.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1376786341,
+    "fileName" : "ГОСТ 21.001-93.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4404,
+    "fullUnpackSize" : 17920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

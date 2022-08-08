@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225904876.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1540774390,
+    "fileName" : "Chat example.gm6",
+    "hostOS" : "win32",
+    "fullPackSize" : 174574,
+    "fullUnpackSize" : 198116,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225801980.000000000,
+    "creationTime" : null,
+    "fileCRC" : -13390527,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 203,
+    "fullUnpackSize" : 231,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

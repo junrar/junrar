@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377224750.000000000,
+    "creationTime" : null,
+    "fileCRC" : 348209450,
+    "fileName" : "formularz cenowy.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 35658,
+    "fullUnpackSize" : 58880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377577392.000000000,
+    "creationTime" : null,
+    "fileCRC" : -729699716,
+    "fileName" : "SIWZ dostawa energii elektrycznej.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 45224,
+    "fullUnpackSize" : 269824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

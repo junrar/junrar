@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391230682.343750000,
+    "creationTime" : null,
+    "fileCRC" : 1269635232,
+    "fileName" : "Iron_man_gemini_part3.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1799898,
+    "fullUnpackSize" : 2556035,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

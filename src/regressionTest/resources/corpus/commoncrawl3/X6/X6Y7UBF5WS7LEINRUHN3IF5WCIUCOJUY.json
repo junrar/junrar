@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505188272.406000000,
+    "creationTime" : null,
+    "fileCRC" : -157450761,
+    "fileName" : "07 О ходе реализации МП ЗР за июль 2017.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 23516,
+    "fullUnpackSize" : 90112,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505185149.759000000,
+    "creationTime" : null,
+    "fileCRC" : 28811956,
+    "fileName" : "август 2017.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 18628,
+    "fullUnpackSize" : 81920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510106322.904669900,
+    "creationTime" : null,
+    "fileCRC" : 252162900,
+    "fileName" : "Hellblade.Senua.Sacrifice-Blackbox - www.ihomes.ir\\setup-2.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 834378741,
+    "fullUnpackSize" : 5271171693,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

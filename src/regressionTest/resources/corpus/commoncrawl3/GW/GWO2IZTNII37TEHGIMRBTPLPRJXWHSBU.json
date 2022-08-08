@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390747621.031623900,
+    "creationTime" : null,
+    "fileCRC" : 1975956614,
+    "fileName" : "SAMP.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 7353471,
+    "fullUnpackSize" : 31178752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

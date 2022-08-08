@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1237360912.000000000,
+    "creationTime" : null,
+    "fileCRC" : -541089965,
+    "fileName" : "Цепь.mod",
+    "hostOS" : "win32",
+    "fullPackSize" : 5908,
+    "fullUnpackSize" : 66736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303663780.906250000,
+    "creationTime" : null,
+    "fileCRC" : 626899323,
+    "fileName" : "Цепь.gsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 127845,
+    "fullUnpackSize" : 2005743,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

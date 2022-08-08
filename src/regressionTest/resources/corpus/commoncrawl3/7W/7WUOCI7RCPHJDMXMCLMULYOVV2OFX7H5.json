@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248071978.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1905923718,
+    "fileName" : "UMMS_V9.1\\Minsk International Airport.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 570662,
+    "fullUnpackSize" : 719360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248071856.234375000,
+    "creationTime" : null,
+    "fileCRC" : -749089174,
+    "fileName" : "UMMS_V9.1\\Minsk International Airport.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 550280,
+    "fullUnpackSize" : 790511,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

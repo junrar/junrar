@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485030438.307234300,
+    "creationTime" : null,
+    "fileCRC" : 1134051146,
+    "fileName" : "No Konforme - Delicias de una falsa democracia\\No Konforme - 01 - Dicen.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5358180,
+    "fullUnpackSize" : 6297950,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

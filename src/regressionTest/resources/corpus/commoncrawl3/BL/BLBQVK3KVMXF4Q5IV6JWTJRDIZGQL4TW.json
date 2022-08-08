@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1106043336.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1196673658,
+    "fileName" : "БЕСПРЕДЕЛЬНОСТЬ (2).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 139597,
+    "fullUnpackSize" : 1142772,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264303416.000000000,
+    "creationTime" : null,
+    "fileCRC" : -154861043,
+    "fileName" : "Avalanche_Java_Mihandownload.Com\\Avalanche_Snowboarding_176x220.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 279904,
+    "fullUnpackSize" : 281774,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264303416.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1855902828,
+    "fileName" : "Avalanche_Java_Mihandownload.Com\\Avalanche_Snowboarding_240x320.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 842992,
+    "fullUnpackSize" : 843731,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

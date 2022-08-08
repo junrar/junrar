@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404276878.000000000,
+    "creationTime" : null,
+    "fileCRC" : -966064316,
+    "fileName" : "所有剧情文字.csv",
+    "hostOS" : "win32",
+    "fullPackSize" : 432425,
+    "fullUnpackSize" : 1367381,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

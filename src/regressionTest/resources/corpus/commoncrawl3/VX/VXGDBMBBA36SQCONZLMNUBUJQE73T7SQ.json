@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508602530.775044300,
+    "creationTime" : null,
+    "fileCRC" : -1738235336,
+    "fileName" : "AntennaMagus Professional 2017.3 v7.3.0\\AntennaMagusPro_7.3.0_DownLoadLy.iR.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1042561250,
+    "fullUnpackSize" : 1527721608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514382508.151430500,
+    "creationTime" : null,
+    "fileCRC" : 2140699061,
+    "fileName" : "Sonic_2_Delta_v026.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 1291842,
+    "fullUnpackSize" : 2097152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396246089.859375000,
+    "creationTime" : null,
+    "fileCRC" : 1487003979,
+    "fileName" : "stm edu catalog\\stm edu1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1026953,
+    "fullUnpackSize" : 1173228,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396246071.609375000,
+    "creationTime" : null,
+    "fileCRC" : 1932577883,
+    "fileName" : "stm edu catalog\\stm edu2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 185923,
+    "fullUnpackSize" : 238843,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

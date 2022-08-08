@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352183943.031250000,
+    "creationTime" : null,
+    "fileCRC" : 1667132709,
+    "fileName" : "Мищенко, Круглякова.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 297809,
+    "fullUnpackSize" : 1977118,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

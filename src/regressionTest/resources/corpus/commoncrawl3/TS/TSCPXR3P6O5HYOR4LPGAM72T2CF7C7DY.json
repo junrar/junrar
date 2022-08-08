@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357785852.877937500,
+    "creationTime" : null,
+    "fileCRC" : -728864202,
+    "fileName" : "ROCKING HORSE\\10_Lovebird.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 8373858,
+    "fullUnpackSize" : 9731242,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1157213192.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1717545368,
+    "fileName" : "1.16_ERMAK_vs_ [NMA]^Riddick^.rec",
+    "hostOS" : "win32",
+    "fullPackSize" : 7985,
+    "fullUnpackSize" : 26732,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

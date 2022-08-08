@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1338905370.000000000,
+    "creationTime" : null,
+    "fileCRC" : -509958515,
+    "fileName" : "Островский 1 Том 1. Как закалялась сталь.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 233031,
+    "fullUnpackSize" : 784700,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

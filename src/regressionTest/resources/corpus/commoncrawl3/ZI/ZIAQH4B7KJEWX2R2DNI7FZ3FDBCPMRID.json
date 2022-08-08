@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221014736.125000000,
+    "creationTime" : null,
+    "fileCRC" : 309155089,
+    "fileName" : "Мартин Кэт. Шелк и сталь.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 168757,
+    "fullUnpackSize" : 591414,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

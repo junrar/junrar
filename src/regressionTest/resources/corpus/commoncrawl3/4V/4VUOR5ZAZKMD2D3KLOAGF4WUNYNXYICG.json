@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359515016.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1166461771,
+    "fileName" : "Program-MIP-1023-8\\pubdc.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1024765,
+    "fullUnpackSize" : 1024765,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359519288.259000000,
+    "creationTime" : null,
+    "fileCRC" : -941921978,
+    "fileName" : "Program-MIP-1023-8\\UPUTSTVO PPO BDC.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 757423,
+    "fullUnpackSize" : 1019904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

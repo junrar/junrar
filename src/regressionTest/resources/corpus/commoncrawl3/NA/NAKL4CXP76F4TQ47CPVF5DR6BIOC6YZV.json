@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396196519.977961900,
+    "creationTime" : null,
+    "fileCRC" : -483655888,
+    "fileName" : "شرایط محیطی نصب و راه اندازی دستگاه  به شرح ذیل می باشد.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 9466,
+    "fullUnpackSize" : 12171,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

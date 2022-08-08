@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298383203.529068400,
+    "creationTime" : null,
+    "fileCRC" : 1835076636,
+    "fileName" : "mp_badboys\\mp_badboys.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 25582037,
+    "fullUnpackSize" : 25618295,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

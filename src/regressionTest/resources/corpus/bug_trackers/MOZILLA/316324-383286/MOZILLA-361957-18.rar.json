@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1044466674.000000000,
+    "creationTime" : null,
+    "fileCRC" : 741242486,
+    "fileName" : "CA técnica - operacion.izenpe.com_csrs.crt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1096,
+    "fullUnpackSize" : 1544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1227002860.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1767640471,
+    "fileName" : "va.izenpe.com_DEFAULT_OCSP_SIGNING_20081118.crt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1031,
+    "fullUnpackSize" : 1452,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

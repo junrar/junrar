@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477748452.412856400,
+    "creationTime" : null,
+    "fileCRC" : -1248563970,
+    "fileName" : "12.sinif-1.unite-slayti\\12-din-1.ünite.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 18093477,
+    "fullUnpackSize" : 18693551,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

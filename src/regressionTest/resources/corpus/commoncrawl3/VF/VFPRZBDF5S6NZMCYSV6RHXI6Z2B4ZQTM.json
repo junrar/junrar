@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271836802.199850100,
+    "creationTime" : null,
+    "fileCRC" : -1533927703,
+    "fileName" : "2010-7b\\Virtual Hard Disks\\2010-7b.vhd",
+    "hostOS" : "win32",
+    "fullPackSize" : 734003077,
+    "fullUnpackSize" : 14530780672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

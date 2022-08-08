@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418018906.328125000,
+    "creationTime" : null,
+    "fileCRC" : 1639582369,
+    "fileName" : "4-36-2014\\Аннотации  4-36-2014.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1005747,
+    "fullUnpackSize" : 1056708,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417883676.005234700,
+    "creationTime" : null,
+    "fileCRC" : 969373035,
+    "fileName" : "4-36-2014\\Номер 4 (36).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 997034,
+    "fullUnpackSize" : 1111650,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

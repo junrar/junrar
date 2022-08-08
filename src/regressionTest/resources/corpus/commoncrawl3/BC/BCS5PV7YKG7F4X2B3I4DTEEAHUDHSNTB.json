@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494995443.400818200,
+    "creationTime" : null,
+    "fileCRC" : 1027391827,
+    "fileName" : "ประชุม Web con DHF 17-5-60\\web con ไข้เลือดออก 170560.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 4231716,
+    "fullUnpackSize" : 5295104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

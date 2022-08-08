@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453684842.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1790390813,
+    "fileName" : "新录用公务员试用期管理办法（试行）.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5656,
+    "fullUnpackSize" : 28160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

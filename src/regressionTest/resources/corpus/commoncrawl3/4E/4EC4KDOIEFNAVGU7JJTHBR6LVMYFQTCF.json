@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516024257.641799200,
+    "creationTime" : null,
+    "fileCRC" : -251284626,
+    "fileName" : "Australian.Survivor.S03E17.Webrip.x264-MFO.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 31366,
+    "fullUnpackSize" : 81434,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516591296.644121900,
+    "creationTime" : null,
+    "fileCRC" : -1099879197,
+    "fileName" : "Survivor.au.s03e17.720p.hdtv.bf1.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 31346,
+    "fullUnpackSize" : 81434,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

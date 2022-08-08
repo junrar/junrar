@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330680712.037171000,
+    "creationTime" : null,
+    "fileCRC" : -1376115753,
+    "fileName" : "mp_ramp\\mp_ramp.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 9699006,
+    "fullUnpackSize" : 9800064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

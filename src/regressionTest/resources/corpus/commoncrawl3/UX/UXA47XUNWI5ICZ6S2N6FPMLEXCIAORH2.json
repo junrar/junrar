@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273362204.125000000,
+    "creationTime" : null,
+    "fileCRC" : 724325062,
+    "fileName" : "Селянкин О. К. Костры партизанские. Книга 2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 407977,
+    "fullUnpackSize" : 1759744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

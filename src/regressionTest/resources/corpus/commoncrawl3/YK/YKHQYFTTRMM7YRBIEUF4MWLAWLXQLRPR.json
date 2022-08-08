@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310366286.239064500,
+    "creationTime" : null,
+    "fileCRC" : -235089802,
+    "fileName" : "mp_4gf_jump\\mp_4gf_jump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 13351311,
+    "fullUnpackSize" : 13436799,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

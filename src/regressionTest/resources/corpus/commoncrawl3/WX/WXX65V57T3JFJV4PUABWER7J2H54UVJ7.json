@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195006358.226991800,
+    "creationTime" : null,
+    "fileCRC" : 411013101,
+    "fileName" : "omskaia_obl_1991_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 1479483,
+    "fullUnpackSize" : 6071687,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

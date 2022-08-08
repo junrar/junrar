@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389672817.515625000,
+    "creationTime" : null,
+    "fileCRC" : 686472000,
+    "fileName" : "План 2014-2016.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 31459,
+    "fullUnpackSize" : 184320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

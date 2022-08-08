@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357891497.688000000,
+    "creationTime" : null,
+    "fileCRC" : 892837626,
+    "fileName" : "2011.06.02 № 13.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 88130,
+    "fullUnpackSize" : 399360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337743845.394250300,
+    "creationTime" : null,
+    "fileCRC" : 240395934,
+    "fileName" : "2011.06.02 № 13.XLS",
+    "hostOS" : "win32",
+    "fullPackSize" : 16951,
+    "fullUnpackSize" : 181248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

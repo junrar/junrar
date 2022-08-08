@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535369294.621092400,
+    "creationTime" : null,
+    "fileCRC" : 652783590,
+    "fileName" : "CV 196\\CV 196.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1371526,
+    "fullUnpackSize" : 1373338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

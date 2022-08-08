@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443420813.755581900,
+    "creationTime" : null,
+    "fileCRC" : 854837846,
+    "fileName" : "ДС № 7 к ГК №2 от 17.02.2015\\Приложение к ДС № 7.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6642417,
+    "fullUnpackSize" : 8700074,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

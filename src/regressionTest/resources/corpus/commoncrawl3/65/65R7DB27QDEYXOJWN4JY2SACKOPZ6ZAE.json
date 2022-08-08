@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273030482.518953800,
+    "creationTime" : null,
+    "fileCRC" : -735486135,
+    "fileName" : "Illustrator.CS5.New.Features\\00 Introduction\\59966_00_01_MM01_intro.mov",
+    "hostOS" : "win32",
+    "fullPackSize" : 10724989,
+    "fullUnpackSize" : 10724989,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

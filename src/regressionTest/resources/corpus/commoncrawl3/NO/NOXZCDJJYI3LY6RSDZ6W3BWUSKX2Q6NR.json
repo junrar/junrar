@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526435730.213178300,
+    "creationTime" : null,
+    "fileCRC" : -112662581,
+    "fileName" : "Elementary.S06E03.Pushing.Buttons.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 28599,
+    "fullUnpackSize" : 76905,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526435730.213178300,
+    "creationTime" : null,
+    "fileCRC" : -112662581,
+    "fileName" : "Elementary.S06E03.Pushing.Buttons.720p.HDTV.X264-DIMENSION.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 28599,
+    "fullUnpackSize" : 76905,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

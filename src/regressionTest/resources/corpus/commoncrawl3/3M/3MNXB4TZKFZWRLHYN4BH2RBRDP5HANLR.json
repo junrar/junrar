@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391942890.023523100,
+    "creationTime" : null,
+    "fileCRC" : 679766874,
+    "fileName" : "Yuriko by Ginara.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 558648,
+    "fullUnpackSize" : 570700,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391524742.349647000,
+    "creationTime" : null,
+    "fileCRC" : -585618049,
+    "fileName" : "Yuriko by Ginara.sim",
+    "hostOS" : "win32",
+    "fullPackSize" : 501438,
+    "fullUnpackSize" : 520437,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

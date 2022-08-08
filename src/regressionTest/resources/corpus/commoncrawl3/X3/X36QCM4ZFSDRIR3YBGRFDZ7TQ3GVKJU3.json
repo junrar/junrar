@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1317898077.971000000,
+    "creationTime" : null,
+    "fileCRC" : 498338689,
+    "fileName" : "postanovlenie na testirovanie PAV 2011-2012.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 78704,
+    "fullUnpackSize" : 171520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

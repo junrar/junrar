@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255012865.294692400,
+    "creationTime" : null,
+    "fileCRC" : 243024372,
+    "fileName" : "blade.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 1223031,
+    "fullUnpackSize" : 3039912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

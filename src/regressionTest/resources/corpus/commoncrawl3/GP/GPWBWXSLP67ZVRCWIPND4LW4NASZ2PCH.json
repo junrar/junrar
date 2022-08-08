@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411979972.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2078110452,
+    "fileName" : "Техзадание.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 775750,
+    "fullUnpackSize" : 775750,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411700560.843000000,
+    "creationTime" : null,
+    "fileCRC" : 959668731,
+    "fileName" : "ЗАПРОС ЦЕНОВЫХ ПРЕДЛОЖЕНИЙ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 20356,
+    "fullUnpackSize" : 104448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

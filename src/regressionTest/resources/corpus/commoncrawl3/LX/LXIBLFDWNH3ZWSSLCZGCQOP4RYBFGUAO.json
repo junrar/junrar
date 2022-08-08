@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414597121.250000000,
+    "creationTime" : null,
+    "fileCRC" : -1209419934,
+    "fileName" : "Договр ТД Билдинг.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 23700,
+    "fullUnpackSize" : 27247,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

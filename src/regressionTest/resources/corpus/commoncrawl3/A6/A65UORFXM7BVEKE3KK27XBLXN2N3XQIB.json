@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1316512418.042243600,
+    "creationTime" : null,
+    "fileCRC" : 602714749,
+    "fileName" : "alpha400k_expert.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1462915,
+    "fullUnpackSize" : 1496597,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267185789.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1945607281,
+    "fileName" : "video\\beguschaya_stroka.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 544101,
+    "fullUnpackSize" : 894713,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267194666.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2140984308,
+    "fileName" : "video\\generator_slov.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 703114,
+    "fullUnpackSize" : 1232718,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

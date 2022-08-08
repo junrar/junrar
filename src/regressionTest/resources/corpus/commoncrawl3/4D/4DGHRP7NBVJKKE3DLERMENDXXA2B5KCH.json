@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417454264.476558300,
+    "creationTime" : null,
+    "fileCRC" : 1158742753,
+    "fileName" : "Sims4Krampus_JeweledMaxi.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 159129,
+    "fullUnpackSize" : 159129,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

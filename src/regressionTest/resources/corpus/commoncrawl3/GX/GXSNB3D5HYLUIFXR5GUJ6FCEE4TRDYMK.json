@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458094397.365050400,
+    "creationTime" : null,
+    "fileCRC" : 1484995082,
+    "fileName" : "Sehe_Witwe_FDP.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 23621,
+    "fullUnpackSize" : 24960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458094682.985941200,
+    "creationTime" : null,
+    "fileCRC" : -1075846460,
+    "fileName" : "Bet_fuer_eine_bei_der_AFD.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 47512,
+    "fullUnpackSize" : 49920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

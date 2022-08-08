@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1096353670.000000000,
+    "creationTime" : null,
+    "fileCRC" : -179179998,
+    "fileName" : "Нетрадиционные способы лечения пчел.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 481234,
+    "fullUnpackSize" : 606720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

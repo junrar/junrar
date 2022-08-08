@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405584603.006038000,
+    "creationTime" : null,
+    "fileCRC" : 491863639,
+    "fileName" : "Vintage trækasse.blend",
+    "hostOS" : "win32",
+    "fullPackSize" : 38372648,
+    "fullUnpackSize" : 43493496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

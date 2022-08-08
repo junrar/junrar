@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309406216.093127400,
+    "creationTime" : null,
+    "fileCRC" : 535419606,
+    "fileName" : "mp_dragonball\\mp_dragonball.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 32245146,
+    "fullUnpackSize" : 32269500,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

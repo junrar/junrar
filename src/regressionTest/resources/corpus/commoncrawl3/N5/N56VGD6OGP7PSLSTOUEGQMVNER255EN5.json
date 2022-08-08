@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520235699.233176100,
+    "creationTime" : null,
+    "fileCRC" : 212623531,
+    "fileName" : "График ремонтов Новгородэнерго на март 2018г\\Планы ремонтов ЛЭП и ЭЛТ НЭ на март 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1441921,
+    "fullUnpackSize" : 1676608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

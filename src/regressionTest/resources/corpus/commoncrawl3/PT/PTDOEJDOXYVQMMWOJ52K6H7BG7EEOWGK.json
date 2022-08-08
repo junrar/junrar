@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457069486.844004300,
+    "creationTime" : null,
+    "fileCRC" : -122145889,
+    "fileName" : "Решение № 46  .pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 307390,
+    "fullUnpackSize" : 319375,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457069418.517246100,
+    "creationTime" : null,
+    "fileCRC" : 1416688470,
+    "fileName" : "Положение к Решен №46.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 202768,
+    "fullUnpackSize" : 209350,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

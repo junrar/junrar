@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452052531.203309500,
+    "creationTime" : null,
+    "fileCRC" : -566783490,
+    "fileName" : "Шаблон плана ГЗ_ru_v51_2014 го.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 4399506,
+    "fullUnpackSize" : 55601664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

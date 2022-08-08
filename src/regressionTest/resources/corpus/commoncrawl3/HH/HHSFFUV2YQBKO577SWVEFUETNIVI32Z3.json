@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1166792268.000000000,
+    "creationTime" : null,
+    "fileCRC" : 430642412,
+    "fileName" : "posred_usl.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3764,
+    "fullUnpackSize" : 27648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

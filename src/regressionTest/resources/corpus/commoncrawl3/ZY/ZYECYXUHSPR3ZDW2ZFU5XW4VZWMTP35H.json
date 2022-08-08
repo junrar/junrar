@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204082503.515625000,
+    "creationTime" : null,
+    "fileCRC" : 1459102244,
+    "fileName" : "url",
+    "hostOS" : "win32",
+    "fullPackSize" : 51,
+    "fullUnpackSize" : 59,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136631715.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1166248441,
+    "fileName" : "Барбусы и расборы.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 688709,
+    "fullUnpackSize" : 726984,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

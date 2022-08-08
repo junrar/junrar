@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235385784.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1677896892,
+    "fileName" : "SubKick.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 681921,
+    "fullUnpackSize" : 829070,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

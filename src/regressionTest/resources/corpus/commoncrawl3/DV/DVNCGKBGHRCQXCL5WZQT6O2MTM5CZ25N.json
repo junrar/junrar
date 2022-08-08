@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291901898.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1793277180,
+    "fileName" : "5.sinif_2.unite_kelime_uretmece.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 64008,
+    "fullUnpackSize" : 72052,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

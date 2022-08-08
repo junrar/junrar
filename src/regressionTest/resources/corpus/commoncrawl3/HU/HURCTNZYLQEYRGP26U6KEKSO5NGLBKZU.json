@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479480142.046291300,
+    "creationTime" : null,
+    "fileCRC" : 300904710,
+    "fileName" : "Angela_verlaenger.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 11581,
+    "fullUnpackSize" : 12672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479480043.664120500,
+    "creationTime" : null,
+    "fileCRC" : -1887383611,
+    "fileName" : "Bei_der_Wahl_labert_der.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 24404,
+    "fullUnpackSize" : 25728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

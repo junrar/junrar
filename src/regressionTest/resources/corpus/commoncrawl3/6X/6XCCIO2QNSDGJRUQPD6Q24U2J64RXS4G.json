@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350736037.000000000,
+    "creationTime" : null,
+    "fileCRC" : 949821258,
+    "fileName" : "名表篇-手表的基础知识.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 388164,
+    "fullUnpackSize" : 426043,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

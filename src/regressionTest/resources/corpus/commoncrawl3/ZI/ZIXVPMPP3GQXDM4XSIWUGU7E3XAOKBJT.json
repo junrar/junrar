@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1332213762.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1313893494,
+    "fileName" : "Технически спесификации_обособена позиция 3\\Detaili_toploizolacya – ODZ_Ar4ar.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 336566,
+    "fullUnpackSize" : 378309,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329721096.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1820051520,
+    "fileName" : "Технически спесификации_обособена позиция 3\\Д-МА ОДЗ АРЧАР.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1473297,
+    "fullUnpackSize" : 1791934,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

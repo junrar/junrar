@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464108020.417421700,
+    "creationTime" : null,
+    "fileCRC" : 1655688495,
+    "fileName" : "PI.6.6.Reatil\\32bit.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2943101,
+    "fullUnpackSize" : 2976072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

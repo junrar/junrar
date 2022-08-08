@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528154277.497040100,
+    "creationTime" : null,
+    "fileCRC" : 8592960,
+    "fileName" : "fear the walking dead 407.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11460,
+    "fullUnpackSize" : 29932,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

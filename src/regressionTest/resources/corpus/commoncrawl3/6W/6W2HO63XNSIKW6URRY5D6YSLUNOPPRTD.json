@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1315809348.000000000,
+    "creationTime" : null,
+    "fileCRC" : -358134794,
+    "fileName" : "VLXD_BACLIEU_30082011.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1195701,
+    "fullUnpackSize" : 1363871,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493021651.220803100,
+    "creationTime" : null,
+    "fileCRC" : -559543800,
+    "fileName" : "แผนเขต 60\\ปกแผน 60.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 269654,
+    "fullUnpackSize" : 288430,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493021951.650562100,
+    "creationTime" : null,
+    "fileCRC" : -38377203,
+    "fileName" : "แผนเขต 60\\แผนเขค 60 .pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3263043,
+    "fullUnpackSize" : 3695704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

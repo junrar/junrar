@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466487994.795192600,
+    "creationTime" : null,
+    "fileCRC" : 1576464838,
+    "fileName" : "приказ АО НМЗ 76-2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1713876,
+    "fullUnpackSize" : 2111699,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348496952.000000000,
+    "creationTime" : null,
+    "fileCRC" : -776780383,
+    "fileName" : "Искусство XIX в\\iskusstvo19_veka.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 3727303,
+    "fullUnpackSize" : 4014592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

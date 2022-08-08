@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286689140.000000000,
+    "creationTime" : null,
+    "fileCRC" : 757645220,
+    "fileName" : "Forefront UAG_TDM - TR - CR.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2657145,
+    "fullUnpackSize" : 2807586,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495789941.911800200,
+    "creationTime" : null,
+    "fileCRC" : -709246511,
+    "fileName" : "отзыв-дис-Асланиди_КБ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2191575,
+    "fullUnpackSize" : 2362067,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

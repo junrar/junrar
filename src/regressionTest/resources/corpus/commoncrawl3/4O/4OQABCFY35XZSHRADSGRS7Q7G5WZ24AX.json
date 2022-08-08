@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478869710.200796300,
+    "creationTime" : null,
+    "fileCRC" : 76547429,
+    "fileName" : "Triângulo Jota - PT0013 - O Rei Lagarto\\000.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 904493,
+    "fullUnpackSize" : 929503,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478393861.081296500,
+    "creationTime" : null,
+    "fileCRC" : -1557848846,
+    "fileName" : "Triângulo Jota - PT0013 - O Rei Lagarto\\001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 663071,
+    "fullUnpackSize" : 663672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

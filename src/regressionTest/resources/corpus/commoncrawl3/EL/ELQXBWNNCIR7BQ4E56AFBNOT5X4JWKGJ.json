@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1157360706.000000000,
+    "creationTime" : null,
+    "fileCRC" : -450223254,
+    "fileName" : "starline_a6.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 454736,
+    "fullUnpackSize" : 653167,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

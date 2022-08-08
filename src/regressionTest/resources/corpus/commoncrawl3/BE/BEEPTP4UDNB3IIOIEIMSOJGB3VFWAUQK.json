@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411531565.606234900,
+    "creationTime" : null,
+    "fileCRC" : -808998595,
+    "fileName" : "Бухгалтерская (финансовая) отчетность 2012.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 19116885,
+    "fullUnpackSize" : 19116885,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

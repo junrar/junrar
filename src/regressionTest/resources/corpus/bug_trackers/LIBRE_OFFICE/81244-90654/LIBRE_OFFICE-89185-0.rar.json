@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423225299.549550200,
+    "creationTime" : null,
+    "fileCRC" : 537168037,
+    "fileName" : "dia_029 pp.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 225910,
+    "fullUnpackSize" : 248004,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423225357.022051200,
+    "creationTime" : null,
+    "fileCRC" : 1348952037,
+    "fileName" : "dia_029.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 319345,
+    "fullUnpackSize" : 329825,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

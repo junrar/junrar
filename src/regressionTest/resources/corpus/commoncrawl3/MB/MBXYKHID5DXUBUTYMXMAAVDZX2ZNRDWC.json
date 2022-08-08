@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414500961.462046600,
+    "creationTime" : null,
+    "fileCRC" : -876073299,
+    "fileName" : "[Sintiklia]-Glossy nails.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 459424,
+    "fullUnpackSize" : 471905,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

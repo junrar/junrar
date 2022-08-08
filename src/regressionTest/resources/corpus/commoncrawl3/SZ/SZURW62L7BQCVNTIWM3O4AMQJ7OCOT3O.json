@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327472005.656250000,
+    "creationTime" : null,
+    "fileCRC" : 1458479523,
+    "fileName" : "Poster CONAMA_GOB CANTABRIA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2823796,
+    "fullUnpackSize" : 3247235,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

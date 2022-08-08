@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507544000.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2080375887,
+    "fileName" : "Аннотация рабочей программы педагога-психолога.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 201331,
+    "fullUnpackSize" : 210138,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359985146.000000000,
+    "creationTime" : null,
+    "fileCRC" : 212778604,
+    "fileName" : "13_Charlene I ve Never Been To Me.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3582517,
+    "fullUnpackSize" : 3634700,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412239502.388345200,
+    "creationTime" : null,
+    "fileCRC" : 1163473969,
+    "fileName" : "logo_KAPELLA.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 271046,
+    "fullUnpackSize" : 644678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412239519.890622800,
+    "creationTime" : null,
+    "fileCRC" : -1542745757,
+    "fileName" : "logo_KAPELLA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 231455,
+    "fullUnpackSize" : 303120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

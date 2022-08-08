@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363953667.934631100,
+    "creationTime" : null,
+    "fileCRC" : -613235098,
+    "fileName" : "Длина отрезка.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 105340,
+    "fullUnpackSize" : 312320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426583092.825665300,
+    "creationTime" : null,
+    "fileCRC" : 1152564249,
+    "fileName" : "tuetevorne.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 202926,
+    "fullUnpackSize" : 203384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427018950.517658500,
+    "creationTime" : null,
+    "fileCRC" : -1704234057,
+    "fileName" : "01.Deutsch.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5193303,
+    "fullUnpackSize" : 5964504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

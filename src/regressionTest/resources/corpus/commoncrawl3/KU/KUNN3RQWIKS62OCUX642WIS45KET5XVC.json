@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371175638.013280200,
+    "creationTime" : null,
+    "fileCRC" : -1271290107,
+    "fileName" : "Біль янголів.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 12213510,
+    "fullUnpackSize" : 12453403,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314363162.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1489387798,
+    "fileName" : "14 Руслан Мельников - Муранча.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 316369,
+    "fullUnpackSize" : 994789,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

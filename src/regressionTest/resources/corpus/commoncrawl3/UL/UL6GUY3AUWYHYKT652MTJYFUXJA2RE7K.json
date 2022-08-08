@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293537537.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2105825306,
+    "fileName" : "012-017_Duka-Predgovor.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 672073,
+    "fullUnpackSize" : 702798,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293538756.000000000,
+    "creationTime" : null,
+    "fileCRC" : -478822442,
+    "fileName" : "A_povijest\\018-019_uvod.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 385299,
+    "fullUnpackSize" : 390197,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

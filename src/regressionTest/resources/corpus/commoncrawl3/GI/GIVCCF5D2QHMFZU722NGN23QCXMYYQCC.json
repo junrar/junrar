@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362969814.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2046790281,
+    "fileName" : "5. Псалтирь-Песнь песней\\19_Psalms\\001.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 858249,
+    "fullUnpackSize" : 905448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362969816.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1013379251,
+    "fileName" : "5. Псалтирь-Песнь песней\\19_Psalms\\002.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1432256,
+    "fullUnpackSize" : 1451198,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

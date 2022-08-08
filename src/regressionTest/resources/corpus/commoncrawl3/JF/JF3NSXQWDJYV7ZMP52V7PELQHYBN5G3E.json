@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505958012.000000000,
+    "creationTime" : null,
+    "fileCRC" : -388536436,
+    "fileName" : "2016年泰安市食品药品食品监督管理局决算公开.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 325124,
+    "fullUnpackSize" : 359034,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180313507.985125000,
+    "creationTime" : null,
+    "fileCRC" : 550944167,
+    "fileName" : "JAVA emul\\java.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 30122,
+    "fullUnpackSize" : 33081,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1134923900.000000000,
+    "creationTime" : null,
+    "fileCRC" : 111778053,
+    "fileName" : "JAVA emul\\MidpX.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1790464,
+    "fullUnpackSize" : 1814487,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

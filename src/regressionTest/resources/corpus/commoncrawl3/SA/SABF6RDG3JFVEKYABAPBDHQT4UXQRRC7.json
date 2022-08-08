@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455929351.652146700,
+    "creationTime" : null,
+    "fileCRC" : 188491562,
+    "fileName" : "Brooklyn.2015.BRRip.XViD-ETRG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 34732,
+    "fullUnpackSize" : 97038,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455956464.344056700,
+    "creationTime" : null,
+    "fileCRC" : 1857449306,
+    "fileName" : "Brooklyn.2015.BRRip.XViD-ETRG.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 57490,
+    "fullUnpackSize" : 57745,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

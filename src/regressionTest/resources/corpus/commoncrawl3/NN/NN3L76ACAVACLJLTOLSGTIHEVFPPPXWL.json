@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1253064734.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1703349049,
+    "fileName" : "решение 26.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 54825,
+    "fullUnpackSize" : 280576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

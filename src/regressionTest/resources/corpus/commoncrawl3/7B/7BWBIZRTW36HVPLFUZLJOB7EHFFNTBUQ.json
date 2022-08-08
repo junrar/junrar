@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425018055.315750200,
+    "creationTime" : null,
+    "fileCRC" : -67273488,
+    "fileName" : "CasaCor 2014.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 111764341,
+    "fullUnpackSize" : 115934777,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

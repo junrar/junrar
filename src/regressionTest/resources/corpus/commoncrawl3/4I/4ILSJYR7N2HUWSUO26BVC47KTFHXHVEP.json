@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517384126.032422700,
+    "creationTime" : null,
+    "fileCRC" : 1176643922,
+    "fileName" : "Bahan Asistensi SIRUP 2018\\Asistensi SIRUP 2018.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 963153,
+    "fullUnpackSize" : 1559552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517384206.990053200,
+    "creationTime" : null,
+    "fileCRC" : 1493172642,
+    "fileName" : "Bahan Asistensi SIRUP 2018\\Pengembangan Aplikasi SiRUP versi 2.2 EDIT.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1648990,
+    "fullUnpackSize" : 3545600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

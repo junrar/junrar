@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296104095.027117400,
+    "creationTime" : null,
+    "fileCRC" : 578270852,
+    "fileName" : "Transformers - Prime 04 (of 04) (2011) (SEGoat-DCP)\\tf_prime_04_01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 630509,
+    "fullUnpackSize" : 644924,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296104624.046117400,
+    "creationTime" : null,
+    "fileCRC" : 995821196,
+    "fileName" : "Transformers - Prime 04 (of 04) (2011) (SEGoat-DCP)\\tf_prime_04_02.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 613124,
+    "fullUnpackSize" : 634845,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

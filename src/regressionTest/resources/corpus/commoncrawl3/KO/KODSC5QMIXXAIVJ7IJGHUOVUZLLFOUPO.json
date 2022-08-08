@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1209344700.000000000,
+    "creationTime" : null,
+    "fileCRC" : -827360140,
+    "fileName" : "dsp2024_virtualizer_pro_protsessor_effektov.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2658955,
+    "fullUnpackSize" : 4398097,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160453642.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2035940865,
+    "fileName" : "Кодекс законов о труде Украины. Научно-практический комментарий. Под ред. И.Н. Пахомова.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 303874,
+    "fullUnpackSize" : 2795520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

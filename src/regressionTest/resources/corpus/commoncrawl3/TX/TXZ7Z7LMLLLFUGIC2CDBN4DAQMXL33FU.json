@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387175617.984375000,
+    "creationTime" : null,
+    "fileCRC" : -1212609372,
+    "fileName" : "2013年第12期（总第80期）.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 7124141,
+    "fullUnpackSize" : 8733088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

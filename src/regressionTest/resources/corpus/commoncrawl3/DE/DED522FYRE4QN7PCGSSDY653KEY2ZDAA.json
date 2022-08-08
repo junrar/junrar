@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235095300.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2052113476,
+    "fileName" : "andromeda281071.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 124273003,
+    "fullUnpackSize" : 125827420,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

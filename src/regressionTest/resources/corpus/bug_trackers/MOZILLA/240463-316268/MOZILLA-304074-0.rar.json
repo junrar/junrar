@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1123738085.453125000,
+    "creationTime" : null,
+    "fileCRC" : 1047017066,
+    "fileName" : "Regmon.LOG",
+    "hostOS" : "win32",
+    "fullPackSize" : 20572,
+    "fullUnpackSize" : 379881,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

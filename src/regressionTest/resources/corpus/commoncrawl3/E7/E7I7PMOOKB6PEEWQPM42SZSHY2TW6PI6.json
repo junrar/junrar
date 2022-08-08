@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1263178925.187500000,
+    "creationTime" : null,
+    "fileCRC" : -824289331,
+    "fileName" : "Монк Карин. Orphan - 4. Твое нежное слово.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 165013,
+    "fullUnpackSize" : 563155,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

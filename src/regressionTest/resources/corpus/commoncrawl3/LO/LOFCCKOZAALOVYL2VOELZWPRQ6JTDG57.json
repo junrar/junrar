@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412843557.317000000,
+    "creationTime" : null,
+    "fileCRC" : -2120207421,
+    "fileName" : "Презентация Учебного Центра ТехноСофт.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 3774510,
+    "fullUnpackSize" : 38406656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

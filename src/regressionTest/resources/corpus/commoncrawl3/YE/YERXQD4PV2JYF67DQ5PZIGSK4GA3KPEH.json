@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160361120.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1188857426,
+    "fileName" : "80-RPS Momtchilgrad\\Assessment\\80-RPS Momchilgrad-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4903144,
+    "fullUnpackSize" : 5221376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

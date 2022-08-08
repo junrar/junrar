@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388987607.674424000,
+    "creationTime" : null,
+    "fileCRC" : 623540451,
+    "fileName" : "Mitarbeiter Wochenrapport.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 36576,
+    "fullUnpackSize" : 41595,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384747369.313401000,
+    "creationTime" : null,
+    "fileCRC" : -150371972,
+    "fileName" : "Mitarbeiter Wochenrapport.xltm",
+    "hostOS" : "win32",
+    "fullPackSize" : 40368,
+    "fullUnpackSize" : 45568,
+    "isSolid" : true,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

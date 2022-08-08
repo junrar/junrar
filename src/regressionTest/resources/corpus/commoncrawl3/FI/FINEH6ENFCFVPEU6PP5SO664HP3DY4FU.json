@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1121156178.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1561906107,
+    "fileName" : "VOLKOD-1.TXT",
+    "hostOS" : "win32",
+    "fullPackSize" : 335535,
+    "fullUnpackSize" : 1178878,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

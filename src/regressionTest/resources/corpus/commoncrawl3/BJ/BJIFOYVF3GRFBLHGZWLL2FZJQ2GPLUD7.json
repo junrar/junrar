@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196040200.934114500,
+    "creationTime" : null,
+    "fileCRC" : -1370801514,
+    "fileName" : "kirgizskaia_ssr_1957_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4149794,
+    "fullUnpackSize" : 4149794,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

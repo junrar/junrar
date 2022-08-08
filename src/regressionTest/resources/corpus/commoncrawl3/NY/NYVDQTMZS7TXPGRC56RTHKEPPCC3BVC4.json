@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385436940.000000000,
+    "creationTime" : null,
+    "fileCRC" : -570785691,
+    "fileName" : "График на декабрь 2013 ЦУС Архэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 126911,
+    "fullUnpackSize" : 169517,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1386226516.000000000,
+    "creationTime" : null,
+    "fileCRC" : -15662281,
+    "fileName" : "График ремонта Колэнерго на 12.2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2266712,
+    "fullUnpackSize" : 3182961,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

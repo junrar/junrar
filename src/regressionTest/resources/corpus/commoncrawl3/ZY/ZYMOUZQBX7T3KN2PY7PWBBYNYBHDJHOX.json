@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299308246.146954600,
+    "creationTime" : null,
+    "fileCRC" : -1123018908,
+    "fileName" : "720p info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 75,
+    "fullUnpackSize" : 75,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304153793.840617700,
+    "creationTime" : null,
+    "fileCRC" : -1633844886,
+    "fileName" : "supernatural.s06e19.hdtv.xvid-2hd.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17792,
+    "fullUnpackSize" : 43069,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

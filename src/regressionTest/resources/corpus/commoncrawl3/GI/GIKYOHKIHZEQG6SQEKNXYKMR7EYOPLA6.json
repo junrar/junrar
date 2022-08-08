@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512590148.000000000,
+    "creationTime" : null,
+    "fileCRC" : -364923342,
+    "fileName" : "สรุปการดำเนินการจัดซื้อจัดจ้างระหว่างเดือนตุลาคม 2559 - มกราคม 2560.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 254098,
+    "fullUnpackSize" : 282889,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

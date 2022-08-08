@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1224635377.593750000,
+    "creationTime" : null,
+    "fileCRC" : 1394031008,
+    "fileName" : "Блок Лоуренс. Такие люди опасны.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 115491,
+    "fullUnpackSize" : 335671,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

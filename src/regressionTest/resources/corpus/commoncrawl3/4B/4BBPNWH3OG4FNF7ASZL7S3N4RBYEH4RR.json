@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 957159338.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1012664036,
+    "fileName" : "2000-05-01 01-35-36 ب.ظ_0026.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 548475,
+    "fullUnpackSize" : 697398,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 957159396.000000000,
+    "creationTime" : null,
+    "fileCRC" : 548545417,
+    "fileName" : "2000-05-01 01-36-34 ب.ظ_0027.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 576676,
+    "fullUnpackSize" : 745288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

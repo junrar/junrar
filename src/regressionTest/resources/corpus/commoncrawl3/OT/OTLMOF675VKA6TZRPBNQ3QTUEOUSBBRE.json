@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470373435.790277200,
+    "creationTime" : null,
+    "fileCRC" : -1550522535,
+    "fileName" : "ВИЖ№8\\Blok_8.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 824520,
+    "fullUnpackSize" : 843597,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470374226.586000000,
+    "creationTime" : null,
+    "fileCRC" : -721613238,
+    "fileName" : "ВИЖ№8\\color_blok_8_16.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 13292180,
+    "fullUnpackSize" : 13513175,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

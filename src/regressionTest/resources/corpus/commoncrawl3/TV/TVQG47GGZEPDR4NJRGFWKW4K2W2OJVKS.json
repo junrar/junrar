@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1104649482.000000000,
+    "creationTime" : null,
+    "fileCRC" : 65242112,
+    "fileName" : "极点五笔4.1豪华版\\Freewb.41Final.Full.Pack.4.2005.01.01.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6060644,
+    "fullUnpackSize" : 6070369,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

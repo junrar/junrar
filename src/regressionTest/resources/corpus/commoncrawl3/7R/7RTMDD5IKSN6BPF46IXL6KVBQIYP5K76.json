@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1218767132.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1080308169,
+    "fileName" : "lexicon_alpha_rus.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 722255,
+    "fullUnpackSize" : 772731,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

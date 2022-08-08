@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410709266.076676000,
+    "creationTime" : null,
+    "fileCRC" : 1616660512,
+    "fileName" : "Steffys Non Default Eyeshadow.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 2396519,
+    "fullUnpackSize" : 4769161,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395725010.000000000,
+    "creationTime" : null,
+    "fileCRC" : -408316856,
+    "fileName" : "Rekap Kec. Meurah Mulia Pendanaan TA 2014.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 137279,
+    "fullUnpackSize" : 226276,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

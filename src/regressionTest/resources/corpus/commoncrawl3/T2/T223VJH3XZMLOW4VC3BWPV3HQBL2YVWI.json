@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1284473780.000000000,
+    "creationTime" : null,
+    "fileCRC" : -594152334,
+    "fileName" : "talmud\\Arachin.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 584263,
+    "fullUnpackSize" : 656016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1284473782.000000000,
+    "creationTime" : null,
+    "fileCRC" : 182551404,
+    "fileName" : "talmud\\Avodah_Zarah.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 566314,
+    "fullUnpackSize" : 620802,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

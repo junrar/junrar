@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526633606.382717100,
+    "creationTime" : null,
+    "fileCRC" : 1000950160,
+    "fileName" : "19-5-2018.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 5402748,
+    "fullUnpackSize" : 17197845,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

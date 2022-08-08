@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277363388.703000000,
+    "creationTime" : null,
+    "fileCRC" : 1339365259,
+    "fileName" : "консол(317)-май.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 188735,
+    "fullUnpackSize" : 863744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277363532.374000000,
+    "creationTime" : null,
+    "fileCRC" : 1001964609,
+    "fileName" : "консол(387)-май.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 65406,
+    "fullUnpackSize" : 221696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

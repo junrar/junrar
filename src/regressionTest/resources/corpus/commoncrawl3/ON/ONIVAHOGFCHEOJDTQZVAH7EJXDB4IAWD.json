@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528080364.000000000,
+    "creationTime" : null,
+    "fileCRC" : 983186920,
+    "fileName" : "รายงานการประชุม\\ครั้งที่1-60.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 856612,
+    "fullUnpackSize" : 1165943,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528080388.000000000,
+    "creationTime" : null,
+    "fileCRC" : -78708953,
+    "fileName" : "รายงานการประชุม\\ครั้งที่2-60.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 873893,
+    "fullUnpackSize" : 1185472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

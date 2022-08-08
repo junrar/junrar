@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196494178.906000000,
+    "creationTime" : null,
+    "fileCRC" : 1540860814,
+    "fileName" : "Remock.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 813034,
+    "fullUnpackSize" : 872448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

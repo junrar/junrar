@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1270002000.000000000,
+    "creationTime" : null,
+    "fileCRC" : 840158880,
+    "fileName" : "ege_2006.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 96973,
+    "fullUnpackSize" : 820224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

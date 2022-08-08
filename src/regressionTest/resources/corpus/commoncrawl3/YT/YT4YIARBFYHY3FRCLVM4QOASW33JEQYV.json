@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290746892.203125000,
+    "creationTime" : null,
+    "fileCRC" : -25981193,
+    "fileName" : "2003\\_2003_gmmeslekiyeterliliksinavi1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 980491,
+    "fullUnpackSize" : 1213440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290746899.593750000,
+    "creationTime" : null,
+    "fileCRC" : -1978175072,
+    "fileName" : "2003\\_2003_gmmeslekiyeterliliksinavi2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 429467,
+    "fullUnpackSize" : 504832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

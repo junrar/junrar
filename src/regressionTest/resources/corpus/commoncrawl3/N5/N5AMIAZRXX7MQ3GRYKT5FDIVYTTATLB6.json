@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472700066.575827000,
+    "creationTime" : null,
+    "fileCRC" : 875053591,
+    "fileName" : "Коннова\\Коннова декл 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 566787,
+    "fullUnpackSize" : 662561,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472691343.923268600,
+    "creationTime" : null,
+    "fileCRC" : 375747342,
+    "fileName" : "Коннова\\Коннова декл 10.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 812756,
+    "fullUnpackSize" : 912500,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

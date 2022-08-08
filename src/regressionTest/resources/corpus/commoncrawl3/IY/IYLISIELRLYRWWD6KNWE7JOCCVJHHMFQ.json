@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526890265.942930400,
+    "creationTime" : null,
+    "fileCRC" : 1503774873,
+    "fileName" : "58\\1-58.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 784088,
+    "fullUnpackSize" : 1081505,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526891849.617511400,
+    "creationTime" : null,
+    "fileCRC" : 1320656693,
+    "fileName" : "58\\2-58.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 966315,
+    "fullUnpackSize" : 1368705,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

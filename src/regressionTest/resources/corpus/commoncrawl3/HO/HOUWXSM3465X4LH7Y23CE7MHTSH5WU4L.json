@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508376672.015000000,
+    "creationTime" : null,
+    "fileCRC" : -452600004,
+    "fileName" : "Mau NCS.1-4-Dang ky du tuyen NCS.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 18694,
+    "fullUnpackSize" : 82432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503986127.921052400,
+    "creationTime" : null,
+    "fileCRC" : 1139528407,
+    "fileName" : "Mau NCS-5- Dang ký NCS-cho ngươi Nuoc ngoai.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 23389,
+    "fullUnpackSize" : 126976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

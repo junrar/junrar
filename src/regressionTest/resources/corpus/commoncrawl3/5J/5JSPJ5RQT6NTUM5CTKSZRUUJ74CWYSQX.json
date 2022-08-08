@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486542584.505750900,
+    "creationTime" : null,
+    "fileCRC" : -1840781683,
+    "fileName" : "МРСК СЗ отчет за 4 квартал 2016 приложения 20-23 к 14.02.2017.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2059084,
+    "fullUnpackSize" : 2581308,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

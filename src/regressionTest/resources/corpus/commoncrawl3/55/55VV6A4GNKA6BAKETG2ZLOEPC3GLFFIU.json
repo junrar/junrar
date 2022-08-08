@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393045480.306783600,
+    "creationTime" : null,
+    "fileCRC" : -326469809,
+    "fileName" : "konkoori.blog.ir.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9067681,
+    "fullUnpackSize" : 11104686,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266299562.703125000,
+    "creationTime" : null,
+    "fileCRC" : 1452910234,
+    "fileName" : "79536.sw1",
+    "hostOS" : "win32",
+    "fullPackSize" : 8370451,
+    "fullUnpackSize" : 8551035,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

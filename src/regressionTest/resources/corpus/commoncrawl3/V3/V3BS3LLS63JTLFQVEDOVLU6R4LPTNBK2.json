@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508205181.341000000,
+    "creationTime" : null,
+    "fileCRC" : 769980117,
+    "fileName" : "Программа Патриот 2017-2018.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 424018,
+    "fullUnpackSize" : 751104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508205010.068000000,
+    "creationTime" : null,
+    "fileCRC" : -952016044,
+    "fileName" : "Программа Экскурсовод-краевед 2017-2018.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 429470,
+    "fullUnpackSize" : 653824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511521712.736787300,
+    "creationTime" : null,
+    "fileCRC" : 1739959689,
+    "fileName" : "mto_greencave_fykseN_0229.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 2197260,
+    "fullUnpackSize" : 10089080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

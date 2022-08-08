@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1451459158.741069900,
+    "creationTime" : null,
+    "fileCRC" : -394726988,
+    "fileName" : "Setup CMS Vision v.3.18.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 51159900,
+    "fullUnpackSize" : 51458797,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

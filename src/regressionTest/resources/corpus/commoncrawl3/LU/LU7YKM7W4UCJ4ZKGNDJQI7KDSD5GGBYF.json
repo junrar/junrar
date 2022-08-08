@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470158959.752000000,
+    "creationTime" : null,
+    "fileCRC" : 192403539,
+    "fileName" : "Gullivers Travels - Penguin Kids [www.liber.ir].mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 14637504,
+    "fullUnpackSize" : 21046545,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

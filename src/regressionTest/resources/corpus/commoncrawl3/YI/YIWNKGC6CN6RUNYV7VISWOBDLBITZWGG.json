@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489191487.212976000,
+    "creationTime" : null,
+    "fileCRC" : 202360479,
+    "fileName" : "WhatsApp.For.Windows.v0.2.3699.x86_Lorddownload.com\\WhatsApp For Windows v0.2.3699 x86.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 82217827,
+    "fullUnpackSize" : 82428176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

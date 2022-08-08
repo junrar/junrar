@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389791041.000000000,
+    "creationTime" : null,
+    "fileCRC" : -815083611,
+    "fileName" : "angular-0.10.2.min.js",
+    "hostOS" : "unix",
+    "fullPackSize" : 24250,
+    "fullUnpackSize" : 71206,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

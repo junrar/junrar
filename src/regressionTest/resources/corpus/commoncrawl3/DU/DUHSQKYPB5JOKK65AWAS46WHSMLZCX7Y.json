@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363325886.000000000,
+    "creationTime" : null,
+    "fileCRC" : -606811567,
+    "fileName" : "апрель\\План ремонтов ЛЭП и СРЗА на апрель Новгородэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2694332,
+    "fullUnpackSize" : 2917885,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

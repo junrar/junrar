@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364105466.549000000,
+    "creationTime" : null,
+    "fileCRC" : -1947953782,
+    "fileName" : "Razbitoe_serdce.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 121542,
+    "fullUnpackSize" : 402944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

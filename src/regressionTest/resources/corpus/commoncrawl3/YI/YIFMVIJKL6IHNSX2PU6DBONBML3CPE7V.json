@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516712092.260455900,
+    "creationTime" : null,
+    "fileCRC" : -1628450629,
+    "fileName" : "Zrebki drewniane.cdp",
+    "hostOS" : "win32",
+    "fullPackSize" : 224273,
+    "fullUnpackSize" : 1255923,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

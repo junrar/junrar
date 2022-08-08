@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403855991.013460900,
+    "creationTime" : null,
+    "fileCRC" : 1530570039,
+    "fileName" : "Fizik-Farrokh-[www.konkur.in]\\Fizik-Farrokh-[www.konkur.in].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1448624,
+    "fullUnpackSize" : 1614846,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

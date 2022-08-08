@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223382811.640625000,
+    "creationTime" : null,
+    "fileCRC" : -498877960,
+    "fileName" : "Murder.On.The.Orient.Express.1974.WS.DVDRip.XViD-BTSFilms.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 38111,
+    "fullUnpackSize" : 101158,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312862749.274414000,
+    "creationTime" : null,
+    "fileCRC" : 62885035,
+    "fileName" : "[isoHunt] Murder.On.The.Orient.Express.1974.WS.DVDRip.XViD-BTSFilms.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 17135,
+    "fullUnpackSize" : 17552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

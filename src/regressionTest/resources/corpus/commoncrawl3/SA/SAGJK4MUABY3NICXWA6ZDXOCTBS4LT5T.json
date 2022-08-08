@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180690198.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1050333125,
+    "fileName" : "imola2001.wad",
+    "hostOS" : "win32",
+    "fullPackSize" : 7254259,
+    "fullUnpackSize" : 18810497,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

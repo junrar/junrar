@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369666390.325610700,
+    "creationTime" : null,
+    "fileCRC" : -1882839604,
+    "fileName" : "Isle Of Skye.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9192867,
+    "fullUnpackSize" : 9759033,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

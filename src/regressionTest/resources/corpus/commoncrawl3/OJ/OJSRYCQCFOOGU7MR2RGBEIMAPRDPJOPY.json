@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297184186.991355300,
+    "creationTime" : null,
+    "fileCRC" : 1010332167,
+    "fileName" : "pobedit.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1053296,
+    "fullUnpackSize" : 1070368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

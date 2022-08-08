@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459233509.687500000,
+    "creationTime" : null,
+    "fileCRC" : 1120070759,
+    "fileName" : "А.В.Столяров Программирование введение в профессию. Том 1 азы программирования.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3221155,
+    "fullUnpackSize" : 3523145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425427981.147168600,
+    "creationTime" : null,
+    "fileCRC" : -63208279,
+    "fileName" : "Lynda.Toon.Boom.Animate.And.Harmony.Essential.Training.Full.www.fileniko.com\\Exercise Files\\Exercise Files.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 98273203,
+    "fullUnpackSize" : 314516476,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

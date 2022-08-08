@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160125140.000000000,
+    "creationTime" : null,
+    "fileCRC" : 744890540,
+    "fileName" : "34-RPS Yablanitza\\Assessment\\34-RPS Yablanitsa-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3158701,
+    "fullUnpackSize" : 3448320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

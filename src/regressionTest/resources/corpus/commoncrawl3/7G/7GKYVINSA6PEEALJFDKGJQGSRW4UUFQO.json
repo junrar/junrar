@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194582076.060669300,
+    "creationTime" : null,
+    "fileCRC" : 513772911,
+    "fileName" : "mariiskaia_assr_1955_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599894,
+    "fullUnpackSize" : 9232333,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

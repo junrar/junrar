@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481523122.071287300,
+    "creationTime" : null,
+    "fileCRC" : 615102011,
+    "fileName" : "Zápisnica 19.OZ - 30.11.2016.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2269451,
+    "fullUnpackSize" : 3833887,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

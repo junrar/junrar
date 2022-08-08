@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472621169.370724300,
+    "creationTime" : null,
+    "fileCRC" : 1179853274,
+    "fileName" : "сентябрь\\график на сентябрь 2016 Архэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1371184,
+    "fullUnpackSize" : 1770781,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

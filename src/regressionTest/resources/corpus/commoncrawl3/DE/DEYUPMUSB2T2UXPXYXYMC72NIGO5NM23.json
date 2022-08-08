@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303189210.718750000,
+    "creationTime" : null,
+    "fileCRC" : -1007656029,
+    "fileName" : "print\\europa_1600.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1903453,
+    "fullUnpackSize" : 1919143,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

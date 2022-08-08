@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1212115456.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1361879924,
+    "fileName" : "3.006.1-5 Тоннели из монолитного ж-б\\3.006.1-5 в.0 Тоннели из монолитного ж-б.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 3915799,
+    "fullUnpackSize" : 3915799,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

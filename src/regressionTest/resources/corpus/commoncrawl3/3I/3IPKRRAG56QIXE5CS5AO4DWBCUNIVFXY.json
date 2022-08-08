@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415585424.000000000,
+    "creationTime" : null,
+    "fileCRC" : -619544908,
+    "fileName" : "ImagensKitARTDuflex\\Removedor - KIT-ARTCYANN.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1300901,
+    "fullUnpackSize" : 1322163,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

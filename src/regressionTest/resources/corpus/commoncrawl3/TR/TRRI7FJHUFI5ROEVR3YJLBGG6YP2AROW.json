@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418625995.986809400,
+    "creationTime" : null,
+    "fileCRC" : -370249825,
+    "fileName" : "Obrazci_1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 38154,
+    "fullUnpackSize" : 113152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418625995.314934400,
+    "creationTime" : null,
+    "fileCRC" : 1786888720,
+    "fileName" : "publichna_pokana_5.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1744304,
+    "fullUnpackSize" : 2186782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

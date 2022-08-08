@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431422104.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1910037285,
+    "fileName" : "UL115B.skp",
+    "hostOS" : "win32",
+    "fullPackSize" : 67731,
+    "fullUnpackSize" : 128887,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

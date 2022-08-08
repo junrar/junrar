@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351054310.157226600,
+    "creationTime" : null,
+    "fileCRC" : -815744021,
+    "fileName" : "DECLARATIE DE AVERE - REFERENT - DUCA RODICA.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 781294,
+    "fullUnpackSize" : 901364,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351053958.942382800,
+    "creationTime" : null,
+    "fileCRC" : 1333443204,
+    "fileName" : "DECLARATIE DE AVERE - REFERENT - DUCA RODICA1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 396029,
+    "fullUnpackSize" : 477086,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

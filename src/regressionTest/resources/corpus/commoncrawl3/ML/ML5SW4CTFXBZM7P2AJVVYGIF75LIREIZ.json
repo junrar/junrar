@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526891659.718649800,
+    "creationTime" : null,
+    "fileCRC" : 1406016430,
+    "fileName" : "60\\1-60.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1141863,
+    "fullUnpackSize" : 1611794,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

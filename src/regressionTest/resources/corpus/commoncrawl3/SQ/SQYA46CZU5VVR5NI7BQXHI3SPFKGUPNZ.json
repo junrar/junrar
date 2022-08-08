@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528681994.979045200,
+    "creationTime" : null,
+    "fileCRC" : 1352145134,
+    "fileName" : "2018年三级基础知识（全5章版）0428版.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1184320,
+    "fullUnpackSize" : 1428460,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

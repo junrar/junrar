@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416980220.574142600,
+    "creationTime" : null,
+    "fileCRC" : 52044988,
+    "fileName" : "HSEO_Website_Traffic_Generator_Portable\\HSEO_Website_Traffic_Generator.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1737768,
+    "fullUnpackSize" : 3691008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

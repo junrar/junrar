@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1245747715.512089000,
+    "creationTime" : null,
+    "fileCRC" : -790847283,
+    "fileName" : "freshemedia_audiolines.abr",
+    "hostOS" : "win32",
+    "fullPackSize" : 128018,
+    "fullUnpackSize" : 181198,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

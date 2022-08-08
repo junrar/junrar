@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396410839.185146100,
+    "creationTime" : null,
+    "fileCRC" : 2109856077,
+    "fileName" : "AMIKO_MiniHD_Combo_1.2.02_conax.abs",
+    "hostOS" : "win32",
+    "fullPackSize" : 3278389,
+    "fullUnpackSize" : 8388608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

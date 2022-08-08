@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499000340.060644000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "ЎҚИШ УЧУН КЎРСАТМАЛАР",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500856623.735057200,
+    "creationTime" : null,
+    "fileCRC" : -783059370,
+    "fileName" : "ЎҚИШ УЧУН КЎРСАТМАЛАР\\BiPlan O'zbek.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1805784,
+    "fullUnpackSize" : 2013491,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

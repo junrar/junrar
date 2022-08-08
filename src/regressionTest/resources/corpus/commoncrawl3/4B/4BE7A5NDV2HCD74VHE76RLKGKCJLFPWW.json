@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479243831.508336300,
+    "creationTime" : null,
+    "fileCRC" : 1831277280,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 352,
+    "fullUnpackSize" : 654,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479150006.880302200,
+    "creationTime" : null,
+    "fileCRC" : -510102161,
+    "fileName" : "vray_adv_34001_max2017_x64.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 240747392,
+    "fullUnpackSize" : 251283544,
+    "isSolid" : true,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

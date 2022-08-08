@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437366199.258983200,
+    "creationTime" : null,
+    "fileCRC" : -951075207,
+    "fileName" : "Розпорядження № 147-р від 08.07.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10761,
+    "fullUnpackSize" : 46080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

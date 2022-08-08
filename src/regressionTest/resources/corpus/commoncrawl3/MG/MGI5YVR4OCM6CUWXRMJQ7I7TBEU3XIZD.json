@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528704514.309365000,
+    "creationTime" : null,
+    "fileCRC" : 106540665,
+    "fileName" : "ตารางสรุปผลงานการตรวจพัฒนาการเด็กปฐมวัย4กลุ่มวัย_รพ.สต....xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 358472,
+    "fullUnpackSize" : 2971344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

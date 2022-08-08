@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491030466.390625000,
+    "creationTime" : null,
+    "fileCRC" : -1526805723,
+    "fileName" : "MD5.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 122,
+    "fullUnpackSize" : 122,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491030380.781250000,
+    "creationTime" : null,
+    "fileCRC" : 1033089736,
+    "fileName" : "浦发银行－闪电操盘手.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 15845594,
+    "fullUnpackSize" : 16200746,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

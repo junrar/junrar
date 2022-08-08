@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508381656.860485100,
+    "creationTime" : null,
+    "fileCRC" : -662717487,
+    "fileName" : "LED Floodlight\\300-1000W LED Floodlight.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1546749,
+    "fullUnpackSize" : 1842201,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

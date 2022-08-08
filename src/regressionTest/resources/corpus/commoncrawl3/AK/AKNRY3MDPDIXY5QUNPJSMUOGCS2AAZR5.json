@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256574246.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1328432413,
+    "fileName" : "四食.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 587977,
+    "fullUnpackSize" : 617711,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256574328.000000000,
+    "creationTime" : null,
+    "fileCRC" : 370178503,
+    "fileName" : "四食（繁体）.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 618115,
+    "fullUnpackSize" : 648054,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

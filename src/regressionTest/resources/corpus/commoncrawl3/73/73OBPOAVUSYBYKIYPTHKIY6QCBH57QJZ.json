@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521076758.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1812805646,
+    "fileName" : "รายงานต้นทุนต่อหน่วยผลผลิต ประจำปีงบประมาณ พ.ศ. 2560\\การเปรียบเทียบผลการคำนวณต้นทุนต่อหน่วยผลผลิต ระหว่างปี 2559 และปี 2560 (ตาราง 7-12).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 709255,
+    "fullUnpackSize" : 709255,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521076128.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1443384661,
+    "fileName" : "รายงานต้นทุนต่อหน่วยผลผลิต ประจำปีงบประมาณ พ.ศ. 2560\\รายงานต้นทุนต่อหน่วยผลผลิต ประจำปีงบประมาณ พ.ศ. 2560 (ตาราง 1-6).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 367800,
+    "fullUnpackSize" : 367800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

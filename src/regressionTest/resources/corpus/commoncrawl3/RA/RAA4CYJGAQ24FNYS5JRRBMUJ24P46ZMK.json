@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369797665.130329400,
+    "creationTime" : null,
+    "fileCRC" : -94722189,
+    "fileName" : "Minutes-of-user_workshop_PREFER_29052013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 110823,
+    "fullUnpackSize" : 121494,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

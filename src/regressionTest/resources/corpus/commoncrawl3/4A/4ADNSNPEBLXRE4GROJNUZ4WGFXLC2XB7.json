@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1081409434.000000000,
+    "creationTime" : null,
+    "fileCRC" : -421353830,
+    "fileName" : "GFM_1C.esp",
+    "hostOS" : "win32",
+    "fullPackSize" : 187586,
+    "fullUnpackSize" : 733233,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1107522796.000000000,
+    "creationTime" : null,
+    "fileCRC" : 267656930,
+    "fileName" : "GFM_1C.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 23032,
+    "fullUnpackSize" : 56102,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

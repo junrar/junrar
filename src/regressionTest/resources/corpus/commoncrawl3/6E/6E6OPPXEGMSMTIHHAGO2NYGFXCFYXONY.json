@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460694911.730660100,
+    "creationTime" : null,
+    "fileCRC" : 547662210,
+    "fileName" : "Прайс  (Оптовый 3).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 4401734,
+    "fullUnpackSize" : 5147648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

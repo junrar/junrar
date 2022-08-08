@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368741010.857907600,
+    "creationTime" : null,
+    "fileCRC" : 1973908442,
+    "fileName" : "V-Ray-SketchUp-1.6_BETA_features.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 530337,
+    "fullUnpackSize" : 766672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

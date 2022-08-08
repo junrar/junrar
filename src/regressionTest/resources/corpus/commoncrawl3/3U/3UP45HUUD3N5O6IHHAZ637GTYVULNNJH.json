@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439432870.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1321993517,
+    "fileName" : "ข้อบัญญัติงบประมาณรายจ่าย ประจำปี 2559.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 544477,
+    "fullUnpackSize" : 754064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1219844996.062500000,
+    "creationTime" : null,
+    "fileCRC" : -1822969138,
+    "fileName" : "issue53-58(2007)\\53.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2176921,
+    "fullUnpackSize" : 3363828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508914997.041088000,
+    "creationTime" : null,
+    "fileCRC" : -1664670236,
+    "fileName" : "СВОД_3 кв. 2017 г..xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 389753,
+    "fullUnpackSize" : 439137,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

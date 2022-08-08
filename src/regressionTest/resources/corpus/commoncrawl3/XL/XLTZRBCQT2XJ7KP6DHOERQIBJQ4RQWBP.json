@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433227077.968750000,
+    "creationTime" : null,
+    "fileCRC" : -1605129388,
+    "fileName" : "akira_video_DVR-M6160HDD.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5312782,
+    "fullUnpackSize" : 5651919,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506595170.000000000,
+    "creationTime" : null,
+    "fileCRC" : 798091041,
+    "fileName" : "Учебный план на 2017-2018 уч.г..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 280146,
+    "fullUnpackSize" : 300658,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483488634.000000000,
+    "creationTime" : null,
+    "fileCRC" : 947690783,
+    "fileName" : "GERTAN JATENG - DIY Januari 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 265639,
+    "fullUnpackSize" : 387027,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482460522.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2086568243,
+    "fileName" : "Pekalongan Jan17 HD.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2802498,
+    "fullUnpackSize" : 3349061,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

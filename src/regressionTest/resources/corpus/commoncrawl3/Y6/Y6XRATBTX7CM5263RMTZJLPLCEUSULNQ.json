@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357287086.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1808413557,
+    "fileName" : "2012年第12期.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1236786,
+    "fullUnpackSize" : 2546806,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

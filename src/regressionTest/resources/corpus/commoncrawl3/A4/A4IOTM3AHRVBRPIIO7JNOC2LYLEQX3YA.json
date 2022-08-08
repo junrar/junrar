@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1471985227.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1545639902,
+    "fileName" : "Automobilista.PROPER.CODEX\\setup-1.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 347796156,
+    "fullUnpackSize" : 15369208038,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

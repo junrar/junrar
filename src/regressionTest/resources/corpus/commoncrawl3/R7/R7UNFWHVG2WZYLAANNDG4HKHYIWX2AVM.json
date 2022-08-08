@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298197994.527422600,
+    "creationTime" : null,
+    "fileCRC" : 1956316507,
+    "fileName" : "mp_mountainbase\\mp_mountainbase.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 24153811,
+    "fullUnpackSize" : 24167258,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320478563.306040400,
+    "creationTime" : null,
+    "fileCRC" : -120243385,
+    "fileName" : "ASAP+720p IMMERSE.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20301,
+    "fullUnpackSize" : 49593,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320971171.596324800,
+    "creationTime" : null,
+    "fileCRC" : 993924520,
+    "fileName" : "Supernatural.S07E07.720p.WEB-DL.DD5.1.H.264-GFY.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20284,
+    "fullUnpackSize" : 49564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

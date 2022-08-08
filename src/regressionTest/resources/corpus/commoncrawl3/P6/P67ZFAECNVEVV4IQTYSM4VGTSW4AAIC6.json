@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1132434928.000000000,
+    "creationTime" : null,
+    "fileCRC" : -332980039,
+    "fileName" : "jImager2\\setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1268808,
+    "fullUnpackSize" : 1290863,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

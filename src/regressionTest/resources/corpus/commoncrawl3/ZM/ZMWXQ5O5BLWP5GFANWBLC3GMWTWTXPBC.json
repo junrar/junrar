@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438134246.511866000,
+    "creationTime" : null,
+    "fileCRC" : 1304613163,
+    "fileName" : "Баланс_30.06.2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 719381,
+    "fullUnpackSize" : 856645,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438134246.231044400,
+    "creationTime" : null,
+    "fileCRC" : -123715173,
+    "fileName" : "Форма_2_январь_июнь_2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 433952,
+    "fullUnpackSize" : 498747,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

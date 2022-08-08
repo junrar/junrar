@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507685253.988510900,
+    "creationTime" : null,
+    "fileCRC" : 1174803151,
+    "fileName" : "Распоряжение тех схема предоставл информ 250-П.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 13897,
+    "fullUnpackSize" : 16590,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507258161.218750000,
+    "creationTime" : null,
+    "fileCRC" : 369919765,
+    "fileName" : "Приложение к распоряжению 250-П.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 72544,
+    "fullUnpackSize" : 76274,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

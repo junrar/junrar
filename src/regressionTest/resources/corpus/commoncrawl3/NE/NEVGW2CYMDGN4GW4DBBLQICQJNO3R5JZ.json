@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296015301.218000000,
+    "creationTime" : null,
+    "fileCRC" : 1503314394,
+    "fileName" : "Путеец НОВЫЙ ПРАЙС 01.12.2010г.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 27728,
+    "fullUnpackSize" : 143360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

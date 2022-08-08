@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309252577.540546300,
+    "creationTime" : null,
+    "fileCRC" : 1869880982,
+    "fileName" : "BB78I.DWG",
+    "hostOS" : "win32",
+    "fullPackSize" : 9359,
+    "fullUnpackSize" : 27701,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

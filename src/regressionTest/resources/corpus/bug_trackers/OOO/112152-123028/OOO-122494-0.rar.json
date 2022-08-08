@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370528473.051000000,
+    "creationTime" : null,
+    "fileCRC" : 283331745,
+    "fileName" : "trunk.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 39840,
+    "fullUnpackSize" : 40659,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370527464.599000000,
+    "creationTime" : null,
+    "fileCRC" : -181795269,
+    "fileName" : "Hlouafi-OpenOffice-XHTML-filter extensions-patch.patch",
+    "hostOS" : "win32",
+    "fullPackSize" : 31785,
+    "fullUnpackSize" : 270777,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

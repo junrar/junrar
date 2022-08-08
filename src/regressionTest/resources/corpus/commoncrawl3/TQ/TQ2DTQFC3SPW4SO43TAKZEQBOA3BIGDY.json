@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416452602.000000000,
+    "creationTime" : null,
+    "fileCRC" : 380299755,
+    "fileName" : "QPS6666_Setup_2.01.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5400355,
+    "fullUnpackSize" : 5411896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511452929.415888200,
+    "creationTime" : null,
+    "fileCRC" : 226260076,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 444,
+    "fullUnpackSize" : 680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511452929.444466300,
+    "creationTime" : null,
+    "fileCRC" : 290513919,
+    "fileName" : "JB7J.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 46,
+    "fullUnpackSize" : 46,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

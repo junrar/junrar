@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491741331.335313900,
+    "creationTime" : null,
+    "fileCRC" : -1700363131,
+    "fileName" : "cg_coldbhop_v2_noxeR_0054.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 865060,
+    "fullUnpackSize" : 3708220,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

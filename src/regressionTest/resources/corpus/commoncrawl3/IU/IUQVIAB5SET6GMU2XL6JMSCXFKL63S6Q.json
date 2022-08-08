@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464754732.991184200,
+    "creationTime" : null,
+    "fileCRC" : 766972900,
+    "fileName" : "ПЛ GRASARO от 01.06.2016 НАШ.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 72294,
+    "fullUnpackSize" : 79559,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

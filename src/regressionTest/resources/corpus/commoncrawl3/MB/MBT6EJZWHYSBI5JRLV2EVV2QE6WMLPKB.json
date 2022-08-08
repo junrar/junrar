@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530904912.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1799955538,
+    "fileName" : "Do druku\\AnimatorD-1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 9863371,
+    "fullUnpackSize" : 9869610,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470108235.688483200,
+    "creationTime" : null,
+    "fileCRC" : -599896529,
+    "fileName" : "易泊停车场计费系统（标准版）实施文档\\易泊停车场计费系统（标准版）实施文档.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1105420,
+    "fullUnpackSize" : 1220811,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

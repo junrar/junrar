@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511319589.470700000,
+    "creationTime" : null,
+    "fileCRC" : 119822761,
+    "fileName" : "iCare-Emotion-Test-Pro_3.6.0_GetAndroid.iR.apk",
+    "hostOS" : "win32",
+    "fullPackSize" : 7767844,
+    "fullUnpackSize" : 11001647,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

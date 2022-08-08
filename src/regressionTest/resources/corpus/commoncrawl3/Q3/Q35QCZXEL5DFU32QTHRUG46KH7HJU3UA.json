@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363791354.046875000,
+    "creationTime" : null,
+    "fileCRC" : 3548507,
+    "fileName" : "@创e下载┆纯净-所下即所得.URL",
+    "hostOS" : "win32",
+    "fullPackSize" : 244,
+    "fullUnpackSize" : 316,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531221426.405000000,
+    "creationTime" : null,
+    "fileCRC" : 1806845468,
+    "fileName" : "WinToUSB_Free.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5541450,
+    "fullUnpackSize" : 5610118,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233397684.000000000,
+    "creationTime" : null,
+    "fileCRC" : -459154111,
+    "fileName" : "0902-Leaves.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3842704,
+    "fullUnpackSize" : 5364585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

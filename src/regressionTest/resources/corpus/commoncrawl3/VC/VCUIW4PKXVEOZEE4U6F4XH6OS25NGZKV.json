@@ -1,0 +1,8 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ ],
+  "exception" : "MainHeaderNullException"
+}

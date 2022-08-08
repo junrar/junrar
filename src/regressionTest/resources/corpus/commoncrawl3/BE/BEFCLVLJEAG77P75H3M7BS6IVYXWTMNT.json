@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390035998.000000000,
+    "creationTime" : null,
+    "fileCRC" : 647872580,
+    "fileName" : "Caiete de sarcini\\CS2-Retele(aductiune,distributie si canalizare).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10485619,
+    "fullUnpackSize" : 117772246,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

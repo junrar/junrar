@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452617304.498000000,
+    "creationTime" : null,
+    "fileCRC" : -1179633953,
+    "fileName" : "Положение об оплате труда 2014.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8258849,
+    "fullUnpackSize" : 37135872,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

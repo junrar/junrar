@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478534793.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1684192114,
+    "fileName" : "KYNG HD Special Cards Data Editor 2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1300297,
+    "fullUnpackSize" : 1321984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536195728.237131100,
+    "creationTime" : null,
+    "fileCRC" : 1544646558,
+    "fileName" : "Прайс-лист Издательского центра БГЭУ.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 134682,
+    "fullUnpackSize" : 189440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470635499.364343500,
+    "creationTime" : null,
+    "fileCRC" : 368897691,
+    "fileName" : "sujakumari.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 87745,
+    "fullUnpackSize" : 148380,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470635427.807017800,
+    "creationTime" : null,
+    "fileCRC" : -1634545737,
+    "fileName" : "1460.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 32851,
+    "fullUnpackSize" : 90242,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

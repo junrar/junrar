@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506399194.754832700,
+    "creationTime" : null,
+    "fileCRC" : 1165732446,
+    "fileName" : "منصة تكر شارت للمتداول البسيط 911.utws",
+    "hostOS" : "win32",
+    "fullPackSize" : 132978,
+    "fullUnpackSize" : 921600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

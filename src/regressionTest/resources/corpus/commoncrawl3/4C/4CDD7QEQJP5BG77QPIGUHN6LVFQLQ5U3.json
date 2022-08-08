@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527043758.477423200,
+    "creationTime" : null,
+    "fileCRC" : -2042821505,
+    "fileName" : "Ножи Fischer-Bargoin (Франция).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 87386,
+    "fullUnpackSize" : 169472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

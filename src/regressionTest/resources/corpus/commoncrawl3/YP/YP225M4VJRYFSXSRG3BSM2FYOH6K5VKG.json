@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1130511850.921875000,
+    "creationTime" : null,
+    "fileCRC" : -949507234,
+    "fileName" : "EP - Linear Algebra - E.G. Sklyarenko.ps",
+    "hostOS" : "win32",
+    "fullPackSize" : 115858,
+    "fullUnpackSize" : 257458,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

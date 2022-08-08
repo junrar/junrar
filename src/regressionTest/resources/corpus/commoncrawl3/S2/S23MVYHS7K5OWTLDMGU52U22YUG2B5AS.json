@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516862214.227239300,
+    "creationTime" : null,
+    "fileCRC" : 1464197706,
+    "fileName" : "ATBMHTTT\\[1] Introduction to Information Systems Security.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 998371,
+    "fullUnpackSize" : 1138453,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516862280.937491400,
+    "creationTime" : null,
+    "fileCRC" : 1143351805,
+    "fileName" : "ATBMHTTT\\[2] Malicious Attacks, Threats.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1010807,
+    "fullUnpackSize" : 1157352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1211871635.328125000,
+    "creationTime" : null,
+    "fileCRC" : -1132939925,
+    "fileName" : "a1ring2001.wad",
+    "hostOS" : "win32",
+    "fullPackSize" : 6866740,
+    "fullUnpackSize" : 19738579,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347689458.656250000,
+    "creationTime" : null,
+    "fileCRC" : 346051387,
+    "fileName" : "漫谈党文化.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 178852,
+    "fullUnpackSize" : 185890,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

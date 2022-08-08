@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233198824.000000000,
+    "creationTime" : null,
+    "fileCRC" : 877086747,
+    "fileName" : "Samsung_Catalogue_08_2008.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 34955894,
+    "fullUnpackSize" : 36013055,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

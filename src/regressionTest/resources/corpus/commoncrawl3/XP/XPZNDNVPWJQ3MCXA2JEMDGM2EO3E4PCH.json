@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160531136.000000000,
+    "creationTime" : null,
+    "fileCRC" : -229056504,
+    "fileName" : "5 激光粒度仪原理和性能特点.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 750922,
+    "fullUnpackSize" : 780576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510885620.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1277360054,
+    "fileName" : "Godišnji financijski izvještaj KUCL 2016..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 814765,
+    "fullUnpackSize" : 978682,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

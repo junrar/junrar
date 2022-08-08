@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1126983902.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2047633676,
+    "fileName" : "DATA DRAIN\\07-dj_sharpnel-data_drain.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1421511,
+    "fullUnpackSize" : 1421511,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388399269.236516000,
+    "creationTime" : null,
+    "fileCRC" : 1309643136,
+    "fileName" : "清蒸螃蟹.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 272731,
+    "fullUnpackSize" : 280923,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

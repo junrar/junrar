@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1068955354.187500000,
+    "creationTime" : null,
+    "fileCRC" : -839688333,
+    "fileName" : "bg sidechain dynamics.prs",
+    "hostOS" : "win32",
+    "fullPackSize" : 603,
+    "fullUnpackSize" : 2430,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

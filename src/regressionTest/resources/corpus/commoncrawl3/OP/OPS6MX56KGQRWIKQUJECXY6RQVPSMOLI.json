@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1278031782.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1063677054,
+    "fileName" : "PROCZUS.DLL",
+    "hostOS" : "win32",
+    "fullPackSize" : 91352,
+    "fullUnpackSize" : 267008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524529428.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1514228491,
+    "fileName" : "NISYM_2.F_I",
+    "hostOS" : "win32",
+    "fullPackSize" : 36079,
+    "fullUnpackSize" : 132864,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

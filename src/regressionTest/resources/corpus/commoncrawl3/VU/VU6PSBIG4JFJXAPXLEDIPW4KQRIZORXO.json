@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230558756.000000000,
+    "creationTime" : null,
+    "fileCRC" : -566390563,
+    "fileName" : "pattern recognition seminar.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 273024,
+    "fullUnpackSize" : 366206,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

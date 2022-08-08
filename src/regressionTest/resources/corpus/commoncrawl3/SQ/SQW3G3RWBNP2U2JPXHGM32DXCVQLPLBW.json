@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361588652.421875000,
+    "creationTime" : null,
+    "fileCRC" : 95828056,
+    "fileName" : "فصلنامه پاییز\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 124,
+    "fullUnpackSize" : 194,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361588661.365234400,
+    "creationTime" : null,
+    "fileCRC" : 1156845614,
+    "fileName" : "فصلنامه پاییز\\فصلنامه  پاييز 91.eBook",
+    "hostOS" : "win32",
+    "fullPackSize" : 8040973,
+    "fullUnpackSize" : 8146328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

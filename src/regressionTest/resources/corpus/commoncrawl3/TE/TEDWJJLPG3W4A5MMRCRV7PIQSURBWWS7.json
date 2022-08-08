@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265100210.000000000,
+    "creationTime" : null,
+    "fileCRC" : -989457142,
+    "fileName" : "2Dfairys.GM6",
+    "hostOS" : "win32",
+    "fullPackSize" : 27461,
+    "fullUnpackSize" : 79502,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265955157.546875000,
+    "creationTime" : null,
+    "fileCRC" : 1437064078,
+    "fileName" : "INFO.TXT",
+    "hostOS" : "win32",
+    "fullPackSize" : 204,
+    "fullUnpackSize" : 233,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

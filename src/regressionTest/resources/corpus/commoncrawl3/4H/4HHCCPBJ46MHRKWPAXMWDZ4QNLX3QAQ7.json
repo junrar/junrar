@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435895975.318652900,
+    "creationTime" : null,
+    "fileCRC" : 1776134828,
+    "fileName" : "Сводный график ремонта ЛЭП и оборудования Колэнерго на июль 2015г..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4031123,
+    "fullUnpackSize" : 4031123,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

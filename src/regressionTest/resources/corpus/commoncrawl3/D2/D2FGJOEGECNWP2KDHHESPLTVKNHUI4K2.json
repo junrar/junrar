@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1335151631.786600000,
+    "creationTime" : null,
+    "fileCRC" : 733365325,
+    "fileName" : "Matadepera 4-12.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 24091,
+    "fullUnpackSize" : 117941,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490924051.630410800,
+    "creationTime" : null,
+    "fileCRC" : -1776659188,
+    "fileName" : "Chuong 4_4 - Gom cum.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 937780,
+    "fullUnpackSize" : 1046849,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479139854.056293800,
+    "creationTime" : null,
+    "fileCRC" : 1058454583,
+    "fileName" : "Chuong 0 - Gioi thieu.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 269951,
+    "fullUnpackSize" : 290659,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

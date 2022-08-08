@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404866915.314490800,
+    "creationTime" : null,
+    "fileCRC" : -271290013,
+    "fileName" : "DP750.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1451924,
+    "fullUnpackSize" : 1519390,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

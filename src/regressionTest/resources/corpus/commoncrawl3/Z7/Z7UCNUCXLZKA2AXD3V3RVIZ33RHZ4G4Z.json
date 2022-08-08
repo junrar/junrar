@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469305343.028397000,
+    "creationTime" : null,
+    "fileCRC" : -1479244178,
+    "fileName" : "1-874-218-11_A-1276-472-A_GS2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2530278,
+    "fullUnpackSize" : 2530278,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1429752558.979315500,
+    "creationTime" : null,
+    "fileCRC" : -172453937,
+    "fileName" : "2015汉语桥大学生比赛参考试题集第二部分国情知识.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 653258,
+    "fullUnpackSize" : 706737,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427976762.987620700,
+    "creationTime" : null,
+    "fileCRC" : 629090285,
+    "fileName" : "2015汉语桥大学生比赛参考试题集第三部分文化常识.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 964980,
+    "fullUnpackSize" : 1014159,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390272995.000000000,
+    "creationTime" : null,
+    "fileCRC" : 558161692,
+    "fileName" : "Synaps_THD-2900_v140121.bin",
+    "hostOS" : "unix",
+    "fullPackSize" : 2968995,
+    "fullUnpackSize" : 3209992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

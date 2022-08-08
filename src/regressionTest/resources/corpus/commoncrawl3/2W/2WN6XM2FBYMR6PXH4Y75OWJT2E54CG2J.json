@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1232028964.843750000,
+    "creationTime" : null,
+    "fileCRC" : -1410782677,
+    "fileName" : "Hoi2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1150419,
+    "fullUnpackSize" : 3858532,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

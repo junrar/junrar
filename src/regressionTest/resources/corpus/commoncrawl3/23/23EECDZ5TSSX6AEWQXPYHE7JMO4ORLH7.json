@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379151951.562500000,
+    "creationTime" : null,
+    "fileCRC" : 939149819,
+    "fileName" : "GS4 Tests MP3\\01 GS4 T1 A3.Mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1273444,
+    "fullUnpackSize" : 1368783,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

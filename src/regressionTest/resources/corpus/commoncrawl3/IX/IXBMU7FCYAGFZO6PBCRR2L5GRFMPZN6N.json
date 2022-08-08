@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497341859.836868200,
+    "creationTime" : null,
+    "fileCRC" : -132109646,
+    "fileName" : "Adobe Dreamweaver CC 2017 v17.5.0.9878 x64\\adobe.ccp",
+    "hostOS" : "win32",
+    "fullPackSize" : 2156,
+    "fullUnpackSize" : 2156,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497341859.780000000,
+    "creationTime" : null,
+    "fileCRC" : 61201250,
+    "fileName" : "Adobe Dreamweaver CC 2017 v17.5.0.9878 x64\\Build\\adobe.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 89479886,
+    "fullUnpackSize" : 93301248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

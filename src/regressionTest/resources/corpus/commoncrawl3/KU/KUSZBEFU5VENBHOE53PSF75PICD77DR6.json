@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230001461.531250000,
+    "creationTime" : null,
+    "fileCRC" : 9656904,
+    "fileName" : "CSI.S09E09.HDTV.XviD-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13916,
+    "fullUnpackSize" : 42256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251708864.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1001807809,
+    "fileName" : "CSI.S09E09.19.Down.DVDRip.XviD-SAiNTS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14248,
+    "fullUnpackSize" : 43547,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

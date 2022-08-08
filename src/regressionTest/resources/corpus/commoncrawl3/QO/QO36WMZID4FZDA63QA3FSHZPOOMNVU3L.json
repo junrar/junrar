@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195974657.515625000,
+    "creationTime" : null,
+    "fileCRC" : 2037894996,
+    "fileName" : "DTM2005 Trackpack.tup",
+    "hostOS" : "win32",
+    "fullPackSize" : 126002060,
+    "fullUnpackSize" : 126002060,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

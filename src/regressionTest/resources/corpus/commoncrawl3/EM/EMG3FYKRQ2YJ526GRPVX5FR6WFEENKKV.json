@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1294494002.662895800,
+    "creationTime" : null,
+    "fileCRC" : -145199229,
+    "fileName" : "libeay32.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 396116,
+    "fullUnpackSize" : 1073152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1294494419.270314900,
+    "creationTime" : null,
+    "fileCRC" : -125252223,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 476,
+    "fullUnpackSize" : 721,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

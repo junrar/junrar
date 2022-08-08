@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448278113.158869700,
+    "creationTime" : null,
+    "fileCRC" : -1118513921,
+    "fileName" : "проект-разходи.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 10785,
+    "fullUnpackSize" : 13530,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

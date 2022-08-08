@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388925305.203125000,
+    "creationTime" : null,
+    "fileCRC" : -748142653,
+    "fileName" : "Bernard-2013\\01-На сюрреалистических праздниках - Стихи и музыка Бернард - 2013.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2999837,
+    "fullUnpackSize" : 3022544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

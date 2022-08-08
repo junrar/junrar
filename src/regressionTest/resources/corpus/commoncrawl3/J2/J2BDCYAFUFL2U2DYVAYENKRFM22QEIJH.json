@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255961107.265625000,
+    "creationTime" : null,
+    "fileCRC" : -1441390883,
+    "fileName" : "Sheet 03.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1416263,
+    "fullUnpackSize" : 1456915,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

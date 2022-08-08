@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1219389896.489330900,
+    "creationTime" : null,
+    "fileCRC" : 1785978265,
+    "fileName" : "SuiviGlobal-FicheDossiersEnCours.xsl",
+    "hostOS" : "win32",
+    "fullPackSize" : 2982,
+    "fullUnpackSize" : 52091,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1236925108.814987400,
+    "creationTime" : null,
+    "fileCRC" : -1592389803,
+    "fileName" : "Data.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 1125,
+    "fullUnpackSize" : 9136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

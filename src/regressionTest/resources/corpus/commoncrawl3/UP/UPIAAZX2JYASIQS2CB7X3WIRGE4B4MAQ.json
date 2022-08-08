@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320568546.641261100,
+    "creationTime" : null,
+    "fileCRC" : 658852595,
+    "fileName" : "fsd\\alire.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 205,
+    "fullUnpackSize" : 448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320561023.728921500,
+    "creationTime" : null,
+    "fileCRC" : -406728913,
+    "fileName" : "fsd\\default.xex",
+    "hostOS" : "win32",
+    "fullPackSize" : 6823936,
+    "fullUnpackSize" : 6823936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

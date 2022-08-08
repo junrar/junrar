@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1020147850.000000000,
+    "creationTime" : null,
+    "fileCRC" : -111794175,
+    "fileName" : "i_nam_darova.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 75247,
+    "fullUnpackSize" : 76728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

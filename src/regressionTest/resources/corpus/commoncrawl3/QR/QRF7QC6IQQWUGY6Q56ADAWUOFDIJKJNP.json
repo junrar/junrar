@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1342435835.966117200,
+    "creationTime" : null,
+    "fileCRC" : -1576141863,
+    "fileName" : "mp_eb_bounce4you\\mp_eb_bounce4you.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 11139879,
+    "fullUnpackSize" : 11311228,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

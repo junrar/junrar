@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1276666996.611964900,
+    "creationTime" : null,
+    "fileCRC" : -873970474,
+    "fileName" : "declaratii 2009\\ALDEA CRISTINA DANA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 903265,
+    "fullUnpackSize" : 913843,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1276661672.859375000,
+    "creationTime" : null,
+    "fileCRC" : 977496527,
+    "fileName" : "declaratii 2009\\ANTONESCU MIHAELA EMILIA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 888154,
+    "fullUnpackSize" : 899261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

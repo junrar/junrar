@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511377418.442352400,
+    "creationTime" : null,
+    "fileCRC" : 1427553430,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 429,
+    "fullUnpackSize" : 678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511377418.468766500,
+    "creationTime" : null,
+    "fileCRC" : 129612961,
+    "fileName" : "JB8E.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 3586,
+    "fullUnpackSize" : 5392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

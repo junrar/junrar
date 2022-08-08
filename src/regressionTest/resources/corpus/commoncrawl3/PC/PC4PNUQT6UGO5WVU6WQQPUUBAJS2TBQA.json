@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531634830.591925800,
+    "creationTime" : null,
+    "fileCRC" : 970878525,
+    "fileName" : "Yadvare Tile ben.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 31856605,
+    "fullUnpackSize" : 64368642,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

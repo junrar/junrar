@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180312969.968750000,
+    "creationTime" : null,
+    "fileCRC" : 1803326865,
+    "fileName" : "[DB]_Naruto_Shippuuden_014_[D10A7A23].srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 3166,
+    "fullUnpackSize" : 9132,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180312766.421875000,
+    "creationTime" : null,
+    "fileCRC" : 2069181530,
+    "fileName" : "[DB]_Naruto_Shippuuden_015_[66EA2192].srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 5470,
+    "fullUnpackSize" : 18328,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

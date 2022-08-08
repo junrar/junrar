@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233581729.375000000,
+    "creationTime" : null,
+    "fileCRC" : 1558878954,
+    "fileName" : "Б.Левин.Фигуры Джонса.Лекция..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17825,
+    "fullUnpackSize" : 88064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

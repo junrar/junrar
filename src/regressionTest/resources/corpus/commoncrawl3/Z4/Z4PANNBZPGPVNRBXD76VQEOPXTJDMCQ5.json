@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272024007.975700000,
+    "creationTime" : null,
+    "fileCRC" : -2110210994,
+    "fileName" : "[Tm_4.A.N].dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 4835409,
+    "fullUnpackSize" : 29246211,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346814964.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1292846786,
+    "fileName" : "план меропритяий по развитию муниц. службы.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11503,
+    "fullUnpackSize" : 100352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

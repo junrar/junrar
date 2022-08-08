@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511412247.006513600,
+    "creationTime" : null,
+    "fileCRC" : 638237603,
+    "fileName" : "4.1. Проведение информационной кампании по поддержке.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 232498,
+    "fullUnpackSize" : 243530,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511412246.976512400,
+    "creationTime" : null,
+    "fileCRC" : -2019856398,
+    "fileName" : "Отчет на 01.10.2017_город.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 212788,
+    "fullUnpackSize" : 253589,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

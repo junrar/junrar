@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223454035.218750000,
+    "creationTime" : null,
+    "fileCRC" : -14401771,
+    "fileName" : "hud_customizer.amxx",
+    "hostOS" : "win32",
+    "fullPackSize" : 3138,
+    "fullUnpackSize" : 3138,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223454037.750000000,
+    "creationTime" : null,
+    "fileCRC" : 387928402,
+    "fileName" : "hud_customizer.sma",
+    "hostOS" : "win32",
+    "fullPackSize" : 728,
+    "fullUnpackSize" : 2230,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

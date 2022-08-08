@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498985134.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1041165494,
+    "fileName" : "EViews.10.0.Enterprise.Build.15.05.2018.x86\\EViews10Installer.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 237043696,
+    "fullUnpackSize" : 237408544,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

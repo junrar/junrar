@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418744692.395345900,
+    "creationTime" : null,
+    "fileCRC" : 1887656398,
+    "fileName" : "8.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 17726,
+    "fullUnpackSize" : 22122,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418744749.505612400,
+    "creationTime" : null,
+    "fileCRC" : -1737980386,
+    "fileName" : "Screenshot_12-16_234549.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 171573,
+    "fullUnpackSize" : 178126,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433226987.015625000,
+    "creationTime" : null,
+    "fileCRC" : 77403379,
+    "fileName" : "akira_video_DVD-K3288.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5301997,
+    "fullUnpackSize" : 5428224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

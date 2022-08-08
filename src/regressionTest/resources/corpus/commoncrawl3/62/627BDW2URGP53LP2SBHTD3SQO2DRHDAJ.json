@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369722630.169154700,
+    "creationTime" : null,
+    "fileCRC" : -80798006,
+    "fileName" : "A Comme Amour - R Clayderman.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3077618,
+    "fullUnpackSize" : 3149961,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1313764284.296875000,
+    "creationTime" : null,
+    "fileCRC" : 54551936,
+    "fileName" : "testing.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3062844,
+    "fullUnpackSize" : 3070551,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

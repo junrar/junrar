@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1408597432.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1700012613,
+    "fileName" : "ПСД Н-Кузьминки 4-6а\\Н-Кузьминки\\3849-13-ИД2 (МГЭ).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2256621,
+    "fullUnpackSize" : 14660492,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

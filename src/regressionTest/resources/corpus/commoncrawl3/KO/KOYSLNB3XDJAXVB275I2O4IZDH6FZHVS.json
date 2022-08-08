@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272580526.000000000,
+    "creationTime" : null,
+    "fileCRC" : 81763846,
+    "fileName" : "sl-uv15_winxp-7-8_32bit\\data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 2696712,
+    "fullUnpackSize" : 2906957,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

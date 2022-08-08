@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524545795.975230200,
+    "creationTime" : null,
+    "fileCRC" : -1626687904,
+    "fileName" : "10_8x50l_alevín.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 281030,
+    "fullUnpackSize" : 294614,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524545792.760229000,
+    "creationTime" : null,
+    "fileCRC" : 1730359611,
+    "fileName" : "Resultados Totales.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 357526,
+    "fullUnpackSize" : 380035,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

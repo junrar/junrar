@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414027811.000000000,
+    "creationTime" : null,
+    "fileCRC" : 449860954,
+    "fileName" : "Академический календарь 2014-2015 уч.г\\1.pdf",
+    "hostOS" : "unix",
+    "fullPackSize" : 198457,
+    "fullUnpackSize" : 205960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441077591.000000000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Академический календарь 2014-2015 уч.г",
+    "hostOS" : "unix",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

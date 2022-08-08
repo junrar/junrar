@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495005426.695085800,
+    "creationTime" : null,
+    "fileCRC" : -2043704027,
+    "fileName" : "Орликовское КГЗ.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 135250,
+    "fullUnpackSize" : 146828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493217052.000000000,
+    "creationTime" : null,
+    "fileCRC" : 459127798,
+    "fileName" : "Орликовское ПЗЗ_РАЗДЕЛ 1.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 110214,
+    "fullUnpackSize" : 114594,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359984166.000000000,
+    "creationTime" : null,
+    "fileCRC" : 366323440,
+    "fileName" : "01_Marvin Gaye Let s Get It On.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4580462,
+    "fullUnpackSize" : 4661207,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196388143.761817800,
+    "creationTime" : null,
+    "fileCRC" : -207936937,
+    "fileName" : "gruzinskaia_ssr_1987_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599894,
+    "fullUnpackSize" : 16142926,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

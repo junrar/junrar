@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1197262723.109375000,
+    "creationTime" : null,
+    "fileCRC" : -1071288365,
+    "fileName" : "Warianty rozwoju gospodarczego Polski.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 19901,
+    "fullUnpackSize" : 22114,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1197260325.750000000,
+    "creationTime" : null,
+    "fileCRC" : -1838216340,
+    "fileName" : "wytycznewersja_ostatecznasprostowana.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 869125,
+    "fullUnpackSize" : 994305,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

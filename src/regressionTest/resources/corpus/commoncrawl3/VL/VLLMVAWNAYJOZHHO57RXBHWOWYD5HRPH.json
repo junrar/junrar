@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371648339.914968100,
+    "creationTime" : null,
+    "fileCRC" : 1208435044,
+    "fileName" : "Ray.Donovan.S01E01.720p.HDTV.x264-EVOLVE CZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15634,
+    "fullUnpackSize" : 36660,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371642790.000000000,
+    "creationTime" : null,
+    "fileCRC" : 644642128,
+    "fileName" : "Ray.Donovan.S01E01.HDTV.x264-EVOLVE CZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15617,
+    "fullUnpackSize" : 36660,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

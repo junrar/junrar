@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170605862.062500000,
+    "creationTime" : null,
+    "fileCRC" : -2094541684,
+    "fileName" : "Superantural - 213 - Houses Of The Holy\\supernatural.s02e13.hdtv.xvid-xor.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14829,
+    "fullUnpackSize" : 36964,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170605939.437500000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Superantural - 213 - Houses Of The Holy",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

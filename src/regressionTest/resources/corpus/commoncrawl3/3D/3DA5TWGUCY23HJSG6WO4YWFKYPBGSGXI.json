@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1011542226.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1306168281,
+    "fileName" : "Сидоров. Перед выбором.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 15103,
+    "fullUnpackSize" : 67584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

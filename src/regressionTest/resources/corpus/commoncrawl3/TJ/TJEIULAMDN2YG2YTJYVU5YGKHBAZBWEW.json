@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230481952.000000000,
+    "creationTime" : null,
+    "fileCRC" : 400244458,
+    "fileName" : "readme_vst.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 267,
+    "fullUnpackSize" : 411,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230810512.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1570795794,
+    "fileName" : "Dirt V1plus DEMO.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 2177169,
+    "fullUnpackSize" : 5676637,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

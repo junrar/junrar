@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303021350.953125000,
+    "creationTime" : null,
+    "fileCRC" : -560119835,
+    "fileName" : "CASIO_photoshop_CMYK.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 1149927,
+    "fullUnpackSize" : 3247239,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303019350.765625000,
+    "creationTime" : null,
+    "fileCRC" : 1384905606,
+    "fileName" : "CASIO_acrobat_CMYK.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 114227,
+    "fullUnpackSize" : 178733,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

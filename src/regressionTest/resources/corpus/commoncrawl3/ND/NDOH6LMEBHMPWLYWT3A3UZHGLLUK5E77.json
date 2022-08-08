@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170081053.000000000,
+    "creationTime" : null,
+    "fileCRC" : -398384993,
+    "fileName" : "jm-linux-x86",
+    "hostOS" : "unix",
+    "fullPackSize" : 312593,
+    "fullUnpackSize" : 1051219,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

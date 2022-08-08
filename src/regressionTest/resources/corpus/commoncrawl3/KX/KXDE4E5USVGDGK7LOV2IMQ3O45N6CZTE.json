@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433246287.000000000,
+    "creationTime" : null,
+    "fileCRC" : -870729863,
+    "fileName" : "bd1_v124.upg_bd1",
+    "hostOS" : "win32",
+    "fullPackSize" : 39184666,
+    "fullUnpackSize" : 39679292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1284341458.000000000,
+    "creationTime" : null,
+    "fileCRC" : -959389738,
+    "fileName" : "China Internet Network Information Center EV Certificates Root.cer",
+    "hostOS" : "win32",
+    "fullPackSize" : 856,
+    "fullUnpackSize" : 1019,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

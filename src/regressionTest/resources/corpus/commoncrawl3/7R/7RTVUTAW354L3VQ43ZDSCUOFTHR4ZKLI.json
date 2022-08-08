@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487050958.000000000,
+    "creationTime" : null,
+    "fileCRC" : 208126788,
+    "fileName" : "12.sinif-4.unite-tasavvufiyorumlar.ppsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 3658275,
+    "fullUnpackSize" : 3788775,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

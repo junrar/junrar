@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491355046.000000000,
+    "creationTime" : null,
+    "fileCRC" : -477179208,
+    "fileName" : "СТП Первомайский район\\Материалы по обоснованию\\Thumbs.db",
+    "hostOS" : "win32",
+    "fullPackSize" : 75785,
+    "fullUnpackSize" : 86528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337930576.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2105193962,
+    "fileName" : "СТП Первомайский район\\Материалы по обоснованию\\Карта комплексной оценки территории.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 11878102,
+    "fullUnpackSize" : 15621610,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

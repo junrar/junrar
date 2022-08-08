@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320283021.561800000,
+    "creationTime" : null,
+    "fileCRC" : -1012860086,
+    "fileName" : "rp_t_010_nb501.urt",
+    "hostOS" : "win32",
+    "fullPackSize" : 93241,
+    "fullUnpackSize" : 198762,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

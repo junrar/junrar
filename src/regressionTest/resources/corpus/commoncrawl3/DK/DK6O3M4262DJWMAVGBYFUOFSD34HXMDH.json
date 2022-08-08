@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433165055.946973300,
+    "creationTime" : null,
+    "fileCRC" : -636642939,
+    "fileName" : "Java SE Development Kit v8 (Update 45)\\Demos\\jdk-8u45-windows-i586-demos.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 52604092,
+    "fullUnpackSize" : 56517919,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

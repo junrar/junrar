@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461248985.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1306915182,
+    "fileName" : "Addresses.odb",
+    "hostOS" : "unix",
+    "fullPackSize" : 20551,
+    "fullUnpackSize" : 22411,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425902083.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1943861537,
+    "fileName" : "envelopes.odt",
+    "hostOS" : "unix",
+    "fullPackSize" : 9625,
+    "fullUnpackSize" : 11149,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

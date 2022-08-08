@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173951174.515016600,
+    "creationTime" : null,
+    "fileCRC" : -905031748,
+    "fileName" : "UniversalER.cfg",
+    "hostOS" : "win32",
+    "fullPackSize" : 115,
+    "fullUnpackSize" : 117,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173896412.334355200,
+    "creationTime" : null,
+    "fileCRC" : -1024875885,
+    "fileName" : "UniversalER.dic",
+    "hostOS" : "win32",
+    "fullPackSize" : 4814364,
+    "fullUnpackSize" : 17300324,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

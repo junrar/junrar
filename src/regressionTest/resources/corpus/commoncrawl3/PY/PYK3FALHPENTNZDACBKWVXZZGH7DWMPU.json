@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381411152.654388800,
+    "creationTime" : null,
+    "fileCRC" : -1536275105,
+    "fileName" : "Supernatural.S09E01.I.Think.I'm.Gonna.Like.It.Here.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15938,
+    "fullUnpackSize" : 42277,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381328870.489461600,
+    "creationTime" : null,
+    "fileCRC" : 1905212981,
+    "fileName" : "Supernatural.S09E01.I.Think.I'm.Gonna.Like.It.Here.HDTV.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15897,
+    "fullUnpackSize" : 42214,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

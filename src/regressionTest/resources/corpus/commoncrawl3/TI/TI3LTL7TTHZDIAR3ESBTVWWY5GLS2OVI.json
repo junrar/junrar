@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353462480.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1206295350,
+    "fileName" : "V7N3-3.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 814591,
+    "fullUnpackSize" : 925317,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353462480.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1181062947,
+    "fileName" : "V7N3-4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 793570,
+    "fullUnpackSize" : 851026,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

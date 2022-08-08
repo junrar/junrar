@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506790861.000000000,
+    "creationTime" : null,
+    "fileCRC" : 514280265,
+    "fileName" : "The Wild Storm - Michael Cray (2017-) 001-006.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 657667,
+    "fullUnpackSize" : 739720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506790861.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1270272574,
+    "fileName" : "The Wild Storm - Michael Cray (2017-) 001-007.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 795280,
+    "fullUnpackSize" : 880498,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

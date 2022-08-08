@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1345019178.000000000,
+    "creationTime" : null,
+    "fileCRC" : 948031463,
+    "fileName" : "Yilan Mescla 703.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1828218,
+    "fullUnpackSize" : 1843631,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

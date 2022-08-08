@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489831236.875000000,
+    "creationTime" : null,
+    "fileCRC" : 1203254692,
+    "fileName" : "A306S刷机教程.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2113371,
+    "fullUnpackSize" : 2778086,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

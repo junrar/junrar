@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1269188974.000000000,
+    "creationTime" : null,
+    "fileCRC" : 47520995,
+    "fileName" : "Chapter_6b.cmo",
+    "hostOS" : "win32",
+    "fullPackSize" : 453899,
+    "fullUnpackSize" : 455521,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291529396.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1107734150,
+    "fileName" : "Glossary_form.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 484,
+    "fullUnpackSize" : 1245,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291712455.406000000,
+    "creationTime" : null,
+    "fileCRC" : 682943593,
+    "fileName" : "Створення глосарiю в LMS Moodle (MS Word_2003).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2186636,
+    "fullUnpackSize" : 2646528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

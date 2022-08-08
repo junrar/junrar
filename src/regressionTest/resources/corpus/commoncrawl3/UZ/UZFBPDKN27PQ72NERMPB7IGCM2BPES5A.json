@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440318352.581018300,
+    "creationTime" : null,
+    "fileCRC" : -375339211,
+    "fileName" : "easyQuizzy-2.0-installer.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4287747,
+    "fullUnpackSize" : 4318876,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290577929.739771600,
+    "creationTime" : null,
+    "fileCRC" : -1795023722,
+    "fileName" : "iru_home_corp_win7_2010_p.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 317361,
+    "fullUnpackSize" : 458792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

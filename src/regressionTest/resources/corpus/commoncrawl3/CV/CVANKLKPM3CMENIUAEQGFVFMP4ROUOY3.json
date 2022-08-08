@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291636587.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2129801666,
+    "fileName" : "FidoNet_Rukovodstvo_sistemnogo_operatora_Professionalnaya_rabota_v_neprofessionalnoy_seti.pdf",
+    "hostOS" : "unix",
+    "fullPackSize" : 106881786,
+    "fullUnpackSize" : 121847088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

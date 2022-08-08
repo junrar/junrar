@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382870991.531250000,
+    "creationTime" : null,
+    "fileCRC" : -838543452,
+    "fileName" : "TE_6.7.h5u",
+    "hostOS" : "win32",
+    "fullPackSize" : 44666409,
+    "fullUnpackSize" : 45986361,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

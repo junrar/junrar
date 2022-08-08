@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391998437.562947800,
+    "creationTime" : null,
+    "fileCRC" : -209306847,
+    "fileName" : "Supernatural.S09E13.The.Purge.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15598,
+    "fullUnpackSize" : 39060,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391612747.228166100,
+    "creationTime" : null,
+    "fileCRC" : 183734831,
+    "fileName" : "Supernatural.S09E13.The.Purge.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15538,
+    "fullUnpackSize" : 38997,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

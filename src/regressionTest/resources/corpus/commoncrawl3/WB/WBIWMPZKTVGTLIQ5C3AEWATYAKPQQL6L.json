@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1262231168.060000000,
+    "creationTime" : null,
+    "fileCRC" : 1673554563,
+    "fileName" : "Стратплан Жангала отд экономики каз.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 50208,
+    "fullUnpackSize" : 299008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

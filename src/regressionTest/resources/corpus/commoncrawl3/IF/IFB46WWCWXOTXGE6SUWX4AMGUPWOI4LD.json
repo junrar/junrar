@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367808293.111627400,
+    "creationTime" : null,
+    "fileCRC" : 1028844259,
+    "fileName" : "FRZ041-Alaskam-Introspection\\01_Défiance.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 7410661,
+    "fullUnpackSize" : 8889861,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

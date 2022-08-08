@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298167355.080305300,
+    "creationTime" : null,
+    "fileCRC" : 871820614,
+    "fileName" : "Calsotada 2011.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18139,
+    "fullUnpackSize" : 90359,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418887383.000000000,
+    "creationTime" : null,
+    "fileCRC" : 929661328,
+    "fileName" : "hqd1_Beer\\Max2010_Vray\\Beer.max",
+    "hostOS" : "win32",
+    "fullPackSize" : 2485151,
+    "fullUnpackSize" : 3448832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

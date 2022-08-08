@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1198476138.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1825416789,
+    "fileName" : "FREE-JockeyClub5 Free.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 2502294,
+    "fullUnpackSize" : 2712096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

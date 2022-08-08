@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418212850.744612700,
+    "creationTime" : null,
+    "fileCRC" : -1280444143,
+    "fileName" : "02_ScoreSimdik_V3.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 682677,
+    "fullUnpackSize" : 2253312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

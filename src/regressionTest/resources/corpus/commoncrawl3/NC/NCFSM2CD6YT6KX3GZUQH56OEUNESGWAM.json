@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371729759.797508000,
+    "creationTime" : null,
+    "fileCRC" : -1455629803,
+    "fileName" : "pritcha.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 10281199,
+    "fullUnpackSize" : 10460292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

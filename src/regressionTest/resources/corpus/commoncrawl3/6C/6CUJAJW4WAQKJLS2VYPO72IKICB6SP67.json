@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498670144.142364200,
+    "creationTime" : null,
+    "fileCRC" : -1937747055,
+    "fileName" : "Nashville.2012.S05E15.720p.HDTV.x264-SVA.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 21189,
+    "fullUnpackSize" : 58195,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498670144.142364200,
+    "creationTime" : null,
+    "fileCRC" : -1937747055,
+    "fileName" : "Nashville.2012.S05E15.HDTV.x264-SVA.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 21189,
+    "fullUnpackSize" : 58195,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

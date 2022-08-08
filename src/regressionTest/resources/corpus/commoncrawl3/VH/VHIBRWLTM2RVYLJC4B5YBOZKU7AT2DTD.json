@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1344170598.843750000,
+    "creationTime" : null,
+    "fileCRC" : -1110273042,
+    "fileName" : "1949之后.epub",
+    "hostOS" : "win32",
+    "fullPackSize" : 218230,
+    "fullUnpackSize" : 219780,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277361414.140000000,
+    "creationTime" : null,
+    "fileCRC" : 78043857,
+    "fileName" : "Колесников Ю. А. Особое задание.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 200892,
+    "fullUnpackSize" : 1344512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

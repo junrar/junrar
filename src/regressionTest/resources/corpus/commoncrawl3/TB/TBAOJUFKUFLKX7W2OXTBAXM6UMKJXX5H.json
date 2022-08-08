@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1232344692.000000000,
+    "creationTime" : null,
+    "fileCRC" : 368968456,
+    "fileName" : "per-04-2008-1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 118252,
+    "fullUnpackSize" : 1919488,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

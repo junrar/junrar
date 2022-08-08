@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425907841.824330400,
+    "creationTime" : null,
+    "fileCRC" : -1137383110,
+    "fileName" : "2015 03 09 - bug in OPEN-OFFICE WRITER.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 240936,
+    "fullUnpackSize" : 272496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425907845.778068700,
+    "creationTime" : null,
+    "fileCRC" : 1243376229,
+    "fileName" : "2015 03 09 - bug in OO WRITER.odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 52590,
+    "fullUnpackSize" : 54692,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

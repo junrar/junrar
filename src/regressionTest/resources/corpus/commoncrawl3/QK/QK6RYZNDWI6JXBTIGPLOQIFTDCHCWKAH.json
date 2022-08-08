@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 919106688.000000000,
+    "creationTime" : null,
+    "fileCRC" : 646070857,
+    "fileName" : "TOMVA___.TTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 70205,
+    "fullUnpackSize" : 124068,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

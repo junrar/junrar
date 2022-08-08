@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299150053.727898100,
+    "creationTime" : null,
+    "fileCRC" : 738867983,
+    "fileName" : "mp_testart\\mp_testart.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 25616403,
+    "fullUnpackSize" : 25649072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

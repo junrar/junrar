@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228037284.000000000,
+    "creationTime" : null,
+    "fileCRC" : 97126432,
+    "fileName" : "Triumh_Clothing_Brochure_US.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8365432,
+    "fullUnpackSize" : 9633326,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

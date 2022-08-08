@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1052771201.555371200,
+    "creationTime" : null,
+    "fileCRC" : -1047902860,
+    "fileName" : "toyostar-dvd-AZ300.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 639248,
+    "fullUnpackSize" : 1048576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

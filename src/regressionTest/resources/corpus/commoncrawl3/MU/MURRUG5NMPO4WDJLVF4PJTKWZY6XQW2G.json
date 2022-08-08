@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1325067835.470665400,
+    "creationTime" : null,
+    "fileCRC" : 336720858,
+    "fileName" : "mp_eb_explicitbouncers\\mp_eb_explicitbouncers.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 15574452,
+    "fullUnpackSize" : 15777943,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

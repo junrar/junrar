@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177260483.890625000,
+    "creationTime" : null,
+    "fileCRC" : 431934555,
+    "fileName" : "dek_akts_tab.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 91164,
+    "fullUnpackSize" : 1030656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

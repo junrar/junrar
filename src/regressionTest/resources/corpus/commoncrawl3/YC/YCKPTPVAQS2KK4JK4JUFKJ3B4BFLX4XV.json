@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494131278.411000000,
+    "creationTime" : null,
+    "fileCRC" : 302215438,
+    "fileName" : "Molecular Operating Environment (MOE) 2015.10\\moe2015_10_installer_win_datafile.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 741129620,
+    "fullUnpackSize" : 1782514274,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

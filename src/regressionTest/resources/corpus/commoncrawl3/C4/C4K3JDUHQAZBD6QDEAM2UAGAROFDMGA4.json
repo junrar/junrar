@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388206868.000000000,
+    "creationTime" : null,
+    "fileCRC" : 170420123,
+    "fileName" : "График ЦУС на январь 2014Архэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 782134,
+    "fullUnpackSize" : 903163,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387851054.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2059326433,
+    "fileName" : "План-график отключений январь 2014 ВЭ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 303588,
+    "fullUnpackSize" : 324099,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

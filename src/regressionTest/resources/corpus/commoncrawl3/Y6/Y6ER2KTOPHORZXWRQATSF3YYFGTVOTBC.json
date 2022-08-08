@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464755539.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1196454457,
+    "fileName" : "Project.G-DARKSiDERS [www.pocketgames.ir]\\darksiders.nfo",
+    "hostOS" : "win32",
+    "fullPackSize" : 4288,
+    "fullUnpackSize" : 14807,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464698110.786075800,
+    "creationTime" : null,
+    "fileCRC" : -2098259972,
+    "fileName" : "Project.G-DARKSiDERS [www.pocketgames.ir]\\ds-projectg.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 189232717,
+    "fullUnpackSize" : 685647984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

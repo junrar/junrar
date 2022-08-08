@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1239617579.734375000,
+    "creationTime" : null,
+    "fileCRC" : -1405640733,
+    "fileName" : "Wall_hack\\MHS-Bot-PW 2.3+2.4.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1332240,
+    "fullUnpackSize" : 1332240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

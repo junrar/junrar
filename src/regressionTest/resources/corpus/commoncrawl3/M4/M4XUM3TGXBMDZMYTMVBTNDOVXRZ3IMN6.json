@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353308843.828125000,
+    "creationTime" : null,
+    "fileCRC" : 1286712572,
+    "fileName" : "ГР с Ценами на 19,11,12.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 848859,
+    "fullUnpackSize" : 5655552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327540491.359375000,
+    "creationTime" : null,
+    "fileCRC" : -1013686321,
+    "fileName" : "ГР с ценами на 25.01.2012.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 756003,
+    "fullUnpackSize" : 4771328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

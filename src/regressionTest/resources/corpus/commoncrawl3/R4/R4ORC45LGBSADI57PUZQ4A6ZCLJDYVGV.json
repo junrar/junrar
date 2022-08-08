@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426486732.000000000,
+    "creationTime" : null,
+    "fileCRC" : -664917912,
+    "fileName" : "15. Выход волка.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1258270,
+    "fullUnpackSize" : 1305336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

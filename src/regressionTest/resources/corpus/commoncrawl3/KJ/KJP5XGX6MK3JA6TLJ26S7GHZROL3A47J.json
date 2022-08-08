@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366098671.984000000,
+    "creationTime" : null,
+    "fileCRC" : -1331762302,
+    "fileName" : "Архивные шкафы.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7552,
+    "fullUnpackSize" : 50176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

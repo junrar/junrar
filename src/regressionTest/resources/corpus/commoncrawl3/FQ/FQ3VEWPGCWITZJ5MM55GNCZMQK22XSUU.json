@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323844378.184856300,
+    "creationTime" : null,
+    "fileCRC" : -1156732285,
+    "fileName" : "Supernatural.S07E10.720p.WEB-DL.DD5.1.H.264-GFY.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17872,
+    "fullUnpackSize" : 43576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1322898391.569068000,
+    "creationTime" : null,
+    "fileCRC" : -2061749081,
+    "fileName" : "Supernatural.S07E10.HDTV.XviD-ASAP.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17865,
+    "fullUnpackSize" : 43588,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

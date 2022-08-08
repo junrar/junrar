@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484196742.780816700,
+    "creationTime" : null,
+    "fileCRC" : 421240993,
+    "fileName" : "Competitii_sportive_scolare_16_17\\CALENDAR 2016-2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4386963,
+    "fullUnpackSize" : 4876392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

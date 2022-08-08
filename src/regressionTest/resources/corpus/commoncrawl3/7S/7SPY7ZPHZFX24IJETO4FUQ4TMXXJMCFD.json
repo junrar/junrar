@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1467603618.000000000,
+    "creationTime" : null,
+    "fileCRC" : 125812798,
+    "fileName" : "Релиз-М.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 335916,
+    "fullUnpackSize" : 765952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

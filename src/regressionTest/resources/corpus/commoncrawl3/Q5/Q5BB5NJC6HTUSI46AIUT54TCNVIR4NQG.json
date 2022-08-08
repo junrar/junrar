@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396886985.939476400,
+    "creationTime" : null,
+    "fileCRC" : -1427282850,
+    "fileName" : "GAIM - 23.5 - Kamen Rider Gaim Vs. Ressha Sentai ToQger.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16842,
+    "fullUnpackSize" : 47606,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

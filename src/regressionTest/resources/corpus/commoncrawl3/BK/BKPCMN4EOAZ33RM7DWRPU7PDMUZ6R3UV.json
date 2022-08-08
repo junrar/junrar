@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1279794469.834742200,
+    "creationTime" : null,
+    "fileCRC" : -312518275,
+    "fileName" : "Fendt 2011-1.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 344921471,
+    "fullUnpackSize" : 345956564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

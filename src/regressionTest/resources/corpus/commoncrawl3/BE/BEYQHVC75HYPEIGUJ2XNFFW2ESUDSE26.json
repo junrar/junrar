@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381136330.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1412588046,
+    "fileName" : "color_blok_10_13.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 17285127,
+    "fullUnpackSize" : 17468662,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

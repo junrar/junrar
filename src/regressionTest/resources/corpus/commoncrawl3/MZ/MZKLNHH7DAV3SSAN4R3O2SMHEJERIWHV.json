@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500777453.811152300,
+    "creationTime" : null,
+    "fileCRC" : -541583233,
+    "fileName" : "BiPlan China.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1816683,
+    "fullUnpackSize" : 2030738,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

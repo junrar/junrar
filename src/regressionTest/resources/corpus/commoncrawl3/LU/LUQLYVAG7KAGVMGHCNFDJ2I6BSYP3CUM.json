@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416536280.703125000,
+    "creationTime" : null,
+    "fileCRC" : -1938060549,
+    "fileName" : "El Anticristo 1 parte.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 3074179,
+    "fullUnpackSize" : 3871232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

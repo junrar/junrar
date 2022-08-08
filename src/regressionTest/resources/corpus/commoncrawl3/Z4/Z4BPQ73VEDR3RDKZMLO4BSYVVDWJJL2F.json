@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460424098.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1293789853,
+    "fileName" : "QĐinhNganHangDeThi\\Phieu tra loi trac nghiem.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 795945,
+    "fullUnpackSize" : 1083392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460423078.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1428935497,
+    "fileName" : "QĐinhNganHangDeThi\\Mau de hon hop.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 794708,
+    "fullUnpackSize" : 1063936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

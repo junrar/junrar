@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1143126534.000000000,
+    "creationTime" : null,
+    "fileCRC" : -276755224,
+    "fileName" : "南傳法句經繁體版.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 48543,
+    "fullUnpackSize" : 253952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1143126188.000000000,
+    "creationTime" : null,
+    "fileCRC" : -398634536,
+    "fileName" : "南传法句经简体版.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 51326,
+    "fullUnpackSize" : 268288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

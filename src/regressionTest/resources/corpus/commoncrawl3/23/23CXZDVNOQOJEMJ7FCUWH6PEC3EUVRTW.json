@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275361978.000000000,
+    "creationTime" : null,
+    "fileCRC" : 851158264,
+    "fileName" : "BJx77.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 304443,
+    "fullUnpackSize" : 1015296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1288679858.765625000,
+    "creationTime" : null,
+    "fileCRC" : 1737107828,
+    "fileName" : "bkg.dat",
+    "hostOS" : "win32",
+    "fullPackSize" : 831099,
+    "fullUnpackSize" : 1061819,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

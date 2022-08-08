@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1226454590.250000000,
+    "creationTime" : null,
+    "fileCRC" : -306134060,
+    "fileName" : "Bir Film Geriye Alınınca.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 6766504,
+    "fullUnpackSize" : 10122752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

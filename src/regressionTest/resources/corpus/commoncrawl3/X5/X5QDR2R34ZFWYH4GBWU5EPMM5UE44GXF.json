@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488181868.768152000,
+    "creationTime" : null,
+    "fileCRC" : 1745114973,
+    "fileName" : "Положение об антикоррупционной комиссии (ГОКУ).docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 19862,
+    "fullUnpackSize" : 23192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488178733.510221000,
+    "creationTime" : null,
+    "fileCRC" : 974117934,
+    "fileName" : "приказ от 25.01.2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 232760,
+    "fullUnpackSize" : 318224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407832017.705837300,
+    "creationTime" : null,
+    "fileCRC" : 26250914,
+    "fileName" : "caf_hlc-wp_replacement.pbo",
+    "hostOS" : "win32",
+    "fullPackSize" : 1786,
+    "fullUnpackSize" : 21164,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407832017.759850000,
+    "creationTime" : null,
+    "fileCRC" : 1892185282,
+    "fileName" : "caf_hlc-wp_replacement.pbo.Toadie.bisign",
+    "hostOS" : "win32",
+    "fullPackSize" : 559,
+    "fullUnpackSize" : 559,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

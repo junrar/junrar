@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350828557.982000000,
+    "creationTime" : null,
+    "fileCRC" : -266616114,
+    "fileName" : "art_greeting_card_with_red_roses\\56454545 (1).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2963216,
+    "fullUnpackSize" : 3147536,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

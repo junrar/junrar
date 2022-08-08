@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491539594.514073200,
+    "creationTime" : null,
+    "fileCRC" : 1732105540,
+    "fileName" : "plafons\\Plafo_Projecte_cicles_horitzontal.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 1004752,
+    "fullUnpackSize" : 1075150,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482150552.047695400,
+    "creationTime" : null,
+    "fileCRC" : 96033212,
+    "fileName" : "plafons\\Plafo_Projecte_cicles_vertical.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 1009800,
+    "fullUnpackSize" : 1080363,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512561191.830220100,
+    "creationTime" : null,
+    "fileCRC" : -1224028083,
+    "fileName" : "Australian.Survivor.S03E14.Webrip.x264-MFO.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19830,
+    "fullUnpackSize" : 50664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516025430.010854900,
+    "creationTime" : null,
+    "fileCRC" : -600893763,
+    "fileName" : "Survivor.au.s03e14.720p.hdtv.bf1.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19820,
+    "fullUnpackSize" : 50664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

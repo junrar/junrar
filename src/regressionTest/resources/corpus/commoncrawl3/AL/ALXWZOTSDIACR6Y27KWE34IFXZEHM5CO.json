@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499510893.390625000,
+    "creationTime" : null,
+    "fileCRC" : 150929258,
+    "fileName" : "CCcam to Oscam - Converter\\CCcam to Oscam - Converter.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 108,
+    "fullUnpackSize" : 129,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499510689.687500000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "CCcam to Oscam - Converter",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

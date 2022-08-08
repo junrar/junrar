@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1274145331.584102600,
+    "creationTime" : null,
+    "fileCRC" : -361217693,
+    "fileName" : "Serra Guara - collacansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17144,
+    "fullUnpackSize" : 143047,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

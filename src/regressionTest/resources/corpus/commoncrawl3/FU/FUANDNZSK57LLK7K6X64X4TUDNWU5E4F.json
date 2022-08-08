@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319084854.000000000,
+    "creationTime" : null,
+    "fileCRC" : -765073236,
+    "fileName" : "LED显示屏说明书（软件）.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 323905,
+    "fullUnpackSize" : 412672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1283612192.000000000,
+    "creationTime" : null,
+    "fileCRC" : 823796867,
+    "fileName" : "LED显示屏通讯软件说明书A5.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1497916,
+    "fullUnpackSize" : 3733504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

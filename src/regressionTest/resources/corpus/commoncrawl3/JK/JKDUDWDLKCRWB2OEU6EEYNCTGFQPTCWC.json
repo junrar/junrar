@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523927854.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1844061289,
+    "fileName" : "final 100 hotels 23.12.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 516493322,
+    "fullUnpackSize" : 525146260,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

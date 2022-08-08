@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506042166.332529000,
+    "creationTime" : null,
+    "fileCRC" : -311560604,
+    "fileName" : "iGreen设计师的改变.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8453481,
+    "fullUnpackSize" : 8650676,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

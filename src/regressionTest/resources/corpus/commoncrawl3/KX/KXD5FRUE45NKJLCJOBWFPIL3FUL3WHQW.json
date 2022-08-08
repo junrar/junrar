@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449739376.421875000,
+    "creationTime" : null,
+    "fileCRC" : -1761924900,
+    "fileName" : "konspekt_uroka-Opredelenie_kolichestva_informacii_8_klass.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 35838,
+    "fullUnpackSize" : 41795,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442974247.434250400,
+    "creationTime" : null,
+    "fileCRC" : 168579861,
+    "fileName" : "Последний порог.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1193902,
+    "fullUnpackSize" : 3587584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

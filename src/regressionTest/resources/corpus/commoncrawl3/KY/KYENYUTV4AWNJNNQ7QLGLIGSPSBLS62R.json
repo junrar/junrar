@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514157734.093000000,
+    "creationTime" : null,
+    "fileCRC" : 802393703,
+    "fileName" : "Очень наглядно изображена схема автомобильного радиоприёмника.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 170261,
+    "fullUnpackSize" : 193024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

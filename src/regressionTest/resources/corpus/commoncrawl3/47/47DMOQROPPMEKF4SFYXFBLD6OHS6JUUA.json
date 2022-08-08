@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1234780186.000000000,
+    "creationTime" : null,
+    "fileCRC" : -137922861,
+    "fileName" : "Track_PR-A 343_Vereda de Trassierra.PLT",
+    "hostOS" : "win32",
+    "fullPackSize" : 2629,
+    "fullUnpackSize" : 18752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

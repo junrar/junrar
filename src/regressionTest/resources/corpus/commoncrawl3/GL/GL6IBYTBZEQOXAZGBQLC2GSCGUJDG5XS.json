@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403057283.418000000,
+    "creationTime" : null,
+    "fileCRC" : 2099975082,
+    "fileName" : "Программа вступительного испытания 2-37 01 06_Техническая экспл авто.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 52095,
+    "fullUnpackSize" : 209920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

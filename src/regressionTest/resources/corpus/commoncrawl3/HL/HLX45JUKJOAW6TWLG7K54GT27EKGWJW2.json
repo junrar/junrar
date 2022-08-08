@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381743409.987256600,
+    "creationTime" : null,
+    "fileCRC" : -66074915,
+    "fileName" : "P1-20131007_EC_Rubio_Citizens Observatories.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1376444,
+    "fullUnpackSize" : 1546140,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

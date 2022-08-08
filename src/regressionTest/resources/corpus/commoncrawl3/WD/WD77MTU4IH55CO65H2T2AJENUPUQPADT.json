@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421939376.406768500,
+    "creationTime" : null,
+    "fileCRC" : 1047445451,
+    "fileName" : "AizenkTest.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 268324,
+    "fullUnpackSize" : 658432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

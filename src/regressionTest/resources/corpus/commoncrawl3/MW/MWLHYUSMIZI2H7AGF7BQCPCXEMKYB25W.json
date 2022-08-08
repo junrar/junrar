@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403849728.477628700,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "LWDown_month_ascii\\lw_dn_ann.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403849727.811590600,
+    "creationTime" : null,
+    "fileCRC" : 799933154,
+    "fileName" : "LWDown_month_ascii\\lw_dn_ann.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1130340,
+    "fullUnpackSize" : 21701776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

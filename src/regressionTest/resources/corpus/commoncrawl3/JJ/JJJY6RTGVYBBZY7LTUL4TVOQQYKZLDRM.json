@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221897281.666505000,
+    "creationTime" : null,
+    "fileCRC" : 195963706,
+    "fileName" : "subida al almanzor.TRK",
+    "hostOS" : "win32",
+    "fullPackSize" : 6943,
+    "fullUnpackSize" : 52243,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

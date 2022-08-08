@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275982361.000000000,
+    "creationTime" : null,
+    "fileCRC" : 51284323,
+    "fileName" : "FW66_96K_Mac\\FW66_96K.dmg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3617989,
+    "fullUnpackSize" : 3617989,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

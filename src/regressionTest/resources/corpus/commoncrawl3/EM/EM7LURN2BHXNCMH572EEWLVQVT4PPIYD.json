@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511101191.556409900,
+    "creationTime" : null,
+    "fileCRC" : -1611748424,
+    "fileName" : "2. Библия. Книга Исход. Ветхий Завет (читает Игорь Козлов).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 193433891,
+    "fullUnpackSize" : 204415007,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314960274.671875000,
+    "creationTime" : null,
+    "fileCRC" : 1073479270,
+    "fileName" : "burn.notice.s05e11.hdtv.xvid-fqm.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 25748,
+    "fullUnpackSize" : 64728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

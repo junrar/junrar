@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196691796.500000000,
+    "creationTime" : null,
+    "fileCRC" : 791307261,
+    "fileName" : "2006_107_Update.cmu",
+    "hostOS" : "win32",
+    "fullPackSize" : 35159917,
+    "fullUnpackSize" : 35159917,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

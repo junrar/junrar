@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439197308.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1042834491,
+    "fileName" : "FC-8810A门禁控制板.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5720494,
+    "fullUnpackSize" : 7067468,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

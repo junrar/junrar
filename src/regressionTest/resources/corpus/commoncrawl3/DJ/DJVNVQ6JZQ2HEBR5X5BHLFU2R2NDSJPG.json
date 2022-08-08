@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251470922.828125000,
+    "creationTime" : null,
+    "fileCRC" : 169452558,
+    "fileName" : "Asus Tools\\wl500g-clear-nvram.trx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1581844,
+    "fullUnpackSize" : 1585152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369564808.000000000,
+    "creationTime" : null,
+    "fileCRC" : 146982106,
+    "fileName" : "create_database_dopolni.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 450583,
+    "fullUnpackSize" : 1183744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369546436.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1638711974,
+    "fileName" : "KapitacijaKasoftPlus.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1553642,
+    "fullUnpackSize" : 8315392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

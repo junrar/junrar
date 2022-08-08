@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1365504193.778073000,
+    "creationTime" : null,
+    "fileCRC" : -1596175227,
+    "fileName" : "D-Fend-Reloaded-1.3.3-Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 15914940,
+    "fullUnpackSize" : 15914940,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

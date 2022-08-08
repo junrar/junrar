@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508705571.039634300,
+    "creationTime" : null,
+    "fileCRC" : -889025896,
+    "fileName" : "Cossacks-3-v1.9.5.83.5749_www.FreeGamesDL.net\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 48,
+    "fullUnpackSize" : 43,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508705588.484480000,
+    "creationTime" : null,
+    "fileCRC" : -300440978,
+    "fileName" : "Cossacks-3-v1.9.5.83.5749_www.FreeGamesDL.net\\data.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 1790851296,
+    "fullUnpackSize" : 1786271082,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

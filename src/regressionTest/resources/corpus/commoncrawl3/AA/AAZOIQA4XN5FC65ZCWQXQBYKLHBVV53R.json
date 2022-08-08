@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437739648.740466600,
+    "creationTime" : null,
+    "fileCRC" : -346871873,
+    "fileName" : "10立方双层油罐图纸.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1063812,
+    "fullUnpackSize" : 1321558,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

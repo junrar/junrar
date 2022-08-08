@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516978790.573761600,
+    "creationTime" : null,
+    "fileCRC" : 155778377,
+    "fileName" : "скриншот сайта\\0766-0004128d-621244ab.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2259674,
+    "fullUnpackSize" : 2435320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

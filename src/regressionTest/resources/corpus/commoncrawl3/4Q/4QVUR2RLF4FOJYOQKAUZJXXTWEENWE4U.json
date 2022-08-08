@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 958408104.000000000,
+    "creationTime" : null,
+    "fileCRC" : -483041799,
+    "fileName" : "ark8\\12.gif",
+    "hostOS" : "win32",
+    "fullPackSize" : 66243,
+    "fullUnpackSize" : 120989,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

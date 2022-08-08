@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314863445.065712400,
+    "creationTime" : null,
+    "fileCRC" : 80338067,
+    "fileName" : "mp_crapper\\mp_crapper.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 3177585,
+    "fullUnpackSize" : 3239083,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

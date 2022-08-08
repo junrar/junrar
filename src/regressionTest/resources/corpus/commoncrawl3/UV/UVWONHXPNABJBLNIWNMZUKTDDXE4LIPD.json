@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527493448.428421100,
+    "creationTime" : null,
+    "fileCRC" : -1513315594,
+    "fileName" : "Приложение №3 Руководство по оценке.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1458231,
+    "fullUnpackSize" : 1458231,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522722863.315160000,
+    "creationTime" : null,
+    "fileCRC" : 22987262,
+    "fileName" : "3315\\C0402_1047855175785_1.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 65581299,
+    "fullUnpackSize" : 65903072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

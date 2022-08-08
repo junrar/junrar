@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1241777266.000000000,
+    "creationTime" : null,
+    "fileCRC" : -51523248,
+    "fileName" : "novogodni.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 8109299,
+    "fullUnpackSize" : 11509500,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

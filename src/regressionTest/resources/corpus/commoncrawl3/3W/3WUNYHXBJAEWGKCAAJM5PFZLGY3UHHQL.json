@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511312385.629123200,
+    "creationTime" : null,
+    "fileCRC" : 249981797,
+    "fileName" : "MRSK_NW_FS_9m2017_rus_Final.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 11345608,
+    "fullUnpackSize" : 11345608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

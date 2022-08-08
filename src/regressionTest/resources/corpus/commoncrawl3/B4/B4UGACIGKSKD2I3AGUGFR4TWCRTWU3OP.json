@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477547589.032967000,
+    "creationTime" : null,
+    "fileCRC" : -410694585,
+    "fileName" : "2016-10-13 Информация по стандартам раскрытия (значения).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 22414,
+    "fullUnpackSize" : 188416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476866651.397611200,
+    "creationTime" : null,
+    "fileCRC" : 464608497,
+    "fileName" : "2016-10-13 Информация по стандартам раскрытия.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 12817,
+    "fullUnpackSize" : 145405,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

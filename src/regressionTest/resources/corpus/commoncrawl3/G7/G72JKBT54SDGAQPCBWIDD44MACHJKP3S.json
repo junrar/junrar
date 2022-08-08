@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403152280.394000000,
+    "creationTime" : null,
+    "fileCRC" : -672103062,
+    "fileName" : "Инструкция по перепрошивке регистраторов Falcon Eye.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11499,
+    "fullUnpackSize" : 62464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

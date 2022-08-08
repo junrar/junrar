@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384360514.794785200,
+    "creationTime" : null,
+    "fileCRC" : -1312206777,
+    "fileName" : "Supernatural.S09E06.Heaven.Can't.Wait.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17961,
+    "fullUnpackSize" : 45752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384583845.185781100,
+    "creationTime" : null,
+    "fileCRC" : 1457962851,
+    "fileName" : "Supernatural.S09E06.Heaven.Can't.Wait.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18009,
+    "fullUnpackSize" : 45815,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

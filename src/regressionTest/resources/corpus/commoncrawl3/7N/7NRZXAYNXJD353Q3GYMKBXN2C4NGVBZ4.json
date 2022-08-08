@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175428720.000000000,
+    "creationTime" : null,
+    "fileCRC" : -686581366,
+    "fileName" : "topic.in.ua.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 224,
+    "fullUnpackSize" : 419,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1186890392.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1147646973,
+    "fileName" : "Уэти-рю карате-до т.1.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 1136624,
+    "fullUnpackSize" : 1138596,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

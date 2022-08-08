@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196737899.423695600,
+    "creationTime" : null,
+    "fileCRC" : 1341375992,
+    "fileName" : "azerbaidzhanskaia_ssr_1961_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 3829213,
+    "fullUnpackSize" : 22183735,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

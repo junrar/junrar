@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438765814.000000000,
+    "creationTime" : null,
+    "fileCRC" : -24078080,
+    "fileName" : "приложение к приказу 262.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 2502664,
+    "fullUnpackSize" : 2917044,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

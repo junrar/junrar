@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1428556015.457000000,
+    "creationTime" : null,
+    "fileCRC" : 371836969,
+    "fileName" : "RESVCIP2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 462324,
+    "fullUnpackSize" : 497664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

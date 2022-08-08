@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314929137.484375000,
+    "creationTime" : null,
+    "fileCRC" : -1800570051,
+    "fileName" : "Кин Кэролайн. Нэнси Дру -. Тайна   фермы «Алые ворота».rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 92170,
+    "fullUnpackSize" : 362575,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

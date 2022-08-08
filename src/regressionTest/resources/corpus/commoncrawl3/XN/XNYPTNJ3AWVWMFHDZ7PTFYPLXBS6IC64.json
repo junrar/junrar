@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497588615.814412800,
+    "creationTime" : null,
+    "fileCRC" : -1715056943,
+    "fileName" : "Приказ от 16.06.17 №191об утв.плана суициды.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 87785,
+    "fullUnpackSize" : 158434,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504754510.154000000,
+    "creationTime" : null,
+    "fileCRC" : -445866831,
+    "fileName" : "План профилактика суицидов 17-18.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12023,
+    "fullUnpackSize" : 70656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

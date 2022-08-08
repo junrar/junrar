@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309828844.000000000,
+    "creationTime" : null,
+    "fileCRC" : 862861881,
+    "fileName" : "Firmware_V_2_2.enc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1761,
+    "fullUnpackSize" : 2920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300506142.609375000,
+    "creationTime" : null,
+    "fileCRC" : 1530501726,
+    "fileName" : "PilotFirmwareUpdate.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 192454,
+    "fullUnpackSize" : 467456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

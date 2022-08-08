@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1269844912.493000000,
+    "creationTime" : null,
+    "fileCRC" : 106671932,
+    "fileName" : "200-р-Правительство Нижегородской области.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 46588,
+    "fullUnpackSize" : 613888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

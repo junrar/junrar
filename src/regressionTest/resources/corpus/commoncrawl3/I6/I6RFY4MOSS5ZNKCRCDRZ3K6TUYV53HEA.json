@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1181335542.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1591288394,
+    "fileName" : "rostov-anapa\\AlexT_Rostov-Anapa_ozf.map",
+    "hostOS" : "win32",
+    "fullPackSize" : 788,
+    "fullUnpackSize" : 3938,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1181335542.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1940290202,
+    "fileName" : "rostov-anapa\\AlexT_Rostov-Anapa.ozf2",
+    "hostOS" : "win32",
+    "fullPackSize" : 13818271,
+    "fullUnpackSize" : 13818271,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

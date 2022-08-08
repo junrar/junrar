@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459736342.805863100,
+    "creationTime" : null,
+    "fileCRC" : -47175382,
+    "fileName" : "Sant Iscle Vallalta - Montnegre - colla cansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18532,
+    "fullUnpackSize" : 166198,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

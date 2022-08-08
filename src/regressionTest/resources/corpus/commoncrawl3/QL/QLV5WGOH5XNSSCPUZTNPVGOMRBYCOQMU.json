@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509954073.938658200,
+    "creationTime" : null,
+    "fileCRC" : -915511483,
+    "fileName" : "AifirsaPavilion_garden.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 370564,
+    "fullUnpackSize" : 372732,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509961760.516833400,
+    "creationTime" : null,
+    "fileCRC" : -1465492358,
+    "fileName" : "pavilion.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 328743,
+    "fullUnpackSize" : 349895,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

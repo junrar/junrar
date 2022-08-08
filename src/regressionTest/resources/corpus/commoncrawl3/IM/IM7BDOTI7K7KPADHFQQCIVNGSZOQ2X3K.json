@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1356586877.409489000,
+    "creationTime" : null,
+    "fileCRC" : 505177643,
+    "fileName" : "АКТУАЛЬ! Bio_отчет ТатНИИСХ_2012г..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2183132,
+    "fullUnpackSize" : 2648358,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

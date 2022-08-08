@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1205396102.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1771262164,
+    "fileName" : "Natural Brushes 2.abr",
+    "hostOS" : "win32",
+    "fullPackSize" : 47976,
+    "fullUnpackSize" : 59678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

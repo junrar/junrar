@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525429628.030105400,
+    "creationTime" : null,
+    "fileCRC" : -417003906,
+    "fileName" : "План ФХД на 2018 г. (1).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 549953,
+    "fullUnpackSize" : 589646,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525429515.588674100,
+    "creationTime" : null,
+    "fileCRC" : 254355368,
+    "fileName" : "институт пфхд.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4578420,
+    "fullUnpackSize" : 5786911,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

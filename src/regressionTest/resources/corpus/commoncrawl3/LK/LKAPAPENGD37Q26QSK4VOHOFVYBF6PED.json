@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454821437.138014000,
+    "creationTime" : null,
+    "fileCRC" : 33817809,
+    "fileName" : "SH-A65F4-40-4F.IES",
+    "hostOS" : "win32",
+    "fullPackSize" : 7533,
+    "fullUnpackSize" : 23806,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

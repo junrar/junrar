@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333342676.640625000,
+    "creationTime" : null,
+    "fileCRC" : -1761714510,
+    "fileName" : "MPOS_Master_Prof_v2_0_17_2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3224148,
+    "fullUnpackSize" : 3229303,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

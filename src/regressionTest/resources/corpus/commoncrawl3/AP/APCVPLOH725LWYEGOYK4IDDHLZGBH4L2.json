@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363692119.421706700,
+    "creationTime" : null,
+    "fileCRC" : -888167038,
+    "fileName" : "Marvel Zombies IV #2 (www.ElAbueloSawa.com)\\000.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 791082,
+    "fullUnpackSize" : 809375,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363692350.751938100,
+    "creationTime" : null,
+    "fileCRC" : 702380754,
+    "fileName" : "Marvel Zombies IV #2 (www.ElAbueloSawa.com)\\001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 627833,
+    "fullUnpackSize" : 657711,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

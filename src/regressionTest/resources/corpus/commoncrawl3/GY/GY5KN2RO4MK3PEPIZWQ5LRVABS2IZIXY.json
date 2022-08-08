@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233114286.921875000,
+    "creationTime" : null,
+    "fileCRC" : 1582484459,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1282,
+    "fullUnpackSize" : 3924,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233119501.484375000,
+    "creationTime" : null,
+    "fileCRC" : 7837405,
+    "fileName" : "euros.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1135490,
+    "fullUnpackSize" : 3129344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

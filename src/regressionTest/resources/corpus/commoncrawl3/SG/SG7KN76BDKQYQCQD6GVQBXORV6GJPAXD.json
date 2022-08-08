@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327998756.000000000,
+    "creationTime" : null,
+    "fileCRC" : 105654573,
+    "fileName" : "отчет 2-2011 ОАО Аскольд.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 57931,
+    "fullUnpackSize" : 1066279,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

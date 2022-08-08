@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417749553.906000000,
+    "creationTime" : null,
+    "fileCRC" : -1971502103,
+    "fileName" : "SIFM.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1289500,
+    "fullUnpackSize" : 19628032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

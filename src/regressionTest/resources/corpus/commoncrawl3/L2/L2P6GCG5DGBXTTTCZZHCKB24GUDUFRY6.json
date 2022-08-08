@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141544450.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1157051942,
+    "fileName" : "Wings Of A Nightingale.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2347214,
+    "fullUnpackSize" : 2401721,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

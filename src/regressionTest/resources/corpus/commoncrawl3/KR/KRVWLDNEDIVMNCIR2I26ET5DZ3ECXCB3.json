@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1279627692.953125000,
+    "creationTime" : null,
+    "fileCRC" : -488883448,
+    "fileName" : "1996 BMW 325i e36.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4087652,
+    "fullUnpackSize" : 4172044,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

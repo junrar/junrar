@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1154850776.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1890028515,
+    "fileName" : "polevic trans.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 1713565,
+    "fullUnpackSize" : 1713565,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

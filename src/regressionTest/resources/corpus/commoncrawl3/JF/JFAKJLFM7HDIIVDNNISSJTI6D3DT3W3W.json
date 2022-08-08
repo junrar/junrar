@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512567725.298157500,
+    "creationTime" : null,
+    "fileCRC" : 357520906,
+    "fileName" : "kz_kzsca_desk_fykseN_0450.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 3964424,
+    "fullUnpackSize" : 18263521,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

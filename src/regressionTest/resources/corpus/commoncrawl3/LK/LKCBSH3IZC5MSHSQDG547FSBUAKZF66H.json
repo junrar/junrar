@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441765129.984375000,
+    "creationTime" : null,
+    "fileCRC" : 1789575443,
+    "fileName" : "3-39-2015\\Аннотации 3-39, 2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 440085,
+    "fullUnpackSize" : 464703,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441764451.968750000,
+    "creationTime" : null,
+    "fileCRC" : -1366300773,
+    "fileName" : "3-39-2015\\Номер 3(39).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1163610,
+    "fullUnpackSize" : 1292165,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

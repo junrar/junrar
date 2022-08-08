@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371864390.030537800,
+    "creationTime" : null,
+    "fileCRC" : -817860810,
+    "fileName" : "9000M_PBr5.0.0_rel1849_PL5.2.0.107_A5.0.0.1113.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 131866172,
+    "fullUnpackSize" : 137982368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

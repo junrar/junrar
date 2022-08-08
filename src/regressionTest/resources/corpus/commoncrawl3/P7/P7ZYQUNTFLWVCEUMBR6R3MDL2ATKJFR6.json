@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421012902.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1132255416,
+    "fileName" : "12. игра шел козел.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1509570,
+    "fullUnpackSize" : 1541466,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

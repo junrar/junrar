@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457851369.000000000,
+    "creationTime" : null,
+    "fileCRC" : -39711701,
+    "fileName" : "Arduino_Efecto_Soldador_h0\\Arduino_Efecto_Soldador_h0.ino",
+    "hostOS" : "unix",
+    "fullPackSize" : 359,
+    "fullUnpackSize" : 924,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457851369.000000000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Arduino_Efecto_Soldador_h0",
+    "hostOS" : "unix",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

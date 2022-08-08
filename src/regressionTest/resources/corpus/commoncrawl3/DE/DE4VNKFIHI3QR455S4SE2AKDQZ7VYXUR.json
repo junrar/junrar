@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1117688240.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2009264467,
+    "fileName" : "технические рассчёты и заключения\\листовка-памятка по технологии.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1281691,
+    "fullUnpackSize" : 1829830,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355656319.988911600,
+    "creationTime" : null,
+    "fileCRC" : -2037310127,
+    "fileName" : "daimon01_add.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2501084,
+    "fullUnpackSize" : 2680705,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

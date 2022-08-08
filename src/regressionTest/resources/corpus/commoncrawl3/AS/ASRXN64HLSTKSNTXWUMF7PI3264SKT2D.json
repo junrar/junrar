@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318411563.978838900,
+    "creationTime" : null,
+    "fileCRC" : 401096783,
+    "fileName" : "mp_cj\\mp_cj.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 20252215,
+    "fullUnpackSize" : 20252215,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

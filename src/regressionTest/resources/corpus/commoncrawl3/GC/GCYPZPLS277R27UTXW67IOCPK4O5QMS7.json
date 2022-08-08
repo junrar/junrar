@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520322282.000000000,
+    "creationTime" : null,
+    "fileCRC" : -996427737,
+    "fileName" : "sliki\\DSC_0013.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 13176674,
+    "fullUnpackSize" : 13181822,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

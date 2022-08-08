@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401542009.348244800,
+    "creationTime" : null,
+    "fileCRC" : 904037865,
+    "fileName" : "coons4-function_1.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 35575,
+    "fullUnpackSize" : 38114,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401540684.124963800,
+    "creationTime" : null,
+    "fileCRC" : -813522812,
+    "fileName" : "coons4-function.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1389,
+    "fullUnpackSize" : 3279,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

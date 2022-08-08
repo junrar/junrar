@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450230508.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1943012818,
+    "fileName" : "Протоколы ул. Юбилейная\\Протокол от 26.12.2013 Юбилейная 5.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 783342,
+    "fullUnpackSize" : 1071756,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450235040.000000000,
+    "creationTime" : null,
+    "fileCRC" : -217892615,
+    "fileName" : "Протоколы ул. Юбилейная\\Протокол от 26.12.2013 Юбилейная 6.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 977732,
+    "fullUnpackSize" : 1403323,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514155215.437000000,
+    "creationTime" : null,
+    "fileCRC" : 1779609862,
+    "fileName" : "Входные цепи автомобильного радиоприёмника Блюз.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 79277,
+    "fullUnpackSize" : 101888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

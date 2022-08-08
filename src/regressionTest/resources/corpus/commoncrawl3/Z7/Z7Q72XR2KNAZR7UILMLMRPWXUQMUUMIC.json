@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427731229.267332400,
+    "creationTime" : null,
+    "fileCRC" : -860635855,
+    "fileName" : "Edavārdi - Galvaskauss\\01 Galvaskauss.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9235124,
+    "fullUnpackSize" : 9407585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

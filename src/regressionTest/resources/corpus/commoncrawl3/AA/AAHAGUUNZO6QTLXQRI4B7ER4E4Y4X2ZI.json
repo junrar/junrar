@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1181228339.676235200,
+    "creationTime" : null,
+    "fileCRC" : -1142783362,
+    "fileName" : "Demo_CS-80V_1.5_win_setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6257000,
+    "fullUnpackSize" : 6712024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

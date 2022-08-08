@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272930012.000000000,
+    "creationTime" : null,
+    "fileCRC" : 827825232,
+    "fileName" : "IntelBras USB\\Setup_WPS.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5532500,
+    "fullUnpackSize" : 6907122,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403094291.695540100,
+    "creationTime" : null,
+    "fileCRC" : -1431720340,
+    "fileName" : "Схема сборки каркаса со стягивателями (Строительная Артель Сибири).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 248491,
+    "fullUnpackSize" : 261942,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

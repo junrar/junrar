@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1344512283.393662200,
+    "creationTime" : null,
+    "fileCRC" : -216002593,
+    "fileName" : "mp_woodland\\mp_woodland.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 23220003,
+    "fullUnpackSize" : 23447911,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

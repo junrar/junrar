@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382667034.121719700,
+    "creationTime" : null,
+    "fileCRC" : 458513205,
+    "fileName" : "Supernatural.S09E03.I'm.No.Angel.HDTV.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16029,
+    "fullUnpackSize" : 41025,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382667122.855759500,
+    "creationTime" : null,
+    "fileCRC" : 1240631188,
+    "fileName" : "Supernatural.S09E03.I'm.No.Angel.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16065,
+    "fullUnpackSize" : 41154,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

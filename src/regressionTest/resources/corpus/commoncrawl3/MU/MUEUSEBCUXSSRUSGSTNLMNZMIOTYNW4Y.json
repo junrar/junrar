@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1021825400.000000000,
+    "creationTime" : null,
+    "fileCRC" : -195825548,
+    "fileName" : "FELIX244.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 213365,
+    "fullUnpackSize" : 307200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

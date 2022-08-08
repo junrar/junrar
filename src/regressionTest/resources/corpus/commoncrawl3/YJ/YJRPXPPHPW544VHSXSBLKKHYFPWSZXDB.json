@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304050167.250000000,
+    "creationTime" : null,
+    "fileCRC" : -294316103,
+    "fileName" : "BGVLXD_HCM_0203_2011.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 162177,
+    "fullUnpackSize" : 676352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

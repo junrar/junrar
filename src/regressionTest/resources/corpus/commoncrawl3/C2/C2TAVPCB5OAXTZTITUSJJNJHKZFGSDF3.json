@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1044270430.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1696151244,
+    "fileName" : "030203.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14401,
+    "fullUnpackSize" : 170953,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

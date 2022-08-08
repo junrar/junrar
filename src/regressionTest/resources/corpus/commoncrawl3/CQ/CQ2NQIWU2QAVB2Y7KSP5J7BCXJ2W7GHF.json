@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303396963.250886100,
+    "creationTime" : null,
+    "fileCRC" : -757816339,
+    "fileName" : "mp_jumpercity_2\\mp_jumpercity_2.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 23268160,
+    "fullUnpackSize" : 23326005,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

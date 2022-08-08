@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512721016.426415200,
+    "creationTime" : null,
+    "fileCRC" : 2055714371,
+    "fileName" : "Booklet Profil Kotaku Manado.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3925781,
+    "fullUnpackSize" : 4224711,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

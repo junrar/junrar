@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427336724.078125000,
+    "creationTime" : null,
+    "fileCRC" : 225233476,
+    "fileName" : "санпин предоставлен КонсультантПлюс.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 137345,
+    "fullUnpackSize" : 139661,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

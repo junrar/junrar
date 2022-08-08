@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499340794.336556600,
+    "creationTime" : null,
+    "fileCRC" : 345929258,
+    "fileName" : "NCD_PeseATodo\\10_Mi Caballo de Turín.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 8460036,
+    "fullUnpackSize" : 9618351,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

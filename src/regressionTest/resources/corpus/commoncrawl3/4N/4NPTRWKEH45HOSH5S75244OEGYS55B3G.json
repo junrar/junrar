@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297670561.906250000,
+    "creationTime" : null,
+    "fileCRC" : 1727910919,
+    "fileName" : "черная дыра.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1350944,
+    "fullUnpackSize" : 1366756,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

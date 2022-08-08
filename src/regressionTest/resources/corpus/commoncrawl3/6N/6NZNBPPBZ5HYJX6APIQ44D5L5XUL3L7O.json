@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459132866.448903700,
+    "creationTime" : null,
+    "fileCRC" : 1398099968,
+    "fileName" : "嘉里春色PPT模板.potx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1390888,
+    "fullUnpackSize" : 1543740,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141042206.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1969080161,
+    "fileName" : "Фундамент 12.2\\Crack\\keygen.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 73075,
+    "fullUnpackSize" : 77576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187268926.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1655332434,
+    "fileName" : "Фундамент 12.2\\setup_F\\setup_F.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4251044,
+    "fullUnpackSize" : 4422333,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

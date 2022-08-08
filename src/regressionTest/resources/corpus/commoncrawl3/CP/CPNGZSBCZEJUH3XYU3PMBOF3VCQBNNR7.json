@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377053866.000000000,
+    "creationTime" : null,
+    "fileCRC" : -926486836,
+    "fileName" : "autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 52,
+    "fullUnpackSize" : 53,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377164922.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1564191968,
+    "fileName" : "gaceta2012.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 23791877,
+    "fullUnpackSize" : 29062699,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

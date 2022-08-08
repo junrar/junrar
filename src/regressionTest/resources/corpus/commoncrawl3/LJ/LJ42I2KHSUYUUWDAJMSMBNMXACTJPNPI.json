@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268724886.888000000,
+    "creationTime" : null,
+    "fileCRC" : 687696325,
+    "fileName" : "Положение об отделе.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7012,
+    "fullUnpackSize" : 39936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

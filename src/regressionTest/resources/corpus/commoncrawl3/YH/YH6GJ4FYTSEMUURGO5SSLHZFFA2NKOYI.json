@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433148079.757270900,
+    "creationTime" : null,
+    "fileCRC" : 1001789690,
+    "fileName" : "小桥流水PPT.potx",
+    "hostOS" : "win32",
+    "fullPackSize" : 778544,
+    "fullUnpackSize" : 987433,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

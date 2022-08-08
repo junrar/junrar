@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495769940.000000000,
+    "creationTime" : null,
+    "fileCRC" : 607516202,
+    "fileName" : "ИТЭБ РАН Отчёт 2016.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 941729,
+    "fullUnpackSize" : 1029219,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

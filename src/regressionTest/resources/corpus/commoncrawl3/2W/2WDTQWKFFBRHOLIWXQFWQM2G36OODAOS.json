@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1109178006.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1021894862,
+    "fileName" : "toughmancontest.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 13774860,
+    "fullUnpackSize" : 15084032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491957243.934613400,
+    "creationTime" : null,
+    "fileCRC" : 1580912281,
+    "fileName" : "T.C.TD.04.17\\common\\Tom Clancy's The Division\\rogue\\sdf\\pc\\data\\sdf-b-1433.sdfdata",
+    "hostOS" : "win32",
+    "fullPackSize" : 14826750,
+    "fullUnpackSize" : 24029197,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

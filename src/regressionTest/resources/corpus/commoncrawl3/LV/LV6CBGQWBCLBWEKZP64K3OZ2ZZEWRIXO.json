@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1154533552.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1577910987,
+    "fileName" : "TokyoSaiban.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1683737,
+    "fullUnpackSize" : 1862843,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494469145.866209500,
+    "creationTime" : null,
+    "fileCRC" : -1076513667,
+    "fileName" : "UV520\\520首页.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2250982,
+    "fullUnpackSize" : 3135136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

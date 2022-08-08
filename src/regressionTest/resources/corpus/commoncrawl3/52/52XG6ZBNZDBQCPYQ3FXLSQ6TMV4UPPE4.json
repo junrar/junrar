@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195529677.086779000,
+    "creationTime" : null,
+    "fileCRC" : 2093162649,
+    "fileName" : "buriatskaia_assr_1969_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599893,
+    "fullUnpackSize" : 9809745,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

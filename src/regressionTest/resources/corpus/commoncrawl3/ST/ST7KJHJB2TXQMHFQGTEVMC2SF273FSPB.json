@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1263882119.199000000,
+    "creationTime" : null,
+    "fileCRC" : -1464111552,
+    "fileName" : "Головин Н. Н. -- Военные усилия России в мировой войне 1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 424226,
+    "fullUnpackSize" : 2244096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

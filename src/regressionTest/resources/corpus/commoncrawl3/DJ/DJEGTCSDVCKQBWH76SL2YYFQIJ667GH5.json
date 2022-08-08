@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351770908.343750000,
+    "creationTime" : null,
+    "fileCRC" : 1683456313,
+    "fileName" : "следы на песке.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 7034458,
+    "fullUnpackSize" : 7505920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1153321263.421875000,
+    "creationTime" : null,
+    "fileCRC" : 404599508,
+    "fileName" : "Arcade Games Addon 08\\games\\amongtheclouds.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 112985,
+    "fullUnpackSize" : 112985,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1157720585.578125000,
+    "creationTime" : null,
+    "fileCRC" : 1493783723,
+    "fileName" : "Arcade Games Addon 08\\games\\arcticquest.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 959085,
+    "fullUnpackSize" : 959085,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

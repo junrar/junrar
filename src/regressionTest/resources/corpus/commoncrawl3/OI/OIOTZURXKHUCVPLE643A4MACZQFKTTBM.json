@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461892252.000000000,
+    "creationTime" : null,
+    "fileCRC" : -355571631,
+    "fileName" : "Отчет_2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 22350877,
+    "fullUnpackSize" : 26715648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

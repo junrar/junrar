@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409800214.939918700,
+    "creationTime" : null,
+    "fileCRC" : 833944304,
+    "fileName" : "GAG.XEX",
+    "hostOS" : "win32",
+    "fullPackSize" : 11654,
+    "fullUnpackSize" : 23048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409800735.598698700,
+    "creationTime" : null,
+    "fileCRC" : -2048455376,
+    "fileName" : "gag.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 3459,
+    "fullUnpackSize" : 3469,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

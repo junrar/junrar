@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264403867.748982400,
+    "creationTime" : null,
+    "fileCRC" : 244961939,
+    "fileName" : "42_План_2010.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 37002,
+    "fullUnpackSize" : 5124203,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

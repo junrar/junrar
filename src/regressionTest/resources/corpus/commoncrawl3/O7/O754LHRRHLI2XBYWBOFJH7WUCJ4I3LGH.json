@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1278654380.215487200,
+    "creationTime" : null,
+    "fileCRC" : -987702881,
+    "fileName" : "SFG_Intro_Brochure_LR.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3530332,
+    "fullUnpackSize" : 5353685,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1400039512.000000000,
+    "creationTime" : null,
+    "fileCRC" : -504716934,
+    "fileName" : "пост № 131 от 11.03.14.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5141,
+    "fullUnpackSize" : 30720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

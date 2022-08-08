@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1179382012.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1654993571,
+    "fileName" : "17 激光粒度仪对水泥粉磨过程的指导作用.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 563523,
+    "fullUnpackSize" : 642187,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

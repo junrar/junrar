@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517360013.333554700,
+    "creationTime" : null,
+    "fileCRC" : 1639479726,
+    "fileName" : "Australian.Survivor.S03E19.Webrip.x264-MFO.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 26092,
+    "fullUnpackSize" : 69622,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517560563.709251300,
+    "creationTime" : null,
+    "fileCRC" : 1929947394,
+    "fileName" : "Survivor.au.s03e19.720p.hdtv.bf1.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 26109,
+    "fullUnpackSize" : 69621,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

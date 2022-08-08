@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455619663.761353900,
+    "creationTime" : null,
+    "fileCRC" : 1539970967,
+    "fileName" : "The Danish Girl (2015) [720p] [YTS.AG].srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 25909,
+    "fullUnpackSize" : 70983,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455896211.934089000,
+    "creationTime" : null,
+    "fileCRC" : -1848770683,
+    "fileName" : "The Danish Girl (2015) [720p] [YTS.AG].torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 35625,
+    "fullUnpackSize" : 35655,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

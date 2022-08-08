@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307600262.000000000,
+    "creationTime" : null,
+    "fileCRC" : -172255614,
+    "fileName" : "post-rev06.05.2011N21.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17183,
+    "fullUnpackSize" : 106496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511556627.013386200,
+    "creationTime" : null,
+    "fileCRC" : -35375011,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 435,
+    "fullUnpackSize" : 666,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511556627.024407200,
+    "creationTime" : null,
+    "fileCRC" : 2115930891,
+    "fileName" : "JA8P.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 129,
+    "fullUnpackSize" : 179,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

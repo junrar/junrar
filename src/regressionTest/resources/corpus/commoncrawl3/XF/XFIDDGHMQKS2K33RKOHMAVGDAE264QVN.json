@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399063278.820891400,
+    "creationTime" : null,
+    "fileCRC" : -201100672,
+    "fileName" : "1. Тысяча и один день.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 285596,
+    "fullUnpackSize" : 946506,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

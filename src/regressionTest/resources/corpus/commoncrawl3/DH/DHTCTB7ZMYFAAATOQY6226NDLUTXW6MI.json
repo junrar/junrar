@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450765342.000000000,
+    "creationTime" : null,
+    "fileCRC" : 951512919,
+    "fileName" : "MFU600_20151222.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2118364,
+    "fullUnpackSize" : 2153754,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

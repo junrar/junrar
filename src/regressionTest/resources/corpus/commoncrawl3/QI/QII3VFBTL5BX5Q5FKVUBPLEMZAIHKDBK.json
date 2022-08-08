@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534585752.733154700,
+    "creationTime" : null,
+    "fileCRC" : -1074637878,
+    "fileName" : "Unforgotten.S03E04.HDTV.x264-RiVER.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 20000,
+    "fullUnpackSize" : 20082,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534324617.000000000,
+    "creationTime" : null,
+    "fileCRC" : 906280842,
+    "fileName" : "Unforgotten.S03E04.HDTV.x264-RiVER.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20578,
+    "fullUnpackSize" : 57578,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

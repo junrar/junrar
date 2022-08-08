@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319366205.296875000,
+    "creationTime" : null,
+    "fileCRC" : 815117219,
+    "fileName" : "Wycieczka-Nr-29_23-10-11.kmz",
+    "hostOS" : "win32",
+    "fullPackSize" : 56686,
+    "fullUnpackSize" : 62911,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319366082.734375000,
+    "creationTime" : null,
+    "fileCRC" : -1494824988,
+    "fileName" : "Wycieczka-Nr-29_23-10-11.gpx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12800,
+    "fullUnpackSize" : 161529,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

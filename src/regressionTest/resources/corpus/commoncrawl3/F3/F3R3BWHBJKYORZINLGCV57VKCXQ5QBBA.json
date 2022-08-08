@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1475332982.544024100,
+    "creationTime" : null,
+    "fileCRC" : 1065063219,
+    "fileName" : "Pluralsight-Introduction.To.Maya.2017[arch-projects.com]\\26 - Detailing and Smoothing Workflows - Building the Arm Front.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 46015428,
+    "fullUnpackSize" : 68718540,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

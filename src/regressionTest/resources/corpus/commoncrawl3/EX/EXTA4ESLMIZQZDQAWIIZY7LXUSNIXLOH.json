@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455784801.997371100,
+    "creationTime" : null,
+    "fileCRC" : 1723760630,
+    "fileName" : "UMK-spec.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 1423879,
+    "fullUnpackSize" : 2643456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

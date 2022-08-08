@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479101794.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2042250309,
+    "fileName" : "HardRoc-A1.mat",
+    "hostOS" : "win32",
+    "fullPackSize" : 2122904,
+    "fullUnpackSize" : 14939404,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

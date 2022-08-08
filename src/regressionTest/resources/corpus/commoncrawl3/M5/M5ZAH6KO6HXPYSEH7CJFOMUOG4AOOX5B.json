@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528073913.241510500,
+    "creationTime" : null,
+    "fileCRC" : -2135461451,
+    "fileName" : "FORMULIR PENDAFTARAN SEMNAS.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 301922,
+    "fullUnpackSize" : 2495230,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

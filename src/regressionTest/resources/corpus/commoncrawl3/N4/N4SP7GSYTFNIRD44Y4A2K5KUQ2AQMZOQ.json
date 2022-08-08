@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407240210.000000000,
+    "creationTime" : null,
+    "fileCRC" : 404270117,
+    "fileName" : "9 кл.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 52793,
+    "fullUnpackSize" : 55926,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

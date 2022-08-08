@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347211576.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1837387559,
+    "fileName" : "modul pelatihan\\Cover Modul Pelatihan.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 201573,
+    "fullUnpackSize" : 237481,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347210454.000000000,
+    "creationTime" : null,
+    "fileCRC" : 994658762,
+    "fileName" : "modul pelatihan\\Modul Pelatihan.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1666642,
+    "fullUnpackSize" : 3999577,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

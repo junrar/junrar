@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448345459.141467700,
+    "creationTime" : null,
+    "fileCRC" : -1346910314,
+    "fileName" : "Проектная документация  лот 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 20763935,
+    "fullUnpackSize" : 20989973,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

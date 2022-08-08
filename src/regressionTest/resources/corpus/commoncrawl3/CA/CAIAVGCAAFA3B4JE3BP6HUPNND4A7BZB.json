@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452503747.767201900,
+    "creationTime" : null,
+    "fileCRC" : -770903863,
+    "fileName" : "зимние каникулы - отчет 2015-2016.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4545304,
+    "fullUnpackSize" : 4567916,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

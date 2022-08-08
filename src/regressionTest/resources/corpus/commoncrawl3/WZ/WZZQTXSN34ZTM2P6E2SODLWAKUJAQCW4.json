@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411971109.445610800,
+    "creationTime" : null,
+    "fileCRC" : 1540237585,
+    "fileName" : "french0vanilla_Lana.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 166642,
+    "fullUnpackSize" : 166642,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

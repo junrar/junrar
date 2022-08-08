@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426748948.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2071890039,
+    "fileName" : "Logo Interreg V-A PL-SK\\1. Logotypy programu Interreg Polska-Słowacja z nazwą funduszu\\Poland-Slovakia_PL_01+FUND_BW.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 130323,
+    "fullUnpackSize" : 150319,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426748936.000000000,
+    "creationTime" : null,
+    "fileCRC" : -971737460,
+    "fileName" : "Logo Interreg V-A PL-SK\\1. Logotypy programu Interreg Polska-Słowacja z nazwą funduszu\\Poland-Slovakia_PL_01+FUND_BW.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1416206,
+    "fullUnpackSize" : 1447662,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

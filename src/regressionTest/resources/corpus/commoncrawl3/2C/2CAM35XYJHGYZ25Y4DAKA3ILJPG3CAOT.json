@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277316260.913600600,
+    "creationTime" : null,
+    "fileCRC" : 1288517739,
+    "fileName" : "Girls .jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 90585,
+    "fullUnpackSize" : 142849,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275056876.989011400,
+    "creationTime" : null,
+    "fileCRC" : -1218100763,
+    "fileName" : "Girls 1_zcool.com.cn.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 964893,
+    "fullUnpackSize" : 3495944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

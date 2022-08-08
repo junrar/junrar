@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1246520721.453125000,
+    "creationTime" : null,
+    "fileCRC" : -426327022,
+    "fileName" : "artist_3d\\NYC-new-york.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 539413,
+    "fullUnpackSize" : 579078,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1246521257.921875000,
+    "creationTime" : null,
+    "fileCRC" : 1000909174,
+    "fileName" : "artist_3d\\SuzukiMotorcycle.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1234146,
+    "fullUnpackSize" : 1238158,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

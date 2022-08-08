@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470903066.000000000,
+    "creationTime" : null,
+    "fileCRC" : -957125423,
+    "fileName" : "黄金交易客户端(电信) 安装程序.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2599757,
+    "fullUnpackSize" : 2754653,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

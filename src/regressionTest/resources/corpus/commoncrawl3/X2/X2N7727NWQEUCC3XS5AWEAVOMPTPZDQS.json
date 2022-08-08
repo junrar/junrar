@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472819058.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1199383994,
+    "fileName" : "Тайна судьбы.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2275558,
+    "fullUnpackSize" : 2382737,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431910160.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1520367608,
+    "fileName" : "4.О величине резервируемой максимальной мощности.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 4874,
+    "fullUnpackSize" : 35328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

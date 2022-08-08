@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519470451.208930400,
+    "creationTime" : null,
+    "fileCRC" : 139107360,
+    "fileName" : "Aiguafreda-coll Formic-font Pomereta-Brull-l Arca.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 25006,
+    "fullUnpackSize" : 116162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

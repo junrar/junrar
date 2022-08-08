@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348824620.359375000,
+    "creationTime" : null,
+    "fileCRC" : 1392782267,
+    "fileName" : "econsign.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 3612048,
+    "fullUnpackSize" : 3612048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

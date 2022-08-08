@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461936439.859375000,
+    "creationTime" : null,
+    "fileCRC" : 870973780,
+    "fileName" : "red hot_4_final_v1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1352944,
+    "fullUnpackSize" : 1420790,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

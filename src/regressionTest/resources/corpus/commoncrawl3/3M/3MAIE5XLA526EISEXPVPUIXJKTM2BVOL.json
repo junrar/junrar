@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1214303042.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2105275655,
+    "fileName" : "Graça de Deus.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4211932,
+    "fullUnpackSize" : 4257880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511640500.155782300,
+    "creationTime" : null,
+    "fileCRC" : 741384191,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 446,
+    "fullUnpackSize" : 684,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511640500.155782300,
+    "creationTime" : null,
+    "fileCRC" : -1993812727,
+    "fileName" : "JAHE.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 270,
+    "fullUnpackSize" : 310,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

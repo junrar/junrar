@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196390029.381434200,
+    "creationTime" : null,
+    "fileCRC" : 1080958835,
+    "fileName" : "kazahskaia_ssr_1951_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 1996821,
+    "fullUnpackSize" : 11175874,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

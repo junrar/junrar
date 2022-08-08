@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1356895656.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1987776647,
+    "fileName" : "Lighting Catalogue 2\\Lighting Catalogue.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2422693,
+    "fullUnpackSize" : 4416107,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

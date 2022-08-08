@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522294941.328125000,
+    "creationTime" : null,
+    "fileCRC" : 1759700441,
+    "fileName" : "T50卡刷说明.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 332339,
+    "fullUnpackSize" : 344218,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522162259.027740900,
+    "creationTime" : null,
+    "fileCRC" : 801804576,
+    "fileName" : "T50 2018.03.28\\SD_CarDV.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 1534552,
+    "fullUnpackSize" : 8262525,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

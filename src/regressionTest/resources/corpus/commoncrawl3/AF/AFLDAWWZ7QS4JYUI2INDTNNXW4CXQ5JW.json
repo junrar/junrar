@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524468857.244919500,
+    "creationTime" : null,
+    "fileCRC" : 2024542200,
+    "fileName" : "AgenteCCZK.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1206520,
+    "fullUnpackSize" : 2679296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

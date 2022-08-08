@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380189308.779565400,
+    "creationTime" : null,
+    "fileCRC" : -2008166245,
+    "fileName" : "UniFonts6.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 26669018,
+    "fullUnpackSize" : 26669018,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

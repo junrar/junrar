@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517568324.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2134810751,
+    "fileName" : "Addendum to ARR and FPT Filings for FY 2018-19\\Petition.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2448970,
+    "fullUnpackSize" : 2662635,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

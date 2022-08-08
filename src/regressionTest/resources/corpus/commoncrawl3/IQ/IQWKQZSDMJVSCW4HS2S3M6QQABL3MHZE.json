@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417492628.462072000,
+    "creationTime" : null,
+    "fileCRC" : 704896687,
+    "fileName" : "Vocabulary_Enduser Guide_v2-part2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 997348,
+    "fullUnpackSize" : 1076507,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

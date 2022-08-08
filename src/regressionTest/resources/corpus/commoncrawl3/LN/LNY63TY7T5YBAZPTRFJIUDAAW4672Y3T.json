@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377339220.160260600,
+    "creationTime" : null,
+    "fileCRC" : -378494884,
+    "fileName" : "Букреев И.Н. и др. - Микроэлектронные схемы цифровых устройств (4-ое изд.) (Серия Мир электроники) - 2009.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 10072272,
+    "fullUnpackSize" : 10087915,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

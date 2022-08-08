@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369752440.860283300,
+    "creationTime" : null,
+    "fileCRC" : 1484719462,
+    "fileName" : "SRT 4665XII.stb",
+    "hostOS" : "win32",
+    "fullPackSize" : 1155360,
+    "fullUnpackSize" : 1155360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

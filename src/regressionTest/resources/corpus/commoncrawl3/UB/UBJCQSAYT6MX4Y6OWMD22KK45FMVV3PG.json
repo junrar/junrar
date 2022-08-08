@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223991860.437500000,
+    "creationTime" : null,
+    "fileCRC" : 1231067231,
+    "fileName" : "Platform5.lib",
+    "hostOS" : "win32",
+    "fullPackSize" : 1447,
+    "fullUnpackSize" : 38015,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223649046.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1546041719,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 37,
+    "fullUnpackSize" : 37,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

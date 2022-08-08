@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319428054.000000000,
+    "creationTime" : null,
+    "fileCRC" : -912021209,
+    "fileName" : "Р11.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10490,
+    "fullUnpackSize" : 31232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304056424.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1596890043,
+    "fileName" : "Р11_Д.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6897,
+    "fullUnpackSize" : 33280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

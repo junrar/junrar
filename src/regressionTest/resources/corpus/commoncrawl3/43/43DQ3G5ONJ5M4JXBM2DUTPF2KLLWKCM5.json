@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351771042.875000000,
+    "creationTime" : null,
+    "fileCRC" : 1571496174,
+    "fileName" : "к.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 747873,
+    "fullUnpackSize" : 1045504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351596226.000000000,
+    "creationTime" : null,
+    "fileCRC" : -233532967,
+    "fileName" : "звук К.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8068,
+    "fullUnpackSize" : 30208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

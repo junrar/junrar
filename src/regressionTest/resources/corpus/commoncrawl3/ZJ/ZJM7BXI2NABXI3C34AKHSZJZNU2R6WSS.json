@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277866442.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2042256412,
+    "fileName" : "islah18.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9140702,
+    "fullUnpackSize" : 11732987,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

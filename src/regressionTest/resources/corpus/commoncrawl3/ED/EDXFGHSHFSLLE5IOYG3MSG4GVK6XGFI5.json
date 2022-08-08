@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533056461.000000000,
+    "creationTime" : null,
+    "fileCRC" : 649273640,
+    "fileName" : "Transformers - Unicron 003-001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 777633,
+    "fullUnpackSize" : 823990,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533056461.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2017646059,
+    "fileName" : "Transformers - Unicron 003-002.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1241860,
+    "fullUnpackSize" : 1273100,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

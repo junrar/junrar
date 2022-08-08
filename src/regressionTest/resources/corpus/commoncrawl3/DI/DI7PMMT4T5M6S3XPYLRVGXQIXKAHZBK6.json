@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503031870.004091700,
+    "creationTime" : null,
+    "fileCRC" : 1355245151,
+    "fileName" : "V6EY_320SM0_LED42_R4160226.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1000299,
+    "fullUnpackSize" : 1000299,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394429672.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1743651388,
+    "fileName" : "BIDANG INFRASTRUKTUR\\1 001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 790644,
+    "fullUnpackSize" : 808215,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394429720.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1625610098,
+    "fileName" : "BIDANG INFRASTRUKTUR\\2 001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 801937,
+    "fullUnpackSize" : 819928,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

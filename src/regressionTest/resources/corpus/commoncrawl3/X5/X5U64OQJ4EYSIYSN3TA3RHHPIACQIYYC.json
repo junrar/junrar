@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277207492.984000000,
+    "creationTime" : null,
+    "fileCRC" : 130411781,
+    "fileName" : "Культура России XVII века.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 23004,
+    "fullUnpackSize" : 106496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

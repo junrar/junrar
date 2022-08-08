@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379320108.955796100,
+    "creationTime" : null,
+    "fileCRC" : 822941564,
+    "fileName" : "diff.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1660,
+    "fullUnpackSize" : 8338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379321481.582892600,
+    "creationTime" : null,
+    "fileCRC" : 1429424627,
+    "fileName" : "add_example_create_table.patch",
+    "hostOS" : "win32",
+    "fullPackSize" : 3091,
+    "fullUnpackSize" : 26160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

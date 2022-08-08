@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420022974.638164000,
+    "creationTime" : null,
+    "fileCRC" : -868770022,
+    "fileName" : "DC-709-012015\\GT_SC_1412006_G702RW_B_TR726BV10_5050.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 393685794,
+    "fullUnpackSize" : 681902552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

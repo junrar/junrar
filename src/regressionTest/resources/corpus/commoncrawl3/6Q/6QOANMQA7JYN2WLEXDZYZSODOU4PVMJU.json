@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1335164875.557605100,
+    "creationTime" : null,
+    "fileCRC" : -726409876,
+    "fileName" : "ctr18.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2069315,
+    "fullUnpackSize" : 2079427,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

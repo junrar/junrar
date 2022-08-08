@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175709252.968000000,
+    "creationTime" : null,
+    "fileCRC" : -1388493731,
+    "fileName" : "Короленко Ц.П. - Мифология пола.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 312974,
+    "fullUnpackSize" : 1320960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367813082.388395500,
+    "creationTime" : null,
+    "fileCRC" : -1677824219,
+    "fileName" : "V8N1-2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 574087,
+    "fullUnpackSize" : 667797,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367813142.401700900,
+    "creationTime" : null,
+    "fileCRC" : 1345035136,
+    "fileName" : "V8N1-3.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 646495,
+    "fullUnpackSize" : 699448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

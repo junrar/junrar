@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1250520341.812000000,
+    "creationTime" : null,
+    "fileCRC" : 1272610599,
+    "fileName" : "TR5_2006.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5326276,
+    "fullUnpackSize" : 5454790,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

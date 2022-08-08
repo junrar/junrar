@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515675759.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1583977171,
+    "fileName" : "SKEP 001 I 2018 LIGA UNNUR .pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 262820,
+    "fullUnpackSize" : 455360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515675726.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1596507586,
+    "fileName" : "003 I 2018 UNDANGAN LIGA UNNUR 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 169996,
+    "fullUnpackSize" : 259459,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

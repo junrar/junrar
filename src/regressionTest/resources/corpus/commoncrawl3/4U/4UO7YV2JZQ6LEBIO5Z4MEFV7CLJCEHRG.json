@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382107834.366648300,
+    "creationTime" : null,
+    "fileCRC" : -1111654263,
+    "fileName" : "Supernatural.S09E02.Devil.May.Care.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17961,
+    "fullUnpackSize" : 46061,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381978148.305364500,
+    "creationTime" : null,
+    "fileCRC" : 1785111297,
+    "fileName" : "Supernatural.S09E02.Devil.May.Care.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17907,
+    "fullUnpackSize" : 45942,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

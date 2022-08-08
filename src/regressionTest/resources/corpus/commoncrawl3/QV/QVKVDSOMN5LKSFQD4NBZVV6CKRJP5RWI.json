@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358935135.609375000,
+    "creationTime" : null,
+    "fileCRC" : -2136986302,
+    "fileName" : "mp_futile\\mp_futile.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 33953064,
+    "fullUnpackSize" : 34410889,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

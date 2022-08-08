@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194924829.616106500,
+    "creationTime" : null,
+    "fileCRC" : -1396377289,
+    "fileName" : "arkhangelskaia_obl_1969_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599891,
+    "fullUnpackSize" : 12656965,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352095554.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1690848577,
+    "fileName" : "Tablitsa_finalnaya-1.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 11071,
+    "fullUnpackSize" : 13685,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

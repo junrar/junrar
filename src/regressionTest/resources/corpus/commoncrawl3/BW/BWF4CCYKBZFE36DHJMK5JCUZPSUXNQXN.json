@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430988887.691061800,
+    "creationTime" : null,
+    "fileCRC" : -227149660,
+    "fileName" : "Setup-Propeller-Tool.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 17171071,
+    "fullUnpackSize" : 21098138,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

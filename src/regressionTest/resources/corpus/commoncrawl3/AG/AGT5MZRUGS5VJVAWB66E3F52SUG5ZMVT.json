@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1270609425.558039200,
+    "creationTime" : null,
+    "fileCRC" : -275679875,
+    "fileName" : "ba_dum4_de09_instr.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1282440,
+    "fullUnpackSize" : 1335646,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1335934557.293378000,
+    "creationTime" : null,
+    "fileCRC" : 871364210,
+    "fileName" : "07_Василевич.орден_подвязки.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 171629,
+    "fullUnpackSize" : 216176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

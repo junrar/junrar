@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381822492.623718600,
+    "creationTime" : null,
+    "fileCRC" : -984091905,
+    "fileName" : "Captura_de_tela_101513_033452_PM.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 53937,
+    "fullUnpackSize" : 245980,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381822386.861143400,
+    "creationTime" : null,
+    "fileCRC" : 881143730,
+    "fileName" : "problem.odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19784,
+    "fullUnpackSize" : 22423,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

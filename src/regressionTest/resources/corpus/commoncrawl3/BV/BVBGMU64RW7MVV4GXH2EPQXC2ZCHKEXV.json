@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510886277.347768400,
+    "creationTime" : null,
+    "fileCRC" : 1948954129,
+    "fileName" : "Melody of Sorrow pg41.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1048262,
+    "fullUnpackSize" : 1050479,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510886292.859655600,
+    "creationTime" : null,
+    "fileCRC" : -365607078,
+    "fileName" : "Melody of Sorrow pg42.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 962656,
+    "fullUnpackSize" : 966386,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

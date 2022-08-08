@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482368137.402420500,
+    "creationTime" : null,
+    "fileCRC" : 1648736007,
+    "fileName" : "ตัวอย่างโครงการสอนลดเวลาเรียน.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 80936,
+    "fullUnpackSize" : 84417,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482368142.547254800,
+    "creationTime" : null,
+    "fileCRC" : 1751691917,
+    "fileName" : "แบบฟอร์มโครงการสอนลดเวลาเรียน.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 171936,
+    "fullUnpackSize" : 175639,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

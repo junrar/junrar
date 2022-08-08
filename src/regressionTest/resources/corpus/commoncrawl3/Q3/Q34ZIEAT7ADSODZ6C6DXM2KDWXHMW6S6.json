@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491202813.757000000,
+    "creationTime" : null,
+    "fileCRC" : 278374806,
+    "fileName" : "Form_Penyedia (Orang-Perseorangan).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 7745,
+    "fullUnpackSize" : 25088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494546794.143000000,
+    "creationTime" : null,
+    "fileCRC" : 597137544,
+    "fileName" : "Prosedur Verifikasi Tenaga Ahli Perseorangan.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 16555,
+    "fullUnpackSize" : 54272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

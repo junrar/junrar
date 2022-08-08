@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366095968.578125000,
+    "creationTime" : null,
+    "fileCRC" : 2060890822,
+    "fileName" : "Yu-Gi-Oh GX - 110.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 12407,
+    "fullUnpackSize" : 45340,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

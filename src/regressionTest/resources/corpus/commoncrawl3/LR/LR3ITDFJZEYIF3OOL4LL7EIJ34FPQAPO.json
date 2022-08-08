@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1276244340.000000000,
+    "creationTime" : null,
+    "fileCRC" : 727222851,
+    "fileName" : "Faz de nos um\\Faz de nós um (Louvor Revelado em Portugal).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5645,
+    "fullUnpackSize" : 45568,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275974280.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1416478184,
+    "fileName" : "Faz de nos um\\Faz de nós um (Louvor Revelado em Portugal).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3583873,
+    "fullUnpackSize" : 3687337,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

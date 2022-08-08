@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398657006.307877100,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "Priestley_ET0_in_month_ascii\\pr0_in_ann.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398657005.683876000,
+    "creationTime" : null,
+    "fileCRC" : -1307498167,
+    "fileName" : "Priestley_ET0_in_month_ascii\\pr0_in_ann.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1213374,
+    "fullUnpackSize" : 21701498,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

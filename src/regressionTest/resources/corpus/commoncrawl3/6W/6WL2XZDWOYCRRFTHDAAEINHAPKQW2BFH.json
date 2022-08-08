@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268381975.046875000,
+    "creationTime" : null,
+    "fileCRC" : 922792826,
+    "fileName" : "gary.unmarried.s02e16.hdtv.xvid-fqm.CZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14372,
+    "fullUnpackSize" : 36023,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268315882.203125000,
+    "creationTime" : null,
+    "fileCRC" : 338947329,
+    "fileName" : "gary.unmarried.s02e16.hdtv.xvid-fqm.SK.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14154,
+    "fullUnpackSize" : 35944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

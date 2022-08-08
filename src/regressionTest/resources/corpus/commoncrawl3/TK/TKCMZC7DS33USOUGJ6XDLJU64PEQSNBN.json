@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414396624.203125000,
+    "creationTime" : null,
+    "fileCRC" : -1536631,
+    "fileName" : "Брайан Керниган, Деннис Ритчи. Язык программирования Си.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2195373,
+    "fullUnpackSize" : 2446251,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

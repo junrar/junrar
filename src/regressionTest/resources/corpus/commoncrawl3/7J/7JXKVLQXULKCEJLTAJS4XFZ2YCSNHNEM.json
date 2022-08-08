@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396233532.072301000,
+    "creationTime" : null,
+    "fileCRC" : 1313989754,
+    "fileName" : "Παρουσίαση Ημερίδας ΤΟΠΕΚΟ - ΚΟΙΝΣΕΠ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 17404097,
+    "fullUnpackSize" : 18367198,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

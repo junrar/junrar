@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207755782.000000000,
+    "creationTime" : null,
+    "fileCRC" : -716531954,
+    "fileName" : "управление запасами.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 715493,
+    "fullUnpackSize" : 1011200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

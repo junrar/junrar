@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457572577.598103600,
+    "creationTime" : null,
+    "fileCRC" : 950612761,
+    "fileName" : "Instrukcja_Uzytkownika_BGK-ZLECENIA_-_PLD.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1374823,
+    "fullUnpackSize" : 1564532,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

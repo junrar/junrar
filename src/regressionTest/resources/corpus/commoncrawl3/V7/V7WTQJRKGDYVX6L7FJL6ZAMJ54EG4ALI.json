@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321089881.756004300,
+    "creationTime" : null,
+    "fileCRC" : 778107371,
+    "fileName" : "mp_to_the_moon\\mp_to_the_moon.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 13213525,
+    "fullUnpackSize" : 13273047,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466468090.000000000,
+    "creationTime" : null,
+    "fileCRC" : 900770993,
+    "fileName" : "Documentazione accessoria\\FROSINONE_Mappali.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 181814,
+    "fullUnpackSize" : 491224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461571350.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1776081766,
+    "fileName" : "Documentazione accessoria\\FROSINONE_Tav. 1 di 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 24462239,
+    "fullUnpackSize" : 36687150,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

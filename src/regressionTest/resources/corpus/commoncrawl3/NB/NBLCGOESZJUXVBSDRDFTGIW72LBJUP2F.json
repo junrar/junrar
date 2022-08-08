@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452705123.017968000,
+    "creationTime" : null,
+    "fileCRC" : -1587384069,
+    "fileName" : "EE Conversion - Satamino Dream Glow.bsa",
+    "hostOS" : "win32",
+    "fullPackSize" : 402573,
+    "fullUnpackSize" : 4546390,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452704990.002447800,
+    "creationTime" : null,
+    "fileCRC" : 143042182,
+    "fileName" : "EE Conversion - Satamino Dream Glow.esp",
+    "hostOS" : "win32",
+    "fullPackSize" : 368,
+    "fullUnpackSize" : 1470,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374737514.792228100,
+    "creationTime" : null,
+    "fileCRC" : -390553097,
+    "fileName" : "CORENARM_Ra soat Indicators_NTDung.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1060216,
+    "fullUnpackSize" : 1131865,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

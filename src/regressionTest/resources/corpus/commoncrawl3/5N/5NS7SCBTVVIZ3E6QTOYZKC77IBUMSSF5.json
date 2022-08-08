@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187851934.000000000,
+    "creationTime" : null,
+    "fileCRC" : -79934604,
+    "fileName" : "4 Live\\01 Blablabla!.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 107366,
+    "fullUnpackSize" : 114151,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187851934.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1710042469,
+    "fileName" : "4 Live\\02 I've Been Living in Paradise.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3685981,
+    "fullUnpackSize" : 3722452,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195611714.492321700,
+    "creationTime" : null,
+    "fileCRC" : -425744018,
+    "fileName" : "kurskaia_obl_1955_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599897,
+    "fullUnpackSize" : 11902790,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

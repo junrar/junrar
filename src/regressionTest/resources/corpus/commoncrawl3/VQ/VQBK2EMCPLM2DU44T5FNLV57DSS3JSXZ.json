@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304605964.554655900,
+    "creationTime" : null,
+    "fileCRC" : -453800438,
+    "fileName" : "mp_ic_cod\\mp_ic_cod.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 47337320,
+    "fullUnpackSize" : 47684951,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

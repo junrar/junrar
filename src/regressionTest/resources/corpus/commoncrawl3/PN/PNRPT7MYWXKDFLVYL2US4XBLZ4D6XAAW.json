@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318857269.467176100,
+    "creationTime" : null,
+    "fileCRC" : -500550128,
+    "fileName" : "meduchet.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1390848,
+    "fullUnpackSize" : 1589248,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

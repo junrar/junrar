@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453092788.387035600,
+    "creationTime" : null,
+    "fileCRC" : 1246731762,
+    "fileName" : "вторник на 19 января.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1293440,
+    "fullUnpackSize" : 1658831,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404018548.376341000,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "AET_in_ann_hr_ascii\\AET_in_01.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404018547.653299600,
+    "creationTime" : null,
+    "fileCRC" : 1386962828,
+    "fileName" : "AET_in_ann_hr_ascii\\aet_in_01.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1415082,
+    "fullUnpackSize" : 22911698,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

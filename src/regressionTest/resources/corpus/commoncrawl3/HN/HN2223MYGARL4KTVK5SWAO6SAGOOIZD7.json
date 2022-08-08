@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510816250.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2028810471,
+    "fileName" : "fw9_upd8.usb",
+    "hostOS" : "win32",
+    "fullPackSize" : 133957,
+    "fullUnpackSize" : 360424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510816250.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2028810471,
+    "fileName" : "F2x2ToF301.kuf",
+    "hostOS" : "win32",
+    "fullPackSize" : 133957,
+    "fullUnpackSize" : 360424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

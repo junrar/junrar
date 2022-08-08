@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379295545.161188500,
+    "creationTime" : null,
+    "fileCRC" : -1775462476,
+    "fileName" : "GANDIVA_SETUP0916\\GANDIVA_SETUP.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4069514,
+    "fullUnpackSize" : 4164138,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

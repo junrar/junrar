@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524233735.238145000,
+    "creationTime" : null,
+    "fileCRC" : -1888123848,
+    "fileName" : "The.Amazing.Race.S30E09E10.720p.HDTV.x264-BAJSKORV.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 44265,
+    "fullUnpackSize" : 119814,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524233731.806139000,
+    "creationTime" : null,
+    "fileCRC" : -1403660632,
+    "fileName" : "The.Amazing.Race.S30E09E10.WEB.x264-TBS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 44277,
+    "fullUnpackSize" : 119814,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

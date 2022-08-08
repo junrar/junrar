@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1386143726.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1113776853,
+    "fileName" : "Oscillograf.lay",
+    "hostOS" : "win32",
+    "fullPackSize" : 34972,
+    "fullUnpackSize" : 123441,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

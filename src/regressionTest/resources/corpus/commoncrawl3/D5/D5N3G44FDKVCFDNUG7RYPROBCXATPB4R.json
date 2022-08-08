@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520587980.965017700,
+    "creationTime" : null,
+    "fileCRC" : -1404992951,
+    "fileName" : "软件报纸第三十八期-1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 6233335,
+    "fullUnpackSize" : 6640401,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

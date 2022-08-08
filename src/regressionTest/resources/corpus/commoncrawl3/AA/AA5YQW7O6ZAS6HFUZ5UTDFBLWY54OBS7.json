@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180663145.875000000,
+    "creationTime" : null,
+    "fileCRC" : 216414286,
+    "fileName" : "bond_careless_sus07.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3865849,
+    "fullUnpackSize" : 3906145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

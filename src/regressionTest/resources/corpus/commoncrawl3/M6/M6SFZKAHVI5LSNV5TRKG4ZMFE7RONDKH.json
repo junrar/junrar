@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450146387.150176400,
+    "creationTime" : null,
+    "fileCRC" : -1496087332,
+    "fileName" : "Карелэнерго_декабрь_2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 480248,
+    "fullUnpackSize" : 574871,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448609852.524946800,
+    "creationTime" : null,
+    "fileCRC" : 856542737,
+    "fileName" : "План-график отключений декабрь 2015 ВЭ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 603500,
+    "fullUnpackSize" : 645275,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426579014.855000000,
+    "creationTime" : null,
+    "fileCRC" : -1105304682,
+    "fileName" : "инф сообщение 2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9379,
+    "fullUnpackSize" : 36352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

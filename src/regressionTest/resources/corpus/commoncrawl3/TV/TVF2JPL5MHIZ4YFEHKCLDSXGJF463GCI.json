@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501231070.682017700,
+    "creationTime" : null,
+    "fileCRC" : -483405798,
+    "fileName" : "Nashville.2012.S05E19.720p.HDTV.x264-FLEET.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18700,
+    "fullUnpackSize" : 51534,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501231070.682017700,
+    "creationTime" : null,
+    "fileCRC" : -483405798,
+    "fileName" : "Nashville.2012.S05E19.HDTV.x264-FLEET.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18700,
+    "fullUnpackSize" : 51534,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

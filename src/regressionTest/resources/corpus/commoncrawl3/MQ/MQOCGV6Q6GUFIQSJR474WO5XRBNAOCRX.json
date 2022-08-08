@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517273745.007664400,
+    "creationTime" : null,
+    "fileCRC" : 205825473,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 460,
+    "fullUnpackSize" : 696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517273725.419501700,
+    "creationTime" : null,
+    "fileCRC" : 625374471,
+    "fileName" : "JDLJ.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 248,
+    "fullUnpackSize" : 435,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

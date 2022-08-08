@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385476129.185444000,
+    "creationTime" : null,
+    "fileCRC" : -485388769,
+    "fileName" : "Toshiba HW Setup Utility.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 17633121,
+    "fullUnpackSize" : 23336728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

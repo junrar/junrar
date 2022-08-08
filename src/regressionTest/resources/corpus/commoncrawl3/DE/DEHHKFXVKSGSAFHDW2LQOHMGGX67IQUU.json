@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272006724.199600900,
+    "creationTime" : null,
+    "fileCRC" : -1017290252,
+    "fileName" : "karloskar_nitton2.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 287600,
+    "fullUnpackSize" : 301641,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1253522788.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1524897152,
+    "fileName" : "karloskar_nitton3.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3692328,
+    "fullUnpackSize" : 3782544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

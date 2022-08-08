@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136044800.000000000,
+    "creationTime" : null,
+    "fileCRC" : -382996805,
+    "fileName" : "Glow_ESP\\Data\\EE Conversion - Koldorn Eye Texture Resource Glow.bsa",
+    "hostOS" : "win32",
+    "fullPackSize" : 1697504,
+    "fullUnpackSize" : 1765364,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

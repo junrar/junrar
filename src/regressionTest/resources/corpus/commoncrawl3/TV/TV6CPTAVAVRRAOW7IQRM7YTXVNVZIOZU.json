@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479865369.488822200,
+    "creationTime" : null,
+    "fileCRC" : -190561333,
+    "fileName" : "11 Me Against The Music.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 15417322,
+    "fullUnpackSize" : 15489162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

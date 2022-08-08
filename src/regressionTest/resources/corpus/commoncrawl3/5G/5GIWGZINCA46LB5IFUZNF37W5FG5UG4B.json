@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303555468.000000000,
+    "creationTime" : null,
+    "fileCRC" : -791021580,
+    "fileName" : "Yahosein-Sahifeh-Mobile\\1\\Al Sahifa.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1697482,
+    "fullUnpackSize" : 1748740,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

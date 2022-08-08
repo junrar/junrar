@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361155721.511502900,
+    "creationTime" : null,
+    "fileCRC" : -1636611410,
+    "fileName" : "2810-PHD91-[www.konkur.in]\\2810-PHD91-[www.konkur.in].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1078656,
+    "fullUnpackSize" : 1369718,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

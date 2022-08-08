@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454305684.000000000,
+    "creationTime" : null,
+    "fileCRC" : 503318425,
+    "fileName" : "Решение правил землепользования Новополтава №315 от 23.07.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8172,
+    "fullUnpackSize" : 35328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454305242.000000000,
+    "creationTime" : null,
+    "fileCRC" : -381152946,
+    "fileName" : "правила к решению  Новополтавский №315 от 23.07.2015.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 164660,
+    "fullUnpackSize" : 168004,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

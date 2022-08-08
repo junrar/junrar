@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404096738.086415900,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "AvailableEnergy_month_ascii\\av_eng_ann.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404096737.426378100,
+    "creationTime" : null,
+    "fileCRC" : -1314739606,
+    "fileName" : "AvailableEnergy_month_ascii\\av_eng_ann.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1127171,
+    "fullUnpackSize" : 21701425,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

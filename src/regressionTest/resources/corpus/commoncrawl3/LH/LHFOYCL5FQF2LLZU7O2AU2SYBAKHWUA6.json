@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491402373.973132500,
+    "creationTime" : null,
+    "fileCRC" : -122783124,
+    "fileName" : "Mina@.4625.mist portrait.04.17\\Mina@.4625.mist portrait.04.17.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 325696,
+    "fullUnpackSize" : 331575,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491402393.724767300,
+    "creationTime" : null,
+    "fileCRC" : -811600908,
+    "fileName" : "Mina@.4625.mist portrait.04.17\\Mina@.4625.mist portrait.04.17.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1202680,
+    "fullUnpackSize" : 1202898,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

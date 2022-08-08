@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510534053.139409000,
+    "creationTime" : null,
+    "fileCRC" : 1113411140,
+    "fileName" : "《学习宣传贯彻十九大精神宣传挂图》.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 42738103,
+    "fullUnpackSize" : 56064857,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

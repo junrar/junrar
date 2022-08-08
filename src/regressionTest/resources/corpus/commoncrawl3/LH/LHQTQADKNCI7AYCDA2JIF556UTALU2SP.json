@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343789834.953125000,
+    "creationTime" : null,
+    "fileCRC" : -457864408,
+    "fileName" : "中国的和平转型之路.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 267571,
+    "fullUnpackSize" : 273976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177981173.156250000,
+    "creationTime" : null,
+    "fileCRC" : -935384776,
+    "fileName" : "32 Roadster\\buccanee.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 763187,
+    "fullUnpackSize" : 2459648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177981204.078125000,
+    "creationTime" : null,
+    "fileCRC" : 1141942642,
+    "fileName" : "32 Roadster\\buccanee.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 310126,
+    "fullUnpackSize" : 854016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

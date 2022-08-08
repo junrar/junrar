@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518404558.000000000,
+    "creationTime" : null,
+    "fileCRC" : 558707525,
+    "fileName" : "1.3.1 Protokoli ot obshto sabranie\\protokol-10.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2659575,
+    "fullUnpackSize" : 2863252,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

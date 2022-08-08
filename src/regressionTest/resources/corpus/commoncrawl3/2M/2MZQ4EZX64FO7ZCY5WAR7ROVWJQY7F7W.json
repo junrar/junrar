@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352541509.966391600,
+    "creationTime" : null,
+    "fileCRC" : -34473104,
+    "fileName" : "Supernatural.S08E06.Southern.Comfort.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20039,
+    "fullUnpackSize" : 50671,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352541500.485849300,
+    "creationTime" : null,
+    "fileCRC" : 1820904860,
+    "fileName" : "Supernatural.S08E06.HDTV.x264-LOL.srt.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19989,
+    "fullUnpackSize" : 50673,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1474177529.666493800,
+    "creationTime" : null,
+    "fileCRC" : -1956221753,
+    "fileName" : "RemusSirion_eyes-035_virus.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 1063592,
+    "fullUnpackSize" : 1126320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

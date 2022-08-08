@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1317625294.859873700,
+    "creationTime" : null,
+    "fileCRC" : -206425033,
+    "fileName" : "mp_lawless_v3\\mp_lawless_v3.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 3449619,
+    "fullUnpackSize" : 3483751,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

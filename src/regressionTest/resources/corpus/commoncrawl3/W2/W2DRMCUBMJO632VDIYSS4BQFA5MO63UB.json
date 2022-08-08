@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499905540.000000000,
+    "creationTime" : null,
+    "fileCRC" : 28057363,
+    "fileName" : "netpro\\04 - IMG_5760 fot. W Kadrze - Piotr Bedliński.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4899318,
+    "fullUnpackSize" : 4919570,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

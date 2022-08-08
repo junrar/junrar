@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399521124.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1608597312,
+    "fileName" : "resyrs.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 21691293,
+    "fullUnpackSize" : 24550437,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

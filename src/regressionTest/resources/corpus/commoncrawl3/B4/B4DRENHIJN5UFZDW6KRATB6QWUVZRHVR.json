@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441610352.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1116119896,
+    "fileName" : "Отзывы.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 568824,
+    "fullUnpackSize" : 657614,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441610352.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1451065899,
+    "fileName" : "Отчет 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 704052,
+    "fullUnpackSize" : 784827,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

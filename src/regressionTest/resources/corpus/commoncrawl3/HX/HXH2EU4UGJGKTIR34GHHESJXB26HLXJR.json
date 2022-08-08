@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433223891.515625000,
+    "creationTime" : null,
+    "fileCRC" : -1029880854,
+    "fileName" : "akira_video_CD-600V.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1014655,
+    "fullUnpackSize" : 1111644,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413249407.062000000,
+    "creationTime" : null,
+    "fileCRC" : 1713787610,
+    "fileName" : "информация.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3881,
+    "fullUnpackSize" : 28160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526439689.725591900,
+    "creationTime" : null,
+    "fileCRC" : 573184469,
+    "fileName" : "Resultados 4ª Jornada Liga Infantil Santiago.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 188239,
+    "fullUnpackSize" : 192943,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526439685.784921100,
+    "creationTime" : null,
+    "fileCRC" : 2109871892,
+    "fileName" : "Resultados extendido 4x100 Libres Mixto Infantil 4ª Jor Santiago.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 123944,
+    "fullUnpackSize" : 126634,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1210275105.000000000,
+    "creationTime" : null,
+    "fileCRC" : -346838284,
+    "fileName" : "1-20.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 200118,
+    "fullUnpackSize" : 217233,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1210963093.000000000,
+    "creationTime" : null,
+    "fileCRC" : -648592353,
+    "fileName" : "Christian Growth Cover.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 224424,
+    "fullUnpackSize" : 240779,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

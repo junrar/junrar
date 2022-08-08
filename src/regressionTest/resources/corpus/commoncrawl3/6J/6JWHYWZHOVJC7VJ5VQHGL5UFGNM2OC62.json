@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361341840.000000000,
+    "creationTime" : null,
+    "fileCRC" : -497961987,
+    "fileName" : "PDR_UA_ukr_2013.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8008140,
+    "fullUnpackSize" : 11243520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482879816.000000000,
+    "creationTime" : null,
+    "fileCRC" : -396120776,
+    "fileName" : "Схемы избирательных округов\\округ № 1 п.Алешиха.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 554501,
+    "fullUnpackSize" : 617462,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482879816.000000000,
+    "creationTime" : null,
+    "fileCRC" : 783980256,
+    "fileName" : "Схемы избирательных округов\\округ № 1,№ 2 п.Ермачиха.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1042430,
+    "fullUnpackSize" : 1177586,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

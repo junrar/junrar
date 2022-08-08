@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281073127.888671800,
+    "creationTime" : null,
+    "fileCRC" : 1180677666,
+    "fileName" : "ThunderbirdBug.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1566343,
+    "fullUnpackSize" : 1566343,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281073127.890625000,
+    "creationTime" : null,
+    "fileCRC" : 1538795181,
+    "fileName" : "ThunderbirdBug.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 496,
+    "fullUnpackSize" : 828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

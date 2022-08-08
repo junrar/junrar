@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388399269.274518200,
+    "creationTime" : null,
+    "fileCRC" : 828021346,
+    "fileName" : "蒸南瓜.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 207443,
+    "fullUnpackSize" : 215783,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381330933.292600600,
+    "creationTime" : null,
+    "fileCRC" : -1646876189,
+    "fileName" : "SuperTab [1.6.4][Bukkit]\\SuperTab__1.6.4_.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 11724,
+    "fullUnpackSize" : 13272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381331102.908158600,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "SuperTab [1.6.4][Bukkit]",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

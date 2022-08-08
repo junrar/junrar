@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435500942.000000000,
+    "creationTime" : null,
+    "fileCRC" : -31568308,
+    "fileName" : "test numbering OOXML.odt",
+    "hostOS" : "unix",
+    "fullPackSize" : 30491,
+    "fullUnpackSize" : 32467,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435498406.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1653234972,
+    "fileName" : "test numbering OOXML.docx",
+    "hostOS" : "unix",
+    "fullPackSize" : 4807,
+    "fullUnpackSize" : 5558,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436165593.972824500,
+    "creationTime" : null,
+    "fileCRC" : -981882221,
+    "fileName" : "BA BAT FG QA 2014.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 6766505,
+    "fullUnpackSize" : 22096384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

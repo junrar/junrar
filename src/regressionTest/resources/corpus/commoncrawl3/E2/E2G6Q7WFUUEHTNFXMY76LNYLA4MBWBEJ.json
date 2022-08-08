@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494933844.596615400,
+    "creationTime" : null,
+    "fileCRC" : 958166229,
+    "fileName" : "e0ca824aa3abe12a137b4feab1a503e7\\БЕ НКО на 2 эт. АБК III пл. (1902090 v1).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 969452,
+    "fullUnpackSize" : 1447882,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494933976.546800600,
+    "creationTime" : null,
+    "fileCRC" : 1114481505,
+    "fileName" : "e0ca824aa3abe12a137b4feab1a503e7\\Кабинет БЕ НКО на 4 эт. КШК4 (на 31 человек) (1902099 v1).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 270494,
+    "fullUnpackSize" : 524203,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

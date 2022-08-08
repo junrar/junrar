@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369017444.800153800,
+    "creationTime" : null,
+    "fileCRC" : 66797529,
+    "fileName" : "Supernatural.S08E23.Sacrifice.1080p.WEB-DL.DD5.1.H.264-BTN.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15332,
+    "fullUnpackSize" : 38749,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368774940.517292900,
+    "creationTime" : null,
+    "fileCRC" : 1819472322,
+    "fileName" : "Supernatural.S08E23.Sacrifice.HDTV.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15315,
+    "fullUnpackSize" : 38686,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

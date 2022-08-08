@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196941662.187000000,
+    "creationTime" : null,
+    "fileCRC" : 828774489,
+    "fileName" : "Кодек ProgDVB Elecard edition + серийник\\ElecardPack.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1459772,
+    "fullUnpackSize" : 1465459,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

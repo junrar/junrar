@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281338523.703125000,
+    "creationTime" : null,
+    "fileCRC" : 245085816,
+    "fileName" : "паяльная станция smd.lay",
+    "hostOS" : "win32",
+    "fullPackSize" : 65964,
+    "fullUnpackSize" : 239215,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1278303119.562500000,
+    "creationTime" : null,
+    "fileCRC" : 78799668,
+    "fileName" : "1.GIF",
+    "hostOS" : "win32",
+    "fullPackSize" : 74175,
+    "fullUnpackSize" : 74696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

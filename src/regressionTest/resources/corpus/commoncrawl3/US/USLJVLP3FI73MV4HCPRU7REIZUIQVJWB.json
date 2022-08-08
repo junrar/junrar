@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427986506.162400000,
+    "creationTime" : null,
+    "fileCRC" : 1170543270,
+    "fileName" : "Internet.Download.Manager.6.23.Build.10.Retail_1note.blog.ir.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6156511,
+    "fullUnpackSize" : 6223720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

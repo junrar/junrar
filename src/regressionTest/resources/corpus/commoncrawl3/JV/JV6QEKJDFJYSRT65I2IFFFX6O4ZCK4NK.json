@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1261488183.480112000,
+    "creationTime" : null,
+    "fileCRC" : -1354681760,
+    "fileName" : "Test-11-Kuvvetler.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 412250,
+    "fullUnpackSize" : 440296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1258788019.211457500,
+    "creationTime" : null,
+    "fileCRC" : 1628938756,
+    "fileName" : "sbsfenci.com.url",
+    "hostOS" : "win32",
+    "fullPackSize" : 113,
+    "fullUnpackSize" : 113,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

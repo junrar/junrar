@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1043845188.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1417498669,
+    "fileName" : "chepetsk-streets.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 300504,
+    "fullUnpackSize" : 2554860,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

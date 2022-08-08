@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306223806.843000000,
+    "creationTime" : null,
+    "fileCRC" : 2143702849,
+    "fileName" : "pop174-приложение 5.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 115264,
+    "fullUnpackSize" : 4426752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

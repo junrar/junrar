@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413332775.455639600,
+    "creationTime" : null,
+    "fileCRC" : -1264634431,
+    "fileName" : "Katalog_KIPVALVE_WEB.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5404378,
+    "fullUnpackSize" : 5822021,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

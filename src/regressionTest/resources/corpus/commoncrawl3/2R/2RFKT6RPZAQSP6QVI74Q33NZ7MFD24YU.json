@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537239923.282142200,
+    "creationTime" : null,
+    "fileCRC" : -1835691849,
+    "fileName" : "DMSInstall3.5(正式版).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 19782899,
+    "fullUnpackSize" : 19782899,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

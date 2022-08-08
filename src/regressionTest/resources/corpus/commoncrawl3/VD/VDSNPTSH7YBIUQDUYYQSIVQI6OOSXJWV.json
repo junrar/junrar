@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527208869.209518800,
+    "creationTime" : null,
+    "fileCRC" : 1222651614,
+    "fileName" : "GERTAN JATIM JUNI 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 158155,
+    "fullUnpackSize" : 272243,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526958970.000000000,
+    "creationTime" : null,
+    "fileCRC" : -222451950,
+    "fileName" : "35 Kabupaten Sumenep.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2741412,
+    "fullUnpackSize" : 3420641,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

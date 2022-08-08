@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371537780.000000000,
+    "creationTime" : null,
+    "fileCRC" : 368434822,
+    "fileName" : "PGA-13-15.06.2013-VN\\Bao cao hoi thao thang 4 PPT_Vnese.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 720835,
+    "fullUnpackSize" : 746868,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371537840.000000000,
+    "creationTime" : null,
+    "fileCRC" : 942648772,
+    "fileName" : "PGA-13-15.06.2013-VN\\Cac van de QT June 2013 (Lamnx).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 811852,
+    "fullUnpackSize" : 868388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

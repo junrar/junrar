@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291031180.000000000,
+    "creationTime" : null,
+    "fileCRC" : 950305272,
+    "fileName" : "grunge-skull-vector.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 1252435,
+    "fullUnpackSize" : 1501884,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

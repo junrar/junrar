@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160964906.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1937059165,
+    "fileName" : "SUPERCOPA_xxWINDOW.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 76705,
+    "fullUnpackSize" : 249971,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160964742.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2094232556,
+    "fileName" : "SUPERCOPA_XX.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 10249405,
+    "fullUnpackSize" : 26445444,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

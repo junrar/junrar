@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412156062.937500000,
+    "creationTime" : null,
+    "fileCRC" : 577090578,
+    "fileName" : "actualizacion_9.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 159825,
+    "fullUnpackSize" : 175876,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412151209.671875000,
+    "creationTime" : null,
+    "fileCRC" : -706315711,
+    "fileName" : "Actualizacion_9.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1555440,
+    "fullUnpackSize" : 1623001,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

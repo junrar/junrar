@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1185680945.843750000,
+    "creationTime" : null,
+    "fileCRC" : -1732548990,
+    "fileName" : "Supernatural - 206 - No Exit\\supernatural.206.hdtv-lol.CZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13311,
+    "fullUnpackSize" : 32959,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1185681077.593750000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Supernatural - 206 - No Exit",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

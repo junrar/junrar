@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537271439.932585200,
+    "creationTime" : null,
+    "fileCRC" : 1440636913,
+    "fileName" : "VuaThienLong3D\\(version)",
+    "hostOS" : "win32",
+    "fullPackSize" : 9,
+    "fullUnpackSize" : 9,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534294974.290861800,
+    "creationTime" : null,
+    "fileCRC" : -1726991228,
+    "fileName" : "VuaThienLong3D\\Bin\\#Bin.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 9658303,
+    "fullUnpackSize" : 9658303,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

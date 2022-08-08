@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396677114.618654900,
+    "creationTime" : null,
+    "fileCRC" : 307782009,
+    "fileName" : "JPG-logo\\Farklı turlerde LOGO.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1476340,
+    "fullUnpackSize" : 1539653,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

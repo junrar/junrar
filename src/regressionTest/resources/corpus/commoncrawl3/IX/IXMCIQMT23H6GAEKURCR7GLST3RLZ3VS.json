@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265612585.949836000,
+    "creationTime" : null,
+    "fileCRC" : -957741737,
+    "fileName" : "rail_SPG_FLL_FL.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 86425,
+    "fullUnpackSize" : 122209,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

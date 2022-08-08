@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314171927.254512000,
+    "creationTime" : null,
+    "fileCRC" : -148991918,
+    "fileName" : "9_2011\\9_2011.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 556688,
+    "fullUnpackSize" : 576292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314176419.786000000,
+    "creationTime" : null,
+    "fileCRC" : 624035501,
+    "fileName" : "9_2011\\Color_blokl_9_11.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 518135,
+    "fullUnpackSize" : 546888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

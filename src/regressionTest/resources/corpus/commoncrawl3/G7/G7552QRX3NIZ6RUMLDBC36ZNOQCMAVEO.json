@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298195776.858705600,
+    "creationTime" : null,
+    "fileCRC" : 1040114394,
+    "fileName" : "mp_swirl\\mp_swirl.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 7306887,
+    "fullUnpackSize" : 7386974,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

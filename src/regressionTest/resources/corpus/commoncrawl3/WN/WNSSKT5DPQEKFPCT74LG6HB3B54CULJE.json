@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468294532.121000000,
+    "creationTime" : null,
+    "fileCRC" : -432171404,
+    "fileName" : "Приложение № 1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7486,
+    "fullUnpackSize" : 28672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468294545.361000000,
+    "creationTime" : null,
+    "fileCRC" : -1717703667,
+    "fileName" : "Приложение № 2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 13616,
+    "fullUnpackSize" : 91648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

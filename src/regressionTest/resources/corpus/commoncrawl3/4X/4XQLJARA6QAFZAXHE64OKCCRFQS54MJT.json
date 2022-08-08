@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415701418.937412100,
+    "creationTime" : null,
+    "fileCRC" : -1128093538,
+    "fileName" : "ADT15 me3harra - Rocksuille\\01. Rock - I.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2458440,
+    "fullUnpackSize" : 2502784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

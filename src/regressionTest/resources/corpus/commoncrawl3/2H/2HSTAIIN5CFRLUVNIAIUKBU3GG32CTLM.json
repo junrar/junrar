@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1091790456.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2059005938,
+    "fileName" : "germany2004.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 7340520,
+    "fullUnpackSize" : 7393635,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

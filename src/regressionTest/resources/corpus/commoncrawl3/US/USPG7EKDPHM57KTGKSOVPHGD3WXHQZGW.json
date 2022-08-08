@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1332235274.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1135459862,
+    "fileName" : "25 Сергей Жарковский - Непогребенные.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 522174,
+    "fullUnpackSize" : 1353162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

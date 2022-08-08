@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418221770.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1964341732,
+    "fileName" : "ПОМОЩНИ СПРАВКИ-10.12.14.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 25821,
+    "fullUnpackSize" : 30454,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419916465.954000000,
+    "creationTime" : null,
+    "fileCRC" : -1101002142,
+    "fileName" : "Информация относно помощните справки.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6403,
+    "fullUnpackSize" : 24576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

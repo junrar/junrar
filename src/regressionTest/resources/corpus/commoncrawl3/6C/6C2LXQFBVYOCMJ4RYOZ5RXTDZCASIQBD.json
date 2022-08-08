@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433557096.730621800,
+    "creationTime" : null,
+    "fileCRC" : -1197518602,
+    "fileName" : "PRTG Installer (Currently Installed Version).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 161371696,
+    "fullUnpackSize" : 161318336,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

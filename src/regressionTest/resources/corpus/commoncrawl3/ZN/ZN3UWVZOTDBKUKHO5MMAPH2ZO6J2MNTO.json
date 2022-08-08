@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297921644.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1796312412,
+    "fileName" : "W57R20_120x180.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1476475,
+    "fullUnpackSize" : 2337835,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495607815.405792600,
+    "creationTime" : null,
+    "fileCRC" : -51551309,
+    "fileName" : "P_2013_Terceros.dat",
+    "hostOS" : "win32",
+    "fullPackSize" : 6260193,
+    "fullUnpackSize" : 122769269,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

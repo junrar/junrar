@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175766796.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1606897681,
+    "fileName" : "РД 153-34.1-40.504-00.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 27444,
+    "fullUnpackSize" : 89088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

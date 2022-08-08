@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528812804.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1435429484,
+    "fileName" : "The Transformers - Lost Light 018 (2018) (digital) (Minutemen-Phantasm)\\01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 935617,
+    "fullUnpackSize" : 969998,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528812804.000000000,
+    "creationTime" : null,
+    "fileCRC" : 872709434,
+    "fileName" : "The Transformers - Lost Light 018 (2018) (digital) (Minutemen-Phantasm)\\02.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 909927,
+    "fullUnpackSize" : 1076203,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

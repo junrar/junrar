@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329105847.332048300,
+    "creationTime" : null,
+    "fileCRC" : 1834270096,
+    "fileName" : "Screenshot-5.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 208303,
+    "fullUnpackSize" : 208990,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329106173.734717400,
+    "creationTime" : null,
+    "fileCRC" : -1579869163,
+    "fileName" : "Steinhaus-Siedlung 2.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 1196141,
+    "fullUnpackSize" : 1332782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

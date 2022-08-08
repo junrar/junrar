@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383156354.456514700,
+    "creationTime" : null,
+    "fileCRC" : -312451220,
+    "fileName" : "CSI.S14E03.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15190,
+    "fullUnpackSize" : 48031,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411883387.563735300,
+    "creationTime" : null,
+    "fileCRC" : -1965094984,
+    "fileName" : "csi.s14e03.dvdrip.x264-demand.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19675,
+    "fullUnpackSize" : 48031,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

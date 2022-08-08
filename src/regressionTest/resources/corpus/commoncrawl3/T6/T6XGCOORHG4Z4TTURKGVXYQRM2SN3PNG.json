@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1142167512.000000000,
+    "creationTime" : null,
+    "fileCRC" : -82976118,
+    "fileName" : "Физическая культура студента (2002).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 31776895,
+    "fullUnpackSize" : 31797902,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

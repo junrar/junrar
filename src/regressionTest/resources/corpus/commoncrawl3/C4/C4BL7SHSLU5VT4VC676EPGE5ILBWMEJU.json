@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302156767.609375000,
+    "creationTime" : null,
+    "fileCRC" : 128500826,
+    "fileName" : "информационный бюллетень 2-А.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 13103,
+    "fullUnpackSize" : 54784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302156767.015625000,
+    "creationTime" : null,
+    "fileCRC" : -497504850,
+    "fileName" : "аукционная документация 2-А.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 32882,
+    "fullUnpackSize" : 179712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

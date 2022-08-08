@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443597954.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1953765914,
+    "fileName" : "Акулиновское СП\\ПКР Акулиновского СП ТОМ I.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 679349,
+    "fullUnpackSize" : 802059,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443598039.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1620153026,
+    "fileName" : "Акулиновское СП\\ПКР Акулиновское СП ТОМ II.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 700209,
+    "fullUnpackSize" : 870389,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476418250.898632400,
+    "creationTime" : null,
+    "fileCRC" : 1773467202,
+    "fileName" : "Стасенко_СВ-диссертация.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2687962,
+    "fullUnpackSize" : 3037759,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

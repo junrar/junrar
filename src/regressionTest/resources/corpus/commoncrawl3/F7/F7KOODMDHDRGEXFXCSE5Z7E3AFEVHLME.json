@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1189173979.312500000,
+    "creationTime" : null,
+    "fileCRC" : -1596132678,
+    "fileName" : "Elimeno.tuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 9371816,
+    "fullUnpackSize" : 9371816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

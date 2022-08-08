@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384439082.378090500,
+    "creationTime" : null,
+    "fileCRC" : 1652887807,
+    "fileName" : "randomite-1.6.4-1.1.0.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 56643,
+    "fullUnpackSize" : 71390,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

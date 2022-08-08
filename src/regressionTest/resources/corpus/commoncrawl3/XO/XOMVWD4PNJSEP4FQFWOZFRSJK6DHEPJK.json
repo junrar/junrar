@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281163100.000000000,
+    "creationTime" : null,
+    "fileCRC" : 129954347,
+    "fileName" : "DEATH, HEAL, RATIONAL\\4_Butterfly.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3257847,
+    "fullUnpackSize" : 3488749,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

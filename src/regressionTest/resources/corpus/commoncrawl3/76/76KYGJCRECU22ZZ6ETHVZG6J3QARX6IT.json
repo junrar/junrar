@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445798696.190165800,
+    "creationTime" : null,
+    "fileCRC" : -910523456,
+    "fileName" : "Остатки_2015_10_25 Базовая цена RUB.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 381065,
+    "fullUnpackSize" : 2327040,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

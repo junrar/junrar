@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506652014.000000000,
+    "creationTime" : null,
+    "fileCRC" : -754215041,
+    "fileName" : "MFU630_20170929.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3326313,
+    "fullUnpackSize" : 3423970,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

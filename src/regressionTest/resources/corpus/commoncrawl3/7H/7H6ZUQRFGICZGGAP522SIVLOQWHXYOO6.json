@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1211878077.031250000,
+    "creationTime" : null,
+    "fileCRC" : -436730100,
+    "fileName" : "vec2_tekhouseandfx.drumkit",
+    "hostOS" : "win32",
+    "fullPackSize" : 24921520,
+    "fullUnpackSize" : 55255061,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

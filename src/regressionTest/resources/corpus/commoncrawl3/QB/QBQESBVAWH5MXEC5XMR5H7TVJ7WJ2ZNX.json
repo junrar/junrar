@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : 1461258630.182784500,
+    "lastModifiedTime" : 1458694696.000000000,
+    "creationTime" : 1461258630.182784500,
+    "fileCRC" : -1568862742,
+    "fileName" : "RafaeLLa IRC Bot Services by westor\\data\\32\\curl.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 974689,
+    "fullUnpackSize" : 2558976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : 1461258630.227816700,
+    "lastModifiedTime" : 1454517494.042376800,
+    "creationTime" : 1461258630.227816700,
+    "fileCRC" : 831957603,
+    "fileName" : "RafaeLLa IRC Bot Services by westor\\data\\32\\rar.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 237380,
+    "fullUnpackSize" : 510456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

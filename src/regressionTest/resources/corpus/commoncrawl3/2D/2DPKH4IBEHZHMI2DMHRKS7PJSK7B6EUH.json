@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509097633.400394600,
+    "creationTime" : null,
+    "fileCRC" : -1521756554,
+    "fileName" : "A6000.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 1493569,
+    "fullUnpackSize" : 3342336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

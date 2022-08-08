@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231235558.500000000,
+    "creationTime" : null,
+    "fileCRC" : 1585227922,
+    "fileName" : "Zehir_Cocuklara 40 Hadis.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 5331793,
+    "fullUnpackSize" : 5374464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

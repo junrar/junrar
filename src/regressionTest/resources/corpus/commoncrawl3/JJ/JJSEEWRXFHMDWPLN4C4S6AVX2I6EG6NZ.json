@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505374718.562013800,
+    "creationTime" : null,
+    "fileCRC" : -1492197686,
+    "fileName" : "40_rus.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 117288,
+    "fullUnpackSize" : 121766,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505374789.266052100,
+    "creationTime" : null,
+    "fileCRC" : -1797407728,
+    "fileName" : "40_kyr.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 145039,
+    "fullUnpackSize" : 148767,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

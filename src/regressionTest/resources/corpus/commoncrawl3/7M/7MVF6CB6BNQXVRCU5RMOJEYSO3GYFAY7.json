@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1101306146.000000000,
+    "creationTime" : null,
+    "fileCRC" : 9147112,
+    "fileName" : "وصايا إسلامية لتيسير الزواج.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9896,
+    "fullUnpackSize" : 45568,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

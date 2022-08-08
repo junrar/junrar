@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524195360.000000000,
+    "creationTime" : null,
+    "fileCRC" : 376812519,
+    "fileName" : "BaseAveriguacionesPrevias 2015-2016.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 90712,
+    "fullUnpackSize" : 90712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524195360.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1049300759,
+    "fileName" : "BaseCarpetasdeInvestigacion 2017-2018.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 14539,
+    "fullUnpackSize" : 14677,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

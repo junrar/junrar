@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409714139.899613200,
+    "creationTime" : null,
+    "fileCRC" : -596147228,
+    "fileName" : "ПОСТИГАЯ СЛОВО.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1598719,
+    "fullUnpackSize" : 2002152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

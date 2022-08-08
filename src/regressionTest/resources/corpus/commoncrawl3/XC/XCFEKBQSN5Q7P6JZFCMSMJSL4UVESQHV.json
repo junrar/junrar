@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1238768074.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1531264175,
+    "fileName" : "effects.fxp",
+    "hostOS" : "win32",
+    "fullPackSize" : 15518,
+    "fullUnpackSize" : 708715,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1250748332.453125000,
+    "creationTime" : null,
+    "fileCRC" : 760794265,
+    "fileName" : "effectsPC.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 3880321,
+    "fullUnpackSize" : 14987816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

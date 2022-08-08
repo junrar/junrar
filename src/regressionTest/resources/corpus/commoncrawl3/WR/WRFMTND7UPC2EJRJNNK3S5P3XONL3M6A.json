@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442303964.354611300,
+    "creationTime" : null,
+    "fileCRC" : 501999831,
+    "fileName" : "JT1503-电子版.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6947615,
+    "fullUnpackSize" : 7313194,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

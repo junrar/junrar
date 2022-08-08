@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369727639.327561100,
+    "creationTime" : null,
+    "fileCRC" : 857492179,
+    "fileName" : "ПО для MAX S04\\distrES_ForthLogic_SG_2.08_ru\\Examples\\Application\\BMS\\2013-05-28_1553.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1716065,
+    "fullUnpackSize" : 3610256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

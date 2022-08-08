@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390959693.468750000,
+    "creationTime" : null,
+    "fileCRC" : 1054273566,
+    "fileName" : "园区社保（公积金）电子期刊(2014年第1期).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5132117,
+    "fullUnpackSize" : 6742256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

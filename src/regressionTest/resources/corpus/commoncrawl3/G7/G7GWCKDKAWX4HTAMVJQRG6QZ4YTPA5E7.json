@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1257904104.000000000,
+    "creationTime" : null,
+    "fileCRC" : -704084681,
+    "fileName" : "афилир лица 3 кв 2009 г..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9256,
+    "fullUnpackSize" : 61952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

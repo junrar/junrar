@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450949737.000212400,
+    "creationTime" : null,
+    "fileCRC" : 1780236497,
+    "fileName" : "Памятка для родителей по БДД.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1010117,
+    "fullUnpackSize" : 1060303,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

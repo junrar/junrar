@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483936627.777237200,
+    "creationTime" : null,
+    "fileCRC" : 1041566849,
+    "fileName" : "UCHWAŁA_Nr_XXII_178_2012.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 482699,
+    "fullUnpackSize" : 505446,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483936631.626457400,
+    "creationTime" : null,
+    "fileCRC" : 331854039,
+    "fileName" : "załącznik_nr_2_do_178.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 357386,
+    "fullUnpackSize" : 358695,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

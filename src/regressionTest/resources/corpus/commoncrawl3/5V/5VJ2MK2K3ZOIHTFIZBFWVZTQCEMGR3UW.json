@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416571615.388993000,
+    "creationTime" : null,
+    "fileCRC" : -920813407,
+    "fileName" : "Supernatural.S10E06.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17425,
+    "fullUnpackSize" : 44558,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416654650.276247700,
+    "creationTime" : null,
+    "fileCRC" : -1422476817,
+    "fileName" : "Supernatural.S10E06.Ask.Jeeves.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17474,
+    "fullUnpackSize" : 44615,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

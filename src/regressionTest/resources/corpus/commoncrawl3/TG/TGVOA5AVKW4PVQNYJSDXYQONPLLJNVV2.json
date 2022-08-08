@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473653453.694772300,
+    "creationTime" : null,
+    "fileCRC" : -2095405344,
+    "fileName" : "ATA 27.1 VENEZA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 178829,
+    "fullUnpackSize" : 196877,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473653463.145772300,
+    "creationTime" : null,
+    "fileCRC" : -1942750530,
+    "fileName" : "ATA 27.2 MBR.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 174587,
+    "fullUnpackSize" : 191471,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

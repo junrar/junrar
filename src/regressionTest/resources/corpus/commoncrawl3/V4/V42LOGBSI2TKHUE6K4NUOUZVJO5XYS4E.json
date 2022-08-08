@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1408081662.000000000,
+    "creationTime" : null,
+    "fileCRC" : 539241556,
+    "fileName" : "one more Greece....doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9996561,
+    "fullUnpackSize" : 10313216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

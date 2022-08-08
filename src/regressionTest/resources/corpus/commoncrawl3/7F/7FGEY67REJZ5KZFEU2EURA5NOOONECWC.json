@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1322537196.953125000,
+    "creationTime" : null,
+    "fileCRC" : -589768681,
+    "fileName" : "2011Network Fraud Handbook.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2962293,
+    "fullUnpackSize" : 3682936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

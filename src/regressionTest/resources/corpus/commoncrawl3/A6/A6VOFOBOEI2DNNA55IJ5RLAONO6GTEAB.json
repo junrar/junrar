@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255607248.453000000,
+    "creationTime" : null,
+    "fileCRC" : -516706864,
+    "fileName" : "ПОВЕРХНОСТНЫЕ И СОБСТВЕННО НАНОСТРУКТУРЫ ЖИДКИХ, ТВЕРДЫХ И ГАЗООБРАЗНЫХ ВЕЩЕСТВ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1325072,
+    "fullUnpackSize" : 4331008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

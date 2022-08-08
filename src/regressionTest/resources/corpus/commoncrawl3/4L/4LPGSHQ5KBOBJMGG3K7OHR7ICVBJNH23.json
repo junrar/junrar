@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380109457.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1703464594,
+    "fileName" : "Upatstvo kapitacijaKasoftPlus v12.33.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2693,
+    "fullUnpackSize" : 17408,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380109303.000000000,
+    "creationTime" : null,
+    "fileCRC" : -924352216,
+    "fileName" : "KapitacijaKasoftPlus.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1609362,
+    "fullUnpackSize" : 8657920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

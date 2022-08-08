@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 504233400.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1892604581,
+    "fileName" : "com.disney.maleficent_goo\\main.471.com.disney.maleficent_goo.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 148922012,
+    "fullUnpackSize" : 153905765,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255741442.125000000,
+    "creationTime" : null,
+    "fileCRC" : 1562468018,
+    "fileName" : "ClientSetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 48188430,
+    "fullUnpackSize" : 53379072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

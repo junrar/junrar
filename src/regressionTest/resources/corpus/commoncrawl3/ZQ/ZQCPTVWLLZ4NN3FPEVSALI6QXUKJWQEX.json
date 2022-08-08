@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387993463.084057800,
+    "creationTime" : null,
+    "fileCRC" : -895381904,
+    "fileName" : "mp_bridge\\mp_bridge.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 16476137,
+    "fullUnpackSize" : 16746973,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

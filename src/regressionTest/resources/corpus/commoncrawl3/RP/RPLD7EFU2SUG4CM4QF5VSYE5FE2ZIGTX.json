@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528249325.974783500,
+    "creationTime" : null,
+    "fileCRC" : -1566756155,
+    "fileName" : "Elementary.S06E06.Give.Me.the.Finger.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 25902,
+    "fullUnpackSize" : 69861,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528249325.974783500,
+    "creationTime" : null,
+    "fileCRC" : -1566756155,
+    "fileName" : "Elementary.S06E06.Give.Me.the.Finger.720p.HDTV.X264-DIMENSION.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 25902,
+    "fullUnpackSize" : 69861,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

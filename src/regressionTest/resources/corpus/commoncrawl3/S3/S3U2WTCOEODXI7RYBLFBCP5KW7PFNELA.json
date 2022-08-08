@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357047099.000000000,
+    "creationTime" : null,
+    "fileCRC" : -457460622,
+    "fileName" : "2012_2013_dkab_5.sinif_1.donem_2.yazili_musaaydogdu.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 57050,
+    "fullUnpackSize" : 121344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

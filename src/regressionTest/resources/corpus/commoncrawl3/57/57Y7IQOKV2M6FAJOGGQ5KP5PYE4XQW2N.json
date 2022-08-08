@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1067010404.000000000,
+    "creationTime" : null,
+    "fileCRC" : 316784243,
+    "fileName" : "Montreal_2003_RL_1.3b\\canada2003.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5915303,
+    "fullUnpackSize" : 5961576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

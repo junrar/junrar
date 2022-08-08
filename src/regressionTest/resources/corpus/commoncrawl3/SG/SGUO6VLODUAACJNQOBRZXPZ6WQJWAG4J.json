@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514478789.143000000,
+    "creationTime" : null,
+    "fileCRC" : -998426376,
+    "fileName" : "Shizo - Fusnote\\01. Marš.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4871606,
+    "fullUnpackSize" : 5644231,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

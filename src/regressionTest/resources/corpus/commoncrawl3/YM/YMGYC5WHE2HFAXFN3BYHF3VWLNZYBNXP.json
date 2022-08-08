@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1167059950.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1387335288,
+    "fileName" : "Nokia fax instruction.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1085711,
+    "fullUnpackSize" : 1175552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

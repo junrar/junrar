@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1480323508.748022100,
+    "creationTime" : null,
+    "fileCRC" : 339769456,
+    "fileName" : "TeamViewer_12.0.4619.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 12417786,
+    "fullUnpackSize" : 12665512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526894564.102555500,
+    "creationTime" : null,
+    "fileCRC" : 1775404488,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 220,
+    "fullUnpackSize" : 287,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526894194.679530600,
+    "creationTime" : null,
+    "fileCRC" : 1185684770,
+    "fileName" : "Menukiller_ETc_1.04.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 212386,
+    "fullUnpackSize" : 1160308,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

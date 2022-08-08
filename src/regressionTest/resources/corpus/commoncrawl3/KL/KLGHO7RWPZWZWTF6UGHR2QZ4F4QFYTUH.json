@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413336840.406872200,
+    "creationTime" : null,
+    "fileCRC" : 335845362,
+    "fileName" : "Изменения в проектню декларацию казачья 1А.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 361332,
+    "fullUnpackSize" : 506275,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

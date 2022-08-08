@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141909980.000000000,
+    "creationTime" : null,
+    "fileCRC" : -687009247,
+    "fileName" : "JtG-0.7.4b.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2707674,
+    "fullUnpackSize" : 2707674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

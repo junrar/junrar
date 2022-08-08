@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501168474.875400000,
+    "creationTime" : null,
+    "fileCRC" : -287761628,
+    "fileName" : "Lynda-Maya.2018.Essential.Training[arch-projects.com]\\068 Work with the Hypershade window [arch-projects.com].mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 8113929,
+    "fullUnpackSize" : 13369141,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

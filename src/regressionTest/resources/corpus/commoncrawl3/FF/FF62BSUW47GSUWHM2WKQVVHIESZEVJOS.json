@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1239774208.953125000,
+    "creationTime" : null,
+    "fileCRC" : -616134932,
+    "fileName" : "9kas53.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 375075,
+    "fullUnpackSize" : 396522,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

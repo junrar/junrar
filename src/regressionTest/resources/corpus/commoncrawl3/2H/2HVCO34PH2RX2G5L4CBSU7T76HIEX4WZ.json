@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484104315.347448200,
+    "creationTime" : null,
+    "fileCRC" : -2085473252,
+    "fileName" : "oldisvet2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 34519159,
+    "fullUnpackSize" : 36682872,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

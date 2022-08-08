@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290144344.980234200,
+    "creationTime" : null,
+    "fileCRC" : 22902125,
+    "fileName" : "fin_otchetnost2007\\Архэнерго 207\\Аудиторское заключение АЭ 07.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 839714,
+    "fullUnpackSize" : 1043446,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290141466.637531000,
+    "creationTime" : null,
+    "fileCRC" : -1461502298,
+    "fileName" : "fin_otchetnost2007\\Архэнерго 207\\Заключение ревизионной комиссии АЭ 07.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 284365,
+    "fullUnpackSize" : 349108,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

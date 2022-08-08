@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531979664.794227200,
+    "creationTime" : null,
+    "fileCRC" : 1544357494,
+    "fileName" : "Price_luandr_opt.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 32285,
+    "fullUnpackSize" : 138752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

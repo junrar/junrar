@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358997218.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1527221961,
+    "fileName" : "CP210x_VCP_Win_XP_S2K3_Vista_7.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5315584,
+    "fullUnpackSize" : 7116716,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

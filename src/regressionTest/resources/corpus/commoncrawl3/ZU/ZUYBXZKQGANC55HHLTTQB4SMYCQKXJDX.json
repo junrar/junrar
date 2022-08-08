@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479351976.633252100,
+    "creationTime" : null,
+    "fileCRC" : 55329013,
+    "fileName" : "07 Material Girl.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6789738,
+    "fullUnpackSize" : 6853888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

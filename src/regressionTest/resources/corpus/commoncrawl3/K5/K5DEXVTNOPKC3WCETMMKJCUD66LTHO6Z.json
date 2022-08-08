@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233900543.656000000,
+    "creationTime" : null,
+    "fileCRC" : -940735765,
+    "fileName" : "Tranvanha.com_Vietnamese_Font_Full\\Vietnamese Font Full.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 4121218,
+    "fullUnpackSize" : 4532736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

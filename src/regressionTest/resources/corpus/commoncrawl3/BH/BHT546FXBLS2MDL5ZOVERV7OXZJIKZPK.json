@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328936464.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1033111883,
+    "fileName" : "Dynamics_6th_solution\\DYNAMICS Meriam 6th edition Chapter04 solution.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3312799,
+    "fullUnpackSize" : 5431517,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

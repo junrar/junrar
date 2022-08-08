@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492138246.266980200,
+    "creationTime" : null,
+    "fileCRC" : 766430173,
+    "fileName" : "1201\\UV1201内页.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 918148,
+    "fullUnpackSize" : 1553831,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492077245.754265700,
+    "creationTime" : null,
+    "fileCRC" : 1904712948,
+    "fileName" : "1201\\UV1201外页.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 953612,
+    "fullUnpackSize" : 1440486,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

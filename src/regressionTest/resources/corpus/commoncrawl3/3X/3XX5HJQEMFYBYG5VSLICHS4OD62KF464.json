@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376132276.156250000,
+    "creationTime" : null,
+    "fileCRC" : 649714334,
+    "fileName" : "price_doorhan19072013.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 49495,
+    "fullUnpackSize" : 211456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

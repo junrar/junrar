@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1138860726.000000000,
+    "creationTime" : null,
+    "fileCRC" : 659838724,
+    "fileName" : "E350EXEFB1.def",
+    "hostOS" : "win32",
+    "fullPackSize" : 38056,
+    "fullUnpackSize" : 296417,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1138851506.000000000,
+    "creationTime" : null,
+    "fileCRC" : -644330656,
+    "fileName" : "E350EXEFB1.x",
+    "hostOS" : "win32",
+    "fullPackSize" : 17527096,
+    "fullUnpackSize" : 70631800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

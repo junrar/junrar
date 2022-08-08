@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160556280.267143100,
+    "creationTime" : null,
+    "fileCRC" : -454022358,
+    "fileName" : "BatMemTimeWM5_Setup4.1.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 73298,
+    "fullUnpackSize" : 73298,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160556284.330370100,
+    "creationTime" : null,
+    "fileCRC" : 1449798132,
+    "fileName" : "BatMemTime2003SE_Setup4.1.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 74877,
+    "fullUnpackSize" : 74877,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

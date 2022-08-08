@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1131425310.523375000,
+    "creationTime" : null,
+    "fileCRC" : 1842726246,
+    "fileName" : "VDMSound-2.0.4-WinNT-i386.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 865401,
+    "fullUnpackSize" : 978432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

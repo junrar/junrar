@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1210144734.000000000,
+    "creationTime" : null,
+    "fileCRC" : -659155911,
+    "fileName" : "постанова №225.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1985,
+    "fullUnpackSize" : 5392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1212384708.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1155219288,
+    "fileName" : "digital soldering station_miha_2CH_simsim.spl",
+    "hostOS" : "win32",
+    "fullPackSize" : 17635,
+    "fullUnpackSize" : 84272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1212384820.000000000,
+    "creationTime" : null,
+    "fileCRC" : 399377944,
+    "fileName" : "2 канала на реле_simsim.GIF",
+    "hostOS" : "win32",
+    "fullPackSize" : 61179,
+    "fullUnpackSize" : 61308,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

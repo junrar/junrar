@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1249560701.048637500,
+    "creationTime" : null,
+    "fileCRC" : 1615031322,
+    "fileName" : "laptopalarm2_beta.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 152112,
+    "fullUnpackSize" : 319488,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

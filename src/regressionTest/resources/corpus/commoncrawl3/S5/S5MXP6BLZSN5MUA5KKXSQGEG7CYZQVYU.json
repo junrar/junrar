@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458794155.612000000,
+    "creationTime" : null,
+    "fileCRC" : -788923342,
+    "fileName" : "Описание возможностей AQUAPLANNER Word\\Описание возможностей AQUAPLANNER Word.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6751,
+    "fullUnpackSize" : 34304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458794155.612899600,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Описание возможностей AQUAPLANNER Word",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

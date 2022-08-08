@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1277361877.151000000,
+    "creationTime" : null,
+    "fileCRC" : -1589527383,
+    "fileName" : "меню гостиница.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8731,
+    "fullUnpackSize" : 75264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285640300.276000000,
+    "creationTime" : null,
+    "fileCRC" : -1241491399,
+    "fileName" : "korporativ_dogovor.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 13775,
+    "fullUnpackSize" : 116736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

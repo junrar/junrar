@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456471058.000000000,
+    "creationTime" : null,
+    "fileCRC" : 867752464,
+    "fileName" : "Stealth MFU620_20160226.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3276919,
+    "fullUnpackSize" : 3309216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

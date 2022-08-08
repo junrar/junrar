@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376649299.119917700,
+    "creationTime" : null,
+    "fileCRC" : 1544628308,
+    "fileName" : "仕邦说法（第34期）.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 773526,
+    "fullUnpackSize" : 825931,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

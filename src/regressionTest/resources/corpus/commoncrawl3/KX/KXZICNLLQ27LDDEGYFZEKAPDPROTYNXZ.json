@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1056512214.000000000,
+    "creationTime" : null,
+    "fileCRC" : -10735441,
+    "fileName" : "sl-nav12_winXP-vista-7\\Acrobat Reader\\AdbeRdr60_enu_full.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 16051496,
+    "fullUnpackSize" : 16051496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

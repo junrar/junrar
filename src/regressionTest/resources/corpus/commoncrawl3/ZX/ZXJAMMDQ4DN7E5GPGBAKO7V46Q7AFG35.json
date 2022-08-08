@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427557374.419741100,
+    "creationTime" : null,
+    "fileCRC" : -1217465923,
+    "fileName" : "Miami Vibe.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 413669,
+    "fullUnpackSize" : 413669,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

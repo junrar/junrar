@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505466080.000000000,
+    "creationTime" : null,
+    "fileCRC" : -868616654,
+    "fileName" : "dot 5\\QDinh.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4878122,
+    "fullUnpackSize" : 6505352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290257094.321056100,
+    "creationTime" : null,
+    "fileCRC" : -1555127048,
+    "fileName" : "Supernatural.S06E09.HDTV.XviD-2HD.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15818,
+    "fullUnpackSize" : 40377,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297065226.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1402838418,
+    "fileName" : "Supernatural.S06E09.Clap.Your.Hands.If.You.Believe.720p.WEB-DL.DD5.1.AAC2.0.H264-SURFER.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15623,
+    "fullUnpackSize" : 39839,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

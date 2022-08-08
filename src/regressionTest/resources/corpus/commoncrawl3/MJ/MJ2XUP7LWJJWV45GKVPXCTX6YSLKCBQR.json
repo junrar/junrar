@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503235383.416256100,
+    "creationTime" : null,
+    "fileCRC" : -1543311572,
+    "fileName" : "Indotextiles E Magazine 242 August 1 2017.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1258106,
+    "fullUnpackSize" : 2203648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

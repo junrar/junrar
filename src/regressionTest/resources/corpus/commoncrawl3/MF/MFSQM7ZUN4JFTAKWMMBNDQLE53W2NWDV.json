@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152895376.000000000,
+    "creationTime" : null,
+    "fileCRC" : 805489828,
+    "fileName" : "Core Temp.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 61071,
+    "fullUnpackSize" : 187392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

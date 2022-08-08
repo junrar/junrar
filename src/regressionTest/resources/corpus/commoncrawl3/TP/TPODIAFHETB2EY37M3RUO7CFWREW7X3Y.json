@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310616502.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1369049123,
+    "fileName" : "declaratia de avere bartha pg. 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 714096,
+    "fullUnpackSize" : 761693,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310616578.000000000,
+    "creationTime" : null,
+    "fileCRC" : 424948221,
+    "fileName" : "declaratia de avere bartha pg. 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 667453,
+    "fullUnpackSize" : 728022,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

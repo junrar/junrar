@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527206641.226085500,
+    "creationTime" : null,
+    "fileCRC" : 992497233,
+    "fileName" : "GERTAN JABAR JUNI 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 187078,
+    "fullUnpackSize" : 320520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526869942.000000000,
+    "creationTime" : null,
+    "fileCRC" : 188442856,
+    "fileName" : "45 Provinsi Jawa Barat.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 8801786,
+    "fullUnpackSize" : 9477823,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

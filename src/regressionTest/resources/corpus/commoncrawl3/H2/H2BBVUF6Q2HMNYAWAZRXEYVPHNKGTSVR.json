@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457534350.155923600,
+    "creationTime" : null,
+    "fileCRC" : -1965152884,
+    "fileName" : "ColorEyes#1_by_ihelen.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 75385,
+    "fullUnpackSize" : 77748,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457584400.552198000,
+    "creationTime" : null,
+    "fileCRC" : 684385386,
+    "fileName" : "ColorEyes#1_by_ihelen.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 211355,
+    "fullUnpackSize" : 211467,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401870238.375000000,
+    "creationTime" : null,
+    "fileCRC" : -2134834157,
+    "fileName" : "6 Утверждение тарифов.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 267678,
+    "fullUnpackSize" : 293652,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401870238.140625000,
+    "creationTime" : null,
+    "fileCRC" : -303533695,
+    "fileName" : "2 Утверждение тарифов.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1135473,
+    "fullUnpackSize" : 1168863,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

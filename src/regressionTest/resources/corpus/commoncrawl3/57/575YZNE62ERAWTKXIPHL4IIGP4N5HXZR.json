@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275194973.609375000,
+    "creationTime" : null,
+    "fileCRC" : 1865772011,
+    "fileName" : "low chrome\\stafford.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 2268641,
+    "fullUnpackSize" : 7354368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

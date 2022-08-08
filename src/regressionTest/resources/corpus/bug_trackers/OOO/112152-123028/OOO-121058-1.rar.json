@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348021135.908934900,
+    "creationTime" : null,
+    "fileCRC" : 1132055193,
+    "fileName" : "FFC3.0P2FFCSC_64K_Chart_Display0005.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 502239,
+    "fullUnpackSize" : 1940992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

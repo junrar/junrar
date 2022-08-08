@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440674713.490978800,
+    "creationTime" : null,
+    "fileCRC" : 634790423,
+    "fileName" : "[SGND] Beach Halter Mesh Top.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 204146,
+    "fullUnpackSize" : 204184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

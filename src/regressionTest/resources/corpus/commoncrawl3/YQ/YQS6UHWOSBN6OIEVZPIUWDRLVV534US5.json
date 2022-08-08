@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468455094.187500000,
+    "creationTime" : null,
+    "fileCRC" : -1988751269,
+    "fileName" : "Постановление оборот.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 62098,
+    "fullUnpackSize" : 130231,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468455019.781250000,
+    "creationTime" : null,
+    "fileCRC" : 328259969,
+    "fileName" : "Постановление.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 72484,
+    "fullUnpackSize" : 139177,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

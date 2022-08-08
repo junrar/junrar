@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1471910899.962651700,
+    "creationTime" : null,
+    "fileCRC" : 1320371427,
+    "fileName" : "CH1503-网络阅读版.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4530949,
+    "fullUnpackSize" : 4736163,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

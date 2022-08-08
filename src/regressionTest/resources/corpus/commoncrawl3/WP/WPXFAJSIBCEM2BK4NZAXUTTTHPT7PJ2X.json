@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454687806.159227600,
+    "creationTime" : null,
+    "fileCRC" : 1370722932,
+    "fileName" : "Dutch_1 [www.liber.ir].iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 392030064,
+    "fullUnpackSize" : 396380160,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

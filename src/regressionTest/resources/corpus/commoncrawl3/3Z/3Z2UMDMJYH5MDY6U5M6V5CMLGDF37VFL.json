@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503046894.000000000,
+    "creationTime" : null,
+    "fileCRC" : 414482499,
+    "fileName" : "CQCS3-v3.4.5-setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 7555299,
+    "fullUnpackSize" : 7611901,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

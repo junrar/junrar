@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230378798.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1574792979,
+    "fileName" : "Справочник по рентгеноструктурному анализу поликристаллов (Л.И. Миркин).djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 20537185,
+    "fullUnpackSize" : 20537185,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

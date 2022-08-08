@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377534818.429000000,
+    "creationTime" : null,
+    "fileCRC" : -1540069994,
+    "fileName" : "Общая и прикладная ценология. Наука о технической реальности. Выпуск 49.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 34665,
+    "fullUnpackSize" : 137216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

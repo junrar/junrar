@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489213451.107872000,
+    "creationTime" : null,
+    "fileCRC" : -1422869665,
+    "fileName" : "Boiangiu Marian.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 539852,
+    "fullUnpackSize" : 627601,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489212580.135308400,
+    "creationTime" : null,
+    "fileCRC" : 815233298,
+    "fileName" : "Buceanu Maria a.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 597154,
+    "fullUnpackSize" : 658819,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

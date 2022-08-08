@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1467690518.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1027843077,
+    "fileName" : "Отчет по Московским Каникулам Июнь 2016 — Марьино филиал «Капотня»\\Отчет по Московским Каникулам Июнь 2016 — Марьино филиал «Капотня».docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1724081,
+    "fullUnpackSize" : 1738998,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

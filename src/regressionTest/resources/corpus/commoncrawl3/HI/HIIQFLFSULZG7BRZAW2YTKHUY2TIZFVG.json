@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1137762062.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1905155244,
+    "fileName" : "犬名-秀鐵號- 榮獲成犬組一席.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 14935,
+    "fullUnpackSize" : 14971,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1137762062.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2133948681,
+    "fileName" : "犬名-秀鐵號.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 18664,
+    "fullUnpackSize" : 18626,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

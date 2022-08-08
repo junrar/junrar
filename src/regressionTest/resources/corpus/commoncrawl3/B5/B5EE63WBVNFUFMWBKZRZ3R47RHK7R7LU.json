@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401352752.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1720792000,
+    "fileName" : "windows8.1\\data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 7353141,
+    "fullUnpackSize" : 8637888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

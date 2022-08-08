@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517022590.531250000,
+    "creationTime" : null,
+    "fileCRC" : -891382319,
+    "fileName" : "БП-81-анодный.spl7",
+    "hostOS" : "win32",
+    "fullPackSize" : 16914,
+    "fullUnpackSize" : 55781,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

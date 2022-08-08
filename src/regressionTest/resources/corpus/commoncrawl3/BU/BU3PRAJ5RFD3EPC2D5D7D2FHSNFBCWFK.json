@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514272271.821737900,
+    "creationTime" : null,
+    "fileCRC" : -396353537,
+    "fileName" : "Gnom3_KTR.stl",
+    "hostOS" : "win32",
+    "fullPackSize" : 609469,
+    "fullUnpackSize" : 6611984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514272304.151587100,
+    "creationTime" : null,
+    "fileCRC" : 1118652812,
+    "fileName" : "Gnom3_TR.stl",
+    "hostOS" : "win32",
+    "fullPackSize" : 2181620,
+    "fullUnpackSize" : 22545423,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

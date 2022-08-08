@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318081408.000000000,
+    "creationTime" : null,
+    "fileCRC" : -160918199,
+    "fileName" : "Stickrpg.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2450758,
+    "fullUnpackSize" : 2592768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

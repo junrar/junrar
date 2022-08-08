@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305258273.825000000,
+    "creationTime" : null,
+    "fileCRC" : -369467727,
+    "fileName" : "Berserk_v36c321p01.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 707640,
+    "fullUnpackSize" : 707640,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305258311.568000000,
+    "creationTime" : null,
+    "fileCRC" : -767611529,
+    "fileName" : "Berserk_v36c321p02-03.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1732779,
+    "fullUnpackSize" : 1732779,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

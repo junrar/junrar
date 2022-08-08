@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390016924.000000000,
+    "creationTime" : null,
+    "fileCRC" : -458676638,
+    "fileName" : "Caiete de sarcini\\CS1-Lucrari de terasamente si betoane.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10485629,
+    "fullUnpackSize" : 109295532,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

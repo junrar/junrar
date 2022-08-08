@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530112099.406345100,
+    "creationTime" : null,
+    "fileCRC" : 634939791,
+    "fileName" : "Midnightskysims_ScarfJacket.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 11160691,
+    "fullUnpackSize" : 11250579,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

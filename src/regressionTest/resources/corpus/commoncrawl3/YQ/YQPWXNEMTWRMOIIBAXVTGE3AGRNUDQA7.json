@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168150218.000000000,
+    "creationTime" : null,
+    "fileCRC" : 992278226,
+    "fileName" : "QIP_mobil_2005_MIDP2_ful.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 203184,
+    "fullUnpackSize" : 215137,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

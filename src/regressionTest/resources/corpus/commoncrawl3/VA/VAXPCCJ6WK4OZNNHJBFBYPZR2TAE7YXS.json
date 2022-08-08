@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1400551122.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1045005508,
+    "fileName" : "DC-718-052014\\A23_D71_D711C_PG_1404069.20140520-1.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 372793786,
+    "fullUnpackSize" : 619517440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

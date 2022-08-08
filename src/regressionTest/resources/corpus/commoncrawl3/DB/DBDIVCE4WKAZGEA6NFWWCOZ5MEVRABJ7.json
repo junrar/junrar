@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522644642.656171900,
+    "creationTime" : null,
+    "fileCRC" : -1002599588,
+    "fileName" : "Logo Euroregion Tatry\\logo-euroregion-tatry,d50a8.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 56879,
+    "fullUnpackSize" : 71071,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522644646.229076400,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Logo Euroregion Tatry",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

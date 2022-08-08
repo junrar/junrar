@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1375263916.802152400,
+    "creationTime" : null,
+    "fileCRC" : -1551552979,
+    "fileName" : "SSR412F(20130227).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 10349843,
+    "fullUnpackSize" : 10374279,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

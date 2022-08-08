@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456365380.395980800,
+    "creationTime" : null,
+    "fileCRC" : 2134185415,
+    "fileName" : "绿色背景PPT模板.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 641817,
+    "fullUnpackSize" : 1508164,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

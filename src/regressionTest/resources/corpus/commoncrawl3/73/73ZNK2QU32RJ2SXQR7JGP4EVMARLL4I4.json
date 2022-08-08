@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472468136.055870600,
+    "creationTime" : null,
+    "fileCRC" : 743402794,
+    "fileName" : "Sponsor_Beauty_Contest.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 446698,
+    "fullUnpackSize" : 516185,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1237974374.706257600,
+    "creationTime" : null,
+    "fileCRC" : -1803909300,
+    "fileName" : "present_prb51.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1384409,
+    "fullUnpackSize" : 2651648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

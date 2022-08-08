@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336968061.625000000,
+    "creationTime" : null,
+    "fileCRC" : 328915774,
+    "fileName" : "rješenje ispita 6..PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 204816,
+    "fullUnpackSize" : 261448,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

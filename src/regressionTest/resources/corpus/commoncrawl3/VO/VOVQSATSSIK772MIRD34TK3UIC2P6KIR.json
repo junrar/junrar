@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228978864.000000000,
+    "creationTime" : null,
+    "fileCRC" : 741376337,
+    "fileName" : "Gulman 2 - Demo\\data.gzm",
+    "hostOS" : "win32",
+    "fullPackSize" : 13524926,
+    "fullUnpackSize" : 21455807,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

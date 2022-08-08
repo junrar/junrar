@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1161441320.093750000,
+    "creationTime" : null,
+    "fileCRC" : 711527286,
+    "fileName" : "monaco1991.tuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 16021223,
+    "fullUnpackSize" : 16021223,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

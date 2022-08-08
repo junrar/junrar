@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381088055.187500000,
+    "creationTime" : null,
+    "fileCRC" : 565303352,
+    "fileName" : "Delphi 6. Программирование на Object Pascal.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4189979,
+    "fullUnpackSize" : 16565959,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

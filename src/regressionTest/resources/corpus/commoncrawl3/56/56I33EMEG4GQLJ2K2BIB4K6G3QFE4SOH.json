@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447055466.132749300,
+    "creationTime" : null,
+    "fileCRC" : 2004214758,
+    "fileName" : "Розпорядження № 220-р від 04.11.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12800,
+    "fullUnpackSize" : 53248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

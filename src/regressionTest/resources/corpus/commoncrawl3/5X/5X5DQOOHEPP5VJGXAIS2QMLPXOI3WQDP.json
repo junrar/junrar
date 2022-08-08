@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229480092.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2108583325,
+    "fileName" : "lnkexaminer.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 558665,
+    "fullUnpackSize" : 573440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231674072.000000000,
+    "creationTime" : null,
+    "fileCRC" : 164939985,
+    "fileName" : "fsresource.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 324612,
+    "fullUnpackSize" : 737280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

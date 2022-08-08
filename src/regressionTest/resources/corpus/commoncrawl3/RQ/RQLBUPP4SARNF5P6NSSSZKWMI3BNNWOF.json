@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1190183635.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1414905224,
+    "fileName" : "25-RPS Sevlievo\\Assessment\\25-RPS Sevlievo-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5147123,
+    "fullUnpackSize" : 5454848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

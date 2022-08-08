@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 839092058.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2084138316,
+    "fileName" : "Arrow of Death - Part I.xex",
+    "hostOS" : "win32",
+    "fullPackSize" : 7894,
+    "fullUnpackSize" : 13196,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

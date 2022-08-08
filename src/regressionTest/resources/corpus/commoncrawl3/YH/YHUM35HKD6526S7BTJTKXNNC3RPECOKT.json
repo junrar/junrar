@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1206083393.453125000,
+    "creationTime" : null,
+    "fileCRC" : -1549964931,
+    "fileName" : "sentinel.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1751446,
+    "fullUnpackSize" : 4313088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

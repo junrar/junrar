@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469682529.948565100,
+    "creationTime" : null,
+    "fileCRC" : -1443955644,
+    "fileName" : "37-46.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3932765,
+    "fullUnpackSize" : 4306842,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

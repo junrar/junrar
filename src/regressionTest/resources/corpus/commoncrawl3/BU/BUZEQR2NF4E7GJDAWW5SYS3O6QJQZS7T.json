@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482982150.226490700,
+    "creationTime" : null,
+    "fileCRC" : -578953254,
+    "fileName" : "未标题-1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 146923,
+    "fullUnpackSize" : 171106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

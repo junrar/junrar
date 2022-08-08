@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427984087.548698600,
+    "creationTime" : null,
+    "fileCRC" : 2083876644,
+    "fileName" : "BN44-00246A_SL4626.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3399741,
+    "fullUnpackSize" : 3424313,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

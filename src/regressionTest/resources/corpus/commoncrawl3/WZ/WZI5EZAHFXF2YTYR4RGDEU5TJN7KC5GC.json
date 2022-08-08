@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442814092.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1562308872,
+    "fileName" : "FCL-989M脱机语音刷卡锁.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4851163,
+    "fullUnpackSize" : 5832774,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

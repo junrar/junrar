@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215705578.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1131947447,
+    "fileName" : "-MUt@jrQSyddC",
+    "hostOS" : "win32",
+    "fullPackSize" : 50360,
+    "fullUnpackSize" : 53255,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1193216988.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1156474719,
+    "fileName" : "%.UWaee!Zyeo`AE5.$a!!k",
+    "hostOS" : "win32",
+    "fullPackSize" : 5181398,
+    "fullUnpackSize" : 5197874,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

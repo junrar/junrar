@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438105361.267532900,
+    "creationTime" : null,
+    "fileCRC" : 1160905290,
+    "fileName" : "balls [www.liber.ir].mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 10227456,
+    "fullUnpackSize" : 10688494,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

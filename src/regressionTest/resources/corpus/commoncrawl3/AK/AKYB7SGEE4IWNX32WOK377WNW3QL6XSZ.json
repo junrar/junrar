@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1218528245.906250000,
+    "creationTime" : null,
+    "fileCRC" : 1715166671,
+    "fileName" : "Alien_Earth_ISO-425\\Alien Earth.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 295294910,
+    "fullUnpackSize" : 637685760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

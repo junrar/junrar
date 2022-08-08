@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1133406000.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2029174721,
+    "fileName" : "Soft5-Wallpaper-01-1280.bmp",
+    "hostOS" : "win32",
+    "fullPackSize" : 1518484,
+    "fullUnpackSize" : 3932216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395197485.916092800,
+    "creationTime" : null,
+    "fileCRC" : 1904372285,
+    "fileName" : "BY-2HB03MA驱动器说明书.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 274780,
+    "fullUnpackSize" : 312785,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

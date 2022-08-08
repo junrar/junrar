@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531114406.760210800,
+    "creationTime" : null,
+    "fileCRC" : -1369232804,
+    "fileName" : "ΤΕΥΔ-s.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 198516,
+    "fullUnpackSize" : 235381,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531114297.194003600,
+    "creationTime" : null,
+    "fileCRC" : -981585314,
+    "fileName" : "Τεύχη δημοπράτησης-s.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4952503,
+    "fullUnpackSize" : 5276197,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

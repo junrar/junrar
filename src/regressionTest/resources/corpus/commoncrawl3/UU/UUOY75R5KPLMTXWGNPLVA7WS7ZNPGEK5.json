@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424312083.596938900,
+    "creationTime" : null,
+    "fileCRC" : -1801192876,
+    "fileName" : "Diploma_Supplement EL.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 275949,
+    "fullUnpackSize" : 299618,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424312079.294692800,
+    "creationTime" : null,
+    "fileCRC" : -1993267555,
+    "fileName" : "Diploma Supplement EN.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 320320,
+    "fullUnpackSize" : 344646,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

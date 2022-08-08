@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1242886434.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1519522973,
+    "fileName" : "WolfGL3D.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 256060,
+    "fullUnpackSize" : 692291,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

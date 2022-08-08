@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1206184122.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2073790,
+    "fileName" : "aygshell.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 7762,
+    "fullUnpackSize" : 11264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1125547862.000000000,
+    "creationTime" : null,
+    "fileCRC" : 460722299,
+    "fileName" : "TestDump.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 53632,
+    "fullUnpackSize" : 68608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

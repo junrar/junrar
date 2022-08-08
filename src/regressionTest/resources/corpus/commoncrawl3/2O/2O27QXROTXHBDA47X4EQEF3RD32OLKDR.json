@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410334430.808999500,
+    "creationTime" : null,
+    "fileCRC" : 1154040342,
+    "fileName" : "SR 270.x_t",
+    "hostOS" : "win32",
+    "fullPackSize" : 2441150,
+    "fullUnpackSize" : 8209947,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

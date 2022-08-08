@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421712797.859375000,
+    "creationTime" : null,
+    "fileCRC" : -957127262,
+    "fileName" : "№ 05 от 19.01.2015.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 41486,
+    "fullUnpackSize" : 44195,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

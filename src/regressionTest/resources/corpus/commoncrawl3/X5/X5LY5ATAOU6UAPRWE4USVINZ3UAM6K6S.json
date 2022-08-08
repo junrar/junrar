@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1142857541.375000000,
+    "creationTime" : null,
+    "fileCRC" : -511811397,
+    "fileName" : "CYGNUS - Abbyy FineReader 8.0 Professionalkg.xm",
+    "hostOS" : "win32",
+    "fullPackSize" : 6651,
+    "fullUnpackSize" : 24456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

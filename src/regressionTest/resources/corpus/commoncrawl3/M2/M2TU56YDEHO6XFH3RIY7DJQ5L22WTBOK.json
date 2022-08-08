@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1345101012.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1463042034,
+    "fileName" : "ClamXav_2.3.2.dmg",
+    "hostOS" : "win32",
+    "fullPackSize" : 8589529,
+    "fullUnpackSize" : 8689898,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

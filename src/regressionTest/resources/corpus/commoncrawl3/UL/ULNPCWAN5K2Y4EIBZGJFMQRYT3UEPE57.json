@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357303630.715111300,
+    "creationTime" : null,
+    "fileCRC" : 54392309,
+    "fileName" : "triangulo jota 04 000.1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 558079,
+    "fullUnpackSize" : 558079,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1356779382.546875000,
+    "creationTime" : null,
+    "fileCRC" : -1349570348,
+    "fileName" : "triangulo jota 04 000.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1353819,
+    "fullUnpackSize" : 1360551,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1114765500.593750000,
+    "creationTime" : null,
+    "fileCRC" : -1437133139,
+    "fileName" : "QuickTimeInstallCache.qdat",
+    "hostOS" : "win32",
+    "fullPackSize" : 257585,
+    "fullUnpackSize" : 5201532,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1114765505.000000000,
+    "creationTime" : null,
+    "fileCRC" : 574947712,
+    "fileName" : "QuickTimeInstaller.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 479580,
+    "fullUnpackSize" : 562160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

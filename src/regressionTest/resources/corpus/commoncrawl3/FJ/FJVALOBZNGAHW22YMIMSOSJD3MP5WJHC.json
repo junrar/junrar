@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527735224.746000000,
+    "creationTime" : null,
+    "fileCRC" : 81593423,
+    "fileName" : "setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 190912,
+    "fullUnpackSize" : 629760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527735284.970000000,
+    "creationTime" : null,
+    "fileCRC" : 160144216,
+    "fileName" : "VIETDA_ERP.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 69669455,
+    "fullUnpackSize" : 71271936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

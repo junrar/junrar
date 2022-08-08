@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392818137.283319500,
+    "creationTime" : null,
+    "fileCRC" : 147492861,
+    "fileName" : "yapay uydu MODELİ-7.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 13855,
+    "fullUnpackSize" : 16805,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492921804.491025300,
+    "creationTime" : null,
+    "fileCRC" : 1956490659,
+    "fileName" : "PLC_connection_guide.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 21496475,
+    "fullUnpackSize" : 30823051,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

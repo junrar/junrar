@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492752614.020428600,
+    "creationTime" : null,
+    "fileCRC" : 1637257953,
+    "fileName" : "UV950A\\UV950A内页.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1296351,
+    "fullUnpackSize" : 1956075,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

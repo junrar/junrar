@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1174364850.203125000,
+    "creationTime" : null,
+    "fileCRC" : -1373445964,
+    "fileName" : "PruOpen2KO.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 147845,
+    "fullUnpackSize" : 216576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1174364827.906000000,
+    "creationTime" : null,
+    "fileCRC" : -1545688364,
+    "fileName" : "PruOpen2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 141018,
+    "fullUnpackSize" : 172032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

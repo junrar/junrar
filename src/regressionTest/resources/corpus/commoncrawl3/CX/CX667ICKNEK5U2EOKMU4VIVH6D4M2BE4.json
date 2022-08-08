@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392788124.603733900,
+    "creationTime" : null,
+    "fileCRC" : 578973374,
+    "fileName" : "ТЭП Алтайская ул., д. 33.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 50010,
+    "fullUnpackSize" : 52285,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

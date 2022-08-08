@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361113436.234375000,
+    "creationTime" : null,
+    "fileCRC" : 1057547191,
+    "fileName" : "Istoriaj_filisofiy.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1539174,
+    "fullUnpackSize" : 1586690,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

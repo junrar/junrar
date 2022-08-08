@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309152336.121127900,
+    "creationTime" : null,
+    "fileCRC" : 770154318,
+    "fileName" : "malvinas_con_descripcion.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1064688,
+    "fullUnpackSize" : 1076000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

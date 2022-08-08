@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1372231446.312000000,
+    "creationTime" : null,
+    "fileCRC" : 1516906831,
+    "fileName" : "rp2013_su5d2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1298689,
+    "fullUnpackSize" : 1437155,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

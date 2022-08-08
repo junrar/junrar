@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518661179.294095700,
+    "creationTime" : null,
+    "fileCRC" : -1570207493,
+    "fileName" : "Сертификаты ЕАБ\\att1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1593451,
+    "fullUnpackSize" : 1598366,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

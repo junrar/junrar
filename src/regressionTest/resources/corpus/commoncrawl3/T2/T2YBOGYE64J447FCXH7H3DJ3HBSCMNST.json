@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177471718.359375000,
+    "creationTime" : null,
+    "fileCRC" : 554016377,
+    "fileName" : "國建局代謝第八章.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1213599,
+    "fullUnpackSize" : 1511372,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

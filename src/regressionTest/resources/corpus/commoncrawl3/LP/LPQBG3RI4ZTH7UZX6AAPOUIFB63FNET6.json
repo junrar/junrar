@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1134533868.000000000,
+    "creationTime" : null,
+    "fileCRC" : -507965685,
+    "fileName" : "ОДМ 218.1.001-2005.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 224686,
+    "fullUnpackSize" : 733696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

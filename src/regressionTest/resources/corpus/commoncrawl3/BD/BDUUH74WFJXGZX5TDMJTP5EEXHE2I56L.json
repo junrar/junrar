@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1134394080.000000000,
+    "creationTime" : null,
+    "fileCRC" : 871730731,
+    "fileName" : "Zvon_trumpet_kits_sf2_readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 678,
+    "fullUnpackSize" : 1223,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1134392058.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2037099051,
+    "fileName" : "Zvon_trumpet_kits.sf2",
+    "hostOS" : "win32",
+    "fullPackSize" : 489129,
+    "fullUnpackSize" : 774334,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

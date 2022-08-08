@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421658806.000000000,
+    "creationTime" : null,
+    "fileCRC" : -820976581,
+    "fileName" : "Sihhi_isyeri_basvuru_formu.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9020,
+    "fullUnpackSize" : 34304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

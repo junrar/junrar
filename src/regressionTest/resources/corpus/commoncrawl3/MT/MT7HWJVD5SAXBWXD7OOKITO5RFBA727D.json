@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1365647359.968750000,
+    "creationTime" : null,
+    "fileCRC" : 1618710564,
+    "fileName" : "Electric_Diagramm_V1.vss",
+    "hostOS" : "win32",
+    "fullPackSize" : 136033,
+    "fullUnpackSize" : 433664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

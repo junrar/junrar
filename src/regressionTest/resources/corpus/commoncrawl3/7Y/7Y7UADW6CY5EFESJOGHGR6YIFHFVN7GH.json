@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : 1069512013.359375000,
+    "lastModifiedTime" : 1063879732.000000000,
+    "creationTime" : 1069512013.187500000,
+    "fileCRC" : 1482614981,
+    "fileName" : "V_KLaySetup2152.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 2329238,
+    "fullUnpackSize" : 2347193,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

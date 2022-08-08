@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359063880.000000000,
+    "creationTime" : null,
+    "fileCRC" : 79430115,
+    "fileName" : "ewn-905_rtl8188su_linux-mac-winxp-vista-7_32-64bit\\Adobe Reader.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 23181885,
+    "fullUnpackSize" : 23402288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

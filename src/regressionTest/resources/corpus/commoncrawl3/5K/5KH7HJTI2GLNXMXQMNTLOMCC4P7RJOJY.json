@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537144891.871160900,
+    "creationTime" : null,
+    "fileCRC" : -97086202,
+    "fileName" : "Emlakcad_x86_64.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1284108,
+    "fullUnpackSize" : 4340224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

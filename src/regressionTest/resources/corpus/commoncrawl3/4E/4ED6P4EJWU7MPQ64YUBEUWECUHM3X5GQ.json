@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1311952666.839371500,
+    "creationTime" : null,
+    "fileCRC" : 1926337001,
+    "fileName" : "fxt.wtd",
+    "hostOS" : "win32",
+    "fullPackSize" : 1915185,
+    "fullUnpackSize" : 1929216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

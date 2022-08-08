@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273334970.000000000,
+    "creationTime" : null,
+    "fileCRC" : -212955301,
+    "fileName" : "mp_rpg_training_v1\\mp_rpg_training_v1.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 21788722,
+    "fullUnpackSize" : 21791962,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

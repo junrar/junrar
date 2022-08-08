@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413869187.264487100,
+    "creationTime" : null,
+    "fileCRC" : 2055129738,
+    "fileName" : "DRUNROCKS.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10798238,
+    "fullUnpackSize" : 11490585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

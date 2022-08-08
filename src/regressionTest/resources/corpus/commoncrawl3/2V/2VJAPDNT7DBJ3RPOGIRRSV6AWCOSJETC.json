@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523604225.098421700,
+    "creationTime" : null,
+    "fileCRC" : -23050123,
+    "fileName" : "iT-01 (1.2).sbin",
+    "hostOS" : "win32",
+    "fullPackSize" : 245888,
+    "fullUnpackSize" : 245888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

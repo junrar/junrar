@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1193198220.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1714570374,
+    "fileName" : "SG-600\\VL807.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1332980,
+    "fullUnpackSize" : 1335294,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

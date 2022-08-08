@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363894010.103125000,
+    "creationTime" : null,
+    "fileCRC" : 1140331221,
+    "fileName" : "lineageeffect.u",
+    "hostOS" : "win32",
+    "fullPackSize" : 623886,
+    "fullUnpackSize" : 6841237,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

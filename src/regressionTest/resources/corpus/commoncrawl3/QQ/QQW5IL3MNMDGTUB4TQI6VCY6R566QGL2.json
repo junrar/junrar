@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530780767.123886600,
+    "creationTime" : null,
+    "fileCRC" : 1033915195,
+    "fileName" : "reportFast (vers1).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 816123,
+    "fullUnpackSize" : 6071296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500611997.249284600,
+    "creationTime" : null,
+    "fileCRC" : -1384564822,
+    "fileName" : "Инструкция_услуги_срочные.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 189036,
+    "fullUnpackSize" : 245760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

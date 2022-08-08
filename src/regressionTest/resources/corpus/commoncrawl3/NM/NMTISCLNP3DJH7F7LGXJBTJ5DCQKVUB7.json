@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419400402.890625000,
+    "creationTime" : null,
+    "fileCRC" : 992470066,
+    "fileName" : "Tarımsal Yayım Ve Danışmanlık Hizmetlerinin Düzenlenmesine Dair Yönetmelik.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9573238,
+    "fullUnpackSize" : 9743341,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

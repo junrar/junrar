@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415951399.019400100,
+    "creationTime" : null,
+    "fileCRC" : -201082368,
+    "fileName" : "Ежеквартальный отчет эмитента за 3 кв. 2014 года.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 126269,
+    "fullUnpackSize" : 2872176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415770234.044248900,
+    "creationTime" : null,
+    "fileCRC" : 1430564579,
+    "fileName" : "Приложение_MRSK_NW_FS_6m2014_rus_Final.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6612904,
+    "fullUnpackSize" : 7943426,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

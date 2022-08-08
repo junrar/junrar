@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528776655.440442600,
+    "creationTime" : null,
+    "fileCRC" : 315660887,
+    "fileName" : "RNC_2015NE-DEMO.accde",
+    "hostOS" : "win32",
+    "fullPackSize" : 1098727,
+    "fullUnpackSize" : 18882560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

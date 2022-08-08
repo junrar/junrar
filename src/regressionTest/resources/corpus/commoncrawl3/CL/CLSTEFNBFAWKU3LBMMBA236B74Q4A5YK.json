@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986635528.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1670135591,
+    "fileName" : "valaam-nza-08.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 180427,
+    "fullUnpackSize" : 195001,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 986635532.000000000,
+    "creationTime" : null,
+    "fileCRC" : -984132513,
+    "fileName" : "valaam-nza-09.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 175626,
+    "fullUnpackSize" : 190007,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

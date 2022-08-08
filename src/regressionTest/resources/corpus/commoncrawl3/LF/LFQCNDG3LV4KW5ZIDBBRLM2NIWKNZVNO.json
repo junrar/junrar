@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1338272270.809662600,
+    "creationTime" : null,
+    "fileCRC" : 652747697,
+    "fileName" : "Lampiran SK Gubernur Regrouping Sekolah.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 38326,
+    "fullUnpackSize" : 45434,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1338101976.102181900,
+    "creationTime" : null,
+    "fileCRC" : -2016985947,
+    "fileName" : "Surat Edaran Kepala Dinas ttg, Regrouping SDN tahun 2012.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 173664,
+    "fullUnpackSize" : 190695,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

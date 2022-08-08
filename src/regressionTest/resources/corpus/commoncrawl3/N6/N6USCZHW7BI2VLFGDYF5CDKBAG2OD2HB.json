@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1164249702.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1431988855,
+    "fileName" : "ДОГОВОР ПОДРЯДА С ИСПОЛЬЗОВАНИЕМ МАТЕРИАЛОВ ЗАКАЗЧИКА (ОБЪЕМ.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4070,
+    "fullUnpackSize" : 19195,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1164249696.000000000,
+    "creationTime" : null,
+    "fileCRC" : 411410406,
+    "fileName" : "ДОГОВОР ПОДРЯДА С ИСПОЛЬЗОВАНИЕМ МАТЕРИАЛОВ ПОДРЯДЧИКА (ОБЪЕ.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4015,
+    "fullUnpackSize" : 18964,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

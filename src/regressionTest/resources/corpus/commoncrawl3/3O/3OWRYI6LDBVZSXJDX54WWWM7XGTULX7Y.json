@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285666414.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1000525354,
+    "fileName" : "vremya-glagola\\vremenaglagola.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10903,
+    "fullUnpackSize" : 47616,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285665846.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1136429641,
+    "fileName" : "vremya-glagola\\vremenaglagola.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1680713,
+    "fullUnpackSize" : 1677971,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

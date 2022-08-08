@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512961009.459607400,
+    "creationTime" : null,
+    "fileCRC" : 2078586814,
+    "fileName" : "adm-regl-zemmnogsem.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 36816,
+    "fullUnpackSize" : 39858,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

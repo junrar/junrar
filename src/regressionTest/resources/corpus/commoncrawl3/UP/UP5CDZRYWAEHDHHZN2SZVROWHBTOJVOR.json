@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1232522834.000000000,
+    "creationTime" : null,
+    "fileCRC" : 51002956,
+    "fileName" : "ВЭРС ПК8_4,2__РЭ-02_v03.6.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1553273,
+    "fullUnpackSize" : 2710601,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

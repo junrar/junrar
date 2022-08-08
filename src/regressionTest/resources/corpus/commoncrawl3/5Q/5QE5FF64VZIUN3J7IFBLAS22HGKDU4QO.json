@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265621082.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1267080162,
+    "fileName" : "壮志凌云\\ACEonline.atm",
+    "hostOS" : "win32",
+    "fullPackSize" : 1812810,
+    "fullUnpackSize" : 1838592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

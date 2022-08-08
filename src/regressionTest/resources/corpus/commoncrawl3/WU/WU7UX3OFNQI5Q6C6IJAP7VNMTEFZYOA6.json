@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529308521.395223400,
+    "creationTime" : null,
+    "fileCRC" : -2076070784,
+    "fileName" : "План 10-летия 1 лист.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 489327,
+    "fullUnpackSize" : 584112,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529308523.879582500,
+    "creationTime" : null,
+    "fileCRC" : 1236233574,
+    "fileName" : "План ДЕСЯТИЛЕТИЯ ДЕТСТВА.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 22451,
+    "fullUnpackSize" : 164352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

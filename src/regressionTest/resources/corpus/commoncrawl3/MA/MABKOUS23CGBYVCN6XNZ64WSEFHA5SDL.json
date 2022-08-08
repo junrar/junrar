@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328774206.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1021528516,
+    "fileName" : "Synaps_THD-2880_v100B006_120209.abs",
+    "hostOS" : "win32",
+    "fullPackSize" : 1783684,
+    "fullUnpackSize" : 4194304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479386788.000000000,
+    "creationTime" : null,
+    "fileCRC" : 645010687,
+    "fileName" : "mios_catalog_ukr_v2_2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14218387,
+    "fullUnpackSize" : 16832538,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

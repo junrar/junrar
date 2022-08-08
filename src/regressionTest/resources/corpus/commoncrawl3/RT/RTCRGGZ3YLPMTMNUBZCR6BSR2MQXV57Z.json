@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298346477.077405000,
+    "creationTime" : null,
+    "fileCRC" : -1589939032,
+    "fileName" : "mp_ib_hq\\mp_ib_hq.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 24678154,
+    "fullUnpackSize" : 24730627,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

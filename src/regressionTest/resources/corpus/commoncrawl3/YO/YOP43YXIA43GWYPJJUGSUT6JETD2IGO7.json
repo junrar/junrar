@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412937797.765570800,
+    "creationTime" : null,
+    "fileCRC" : -553501496,
+    "fileName" : "CarEng3.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 322313,
+    "fullUnpackSize" : 2061312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

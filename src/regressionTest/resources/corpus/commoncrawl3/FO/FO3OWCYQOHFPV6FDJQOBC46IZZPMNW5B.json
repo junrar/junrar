@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498791870.340783200,
+    "creationTime" : null,
+    "fileCRC" : -1994030087,
+    "fileName" : "【2017】广西壮族自治区职称评定系统【个人版】.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4647314,
+    "fullUnpackSize" : 4661436,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

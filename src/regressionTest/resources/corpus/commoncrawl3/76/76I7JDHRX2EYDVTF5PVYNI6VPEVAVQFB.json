@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1186670447.629779000,
+    "creationTime" : null,
+    "fileCRC" : -1713299552,
+    "fileName" : "AMK_MOD_1.2.3_ukr.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 30063591,
+    "fullUnpackSize" : 166609163,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495843885.935947300,
+    "creationTime" : null,
+    "fileCRC" : 1744983424,
+    "fileName" : "泰兴市教育系统留守学生基本情况汇总表.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 4529,
+    "fullUnpackSize" : 29184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

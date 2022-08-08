@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343796250.734375000,
+    "creationTime" : null,
+    "fileCRC" : -1915386836,
+    "fileName" : "融合网.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5621,
+    "fullUnpackSize" : 6033,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1462949658.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1642423582,
+    "fileName" : "Сведения о доходах Крушельницкая О.Ф..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8093,
+    "fullUnpackSize" : 37888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1463469384.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1499701053,
+    "fileName" : "сведения Вохмин В.Д..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 10869,
+    "fullUnpackSize" : 68096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

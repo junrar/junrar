@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196410251.281250000,
+    "creationTime" : null,
+    "fileCRC" : -1781056480,
+    "fileName" : "mk-ex.pass.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 46483,
+    "fullUnpackSize" : 50036,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444985261.388472600,
+    "creationTime" : null,
+    "fileCRC" : -204988866,
+    "fileName" : "Комзолов.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 788649,
+    "fullUnpackSize" : 5288489,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444985888.655354500,
+    "creationTime" : null,
+    "fileCRC" : -845901513,
+    "fileName" : "Миленький.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 729835,
+    "fullUnpackSize" : 803478,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

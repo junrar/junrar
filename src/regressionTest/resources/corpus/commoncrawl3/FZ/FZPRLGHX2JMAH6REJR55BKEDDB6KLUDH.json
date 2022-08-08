@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1162783737.890625000,
+    "creationTime" : null,
+    "fileCRC" : -1524583780,
+    "fileName" : "СНИП 2.01.14-83.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1275581,
+    "fullUnpackSize" : 15892485,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525779782.000000000,
+    "creationTime" : null,
+    "fileCRC" : 358248274,
+    "fileName" : "Ready.Player.One.2018.720p.KORSUB.HDRip.x264.AAC2.0-STUTTERSHIT.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 42893,
+    "fullUnpackSize" : 115728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525779998.000000000,
+    "creationTime" : null,
+    "fileCRC" : 548451777,
+    "fileName" : "Ready.Player.One.2018.720p.KORSUB.HDRip.x264.AAC2.0-STUTTERSHIT.ssa",
+    "hostOS" : "win32",
+    "fullPackSize" : 39076,
+    "fullUnpackSize" : 178938,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

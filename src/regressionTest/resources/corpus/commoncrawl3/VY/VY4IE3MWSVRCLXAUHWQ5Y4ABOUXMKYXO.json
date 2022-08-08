@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266198957.625000000,
+    "creationTime" : null,
+    "fileCRC" : -1797459507,
+    "fileName" : "1439q094.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 227629,
+    "fullUnpackSize" : 2677760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

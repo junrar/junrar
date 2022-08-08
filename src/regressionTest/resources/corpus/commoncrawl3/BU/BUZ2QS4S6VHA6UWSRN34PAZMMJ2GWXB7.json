@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403572276.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1180784921,
+    "fileName" : "Synaps_THD-2880CX_v140624.abs",
+    "hostOS" : "unix",
+    "fullPackSize" : 1771764,
+    "fullUnpackSize" : 4194304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

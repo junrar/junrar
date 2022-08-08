@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235983533.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1518680539,
+    "fileName" : "dd\\Files\\Hotfix.7z",
+    "hostOS" : "win32",
+    "fullPackSize" : 5086315,
+    "fullUnpackSize" : 5920287,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

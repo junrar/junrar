@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267368855.160277100,
+    "creationTime" : null,
+    "fileCRC" : -173871492,
+    "fileName" : "ça fait 2.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 79719,
+    "fullUnpackSize" : 80644,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

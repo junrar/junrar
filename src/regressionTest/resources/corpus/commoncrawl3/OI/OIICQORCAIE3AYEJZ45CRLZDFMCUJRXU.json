@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438954066.000000000,
+    "creationTime" : null,
+    "fileCRC" : 31044113,
+    "fileName" : "DC718072015\\sun8iw5p1_android_m71\\sun8iw5p1_android_m71.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 454130993,
+    "fullUnpackSize" : 736412672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

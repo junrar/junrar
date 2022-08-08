@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404976070.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1725256168,
+    "fileName" : "Документация\\Заключение экспертизы.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2058840,
+    "fullUnpackSize" : 2423288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

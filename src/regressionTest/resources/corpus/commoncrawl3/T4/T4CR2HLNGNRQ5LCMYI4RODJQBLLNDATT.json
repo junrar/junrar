@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458609000.000000000,
+    "creationTime" : null,
+    "fileCRC" : -228547243,
+    "fileName" : "Отчёт Баринковой Главы Муезерского городского поселения.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 101243,
+    "fullUnpackSize" : 267776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

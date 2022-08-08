@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1462544311.952000000,
+    "creationTime" : null,
+    "fileCRC" : 1667227718,
+    "fileName" : "Phrasal Verbs and Idioms. Part 1.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 36738528,
+    "fullUnpackSize" : 37169073,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

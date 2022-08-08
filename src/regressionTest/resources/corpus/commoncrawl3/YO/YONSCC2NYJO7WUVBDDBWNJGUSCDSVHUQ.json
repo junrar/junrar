@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527885553.596258000,
+    "creationTime" : null,
+    "fileCRC" : 1663094086,
+    "fileName" : "1888 год в истории АСД. Опасность крайностей.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 551750,
+    "fullUnpackSize" : 567510,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

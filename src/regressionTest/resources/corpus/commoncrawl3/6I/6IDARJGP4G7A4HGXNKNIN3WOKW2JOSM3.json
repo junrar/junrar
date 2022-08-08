@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347090506.000000000,
+    "creationTime" : null,
+    "fileCRC" : 356309835,
+    "fileName" : "blagodat 3 2012 mp3\\01екип и контакти.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2328384,
+    "fullUnpackSize" : 2442894,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493971563.097568300,
+    "creationTime" : null,
+    "fileCRC" : 148909501,
+    "fileName" : "SharpkeyEditor\\Setup_SharpkeyEditor_3.6.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1724017,
+    "fullUnpackSize" : 1797282,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

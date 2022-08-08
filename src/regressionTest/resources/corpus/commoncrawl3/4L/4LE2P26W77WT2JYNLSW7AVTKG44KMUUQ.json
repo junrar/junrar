@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385618240.198077100,
+    "creationTime" : null,
+    "fileCRC" : 1660390257,
+    "fileName" : "润滑技术在煤矿机械中的有效应用.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 978750,
+    "fullUnpackSize" : 1001703,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

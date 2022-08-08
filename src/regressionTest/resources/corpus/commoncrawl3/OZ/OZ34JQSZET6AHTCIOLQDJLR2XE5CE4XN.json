@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1239687840.000000000,
+    "creationTime" : null,
+    "fileCRC" : 506255681,
+    "fileName" : "IE8-WindowsXP-x86-CHS.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 16892902,
+    "fullUnpackSize" : 16901472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

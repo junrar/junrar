@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398692290.794625800,
+    "creationTime" : null,
+    "fileCRC" : 1027304449,
+    "fileName" : "CPU-Z_Portable\\cpuz_x32.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 817496,
+    "fullUnpackSize" : 2474216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398692007.348972900,
+    "creationTime" : null,
+    "fileCRC" : -1416413874,
+    "fileName" : "CPU-Z_Portable\\cpuz_x64.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 927395,
+    "fullUnpackSize" : 2950376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

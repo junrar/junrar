@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1143732788.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1319896766,
+    "fileName" : "saamsko_russkij-slovar.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 429432,
+    "fullUnpackSize" : 12454911,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

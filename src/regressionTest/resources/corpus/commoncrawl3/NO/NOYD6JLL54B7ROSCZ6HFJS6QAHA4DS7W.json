@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359433076.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1544819341,
+    "fileName" : "2013年第1期.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1005554,
+    "fullUnpackSize" : 1826442,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361933596.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1428276201,
+    "fileName" : "2013年第2期.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1091317,
+    "fullUnpackSize" : 1609991,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

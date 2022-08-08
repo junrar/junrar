@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299063766.053315700,
+    "creationTime" : null,
+    "fileCRC" : -701878973,
+    "fileName" : "mp_digital\\mp_digital.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 5153614,
+    "fullUnpackSize" : 5297867,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

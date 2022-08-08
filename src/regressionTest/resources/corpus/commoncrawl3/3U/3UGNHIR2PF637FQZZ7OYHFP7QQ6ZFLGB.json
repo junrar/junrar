@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369703818.625000000,
+    "creationTime" : null,
+    "fileCRC" : -139144163,
+    "fileName" : "ПЛАН БИБЛИОТЕКИ НА ИЮНЬ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 16365,
+    "fullUnpackSize" : 152576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

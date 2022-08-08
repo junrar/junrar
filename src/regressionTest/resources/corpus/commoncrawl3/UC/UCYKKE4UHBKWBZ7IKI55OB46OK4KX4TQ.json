@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449559055.417865700,
+    "creationTime" : null,
+    "fileCRC" : -1256330958,
+    "fileName" : "4-40-2015\\аннотации-4-40-2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 574602,
+    "fullUnpackSize" : 613240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449559284.671554000,
+    "creationTime" : null,
+    "fileCRC" : 1518302726,
+    "fileName" : "4-40-2015\\Номер-4-40-2015.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 996959,
+    "fullUnpackSize" : 1111281,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

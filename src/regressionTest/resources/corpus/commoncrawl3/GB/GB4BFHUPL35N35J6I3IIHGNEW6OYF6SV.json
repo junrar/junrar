@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363702420.653863700,
+    "creationTime" : null,
+    "fileCRC" : 1776501162,
+    "fileName" : "raefi pour-shohadaye haste ei-91.12.18 a.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4612661,
+    "fullUnpackSize" : 5420025,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

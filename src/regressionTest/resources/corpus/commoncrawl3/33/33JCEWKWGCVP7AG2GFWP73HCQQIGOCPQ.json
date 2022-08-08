@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1109849972.000000000,
+    "creationTime" : null,
+    "fileCRC" : 663658881,
+    "fileName" : "Medical Drug Dictionary\\Medical Drug Dictionary.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3559763,
+    "fullUnpackSize" : 3685601,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

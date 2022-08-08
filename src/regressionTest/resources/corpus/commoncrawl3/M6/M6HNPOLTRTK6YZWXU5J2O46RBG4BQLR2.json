@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273473144.604691600,
+    "creationTime" : null,
+    "fileCRC" : -1565295481,
+    "fileName" : "zm_lila_panic_173.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 396805,
+    "fullUnpackSize" : 2757768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

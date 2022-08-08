@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318241063.959213900,
+    "creationTime" : null,
+    "fileCRC" : -1861495612,
+    "fileName" : "mp_gamejump\\mp_gamejump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 13858921,
+    "fullUnpackSize" : 14020463,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

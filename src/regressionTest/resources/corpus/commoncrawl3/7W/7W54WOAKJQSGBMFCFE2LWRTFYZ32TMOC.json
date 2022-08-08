@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518783200.956152700,
+    "creationTime" : null,
+    "fileCRC" : -830934019,
+    "fileName" : "kz_j2s_darktower_Sh00t!ng~St4r_0102.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 1053002,
+    "fullUnpackSize" : 5235460,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

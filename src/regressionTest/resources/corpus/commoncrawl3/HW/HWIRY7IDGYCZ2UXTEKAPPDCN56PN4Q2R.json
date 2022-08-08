@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506736636.000000000,
+    "creationTime" : null,
+    "fileCRC" : -120705066,
+    "fileName" : "武威市旅游局2016年度部门决算公开表.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 15563,
+    "fullUnpackSize" : 76800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

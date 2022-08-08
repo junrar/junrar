@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511564040.400278100,
+    "creationTime" : null,
+    "fileCRC" : -100688481,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 443,
+    "fullUnpackSize" : 677,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511564040.407296200,
+    "creationTime" : null,
+    "fileCRC" : -578168042,
+    "fileName" : "JAAP.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 19,
+    "fullUnpackSize" : 19,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

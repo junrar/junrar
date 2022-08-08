@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530141941.645385100,
+    "creationTime" : null,
+    "fileCRC" : -315091749,
+    "fileName" : "com.ForgeGames.SpecialForcesGroup2\\main.60.com.ForgeGames.SpecialForcesGroup2.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 154415422,
+    "fullUnpackSize" : 159278684,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

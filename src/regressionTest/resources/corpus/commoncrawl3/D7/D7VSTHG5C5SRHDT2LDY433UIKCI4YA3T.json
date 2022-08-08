@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439361869.984375000,
+    "creationTime" : null,
+    "fileCRC" : -351031361,
+    "fileName" : "证书变更演示.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2274787,
+    "fullUnpackSize" : 2698208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389631884.521155700,
+    "creationTime" : null,
+    "fileCRC" : -922612074,
+    "fileName" : "SMSDEL.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3296963,
+    "fullUnpackSize" : 3361420,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

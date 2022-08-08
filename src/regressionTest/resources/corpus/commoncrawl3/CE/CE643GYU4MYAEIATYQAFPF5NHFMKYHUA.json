@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492494050.945493500,
+    "creationTime" : null,
+    "fileCRC" : 989136465,
+    "fileName" : "28 ОКС ЦА-2017.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 29355,
+    "fullUnpackSize" : 131072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

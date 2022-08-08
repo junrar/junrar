@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413764384.616282000,
+    "creationTime" : null,
+    "fileCRC" : -729513593,
+    "fileName" : "141012_GALLUR-BORJA.gpx",
+    "hostOS" : "win32",
+    "fullPackSize" : 52231,
+    "fullUnpackSize" : 393392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413764378.726832800,
+    "creationTime" : null,
+    "fileCRC" : 319801238,
+    "fileName" : "Gallur-Borja 12 OCT 2014.kml",
+    "hostOS" : "win32",
+    "fullPackSize" : 27527,
+    "fullUnpackSize" : 86768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

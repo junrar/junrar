@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1258423768.918423800,
+    "creationTime" : null,
+    "fileCRC" : 274681016,
+    "fileName" : "FK5P.DWG",
+    "hostOS" : "win32",
+    "fullPackSize" : 4612,
+    "fullUnpackSize" : 27042,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

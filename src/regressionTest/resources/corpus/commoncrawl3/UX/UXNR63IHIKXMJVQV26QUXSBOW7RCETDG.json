@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522733170.649878900,
+    "creationTime" : null,
+    "fileCRC" : -212108561,
+    "fileName" : "kz_beyond_Sh00t!ng-St4r_0342.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 3460457,
+    "fullUnpackSize" : 14498929,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

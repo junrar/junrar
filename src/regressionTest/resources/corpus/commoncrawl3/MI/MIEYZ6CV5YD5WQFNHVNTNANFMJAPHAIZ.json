@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1165300576.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1470203122,
+    "fileName" : "DVM Part 5 Installation.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 825938,
+    "fullUnpackSize" : 872934,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

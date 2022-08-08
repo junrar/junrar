@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465478446.572497800,
+    "creationTime" : null,
+    "fileCRC" : -815303528,
+    "fileName" : "КПК2016Открытие\\IMG_4184.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 6272123,
+    "fullUnpackSize" : 6584781,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

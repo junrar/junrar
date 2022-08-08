@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532076186.534000000,
+    "creationTime" : null,
+    "fileCRC" : -1474910574,
+    "fileName" : "จังหวัด\\Thumbs.db",
+    "hostOS" : "win32",
+    "fullPackSize" : 6918,
+    "fullUnpackSize" : 10752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532069649.636239600,
+    "creationTime" : null,
+    "fileCRC" : 808412100,
+    "fileName" : "จังหวัด\\ลูกหนี้ในงบประมาณ 30062018 จังหวัด.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 1070724,
+    "fullUnpackSize" : 5733888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

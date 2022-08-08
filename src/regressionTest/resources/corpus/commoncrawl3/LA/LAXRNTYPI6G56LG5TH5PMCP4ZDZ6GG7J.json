@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488962091.467261300,
+    "creationTime" : null,
+    "fileCRC" : -754011839,
+    "fileName" : "Edital Credenciamento fornecimento Refeição e Marmitex.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 221726,
+    "fullUnpackSize" : 241312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488962108.729000000,
+    "creationTime" : null,
+    "fileCRC" : 477293431,
+    "fileName" : "ANEXOS DO EDITAL.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9139,
+    "fullUnpackSize" : 38400,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

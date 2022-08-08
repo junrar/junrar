@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388399269.279518500,
+    "creationTime" : null,
+    "fileCRC" : -822770491,
+    "fileName" : "鸡茸青瓜卷.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 377662,
+    "fullUnpackSize" : 387832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

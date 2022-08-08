@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358520204.490105300,
+    "creationTime" : null,
+    "fileCRC" : -2123410551,
+    "fileName" : "заявка на участие.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 11111,
+    "fullUnpackSize" : 13906,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

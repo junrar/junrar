@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376278609.684977000,
+    "creationTime" : null,
+    "fileCRC" : -1064039556,
+    "fileName" : "ACTKILLING_A4 - web.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1282813,
+    "fullUnpackSize" : 2076785,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

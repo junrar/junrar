@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490864849.747126900,
+    "creationTime" : null,
+    "fileCRC" : -2055218498,
+    "fileName" : "K3Cloud_V5_Patch\\PT110684\\K3Cloud V5.0 Patch.5.1.582.1.kdpkg",
+    "hostOS" : "win32",
+    "fullPackSize" : 191920763,
+    "fullUnpackSize" : 192616084,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

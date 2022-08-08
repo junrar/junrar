@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318737816.233442500,
+    "creationTime" : null,
+    "fileCRC" : -548609634,
+    "fileName" : "mp_neophyte\\mp_neophyte.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 19238341,
+    "fullUnpackSize" : 19239673,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437803052.652200000,
+    "creationTime" : null,
+    "fileCRC" : 808814432,
+    "fileName" : "PhotoShop Secrets (22).mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 20536629,
+    "fullUnpackSize" : 65551727,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

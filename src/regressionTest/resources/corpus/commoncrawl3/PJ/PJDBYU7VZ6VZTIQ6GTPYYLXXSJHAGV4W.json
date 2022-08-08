@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180338878.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1057173415,
+    "fileName" : "Schapova_Model.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 24694,
+    "fullUnpackSize" : 123904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

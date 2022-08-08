@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384254554.194089900,
+    "creationTime" : null,
+    "fileCRC" : 1890099952,
+    "fileName" : "Hosseini-tak.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2109133,
+    "fullUnpackSize" : 2252406,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

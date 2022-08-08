@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454496206.544820900,
+    "creationTime" : null,
+    "fileCRC" : -1695015873,
+    "fileName" : "Прайс-опт-общий(03-02-16).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 192551,
+    "fullUnpackSize" : 897024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439278641.795651000,
+    "creationTime" : null,
+    "fileCRC" : 1325430581,
+    "fileName" : "ovisetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1164110,
+    "fullUnpackSize" : 3984384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

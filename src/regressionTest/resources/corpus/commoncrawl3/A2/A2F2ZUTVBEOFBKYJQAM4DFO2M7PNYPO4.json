@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175766794.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1463106265,
+    "fileName" : "РД 34.51.101-90.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 678033,
+    "fullUnpackSize" : 1980416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

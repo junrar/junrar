@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168168064.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1528322861,
+    "fileName" : "E360XEGA1.def",
+    "hostOS" : "win32",
+    "fullPackSize" : 39529,
+    "fullUnpackSize" : 310388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168222674.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1129147181,
+    "fileName" : "E360XEGA1.cla",
+    "hostOS" : "win32",
+    "fullPackSize" : 7912856,
+    "fullUnpackSize" : 20314856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

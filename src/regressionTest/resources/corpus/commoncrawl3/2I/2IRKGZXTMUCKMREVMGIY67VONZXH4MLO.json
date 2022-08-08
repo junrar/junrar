@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337769270.000000000,
+    "creationTime" : null,
+    "fileCRC" : 221653950,
+    "fileName" : "27 Андрей Чернецов - Слепящая пустота.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 608933,
+    "fullUnpackSize" : 1607589,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

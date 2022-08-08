@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309085758.035623200,
+    "creationTime" : null,
+    "fileCRC" : -1518738597,
+    "fileName" : "mp_house\\mp_house.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 5577466,
+    "fullUnpackSize" : 5655232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

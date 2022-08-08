@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305642367.490792400,
+    "creationTime" : null,
+    "fileCRC" : 1101788837,
+    "fileName" : "mp_deathrun_dungeon\\mp_deathrun_dungeon.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 21380718,
+    "fullUnpackSize" : 21395210,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

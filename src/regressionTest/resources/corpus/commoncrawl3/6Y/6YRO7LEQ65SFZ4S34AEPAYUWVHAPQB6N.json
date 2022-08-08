@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456239205.970592900,
+    "creationTime" : null,
+    "fileCRC" : 34810651,
+    "fileName" : "ReadMe.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 918,
+    "fullUnpackSize" : 2310,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455973566.008337000,
+    "creationTime" : null,
+    "fileCRC" : 1671629253,
+    "fileName" : "stratum.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 1356429,
+    "fullUnpackSize" : 5044520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

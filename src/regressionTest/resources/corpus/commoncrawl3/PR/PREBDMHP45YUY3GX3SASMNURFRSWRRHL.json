@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1462762364.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1798195210,
+    "fileName" : "gtm-dostaw.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 7764577,
+    "fullUnpackSize" : 8911533,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330769687.586862900,
+    "creationTime" : null,
+    "fileCRC" : 854480059,
+    "fileName" : "mp_madhouse\\mp_madhouse.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 30673299,
+    "fullUnpackSize" : 31045273,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

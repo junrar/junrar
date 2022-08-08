@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321112218.645434400,
+    "creationTime" : null,
+    "fileCRC" : -1817498597,
+    "fileName" : "cloud Flythrough + music.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3786293,
+    "fullUnpackSize" : 3786293,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

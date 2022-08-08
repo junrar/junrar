@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465186551.573492100,
+    "creationTime" : null,
+    "fileCRC" : 210892857,
+    "fileName" : "EGKYKLIOS_PROSBASH_ANASFALISTON_STO_DHMOSIO_SYSTHMA_YGEIAS.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 43158,
+    "fullUnpackSize" : 1216172,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

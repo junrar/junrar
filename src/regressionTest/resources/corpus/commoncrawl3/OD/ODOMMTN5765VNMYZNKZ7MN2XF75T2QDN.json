@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1480310878.000000000,
+    "creationTime" : null,
+    "fileCRC" : 171480372,
+    "fileName" : "Памяти Распутина\\Воспоминание Таривердиев.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 8287004,
+    "fullUnpackSize" : 8330226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

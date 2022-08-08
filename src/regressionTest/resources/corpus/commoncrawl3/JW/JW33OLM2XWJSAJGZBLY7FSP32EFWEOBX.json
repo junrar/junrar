@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488629943.149542400,
+    "creationTime" : null,
+    "fileCRC" : -1985532981,
+    "fileName" : "Supernatural.S12E14.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15057,
+    "fullUnpackSize" : 38207,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488704873.123870100,
+    "creationTime" : null,
+    "fileCRC" : -767068782,
+    "fileName" : "Supernatural.S12E14.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15023,
+    "fullUnpackSize" : 38207,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

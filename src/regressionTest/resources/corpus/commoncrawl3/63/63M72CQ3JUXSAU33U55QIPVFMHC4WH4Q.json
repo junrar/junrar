@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460598952.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1296773633,
+    "fileName" : "FC--2882M脱机嵌入式门门禁板.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1394451,
+    "fullUnpackSize" : 1596394,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

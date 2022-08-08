@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384441244.163737600,
+    "creationTime" : null,
+    "fileCRC" : -1558817300,
+    "fileName" : "Equivalent-Exchange-3-Mod-1.6.4.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 994285,
+    "fullUnpackSize" : 1062307,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

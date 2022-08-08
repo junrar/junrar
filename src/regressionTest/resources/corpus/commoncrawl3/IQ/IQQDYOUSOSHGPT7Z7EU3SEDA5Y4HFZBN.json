@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1003301356.000000000,
+    "creationTime" : null,
+    "fileCRC" : -187246359,
+    "fileName" : "Клизовский. Правда о массонстве.RTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 39665,
+    "fullUnpackSize" : 252393,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

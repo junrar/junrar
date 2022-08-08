@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : 1300995483.678597300,
+    "lastModifiedTime" : 1300995483.944612500,
+    "creationTime" : 1300995483.678597300,
+    "fileCRC" : -1581596608,
+    "fileName" : "cc-edges-1.log",
+    "hostOS" : "win32",
+    "fullPackSize" : 458440,
+    "fullUnpackSize" : 4977998,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

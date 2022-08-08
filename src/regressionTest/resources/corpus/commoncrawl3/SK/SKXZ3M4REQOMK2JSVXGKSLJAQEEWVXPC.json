@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291964902.000000000,
+    "creationTime" : null,
+    "fileCRC" : -657020117,
+    "fileName" : "upd_084s\\d08d7-003204700614612c.tgz",
+    "hostOS" : "win32",
+    "fullPackSize" : 11856252,
+    "fullUnpackSize" : 12146072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

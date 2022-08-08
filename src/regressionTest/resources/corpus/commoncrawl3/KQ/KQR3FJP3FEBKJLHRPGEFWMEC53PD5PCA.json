@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247207144.082715100,
+    "creationTime" : null,
+    "fileCRC" : -597884458,
+    "fileName" : "StackedHouseforLiana.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 2747151,
+    "fullUnpackSize" : 4319535,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

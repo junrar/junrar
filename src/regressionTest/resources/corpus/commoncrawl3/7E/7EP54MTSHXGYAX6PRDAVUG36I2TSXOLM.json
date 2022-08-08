@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1282540478.000000000,
+    "creationTime" : null,
+    "fileCRC" : -632932835,
+    "fileName" : "Право Здание\\АЗС №17 здание.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 938063,
+    "fullUnpackSize" : 938876,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1282540908.000000000,
+    "creationTime" : null,
+    "fileCRC" : 702539198,
+    "fileName" : "Право Здание\\АЗС №3 здание.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 924607,
+    "fullUnpackSize" : 925572,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

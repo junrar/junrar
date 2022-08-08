@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1260405969.323165400,
+    "creationTime" : null,
+    "fileCRC" : -48404619,
+    "fileName" : "Test-10-Kuvvet-ve-Dinamometre-1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 451255,
+    "fullUnpackSize" : 482073,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1258788019.211457500,
+    "creationTime" : null,
+    "fileCRC" : 1628938756,
+    "fileName" : "sbsfenci.com.url",
+    "hostOS" : "win32",
+    "fullPackSize" : 113,
+    "fullUnpackSize" : 113,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

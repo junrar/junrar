@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530755904.000000000,
+    "creationTime" : null,
+    "fileCRC" : 243343932,
+    "fileName" : "Новая 2018 редакция ГП Степановское СП\\1. Карта современного использования территории..jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 6907647,
+    "fullUnpackSize" : 12006778,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

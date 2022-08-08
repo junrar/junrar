@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1118022152.000000000,
+    "creationTime" : null,
+    "fileCRC" : -235333587,
+    "fileName" : "V2.2_050606_PAL.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 457667,
+    "fullUnpackSize" : 4358237,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

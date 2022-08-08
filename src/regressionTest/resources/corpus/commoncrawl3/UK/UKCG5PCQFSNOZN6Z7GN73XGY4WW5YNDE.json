@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1208739570.124971500,
+    "creationTime" : null,
+    "fileCRC" : 1867338162,
+    "fileName" : "S4IO4_9600baud.ptp",
+    "hostOS" : "win32",
+    "fullPackSize" : 296,
+    "fullUnpackSize" : 1084,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

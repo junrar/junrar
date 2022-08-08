@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449455316.437596600,
+    "creationTime" : null,
+    "fileCRC" : 494144768,
+    "fileName" : "ATA 025.2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2995345,
+    "fullUnpackSize" : 3249811,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

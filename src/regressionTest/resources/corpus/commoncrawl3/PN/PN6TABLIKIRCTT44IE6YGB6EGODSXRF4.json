@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410334400.025619900,
+    "creationTime" : null,
+    "fileCRC" : -1012151913,
+    "fileName" : "SR 115.x_t",
+    "hostOS" : "win32",
+    "fullPackSize" : 1649990,
+    "fullUnpackSize" : 5378967,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

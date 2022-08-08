@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1191912646.000000000,
+    "creationTime" : null,
+    "fileCRC" : 448687554,
+    "fileName" : "Majallet-Islah-2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 20536205,
+    "fullUnpackSize" : 21137953,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

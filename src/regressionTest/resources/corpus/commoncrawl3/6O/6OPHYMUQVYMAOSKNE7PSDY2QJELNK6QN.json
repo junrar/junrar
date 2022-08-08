@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482719859.989138500,
+    "creationTime" : null,
+    "fileCRC" : -1275860735,
+    "fileName" : "Список 2-усл 4кв.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 32028,
+    "fullUnpackSize" : 161792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

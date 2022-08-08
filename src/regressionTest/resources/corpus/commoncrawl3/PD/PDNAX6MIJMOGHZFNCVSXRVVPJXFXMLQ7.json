@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458261706.937500000,
+    "creationTime" : null,
+    "fileCRC" : -1629443973,
+    "fileName" : "USR-VCOM_V3.7.1.520_Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 24088515,
+    "fullUnpackSize" : 25989713,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

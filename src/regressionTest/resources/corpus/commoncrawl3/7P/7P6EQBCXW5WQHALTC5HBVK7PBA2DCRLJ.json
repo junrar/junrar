@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1287030972.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1930268374,
+    "fileName" : "DSCN8756.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 999306,
+    "fullUnpackSize" : 1009646,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1287036228.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1996823193,
+    "fileName" : "DSCN8828.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 1011732,
+    "fullUnpackSize" : 1022634,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

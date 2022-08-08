@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452151568.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1733104710,
+    "fileName" : "GQC6_v1.1.0_2016-05-26_Eng\\GQC6UserManual.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 801653,
+    "fullUnpackSize" : 1241897,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

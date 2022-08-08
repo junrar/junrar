@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292578467.812500000,
+    "creationTime" : null,
+    "fileCRC" : -1335929889,
+    "fileName" : "R086DF.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 52098,
+    "fullUnpackSize" : 75255,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

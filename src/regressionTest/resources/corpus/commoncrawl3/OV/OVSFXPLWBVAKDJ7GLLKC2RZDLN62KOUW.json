@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395058224.997845600,
+    "creationTime" : null,
+    "fileCRC" : 1373294335,
+    "fileName" : "1-33-2014\\Аннотации.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 656584,
+    "fullUnpackSize" : 693848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395057622.069360100,
+    "creationTime" : null,
+    "fileCRC" : 301824167,
+    "fileName" : "1-33-2014\\Обложка № 1 (33).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1115221,
+    "fullUnpackSize" : 1257594,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

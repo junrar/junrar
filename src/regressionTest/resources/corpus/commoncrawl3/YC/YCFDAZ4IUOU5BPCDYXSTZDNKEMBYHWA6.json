@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531450313.890625000,
+    "creationTime" : null,
+    "fileCRC" : 1900265371,
+    "fileName" : "DS GV TIEU HOC TAP HUAN TIENG ANH HE 2018 DO SEAMEO TO CHUC updated.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 12096,
+    "fullUnpackSize" : 58880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531450313.671875000,
+    "creationTime" : null,
+    "fileCRC" : -162093215,
+    "fileName" : "QD lop bồi dưỡng nghiệp vụ sư phạm - Tieuhoc - Seameo - 2018_Signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 156150,
+    "fullUnpackSize" : 178222,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

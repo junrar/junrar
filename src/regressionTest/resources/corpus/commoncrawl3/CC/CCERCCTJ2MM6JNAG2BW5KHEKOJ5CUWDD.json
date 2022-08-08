@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369722434.432959300,
+    "creationTime" : null,
+    "fileCRC" : -2134374066,
+    "fileName" : "Doves On My Window (Музыка Для Релаксации).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9002049,
+    "fullUnpackSize" : 9038703,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380294049.246509100,
+    "creationTime" : null,
+    "fileCRC" : 450269350,
+    "fileName" : "Подвеска задняя.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 309972,
+    "fullUnpackSize" : 366576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

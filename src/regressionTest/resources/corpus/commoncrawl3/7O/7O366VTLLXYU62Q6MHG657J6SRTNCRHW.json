@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426063413.250000000,
+    "creationTime" : null,
+    "fileCRC" : -969292562,
+    "fileName" : "Lucy.cht.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18496,
+    "fullUnpackSize" : 48154,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

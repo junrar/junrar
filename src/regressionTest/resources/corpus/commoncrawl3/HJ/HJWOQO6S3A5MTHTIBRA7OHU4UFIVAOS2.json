@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196821652.633789200,
+    "creationTime" : null,
+    "fileCRC" : 1434268718,
+    "fileName" : "moldavskaia_ssr_1961_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599894,
+    "fullUnpackSize" : 10366015,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

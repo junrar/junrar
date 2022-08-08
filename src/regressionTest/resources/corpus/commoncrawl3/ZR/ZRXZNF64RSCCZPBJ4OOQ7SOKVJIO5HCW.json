@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1316557106.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1968095411,
+    "fileName" : "Máquinas Eléctricas - Jesús Fraile Mora.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 16034622,
+    "fullUnpackSize" : 38938970,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

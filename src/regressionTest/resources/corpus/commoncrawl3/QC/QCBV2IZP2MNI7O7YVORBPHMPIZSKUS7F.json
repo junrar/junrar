@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323066218.937500000,
+    "creationTime" : null,
+    "fileCRC" : -1632584157,
+    "fileName" : "Madrepérola\\Atlântico jh p8 20x20.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1653795,
+    "fullUnpackSize" : 1665731,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

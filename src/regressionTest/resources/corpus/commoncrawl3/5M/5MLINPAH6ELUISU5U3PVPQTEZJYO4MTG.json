@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477625331.030012300,
+    "creationTime" : null,
+    "fileCRC" : -171201373,
+    "fileName" : "PlcMain.p.html",
+    "hostOS" : "win32",
+    "fullPackSize" : 3956,
+    "fullUnpackSize" : 94280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

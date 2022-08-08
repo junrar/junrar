@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312048531.503926000,
+    "creationTime" : null,
+    "fileCRC" : 1050748035,
+    "fileName" : "IFIS Modtools v1.30 64 bits.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 507845,
+    "fullUnpackSize" : 955757,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

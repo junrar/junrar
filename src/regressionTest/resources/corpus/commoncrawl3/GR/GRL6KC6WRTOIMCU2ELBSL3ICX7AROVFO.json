@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1110794916.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1273302245,
+    "fileName" : "de_doom2.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 265131,
+    "fullUnpackSize" : 1290332,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1110798886.000000000,
+    "creationTime" : null,
+    "fileCRC" : 514995350,
+    "fileName" : "de_doom2.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 145,
+    "fullUnpackSize" : 153,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

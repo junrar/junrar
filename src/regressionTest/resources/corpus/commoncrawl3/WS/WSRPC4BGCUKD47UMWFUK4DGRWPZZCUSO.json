@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509471088.447145300,
+    "creationTime" : null,
+    "fileCRC" : 1068242509,
+    "fileName" : "JATJ.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 55,
+    "fullUnpackSize" : 55,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511116355.827463700,
+    "creationTime" : null,
+    "fileCRC" : 1871794217,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 431,
+    "fullUnpackSize" : 647,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

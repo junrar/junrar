@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318581668.990087600,
+    "creationTime" : null,
+    "fileCRC" : 1070500140,
+    "fileName" : "ocxsetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5934618,
+    "fullUnpackSize" : 5944813,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

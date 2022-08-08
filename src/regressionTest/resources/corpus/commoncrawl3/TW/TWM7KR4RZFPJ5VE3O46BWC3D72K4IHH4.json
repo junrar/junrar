@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1278930970.015625000,
+    "creationTime" : null,
+    "fileCRC" : 456103605,
+    "fileName" : "bobcat.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 974633,
+    "fullUnpackSize" : 3366912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267863072.765625000,
+    "creationTime" : null,
+    "fileCRC" : 1119130769,
+    "fileName" : "bobcat.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 333292,
+    "fullUnpackSize" : 902696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

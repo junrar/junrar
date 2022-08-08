@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517383636.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1150815134,
+    "fileName" : "Indotextiles E Magazine 252 January  1 2018_backup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1543157,
+    "fullUnpackSize" : 1587200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

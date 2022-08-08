@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1340237069.508000000,
+    "creationTime" : null,
+    "fileCRC" : -1928413597,
+    "fileName" : "Rasekhoon.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 130,
+    "fullUnpackSize" : 314,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346880730.000000000,
+    "creationTime" : null,
+    "fileCRC" : -825808365,
+    "fileName" : "Retro Phone v1.0.apk",
+    "hostOS" : "win32",
+    "fullPackSize" : 4442210,
+    "fullUnpackSize" : 4502534,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444007011.503251400,
+    "creationTime" : null,
+    "fileCRC" : -1766699735,
+    "fileName" : "PKK\\AKREDITASI PKK.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2626011,
+    "fullUnpackSize" : 2679545,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

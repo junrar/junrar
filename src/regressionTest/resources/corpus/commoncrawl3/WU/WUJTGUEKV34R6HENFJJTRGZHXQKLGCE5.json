@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388399269.235516000,
+    "creationTime" : null,
+    "fileCRC" : -64344483,
+    "fileName" : "宫保鸡丁.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 454138,
+    "fullUnpackSize" : 465955,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

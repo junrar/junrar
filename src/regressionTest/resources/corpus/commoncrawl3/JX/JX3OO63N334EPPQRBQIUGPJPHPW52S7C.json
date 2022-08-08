@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248592578.000000000,
+    "creationTime" : null,
+    "fileCRC" : 984668673,
+    "fileName" : "Datedif函数解析_chrisfang.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 40314,
+    "fullUnpackSize" : 43616,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

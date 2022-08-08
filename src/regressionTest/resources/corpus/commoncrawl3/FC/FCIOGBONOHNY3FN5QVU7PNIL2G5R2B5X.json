@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196829104.000000000,
+    "creationTime" : null,
+    "fileCRC" : -479632614,
+    "fileName" : "Majallet-Islah-4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8386612,
+    "fullUnpackSize" : 9278774,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

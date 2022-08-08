@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 898646410.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1206067107,
+    "fileName" : "COPY32DN.EXE",
+    "hostOS" : "msdos",
+    "fullPackSize" : 4927,
+    "fullUnpackSize" : 7488,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413597551.503069300,
+    "creationTime" : null,
+    "fileCRC" : 378363463,
+    "fileName" : "заявления на отгул за свой счет.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6048,
+    "fullUnpackSize" : 24064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

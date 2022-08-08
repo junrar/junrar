@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271489592.000000000,
+    "creationTime" : null,
+    "fileCRC" : 438423154,
+    "fileName" : "1.ods",
+    "hostOS" : "win32",
+    "fullPackSize" : 11075,
+    "fullUnpackSize" : 12850,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271489638.000000000,
+    "creationTime" : null,
+    "fileCRC" : 725732194,
+    "fileName" : "1.odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11447,
+    "fullUnpackSize" : 13359,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1097082120.000000000,
+    "creationTime" : null,
+    "fileCRC" : 43925112,
+    "fileName" : "Eruption\\002 Van Halen - Eruption.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1635892,
+    "fullUnpackSize" : 1635892,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

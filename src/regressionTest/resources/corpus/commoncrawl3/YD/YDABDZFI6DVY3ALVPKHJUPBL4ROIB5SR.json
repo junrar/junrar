@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521182514.000000000,
+    "creationTime" : null,
+    "fileCRC" : -937081997,
+    "fileName" : "VNFF profie view.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 18343424,
+    "fullUnpackSize" : 19280643,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

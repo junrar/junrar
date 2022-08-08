@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419854563.000000000,
+    "creationTime" : null,
+    "fileCRC" : -516464560,
+    "fileName" : "The.Drop.2014.720p.BluRay.x264.YIFY.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 31418,
+    "fullUnpackSize" : 86919,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420015003.730577700,
+    "creationTime" : null,
+    "fileCRC" : 1856078023,
+    "fileName" : "The.Drop.2014.720p.BluRay.x264.YIFY.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 8641,
+    "fullUnpackSize" : 8786,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

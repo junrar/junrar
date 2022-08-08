@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435985095.046403300,
+    "creationTime" : null,
+    "fileCRC" : -1863338122,
+    "fileName" : "SPAN-ST-EB-S.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5806705,
+    "fullUnpackSize" : 5817205,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

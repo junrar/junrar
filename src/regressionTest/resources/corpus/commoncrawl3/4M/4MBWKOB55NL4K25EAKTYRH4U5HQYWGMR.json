@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355907043.296917100,
+    "creationTime" : null,
+    "fileCRC" : -1559280582,
+    "fileName" : "Souostroví Gulag\\Souostrov__Gulag_1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 580025,
+    "fullUnpackSize" : 2734080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355905128.450708300,
+    "creationTime" : null,
+    "fileCRC" : -326452803,
+    "fileName" : "Souostroví Gulag\\Souostrov__Gulag_2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 546954,
+    "fullUnpackSize" : 2550784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

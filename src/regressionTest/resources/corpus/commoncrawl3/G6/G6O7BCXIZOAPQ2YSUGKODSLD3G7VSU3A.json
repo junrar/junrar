@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308045810.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1562821491,
+    "fileName" : "Попель П. П., Крикля Л. С. - Химия 7 - 2008.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 6207033,
+    "fullUnpackSize" : 6209287,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

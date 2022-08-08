@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251090434.515625000,
+    "creationTime" : null,
+    "fileCRC" : 954786056,
+    "fileName" : "94-fz.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 131191,
+    "fullUnpackSize" : 1982548,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

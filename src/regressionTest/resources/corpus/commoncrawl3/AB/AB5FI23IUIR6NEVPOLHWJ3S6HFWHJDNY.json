@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398659922.027695900,
+    "creationTime" : null,
+    "fileCRC" : 1229604017,
+    "fileName" : "урок 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 12664495,
+    "fullUnpackSize" : 12918347,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

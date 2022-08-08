@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1094206530.000000000,
+    "creationTime" : null,
+    "fileCRC" : -12276570,
+    "fileName" : "Especial Rádio Araguaia\\01 - tell me why.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3019959,
+    "fullUnpackSize" : 3058105,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

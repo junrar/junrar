@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478493465.081132100,
+    "creationTime" : null,
+    "fileCRC" : 1777522925,
+    "fileName" : "04 What U See (Is What U Get).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 10212194,
+    "fullUnpackSize" : 10260143,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

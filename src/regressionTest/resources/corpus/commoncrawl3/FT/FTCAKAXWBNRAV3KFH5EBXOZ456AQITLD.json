@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364092022.131019000,
+    "creationTime" : null,
+    "fileCRC" : -1123053504,
+    "fileName" : "Supernatural.S08E17.Goodbye.Stranger.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18209,
+    "fullUnpackSize" : 47317,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363948847.941630400,
+    "creationTime" : null,
+    "fileCRC" : -883720208,
+    "fileName" : "Supernatural.S08E17.Goodbye.Stranger.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18187,
+    "fullUnpackSize" : 47254,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

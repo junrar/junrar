@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497852081.993818600,
+    "creationTime" : null,
+    "fileCRC" : -188483999,
+    "fileName" : "smk_hnseu_onetry_Lurky_0016.78.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 354948,
+    "fullUnpackSize" : 1581011,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

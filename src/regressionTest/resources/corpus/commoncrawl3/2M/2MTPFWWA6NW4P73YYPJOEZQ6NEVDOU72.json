@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384824892.000000000,
+    "creationTime" : null,
+    "fileCRC" : -449214016,
+    "fileName" : "shcola.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 16478245,
+    "fullUnpackSize" : 16762784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

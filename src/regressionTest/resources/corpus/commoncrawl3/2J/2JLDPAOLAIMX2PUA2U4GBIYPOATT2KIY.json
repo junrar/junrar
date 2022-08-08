@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527732562.820000000,
+    "creationTime" : null,
+    "fileCRC" : 2045859279,
+    "fileName" : "setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 190932,
+    "fullUnpackSize" : 629760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527732621.291000000,
+    "creationTime" : null,
+    "fileCRC" : -1955570502,
+    "fileName" : "KTDN.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 61736843,
+    "fullUnpackSize" : 62763520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

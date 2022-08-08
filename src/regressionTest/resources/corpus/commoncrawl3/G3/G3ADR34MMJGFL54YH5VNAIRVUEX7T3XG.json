@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492763418.360366100,
+    "creationTime" : null,
+    "fileCRC" : 18999878,
+    "fileName" : "说明（Tips）.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 447,
+    "fullUnpackSize" : 657,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503472399.580347100,
+    "creationTime" : null,
+    "fileCRC" : -298007992,
+    "fileName" : "CMSSetup_1.0.0.44(Remote).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2754132,
+    "fullUnpackSize" : 2767521,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

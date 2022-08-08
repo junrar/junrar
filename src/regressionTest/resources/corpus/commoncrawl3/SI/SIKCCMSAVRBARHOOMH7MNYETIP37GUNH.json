@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1189981320.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1532024043,
+    "fileName" : "RSD_Lite_4.1\\RSDLite_4.1.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1261741,
+    "fullUnpackSize" : 1304287,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

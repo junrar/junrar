@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1058719500.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1515180876,
+    "fileName" : "Millionq\\DESKTOP.INI",
+    "hostOS" : "win32",
+    "fullPackSize" : 89,
+    "fullUnpackSize" : 89,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1019181590.000000000,
+    "creationTime" : null,
+    "fileCRC" : 531971684,
+    "fileName" : "Millionq\\MillionQ8.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2423426,
+    "fullUnpackSize" : 4036587,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

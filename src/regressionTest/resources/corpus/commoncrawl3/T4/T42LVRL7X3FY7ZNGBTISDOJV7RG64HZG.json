@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431567248.089509200,
+    "creationTime" : null,
+    "fileCRC" : 1512854093,
+    "fileName" : "FMScreener.com coach screening view_364421E9-C978-44C8-AB2B-3E278AC3E8FE.fmf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14562,
+    "fullUnpackSize" : 14562,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

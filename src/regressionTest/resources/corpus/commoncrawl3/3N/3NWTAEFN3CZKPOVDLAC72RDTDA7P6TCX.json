@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385618339.726769800,
+    "creationTime" : null,
+    "fileCRC" : 1619178699,
+    "fileName" : "破碎机润滑示意图.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 56338,
+    "fullUnpackSize" : 423688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

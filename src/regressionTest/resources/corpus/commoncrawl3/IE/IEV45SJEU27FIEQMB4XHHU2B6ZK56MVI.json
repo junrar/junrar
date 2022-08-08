@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505118744.991523600,
+    "creationTime" : null,
+    "fileCRC" : 123763528,
+    "fileName" : "drewbie_longjumps_ez_fykseN_0020.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 347397,
+    "fullUnpackSize" : 1465236,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

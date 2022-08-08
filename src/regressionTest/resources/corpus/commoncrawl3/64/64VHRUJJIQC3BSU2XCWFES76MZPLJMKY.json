@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1205182976.254706900,
+    "creationTime" : null,
+    "fileCRC" : -1327923111,
+    "fileName" : "cs_docks_v1.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 2262381,
+    "fullUnpackSize" : 4412804,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

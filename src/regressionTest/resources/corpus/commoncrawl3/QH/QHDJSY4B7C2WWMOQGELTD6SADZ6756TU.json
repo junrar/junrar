@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419242080.484269600,
+    "creationTime" : null,
+    "fileCRC" : -135392365,
+    "fileName" : "CCNA v5 R&S Curriculum\\CCNA 1 Introduction to Networks.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 76560265,
+    "fullUnpackSize" : 182466306,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

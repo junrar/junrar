@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292578464.703125000,
+    "creationTime" : null,
+    "fileCRC" : -1398836016,
+    "fileName" : "R070DH.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 43525,
+    "fullUnpackSize" : 64164,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

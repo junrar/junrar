@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440996556.840681200,
+    "creationTime" : null,
+    "fileCRC" : -368886852,
+    "fileName" : "PTI 1\\Pert.1 - Konsep TI, Hardware.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4578586,
+    "fullUnpackSize" : 4743669,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

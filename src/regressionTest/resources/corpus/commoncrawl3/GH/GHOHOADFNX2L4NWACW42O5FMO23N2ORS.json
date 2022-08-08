@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472857892.000000000,
+    "creationTime" : null,
+    "fileCRC" : -10655132,
+    "fileName" : "Что кроется за новым мировым порядком.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 949846,
+    "fullUnpackSize" : 1015287,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

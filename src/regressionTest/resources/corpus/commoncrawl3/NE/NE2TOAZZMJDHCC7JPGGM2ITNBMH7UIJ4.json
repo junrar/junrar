@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346812842.515625000,
+    "creationTime" : null,
+    "fileCRC" : -1782274443,
+    "fileName" : "拉丝模册6-2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 25802911,
+    "fullUnpackSize" : 29690768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

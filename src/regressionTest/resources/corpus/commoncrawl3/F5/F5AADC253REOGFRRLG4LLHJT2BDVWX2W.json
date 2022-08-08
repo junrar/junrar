@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1213075216.000000000,
+    "creationTime" : null,
+    "fileCRC" : 228421235,
+    "fileName" : "Majallet-Islah-9.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1585838,
+    "fullUnpackSize" : 2109442,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

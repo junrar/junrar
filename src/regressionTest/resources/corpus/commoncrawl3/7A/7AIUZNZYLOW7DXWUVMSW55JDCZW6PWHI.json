@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343611512.453125000,
+    "creationTime" : null,
+    "fileCRC" : -931677266,
+    "fileName" : "bas-components-2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 580064,
+    "fullUnpackSize" : 669603,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427502211.687500000,
+    "creationTime" : null,
+    "fileCRC" : -1201167276,
+    "fileName" : "Parol k arhivu .txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 138,
+    "fullUnpackSize" : 138,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

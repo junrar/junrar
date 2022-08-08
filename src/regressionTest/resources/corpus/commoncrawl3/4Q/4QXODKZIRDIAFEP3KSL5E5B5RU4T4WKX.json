@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381913454.000000000,
+    "creationTime" : null,
+    "fileCRC" : 529761012,
+    "fileName" : "Проектная документация\\21_05-13-П-КТМ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1909760,
+    "fullUnpackSize" : 2093686,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1280906142.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1258508093,
+    "fileName" : "8111E Win7\\data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 1814819,
+    "fullUnpackSize" : 3558887,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

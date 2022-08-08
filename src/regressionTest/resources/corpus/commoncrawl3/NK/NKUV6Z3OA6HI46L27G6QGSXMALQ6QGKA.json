@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1372765433.028768400,
+    "creationTime" : null,
+    "fileCRC" : -282231547,
+    "fileName" : "nenastoiashchee-nastoiashchee-proroki-i-poroki.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1113703,
+    "fullUnpackSize" : 1242624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

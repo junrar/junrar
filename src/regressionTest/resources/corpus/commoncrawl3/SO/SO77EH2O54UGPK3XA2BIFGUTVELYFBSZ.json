@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529289253.111650700,
+    "creationTime" : null,
+    "fileCRC" : 240808742,
+    "fileName" : "стеклянные чайники.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 138409,
+    "fullUnpackSize" : 216064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

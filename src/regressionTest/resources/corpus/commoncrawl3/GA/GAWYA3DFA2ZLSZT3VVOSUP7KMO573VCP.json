@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363700156.406356200,
+    "creationTime" : null,
+    "fileCRC" : 663529957,
+    "fileName" : "raefi pour-asib shenasi mahvare-delijan-91.12.19.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 13148910,
+    "fullUnpackSize" : 15486862,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

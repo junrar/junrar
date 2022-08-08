@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251189896.000000000,
+    "creationTime" : null,
+    "fileCRC" : 986546024,
+    "fileName" : "Istoriya Ukrainy t.1.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 3889068,
+    "fullUnpackSize" : 3902266,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

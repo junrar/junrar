@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464680931.870000000,
+    "creationTime" : null,
+    "fileCRC" : 1336663957,
+    "fileName" : "Elite.vs.Freedom.PC-HI2U\\hi-elvsfr.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 745865609,
+    "fullUnpackSize" : 7188316160,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337053666.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1645351626,
+    "fileName" : "DiskImage\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 119,
+    "fullUnpackSize" : 194,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337053674.000000000,
+    "creationTime" : null,
+    "fileCRC" : 487303785,
+    "fileName" : "DiskImage\\فصلنامه زمستان 90.eBook",
+    "hostOS" : "win32",
+    "fullPackSize" : 21823505,
+    "fullUnpackSize" : 21893639,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

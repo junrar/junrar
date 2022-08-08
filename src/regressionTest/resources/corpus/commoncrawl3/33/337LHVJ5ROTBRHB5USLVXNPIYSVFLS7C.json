@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1169796338.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1984529367,
+    "fileName" : "F12006-EngineSP-TTM.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 13291235,
+    "fullUnpackSize" : 13329541,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

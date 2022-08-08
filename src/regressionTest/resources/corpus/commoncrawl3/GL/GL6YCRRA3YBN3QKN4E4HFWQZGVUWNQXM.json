@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495092026.718564600,
+    "creationTime" : null,
+    "fileCRC" : 375265959,
+    "fileName" : "428 за 1 кв.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 26877,
+    "fullUnpackSize" : 146432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495089475.679267600,
+    "creationTime" : null,
+    "fileCRC" : -56263549,
+    "fileName" : "проект распоряжения по кассе зна 01.04.17 тыс.руб1.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 17058,
+    "fullUnpackSize" : 20531,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521598352.125028500,
+    "creationTime" : null,
+    "fileCRC" : -1015930995,
+    "fileName" : "The.Amazing.Race.S30E07E08.WEB.x264-TBS.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 42140,
+    "fullUnpackSize" : 115105,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521598349.304867200,
+    "creationTime" : null,
+    "fileCRC" : -1913756843,
+    "fileName" : "The.Amazing.Race.S30E07E08.720p.HDTV.x264-BAJSKORV.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 42166,
+    "fullUnpackSize" : 115105,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

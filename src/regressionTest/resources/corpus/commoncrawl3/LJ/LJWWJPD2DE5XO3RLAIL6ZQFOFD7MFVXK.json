@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298447132.454260500,
+    "creationTime" : null,
+    "fileCRC" : -1632131422,
+    "fileName" : "mp_all_in\\mp_all_in.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 25005902,
+    "fullUnpackSize" : 25082025,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

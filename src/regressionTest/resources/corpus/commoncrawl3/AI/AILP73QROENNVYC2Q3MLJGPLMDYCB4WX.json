@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231240574.000000000,
+    "creationTime" : null,
+    "fileCRC" : -952019088,
+    "fileName" : "The.Thing.1982.Blu-ray.Re.1080p.x264.DTS-MySiLU.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14252,
+    "fullUnpackSize" : 36241,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305224610.000000000,
+    "creationTime" : null,
+    "fileCRC" : -660081682,
+    "fileName" : "The.Thing.1982.Blu-ray.Re.1080p.x264.DTS-MySiLU.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 45617,
+    "fullUnpackSize" : 46715,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

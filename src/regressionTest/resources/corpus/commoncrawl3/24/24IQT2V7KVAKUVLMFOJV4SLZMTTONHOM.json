@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333275135.621077000,
+    "creationTime" : null,
+    "fileCRC" : 771318618,
+    "fileName" : "LaPa008Koffer.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 79779,
+    "fullUnpackSize" : 87968,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1332930704.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1625943342,
+    "fileName" : "01.Wir machen Musik.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2996957,
+    "fullUnpackSize" : 3209767,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

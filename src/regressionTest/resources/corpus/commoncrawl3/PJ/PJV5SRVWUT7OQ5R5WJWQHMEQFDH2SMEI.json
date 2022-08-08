@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231839883.171875000,
+    "creationTime" : null,
+    "fileCRC" : -203947770,
+    "fileName" : "gary.unmarried.s01e04.hdtv.xvid-fov.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13080,
+    "fullUnpackSize" : 35099,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268221231.812500000,
+    "creationTime" : null,
+    "fileCRC" : -1549079803,
+    "fileName" : "Gary.Unmarried.S01E04.DVDRip.XviD-RTV.CZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13037,
+    "fullUnpackSize" : 35068,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

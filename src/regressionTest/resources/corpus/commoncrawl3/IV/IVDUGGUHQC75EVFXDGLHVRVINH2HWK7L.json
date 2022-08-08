@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229774375.599602400,
+    "creationTime" : null,
+    "fileCRC" : 1661673075,
+    "fileName" : "ReadMe.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 330,
+    "fullUnpackSize" : 489,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229775148.099602400,
+    "creationTime" : null,
+    "fileCRC" : -1489711509,
+    "fileName" : "WeaponInfo.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 2321,
+    "fullUnpackSize" : 19330,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

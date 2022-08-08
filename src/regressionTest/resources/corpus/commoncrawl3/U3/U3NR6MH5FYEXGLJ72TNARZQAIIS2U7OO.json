@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207224262.454327000,
+    "creationTime" : null,
+    "fileCRC" : -740447933,
+    "fileName" : "shutterstock_8627659.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 256246,
+    "fullUnpackSize" : 1399166,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207224432.704327000,
+    "creationTime" : null,
+    "fileCRC" : 1265403151,
+    "fileName" : "shutterstock_8627659.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 143480,
+    "fullUnpackSize" : 153921,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

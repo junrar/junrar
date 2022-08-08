@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223613234.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1921975582,
+    "fileName" : "Inkluz_07.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 156215,
+    "fullUnpackSize" : 192050,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

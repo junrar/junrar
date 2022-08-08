@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369665319.823381500,
+    "creationTime" : null,
+    "fileCRC" : -574740716,
+    "fileName" : "Gopala.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5595167,
+    "fullUnpackSize" : 5777544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

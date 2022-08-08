@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256630036.906452800,
+    "creationTime" : null,
+    "fileCRC" : 268338248,
+    "fileName" : "mellotronDVD.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 2166347,
+    "fullUnpackSize" : 9185280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

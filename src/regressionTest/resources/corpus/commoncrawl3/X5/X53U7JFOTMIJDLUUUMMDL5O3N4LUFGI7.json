@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455689361.249373900,
+    "creationTime" : null,
+    "fileCRC" : -1416675432,
+    "fileName" : "4. กลุ่มจังหวัดภาคกลางตอนล่าง 1\\กลุ่ม+จังหวัด.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5423773,
+    "fullUnpackSize" : 5488608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

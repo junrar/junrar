@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1378315360.751953100,
+    "creationTime" : null,
+    "fileCRC" : 316700272,
+    "fileName" : "cicloviamira23082013.gpx",
+    "hostOS" : "win32",
+    "fullPackSize" : 23294,
+    "fullUnpackSize" : 152704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

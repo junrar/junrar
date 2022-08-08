@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1117691712.000000000,
+    "creationTime" : null,
+    "fileCRC" : -609582247,
+    "fileName" : "Должностная инструкция (бланк).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5012,
+    "fullUnpackSize" : 37888,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

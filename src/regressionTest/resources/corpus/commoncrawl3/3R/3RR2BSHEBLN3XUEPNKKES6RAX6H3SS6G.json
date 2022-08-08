@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1294934290.000000000,
+    "creationTime" : null,
+    "fileCRC" : 55973538,
+    "fileName" : "DZUS.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 4414,
+    "fullUnpackSize" : 22490,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

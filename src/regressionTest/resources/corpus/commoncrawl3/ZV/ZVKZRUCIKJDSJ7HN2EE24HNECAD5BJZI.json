@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1261251442.000000000,
+    "creationTime" : null,
+    "fileCRC" : 862919870,
+    "fileName" : "05_26okt_Bogolepov_RaytracingOptimizing.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4999884,
+    "fullUnpackSize" : 9101973,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

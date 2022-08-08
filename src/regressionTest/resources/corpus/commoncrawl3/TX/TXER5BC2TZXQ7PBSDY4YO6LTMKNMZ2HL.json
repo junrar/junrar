@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426728220.364246200,
+    "creationTime" : null,
+    "fileCRC" : -2120127631,
+    "fileName" : "csgo\\maps\\hoejhus_revive.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 1027928,
+    "fullUnpackSize" : 4953136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426728115.565580500,
+    "creationTime" : null,
+    "fileCRC" : 1724840598,
+    "fileName" : "csgo\\maps\\hoejhus_revive.bsp.bak",
+    "hostOS" : "win32",
+    "fullPackSize" : 764440,
+    "fullUnpackSize" : 2478960,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

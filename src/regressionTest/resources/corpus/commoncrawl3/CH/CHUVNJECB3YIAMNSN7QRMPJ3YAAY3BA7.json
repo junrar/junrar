@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1288155621.300854900,
+    "creationTime" : null,
+    "fileCRC" : -1279532416,
+    "fileName" : "Sbornik_9 (45)_zaks.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4268555,
+    "fullUnpackSize" : 5126943,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

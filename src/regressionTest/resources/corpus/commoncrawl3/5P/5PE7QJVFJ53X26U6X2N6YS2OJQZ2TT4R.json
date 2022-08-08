@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1191556290.060000000,
+    "creationTime" : null,
+    "fileCRC" : -640243815,
+    "fileName" : "Петрушин С.В. Любовь и другие человеческие отношения. Изд. 2-е, доп. - СПб., Речь, 2006. - 144 с..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 201137,
+    "fullUnpackSize" : 624128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

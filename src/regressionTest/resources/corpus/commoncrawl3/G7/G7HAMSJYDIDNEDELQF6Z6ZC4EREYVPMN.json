@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333889916.796875000,
+    "creationTime" : null,
+    "fileCRC" : -706007044,
+    "fileName" : "CD 1\\Track No01.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 288648,
+    "fullUnpackSize" : 318561,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333889923.515625000,
+    "creationTime" : null,
+    "fileCRC" : 271471616,
+    "fileName" : "CD 1\\Track No02.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1028561,
+    "fullUnpackSize" : 1250871,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

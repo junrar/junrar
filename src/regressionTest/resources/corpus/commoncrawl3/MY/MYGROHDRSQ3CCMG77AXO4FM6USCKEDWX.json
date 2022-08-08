@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351469304.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1924092935,
+    "fileName" : "Терморегулирующие вентили.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 148875,
+    "fullUnpackSize" : 158747,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

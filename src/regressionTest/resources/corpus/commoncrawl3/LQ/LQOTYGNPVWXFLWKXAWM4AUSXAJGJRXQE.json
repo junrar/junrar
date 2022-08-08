@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486951900.531250000,
+    "creationTime" : null,
+    "fileCRC" : -242167873,
+    "fileName" : "отзыв-автореф_Аккизов.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1264099,
+    "fullUnpackSize" : 1348357,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502075370.601049700,
+    "creationTime" : null,
+    "fileCRC" : -1851544947,
+    "fileName" : "Семинар по Откровению А.А. Дымань.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2525804,
+    "fullUnpackSize" : 3003677,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

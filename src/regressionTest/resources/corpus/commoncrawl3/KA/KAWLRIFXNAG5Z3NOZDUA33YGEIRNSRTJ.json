@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268101215.162000000,
+    "creationTime" : null,
+    "fileCRC" : 1133470374,
+    "fileName" : "информационное сообщение аукционы Северный 8Марта 9 Музрукова22ВП5 Дачный  27042010 окончательный вариант.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 19595,
+    "fullUnpackSize" : 91136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

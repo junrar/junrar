@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312808696.369071600,
+    "creationTime" : null,
+    "fileCRC" : -1236464359,
+    "fileName" : "openoffice 3.1.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 55387,
+    "fullUnpackSize" : 60814,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312808734.834547300,
+    "creationTime" : null,
+    "fileCRC" : 211258454,
+    "fileName" : "office 2007.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 68250,
+    "fullUnpackSize" : 73670,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

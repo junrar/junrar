@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349421830.557600000,
+    "creationTime" : null,
+    "fileCRC" : -225698871,
+    "fileName" : "2009_jeep_wrangler_3.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 38827,
+    "fullUnpackSize" : 38827,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

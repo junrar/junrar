@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505287521.565000000,
+    "creationTime" : null,
+    "fileCRC" : 420570759,
+    "fileName" : "Бланк рішення ІІ кв..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 18294,
+    "fullUnpackSize" : 73216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505287644.988000000,
+    "creationTime" : null,
+    "fileCRC" : -1680301410,
+    "fileName" : "Пояснювальна записка до звіту ІІ кв.2017р..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 35981,
+    "fullUnpackSize" : 248832,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

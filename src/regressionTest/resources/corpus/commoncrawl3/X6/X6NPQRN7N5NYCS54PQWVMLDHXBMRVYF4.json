@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410334378.653896300,
+    "creationTime" : null,
+    "fileCRC" : 395526820,
+    "fileName" : "SR 63.x_t",
+    "hostOS" : "win32",
+    "fullPackSize" : 1634899,
+    "fullUnpackSize" : 5406753,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

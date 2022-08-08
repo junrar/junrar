@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403765055.046875000,
+    "creationTime" : null,
+    "fileCRC" : 2093534692,
+    "fileName" : "Intex_update_firmware\\Intex_update.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 35493437,
+    "fullUnpackSize" : 96936018,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

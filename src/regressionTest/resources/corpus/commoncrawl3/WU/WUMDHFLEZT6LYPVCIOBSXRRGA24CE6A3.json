@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1131807624.000000000,
+    "creationTime" : null,
+    "fileCRC" : 55717919,
+    "fileName" : "sabre.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 492031,
+    "fullUnpackSize" : 1234856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1133574628.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1922614060,
+    "fileName" : "sabre.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 567615,
+    "fullUnpackSize" : 2091008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

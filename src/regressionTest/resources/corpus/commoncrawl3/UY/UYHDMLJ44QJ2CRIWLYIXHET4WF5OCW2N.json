@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353643864.656250000,
+    "creationTime" : null,
+    "fileCRC" : 384982847,
+    "fileName" : "01. Red Fragment.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4080313,
+    "fullUnpackSize" : 4222772,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

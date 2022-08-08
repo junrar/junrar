@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524566877.956577700,
+    "creationTime" : null,
+    "fileCRC" : -810647513,
+    "fileName" : "GN-2500HD HYBRID_V2.02(V1.09.19390)_24042018.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 4366214,
+    "fullUnpackSize" : 8005119,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

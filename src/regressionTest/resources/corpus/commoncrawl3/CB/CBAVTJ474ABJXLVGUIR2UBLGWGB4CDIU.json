@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1076485712.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1738459288,
+    "fileName" : "ОДН 218.2.027-2003.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 27167,
+    "fullUnpackSize" : 128000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

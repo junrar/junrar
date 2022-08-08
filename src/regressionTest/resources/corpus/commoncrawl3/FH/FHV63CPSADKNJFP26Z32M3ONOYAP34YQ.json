@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472857630.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1191118790,
+    "fileName" : "НАУМА - Суд.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 110467,
+    "fullUnpackSize" : 119308,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

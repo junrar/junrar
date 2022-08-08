@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 834731596.000000000,
+    "creationTime" : null,
+    "fileCRC" : 121839151,
+    "fileName" : "PMDD5.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 756756,
+    "fullUnpackSize" : 1884160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 834731668.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1409511885,
+    "fileName" : "Win1.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 922210,
+    "fullUnpackSize" : 1884160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

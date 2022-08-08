@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528209247.782436100,
+    "creationTime" : null,
+    "fileCRC" : 1337989164,
+    "fileName" : "Black Water 2018 1080p WEB-DL DD5.1 H264-FGT.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 28675,
+    "fullUnpackSize" : 75540,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

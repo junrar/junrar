@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482929077.255706800,
+    "creationTime" : null,
+    "fileCRC" : 1615396655,
+    "fileName" : "Download Old Paint for Windows 10\\ClassicPaint-1.0-setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3622495,
+    "fullUnpackSize" : 3717205,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

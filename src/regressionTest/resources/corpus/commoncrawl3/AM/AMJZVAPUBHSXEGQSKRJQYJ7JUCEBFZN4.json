@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420088806.000000000,
+    "creationTime" : null,
+    "fileCRC" : 882088343,
+    "fileName" : "1420106859_thermal_detonator_unfold_by_thyjos-red.pdo",
+    "hostOS" : "win32",
+    "fullPackSize" : 363118,
+    "fullUnpackSize" : 1591946,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420088791.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1165788190,
+    "fileName" : "1420106863_thermal_detonator_unfold_by_thyjos-blue.pdo",
+    "hostOS" : "win32",
+    "fullPackSize" : 355895,
+    "fullUnpackSize" : 1584845,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

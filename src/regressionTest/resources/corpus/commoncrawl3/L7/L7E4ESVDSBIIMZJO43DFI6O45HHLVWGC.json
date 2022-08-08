@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361234625.787612000,
+    "creationTime" : null,
+    "fileCRC" : 1767472202,
+    "fileName" : "Конкурс Бр. Полигон\\Документация Бр  Полигон.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 950629,
+    "fullUnpackSize" : 981297,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361182256.167294300,
+    "creationTime" : null,
+    "fileCRC" : -548183940,
+    "fileName" : "Конкурс Бр. Полигон\\Извещение Бр Полигон.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 953033,
+    "fullUnpackSize" : 1011712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

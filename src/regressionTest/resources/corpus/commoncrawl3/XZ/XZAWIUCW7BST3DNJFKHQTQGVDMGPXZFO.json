@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291354707.602000000,
+    "creationTime" : null,
+    "fileCRC" : -1624088724,
+    "fileName" : "vperedi_razvedka.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 214144,
+    "fullUnpackSize" : 1405440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

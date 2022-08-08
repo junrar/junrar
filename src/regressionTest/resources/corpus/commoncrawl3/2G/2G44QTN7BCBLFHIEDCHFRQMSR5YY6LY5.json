@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526291367.705493700,
+    "creationTime" : null,
+    "fileCRC" : 1323771715,
+    "fileName" : "Poland - Navy, 1 DLMW, Gdynia-Babie Doly, 2000\\description.lua",
+    "hostOS" : "win32",
+    "fullPackSize" : 599,
+    "fullUnpackSize" : 4533,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526290859.759835800,
+    "creationTime" : null,
+    "fileCRC" : 2009617356,
+    "fileName" : "Poland - Navy, 1 DLMW, Gdynia-Babie Doly, 2000\\MiG21Bis_01_Dif.dds",
+    "hostOS" : "win32",
+    "fullPackSize" : 25523992,
+    "fullUnpackSize" : 89478640,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

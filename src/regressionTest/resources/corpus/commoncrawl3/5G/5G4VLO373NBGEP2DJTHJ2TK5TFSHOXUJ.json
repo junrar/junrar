@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1115212488.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1715727752,
+    "fileName" : "Z130XEEF3_BOOT_LOADER.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 4606,
+    "fullUnpackSize" : 7764,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1118674298.000000000,
+    "creationTime" : null,
+    "fileCRC" : -166020377,
+    "fileName" : "Z130XEEF3_rsc.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 10172069,
+    "fullUnpackSize" : 43565056,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275742836.374713900,
+    "creationTime" : null,
+    "fileCRC" : 261604989,
+    "fileName" : "Aren - Caixigar - coll Vent - Soperun - collacansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 24702,
+    "fullUnpackSize" : 123698,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

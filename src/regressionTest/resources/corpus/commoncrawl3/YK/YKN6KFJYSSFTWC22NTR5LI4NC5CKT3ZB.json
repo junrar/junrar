@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482131267.812500000,
+    "creationTime" : null,
+    "fileCRC" : 606775337,
+    "fileName" : "试卷模板.ott",
+    "hostOS" : "win32",
+    "fullPackSize" : 35664,
+    "fullUnpackSize" : 37198,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482141240.187500000,
+    "creationTime" : null,
+    "fileCRC" : 107499705,
+    "fileName" : "试卷模板.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 149047,
+    "fullUnpackSize" : 162467,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

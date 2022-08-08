@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1402993096.837823000,
+    "creationTime" : null,
+    "fileCRC" : 1939714336,
+    "fileName" : "DC-709-052014\\Firmware+of+DC-709 (1).img",
+    "hostOS" : "win32",
+    "fullPackSize" : 402438122,
+    "fullUnpackSize" : 649836272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409278629.786586800,
+    "creationTime" : null,
+    "fileCRC" : 267638388,
+    "fileName" : "Các bước thao tác đối với chức năng Lịch công tác trên hệ thống EOS.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12371,
+    "fullUnpackSize" : 15043,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

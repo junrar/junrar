@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448864326.723013800,
+    "creationTime" : null,
+    "fileCRC" : -18966468,
+    "fileName" : "sp8gh.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 3283456,
+    "fullUnpackSize" : 10588160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

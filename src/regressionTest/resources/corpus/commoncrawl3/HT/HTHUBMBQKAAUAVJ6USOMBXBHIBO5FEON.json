@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449803043.926840300,
+    "creationTime" : null,
+    "fileCRC" : -1493529166,
+    "fileName" : "报名电子照片标准_2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 65194,
+    "fullUnpackSize" : 109321,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449803043.844814000,
+    "creationTime" : null,
+    "fileCRC" : 1943487044,
+    "fileName" : "报名电子照片标准_1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 63751,
+    "fullUnpackSize" : 76585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

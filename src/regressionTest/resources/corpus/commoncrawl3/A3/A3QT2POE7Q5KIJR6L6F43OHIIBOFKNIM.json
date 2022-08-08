@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497511870.759437000,
+    "creationTime" : null,
+    "fileCRC" : 1100434513,
+    "fileName" : "LOGO UNIPA VEKTOR\\LOGO UNIPA.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 451177,
+    "fullUnpackSize" : 452526,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497511904.725556800,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "LOGO UNIPA VEKTOR",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

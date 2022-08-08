@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289670734.971327600,
+    "creationTime" : null,
+    "fileCRC" : -545010024,
+    "fileName" : "البعث والنشور للبيهقي.bok",
+    "hostOS" : "win32",
+    "fullPackSize" : 186536,
+    "fullUnpackSize" : 841728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469786192.479611200,
+    "creationTime" : null,
+    "fileCRC" : -308621216,
+    "fileName" : "البعث والنشور للبيهقي2.bok",
+    "hostOS" : "win32",
+    "fullPackSize" : 271924,
+    "fullUnpackSize" : 1275904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

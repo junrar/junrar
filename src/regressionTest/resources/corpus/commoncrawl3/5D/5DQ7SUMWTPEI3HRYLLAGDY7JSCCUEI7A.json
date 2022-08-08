@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286155522.609375000,
+    "creationTime" : null,
+    "fileCRC" : -593339598,
+    "fileName" : "Latyshskij_jazyk.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 7632803,
+    "fullUnpackSize" : 7641521,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

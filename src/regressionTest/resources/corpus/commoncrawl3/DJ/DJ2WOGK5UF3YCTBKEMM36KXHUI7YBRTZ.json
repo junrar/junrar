@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377142050.481804700,
+    "creationTime" : null,
+    "fileCRC" : -1256323033,
+    "fileName" : "N'evaliah.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 408245,
+    "fullUnpackSize" : 408245,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377142076.239277900,
+    "creationTime" : null,
+    "fileCRC" : 1637188400,
+    "fileName" : "2 tone rose.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 792404,
+    "fullUnpackSize" : 792404,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511103630.437329200,
+    "creationTime" : null,
+    "fileCRC" : 1356071689,
+    "fileName" : "18. Библия. Книга Иова. Ветхий Завет (читает Игорь Козлов).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 111982514,
+    "fullUnpackSize" : 118638346,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

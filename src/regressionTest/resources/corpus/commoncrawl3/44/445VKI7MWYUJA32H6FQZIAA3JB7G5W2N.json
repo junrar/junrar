@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152445858.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1599375314,
+    "fileName" : "Circuit-DEMO2.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 989327,
+    "fullUnpackSize" : 15127470,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1178669063.859375000,
+    "creationTime" : null,
+    "fileCRC" : -318758613,
+    "fileName" : "03-Notorious.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3741073,
+    "fullUnpackSize" : 4022272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

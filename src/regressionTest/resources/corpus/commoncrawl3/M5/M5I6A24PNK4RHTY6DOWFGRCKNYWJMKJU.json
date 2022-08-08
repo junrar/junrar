@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488465779.687500000,
+    "creationTime" : null,
+    "fileCRC" : 485054564,
+    "fileName" : "zputnik - lidoop - 2017\\folder.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 87163,
+    "fullUnpackSize" : 123649,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493530650.843000000,
+    "creationTime" : null,
+    "fileCRC" : -1216754116,
+    "fileName" : "zputnik - lidoop - 2017\\zputnik - lidoop - 01 - uchylak.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4802796,
+    "fullUnpackSize" : 4866379,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

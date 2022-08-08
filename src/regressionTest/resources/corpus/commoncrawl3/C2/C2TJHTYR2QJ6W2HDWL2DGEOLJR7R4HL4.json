@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537327835.524902400,
+    "creationTime" : null,
+    "fileCRC" : -922053776,
+    "fileName" : "安装注意.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 169,
+    "fullUnpackSize" : 169,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537328347.843750000,
+    "creationTime" : null,
+    "fileCRC" : -1322546731,
+    "fileName" : "BGBOX_Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1725969,
+    "fullUnpackSize" : 1824736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

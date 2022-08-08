@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296917417.167227600,
+    "creationTime" : null,
+    "fileCRC" : -1150123596,
+    "fileName" : "Класифікатор розподілу травм за ступенем тяжкості.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9554,
+    "fullUnpackSize" : 50688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

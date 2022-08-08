@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383990023.527769400,
+    "creationTime" : null,
+    "fileCRC" : 79013368,
+    "fileName" : "USB.Guardian.3.2-yjc.ir\\USB.Guardian.3.2_yjc.ir.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 758978,
+    "fullUnpackSize" : 1069320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385017483.968750000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "USB.Guardian.3.2-yjc.ir",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368151598.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1569151872,
+    "fileName" : "05-09-13_SESA-FCPF_Vietnam_TIENG_VIET 2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 802550,
+    "fullUnpackSize" : 851555,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369014865.030000000,
+    "creationTime" : null,
+    "fileCRC" : 765858103,
+    "fileName" : "Du thao Lo trinh cac Bien phap Dam bao an toan.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 551754,
+    "fullUnpackSize" : 1413120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493784261.289000000,
+    "creationTime" : null,
+    "fileCRC" : -764905239,
+    "fileName" : "Проект договора (DOGOVOR TO i R TS i ST).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 67284,
+    "fullUnpackSize" : 491008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

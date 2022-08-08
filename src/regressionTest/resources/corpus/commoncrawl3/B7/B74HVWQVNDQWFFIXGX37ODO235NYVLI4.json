@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1345520574.200340000,
+    "creationTime" : null,
+    "fileCRC" : 908272504,
+    "fileName" : "JC_certificate.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 400054,
+    "fullUnpackSize" : 400169,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

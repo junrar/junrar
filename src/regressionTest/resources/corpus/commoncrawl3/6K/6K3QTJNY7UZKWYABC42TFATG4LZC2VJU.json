@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370831666.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1975728955,
+    "fileName" : "Приложения к Вестник №32 Реш.541\\№ 541 от 30.08.2013г\\ООС_ГП.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2346689,
+    "fullUnpackSize" : 3120815,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

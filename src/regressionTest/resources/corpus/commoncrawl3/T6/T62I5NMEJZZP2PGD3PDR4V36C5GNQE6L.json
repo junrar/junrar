@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1474284136.627573900,
+    "creationTime" : null,
+    "fileCRC" : -1709276210,
+    "fileName" : "Шилд CAN hacker tja1051.lay6",
+    "hostOS" : "win32",
+    "fullPackSize" : 7079,
+    "fullUnpackSize" : 27192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1474284167.615672400,
+    "creationTime" : null,
+    "fileCRC" : -379795542,
+    "fileName" : "Шилд CAN hacker tja1055.lay6",
+    "hostOS" : "win32",
+    "fullPackSize" : 9562,
+    "fullUnpackSize" : 36896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

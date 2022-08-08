@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195184232.412476000,
+    "creationTime" : null,
+    "fileCRC" : 1411739471,
+    "fileName" : "bashkirskaia_assr_1952_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599892,
+    "fullUnpackSize" : 37390091,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

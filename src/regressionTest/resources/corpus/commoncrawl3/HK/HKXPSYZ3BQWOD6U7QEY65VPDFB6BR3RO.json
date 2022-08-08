@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1475851339.000000000,
+    "creationTime" : null,
+    "fileCRC" : 378301836,
+    "fileName" : "Ride.2-CODEX\\codex-ride.2.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 496305675,
+    "fullUnpackSize" : 28413591552,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

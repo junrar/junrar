@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482671696.000000000,
+    "creationTime" : null,
+    "fileCRC" : 775093313,
+    "fileName" : "ShuDepb.Loader.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 129867,
+    "fullUnpackSize" : 294912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

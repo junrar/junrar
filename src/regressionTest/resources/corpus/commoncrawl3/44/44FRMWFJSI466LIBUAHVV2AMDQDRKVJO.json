@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331704000.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1105155790,
+    "fileName" : "GSK-5704步进电机驱动器说明书.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 130902,
+    "fullUnpackSize" : 133859,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

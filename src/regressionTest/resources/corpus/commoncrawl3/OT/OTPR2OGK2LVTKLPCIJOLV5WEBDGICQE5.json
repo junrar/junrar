@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430200206.543484400,
+    "creationTime" : null,
+    "fileCRC" : -787336204,
+    "fileName" : "Акордбанк - Річна інформація 2014.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 54477,
+    "fullUnpackSize" : 599456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430199934.652428700,
+    "creationTime" : null,
+    "fileCRC" : -604994404,
+    "fileName" : "Акордбанк piчна 2014 опублiкування.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 828473,
+    "fullUnpackSize" : 913810,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

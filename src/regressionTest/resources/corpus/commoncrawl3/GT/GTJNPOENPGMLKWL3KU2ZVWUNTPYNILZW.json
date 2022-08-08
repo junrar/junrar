@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1108835826.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1554609160,
+    "fileName" : "sangokushi4.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 4261780,
+    "fullUnpackSize" : 4942848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

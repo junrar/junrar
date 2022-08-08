@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426562843.027000000,
+    "creationTime" : null,
+    "fileCRC" : -92492627,
+    "fileName" : "Strong-SRT-4922A_My-TV_HS_174p_17.03.2015\\Strong-SRT-4922A_My-TV_HS_174p_20150317.stb",
+    "hostOS" : "win32",
+    "fullPackSize" : 4942171,
+    "fullUnpackSize" : 5018280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

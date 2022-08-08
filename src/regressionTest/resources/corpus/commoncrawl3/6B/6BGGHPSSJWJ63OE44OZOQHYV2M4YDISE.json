@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1288857486.484375000,
+    "creationTime" : null,
+    "fileCRC" : -361635310,
+    "fileName" : "Руководство по эксплуатации и обслуживанию медицинского оборудования учреждений первичной медико-санитарной помощи (для медицинского персонала).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2562408,
+    "fullUnpackSize" : 3190383,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

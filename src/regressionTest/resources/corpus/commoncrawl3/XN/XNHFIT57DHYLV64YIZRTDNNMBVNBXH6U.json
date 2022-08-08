@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394023756.515625000,
+    "creationTime" : null,
+    "fileCRC" : -973475875,
+    "fileName" : "5.karton ev PROJE.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9047,
+    "fullUnpackSize" : 38400,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505188549.221008300,
+    "creationTime" : null,
+    "fileCRC" : 218017095,
+    "fileName" : "Una Cerdanya - colla cansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 31300,
+    "fullUnpackSize" : 136683,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

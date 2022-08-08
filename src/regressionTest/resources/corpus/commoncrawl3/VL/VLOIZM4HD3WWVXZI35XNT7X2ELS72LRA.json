@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491449880.578125000,
+    "creationTime" : null,
+    "fileCRC" : 271887219,
+    "fileName" : "Информация о проведении конкурса проектов по представлению бюджета для граждан.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 8331,
+    "fullUnpackSize" : 10933,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

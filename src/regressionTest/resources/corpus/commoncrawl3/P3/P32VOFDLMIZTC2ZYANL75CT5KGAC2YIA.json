@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437007259.957091900,
+    "creationTime" : null,
+    "fileCRC" : 1553602450,
+    "fileName" : "jpdz.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4971997,
+    "fullUnpackSize" : 4983075,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

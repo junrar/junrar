@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387528820.703125000,
+    "creationTime" : null,
+    "fileCRC" : -43081338,
+    "fileName" : "almanac_8.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2282976,
+    "fullUnpackSize" : 2312972,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

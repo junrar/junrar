@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392529770.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1930562088,
+    "fileName" : "Usulan Gampong 100 Juta.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 9994,
+    "fullUnpackSize" : 12683,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

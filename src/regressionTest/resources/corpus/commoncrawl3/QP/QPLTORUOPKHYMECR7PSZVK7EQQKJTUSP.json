@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517084725.083476700,
+    "creationTime" : null,
+    "fileCRC" : -1180404502,
+    "fileName" : "Cisza.cdp",
+    "hostOS" : "win32",
+    "fullPackSize" : 21206,
+    "fullUnpackSize" : 80575,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517087031.234105700,
+    "creationTime" : null,
+    "fileCRC" : -1373803133,
+    "fileName" : "DBSRP_TEM2-092.cdp",
+    "hostOS" : "win32",
+    "fullPackSize" : 12750892,
+    "fullUnpackSize" : 12750892,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

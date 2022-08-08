@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401427370.771642000,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "CloudFreq_ann_hr_ascii\\cl_frq_ann_01.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401427370.007240700,
+    "creationTime" : null,
+    "fileCRC" : -1943933337,
+    "fileName" : "CloudFreq_ann_hr_ascii\\cl_frq_ann_01.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1206615,
+    "fullUnpackSize" : 21989407,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

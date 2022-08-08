@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464495662.635842100,
+    "creationTime" : null,
+    "fileCRC" : 1866060730,
+    "fileName" : "10000立方油罐图纸\\10000立方(m3)拱顶油罐装配图、罐体图、盘梯图-1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 750286,
+    "fullUnpackSize" : 822296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464495813.442671100,
+    "creationTime" : null,
+    "fileCRC" : 1891197367,
+    "fileName" : "10000立方油罐图纸\\10000立方(m3)拱顶油罐装配图、罐体图、盘梯图-2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 547678,
+    "fullUnpackSize" : 616378,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

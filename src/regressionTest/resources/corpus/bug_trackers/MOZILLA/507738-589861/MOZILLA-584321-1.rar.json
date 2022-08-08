@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281075295.649414000,
+    "creationTime" : null,
+    "fileCRC" : -367342120,
+    "fileName" : "Bug2.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 663821,
+    "fullUnpackSize" : 663821,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281075295.651367100,
+    "creationTime" : null,
+    "fileCRC" : -1625920802,
+    "fileName" : "Bug2.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 485,
+    "fullUnpackSize" : 788,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

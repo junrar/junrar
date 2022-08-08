@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498132872.031250000,
+    "creationTime" : null,
+    "fileCRC" : 2042056532,
+    "fileName" : "Retour Atlas HD-200s-version original  B100 Off\\Retour Atlas HD-200s-version original  B100 Off.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 169,
+    "fullUnpackSize" : 226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498131328.343750000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Retour Atlas HD-200s-version original  B100 Off",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

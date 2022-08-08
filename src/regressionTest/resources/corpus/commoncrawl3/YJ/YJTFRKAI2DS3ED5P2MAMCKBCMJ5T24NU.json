@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350638067.625568700,
+    "creationTime" : null,
+    "fileCRC" : 1087158081,
+    "fileName" : "mp_descent\\mp_descent.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 34474802,
+    "fullUnpackSize" : 34806505,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

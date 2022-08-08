@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346507359.777864800,
+    "creationTime" : null,
+    "fileCRC" : 2062962739,
+    "fileName" : "Cumbias Cañoneras Vol.77\\01 Acuarela Del Rio.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2598609,
+    "fullUnpackSize" : 2652265,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

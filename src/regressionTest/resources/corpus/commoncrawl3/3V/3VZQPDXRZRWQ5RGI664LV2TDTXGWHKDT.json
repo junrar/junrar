@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1065337269.161000000,
+    "creationTime" : null,
+    "fileCRC" : 1422759514,
+    "fileName" : "dragon-ss485h.DOC",
+    "hostOS" : "win32",
+    "fullPackSize" : 102289,
+    "fullUnpackSize" : 153600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

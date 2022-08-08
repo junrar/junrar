@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1283698800.000000000,
+    "creationTime" : null,
+    "fileCRC" : 755054351,
+    "fileName" : "Toma de datos serie GTS 210_220.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 99585,
+    "fullUnpackSize" : 111886,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

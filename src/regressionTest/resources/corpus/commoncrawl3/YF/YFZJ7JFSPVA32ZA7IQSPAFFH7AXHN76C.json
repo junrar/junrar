@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504799520.544263300,
+    "creationTime" : null,
+    "fileCRC" : -1107191760,
+    "fileName" : "K3Cloud_V7_PT\\PT116278\\K3Cloud_V7.0_Patch.7.0.352.16.kdpkg",
+    "hostOS" : "win32",
+    "fullPackSize" : 254653057,
+    "fullUnpackSize" : 254653057,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

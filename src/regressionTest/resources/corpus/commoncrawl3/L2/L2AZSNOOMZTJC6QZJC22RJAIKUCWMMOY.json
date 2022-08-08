@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422186452.000000000,
+    "creationTime" : null,
+    "fileCRC" : -13320829,
+    "fileName" : "مجلة العلوم الاجتماعية االعدد الخامس..عربية.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4226402,
+    "fullUnpackSize" : 5253861,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

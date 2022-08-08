@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493649587.116340200,
+    "creationTime" : null,
+    "fileCRC" : -1822443431,
+    "fileName" : "2017.World.MXSGP.rd07.Kegums.medium.saf",
+    "hostOS" : "win32",
+    "fullPackSize" : 39829460,
+    "fullUnpackSize" : 78548291,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

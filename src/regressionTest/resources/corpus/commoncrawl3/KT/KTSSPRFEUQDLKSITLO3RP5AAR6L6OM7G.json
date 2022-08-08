@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469153484.062000000,
+    "creationTime" : null,
+    "fileCRC" : 1240714519,
+    "fileName" : "АДМІНПОСЛУГИ ПОДАТКОВОЇ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3630,
+    "fullUnpackSize" : 25600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

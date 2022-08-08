@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445216788.018000000,
+    "creationTime" : null,
+    "fileCRC" : -1526022825,
+    "fileName" : "iulie\\1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 977590,
+    "fullUnpackSize" : 997519,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445217195.751000000,
+    "creationTime" : null,
+    "fileCRC" : 66320914,
+    "fileName" : "iulie\\10-1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1275684,
+    "fullUnpackSize" : 1286990,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

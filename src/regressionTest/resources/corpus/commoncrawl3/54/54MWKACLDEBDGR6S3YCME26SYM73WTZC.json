@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1475465126.459805500,
+    "creationTime" : null,
+    "fileCRC" : -1083707983,
+    "fileName" : "План-график отключений октябрь 2016 Вологдаэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2090175,
+    "fullUnpackSize" : 2586672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

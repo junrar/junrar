@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417704500.520249500,
+    "creationTime" : null,
+    "fileCRC" : -1951683065,
+    "fileName" : "Holodnoe serdce .mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 25791398,
+    "fullUnpackSize" : 25815262,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

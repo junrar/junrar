@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1189052755.687500000,
+    "creationTime" : null,
+    "fileCRC" : -914122762,
+    "fileName" : "red_flage_3.mud",
+    "hostOS" : "win32",
+    "fullPackSize" : 431328,
+    "fullUnpackSize" : 4881945,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1189052471.937500000,
+    "creationTime" : null,
+    "fileCRC" : -1586143776,
+    "fileName" : "uactive.for",
+    "hostOS" : "win32",
+    "fullPackSize" : 368,
+    "fullUnpackSize" : 465,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

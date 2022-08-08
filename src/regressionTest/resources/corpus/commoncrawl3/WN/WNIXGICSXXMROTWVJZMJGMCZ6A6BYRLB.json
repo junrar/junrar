@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403079241.328125000,
+    "creationTime" : null,
+    "fileCRC" : 1587911844,
+    "fileName" : "DRIVER98 ME_2k_xp vista,_win7 8(32&64bit)\\PL2303_Prolific_DriverInstaller_v130.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2124646,
+    "fullUnpackSize" : 3324136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

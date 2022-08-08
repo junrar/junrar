@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388399269.277518400,
+    "creationTime" : null,
+    "fileCRC" : -1891251061,
+    "fileName" : "香辣豆豉蒸排骨.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 177630,
+    "fullUnpackSize" : 184695,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

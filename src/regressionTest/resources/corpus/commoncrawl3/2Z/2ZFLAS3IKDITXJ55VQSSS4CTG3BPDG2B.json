@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1216480296.000000000,
+    "creationTime" : null,
+    "fileCRC" : -449274723,
+    "fileName" : "О приезде Богдана Хмельницкого.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11239,
+    "fullUnpackSize" : 53248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1103041438.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1108239807,
+    "fileName" : "Punisherv2.2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 8248,
+    "fullUnpackSize" : 12076,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

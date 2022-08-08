@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215588515.000000000,
+    "creationTime" : null,
+    "fileCRC" : 541891309,
+    "fileName" : "金融数据处理综合练习题.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 58590,
+    "fullUnpackSize" : 603136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

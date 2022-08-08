@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532417461.140000000,
+    "creationTime" : null,
+    "fileCRC" : -1371214725,
+    "fileName" : "ประกาศราคากลางโครงการก่อสร้างรั้วรอบสระประปา หมู่ที่ 11 - Copy.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17435,
+    "fullUnpackSize" : 51200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

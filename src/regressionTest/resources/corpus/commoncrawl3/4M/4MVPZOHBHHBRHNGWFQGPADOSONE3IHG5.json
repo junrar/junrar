@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1280300323.298721000,
+    "creationTime" : null,
+    "fileCRC" : -1983823738,
+    "fileName" : "BirdRacing_07-28-2010.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3344359,
+    "fullUnpackSize" : 3344359,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

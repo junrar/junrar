@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1126352438.000000000,
+    "creationTime" : null,
+    "fileCRC" : 796538135,
+    "fileName" : "ПростыеЧисла.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 142247,
+    "fullUnpackSize" : 214528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

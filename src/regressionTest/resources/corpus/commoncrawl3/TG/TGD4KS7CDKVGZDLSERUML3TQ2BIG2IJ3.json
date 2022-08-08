@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459260634.398198700,
+    "creationTime" : null,
+    "fileCRC" : 913569850,
+    "fileName" : "ПКт16-2016.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 49998,
+    "fullUnpackSize" : 254464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357639010.516753800,
+    "creationTime" : null,
+    "fileCRC" : -1264753132,
+    "fileName" : "Supernatural - 08x08 - Hunteri Heroici.LOL.English.C.orig.Addic7ed.com.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20680,
+    "fullUnpackSize" : 54569,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357639008.249624200,
+    "creationTime" : null,
+    "fileCRC" : -2077959368,
+    "fileName" : "Supernatural - 08x08 - Hunteri Heroici.480p.WEB-DL.English.HI.C.orig.Addic7ed.com.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 22545,
+    "fullUnpackSize" : 60034,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

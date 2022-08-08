@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369970722.000000000,
+    "creationTime" : null,
+    "fileCRC" : -670189449,
+    "fileName" : "Филиал ОАО 'СО ЕЭС' РДУ Энергосистемы Республики Комиэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4789820,
+    "fullUnpackSize" : 6694046,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

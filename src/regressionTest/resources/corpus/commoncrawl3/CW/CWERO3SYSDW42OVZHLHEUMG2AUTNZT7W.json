@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384446930.354126100,
+    "creationTime" : null,
+    "fileCRC" : -1766077680,
+    "fileName" : "1994 - Necronomicon FM Towns Redbook Audio\\01. Necronomicon.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4810062,
+    "fullUnpackSize" : 4838993,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

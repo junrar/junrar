@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452698350.250588600,
+    "creationTime" : null,
+    "fileCRC" : 646712434,
+    "fileName" : "EE Conversion - Retma Ren Eye Odd.esm",
+    "hostOS" : "win32",
+    "fullPackSize" : 237,
+    "fullUnpackSize" : 843,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452698172.127929100,
+    "creationTime" : null,
+    "fileCRC" : -1792282429,
+    "fileName" : "EE Conversion - Retma Ren Eye Odd.bsa",
+    "hostOS" : "win32",
+    "fullPackSize" : 294238,
+    "fullUnpackSize" : 2098780,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

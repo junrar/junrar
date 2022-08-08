@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221014344.890625000,
+    "creationTime" : null,
+    "fileCRC" : -1389998947,
+    "fileName" : "Картленд Барбара. Гордая принцесса.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 111855,
+    "fullUnpackSize" : 290881,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

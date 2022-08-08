@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347195228.703125000,
+    "creationTime" : null,
+    "fileCRC" : 1828619039,
+    "fileName" : "湖南道县大屠杀纪实.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 108585,
+    "fullUnpackSize" : 115672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

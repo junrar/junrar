@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1198353780.000000000,
+    "creationTime" : null,
+    "fileCRC" : -798627833,
+    "fileName" : "OYOGE.DOC",
+    "hostOS" : "win32",
+    "fullPackSize" : 10293,
+    "fullUnpackSize" : 50176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

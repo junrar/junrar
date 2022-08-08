@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1075183135.794411200,
+    "creationTime" : null,
+    "fileCRC" : -283427675,
+    "fileName" : "openoffice-2.ps",
+    "hostOS" : "win32",
+    "fullPackSize" : 7203972,
+    "fullUnpackSize" : 113912445,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

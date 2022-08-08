@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1189320641.919000000,
+    "creationTime" : null,
+    "fileCRC" : -1914197022,
+    "fileName" : "markes_gabriyel_sto_let_odinochestva.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 330820,
+    "fullUnpackSize" : 1708032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

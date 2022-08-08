@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306487757.158787800,
+    "creationTime" : null,
+    "fileCRC" : -53214537,
+    "fileName" : "mp_deathrun_short_v3\\mp_deathrun_short_v3.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 22275875,
+    "fullUnpackSize" : 22296550,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

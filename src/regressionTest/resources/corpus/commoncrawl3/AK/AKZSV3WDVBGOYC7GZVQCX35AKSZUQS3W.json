@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320284527.937500000,
+    "creationTime" : null,
+    "fileCRC" : -1757472668,
+    "fileName" : "Грин. Золотая цепь.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 308847,
+    "fullUnpackSize" : 1721672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

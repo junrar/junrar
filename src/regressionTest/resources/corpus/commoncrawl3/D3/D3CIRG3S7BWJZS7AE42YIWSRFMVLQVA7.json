@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517478418.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1062240300,
+    "fileName" : "Родительское собрание\\Особенности ГИА 2017_род.собрание.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2012735,
+    "fullUnpackSize" : 2108058,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

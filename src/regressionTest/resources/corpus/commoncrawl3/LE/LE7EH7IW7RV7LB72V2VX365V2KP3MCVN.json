@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355834068.940550000,
+    "creationTime" : null,
+    "fileCRC" : -1554062310,
+    "fileName" : "02-編者的話--目錄-_v7n4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 239118,
+    "fullUnpackSize" : 261192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355218967.184180500,
+    "creationTime" : null,
+    "fileCRC" : 1475062214,
+    "fileName" : "V7N4-1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 986677,
+    "fullUnpackSize" : 1101195,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

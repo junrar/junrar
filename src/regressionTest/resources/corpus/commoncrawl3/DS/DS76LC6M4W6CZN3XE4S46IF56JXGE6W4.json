@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531788779.055971800,
+    "creationTime" : null,
+    "fileCRC" : -569394605,
+    "fileName" : "ИЮЛЬ.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 49637,
+    "fullUnpackSize" : 281600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

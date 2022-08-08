@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1201677412.000000000,
+    "creationTime" : null,
+    "fileCRC" : 146816918,
+    "fileName" : "18-3001-Приложение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3959,
+    "fullUnpackSize" : 25600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1201677446.000000000,
+    "creationTime" : null,
+    "fileCRC" : -532657026,
+    "fileName" : "18-3001.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 38791,
+    "fullUnpackSize" : 61952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

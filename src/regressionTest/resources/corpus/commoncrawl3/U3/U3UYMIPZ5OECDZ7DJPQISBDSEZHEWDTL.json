@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489570348.490377100,
+    "creationTime" : null,
+    "fileCRC" : -890733118,
+    "fileName" : "sample-islamic_management-dlmgroup-fasl01.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10692934,
+    "fullUnpackSize" : 10756276,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

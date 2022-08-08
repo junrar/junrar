@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300804362.758968000,
+    "creationTime" : null,
+    "fileCRC" : -1342292066,
+    "fileName" : "mp_brdo\\mp_brdo.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 34374338,
+    "fullUnpackSize" : 34495646,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

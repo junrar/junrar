@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275361028.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1036613880,
+    "fileName" : "tutorial2010.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 965662,
+    "fullUnpackSize" : 1078782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

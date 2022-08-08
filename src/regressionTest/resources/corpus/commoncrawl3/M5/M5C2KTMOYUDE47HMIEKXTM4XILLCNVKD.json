@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493693805.376550300,
+    "creationTime" : null,
+    "fileCRC" : -103247433,
+    "fileName" : "KIT3018_22.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 628888,
+    "fullUnpackSize" : 3864132,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493694616.437780900,
+    "creationTime" : null,
+    "fileCRC" : -1312730934,
+    "fileName" : "KIT3018_41.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 1366419,
+    "fullUnpackSize" : 2908188,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

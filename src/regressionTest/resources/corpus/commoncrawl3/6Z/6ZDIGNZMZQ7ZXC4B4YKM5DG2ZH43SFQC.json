@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525352970.287285900,
+    "creationTime" : null,
+    "fileCRC" : -2015916286,
+    "fileName" : "Gratallops- DO Priorat.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 27134,
+    "fullUnpackSize" : 121389,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

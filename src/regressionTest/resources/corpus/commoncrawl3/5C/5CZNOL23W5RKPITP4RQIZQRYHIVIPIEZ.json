@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522766924.111520600,
+    "creationTime" : null,
+    "fileCRC" : 276935789,
+    "fileName" : "Badezimmertraum\\03.04.18_22-48-43.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1032793,
+    "fullUnpackSize" : 1032793,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522766940.794474800,
+    "creationTime" : null,
+    "fileCRC" : 382937023,
+    "fileName" : "Badezimmertraum\\03.04.18_22-49-00.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1012251,
+    "fullUnpackSize" : 1012251,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

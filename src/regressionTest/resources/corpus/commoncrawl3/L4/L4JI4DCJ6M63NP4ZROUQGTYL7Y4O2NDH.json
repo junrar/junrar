@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1156905588.000000000,
+    "creationTime" : null,
+    "fileCRC" : -490313131,
+    "fileName" : "V5H\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 34,
+    "fullUnpackSize" : 34,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1213931620.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1913099207,
+    "fileName" : "V5H\\setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1774488,
+    "fullUnpackSize" : 1824720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

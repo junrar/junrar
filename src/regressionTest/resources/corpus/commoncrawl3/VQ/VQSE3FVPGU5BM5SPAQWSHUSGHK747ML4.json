@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460095424.268959900,
+    "creationTime" : null,
+    "fileCRC" : 1517185905,
+    "fileName" : "КЭ-04-16.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 707729,
+    "fullUnpackSize" : 817084,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459391576.290085400,
+    "creationTime" : null,
+    "fileCRC" : 1129372192,
+    "fileName" : "План-график отключений апрель 2016 ВЭ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2433746,
+    "fullUnpackSize" : 2589985,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

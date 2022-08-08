@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390552718.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1217057911,
+    "fileName" : "yeni memur yüklenecek sunumlar\\1 USÖKMEN TBB. Ocak 2014.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 273339,
+    "fullUnpackSize" : 333218,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390973144.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1391377761,
+    "fileName" : "yeni memur yüklenecek sunumlar\\Belediyenin Görevleri (2).pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 3223326,
+    "fullUnpackSize" : 3614686,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

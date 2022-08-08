@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369702555.485811900,
+    "creationTime" : null,
+    "fileCRC" : -2024634263,
+    "fileName" : "DMZ-004_Gommy_MD_msx_English\\DMZ-00-4Gommy_MD_msx_Poster.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 4895239,
+    "fullUnpackSize" : 4895239,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

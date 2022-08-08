@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439539001.344436700,
+    "creationTime" : null,
+    "fileCRC" : -842524328,
+    "fileName" : "黑白雨天PPT模板.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 575900,
+    "fullUnpackSize" : 628920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

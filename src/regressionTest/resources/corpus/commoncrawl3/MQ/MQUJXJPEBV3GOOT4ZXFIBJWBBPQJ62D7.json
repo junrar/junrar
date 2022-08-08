@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447734351.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1179455811,
+    "fileName" : "ข้อมูลการนำเสนอของ ภ.2 (การระดมกวาดล้างอาชญากรรมในแหล่งท่องเที่ยวที่สำคัญในพื้นที่)\\ข้อมูลกล้องวงจรปิด สภ.เมืองพัทยา.kmz",
+    "hostOS" : "win32",
+    "fullPackSize" : 1031875,
+    "fullUnpackSize" : 1218238,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447728971.000000000,
+    "creationTime" : null,
+    "fileCRC" : -529818654,
+    "fileName" : "ข้อมูลการนำเสนอของ ภ.2 (การระดมกวาดล้างอาชญากรรมในแหล่งท่องเที่ยวที่สำคัญในพื้นที่)\\บรรยายสรุปมาตรการดูแลนักท่องเที่ยว.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5613233,
+    "fullUnpackSize" : 6218358,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

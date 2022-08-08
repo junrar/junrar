@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328410335.731657200,
+    "creationTime" : null,
+    "fileCRC" : 317228466,
+    "fileName" : "mp_yo_v1\\mp_yo_v1.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 14979230,
+    "fullUnpackSize" : 15124035,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

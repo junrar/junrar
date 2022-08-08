@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381572940.086556000,
+    "creationTime" : null,
+    "fileCRC" : -131143192,
+    "fileName" : "mp_invjump\\mp_invjump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 27565672,
+    "fullUnpackSize" : 27626481,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

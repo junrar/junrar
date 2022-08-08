@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1142473542.000000000,
+    "creationTime" : null,
+    "fileCRC" : -95162588,
+    "fileName" : "sl-p21_via_winxp\\DV 1394\\data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 2740058,
+    "fullUnpackSize" : 3767402,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

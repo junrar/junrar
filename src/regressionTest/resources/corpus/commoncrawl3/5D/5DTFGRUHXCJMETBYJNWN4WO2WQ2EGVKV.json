@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1284524615.781250000,
+    "creationTime" : null,
+    "fileCRC" : -1381609330,
+    "fileName" : "3-19-2010\\Аннотации 3-19.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 433384,
+    "fullUnpackSize" : 455553,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1284357135.109375000,
+    "creationTime" : null,
+    "fileCRC" : 637565629,
+    "fileName" : "3-19-2010\\Номер 3(19).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 876922,
+    "fullUnpackSize" : 1014463,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

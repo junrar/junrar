@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235461009.359375000,
+    "creationTime" : null,
+    "fileCRC" : -859423114,
+    "fileName" : "小破孩的裤衩爱情08版屏保.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5680108,
+    "fullUnpackSize" : 6391844,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

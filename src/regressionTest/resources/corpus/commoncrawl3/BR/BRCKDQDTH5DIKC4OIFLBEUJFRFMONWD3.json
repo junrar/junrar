@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358136043.578125000,
+    "creationTime" : null,
+    "fileCRC" : -1498267195,
+    "fileName" : "DSCN1144.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 772362,
+    "fullUnpackSize" : 800926,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358136009.859375000,
+    "creationTime" : null,
+    "fileCRC" : -640933614,
+    "fileName" : "DSCN1109.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 680696,
+    "fullUnpackSize" : 706694,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

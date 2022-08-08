@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187680086.000000000,
+    "creationTime" : null,
+    "fileCRC" : -804386771,
+    "fileName" : "Syny_Otevri_oci\\01.Syny - Intro.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 782019,
+    "fullUnpackSize" : 796340,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187785134.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1460999181,
+    "fileName" : "Syny_Otevri_oci\\02.Syny - Časy se mění.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2881077,
+    "fullUnpackSize" : 2903272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528246432.910386400,
+    "creationTime" : null,
+    "fileCRC" : -35908577,
+    "fileName" : "Inst_D1_6_v1007.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2101106,
+    "fullUnpackSize" : 2862358,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

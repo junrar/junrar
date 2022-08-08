@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299484598.464588300,
+    "creationTime" : null,
+    "fileCRC" : 1833821656,
+    "fileName" : "mp_mega\\mp_mega.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 19675167,
+    "fullUnpackSize" : 19894617,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

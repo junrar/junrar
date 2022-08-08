@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441845260.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1163594305,
+    "fileName" : "MFU630_Update_20150910.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3392151,
+    "fullUnpackSize" : 3424282,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

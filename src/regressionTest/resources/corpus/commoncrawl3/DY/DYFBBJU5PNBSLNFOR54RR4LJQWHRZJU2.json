@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376292492.937500000,
+    "creationTime" : null,
+    "fileCRC" : -1977474237,
+    "fileName" : "mobil04022042013.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 138036,
+    "fullUnpackSize" : 144530,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465377411.221634300,
+    "creationTime" : null,
+    "fileCRC" : -926660063,
+    "fileName" : "10 пятница на 10  июня.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2627683,
+    "fullUnpackSize" : 3015565,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

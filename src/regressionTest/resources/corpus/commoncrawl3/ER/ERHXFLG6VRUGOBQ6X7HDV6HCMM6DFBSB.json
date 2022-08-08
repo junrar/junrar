@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1051771538.000000000,
+    "creationTime" : null,
+    "fileCRC" : 939258793,
+    "fileName" : "41-14.TIF",
+    "hostOS" : "win32",
+    "fullPackSize" : 34831,
+    "fullUnpackSize" : 36321,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

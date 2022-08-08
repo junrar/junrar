@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247563274.156250000,
+    "creationTime" : null,
+    "fileCRC" : 2104080000,
+    "fileName" : "oceanic.col",
+    "hostOS" : "win32",
+    "fullPackSize" : 626,
+    "fullUnpackSize" : 1076,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1244609498.796875000,
+    "creationTime" : null,
+    "fileCRC" : -182962540,
+    "fileName" : "oceanic.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1218457,
+    "fullUnpackSize" : 3649504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

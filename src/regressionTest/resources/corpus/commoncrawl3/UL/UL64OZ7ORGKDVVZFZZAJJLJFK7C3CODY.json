@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168147660.625000000,
+    "creationTime" : null,
+    "fileCRC" : -848704172,
+    "fileName" : "fy_schwimmhalle_mst.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 303,
+    "fullUnpackSize" : 393,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168147683.296875000,
+    "creationTime" : null,
+    "fileCRC" : -520204634,
+    "fileName" : "fy_schwimmhalle_mst.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 409987,
+    "fullUnpackSize" : 2264232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

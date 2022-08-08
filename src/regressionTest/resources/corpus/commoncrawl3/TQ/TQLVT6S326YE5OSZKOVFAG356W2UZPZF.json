@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1209533646.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1044952873,
+    "fileName" : "U900XEHD1\\amss_compressed.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 26540730,
+    "fullUnpackSize" : 29118014,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

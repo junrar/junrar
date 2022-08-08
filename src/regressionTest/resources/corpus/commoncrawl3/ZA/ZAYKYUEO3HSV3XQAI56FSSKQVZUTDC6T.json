@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1295061566.453000000,
+    "creationTime" : null,
+    "fileCRC" : -2118286988,
+    "fileName" : "Акройд Питер - Завещание Оскара Уайльда - www.readfree.ru.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 207634,
+    "fullUnpackSize" : 909824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

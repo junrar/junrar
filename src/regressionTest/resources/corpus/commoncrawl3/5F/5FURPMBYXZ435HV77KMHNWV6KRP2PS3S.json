@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413127945.150390000,
+    "creationTime" : null,
+    "fileCRC" : -1911635599,
+    "fileName" : "cherryberry - Rose lips.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 34801,
+    "fullUnpackSize" : 34821,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

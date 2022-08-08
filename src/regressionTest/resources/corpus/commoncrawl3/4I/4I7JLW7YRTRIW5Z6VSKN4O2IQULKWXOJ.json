@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223972246.421875000,
+    "creationTime" : null,
+    "fileCRC" : 2113065015,
+    "fileName" : "Торин Александр. Кризис.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 171053,
+    "fullUnpackSize" : 472897,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

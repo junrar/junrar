@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1313569338.000000000,
+    "creationTime" : null,
+    "fileCRC" : 317975228,
+    "fileName" : "Serious.it.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2098307,
+    "fullUnpackSize" : 2111840,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

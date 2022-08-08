@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468383446.000000000,
+    "creationTime" : null,
+    "fileCRC" : 164524534,
+    "fileName" : "5 dzień prasa\\k pictures 5 dzien animator (1).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2508512,
+    "fullUnpackSize" : 2522530,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527581773.946543900,
+    "creationTime" : null,
+    "fileCRC" : 1734731810,
+    "fileName" : "quyết toán\\NQ 80- P1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4428108,
+    "fullUnpackSize" : 4991598,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

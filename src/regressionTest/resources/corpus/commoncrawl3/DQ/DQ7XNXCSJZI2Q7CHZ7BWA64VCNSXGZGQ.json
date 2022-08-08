@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1030255818.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1268557538,
+    "fileName" : "Melbourne_2001_RL_1.0\\australia2001.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6102375,
+    "fullUnpackSize" : 6149238,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

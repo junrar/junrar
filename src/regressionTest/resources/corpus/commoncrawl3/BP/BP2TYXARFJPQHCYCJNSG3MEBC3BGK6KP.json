@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351908185.937500000,
+    "creationTime" : null,
+    "fileCRC" : -1017721098,
+    "fileName" : "Matematica Completa para Concurso do Banco do Brasil.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1155897,
+    "fullUnpackSize" : 1304317,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

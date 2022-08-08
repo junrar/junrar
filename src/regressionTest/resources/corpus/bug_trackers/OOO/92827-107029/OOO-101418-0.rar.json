@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1240815318.000000000,
+    "creationTime" : null,
+    "fileCRC" : -31023957,
+    "fileName" : "good.odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 5312,
+    "fullUnpackSize" : 7114,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1240912990.000000000,
+    "creationTime" : null,
+    "fileCRC" : -468714948,
+    "fileName" : "bad.odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 5317,
+    "fullUnpackSize" : 7114,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

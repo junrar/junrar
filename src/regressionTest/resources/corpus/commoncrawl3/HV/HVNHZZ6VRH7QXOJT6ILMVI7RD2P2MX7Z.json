@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436251553.265000000,
+    "creationTime" : null,
+    "fileCRC" : -1097662645,
+    "fileName" : "Synaps_BiT2_v20150707_test.ssu",
+    "hostOS" : "win32",
+    "fullPackSize" : 2693626,
+    "fullUnpackSize" : 3407956,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

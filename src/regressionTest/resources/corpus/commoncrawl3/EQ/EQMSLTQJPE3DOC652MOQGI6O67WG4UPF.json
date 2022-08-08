@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231627044.000000000,
+    "creationTime" : null,
+    "fileCRC" : 515704279,
+    "fileName" : "Balashov_Marfa-posadnitsa.66152.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 487180,
+    "fullUnpackSize" : 1864170,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

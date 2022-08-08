@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419174800.000000000,
+    "creationTime" : null,
+    "fileCRC" : -696735730,
+    "fileName" : "Wonderland AU S01E10 PDTV x264-BWB.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 21239,
+    "fullUnpackSize" : 56841,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415108282.544726800,
+    "creationTime" : null,
+    "fileCRC" : -1827587240,
+    "fileName" : "SóLegendas.url",
+    "hostOS" : "win32",
+    "fullPackSize" : 118,
+    "fullUnpackSize" : 118,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

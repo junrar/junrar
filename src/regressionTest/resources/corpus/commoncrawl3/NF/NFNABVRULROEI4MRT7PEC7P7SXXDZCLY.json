@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319093074.915137400,
+    "creationTime" : null,
+    "fileCRC" : -379864760,
+    "fileName" : "P1090499.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 306915,
+    "fullUnpackSize" : 312609,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1287038296.000000000,
+    "creationTime" : null,
+    "fileCRC" : 790422261,
+    "fileName" : "DSCN8876.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 998052,
+    "fullUnpackSize" : 1009937,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

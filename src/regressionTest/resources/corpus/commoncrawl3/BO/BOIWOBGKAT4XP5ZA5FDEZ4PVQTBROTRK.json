@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1176003917.734375000,
+    "creationTime" : null,
+    "fileCRC" : -999822428,
+    "fileName" : "PLUS update 1991.tup",
+    "hostOS" : "win32",
+    "fullPackSize" : 2321797,
+    "fullUnpackSize" : 2321797,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

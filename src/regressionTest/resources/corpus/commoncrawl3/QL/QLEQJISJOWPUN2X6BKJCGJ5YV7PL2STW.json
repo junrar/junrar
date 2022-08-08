@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299764514.432000000,
+    "creationTime" : null,
+    "fileCRC" : 1496499007,
+    "fileName" : "Детали и тонкости естественного подхода в пасечном деле.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 55271,
+    "fullUnpackSize" : 275968,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

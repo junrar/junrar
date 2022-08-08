@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173950543.722210200,
+    "creationTime" : null,
+    "fileCRC" : 1885602714,
+    "fileName" : "EngineeringER.cfg",
+    "hostOS" : "win32",
+    "fullPackSize" : 180,
+    "fullUnpackSize" : 195,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173896336.495304000,
+    "creationTime" : null,
+    "fileCRC" : -1667899018,
+    "fileName" : "EngineeringER.dic",
+    "hostOS" : "win32",
+    "fullPackSize" : 1118363,
+    "fullUnpackSize" : 6035549,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

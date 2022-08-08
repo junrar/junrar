@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349761076.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1778556978,
+    "fileName" : "октябрь\\ВО_Псковэнерго_10_2012.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 100237,
+    "fullUnpackSize" : 134144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348726940.000000000,
+    "creationTime" : null,
+    "fileCRC" : -744721106,
+    "fileName" : "октябрь\\График на октябрь 2012 ДОТУ Архэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1745354,
+    "fullUnpackSize" : 1780455,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505006554.377325000,
+    "creationTime" : null,
+    "fileCRC" : 1989256568,
+    "fileName" : "ab.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 174169,
+    "fullUnpackSize" : 216924,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505022130.457479100,
+    "creationTime" : null,
+    "fileCRC" : 1885192769,
+    "fileName" : "دستورالعمل قابلیت اطمینان.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 279251,
+    "fullUnpackSize" : 293096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

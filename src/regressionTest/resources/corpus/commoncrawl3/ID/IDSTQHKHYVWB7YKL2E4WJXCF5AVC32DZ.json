@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307425116.610295400,
+    "creationTime" : null,
+    "fileCRC" : -141047132,
+    "fileName" : "AT-PowerFlex-4m User.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3315834,
+    "fullUnpackSize" : 5306416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

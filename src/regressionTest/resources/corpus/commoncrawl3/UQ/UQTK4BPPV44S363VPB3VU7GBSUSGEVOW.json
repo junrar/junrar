@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485910440.000000000,
+    "creationTime" : null,
+    "fileCRC" : -514848633,
+    "fileName" : "01022017Dokumentaciq.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3630703,
+    "fullUnpackSize" : 4169252,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

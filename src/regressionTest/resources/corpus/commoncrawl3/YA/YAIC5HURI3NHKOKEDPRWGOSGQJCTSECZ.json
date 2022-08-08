@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359518089.499557000,
+    "creationTime" : null,
+    "fileCRC" : -1734545621,
+    "fileName" : "SCHEDA N. 3.2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 798594,
+    "fullUnpackSize" : 822060,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

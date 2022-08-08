@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494121830.000000000,
+    "creationTime" : null,
+    "fileCRC" : -41077510,
+    "fileName" : "rahmet-pc.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 7805431,
+    "fullUnpackSize" : 17838629,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

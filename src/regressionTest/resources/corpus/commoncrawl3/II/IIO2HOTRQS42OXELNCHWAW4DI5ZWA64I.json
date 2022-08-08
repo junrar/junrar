@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1313913895.828125000,
+    "creationTime" : null,
+    "fileCRC" : 1672366461,
+    "fileName" : "EClea2_0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2712430,
+    "fullUnpackSize" : 2951802,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

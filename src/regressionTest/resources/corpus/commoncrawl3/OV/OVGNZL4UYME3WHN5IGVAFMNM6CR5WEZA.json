@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1471098998.000000000,
+    "creationTime" : null,
+    "fileCRC" : 952468333,
+    "fileName" : "SumatraPDF\\libmupdf.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 1048481,
+    "fullUnpackSize" : 5217280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

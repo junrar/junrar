@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485841195.368894600,
+    "creationTime" : null,
+    "fileCRC" : 2092700632,
+    "fileName" : "برنامه بازدید نظارتی از بیمارستان.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 61197,
+    "fullUnpackSize" : 63182,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

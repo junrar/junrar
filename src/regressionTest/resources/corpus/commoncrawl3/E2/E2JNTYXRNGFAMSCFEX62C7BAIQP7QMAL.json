@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300615221.990011900,
+    "creationTime" : null,
+    "fileCRC" : 2144230010,
+    "fileName" : "mp_dr_ehdtest\\mp_dr_ehdtest.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 19545655,
+    "fullUnpackSize" : 19545655,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

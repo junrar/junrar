@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427206586.756148000,
+    "creationTime" : null,
+    "fileCRC" : -318565856,
+    "fileName" : "Nolan Sims_Skysims229_Retexture.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 4959251,
+    "fullUnpackSize" : 5176098,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

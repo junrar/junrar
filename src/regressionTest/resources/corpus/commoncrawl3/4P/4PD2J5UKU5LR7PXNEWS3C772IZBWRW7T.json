@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376351869.631235600,
+    "creationTime" : null,
+    "fileCRC" : -859289608,
+    "fileName" : "培训班\\2014年培训PPT.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 7481219,
+    "fullUnpackSize" : 8841841,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

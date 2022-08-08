@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498697997.038596400,
+    "creationTime" : null,
+    "fileCRC" : -301600866,
+    "fileName" : "03 Alubond brochure  A2 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3277889,
+    "fullUnpackSize" : 3345159,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

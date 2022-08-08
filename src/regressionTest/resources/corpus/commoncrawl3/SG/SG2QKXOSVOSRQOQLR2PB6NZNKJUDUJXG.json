@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398751090.421750000,
+    "creationTime" : null,
+    "fileCRC" : 1821001957,
+    "fileName" : "Правила внутреннего трудового распорядка.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14063,
+    "fullUnpackSize" : 80896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427538090.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1736698615,
+    "fileName" : "_MG_9928.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 12079392,
+    "fullUnpackSize" : 12212043,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

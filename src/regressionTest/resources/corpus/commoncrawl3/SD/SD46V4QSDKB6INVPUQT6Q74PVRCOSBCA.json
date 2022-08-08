@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1315905424.162314500,
+    "creationTime" : null,
+    "fileCRC" : 1471280326,
+    "fileName" : "mp_rbmerkzv2\\mp_rbmerkzv2.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 20080775,
+    "fullUnpackSize" : 20080775,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

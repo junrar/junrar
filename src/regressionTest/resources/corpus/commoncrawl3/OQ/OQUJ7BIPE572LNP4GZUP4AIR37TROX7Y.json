@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513332966.000000000,
+    "creationTime" : null,
+    "fileCRC" : -68551679,
+    "fileName" : "Preview.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 190803,
+    "fullUnpackSize" : 195814,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513332310.000000000,
+    "creationTime" : null,
+    "fileCRC" : -640350501,
+    "fileName" : "Files\\turismo.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 3139853,
+    "fullUnpackSize" : 8417280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

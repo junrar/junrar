@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1200887764.257506200,
+    "creationTime" : null,
+    "fileCRC" : -1367405129,
+    "fileName" : "permskaia_obl_1963_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599896,
+    "fullUnpackSize" : 52661769,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

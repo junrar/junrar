@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501218654.608459400,
+    "creationTime" : null,
+    "fileCRC" : -17089246,
+    "fileName" : "17181 - PENGUMUMAN JADWAL SKRIPSI.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 90148,
+    "fullUnpackSize" : 100759,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501476996.669490500,
+    "creationTime" : null,
+    "fileCRC" : 1428953747,
+    "fileName" : "17181 - PENDAFTAR SIMITA.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 17180,
+    "fullUnpackSize" : 20701,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

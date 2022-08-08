@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518066717.924512200,
+    "creationTime" : null,
+    "fileCRC" : 566287271,
+    "fileName" : "zayavka_fitm_2018.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 11617,
+    "fullUnpackSize" : 14444,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517806225.406541200,
+    "creationTime" : null,
+    "fileCRC" : -1768516735,
+    "fileName" : "inf_soob_fitm_2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 322805,
+    "fullUnpackSize" : 345287,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

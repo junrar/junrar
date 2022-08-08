@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1238553276.000000000,
+    "creationTime" : null,
+    "fileCRC" : 799551030,
+    "fileName" : "Вешалка 1.mod",
+    "hostOS" : "win32",
+    "fullPackSize" : 11880,
+    "fullUnpackSize" : 963232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303663421.968750000,
+    "creationTime" : null,
+    "fileCRC" : 557665595,
+    "fileName" : "Вешалка 1.gsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 569155,
+    "fullUnpackSize" : 5601263,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

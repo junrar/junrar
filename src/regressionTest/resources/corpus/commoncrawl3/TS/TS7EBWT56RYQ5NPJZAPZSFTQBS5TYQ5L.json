@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369320665.399414000,
+    "creationTime" : null,
+    "fileCRC" : -2035712237,
+    "fileName" : "ecopistasabor11052013.gpx",
+    "hostOS" : "win32",
+    "fullPackSize" : 15906,
+    "fullUnpackSize" : 96344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500871348.578370000,
+    "creationTime" : null,
+    "fileCRC" : -1961945060,
+    "fileName" : "otchet_6mes2017.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 44207,
+    "fullUnpackSize" : 47752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499995769.987027200,
+    "creationTime" : null,
+    "fileCRC" : 1993172636,
+    "fileName" : "Муниципальная программа культура 1 полугодие 2017.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 20774,
+    "fullUnpackSize" : 23604,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1340946686.869481700,
+    "creationTime" : null,
+    "fileCRC" : -1929623951,
+    "fileName" : "Licencia 2050\\Avast License ZeNiX 2012-06-29.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1257508,
+    "fullUnpackSize" : 1345372,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

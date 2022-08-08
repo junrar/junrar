@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441475091.858657800,
+    "creationTime" : null,
+    "fileCRC" : -539966085,
+    "fileName" : "ESP WhoopAss\\tra.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1193335,
+    "fullUnpackSize" : 1247962,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

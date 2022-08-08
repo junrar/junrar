@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289957670.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1161003607,
+    "fileName" : "v_svad_platje.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 10164209,
+    "fullUnpackSize" : 16208712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

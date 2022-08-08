@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414810485.767500000,
+    "creationTime" : null,
+    "fileCRC" : 748960920,
+    "fileName" : "Сканворд 10х20 р 7 Ревун ОТВЕТЫ.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1375,
+    "fullUnpackSize" : 4666,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414804452.937125000,
+    "creationTime" : null,
+    "fileCRC" : 846077096,
+    "fileName" : "Сканворд 10х20 р 7 Ревун.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 855267,
+    "fullUnpackSize" : 861678,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

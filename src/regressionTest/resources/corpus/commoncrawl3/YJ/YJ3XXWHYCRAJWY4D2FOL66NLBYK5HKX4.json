@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354032565.055000000,
+    "creationTime" : null,
+    "fileCRC" : -1325011721,
+    "fileName" : "Щенок в вашем доме Гусев В.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 34128,
+    "fullUnpackSize" : 265216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

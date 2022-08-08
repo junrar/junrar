@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499066316.116321200,
+    "creationTime" : null,
+    "fileCRC" : 300583565,
+    "fileName" : "Перечень мероприятий Новоостанкинская 4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 368157,
+    "fullUnpackSize" : 464920,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499066319.876536200,
+    "creationTime" : null,
+    "fileCRC" : -1687603009,
+    "fileName" : "Сводная ведомость Новоостанкинская 4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 491522,
+    "fullUnpackSize" : 611722,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

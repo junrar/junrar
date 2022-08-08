@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1101725706.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1318736155,
+    "fileName" : "Кат_провизорных_почт_м_Укр_1991-95 гг\\0000001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 510903,
+    "fullUnpackSize" : 612256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1101726064.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1265834756,
+    "fileName" : "Кат_провизорных_почт_м_Укр_1991-95 гг\\0000002.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 992627,
+    "fullUnpackSize" : 1169566,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

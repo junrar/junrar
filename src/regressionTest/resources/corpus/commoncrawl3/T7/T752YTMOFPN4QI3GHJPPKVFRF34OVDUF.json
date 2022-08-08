@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1232952212.468000000,
+    "creationTime" : null,
+    "fileCRC" : 586561664,
+    "fileName" : "vip6_0809_new.pub",
+    "hostOS" : "win32",
+    "fullPackSize" : 858039,
+    "fullUnpackSize" : 1463296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

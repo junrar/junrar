@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425614011.882395700,
+    "creationTime" : null,
+    "fileCRC" : -970804615,
+    "fileName" : "ACRogue-BB (www.Downloadha.com)\\ACRogue-BB\\Setup-1.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 998732217,
+    "fullUnpackSize" : 3537641825,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1211961040.000000000,
+    "creationTime" : null,
+    "fileCRC" : 670043718,
+    "fileName" : "PGNViewer\\Andy.UI.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 3173,
+    "fullUnpackSize" : 7680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285638490.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1492227820,
+    "fileName" : "PGNViewer\\PGNViewer.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 131281,
+    "fullUnpackSize" : 487936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

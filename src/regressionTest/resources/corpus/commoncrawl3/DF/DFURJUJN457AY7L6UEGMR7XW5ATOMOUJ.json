@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448278117.754718700,
+    "creationTime" : null,
+    "fileCRC" : 380604884,
+    "fileName" : "проект-приходи.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 14825,
+    "fullUnpackSize" : 17564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

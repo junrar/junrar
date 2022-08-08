@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1408353839.966797600,
+    "creationTime" : null,
+    "fileCRC" : -1639228363,
+    "fileName" : "Дроздов Иван. ГЕННАДИЙ ШИЧКО И ЕГО МЕТОД.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 209021,
+    "fullUnpackSize" : 777400,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

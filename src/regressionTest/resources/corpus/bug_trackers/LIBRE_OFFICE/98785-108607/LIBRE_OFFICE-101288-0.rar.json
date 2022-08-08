@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470234413.470712900,
+    "creationTime" : null,
+    "fileCRC" : -1917580070,
+    "fileName" : "Untitled 2.odg",
+    "hostOS" : "win32",
+    "fullPackSize" : 7690,
+    "fullUnpackSize" : 10311,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470293598.399019000,
+    "creationTime" : null,
+    "fileCRC" : -90141640,
+    "fileName" : "Figure - 1.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 46637,
+    "fullUnpackSize" : 70396,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

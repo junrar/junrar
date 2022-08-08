@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401101746.554814500,
+    "creationTime" : null,
+    "fileCRC" : -185421765,
+    "fileName" : "coons26.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1378,
+    "fullUnpackSize" : 3173,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401225108.037016900,
+    "creationTime" : null,
+    "fileCRC" : 1797481273,
+    "fileName" : "coons26_1.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 3257,
+    "fullUnpackSize" : 4694,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

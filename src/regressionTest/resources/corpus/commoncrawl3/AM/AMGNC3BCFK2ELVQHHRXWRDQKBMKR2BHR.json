@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307366630.000000000,
+    "creationTime" : null,
+    "fileCRC" : -711217739,
+    "fileName" : "Dmitriev_F_Istoriya_Bryanska_1894.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4499782,
+    "fullUnpackSize" : 4560372,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

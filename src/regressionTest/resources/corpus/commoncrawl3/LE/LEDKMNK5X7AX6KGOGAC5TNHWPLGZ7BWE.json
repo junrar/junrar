@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377744804.028902000,
+    "creationTime" : null,
+    "fileCRC" : -672220086,
+    "fileName" : "Raport de mediu PUG Barcani\\12. rezumat fara caracter tehnic.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1092389,
+    "fullUnpackSize" : 1175626,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

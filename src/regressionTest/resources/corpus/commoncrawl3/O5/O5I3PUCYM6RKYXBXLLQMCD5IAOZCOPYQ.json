@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265697008.000000000,
+    "creationTime" : null,
+    "fileCRC" : -83704125,
+    "fileName" : "Realtek Mac OS X Installer.pkg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5155,
+    "fullUnpackSize" : 5239,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

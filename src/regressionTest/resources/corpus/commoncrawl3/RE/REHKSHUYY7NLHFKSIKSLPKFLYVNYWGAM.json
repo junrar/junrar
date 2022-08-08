@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390269791.593750000,
+    "creationTime" : null,
+    "fileCRC" : 1872477061,
+    "fileName" : "劳斯莱斯.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 566416,
+    "fullUnpackSize" : 599780,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

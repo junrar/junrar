@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447255782.610954800,
+    "creationTime" : null,
+    "fileCRC" : -1913270082,
+    "fileName" : "NEF_Pre.Int_TB_[www.liber.ir].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6536384,
+    "fullUnpackSize" : 7226862,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

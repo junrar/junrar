@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1122095066.000000000,
+    "creationTime" : null,
+    "fileCRC" : -191333600,
+    "fileName" : "nfsmw_trailer_july05.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 13412026,
+    "fullUnpackSize" : 13445702,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

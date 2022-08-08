@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1374117310.640625000,
+    "creationTime" : null,
+    "fileCRC" : -332820739,
+    "fileName" : "stepina_konkyrs_krasota_7kl\\викторина о косметике.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1834116,
+    "fullUnpackSize" : 2263552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

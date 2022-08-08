@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393808593.910959300,
+    "creationTime" : null,
+    "fileCRC" : 1824664944,
+    "fileName" : "март\\График Колэнерго на март 2014г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3016773,
+    "fullUnpackSize" : 4461080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

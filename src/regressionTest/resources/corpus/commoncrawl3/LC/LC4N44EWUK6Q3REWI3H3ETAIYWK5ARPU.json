@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1197527802.000000000,
+    "creationTime" : null,
+    "fileCRC" : -607458908,
+    "fileName" : "A Grammar of the Pali Language.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 432901,
+    "fullUnpackSize" : 510022,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

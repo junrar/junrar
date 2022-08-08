@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505523259.856105500,
+    "creationTime" : null,
+    "fileCRC" : -1879640966,
+    "fileName" : "kz_kzsca_mineblock_ez_Sh00t!ng-St4r_0933.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 7893051,
+    "fullUnpackSize" : 35423892,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

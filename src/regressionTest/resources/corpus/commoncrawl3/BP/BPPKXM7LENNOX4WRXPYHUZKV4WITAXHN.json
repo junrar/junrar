@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495683732.205783100,
+    "creationTime" : null,
+    "fileCRC" : 431364800,
+    "fileName" : "203 2405.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 42531,
+    "fullUnpackSize" : 81408,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495683772.663123800,
+    "creationTime" : null,
+    "fileCRC" : 347873066,
+    "fileName" : "203 2405 - приложение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7530,
+    "fullUnpackSize" : 60416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

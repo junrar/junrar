@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1275656614.000000000,
+    "creationTime" : null,
+    "fileCRC" : -756697212,
+    "fileName" : "TODO2010.PC3",
+    "hostOS" : "win32",
+    "fullPackSize" : 84228,
+    "fullUnpackSize" : 1140552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

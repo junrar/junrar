@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1311299424.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2117689664,
+    "fileName" : "Synap_CSD-300_v1.0.74.abs",
+    "hostOS" : "win32",
+    "fullPackSize" : 831698,
+    "fullUnpackSize" : 2097152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

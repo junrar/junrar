@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447324368.734779600,
+    "creationTime" : null,
+    "fileCRC" : -1635900138,
+    "fileName" : "Extrato_ARP 17-2015_PE 21-2015_GAZIN.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 27586,
+    "fullUnpackSize" : 55619,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447324308.955196400,
+    "creationTime" : null,
+    "fileCRC" : -677320619,
+    "fileName" : "Extrato_ARP 26-2015_PE 21-2015_GAZIN.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 29232,
+    "fullUnpackSize" : 57172,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

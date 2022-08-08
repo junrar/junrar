@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531360040.000000000,
+    "creationTime" : null,
+    "fileCRC" : -129909207,
+    "fileName" : "Do Druku\\Animator6dzienDruk-10.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 22366563,
+    "fullUnpackSize" : 22366563,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

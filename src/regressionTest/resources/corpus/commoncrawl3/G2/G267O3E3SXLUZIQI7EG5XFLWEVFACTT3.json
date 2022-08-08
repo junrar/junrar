@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526635106.272625100,
+    "creationTime" : null,
+    "fileCRC" : -1374310800,
+    "fileName" : "BN Phạm Thúy Hà.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 5580103,
+    "fullUnpackSize" : 26346718,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

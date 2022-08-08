@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418818107.161301000,
+    "creationTime" : null,
+    "fileCRC" : 1587067331,
+    "fileName" : "DC-1215 _01-2015\\DC-1215 012015.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 433121124,
+    "fullUnpackSize" : 712374272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457333040.000000000,
+    "creationTime" : null,
+    "fileCRC" : -31069446,
+    "fileName" : "tavanbakhshi\\a.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 2727681,
+    "fullUnpackSize" : 3576383,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

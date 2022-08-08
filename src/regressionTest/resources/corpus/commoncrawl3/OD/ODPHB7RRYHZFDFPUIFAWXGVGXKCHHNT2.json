@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444139221.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1603663283,
+    "fileName" : "REDLINE_TS1500_Recovery\\romnew.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 7164458,
+    "fullUnpackSize" : 7749632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

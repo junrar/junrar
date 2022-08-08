@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461392673.976344400,
+    "creationTime" : null,
+    "fileCRC" : -1098273452,
+    "fileName" : "MftClipartManager.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 524287894,
+    "fullUnpackSize" : 2253666848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

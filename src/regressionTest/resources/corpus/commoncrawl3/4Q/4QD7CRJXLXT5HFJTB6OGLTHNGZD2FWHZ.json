@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223648047.283579100,
+    "creationTime" : null,
+    "fileCRC" : -556596297,
+    "fileName" : "Supernatural.S04E04.EN.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14161,
+    "fullUnpackSize" : 38907,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

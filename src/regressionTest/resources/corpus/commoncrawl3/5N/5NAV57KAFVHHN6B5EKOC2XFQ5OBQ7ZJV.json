@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481511180.000000000,
+    "creationTime" : null,
+    "fileCRC" : 6563019,
+    "fileName" : "ΜΕΛΕΤΗ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 806473,
+    "fullUnpackSize" : 888587,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481511180.000000000,
+    "creationTime" : null,
+    "fileCRC" : 399136138,
+    "fileName" : "ΤΕΥΔ  Ν  4412.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 270886,
+    "fullUnpackSize" : 285013,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

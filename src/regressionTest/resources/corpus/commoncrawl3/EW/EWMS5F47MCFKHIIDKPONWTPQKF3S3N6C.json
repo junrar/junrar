@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231320548.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1273081771,
+    "fileName" : "300007_declaracion.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 56352,
+    "fullUnpackSize" : 67254,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231320410.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1370569013,
+    "fileName" : "300007_declaracion_1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1357285,
+    "fullUnpackSize" : 1396172,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

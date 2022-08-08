@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251528666.462000000,
+    "creationTime" : null,
+    "fileCRC" : 1790840465,
+    "fileName" : "actDate32.msm",
+    "hostOS" : "win32",
+    "fullPackSize" : 100084,
+    "fullUnpackSize" : 111616,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1251528653.212000000,
+    "creationTime" : null,
+    "fileCRC" : 1652194294,
+    "fileName" : "actDate32.ocx",
+    "hostOS" : "win32",
+    "fullPackSize" : 93790,
+    "fullUnpackSize" : 274432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

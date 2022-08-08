@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1073294088.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1356764706,
+    "fileName" : "Melbourne_2003_RL_3.1b\\australia2003.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6486613,
+    "fullUnpackSize" : 6535791,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329031355.433837100,
+    "creationTime" : null,
+    "fileCRC" : -867790260,
+    "fileName" : "mp_map1\\mp_map1.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 4665016,
+    "fullUnpackSize" : 4706280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

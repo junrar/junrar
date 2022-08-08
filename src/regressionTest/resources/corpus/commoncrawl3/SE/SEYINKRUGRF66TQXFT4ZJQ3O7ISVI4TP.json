@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1146583652.000000000,
+    "creationTime" : null,
+    "fileCRC" : -347344928,
+    "fileName" : "engine.php",
+    "hostOS" : "win32",
+    "fullPackSize" : 2557,
+    "fullUnpackSize" : 10758,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1146583750.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1846219349,
+    "fileName" : "index.php",
+    "hostOS" : "win32",
+    "fullPackSize" : 380,
+    "fullUnpackSize" : 644,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

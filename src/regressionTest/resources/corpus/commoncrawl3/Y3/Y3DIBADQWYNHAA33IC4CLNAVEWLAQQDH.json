@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511343766.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1839671212,
+    "fileName" : "19ـ ﴿إِنَّ اللهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ المُتَطَهِّرِينَ﴾.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4290028,
+    "fullUnpackSize" : 4395363,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

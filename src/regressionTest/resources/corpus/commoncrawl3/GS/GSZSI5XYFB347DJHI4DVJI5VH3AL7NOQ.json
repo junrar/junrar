@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1406078498.201210000,
+    "creationTime" : null,
+    "fileCRC" : 1127827181,
+    "fileName" : "DC-845\\DC-845 .img",
+    "hostOS" : "win32",
+    "fullPackSize" : 388160756,
+    "fullUnpackSize" : 617587004,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

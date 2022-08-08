@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1227868935.187000000,
+    "creationTime" : null,
+    "fileCRC" : -707225988,
+    "fileName" : "أدب الطلب.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 110490,
+    "fullUnpackSize" : 561664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

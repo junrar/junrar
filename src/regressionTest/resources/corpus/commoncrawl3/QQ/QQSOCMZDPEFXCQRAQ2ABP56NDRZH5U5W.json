@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472804822.343750000,
+    "creationTime" : null,
+    "fileCRC" : 1121199284,
+    "fileName" : "园区社保（公积金）电子期刊(2016年第8期).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 7601085,
+    "fullUnpackSize" : 15641729,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

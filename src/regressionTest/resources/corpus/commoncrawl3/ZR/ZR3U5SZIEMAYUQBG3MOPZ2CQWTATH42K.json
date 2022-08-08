@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1282050408.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2146704784,
+    "fileName" : "Starý zákon - Jan Hejčl\\1.díl - knihy starého zákona.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3129392,
+    "fullUnpackSize" : 3377340,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

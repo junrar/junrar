@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511749046.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1221614007,
+    "fileName" : "AVVISO-PUBBLICO-LOGO-pec.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 46539,
+    "fullUnpackSize" : 50988,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511749046.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1484500350,
+    "fileName" : "Aiap_concorso Agrigento.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 434641,
+    "fullUnpackSize" : 500602,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

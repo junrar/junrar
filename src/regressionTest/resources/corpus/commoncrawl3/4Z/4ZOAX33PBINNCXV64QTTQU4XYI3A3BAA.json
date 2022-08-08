@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371048786.967946300,
+    "creationTime" : null,
+    "fileCRC" : 1257549471,
+    "fileName" : "Und_dort_und_sahen_in_Richtung_der_eigenmutierenden_Nasen_nach_Norden.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 70932,
+    "fullUnpackSize" : 73152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

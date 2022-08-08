@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1249371384.000000000,
+    "creationTime" : null,
+    "fileCRC" : 251193228,
+    "fileName" : "Prajs_na_dorownuu_gammu_s_01.07.2008.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 11763,
+    "fullUnpackSize" : 73728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

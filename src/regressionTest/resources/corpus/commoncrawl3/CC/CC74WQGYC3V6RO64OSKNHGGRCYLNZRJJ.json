@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453780011.687658600,
+    "creationTime" : null,
+    "fileCRC" : -2053964562,
+    "fileName" : "LK 2011 Triwulan 2\\GPRA_LKTT_Juni_2011.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5359749,
+    "fullUnpackSize" : 5592443,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

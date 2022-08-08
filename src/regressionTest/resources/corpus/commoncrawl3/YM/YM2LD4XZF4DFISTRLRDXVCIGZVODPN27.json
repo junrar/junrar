@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447999594.196228300,
+    "creationTime" : null,
+    "fileCRC" : -864438688,
+    "fileName" : "yazışma kuralları yönergesi ekleri.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1410876,
+    "fullUnpackSize" : 1645318,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

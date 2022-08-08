@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230692495.789909600,
+    "creationTime" : null,
+    "fileCRC" : 1664364879,
+    "fileName" : "Oix - Resclusanys - Bac - colla cansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 5286,
+    "fullUnpackSize" : 35202,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

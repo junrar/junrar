@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456491888.557607200,
+    "creationTime" : null,
+    "fileCRC" : -1366766288,
+    "fileName" : "ROSERING_AF_S4_LLAMA.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 38973,
+    "fullUnpackSize" : 136546,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409020552.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1891988288,
+    "fileName" : "Проектная документация\\Том4-КР август.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1234511,
+    "fullUnpackSize" : 3238704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

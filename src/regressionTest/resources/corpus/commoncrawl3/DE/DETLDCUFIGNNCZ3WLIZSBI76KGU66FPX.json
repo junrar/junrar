@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1076933236.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1030048923,
+    "fileName" : "Рома.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 24234,
+    "fullUnpackSize" : 134144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

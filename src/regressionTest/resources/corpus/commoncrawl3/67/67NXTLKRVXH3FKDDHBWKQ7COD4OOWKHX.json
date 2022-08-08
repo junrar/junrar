@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489120392.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1617281234,
+    "fileName" : "141_penta-sports-extatus_de_mirage.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 27919454,
+    "fullUnpackSize" : 50038892,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

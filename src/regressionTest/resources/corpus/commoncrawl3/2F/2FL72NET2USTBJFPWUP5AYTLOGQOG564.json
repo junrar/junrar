@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323238684.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1767340686,
+    "fileName" : "mm041.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1104216,
+    "fullUnpackSize" : 1155232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

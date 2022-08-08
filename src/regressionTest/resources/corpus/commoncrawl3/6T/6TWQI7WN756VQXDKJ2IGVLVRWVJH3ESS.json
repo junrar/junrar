@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510537068.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1604922030,
+    "fileName" : "libnsutils.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 47398,
+    "fullUnpackSize" : 117248,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510537096.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1807757574,
+    "fileName" : "PioneerTechPro36.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2251857,
+    "fullUnpackSize" : 7059456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

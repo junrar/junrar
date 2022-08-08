@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346465220.000000000,
+    "creationTime" : null,
+    "fileCRC" : -686522124,
+    "fileName" : "Forca_me_da\\Força me dá se fraco estou (Tudo pra mim tu és).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5254605,
+    "fullUnpackSize" : 5413966,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

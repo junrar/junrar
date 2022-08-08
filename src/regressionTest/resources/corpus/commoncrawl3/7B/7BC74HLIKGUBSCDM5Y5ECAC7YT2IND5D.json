@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452172931.211677900,
+    "creationTime" : null,
+    "fileCRC" : 465602932,
+    "fileName" : "Tankuz TS4 Natali Lipstick.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 396228,
+    "fullUnpackSize" : 470478,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452173114.925185700,
+    "creationTime" : null,
+    "fileCRC" : -1927643973,
+    "fileName" : "Tankuz TS4 Natali Lipstick.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 353661,
+    "fullUnpackSize" : 370474,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

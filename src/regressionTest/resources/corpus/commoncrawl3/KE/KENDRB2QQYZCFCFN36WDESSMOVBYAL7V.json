@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1341921574.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1733627014,
+    "fileName" : "走进父母与爱同行.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 7482726,
+    "fullUnpackSize" : 7565824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

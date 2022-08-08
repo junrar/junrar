@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1252377834.109375000,
+    "creationTime" : null,
+    "fileCRC" : -1411674718,
+    "fileName" : "4-12-2008\\Аннотация 4(12).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 341386,
+    "fullUnpackSize" : 363658,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1234160536.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1238690480,
+    "fileName" : "4-12-2008\\Номер 4 (12).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2202721,
+    "fullUnpackSize" : 2486565,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392349938.037380900,
+    "creationTime" : null,
+    "fileCRC" : 2036244715,
+    "fileName" : "Camera.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 4119412,
+    "fullUnpackSize" : 4992072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

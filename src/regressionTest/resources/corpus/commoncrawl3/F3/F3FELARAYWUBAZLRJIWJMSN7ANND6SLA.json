@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455107137.474960900,
+    "creationTime" : null,
+    "fileCRC" : -576649899,
+    "fileName" : "christ_krym2013.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 326415,
+    "fullUnpackSize" : 941618,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

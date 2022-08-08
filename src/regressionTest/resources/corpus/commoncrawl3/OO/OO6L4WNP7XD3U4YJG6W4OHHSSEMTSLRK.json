@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422458810.236256800,
+    "creationTime" : null,
+    "fileCRC" : -1740112696,
+    "fileName" : "Emblem-of-Ukraine.eps",
+    "hostOS" : "win32",
+    "fullPackSize" : 197231,
+    "fullUnpackSize" : 596382,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

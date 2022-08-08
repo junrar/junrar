@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391232244.000000000,
+    "creationTime" : null,
+    "fileCRC" : -646829039,
+    "fileName" : "сквозная тема новая.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 2559887,
+    "fullUnpackSize" : 12319744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

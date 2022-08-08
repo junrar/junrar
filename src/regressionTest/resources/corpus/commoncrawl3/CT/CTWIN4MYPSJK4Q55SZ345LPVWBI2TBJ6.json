@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418790668.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1912670748,
+    "fileName" : "RKPD 2015\\BAB I. RKPD 2015.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 79360,
+    "fullUnpackSize" : 85391,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418975884.000000000,
+    "creationTime" : null,
+    "fileCRC" : 124287663,
+    "fileName" : "RKPD 2015\\BAB II. RKPD 2015.1.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1225924,
+    "fullUnpackSize" : 1579247,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

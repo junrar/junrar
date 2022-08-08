@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1381744868.694260100,
+    "creationTime" : null,
+    "fileCRC" : 1637048445,
+    "fileName" : "mp_blu3\\mp_blu3.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 35204126,
+    "fullUnpackSize" : 35317118,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

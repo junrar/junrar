@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422479861.904613200,
+    "creationTime" : null,
+    "fileCRC" : -1630460815,
+    "fileName" : "ChickenKiller.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1222123,
+    "fullUnpackSize" : 1225049,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

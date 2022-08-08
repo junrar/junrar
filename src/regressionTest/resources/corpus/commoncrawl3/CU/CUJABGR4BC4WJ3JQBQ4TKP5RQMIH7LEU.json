@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1115357602.423126600,
+    "creationTime" : null,
+    "fileCRC" : 446705553,
+    "fileName" : "Spin Chicken\\spinchicken.dwi",
+    "hostOS" : "win32",
+    "fullPackSize" : 1212,
+    "fullUnpackSize" : 1212,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1115353869.470001600,
+    "creationTime" : null,
+    "fileCRC" : -135338444,
+    "fileName" : "Spin Chicken\\spinchicken.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1747619,
+    "fullUnpackSize" : 1747619,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

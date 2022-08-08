@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1287716298.572000000,
+    "creationTime" : null,
+    "fileCRC" : 1602268014,
+    "fileName" : "Приложение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9245,
+    "fullUnpackSize" : 52736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1288060492.272000000,
+    "creationTime" : null,
+    "fileCRC" : -498880906,
+    "fileName" : "Постановление.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6511,
+    "fullUnpackSize" : 41472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

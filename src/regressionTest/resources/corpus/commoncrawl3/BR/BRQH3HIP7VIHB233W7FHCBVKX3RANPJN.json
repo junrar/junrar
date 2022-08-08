@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298950734.000000000,
+    "creationTime" : null,
+    "fileCRC" : -328549395,
+    "fileName" : "AC009 Antique Copper.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 623343,
+    "fullUnpackSize" : 633491,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298950714.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1866735699,
+    "fileName" : "AC010 Antique Copper.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 832239,
+    "fullUnpackSize" : 843831,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

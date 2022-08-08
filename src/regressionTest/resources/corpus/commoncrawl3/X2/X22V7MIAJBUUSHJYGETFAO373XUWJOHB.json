@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359985038.000000000,
+    "creationTime" : null,
+    "fileCRC" : 362341410,
+    "fileName" : "12_The Stylistics Let s Put It All Together.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3260340,
+    "fullUnpackSize" : 3314961,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

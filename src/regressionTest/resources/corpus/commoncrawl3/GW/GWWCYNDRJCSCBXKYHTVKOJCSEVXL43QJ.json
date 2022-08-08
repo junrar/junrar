@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487223890.011982900,
+    "creationTime" : null,
+    "fileCRC" : -945443319,
+    "fileName" : "cv.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 51696,
+    "fullUnpackSize" : 56766,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486626778.362678600,
+    "creationTime" : null,
+    "fileCRC" : -1712551837,
+    "fileName" : "1 заявление.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 48844,
+    "fullUnpackSize" : 53998,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

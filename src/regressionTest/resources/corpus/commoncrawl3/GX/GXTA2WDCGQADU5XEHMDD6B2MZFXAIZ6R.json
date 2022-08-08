@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1408947264.820000000,
+    "creationTime" : null,
+    "fileCRC" : 427351229,
+    "fileName" : "п­_18_19_27.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 24715,
+    "fullUnpackSize" : 167424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404872465.292887800,
+    "creationTime" : null,
+    "fileCRC" : 377228405,
+    "fileName" : "Архэнерго 2013.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7948,
+    "fullUnpackSize" : 36352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

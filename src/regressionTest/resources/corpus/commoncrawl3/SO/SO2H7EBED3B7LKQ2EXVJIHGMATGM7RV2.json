@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534585632.267183100,
+    "creationTime" : null,
+    "fileCRC" : 1934456567,
+    "fileName" : "Unforgotten.S03E01.720p.HDTV.x264-MTB.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 20532,
+    "fullUnpackSize" : 20615,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532654204.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1172135932,
+    "fileName" : "Unforgotten.S03E01.720p.HDTV.x264-MTB.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20256,
+    "fullUnpackSize" : 52695,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

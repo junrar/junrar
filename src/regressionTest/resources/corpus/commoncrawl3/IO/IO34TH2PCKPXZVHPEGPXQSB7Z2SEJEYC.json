@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1356698036.523694200,
+    "creationTime" : null,
+    "fileCRC" : 1946401746,
+    "fileName" : "Ford Mustang Boss 2013\\cheetah.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1843990,
+    "fullUnpackSize" : 5154816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

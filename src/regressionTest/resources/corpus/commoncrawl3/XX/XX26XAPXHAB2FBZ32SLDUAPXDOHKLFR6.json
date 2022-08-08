@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424249371.079348700,
+    "creationTime" : null,
+    "fileCRC" : -314012905,
+    "fileName" : "план-график  2015 г. к приказу от 18.02.15 №7.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 16042,
+    "fullUnpackSize" : 18819,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424309790.130733400,
+    "creationTime" : null,
+    "fileCRC" : 22879230,
+    "fileName" : "7 от 18.02.15 План-график 2015.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 35857,
+    "fullUnpackSize" : 39545,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

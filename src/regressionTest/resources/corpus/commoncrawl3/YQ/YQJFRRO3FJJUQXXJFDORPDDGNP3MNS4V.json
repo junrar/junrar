@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477637153.745895200,
+    "creationTime" : null,
+    "fileCRC" : 888739812,
+    "fileName" : "iybd2_v125.upg_bd2",
+    "hostOS" : "win32",
+    "fullPackSize" : 53655696,
+    "fullUnpackSize" : 55016676,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

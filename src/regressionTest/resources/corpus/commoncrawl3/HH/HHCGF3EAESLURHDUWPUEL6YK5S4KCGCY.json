@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528686583.043099400,
+    "creationTime" : null,
+    "fileCRC" : 65453308,
+    "fileName" : "Declaratii de interese\\Declaratie de interese Barbos Maria.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 873354,
+    "fullUnpackSize" : 997221,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528686604.632586600,
+    "creationTime" : null,
+    "fileCRC" : 34774944,
+    "fileName" : "Declaratii de interese\\Declaratie de interese Boar Mariana Ramona.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 781342,
+    "fullUnpackSize" : 906235,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

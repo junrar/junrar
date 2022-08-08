@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256116669.921875000,
+    "creationTime" : null,
+    "fileCRC" : -1450325679,
+    "fileName" : "blairwitch.nzb",
+    "hostOS" : "win32",
+    "fullPackSize" : 27756,
+    "fullUnpackSize" : 209773,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

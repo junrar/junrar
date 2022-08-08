@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361755712.046875000,
+    "creationTime" : null,
+    "fileCRC" : 381842067,
+    "fileName" : "Растры-генплана.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8538331,
+    "fullUnpackSize" : 9254400,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

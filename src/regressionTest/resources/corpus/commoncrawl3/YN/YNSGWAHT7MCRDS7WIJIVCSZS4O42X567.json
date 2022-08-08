@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495944494.000000000,
+    "creationTime" : null,
+    "fileCRC" : -849571048,
+    "fileName" : "2017Woody教授课程资料\\B-20 Notice Summit Hangzhou China 3-4 Sept 2016.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 121993,
+    "fullUnpackSize" : 142380,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495944486.000000000,
+    "creationTime" : null,
+    "fileCRC" : 454585526,
+    "fileName" : "2017Woody教授课程资料\\Clark Bio Eng Mandarin June 2015 copy.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 211282,
+    "fullUnpackSize" : 216983,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

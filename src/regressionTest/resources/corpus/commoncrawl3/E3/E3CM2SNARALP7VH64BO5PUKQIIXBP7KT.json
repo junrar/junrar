@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533534529.722475800,
+    "creationTime" : null,
+    "fileCRC" : -2017634335,
+    "fileName" : "EK55246-260M-160AH.STEP",
+    "hostOS" : "win32",
+    "fullPackSize" : 78556,
+    "fullUnpackSize" : 748055,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

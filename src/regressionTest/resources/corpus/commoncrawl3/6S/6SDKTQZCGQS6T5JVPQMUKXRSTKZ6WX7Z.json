@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484963191.284149300,
+    "creationTime" : null,
+    "fileCRC" : -1073753946,
+    "fileName" : "سوابق کیفی اداره پذیرش و مدارک پزشکی.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 152085,
+    "fullUnpackSize" : 155384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

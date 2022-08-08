@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320149694.687000000,
+    "creationTime" : null,
+    "fileCRC" : 696555182,
+    "fileName" : "Советы пчеловодам.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 816645,
+    "fullUnpackSize" : 1685504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

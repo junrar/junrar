@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367164800.000000000,
+    "creationTime" : null,
+    "fileCRC" : -614771142,
+    "fileName" : "CARTA AUTORIZACION INTERESES.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 779316,
+    "fullUnpackSize" : 827199,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367164800.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1173102122,
+    "fileName" : "LIBRANZA.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 832018,
+    "fullUnpackSize" : 882191,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

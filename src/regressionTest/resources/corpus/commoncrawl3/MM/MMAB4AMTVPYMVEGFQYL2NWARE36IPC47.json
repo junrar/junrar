@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273287731.437500000,
+    "creationTime" : null,
+    "fileCRC" : 2042258780,
+    "fileName" : "traviss_boevoe_bratstvo.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 220766,
+    "fullUnpackSize" : 613421,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273333563.203125000,
+    "creationTime" : null,
+    "fileCRC" : 1349442039,
+    "fileName" : "477678.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 39688,
+    "fullUnpackSize" : 40183,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299128123.456214900,
+    "creationTime" : null,
+    "fileCRC" : -195841118,
+    "fileName" : "mp_to_the_sky\\mp_to_the_sky.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 21031659,
+    "fullUnpackSize" : 21056993,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

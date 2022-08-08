@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290677026.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1133900274,
+    "fileName" : "4Christmas.max",
+    "hostOS" : "win32",
+    "fullPackSize" : 4039093,
+    "fullUnpackSize" : 12918784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

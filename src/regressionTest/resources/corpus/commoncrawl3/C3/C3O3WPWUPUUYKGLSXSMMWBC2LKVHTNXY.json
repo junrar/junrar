@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530500562.000000000,
+    "creationTime" : null,
+    "fileCRC" : 745942682,
+    "fileName" : "Новая 2018 редакция ГП Белоевское СП\\МО_Карта_1_Современное_состояние.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 15321158,
+    "fullUnpackSize" : 23491174,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

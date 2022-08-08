@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488942971.000000000,
+    "creationTime" : null,
+    "fileCRC" : -337642398,
+    "fileName" : "Brosur S3 C K 2017_opt.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1709850,
+    "fullUnpackSize" : 3617902,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

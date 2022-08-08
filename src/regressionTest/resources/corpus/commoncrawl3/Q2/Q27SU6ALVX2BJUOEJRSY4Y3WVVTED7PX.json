@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1190203124.468000000,
+    "creationTime" : null,
+    "fileCRC" : -7772202,
+    "fileName" : "Ante Kovacic - U registraturi.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 366274,
+    "fullUnpackSize" : 1751552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358748256.000000000,
+    "creationTime" : null,
+    "fileCRC" : -874453631,
+    "fileName" : "1 kontrol IIp.2012.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 17367,
+    "fullUnpackSize" : 111104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1341812254.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2079930244,
+    "fileName" : "Otchet 1 kontrol IV kv.2012.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 19736,
+    "fullUnpackSize" : 154624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

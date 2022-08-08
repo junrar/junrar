@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527757791.108147300,
+    "creationTime" : null,
+    "fileCRC" : 969629299,
+    "fileName" : "OberteilS4-Mimi-Magic.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 121141,
+    "fullUnpackSize" : 132694,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527646313.577543200,
+    "creationTime" : null,
+    "fileCRC" : -47196302,
+    "fileName" : "OberteilS4-Mimi-Magic.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 1107253,
+    "fullUnpackSize" : 1107253,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

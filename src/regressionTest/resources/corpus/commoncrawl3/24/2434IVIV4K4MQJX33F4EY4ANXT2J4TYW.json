@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426059274.119184100,
+    "creationTime" : null,
+    "fileCRC" : 1995901443,
+    "fileName" : "решение 39-21.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 27006,
+    "fullUnpackSize" : 62976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426059274.114184100,
+    "creationTime" : null,
+    "fileCRC" : -2138190686,
+    "fileName" : "Приложение к решению 39-21 Схема.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3002136,
+    "fullUnpackSize" : 3723333,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

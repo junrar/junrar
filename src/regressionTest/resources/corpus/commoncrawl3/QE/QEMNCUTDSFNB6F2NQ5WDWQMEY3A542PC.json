@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328415572.750000000,
+    "creationTime" : null,
+    "fileCRC" : -354366335,
+    "fileName" : "Кроули Алистер. Книга мудрости или глупости (Книга алеф) - COLONY.BY.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 87947,
+    "fullUnpackSize" : 231530,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

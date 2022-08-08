@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301903932.348301300,
+    "creationTime" : null,
+    "fileCRC" : 2018767431,
+    "fileName" : "mp_freakjump_ext\\mp_freakjump_ext.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 20455710,
+    "fullUnpackSize" : 20461063,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

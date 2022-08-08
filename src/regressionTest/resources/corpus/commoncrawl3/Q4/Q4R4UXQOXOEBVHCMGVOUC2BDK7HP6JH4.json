@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327401524.999300700,
+    "creationTime" : null,
+    "fileCRC" : -180560479,
+    "fileName" : "mp_deathrun_zero\\mp_deathrun_zero.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 25317064,
+    "fullUnpackSize" : 25317064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

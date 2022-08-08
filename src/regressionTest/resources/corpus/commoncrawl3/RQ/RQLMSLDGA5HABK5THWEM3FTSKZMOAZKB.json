@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450115014.011481800,
+    "creationTime" : null,
+    "fileCRC" : 77113601,
+    "fileName" : "Images\\Case 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 917776,
+    "fullUnpackSize" : 1033032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450115014.012481900,
+    "creationTime" : null,
+    "fileCRC" : 121246962,
+    "fileName" : "Images\\Case 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 717341,
+    "fullUnpackSize" : 867347,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

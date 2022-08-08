@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495324986.183611300,
+    "creationTime" : null,
+    "fileCRC" : -1436640333,
+    "fileName" : "Supernatural.S12E22.HDTV.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13294,
+    "fullUnpackSize" : 33517,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495494072.363898400,
+    "creationTime" : null,
+    "fileCRC" : -197891816,
+    "fileName" : "Supernatural.S12E22.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13279,
+    "fullUnpackSize" : 33518,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

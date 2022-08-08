@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472831522.096323200,
+    "creationTime" : null,
+    "fileCRC" : -1534239898,
+    "fileName" : "Kurden_im_Druck.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 19023,
+    "fullUnpackSize" : 20352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

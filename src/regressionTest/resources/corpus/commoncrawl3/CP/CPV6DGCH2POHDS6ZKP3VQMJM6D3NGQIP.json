@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450156155.502829500,
+    "creationTime" : null,
+    "fileCRC" : -824857752,
+    "fileName" : "Karzan Abdullah Muhammed Hawrami.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 17029109,
+    "fullUnpackSize" : 37151739,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477231555.236328100,
+    "creationTime" : null,
+    "fileCRC" : 348024785,
+    "fileName" : "h cl  nr.1 din 2016.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 22251,
+    "fullUnpackSize" : 25079,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477231363.067382800,
+    "creationTime" : null,
+    "fileCRC" : 436260415,
+    "fileName" : "hcl  2 modif pred sedinta.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 21992,
+    "fullUnpackSize" : 24803,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

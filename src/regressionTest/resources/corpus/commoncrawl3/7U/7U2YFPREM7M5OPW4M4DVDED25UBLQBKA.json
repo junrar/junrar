@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1130746248.000000000,
+    "creationTime" : null,
+    "fileCRC" : 306027151,
+    "fileName" : "pue.chm",
+    "hostOS" : "win32",
+    "fullPackSize" : 2125851,
+    "fullUnpackSize" : 2141434,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

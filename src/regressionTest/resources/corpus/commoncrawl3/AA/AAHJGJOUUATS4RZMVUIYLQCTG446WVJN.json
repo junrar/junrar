@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498120849.166759200,
+    "creationTime" : null,
+    "fileCRC" : -112024140,
+    "fileName" : "com.elevenbitstudios.twommobile\\main.521.com.elevenbitstudios.twommobile.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 476791072,
+    "fullUnpackSize" : 488222322,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

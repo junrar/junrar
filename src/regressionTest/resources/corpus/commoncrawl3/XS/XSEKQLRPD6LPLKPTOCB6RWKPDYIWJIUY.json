@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 834731458.000000000,
+    "creationTime" : null,
+    "fileCRC" : -287920844,
+    "fileName" : "Disk25.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 537796,
+    "fullUnpackSize" : 1884160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 834731472.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1875676308,
+    "fileName" : "Disk26.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 1761188,
+    "fullUnpackSize" : 1884160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

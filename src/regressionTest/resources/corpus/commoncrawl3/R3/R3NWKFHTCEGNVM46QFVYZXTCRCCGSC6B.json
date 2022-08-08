@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512396790.998826200,
+    "creationTime" : null,
+    "fileCRC" : 305151008,
+    "fileName" : "2017.12.06体彩专刊\\502期湖南体彩专刊2017.12.06.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2235888,
+    "fullUnpackSize" : 2522602,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

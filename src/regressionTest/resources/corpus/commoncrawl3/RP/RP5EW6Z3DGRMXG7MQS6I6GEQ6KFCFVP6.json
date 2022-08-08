@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403851298.186410900,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "Transpiration_wm2_month_ascii\\tr_wm2_ann.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403851297.521372900,
+    "creationTime" : null,
+    "fileCRC" : -1473854082,
+    "fileName" : "Transpiration_wm2_month_ascii\\tr_wm2_ann.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1360562,
+    "fullUnpackSize" : 21938576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

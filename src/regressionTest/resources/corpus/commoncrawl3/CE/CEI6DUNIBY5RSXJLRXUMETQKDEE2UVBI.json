@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337489194.846032000,
+    "creationTime" : null,
+    "fileCRC" : -797086356,
+    "fileName" : "Supernatural.S07E23.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18414,
+    "fullUnpackSize" : 44008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337489078.270364300,
+    "creationTime" : null,
+    "fileCRC" : 57716820,
+    "fileName" : "Supernatural.S07E23.720p.WEB-DL.DD5.1.H.264-GFY.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18470,
+    "fullUnpackSize" : 44128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215758627.000000000,
+    "creationTime" : null,
+    "fileCRC" : -579636022,
+    "fileName" : "Le_Messager_De_Dieu_Le_modele_a_Suivre.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 363202,
+    "fullUnpackSize" : 546216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

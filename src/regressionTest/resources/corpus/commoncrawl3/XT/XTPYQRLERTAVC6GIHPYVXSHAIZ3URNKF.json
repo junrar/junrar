@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304779714.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1882124409,
+    "fileName" : "mp_rotant\\mp_rotant.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 18797348,
+    "fullUnpackSize" : 18799794,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

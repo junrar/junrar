@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436850849.390625000,
+    "creationTime" : null,
+    "fileCRC" : 1582182843,
+    "fileName" : "Lab-in.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 182974,
+    "fullUnpackSize" : 219051,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

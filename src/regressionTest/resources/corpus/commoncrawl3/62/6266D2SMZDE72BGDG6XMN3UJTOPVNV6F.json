@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399774141.898509900,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "Penman_ET0_in_month_hr_ascii\\pen_in_apr_01.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399774140.837708000,
+    "creationTime" : null,
+    "fileCRC" : -522475780,
+    "fileName" : "Penman_ET0_in_month_hr_ascii\\pen_in_apr_01.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1389851,
+    "fullUnpackSize" : 22719805,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

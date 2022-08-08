@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439866588.309784100,
+    "creationTime" : null,
+    "fileCRC" : 691376534,
+    "fileName" : "ICG-BCTC ban nien 2015 Cty me_signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 566905,
+    "fullUnpackSize" : 643809,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440747610.537309400,
+    "creationTime" : null,
+    "fileCRC" : -1719612937,
+    "fileName" : "ICG-BCTC ban nien 2015 hop nhat_signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1638726,
+    "fullUnpackSize" : 1768317,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

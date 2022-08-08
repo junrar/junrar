@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424868496.000000000,
+    "creationTime" : null,
+    "fileCRC" : 724227165,
+    "fileName" : "com.starshipstudio.thesurvivor\\main.117.com.starshipstudio.thesurvivor.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 149104352,
+    "fullUnpackSize" : 155165816,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

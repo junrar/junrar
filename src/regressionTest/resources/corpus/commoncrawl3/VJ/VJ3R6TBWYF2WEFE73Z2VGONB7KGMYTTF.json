@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482213726.307055100,
+    "creationTime" : null,
+    "fileCRC" : 1656981409,
+    "fileName" : "KAB BOGOR JAN 2017\\GERTAN JABAR Januari 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 270532,
+    "fullUnpackSize" : 400011,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481870758.292065500,
+    "creationTime" : null,
+    "fileCRC" : 1006980089,
+    "fileName" : "KAB BOGOR JAN 2017\\KAB BOGOR JAN 2017 HD.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 7119615,
+    "fullUnpackSize" : 8618657,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

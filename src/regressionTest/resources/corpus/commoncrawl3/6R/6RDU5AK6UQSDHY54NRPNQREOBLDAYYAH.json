@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228360180.203125000,
+    "creationTime" : null,
+    "fileCRC" : 755128706,
+    "fileName" : "phillip island\\LEEME phillip island¡¡¡¡¡¡¡¡.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 578,
+    "fullUnpackSize" : 1636,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228368931.312500000,
+    "creationTime" : null,
+    "fileCRC" : 1828351231,
+    "fileName" : "phillip island\\Melborne2001.wad",
+    "hostOS" : "win32",
+    "fullPackSize" : 10479380,
+    "fullUnpackSize" : 31517416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

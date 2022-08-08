@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407978004.744493700,
+    "creationTime" : null,
+    "fileCRC" : -2115745814,
+    "fileName" : "Новатор №16_август 2014.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 658455,
+    "fullUnpackSize" : 678527,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

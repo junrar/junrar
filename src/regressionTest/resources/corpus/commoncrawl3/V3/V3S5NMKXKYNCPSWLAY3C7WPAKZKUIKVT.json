@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490627302.638970500,
+    "creationTime" : null,
+    "fileCRC" : 2024230146,
+    "fileName" : "config.cfg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4116,
+    "fullUnpackSize" : 11293,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490627228.505108500,
+    "creationTime" : null,
+    "fileCRC" : 68286235,
+    "fileName" : "autoexec.cfg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1208,
+    "fullUnpackSize" : 3015,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

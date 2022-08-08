@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511564999.833892800,
+    "creationTime" : null,
+    "fileCRC" : -471075674,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 423,
+    "fullUnpackSize" : 656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511564999.839908500,
+    "creationTime" : null,
+    "fileCRC" : 1214929334,
+    "fileName" : "JARP.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 149,
+    "fullUnpackSize" : 166,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

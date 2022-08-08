@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312523280.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1972048115,
+    "fileName" : "сообщение о доступе.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4773,
+    "fullUnpackSize" : 36506,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

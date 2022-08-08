@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331048016.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1036297870,
+    "fileName" : "硕科数控科技串口调试步进驱动器工具.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 202457,
+    "fullUnpackSize" : 504832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

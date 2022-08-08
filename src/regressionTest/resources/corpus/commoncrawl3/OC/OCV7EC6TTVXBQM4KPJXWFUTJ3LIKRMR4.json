@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248511360.000000000,
+    "creationTime" : null,
+    "fileCRC" : 810818076,
+    "fileName" : "day2web.TRK",
+    "hostOS" : "win32",
+    "fullPackSize" : 7398,
+    "fullUnpackSize" : 49391,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

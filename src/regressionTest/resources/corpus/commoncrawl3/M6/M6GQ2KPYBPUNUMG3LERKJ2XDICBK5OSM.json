@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404703122.807821900,
+    "creationTime" : null,
+    "fileCRC" : 872781932,
+    "fileName" : "M3_C3_X3_Cr3_Fta_MainSoftware_A2_59.kyng",
+    "hostOS" : "win32",
+    "fullPackSize" : 827133,
+    "fullUnpackSize" : 828544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

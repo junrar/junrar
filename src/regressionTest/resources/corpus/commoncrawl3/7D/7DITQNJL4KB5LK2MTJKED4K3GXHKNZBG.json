@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303262433.234375000,
+    "creationTime" : null,
+    "fileCRC" : 687215943,
+    "fileName" : "ЛесниченкоАЮ Ценологические исследования распределительных сетей центральной части России_ВАК_4 (с замеч).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 296212,
+    "fullUnpackSize" : 890368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

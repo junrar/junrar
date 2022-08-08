@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531380660.000000000,
+    "creationTime" : null,
+    "fileCRC" : -200965401,
+    "fileName" : "Информация по долговым обязательствам на 01.05.18.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 15878,
+    "fullUnpackSize" : 18726,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

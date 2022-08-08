@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1111736848.000000000,
+    "creationTime" : null,
+    "fileCRC" : 441001037,
+    "fileName" : "Конвенция СНГ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 20916,
+    "fullUnpackSize" : 176128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136707484.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1303973744,
+    "fileName" : "Нормативные акты по Семипалатинскому полигону.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 31322,
+    "fullUnpackSize" : 259584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

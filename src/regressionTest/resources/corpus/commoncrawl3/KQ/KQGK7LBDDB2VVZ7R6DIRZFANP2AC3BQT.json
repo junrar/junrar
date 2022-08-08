@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532943941.022788000,
+    "creationTime" : null,
+    "fileCRC" : -1526756824,
+    "fileName" : "Gal.Gun.2.CHS.PATCH.V1.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6929477,
+    "fullUnpackSize" : 7552684,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

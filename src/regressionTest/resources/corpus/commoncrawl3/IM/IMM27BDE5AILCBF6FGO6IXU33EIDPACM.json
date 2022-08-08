@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518858551.718750000,
+    "creationTime" : null,
+    "fileCRC" : -1660463771,
+    "fileName" : "Koor Der Groote Synagoge Amsterdam - Adoshem Moloch.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2247304,
+    "fullUnpackSize" : 2272325,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

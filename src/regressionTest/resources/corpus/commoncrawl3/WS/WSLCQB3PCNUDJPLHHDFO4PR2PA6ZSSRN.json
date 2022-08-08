@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173703605.453125000,
+    "creationTime" : null,
+    "fileCRC" : -1376706411,
+    "fileName" : "Bassegoda Lliurona.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14026,
+    "fullUnpackSize" : 65892,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

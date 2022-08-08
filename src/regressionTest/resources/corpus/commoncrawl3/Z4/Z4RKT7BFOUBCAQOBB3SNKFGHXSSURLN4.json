@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312258033.552038400,
+    "creationTime" : null,
+    "fileCRC" : 807543353,
+    "fileName" : "Каталог КОНВЕКТОРЫ 2004.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 7718699,
+    "fullUnpackSize" : 8213469,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

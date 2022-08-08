@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516778216.857418800,
+    "creationTime" : null,
+    "fileCRC" : -663005546,
+    "fileName" : "Thông báo sinh hoạt lớp tháng 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1495888,
+    "fullUnpackSize" : 1787292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

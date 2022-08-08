@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511099306.370173000,
+    "creationTime" : null,
+    "fileCRC" : 860964508,
+    "fileName" : "fu_extreme_shooting-star_5451.18.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 35239432,
+    "fullUnpackSize" : 203969335,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

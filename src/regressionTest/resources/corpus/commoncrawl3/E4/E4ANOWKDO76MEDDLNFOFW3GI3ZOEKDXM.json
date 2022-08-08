@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513140464.489708700,
+    "creationTime" : null,
+    "fileCRC" : -982051346,
+    "fileName" : "Текст пояснительной записки инновационного проекта.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1978311,
+    "fullUnpackSize" : 2174393,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

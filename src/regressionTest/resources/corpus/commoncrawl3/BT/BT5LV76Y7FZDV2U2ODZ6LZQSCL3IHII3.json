@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435299634.316938100,
+    "creationTime" : null,
+    "fileCRC" : 1451973073,
+    "fileName" : "heat_gan_2.lay6",
+    "hostOS" : "win32",
+    "fullPackSize" : 5336,
+    "fullUnpackSize" : 23202,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1583574047.727635800,
+    "creationTime" : null,
+    "fileCRC" : 926339367,
+    "fileName" : "2208e_privater_darlehensvertrag_1_3.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 571114,
+    "fullUnpackSize" : 1048576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1583835564.242287700,
+    "creationTime" : null,
+    "fileCRC" : 2034432066,
+    "fileName" : "Antonia_privater_Darlehensvertrag_20190901.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 33140,
+    "fullUnpackSize" : 120320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

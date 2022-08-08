@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301211465.886820700,
+    "creationTime" : null,
+    "fileCRC" : 1308171627,
+    "fileName" : "mp_dr_longrun\\mp_dr_longrun.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 19813132,
+    "fullUnpackSize" : 19817024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

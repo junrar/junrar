@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458026856.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1847314338,
+    "fileName" : "SYSTEM\\A811_BOOT.FW",
+    "hostOS" : "win32",
+    "fullPackSize" : 126713,
+    "fullUnpackSize" : 229376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458026826.000000000,
+    "creationTime" : null,
+    "fileCRC" : 225393110,
+    "fileName" : "SYSTEM\\A811_MAIN.FW",
+    "hostOS" : "win32",
+    "fullPackSize" : 1531897,
+    "fullUnpackSize" : 4303360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

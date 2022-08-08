@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180290607.998125000,
+    "creationTime" : null,
+    "fileCRC" : 808538660,
+    "fileName" : "4corners.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 4996911,
+    "fullUnpackSize" : 11831270,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

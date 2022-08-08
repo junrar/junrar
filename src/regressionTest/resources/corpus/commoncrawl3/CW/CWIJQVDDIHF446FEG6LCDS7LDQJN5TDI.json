@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327324247.267497400,
+    "creationTime" : null,
+    "fileCRC" : 399777176,
+    "fileName" : "AH-Logo_ADV_F_XX-XX_51_2K_ST_20120123_DCU_OV\\AH-Logo_ADV_F_DCU-reel-1-jp2k.mxf",
+    "hostOS" : "win32",
+    "fullPackSize" : 296545107,
+    "fullUnpackSize" : 375017579,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

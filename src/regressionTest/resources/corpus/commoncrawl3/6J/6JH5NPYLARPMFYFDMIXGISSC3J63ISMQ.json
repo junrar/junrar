@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519788913.916435400,
+    "creationTime" : null,
+    "fileCRC" : -97155169,
+    "fileName" : "Any Desk\\AnyDesk 3.7.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1787363,
+    "fullUnpackSize" : 1810120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

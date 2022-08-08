@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439557015.017576900,
+    "creationTime" : null,
+    "fileCRC" : 1830285768,
+    "fileName" : "kz_man_climbrace_Sh00t!ng~St4r_0348.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 3126872,
+    "fullUnpackSize" : 15010702,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

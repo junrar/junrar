@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513780842.654760100,
+    "creationTime" : null,
+    "fileCRC" : 1255210276,
+    "fileName" : "HttpTest.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 5438,
+    "fullUnpackSize" : 6261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513930251.501106200,
+    "creationTime" : null,
+    "fileCRC" : -1833678441,
+    "fileName" : "Java.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 16384656,
+    "fullUnpackSize" : 17831892,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

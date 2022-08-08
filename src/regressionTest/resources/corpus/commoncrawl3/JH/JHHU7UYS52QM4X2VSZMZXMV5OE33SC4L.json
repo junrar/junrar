@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1365578338.234375000,
+    "creationTime" : null,
+    "fileCRC" : -1462044515,
+    "fileName" : "Физико-химические свойства окислов.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4304081,
+    "fullUnpackSize" : 4344312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

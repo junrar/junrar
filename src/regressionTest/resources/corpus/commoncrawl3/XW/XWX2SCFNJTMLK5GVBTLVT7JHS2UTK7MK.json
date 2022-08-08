@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364053595.634998900,
+    "creationTime" : null,
+    "fileCRC" : 1442620868,
+    "fileName" : "GRFI Listening Audio [www.liber.ir]\\CD1 [www.liber.ir]\\desktop.ini",
+    "hostOS" : "win32",
+    "fullPackSize" : 64,
+    "fullUnpackSize" : 43,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364206249.998519900,
+    "creationTime" : null,
+    "fileCRC" : 2051231780,
+    "fileName" : "GRFI Listening Audio [www.liber.ir]\\CD1 [www.liber.ir]\\Get Ready for IELTS Listening CD1 1.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1448848,
+    "fullUnpackSize" : 1700842,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

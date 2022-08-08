@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435902518.489389500,
+    "creationTime" : null,
+    "fileCRC" : 660301071,
+    "fileName" : "ИТ-1М(ГМ)\\ИТ-1М0001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1437812,
+    "fullUnpackSize" : 1455478,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

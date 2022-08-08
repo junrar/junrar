@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414862988.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2025801472,
+    "fileName" : "05 Yaghoobi.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 11806007,
+    "fullUnpackSize" : 11893992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

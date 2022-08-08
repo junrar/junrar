@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492597562.811073900,
+    "creationTime" : null,
+    "fileCRC" : 1115842925,
+    "fileName" : "B0418_1047855175785_2.z02",
+    "hostOS" : "win32",
+    "fullPackSize" : 39760765,
+    "fullUnpackSize" : 2040109465,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

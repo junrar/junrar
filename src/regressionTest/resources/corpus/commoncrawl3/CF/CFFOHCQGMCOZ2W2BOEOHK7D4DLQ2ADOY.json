@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395101822.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1943674872,
+    "fileName" : "Cover LPj Musrenbang 2014.pub",
+    "hostOS" : "win32",
+    "fullPackSize" : 413120,
+    "fullUnpackSize" : 522752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

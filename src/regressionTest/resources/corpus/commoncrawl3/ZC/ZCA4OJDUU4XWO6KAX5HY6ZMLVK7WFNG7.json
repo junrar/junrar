@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1446795201.613761700,
+    "creationTime" : null,
+    "fileCRC" : -1574688269,
+    "fileName" : "VinhomesRiverside.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 15706142,
+    "fullUnpackSize" : 19337450,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

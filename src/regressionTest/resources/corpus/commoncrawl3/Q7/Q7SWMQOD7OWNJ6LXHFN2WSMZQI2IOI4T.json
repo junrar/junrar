@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492136186.000000000,
+    "creationTime" : null,
+    "fileCRC" : -394345349,
+    "fileName" : "ПЗЗ Южная часть\\267 - ПЗЗ 42 км Калужского шоссе.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 28000,
+    "fullUnpackSize" : 103424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492136184.000000000,
+    "creationTime" : null,
+    "fileCRC" : -496640472,
+    "fileName" : "ПЗЗ Южная часть\\267 П. - ПЗЗ 42 км Калужского шоссе.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2216027,
+    "fullUnpackSize" : 2269958,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

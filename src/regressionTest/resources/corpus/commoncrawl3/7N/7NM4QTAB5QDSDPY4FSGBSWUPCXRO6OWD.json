@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1208592370.338354000,
+    "creationTime" : null,
+    "fileCRC" : -257108051,
+    "fileName" : "s8io8_basisboard_DIP4_08_0608.brd",
+    "hostOS" : "win32",
+    "fullPackSize" : 8353,
+    "fullUnpackSize" : 31059,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

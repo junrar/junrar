@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377594404.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1029957398,
+    "fileName" : "3REL 409_12_rev 1 - Fund da Cobranca UGRHI 20-21_CBH-AP.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 12653597,
+    "fullUnpackSize" : 14967296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299810774.171000000,
+    "creationTime" : null,
+    "fileCRC" : 1012024654,
+    "fileName" : "Настройка СУ-5Д.Влагомер_СУ-5Д.ПО.2-001_.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 414494,
+    "fullUnpackSize" : 491684,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

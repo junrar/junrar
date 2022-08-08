@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 988646724.000000000,
+    "creationTime" : null,
+    "fileCRC" : 840115020,
+    "fileName" : "_SOSG.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 559,
+    "fullUnpackSize" : 947,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 818268584.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1304583148,
+    "fileName" : "Lemmings 1.msa",
+    "hostOS" : "win32",
+    "fullPackSize" : 757578,
+    "fullUnpackSize" : 819530,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511479262.852049600,
+    "creationTime" : null,
+    "fileCRC" : 1817770681,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 428,
+    "fullUnpackSize" : 658,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511479262.863067500,
+    "creationTime" : null,
+    "fileCRC" : -1159266889,
+    "fileName" : "JA6P.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 168,
+    "fullUnpackSize" : 168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

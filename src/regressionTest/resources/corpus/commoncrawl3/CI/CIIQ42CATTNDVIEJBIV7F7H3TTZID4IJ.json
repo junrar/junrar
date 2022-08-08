@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 966595920.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1533114235,
+    "fileName" : "VASCO ROSSI - Dimentichiamoci questa citta'.kar",
+    "hostOS" : "win32",
+    "fullPackSize" : 23786,
+    "fullUnpackSize" : 64024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

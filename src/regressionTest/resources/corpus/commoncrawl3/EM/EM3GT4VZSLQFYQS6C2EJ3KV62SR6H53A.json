@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152445858.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1670763049,
+    "fileName" : "Circuit-DEMO2.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 111884,
+    "fullUnpackSize" : 15127470,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152441950.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1149371494,
+    "fileName" : "Circuit1.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 877399,
+    "fullUnpackSize" : 4523074,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

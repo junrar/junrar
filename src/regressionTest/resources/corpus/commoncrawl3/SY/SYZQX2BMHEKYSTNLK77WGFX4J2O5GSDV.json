@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360406105.258562500,
+    "creationTime" : null,
+    "fileCRC" : 343255050,
+    "fileName" : "konkur93-Riazi-Soal-[www.konkur.in]\\forum.konkur.in.URL",
+    "hostOS" : "win32",
+    "fullPackSize" : 176,
+    "fullUnpackSize" : 185,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403764770.837542200,
+    "creationTime" : null,
+    "fileCRC" : 351754398,
+    "fileName" : "konkur93-Riazi-Soal-[www.konkur.in]\\konkur93-Riazi-Soal-[www.konkur.in].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1314624,
+    "fullUnpackSize" : 2142753,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

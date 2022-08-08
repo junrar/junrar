@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350013161.327573800,
+    "creationTime" : null,
+    "fileCRC" : 658786666,
+    "fileName" : "CPK计算工具操作说明书.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2029870,
+    "fullUnpackSize" : 2791190,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

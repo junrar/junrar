@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469467274.997176400,
+    "creationTime" : null,
+    "fileCRC" : 128096094,
+    "fileName" : "system\\ddraw.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 2886628,
+    "fullUnpackSize" : 3240448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

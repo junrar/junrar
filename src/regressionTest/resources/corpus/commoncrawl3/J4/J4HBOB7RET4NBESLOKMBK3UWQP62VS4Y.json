@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503231126.965299700,
+    "creationTime" : null,
+    "fileCRC" : -1972568960,
+    "fileName" : "Schema_local.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 190866,
+    "fullUnpackSize" : 2103694,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351513616.705825800,
+    "creationTime" : null,
+    "fileCRC" : 1376475545,
+    "fileName" : "__dp_overast.bme",
+    "hostOS" : "win32",
+    "fullPackSize" : 9395,
+    "fullUnpackSize" : 53167,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

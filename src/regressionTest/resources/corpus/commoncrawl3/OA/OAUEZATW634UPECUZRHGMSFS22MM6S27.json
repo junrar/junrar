@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464660615.688151700,
+    "creationTime" : null,
+    "fileCRC" : 1481767621,
+    "fileName" : "QQ截图20160531101014.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 18450,
+    "fullUnpackSize" : 20875,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410012085.755403900,
+    "creationTime" : null,
+    "fileCRC" : -146786909,
+    "fileName" : "[HorribleSubs] Fairy Tail S2 - 23 [720p].rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 5252,
+    "fullUnpackSize" : 23065,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410012106.324580400,
+    "creationTime" : null,
+    "fileCRC" : -1554981499,
+    "fileName" : "[Zero-Raws] Fairy Tail - 198 (TX 1280x720 x264 AAC).rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 724,
+    "fullUnpackSize" : 23065,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231869993.959755000,
+    "creationTime" : null,
+    "fileCRC" : 1316829670,
+    "fileName" : "MirrorsEdge_v1.01_Patch.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 19456485,
+    "fullUnpackSize" : 19712016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520587675.643554300,
+    "creationTime" : null,
+    "fileCRC" : 424662459,
+    "fileName" : "软件报纸第三十七期-2ok.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5825397,
+    "fullUnpackSize" : 6250649,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

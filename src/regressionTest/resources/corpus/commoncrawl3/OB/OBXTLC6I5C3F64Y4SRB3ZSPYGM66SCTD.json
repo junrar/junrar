@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536422563.687500000,
+    "creationTime" : null,
+    "fileCRC" : 1864948129,
+    "fileName" : "八悠悠武易传1[微端].exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 67479102,
+    "fullUnpackSize" : 69788672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

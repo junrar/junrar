@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362969812.000000000,
+    "creationTime" : null,
+    "fileCRC" : 245053987,
+    "fileName" : "10. Деяния апостолов\\44_Acts\\01.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2137310,
+    "fullUnpackSize" : 2299904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

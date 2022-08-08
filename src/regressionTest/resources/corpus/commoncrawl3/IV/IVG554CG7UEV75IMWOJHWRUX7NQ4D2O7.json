@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265902238.323842400,
+    "creationTime" : null,
+    "fileCRC" : -1542973633,
+    "fileName" : "CD 2\\01 Pista 1.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 338130,
+    "fullUnpackSize" : 344348,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265902242.249066900,
+    "creationTime" : null,
+    "fileCRC" : 1491793034,
+    "fileName" : "CD 2\\02 Pista 2.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 760001,
+    "fullUnpackSize" : 771902,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

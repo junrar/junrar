@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449120803.144409100,
+    "creationTime" : null,
+    "fileCRC" : 263278500,
+    "fileName" : "2014 Информация о зонах деятельности сетевой организации с детализацией 11б_12.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 433676,
+    "fullUnpackSize" : 1204136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

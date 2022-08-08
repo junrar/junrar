@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355037134.798401100,
+    "creationTime" : null,
+    "fileCRC" : -2100698154,
+    "fileName" : "s2v153+19tr.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1310734,
+    "fullUnpackSize" : 1572864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

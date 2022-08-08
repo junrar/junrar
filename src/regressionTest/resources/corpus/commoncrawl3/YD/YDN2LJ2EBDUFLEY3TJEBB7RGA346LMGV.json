@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1475141566.849063400,
+    "creationTime" : null,
+    "fileCRC" : 263981680,
+    "fileName" : "СХЕМА.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 344865,
+    "fullUnpackSize" : 364135,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

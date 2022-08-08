@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481609932.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1827707112,
+    "fileName" : "Volta Redonda\\Relatorio Final CMV VR.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9895845,
+    "fullUnpackSize" : 10568483,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

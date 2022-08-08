@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1375008054.914419700,
+    "creationTime" : null,
+    "fileCRC" : -498048954,
+    "fileName" : "AirMap44Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6019718,
+    "fullUnpackSize" : 6586409,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

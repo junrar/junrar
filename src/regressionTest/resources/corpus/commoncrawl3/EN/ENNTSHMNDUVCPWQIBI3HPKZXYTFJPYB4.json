@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499738005.690058500,
+    "creationTime" : null,
+    "fileCRC" : -919107442,
+    "fileName" : "User Guide SISMONTEPRA v.1.2.2\\User Guide SISMONTEPRA - Admin PA-KPA v1.2.2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2412183,
+    "fullUnpackSize" : 2803907,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318171341.218750000,
+    "creationTime" : null,
+    "fileCRC" : 1753518078,
+    "fileName" : "cobra_cb_X328_en25t80",
+    "hostOS" : "win32",
+    "fullPackSize" : 755837,
+    "fullUnpackSize" : 1048576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

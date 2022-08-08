@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1432885273.829349500,
+    "creationTime" : null,
+    "fileCRC" : -1302638541,
+    "fileName" : "План-график отключений июнь 2015 Вологдаэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5065029,
+    "fullUnpackSize" : 7498546,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

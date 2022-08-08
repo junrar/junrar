@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314867770.093750000,
+    "creationTime" : null,
+    "fileCRC" : -2106927955,
+    "fileName" : "Пособие к СНиП 2.03.11-85.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1081335,
+    "fullUnpackSize" : 1138165,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

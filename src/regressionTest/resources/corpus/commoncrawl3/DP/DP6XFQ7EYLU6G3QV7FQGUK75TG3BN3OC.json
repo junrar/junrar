@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1434422465.831154500,
+    "creationTime" : null,
+    "fileCRC" : -802386094,
+    "fileName" : "5.- Fotografías.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4699512,
+    "fullUnpackSize" : 8318706,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

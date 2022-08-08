@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445216337.985000000,
+    "creationTime" : null,
+    "fileCRC" : -1397251302,
+    "fileName" : "Iunie\\1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 982847,
+    "fullUnpackSize" : 1004428,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445216445.193000000,
+    "creationTime" : null,
+    "fileCRC" : -1579111918,
+    "fileName" : "Iunie\\2.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1023073,
+    "fullUnpackSize" : 1043856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

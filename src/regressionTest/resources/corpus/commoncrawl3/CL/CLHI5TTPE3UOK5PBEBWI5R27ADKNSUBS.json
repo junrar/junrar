@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418213538.671875000,
+    "creationTime" : null,
+    "fileCRC" : 185552248,
+    "fileName" : "9.kur'an-esre-ayrı.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 308793,
+    "fullUnpackSize" : 320512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

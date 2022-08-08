@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447812924.191121400,
+    "creationTime" : null,
+    "fileCRC" : -1278048913,
+    "fileName" : "паспорт дорожной безопасности\\док.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 551467,
+    "fullUnpackSize" : 600226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447813035.680076200,
+    "creationTime" : null,
+    "fileCRC" : 1198713785,
+    "fileName" : "паспорт дорожной безопасности\\док1.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 835051,
+    "fullUnpackSize" : 859102,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

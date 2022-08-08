@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507255474.359375000,
+    "creationTime" : null,
+    "fileCRC" : -423012991,
+    "fileName" : "Технол схема доплата к пенсии.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 73375,
+    "fullUnpackSize" : 77364,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507255459.203125000,
+    "creationTime" : null,
+    "fileCRC" : -1004121879,
+    "fileName" : "Распоряжение тех схема доплата.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 13182,
+    "fullUnpackSize" : 15845,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

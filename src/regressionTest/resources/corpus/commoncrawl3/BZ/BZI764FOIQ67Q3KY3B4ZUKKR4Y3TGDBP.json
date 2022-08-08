@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1220421072.640625000,
+    "creationTime" : null,
+    "fileCRC" : 1395550210,
+    "fileName" : "Стрелкова Ирина Ивановна. Одна лошадиная сила.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 216766,
+    "fullUnpackSize" : 607987,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411362276.968750000,
+    "creationTime" : null,
+    "fileCRC" : -2079124899,
+    "fileName" : "dampezeshki\\سیلابس و سرفصل دامپزشکی\\untitled-0030.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 732264,
+    "fullUnpackSize" : 840452,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411362278.859375000,
+    "creationTime" : null,
+    "fileCRC" : -29206472,
+    "fileName" : "dampezeshki\\سیلابس و سرفصل دامپزشکی\\untitled-0031.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 457425,
+    "fullUnpackSize" : 620137,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1271751766.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1323951244,
+    "fileName" : "M-Mult-client-GUI-09-A-F.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7659169,
+    "fullUnpackSize" : 8232448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

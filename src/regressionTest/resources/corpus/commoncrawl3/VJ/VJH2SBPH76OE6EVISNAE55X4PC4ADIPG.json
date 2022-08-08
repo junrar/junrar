@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505648893.805570500,
+    "creationTime" : null,
+    "fileCRC" : -1453432931,
+    "fileName" : "kt_aztecclimb_shooting-star_0059.68.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 937902,
+    "fullUnpackSize" : 4819379,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

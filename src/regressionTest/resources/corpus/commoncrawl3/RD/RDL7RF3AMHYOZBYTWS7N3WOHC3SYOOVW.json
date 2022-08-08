@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1432988137.438165500,
+    "creationTime" : null,
+    "fileCRC" : -1759017774,
+    "fileName" : "Thief.Complete.Edition-PROPHET.www.Download.ir\\Thief.Complete.Edition.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 1042561240,
+    "fullUnpackSize" : 23803170816,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

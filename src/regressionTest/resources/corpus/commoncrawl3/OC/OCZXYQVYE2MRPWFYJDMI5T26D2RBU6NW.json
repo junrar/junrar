@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 998638872.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1152377035,
+    "fileName" : "Wikter's AXS Dk.drumkit",
+    "hostOS" : "win32",
+    "fullPackSize" : 231936,
+    "fullUnpackSize" : 314033,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

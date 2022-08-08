@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457103008.196593200,
+    "creationTime" : null,
+    "fileCRC" : -1491607908,
+    "fileName" : "LOADSCS.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 5248923,
+    "fullUnpackSize" : 39848360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513244052.343750000,
+    "creationTime" : null,
+    "fileCRC" : -1003441200,
+    "fileName" : "GM800-吃鸡升级程序-20171214.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 328595,
+    "fullUnpackSize" : 329196,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517628387.968000000,
+    "creationTime" : null,
+    "fileCRC" : -437265842,
+    "fileName" : "BM800教程.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2601618,
+    "fullUnpackSize" : 2652672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

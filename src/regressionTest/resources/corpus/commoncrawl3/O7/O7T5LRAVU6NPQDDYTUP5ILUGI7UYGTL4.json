@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1185848590.000000000,
+    "creationTime" : null,
+    "fileCRC" : 703886094,
+    "fileName" : "ГО МРСК за 2006.DOC",
+    "hostOS" : "win32",
+    "fullPackSize" : 8544948,
+    "fullUnpackSize" : 18178560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

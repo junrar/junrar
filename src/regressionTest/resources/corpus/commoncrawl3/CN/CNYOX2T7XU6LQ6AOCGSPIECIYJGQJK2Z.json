@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384495964.000000000,
+    "creationTime" : null,
+    "fileCRC" : 503960608,
+    "fileName" : "0216410001384849071\\NAZIM YILMAZ\\1 ORTAK HÜKÜMLER V.4.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1492086,
+    "fullUnpackSize" : 4479609,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

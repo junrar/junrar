@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1181592938.000000000,
+    "creationTime" : null,
+    "fileCRC" : 235257029,
+    "fileName" : "915920.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 2632,
+    "fullUnpackSize" : 5653,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422706670.774750000,
+    "creationTime" : null,
+    "fileCRC" : 1924641579,
+    "fileName" : "file_id.diz",
+    "hostOS" : "win32",
+    "fullPackSize" : 117,
+    "fullUnpackSize" : 167,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

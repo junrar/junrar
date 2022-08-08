@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533708102.031014700,
+    "creationTime" : null,
+    "fileCRC" : 2077741490,
+    "fileName" : "Avtomat-Na_3_bukvi_s_polovinoy_2018\\01_Eldzhey.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3504448,
+    "fullUnpackSize" : 3519249,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

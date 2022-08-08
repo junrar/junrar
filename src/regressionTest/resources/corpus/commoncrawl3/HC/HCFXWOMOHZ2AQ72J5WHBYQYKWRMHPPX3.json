@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485244596.414432300,
+    "creationTime" : null,
+    "fileCRC" : -89997538,
+    "fileName" : "张绍廉同志2017年全省卫生计生工作会议主报告.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 21520,
+    "fullUnpackSize" : 77824,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

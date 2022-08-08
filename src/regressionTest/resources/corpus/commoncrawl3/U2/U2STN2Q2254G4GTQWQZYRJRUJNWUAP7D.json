@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530584490.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1069567621,
+    "fileName" : "4 Oficialía Mayor.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2633040,
+    "fullUnpackSize" : 3904705,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

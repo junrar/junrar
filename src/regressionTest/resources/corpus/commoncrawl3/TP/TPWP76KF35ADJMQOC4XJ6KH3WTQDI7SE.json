@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1139652782.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1243999079,
+    "fileName" : "Rozzer-Violin Model.vzm",
+    "hostOS" : "win32",
+    "fullPackSize" : 969,
+    "fullUnpackSize" : 12550,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1139667728.000000000,
+    "creationTime" : null,
+    "fileCRC" : -308003676,
+    "fileName" : "Rozzer-Plucked String Model.vzm",
+    "hostOS" : "win32",
+    "fullPackSize" : 803,
+    "fullUnpackSize" : 12111,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

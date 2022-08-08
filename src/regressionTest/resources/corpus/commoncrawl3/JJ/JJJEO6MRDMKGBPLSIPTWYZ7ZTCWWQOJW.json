@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397619964.734375000,
+    "creationTime" : null,
+    "fileCRC" : 455288383,
+    "fileName" : "Отчет 2011.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 287759,
+    "fullUnpackSize" : 481792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

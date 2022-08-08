@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328341952.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1887788932,
+    "fileName" : "part2\\24\\Gardeshgari- ba jeld.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1592637,
+    "fullUnpackSize" : 2434623,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

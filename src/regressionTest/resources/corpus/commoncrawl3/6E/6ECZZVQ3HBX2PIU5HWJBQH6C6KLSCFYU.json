@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1378217063.600813500,
+    "creationTime" : null,
+    "fileCRC" : -143950066,
+    "fileName" : "3-31-2013\\Аннотации.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 546416,
+    "fullUnpackSize" : 578927,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1378183116.237374200,
+    "creationTime" : null,
+    "fileCRC" : 1498631469,
+    "fileName" : "3-31-2013\\Номер 3(31).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 867447,
+    "fullUnpackSize" : 1001740,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

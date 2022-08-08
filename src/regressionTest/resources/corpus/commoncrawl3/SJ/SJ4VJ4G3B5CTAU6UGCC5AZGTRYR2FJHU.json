@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255508369.625000000,
+    "creationTime" : null,
+    "fileCRC" : 919256685,
+    "fileName" : "GalionSDK.chm",
+    "hostOS" : "win32",
+    "fullPackSize" : 12987059,
+    "fullUnpackSize" : 13156570,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

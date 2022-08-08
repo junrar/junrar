@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204606599.986331100,
+    "creationTime" : null,
+    "fileCRC" : 411096966,
+    "fileName" : "Server03_Com_Ref.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 741055,
+    "fullUnpackSize" : 1198543,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

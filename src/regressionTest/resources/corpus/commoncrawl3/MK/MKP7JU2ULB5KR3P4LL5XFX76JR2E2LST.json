@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305790416.109606400,
+    "creationTime" : null,
+    "fileCRC" : -1388857205,
+    "fileName" : "mp_dr_bananaphone_v2\\mp_dr_bananaphone_v2.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 26940451,
+    "fullUnpackSize" : 26940451,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

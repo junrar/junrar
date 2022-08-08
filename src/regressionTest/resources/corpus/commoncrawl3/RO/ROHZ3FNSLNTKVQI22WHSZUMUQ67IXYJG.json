@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491447588.000000000,
+    "creationTime" : null,
+    "fileCRC" : -615258166,
+    "fileName" : "Гос.задание полустационар 2016\\Август 2016\\08 Август  1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 452814,
+    "fullUnpackSize" : 509010,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491447642.000000000,
+    "creationTime" : null,
+    "fileCRC" : 705199143,
+    "fileName" : "Гос.задание полустационар 2016\\Август 2016\\08 Август 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 630931,
+    "fullUnpackSize" : 691579,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

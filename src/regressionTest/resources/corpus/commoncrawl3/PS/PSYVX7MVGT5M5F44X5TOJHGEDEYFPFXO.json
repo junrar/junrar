@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507255430.062500000,
+    "creationTime" : null,
+    "fileCRC" : 830960364,
+    "fileName" : "Технологическая схема предоставление информации о деятельности ОМСУ.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 45154,
+    "fullUnpackSize" : 50226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507255410.343750000,
+    "creationTime" : null,
+    "fileCRC" : -1389102853,
+    "fileName" : "Распоряжение тех схема предоставл информ.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 13054,
+    "fullUnpackSize" : 15714,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

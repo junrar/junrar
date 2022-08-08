@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525364752.641903200,
+    "creationTime" : null,
+    "fileCRC" : 5965608,
+    "fileName" : "Game Night (2018) - FORZADO.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1758,
+    "fullUnpackSize" : 3449,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525364698.597732200,
+    "creationTime" : null,
+    "fileCRC" : 533046484,
+    "fileName" : "Game Night (2018).srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 52179,
+    "fullUnpackSize" : 142325,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

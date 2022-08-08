@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487387527.295842700,
+    "creationTime" : null,
+    "fileCRC" : -848587237,
+    "fileName" : "Mitgliedsantrag.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 179559,
+    "fullUnpackSize" : 187683,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

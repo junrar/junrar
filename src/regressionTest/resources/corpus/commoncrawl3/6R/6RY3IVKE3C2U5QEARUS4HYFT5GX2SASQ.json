@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519104888.260859400,
+    "creationTime" : null,
+    "fileCRC" : 152274451,
+    "fileName" : "sx2018rs08tampa.highdecalsmediumobjects.saf",
+    "hostOS" : "win32",
+    "fullPackSize" : 202454400,
+    "fullUnpackSize" : 214590882,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

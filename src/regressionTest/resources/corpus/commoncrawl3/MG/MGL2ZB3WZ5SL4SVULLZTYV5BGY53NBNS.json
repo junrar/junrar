@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1171269601.234375000,
+    "creationTime" : null,
+    "fileCRC" : 1700873186,
+    "fileName" : "GameCamSetup14.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 167008,
+    "fullUnpackSize" : 336229,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1216640358.437500000,
+    "creationTime" : null,
+    "fileCRC" : -1023222963,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 663,
+    "fullUnpackSize" : 1018,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

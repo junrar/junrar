@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454036456.944227800,
+    "creationTime" : null,
+    "fileCRC" : 106724117,
+    "fileName" : "Read Me !.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 126,
+    "fullUnpackSize" : 135,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459408132.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1576201424,
+    "fileName" : "com.wb.goog.legojurassicworld\\main.1043.com.wb.goog.legojurassicworld.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 1028278267,
+    "fullUnpackSize" : 1111347837,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

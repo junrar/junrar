@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507544330.000000000,
+    "creationTime" : null,
+    "fileCRC" : 679016748,
+    "fileName" : "Аннотация рабочей программы учителя-логопеда подготовительной к школе группы.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 224346,
+    "fullUnpackSize" : 233964,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

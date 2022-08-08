@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470375951.401250000,
+    "creationTime" : null,
+    "fileCRC" : -202413618,
+    "fileName" : "info2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 816066,
+    "fullUnpackSize" : 848014,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470375950.682500000,
+    "creationTime" : null,
+    "fileCRC" : 1756400316,
+    "fileName" : "zapowed.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1033677,
+    "fullUnpackSize" : 1052116,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

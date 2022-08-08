@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363755633.217000000,
+    "creationTime" : null,
+    "fileCRC" : -539436233,
+    "fileName" : "FE-100Q.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6615452,
+    "fullUnpackSize" : 12481536,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

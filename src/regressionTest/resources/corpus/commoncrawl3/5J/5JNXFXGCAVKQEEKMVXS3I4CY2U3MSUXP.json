@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476582576.506839100,
+    "creationTime" : null,
+    "fileCRC" : 1210217999,
+    "fileName" : "Обложка-1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1449358,
+    "fullUnpackSize" : 1846351,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

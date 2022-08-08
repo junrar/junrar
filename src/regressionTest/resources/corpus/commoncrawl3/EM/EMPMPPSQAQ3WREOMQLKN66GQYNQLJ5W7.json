@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522214987.844000000,
+    "creationTime" : null,
+    "fileCRC" : -283574076,
+    "fileName" : "решение 367, Устав.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 24178,
+    "fullUnpackSize" : 69120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

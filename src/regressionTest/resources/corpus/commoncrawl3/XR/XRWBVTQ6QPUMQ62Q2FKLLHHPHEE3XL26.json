@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362969846.000000000,
+    "creationTime" : null,
+    "fileCRC" : 563455695,
+    "fileName" : "1. Бытие\\01_Genesis\\01.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5724433,
+    "fullUnpackSize" : 5798392,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1169163090.365750000,
+    "creationTime" : null,
+    "fileCRC" : -978617338,
+    "fileName" : "FXR_test1.eng",
+    "hostOS" : "win32",
+    "fullPackSize" : 203068,
+    "fullUnpackSize" : 386820,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1280169212.234000000,
+    "creationTime" : null,
+    "fileCRC" : -1940193288,
+    "fileName" : "الدرس السادس  من دورة إعداد الجداول المدرسية.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2088534,
+    "fullUnpackSize" : 2837504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

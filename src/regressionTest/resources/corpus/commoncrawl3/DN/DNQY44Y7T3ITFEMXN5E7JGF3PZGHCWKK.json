@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358424465.484375000,
+    "creationTime" : null,
+    "fileCRC" : -1420898490,
+    "fileName" : "English Way DVD 04 [www.liber.ir]\\Audio\\01 Faixa 1.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 770176,
+    "fullUnpackSize" : 812626,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358397269.593750000,
+    "creationTime" : null,
+    "fileCRC" : 939144966,
+    "fileName" : "English Way DVD 04 [www.liber.ir]\\Audio\\02 Faixa 2.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2834240,
+    "fullUnpackSize" : 3013552,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

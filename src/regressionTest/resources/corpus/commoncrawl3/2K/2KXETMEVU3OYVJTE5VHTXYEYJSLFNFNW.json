@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291354796.493000000,
+    "creationTime" : null,
+    "fileCRC" : 1507320035,
+    "fileName" : "oni_voevali.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 65704,
+    "fullUnpackSize" : 441856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

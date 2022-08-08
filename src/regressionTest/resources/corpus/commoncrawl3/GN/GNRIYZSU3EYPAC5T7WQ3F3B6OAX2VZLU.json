@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304851548.015242300,
+    "creationTime" : null,
+    "fileCRC" : -638538897,
+    "fileName" : "mp_future\\mp_future.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 24768417,
+    "fullUnpackSize" : 24768417,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404121610.065201300,
+    "creationTime" : null,
+    "fileCRC" : 453493136,
+    "fileName" : "Годовой отчет МРСК С-З за 2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3877925,
+    "fullUnpackSize" : 6700362,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

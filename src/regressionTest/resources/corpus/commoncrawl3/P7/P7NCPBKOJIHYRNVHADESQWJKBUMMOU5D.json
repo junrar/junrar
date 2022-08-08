@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272559723.453125000,
+    "creationTime" : null,
+    "fileCRC" : 235974650,
+    "fileName" : "LianaSims3_Swim_300410.sims3pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 893596,
+    "fullUnpackSize" : 1157832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

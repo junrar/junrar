@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458093959.087830300,
+    "creationTime" : null,
+    "fileCRC" : 1191395960,
+    "fileName" : "інтерактивні завд на уроках укр мови.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 16511,
+    "fullUnpackSize" : 64512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

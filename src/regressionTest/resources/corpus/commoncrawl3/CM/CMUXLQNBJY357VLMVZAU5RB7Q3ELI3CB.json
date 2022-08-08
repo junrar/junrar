@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370331832.084098100,
+    "creationTime" : null,
+    "fileCRC" : -429361496,
+    "fileName" : "Babushkiny sovety.flv",
+    "hostOS" : "win32",
+    "fullPackSize" : 11815175,
+    "fullUnpackSize" : 13009286,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

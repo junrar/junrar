@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350124376.170852900,
+    "creationTime" : null,
+    "fileCRC" : 800800200,
+    "fileName" : "Supernatural.S08E02.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18092,
+    "fullUnpackSize" : 44565,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350047494.442348200,
+    "creationTime" : null,
+    "fileCRC" : -490207995,
+    "fileName" : "Supernatural - 08x02 - What's Up, Tiger Mommy-.LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18369,
+    "fullUnpackSize" : 46221,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

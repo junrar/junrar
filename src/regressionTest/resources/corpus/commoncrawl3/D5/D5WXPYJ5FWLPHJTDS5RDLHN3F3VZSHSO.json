@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1295155724.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1966378629,
+    "fileName" : "Yahosein-Nahj-Mobile\\1\\MawsoahNahj\\s\\0\\1\\snd1.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 1626253,
+    "fullUnpackSize" : 1756394,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

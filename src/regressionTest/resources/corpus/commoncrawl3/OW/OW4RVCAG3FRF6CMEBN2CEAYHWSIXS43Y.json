@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358310677.644472700,
+    "creationTime" : null,
+    "fileCRC" : -717018352,
+    "fileName" : "Каталог. Бумажные денежные знаки России. Государственные выпуски с  1769 года..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 142090070,
+    "fullUnpackSize" : 144013674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

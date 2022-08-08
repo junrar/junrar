@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1127308968.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1014481721,
+    "fileName" : "cardhalia\\cardhalia_v10.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 37353884,
+    "fullUnpackSize" : 37677897,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

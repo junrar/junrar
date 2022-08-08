@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1043457968.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1519846810,
+    "fileName" : "Nurburgring_2001_RL_1.2\\europe2001.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5795155,
+    "fullUnpackSize" : 5838317,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

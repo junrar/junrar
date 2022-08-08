@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1108956437.199625000,
+    "creationTime" : null,
+    "fileCRC" : -135972993,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 848,
+    "fullUnpackSize" : 1589,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1108959601.449625000,
+    "creationTime" : null,
+    "fileCRC" : -480182406,
+    "fileName" : "mdldecompiler.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 59593,
+    "fullUnpackSize" : 172032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

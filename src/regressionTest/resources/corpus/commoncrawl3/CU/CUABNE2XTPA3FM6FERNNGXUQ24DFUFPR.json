@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395096564.000000000,
+    "creationTime" : null,
+    "fileCRC" : -850847534,
+    "fileName" : "Agenda Musrenbang BB.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 50095,
+    "fullUnpackSize" : 71168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

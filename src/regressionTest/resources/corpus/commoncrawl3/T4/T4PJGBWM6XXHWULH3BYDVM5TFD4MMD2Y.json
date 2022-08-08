@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1023242948.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1355500513,
+    "fileName" : "XLead 80's Tones.drumkit",
+    "hostOS" : "win32",
+    "fullPackSize" : 736978,
+    "fullUnpackSize" : 1453377,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1332206757.482294500,
+    "creationTime" : null,
+    "fileCRC" : 1398849868,
+    "fileName" : "FRZ031-Baran-Marik-Merci-Ost\\01 Frank & Nico.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6793807,
+    "fullUnpackSize" : 7710561,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

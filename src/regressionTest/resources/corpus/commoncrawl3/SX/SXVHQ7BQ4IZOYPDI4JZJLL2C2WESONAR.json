@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511380469.117202000,
+    "creationTime" : null,
+    "fileCRC" : -415002852,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 438,
+    "fullUnpackSize" : 670,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511380469.144795000,
+    "creationTime" : null,
+    "fileCRC" : -2087006375,
+    "fileName" : "JBUE.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 210,
+    "fullUnpackSize" : 210,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

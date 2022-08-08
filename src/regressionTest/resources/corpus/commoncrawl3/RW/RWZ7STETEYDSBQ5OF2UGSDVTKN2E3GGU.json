@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535734861.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2028504221,
+    "fileName" : "Transformers - Unicron 004-002.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1207449,
+    "fullUnpackSize" : 1233907,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404101528.447408800,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "Priestley_ET0_wm2_ann_hr_ascii\\pr0wm2_ann_01.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404101527.745368700,
+    "creationTime" : null,
+    "fileCRC" : 406795364,
+    "fileName" : "Priestley_ET0_wm2_ann_hr_ascii\\pr0wm2_ann_01.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1327814,
+    "fullUnpackSize" : 21916040,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

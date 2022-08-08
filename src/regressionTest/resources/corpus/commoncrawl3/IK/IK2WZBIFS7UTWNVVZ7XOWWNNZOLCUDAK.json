@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351395143.696356600,
+    "creationTime" : null,
+    "fileCRC" : -2119239186,
+    "fileName" : "Lineage T1\\kamael.part01.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 733375336,
+    "fullUnpackSize" : 734003200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

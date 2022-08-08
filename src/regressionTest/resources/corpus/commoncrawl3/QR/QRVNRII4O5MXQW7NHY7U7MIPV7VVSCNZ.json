@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536239937.769225900,
+    "creationTime" : null,
+    "fileCRC" : -1527163579,
+    "fileName" : "[RS] JAKQ 02.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 11332,
+    "fullUnpackSize" : 44963,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

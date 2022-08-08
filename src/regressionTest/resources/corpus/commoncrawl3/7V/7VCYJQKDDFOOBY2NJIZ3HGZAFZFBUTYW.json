@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430788070.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1883197737,
+    "fileName" : "convert meli 2.xlsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 1631292,
+    "fullUnpackSize" : 7089361,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

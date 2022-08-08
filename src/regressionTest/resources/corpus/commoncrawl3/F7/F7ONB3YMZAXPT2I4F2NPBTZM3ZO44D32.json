@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1212505412.218750000,
+    "creationTime" : null,
+    "fileCRC" : -1398228112,
+    "fileName" : "FR 2.0 NEC 2007.tup",
+    "hostOS" : "win32",
+    "fullPackSize" : 1879266,
+    "fullUnpackSize" : 1879266,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

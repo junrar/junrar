@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304045165.453064800,
+    "creationTime" : null,
+    "fileCRC" : -127675575,
+    "fileName" : "mp_oldschool\\mp_oldschool.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 19137357,
+    "fullUnpackSize" : 19138930,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

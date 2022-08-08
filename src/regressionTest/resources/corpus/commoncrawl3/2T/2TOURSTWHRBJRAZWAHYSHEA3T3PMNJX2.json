@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440748672.000000000,
+    "creationTime" : null,
+    "fileCRC" : 591304101,
+    "fileName" : "insan ve çevre sorunları ders notu.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 272392,
+    "fullUnpackSize" : 331776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

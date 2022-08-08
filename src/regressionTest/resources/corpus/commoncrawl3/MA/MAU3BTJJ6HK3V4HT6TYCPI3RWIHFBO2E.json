@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405159904.000000000,
+    "creationTime" : null,
+    "fileCRC" : -625195923,
+    "fileName" : "ICCFD8-2014-0106-fullpaper.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1321853,
+    "fullUnpackSize" : 1500433,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

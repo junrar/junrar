@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225786036.828125000,
+    "creationTime" : null,
+    "fileCRC" : 533414928,
+    "fileName" : "Рэнкин Роберт. Танцы с саквояжем Вуду.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 139510,
+    "fullUnpackSize" : 436930,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

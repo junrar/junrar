@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414318948.779823100,
+    "creationTime" : null,
+    "fileCRC" : -308391747,
+    "fileName" : "arefi-bazhosseinohavayemoharam.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1283617,
+    "fullUnpackSize" : 1327438,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

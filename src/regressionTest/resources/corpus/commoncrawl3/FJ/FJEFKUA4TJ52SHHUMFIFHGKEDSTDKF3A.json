@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509517483.565215400,
+    "creationTime" : null,
+    "fileCRC" : -1538622376,
+    "fileName" : "JATE.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 76,
+    "fullUnpackSize" : 76,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511116255.531535600,
+    "creationTime" : null,
+    "fileCRC" : -2128132942,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 439,
+    "fullUnpackSize" : 661,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

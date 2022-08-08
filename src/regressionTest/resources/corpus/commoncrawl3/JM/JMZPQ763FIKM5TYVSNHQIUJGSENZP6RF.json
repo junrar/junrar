@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486632636.864530400,
+    "creationTime" : null,
+    "fileCRC" : 185856445,
+    "fileName" : "Сводный отчет об ОРВ по 251-пп.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 59585,
+    "fullUnpackSize" : 63546,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486630997.079082200,
+    "creationTime" : null,
+    "fileCRC" : -303873994,
+    "fileName" : "О внесении изменений в 251-пп.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 17382,
+    "fullUnpackSize" : 144257,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

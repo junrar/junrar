@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509066779.140682600,
+    "creationTime" : null,
+    "fileCRC" : 1421266182,
+    "fileName" : "RKT 2018.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 33218,
+    "fullUnpackSize" : 37503,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509068395.021091100,
+    "creationTime" : null,
+    "fileCRC" : -868669074,
+    "fileName" : "Peraturan kepala SKPD tentang RKT 2018.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 137168,
+    "fullUnpackSize" : 140442,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

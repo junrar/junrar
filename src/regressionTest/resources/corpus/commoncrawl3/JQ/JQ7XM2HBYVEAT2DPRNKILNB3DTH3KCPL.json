@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1124179548.000000000,
+    "creationTime" : null,
+    "fileCRC" : 42310633,
+    "fileName" : "VB6IDEMouseWheelAddin.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 9355,
+    "fullUnpackSize" : 36864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1373082813.120718400,
+    "creationTime" : null,
+    "fileCRC" : 1808624975,
+    "fileName" : "mousefixvb6.bat",
+    "hostOS" : "win32",
+    "fullPackSize" : 55,
+    "fullUnpackSize" : 55,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

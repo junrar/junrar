@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498865762.877677000,
+    "creationTime" : null,
+    "fileCRC" : 473801917,
+    "fileName" : "فيزيك\\چگونه دماي تقريبي سيم تنگستن لامپ روشن را بدست آوريم.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 316656,
+    "fullUnpackSize" : 330271,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498865762.877677000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "فيزيك",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

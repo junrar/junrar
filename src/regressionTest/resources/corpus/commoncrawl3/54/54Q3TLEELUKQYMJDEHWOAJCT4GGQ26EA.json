@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204077940.246548800,
+    "creationTime" : null,
+    "fileCRC" : 1851742351,
+    "fileName" : "Январь 2008 года 02 - Республика Бурятия Форма 42803.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 109607,
+    "fullUnpackSize" : 519168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204078244.820425100,
+    "creationTime" : null,
+    "fileCRC" : -2086947953,
+    "fileName" : "Январь 2008 года 02 - Республика Бурятия Форма 48702.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 12827,
+    "fullUnpackSize" : 60416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

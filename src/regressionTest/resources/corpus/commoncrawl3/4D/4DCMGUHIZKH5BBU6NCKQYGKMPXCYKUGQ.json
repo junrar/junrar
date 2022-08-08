@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195977053.531250000,
+    "creationTime" : null,
+    "fileCRC" : -304265105,
+    "fileName" : "DTM2005.cuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 206299039,
+    "fullUnpackSize" : 206299039,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

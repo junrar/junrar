@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476426159.304882400,
+    "creationTime" : null,
+    "fileCRC" : -671347706,
+    "fileName" : "Стасенко_СВ-автореферат.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 575734,
+    "fullUnpackSize" : 625216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

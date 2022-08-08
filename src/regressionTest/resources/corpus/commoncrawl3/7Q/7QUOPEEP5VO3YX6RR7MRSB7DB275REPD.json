@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495680397.868035200,
+    "creationTime" : null,
+    "fileCRC" : 581543715,
+    "fileName" : "月光宝盒Z2 v1.4\\RKNANOFW.IMG",
+    "hostOS" : "win32",
+    "fullPackSize" : 2032449,
+    "fullUnpackSize" : 38797316,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

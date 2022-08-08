@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1138252754.000000000,
+    "creationTime" : null,
+    "fileCRC" : 360030989,
+    "fileName" : "savanna.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 842040,
+    "fullUnpackSize" : 1927336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1138853096.000000000,
+    "creationTime" : null,
+    "fileCRC" : 113457389,
+    "fileName" : "savanna.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1659702,
+    "fullUnpackSize" : 5451776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

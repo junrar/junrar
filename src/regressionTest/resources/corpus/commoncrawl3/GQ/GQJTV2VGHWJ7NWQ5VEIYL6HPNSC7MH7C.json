@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492047199.725164600,
+    "creationTime" : null,
+    "fileCRC" : -1243700560,
+    "fileName" : "UT11\\UT11内页.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1013639,
+    "fullUnpackSize" : 1625080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491900076.936237100,
+    "creationTime" : null,
+    "fileCRC" : -996226166,
+    "fileName" : "UT11\\UT11首页.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1166702,
+    "fullUnpackSize" : 1596835,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

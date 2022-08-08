@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293508736.000000000,
+    "creationTime" : null,
+    "fileCRC" : -434528218,
+    "fileName" : "Гумилев Л., История народа хунну.rtF",
+    "hostOS" : "win32",
+    "fullPackSize" : 742388,
+    "fullUnpackSize" : 2340864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281157544.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1957280945,
+    "fileName" : "Gumilev_Istoriya_naroda_hunnu.196572.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 1093276,
+    "fullUnpackSize" : 2126515,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

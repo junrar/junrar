@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204903126.109000000,
+    "creationTime" : null,
+    "fileCRC" : -613658530,
+    "fileName" : "Куда ведут ревнители «культурного» винопития.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11479,
+    "fullUnpackSize" : 59904,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

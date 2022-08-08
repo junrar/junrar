@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1463367196.049835700,
+    "creationTime" : null,
+    "fileCRC" : -1763241234,
+    "fileName" : "Свод МРСК (11.05.2016).xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 895426,
+    "fullUnpackSize" : 1070054,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

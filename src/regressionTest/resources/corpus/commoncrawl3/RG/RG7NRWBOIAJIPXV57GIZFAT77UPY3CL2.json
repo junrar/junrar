@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1471338958.000000000,
+    "creationTime" : null,
+    "fileCRC" : 875985596,
+    "fileName" : "恒丰银行密码安全控件64IE版.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3974925,
+    "fullUnpackSize" : 4006184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

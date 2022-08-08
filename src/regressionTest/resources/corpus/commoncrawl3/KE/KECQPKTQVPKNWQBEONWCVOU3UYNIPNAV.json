@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447280216.000000000,
+    "creationTime" : null,
+    "fileCRC" : 557484737,
+    "fileName" : "Proiecte_mobilitate_scolara_KA1_KA101_A_3.02_EN_PROD.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 339306,
+    "fullUnpackSize" : 364674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

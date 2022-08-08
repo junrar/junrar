@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349407436.254182700,
+    "creationTime" : null,
+    "fileCRC" : 1521712996,
+    "fileName" : "novair_sert_page1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 274622,
+    "fullUnpackSize" : 274622,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349407484.410432700,
+    "creationTime" : null,
+    "fileCRC" : 1864221809,
+    "fileName" : "novair_sert_page2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 288135,
+    "fullUnpackSize" : 288135,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

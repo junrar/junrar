@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458293814.487503000,
+    "creationTime" : null,
+    "fileCRC" : 2117708297,
+    "fileName" : "2. Документация об аукционе.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 300925,
+    "fullUnpackSize" : 326080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1458293812.355211500,
+    "creationTime" : null,
+    "fileCRC" : 1191275294,
+    "fileName" : "1. Извещение о проведении аукциона.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 149977,
+    "fullUnpackSize" : 157115,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204608407.906000000,
+    "creationTime" : null,
+    "fileCRC" : -1923440004,
+    "fileName" : "my_postmortem_adventures.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 119818,
+    "fullUnpackSize" : 788480,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

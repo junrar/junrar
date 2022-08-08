@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530112069.031607800,
+    "creationTime" : null,
+    "fileCRC" : -263473995,
+    "fileName" : "Midnightskysims_SnowJacket.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 5676395,
+    "fullUnpackSize" : 5676395,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

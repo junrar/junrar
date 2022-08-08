@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353346974.000000000,
+    "creationTime" : null,
+    "fileCRC" : 656762437,
+    "fileName" : "Goldfarb_Sasha_Volodya_Boris..._Istoriya_ubiystva.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1712086,
+    "fullUnpackSize" : 3440128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

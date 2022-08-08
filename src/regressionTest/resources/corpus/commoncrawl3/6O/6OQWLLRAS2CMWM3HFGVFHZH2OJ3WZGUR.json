@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358308210.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1003189436,
+    "fileName" : "Решение Совета по координации деятельности аптечных организаций.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8301,
+    "fullUnpackSize" : 34816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

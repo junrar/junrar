@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384390578.551789600,
+    "creationTime" : null,
+    "fileCRC" : 651691521,
+    "fileName" : "B3-CLASIFICACI_N-CASCO_.svg",
+    "hostOS" : "win32",
+    "fullPackSize" : 755103,
+    "fullUnpackSize" : 12544277,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

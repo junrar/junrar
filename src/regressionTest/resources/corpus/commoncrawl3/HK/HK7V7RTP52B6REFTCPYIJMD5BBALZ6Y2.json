@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506515078.846388600,
+    "creationTime" : null,
+    "fileCRC" : -596397973,
+    "fileName" : "bilgisayar bilimi notları 1. ünite.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 384270,
+    "fullUnpackSize" : 393656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

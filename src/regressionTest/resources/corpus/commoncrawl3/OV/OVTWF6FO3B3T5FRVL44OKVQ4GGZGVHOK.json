@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371817364.932916100,
+    "creationTime" : null,
+    "fileCRC" : 1492154084,
+    "fileName" : "8900M_PBr5.0.0_rel1849_PL5.2.0.115_A5.0.0.1113.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 139012470,
+    "fullUnpackSize" : 145235872,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511384755.156688500,
+    "creationTime" : null,
+    "fileCRC" : 1998477360,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 432,
+    "fullUnpackSize" : 664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511384755.173734700,
+    "creationTime" : null,
+    "fileCRC" : -1696448439,
+    "fileName" : "JCPJ.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 84,
+    "fullUnpackSize" : 84,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395734750.000000000,
+    "creationTime" : null,
+    "fileCRC" : 899075315,
+    "fileName" : "Kec. Nisam KOPI.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 20831,
+    "fullUnpackSize" : 23769,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

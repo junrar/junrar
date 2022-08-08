@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394341208.317000000,
+    "creationTime" : null,
+    "fileCRC" : -901389453,
+    "fileName" : "Audio.SchDoc",
+    "hostOS" : "win32",
+    "fullPackSize" : 13540,
+    "fullUnpackSize" : 161792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396161228.849214100,
+    "creationTime" : null,
+    "fileCRC" : 6709120,
+    "fileName" : "Booster.PcbDoc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3579217,
+    "fullUnpackSize" : 6304256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

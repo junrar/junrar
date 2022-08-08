@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412131264.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1753231350,
+    "fileName" : "HTKK_v4.0.6\\0x0409.ini",
+    "hostOS" : "win32",
+    "fullPackSize" : 4288,
+    "fullUnpackSize" : 22490,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535091028.012274000,
+    "creationTime" : null,
+    "fileCRC" : -531147772,
+    "fileName" : "HTKK_v4.0.6\\Data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 37877683,
+    "fullUnpackSize" : 39755915,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

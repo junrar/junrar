@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439913001.000000000,
+    "creationTime" : null,
+    "fileCRC" : -175186116,
+    "fileName" : "usa.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 653161,
+    "fullUnpackSize" : 1806068,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439913019.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1790901123,
+    "fileName" : "algeria.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 648187,
+    "fullUnpackSize" : 1801351,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

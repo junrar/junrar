@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207307822.968750000,
+    "creationTime" : null,
+    "fileCRC" : -1240229916,
+    "fileName" : "DzordzOrvel 1984.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 780470,
+    "fullUnpackSize" : 814790,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

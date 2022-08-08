@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266634221.671875000,
+    "creationTime" : null,
+    "fileCRC" : -1852167132,
+    "fileName" : "410 Problems In Calculus I.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 604791,
+    "fullUnpackSize" : 957270,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

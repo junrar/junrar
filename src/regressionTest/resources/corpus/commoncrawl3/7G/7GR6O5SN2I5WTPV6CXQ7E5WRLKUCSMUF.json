@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486623755.401000000,
+    "creationTime" : null,
+    "fileCRC" : -954128229,
+    "fileName" : "Распоряжение план.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6528,
+    "fullUnpackSize" : 31744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486624172.203521600,
+    "creationTime" : null,
+    "fileCRC" : 557386053,
+    "fileName" : "План мероприятий Лоухи.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10985,
+    "fullUnpackSize" : 134616,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379917901.748786900,
+    "creationTime" : null,
+    "fileCRC" : 141324817,
+    "fileName" : "JP_GIM_2_s.145_portret_F.M.Arouet.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1566736,
+    "fullUnpackSize" : 1584343,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

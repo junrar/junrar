@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1311151064.047340700,
+    "creationTime" : null,
+    "fileCRC" : 1959990474,
+    "fileName" : "NardeenCatalogue1107_20110712.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 83989594,
+    "fullUnpackSize" : 89314771,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

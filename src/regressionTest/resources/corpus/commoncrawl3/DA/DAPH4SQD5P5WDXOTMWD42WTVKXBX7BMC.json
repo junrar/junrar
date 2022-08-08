@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398656057.213008200,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "grass_reference_ET0_mm_month_ascii\\gr0_mm_ann.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398656056.557807000,
+    "creationTime" : null,
+    "fileCRC" : -1358554444,
+    "fileName" : "grass_reference_ET0_mm_month_ascii\\gr0_mm_ann.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1201502,
+    "fullUnpackSize" : 21701445,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

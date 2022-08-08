@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368324821.508908800,
+    "creationTime" : null,
+    "fileCRC" : -1737642262,
+    "fileName" : "Folgueroles - panta de Sau - Savassona - Colla Cansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16526,
+    "fullUnpackSize" : 134777,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

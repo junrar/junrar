@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398755704.000000000,
+    "creationTime" : null,
+    "fileCRC" : 113796287,
+    "fileName" : "Проект МГУ 1 пк этап 2-1\\Проект МГУ 1 пк этап 2-1\\07-009-П-2Э-1-ИГЛ т1\\07-009-П-2Э-1-ИГЛ т1 стр87.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4064754,
+    "fullUnpackSize" : 9601563,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

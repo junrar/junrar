@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455639017.962113300,
+    "creationTime" : null,
+    "fileCRC" : 53904280,
+    "fileName" : "『劇場版 響け！ユーフォニアム～北宇治高校吹奏楽部へようこそ～』予告.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 5462,
+    "fullUnpackSize" : 22642,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1322261136.000000000,
+    "creationTime" : null,
+    "fileCRC" : 574549147,
+    "fileName" : "BanderaPro.otf",
+    "hostOS" : "win32",
+    "fullPackSize" : 50813,
+    "fullUnpackSize" : 103384,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509602966.760337300,
+    "creationTime" : null,
+    "fileCRC" : -1279073423,
+    "fileName" : "Therian Saga.mdb",
+    "hostOS" : "win32",
+    "fullPackSize" : 1345921,
+    "fullUnpackSize" : 7528448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

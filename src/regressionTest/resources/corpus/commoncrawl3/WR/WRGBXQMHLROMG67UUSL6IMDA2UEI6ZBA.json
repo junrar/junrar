@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478689367.094457500,
+    "creationTime" : null,
+    "fileCRC" : -1171513833,
+    "fileName" : "Памятка МЧС России\\1-16.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 2623471,
+    "fullUnpackSize" : 3547200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

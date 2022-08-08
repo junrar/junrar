@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498113229.026500000,
+    "creationTime" : null,
+    "fileCRC" : 687373828,
+    "fileName" : "dhtmlmenu_Xfdown.com\\dmbsetup4.20.0.33.1394620603.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 7743323,
+    "fullUnpackSize" : 8052594,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

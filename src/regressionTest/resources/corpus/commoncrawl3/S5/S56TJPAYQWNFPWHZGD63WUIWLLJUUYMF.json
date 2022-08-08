@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1262743080.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1750761822,
+    "fileName" : "NovatelDriver for XP, Vista, Windows 7\\NovatelDriverInstaller_v2.03.11.001.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 1849278,
+    "fullUnpackSize" : 2634752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

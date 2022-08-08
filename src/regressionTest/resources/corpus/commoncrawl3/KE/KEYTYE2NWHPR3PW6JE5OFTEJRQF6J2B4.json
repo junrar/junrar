@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390294628.623026500,
+    "creationTime" : null,
+    "fileCRC" : 1517059489,
+    "fileName" : "акуст серт 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 77981,
+    "fullUnpackSize" : 79200,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390294618.413581400,
+    "creationTime" : null,
+    "fileCRC" : 569306862,
+    "fileName" : "акуст серт 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 103967,
+    "fullUnpackSize" : 105653,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

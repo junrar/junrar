@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248234234.953125000,
+    "creationTime" : null,
+    "fileCRC" : -1090620820,
+    "fileName" : "Nikki_ModernStudioLoft.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 1784900,
+    "fullUnpackSize" : 2465570,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

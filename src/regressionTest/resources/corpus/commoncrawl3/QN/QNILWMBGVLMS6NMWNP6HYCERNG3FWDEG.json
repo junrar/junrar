@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1179811239.546875000,
+    "creationTime" : null,
+    "fileCRC" : -950383205,
+    "fileName" : "Duran Duran-Late Bar (live 81).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2697686,
+    "fullUnpackSize" : 2904064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395071630.099038900,
+    "creationTime" : null,
+    "fileCRC" : 1909073791,
+    "fileName" : "Die Lüge V1.0 - BETA.szs",
+    "hostOS" : "win32",
+    "fullPackSize" : 104916,
+    "fullUnpackSize" : 104916,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

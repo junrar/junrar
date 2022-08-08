@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1311920631.083401300,
+    "creationTime" : null,
+    "fileCRC" : -807481004,
+    "fileName" : "Regulación del impuesto sobre el 1.5 X mil.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1901563,
+    "fullUnpackSize" : 2140716,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444633050.000000000,
+    "creationTime" : null,
+    "fileCRC" : 672014481,
+    "fileName" : "ВИЖ10_2015\\Blok10.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 953099,
+    "fullUnpackSize" : 987078,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444633488.000000000,
+    "creationTime" : null,
+    "fileCRC" : -391307369,
+    "fileName" : "ВИЖ10_2015\\Color_blok10.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 18827896,
+    "fullUnpackSize" : 18920223,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

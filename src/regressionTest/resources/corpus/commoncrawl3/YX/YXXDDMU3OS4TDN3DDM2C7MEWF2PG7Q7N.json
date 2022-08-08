@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454422671.154598900,
+    "creationTime" : null,
+    "fileCRC" : -1703168615,
+    "fileName" : "-KOZAN_KOLEJİ.apk",
+    "hostOS" : "win32",
+    "fullPackSize" : 3563898,
+    "fullUnpackSize" : 3997954,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510812892.000000000,
+    "creationTime" : null,
+    "fileCRC" : 708466648,
+    "fileName" : "firm_upd.usb",
+    "hostOS" : "win32",
+    "fullPackSize" : 133955,
+    "fullUnpackSize" : 360424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510812892.000000000,
+    "creationTime" : null,
+    "fileCRC" : 708466648,
+    "fileName" : "D1xToF301.kuf",
+    "hostOS" : "win32",
+    "fullPackSize" : 133955,
+    "fullUnpackSize" : 360424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

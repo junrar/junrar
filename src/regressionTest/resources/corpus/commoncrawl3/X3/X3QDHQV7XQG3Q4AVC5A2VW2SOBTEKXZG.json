@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536811963.403000000,
+    "creationTime" : null,
+    "fileCRC" : 518341096,
+    "fileName" : "++.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 632697,
+    "fullUnpackSize" : 8813568,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536819393.313000000,
+    "creationTime" : null,
+    "fileCRC" : -1520945093,
+    "fileName" : "Условия по гарантии.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8289,
+    "fullUnpackSize" : 34304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

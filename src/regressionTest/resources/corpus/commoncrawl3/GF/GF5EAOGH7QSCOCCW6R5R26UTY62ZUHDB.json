@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1219222920.328125000,
+    "creationTime" : null,
+    "fileCRC" : -365234495,
+    "fileName" : "Жизнь замечательных людей – 706. Тургенев.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 410798,
+    "fullUnpackSize" : 1433841,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422778401.814657800,
+    "creationTime" : null,
+    "fileCRC" : 63706507,
+    "fileName" : "03 - 14 декабря.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 260653,
+    "fullUnpackSize" : 1012311,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

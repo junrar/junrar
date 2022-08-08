@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424748877.540884300,
+    "creationTime" : null,
+    "fileCRC" : -749378594,
+    "fileName" : "2GIS.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 13506554,
+    "fullUnpackSize" : 47882240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

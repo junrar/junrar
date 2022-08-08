@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1084009393.703000000,
+    "creationTime" : null,
+    "fileCRC" : -1068662501,
+    "fileName" : "Апшерон.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 235917,
+    "fullUnpackSize" : 1833984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

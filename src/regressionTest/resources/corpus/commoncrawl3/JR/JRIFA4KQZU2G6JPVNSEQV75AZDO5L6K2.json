@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300805568.925386400,
+    "creationTime" : null,
+    "fileCRC" : -1871509958,
+    "fileName" : "mp_agroprom\\mp_agroprom.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 33340376,
+    "fullUnpackSize" : 33486298,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

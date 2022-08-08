@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333379284.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1138077405,
+    "fileName" : "M-36-015-A_ozf.map",
+    "hostOS" : "win32",
+    "fullPackSize" : 772,
+    "fullUnpackSize" : 4152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333379284.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1497659008,
+    "fileName" : "M-36-015-A.ozf2",
+    "hostOS" : "win32",
+    "fullPackSize" : 1291670,
+    "fullUnpackSize" : 1295099,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1280790270.578125000,
+    "creationTime" : null,
+    "fileCRC" : 1597951244,
+    "fileName" : "ceva's theorem.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 307740,
+    "fullUnpackSize" : 347334,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

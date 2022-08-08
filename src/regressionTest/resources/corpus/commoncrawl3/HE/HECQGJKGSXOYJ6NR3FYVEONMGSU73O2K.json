@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533994669.063306100,
+    "creationTime" : null,
+    "fileCRC" : 2107355665,
+    "fileName" : "Transformers--Unicron--3\\01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1129689,
+    "fullUnpackSize" : 1168543,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

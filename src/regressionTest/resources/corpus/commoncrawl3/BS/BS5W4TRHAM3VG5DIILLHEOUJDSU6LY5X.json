@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403850963.201250900,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "AET_wm2_ann_hr_ascii\\AETwm2_ann_01.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403850962.489210200,
+    "creationTime" : null,
+    "fileCRC" : 1007914803,
+    "fileName" : "AET_wm2_ann_hr_ascii\\aetwm2_ann_01.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1328242,
+    "fullUnpackSize" : 21785742,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

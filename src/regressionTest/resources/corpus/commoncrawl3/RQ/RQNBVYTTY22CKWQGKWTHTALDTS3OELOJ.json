@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333550200.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1144679238,
+    "fileName" : "mp_skybound\\mp_skybound.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 10608379,
+    "fullUnpackSize" : 10777621,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

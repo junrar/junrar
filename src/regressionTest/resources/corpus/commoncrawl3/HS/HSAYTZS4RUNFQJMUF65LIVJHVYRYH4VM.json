@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521772107.244464500,
+    "creationTime" : null,
+    "fileCRC" : -505717604,
+    "fileName" : "APT_USB_CommandV1_1.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 39966,
+    "fullUnpackSize" : 88064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

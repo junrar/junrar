@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1120808986.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1610772142,
+    "fileName" : "Tropic Island Hum.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4145672,
+    "fullUnpackSize" : 4160783,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

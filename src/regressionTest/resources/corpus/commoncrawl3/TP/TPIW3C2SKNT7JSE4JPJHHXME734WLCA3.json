@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491363340.199428300,
+    "creationTime" : null,
+    "fileCRC" : 554567023,
+    "fileName" : "Dichiarazione  - Allegato 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 35196,
+    "fullUnpackSize" : 35971,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491363400.743528700,
+    "creationTime" : null,
+    "fileCRC" : 387717839,
+    "fileName" : "Dichiarazione Sostitutiva di Atto Notorio.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 35271,
+    "fullUnpackSize" : 36275,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

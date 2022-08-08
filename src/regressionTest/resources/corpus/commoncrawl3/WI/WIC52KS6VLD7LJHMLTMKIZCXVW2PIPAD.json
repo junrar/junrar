@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457937963.084400000,
+    "creationTime" : null,
+    "fileCRC" : -1214798698,
+    "fileName" : "One button ON OFF with time delay.lld",
+    "hostOS" : "win32",
+    "fullPackSize" : 7505,
+    "fullUnpackSize" : 31447,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

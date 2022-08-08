@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1169548321.772000000,
+    "creationTime" : null,
+    "fileCRC" : -237503255,
+    "fileName" : "FZ5_test1.eng",
+    "hostOS" : "win32",
+    "fullPackSize" : 150982,
+    "fullUnpackSize" : 278632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494808087.609375000,
+    "creationTime" : null,
+    "fileCRC" : -1200613535,
+    "fileName" : "сведения, Вохмин, 2017.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 15462,
+    "fullUnpackSize" : 18104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493796184.015625000,
+    "creationTime" : null,
+    "fileCRC" : 1146097780,
+    "fileName" : "справка о доходах, 2017 год, Крушельницкая.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12053,
+    "fullUnpackSize" : 14697,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

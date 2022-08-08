@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506050021.772000000,
+    "creationTime" : null,
+    "fileCRC" : -1558983526,
+    "fileName" : "重大资产重组进展情况公告.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3237,
+    "fullUnpackSize" : 15360,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

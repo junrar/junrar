@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366930549.125000000,
+    "creationTime" : null,
+    "fileCRC" : 1781765450,
+    "fileName" : "DC-9700\\DC-9700-8\\update.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 410013170,
+    "fullUnpackSize" : 599424260,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286932967.755715200,
+    "creationTime" : null,
+    "fileCRC" : -1728686949,
+    "fileName" : "dogovor.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 158294,
+    "fullUnpackSize" : 168344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 938524536.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1518328062,
+    "fileName" : "Acrobat\\0AR40JPN.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 6452174,
+    "fullUnpackSize" : 6553112,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

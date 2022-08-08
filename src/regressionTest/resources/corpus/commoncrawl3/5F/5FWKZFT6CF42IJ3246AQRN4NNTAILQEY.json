@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1138269084.000000000,
+    "creationTime" : null,
+    "fileCRC" : -514936708,
+    "fileName" : "Ван-Несс Стильман_Целебный магнетизм.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 42937,
+    "fullUnpackSize" : 233984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

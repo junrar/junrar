@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523586516.000000000,
+    "creationTime" : null,
+    "fileCRC" : 185321203,
+    "fileName" : "Торги Дегтярный затон\\~WRL0001.tmp",
+    "hostOS" : "win32",
+    "fullPackSize" : 31625,
+    "fullUnpackSize" : 204288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526521936.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1330822240,
+    "fileName" : "Торги Дегтярный затон\\Выписка из ЕГРН РП-16.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1662587,
+    "fullUnpackSize" : 1697014,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

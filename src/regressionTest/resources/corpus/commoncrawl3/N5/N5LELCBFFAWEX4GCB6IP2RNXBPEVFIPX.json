@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1270157411.010414500,
+    "creationTime" : null,
+    "fileCRC" : 1117993753,
+    "fileName" : "lasersight_mm.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 59747,
+    "fullUnpackSize" : 125952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1088857432.000000000,
+    "creationTime" : null,
+    "fileCRC" : -133376193,
+    "fileName" : "lasersight_mm.ini",
+    "hostOS" : "win32",
+    "fullPackSize" : 1531,
+    "fullUnpackSize" : 9557,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

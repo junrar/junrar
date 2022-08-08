@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518501204.976562500,
+    "creationTime" : null,
+    "fileCRC" : -176807205,
+    "fileName" : "Документация ОП ПРЗ13022018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 21275936,
+    "fullUnpackSize" : 26918779,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

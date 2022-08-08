@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1190029469.625000000,
+    "creationTime" : null,
+    "fileCRC" : -16204254,
+    "fileName" : "Maps\\HOCKENHEIM2001_track.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 34519,
+    "fullUnpackSize" : 207864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1189947539.500000000,
+    "creationTime" : null,
+    "fileCRC" : -815413839,
+    "fileName" : "gpx_0033.bmp",
+    "hostOS" : "win32",
+    "fullPackSize" : 1866446,
+    "fullUnpackSize" : 3932216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

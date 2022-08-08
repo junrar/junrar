@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459641824.333445400,
+    "creationTime" : null,
+    "fileCRC" : 1372980770,
+    "fileName" : "1_проект_ПЗЗ_сп_Эштебенькино на утв (2) (2).docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 164342,
+    "fullUnpackSize" : 167393,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459641955.026550400,
+    "creationTime" : null,
+    "fileCRC" : 592850788,
+    "fileName" : "3_10000-ПЗЗ_Эштебенькино+%282%29.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4638593,
+    "fullUnpackSize" : 6189988,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

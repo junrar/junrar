@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518403016.000000000,
+    "creationTime" : null,
+    "fileCRC" : -301277550,
+    "fileName" : "1.2.1. GRAFIK POCHISTVANE\\График за сметосъбиране и сметоизвозване на битови отпадъци от всички населени места на територията на Община Угърчин за 2014г., Договор №46-11416.10.2014г..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 916868,
+    "fullUnpackSize" : 1243396,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518403058.000000000,
+    "creationTime" : null,
+    "fileCRC" : -508004940,
+    "fileName" : "1.2.1. GRAFIK POCHISTVANE\\График за сметосъбиране и сметоизвозване на битови отпадъци от всички населени места на територията на Община Угърчин за 2015г., Договор №46-11416.10.2014г..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 922840,
+    "fullUnpackSize" : 1249602,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

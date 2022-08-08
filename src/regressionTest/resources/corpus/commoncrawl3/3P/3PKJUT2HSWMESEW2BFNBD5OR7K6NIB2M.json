@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453802603.803843300,
+    "creationTime" : null,
+    "fileCRC" : -562136911,
+    "fileName" : "скульптурная деформация.grb",
+    "hostOS" : "win32",
+    "fullPackSize" : 952618,
+    "fullUnpackSize" : 952618,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

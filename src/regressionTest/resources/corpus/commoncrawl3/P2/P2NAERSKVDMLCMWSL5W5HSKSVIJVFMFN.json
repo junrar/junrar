@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404806793.191118500,
+    "creationTime" : null,
+    "fileCRC" : -1136800356,
+    "fileName" : "AUDIOVISUAL CAVALETTI - 2012 - en-us.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1598,
+    "fullUnpackSize" : 3568,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1348464512.322937300,
+    "creationTime" : null,
+    "fileCRC" : 779409002,
+    "fileName" : "AUDIOVISUAL CAVALETTI - 2012 - en-us.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 129979865,
+    "fullUnpackSize" : 130229791,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

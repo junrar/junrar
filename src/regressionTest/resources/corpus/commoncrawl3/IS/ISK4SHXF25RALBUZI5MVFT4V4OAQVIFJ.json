@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489763524.499492500,
+    "creationTime" : null,
+    "fileCRC" : -358661781,
+    "fileName" : "Ei_bereut_die_Europaer.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 24207,
+    "fullUnpackSize" : 25344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

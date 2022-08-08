@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : 1447883905.370857300,
+    "lastModifiedTime" : 1436653492.325961200,
+    "creationTime" : 1447883905.370857300,
+    "fileCRC" : 242155363,
+    "fileName" : "Your Baby Can Read 1 [liber.ir].avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 179250144,
+    "fullUnpackSize" : 184082432,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

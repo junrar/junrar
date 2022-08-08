@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1342860942.839362500,
+    "creationTime" : null,
+    "fileCRC" : -1842625475,
+    "fileName" : "mp_eb_lavajump\\mp_eb_lavajump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 16510457,
+    "fullUnpackSize" : 16686603,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

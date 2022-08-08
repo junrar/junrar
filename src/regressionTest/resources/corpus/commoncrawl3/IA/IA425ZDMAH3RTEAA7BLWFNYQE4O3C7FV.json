@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529900201.189541000,
+    "creationTime" : null,
+    "fileCRC" : -1414052724,
+    "fileName" : "EDUCATEL\\001 Reporte de llamadas.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1128816,
+    "fullUnpackSize" : 11503136,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1338552186.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1690946468,
+    "fileName" : "运维资质表格汇总V4.0\\计算机信息系统集成企业资质（运行维护能力）V1.0 .doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 52857,
+    "fullUnpackSize" : 506880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1338947244.450000000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "运维资质表格汇总V4.0",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

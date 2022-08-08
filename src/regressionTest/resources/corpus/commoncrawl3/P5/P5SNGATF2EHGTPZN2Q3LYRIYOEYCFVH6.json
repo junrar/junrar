@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528166384.562500000,
+    "creationTime" : null,
+    "fileCRC" : -1178312837,
+    "fileName" : "CV_926.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 741120,
+    "fullUnpackSize" : 1014252,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528166391.828125000,
+    "creationTime" : null,
+    "fileCRC" : -1308347320,
+    "fileName" : "BIỂU MẪU ĐĂNG KÝ LỚP BỒI DƯỠNG.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 9504,
+    "fullUnpackSize" : 12402,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

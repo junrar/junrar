@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376525386.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1394815682,
+    "fileName" : "2кв 2013 Данные об усредненной резервируемой максимальной мощности по потребителям 670 кВт и более.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 689850,
+    "fullUnpackSize" : 750985,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

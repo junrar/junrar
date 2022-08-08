@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1344170599.328125000,
+    "creationTime" : null,
+    "fileCRC" : 1198859376,
+    "fileName" : "回首文革.epub",
+    "hostOS" : "win32",
+    "fullPackSize" : 481409,
+    "fullUnpackSize" : 484356,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

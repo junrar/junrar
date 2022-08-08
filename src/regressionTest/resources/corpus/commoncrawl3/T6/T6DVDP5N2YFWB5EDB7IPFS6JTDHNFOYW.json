@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487337629.334960900,
+    "creationTime" : null,
+    "fileCRC" : 22961774,
+    "fileName" : "Прайс-заказ Рич соил 2017 экс.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 117475,
+    "fullUnpackSize" : 128716,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395035982.000000000,
+    "creationTime" : null,
+    "fileCRC" : 336382827,
+    "fileName" : "SPC TPM Musrenbang Kec. Baktiya Barat.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 48877,
+    "fullUnpackSize" : 53659,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299944770.011047200,
+    "creationTime" : null,
+    "fileCRC" : -453488622,
+    "fileName" : "mp_strafe_jumps\\mp_strafe_jumps.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 27243154,
+    "fullUnpackSize" : 27307596,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

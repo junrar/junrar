@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390849549.250000000,
+    "creationTime" : null,
+    "fileCRC" : 2142754792,
+    "fileName" : "KYNG HD NetFile Editor v2.00.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1483242,
+    "fullUnpackSize" : 1575936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

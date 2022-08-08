@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1486288813.093750000,
+    "creationTime" : null,
+    "fileCRC" : 427337218,
+    "fileName" : "calculadoraiva.xlsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 13777,
+    "fullUnpackSize" : 16427,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

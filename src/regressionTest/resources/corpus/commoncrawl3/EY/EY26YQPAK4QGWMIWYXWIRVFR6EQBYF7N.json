@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498132949.875000000,
+    "creationTime" : null,
+    "fileCRC" : -1339818107,
+    "fileName" : "New  Atlas HD-200s MainSoftware F201\\New  Atlas HD-200s MainSoftware F201.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 171,
+    "fullUnpackSize" : 214,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498131312.359375000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "New  Atlas HD-200s MainSoftware F201",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

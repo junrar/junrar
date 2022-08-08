@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168142332.390625000,
+    "creationTime" : null,
+    "fileCRC" : 956949548,
+    "fileName" : "readme.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 3148,
+    "fullUnpackSize" : 7875,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168093884.640625000,
+    "creationTime" : null,
+    "fileCRC" : -1921793392,
+    "fileName" : "gp4.gamer.nl 2004 season set.cuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 123674957,
+    "fullUnpackSize" : 123674957,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

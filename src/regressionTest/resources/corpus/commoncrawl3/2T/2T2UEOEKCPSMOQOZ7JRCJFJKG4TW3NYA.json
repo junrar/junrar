@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421465429.873853200,
+    "creationTime" : null,
+    "fileCRC" : -449029214,
+    "fileName" : "[HorribleSubs] Fairy Tail S2 - 41 [720p].rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 6031,
+    "fullUnpackSize" : 27951,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421465612.053113200,
+    "creationTime" : null,
+    "fileCRC" : -1487562727,
+    "fileName" : "[Zero-Raws] Fairy Tail - 216 (TX 1280x720 x264 AAC).rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 2000,
+    "fullUnpackSize" : 27949,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

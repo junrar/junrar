@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228013930.468750000,
+    "creationTime" : null,
+    "fileCRC" : 1700892511,
+    "fileName" : "Uvod_u_Dreaweaver_MX.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1613744,
+    "fullUnpackSize" : 2146690,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

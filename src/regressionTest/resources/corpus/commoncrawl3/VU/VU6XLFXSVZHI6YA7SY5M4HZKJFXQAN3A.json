@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501699372.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1824754408,
+    "fileName" : "Remix video 1.3 grid 8x8 1980x1200 Full DF.touchosc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4564,
+    "fullUnpackSize" : 4572,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501221856.000000000,
+    "creationTime" : null,
+    "fileCRC" : -122680999,
+    "fileName" : "Remix video 1.3 grid 8x8  1920 x1080 DF.touchosc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2867,
+    "fullUnpackSize" : 2878,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

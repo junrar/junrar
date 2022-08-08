@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1134357674.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1596650724,
+    "fileName" : "《奉持八关斋戒》.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 18933,
+    "fullUnpackSize" : 66048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

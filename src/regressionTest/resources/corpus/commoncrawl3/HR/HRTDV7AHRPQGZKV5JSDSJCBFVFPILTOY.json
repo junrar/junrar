@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510145006.000000000,
+    "creationTime" : null,
+    "fileCRC" : 298922754,
+    "fileName" : "extatus-vs-fragsters-inferno.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 86456754,
+    "fullUnpackSize" : 158138368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

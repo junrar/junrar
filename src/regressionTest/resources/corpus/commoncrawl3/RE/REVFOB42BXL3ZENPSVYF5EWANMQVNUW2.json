@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510665516.000000000,
+    "creationTime" : null,
+    "fileCRC" : 729143844,
+    "fileName" : "о-марафон протоколы2017\\Сочинский О-Марафон 03.11.17.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 893345,
+    "fullUnpackSize" : 992530,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510665516.000000000,
+    "creationTime" : null,
+    "fileCRC" : 679265440,
+    "fileName" : "о-марафон протоколы2017\\Сочинский О-Марафон 04.11.17.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1210205,
+    "fullUnpackSize" : 1301123,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

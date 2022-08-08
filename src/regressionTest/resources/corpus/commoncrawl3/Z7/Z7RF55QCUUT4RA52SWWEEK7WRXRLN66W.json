@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298553240.919873200,
+    "creationTime" : null,
+    "fileCRC" : 1770434760,
+    "fileName" : "mp_tb_jump\\mp_tb_jump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 12492197,
+    "fullUnpackSize" : 12510001,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

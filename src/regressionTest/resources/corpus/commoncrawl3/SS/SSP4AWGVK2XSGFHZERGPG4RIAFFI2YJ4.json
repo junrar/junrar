@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366680456.152401800,
+    "creationTime" : null,
+    "fileCRC" : -1674818173,
+    "fileName" : "CCF23042556_0000.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 15355454,
+    "fullUnpackSize" : 18331117,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

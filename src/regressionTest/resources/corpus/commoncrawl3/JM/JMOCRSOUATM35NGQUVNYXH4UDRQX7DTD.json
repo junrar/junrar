@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436940157.000000000,
+    "creationTime" : null,
+    "fileCRC" : -517550002,
+    "fileName" : "newazkhd\\seeyon_android2.3.7_20141226.apk",
+    "hostOS" : "win32",
+    "fullPackSize" : 2908974,
+    "fullUnpackSize" : 3398428,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527208869.209518800,
+    "creationTime" : null,
+    "fileCRC" : 1222651614,
+    "fileName" : "GERTAN JATIM JUNI 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 158155,
+    "fullUnpackSize" : 272243,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526881270.000000000,
+    "creationTime" : null,
+    "fileCRC" : -414892850,
+    "fileName" : "31 Kabupaten Ponorogo.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4431716,
+    "fullUnpackSize" : 5125477,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

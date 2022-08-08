@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217502380.031000000,
+    "creationTime" : null,
+    "fileCRC" : -1103137609,
+    "fileName" : "Школа выживания при авариях и стихийных бедствиях.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1441855,
+    "fullUnpackSize" : 2528768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

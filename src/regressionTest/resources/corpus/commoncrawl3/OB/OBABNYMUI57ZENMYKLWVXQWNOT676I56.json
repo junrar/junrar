@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1197553404.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1796960729,
+    "fileName" : "Beast Wars - Ascending 03\\Transformers Beast Wars - Ascending 03 (of 4) (2007) (DarthScann 001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 963692,
+    "fullUnpackSize" : 989032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1197553360.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1844802870,
+    "fileName" : "Beast Wars - Ascending 03\\Transformers Beast Wars - Ascending 03 (of 4) (2007) (DarthScann 002.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 895311,
+    "fullUnpackSize" : 919585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

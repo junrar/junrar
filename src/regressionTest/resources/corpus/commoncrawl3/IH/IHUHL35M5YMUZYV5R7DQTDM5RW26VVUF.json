@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499245425.486799400,
+    "creationTime" : null,
+    "fileCRC" : -1201256553,
+    "fileName" : "grafik2017-2018.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 3698,
+    "fullUnpackSize" : 21504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

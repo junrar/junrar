@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1428231210.399746500,
+    "creationTime" : null,
+    "fileCRC" : 1644096978,
+    "fileName" : "hq.sharif.complexfunc.all.www.fileniko.com\\all.session\\hq-sharif-complexfunc-1.www.fileniko.com.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 184236768,
+    "fullUnpackSize" : 186873474,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

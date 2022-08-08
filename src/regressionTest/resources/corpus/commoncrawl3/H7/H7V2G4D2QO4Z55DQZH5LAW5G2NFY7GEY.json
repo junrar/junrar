@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215860486.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1974971410,
+    "fileName" : "infiniteammo.smx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2824,
+    "fullUnpackSize" : 2834,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215860488.000000000,
+    "creationTime" : null,
+    "fileCRC" : 512581349,
+    "fileName" : "infiniteammo.sp",
+    "hostOS" : "win32",
+    "fullPackSize" : 1028,
+    "fullUnpackSize" : 2312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

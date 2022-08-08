@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383148018.304244200,
+    "creationTime" : null,
+    "fileCRC" : 1328687185,
+    "fileName" : "CEN64 Front-end.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 55525,
+    "fullUnpackSize" : 1152000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

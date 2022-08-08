@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445993435.086543800,
+    "creationTime" : null,
+    "fileCRC" : 1735500066,
+    "fileName" : "Свод ниже 35 кВ на 01.10.2015.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2136065,
+    "fullUnpackSize" : 2437377,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

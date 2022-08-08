@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528431920.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1355157684,
+    "fileName" : "Диссертация Казанович ЯБ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 16961546,
+    "fullUnpackSize" : 165023261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

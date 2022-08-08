@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384869986.420526600,
+    "creationTime" : null,
+    "fileCRC" : -1879879480,
+    "fileName" : "Harkeporsidmagar-Yaqubi.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2176383,
+    "fullUnpackSize" : 2286757,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

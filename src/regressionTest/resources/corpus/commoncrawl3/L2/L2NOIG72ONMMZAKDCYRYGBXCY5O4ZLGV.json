@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413435830.000000000,
+    "creationTime" : null,
+    "fileCRC" : -218187030,
+    "fileName" : "Проект МГУ 1 пк этап 2-1\\Проект МГУ 1 пк этап 2-1\\07-009-П-2Э-1-МООС т7_1\\07-009-П-2Э-1-МООС т7_1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1643214,
+    "fullUnpackSize" : 11919842,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

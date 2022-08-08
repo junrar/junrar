@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443228864.769514000,
+    "creationTime" : null,
+    "fileCRC" : 213078752,
+    "fileName" : "Sant Joan Fumat - Ras de Conques.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17311,
+    "fullUnpackSize" : 132914,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

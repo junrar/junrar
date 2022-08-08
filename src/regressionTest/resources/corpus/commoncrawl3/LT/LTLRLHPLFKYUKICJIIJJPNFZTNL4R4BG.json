@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495850235.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1739046961,
+    "fileName" : "2. LE MESSAGE DES TROIS ANGES AU MONDE.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 91982,
+    "fullUnpackSize" : 94439,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469316511.227391600,
+    "creationTime" : null,
+    "fileCRC" : -1275502904,
+    "fileName" : "3. Le sceau de Dieu.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1415253,
+    "fullUnpackSize" : 2207223,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

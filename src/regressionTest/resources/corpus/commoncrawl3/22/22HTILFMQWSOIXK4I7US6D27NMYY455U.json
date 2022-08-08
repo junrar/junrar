@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1503538566.891715000,
+    "creationTime" : null,
+    "fileCRC" : 298259818,
+    "fileName" : "Winter Background\\ny bg_1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1546109,
+    "fullUnpackSize" : 1793705,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

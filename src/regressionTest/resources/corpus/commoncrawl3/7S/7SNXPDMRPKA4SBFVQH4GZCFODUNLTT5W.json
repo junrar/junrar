@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433166792.229940700,
+    "creationTime" : null,
+    "fileCRC" : -1718022504,
+    "fileName" : "Java SE Runtime Environment v7 (Update 80)\\jre-7u80-windows-i586.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 27110941,
+    "fullUnpackSize" : 29509544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

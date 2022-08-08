@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436883847.249990100,
+    "creationTime" : null,
+    "fileCRC" : -2042268181,
+    "fileName" : "E-TRL-BT-EB-S.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 32336782,
+    "fullUnpackSize" : 32368261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

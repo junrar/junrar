@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525407042.410274300,
+    "creationTime" : null,
+    "fileCRC" : 947180210,
+    "fileName" : "Прочитай меня.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 505,
+    "fullUnpackSize" : 1075,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525406853.286939600,
+    "creationTime" : null,
+    "fileCRC" : -464414363,
+    "fileName" : "СофтБиллинг_DEMO.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 10465398,
+    "fullUnpackSize" : 10470754,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

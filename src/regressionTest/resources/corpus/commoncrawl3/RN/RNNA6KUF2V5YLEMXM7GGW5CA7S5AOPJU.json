@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507370169.000000000,
+    "creationTime" : null,
+    "fileCRC" : -448979031,
+    "fileName" : "Mr.Mercedes.S01E09.Ice.Cream.You.Scream.We.All.Scream.720p.DTV.WEB-DL.DD2.0.x264-NTb.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18492,
+    "fullUnpackSize" : 49859,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507379727.174592700,
+    "creationTime" : null,
+    "fileCRC" : 460651984,
+    "fileName" : "Mr.Mercedes.S01E09.Ice.Cream.You.Scream.We.All.Scream.720p.DTV.WEB-DL.DD2.0.x264-NTb.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 101819,
+    "fullUnpackSize" : 101819,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

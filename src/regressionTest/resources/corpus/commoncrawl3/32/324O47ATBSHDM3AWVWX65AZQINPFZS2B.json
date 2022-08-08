@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291175298.000000000,
+    "creationTime" : null,
+    "fileCRC" : 853230046,
+    "fileName" : "CS-330C_接點驅動控制器\\CS-330C_20101122.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 298806,
+    "fullUnpackSize" : 330139,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447233246.432882500,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "CS-330C_接點驅動控制器",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507698766.643771100,
+    "creationTime" : null,
+    "fileCRC" : -1364663833,
+    "fileName" : "Varadia anunt mediu.odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14203,
+    "fullUnpackSize" : 16788,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364618649.289379200,
+    "creationTime" : null,
+    "fileCRC" : 1067453124,
+    "fileName" : "Supernatural.S08E18.Freaks.And.Geeks.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17586,
+    "fullUnpackSize" : 44704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364579088.883952000,
+    "creationTime" : null,
+    "fileCRC" : 950513368,
+    "fileName" : "Supernatural.S08E18.Freaks.And.Geeks.HDTV-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17533,
+    "fullUnpackSize" : 44636,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

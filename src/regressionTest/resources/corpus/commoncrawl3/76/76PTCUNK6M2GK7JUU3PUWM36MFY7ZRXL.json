@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508306934.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1657325693,
+    "fileName" : "第六屆4th會員大會 會議資料.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2760431,
+    "fullUnpackSize" : 2793295,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

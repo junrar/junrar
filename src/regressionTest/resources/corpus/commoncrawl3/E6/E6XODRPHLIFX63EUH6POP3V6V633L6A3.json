@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1282101675.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1828055209,
+    "fileName" : "+_Algebra10_Merzliak_akadem.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3240112,
+    "fullUnpackSize" : 25657695,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

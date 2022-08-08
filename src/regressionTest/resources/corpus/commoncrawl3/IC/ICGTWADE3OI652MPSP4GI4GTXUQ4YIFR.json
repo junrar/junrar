@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1262678384.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1449768667,
+    "fileName" : "2010年第1期.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1800863,
+    "fullUnpackSize" : 4304961,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1317711212.425450000,
+    "creationTime" : null,
+    "fileCRC" : 1162846364,
+    "fileName" : "F1 2011\\cars\\re1\\livery_01\\textures_high\\re1_tex_high_01.pssg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1607185,
+    "fullUnpackSize" : 4912823,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

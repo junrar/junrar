@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223798003.265625000,
+    "creationTime" : null,
+    "fileCRC" : -809271873,
+    "fileName" : "bug-example.odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 9413,
+    "fullUnpackSize" : 11242,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223797916.843750000,
+    "creationTime" : null,
+    "fileCRC" : 967847620,
+    "fileName" : "swriter.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 216504,
+    "fullUnpackSize" : 244421,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

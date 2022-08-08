@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1263416758.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1737968727,
+    "fileName" : "Windows\\Windows 01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 598800,
+    "fullUnpackSize" : 603227,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1263416758.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1097729822,
+    "fileName" : "Windows\\Windows 02.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1353748,
+    "fullUnpackSize" : 1353748,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

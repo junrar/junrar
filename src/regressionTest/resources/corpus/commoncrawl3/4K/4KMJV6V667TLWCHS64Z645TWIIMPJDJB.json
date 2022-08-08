@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454306094.000000000,
+    "creationTime" : null,
+    "fileCRC" : -361947899,
+    "fileName" : "Решение правил землепользования Истимсский №314 от 23.07.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8216,
+    "fullUnpackSize" : 35840,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1454306064.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1823019992,
+    "fileName" : "правила к решению Истимисский №314 от 23.07.2015.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 160189,
+    "fullUnpackSize" : 163499,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

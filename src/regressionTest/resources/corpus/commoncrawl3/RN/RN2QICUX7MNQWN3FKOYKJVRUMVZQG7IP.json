@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457915328.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1895021933,
+    "fileName" : "Протоколы ул.Зеленая, Ленинская, Дорожная9 2015г\\Протокол 12_1 25.12.2015 Ленинская 7.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 903078,
+    "fullUnpackSize" : 1334093,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457493500.000000000,
+    "creationTime" : null,
+    "fileCRC" : -599025364,
+    "fileName" : "Протоколы ул.Зеленая, Ленинская, Дорожная9 2015г\\Протокол 13_1 25.12.2015 Зеленая 8.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 939447,
+    "fullUnpackSize" : 1380131,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

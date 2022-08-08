@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519117128.779734400,
+    "creationTime" : null,
+    "fileCRC" : 1916247518,
+    "fileName" : "sx2018rs08tampa.medium.saf",
+    "hostOS" : "win32",
+    "fullPackSize" : 63427520,
+    "fullUnpackSize" : 74460010,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

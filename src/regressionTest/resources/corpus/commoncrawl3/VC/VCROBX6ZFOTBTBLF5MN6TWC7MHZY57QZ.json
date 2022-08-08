@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308204578.000000000,
+    "creationTime" : null,
+    "fileCRC" : 680098983,
+    "fileName" : "Gia VLXD 05 _ 2011.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 45104,
+    "fullUnpackSize" : 219136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

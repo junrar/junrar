@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525597526.014026400,
+    "creationTime" : null,
+    "fileCRC" : -693347755,
+    "fileName" : "LTAIPSLPA84FXIV11.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 316557,
+    "fullUnpackSize" : 4288512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

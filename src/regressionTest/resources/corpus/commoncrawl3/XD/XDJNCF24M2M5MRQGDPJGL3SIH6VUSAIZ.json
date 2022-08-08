@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512642384.502589600,
+    "creationTime" : null,
+    "fileCRC" : -2018864225,
+    "fileName" : "REKAP GURU NON PNS SE KABUPATEN 2017.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 122794,
+    "fullUnpackSize" : 128148,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

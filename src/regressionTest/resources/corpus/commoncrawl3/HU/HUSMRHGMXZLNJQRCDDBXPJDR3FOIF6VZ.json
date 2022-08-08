@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511102540.045006000,
+    "creationTime" : null,
+    "fileCRC" : 221974945,
+    "fileName" : "10. Библия. 2-я Книга Царств. Ветхий Завет (читает Игорь Козлов).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 126100010,
+    "fullUnpackSize" : 133328805,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

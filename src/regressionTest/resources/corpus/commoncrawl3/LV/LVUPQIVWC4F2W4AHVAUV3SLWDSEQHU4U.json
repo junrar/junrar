@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334894713.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1752217210,
+    "fileName" : "CMS\\CMS200_En_12.2.16_V2.5.0.3_Win_T.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 11361909,
+    "fullUnpackSize" : 13030588,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1172474061.000000000,
+    "creationTime" : null,
+    "fileCRC" : 327349042,
+    "fileName" : "active1.reg",
+    "hostOS" : "win32",
+    "fullPackSize" : 324,
+    "fullUnpackSize" : 868,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1172474061.000000000,
+    "creationTime" : null,
+    "fileCRC" : -626113458,
+    "fileName" : "active2.reg",
+    "hostOS" : "win32",
+    "fullPackSize" : 384,
+    "fullUnpackSize" : 1118,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

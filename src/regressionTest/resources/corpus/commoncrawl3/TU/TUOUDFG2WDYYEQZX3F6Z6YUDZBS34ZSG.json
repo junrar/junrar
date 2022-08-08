@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1235711804.218000000,
+    "creationTime" : null,
+    "fileCRC" : -1033399018,
+    "fileName" : "HEALTH.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 32354,
+    "fullUnpackSize" : 139776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

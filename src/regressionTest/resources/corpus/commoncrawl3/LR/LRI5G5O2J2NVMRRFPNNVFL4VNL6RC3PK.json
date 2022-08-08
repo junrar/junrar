@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229181833.478066700,
+    "creationTime" : null,
+    "fileCRC" : 561273907,
+    "fileName" : "AV_autoclick.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 256367,
+    "fullUnpackSize" : 271621,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286688371.390625000,
+    "creationTime" : null,
+    "fileCRC" : 536133981,
+    "fileName" : "script.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 2946560,
+    "fullUnpackSize" : 2946560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

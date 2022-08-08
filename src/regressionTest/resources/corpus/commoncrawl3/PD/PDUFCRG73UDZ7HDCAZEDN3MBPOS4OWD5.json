@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1317368951.656232200,
+    "creationTime" : null,
+    "fileCRC" : -83783047,
+    "fileName" : "Коми Сопроводв Минпром и отметка об отправке экспресс почтой.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3272555,
+    "fullUnpackSize" : 3595186,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

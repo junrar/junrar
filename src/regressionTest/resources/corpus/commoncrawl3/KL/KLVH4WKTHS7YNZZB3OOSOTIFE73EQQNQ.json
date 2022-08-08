@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401023347.298767200,
+    "creationTime" : null,
+    "fileCRC" : 1817669580,
+    "fileName" : "Pedals Pedrafoca oficial.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 28533,
+    "fullUnpackSize" : 198325,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196686206.000000000,
+    "creationTime" : null,
+    "fileCRC" : 49917932,
+    "fileName" : "紫光词库完美优化第六版\\大词库第六版.uwl",
+    "hostOS" : "win32",
+    "fullPackSize" : 5964045,
+    "fullUnpackSize" : 10272768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1034929350.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2126990449,
+    "fileName" : "Graphics.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 118249,
+    "fullUnpackSize" : 279040,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

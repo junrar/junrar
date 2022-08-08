@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508588827.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2142625683,
+    "fileName" : "UniKey-4.2RC4-140823-Setup_x64.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 706038,
+    "fullUnpackSize" : 780571,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

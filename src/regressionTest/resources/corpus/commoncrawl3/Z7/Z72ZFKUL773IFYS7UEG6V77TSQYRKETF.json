@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1131335490.000000000,
+    "creationTime" : null,
+    "fileCRC" : 48397700,
+    "fileName" : "guia rapida GTS-220.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 151747,
+    "fullUnpackSize" : 234764,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

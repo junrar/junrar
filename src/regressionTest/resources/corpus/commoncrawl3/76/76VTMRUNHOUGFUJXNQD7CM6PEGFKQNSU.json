@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1226738186.640625000,
+    "creationTime" : null,
+    "fileCRC" : 386849145,
+    "fileName" : "Orain edo inoiz ez\\01 Belaunaldi lokartua.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5488821,
+    "fullUnpackSize" : 5634970,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

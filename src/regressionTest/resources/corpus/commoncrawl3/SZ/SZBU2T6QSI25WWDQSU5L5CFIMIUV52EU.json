@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1109173430.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1751583154,
+    "fileName" : "darxide.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 13794329,
+    "fullUnpackSize" : 15285760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347965318.362963600,
+    "creationTime" : null,
+    "fileCRC" : 481673075,
+    "fileName" : "КУБ Сев ШОССЕ_2 эт-16.09.2012.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 12961,
+    "fullUnpackSize" : 64000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

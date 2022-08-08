@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464660332.065929500,
+    "creationTime" : null,
+    "fileCRC" : 199684895,
+    "fileName" : "02S58PICgKU.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 41745,
+    "fullUnpackSize" : 41860,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

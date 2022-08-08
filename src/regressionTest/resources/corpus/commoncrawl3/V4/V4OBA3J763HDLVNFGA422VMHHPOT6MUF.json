@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1249893865.360032500,
+    "creationTime" : null,
+    "fileCRC" : -9815287,
+    "fileName" : "qreport1kv07.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 122646,
+    "fullUnpackSize" : 3381686,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421971794.965000000,
+    "creationTime" : null,
+    "fileCRC" : -1354366896,
+    "fileName" : "MẪU DANH SÁCH TRÍCH NGANG CACSNHAAN ĐỀ NGHỊ KHEN THƯỞNG THỰC TẬP).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 5383,
+    "fullUnpackSize" : 22528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421971995.377000000,
+    "creationTime" : null,
+    "fileCRC" : 1216514511,
+    "fileName" : "QD.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3585,
+    "fullUnpackSize" : 27136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

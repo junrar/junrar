@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498109388.000000000,
+    "creationTime" : null,
+    "fileCRC" : -506927516,
+    "fileName" : "PEMETAAN KD.xlsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 30251,
+    "fullUnpackSize" : 34762,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498109438.000000000,
+    "creationTime" : null,
+    "fileCRC" : 714587933,
+    "fileName" : "Panduan Penggunaan Aplikasi.url",
+    "hostOS" : "win32",
+    "fullPackSize" : 163,
+    "fullUnpackSize" : 175,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

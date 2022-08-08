@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359015513.988875700,
+    "creationTime" : null,
+    "fileCRC" : 925495403,
+    "fileName" : "fangio62.rapport en 6.DAT",
+    "hostOS" : "win32",
+    "fullPackSize" : 911266,
+    "fullUnpackSize" : 1218341,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

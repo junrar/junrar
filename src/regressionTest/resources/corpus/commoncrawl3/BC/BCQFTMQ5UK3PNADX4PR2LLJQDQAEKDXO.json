@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515463332.115393200,
+    "creationTime" : null,
+    "fileCRC" : 1771076026,
+    "fileName" : "007L.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1698282,
+    "fullUnpackSize" : 2056956,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370578431.000000000,
+    "creationTime" : null,
+    "fileCRC" : 538348793,
+    "fileName" : "Решение №537 от 16.07.2013г\\ООС_ГП_1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 723153,
+    "fullUnpackSize" : 1035145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1373966598.421875000,
+    "creationTime" : null,
+    "fileCRC" : 578570887,
+    "fileName" : "Решение №537 от 16.07.2013г\\Приложение к решению №537 от 16.07.2013г. (Мессояха).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2363632,
+    "fullUnpackSize" : 3236426,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

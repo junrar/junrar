@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478251121.695000000,
+    "creationTime" : null,
+    "fileCRC" : 1037105923,
+    "fileName" : "template 45  x 30  autocad.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 53065,
+    "fullUnpackSize" : 112352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

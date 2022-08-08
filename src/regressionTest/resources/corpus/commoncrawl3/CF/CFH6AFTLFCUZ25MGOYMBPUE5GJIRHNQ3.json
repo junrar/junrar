@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1315390417.790840800,
+    "creationTime" : null,
+    "fileCRC" : -1183404128,
+    "fileName" : "mp_lol\\mp_lol.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 6665571,
+    "fullUnpackSize" : 6717151,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

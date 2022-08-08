@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403796011.275480400,
+    "creationTime" : null,
+    "fileCRC" : -767988250,
+    "fileName" : "shimi-mashmuli-[www.konkur.in]\\shimi-mashmuli-[www.konkur.in].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1383264,
+    "fullUnpackSize" : 1451429,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

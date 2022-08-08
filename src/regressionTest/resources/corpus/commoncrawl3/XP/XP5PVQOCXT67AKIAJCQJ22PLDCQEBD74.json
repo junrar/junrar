@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300454181.501846100,
+    "creationTime" : null,
+    "fileCRC" : -1398545339,
+    "fileName" : "mp_jump_team_2\\mp_jump_team_2.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 19922790,
+    "fullUnpackSize" : 19922790,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

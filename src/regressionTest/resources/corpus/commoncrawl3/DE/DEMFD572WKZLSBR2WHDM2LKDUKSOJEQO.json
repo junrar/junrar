@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1145252632.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1039466420,
+    "fileName" : "КудрБутор.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 21526,
+    "fullUnpackSize" : 116224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

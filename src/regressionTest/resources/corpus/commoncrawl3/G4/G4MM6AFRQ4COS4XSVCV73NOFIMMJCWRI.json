@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 961241354.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1405711779,
+    "fileName" : "fam_j.nes",
+    "hostOS" : "win32",
+    "fullPackSize" : 203680,
+    "fullUnpackSize" : 393232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527724938.055402100,
+    "creationTime" : null,
+    "fileCRC" : 1899553117,
+    "fileName" : "medsoftvak.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2317613,
+    "fullUnpackSize" : 2510848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

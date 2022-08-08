@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352268776.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1878071933,
+    "fileName" : "general environment\\DAO 03-27-Procedural and Reference Manual for Self-Monitoring Report(SMR) System.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 229036,
+    "fullUnpackSize" : 257879,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353478127.579575900,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "general environment",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

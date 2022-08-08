@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318223703.306000000,
+    "creationTime" : null,
+    "fileCRC" : 813968554,
+    "fileName" : "афилир лица 3 кв 2011 года.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12347,
+    "fullUnpackSize" : 56832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

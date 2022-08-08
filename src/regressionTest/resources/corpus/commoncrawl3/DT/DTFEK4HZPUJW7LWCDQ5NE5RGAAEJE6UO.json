@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1111319804.000000000,
+    "creationTime" : null,
+    "fileCRC" : 59488709,
+    "fileName" : "8 том.HTM",
+    "hostOS" : "win32",
+    "fullPackSize" : 314682,
+    "fullUnpackSize" : 985251,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

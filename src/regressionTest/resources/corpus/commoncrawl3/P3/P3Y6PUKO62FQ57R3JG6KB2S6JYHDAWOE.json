@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1250722947.765000000,
+    "creationTime" : null,
+    "fileCRC" : 1634545907,
+    "fileName" : "ТАЙНЫЕ ОБЩЕСТВА.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 184206,
+    "fullUnpackSize" : 1095168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

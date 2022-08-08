@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359362328.479470200,
+    "creationTime" : null,
+    "fileCRC" : -1745033349,
+    "fileName" : "Supernatural.S08E10.720p.HDTV.X264-DIMENSION.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15539,
+    "fullUnpackSize" : 39338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359362328.479470200,
+    "creationTime" : null,
+    "fileCRC" : -1745033349,
+    "fileName" : "Supernatural.S08E10.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15520,
+    "fullUnpackSize" : 39338,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

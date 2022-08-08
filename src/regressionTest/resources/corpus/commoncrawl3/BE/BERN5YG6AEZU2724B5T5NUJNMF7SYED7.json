@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1453284582.224228200,
+    "creationTime" : null,
+    "fileCRC" : -134348354,
+    "fileName" : "PTPK - SURAT PENGESAHAN ALAMAT.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 612885,
+    "fullUnpackSize" : 761404,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465788672.856465400,
+    "creationTime" : null,
+    "fileCRC" : 1165945497,
+    "fileName" : "ASCOT_Borang_Permohonan_PTPK_CulinaryLevel2_2016.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1509119,
+    "fullUnpackSize" : 2562157,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

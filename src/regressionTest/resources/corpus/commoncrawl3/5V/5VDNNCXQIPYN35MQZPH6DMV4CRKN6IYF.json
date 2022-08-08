@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136043172.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1903483863,
+    "fileName" : "Средние (минимальные) УПКС ОН на КК - Варнавинский.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 11985,
+    "fullUnpackSize" : 55296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

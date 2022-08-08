@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319715887.875000000,
+    "creationTime" : null,
+    "fileCRC" : 1149959373,
+    "fileName" : "setup_gpsmeter_pc.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 898404,
+    "fullUnpackSize" : 921776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

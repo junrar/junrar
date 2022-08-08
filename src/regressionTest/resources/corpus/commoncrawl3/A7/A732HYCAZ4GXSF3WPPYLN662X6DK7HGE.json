@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358223652.000000000,
+    "creationTime" : null,
+    "fileCRC" : 471179807,
+    "fileName" : "slx-925-v1_01-2018_prolific_linux-mac-windowsxp-vista-7-8-10_32-64bit\\checkChipVersion_v1006.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 88760,
+    "fullUnpackSize" : 212992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470105624.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2146246294,
+    "fileName" : "slx-925-v1_01-2018_prolific_linux-mac-windowsxp-vista-7-8-10_32-64bit\\PL2303 Windows Driver User Manual v1.14.0.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1435932,
+    "fullUnpackSize" : 1540637,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

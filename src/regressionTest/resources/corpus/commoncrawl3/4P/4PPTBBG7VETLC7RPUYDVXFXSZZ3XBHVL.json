@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1209240633.031250000,
+    "creationTime" : null,
+    "fileCRC" : 497881842,
+    "fileName" : "MadBrains_4fm2f-SavoJr.prs",
+    "hostOS" : "win32",
+    "fullPackSize" : 1990,
+    "fullUnpackSize" : 12659,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

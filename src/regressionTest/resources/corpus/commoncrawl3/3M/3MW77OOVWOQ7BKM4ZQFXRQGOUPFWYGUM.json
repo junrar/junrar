@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221820746.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1510406120,
+    "fileName" : "Photo - Une lune entre deux maisons - c. La Manivelle Théâtre (1).JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 658905,
+    "fullUnpackSize" : 695342,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1219998932.000000000,
+    "creationTime" : null,
+    "fileCRC" : -963734470,
+    "fileName" : "Photo - Une lune entre deux maisons - c. La Manivelle Théâtre (2).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 610763,
+    "fullUnpackSize" : 611611,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

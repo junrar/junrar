@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473239778.123280900,
+    "creationTime" : null,
+    "fileCRC" : -122437584,
+    "fileName" : "[apci.ir] Field of Study Infography.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 1403312,
+    "fullUnpackSize" : 5303783,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

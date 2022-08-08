@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524029700.765458400,
+    "creationTime" : null,
+    "fileCRC" : -712815692,
+    "fileName" : "4.21考场示意图1\\七中.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3760218,
+    "fullUnpackSize" : 5515627,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466150914.631000000,
+    "creationTime" : null,
+    "fileCRC" : -1977941556,
+    "fileName" : "MODELO ANEXOS DO EDITAL.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8576,
+    "fullUnpackSize" : 32256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466382292.007471000,
+    "creationTime" : null,
+    "fileCRC" : 1756830911,
+    "fileName" : "Edital Credenciamento 002-2016 - Estomaterapia.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 270231,
+    "fullUnpackSize" : 300702,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

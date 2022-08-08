@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1234712925.828125000,
+    "creationTime" : null,
+    "fileCRC" : 168626404,
+    "fileName" : "070 Самоучитель латышского языка.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 1159264,
+    "fullUnpackSize" : 1159264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

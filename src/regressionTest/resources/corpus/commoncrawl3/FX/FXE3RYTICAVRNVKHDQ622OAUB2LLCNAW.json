@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304993133.620652400,
+    "creationTime" : null,
+    "fileCRC" : -1638521914,
+    "fileName" : "mp_testjump\\mp_testjump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 20410092,
+    "fullUnpackSize" : 20416704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

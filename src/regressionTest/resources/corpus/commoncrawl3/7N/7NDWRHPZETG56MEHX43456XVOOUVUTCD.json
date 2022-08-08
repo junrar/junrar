@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229240040.439345500,
+    "creationTime" : null,
+    "fileCRC" : -122730208,
+    "fileName" : "12.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 152974,
+    "fullUnpackSize" : 152974,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229243665.689345500,
+    "creationTime" : null,
+    "fileCRC" : 864862977,
+    "fileName" : "bobcat.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1079759,
+    "fullUnpackSize" : 3481600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

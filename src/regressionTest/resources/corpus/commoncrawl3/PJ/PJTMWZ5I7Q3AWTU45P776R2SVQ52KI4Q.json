@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1261656226.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1903613239,
+    "fileName" : "ИЭ Бухгалтерский управленческий учет (вопросы) 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 710692,
+    "fullUnpackSize" : 772356,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1261656212.000000000,
+    "creationTime" : null,
+    "fileCRC" : 395098378,
+    "fileName" : "ИЭ Бухгалтерский управленческий учет (вопросы) 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 866644,
+    "fullUnpackSize" : 953388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

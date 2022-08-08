@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1212741672.194250000,
+    "creationTime" : null,
+    "fileCRC" : 481319518,
+    "fileName" : "csi.615.hdtv.xvid-lol.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14394,
+    "fullUnpackSize" : 43512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1212822620.000000000,
+    "creationTime" : null,
+    "fileCRC" : 27867243,
+    "fileName" : "CSI.S06E15.DVDRip.XviD-TOPAZ.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13739,
+    "fullUnpackSize" : 41796,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

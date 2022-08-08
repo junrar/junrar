@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507684983.337634800,
+    "creationTime" : null,
+    "fileCRC" : -165641317,
+    "fileName" : "Распоряжение тех схема предоставл информ 251-П.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12995,
+    "fullUnpackSize" : 15667,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507278220.261654800,
+    "creationTime" : null,
+    "fileCRC" : 296249858,
+    "fileName" : "приложение к распоряжению 251-П.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 63173,
+    "fullUnpackSize" : 67128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

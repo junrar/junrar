@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444318482.484636400,
+    "creationTime" : null,
+    "fileCRC" : -266659591,
+    "fileName" : "ReadMe.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 585,
+    "fullUnpackSize" : 1648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444578602.079407500,
+    "creationTime" : null,
+    "fileCRC" : 1070379660,
+    "fileName" : "sentinel.wft",
+    "hostOS" : "win32",
+    "fullPackSize" : 3038254,
+    "fullUnpackSize" : 3067722,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

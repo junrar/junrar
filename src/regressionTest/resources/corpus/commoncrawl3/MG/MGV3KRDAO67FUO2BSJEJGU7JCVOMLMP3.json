@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1125582526.000000000,
+    "creationTime" : null,
+    "fileCRC" : -102404298,
+    "fileName" : "MidnightPool.jad",
+    "hostOS" : "win32",
+    "fullPackSize" : 206,
+    "fullUnpackSize" : 365,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1120812888.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1121064030,
+    "fileName" : "MidnightPool.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 132428,
+    "fullUnpackSize" : 133224,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

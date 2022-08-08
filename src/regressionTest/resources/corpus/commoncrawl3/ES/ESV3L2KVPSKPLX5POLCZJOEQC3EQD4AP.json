@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1288748452.000000000,
+    "creationTime" : null,
+    "fileCRC" : 300061889,
+    "fileName" : "1439q103_prill 1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 38717,
+    "fullUnpackSize" : 410112,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289543259.671875000,
+    "creationTime" : null,
+    "fileCRC" : 898859886,
+    "fileName" : "1439q103.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 172778,
+    "fullUnpackSize" : 1735680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497286862.048225200,
+    "creationTime" : null,
+    "fileCRC" : 480811904,
+    "fileName" : "vlc-2.2.6-win32\\vlc-2.2.6-win32.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 30950664,
+    "fullUnpackSize" : 30950664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

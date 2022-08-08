@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509790233.250000000,
+    "creationTime" : null,
+    "fileCRC" : -472374982,
+    "fileName" : "T70  2017.11.03\\mt6582_m506ad_686_T70@2017-11-03_20-40\\boot.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 5732579,
+    "fullUnpackSize" : 5754880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

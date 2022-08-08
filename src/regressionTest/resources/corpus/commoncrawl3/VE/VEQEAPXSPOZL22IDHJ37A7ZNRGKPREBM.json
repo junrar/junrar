@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495175563.246270900,
+    "creationTime" : null,
+    "fileCRC" : -1301803244,
+    "fileName" : "湟源护栏招标文件.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 172260,
+    "fullUnpackSize" : 540672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

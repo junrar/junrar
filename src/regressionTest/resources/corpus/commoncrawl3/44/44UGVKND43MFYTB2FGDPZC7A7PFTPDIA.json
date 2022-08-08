@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504510901.131840000,
+    "creationTime" : null,
+    "fileCRC" : -2072690657,
+    "fileName" : "A12   20170904(q13-1293).pkg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3663496,
+    "fullUnpackSize" : 3663496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444382198.213808000,
+    "creationTime" : null,
+    "fileCRC" : 1448538748,
+    "fileName" : "Supernatural.S11E01.HDTV.XviD-FUM.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 13873,
+    "fullUnpackSize" : 35950,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444558187.464783400,
+    "creationTime" : null,
+    "fileCRC" : 72421984,
+    "fileName" : "Supernatural.S11E01.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14222,
+    "fullUnpackSize" : 35950,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

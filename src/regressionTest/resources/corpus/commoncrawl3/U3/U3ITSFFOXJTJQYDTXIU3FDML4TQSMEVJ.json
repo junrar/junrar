@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1189945143.295750000,
+    "creationTime" : null,
+    "fileCRC" : -688096458,
+    "fileName" : "hockenheim2001.wad",
+    "hostOS" : "win32",
+    "fullPackSize" : 6751813,
+    "fullUnpackSize" : 18299044,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

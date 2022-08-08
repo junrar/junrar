@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1239757353.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1632929298,
+    "fileName" : "dd\\Drivers\\Video.7z",
+    "hostOS" : "win32",
+    "fullPackSize" : 44832744,
+    "fullUnpackSize" : 79132187,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

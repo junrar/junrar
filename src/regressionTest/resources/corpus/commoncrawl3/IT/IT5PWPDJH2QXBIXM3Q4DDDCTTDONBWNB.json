@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1162692097.046957700,
+    "creationTime" : null,
+    "fileCRC" : -629630678,
+    "fileName" : "hpzamil.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5583983,
+    "fullUnpackSize" : 7252675,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

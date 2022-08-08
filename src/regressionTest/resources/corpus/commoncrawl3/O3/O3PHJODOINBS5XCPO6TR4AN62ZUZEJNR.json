@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370243852.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1508755613,
+    "fileName" : "ОВИ в ЗКК о гос.гражданской службе КК23\\О внес.изм.в ЗКК о гос.гражданской службе КК_23.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 36268,
+    "fullUnpackSize" : 97280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370516867.109375000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "ОВИ в ЗКК о гос.гражданской службе КК23",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

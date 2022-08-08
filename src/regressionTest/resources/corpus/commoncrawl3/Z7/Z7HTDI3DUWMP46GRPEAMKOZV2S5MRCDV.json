@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401776884.296875000,
+    "creationTime" : null,
+    "fileCRC" : -229093155,
+    "fileName" : "NFC文档及JAR包.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 114701,
+    "fullUnpackSize" : 123538,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395822726.562500000,
+    "creationTime" : null,
+    "fileCRC" : -1978568915,
+    "fileName" : "NFCDemo_20140325.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 1651288,
+    "fullUnpackSize" : 1681435,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

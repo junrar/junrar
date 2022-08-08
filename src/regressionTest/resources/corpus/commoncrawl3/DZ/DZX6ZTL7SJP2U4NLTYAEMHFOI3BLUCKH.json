@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409886006.577089700,
+    "creationTime" : null,
+    "fileCRC" : 58520443,
+    "fileName" : "GPlayer.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1108191,
+    "fullUnpackSize" : 6104064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

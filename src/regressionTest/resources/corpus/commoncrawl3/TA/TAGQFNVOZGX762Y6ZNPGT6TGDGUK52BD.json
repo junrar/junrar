@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450073557.109515500,
+    "creationTime" : null,
+    "fileCRC" : -1424005078,
+    "fileName" : "2390-ЗТО(pdf)\\@2390-ЗТО.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 135321,
+    "fullUnpackSize" : 141671,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449740355.028233300,
+    "creationTime" : null,
+    "fileCRC" : 2133789859,
+    "fileName" : "2390-ЗТО(pdf)\\@приложение 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1171524,
+    "fullUnpackSize" : 1191390,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440021892.201301500,
+    "creationTime" : null,
+    "fileCRC" : -312125529,
+    "fileName" : "android-sdk_r24.3.4-macosx.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 97390240,
+    "fullUnpackSize" : 98340900,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

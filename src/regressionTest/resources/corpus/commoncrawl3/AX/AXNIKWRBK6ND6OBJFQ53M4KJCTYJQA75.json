@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328088772.000000000,
+    "creationTime" : null,
+    "fileCRC" : 119566957,
+    "fileName" : "Transformers Infestation 01 (rus)\\01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 712229,
+    "fullUnpackSize" : 712229,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328088848.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1090582202,
+    "fileName" : "Transformers Infestation 01 (rus)\\02.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 470247,
+    "fullUnpackSize" : 470247,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

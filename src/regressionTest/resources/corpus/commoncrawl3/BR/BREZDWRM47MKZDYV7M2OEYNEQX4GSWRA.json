@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1193596380.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1049492128,
+    "fileName" : "BTS StereoChopper V1.01.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2888525,
+    "fullUnpackSize" : 3034415,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

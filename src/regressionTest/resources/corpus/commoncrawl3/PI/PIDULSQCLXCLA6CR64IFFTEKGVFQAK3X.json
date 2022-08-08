@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528449308.651013500,
+    "creationTime" : null,
+    "fileCRC" : 128099056,
+    "fileName" : "卫生.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 5703,
+    "fullUnpackSize" : 31744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528449314.970374900,
+    "creationTime" : null,
+    "fileCRC" : 307757817,
+    "fileName" : "综合.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 5350,
+    "fullUnpackSize" : 29184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

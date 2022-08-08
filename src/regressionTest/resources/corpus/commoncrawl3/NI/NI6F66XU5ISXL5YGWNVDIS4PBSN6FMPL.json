@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478747372.785782400,
+    "creationTime" : null,
+    "fileCRC" : 702018031,
+    "fileName" : "Карелэнерго-11-16.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1052717,
+    "fullUnpackSize" : 1317199,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

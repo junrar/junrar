@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456119118.036692600,
+    "creationTime" : null,
+    "fileCRC" : 1598683285,
+    "fileName" : "sl-uv30_winxp-7-8_32bit\\FL2000-2.0.31006.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4441669,
+    "fullUnpackSize" : 6708416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

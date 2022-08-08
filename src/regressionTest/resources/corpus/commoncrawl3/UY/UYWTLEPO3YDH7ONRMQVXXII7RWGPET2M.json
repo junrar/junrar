@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1451893708.562000000,
+    "creationTime" : null,
+    "fileCRC" : 1678532922,
+    "fileName" : "2015-6(28.12.2015 E KADAR BİLDİRİMİ YAPILAN).xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 714693,
+    "fullUnpackSize" : 732672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

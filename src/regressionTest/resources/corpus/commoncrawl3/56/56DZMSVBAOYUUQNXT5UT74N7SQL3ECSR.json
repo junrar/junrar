@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1105763814.734375000,
+    "creationTime" : null,
+    "fileCRC" : -1041008120,
+    "fileName" : "Stargate.Atlantis.S01E17-NONAME.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18634,
+    "fullUnpackSize" : 49563,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

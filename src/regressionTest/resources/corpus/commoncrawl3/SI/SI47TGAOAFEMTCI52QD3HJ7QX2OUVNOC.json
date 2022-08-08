@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511855308.196000000,
+    "creationTime" : null,
+    "fileCRC" : 1641314193,
+    "fileName" : "Список публикаций Дорошенко В. С..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 103743,
+    "fullUnpackSize" : 980480,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264685200.343750000,
+    "creationTime" : null,
+    "fileCRC" : 393006131,
+    "fileName" : "[Raws-4U] Hanasakeru Seishounen - 32 (BS2 960x540 H264 AAC).ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 8883,
+    "fullUnpackSize" : 48599,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

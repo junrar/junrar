@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410194385.607421800,
+    "creationTime" : null,
+    "fileCRC" : -743560626,
+    "fileName" : "Guardians of the Galaxy #018 (2013-) (002-016)\\Guardians of the Galaxy (2013-) 018-000 cópia.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 413669,
+    "fullUnpackSize" : 440793,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410194715.451171800,
+    "creationTime" : null,
+    "fileCRC" : -1074974128,
+    "fileName" : "Guardians of the Galaxy #018 (2013-) (002-016)\\Guardians of the Galaxy (2013-) 018-001 cópia.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 663513,
+    "fullUnpackSize" : 695958,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

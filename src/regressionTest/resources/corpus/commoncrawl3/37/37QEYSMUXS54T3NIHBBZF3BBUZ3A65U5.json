@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387008352.076000000,
+    "creationTime" : null,
+    "fileCRC" : -350750352,
+    "fileName" : "Sample_Fasle2_EghtesadeKalan.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 36018510,
+    "fullUnpackSize" : 36155574,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

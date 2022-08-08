@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487259543.687500000,
+    "creationTime" : null,
+    "fileCRC" : 222399403,
+    "fileName" : "DAP011.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 594995,
+    "fullUnpackSize" : 627726,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488633740.917324800,
+    "creationTime" : null,
+    "fileCRC" : 1633400793,
+    "fileName" : "DAP011A-D.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 205803,
+    "fullUnpackSize" : 228978,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

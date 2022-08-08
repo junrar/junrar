@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281426974.000000000,
+    "creationTime" : null,
+    "fileCRC" : 589751988,
+    "fileName" : "Устав 2009 г..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 46599,
+    "fullUnpackSize" : 289792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

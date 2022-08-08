@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398043589.577443000,
+    "creationTime" : null,
+    "fileCRC" : 1499635930,
+    "fileName" : "DC-856-052015\\PhoenixSuit.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 600656,
+    "fullUnpackSize" : 966271,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355984117.890000000,
+    "creationTime" : null,
+    "fileCRC" : -1980850547,
+    "fileName" : "DC-856-052015\\PhoenixSuitPacket.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 12957202,
+    "fullUnpackSize" : 13326336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

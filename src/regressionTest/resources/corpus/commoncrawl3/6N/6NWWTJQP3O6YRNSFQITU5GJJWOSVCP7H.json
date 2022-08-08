@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1468170940.000000000,
+    "creationTime" : null,
+    "fileCRC" : 250504599,
+    "fileName" : "IMG_3950_fot. K PICTURES.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1391109,
+    "fullUnpackSize" : 1406536,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

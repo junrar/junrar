@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422702729.852257500,
+    "creationTime" : null,
+    "fileCRC" : 422408375,
+    "fileName" : "k2_ru-RU_language_pack.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 57900,
+    "fullUnpackSize" : 60818,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447596843.987621000,
+    "creationTime" : null,
+    "fileCRC" : 387123876,
+    "fileName" : "K2_v2.6.9.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 1368887,
+    "fullUnpackSize" : 1473144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

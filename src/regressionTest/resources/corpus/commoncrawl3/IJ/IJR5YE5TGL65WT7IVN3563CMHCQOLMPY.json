@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477443420.375166300,
+    "creationTime" : null,
+    "fileCRC" : 1606826299,
+    "fileName" : "610157_declaracion.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4928731,
+    "fullUnpackSize" : 5589770,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1366352009.526367100,
+    "creationTime" : null,
+    "fileCRC" : 1932429578,
+    "fileName" : "załączniki\\Zał nr 1 Specyfikacja mebli do laboratorium.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1914749,
+    "fullUnpackSize" : 2257484,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1211414797.312000000,
+    "creationTime" : null,
+    "fileCRC" : 584173466,
+    "fileName" : "4 Citaty.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 72925,
+    "fullUnpackSize" : 398848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

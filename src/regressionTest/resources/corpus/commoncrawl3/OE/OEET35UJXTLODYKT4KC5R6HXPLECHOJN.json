@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298197575.338967200,
+    "creationTime" : null,
+    "fileCRC" : 480275966,
+    "fileName" : "mp_bouncer_training\\mp_bouncer_training.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 22154637,
+    "fullUnpackSize" : 22162330,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

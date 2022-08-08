@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449353572.177000000,
+    "creationTime" : null,
+    "fileCRC" : 631949597,
+    "fileName" : "Section 3.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4159424,
+    "fullUnpackSize" : 4239199,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

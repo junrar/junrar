@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354611545.127000000,
+    "creationTime" : null,
+    "fileCRC" : -2120020046,
+    "fileName" : "Перечень услуг (работ) ред10.10.2012.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4683,
+    "fullUnpackSize" : 33792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354609661.227183000,
+    "creationTime" : null,
+    "fileCRC" : -327944899,
+    "fileName" : "расп услуги ККЦ.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 11133,
+    "fullUnpackSize" : 13823,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

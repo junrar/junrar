@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469022698.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1376047601,
+    "fileName" : "对象的显示与隐藏.jdp",
+    "hostOS" : "win32",
+    "fullPackSize" : 566862,
+    "fullUnpackSize" : 1067947,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

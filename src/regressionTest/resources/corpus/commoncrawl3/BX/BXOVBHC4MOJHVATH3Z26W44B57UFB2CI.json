@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1099223102.000000000,
+    "creationTime" : null,
+    "fileCRC" : 212171865,
+    "fileName" : "Апокрифы.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 206545,
+    "fullUnpackSize" : 609682,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

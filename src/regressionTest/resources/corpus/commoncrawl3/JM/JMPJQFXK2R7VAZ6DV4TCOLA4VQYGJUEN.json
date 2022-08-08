@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519003154.286246600,
+    "creationTime" : null,
+    "fileCRC" : 1651631472,
+    "fileName" : "Bibliography_Expert - Project monitoring.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 99837,
+    "fullUnpackSize" : 109044,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519003154.301846700,
+    "creationTime" : null,
+    "fileCRC" : -1824677713,
+    "fileName" : "Vacancy_notice_Expert - Project monitoring (county offices).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 190162,
+    "fullUnpackSize" : 211967,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

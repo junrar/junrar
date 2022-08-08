@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177489416.078000000,
+    "creationTime" : null,
+    "fileCRC" : 951008271,
+    "fileName" : "016Nahl.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 40350968,
+    "fullUnpackSize" : 40832613,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

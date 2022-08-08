@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1187852644.000000000,
+    "creationTime" : null,
+    "fileCRC" : 116288692,
+    "fileName" : "6 CIRCULO\\01 Faixa 1.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3471336,
+    "fullUnpackSize" : 3547312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

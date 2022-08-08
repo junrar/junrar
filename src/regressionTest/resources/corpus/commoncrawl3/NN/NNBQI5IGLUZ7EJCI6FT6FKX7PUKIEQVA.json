@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426750916.328026000,
+    "creationTime" : null,
+    "fileCRC" : -1996364813,
+    "fileName" : "MODELLO FRAME.sdb",
+    "hostOS" : "win32",
+    "fullPackSize" : 190996,
+    "fullUnpackSize" : 207809,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1434036264.623811900,
+    "creationTime" : null,
+    "fileCRC" : 398999447,
+    "fileName" : "MODELLO GLOBALE ORTOTROPO.sdb",
+    "hostOS" : "win32",
+    "fullPackSize" : 985859,
+    "fullUnpackSize" : 1054168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1165895781.353832900,
+    "creationTime" : null,
+    "fileCRC" : -876017347,
+    "fileName" : "xn_resourceeditor_setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1140679,
+    "fullUnpackSize" : 1172137,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

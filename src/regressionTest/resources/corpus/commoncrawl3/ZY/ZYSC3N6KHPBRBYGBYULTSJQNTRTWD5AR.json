@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369718300.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2113249667,
+    "fileName" : "islah33.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 69385697,
+    "fullUnpackSize" : 72365455,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

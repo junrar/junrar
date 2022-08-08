@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354270705.437000000,
+    "creationTime" : null,
+    "fileCRC" : 1524364708,
+    "fileName" : "to2012_rr.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2032771,
+    "fullUnpackSize" : 2391678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

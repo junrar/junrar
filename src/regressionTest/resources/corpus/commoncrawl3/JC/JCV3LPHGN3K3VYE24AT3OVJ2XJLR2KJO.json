@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493266022.996000000,
+    "creationTime" : null,
+    "fileCRC" : 1497426929,
+    "fileName" : "Пояснительная записка к приложению.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 588946,
+    "fullUnpackSize" : 1167872,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493259809.192382800,
+    "creationTime" : null,
+    "fileCRC" : 772187807,
+    "fileName" : "Приложение.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 16069,
+    "fullUnpackSize" : 70144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

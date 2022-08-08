@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379482134.000000000,
+    "creationTime" : null,
+    "fileCRC" : 731774857,
+    "fileName" : "КОНФИГУРАТОР СУ5Д V4.4 (setup).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5342735,
+    "fullUnpackSize" : 5687084,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

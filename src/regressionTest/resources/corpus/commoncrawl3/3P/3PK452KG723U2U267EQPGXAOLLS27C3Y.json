@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1428633269.328125000,
+    "creationTime" : null,
+    "fileCRC" : 1999355864,
+    "fileName" : "Plan_tekyshego_remonta_2014_Altaiskaj_33.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 139449,
+    "fullUnpackSize" : 467603,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

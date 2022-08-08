@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470199302.187697200,
+    "creationTime" : null,
+    "fileCRC" : 509755046,
+    "fileName" : "пятница на 05 августа.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1629207,
+    "fullUnpackSize" : 2008076,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

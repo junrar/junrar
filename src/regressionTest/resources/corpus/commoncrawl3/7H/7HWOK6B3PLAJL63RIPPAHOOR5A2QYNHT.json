@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298198133.639710900,
+    "creationTime" : null,
+    "fileCRC" : -587733576,
+    "fileName" : "mp_cheops\\mp_cheops.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 30311635,
+    "fullUnpackSize" : 30430309,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

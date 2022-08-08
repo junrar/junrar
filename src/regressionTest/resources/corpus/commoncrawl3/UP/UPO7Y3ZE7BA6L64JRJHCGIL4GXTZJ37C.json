@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443113803.349045500,
+    "creationTime" : null,
+    "fileCRC" : 919498558,
+    "fileName" : "Resume Template By Fay Zodiac\\Business Card PSD Files\\Card Sample.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 863465,
+    "fullUnpackSize" : 888678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1443114233.805666200,
+    "creationTime" : null,
+    "fileCRC" : 439232695,
+    "fileName" : "Resume Template By Fay Zodiac\\Business Card PSD Files\\Minimalistic business card B&W.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 318393,
+    "fullUnpackSize" : 1185060,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

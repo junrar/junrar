@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470796376.217400000,
+    "creationTime" : null,
+    "fileCRC" : -1066268179,
+    "fileName" : "APRILIE\\1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 988025,
+    "fullUnpackSize" : 1009908,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470796423.847400000,
+    "creationTime" : null,
+    "fileCRC" : 1419375677,
+    "fileName" : "APRILIE\\2.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1036832,
+    "fullUnpackSize" : 1057976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

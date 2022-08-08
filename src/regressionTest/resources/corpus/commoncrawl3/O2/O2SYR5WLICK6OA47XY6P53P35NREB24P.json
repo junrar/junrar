@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255637048.000000000,
+    "creationTime" : null,
+    "fileCRC" : -30427756,
+    "fileName" : "20. limit-fungsi OK.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 174147,
+    "fullUnpackSize" : 752128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

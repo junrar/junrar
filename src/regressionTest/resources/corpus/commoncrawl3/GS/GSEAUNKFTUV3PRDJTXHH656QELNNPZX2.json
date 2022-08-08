@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431675530.000000000,
+    "creationTime" : null,
+    "fileCRC" : 997871574,
+    "fileName" : "13.ТУ ОАО Аскольд.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9652,
+    "fullUnpackSize" : 38912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

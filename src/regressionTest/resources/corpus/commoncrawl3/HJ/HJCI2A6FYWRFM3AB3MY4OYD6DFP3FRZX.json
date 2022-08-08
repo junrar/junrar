@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442455714.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1045385526,
+    "fileName" : "Re-20-15.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 32257,
+    "fullUnpackSize" : 357376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

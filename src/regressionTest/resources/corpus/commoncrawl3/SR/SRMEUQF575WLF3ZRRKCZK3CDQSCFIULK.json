@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433127764.435052200,
+    "creationTime" : null,
+    "fileCRC" : 2120505075,
+    "fileName" : "internet-form1.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 8745,
+    "fullUnpackSize" : 11372,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516508184.474950400,
+    "creationTime" : null,
+    "fileCRC" : -875534892,
+    "fileName" : "internet-form5.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 14022,
+    "fullUnpackSize" : 16891,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

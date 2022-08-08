@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177045672.687500000,
+    "creationTime" : null,
+    "fileCRC" : 1958376909,
+    "fileName" : "Duran Duran-Hungry Like the Wolf (live 2003).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3487222,
+    "fullUnpackSize" : 3747840,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

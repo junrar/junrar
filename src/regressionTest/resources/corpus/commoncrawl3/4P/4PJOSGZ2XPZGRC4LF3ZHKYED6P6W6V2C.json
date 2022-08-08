@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229677600.343750000,
+    "creationTime" : null,
+    "fileCRC" : 694990374,
+    "fileName" : "faer1b.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 69953,
+    "fullUnpackSize" : 70227,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1157894190.281250000,
+    "creationTime" : null,
+    "fileCRC" : -595220352,
+    "fileName" : "flash.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1144262,
+    "fullUnpackSize" : 3172352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

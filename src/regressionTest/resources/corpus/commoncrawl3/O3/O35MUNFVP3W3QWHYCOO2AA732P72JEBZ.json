@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405387604.000000000,
+    "creationTime" : null,
+    "fileCRC" : -397680312,
+    "fileName" : "201472curvemusic.gsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 94144,
+    "fullUnpackSize" : 259470,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

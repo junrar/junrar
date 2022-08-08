@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1203570960.890625000,
+    "creationTime" : null,
+    "fileCRC" : -1692101079,
+    "fileName" : "ScriptEdit.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 275624,
+    "fullUnpackSize" : 707072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1131969802.000000000,
+    "creationTime" : null,
+    "fileCRC" : -956058380,
+    "fileName" : "makecodedabasevdddcj.old",
+    "hostOS" : "win32",
+    "fullPackSize" : 33749,
+    "fullUnpackSize" : 231424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

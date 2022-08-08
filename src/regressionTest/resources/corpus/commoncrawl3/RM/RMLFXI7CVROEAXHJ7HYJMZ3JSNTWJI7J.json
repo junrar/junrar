@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1151371982.000000000,
+    "creationTime" : null,
+    "fileCRC" : -412016663,
+    "fileName" : "electronic_components.DOC",
+    "hostOS" : "win32",
+    "fullPackSize" : 26280,
+    "fullUnpackSize" : 226304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

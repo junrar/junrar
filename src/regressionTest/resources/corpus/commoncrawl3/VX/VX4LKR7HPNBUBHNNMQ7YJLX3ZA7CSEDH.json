@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306228494.000000000,
+    "creationTime" : null,
+    "fileCRC" : -946225904,
+    "fileName" : "SMC7828.AP",
+    "hostOS" : "win32",
+    "fullPackSize" : 3345189,
+    "fullUnpackSize" : 3735356,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

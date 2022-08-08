@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1113408484.000000000,
+    "creationTime" : null,
+    "fileCRC" : 684716688,
+    "fileName" : "doc2005-11.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 24723,
+    "fullUnpackSize" : 423298,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

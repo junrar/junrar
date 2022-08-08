@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423441050.000000000,
+    "creationTime" : null,
+    "fileCRC" : -651494371,
+    "fileName" : "Бюджет для граждан на 2015 год.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 910541,
+    "fullUnpackSize" : 962843,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

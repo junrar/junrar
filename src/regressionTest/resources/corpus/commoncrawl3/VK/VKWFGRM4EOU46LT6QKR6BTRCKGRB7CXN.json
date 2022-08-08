@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1166900097.402344000,
+    "creationTime" : null,
+    "fileCRC" : 1633057444,
+    "fileName" : "GS Manga Ch 2\\01.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1594792,
+    "fullUnpackSize" : 1594792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

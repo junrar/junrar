@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535653651.395000000,
+    "creationTime" : null,
+    "fileCRC" : 1205743815,
+    "fileName" : "KM_prise_brend_opt_3108201822509.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 382276,
+    "fullUnpackSize" : 2646016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

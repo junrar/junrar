@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466655991.791018500,
+    "creationTime" : null,
+    "fileCRC" : -269270440,
+    "fileName" : "Cassette.limoographic.com\\Cassette.limoographic.com.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 1451512,
+    "fullUnpackSize" : 5557045,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367909894.911927100,
+    "creationTime" : null,
+    "fileCRC" : -358272644,
+    "fileName" : "Premier FC - Family.rfa",
+    "hostOS" : "win32",
+    "fullPackSize" : 950224,
+    "fullUnpackSize" : 1015808,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

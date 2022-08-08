@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300614233.746080400,
+    "creationTime" : null,
+    "fileCRC" : -854167883,
+    "fileName" : "mp_dr_carpark\\mp_dr_carpark.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 19787710,
+    "fullUnpackSize" : 19808352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

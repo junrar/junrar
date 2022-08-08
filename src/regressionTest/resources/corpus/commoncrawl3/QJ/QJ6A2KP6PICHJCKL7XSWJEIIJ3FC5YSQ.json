@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409557301.146629000,
+    "creationTime" : null,
+    "fileCRC" : -204153972,
+    "fileName" : "PROJETO GINASIO_ POLI_MP 18.09.2013\\Projeto_NUCLEO VERDESPORTE.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 54863,
+    "fullUnpackSize" : 136508,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379562810.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1657657526,
+    "fileName" : "PROJETO GINASIO_ POLI_MP 18.09.2013\\VE_GINASIO_ POLI_MP 18.09.2013.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1671619,
+    "fullUnpackSize" : 1845440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

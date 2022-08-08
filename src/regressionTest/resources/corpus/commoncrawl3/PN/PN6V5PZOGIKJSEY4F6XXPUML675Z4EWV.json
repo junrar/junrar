@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530613968.717915100,
+    "creationTime" : null,
+    "fileCRC" : -733723895,
+    "fileName" : "moto_L7c_PCL_cut_CG2.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 4874,
+    "fullUnpackSize" : 8256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

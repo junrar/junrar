@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387415890.949956200,
+    "creationTime" : null,
+    "fileCRC" : 799724840,
+    "fileName" : "Фролищи  ПКР   2014-2018 год.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 6567,
+    "fullUnpackSize" : 35328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391138952.192000000,
+    "creationTime" : null,
+    "fileCRC" : -1090376111,
+    "fileName" : "ПКР  п.Фролищи  на 2014-2018 годы.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14580,
+    "fullUnpackSize" : 80384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

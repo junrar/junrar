@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217151847.187500000,
+    "creationTime" : null,
+    "fileCRC" : -1966841126,
+    "fileName" : "Pizza_Hut_KFC_MC_DONALDS_.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 379894,
+    "fullUnpackSize" : 903511,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

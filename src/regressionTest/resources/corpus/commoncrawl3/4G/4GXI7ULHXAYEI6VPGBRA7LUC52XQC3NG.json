@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484528748.390177900,
+    "creationTime" : null,
+    "fileCRC" : -340922922,
+    "fileName" : "grafik seminarov 2017 2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 326316,
+    "fullUnpackSize" : 365931,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484528723.408737900,
+    "creationTime" : null,
+    "fileCRC" : 1370373801,
+    "fileName" : "grafik seminarov 2017 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 348751,
+    "fullUnpackSize" : 389591,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

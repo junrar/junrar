@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505116096.827177900,
+    "creationTime" : null,
+    "fileCRC" : 754099014,
+    "fileName" : "kzro_mountainsein_fykseN_0559.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 4932485,
+    "fullUnpackSize" : 22510805,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

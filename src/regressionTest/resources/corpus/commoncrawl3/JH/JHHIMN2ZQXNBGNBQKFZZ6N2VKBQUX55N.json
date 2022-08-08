@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247725499.466957900,
+    "creationTime" : null,
+    "fileCRC" : 969886234,
+    "fileName" : "Туалетный столик.mod",
+    "hostOS" : "win32",
+    "fullPackSize" : 9749,
+    "fullUnpackSize" : 388272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247725515.220957900,
+    "creationTime" : null,
+    "fileCRC" : 43223744,
+    "fileName" : "Туалетный столик.gsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 74718,
+    "fullUnpackSize" : 592899,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

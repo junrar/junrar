@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301042116.218750000,
+    "creationTime" : null,
+    "fileCRC" : 552919701,
+    "fileName" : "PrivateWorkplace-3.0.7.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3696207,
+    "fullUnpackSize" : 4669440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

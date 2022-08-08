@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306297614.000000000,
+    "creationTime" : null,
+    "fileCRC" : -982162777,
+    "fileName" : "Игорь Черкашин палата № 7.кор..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 53965,
+    "fullUnpackSize" : 186368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

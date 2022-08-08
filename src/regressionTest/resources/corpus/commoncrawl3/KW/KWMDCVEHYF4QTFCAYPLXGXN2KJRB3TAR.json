@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1171277957.062500000,
+    "creationTime" : null,
+    "fileCRC" : -1629746021,
+    "fileName" : "Superantural - 214 - Born Under A Bad Sign\\Supernatural.S02E14.HDTV.XViD-NoTV.cz.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14172,
+    "fullUnpackSize" : 37707,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1171282067.468750000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Superantural - 214 - Born Under A Bad Sign",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1260930156.609375000,
+    "creationTime" : null,
+    "fileCRC" : -716647710,
+    "fileName" : "Балабуха Андрей Дмитриевич. Должник.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 13729,
+    "fullUnpackSize" : 40569,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

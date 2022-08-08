@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1030374844.000000000,
+    "creationTime" : null,
+    "fileCRC" : -329427657,
+    "fileName" : "A1Ring_2001_RL_1.0\\austria2001.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5176093,
+    "fullUnpackSize" : 5211695,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

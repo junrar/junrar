@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407814822.000000000,
+    "creationTime" : null,
+    "fileCRC" : -39709954,
+    "fileName" : "ICCFD8-2014-0296-fullpaper.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 436572,
+    "fullUnpackSize" : 494856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405155228.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1342549493,
+    "fileName" : "ICCFD8-2014-0272-fullpaper.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 11667750,
+    "fullUnpackSize" : 12500828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1054971226.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1802069329,
+    "fileName" : "Monaco_2003_RL_1.0b\\monaco2003.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6310695,
+    "fullUnpackSize" : 6337267,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

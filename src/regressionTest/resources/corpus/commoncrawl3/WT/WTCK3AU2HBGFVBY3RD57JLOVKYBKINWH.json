@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487121761.246596700,
+    "creationTime" : null,
+    "fileCRC" : -749093229,
+    "fileName" : "Podgotovka shkol'nikov k vserossijskoj olimpiade po anglijskomu jazyku.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 4049166,
+    "fullUnpackSize" : 4505088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

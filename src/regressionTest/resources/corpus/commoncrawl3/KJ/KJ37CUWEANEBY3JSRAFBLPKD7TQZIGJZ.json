@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1313845163.351682100,
+    "creationTime" : null,
+    "fileCRC" : 742968979,
+    "fileName" : "mp_skypia\\mp_skypia.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 24344495,
+    "fullUnpackSize" : 24358798,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

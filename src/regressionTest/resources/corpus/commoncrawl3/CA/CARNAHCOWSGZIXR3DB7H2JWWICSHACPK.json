@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1105600966.000000000,
+    "creationTime" : null,
+    "fileCRC" : -243653319,
+    "fileName" : "S1CT17.DAT",
+    "hostOS" : "win32",
+    "fullPackSize" : 69087,
+    "fullUnpackSize" : 153924,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1105602502.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1280595590,
+    "fileName" : "japan2004.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 7203003,
+    "fullUnpackSize" : 7240778,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

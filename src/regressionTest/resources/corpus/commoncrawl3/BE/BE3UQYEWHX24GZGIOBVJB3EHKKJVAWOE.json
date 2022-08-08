@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450156732.770000000,
+    "creationTime" : null,
+    "fileCRC" : -863739848,
+    "fileName" : "№1929 от 15.12.2015г. - О внесении изменений в ПАСГО от 04.03.2015г. №225 Проведение оздоровительной компании в 2015г..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 165456,
+    "fullUnpackSize" : 410624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

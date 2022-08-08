@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1344946175.802039400,
+    "creationTime" : null,
+    "fileCRC" : 2017595897,
+    "fileName" : "mp_raymanadventure\\mp_raymanadventure.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 15794455,
+    "fullUnpackSize" : 15905188,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

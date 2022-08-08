@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333102748.546875000,
+    "creationTime" : null,
+    "fileCRC" : 594541508,
+    "fileName" : "9ping_chm.chm",
+    "hostOS" : "win32",
+    "fullPackSize" : 159349,
+    "fullUnpackSize" : 159516,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511298247.917962800,
+    "creationTime" : null,
+    "fileCRC" : 1958480973,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 453,
+    "fullUnpackSize" : 688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511298169.559786900,
+    "creationTime" : null,
+    "fileCRC" : 268250822,
+    "fileName" : "JBEJ.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 125,
+    "fullUnpackSize" : 125,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

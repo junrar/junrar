@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281267276.843750000,
+    "creationTime" : null,
+    "fileCRC" : -2130006910,
+    "fileName" : "Polilinearità e monodia accompagnata.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 17859033,
+    "fullUnpackSize" : 21640058,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

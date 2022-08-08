@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535121514.663830800,
+    "creationTime" : null,
+    "fileCRC" : -1414916307,
+    "fileName" : "GrieeX.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 24393964,
+    "fullUnpackSize" : 24560592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

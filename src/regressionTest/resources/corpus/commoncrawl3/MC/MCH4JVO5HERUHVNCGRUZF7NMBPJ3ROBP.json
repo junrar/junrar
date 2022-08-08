@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : 1379303541.475116300,
+    "lastModifiedTime" : 1379303543.434228300,
+    "creationTime" : 1379301056.921007900,
+    "fileCRC" : 722862989,
+    "fileName" : "RSTerminal_setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1974786,
+    "fullUnpackSize" : 1998349,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

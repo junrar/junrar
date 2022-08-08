@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424435269.505992400,
+    "creationTime" : null,
+    "fileCRC" : 1920138689,
+    "fileName" : "Ochorowiicz_psychol\\Ochorowiicz_psychol_01.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 4342321,
+    "fullUnpackSize" : 4342321,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

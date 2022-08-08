@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478584705.951467400,
+    "creationTime" : null,
+    "fileCRC" : -1220692765,
+    "fileName" : "Отчет по осенним каникулам 2016-Марьино.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 3676677,
+    "fullUnpackSize" : 3709208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

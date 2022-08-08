@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413788194.000000000,
+    "creationTime" : null,
+    "fileCRC" : -202939068,
+    "fileName" : "Техническое задание.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 122797,
+    "fullUnpackSize" : 124354,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413771338.484000000,
+    "creationTime" : null,
+    "fileCRC" : -30274980,
+    "fileName" : "Приглашение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 24080,
+    "fullUnpackSize" : 138240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289901268.383930000,
+    "creationTime" : null,
+    "fileCRC" : 1407085125,
+    "fileName" : "description.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 751,
+    "fullUnpackSize" : 1380,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289362132.187418200,
+    "creationTime" : null,
+    "fileCRC" : 327190547,
+    "fileName" : "empireisland_armorgames_secure.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5150185,
+    "fullUnpackSize" : 5150185,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

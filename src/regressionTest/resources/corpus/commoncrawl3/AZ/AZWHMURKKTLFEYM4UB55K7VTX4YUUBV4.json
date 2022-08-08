@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273826206.000000000,
+    "creationTime" : null,
+    "fileCRC" : -993807076,
+    "fileName" : "Диаграммы состояния двойных металлических систем (Т3_кн.2).djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 5614161,
+    "fullUnpackSize" : 5614161,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

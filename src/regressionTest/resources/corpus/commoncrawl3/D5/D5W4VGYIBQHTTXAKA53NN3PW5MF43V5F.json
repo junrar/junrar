@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530097237.128876100,
+    "creationTime" : null,
+    "fileCRC" : -843352655,
+    "fileName" : "OpenDiag-2.15.14.apk",
+    "hostOS" : "win32",
+    "fullPackSize" : 1587680,
+    "fullUnpackSize" : 5822586,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413368099.508034100,
+    "creationTime" : null,
+    "fileCRC" : 476848429,
+    "fileName" : "Adrenalin 1.71 Cracked\\Adrenalin\\A.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 351744,
+    "fullUnpackSize" : 360456,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427529054.457265300,
+    "creationTime" : null,
+    "fileCRC" : 2046831267,
+    "fileName" : "Adrenalin 1.71 Cracked\\Adrenalin\\Adrenalin.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5716528,
+    "fullUnpackSize" : 5808640,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

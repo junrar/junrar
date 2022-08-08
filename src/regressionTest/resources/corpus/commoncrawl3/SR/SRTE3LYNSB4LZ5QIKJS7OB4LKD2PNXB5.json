@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1466015661.489236400,
+    "creationTime" : null,
+    "fileCRC" : 806302898,
+    "fileName" : "sample-karafarini-v95.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8688658,
+    "fullUnpackSize" : 8890320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286861920.795710300,
+    "creationTime" : null,
+    "fileCRC" : -1370771481,
+    "fileName" : "Organya - Ogassa - coll de Port - Lavansa.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14482,
+    "fullUnpackSize" : 78657,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

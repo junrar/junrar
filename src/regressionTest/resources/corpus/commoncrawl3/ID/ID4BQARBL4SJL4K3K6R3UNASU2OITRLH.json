@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368004548.952078600,
+    "creationTime" : null,
+    "fileCRC" : 1394922137,
+    "fileName" : "music10.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 7498025,
+    "fullUnpackSize" : 7608716,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

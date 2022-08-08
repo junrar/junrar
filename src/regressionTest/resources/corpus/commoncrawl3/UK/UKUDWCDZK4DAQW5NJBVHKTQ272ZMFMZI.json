@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355549746.250000000,
+    "creationTime" : null,
+    "fileCRC" : 1239842494,
+    "fileName" : "ASFAR   215   1389 - 10 - 13.MP3",
+    "hostOS" : "win32",
+    "fullPackSize" : 22740512,
+    "fullUnpackSize" : 23079948,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

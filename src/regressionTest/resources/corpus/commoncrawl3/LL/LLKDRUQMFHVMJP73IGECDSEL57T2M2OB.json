@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414549297.285800500,
+    "creationTime" : null,
+    "fileCRC" : -1663626642,
+    "fileName" : "Ban tin VNFF Q3-2014 Vie view.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2236806,
+    "fullUnpackSize" : 2453774,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

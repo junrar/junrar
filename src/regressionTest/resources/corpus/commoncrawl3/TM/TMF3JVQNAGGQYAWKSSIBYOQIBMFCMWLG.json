@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343876151.890625000,
+    "creationTime" : null,
+    "fileCRC" : -683494982,
+    "fileName" : "关于中国的一百个常识.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 150561,
+    "fullUnpackSize" : 157014,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

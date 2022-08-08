@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396767577.375000000,
+    "creationTime" : null,
+    "fileCRC" : 42336257,
+    "fileName" : "pete.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 155835,
+    "fullUnpackSize" : 309547,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396767712.578125000,
+    "creationTime" : null,
+    "fileCRC" : 1945366536,
+    "fileName" : "pete.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 1625525,
+    "fullUnpackSize" : 2884136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1104508800.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1273044257,
+    "fileName" : "PATIENCE.G1A",
+    "hostOS" : "win32",
+    "fullPackSize" : 15883,
+    "fullUnpackSize" : 26828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1030457042.000000000,
+    "creationTime" : null,
+    "fileCRC" : 4976795,
+    "fileName" : "Suzuka_2001_RL_1.1\\Gp4form.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1728,
+    "fullUnpackSize" : 3614,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1030456996.000000000,
+    "creationTime" : null,
+    "fileCRC" : -860102788,
+    "fileName" : "Suzuka_2001_RL_1.1\\japan2001.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5767479,
+    "fullUnpackSize" : 5809170,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

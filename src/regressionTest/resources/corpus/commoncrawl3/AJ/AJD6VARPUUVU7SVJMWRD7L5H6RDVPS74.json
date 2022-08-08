@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390236276.921875000,
+    "creationTime" : null,
+    "fileCRC" : 1418855129,
+    "fileName" : "cgtuts-facial-setup.blend",
+    "hostOS" : "win32",
+    "fullPackSize" : 122164,
+    "fullUnpackSize" : 767852,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

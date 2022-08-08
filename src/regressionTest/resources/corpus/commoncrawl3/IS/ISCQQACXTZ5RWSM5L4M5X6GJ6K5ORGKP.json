@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465728175.528000000,
+    "creationTime" : null,
+    "fileCRC" : 2073417003,
+    "fileName" : "2016年高考试题（生物）上海卷.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 3381371,
+    "fullUnpackSize" : 3462656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

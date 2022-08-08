@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285038400.281000000,
+    "creationTime" : null,
+    "fileCRC" : 1692569031,
+    "fileName" : "Итоги  аукциона.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7369,
+    "fullUnpackSize" : 27136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

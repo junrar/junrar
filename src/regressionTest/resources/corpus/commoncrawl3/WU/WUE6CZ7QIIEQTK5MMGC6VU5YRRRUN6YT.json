@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312522212.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1499414966,
+    "fileName" : "сообщение о решении внеочередного соб 2011.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4716,
+    "fullUnpackSize" : 40069,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

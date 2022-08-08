@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450245581.199358600,
+    "creationTime" : null,
+    "fileCRC" : -1389758809,
+    "fileName" : "План 2016-2021.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 26638,
+    "fullUnpackSize" : 36152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460358568.212803600,
+    "creationTime" : null,
+    "fileCRC" : 460917912,
+    "fileName" : "План закупок 2016г..xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 32964,
+    "fullUnpackSize" : 37471,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

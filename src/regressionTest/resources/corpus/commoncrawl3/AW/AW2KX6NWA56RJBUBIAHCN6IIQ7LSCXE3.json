@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1494669000.523801100,
+    "creationTime" : null,
+    "fileCRC" : -1380509985,
+    "fileName" : "Supernatural.S12E21.HDTV.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15336,
+    "fullUnpackSize" : 38591,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495062940.624998500,
+    "creationTime" : null,
+    "fileCRC" : -729773802,
+    "fileName" : "Supernatural.S12E21.1080p.WEB-DL.DD5.1.H264-RARBG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15313,
+    "fullUnpackSize" : 38591,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

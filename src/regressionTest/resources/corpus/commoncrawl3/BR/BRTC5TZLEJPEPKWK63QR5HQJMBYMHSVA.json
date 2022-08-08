@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369105280.859375000,
+    "creationTime" : null,
+    "fileCRC" : 737546081,
+    "fileName" : "ZKTimeNet_Mexcio_Lite_ V2.0.3.1523\\dotNetFx40_Full_x86_x64.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 50449456,
+    "fullUnpackSize" : 50449456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

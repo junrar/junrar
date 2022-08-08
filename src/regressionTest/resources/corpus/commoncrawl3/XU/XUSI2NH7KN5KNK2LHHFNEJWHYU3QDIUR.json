@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526657882.539715800,
+    "creationTime" : null,
+    "fileCRC" : 858078542,
+    "fileName" : "StreamReader.ini",
+    "hostOS" : "win32",
+    "fullPackSize" : 1141,
+    "fullUnpackSize" : 2650,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537525437.237618700,
+    "creationTime" : null,
+    "fileCRC" : 173291232,
+    "fileName" : "StreamReader.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 810383,
+    "fullUnpackSize" : 2386944,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

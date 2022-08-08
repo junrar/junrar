@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1245900926.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1269197715,
+    "fileName" : "Серба А. - НАШ ВЕРХ,ПЛАСТУН !.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 199927,
+    "fullUnpackSize" : 447488,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

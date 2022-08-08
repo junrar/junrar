@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417867933.312500000,
+    "creationTime" : null,
+    "fileCRC" : 448280329,
+    "fileName" : "Blaupunkt_C21,C22_(Bavaria).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5898461,
+    "fullUnpackSize" : 6218562,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

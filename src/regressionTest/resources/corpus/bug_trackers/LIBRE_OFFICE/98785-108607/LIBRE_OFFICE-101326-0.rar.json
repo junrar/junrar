@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470395916.842923600,
+    "creationTime" : null,
+    "fileCRC" : 1950990869,
+    "fileName" : "2 (english).JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 88903,
+    "fullUnpackSize" : 137427,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470396295.309311300,
+    "creationTime" : null,
+    "fileCRC" : -1861183249,
+    "fileName" : "1 (russian).JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 104202,
+    "fullUnpackSize" : 150385,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

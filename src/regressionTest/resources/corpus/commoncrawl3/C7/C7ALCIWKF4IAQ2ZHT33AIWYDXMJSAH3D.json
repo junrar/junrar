@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350486880.625392600,
+    "creationTime" : null,
+    "fileCRC" : 1863995192,
+    "fileName" : "[HorribleSubs] Medaka Box - 09 [720p].ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 16585,
+    "fullUnpackSize" : 81679,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350486880.625392600,
+    "creationTime" : null,
+    "fileCRC" : 1863995192,
+    "fileName" : "[HorribleSubs] Medaka Box - 09 [1080p].ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 213,
+    "fullUnpackSize" : 81679,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

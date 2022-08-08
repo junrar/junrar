@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1213884483.437500000,
+    "creationTime" : null,
+    "fileCRC" : -452423523,
+    "fileName" : "Lieut. Jos. Frankel's Orchestra - Dem Rebin's Nigun - 0j, tate 1919.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3271591,
+    "fullUnpackSize" : 3356544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

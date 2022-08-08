@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418109095.261000000,
+    "creationTime" : null,
+    "fileCRC" : 194523566,
+    "fileName" : "Робототехника_Сочи_Сухова_М_А_ школе\\Thumbs.db",
+    "hostOS" : "win32",
+    "fullPackSize" : 3420,
+    "fullUnpackSize" : 6144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416704325.526492700,
+    "creationTime" : null,
+    "fileCRC" : 1009901005,
+    "fileName" : "Робототехника_Сочи_Сухова_М_А_ школе\\Гимн Российской Федерации (Russian Anthem).mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 24166796,
+    "fullUnpackSize" : 24485329,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

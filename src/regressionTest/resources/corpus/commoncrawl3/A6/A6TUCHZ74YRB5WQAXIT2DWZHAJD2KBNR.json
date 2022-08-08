@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1315827590.001167000,
+    "creationTime" : null,
+    "fileCRC" : -293929108,
+    "fileName" : "mp_combo\\mp_combo.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 11016992,
+    "fullUnpackSize" : 11130686,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

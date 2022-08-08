@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358473338.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1832612956,
+    "fileName" : "208-ФЗ 'Об АО.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 119557,
+    "fullUnpackSize" : 1573490,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

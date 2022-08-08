@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442477763.643476700,
+    "creationTime" : null,
+    "fileCRC" : -413192982,
+    "fileName" : "28.72.0.37.rom",
+    "hostOS" : "win32",
+    "fullPackSize" : 24988593,
+    "fullUnpackSize" : 25140688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

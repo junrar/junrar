@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1237954984.718750000,
+    "creationTime" : null,
+    "fileCRC" : 1266813300,
+    "fileName" : "The.Miracle.Of.Fasting.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4376380,
+    "fullUnpackSize" : 6380643,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

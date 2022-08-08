@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409989843.206834800,
+    "creationTime" : null,
+    "fileCRC" : -1574484780,
+    "fileName" : "sounds\\01.regina_spektor-you've_got_time(ost_oitnb).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3017904,
+    "fullUnpackSize" : 3033162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

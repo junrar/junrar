@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1332551780.000000000,
+    "creationTime" : null,
+    "fileCRC" : 713510602,
+    "fileName" : "Guía para estudiantes.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1826642,
+    "fullUnpackSize" : 2137972,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

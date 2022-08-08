@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452909391.434490400,
+    "creationTime" : null,
+    "fileCRC" : -1226363689,
+    "fileName" : "DC-718012016\\DC-718 firmware\\M71_HD_SY5.1_esp8089_0312+2155_8312_MZ_503_v1.1\\M71_HD_SY5.1_esp8089_0312+2155_8312_MZ_503_v1.2.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 613209490,
+    "fullUnpackSize" : 1210960896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

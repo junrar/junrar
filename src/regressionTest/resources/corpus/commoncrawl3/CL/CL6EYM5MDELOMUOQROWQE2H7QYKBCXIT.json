@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412057153.141000000,
+    "creationTime" : null,
+    "fileCRC" : -455813832,
+    "fileName" : "Новатор №18_сентябрь 2014.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 651533,
+    "fullUnpackSize" : 672233,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

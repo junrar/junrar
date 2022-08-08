@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230108636.250000000,
+    "creationTime" : null,
+    "fileCRC" : -1598229124,
+    "fileName" : "MF-DJNocif-02-Front.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 313842,
+    "fullUnpackSize" : 329584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229871188.790539200,
+    "creationTime" : null,
+    "fileCRC" : -121311472,
+    "fileName" : "MF-DJNocif-02-Back.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 225221,
+    "fullUnpackSize" : 227869,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301972096.534335600,
+    "creationTime" : null,
+    "fileCRC" : -1550185217,
+    "fileName" : "mp_ultimate\\mp_ultimate.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 36347959,
+    "fullUnpackSize" : 36575064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

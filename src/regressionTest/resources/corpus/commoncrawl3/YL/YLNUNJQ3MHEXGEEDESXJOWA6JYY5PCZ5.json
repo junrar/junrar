@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362827544.350401200,
+    "creationTime" : null,
+    "fileCRC" : -1321421758,
+    "fileName" : "Техносфера как всеобщая реальность.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 21812,
+    "fullUnpackSize" : 24925,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

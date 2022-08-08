@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536198167.340179200,
+    "creationTime" : null,
+    "fileCRC" : 703834193,
+    "fileName" : "PRO-030 Rev.01.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1628559,
+    "fullUnpackSize" : 1778890,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

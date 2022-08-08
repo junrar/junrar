@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470158959.721000000,
+    "creationTime" : null,
+    "fileCRC" : 1008404288,
+    "fileName" : "Space Island Adventure\\L3_Full Audio_Space Island Adventure_American English.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5181328,
+    "fullUnpackSize" : 8722527,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

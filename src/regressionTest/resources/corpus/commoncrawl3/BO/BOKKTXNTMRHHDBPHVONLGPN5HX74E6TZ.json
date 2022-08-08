@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1274250109.578000000,
+    "creationTime" : null,
+    "fileCRC" : 637711010,
+    "fileName" : "П о с т а н о в л е н и е.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17209,
+    "fullUnpackSize" : 69632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1274249862.937000000,
+    "creationTime" : null,
+    "fileCRC" : -1384988642,
+    "fileName" : "Programma_po_vode_do_2014_g.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12261,
+    "fullUnpackSize" : 75264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490184742.000000000,
+    "creationTime" : null,
+    "fileCRC" : -129884210,
+    "fileName" : "stealth_script.pas",
+    "hostOS" : "win32",
+    "fullPackSize" : 20409,
+    "fullUnpackSize" : 158971,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507857737.756800000,
+    "creationTime" : null,
+    "fileCRC" : 1856223586,
+    "fileName" : "Stealth.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4829834,
+    "fullUnpackSize" : 15827456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

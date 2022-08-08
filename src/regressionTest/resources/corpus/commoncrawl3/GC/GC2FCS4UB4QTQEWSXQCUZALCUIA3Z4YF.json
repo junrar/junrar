@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1188449097.223880100,
+    "creationTime" : null,
+    "fileCRC" : 359563172,
+    "fileName" : "vologodskaia_obl_2000_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4499893,
+    "fullUnpackSize" : 34362946,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

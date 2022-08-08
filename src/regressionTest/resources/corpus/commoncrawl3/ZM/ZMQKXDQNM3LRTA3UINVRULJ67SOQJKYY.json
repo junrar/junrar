@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531969019.629845600,
+    "creationTime" : null,
+    "fileCRC" : 2032793164,
+    "fileName" : "redsurf_setup_v.2.2.6.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 31837928,
+    "fullUnpackSize" : 31837928,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

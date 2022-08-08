@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511384194.531887500,
+    "creationTime" : null,
+    "fileCRC" : -989198922,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 430,
+    "fullUnpackSize" : 663,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511384194.553945500,
+    "creationTime" : null,
+    "fileCRC" : 1873605501,
+    "fileName" : "JCNE.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 116,
+    "fullUnpackSize" : 124,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

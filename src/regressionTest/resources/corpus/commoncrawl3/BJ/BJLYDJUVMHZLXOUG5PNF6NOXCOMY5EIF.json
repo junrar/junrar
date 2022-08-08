@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384506697.761000000,
+    "creationTime" : null,
+    "fileCRC" : 1140477116,
+    "fileName" : "2013_10_13_MICROL_RU.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 58191777,
+    "fullUnpackSize" : 63512064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

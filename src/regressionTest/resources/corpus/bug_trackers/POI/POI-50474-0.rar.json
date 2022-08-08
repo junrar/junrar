@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292315120.371486400,
+    "creationTime" : null,
+    "fileCRC" : -1156751174,
+    "fileName" : "UpdateEmbeddedDoc.java",
+    "hostOS" : "win32",
+    "fullPackSize" : 2149,
+    "fullUnpackSize" : 8255,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291973137.990812800,
+    "creationTime" : null,
+    "fileCRC" : -798232031,
+    "fileName" : "Test Embedded Document.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12063,
+    "fullUnpackSize" : 13268,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

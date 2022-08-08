@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343096416.875000000,
+    "creationTime" : null,
+    "fileCRC" : -57687677,
+    "fileName" : "сообщение о созыве совета директоров 24 07 2012 г. (внеочередное собрание по ликвидации).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9848,
+    "fullUnpackSize" : 44032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

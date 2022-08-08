@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320929301.137597000,
+    "creationTime" : null,
+    "fileCRC" : 901191057,
+    "fileName" : "mp_grey\\mp_grey.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 3342107,
+    "fullUnpackSize" : 3372802,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

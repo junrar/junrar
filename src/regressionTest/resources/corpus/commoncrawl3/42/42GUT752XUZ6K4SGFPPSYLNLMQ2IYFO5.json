@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505722037.542794000,
+    "creationTime" : null,
+    "fileCRC" : -744807323,
+    "fileName" : "kzls_smile_Sh00t!ng-St4r_0228.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 2223146,
+    "fullUnpackSize" : 10064969,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

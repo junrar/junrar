@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1325854500.000000000,
+    "creationTime" : null,
+    "fileCRC" : 216414326,
+    "fileName" : "Meu_Deus_vence_Batalhas\\Meu Deus vence batalhas Letra e Cifra.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7185,
+    "fullUnpackSize" : 29696,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1325854500.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1405631181,
+    "fileName" : "Meu_Deus_vence_Batalhas\\Meu Deus Vence Batalhas.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4650418,
+    "fullUnpackSize" : 4801413,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

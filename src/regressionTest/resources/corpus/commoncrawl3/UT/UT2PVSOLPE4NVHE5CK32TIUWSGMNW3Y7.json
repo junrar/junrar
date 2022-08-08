@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1419753878.000000000,
+    "creationTime" : null,
+    "fileCRC" : 984497299,
+    "fileName" : "EmoSoftCom-3.03-Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 14226232,
+    "fullUnpackSize" : 15708508,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

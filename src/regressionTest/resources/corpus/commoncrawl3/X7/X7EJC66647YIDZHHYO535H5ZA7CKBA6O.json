@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1428721244.202546500,
+    "creationTime" : null,
+    "fileCRC" : -455452545,
+    "fileName" : "MicroBoxImei_V1.0.1.5_FINAL.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4138344,
+    "fullUnpackSize" : 4955648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

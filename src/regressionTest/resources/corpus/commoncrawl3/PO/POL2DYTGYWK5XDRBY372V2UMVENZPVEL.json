@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1202049261.265625000,
+    "creationTime" : null,
+    "fileCRC" : 1616104665,
+    "fileName" : "csi.2x16.primum_non_necere.ws_dvdrip_xvid-fov.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14545,
+    "fullUnpackSize" : 46735,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

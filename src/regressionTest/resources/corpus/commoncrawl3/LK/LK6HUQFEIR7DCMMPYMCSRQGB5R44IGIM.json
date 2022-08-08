@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1333084328.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1900745293,
+    "fileName" : "Графики ремонтов на апрель 2012\\Вологдаэнерго План-график отключений апрель 2012.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1928932,
+    "fullUnpackSize" : 2075143,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

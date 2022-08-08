@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387290563.665200000,
+    "creationTime" : null,
+    "fileCRC" : 1625091870,
+    "fileName" : "Seminario el poder de la Palabra viernes.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 18340335,
+    "fullUnpackSize" : 18909196,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479220865.454184500,
+    "creationTime" : null,
+    "fileCRC" : -1276146611,
+    "fileName" : "29 ЧКжим-2016.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 22967,
+    "fullUnpackSize" : 97280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

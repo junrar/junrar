@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509513865.644119700,
+    "creationTime" : null,
+    "fileCRC" : -1765822966,
+    "fileName" : "uq_suncliff_fykseN_0147.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 1631121,
+    "fullUnpackSize" : 7961599,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

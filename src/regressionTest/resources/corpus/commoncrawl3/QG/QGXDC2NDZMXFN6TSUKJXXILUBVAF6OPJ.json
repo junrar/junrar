@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502411953.279000000,
+    "creationTime" : null,
+    "fileCRC" : 1991081850,
+    "fileName" : "Выплата инвалидам компенсации страховых премий по договору обязательного страхования.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 13002,
+    "fullUnpackSize" : 61952,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

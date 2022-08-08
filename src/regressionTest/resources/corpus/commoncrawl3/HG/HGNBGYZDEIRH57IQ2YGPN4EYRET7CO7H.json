@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450245581.199358600,
+    "creationTime" : null,
+    "fileCRC" : -1389758809,
+    "fileName" : "План 2016-2021.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 26638,
+    "fullUnpackSize" : 36152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485499084.446061000,
+    "creationTime" : null,
+    "fileCRC" : 1330227230,
+    "fileName" : "ПЗ на сайт.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 33819,
+    "fullUnpackSize" : 37373,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

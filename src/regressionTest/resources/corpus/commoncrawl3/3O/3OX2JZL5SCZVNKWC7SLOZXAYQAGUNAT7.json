@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508288973.251293500,
+    "creationTime" : null,
+    "fileCRC" : -1846067863,
+    "fileName" : "K3Cloud_V6_2_Patch\\PT118205\\K3Cloud_V6.0_Patch_P.6.2.807.9.kdpkg",
+    "hostOS" : "win32",
+    "fullPackSize" : 998764,
+    "fullUnpackSize" : 998764,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266551266.370388700,
+    "creationTime" : null,
+    "fileCRC" : -166486128,
+    "fileName" : "algebra1-8182-nim1.p1.gif",
+    "hostOS" : "win32",
+    "fullPackSize" : 700055,
+    "fullUnpackSize" : 701246,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266551321.229763700,
+    "creationTime" : null,
+    "fileCRC" : -1512489682,
+    "fileName" : "algebra1-8182-nim1.p2.gif",
+    "hostOS" : "win32",
+    "fullPackSize" : 668745,
+    "fullUnpackSize" : 669319,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301978799.000783400,
+    "creationTime" : null,
+    "fileCRC" : 1827050114,
+    "fileName" : "mp_climbing\\mp_climbing.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 23365670,
+    "fullUnpackSize" : 23409663,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

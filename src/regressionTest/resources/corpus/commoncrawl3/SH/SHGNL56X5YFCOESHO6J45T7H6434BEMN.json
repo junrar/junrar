@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1073836818.468750000,
+    "creationTime" : null,
+    "fileCRC" : -902673545,
+    "fileName" : "Fuzzpilz Orange Kid.prs",
+    "hostOS" : "win32",
+    "fullPackSize" : 2777,
+    "fullUnpackSize" : 10128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

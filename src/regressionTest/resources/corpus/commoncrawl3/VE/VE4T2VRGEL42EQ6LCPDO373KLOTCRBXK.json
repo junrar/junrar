@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358919210.025921200,
+    "creationTime" : null,
+    "fileCRC" : 361931321,
+    "fileName" : "fangio62.degres.DAT",
+    "hostOS" : "win32",
+    "fullPackSize" : 853415,
+    "fullUnpackSize" : 2242594,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

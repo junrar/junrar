@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379486163.662200000,
+    "creationTime" : null,
+    "fileCRC" : -310244415,
+    "fileName" : "Presentation6.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1180140,
+    "fullUnpackSize" : 1939456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

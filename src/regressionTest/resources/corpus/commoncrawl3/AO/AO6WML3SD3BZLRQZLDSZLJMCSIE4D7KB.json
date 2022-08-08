@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482909884.778174500,
+    "creationTime" : null,
+    "fileCRC" : 1865631343,
+    "fileName" : "2017年中华人民共和国普通高等学校联合招收华侨、港澳地区及台湾省学生专业目录.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5497949,
+    "fullUnpackSize" : 8891343,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

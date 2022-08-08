@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1111055960.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1105031423,
+    "fileName" : "info(www.rozrabiaki.pl).txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 145,
+    "fullUnpackSize" : 231,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1135671772.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1569197270,
+    "fileName" : "slonik(www.rozrabiaki.pl).wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 552773,
+    "fullUnpackSize" : 565726,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

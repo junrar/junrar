@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1085064264.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1108581530,
+    "fileName" : "ecole_07.tub",
+    "hostOS" : "win32",
+    "fullPackSize" : 32777,
+    "fullUnpackSize" : 33229,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418909069.729997700,
+    "creationTime" : null,
+    "fileCRC" : 1017206409,
+    "fileName" : "2_Program szkolenia równościowego\\1_Program_Równe szanse kobiet i mężczyzn w biznesie.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 331770,
+    "fullUnpackSize" : 403061,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418882026.030161800,
+    "creationTime" : null,
+    "fileCRC" : -1402429744,
+    "fileName" : "2_Program szkolenia równościowego\\2_Prezentacja szkoleniowa.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1748920,
+    "fullUnpackSize" : 2187449,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1446596692.246129500,
+    "creationTime" : null,
+    "fileCRC" : 420452957,
+    "fileName" : "Old_books.fbx",
+    "hostOS" : "win32",
+    "fullPackSize" : 349777,
+    "fullUnpackSize" : 405516,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1446601598.426747000,
+    "creationTime" : null,
+    "fileCRC" : -759115632,
+    "fileName" : "Old_books.blend",
+    "hostOS" : "win32",
+    "fullPackSize" : 59566329,
+    "fullUnpackSize" : 63160500,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

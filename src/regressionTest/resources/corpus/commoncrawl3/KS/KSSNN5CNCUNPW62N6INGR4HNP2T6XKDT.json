@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1331896714.093750000,
+    "creationTime" : null,
+    "fileCRC" : -2068182204,
+    "fileName" : "burpsuite_pro_v1.4.01.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 4851103,
+    "fullUnpackSize" : 5294708,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

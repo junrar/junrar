@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382117524.582942700,
+    "creationTime" : null,
+    "fileCRC" : -490876828,
+    "fileName" : "mg_lelouche_slender_v2.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 20767914,
+    "fullUnpackSize" : 80866169,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

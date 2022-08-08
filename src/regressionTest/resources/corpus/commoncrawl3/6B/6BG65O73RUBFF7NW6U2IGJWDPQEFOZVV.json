@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1474429272.558000000,
+    "creationTime" : null,
+    "fileCRC" : 1704786250,
+    "fileName" : "Расп. План Коррупция.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 79778,
+    "fullUnpackSize" : 103424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1474419707.391000000,
+    "creationTime" : null,
+    "fileCRC" : -758842808,
+    "fileName" : "Приложение План антикоррупционных мероприятий.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14763,
+    "fullUnpackSize" : 94208,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

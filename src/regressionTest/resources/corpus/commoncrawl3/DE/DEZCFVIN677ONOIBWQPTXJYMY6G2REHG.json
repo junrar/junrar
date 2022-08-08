@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368004638.909216600,
+    "creationTime" : null,
+    "fileCRC" : -2077221668,
+    "fileName" : "music15.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4785724,
+    "fullUnpackSize" : 4813217,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

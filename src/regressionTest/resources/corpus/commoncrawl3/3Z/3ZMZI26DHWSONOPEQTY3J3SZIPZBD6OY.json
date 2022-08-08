@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328965357.681519600,
+    "creationTime" : null,
+    "fileCRC" : -458706946,
+    "fileName" : "mp_oblivious_v2\\mp_oblivious_v2.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 8131669,
+    "fullUnpackSize" : 8214615,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

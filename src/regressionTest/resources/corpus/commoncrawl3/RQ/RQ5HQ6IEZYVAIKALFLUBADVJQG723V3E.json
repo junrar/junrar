@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1164912852.000000000,
+    "creationTime" : null,
+    "fileCRC" : -366820165,
+    "fileName" : "singbed.gsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 164116,
+    "fullUnpackSize" : 962408,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1155663912.000000000,
+    "creationTime" : null,
+    "fileCRC" : 754526704,
+    "fileName" : "singbed.3DS",
+    "hostOS" : "win32",
+    "fullPackSize" : 25746,
+    "fullUnpackSize" : 205674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

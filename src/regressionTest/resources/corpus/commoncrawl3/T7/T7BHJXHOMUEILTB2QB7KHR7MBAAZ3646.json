@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1496910602.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1003231109,
+    "fileName" : "Приложение 1 к регламенту 4.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7076,
+    "fullUnpackSize" : 31744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497158090.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1836430117,
+    "fileName" : "реламент 4 На выдачу  разрешений ОДУ.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 28642,
+    "fullUnpackSize" : 159744,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528123265.159867200,
+    "creationTime" : null,
+    "fileCRC" : -318475552,
+    "fileName" : "Fear the Walking Dead - 4x07.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11129,
+    "fullUnpackSize" : 29050,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

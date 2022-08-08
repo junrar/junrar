@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363230432.000000000,
+    "creationTime" : null,
+    "fileCRC" : 22877841,
+    "fileName" : "com.sgs.indarkness\\main.8.com.sgs.indarkness.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 53530374,
+    "fullUnpackSize" : 54130963,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

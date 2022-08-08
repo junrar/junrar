@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1140189266.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1926390348,
+    "fileName" : "gumisiepl(www.rozrabiaki.pl).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 206778,
+    "fullUnpackSize" : 232931,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1113214874.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1821564123,
+    "fileName" : "info.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 149,
+    "fullUnpackSize" : 251,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

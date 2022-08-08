@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321009120.323058200,
+    "creationTime" : null,
+    "fileCRC" : 1428811958,
+    "fileName" : "111111-26956-01.dmp",
+    "hostOS" : "win32",
+    "fullPackSize" : 27172,
+    "fullUnpackSize" : 293776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523525360.849942200,
+    "creationTime" : null,
+    "fileCRC" : 711921980,
+    "fileName" : "wxRecover_201804121725.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 17217752,
+    "fullUnpackSize" : 17893592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

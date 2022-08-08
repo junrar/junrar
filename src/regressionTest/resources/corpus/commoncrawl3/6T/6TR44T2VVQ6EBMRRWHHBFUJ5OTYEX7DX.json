@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401465229.312883300,
+    "creationTime" : null,
+    "fileCRC" : 1251362315,
+    "fileName" : "jam_30.05.2014_notebooks.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 1313547,
+    "fullUnpackSize" : 8369152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

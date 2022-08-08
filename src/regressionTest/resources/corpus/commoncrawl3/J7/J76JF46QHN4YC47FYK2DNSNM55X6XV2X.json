@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1342158645.342000000,
+    "creationTime" : null,
+    "fileCRC" : -1769057456,
+    "fileName" : "Постановление об акте готовности №913 от 13.07.2012г..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 84847,
+    "fullUnpackSize" : 351232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

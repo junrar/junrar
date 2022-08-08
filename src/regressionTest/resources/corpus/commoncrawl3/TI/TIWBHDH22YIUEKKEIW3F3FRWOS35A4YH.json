@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516773367.750408000,
+    "creationTime" : null,
+    "fileCRC" : -867559422,
+    "fileName" : "28期《党旗飘扬》.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 18933474,
+    "fullUnpackSize" : 27374397,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

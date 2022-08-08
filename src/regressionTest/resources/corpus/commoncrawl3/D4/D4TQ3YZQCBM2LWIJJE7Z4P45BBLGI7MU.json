@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461029081.992145900,
+    "creationTime" : null,
+    "fileCRC" : -711144806,
+    "fileName" : "沈阳工伤动态库.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 471538,
+    "fullUnpackSize" : 472621,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461029079.008767100,
+    "creationTime" : null,
+    "fileCRC" : 400393849,
+    "fileName" : "沈阳市定点医疗机构工伤联网接口改造文档(2016.3.14).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 178181,
+    "fullUnpackSize" : 1858048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

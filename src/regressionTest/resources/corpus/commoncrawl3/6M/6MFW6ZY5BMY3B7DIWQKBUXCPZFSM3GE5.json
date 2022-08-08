@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500639365.073016700,
+    "creationTime" : null,
+    "fileCRC" : -1912329873,
+    "fileName" : "phpstorm2017hhb\\PhpStorm2018.1汉化文件\\resources_cn.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 15464262,
+    "fullUnpackSize" : 17632285,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

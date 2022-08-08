@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286684393.607100700,
+    "creationTime" : null,
+    "fileCRC" : 142057624,
+    "fileName" : "L Albi - Vallclara - Prades - Vilanova - Vilosell.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19729,
+    "fullUnpackSize" : 96142,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

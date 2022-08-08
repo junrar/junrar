@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420717156.771600000,
+    "creationTime" : null,
+    "fileCRC" : 616188425,
+    "fileName" : "CyberCafeServerXP.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 75824084,
+    "fullUnpackSize" : 80345710,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387162500.715858800,
+    "creationTime" : null,
+    "fileCRC" : -749576623,
+    "fileName" : "protokol_dynamo_1991.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 6389,
+    "fullUnpackSize" : 21730,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

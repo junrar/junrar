@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390496871.701200000,
+    "creationTime" : null,
+    "fileCRC" : -172259858,
+    "fileName" : "rufus_v1.4.3.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 562114,
+    "fullUnpackSize" : 580528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

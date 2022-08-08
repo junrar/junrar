@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1143987855.108755200,
+    "creationTime" : null,
+    "fileCRC" : 2116029095,
+    "fileName" : "a900_user_manual.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2374754,
+    "fullUnpackSize" : 3032768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

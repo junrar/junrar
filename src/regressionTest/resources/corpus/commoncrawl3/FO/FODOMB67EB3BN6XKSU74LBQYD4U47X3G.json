@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320810255.343304100,
+    "creationTime" : null,
+    "fileCRC" : 388870795,
+    "fileName" : "04_A WebQuest.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 138979,
+    "fullUnpackSize" : 208140,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

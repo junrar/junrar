@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514058221.114742200,
+    "creationTime" : null,
+    "fileCRC" : -1477871609,
+    "fileName" : "kz_adventure_fykseN_0200.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 2122857,
+    "fullUnpackSize" : 11943291,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

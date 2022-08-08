@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329275162.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1332463088,
+    "fileName" : "Конспект урока.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1726833,
+    "fullUnpackSize" : 1814528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

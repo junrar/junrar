@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487078076.492523300,
+    "creationTime" : null,
+    "fileCRC" : -1958601624,
+    "fileName" : "Информатика әлеміне саяхат\\Сабак жоспары.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 15185,
+    "fullUnpackSize" : 58880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487078118.829875800,
+    "creationTime" : null,
+    "fileCRC" : 1456508368,
+    "fileName" : "Информатика әлеміне саяхат\\Информатика әлеміне саяхат.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 14992463,
+    "fullUnpackSize" : 15005650,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

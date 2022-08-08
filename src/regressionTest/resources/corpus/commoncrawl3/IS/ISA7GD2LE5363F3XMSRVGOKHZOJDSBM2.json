@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510074666.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1468195295,
+    "fileName" : "ДОПОЛНИТЕЛЬНЫЕ ПРОФЕССИОНАЛЬНЫЕ ПРОГРАММЫ ПОВЫШЕНИЯ КВАЛИФИКАЦИИ\\Информационное письмо о проведении курсов ПК.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 881272,
+    "fullUnpackSize" : 951087,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510074530.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1510616871,
+    "fileName" : "ДОПОЛНИТЕЛЬНЫЕ ПРОФЕССИОНАЛЬНЫЕ ПРОГРАММЫ ПОВЫШЕНИЯ КВАЛИФИКАЦИИ\\Информация на сайт 11.09(1).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1278524,
+    "fullUnpackSize" : 1312256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

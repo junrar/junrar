@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511280620.486366200,
+    "creationTime" : null,
+    "fileCRC" : -1813663632,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 452,
+    "fullUnpackSize" : 691,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511278484.074820400,
+    "creationTime" : null,
+    "fileCRC" : 131554667,
+    "fileName" : "JA5E.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 121,
+    "fullUnpackSize" : 121,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

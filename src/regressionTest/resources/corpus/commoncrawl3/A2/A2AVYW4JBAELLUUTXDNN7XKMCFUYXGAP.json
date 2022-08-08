@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425440502.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1069076850,
+    "fileName" : "易盛郑州交易中心极星智能化平台使用说明.chm",
+    "hostOS" : "win32",
+    "fullPackSize" : 6119457,
+    "fullUnpackSize" : 6123166,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

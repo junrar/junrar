@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268729045.609375000,
+    "creationTime" : null,
+    "fileCRC" : 2022987395,
+    "fileName" : "Положение о Совете директоров ОАО Дом Мод.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 19901,
+    "fullUnpackSize" : 120832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

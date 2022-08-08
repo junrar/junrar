@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1316335563.245197800,
+    "creationTime" : null,
+    "fileCRC" : 1948347006,
+    "fileName" : "mp_eb_jump\\mp_eb_jump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 14194032,
+    "fullUnpackSize" : 14383396,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

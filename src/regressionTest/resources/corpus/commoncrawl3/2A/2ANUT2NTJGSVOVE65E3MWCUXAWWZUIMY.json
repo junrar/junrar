@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309618560.730148800,
+    "creationTime" : null,
+    "fileCRC" : 1031048399,
+    "fileName" : "mp_devilsyard\\mp_devilsyard.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 7588062,
+    "fullUnpackSize" : 7636515,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

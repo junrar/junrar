@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1211376073.343750000,
+    "creationTime" : null,
+    "fileCRC" : 309586011,
+    "fileName" : "csi.810.hdtv.xvid-lol.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14407,
+    "fullUnpackSize" : 44556,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1224398930.125000000,
+    "creationTime" : null,
+    "fileCRC" : -2036380996,
+    "fileName" : "csi.s08e10.dvdrip.xvid-ffndvd.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14437,
+    "fullUnpackSize" : 44616,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

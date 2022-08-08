@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500801357.259807100,
+    "creationTime" : null,
+    "fileCRC" : -190338041,
+    "fileName" : "الخطة الكتابية للخلاص.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1770500,
+    "fullUnpackSize" : 1969712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

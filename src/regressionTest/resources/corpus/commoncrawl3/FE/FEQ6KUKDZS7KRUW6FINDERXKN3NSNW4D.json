@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297216588.000000000,
+    "creationTime" : null,
+    "fileCRC" : -173524674,
+    "fileName" : "Отчет эмитента за четвертый квартал.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 47763,
+    "fullUnpackSize" : 655464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

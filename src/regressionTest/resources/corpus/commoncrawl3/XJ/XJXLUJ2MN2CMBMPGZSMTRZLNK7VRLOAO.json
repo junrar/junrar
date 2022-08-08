@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410325015.241379200,
+    "creationTime" : null,
+    "fileCRC" : 1810009352,
+    "fileName" : "Charitiesinvestment.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2096410,
+    "fullUnpackSize" : 2512481,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

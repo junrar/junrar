@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536533919.260837200,
+    "creationTime" : null,
+    "fileCRC" : -1072039410,
+    "fileName" : "Metallic paintjob\\ets2_20180910_065838_00.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 946691,
+    "fullUnpackSize" : 948048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536533923.826102800,
+    "creationTime" : null,
+    "fileCRC" : -1064338289,
+    "fileName" : "Metallic paintjob\\ets2_20180910_065843_00.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1040312,
+    "fullUnpackSize" : 1040312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

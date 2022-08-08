@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1303452817.230000000,
+    "creationTime" : null,
+    "fileCRC" : 319336209,
+    "fileName" : "BGVLXD_DONGTHAP_03_2011.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 48947,
+    "fullUnpackSize" : 207872,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384869649.558259200,
+    "creationTime" : null,
+    "fileCRC" : 2104720162,
+    "fileName" : "bebindelezarezinab-Yaqubi.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2889960,
+    "fullUnpackSize" : 3051648,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367976810.000000000,
+    "creationTime" : null,
+    "fileCRC" : 248714670,
+    "fileName" : "Металлы.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 6731724,
+    "fullUnpackSize" : 6731724,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

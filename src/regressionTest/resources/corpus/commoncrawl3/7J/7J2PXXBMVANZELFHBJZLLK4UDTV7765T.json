@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507544062.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1662566222,
+    "fileName" : "Аннотация рабочей программы старшей группы.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 132065,
+    "fullUnpackSize" : 136725,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

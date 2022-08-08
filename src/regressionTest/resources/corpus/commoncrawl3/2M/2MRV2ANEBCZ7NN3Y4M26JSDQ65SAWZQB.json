@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1098116168.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1583311051,
+    "fileName" : "BH_TRIALEDITION.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 54625617,
+    "fullUnpackSize" : 272295744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1219163496.000000000,
+    "creationTime" : null,
+    "fileCRC" : 415674261,
+    "fileName" : "pc-D22-4大念處經.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 164541,
+    "fullUnpackSize" : 1145344,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1223347480.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2043883468,
+    "fileName" : "pc-D22-4大念处经.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 127815,
+    "fullUnpackSize" : 801792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

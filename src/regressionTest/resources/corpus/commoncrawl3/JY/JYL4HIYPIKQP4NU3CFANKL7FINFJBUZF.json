@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302770108.893988600,
+    "creationTime" : null,
+    "fileCRC" : -1164502696,
+    "fileName" : "mp_the_gap\\mp_the_gap.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 3223144,
+    "fullUnpackSize" : 3256760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

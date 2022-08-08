@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1344170598.312500000,
+    "creationTime" : null,
+    "fileCRC" : -1300695619,
+    "fileName" : "解体党文化.epub",
+    "hostOS" : "win32",
+    "fullPackSize" : 429819,
+    "fullUnpackSize" : 430506,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

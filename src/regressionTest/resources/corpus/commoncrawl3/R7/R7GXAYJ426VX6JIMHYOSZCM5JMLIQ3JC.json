@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507777858.314000000,
+    "creationTime" : null,
+    "fileCRC" : 700179940,
+    "fileName" : "NovaLCT-Mars V4.6.1 CTM2.0.09005 Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 60417106,
+    "fullUnpackSize" : 60417106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

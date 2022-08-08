@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194925580.786144700,
+    "creationTime" : null,
+    "fileCRC" : 393557377,
+    "fileName" : "kuibishevskaia_obl_1986_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599891,
+    "fullUnpackSize" : 8371303,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

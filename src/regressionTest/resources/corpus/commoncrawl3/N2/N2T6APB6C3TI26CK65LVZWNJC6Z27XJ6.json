@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268573218.171875000,
+    "creationTime" : null,
+    "fileCRC" : -342506809,
+    "fileName" : "08.Artoscsaba feat. Suppah - Örök titán, öreg zsivány.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 7072300,
+    "fullUnpackSize" : 8324788,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

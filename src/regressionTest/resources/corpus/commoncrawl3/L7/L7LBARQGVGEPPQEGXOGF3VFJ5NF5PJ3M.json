@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1346122884.000000000,
+    "creationTime" : null,
+    "fileCRC" : -407428169,
+    "fileName" : "2007.12-b.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 669538,
+    "fullUnpackSize" : 692106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1171415924.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1417507983,
+    "fileName" : "2007.01-a.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 421323,
+    "fullUnpackSize" : 441210,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478995171.152502500,
+    "creationTime" : null,
+    "fileCRC" : -1682581402,
+    "fileName" : "11.sinif-2.unite.ppsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 5068276,
+    "fullUnpackSize" : 5652652,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

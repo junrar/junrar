@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499066895.295448300,
+    "creationTime" : null,
+    "fileCRC" : -755728842,
+    "fileName" : "Сводная ведомость Маломосковская 21к3.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 789962,
+    "fullUnpackSize" : 999051,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499066889.727129800,
+    "creationTime" : null,
+    "fileCRC" : -1640762094,
+    "fileName" : "Перечень мероприятий маломосковская 21к3.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 340847,
+    "fullUnpackSize" : 439111,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

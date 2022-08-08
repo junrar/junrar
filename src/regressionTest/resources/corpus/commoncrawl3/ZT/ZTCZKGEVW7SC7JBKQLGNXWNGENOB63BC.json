@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472345546.046875000,
+    "creationTime" : null,
+    "fileCRC" : 1398963389,
+    "fileName" : "201605关于印发《中南财经政法大学硕士研究生培养管理办法》的通知.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 190256,
+    "fullUnpackSize" : 200553,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

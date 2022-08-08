@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1153236554.000000000,
+    "creationTime" : null,
+    "fileCRC" : 625134750,
+    "fileName" : "连珠终结者\\如何使用VC2算题功能.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10578,
+    "fullUnpackSize" : 473607,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1153128396.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1237475496,
+    "fileName" : "连珠终结者\\如何做地毯谱.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 51735,
+    "fullUnpackSize" : 2425447,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

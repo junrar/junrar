@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370954507.578125000,
+    "creationTime" : null,
+    "fileCRC" : -2078250313,
+    "fileName" : "отчет 2011 год ул.Пулковская д.1 корп.2 лист.2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 271934,
+    "fullUnpackSize" : 316228,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1370954510.265625000,
+    "creationTime" : null,
+    "fileCRC" : -1112811770,
+    "fileName" : "отчет 2011 год ул.Пулковская д.1 корп.2 лист 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 349994,
+    "fullUnpackSize" : 388310,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

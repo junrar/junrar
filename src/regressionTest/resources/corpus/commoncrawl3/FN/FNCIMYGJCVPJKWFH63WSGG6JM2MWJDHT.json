@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1424699908.031250000,
+    "creationTime" : null,
+    "fileCRC" : -158024302,
+    "fileName" : "Fractal Photoshop Action\\baner-gs.gif",
+    "hostOS" : "win32",
+    "fullPackSize" : 141310,
+    "fullUnpackSize" : 141675,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413733788.000000000,
+    "creationTime" : null,
+    "fileCRC" : -298756324,
+    "fileName" : "Fractal Photoshop Action\\Fractal Photoshop Action.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5459213,
+    "fullUnpackSize" : 5540896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

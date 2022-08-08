@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291786140.000000000,
+    "creationTime" : null,
+    "fileCRC" : 77530453,
+    "fileName" : "player_eng_v1.1.0.10.t.090711.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1263109,
+    "fullUnpackSize" : 1308910,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

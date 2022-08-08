@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1150846824.000000000,
+    "creationTime" : null,
+    "fileCRC" : -109314948,
+    "fileName" : "E870XEFF1.s3",
+    "hostOS" : "win32",
+    "fullPackSize" : 37964051,
+    "fullUnpackSize" : 129209123,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

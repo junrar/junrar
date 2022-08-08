@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1411381573.623424300,
+    "creationTime" : null,
+    "fileCRC" : -603061924,
+    "fileName" : "Wir_haben_sie_alle_getoetet_ist_das_durstige_Eisenweib.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 74120,
+    "fullUnpackSize" : 76800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

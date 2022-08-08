@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1335139613.750000000,
+    "creationTime" : null,
+    "fileCRC" : 276545082,
+    "fileName" : "Zadaci iz matematike 6.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 285664,
+    "fullUnpackSize" : 344802,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

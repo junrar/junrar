@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483346861.414000000,
+    "creationTime" : null,
+    "fileCRC" : 393052596,
+    "fileName" : "MODELO DE REQUERIMENTO PARCELAMENTO - Pessoa física.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8545,
+    "fullUnpackSize" : 34816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

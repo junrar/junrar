@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314363172.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1991105332,
+    "fileName" : "08 Андрей Дьяков - К СВЕТУ.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 267614,
+    "fullUnpackSize" : 867020,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

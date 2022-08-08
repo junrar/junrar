@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422956448.000000000,
+    "creationTime" : null,
+    "fileCRC" : 912014670,
+    "fileName" : "RYS\\RYS NR 12 CZ 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 329730,
+    "fullUnpackSize" : 367677,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422944001.000000000,
+    "creationTime" : null,
+    "fileCRC" : 794136650,
+    "fileName" : "RYS\\RYS NR1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 891832,
+    "fullUnpackSize" : 897203,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

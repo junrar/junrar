@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360557187.937333700,
+    "creationTime" : null,
+    "fileCRC" : -1840924348,
+    "fileName" : "box_prikol.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 131481,
+    "fullUnpackSize" : 136858,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360557171.622400500,
+    "creationTime" : null,
+    "fileCRC" : -1753657666,
+    "fileName" : "box_prikol.jad",
+    "hostOS" : "win32",
+    "fullPackSize" : 255,
+    "fullUnpackSize" : 348,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

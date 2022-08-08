@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379640996.236779800,
+    "creationTime" : null,
+    "fileCRC" : -1870279384,
+    "fileName" : "BurpLoader.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 25394,
+    "fullUnpackSize" : 25563,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384399433.609375000,
+    "creationTime" : null,
+    "fileCRC" : 963474333,
+    "fileName" : "burpsuite_pro_v1.5.11.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 8555850,
+    "fullUnpackSize" : 9198106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

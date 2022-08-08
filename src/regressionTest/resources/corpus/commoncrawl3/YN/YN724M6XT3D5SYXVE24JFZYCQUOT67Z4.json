@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445618794.777075600,
+    "creationTime" : null,
+    "fileCRC" : 274290649,
+    "fileName" : "ChipGenius_v4_00_1024.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 203961,
+    "fullUnpackSize" : 275969,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438880495.886412100,
+    "creationTime" : null,
+    "fileCRC" : 1775395930,
+    "fileName" : "Chips.wdb",
+    "hostOS" : "win32",
+    "fullPackSize" : 25124,
+    "fullUnpackSize" : 78836,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

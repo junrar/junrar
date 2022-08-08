@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457482778.392771400,
+    "creationTime" : null,
+    "fileCRC" : -1679614661,
+    "fileName" : "MICRO-BOX USB AIO Drivers Setup v1.3.0.0.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1348573,
+    "fullUnpackSize" : 1373698,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

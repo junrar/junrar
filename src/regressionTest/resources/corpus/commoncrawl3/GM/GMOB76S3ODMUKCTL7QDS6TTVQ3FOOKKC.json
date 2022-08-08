@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1412182523.593750000,
+    "creationTime" : null,
+    "fileCRC" : -2109097814,
+    "fileName" : "samoprezentaciya-sutuga-k.і.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1667568,
+    "fullUnpackSize" : 1950450,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

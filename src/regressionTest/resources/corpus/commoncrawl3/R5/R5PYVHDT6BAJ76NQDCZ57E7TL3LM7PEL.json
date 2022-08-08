@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1227176257.812500000,
+    "creationTime" : null,
+    "fileCRC" : -1654283257,
+    "fileName" : "Simon Paskal - Das Bisele Erd 1912.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1746296,
+    "fullUnpackSize" : 1785856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

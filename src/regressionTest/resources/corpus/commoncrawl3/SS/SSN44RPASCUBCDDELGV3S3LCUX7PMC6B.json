@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1342166642.000000000,
+    "creationTime" : null,
+    "fileCRC" : -461652938,
+    "fileName" : "ilbank antalya\\18 UYGULAMASI SON SUNUM.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 450419,
+    "fullUnpackSize" : 964096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1342335114.000000000,
+    "creationTime" : null,
+    "fileCRC" : 719889717,
+    "fileName" : "ilbank antalya\\AAS_SUNUM_15.07.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 26589365,
+    "fullUnpackSize" : 30295040,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

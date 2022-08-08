@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305437530.195212500,
+    "creationTime" : null,
+    "fileCRC" : 637305359,
+    "fileName" : "mp_rbliam_v2\\mp_rbliam_v2.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 6317850,
+    "fullUnpackSize" : 6384967,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

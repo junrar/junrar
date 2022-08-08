@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 999438594.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1031889427,
+    "fileName" : "WampRC.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 48437,
+    "fullUnpackSize" : 53760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 999438702.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2145998389,
+    "fileName" : "file_id.diz",
+    "hostOS" : "win32",
+    "fullPackSize" : 263,
+    "fullUnpackSize" : 367,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

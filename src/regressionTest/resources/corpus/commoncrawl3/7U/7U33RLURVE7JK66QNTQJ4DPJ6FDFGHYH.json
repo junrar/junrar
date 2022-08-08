@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413869869.031250000,
+    "creationTime" : null,
+    "fileCRC" : 1743018668,
+    "fileName" : "ICG-BCTC Cty Me quy 3-2014_signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 814918,
+    "fullUnpackSize" : 916488,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415606825.578125000,
+    "creationTime" : null,
+    "fileCRC" : 88571157,
+    "fileName" : "ICG-BCTC hop nhat Quy 3-2014_signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 540284,
+    "fullUnpackSize" : 616485,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

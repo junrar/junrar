@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141544332.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1766985847,
+    "fileName" : "I'm Gonna Love You Too.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2555372,
+    "fullUnpackSize" : 2590221,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

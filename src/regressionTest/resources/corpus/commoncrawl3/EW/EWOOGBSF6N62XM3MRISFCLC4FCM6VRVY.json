@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321092575.384115300,
+    "creationTime" : null,
+    "fileCRC" : -855896250,
+    "fileName" : "supernatural.s07e08.hdtv.xvid-2hd.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20413,
+    "fullUnpackSize" : 50035,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1321098134.665707100,
+    "creationTime" : null,
+    "fileCRC" : -449034149,
+    "fileName" : "Supernatural.S07E08.720p.HDTV.x264-IMMERSE.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20438,
+    "fullUnpackSize" : 50022,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

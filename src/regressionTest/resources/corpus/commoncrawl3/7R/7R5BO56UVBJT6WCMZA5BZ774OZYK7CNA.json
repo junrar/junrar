@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461639669.006171000,
+    "creationTime" : null,
+    "fileCRC" : -1647824241,
+    "fileName" : "AusLogics_BoostSpeed.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 14717661,
+    "fullUnpackSize" : 14770152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

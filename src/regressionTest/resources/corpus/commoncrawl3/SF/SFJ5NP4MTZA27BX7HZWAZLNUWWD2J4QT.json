@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410334404.085825900,
+    "creationTime" : null,
+    "fileCRC" : 1793913834,
+    "fileName" : "SR 125.x_t",
+    "hostOS" : "win32",
+    "fullPackSize" : 1816794,
+    "fullUnpackSize" : 5910122,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

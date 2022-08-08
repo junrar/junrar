@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247630927.924621600,
+    "creationTime" : null,
+    "fileCRC" : 1773224623,
+    "fileName" : "SolidWorks-Tutorial (G)\\vf_04\\98.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 704390,
+    "fullUnpackSize" : 4305062,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

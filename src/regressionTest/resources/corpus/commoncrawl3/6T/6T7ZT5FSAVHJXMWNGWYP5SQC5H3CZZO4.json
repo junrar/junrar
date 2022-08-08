@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384876568.214130300,
+    "creationTime" : null,
+    "fileCRC" : 1157670600,
+    "fileName" : "mp_unbelievable\\mp_unbelievable.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 10109055,
+    "fullUnpackSize" : 10725139,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

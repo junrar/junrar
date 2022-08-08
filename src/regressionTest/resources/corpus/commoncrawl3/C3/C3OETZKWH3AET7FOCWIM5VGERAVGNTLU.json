@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248246693.437500000,
+    "creationTime" : null,
+    "fileCRC" : -659555027,
+    "fileName" : "Андерсон Шервуд. Семена.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6462,
+    "fullUnpackSize" : 20531,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

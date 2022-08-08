@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504169758.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1566086549,
+    "fileName" : "7р Распоряжение об утверждении перечней.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 18571,
+    "fullUnpackSize" : 53760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

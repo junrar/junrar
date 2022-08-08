@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319506361.265307900,
+    "creationTime" : null,
+    "fileCRC" : -83821119,
+    "fileName" : "Beseit - Boixar - Tres Reis - colla cansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 18468,
+    "fullUnpackSize" : 91166,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

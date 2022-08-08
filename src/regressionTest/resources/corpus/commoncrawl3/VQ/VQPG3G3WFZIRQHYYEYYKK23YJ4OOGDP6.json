@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1413895802.236763300,
+    "creationTime" : null,
+    "fileCRC" : -492669602,
+    "fileName" : "Misericordia-Tarazona.kml",
+    "hostOS" : "win32",
+    "fullPackSize" : 8566,
+    "fullUnpackSize" : 21693,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

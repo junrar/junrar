@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352726774.068000000,
+    "creationTime" : null,
+    "fileCRC" : -2093023715,
+    "fileName" : "Lütfen okuyun.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 37853,
+    "fullUnpackSize" : 60928,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352726985.600000000,
+    "creationTime" : null,
+    "fileCRC" : -602890502,
+    "fileName" : "2012_2013_dkab_5.sinif_1.donem_1.yazili_musaaydogdu.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 36146,
+    "fullUnpackSize" : 113664,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

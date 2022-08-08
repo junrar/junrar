@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436347920.578125000,
+    "creationTime" : null,
+    "fileCRC" : 688260645,
+    "fileName" : "E-ST-07082015-E-S.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3648057,
+    "fullUnpackSize" : 3959949,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

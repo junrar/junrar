@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388459138.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1076478821,
+    "fileName" : "UT_UVSCHIZM_1_519_00_05_03_01.xsd",
+    "hostOS" : "win32",
+    "fullPackSize" : 3131,
+    "fullUnpackSize" : 27831,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388459138.000000000,
+    "creationTime" : null,
+    "fileCRC" : -927244987,
+    "fileName" : "Формат UT_UVSCHIZM_1_519_00_05_03.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 47355,
+    "fullUnpackSize" : 217600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460570542.724760000,
+    "creationTime" : null,
+    "fileCRC" : 123856265,
+    "fileName" : "Final.Fantasy.IX.With.Update.v20160426.Codex.PC_(www.asiadl.ir)\\codex.nfo",
+    "hostOS" : "win32",
+    "fullPackSize" : 1519,
+    "fullUnpackSize" : 5502,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1460567638.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1441226440,
+    "fileName" : "Final.Fantasy.IX.With.Update.v20160426.Codex.PC_(www.asiadl.ir)\\Final Fantasy IX Codex.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 2036252649,
+    "fullUnpackSize" : 4548886528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369664968.430283000,
+    "creationTime" : null,
+    "fileCRC" : -1590822852,
+    "fileName" : "Purification.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9983651,
+    "fullUnpackSize" : 10210615,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

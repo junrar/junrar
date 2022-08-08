@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1305006726.000000000,
+    "creationTime" : null,
+    "fileCRC" : 752731078,
+    "fileName" : "Сущ.свед о закр. реестра очер.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 202398,
+    "fullUnpackSize" : 220925,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306292150.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2108006224,
+    "fileName" : "Licitação\\CALADA CENTRO.CORRIGIDO.dwg Model 1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 645194,
+    "fullUnpackSize" : 668612,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307497466.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1665950221,
+    "fileName" : "Licitação\\CALÇADA CENTRO 02.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 445654,
+    "fullUnpackSize" : 466468,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

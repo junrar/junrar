@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1190186792.000000000,
+    "creationTime" : null,
+    "fileCRC" : 614436884,
+    "fileName" : "27-RPS Ardino\\Assessment\\27-RPS Ardino-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4903620,
+    "fullUnpackSize" : 5210112,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

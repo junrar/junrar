@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1236676774.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1543616248,
+    "fileName" : "Современное_состояние_территории.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 1725996,
+    "fullUnpackSize" : 103924540,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

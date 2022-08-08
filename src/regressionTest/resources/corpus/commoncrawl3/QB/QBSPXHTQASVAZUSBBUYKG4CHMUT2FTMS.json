@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359984272.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2117802321,
+    "fileName" : "02_Boyzone No Matter What.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4307320,
+    "fullUnpackSize" : 4366128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

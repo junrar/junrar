@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195795974.195637000,
+    "creationTime" : null,
+    "fileCRC" : 1023709491,
+    "fileName" : "kazahskaia_ssr_1920_1936_gg.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599891,
+    "fullUnpackSize" : 17248872,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

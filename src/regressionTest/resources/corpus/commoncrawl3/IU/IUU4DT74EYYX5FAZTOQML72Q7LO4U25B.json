@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388881940.000000000,
+    "creationTime" : null,
+    "fileCRC" : 674464219,
+    "fileName" : "دليل المراجعين المعتمدين\\دليل المراجعين المعتمدين 2009.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1243652,
+    "fullUnpackSize" : 1476009,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

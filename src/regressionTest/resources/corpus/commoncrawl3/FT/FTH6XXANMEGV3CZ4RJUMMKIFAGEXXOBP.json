@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508824811.251544200,
+    "creationTime" : null,
+    "fileCRC" : 579711146,
+    "fileName" : "平房区教师资格认定.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 44276,
+    "fullUnpackSize" : 80384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

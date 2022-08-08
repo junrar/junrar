@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430979287.277281800,
+    "creationTime" : null,
+    "fileCRC" : -543965397,
+    "fileName" : "TestFile.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 9295,
+    "fullUnpackSize" : 33792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430992784.061681800,
+    "creationTime" : null,
+    "fileCRC" : -762580269,
+    "fileName" : "Error.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 662,
+    "fullUnpackSize" : 2833,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

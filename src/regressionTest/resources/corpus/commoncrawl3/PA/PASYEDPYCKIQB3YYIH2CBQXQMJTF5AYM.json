@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481619833.999999900,
+    "creationTime" : null,
+    "fileCRC" : 317282699,
+    "fileName" : "GB01_187x178mm.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 225293,
+    "fullUnpackSize" : 238418,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489504566.785905700,
+    "creationTime" : null,
+    "fileCRC" : 340785392,
+    "fileName" : "AraxxisSetup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 63404879,
+    "fullUnpackSize" : 63508828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

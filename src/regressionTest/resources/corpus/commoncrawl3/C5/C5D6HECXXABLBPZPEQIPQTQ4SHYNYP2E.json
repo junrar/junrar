@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528351278.714433200,
+    "creationTime" : null,
+    "fileCRC" : -2034913010,
+    "fileName" : "yapılandırma ekleri.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1598466,
+    "fullUnpackSize" : 2271566,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265612381.335236000,
+    "creationTime" : null,
+    "fileCRC" : 1169915269,
+    "fileName" : "rail_SBS_SV.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 73195,
+    "fullUnpackSize" : 100563,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

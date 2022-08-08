@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310017569.877607300,
+    "creationTime" : null,
+    "fileCRC" : 951151899,
+    "fileName" : "mp_house_jump_beta\\mp_house_jump_beta.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 22056325,
+    "fullUnpackSize" : 22094965,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

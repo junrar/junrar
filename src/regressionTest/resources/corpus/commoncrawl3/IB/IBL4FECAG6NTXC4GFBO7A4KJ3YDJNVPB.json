@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1352686784.888474400,
+    "creationTime" : null,
+    "fileCRC" : -196084518,
+    "fileName" : "FRZ036-marik-nightwork\\01 - Marik - La Faiseuse de Rêves.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 11041484,
+    "fullUnpackSize" : 11523220,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

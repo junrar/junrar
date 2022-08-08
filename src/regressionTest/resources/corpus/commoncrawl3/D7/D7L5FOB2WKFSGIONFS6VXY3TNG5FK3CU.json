@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1193931120.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1056880469,
+    "fileName" : "Phase84_V0.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 79572,
+    "fullUnpackSize" : 96874,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196002184.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2063827770,
+    "fileName" : "principal.asm",
+    "hostOS" : "win32",
+    "fullPackSize" : 2111,
+    "fullUnpackSize" : 7436,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

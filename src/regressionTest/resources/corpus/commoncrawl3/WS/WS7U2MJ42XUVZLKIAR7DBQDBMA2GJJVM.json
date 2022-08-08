@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417800979.099045200,
+    "creationTime" : null,
+    "fileCRC" : 97135714,
+    "fileName" : "Preslava_yfTop_Jacket_new mesh.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 1388562,
+    "fullUnpackSize" : 1389047,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

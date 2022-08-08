@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228361239.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1717281315,
+    "fileName" : "om1800ser_dual_europ_01_10_07____edit.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2760746,
+    "fullUnpackSize" : 6120588,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

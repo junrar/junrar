@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508399837.643576200,
+    "creationTime" : null,
+    "fileCRC" : 900658059,
+    "fileName" : "CTEK_LOGO_TAGLINE_HORIZ.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 1257746,
+    "fullUnpackSize" : 1305004,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

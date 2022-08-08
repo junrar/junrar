@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506490791.882929300,
+    "creationTime" : null,
+    "fileCRC" : 976682374,
+    "fileName" : "Комиэнерго\\Сводный график ремонта ЛЭП и сетевого оборудования на октябрь 2017г_Комиэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 17797249,
+    "fullUnpackSize" : 21351877,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

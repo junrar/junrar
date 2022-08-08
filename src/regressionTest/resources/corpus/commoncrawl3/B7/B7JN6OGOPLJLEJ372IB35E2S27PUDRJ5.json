@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389273245.310185600,
+    "creationTime" : null,
+    "fileCRC" : 1962025582,
+    "fileName" : "music36.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4592569,
+    "fullUnpackSize" : 5946336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

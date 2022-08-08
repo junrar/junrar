@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430293910.426947700,
+    "creationTime" : null,
+    "fileCRC" : 851391414,
+    "fileName" : "Release",
+    "hostOS" : "win32",
+    "fullPackSize" : 33,
+    "fullUnpackSize" : 33,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430294016.775447700,
+    "creationTime" : null,
+    "fileCRC" : 1043998777,
+    "fileName" : "INGECON_EMS_Tools-2.15.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 10138152,
+    "fullUnpackSize" : 10887465,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

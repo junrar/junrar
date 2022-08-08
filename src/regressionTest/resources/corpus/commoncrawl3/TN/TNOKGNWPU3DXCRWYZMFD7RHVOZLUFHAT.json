@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489456523.243248400,
+    "creationTime" : null,
+    "fileCRC" : 1835620546,
+    "fileName" : "Smart Lab.lnk.mdb",
+    "hostOS" : "win32",
+    "fullPackSize" : 17203,
+    "fullUnpackSize" : 323584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

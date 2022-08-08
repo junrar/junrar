@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230513967.921875000,
+    "creationTime" : null,
+    "fileCRC" : -880265765,
+    "fileName" : "Хенли Вирджиния. Пират и язычница.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 275254,
+    "fullUnpackSize" : 972277,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

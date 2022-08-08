@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1479873335.445608700,
+    "creationTime" : null,
+    "fileCRC" : -1507442382,
+    "fileName" : "Serra Sovelles - colla cansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 14015,
+    "fullUnpackSize" : 104738,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

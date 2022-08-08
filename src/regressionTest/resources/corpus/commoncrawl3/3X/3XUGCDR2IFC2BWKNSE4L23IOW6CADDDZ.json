@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501234854.343750000,
+    "creationTime" : null,
+    "fileCRC" : 1399765191,
+    "fileName" : "dump atlas 200 HD boot F301\\dump atlas 200 HD boot F301.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 159,
+    "fullUnpackSize" : 204,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501234880.093750000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "dump atlas 200 HD boot F301",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

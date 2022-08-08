@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351953210.000000000,
+    "creationTime" : null,
+    "fileCRC" : 788755158,
+    "fileName" : "Палаточный      лагерь 2012.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 5229602,
+    "fullUnpackSize" : 5285320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

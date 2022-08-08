@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415336856.311860700,
+    "creationTime" : null,
+    "fileCRC" : -2050873111,
+    "fileName" : "Крышка.grb",
+    "hostOS" : "win32",
+    "fullPackSize" : 965355,
+    "fullUnpackSize" : 1050624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

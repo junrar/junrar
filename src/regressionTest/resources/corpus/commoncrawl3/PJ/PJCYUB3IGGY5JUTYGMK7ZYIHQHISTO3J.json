@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515205098.060000000,
+    "creationTime" : null,
+    "fileCRC" : -1004071921,
+    "fileName" : "Dj DougMix - Podcast Dance Play [Ep.229].mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 87665209,
+    "fullUnpackSize" : 88500394,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1128354654.000000000,
+    "creationTime" : null,
+    "fileCRC" : 532361529,
+    "fileName" : "AFI - The Boy Who Destroyed The World.gp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 2369,
+    "fullUnpackSize" : 39773,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1341299430.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1954129920,
+    "fileName" : "Сообщение  № 2 о сущ.факте о проведении собр..doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12023,
+    "fullUnpackSize" : 80896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379834983.284303500,
+    "creationTime" : null,
+    "fileCRC" : -1433096958,
+    "fileName" : "boostane-sadi.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1125695,
+    "fullUnpackSize" : 1483535,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1477359745.890050500,
+    "creationTime" : null,
+    "fileCRC" : 537481786,
+    "fileName" : "Акты закрытия\\Архэнерго Акты закрытия.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2947575,
+    "fullUnpackSize" : 3753644,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

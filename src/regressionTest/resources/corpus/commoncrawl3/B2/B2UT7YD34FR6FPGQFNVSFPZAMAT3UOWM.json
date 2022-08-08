@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1431162420.000000000,
+    "creationTime" : null,
+    "fileCRC" : 868283647,
+    "fileName" : "DC-714-052015\\A23-Q8-800-480-0312-20150509.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 503311042,
+    "fullUnpackSize" : 823030784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

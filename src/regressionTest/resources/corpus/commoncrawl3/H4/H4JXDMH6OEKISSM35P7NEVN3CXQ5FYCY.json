@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221302930.781250000,
+    "creationTime" : null,
+    "fileCRC" : 1254196942,
+    "fileName" : "What is this....txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 182,
+    "fullUnpackSize" : 476,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1224575547.531250000,
+    "creationTime" : null,
+    "fileCRC" : 822186982,
+    "fileName" : "Audi A4 convertible.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1948473,
+    "fullUnpackSize" : 2088309,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

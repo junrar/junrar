@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523269254.512111600,
+    "creationTime" : null,
+    "fileCRC" : -113345811,
+    "fileName" : "Anidef leták A.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 758009,
+    "fullUnpackSize" : 796941,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

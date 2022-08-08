@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399049157.435546800,
+    "creationTime" : null,
+    "fileCRC" : -1063487431,
+    "fileName" : "Guardians of the Galaxy v3 014-000.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 914584,
+    "fullUnpackSize" : 938584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1399049143.562500000,
+    "creationTime" : null,
+    "fileCRC" : 1145382629,
+    "fileName" : "Guardians of the Galaxy v3 014-001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 616915,
+    "fullUnpackSize" : 665317,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

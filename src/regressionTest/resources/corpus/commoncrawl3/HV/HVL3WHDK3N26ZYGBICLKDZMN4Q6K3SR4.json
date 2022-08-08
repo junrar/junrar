@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1259886542.421875000,
+    "creationTime" : null,
+    "fileCRC" : 296868597,
+    "fileName" : "neobookeros_logo.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 8922,
+    "fullUnpackSize" : 10850,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371314721.535229000,
+    "creationTime" : null,
+    "fileCRC" : 1310089369,
+    "fileName" : "db-MisCds-2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1384492,
+    "fullUnpackSize" : 1443645,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

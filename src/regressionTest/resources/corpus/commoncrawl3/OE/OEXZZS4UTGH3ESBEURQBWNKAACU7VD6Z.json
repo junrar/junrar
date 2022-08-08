@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455439726.462000000,
+    "creationTime" : null,
+    "fileCRC" : -1880926207,
+    "fileName" : "Cost Estimate.Road service.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 24447,
+    "fullUnpackSize" : 28672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

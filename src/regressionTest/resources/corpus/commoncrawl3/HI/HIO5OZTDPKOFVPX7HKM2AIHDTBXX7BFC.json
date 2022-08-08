@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499933400.197334800,
+    "creationTime" : null,
+    "fileCRC" : -1606873766,
+    "fileName" : "C85BEF651071441DAA08BD7B4F22CE20.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 21856,
+    "fullUnpackSize" : 44394,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

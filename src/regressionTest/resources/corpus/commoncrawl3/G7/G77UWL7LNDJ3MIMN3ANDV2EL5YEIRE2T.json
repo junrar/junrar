@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141542526.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2046192662,
+    "fileName" : "Sweet Sweet Memories.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3817217,
+    "fullUnpackSize" : 3922256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

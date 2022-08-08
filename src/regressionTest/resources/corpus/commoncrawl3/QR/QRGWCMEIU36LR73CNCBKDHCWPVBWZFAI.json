@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221302930.781250000,
+    "creationTime" : null,
+    "fileCRC" : 1254196942,
+    "fileName" : "What is this....txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 182,
+    "fullUnpackSize" : 476,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1221302590.343750000,
+    "creationTime" : null,
+    "fileCRC" : -2053203153,
+    "fileName" : "1989 BMW M3 e30.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2027331,
+    "fullUnpackSize" : 2166228,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

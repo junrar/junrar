@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420787081.284231600,
+    "creationTime" : null,
+    "fileCRC" : 1563833286,
+    "fileName" : "Shrike H2LV2 Driver_V1.1.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4958158,
+    "fullUnpackSize" : 5106471,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

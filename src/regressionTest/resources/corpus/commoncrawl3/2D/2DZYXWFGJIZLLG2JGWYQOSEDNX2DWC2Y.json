@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351693676.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1620103362,
+    "fileName" : "kolu divchinka.flv",
+    "hostOS" : "win32",
+    "fullPackSize" : 64627751,
+    "fullUnpackSize" : 70400544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

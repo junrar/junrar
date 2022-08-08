@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1069091736.156250000,
+    "creationTime" : null,
+    "fileCRC" : -1710351572,
+    "fileName" : "Geonik's PrimiFun.prs",
+    "hostOS" : "win32",
+    "fullPackSize" : 1280,
+    "fullUnpackSize" : 4313,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1429076502.339770500,
+    "creationTime" : null,
+    "fileCRC" : 2004015510,
+    "fileName" : "HUD HP_ARMOR.sma",
+    "hostOS" : "win32",
+    "fullPackSize" : 543,
+    "fullUnpackSize" : 1168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

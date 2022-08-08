@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1422303662.406759100,
+    "creationTime" : null,
+    "fileCRC" : 1652624404,
+    "fileName" : "The Hobbit - The Tolkien Edit.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 61627,
+    "fullUnpackSize" : 250252,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

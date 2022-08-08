@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359516410.344035200,
+    "creationTime" : null,
+    "fileCRC" : 436217328,
+    "fileName" : "FUNZIONE N. 7.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 969541,
+    "fullUnpackSize" : 979913,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

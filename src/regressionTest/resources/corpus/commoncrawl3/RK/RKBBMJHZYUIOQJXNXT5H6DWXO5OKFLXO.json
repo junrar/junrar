@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382948124.089000000,
+    "creationTime" : null,
+    "fileCRC" : 1395262996,
+    "fileName" : "перечень спец без ВФО и ЗФО (21_06_2011).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 22632,
+    "fullUnpackSize" : 186368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

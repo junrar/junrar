@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476937601.582588000,
+    "creationTime" : null,
+    "fileCRC" : 1383693746,
+    "fileName" : "Conviction.2016.S01E03.720p.HDTV.X264-DIMENSION.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 21989,
+    "fullUnpackSize" : 57693,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476994851.691227800,
+    "creationTime" : null,
+    "fileCRC" : 381466452,
+    "fileName" : "Conviction.2016.S01E03.720p.HDTV.X264-DIMENSION[rartv].torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 82574,
+    "fullUnpackSize" : 82574,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

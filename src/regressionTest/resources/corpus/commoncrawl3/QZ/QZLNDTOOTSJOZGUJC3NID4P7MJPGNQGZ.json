@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394119622.282086300,
+    "creationTime" : null,
+    "fileCRC" : 1989081625,
+    "fileName" : "wmyclot.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 623781,
+    "fullUnpackSize" : 1605766,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394119616.404750200,
+    "creationTime" : null,
+    "fileCRC" : -1078417243,
+    "fileName" : "wmyclot.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 630076,
+    "fullUnpackSize" : 1319592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

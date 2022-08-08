@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491800260.000000000,
+    "creationTime" : null,
+    "fileCRC" : -376663880,
+    "fileName" : "ПЗЗ Маралихинский сс\\Карта градостроительного зон. п. Золотушка.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1831509,
+    "fullUnpackSize" : 2997955,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

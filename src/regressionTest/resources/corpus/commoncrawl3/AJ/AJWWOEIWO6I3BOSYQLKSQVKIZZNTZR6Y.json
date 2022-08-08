@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336217585.703000000,
+    "creationTime" : null,
+    "fileCRC" : -71645559,
+    "fileName" : "4.sinif_2011_2012_2.donem_2.yazili_musaaydogdu.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 44017,
+    "fullUnpackSize" : 133632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

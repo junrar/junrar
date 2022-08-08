@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390391166.570985000,
+    "creationTime" : null,
+    "fileCRC" : 608335101,
+    "fileName" : "Модели систем управления.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 657239,
+    "fullUnpackSize" : 657239,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

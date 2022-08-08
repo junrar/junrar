@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1339083198.401299900,
+    "creationTime" : null,
+    "fileCRC" : 2016425968,
+    "fileName" : "Honda Civic VTi 1994 [www.modsgtasa.com.br]\\club.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 2620720,
+    "fullUnpackSize" : 8976384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

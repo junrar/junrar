@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409819697.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1041264401,
+    "fileName" : "Физика спекания (Я.Е. Гегузин).djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 5415226,
+    "fullUnpackSize" : 5415226,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

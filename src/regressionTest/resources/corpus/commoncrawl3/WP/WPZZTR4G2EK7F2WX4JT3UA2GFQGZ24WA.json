@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1239203406.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1475414331,
+    "fileName" : "gulman25d\\от1 лица\\classic\\game.pak",
+    "hostOS" : "win32",
+    "fullPackSize" : 3777776,
+    "fullUnpackSize" : 4315315,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394092011.968750000,
+    "creationTime" : null,
+    "fileCRC" : 860928633,
+    "fileName" : "SUPRA STV-LC3285FL(V1J12)\\SUPRA STV-LC3285FL(V1J12) EN25B64.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 3167316,
+    "fullUnpackSize" : 8388608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

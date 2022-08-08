@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141659820.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1081530646,
+    "fileName" : "Обитель, изгнание, экзальтация, падение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11199,
+    "fullUnpackSize" : 62464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

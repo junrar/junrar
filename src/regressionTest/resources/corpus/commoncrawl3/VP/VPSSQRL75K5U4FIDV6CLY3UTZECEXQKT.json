@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1286935300.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1815949152,
+    "fileName" : "ACM基本输入输出.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 290508,
+    "fullUnpackSize" : 318418,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

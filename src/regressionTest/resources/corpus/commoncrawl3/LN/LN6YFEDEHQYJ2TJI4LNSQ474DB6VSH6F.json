@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482309112.330794800,
+    "creationTime" : null,
+    "fileCRC" : -821449958,
+    "fileName" : "Фарфор должен быть красивым\\Вступительная статья.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 14637,
+    "fullUnpackSize" : 50688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482306717.927000000,
+    "creationTime" : null,
+    "fileCRC" : -468232070,
+    "fileName" : "Фарфор должен быть красивым\\Каталог.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 51886097,
+    "fullUnpackSize" : 53359104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1209957592.000000000,
+    "creationTime" : null,
+    "fileCRC" : -726222698,
+    "fileName" : "PERÍMETROS\\7.973 - Perímetros Urbanos.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 34266,
+    "fullUnpackSize" : 39212,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1218677228.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1541313439,
+    "fileName" : "PERÍMETROS\\MAPAS\\7.973 - Perímetros Urbanos - Mapa 01 - Sede.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1962558,
+    "fullUnpackSize" : 2034848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

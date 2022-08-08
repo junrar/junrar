@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343286743.241937500,
+    "creationTime" : null,
+    "fileCRC" : -1033644967,
+    "fileName" : "PE13-Sielei-mare-donna.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2201659,
+    "fullUnpackSize" : 3058698,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

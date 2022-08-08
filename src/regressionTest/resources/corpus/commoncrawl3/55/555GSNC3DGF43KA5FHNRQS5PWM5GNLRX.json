@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506014339.164404300,
+    "creationTime" : null,
+    "fileCRC" : -357229503,
+    "fileName" : "D.R–V1.23-FIG\\fg-01.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 1042561284,
+    "fullUnpackSize" : 7734644830,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

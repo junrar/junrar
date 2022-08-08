@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447385388.637000000,
+    "creationTime" : null,
+    "fileCRC" : -773858269,
+    "fileName" : "14229_2015_状态数据 V2.15a001.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 3326929,
+    "fullUnpackSize" : 38815232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

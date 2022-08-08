@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1265612021.266636000,
+    "creationTime" : null,
+    "fileCRC" : -148746183,
+    "fileName" : "rai_lSLL_SL.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 83666,
+    "fullUnpackSize" : 127239,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

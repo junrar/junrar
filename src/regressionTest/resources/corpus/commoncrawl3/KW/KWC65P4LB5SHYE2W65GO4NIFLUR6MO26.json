@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1224991548.000000000,
+    "creationTime" : null,
+    "fileCRC" : 509469788,
+    "fileName" : "Destruction Box V2.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 1283939,
+    "fullUnpackSize" : 4785555,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1141910862.953125000,
+    "creationTime" : null,
+    "fileCRC" : 1185596183,
+    "fileName" : "ISUZU.flv",
+    "hostOS" : "win32",
+    "fullPackSize" : 11028758,
+    "fullUnpackSize" : 11273270,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

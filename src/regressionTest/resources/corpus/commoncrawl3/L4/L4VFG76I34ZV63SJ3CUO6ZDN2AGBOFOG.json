@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382920865.802866900,
+    "creationTime" : null,
+    "fileCRC" : -1724428486,
+    "fileName" : "仕邦说法（第44期）.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1113186,
+    "fullUnpackSize" : 1189951,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

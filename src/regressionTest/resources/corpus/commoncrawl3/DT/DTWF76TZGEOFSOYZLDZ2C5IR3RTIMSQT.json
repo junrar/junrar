@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502770608.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2075067875,
+    "fileName" : "PricePatterns.ex4",
+    "hostOS" : "win32",
+    "fullPackSize" : 280414,
+    "fullUnpackSize" : 280794,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516584486.755930400,
+    "creationTime" : null,
+    "fileCRC" : -1770778047,
+    "fileName" : "FULL Forex Collection.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 224360,
+    "fullUnpackSize" : 248638,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

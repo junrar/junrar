@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1258077155.069785700,
+    "creationTime" : null,
+    "fileCRC" : 1464837437,
+    "fileName" : "Ежеквартальный отчет ОАО Реммаш за 3 квартал 2009 года.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 55518,
+    "fullUnpackSize" : 1047270,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

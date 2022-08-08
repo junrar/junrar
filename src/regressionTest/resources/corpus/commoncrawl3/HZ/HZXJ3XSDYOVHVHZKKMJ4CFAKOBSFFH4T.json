@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354031622.650693000,
+    "creationTime" : null,
+    "fileCRC" : 464057476,
+    "fileName" : "Relazione EBTU al sondaggio.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 963096,
+    "fullUnpackSize" : 1044727,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1354030744.766605800,
+    "creationTime" : null,
+    "fileCRC" : 773700504,
+    "fileName" : "Studio EBTU 27 novembre.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6316465,
+    "fullUnpackSize" : 7480748,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

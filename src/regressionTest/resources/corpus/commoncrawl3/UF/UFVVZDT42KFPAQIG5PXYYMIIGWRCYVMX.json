@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435298699.799620200,
+    "creationTime" : null,
+    "fileCRC" : -507735487,
+    "fileName" : "إجابات مختصرة عن بعض الأسئلة (181).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2920746,
+    "fullUnpackSize" : 3029120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

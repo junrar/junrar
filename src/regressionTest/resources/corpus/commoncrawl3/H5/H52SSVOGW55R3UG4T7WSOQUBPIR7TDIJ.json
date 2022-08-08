@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347103316.267917100,
+    "creationTime" : null,
+    "fileCRC" : -820284124,
+    "fileName" : "ВЦ ТехноСофт презентация.ppsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2581766,
+    "fullUnpackSize" : 4242145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

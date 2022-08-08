@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1231061064.609375000,
+    "creationTime" : null,
+    "fileCRC" : -688898067,
+    "fileName" : "Hayalet.pps",
+    "hostOS" : "win32",
+    "fullPackSize" : 4411104,
+    "fullUnpackSize" : 4449792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

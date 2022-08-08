@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361450144.801517500,
+    "creationTime" : null,
+    "fileCRC" : -1834717481,
+    "fileName" : "W=F Inspire.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8608737,
+    "fullUnpackSize" : 13828535,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

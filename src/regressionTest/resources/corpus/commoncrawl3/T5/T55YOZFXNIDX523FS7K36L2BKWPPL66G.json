@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307330750.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2007386254,
+    "fileName" : "33-CBLS-TC-XD0001 (30-4-2011_31-5-2011).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1589228,
+    "fullUnpackSize" : 1796851,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

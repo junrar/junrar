@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359516513.404978800,
+    "creationTime" : null,
+    "fileCRC" : -162781722,
+    "fileName" : "FUNZIONE N. 9.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 950703,
+    "fullUnpackSize" : 961794,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

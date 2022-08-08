@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371546950.022476500,
+    "creationTime" : null,
+    "fileCRC" : -761201534,
+    "fileName" : "основное оборудование и комплектующие.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 93580,
+    "fullUnpackSize" : 97520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

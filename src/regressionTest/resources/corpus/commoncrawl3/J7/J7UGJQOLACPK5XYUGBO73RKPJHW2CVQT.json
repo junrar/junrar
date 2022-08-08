@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1290067052.341047500,
+    "creationTime" : null,
+    "fileCRC" : 1464386033,
+    "fileName" : "sopa-internet.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 124635,
+    "fullUnpackSize" : 131084,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1340857257.068163600,
+    "creationTime" : null,
+    "fileCRC" : -310692879,
+    "fileName" : "Muster1-280612Magic.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 98401,
+    "fullUnpackSize" : 99873,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1340857282.923163600,
+    "creationTime" : null,
+    "fileCRC" : -1463601468,
+    "fileName" : "Muster1-280612Magic.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 149284,
+    "fullUnpackSize" : 270632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

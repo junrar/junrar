@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272910474.000000000,
+    "creationTime" : null,
+    "fileCRC" : -159519123,
+    "fileName" : "Fairy Tail - 28.rus.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 5768,
+    "fullUnpackSize" : 28589,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272910592.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2042295916,
+    "fileName" : "Fairy Tail - 28.rus+10.ass",
+    "hostOS" : "win32",
+    "fullPackSize" : 2054,
+    "fullUnpackSize" : 28587,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

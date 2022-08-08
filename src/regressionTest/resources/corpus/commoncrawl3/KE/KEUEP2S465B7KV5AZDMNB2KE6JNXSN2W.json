@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160117580.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1280297446,
+    "fileName" : "18-RPS Belogradtchik\\Assessment\\18-RPS Belogradchik-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1187867,
+    "fullUnpackSize" : 1511936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

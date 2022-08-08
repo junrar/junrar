@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491381596.447844000,
+    "creationTime" : null,
+    "fileCRC" : -469881431,
+    "fileName" : "True-D Version 1-2 Firmware 2.2 with FURIOUS FPV logo.hex",
+    "hostOS" : "win32",
+    "fullPackSize" : 28454,
+    "fullUnpackSize" : 82936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

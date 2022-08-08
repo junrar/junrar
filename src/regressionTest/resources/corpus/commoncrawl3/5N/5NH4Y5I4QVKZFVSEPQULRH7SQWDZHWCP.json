@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379151778.703125000,
+    "creationTime" : null,
+    "fileCRC" : -575630411,
+    "fileName" : "GS1 Tests MP3\\02 GS1 T1 A1.Mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 375020,
+    "fullUnpackSize" : 413834,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379151782.421875000,
+    "creationTime" : null,
+    "fileCRC" : -270606882,
+    "fileName" : "GS1 Tests MP3\\03 GS1 T1 A2.Mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 693165,
+    "fullUnpackSize" : 763697,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

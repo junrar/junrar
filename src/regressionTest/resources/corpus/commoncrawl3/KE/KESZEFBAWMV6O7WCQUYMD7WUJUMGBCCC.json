@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530584324.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1928212169,
+    "fileName" : "3 Subría Educ. Sup.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1149776,
+    "fullUnpackSize" : 1526806,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

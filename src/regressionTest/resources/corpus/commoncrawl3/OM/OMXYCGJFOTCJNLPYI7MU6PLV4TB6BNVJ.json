@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1228445680.343000000,
+    "creationTime" : null,
+    "fileCRC" : 2036042802,
+    "fileName" : "Сколь высока цена.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 30031,
+    "fullUnpackSize" : 155136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

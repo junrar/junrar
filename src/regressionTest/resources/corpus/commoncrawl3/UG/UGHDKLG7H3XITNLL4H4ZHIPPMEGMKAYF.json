@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395219492.000000000,
+    "creationTime" : null,
+    "fileCRC" : 813876499,
+    "fileName" : "1. USULAN MUSREMBANG POKJA I.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 34726,
+    "fullUnpackSize" : 40171,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

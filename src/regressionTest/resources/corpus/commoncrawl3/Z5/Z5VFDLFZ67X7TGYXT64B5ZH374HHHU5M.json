@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1201721993.046875000,
+    "creationTime" : null,
+    "fileCRC" : 983031612,
+    "fileName" : "AD_Marvine_Spiralstairs_BlackWood.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 83603,
+    "fullUnpackSize" : 352241,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

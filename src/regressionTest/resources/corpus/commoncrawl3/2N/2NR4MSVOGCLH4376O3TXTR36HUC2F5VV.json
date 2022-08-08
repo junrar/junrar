@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328595172.000000000,
+    "creationTime" : null,
+    "fileCRC" : 782932226,
+    "fileName" : "kayseri_sunumlar\\D.Ç.GÜMÜŞ.WEBİÇİN-ppt.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 6626548,
+    "fullUnpackSize" : 7762432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

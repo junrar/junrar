@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437028610.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1739625421,
+    "fileName" : "DIA1_DAY1\\Digital Tech for Orthotic Insole innovations_Chris Nester.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14047558,
+    "fullUnpackSize" : 17111189,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

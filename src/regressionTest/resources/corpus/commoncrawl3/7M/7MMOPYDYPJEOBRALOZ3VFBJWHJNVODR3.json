@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1524455843.921087500,
+    "creationTime" : null,
+    "fileCRC" : -1357474612,
+    "fileName" : "Nowy folder\\Kamianka.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3487248,
+    "fullUnpackSize" : 3620237,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

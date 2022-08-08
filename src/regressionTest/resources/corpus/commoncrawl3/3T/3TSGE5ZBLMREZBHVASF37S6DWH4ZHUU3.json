@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1164731021.076750000,
+    "creationTime" : null,
+    "fileCRC" : -653200216,
+    "fileName" : "DLKn_prod.XLS",
+    "hostOS" : "win32",
+    "fullPackSize" : 4204,
+    "fullUnpackSize" : 25088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

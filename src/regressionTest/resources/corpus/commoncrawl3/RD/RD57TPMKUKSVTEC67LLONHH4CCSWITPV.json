@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1526529988.072632000,
+    "creationTime" : null,
+    "fileCRC" : 1180265355,
+    "fileName" : "ORDINANZA 31 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 317268,
+    "fullUnpackSize" : 427774,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

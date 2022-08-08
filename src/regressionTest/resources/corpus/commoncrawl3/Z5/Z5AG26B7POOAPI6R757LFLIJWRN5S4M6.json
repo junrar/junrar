@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397800924.906250000,
+    "creationTime" : null,
+    "fileCRC" : 844031743,
+    "fileName" : "Вестник №32 от 02.09.2013г\\85 от 30.08.13г.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 4892107,
+    "fullUnpackSize" : 4892107,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

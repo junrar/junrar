@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1080753492.000000000,
+    "creationTime" : null,
+    "fileCRC" : 81519384,
+    "fileName" : "space-pro[df.vq3]00.46.856(eS-Gar1k.Russia).dm_68",
+    "hostOS" : "win32",
+    "fullPackSize" : 251279,
+    "fullUnpackSize" : 328974,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

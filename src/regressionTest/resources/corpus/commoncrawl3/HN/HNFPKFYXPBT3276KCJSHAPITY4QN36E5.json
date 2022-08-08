@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1144991016.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1723366224,
+    "fileName" : "南传法句经新译.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 113542,
+    "fullUnpackSize" : 538624,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

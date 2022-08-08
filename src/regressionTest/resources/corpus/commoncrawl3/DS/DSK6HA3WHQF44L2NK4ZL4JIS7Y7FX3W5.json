@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1341900480.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2064748729,
+    "fileName" : "1.eps",
+    "hostOS" : "unix",
+    "fullPackSize" : 88022,
+    "fullUnpackSize" : 1000505,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1341900476.000000000,
+    "creationTime" : null,
+    "fileCRC" : -124666570,
+    "fileName" : "1.CDR",
+    "hostOS" : "unix",
+    "fullPackSize" : 35538,
+    "fullUnpackSize" : 44232,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

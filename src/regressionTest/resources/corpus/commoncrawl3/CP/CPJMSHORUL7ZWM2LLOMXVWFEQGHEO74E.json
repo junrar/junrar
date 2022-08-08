@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1222304915.421875000,
+    "creationTime" : null,
+    "fileCRC" : 2063623408,
+    "fileName" : "SETUP.LST",
+    "hostOS" : "win32",
+    "fullPackSize" : 614,
+    "fullUnpackSize" : 3304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1222304912.578125000,
+    "creationTime" : null,
+    "fileCRC" : 1467103565,
+    "fileName" : "KG689_PCS.CAB",
+    "hostOS" : "win32",
+    "fullPackSize" : 2997625,
+    "fullUnpackSize" : 3000609,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514909900.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1782805846,
+    "fileName" : "MPZP\\rysunek_planu_Pn-W.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5242781,
+    "fullUnpackSize" : 24988179,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

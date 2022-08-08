@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1430120931.093750000,
+    "creationTime" : null,
+    "fileCRC" : -242984185,
+    "fileName" : "客户端安装程序\\jwgl.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 22735497,
+    "fullUnpackSize" : 23036416,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

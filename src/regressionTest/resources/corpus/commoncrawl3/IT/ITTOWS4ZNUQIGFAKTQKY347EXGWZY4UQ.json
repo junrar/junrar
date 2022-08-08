@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1157684382.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1452146024,
+    "fileName" : "ESN_dekl1.XLS",
+    "hostOS" : "win32",
+    "fullPackSize" : 80259,
+    "fullUnpackSize" : 526848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498305284.437500000,
+    "creationTime" : null,
+    "fileCRC" : 701111773,
+    "fileName" : "NEW  boot  M   atlas 200 hd.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 154,
+    "fullUnpackSize" : 188,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

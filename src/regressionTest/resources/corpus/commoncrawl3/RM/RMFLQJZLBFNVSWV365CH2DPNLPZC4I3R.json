@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 983507456.000000000,
+    "creationTime" : null,
+    "fileCRC" : 958018356,
+    "fileName" : "Lonne Adrian\\Lonne, Adrien - My Heart to Audrey.gp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 646,
+    "fullUnpackSize" : 5944,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1154607492.000000000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Lonne Adrian",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

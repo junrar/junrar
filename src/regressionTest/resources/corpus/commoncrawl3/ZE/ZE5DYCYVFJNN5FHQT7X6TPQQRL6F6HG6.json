@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478506256.319142100,
+    "creationTime" : null,
+    "fileCRC" : -1966474909,
+    "fileName" : "Каталог к выставке PDF\\Вступительная статья.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 375419,
+    "fullUnpackSize" : 385976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1478506278.947436300,
+    "creationTime" : null,
+    "fileCRC" : 1327636467,
+    "fileName" : "Каталог к выставке PDF\\КЕРАМИКА.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 787382,
+    "fullUnpackSize" : 926697,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

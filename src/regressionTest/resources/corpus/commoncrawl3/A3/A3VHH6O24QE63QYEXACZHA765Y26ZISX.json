@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490749520.000000000,
+    "creationTime" : null,
+    "fileCRC" : 55963681,
+    "fileName" : "ParkcityDB.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 267892,
+    "fullUnpackSize" : 430349,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

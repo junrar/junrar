@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525842651.690093100,
+    "creationTime" : null,
+    "fileCRC" : 27937052,
+    "fileName" : "Elementary.S06E02.Once.You've.Ruled.Out.God.720p.HDTV.X264-DIMENSION.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 27064,
+    "fullUnpackSize" : 72388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525842651.690093100,
+    "creationTime" : null,
+    "fileCRC" : 27937052,
+    "fileName" : "Elementary.S06E02.Once.You've.Ruled.Out.God.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 27064,
+    "fullUnpackSize" : 72388,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

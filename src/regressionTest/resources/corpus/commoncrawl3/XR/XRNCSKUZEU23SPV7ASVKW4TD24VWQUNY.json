@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293826243.203125000,
+    "creationTime" : null,
+    "fileCRC" : -654592836,
+    "fileName" : "buffalo.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 808155,
+    "fullUnpackSize" : 3319592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1293880886.875000000,
+    "creationTime" : null,
+    "fileCRC" : -1111404417,
+    "fileName" : "buffalo.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 3632022,
+    "fullUnpackSize" : 12998656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

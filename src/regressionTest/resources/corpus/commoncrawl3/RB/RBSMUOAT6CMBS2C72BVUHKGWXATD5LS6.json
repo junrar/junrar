@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449042787.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1586334284,
+    "fileName" : "FORMULIR LHKPN MODEL KPK-A.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 515608,
+    "fullUnpackSize" : 721738,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383216512.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1254857820,
+    "fileName" : "FORMULIR LHKPN MODEL KPK-B.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 541715,
+    "fullUnpackSize" : 786008,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

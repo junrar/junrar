@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1269425362.164246000,
+    "creationTime" : null,
+    "fileCRC" : 1730429644,
+    "fileName" : "1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 88914,
+    "fullUnpackSize" : 1284608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1269425308.213160200,
+    "creationTime" : null,
+    "fileCRC" : 626625299,
+    "fileName" : "2.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 68844,
+    "fullUnpackSize" : 1104896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

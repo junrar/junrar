@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418656432.131882700,
+    "creationTime" : null,
+    "fileCRC" : -637056009,
+    "fileName" : "kib_3-kurs-14_15-zima.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 39103,
+    "fullUnpackSize" : 51496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418657681.363334700,
+    "creationTime" : null,
+    "fileCRC" : -1772632081,
+    "fileName" : "Screenshot_12-15_233440.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 197321,
+    "fullUnpackSize" : 203258,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

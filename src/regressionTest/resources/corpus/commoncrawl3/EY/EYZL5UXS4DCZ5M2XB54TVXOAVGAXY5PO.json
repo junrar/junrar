@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409819708.000000000,
+    "creationTime" : null,
+    "fileCRC" : -831275006,
+    "fileName" : "Твердопламенное горение.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 8579280,
+    "fullUnpackSize" : 8579280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383404958.000000000,
+    "creationTime" : null,
+    "fileCRC" : -31612657,
+    "fileName" : "All.Hallows.Eve.2013 www.ParsSubtitle.ir\\All Hallows Eve[2013] HDRip XViD-ETRG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15398,
+    "fullUnpackSize" : 41419,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383448351.032348700,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "All.Hallows.Eve.2013 www.ParsSubtitle.ir",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

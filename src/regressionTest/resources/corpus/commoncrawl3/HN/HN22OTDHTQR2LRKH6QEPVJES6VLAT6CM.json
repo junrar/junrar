@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215229418.906250000,
+    "creationTime" : null,
+    "fileCRC" : 54757017,
+    "fileName" : "AM29LV800BT.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 760404,
+    "fullUnpackSize" : 1048576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

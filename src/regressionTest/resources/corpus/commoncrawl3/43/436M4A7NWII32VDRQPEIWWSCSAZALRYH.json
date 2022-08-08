@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537348648.686937200,
+    "creationTime" : null,
+    "fileCRC" : -909799705,
+    "fileName" : "Setup12.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4016173,
+    "fullUnpackSize" : 4109871,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515584340.986836700,
+    "creationTime" : null,
+    "fileCRC" : -2048976716,
+    "fileName" : "profile-design5\\design 4.psd",
+    "hostOS" : "win32",
+    "fullPackSize" : 29350624,
+    "fullUnpackSize" : 51218264,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

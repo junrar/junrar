@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1356951449.616438800,
+    "creationTime" : null,
+    "fileCRC" : 128842675,
+    "fileName" : "14-Dark Soul Main Therme (Episode 2).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 5096586,
+    "fullUnpackSize" : 5126196,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

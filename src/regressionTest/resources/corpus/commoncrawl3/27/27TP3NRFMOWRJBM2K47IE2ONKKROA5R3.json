@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1039114920.000000000,
+    "creationTime" : null,
+    "fileCRC" : -382020293,
+    "fileName" : "Проблемы прав человека (Пронин).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 436962,
+    "fullUnpackSize" : 669189,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

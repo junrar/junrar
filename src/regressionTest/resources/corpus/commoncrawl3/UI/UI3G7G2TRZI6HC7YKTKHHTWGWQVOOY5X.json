@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1428574418.432811300,
+    "creationTime" : null,
+    "fileCRC" : -256847547,
+    "fileName" : "Blue Estate The Game.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 13989,
+    "fullUnpackSize" : 14106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

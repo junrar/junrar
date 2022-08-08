@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417168806.125584900,
+    "creationTime" : null,
+    "fileCRC" : 2074103412,
+    "fileName" : "dv_beltbox_a4_soba_unfold.pdo",
+    "hostOS" : "win32",
+    "fullPackSize" : 47727,
+    "fullUnpackSize" : 188980,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

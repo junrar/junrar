@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521118540.825081000,
+    "creationTime" : null,
+    "fileCRC" : -1682213512,
+    "fileName" : "Alpha 1.0\\Szewc\\credits.html",
+    "hostOS" : "win32",
+    "fullPackSize" : 79400,
+    "fullUnpackSize" : 872384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521118540.825582200,
+    "creationTime" : null,
+    "fileCRC" : -63543772,
+    "fileName" : "Alpha 1.0\\Szewc\\d3dcompiler_47.dll",
+    "hostOS" : "win32",
+    "fullPackSize" : 1202069,
+    "fullUnpackSize" : 3466856,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

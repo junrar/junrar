@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405402853.701000000,
+    "creationTime" : null,
+    "fileCRC" : -1325930637,
+    "fileName" : "Программа вступительного испытания 2-91 01 01.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 30601,
+    "fullUnpackSize" : 177152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

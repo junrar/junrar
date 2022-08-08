@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435809008.000000000,
+    "creationTime" : null,
+    "fileCRC" : 317224041,
+    "fileName" : "M860 v1.01.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3130488,
+    "fullUnpackSize" : 3247601,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

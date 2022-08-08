@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361708135.904866000,
+    "creationTime" : null,
+    "fileCRC" : 1793593122,
+    "fileName" : "2143-PHD91-[www.konkur.in]\\2143-PHD91-[www.konkur.in].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1013360,
+    "fullUnpackSize" : 1416032,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361708378.225726000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "2143-PHD91-[www.konkur.in]",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

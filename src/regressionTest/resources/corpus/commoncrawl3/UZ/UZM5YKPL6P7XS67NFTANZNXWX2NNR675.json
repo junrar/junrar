@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499580147.723011200,
+    "creationTime" : null,
+    "fileCRC" : 150906013,
+    "fileName" : "Shadowsocks.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 642752,
+    "fullUnpackSize" : 838144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

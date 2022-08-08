@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505331815.491889300,
+    "creationTime" : null,
+    "fileCRC" : -264912738,
+    "fileName" : "qsk_fractured_fykseN_0455.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 4374598,
+    "fullUnpackSize" : 21045780,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

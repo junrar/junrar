@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312885293.544582400,
+    "creationTime" : null,
+    "fileCRC" : -1981552891,
+    "fileName" : "test.fo",
+    "hostOS" : "win32",
+    "fullPackSize" : 623,
+    "fullUnpackSize" : 1697,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1312884712.823384800,
+    "creationTime" : null,
+    "fileCRC" : -1782936966,
+    "fileName" : "test.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4045,
+    "fullUnpackSize" : 5272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

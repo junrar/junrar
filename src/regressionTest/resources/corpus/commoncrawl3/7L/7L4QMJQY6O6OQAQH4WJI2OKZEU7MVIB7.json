@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343883134.025661600,
+    "creationTime" : null,
+    "fileCRC" : 829843273,
+    "fileName" : "九评共产党答问.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 83894,
+    "fullUnpackSize" : 90954,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

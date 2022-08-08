@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499606573.436177400,
+    "creationTime" : null,
+    "fileCRC" : 2047890369,
+    "fileName" : "Бюджет для детей.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 285930,
+    "fullUnpackSize" : 304415,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499601087.167879900,
+    "creationTime" : null,
+    "fileCRC" : -1301830922,
+    "fileName" : "Бюджет для детей.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 13425275,
+    "fullUnpackSize" : 13558402,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1133422187.343750000,
+    "creationTime" : null,
+    "fileCRC" : -302875955,
+    "fileName" : "Linkin-X-Ecutioner.mmf",
+    "hostOS" : "win32",
+    "fullPackSize" : 253897,
+    "fullUnpackSize" : 278466,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533196026.094140900,
+    "creationTime" : null,
+    "fileCRC" : 1425424764,
+    "fileName" : "Proposta Eletronica Pregao Presencial 018.2018.esl",
+    "hostOS" : "win32",
+    "fullPackSize" : 2734,
+    "fullUnpackSize" : 14855,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444751112.428618000,
+    "creationTime" : null,
+    "fileCRC" : 558161692,
+    "fileName" : "GI_T56_Russian_xblue_Y13B_V1_151028.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 3278655,
+    "fullUnpackSize" : 3391600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

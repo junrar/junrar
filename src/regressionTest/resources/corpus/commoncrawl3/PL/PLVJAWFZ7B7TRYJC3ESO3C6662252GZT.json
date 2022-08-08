@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1105585875.064000000,
+    "creationTime" : null,
+    "fileCRC" : -1829522096,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 535,
+    "fullUnpackSize" : 903,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1118725936.008875000,
+    "creationTime" : null,
+    "fileCRC" : -1799778611,
+    "fileName" : "smdimp.dli",
+    "hostOS" : "win32",
+    "fullPackSize" : 22029,
+    "fullUnpackSize" : 69632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1040140860.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1837416840,
+    "fileName" : "Реф РКИ Хаврон.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 19333,
+    "fullUnpackSize" : 103936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

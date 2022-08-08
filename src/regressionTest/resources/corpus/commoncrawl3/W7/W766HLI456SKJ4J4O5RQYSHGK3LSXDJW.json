@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510813768.000000000,
+    "creationTime" : null,
+    "fileCRC" : 657640722,
+    "fileName" : "firmupd8.usb",
+    "hostOS" : "win32",
+    "fullPackSize" : 133958,
+    "fullUnpackSize" : 360424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510813768.000000000,
+    "creationTime" : null,
+    "fileCRC" : 657640722,
+    "fileName" : "F1xToF301.kuf",
+    "hostOS" : "win32",
+    "fullPackSize" : 133958,
+    "fullUnpackSize" : 360424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

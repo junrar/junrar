@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511279920.294584700,
+    "creationTime" : null,
+    "fileCRC" : -296417360,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 423,
+    "fullUnpackSize" : 656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511226177.666574500,
+    "creationTime" : null,
+    "fileCRC" : 615900811,
+    "fileName" : "JARJ.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 143,
+    "fullUnpackSize" : 154,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

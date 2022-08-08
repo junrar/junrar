@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1169549586.031250000,
+    "creationTime" : null,
+    "fileCRC" : 980972768,
+    "fileName" : "FZR_Hermann.eng",
+    "hostOS" : "win32",
+    "fullPackSize" : 150636,
+    "fullUnpackSize" : 278632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1169550467.046875000,
+    "creationTime" : null,
+    "fileCRC" : 698410636,
+    "fileName" : "FZR.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1093372,
+    "fullUnpackSize" : 1108844,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

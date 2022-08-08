@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1241211226.000000000,
+    "creationTime" : null,
+    "fileCRC" : -862473853,
+    "fileName" : "Shvarts - Zhizn na polnoy moschnosti.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 406804,
+    "fullUnpackSize" : 953931,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

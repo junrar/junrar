@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519633135.953999800,
+    "creationTime" : null,
+    "fileCRC" : 117583216,
+    "fileName" : "TeamViewer 13.0.5640 UNLIMITED MultiLang Portable.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 14720592,
+    "fullUnpackSize" : 14756565,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

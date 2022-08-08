@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409022144.000000000,
+    "creationTime" : null,
+    "fileCRC" : 620384813,
+    "fileName" : "Проектная документация\\Том5.3.6ИОС3.6 29июля.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10485600,
+    "fullUnpackSize" : 110236000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

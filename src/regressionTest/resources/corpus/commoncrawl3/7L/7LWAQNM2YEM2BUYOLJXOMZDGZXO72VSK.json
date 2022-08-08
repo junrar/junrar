@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 971173308.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1535990225,
+    "fileName" : "BMOPT.CFG",
+    "hostOS" : "win32",
+    "fullPackSize" : 57,
+    "fullUnpackSize" : 296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1053089158.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1365803372,
+    "fileName" : "bmine.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 108,
+    "fullUnpackSize" : 117,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

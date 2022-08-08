@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484546909.865249100,
+    "creationTime" : null,
+    "fileCRC" : -297748037,
+    "fileName" : "Watch.Dogs.2-CPY.bitdownload.ir\\cpy-wd2.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 375217142,
+    "fullUnpackSize" : 26342209536,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

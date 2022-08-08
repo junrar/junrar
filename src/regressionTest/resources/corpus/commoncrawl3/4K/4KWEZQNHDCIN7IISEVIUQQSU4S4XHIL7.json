@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497862600.218360100,
+    "creationTime" : null,
+    "fileCRC" : 1547479451,
+    "fileName" : "研修网-参训教师操作手册.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 748552,
+    "fullUnpackSize" : 769819,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

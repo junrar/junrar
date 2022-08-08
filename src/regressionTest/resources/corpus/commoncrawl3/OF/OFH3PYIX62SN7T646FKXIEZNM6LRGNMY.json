@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516696185.474038400,
+    "creationTime" : null,
+    "fileCRC" : -538803827,
+    "fileName" : "отчет успеваемости контр за 1 четв 5-11 кл.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 20032,
+    "fullUnpackSize" : 23211,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516695794.166208200,
+    "creationTime" : null,
+    "fileCRC" : 778329655,
+    "fileName" : "отчет успеваемости контр за 1 четв 3-4 нач шк.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 16522,
+    "fullUnpackSize" : 19752,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

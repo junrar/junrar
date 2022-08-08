@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511936276.312934500,
+    "creationTime" : null,
+    "fileCRC" : -503752532,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 439,
+    "fullUnpackSize" : 675,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511936276.313435900,
+    "creationTime" : null,
+    "fileCRC" : -1767181865,
+    "fileName" : "JC8J.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 307,
+    "fullUnpackSize" : 308,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404867749.757218200,
+    "creationTime" : null,
+    "fileCRC" : 1831746629,
+    "fileName" : "DP850.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1452522,
+    "fullUnpackSize" : 1520879,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

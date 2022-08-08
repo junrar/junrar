@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387087582.000000000,
+    "creationTime" : null,
+    "fileCRC" : 275398829,
+    "fileName" : "DM 96\\1996DM9l.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 843292,
+    "fullUnpackSize" : 914860,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388721818.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1121089394,
+    "fileName" : "DM 96\\DM_16_1_1996_antisismica.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 253756,
+    "fullUnpackSize" : 269522,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

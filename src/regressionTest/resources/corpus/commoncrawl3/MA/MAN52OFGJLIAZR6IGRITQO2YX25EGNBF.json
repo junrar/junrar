@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440494959.910534000,
+    "creationTime" : null,
+    "fileCRC" : -378477032,
+    "fileName" : "DC-705-102014\\mz_e86_4.2_mma7660_stk8312_gc0328x2_esp8089_20150825.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 415764873,
+    "fullUnpackSize" : 709835776,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

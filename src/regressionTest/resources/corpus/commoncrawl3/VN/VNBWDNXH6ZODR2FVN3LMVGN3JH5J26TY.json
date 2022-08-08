@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1344850842.281250000,
+    "creationTime" : null,
+    "fileCRC" : -1148300671,
+    "fileName" : "geography_lesson.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1129647,
+    "fullUnpackSize" : 1544813,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

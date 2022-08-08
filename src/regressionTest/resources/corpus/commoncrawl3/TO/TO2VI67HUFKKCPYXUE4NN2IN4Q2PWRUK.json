@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1146261834.000000000,
+    "creationTime" : null,
+    "fileCRC" : -255546597,
+    "fileName" : "Mpsetup_GB.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 13044259,
+    "fullUnpackSize" : 13057672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

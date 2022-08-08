@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420011540.000000000,
+    "creationTime" : null,
+    "fileCRC" : 652230913,
+    "fileName" : "陆家易招商加盟手册.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 10139409,
+    "fullUnpackSize" : 10279264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

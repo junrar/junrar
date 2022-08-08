@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415499102.802734300,
+    "creationTime" : null,
+    "fileCRC" : -448550931,
+    "fileName" : "فصلنامه تابستان\\DiskImage\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 123,
+    "fullUnpackSize" : 206,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415499109.349609300,
+    "creationTime" : null,
+    "fileCRC" : 1235219121,
+    "fileName" : "فصلنامه تابستان\\DiskImage\\فصلنامه  تابستان 93.eBook",
+    "hostOS" : "win32",
+    "fullPackSize" : 7937967,
+    "fullUnpackSize" : 8043779,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

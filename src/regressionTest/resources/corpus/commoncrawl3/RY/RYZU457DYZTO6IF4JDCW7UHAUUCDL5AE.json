@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442082557.269643500,
+    "creationTime" : null,
+    "fileCRC" : 618129310,
+    "fileName" : "Temario Curso Electronica II.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 43602,
+    "fullUnpackSize" : 69632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

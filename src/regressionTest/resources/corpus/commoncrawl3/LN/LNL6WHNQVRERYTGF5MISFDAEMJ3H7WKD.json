@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506407790.000000000,
+    "creationTime" : null,
+    "fileCRC" : -466453715,
+    "fileName" : "EQUIP.FISOTEP10117.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 3703,
+    "fullUnpackSize" : 17703,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485838274.000000000,
+    "creationTime" : null,
+    "fileCRC" : -910664779,
+    "fileName" : "digitador de propostas.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 508045,
+    "fullUnpackSize" : 517672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

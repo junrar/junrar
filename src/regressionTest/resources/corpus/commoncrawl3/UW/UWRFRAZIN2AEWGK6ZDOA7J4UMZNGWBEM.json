@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343790998.781250000,
+    "creationTime" : null,
+    "fileCRC" : 867880742,
+    "fileName" : "红太阳是怎样升起的：延安整风运动的来龙去脉.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 567812,
+    "fullUnpackSize" : 573292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

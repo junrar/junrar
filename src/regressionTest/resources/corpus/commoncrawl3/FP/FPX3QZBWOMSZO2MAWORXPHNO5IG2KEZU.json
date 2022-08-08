@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1209957802.000000000,
+    "creationTime" : null,
+    "fileCRC" : -379375372,
+    "fileName" : "PLANO DIRETOR\\7.972 - Plano Diretor.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 537590,
+    "fullUnpackSize" : 578383,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207295826.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1359137807,
+    "fileName" : "PLANO DIRETOR\\MAPAS\\7.972 - Mapa 01- Plano Diretor.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 4324412,
+    "fullUnpackSize" : 4382519,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

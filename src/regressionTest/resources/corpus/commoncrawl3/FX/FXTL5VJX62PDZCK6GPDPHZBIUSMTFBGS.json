@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1163471150.000000000,
+    "creationTime" : null,
+    "fileCRC" : -447649884,
+    "fileName" : "SP50-102-2003.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 308039,
+    "fullUnpackSize" : 1928704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

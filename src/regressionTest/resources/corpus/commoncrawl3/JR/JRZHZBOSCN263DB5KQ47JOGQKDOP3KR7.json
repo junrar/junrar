@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1459058486.435000000,
+    "creationTime" : null,
+    "fileCRC" : -699424804,
+    "fileName" : "竞赛项目负责人使用手册.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3431946,
+    "fullUnpackSize" : 5045933,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

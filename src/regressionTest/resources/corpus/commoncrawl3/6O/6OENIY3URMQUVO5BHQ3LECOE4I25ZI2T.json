@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423764973.388130600,
+    "creationTime" : null,
+    "fileCRC" : 1729361214,
+    "fileName" : "Толкин. Хоббит, или Туда и обратно.fb2",
+    "hostOS" : "win32",
+    "fullPackSize" : 682707,
+    "fullUnpackSize" : 1988206,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427166452.335844600,
+    "creationTime" : null,
+    "fileCRC" : 280226498,
+    "fileName" : "Билайн_Инструкция для программы быстрой перепрошивки модема ZTE MF667 UMB.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 426775,
+    "fullUnpackSize" : 454323,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425606094.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1415076568,
+    "fileName" : "MF667WEBDL_B05.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 16200287,
+    "fullUnpackSize" : 45439272,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

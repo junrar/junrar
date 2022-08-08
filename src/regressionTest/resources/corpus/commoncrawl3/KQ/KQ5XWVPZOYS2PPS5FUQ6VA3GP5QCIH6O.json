@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358267424.453125000,
+    "creationTime" : null,
+    "fileCRC" : 453909235,
+    "fileName" : "srw_pc.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 872002,
+    "fullUnpackSize" : 1166238,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358267428.546875000,
+    "creationTime" : null,
+    "fileCRC" : 875459180,
+    "fileName" : "srw_sdk.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 314158,
+    "fullUnpackSize" : 464217,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

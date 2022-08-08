@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502758778.437500000,
+    "creationTime" : null,
+    "fileCRC" : 1591981781,
+    "fileName" : "dinh kem file Excel- Ke hoach thoi gian nam hoc 2017-2018.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 29405,
+    "fullUnpackSize" : 134656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502758773.343750000,
+    "creationTime" : null,
+    "fileCRC" : -583636543,
+    "fileName" : "Ke hoach thoi gian nam hoc 2017-2018_Signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 597248,
+    "fullUnpackSize" : 748670,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

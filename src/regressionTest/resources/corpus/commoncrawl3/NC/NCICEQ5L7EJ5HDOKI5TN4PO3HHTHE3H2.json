@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530850774.767588300,
+    "creationTime" : null,
+    "fileCRC" : -1091027425,
+    "fileName" : "Laporan Ketua Panitia Java Paragon.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 166611,
+    "fullUnpackSize" : 170022,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530850770.189440500,
+    "creationTime" : null,
+    "fileCRC" : -1064403356,
+    "fileName" : "Sambutan Sekda Prov Jatim - Rakor Kepegawaian 5-6 Juli 2018.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 118082,
+    "fullUnpackSize" : 183808,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

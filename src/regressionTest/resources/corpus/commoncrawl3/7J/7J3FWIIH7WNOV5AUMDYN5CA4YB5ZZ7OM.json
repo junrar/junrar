@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175766448.000000000,
+    "creationTime" : null,
+    "fileCRC" : -103759049,
+    "fileName" : "Правила охраны линий и сооружений связи.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17063,
+    "fullUnpackSize" : 102400,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

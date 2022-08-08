@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196609943.906250000,
+    "creationTime" : null,
+    "fileCRC" : 336747733,
+    "fileName" : "1988 v1.25.cuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 104167755,
+    "fullUnpackSize" : 104167755,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

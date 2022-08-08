@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1190182056.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1354970227,
+    "fileName" : "23-RPS Mezdra\\Assessment\\23-RPS Mezdra-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 2764316,
+    "fullUnpackSize" : 3039744,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

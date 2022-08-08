@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1467334805.569356200,
+    "creationTime" : null,
+    "fileCRC" : -350914408,
+    "fileName" : "График на июль 2016 ЦУС Архэнерго.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1098729,
+    "fullUnpackSize" : 1502784,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

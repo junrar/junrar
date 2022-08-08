@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334894705.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2002597442,
+    "fileName" : "IE Plug-in\\CUTSDOWN_VS100_2.0.3.40_En.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2860227,
+    "fullUnpackSize" : 3005247,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

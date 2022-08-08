@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334036526.656250000,
+    "creationTime" : null,
+    "fileCRC" : -1410670982,
+    "fileName" : "rh600.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1519150,
+    "fullUnpackSize" : 1537477,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

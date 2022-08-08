@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485616685.814214800,
+    "creationTime" : null,
+    "fileCRC" : -1513095115,
+    "fileName" : "Arrepios - PT0011 - O Fantasma Da Casa Ao Lado\\00.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 654942,
+    "fullUnpackSize" : 660156,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485616662.876172700,
+    "creationTime" : null,
+    "fileCRC" : -1992492772,
+    "fileName" : "Arrepios - PT0011 - O Fantasma Da Casa Ao Lado\\001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 644320,
+    "fullUnpackSize" : 649472,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

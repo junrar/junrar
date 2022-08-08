@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1243298077.000000000,
+    "creationTime" : null,
+    "fileCRC" : 610782070,
+    "fileName" : "Majallet-Islah-13.zip.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2686415,
+    "fullUnpackSize" : 3598071,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

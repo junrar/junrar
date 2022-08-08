@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520575659.738884400,
+    "creationTime" : null,
+    "fileCRC" : 2029632011,
+    "fileName" : "高傳凱博士_產業標準V1.0重點說明.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 832519,
+    "fullUnpackSize" : 841585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520575699.139249700,
+    "creationTime" : null,
+    "fileCRC" : 2064694343,
+    "fileName" : "余俊賢執行長_IP Camera 檢測之攻略及配合要點.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5778322,
+    "fullUnpackSize" : 5778322,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

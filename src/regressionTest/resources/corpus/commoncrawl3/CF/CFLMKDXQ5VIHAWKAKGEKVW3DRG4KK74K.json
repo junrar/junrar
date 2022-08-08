@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1012123246.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1297679944,
+    "fileName" : "sponza.obj",
+    "hostOS" : "win32",
+    "fullPackSize" : 562423,
+    "fullUnpackSize" : 4525154,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

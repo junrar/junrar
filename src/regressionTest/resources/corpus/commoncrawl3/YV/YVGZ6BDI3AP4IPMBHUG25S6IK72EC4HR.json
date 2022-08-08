@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1188995749.453125000,
+    "creationTime" : null,
+    "fileCRC" : -1406297361,
+    "fileName" : "uranus.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 539470,
+    "fullUnpackSize" : 1787688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1188994119.437500000,
+    "creationTime" : null,
+    "fileCRC" : -2092189607,
+    "fileName" : "uranus.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1366951,
+    "fullUnpackSize" : 4630528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

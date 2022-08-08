@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457563877.225634600,
+    "creationTime" : null,
+    "fileCRC" : -783630841,
+    "fileName" : "2015-01.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1590248,
+    "fullUnpackSize" : 1647205,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

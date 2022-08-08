@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1349674868.000000000,
+    "creationTime" : null,
+    "fileCRC" : -233073454,
+    "fileName" : "Santacruz - Casa de Piedra (2012)\\.DS_Store",
+    "hostOS" : "unix",
+    "fullPackSize" : 340,
+    "fullUnpackSize" : 6148,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350284672.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1142952648,
+    "fileName" : "Santacruz - Casa de Piedra (2012)\\00 contratapa.jpg",
+    "hostOS" : "unix",
+    "fullPackSize" : 13255198,
+    "fullUnpackSize" : 13693483,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

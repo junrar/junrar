@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512028094.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2136273306,
+    "fileName" : "каз\\1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3897044,
+    "fullUnpackSize" : 3930586,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

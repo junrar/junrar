@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390037396.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1491317966,
+    "fileName" : "Caiete de sarcini\\CS3-Instalatii hidraulice si utilaje tehnologice.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10485618,
+    "fullUnpackSize" : 79758900,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

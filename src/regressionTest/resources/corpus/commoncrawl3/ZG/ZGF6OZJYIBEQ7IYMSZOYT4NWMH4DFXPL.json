@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527819494.539778200,
+    "creationTime" : null,
+    "fileCRC" : 1280635892,
+    "fileName" : "Протокол вскр.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 601464,
+    "fullUnpackSize" : 601501,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527750837.851781300,
+    "creationTime" : null,
+    "fileCRC" : 500167395,
+    "fileName" : "Протокол вскр.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 32977,
+    "fullUnpackSize" : 36774,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

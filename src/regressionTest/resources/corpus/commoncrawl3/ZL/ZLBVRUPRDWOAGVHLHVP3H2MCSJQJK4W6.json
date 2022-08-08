@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506750856.000000000,
+    "creationTime" : null,
+    "fileCRC" : -303784744,
+    "fileName" : "泰安市创建省级食品安全城市简报第10期.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 121345,
+    "fullUnpackSize" : 288256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

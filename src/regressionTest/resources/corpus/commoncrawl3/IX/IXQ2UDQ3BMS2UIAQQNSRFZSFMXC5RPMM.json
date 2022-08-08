@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1200037880.000000000,
+    "creationTime" : null,
+    "fileCRC" : 422501130,
+    "fileName" : "sw4_install.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 11647862,
+    "fullUnpackSize" : 11712188,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

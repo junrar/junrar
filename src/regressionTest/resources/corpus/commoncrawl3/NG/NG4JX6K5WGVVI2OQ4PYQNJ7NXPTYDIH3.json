@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490936491.037250700,
+    "creationTime" : null,
+    "fileCRC" : -2101070093,
+    "fileName" : "viz kamni\\jpeg\\1+.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1971152,
+    "fullUnpackSize" : 1981701,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

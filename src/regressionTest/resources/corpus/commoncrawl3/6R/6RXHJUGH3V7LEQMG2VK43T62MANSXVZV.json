@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1386964369.006559700,
+    "creationTime" : null,
+    "fileCRC" : -1442869397,
+    "fileName" : "La Torre de Rudesindus (1).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 8388501,
+    "fullUnpackSize" : 22986106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

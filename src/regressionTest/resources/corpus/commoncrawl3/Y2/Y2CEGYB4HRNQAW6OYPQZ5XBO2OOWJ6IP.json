@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1375901641.124443400,
+    "creationTime" : null,
+    "fileCRC" : 917332652,
+    "fileName" : "mp_organic_future\\mp_organic_future.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 14348731,
+    "fullUnpackSize" : 14469912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

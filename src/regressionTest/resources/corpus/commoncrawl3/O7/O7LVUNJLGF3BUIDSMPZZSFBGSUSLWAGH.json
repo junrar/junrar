@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330942290.599102400,
+    "creationTime" : null,
+    "fileCRC" : 2105544733,
+    "fileName" : "Antiga Shipyard Chris.SC2Replay",
+    "hostOS" : "win32",
+    "fullPackSize" : 23944,
+    "fullUnpackSize" : 24987,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1330942767.974406700,
+    "creationTime" : null,
+    "fileCRC" : -166181939,
+    "fileName" : "Tal'darim Altar LE Chris.SC2Replay",
+    "hostOS" : "win32",
+    "fullPackSize" : 20785,
+    "fullUnpackSize" : 21861,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

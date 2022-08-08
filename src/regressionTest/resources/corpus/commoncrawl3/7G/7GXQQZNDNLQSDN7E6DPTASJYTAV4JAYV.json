@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514387067.560625000,
+    "creationTime" : null,
+    "fileCRC" : -684296985,
+    "fileName" : "0000-ffff.s19",
+    "hostOS" : "win32",
+    "fullPackSize" : 32520,
+    "fullUnpackSize" : 86336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

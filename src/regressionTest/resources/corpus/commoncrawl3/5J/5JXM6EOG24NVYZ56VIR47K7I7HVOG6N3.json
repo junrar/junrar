@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1341220513.672875000,
+    "creationTime" : null,
+    "fileCRC" : -1916587667,
+    "fileName" : "航运在线-《航运情报》-第275期-12.06.25.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 823805,
+    "fullUnpackSize" : 858278,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

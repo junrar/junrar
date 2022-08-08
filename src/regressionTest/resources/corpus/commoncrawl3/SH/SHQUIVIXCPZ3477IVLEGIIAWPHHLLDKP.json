@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492064059.527512300,
+    "creationTime" : null,
+    "fileCRC" : -1077029509,
+    "fileName" : "Bayonetta [FitGirl Repack].bitdownload.ir\\setup-fitgirl-01.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 524287845,
+    "fullUnpackSize" : 2574207516,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

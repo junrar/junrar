@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509383801.210482400,
+    "creationTime" : null,
+    "fileCRC" : 1348820999,
+    "fileName" : "初级天天故事二月\\A Big Cat.AMM",
+    "hostOS" : "win32",
+    "fullPackSize" : 2214037,
+    "fullUnpackSize" : 3100196,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

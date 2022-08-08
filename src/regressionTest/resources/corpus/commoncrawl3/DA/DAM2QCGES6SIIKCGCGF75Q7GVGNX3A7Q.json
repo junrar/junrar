@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389606320.530293900,
+    "creationTime" : null,
+    "fileCRC" : -1664502084,
+    "fileName" : "Sec04.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4505685,
+    "fullUnpackSize" : 6908060,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

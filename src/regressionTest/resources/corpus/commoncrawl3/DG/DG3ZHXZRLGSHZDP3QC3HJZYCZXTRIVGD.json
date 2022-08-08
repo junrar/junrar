@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487314817.098801400,
+    "creationTime" : null,
+    "fileCRC" : 546795013,
+    "fileName" : "SU5D Configuration vlagomer[v115] [RU]_setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1475745,
+    "fullUnpackSize" : 1495925,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

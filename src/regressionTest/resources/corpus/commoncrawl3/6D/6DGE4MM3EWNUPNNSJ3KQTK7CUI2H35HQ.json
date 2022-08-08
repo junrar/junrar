@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528788292.046875000,
+    "creationTime" : null,
+    "fileCRC" : -868314847,
+    "fileName" : "thong bao qtoan quy 1_Signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 146778,
+    "fullUnpackSize" : 168488,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528788295.937500000,
+    "creationTime" : null,
+    "fileCRC" : -966938372,
+    "fileName" : "lich qtoan quy 1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9127,
+    "fullUnpackSize" : 46080,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

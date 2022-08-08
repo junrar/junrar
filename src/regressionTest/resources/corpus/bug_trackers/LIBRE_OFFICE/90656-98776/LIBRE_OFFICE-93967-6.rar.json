@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1441551708.340445000,
+    "creationTime" : null,
+    "fileCRC" : 625997339,
+    "fileName" : "soffice.DMP",
+    "hostOS" : "win32",
+    "fullPackSize" : 10238888,
+    "fullUnpackSize" : 447257469,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

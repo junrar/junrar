@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264856578.919300600,
+    "creationTime" : null,
+    "fileCRC" : 679985913,
+    "fileName" : "com valles no hi ha res 4.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 19033,
+    "fullUnpackSize" : 97540,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

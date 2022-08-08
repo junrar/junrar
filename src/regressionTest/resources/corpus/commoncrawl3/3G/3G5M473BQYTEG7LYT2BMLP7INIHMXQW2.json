@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1299811141.796000000,
+    "creationTime" : null,
+    "fileCRC" : 1313889691,
+    "fileName" : "Протокол обмена СУ5Д.Влагомеры 2009_СУ-5Д.ПО.2-002_.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 232738,
+    "fullUnpackSize" : 246292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

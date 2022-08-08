@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353499134.231690200,
+    "creationTime" : null,
+    "fileCRC" : 1616053033,
+    "fileName" : "положение о дистанционной олимпиаде.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 17510,
+    "fullUnpackSize" : 20351,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

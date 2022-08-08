@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152253276.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1632194109,
+    "fileName" : "Finsbury Park, London, UK - 2nd August 1997\\CD\\10 - Unfinished Sympathy.flac",
+    "hostOS" : "win32",
+    "fullPackSize" : 5235039,
+    "fullUnpackSize" : 42488611,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

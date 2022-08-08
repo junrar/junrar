@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407290715.087209600,
+    "creationTime" : null,
+    "fileCRC" : -860322330,
+    "fileName" : "Документация\\Лот 3\\Лот 1.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 9999682,
+    "fullUnpackSize" : 18630853,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

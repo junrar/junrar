@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264601452.078125000,
+    "creationTime" : null,
+    "fileCRC" : 921450656,
+    "fileName" : "DAF_XF_for_GTS_1.02.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 234633,
+    "fullUnpackSize" : 246346,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1264600882.109375000,
+    "creationTime" : null,
+    "fileCRC" : -697599504,
+    "fileName" : "DAF_XF_for_GTS_1.02.scs",
+    "hostOS" : "win32",
+    "fullPackSize" : 5203075,
+    "fullUnpackSize" : 27207833,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

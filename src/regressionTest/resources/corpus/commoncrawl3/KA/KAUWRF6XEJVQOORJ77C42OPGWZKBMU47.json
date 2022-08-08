@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1337932479.453125000,
+    "creationTime" : null,
+    "fileCRC" : -546849401,
+    "fileName" : "almanac_4.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 749120,
+    "fullUnpackSize" : 771267,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1427502211.687500000,
+    "creationTime" : null,
+    "fileCRC" : -1201167276,
+    "fileName" : "Parol k arhivu .txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 138,
+    "fullUnpackSize" : 138,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

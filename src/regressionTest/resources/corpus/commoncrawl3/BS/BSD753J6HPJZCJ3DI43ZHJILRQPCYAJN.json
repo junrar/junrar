@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1300688448.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1586747955,
+    "fileName" : "решение № 14  Microsoft Word.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 41398,
+    "fullUnpackSize" : 64000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

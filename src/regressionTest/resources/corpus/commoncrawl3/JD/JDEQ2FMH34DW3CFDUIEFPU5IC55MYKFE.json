@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1257487878.250000000,
+    "creationTime" : null,
+    "fileCRC" : -529057927,
+    "fileName" : "Yiruma - Sky.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 806214,
+    "fullUnpackSize" : 1025186,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

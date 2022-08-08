@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502164323.814529900,
+    "creationTime" : null,
+    "fileCRC" : 1583260597,
+    "fileName" : "МРСК СЗ отчет о выполнении ИПР за 2 квартал 2017.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4351315,
+    "fullUnpackSize" : 6178317,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

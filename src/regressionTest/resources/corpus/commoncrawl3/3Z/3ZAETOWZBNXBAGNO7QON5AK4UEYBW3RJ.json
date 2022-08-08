@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1469667408.609000000,
+    "creationTime" : null,
+    "fileCRC" : -1369925299,
+    "fileName" : "326 О внес измен в 249.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 131740,
+    "fullUnpackSize" : 2565632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

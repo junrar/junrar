@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 871822500.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1768176935,
+    "fileName" : "RAZORKEE.TTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 28389,
+    "fullUnpackSize" : 47448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

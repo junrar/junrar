@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 805895376.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1304928467,
+    "fileName" : "GEYNZ.TXT",
+    "hostOS" : "msdos",
+    "fullPackSize" : 1664,
+    "fullUnpackSize" : 4164,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1129652682.000000000,
+    "creationTime" : null,
+    "fileCRC" : -193413231,
+    "fileName" : "МоделированиеДинамики.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 835596,
+    "fullUnpackSize" : 8258048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

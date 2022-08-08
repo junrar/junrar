@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177489573.625000000,
+    "creationTime" : null,
+    "fileCRC" : -2116779819,
+    "fileName" : "037Saffat.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 22458206,
+    "fullUnpackSize" : 23776821,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

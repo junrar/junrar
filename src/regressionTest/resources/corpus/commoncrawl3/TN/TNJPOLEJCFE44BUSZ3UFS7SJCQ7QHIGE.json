@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410524376.000000000,
+    "creationTime" : null,
+    "fileCRC" : 477548983,
+    "fileName" : "Simon Paskal - Die 7 Techter.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2754567,
+    "fullUnpackSize" : 2793119,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

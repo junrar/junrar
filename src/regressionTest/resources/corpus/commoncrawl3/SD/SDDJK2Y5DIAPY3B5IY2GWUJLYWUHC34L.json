@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247630346.627746600,
+    "creationTime" : null,
+    "fileCRC" : -1258276507,
+    "fileName" : "SolidWorks-Tutorial (G)\\vf_01\\79.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2734218,
+    "fullUnpackSize" : 4212558,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

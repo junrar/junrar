@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1103769564.878375000,
+    "creationTime" : null,
+    "fileCRC" : 1590855862,
+    "fileName" : "VTAEXP.DLE",
+    "hostOS" : "win32",
+    "fullPackSize" : 32470,
+    "fullUnpackSize" : 86016,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1118730219.180750000,
+    "creationTime" : null,
+    "fileCRC" : 568804103,
+    "fileName" : "SMDLEXP.DLE",
+    "hostOS" : "win32",
+    "fullPackSize" : 42800,
+    "fullUnpackSize" : 106496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

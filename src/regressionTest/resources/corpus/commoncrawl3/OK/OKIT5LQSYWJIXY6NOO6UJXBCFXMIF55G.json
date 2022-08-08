@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455516548.250000000,
+    "creationTime" : null,
+    "fileCRC" : -1943728704,
+    "fileName" : "Русский Час_\\RCh_perebor_27.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 108081988,
+    "fullUnpackSize" : 111712419,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

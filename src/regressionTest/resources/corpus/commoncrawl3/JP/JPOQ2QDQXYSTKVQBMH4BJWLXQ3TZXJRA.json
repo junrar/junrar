@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291862065.046875000,
+    "creationTime" : null,
+    "fileCRC" : -1116708052,
+    "fileName" : "巴利经赞mp3\\01早课-01礼敬三宝.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 684418,
+    "fullUnpackSize" : 694681,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292309749.820500000,
+    "creationTime" : null,
+    "fileCRC" : 535442982,
+    "fileName" : "巴利经赞mp3\\02早课-02礼赞三宝.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3712543,
+    "fullUnpackSize" : 3743275,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

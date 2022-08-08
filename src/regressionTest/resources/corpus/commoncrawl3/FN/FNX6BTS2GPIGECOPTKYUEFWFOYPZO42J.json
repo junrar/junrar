@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1198584710.421875000,
+    "creationTime" : null,
+    "fileCRC" : -1575452774,
+    "fileName" : "feltzer.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1135519,
+    "fullUnpackSize" : 3233792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

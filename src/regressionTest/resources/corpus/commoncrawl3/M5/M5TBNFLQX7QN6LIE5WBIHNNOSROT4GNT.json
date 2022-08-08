@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1273985527.360763400,
+    "creationTime" : null,
+    "fileCRC" : -282973552,
+    "fileName" : "pixiewrath_locked.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1832949,
+    "fullUnpackSize" : 1832949,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

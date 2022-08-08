@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442477047.725476700,
+    "creationTime" : null,
+    "fileCRC" : 1200721756,
+    "fileName" : "blf-dialog_info-pickup.pcapng",
+    "hostOS" : "win32",
+    "fullPackSize" : 46298,
+    "fullUnpackSize" : 110168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

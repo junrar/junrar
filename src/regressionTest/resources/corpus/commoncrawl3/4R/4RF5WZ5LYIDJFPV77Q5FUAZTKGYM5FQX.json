@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504998145.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1877829231,
+    "fileName" : "Grand Theft Auto V [FitGirl Lolly Repack].bitdownload.ir\\fg-01.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 524287844,
+    "fullUnpackSize" : 15354682334,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

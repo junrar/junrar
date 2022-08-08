@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361688263.441757200,
+    "creationTime" : null,
+    "fileCRC" : 1791663334,
+    "fileName" : "Supernatural.S08E15.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16750,
+    "fullUnpackSize" : 43169,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361688263.441757200,
+    "creationTime" : null,
+    "fileCRC" : 1791663334,
+    "fileName" : "Supernatural.S08E15.1080p.WEB.DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16750,
+    "fullUnpackSize" : 43169,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528518885.412174100,
+    "creationTime" : null,
+    "fileCRC" : -1453856075,
+    "fileName" : "Гримуар оккультиста.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 206979,
+    "fullUnpackSize" : 249044,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528517971.290428900,
+    "creationTime" : null,
+    "fileCRC" : 641964458,
+    "fileName" : "Оккультист.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 757340,
+    "fullUnpackSize" : 2285917,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

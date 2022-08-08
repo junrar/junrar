@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1340604502.187500000,
+    "creationTime" : null,
+    "fileCRC" : 2047449870,
+    "fileName" : "法轮功中南海事件真相揭秘.epub",
+    "hostOS" : "win32",
+    "fullPackSize" : 74615,
+    "fullUnpackSize" : 75455,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450198276.273613000,
+    "creationTime" : null,
+    "fileCRC" : -449431381,
+    "fileName" : "Tazan Mabrook.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2023956,
+    "fullUnpackSize" : 4990237,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

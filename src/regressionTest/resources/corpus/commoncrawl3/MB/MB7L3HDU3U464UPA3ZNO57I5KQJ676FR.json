@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508291506.000000000,
+    "creationTime" : null,
+    "fileCRC" : 368605166,
+    "fileName" : "лот 1 трубы .xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 18150,
+    "fullUnpackSize" : 22108,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508291556.000000000,
+    "creationTime" : null,
+    "fileCRC" : -964026154,
+    "fileName" : "лот 3 электро .xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 17791,
+    "fullUnpackSize" : 20881,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334307372.302800000,
+    "creationTime" : null,
+    "fileCRC" : -689612943,
+    "fileName" : "mp_nevada\\mp_nevada.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 17343931,
+    "fullUnpackSize" : 17473161,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

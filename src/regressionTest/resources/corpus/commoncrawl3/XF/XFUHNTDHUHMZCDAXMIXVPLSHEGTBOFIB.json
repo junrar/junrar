@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504755188.000000000,
+    "creationTime" : null,
+    "fileCRC" : 579210331,
+    "fileName" : "blagodat3 2017\\01. Екип и контакти.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2135295,
+    "fullUnpackSize" : 2161685,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1157251974.000000000,
+    "creationTime" : null,
+    "fileCRC" : -524324463,
+    "fileName" : "Evolutions 2\\acvra.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 594277,
+    "fullUnpackSize" : 609806,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1157254664.000000000,
+    "creationTime" : null,
+    "fileCRC" : 456818028,
+    "fileName" : "Evolutions 2\\acvrb.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 603560,
+    "fullUnpackSize" : 667183,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

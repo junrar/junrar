@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1365254036.046875000,
+    "creationTime" : null,
+    "fileCRC" : 1182764066,
+    "fileName" : "上海计量院DMP9051多参量变送器校验证书.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 130091,
+    "fullUnpackSize" : 143897,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

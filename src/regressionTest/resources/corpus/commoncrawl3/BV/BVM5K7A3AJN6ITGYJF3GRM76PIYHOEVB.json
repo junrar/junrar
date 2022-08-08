@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1238822572.578000000,
+    "creationTime" : null,
+    "fileCRC" : 553057695,
+    "fileName" : "Ансело. Шесть месяцев в России.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 292608,
+    "fullUnpackSize" : 1449984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

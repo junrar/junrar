@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1268719110.609375000,
+    "creationTime" : null,
+    "fileCRC" : 672860622,
+    "fileName" : "no-color-laube\\01 - Introduction.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2156050,
+    "fullUnpackSize" : 2524560,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

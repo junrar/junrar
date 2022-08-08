@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361627940.869981600,
+    "creationTime" : null,
+    "fileCRC" : -1677229900,
+    "fileName" : "@fallujah\\.rsync\\.pack\\.repository.yml",
+    "hostOS" : "win32",
+    "fullPackSize" : 617,
+    "fullUnpackSize" : 1455,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361628051.367301700,
+    "creationTime" : null,
+    "fileCRC" : 1428477955,
+    "fileName" : "@fallujah\\.rsync\\.pack\\addons\\fallujah1_2.pbo.gz",
+    "hostOS" : "win32",
+    "fullPackSize" : 49344732,
+    "fullUnpackSize" : 49344732,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

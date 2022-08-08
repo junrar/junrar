@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1408597810.000000000,
+    "creationTime" : null,
+    "fileCRC" : -440659580,
+    "fileName" : "ПСД Н-Кузьминки 4-6а\\Н-Кузьминки\\3849-13-ППО5.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 10485605,
+    "fullUnpackSize" : 16887134,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

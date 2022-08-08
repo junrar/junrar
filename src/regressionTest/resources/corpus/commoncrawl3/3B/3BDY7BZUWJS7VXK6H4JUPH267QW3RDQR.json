@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535102900.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1313313533,
+    "fileName" : "Transformers-Bumblebee-Movie-Prequel-3\\01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1149757,
+    "fullUnpackSize" : 1174644,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

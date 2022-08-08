@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472918946.656250000,
+    "creationTime" : null,
+    "fileCRC" : 849094469,
+    "fileName" : "Толкование Первого Послания к Коринфянам.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6677815,
+    "fullUnpackSize" : 7111085,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1107957978.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1867131306,
+    "fileName" : "AdobePS 1.0.6\\DATA.TAG",
+    "hostOS" : "win32",
+    "fullPackSize" : 133,
+    "fullUnpackSize" : 134,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1107958018.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1816915000,
+    "fileName" : "AdobePS 1.0.6\\data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 2603100,
+    "fullUnpackSize" : 3334069,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

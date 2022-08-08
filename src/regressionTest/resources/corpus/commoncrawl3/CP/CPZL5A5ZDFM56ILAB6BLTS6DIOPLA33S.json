@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1274021150.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1934846703,
+    "fileName" : "Создание высокоскоростных магистралей.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1815576,
+    "fullUnpackSize" : 2151424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497315942.443577900,
+    "creationTime" : null,
+    "fileCRC" : 1436101143,
+    "fileName" : "Readme.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 135729,
+    "fullUnpackSize" : 152634,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497315891.000000000,
+    "creationTime" : null,
+    "fileCRC" : -243246265,
+    "fileName" : "УГО_Евроавтоматика ФиФ.dwg",
+    "hostOS" : "win32",
+    "fullPackSize" : 367904,
+    "fullUnpackSize" : 591642,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

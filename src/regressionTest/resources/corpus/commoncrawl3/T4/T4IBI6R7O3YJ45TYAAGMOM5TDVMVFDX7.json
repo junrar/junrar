@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363802498.014475000,
+    "creationTime" : null,
+    "fileCRC" : 516041893,
+    "fileName" : "setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 166996,
+    "fullUnpackSize" : 430592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363802502.614000000,
+    "creationTime" : null,
+    "fileCRC" : -1019299578,
+    "fileName" : "netSMSInstaller.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 3437247,
+    "fullUnpackSize" : 3710464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

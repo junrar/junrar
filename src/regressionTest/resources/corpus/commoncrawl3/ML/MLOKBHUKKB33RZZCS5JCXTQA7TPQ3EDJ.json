@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528096394.187500000,
+    "creationTime" : null,
+    "fileCRC" : -1091090145,
+    "fileName" : "04- Veso - Dohner_ Laurann.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1710753,
+    "fullUnpackSize" : 1734457,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

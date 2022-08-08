@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1450849428.833988100,
+    "creationTime" : null,
+    "fileCRC" : -1174271423,
+    "fileName" : "Английский\\edinenie_card_ENG_90x50.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 6603434,
+    "fullUnpackSize" : 6705266,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420805761.125000000,
+    "creationTime" : null,
+    "fileCRC" : 2027726838,
+    "fileName" : "Technichesky_otchet_Gidromehanizaciya_ 1940.rar_OCR.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 42223355,
+    "fullUnpackSize" : 42229508,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

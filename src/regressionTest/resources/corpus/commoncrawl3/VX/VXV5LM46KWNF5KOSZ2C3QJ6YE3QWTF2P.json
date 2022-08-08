@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498617935.219990700,
+    "creationTime" : null,
+    "fileCRC" : -1388000109,
+    "fileName" : "mini901_nom_4003_170616.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 182345,
+    "fullUnpackSize" : 462006,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

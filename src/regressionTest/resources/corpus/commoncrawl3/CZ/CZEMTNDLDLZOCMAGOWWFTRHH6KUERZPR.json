@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196167737.033225600,
+    "creationTime" : null,
+    "fileCRC" : 2134180038,
+    "fileName" : "slepá mapa\\JA.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 247692,
+    "fullUnpackSize" : 249760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196167307.465537600,
+    "creationTime" : null,
+    "fileCRC" : -1529860966,
+    "fileName" : "slepá mapa\\JiAm.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1054662,
+    "fullUnpackSize" : 1064890,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

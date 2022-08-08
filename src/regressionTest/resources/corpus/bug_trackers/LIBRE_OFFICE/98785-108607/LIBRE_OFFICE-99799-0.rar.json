@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1463018654.250730900,
+    "creationTime" : null,
+    "fileCRC" : -728119898,
+    "fileName" : "1.ods",
+    "hostOS" : "win32",
+    "fullPackSize" : 63802,
+    "fullUnpackSize" : 154601,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461820842.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1984663353,
+    "fileName" : "2.ods",
+    "hostOS" : "win32",
+    "fullPackSize" : 55132,
+    "fullUnpackSize" : 148736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

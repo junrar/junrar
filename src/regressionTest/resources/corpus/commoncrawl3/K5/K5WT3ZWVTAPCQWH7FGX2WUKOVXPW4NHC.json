@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1467605096.863627800,
+    "creationTime" : null,
+    "fileCRC" : 1242570418,
+    "fileName" : "sc-995__09-2016\\APDB_MT8127_S01_L1.MP8_W16.24",
+    "hostOS" : "win32",
+    "fullPackSize" : 11848,
+    "fullUnpackSize" : 126634,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1467608329.239519600,
+    "creationTime" : null,
+    "fileCRC" : 1157160996,
+    "fileName" : "sc-995__09-2016\\boot.img",
+    "hostOS" : "win32",
+    "fullPackSize" : 4550656,
+    "fullUnpackSize" : 4550656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

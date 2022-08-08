@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420115926.320309400,
+    "creationTime" : null,
+    "fileCRC" : -1756526048,
+    "fileName" : "Reversals_sind_nicht_nur_Worte_hoert_auf_und_hinten_ist_dasselbe.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 73216,
+    "fullUnpackSize" : 76032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

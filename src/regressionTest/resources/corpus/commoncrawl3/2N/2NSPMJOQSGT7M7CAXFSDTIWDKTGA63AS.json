@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445230353.998890100,
+    "creationTime" : null,
+    "fileCRC" : 645175170,
+    "fileName" : "решение_20.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 207047,
+    "fullUnpackSize" : 212703,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445230397.505714700,
+    "creationTime" : null,
+    "fileCRC" : 1980800042,
+    "fileName" : "Состав комиссии.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 209349,
+    "fullUnpackSize" : 219637,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

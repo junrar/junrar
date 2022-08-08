@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1261246918.000000000,
+    "creationTime" : null,
+    "fileCRC" : 295678109,
+    "fileName" : "01_Larrabee_and_GPU4_architectures.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 4999890,
+    "fullUnpackSize" : 15256576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

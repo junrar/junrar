@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229051381.578125000,
+    "creationTime" : null,
+    "fileCRC" : 1680321892,
+    "fileName" : "текст отчета эмитента 4 кв 2007.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 52913,
+    "fullUnpackSize" : 626378,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

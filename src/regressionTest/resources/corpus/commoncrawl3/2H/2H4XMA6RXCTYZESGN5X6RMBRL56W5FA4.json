@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233582840.593000000,
+    "creationTime" : null,
+    "fileCRC" : -2124356510,
+    "fileName" : "Чиркова. Дома в горосокопе.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8470,
+    "fullUnpackSize" : 46592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

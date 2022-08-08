@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347362113.963867100,
+    "creationTime" : null,
+    "fileCRC" : -1952493420,
+    "fileName" : "MorphVOX Pro\\Addons\\Backgrounds\\BPWorkplace_Install.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2003161,
+    "fullUnpackSize" : 2056544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520943385.077606100,
+    "creationTime" : null,
+    "fileCRC" : 809956000,
+    "fileName" : "Условия участия, преимуществ, использования ресурсов Зеленая Шахта.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5156042,
+    "fullUnpackSize" : 7302652,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

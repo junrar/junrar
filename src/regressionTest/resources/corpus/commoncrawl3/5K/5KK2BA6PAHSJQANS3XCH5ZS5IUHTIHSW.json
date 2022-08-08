@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393827790.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1416513044,
+    "fileName" : "com.minoraxis.roc.google\\main.241.com.minoraxis.roc.google.obb",
+    "hostOS" : "win32",
+    "fullPackSize" : 57842133,
+    "fullUnpackSize" : 58181464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

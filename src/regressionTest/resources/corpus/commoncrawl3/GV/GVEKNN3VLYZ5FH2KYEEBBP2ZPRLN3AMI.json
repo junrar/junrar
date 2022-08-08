@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383968541.233000000,
+    "creationTime" : null,
+    "fileCRC" : 1002677658,
+    "fileName" : "Sample_Fasle2_Bazaryabi.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 11289363,
+    "fullUnpackSize" : 11514440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

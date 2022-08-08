@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470023070.894413200,
+    "creationTime" : null,
+    "fileCRC" : -203003674,
+    "fileName" : "вторник на 02 августа.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1386337,
+    "fullUnpackSize" : 1753489,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

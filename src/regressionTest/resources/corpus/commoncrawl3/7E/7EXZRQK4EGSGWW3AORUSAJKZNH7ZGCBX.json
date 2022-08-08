@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517886547.234345800,
+    "creationTime" : null,
+    "fileCRC" : -2097913522,
+    "fileName" : "katalog 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 516907,
+    "fullUnpackSize" : 564417,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

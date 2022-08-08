@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361855283.602570100,
+    "creationTime" : null,
+    "fileCRC" : -991633404,
+    "fileName" : "zeny01.01.13.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 298794,
+    "fullUnpackSize" : 312320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255420744.629000000,
+    "creationTime" : null,
+    "fileCRC" : -1208217270,
+    "fileName" : "ВН 39-1.9-005-98.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 44677,
+    "fullUnpackSize" : 192000,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

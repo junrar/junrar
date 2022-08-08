@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310614038.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1483549548,
+    "fileName" : "DS.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 102473,
+    "fullUnpackSize" : 2179072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1310987438.000000000,
+    "creationTime" : null,
+    "fileCRC" : 695198911,
+    "fileName" : "OU oblast.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 144274,
+    "fullUnpackSize" : 2629120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

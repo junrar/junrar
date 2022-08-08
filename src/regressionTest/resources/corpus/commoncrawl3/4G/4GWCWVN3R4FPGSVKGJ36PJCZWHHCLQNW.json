@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423190623.454000000,
+    "creationTime" : null,
+    "fileCRC" : 1383544591,
+    "fileName" : "MODELO - CARTA DE INDICAÇÃO DE RESPONSÁVEL TÉCNICO.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7417,
+    "fullUnpackSize" : 32768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

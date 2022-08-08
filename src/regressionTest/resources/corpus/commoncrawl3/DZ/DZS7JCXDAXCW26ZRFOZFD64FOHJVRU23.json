@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351055101.812500000,
+    "creationTime" : null,
+    "fileCRC" : -1694797165,
+    "fileName" : "Отчет_малого_среднего предпринимательства.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 21212,
+    "fullUnpackSize" : 23851,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377658450.431949200,
+    "creationTime" : null,
+    "fileCRC" : 121193599,
+    "fileName" : "infa.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 15722,
+    "fullUnpackSize" : 76288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

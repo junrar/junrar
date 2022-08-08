@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388387522.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1688041980,
+    "fileName" : "TBB PLANLAMA MEVZUATI.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 38549038,
+    "fullUnpackSize" : 40645632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

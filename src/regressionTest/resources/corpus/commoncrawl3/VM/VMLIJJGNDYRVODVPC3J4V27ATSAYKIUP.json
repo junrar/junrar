@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371196089.775401300,
+    "creationTime" : null,
+    "fileCRC" : -1765007154,
+    "fileName" : "Quyet dinh BCT 2013.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 6106,
+    "fullUnpackSize" : 36352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1371196089.785402300,
+    "creationTime" : null,
+    "fileCRC" : 1068333005,
+    "fileName" : "Danh muc VBQPPL het hieu luc tinh den 30 4 2013-1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11913,
+    "fullUnpackSize" : 90112,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

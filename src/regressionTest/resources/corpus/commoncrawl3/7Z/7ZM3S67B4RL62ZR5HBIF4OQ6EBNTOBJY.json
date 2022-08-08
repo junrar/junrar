@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512402994.315570500,
+    "creationTime" : null,
+    "fileCRC" : -2029895880,
+    "fileName" : "Фантастический триллер. Морглы. Аудиокнига. 20 глава.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 18728467,
+    "fullUnpackSize" : 21479781,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

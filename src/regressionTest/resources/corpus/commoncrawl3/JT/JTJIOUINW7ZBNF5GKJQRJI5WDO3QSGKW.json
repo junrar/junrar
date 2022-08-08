@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483952424.817817800,
+    "creationTime" : null,
+    "fileCRC" : -1040730249,
+    "fileName" : "Far Cry - Primal [FitGirl Repack].bitdownload.ir\\setup-fitgirl-01.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 2045403826,
+    "fullUnpackSize" : 10087360834,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

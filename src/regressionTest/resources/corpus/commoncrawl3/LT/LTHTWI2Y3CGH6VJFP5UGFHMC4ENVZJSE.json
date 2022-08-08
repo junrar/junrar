@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291004645.390625000,
+    "creationTime" : null,
+    "fileCRC" : -2004402667,
+    "fileName" : "User manual NOVICAM D4 D8.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4378301,
+    "fullUnpackSize" : 8481931,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

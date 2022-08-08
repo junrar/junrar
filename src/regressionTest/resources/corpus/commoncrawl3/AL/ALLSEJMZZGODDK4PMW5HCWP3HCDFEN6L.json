@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1318054819.178950000,
+    "creationTime" : null,
+    "fileCRC" : 324134162,
+    "fileName" : "F1 2011\\cars\\sa1\\livery_00\\textures_high\\sa1_tex_high_00.pssg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1925193,
+    "fullUnpackSize" : 4912823,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

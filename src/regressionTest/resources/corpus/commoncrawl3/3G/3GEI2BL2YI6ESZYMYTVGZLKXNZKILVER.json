@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215758687.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1623576893,
+    "fileName" : "Les_Droits_du_voisin.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 419464,
+    "fullUnpackSize" : 568858,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

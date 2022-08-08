@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175151345.171875000,
+    "creationTime" : null,
+    "fileCRC" : -1265895503,
+    "fileName" : "SoldierUnrealTeamGuest.int",
+    "hostOS" : "win32",
+    "fullPackSize" : 146,
+    "fullUnpackSize" : 818,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1175151345.171875000,
+    "creationTime" : null,
+    "fileCRC" : -1191327664,
+    "fileName" : "SoldierUnrealTeamGuest.utx",
+    "hostOS" : "win32",
+    "fullPackSize" : 266269,
+    "fullUnpackSize" : 1069337,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

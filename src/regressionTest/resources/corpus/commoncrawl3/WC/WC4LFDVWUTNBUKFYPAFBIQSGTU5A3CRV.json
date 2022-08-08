@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1263825770.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1000178652,
+    "fileName" : "приложение к аттестат.работе 2.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1465559,
+    "fullUnpackSize" : 2055680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

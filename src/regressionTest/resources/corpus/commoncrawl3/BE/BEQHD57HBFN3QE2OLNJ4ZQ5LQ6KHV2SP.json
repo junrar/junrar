@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457489608.360000000,
+    "creationTime" : null,
+    "fileCRC" : 739602567,
+    "fileName" : "АКТ.РЕД.РЕД.ФЕВР. 2016 - копия.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 62369,
+    "fullUnpackSize" : 491520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

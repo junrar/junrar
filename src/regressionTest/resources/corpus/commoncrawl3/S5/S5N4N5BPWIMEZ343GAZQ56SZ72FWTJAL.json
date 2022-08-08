@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314521855.045000000,
+    "creationTime" : null,
+    "fileCRC" : 621229146,
+    "fileName" : "BerNiva2011.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 62904,
+    "fullUnpackSize" : 490496,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

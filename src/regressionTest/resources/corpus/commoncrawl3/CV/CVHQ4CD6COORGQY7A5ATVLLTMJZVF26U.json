@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306493081.078125000,
+    "creationTime" : null,
+    "fileCRC" : 1713215915,
+    "fileName" : "SimpleBase1.2_type1_620.ctf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1997009,
+    "fullUnpackSize" : 4133807,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

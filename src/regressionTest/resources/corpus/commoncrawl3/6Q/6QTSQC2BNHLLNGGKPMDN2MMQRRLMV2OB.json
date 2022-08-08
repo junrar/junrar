@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1473662098.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1885946931,
+    "fileName" : "NASCAR.Heat.Evolution-CODEX.bitdownlod.ir\\codex-nascar.heat.evolution.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 232522211,
+    "fullUnpackSize" : 6674972672,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

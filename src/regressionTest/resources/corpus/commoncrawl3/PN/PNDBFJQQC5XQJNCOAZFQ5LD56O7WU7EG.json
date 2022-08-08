@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1112779038.000000000,
+    "creationTime" : null,
+    "fileCRC" : 961458311,
+    "fileName" : "dek_prof_in.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 77327,
+    "fullUnpackSize" : 562176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368739764.262606400,
+    "creationTime" : null,
+    "fileCRC" : 1476067485,
+    "fileName" : "vray_beta_16022_sketchup_win_x86.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 9437067,
+    "fullUnpackSize" : 48496134,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

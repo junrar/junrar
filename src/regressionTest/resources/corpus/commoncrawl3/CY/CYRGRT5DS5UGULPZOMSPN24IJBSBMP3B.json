@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255790312.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1529490316,
+    "fileName" : "吹泡泡课件\\Thumbs.db",
+    "hostOS" : "win32",
+    "fullPackSize" : 27156,
+    "fullUnpackSize" : 38400,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256541617.718750000,
+    "creationTime" : null,
+    "fileCRC" : 1808553384,
+    "fileName" : "吹泡泡课件\\吹泡泡.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1292062,
+    "fullUnpackSize" : 1387520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

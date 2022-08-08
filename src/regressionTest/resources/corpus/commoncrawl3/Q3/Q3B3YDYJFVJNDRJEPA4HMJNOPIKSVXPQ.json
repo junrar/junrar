@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377825103.495000000,
+    "creationTime" : null,
+    "fileCRC" : -2087941620,
+    "fileName" : "Новатор №4_август 2013.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 856967,
+    "fullUnpackSize" : 876957,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

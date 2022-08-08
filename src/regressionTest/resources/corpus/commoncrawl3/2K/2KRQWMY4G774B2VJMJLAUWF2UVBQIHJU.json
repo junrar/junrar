@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1350346786.106111000,
+    "creationTime" : null,
+    "fileCRC" : 1367624169,
+    "fileName" : "Консолид. фин. отчетность по МСФО за 2011.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4374537,
+    "fullUnpackSize" : 5031098,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

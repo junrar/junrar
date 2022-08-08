@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529995480.821715000,
+    "creationTime" : null,
+    "fileCRC" : -1042288004,
+    "fileName" : "01_Приглашения на КС\\01_Приглашение на КС_Цемент.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 755484,
+    "fullUnpackSize" : 893474,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529995507.603704800,
+    "creationTime" : null,
+    "fileCRC" : 1330050253,
+    "fileName" : "01_Приглашения на КС\\02_Приглашение на КС_Геоматериалы.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 956387,
+    "fullUnpackSize" : 1139662,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

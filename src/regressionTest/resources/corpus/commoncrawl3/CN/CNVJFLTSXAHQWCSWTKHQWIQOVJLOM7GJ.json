@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426212593.235353200,
+    "creationTime" : null,
+    "fileCRC" : 149336004,
+    "fileName" : "JZ101.T防盗器.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2168296,
+    "fullUnpackSize" : 2212209,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

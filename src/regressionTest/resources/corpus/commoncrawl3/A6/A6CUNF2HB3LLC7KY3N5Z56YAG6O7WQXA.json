@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1409628265.515625000,
+    "creationTime" : null,
+    "fileCRC" : 2054828000,
+    "fileName" : "Actualizacion_Exportar.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1339168,
+    "fullUnpackSize" : 1405964,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

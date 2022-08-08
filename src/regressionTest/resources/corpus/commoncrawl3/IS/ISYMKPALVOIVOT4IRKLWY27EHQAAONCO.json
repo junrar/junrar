@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528952469.000000000,
+    "creationTime" : null,
+    "fileCRC" : 416269555,
+    "fileName" : "12.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 283663,
+    "fullUnpackSize" : 307828,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528943209.609000000,
+    "creationTime" : null,
+    "fileCRC" : 1858193680,
+    "fileName" : "13.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1621997,
+    "fullUnpackSize" : 1639646,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

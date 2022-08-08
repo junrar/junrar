@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482712158.396734300,
+    "creationTime" : null,
+    "fileCRC" : 1340441924,
+    "fileName" : "Batman - The Telltale Series [FitGirl Repack].bitdownload.ir\\setup-fitgirl-02.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 549255010,
+    "fullUnpackSize" : 1144935081,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

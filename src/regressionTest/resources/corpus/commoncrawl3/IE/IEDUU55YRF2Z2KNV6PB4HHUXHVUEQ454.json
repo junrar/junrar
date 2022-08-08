@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493721260.000000000,
+    "creationTime" : null,
+    "fileCRC" : -404347975,
+    "fileName" : "Протокол №9-1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 671947,
+    "fullUnpackSize" : 734641,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493721260.000000000,
+    "creationTime" : null,
+    "fileCRC" : 84863821,
+    "fileName" : "Протокол №9-2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 967073,
+    "fullUnpackSize" : 1009181,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

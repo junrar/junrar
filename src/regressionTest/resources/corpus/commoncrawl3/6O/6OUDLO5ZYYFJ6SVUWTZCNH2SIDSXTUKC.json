@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502630979.019493600,
+    "creationTime" : null,
+    "fileCRC" : 1331511171,
+    "fileName" : "Vector Pinto Aceh.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 665112,
+    "fullUnpackSize" : 671354,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485262720.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1837629546,
+    "fileName" : ".DS_Store",
+    "hostOS" : "unix",
+    "fullPackSize" : 180,
+    "fullUnpackSize" : 6148,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485262663.000000000,
+    "creationTime" : null,
+    "fileCRC" : 661240167,
+    "fileName" : "BV.wav",
+    "hostOS" : "unix",
+    "fullPackSize" : 13990068,
+    "fullUnpackSize" : 35242772,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

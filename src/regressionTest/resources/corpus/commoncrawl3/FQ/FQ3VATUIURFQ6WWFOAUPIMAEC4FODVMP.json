@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1435049936.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1462495554,
+    "fileName" : "MẪU XÉT TĐKT.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 27875,
+    "fullUnpackSize" : 225280,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499237888.000000000,
+    "creationTime" : null,
+    "fileCRC" : 841537871,
+    "fileName" : "CV GUI DON VỊ XET TDKT 2016 - 2017.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9125,
+    "fullUnpackSize" : 49152,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

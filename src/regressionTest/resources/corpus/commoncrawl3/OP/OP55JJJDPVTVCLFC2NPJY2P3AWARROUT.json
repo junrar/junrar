@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437531854.622827000,
+    "creationTime" : null,
+    "fileCRC" : -1344186030,
+    "fileName" : "vcredist2008_x86_sp1.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4112998,
+    "fullUnpackSize" : 4127240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

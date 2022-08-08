@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405676805.392118200,
+    "creationTime" : null,
+    "fileCRC" : 802370509,
+    "fileName" : "formulario_projeto_iss_tecnologico.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 78063,
+    "fullUnpackSize" : 169984,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

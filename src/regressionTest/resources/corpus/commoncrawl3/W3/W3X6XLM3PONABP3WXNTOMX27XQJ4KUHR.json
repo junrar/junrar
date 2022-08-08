@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483992502.000000000,
+    "creationTime" : null,
+    "fileCRC" : 954999450,
+    "fileName" : "Решения Карповского сельсовета за 2016 год\\img327.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 434537,
+    "fullUnpackSize" : 476500,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483992502.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1876634814,
+    "fileName" : "Решения Карповского сельсовета за 2016 год\\img328.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 794730,
+    "fullUnpackSize" : 843932,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388048055.472000000,
+    "creationTime" : null,
+    "fileCRC" : 1472108529,
+    "fileName" : "Извещение о проведении запроса котировок.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1778297,
+    "fullUnpackSize" : 2180096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

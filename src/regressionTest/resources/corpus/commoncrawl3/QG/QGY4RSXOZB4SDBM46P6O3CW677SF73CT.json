@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1389721110.531250000,
+    "creationTime" : null,
+    "fileCRC" : -362814398,
+    "fileName" : "SweetHome3D-4.3-windows.www.IR-DL.com.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 41346238,
+    "fullUnpackSize" : 41392428,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

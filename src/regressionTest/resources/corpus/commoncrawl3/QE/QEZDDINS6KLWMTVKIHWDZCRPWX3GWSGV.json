@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401428559.418343600,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "SolarRadiation_ann_hr_ascii\\cl_sw_ann_06.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1401428558.685142300,
+    "creationTime" : null,
+    "fileCRC" : 1598498010,
+    "fileName" : "SolarRadiation_ann_hr_ascii\\cl_sw_ann_06.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1159179,
+    "fullUnpackSize" : 22076150,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

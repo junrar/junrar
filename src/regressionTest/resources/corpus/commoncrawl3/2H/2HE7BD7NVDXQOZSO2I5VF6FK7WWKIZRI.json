@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168831075.609375000,
+    "creationTime" : null,
+    "fileCRC" : -1214726609,
+    "fileName" : "4x01-Assume nothing.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11719,
+    "fullUnpackSize" : 36716,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1276174354.328125000,
+    "creationTime" : null,
+    "fileCRC" : 618610748,
+    "fileName" : "csi.s04e01.assume.nothing.ws.dvdrip.xvid-youngdangerous.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 11439,
+    "fullUnpackSize" : 35284,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

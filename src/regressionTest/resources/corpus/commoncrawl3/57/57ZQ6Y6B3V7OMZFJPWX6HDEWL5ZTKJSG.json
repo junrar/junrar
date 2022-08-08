@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177489692.765000000,
+    "creationTime" : null,
+    "fileCRC" : 2141234729,
+    "fileName" : "055Rahman.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 11558040,
+    "fullUnpackSize" : 11740869,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

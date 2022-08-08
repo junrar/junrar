@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1156326716.000000000,
+    "creationTime" : null,
+    "fileCRC" : 57524389,
+    "fileName" : "Smart Profiles v1.06_(rasekhoon.net)\\Smart.Profiles.v1.06.S60.Cracked-_(rasekhoon.net).SIS",
+    "hostOS" : "win32",
+    "fullPackSize" : 67078,
+    "fullUnpackSize" : 69053,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1252995072.796875000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "Smart Profiles v1.06_(rasekhoon.net)",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

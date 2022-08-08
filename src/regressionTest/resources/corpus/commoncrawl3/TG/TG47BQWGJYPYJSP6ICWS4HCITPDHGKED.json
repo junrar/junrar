@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1127636486.296875000,
+    "creationTime" : null,
+    "fileCRC" : 969386439,
+    "fileName" : "Stargate.SGA.S02E09-Projet-SG.sub",
+    "hostOS" : "win32",
+    "fullPackSize" : 16753,
+    "fullUnpackSize" : 47148,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1127636470.859375000,
+    "creationTime" : null,
+    "fileCRC" : -1445408164,
+    "fileName" : "Stargate.SGA.S02E09-Projet-SG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20298,
+    "fullUnpackSize" : 56801,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

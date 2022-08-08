@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1170222950.000000000,
+    "creationTime" : null,
+    "fileCRC" : -988551887,
+    "fileName" : "herramientas\\editor.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 995163,
+    "fullUnpackSize" : 1016320,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1020677548.000000000,
+    "creationTime" : null,
+    "fileCRC" : 605385868,
+    "fileName" : "herramientas\\ftp.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 531467,
+    "fullUnpackSize" : 707072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

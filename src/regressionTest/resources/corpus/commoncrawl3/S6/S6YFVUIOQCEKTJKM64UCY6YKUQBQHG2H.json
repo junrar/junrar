@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1010205896.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1224298958,
+    "fileName" : "BenguiatGothicCTT.TTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 27088,
+    "fullUnpackSize" : 51436,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1182264354.000000000,
+    "creationTime" : null,
+    "fileCRC" : 733230303,
+    "fileName" : "birch_ctt.ttf",
+    "hostOS" : "win32",
+    "fullPackSize" : 26882,
+    "fullUnpackSize" : 48684,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

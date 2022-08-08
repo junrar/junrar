@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520943362.825089300,
+    "creationTime" : null,
+    "fileCRC" : -1328231894,
+    "fileName" : "Концепция DAICO Зеленая Шахта.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 16044068,
+    "fullUnpackSize" : 18577368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

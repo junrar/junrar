@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1329725018.078125000,
+    "creationTime" : null,
+    "fileCRC" : 399648529,
+    "fileName" : "Химия синтеза сжиганием.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 22792711,
+    "fullUnpackSize" : 22792711,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

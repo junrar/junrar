@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1043073778.000000000,
+    "creationTime" : null,
+    "fileCRC" : -581962522,
+    "fileName" : "Fahne+Maus.ani",
+    "hostOS" : "win32",
+    "fullPackSize" : 8734,
+    "fullUnpackSize" : 157616,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

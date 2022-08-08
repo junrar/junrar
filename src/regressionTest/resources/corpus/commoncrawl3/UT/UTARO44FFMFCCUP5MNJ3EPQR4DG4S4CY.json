@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484326644.572046700,
+    "creationTime" : null,
+    "fileCRC" : -898095916,
+    "fileName" : "IBM OS2 Warp 4.0 (9.023) [English] (CD)\\checksum_release.md5",
+    "hostOS" : "win32",
+    "fullPackSize" : 210,
+    "fullUnpackSize" : 261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1484326646.826549900,
+    "creationTime" : null,
+    "fileCRC" : 963567208,
+    "fileName" : "IBM OS2 Warp 4.0 (9.023) [English] (CD)\\media_img.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 2705583,
+    "fullUnpackSize" : 4645880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

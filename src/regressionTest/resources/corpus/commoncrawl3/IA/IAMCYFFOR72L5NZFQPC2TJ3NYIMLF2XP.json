@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404834256.000000000,
+    "creationTime" : null,
+    "fileCRC" : 266462947,
+    "fileName" : "kostka testowa 50x50x50.STL",
+    "hostOS" : "win32",
+    "fullPackSize" : 302477,
+    "fullUnpackSize" : 3345626,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

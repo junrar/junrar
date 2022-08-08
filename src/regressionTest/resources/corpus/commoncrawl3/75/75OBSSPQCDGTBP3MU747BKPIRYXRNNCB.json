@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1224813862.000000000,
+    "creationTime" : null,
+    "fileCRC" : -804257511,
+    "fileName" : "Goju Ryu - by Gabillat\\Goju-ryu-01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1704747,
+    "fullUnpackSize" : 1706522,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

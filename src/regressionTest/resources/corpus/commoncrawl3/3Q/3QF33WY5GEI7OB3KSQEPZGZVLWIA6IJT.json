@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487139180.000000000,
+    "creationTime" : null,
+    "fileCRC" : 343589332,
+    "fileName" : "ПРАЙС-ЛИСТ Терракота.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 48600,
+    "fullUnpackSize" : 52353,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

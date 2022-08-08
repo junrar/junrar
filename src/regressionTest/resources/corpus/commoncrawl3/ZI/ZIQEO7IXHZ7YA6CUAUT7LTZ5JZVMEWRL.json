@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531190691.490929100,
+    "creationTime" : null,
+    "fileCRC" : -1470240632,
+    "fileName" : "Հանրակրթություն\\2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 640079,
+    "fullUnpackSize" : 677145,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531190710.397010500,
+    "creationTime" : null,
+    "fileCRC" : 1779082058,
+    "fileName" : "Հանրակրթություն\\2016.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 532018,
+    "fullUnpackSize" : 566962,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

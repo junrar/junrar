@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395724952.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1667484267,
+    "fileName" : "Rekap Kec. Samudera Pendanaan TA 2014.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 97032,
+    "fullUnpackSize" : 223264,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

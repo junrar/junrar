@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1406016202.257776900,
+    "creationTime" : null,
+    "fileCRC" : -962877664,
+    "fileName" : "Деяния апостолов.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14926086,
+    "fullUnpackSize" : 15369164,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

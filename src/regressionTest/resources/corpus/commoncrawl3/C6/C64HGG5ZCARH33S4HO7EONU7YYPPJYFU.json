@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1313309245.967598100,
+    "creationTime" : null,
+    "fileCRC" : 711572190,
+    "fileName" : "mp_fussaids\\mp_fussaids.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 28394801,
+    "fullUnpackSize" : 28394801,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

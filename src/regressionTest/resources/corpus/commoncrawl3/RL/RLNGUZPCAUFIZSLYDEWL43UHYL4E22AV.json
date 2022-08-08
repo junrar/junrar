@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506932723.469878500,
+    "creationTime" : null,
+    "fileCRC" : -1118852902,
+    "fileName" : "2360_от_31.07.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 238799,
+    "fullUnpackSize" : 243895,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

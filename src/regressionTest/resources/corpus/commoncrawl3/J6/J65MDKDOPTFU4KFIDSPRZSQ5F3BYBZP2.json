@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403851535.705996300,
+    "creationTime" : null,
+    "fileCRC" : -270960454,
+    "fileName" : "CanopyConductance_month_ascii\\ccond_ann.prj",
+    "hostOS" : "win32",
+    "fullPackSize" : 101,
+    "fullUnpackSize" : 120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403851535.043958400,
+    "creationTime" : null,
+    "fileCRC" : -1349985765,
+    "fileName" : "CanopyConductance_month_ascii\\ccond_ann.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1190196,
+    "fullUnpackSize" : 22283287,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

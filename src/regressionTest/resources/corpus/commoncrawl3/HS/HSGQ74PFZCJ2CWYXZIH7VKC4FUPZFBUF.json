@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1285472520.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1237954485,
+    "fileName" : "ActiveX_V1.1.0.68.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1161319,
+    "fullUnpackSize" : 1174986,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

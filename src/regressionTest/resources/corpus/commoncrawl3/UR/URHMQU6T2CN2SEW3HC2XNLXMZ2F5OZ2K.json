@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423128688.920976400,
+    "creationTime" : null,
+    "fileCRC" : 603004456,
+    "fileName" : "6401_amb.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 10504197,
+    "fullUnpackSize" : 10646992,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

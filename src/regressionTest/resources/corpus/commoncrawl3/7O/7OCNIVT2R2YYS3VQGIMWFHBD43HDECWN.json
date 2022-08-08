@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1339412600.451411400,
+    "creationTime" : null,
+    "fileCRC" : 1810518951,
+    "fileName" : "Setup-iPos4.0-Terminal.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4932245,
+    "fullUnpackSize" : 4989625,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

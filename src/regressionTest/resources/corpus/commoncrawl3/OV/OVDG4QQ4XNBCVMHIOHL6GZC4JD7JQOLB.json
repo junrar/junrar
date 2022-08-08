@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336742587.875000000,
+    "creationTime" : null,
+    "fileCRC" : -598709116,
+    "fileName" : "NOVA_Декларация_контроллеры_микш_стр2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 18798,
+    "fullUnpackSize" : 20294,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336742587.843750000,
+    "creationTime" : null,
+    "fileCRC" : 1245279328,
+    "fileName" : "NOVA_Декларация_контроллеры_микш_стр1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 52233,
+    "fullUnpackSize" : 55032,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

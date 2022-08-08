@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1296917773.210592200,
+    "creationTime" : null,
+    "fileCRC" : 1890851297,
+    "fileName" : "Про затвердження Інструкції з організації проведення обстежень електричних, тепловикористовуючих установок, теплових мереж та оформлення їх результатів.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 57372,
+    "fullUnpackSize" : 578048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

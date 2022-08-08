@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1168227022.000000000,
+    "creationTime" : null,
+    "fileCRC" : 702513177,
+    "fileName" : "karloskar_combine6.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2922355,
+    "fullUnpackSize" : 3092459,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

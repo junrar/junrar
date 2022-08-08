@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1373374190.539047100,
+    "creationTime" : null,
+    "fileCRC" : 323100208,
+    "fileName" : "otchet_Grand_Park_2011.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 20078,
+    "fullUnpackSize" : 22725,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1261721674.250000000,
+    "creationTime" : null,
+    "fileCRC" : -192004738,
+    "fileName" : "FS_Ogur_kub.tif",
+    "hostOS" : "win32",
+    "fullPackSize" : 1742181,
+    "fullUnpackSize" : 2123276,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

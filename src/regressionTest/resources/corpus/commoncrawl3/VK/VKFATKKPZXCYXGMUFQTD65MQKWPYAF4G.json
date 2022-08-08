@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492401289.123888900,
+    "creationTime" : null,
+    "fileCRC" : 825841748,
+    "fileName" : "Акты закрытия ЦП 2017\\Архэнерго акты закрытия ЦП 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1180458,
+    "fullUnpackSize" : 1202033,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

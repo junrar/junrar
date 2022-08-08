@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1434267474.584731800,
+    "creationTime" : null,
+    "fileCRC" : 36447284,
+    "fileName" : "3dp_v0.2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 9237672,
+    "fullUnpackSize" : 9327723,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

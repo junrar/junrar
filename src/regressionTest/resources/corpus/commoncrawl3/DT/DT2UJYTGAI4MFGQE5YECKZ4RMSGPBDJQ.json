@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392796181.869132200,
+    "creationTime" : null,
+    "fileCRC" : 847914325,
+    "fileName" : "Космонавтов пр., д. 68 к. 2.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 55910,
+    "fullUnpackSize" : 60257,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

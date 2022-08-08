@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1451373153.196755700,
+    "creationTime" : null,
+    "fileCRC" : -1056505273,
+    "fileName" : "Нормативы градостроительньго проектирования района 2015. doc.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 128678,
+    "fullUnpackSize" : 840704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1451373136.966293800,
+    "creationTime" : null,
+    "fileCRC" : 323672004,
+    "fileName" : "Решение об утверждении нормативов129122015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 575543,
+    "fullUnpackSize" : 704247,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

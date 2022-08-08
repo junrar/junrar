@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351889056.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2103287609,
+    "fileName" : "ahd-808a_Player\\General_Player_Eng_V1.6.0.0.R.20120706.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1259160,
+    "fullUnpackSize" : 1346184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1347240277.500000000,
+    "creationTime" : null,
+    "fileCRC" : -1481235958,
+    "fileName" : "WSW BEARING.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 43562374,
+    "fullUnpackSize" : 44235772,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

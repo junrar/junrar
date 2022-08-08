@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359518432.252829400,
+    "creationTime" : null,
+    "fileCRC" : -2080738640,
+    "fileName" : "SCHEDA N. 5.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 953863,
+    "fullUnpackSize" : 977661,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

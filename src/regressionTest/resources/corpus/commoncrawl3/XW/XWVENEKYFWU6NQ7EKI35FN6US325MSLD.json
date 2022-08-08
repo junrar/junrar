@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1364282952.000000000,
+    "creationTime" : null,
+    "fileCRC" : -473742622,
+    "fileName" : "Проведение официальных физкультурно-оздоровительных мероприятий.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 227805,
+    "fullUnpackSize" : 358912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

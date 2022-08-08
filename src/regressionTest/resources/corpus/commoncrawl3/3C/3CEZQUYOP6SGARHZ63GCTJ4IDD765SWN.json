@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507689132.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1899838338,
+    "fileName" : "[47] ORANGE.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 965132,
+    "fullUnpackSize" : 981430,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506665840.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2080528204,
+    "fileName" : "[53] UG.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 747515,
+    "fullUnpackSize" : 766524,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1420352775.496587200,
+    "creationTime" : null,
+    "fileCRC" : -831209254,
+    "fileName" : "@Burnes_Challenger\\addons\\Burnes_challenger.pbo",
+    "hostOS" : "win32",
+    "fullPackSize" : 141197819,
+    "fullUnpackSize" : 175035567,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

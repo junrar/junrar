@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502698862.559460300,
+    "creationTime" : null,
+    "fileCRC" : 614955664,
+    "fileName" : "Ежекваральный_отчет_Эмитента_2_кваратал_2017.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 280643,
+    "fullUnpackSize" : 3726440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502700172.713314900,
+    "creationTime" : null,
+    "fileCRC" : 1206503737,
+    "fileName" : "Приложение. Консолидированная промежуточная финансовая отчетность за 3 месяца 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5824183,
+    "fullUnpackSize" : 6999545,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

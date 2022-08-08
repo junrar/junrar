@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481621988.999999900,
+    "creationTime" : null,
+    "fileCRC" : 1197552614,
+    "fileName" : "GB05_294x214mm.ai",
+    "hostOS" : "win32",
+    "fullPackSize" : 348005,
+    "fullUnpackSize" : 420650,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

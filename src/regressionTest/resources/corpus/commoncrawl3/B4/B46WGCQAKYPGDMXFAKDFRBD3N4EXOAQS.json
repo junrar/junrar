@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440220968.378972300,
+    "creationTime" : null,
+    "fileCRC" : 1652970614,
+    "fileName" : "scbw116_x64.reg",
+    "hostOS" : "win32",
+    "fullPackSize" : 256,
+    "fullUnpackSize" : 410,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 997684266.000000000,
+    "creationTime" : null,
+    "fileCRC" : 252957136,
+    "fileName" : "SkladiZayceva4.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1305328,
+    "fullUnpackSize" : 1945600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

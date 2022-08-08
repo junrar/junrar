@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445249244.000000000,
+    "creationTime" : null,
+    "fileCRC" : 639234952,
+    "fileName" : "1.Письмо РОН  __О направлении ММ по пров. ит.соч. (излож.) в 2015-16 уч. году.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 258971,
+    "fullUnpackSize" : 302918,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445249244.000000000,
+    "creationTime" : null,
+    "fileCRC" : -622479898,
+    "fileName" : "2.Приложение 1. к Рекомендациям по орган. и пров. ит. соч. (излож.) для ОИВ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1478255,
+    "fullUnpackSize" : 1519570,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

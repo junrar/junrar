@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1298616033.031250000,
+    "creationTime" : null,
+    "fileCRC" : 943357094,
+    "fileName" : "QUARTERLY REPORT Q4 2010.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 550572,
+    "fullUnpackSize" : 664261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1537155494.747945600,
+    "creationTime" : null,
+    "fileCRC" : -1665815942,
+    "fileName" : "Setup5.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3221435,
+    "fullUnpackSize" : 3317064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

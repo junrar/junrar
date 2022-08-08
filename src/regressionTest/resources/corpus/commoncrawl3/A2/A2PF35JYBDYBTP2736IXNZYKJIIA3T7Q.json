@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1504057600.753192200,
+    "creationTime" : null,
+    "fileCRC" : 791826912,
+    "fileName" : "risk_xtrm_weaponsfactory_Sh00t!ng-St4r_0209.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 1821320,
+    "fullUnpackSize" : 8800456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

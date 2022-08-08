@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324388386.010761400,
+    "creationTime" : null,
+    "fileCRC" : 1716134848,
+    "fileName" : "Sudoku\\10386_Sudoku.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 68631002,
+    "fullUnpackSize" : 69379457,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

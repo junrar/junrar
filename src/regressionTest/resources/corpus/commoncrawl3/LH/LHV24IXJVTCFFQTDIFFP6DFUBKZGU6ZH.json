@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476938260.090083500,
+    "creationTime" : null,
+    "fileCRC" : 1442646075,
+    "fileName" : "ТЗ ул. Лазо 77 с. Среднебелая (с ан).docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 17502,
+    "fullUnpackSize" : 20134,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476929044.222817100,
+    "creationTime" : null,
+    "fileCRC" : -1279991152,
+    "fileName" : "Смета ПСД крыша Иван. р-н, Среднебелая, Лазо, 77.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 16954,
+    "fullUnpackSize" : 19798,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456803796.259978800,
+    "creationTime" : null,
+    "fileCRC" : -982750128,
+    "fileName" : "FIN 2-12 M 132015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 640673,
+    "fullUnpackSize" : 658143,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461110725.474782400,
+    "creationTime" : null,
+    "fileCRC" : 1083567966,
+    "fileName" : "Zpráva o přezkoumání výsledku hospodaření obce Šošůvka za rok 2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1887327,
+    "fullUnpackSize" : 2108841,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1304989462.000000000,
+    "creationTime" : null,
+    "fileCRC" : -963411956,
+    "fileName" : "Правила ведения реестра  ХЕМКОР от 01.03.2011 1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 64981,
+    "fullUnpackSize" : 498176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

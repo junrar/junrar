@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1302849994.000000000,
+    "creationTime" : null,
+    "fileCRC" : 414174088,
+    "fileName" : "03 - Overdream - Ultramarine.wav",
+    "hostOS" : "win32",
+    "fullPackSize" : 63439071,
+    "fullUnpackSize" : 80095180,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

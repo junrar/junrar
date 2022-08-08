@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1132208784.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2097853317,
+    "fileName" : "Регламент по выбросам АМТС.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11819,
+    "fullUnpackSize" : 69632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

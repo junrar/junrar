@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1209968502.515000000,
+    "creationTime" : null,
+    "fileCRC" : -1018024961,
+    "fileName" : "2.1.5.980-00.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 21700,
+    "fullUnpackSize" : 119808,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

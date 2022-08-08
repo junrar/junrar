@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492053103.914911100,
+    "creationTime" : null,
+    "fileCRC" : -368372972,
+    "fileName" : "YPSILON A-X072__.000.0101-1460.IES",
+    "hostOS" : "win32",
+    "fullPackSize" : 8270,
+    "fullUnpackSize" : 41286,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1492053091.512911100,
+    "creationTime" : null,
+    "fileCRC" : -201019933,
+    "fileName" : "YPSILON A-X072__.000.0101-1460.LDT",
+    "hostOS" : "win32",
+    "fullPackSize" : 11678,
+    "fullUnpackSize" : 53627,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

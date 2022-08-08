@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383803131.858210600,
+    "creationTime" : null,
+    "fileCRC" : -1090969158,
+    "fileName" : "Servicios_Emt_Cliente v1 5.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 509907,
+    "fullUnpackSize" : 648161,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383803157.123997300,
+    "creationTime" : null,
+    "fileCRC" : 903147646,
+    "fileName" : "Servicios_GeoEmt_Cliente_v1.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 572956,
+    "fullUnpackSize" : 721197,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

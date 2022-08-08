@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1245951203.281250000,
+    "creationTime" : null,
+    "fileCRC" : -242263363,
+    "fileName" : "LianaSims3_250609_Floral_2_1.Sims3Pack",
+    "hostOS" : "win32",
+    "fullPackSize" : 141746,
+    "fullUnpackSize" : 426196,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

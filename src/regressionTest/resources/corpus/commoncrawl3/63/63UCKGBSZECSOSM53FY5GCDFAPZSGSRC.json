@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324882017.331000000,
+    "creationTime" : null,
+    "fileCRC" : 1836445293,
+    "fileName" : "iprp_visualfx.2da",
+    "hostOS" : "win32",
+    "fullPackSize" : 165,
+    "fullUnpackSize" : 425,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1138936836.500000000,
+    "creationTime" : null,
+    "fileCRC" : -472691663,
+    "fileName" : "Bon Jovi_Evriday.mmf",
+    "hostOS" : "win32",
+    "fullPackSize" : 471626,
+    "fullUnpackSize" : 516100,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

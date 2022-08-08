@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1493431340.227000000,
+    "creationTime" : null,
+    "fileCRC" : -1367619479,
+    "fileName" : "Положение о прием_комиссии УЧР ССО (ред 31_03_2017).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 36071,
+    "fullUnpackSize" : 242176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

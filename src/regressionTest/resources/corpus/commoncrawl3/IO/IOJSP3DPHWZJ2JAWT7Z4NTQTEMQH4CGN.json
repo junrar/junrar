@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383968133.099210200,
+    "creationTime" : null,
+    "fileCRC" : 1033842609,
+    "fileName" : "iPos 4.0.3 Database.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 9214045,
+    "fullUnpackSize" : 9286114,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

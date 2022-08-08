@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437455324.000000000,
+    "creationTime" : null,
+    "fileCRC" : -954247552,
+    "fileName" : "Principales adecuaciones al Presupuesto de Egresos Enero Junio 2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 432982,
+    "fullUnpackSize" : 537721,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437451462.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1640860266,
+    "fileName" : "Análisis funcional al 2º trimestre de 2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 21459695,
+    "fullUnpackSize" : 25037058,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

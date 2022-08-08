@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1446716633.824292100,
+    "creationTime" : null,
+    "fileCRC" : 98930214,
+    "fileName" : "Estudo AAI Baixo Chapecó\\Thumbs.db",
+    "hostOS" : "win32",
+    "fullPackSize" : 27114,
+    "fullUnpackSize" : 33792,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1432524056.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2019554217,
+    "fileName" : "Estudo AAI Baixo Chapecó\\VOLUME I.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 17476655,
+    "fullUnpackSize" : 20512645,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

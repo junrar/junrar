@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1414768612.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1813118878,
+    "fileName" : "manhamishekhakepatam-arefi.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2318303,
+    "fullUnpackSize" : 2401593,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

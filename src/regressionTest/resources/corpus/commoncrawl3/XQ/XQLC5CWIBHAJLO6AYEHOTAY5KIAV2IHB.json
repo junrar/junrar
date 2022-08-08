@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1483924564.710961200,
+    "creationTime" : null,
+    "fileCRC" : -1240493489,
+    "fileName" : "admin_down.asp",
+    "hostOS" : "win32",
+    "fullPackSize" : 7573,
+    "fullUnpackSize" : 25501,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482906022.840115100,
+    "creationTime" : null,
+    "fileCRC" : 980176225,
+    "fileName" : "使用说明.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 397,
+    "fullUnpackSize" : 554,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

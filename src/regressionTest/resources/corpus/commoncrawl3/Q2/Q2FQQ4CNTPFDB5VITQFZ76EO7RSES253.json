@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1278122668.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1200741375,
+    "fileName" : "Lingoes.Generic.English-Persian.Dictionary[yasdl.com]\\Generic English-Persian Dictionary.ld2",
+    "hostOS" : "win32",
+    "fullPackSize" : 1633072,
+    "fullUnpackSize" : 1846368,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403747121.506000000,
+    "creationTime" : null,
+    "fileCRC" : -1220677319,
+    "fileName" : "Прогр.вступ.испыт 2-36 01 56-51 04 Мехатроник .doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 44165,
+    "fullUnpackSize" : 131584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

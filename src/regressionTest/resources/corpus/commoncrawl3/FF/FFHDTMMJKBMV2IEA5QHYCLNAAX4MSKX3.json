@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495761088.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1613756992,
+    "fileName" : "Бухгалтерія 2605\\Кошторис на 2017 р..PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 2031437,
+    "fullUnpackSize" : 2176760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

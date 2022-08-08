@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1403872529.737421800,
+    "creationTime" : null,
+    "fileCRC" : -490719604,
+    "fileName" : "riazi-tj-Ahmady-[www.konkur.in]\\riazi-tj-Ahmady-[www.konkur.in].pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1780272,
+    "fullUnpackSize" : 2360570,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

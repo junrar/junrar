@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297253051.528497200,
+    "creationTime" : null,
+    "fileCRC" : -476600616,
+    "fileName" : "Starry☆Sky~After Spring~ 中文攻略.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 257120,
+    "fullUnpackSize" : 272401,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1230947742.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1475869643,
+    "fileName" : "ASS84-Jul 2008.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 831335346,
+    "fullUnpackSize" : 2600568832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

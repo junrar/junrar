@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358005034.000000000,
+    "creationTime" : null,
+    "fileCRC" : -176390030,
+    "fileName" : "Antalya 13 Ocak\\6360 KANUN.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 755583,
+    "fullUnpackSize" : 2703872,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1358005572.000000000,
+    "creationTime" : null,
+    "fileCRC" : 820295925,
+    "fileName" : "Antalya 13 Ocak\\BŞB TASFİYE.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 398973,
+    "fullUnpackSize" : 729088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

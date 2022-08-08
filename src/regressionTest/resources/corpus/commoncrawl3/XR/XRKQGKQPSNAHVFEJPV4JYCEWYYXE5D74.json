@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507707861.231673300,
+    "creationTime" : null,
+    "fileCRC" : 1038825994,
+    "fileName" : "Anexo IV - Especificacao Tecnica para Impermeabilizacao das Lagoas.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 609030,
+    "fullUnpackSize" : 664906,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508227801.371445600,
+    "creationTime" : null,
+    "fileCRC" : 240016913,
+    "fileName" : "CC - 003-17.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 276347,
+    "fullUnpackSize" : 295227,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

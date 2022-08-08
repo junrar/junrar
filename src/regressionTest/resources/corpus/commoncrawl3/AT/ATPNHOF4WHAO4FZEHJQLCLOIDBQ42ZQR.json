@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525608205.656294000,
+    "creationTime" : null,
+    "fileCRC" : 1445961774,
+    "fileName" : "[MU]Tales of Demons and Gods Kapitel 047\\001.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 586481,
+    "fullUnpackSize" : 591341,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514110466.157816000,
+    "creationTime" : null,
+    "fileCRC" : 2122062182,
+    "fileName" : "[MU]Tales of Demons and Gods Kapitel 047\\001credits.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 501385,
+    "fullUnpackSize" : 505561,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

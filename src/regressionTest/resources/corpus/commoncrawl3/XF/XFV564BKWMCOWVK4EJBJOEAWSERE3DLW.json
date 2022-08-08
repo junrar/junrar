@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511926273.481109000,
+    "creationTime" : null,
+    "fileCRC" : -110763648,
+    "fileName" : "zppt2152\\zppt2152.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1204539,
+    "fullUnpackSize" : 3150336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

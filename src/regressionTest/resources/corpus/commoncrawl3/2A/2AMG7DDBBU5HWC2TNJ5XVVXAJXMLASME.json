@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487659214.947224300,
+    "creationTime" : null,
+    "fileCRC" : 384177043,
+    "fileName" : "Аналіз-довідка за 2016 рік.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5785137,
+    "fullUnpackSize" : 8543520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

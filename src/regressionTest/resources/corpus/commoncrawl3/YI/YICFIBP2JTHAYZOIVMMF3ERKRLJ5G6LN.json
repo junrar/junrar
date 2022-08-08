@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225285791.812000000,
+    "creationTime" : null,
+    "fileCRC" : 1402846707,
+    "fileName" : "DigiTV TextLine Parser.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 43628,
+    "fullUnpackSize" : 156672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1218435365.203125000,
+    "creationTime" : null,
+    "fileCRC" : 2129568314,
+    "fileName" : "DigiTVToolbar.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 73604,
+    "fullUnpackSize" : 210432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

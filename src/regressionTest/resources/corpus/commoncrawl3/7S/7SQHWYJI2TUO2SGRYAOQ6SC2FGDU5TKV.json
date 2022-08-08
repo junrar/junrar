@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533031237.717504500,
+    "creationTime" : null,
+    "fileCRC" : 780855849,
+    "fileName" : "Application_Letter_for Attending_IFEDC2018.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 47769,
+    "fullUnpackSize" : 52720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533031242.970805000,
+    "creationTime" : null,
+    "fileCRC" : 295807550,
+    "fileName" : "IFEDC 2018_Attendee_Expense_Sheet.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 70026,
+    "fullUnpackSize" : 75716,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

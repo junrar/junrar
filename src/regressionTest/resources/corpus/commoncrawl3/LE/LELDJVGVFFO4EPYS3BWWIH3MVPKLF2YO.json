@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518408798.143360200,
+    "creationTime" : null,
+    "fileCRC" : 1042793181,
+    "fileName" : "DP Technology ESPRIT 2017 R4 Multilingual\\m-dpe7r4_Downloadly.ir.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 1042561150,
+    "fullUnpackSize" : 1804478464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

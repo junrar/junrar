@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500642686.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1803413251,
+    "fileName" : "part3\\3. พืชพรรณ ปลูกชีวิตมั่นคง.VOB",
+    "hostOS" : "win32",
+    "fullPackSize" : 507001735,
+    "fullUnpackSize" : 536821760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1030445660.000000000,
+    "creationTime" : null,
+    "fileCRC" : 979865658,
+    "fileName" : "Spa_2001_RL_1.1\\belgium2001.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 6407518,
+    "fullUnpackSize" : 6455732,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

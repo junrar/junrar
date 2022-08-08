@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1229872102.421875000,
+    "creationTime" : null,
+    "fileCRC" : 1083583546,
+    "fileName" : "Simon Paskal - Sholem Bais, 1911.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2864573,
+    "fullUnpackSize" : 2942976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

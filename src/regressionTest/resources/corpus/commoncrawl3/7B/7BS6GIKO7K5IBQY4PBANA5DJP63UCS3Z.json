@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1306923445.861374100,
+    "creationTime" : null,
+    "fileCRC" : -957478276,
+    "fileName" : "FRZ021-Porto-Pical-Autumn-Girls-EP\\1-Autumn Girls.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6259798,
+    "fullUnpackSize" : 7300780,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1192887654.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1131889632,
+    "fileName" : "laundes_kak_govorit_s_kem_ugodno_i_o_chem_ugodno.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 169483,
+    "fullUnpackSize" : 1120256,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

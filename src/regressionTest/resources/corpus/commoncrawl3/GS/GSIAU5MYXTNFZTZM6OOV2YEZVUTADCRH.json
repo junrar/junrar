@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384310193.765235200,
+    "creationTime" : null,
+    "fileCRC" : -749845870,
+    "fileName" : "HosseiniSangin.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2792663,
+    "fullUnpackSize" : 2970564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1122094994.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1741517866,
+    "fileName" : "nfsmw_bustedmode.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 13035360,
+    "fullUnpackSize" : 13069816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

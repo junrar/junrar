@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1498201566.187500000,
+    "creationTime" : null,
+    "fileCRC" : -1432339005,
+    "fileName" : "Осколково_ПЗЗ.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1937301,
+    "fullUnpackSize" : 7671678,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

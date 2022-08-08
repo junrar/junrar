@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1482456992.593750000,
+    "creationTime" : null,
+    "fileCRC" : -525066463,
+    "fileName" : "Диссертация Попов_АЛ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3144174,
+    "fullUnpackSize" : 3626513,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

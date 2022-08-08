@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1240696628.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2043045130,
+    "fileName" : "Табурет.mod",
+    "hostOS" : "win32",
+    "fullPackSize" : 9138,
+    "fullUnpackSize" : 257168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1243044234.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1683159110,
+    "fileName" : "Табурет.gsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 6672015,
+    "fullUnpackSize" : 38834467,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

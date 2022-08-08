@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476501162.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1083759880,
+    "fileName" : "Energy\\1- Introduction.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 680912,
+    "fullUnpackSize" : 878366,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1476501198.000000000,
+    "creationTime" : null,
+    "fileCRC" : -497716660,
+    "fileName" : "Energy\\2- Energy.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 816032,
+    "fullUnpackSize" : 940562,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

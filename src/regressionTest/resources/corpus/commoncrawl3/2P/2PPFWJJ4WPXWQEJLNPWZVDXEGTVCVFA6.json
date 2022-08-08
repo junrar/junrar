@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1102054052.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1838739671,
+    "fileName" : "terry\\1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 800832,
+    "fullUnpackSize" : 858998,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1102054158.000000000,
+    "creationTime" : null,
+    "fileCRC" : -484374827,
+    "fileName" : "terry\\2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 588080,
+    "fullUnpackSize" : 651887,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1227494526.781250000,
+    "creationTime" : null,
+    "fileCRC" : 1192637056,
+    "fileName" : "design-easy_book.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 25841091,
+    "fullUnpackSize" : 30528304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

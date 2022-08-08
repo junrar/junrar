@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465475108.458000000,
+    "creationTime" : null,
+    "fileCRC" : -397058238,
+    "fileName" : "vraysun ile iç mekan ışıklandırma son hali.max",
+    "hostOS" : "win32",
+    "fullPackSize" : 23957,
+    "fullUnpackSize" : 286720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465466877.584000000,
+    "creationTime" : null,
+    "fileCRC" : 735532455,
+    "fileName" : "vraysun ile iç mekan ışıklandırma.max",
+    "hostOS" : "win32",
+    "fullPackSize" : 22307,
+    "fullUnpackSize" : 286720,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

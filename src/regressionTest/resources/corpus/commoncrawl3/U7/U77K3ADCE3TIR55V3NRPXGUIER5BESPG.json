@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1520988679.894596500,
+    "creationTime" : null,
+    "fileCRC" : -1687755860,
+    "fileName" : "Протокол 256-ОЭН-2018 вскр (К).docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 33781,
+    "fullUnpackSize" : 37681,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521101255.274291600,
+    "creationTime" : null,
+    "fileCRC" : 1072701302,
+    "fileName" : "Протокол 256-ОЭН-2018 вскр.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 208385,
+    "fullUnpackSize" : 257435,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

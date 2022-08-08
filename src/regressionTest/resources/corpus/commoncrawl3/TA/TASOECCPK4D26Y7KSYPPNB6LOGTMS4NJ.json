@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1204879016.000000000,
+    "creationTime" : null,
+    "fileCRC" : 388682336,
+    "fileName" : "BTS Step Filter V1.2.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1393289,
+    "fullUnpackSize" : 1542736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491542620.620845700,
+    "creationTime" : null,
+    "fileCRC" : 295937585,
+    "fileName" : "Новгородэнерго\\График ремонтов АСТУ апрель 2017г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 882222,
+    "fullUnpackSize" : 1167064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1491542620.683250500,
+    "creationTime" : null,
+    "fileCRC" : 382247572,
+    "fileName" : "Новгородэнерго\\График ремонтов ЛЭП и ЭЛТ апрель 2017г.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 714698,
+    "fullUnpackSize" : 936775,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

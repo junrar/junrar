@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1154233616.000000000,
+    "creationTime" : null,
+    "fileCRC" : 822461797,
+    "fileName" : "Кудр_ЦенолМетодол.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 27381,
+    "fullUnpackSize" : 122880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

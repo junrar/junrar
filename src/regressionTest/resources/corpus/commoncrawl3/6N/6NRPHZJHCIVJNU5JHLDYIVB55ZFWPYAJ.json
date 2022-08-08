@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415764867.515061700,
+    "creationTime" : null,
+    "fileCRC" : 128497341,
+    "fileName" : "3157_minecraft-p-1.2.torrent",
+    "hostOS" : "win32",
+    "fullPackSize" : 23194,
+    "fullUnpackSize" : 46910,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

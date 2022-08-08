@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487036194.292869200,
+    "creationTime" : null,
+    "fileCRC" : -233182962,
+    "fileName" : "Сведения о результатах токсикологического мониторинга\\086-02-0.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2092175,
+    "fullUnpackSize" : 2213620,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

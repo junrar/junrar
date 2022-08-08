@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1180284912.076250000,
+    "creationTime" : null,
+    "fileCRC" : 2087474790,
+    "fileName" : "daniels_rhino.wmv",
+    "hostOS" : "win32",
+    "fullPackSize" : 1187033,
+    "fullUnpackSize" : 11370484,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

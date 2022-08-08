@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1470281040.000000000,
+    "creationTime" : null,
+    "fileCRC" : -673443268,
+    "fileName" : "Logo Lari Antunes.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 196995,
+    "fullUnpackSize" : 197532,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455143320.000000000,
+    "creationTime" : null,
+    "fileCRC" : 494581705,
+    "fileName" : "Foto 1.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2105797,
+    "fullUnpackSize" : 2130386,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

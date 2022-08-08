@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457177332.987182200,
+    "creationTime" : null,
+    "fileCRC" : -226863317,
+    "fileName" : "admin_ct.mdl",
+    "hostOS" : "win32",
+    "fullPackSize" : 1339340,
+    "fullUnpackSize" : 2440460,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

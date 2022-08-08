@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1085287724.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1645288815,
+    "fileName" : "Pfx - Lawn Wake IV (Black)\\!pfx - icon.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1399,
+    "fullUnpackSize" : 1399,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1074916820.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1862981241,
+    "fileName" : "Pfx - Lawn Wake IV (Black)\\02 - The Flashbulb - Lawn Wake IV (Black).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3258029,
+    "fullUnpackSize" : 3575692,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

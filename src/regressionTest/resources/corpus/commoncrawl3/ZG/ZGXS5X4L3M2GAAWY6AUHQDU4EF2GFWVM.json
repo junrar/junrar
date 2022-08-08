@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530780883.057002200,
+    "creationTime" : null,
+    "fileCRC" : 1411924084,
+    "fileName" : "PlantSimsNPC no defult hair by g1g2.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 1306,
+    "fullUnpackSize" : 1312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530780799.847002200,
+    "creationTime" : null,
+    "fileCRC" : -218549013,
+    "fileName" : "PlantSims_no defult hair by g1g2.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 3003,
+    "fullUnpackSize" : 3215,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

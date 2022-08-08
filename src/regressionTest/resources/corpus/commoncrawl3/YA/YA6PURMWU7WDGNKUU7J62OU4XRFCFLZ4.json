@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1292974296.023103600,
+    "creationTime" : null,
+    "fileCRC" : -1578416182,
+    "fileName" : "Luat_5710QH12.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12270,
+    "fullUnpackSize" : 62976,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

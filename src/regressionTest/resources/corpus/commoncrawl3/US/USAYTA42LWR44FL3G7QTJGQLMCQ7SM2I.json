@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152440092.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1202899149,
+    "fileName" : "Parcare2.MOV",
+    "hostOS" : "win32",
+    "fullPackSize" : 989332,
+    "fullUnpackSize" : 8302962,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

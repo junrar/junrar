@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376292265.156250000,
+    "creationTime" : null,
+    "fileCRC" : -1076832449,
+    "fileName" : "kavram06022042013.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 102067,
+    "fullUnpackSize" : 120083,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

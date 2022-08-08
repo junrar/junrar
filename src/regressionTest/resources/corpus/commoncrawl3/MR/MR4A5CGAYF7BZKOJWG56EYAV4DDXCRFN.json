@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1385944591.476000000,
+    "creationTime" : null,
+    "fileCRC" : -1761864272,
+    "fileName" : "Новатор № 8.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 747236,
+    "fullUnpackSize" : 768328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

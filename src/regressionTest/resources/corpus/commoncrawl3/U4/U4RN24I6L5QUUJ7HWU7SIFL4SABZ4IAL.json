@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426236018.782959000,
+    "creationTime" : null,
+    "fileCRC" : 698831052,
+    "fileName" : "AA_v3.5.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 343125,
+    "fullUnpackSize" : 769528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

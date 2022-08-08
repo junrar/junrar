@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516081660.869161700,
+    "creationTime" : null,
+    "fileCRC" : 627958743,
+    "fileName" : "315-05-36-494-18-0 О направлении приказа МЗРФ №882н от 31.10.2017.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 190420,
+    "fullUnpackSize" : 253440,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1516081660.900361800,
+    "creationTime" : null,
+    "fileCRC" : 159481683,
+    "fileName" : "882н от 31.10.2017 пр.МЗРФ (о внес.измен. в некотор.приказы МЗРФ).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 377625,
+    "fullUnpackSize" : 410172,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360317201.803223800,
+    "creationTime" : null,
+    "fileCRC" : -424132856,
+    "fileName" : "Supernatural.S08E13.Everybody.Hates.Hitler.1080p.WEB-DL.DD5.1.H.264-ECI.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15656,
+    "fullUnpackSize" : 39801,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360317201.803223800,
+    "creationTime" : null,
+    "fileCRC" : -424132856,
+    "fileName" : "Supernatural.S08E13.Everybody.Hates.Hitler.HDTV.x264-LOL.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15656,
+    "fullUnpackSize" : 39801,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

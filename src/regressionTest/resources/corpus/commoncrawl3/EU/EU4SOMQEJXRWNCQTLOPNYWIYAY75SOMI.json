@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415580222.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1276817125,
+    "fileName" : "brehman 04-07_2016.WMA",
+    "hostOS" : "win32",
+    "fullPackSize" : 11961045,
+    "fullUnpackSize" : 12064348,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

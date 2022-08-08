@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361682267.494000000,
+    "creationTime" : null,
+    "fileCRC" : -575954872,
+    "fileName" : "STEEL SYMPHOSIUM 91-2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 371175,
+    "fullUnpackSize" : 383520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1361680682.000000000,
+    "creationTime" : null,
+    "fileCRC" : -189845053,
+    "fileName" : "STEEL SYMPHOSIUM 91.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 184413,
+    "fullUnpackSize" : 192335,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

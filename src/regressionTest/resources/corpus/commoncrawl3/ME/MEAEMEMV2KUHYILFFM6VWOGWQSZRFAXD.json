@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1240462340.171000000,
+    "creationTime" : null,
+    "fileCRC" : -1548721433,
+    "fileName" : "Пояснительная записка 2008 г.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 11736,
+    "fullUnpackSize" : 64512,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

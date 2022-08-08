@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1343619129.828125000,
+    "creationTime" : null,
+    "fileCRC" : -1637543658,
+    "fileName" : "卡尔．马克思的成魔之路.CHM",
+    "hostOS" : "win32",
+    "fullPackSize" : 581774,
+    "fullUnpackSize" : 587751,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

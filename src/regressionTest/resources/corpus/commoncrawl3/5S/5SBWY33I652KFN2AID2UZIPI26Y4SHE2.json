@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1255841396.659000000,
+    "creationTime" : null,
+    "fileCRC" : 2093981922,
+    "fileName" : "TopScanausFrankreich.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 34169155,
+    "fullUnpackSize" : 34169155,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

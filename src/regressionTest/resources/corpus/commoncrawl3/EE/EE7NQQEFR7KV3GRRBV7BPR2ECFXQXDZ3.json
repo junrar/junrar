@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225595494.109375000,
+    "creationTime" : null,
+    "fileCRC" : -1503760779,
+    "fileName" : "Monza_Jr-ReadMe.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 802,
+    "fullUnpackSize" : 1997,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1225602388.109375000,
+    "creationTime" : null,
+    "fileCRC" : -1100138922,
+    "fileName" : "Monza_Junior-Day-Night.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 17374664,
+    "fullUnpackSize" : 17404782,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

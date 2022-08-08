@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522763562.474527100,
+    "creationTime" : null,
+    "fileCRC" : -1628845465,
+    "fileName" : "sx2018rn13seattle.ultralow.saf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5209616,
+    "fullUnpackSize" : 21016167,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

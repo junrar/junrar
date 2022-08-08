@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334195349.841875000,
+    "creationTime" : null,
+    "fileCRC" : -1589133843,
+    "fileName" : "Flap Flow Indicator.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 709444,
+    "fullUnpackSize" : 725893,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1334195871.513750000,
+    "creationTime" : null,
+    "fileCRC" : -1468652688,
+    "fileName" : "Flap Flow Indicator (1).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 775629,
+    "fullUnpackSize" : 799524,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

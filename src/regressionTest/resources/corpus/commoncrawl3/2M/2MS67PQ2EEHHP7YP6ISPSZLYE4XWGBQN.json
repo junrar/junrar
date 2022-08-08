@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421661357.065976600,
+    "creationTime" : null,
+    "fileCRC" : 922407344,
+    "fileName" : "sihhi_isyerleri_listesi.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12031,
+    "fullUnpackSize" : 14748,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

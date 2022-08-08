@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177989130.000000000,
+    "creationTime" : null,
+    "fileCRC" : -850404882,
+    "fileName" : "TSMSIhlp.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 109593,
+    "fullUnpackSize" : 121928,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

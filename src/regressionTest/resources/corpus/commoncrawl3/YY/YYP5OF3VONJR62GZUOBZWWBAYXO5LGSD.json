@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1291352579.180000000,
+    "creationTime" : null,
+    "fileCRC" : 272661023,
+    "fileName" : "egorov_kniga.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 253008,
+    "fullUnpackSize" : 1732096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

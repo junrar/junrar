@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1394001552.744070500,
+    "creationTime" : null,
+    "fileCRC" : 720331722,
+    "fileName" : "Приложение 4 (2).docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 14229070,
+    "fullUnpackSize" : 48205521,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

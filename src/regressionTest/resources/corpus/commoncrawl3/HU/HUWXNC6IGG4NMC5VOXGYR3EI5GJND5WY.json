@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502245984.439348600,
+    "creationTime" : null,
+    "fileCRC" : -143723308,
+    "fileName" : "__Servpost_l$_Бухгалтерия и экономисты_ФЭУ_ТОРГИ_Катя_ДОКУМЕНТАЦИЯ_2017 заявки_Светочка_Новая папка_Приложение 2.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 19282,
+    "fullUnpackSize" : 21936,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1502178925.279253800,
+    "creationTime" : null,
+    "fileCRC" : 1620675140,
+    "fileName" : "__Servpost_l$_Бухгалтерия и экономисты_ФЭУ_ТОРГИ_Катя_ДОКУМЕНТАЦИЯ_2017 заявки_Светочка_Новая папка_Приложение 1.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 19322,
+    "fullUnpackSize" : 21978,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

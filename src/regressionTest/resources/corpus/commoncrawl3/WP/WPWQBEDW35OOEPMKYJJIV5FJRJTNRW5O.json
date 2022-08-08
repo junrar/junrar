@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1388505600.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1858186428,
+    "fileName" : "Blackguards-FLT (www.Downloadha.com)\\Blackguards-FLT\\flt-blgu.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 998732211,
+    "fullUnpackSize" : 4691605504,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

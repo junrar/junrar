@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368140532.912251100,
+    "creationTime" : null,
+    "fileCRC" : 741016474,
+    "fileName" : "1.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1014584,
+    "fullUnpackSize" : 1014584,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1320928756.000000000,
+    "creationTime" : null,
+    "fileCRC" : -325785215,
+    "fileName" : "granthes_OMSP.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 83804,
+    "fullUnpackSize" : 141564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

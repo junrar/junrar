@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1149863454.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1571933428,
+    "fileName" : "Permyakov.Nanji.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1284892,
+    "fullUnpackSize" : 1330645,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

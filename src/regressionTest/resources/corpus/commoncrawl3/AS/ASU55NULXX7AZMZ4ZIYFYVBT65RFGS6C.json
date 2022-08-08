@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457069508.149975700,
+    "creationTime" : null,
+    "fileCRC" : 440307233,
+    "fileName" : "Решение № 48  .pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 307041,
+    "fullUnpackSize" : 318771,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457069369.008269300,
+    "creationTime" : null,
+    "fileCRC" : -808404416,
+    "fileName" : "Положен к Решен №48.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 208075,
+    "fullUnpackSize" : 216209,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

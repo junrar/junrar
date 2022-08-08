@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1316102574.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2034267848,
+    "fileName" : "3Pecados - Diciembra\\.DS_Store",
+    "hostOS" : "win32",
+    "fullPackSize" : 445,
+    "fullUnpackSize" : 12292,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1316102326.000000000,
+    "creationTime" : null,
+    "fileCRC" : 308519977,
+    "fileName" : "3Pecados - Diciembra\\01 Encandila.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9100193,
+    "fullUnpackSize" : 9872840,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

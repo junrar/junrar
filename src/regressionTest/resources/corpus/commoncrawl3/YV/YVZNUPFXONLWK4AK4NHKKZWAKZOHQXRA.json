@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1499398973.879052500,
+    "creationTime" : null,
+    "fileCRC" : 698990822,
+    "fileName" : "SK BANSOS DAN HIBAH.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 9140595,
+    "fullUnpackSize" : 9570871,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

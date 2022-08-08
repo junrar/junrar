@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1376837177.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2053498595,
+    "fileName" : "Agenda\\agenda.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1269372,
+    "fullUnpackSize" : 1328640,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

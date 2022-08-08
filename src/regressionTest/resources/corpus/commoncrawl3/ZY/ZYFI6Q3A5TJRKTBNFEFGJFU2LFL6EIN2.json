@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1456734714.847553500,
+    "creationTime" : null,
+    "fileCRC" : -2043768897,
+    "fileName" : "МРСК СЗ Минэнерго 4 квартал 2015.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2599736,
+    "fullUnpackSize" : 3380176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

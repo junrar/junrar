@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1301283082.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1134680772,
+    "fileName" : "Vestnik2011_1.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1123489,
+    "fullUnpackSize" : 3109376,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

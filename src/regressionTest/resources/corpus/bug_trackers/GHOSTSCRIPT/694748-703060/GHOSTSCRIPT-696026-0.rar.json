@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433743664.110116100,
+    "creationTime" : null,
+    "fileCRC" : 1986519689,
+    "fileName" : "initial.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 224891,
+    "fullUnpackSize" : 277668,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433744038.195512600,
+    "creationTime" : null,
+    "fileCRC" : -1452562207,
+    "fileName" : "result.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 114444,
+    "fullUnpackSize" : 142527,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

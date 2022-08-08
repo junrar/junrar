@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1481454637.362318500,
+    "creationTime" : null,
+    "fileCRC" : 1587039484,
+    "fileName" : "Index_of_CITES_Species_2016-12-11 18-01.csv",
+    "hostOS" : "win32",
+    "fullPackSize" : 1095377,
+    "fullUnpackSize" : 52768192,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

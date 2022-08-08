@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398839733.376356900,
+    "creationTime" : null,
+    "fileCRC" : -1212111482,
+    "fileName" : "Инвестпрограмма Иркутскэнерго на 2014-2016гг.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1906744,
+    "fullUnpackSize" : 2218893,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

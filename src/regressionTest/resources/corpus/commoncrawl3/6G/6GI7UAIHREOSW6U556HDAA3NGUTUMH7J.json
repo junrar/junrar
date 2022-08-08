@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472705426.735860700,
+    "creationTime" : null,
+    "fileCRC" : -922048756,
+    "fileName" : "NOVO-WIDIA_2.3.1.120_Production_Setup.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 8520451,
+    "fullUnpackSize" : 9715712,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

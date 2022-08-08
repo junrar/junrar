@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1391412550.142310900,
+    "creationTime" : null,
+    "fileCRC" : 855271837,
+    "fileName" : "Планы ремонтов НЭ на февраль 2014.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1358794,
+    "fullUnpackSize" : 1501866,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267065256.872000000,
+    "creationTime" : null,
+    "fileCRC" : 806942883,
+    "fileName" : "конс (387) - январь.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 58120,
+    "fullUnpackSize" : 195072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267065144.383000000,
+    "creationTime" : null,
+    "fileCRC" : 1970949997,
+    "fileName" : "конс (317) - январь.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 153157,
+    "fullUnpackSize" : 634368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

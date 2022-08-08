@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1237426105.978058400,
+    "creationTime" : null,
+    "fileCRC" : 1863683671,
+    "fileName" : "FK7M.DWG",
+    "hostOS" : "win32",
+    "fullPackSize" : 3658,
+    "fullUnpackSize" : 26339,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

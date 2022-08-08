@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353475493.380285900,
+    "creationTime" : null,
+    "fileCRC" : -925451513,
+    "fileName" : "biomedical\\JOINT DENR-DOH AO 2(Policies  and  Guidelines  on  effective  and  proper handling, collection, ).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 116834,
+    "fullUnpackSize" : 129809,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1353476520.967341600,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "biomedical",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

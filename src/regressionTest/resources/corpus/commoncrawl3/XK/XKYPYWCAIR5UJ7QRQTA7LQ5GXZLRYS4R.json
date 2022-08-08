@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397370642.812500000,
+    "creationTime" : null,
+    "fileCRC" : 575718473,
+    "fileName" : "Вестники за 2012 г. № 34-40\\Вестник № 34 (259) от 22.10.2012 г.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 556867,
+    "fullUnpackSize" : 557063,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1397370648.843750000,
+    "creationTime" : null,
+    "fileCRC" : -45618384,
+    "fileName" : "Вестники за 2012 г. № 34-40\\Вестник № 35(260) от 29.10. 2012 г.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 633894,
+    "fullUnpackSize" : 633894,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

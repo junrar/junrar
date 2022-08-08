@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1335262535.343750000,
+    "creationTime" : null,
+    "fileCRC" : -1946655845,
+    "fileName" : "bug.PNG",
+    "hostOS" : "win32",
+    "fullPackSize" : 34548,
+    "fullUnpackSize" : 43963,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1335262667.437500000,
+    "creationTime" : null,
+    "fileCRC" : -470055476,
+    "fileName" : "bug2.PNG",
+    "hostOS" : "win32",
+    "fullPackSize" : 32887,
+    "fullUnpackSize" : 37575,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1359984962.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1085217913,
+    "fileName" : "11_Dusty Springfield The Look Of Love.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3310754,
+    "fullUnpackSize" : 3363026,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

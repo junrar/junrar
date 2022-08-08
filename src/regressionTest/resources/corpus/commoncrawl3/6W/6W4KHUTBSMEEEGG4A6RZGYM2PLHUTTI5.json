@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380870204.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2018283437,
+    "fileName" : "BJHR60FL.SAV",
+    "hostOS" : "win32",
+    "fullPackSize" : 5627842,
+    "fullUnpackSize" : 174077862,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

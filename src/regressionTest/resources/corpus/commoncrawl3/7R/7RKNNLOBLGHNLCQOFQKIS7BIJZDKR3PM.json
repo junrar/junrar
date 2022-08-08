@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319807065.109000000,
+    "creationTime" : null,
+    "fileCRC" : -1202523558,
+    "fileName" : "Fancy Pants Adventure Trainer V.2 By Zelda Nation.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 34249,
+    "fullUnpackSize" : 65536,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

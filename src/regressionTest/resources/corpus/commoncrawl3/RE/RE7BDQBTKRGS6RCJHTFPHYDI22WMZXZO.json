@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425518391.453125000,
+    "creationTime" : null,
+    "fileCRC" : -1807629899,
+    "fileName" : "C-EPRI brochures\\C-EPRI brochure.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2785267,
+    "fullUnpackSize" : 2912114,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

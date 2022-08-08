@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1407480492.239048900,
+    "creationTime" : null,
+    "fileCRC" : -670352253,
+    "fileName" : "Руоводство_игрока 1.6_v2.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 6854189,
+    "fullUnpackSize" : 83239127,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

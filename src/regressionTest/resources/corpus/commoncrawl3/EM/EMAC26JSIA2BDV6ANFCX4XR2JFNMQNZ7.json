@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1018376368.000000000,
+    "creationTime" : null,
+    "fileCRC" : -256573289,
+    "fileName" : "spellbook.swf",
+    "hostOS" : "win32",
+    "fullPackSize" : 398223,
+    "fullUnpackSize" : 484741,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

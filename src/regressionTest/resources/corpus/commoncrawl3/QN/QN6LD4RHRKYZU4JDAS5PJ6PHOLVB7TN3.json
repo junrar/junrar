@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485834674.000000000,
+    "creationTime" : null,
+    "fileCRC" : -910664779,
+    "fileName" : "digitador de propostas.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 508045,
+    "fullUnpackSize" : 517672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510027596.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1829158791,
+    "fileName" : "EQUIP.FISIOTERAP11217.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 3771,
+    "fullUnpackSize" : 17829,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

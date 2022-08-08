@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1135481110.000000000,
+    "creationTime" : null,
+    "fileCRC" : 434464120,
+    "fileName" : "Sims2Heaven-README.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 413,
+    "fullUnpackSize" : 826,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136676424.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1284278129,
+    "fileName" : "sims2heaven_objects_doll_sitter_002_MESH.package",
+    "hostOS" : "win32",
+    "fullPackSize" : 158357,
+    "fullUnpackSize" : 350839,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508270418.005119800,
+    "creationTime" : null,
+    "fileCRC" : 214110174,
+    "fileName" : "CP-SPTFBW\\data1.cpi",
+    "hostOS" : "win32",
+    "fullPackSize" : 1042561294,
+    "fullUnpackSize" : 12629981410,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : true,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

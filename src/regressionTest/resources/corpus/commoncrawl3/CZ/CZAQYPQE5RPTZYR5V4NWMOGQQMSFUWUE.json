@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1421305809.531250000,
+    "creationTime" : null,
+    "fileCRC" : 1511454492,
+    "fileName" : "H-DVT-17601-0_20150113_rus_20140115.abs",
+    "hostOS" : "win32",
+    "fullPackSize" : 2157025,
+    "fullUnpackSize" : 4194304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1405481014.926459100,
+    "creationTime" : null,
+    "fileCRC" : -1239256463,
+    "fileName" : "mg_invisibleman_fin.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 2958166,
+    "fullUnpackSize" : 10996311,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1282111114.250000000,
+    "creationTime" : null,
+    "fileCRC" : -1256838474,
+    "fileName" : "Será de Manhã\\143_Será_de_Manhã.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3096718,
+    "fullUnpackSize" : 3184431,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

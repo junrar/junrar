@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1547777850.818635300,
+    "creationTime" : null,
+    "fileCRC" : -1287017498,
+    "fileName" : "encrypted.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 48,
+    "fullUnpackSize" : 23,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1547807213.778310800,
+    "creationTime" : null,
+    "fileCRC" : 2091415689,
+    "fileName" : "plain.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 27,
+    "fullUnpackSize" : 27,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

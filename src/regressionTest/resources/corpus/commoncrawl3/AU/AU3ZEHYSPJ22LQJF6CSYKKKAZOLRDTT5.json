@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528701268.731082600,
+    "creationTime" : null,
+    "fileCRC" : -1775155053,
+    "fileName" : "WinSSDino351visualizacao_setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3870726,
+    "fullUnpackSize" : 3907803,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

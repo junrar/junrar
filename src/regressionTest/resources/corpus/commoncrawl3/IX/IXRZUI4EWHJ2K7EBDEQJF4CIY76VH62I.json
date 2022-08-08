@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1288537814.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1154950214,
+    "fileName" : "SSP (sesuai Per-38.PJ.2009).xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 19525,
+    "fullUnpackSize" : 205312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

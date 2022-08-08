@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390266720.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1708691393,
+    "fileName" : "Manuals from Vendors3\\SCS Coter.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1630318,
+    "fullUnpackSize" : 1706483,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

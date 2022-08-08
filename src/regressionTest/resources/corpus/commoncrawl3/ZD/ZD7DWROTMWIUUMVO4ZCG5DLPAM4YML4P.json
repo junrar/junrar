@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433307368.756514200,
+    "creationTime" : null,
+    "fileCRC" : -107613683,
+    "fileName" : "Katalog_JW_2015_proizvod.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 96680581,
+    "fullUnpackSize" : 103119418,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1418875917.691467300,
+    "creationTime" : null,
+    "fileCRC" : -152351534,
+    "fileName" : "batalla de bases.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 20193485,
+    "fullUnpackSize" : 20203213,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

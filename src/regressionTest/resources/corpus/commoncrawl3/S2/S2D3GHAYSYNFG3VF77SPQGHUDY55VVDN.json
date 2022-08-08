@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1242587036.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1011643575,
+    "fileName" : "3dcustom_sk_mima_sav\\ヘビーセーブデータ\\43CB6883-B77E-4045-8622AB5B68BCF44D.tdcgsav.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 1669682,
+    "fullUnpackSize" : 1690806,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

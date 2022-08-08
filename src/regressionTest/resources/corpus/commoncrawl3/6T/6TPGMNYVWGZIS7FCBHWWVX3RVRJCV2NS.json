@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1523584938.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1069271269,
+    "fileName" : "Венстрой\\искане и информация по приложение 2.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2395462,
+    "fullUnpackSize" : 2641655,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

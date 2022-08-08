@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1272439004.796875000,
+    "creationTime" : null,
+    "fileCRC" : -1491570639,
+    "fileName" : "sealinks_golf.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 115346,
+    "fullUnpackSize" : 125268,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

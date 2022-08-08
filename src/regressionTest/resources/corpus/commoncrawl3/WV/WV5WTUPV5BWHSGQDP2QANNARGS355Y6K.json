@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247117100.000000000,
+    "creationTime" : null,
+    "fileCRC" : -18809156,
+    "fileName" : "dov.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2006,
+    "fullUnpackSize" : 8476,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1247117100.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2068463275,
+    "fileName" : "dov_ppf.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3042,
+    "fullUnpackSize" : 19375,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

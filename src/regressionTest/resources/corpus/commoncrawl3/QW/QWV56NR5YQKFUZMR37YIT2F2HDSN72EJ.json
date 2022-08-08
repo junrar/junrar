@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1428549314.562763900,
+    "creationTime" : null,
+    "fileCRC" : 1327229997,
+    "fileName" : "Recuva.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 4394888,
+    "fullUnpackSize" : 4426120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

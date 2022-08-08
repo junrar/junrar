@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472434986.350585900,
+    "creationTime" : null,
+    "fileCRC" : -2100939342,
+    "fileName" : "บริหารรุ่น 16\\service plan  ปรับแก้ไข.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1165861,
+    "fullUnpackSize" : 1304594,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

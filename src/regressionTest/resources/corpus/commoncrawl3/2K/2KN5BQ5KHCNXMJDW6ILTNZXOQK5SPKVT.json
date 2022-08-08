@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1438569444.432989200,
+    "creationTime" : null,
+    "fileCRC" : 1692134580,
+    "fileName" : "Розпорядження № 165-р від 28.07.2015.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9417,
+    "fullUnpackSize" : 40448,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

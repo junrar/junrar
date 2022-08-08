@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1152509436.281250000,
+    "creationTime" : null,
+    "fileCRC" : 1431571446,
+    "fileName" : "top1 (15).pspimage",
+    "hostOS" : "win32",
+    "fullPackSize" : 1449664,
+    "fullUnpackSize" : 2396049,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

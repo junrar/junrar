@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1448261056.000000000,
+    "creationTime" : null,
+    "fileCRC" : 934368057,
+    "fileName" : "praktika_apofaseon_dievrimenis_ektelestikis_epitropis_01-10\\Α.Δ.Ε.Ε. 1-2015 (A).pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 164883,
+    "fullUnpackSize" : 203336,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511494801.950255900,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "praktika_apofaseon_dievrimenis_ektelestikis_epitropis_01-10",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

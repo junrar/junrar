@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267366694.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1781547604,
+    "fileName" : "Readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 328,
+    "fullUnpackSize" : 600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1267435220.000000000,
+    "creationTime" : null,
+    "fileCRC" : 339453768,
+    "fileName" : "!stan_ChalSRT8.ar",
+    "hostOS" : "win32",
+    "fullPackSize" : 3020514,
+    "fullUnpackSize" : 3402401,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

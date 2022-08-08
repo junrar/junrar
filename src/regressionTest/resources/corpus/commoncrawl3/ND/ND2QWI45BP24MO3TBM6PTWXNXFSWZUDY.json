@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1216512850.359375000,
+    "creationTime" : null,
+    "fileCRC" : 108960950,
+    "fileName" : "volta al Orri.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 17985,
+    "fullUnpackSize" : 87303,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

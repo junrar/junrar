@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1314616229.863957800,
+    "creationTime" : null,
+    "fileCRC" : 2058502045,
+    "fileName" : "mp_mario_test_4\\mp_mario_test_4.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 27253356,
+    "fullUnpackSize" : 27297184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

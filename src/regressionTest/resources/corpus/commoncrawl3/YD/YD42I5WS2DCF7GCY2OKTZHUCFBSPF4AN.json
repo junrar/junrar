@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308027215.140625000,
+    "creationTime" : null,
+    "fileCRC" : 597469197,
+    "fileName" : "2-22-2011\\Аннотация 2-22.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 489271,
+    "fullUnpackSize" : 514719,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1307607860.453125000,
+    "creationTime" : null,
+    "fileCRC" : -5633332,
+    "fileName" : "2-22-2011\\Номер 2 (22).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 841015,
+    "fullUnpackSize" : 969288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

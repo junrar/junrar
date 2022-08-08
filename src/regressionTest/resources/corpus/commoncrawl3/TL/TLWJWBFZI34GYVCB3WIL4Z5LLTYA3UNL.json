@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368405586.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1266513343,
+    "fileName" : "Пост510 Резерв.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12312,
+    "fullUnpackSize" : 35328,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1368405436.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1499666555,
+    "fileName" : "Пост510 Резерв приложение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 24666,
+    "fullUnpackSize" : 453120,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1233582598.984000000,
+    "creationTime" : null,
+    "fileCRC" : -554427944,
+    "fileName" : "блекти.раху и кету.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 17715,
+    "fullUnpackSize" : 91136,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

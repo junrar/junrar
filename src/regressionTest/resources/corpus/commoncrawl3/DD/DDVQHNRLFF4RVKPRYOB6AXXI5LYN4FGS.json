@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511862975.027273100,
+    "creationTime" : null,
+    "fileCRC" : -943897647,
+    "fileName" : "Arabi8-Nobat1-Roshtkhar-95.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 217488,
+    "fullUnpackSize" : 230284,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

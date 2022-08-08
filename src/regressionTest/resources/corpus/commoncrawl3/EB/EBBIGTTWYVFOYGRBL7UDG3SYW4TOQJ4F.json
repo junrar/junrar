@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1327835326.000000000,
+    "creationTime" : null,
+    "fileCRC" : 368689548,
+    "fileName" : "А-03 Видео.Река жизни\\74 ч.1 Мертвая вода part1.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 1363011803,
+    "fullUnpackSize" : 1371291330,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

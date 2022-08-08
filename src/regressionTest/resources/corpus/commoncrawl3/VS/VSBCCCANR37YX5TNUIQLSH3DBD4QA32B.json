@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1425459141.992264300,
+    "creationTime" : null,
+    "fileCRC" : -1244208279,
+    "fileName" : "reglementation-vente-animaux.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 32781,
+    "fullUnpackSize" : 46364,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

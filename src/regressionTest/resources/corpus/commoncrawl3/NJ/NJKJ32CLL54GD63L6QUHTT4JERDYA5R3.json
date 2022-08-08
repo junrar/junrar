@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416552049.000000000,
+    "creationTime" : null,
+    "fileCRC" : -712296054,
+    "fileName" : "ПЗЗ СП Покча\\1_Карта градостроительного зонирования.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2553548,
+    "fullUnpackSize" : 2879069,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

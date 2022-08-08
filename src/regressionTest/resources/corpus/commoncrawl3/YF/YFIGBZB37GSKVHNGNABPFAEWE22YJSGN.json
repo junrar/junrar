@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495160597.231216200,
+    "creationTime" : null,
+    "fileCRC" : -1167036326,
+    "fileName" : "На сайт\\1Акт проверки.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1002763,
+    "fullUnpackSize" : 1198086,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1495160630.365674400,
+    "creationTime" : null,
+    "fileCRC" : -801333941,
+    "fileName" : "На сайт\\2Акт проверки прод.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 808624,
+    "fullUnpackSize" : 1004723,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

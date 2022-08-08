@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1281941304.562500000,
+    "creationTime" : null,
+    "fileCRC" : 1072125903,
+    "fileName" : "Варшавский Илья Иосифович. Наследник.rtf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4211,
+    "fullUnpackSize" : 14333,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

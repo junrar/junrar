@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1463536194.000000000,
+    "creationTime" : null,
+    "fileCRC" : 491603926,
+    "fileName" : "Notificat.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 903844,
+    "fullUnpackSize" : 952702,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1462528268.729757800,
+    "creationTime" : null,
+    "fileCRC" : 291009527,
+    "fileName" : "Declarat_EAC_UMK.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1019756,
+    "fullUnpackSize" : 1154397,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

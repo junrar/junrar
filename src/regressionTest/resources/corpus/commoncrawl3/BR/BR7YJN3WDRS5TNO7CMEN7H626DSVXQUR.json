@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 911206200.000000000,
+    "creationTime" : null,
+    "fileCRC" : 491564365,
+    "fileName" : "I Just Called to Say I Love You.atr",
+    "hostOS" : "win32",
+    "fullPackSize" : 15566,
+    "fullUnpackSize" : 92176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

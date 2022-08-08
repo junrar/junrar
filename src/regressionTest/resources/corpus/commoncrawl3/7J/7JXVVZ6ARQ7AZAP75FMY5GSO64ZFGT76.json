@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1309595569.104103000,
+    "creationTime" : null,
+    "fileCRC" : -377159266,
+    "fileName" : "mp_chloe\\mp_chloe.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 14922101,
+    "fullUnpackSize" : 14953171,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

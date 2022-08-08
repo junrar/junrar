@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1136813044.000000000,
+    "creationTime" : null,
+    "fileCRC" : 940551529,
+    "fileName" : "Gaussian Mist (part One)\\Gaussian Mist (part One).mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3649619,
+    "fullUnpackSize" : 3649619,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

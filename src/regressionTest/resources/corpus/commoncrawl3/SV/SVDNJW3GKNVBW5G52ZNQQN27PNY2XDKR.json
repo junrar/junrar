@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1213758440.562500000,
+    "creationTime" : null,
+    "fileCRC" : 1225489417,
+    "fileName" : "2008_Steering_Wheels_and_Gloves_by_Hega\\01Ferrari\\preview.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 396381,
+    "fullUnpackSize" : 406162,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1213760408.875000000,
+    "creationTime" : null,
+    "fileCRC" : -783479652,
+    "fileName" : "2008_Steering_Wheels_and_Gloves_by_Hega\\01Ferrari\\stwheel.tex",
+    "hostOS" : "win32",
+    "fullPackSize" : 751316,
+    "fullUnpackSize" : 5571412,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

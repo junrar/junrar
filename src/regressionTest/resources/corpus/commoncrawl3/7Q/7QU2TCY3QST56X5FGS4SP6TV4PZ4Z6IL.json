@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392979665.875000000,
+    "creationTime" : null,
+    "fileCRC" : -1196489763,
+    "fileName" : "150anos - logo oficial.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 632294,
+    "fullUnpackSize" : 643658,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

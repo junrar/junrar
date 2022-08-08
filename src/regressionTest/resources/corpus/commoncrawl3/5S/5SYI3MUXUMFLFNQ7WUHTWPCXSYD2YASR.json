@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1436160425.275600200,
+    "creationTime" : null,
+    "fileCRC" : -338444782,
+    "fileName" : "Tai lieu truyen thong ve REDD+.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1514819,
+    "fullUnpackSize" : 1970679,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1284343092.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1357115480,
+    "fileName" : "Протокол призн. пр. уч. торгов публичноге предложение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7120,
+    "fullUnpackSize" : 46592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

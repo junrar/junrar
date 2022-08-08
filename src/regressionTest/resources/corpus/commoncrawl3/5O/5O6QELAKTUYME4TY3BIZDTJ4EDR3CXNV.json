@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1199126042.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1717403889,
+    "fileName" : "Muelle\\CIMG0013.JPG",
+    "hostOS" : "win32",
+    "fullPackSize" : 2095604,
+    "fullUnpackSize" : 2095711,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

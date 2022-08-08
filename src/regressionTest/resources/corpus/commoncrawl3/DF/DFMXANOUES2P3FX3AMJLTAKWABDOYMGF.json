@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173015240.000000000,
+    "creationTime" : null,
+    "fileCRC" : 886945409,
+    "fileName" : "fy_2forts.bsp",
+    "hostOS" : "win32",
+    "fullPackSize" : 64220,
+    "fullUnpackSize" : 210331,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

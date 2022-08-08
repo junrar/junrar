@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1173782158.000000000,
+    "creationTime" : null,
+    "fileCRC" : 166677019,
+    "fileName" : "Jimm 0 5 2b.jad",
+    "hostOS" : "win32",
+    "fullPackSize" : 294,
+    "fullUnpackSize" : 466,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1172536680.000000000,
+    "creationTime" : null,
+    "fileCRC" : 642890066,
+    "fileName" : "Jimm 0 5 2b.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 185048,
+    "fullUnpackSize" : 192064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

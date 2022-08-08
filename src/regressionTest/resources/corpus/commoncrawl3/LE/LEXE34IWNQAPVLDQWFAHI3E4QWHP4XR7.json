@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1380458678.000000000,
+    "creationTime" : null,
+    "fileCRC" : 335188572,
+    "fileName" : "PCU_Full_Setup_3.56.8.7.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 15728541,
+    "fullUnpackSize" : 153779241,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

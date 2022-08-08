@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1218882356.265625000,
+    "creationTime" : null,
+    "fileCRC" : 1171865595,
+    "fileName" : "MB L1620 Baú Casas Bahia\\dft30.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 1260018,
+    "fullUnpackSize" : 5328896,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

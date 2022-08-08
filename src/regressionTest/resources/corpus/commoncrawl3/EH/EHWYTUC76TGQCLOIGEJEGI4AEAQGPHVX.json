@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1417510184.743969600,
+    "creationTime" : null,
+    "fileCRC" : -1870841468,
+    "fileName" : "Souls of Destiny.PPF",
+    "hostOS" : "win32",
+    "fullPackSize" : 5487594,
+    "fullUnpackSize" : 21332176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

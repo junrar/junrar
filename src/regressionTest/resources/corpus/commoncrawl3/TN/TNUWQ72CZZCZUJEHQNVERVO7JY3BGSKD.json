@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1392361520.812211000,
+    "creationTime" : null,
+    "fileCRC" : 62226351,
+    "fileName" : "ЕО_4кв 2013.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 86673,
+    "fullUnpackSize" : 1113600,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

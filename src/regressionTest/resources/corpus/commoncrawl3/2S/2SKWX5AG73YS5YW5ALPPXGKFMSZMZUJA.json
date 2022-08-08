@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1455488008.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2120935467,
+    "fileName" : "Seminar on Basic GMP Principles\\PL-PM-HY Teheran.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 21132421,
+    "fullUnpackSize" : 22406585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1188889760.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1184986488,
+    "fileName" : "Пеппи -25.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 254950,
+    "fullUnpackSize" : 647168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

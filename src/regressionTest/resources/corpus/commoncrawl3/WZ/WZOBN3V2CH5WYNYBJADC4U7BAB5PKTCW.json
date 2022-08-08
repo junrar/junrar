@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1398389984.000000000,
+    "creationTime" : null,
+    "fileCRC" : -459500130,
+    "fileName" : "18. Акт разграничения границ балансовой принадлежности сторон.RTF",
+    "hostOS" : "win32",
+    "fullPackSize" : 4639,
+    "fullUnpackSize" : 44455,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

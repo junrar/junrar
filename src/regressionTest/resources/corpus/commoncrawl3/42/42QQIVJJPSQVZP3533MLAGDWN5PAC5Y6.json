@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1236392903.862294700,
+    "creationTime" : null,
+    "fileCRC" : -570823217,
+    "fileName" : "Meteorologia\\cyklony.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2253484,
+    "fullUnpackSize" : 6714898,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

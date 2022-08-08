@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1023246264.000000000,
+    "creationTime" : null,
+    "fileCRC" : 305484547,
+    "fileName" : "XLead GClub.drumkit",
+    "hostOS" : "win32",
+    "fullPackSize" : 1003588,
+    "fullUnpackSize" : 1662197,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1130511852.234375000,
+    "creationTime" : null,
+    "fileCRC" : -2086131236,
+    "fileName" : "EP - Linear Algebra - E.G. Sklyarenko.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 40576,
+    "fullUnpackSize" : 50027,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

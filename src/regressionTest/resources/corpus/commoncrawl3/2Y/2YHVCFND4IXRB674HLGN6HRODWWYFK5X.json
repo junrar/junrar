@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177489966.609000000,
+    "creationTime" : null,
+    "fileCRC" : -1475392262,
+    "fileName" : "082Infitar.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2237638,
+    "fullUnpackSize" : 2290869,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

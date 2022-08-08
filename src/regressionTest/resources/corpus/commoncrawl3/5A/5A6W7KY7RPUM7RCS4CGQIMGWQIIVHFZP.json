@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1215164572.343750000,
+    "creationTime" : null,
+    "fileCRC" : -86196765,
+    "fileName" : "卡巴斯基6.7.8.版30天重複使用.cmd",
+    "hostOS" : "win32",
+    "fullPackSize" : 360,
+    "fullUnpackSize" : 745,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

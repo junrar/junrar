@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289186896.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1241929806,
+    "fileName" : "BJUV88 中文版\\BJUV88_PCS.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 2635326,
+    "fullUnpackSize" : 2681395,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

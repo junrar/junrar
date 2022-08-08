@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1332039337.204036000,
+    "creationTime" : null,
+    "fileCRC" : -1388727737,
+    "fileName" : "mp_natural_jump\\mp_natural_jump.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 24235001,
+    "fullUnpackSize" : 24276326,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

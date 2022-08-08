@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444980706.933385400,
+    "creationTime" : null,
+    "fileCRC" : 1946324444,
+    "fileName" : "Мясникова.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 662815,
+    "fullUnpackSize" : 785358,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444030636.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2034841786,
+    "fileName" : "Юкевич.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2315817,
+    "fullUnpackSize" : 2443364,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534938220.013752800,
+    "creationTime" : null,
+    "fileCRC" : 1233226257,
+    "fileName" : "Fabinho e Rodolfo - Acústico 2.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1718824,
+    "fullUnpackSize" : 1751106,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

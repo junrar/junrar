@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1259755363.710937500,
+    "creationTime" : null,
+    "fileCRC" : -840523988,
+    "fileName" : "Зарядка-автомат_авто.spl",
+    "hostOS" : "win32",
+    "fullPackSize" : 26962,
+    "fullUnpackSize" : 156293,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1259754712.583007800,
+    "creationTime" : null,
+    "fileCRC" : -364808254,
+    "fileName" : "Зарядка-автомат_авто.lay",
+    "hostOS" : "win32",
+    "fullPackSize" : 37704,
+    "fullUnpackSize" : 139313,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

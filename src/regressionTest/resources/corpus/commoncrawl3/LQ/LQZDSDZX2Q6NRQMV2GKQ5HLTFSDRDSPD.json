@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396314095.080178100,
+    "creationTime" : null,
+    "fileCRC" : -1979310135,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 276,
+    "fullUnpackSize" : 484,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395288096.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1462463950,
+    "fileName" : "KD_P9000E_HD_Tuxbox961_2014_03_20.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 6829525,
+    "fullUnpackSize" : 8204288,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351770995.796875000,
+    "creationTime" : null,
+    "fileCRC" : -1600887807,
+    "fileName" : "звук з.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1632723,
+    "fullUnpackSize" : 2311168,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1325067630.359375000,
+    "creationTime" : null,
+    "fileCRC" : -285501620,
+    "fileName" : "Scan0003.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 664793,
+    "fullUnpackSize" : 669104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1325067674.765625000,
+    "creationTime" : null,
+    "fileCRC" : 23555172,
+    "fileName" : "Scan0004.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 648918,
+    "fullUnpackSize" : 653918,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

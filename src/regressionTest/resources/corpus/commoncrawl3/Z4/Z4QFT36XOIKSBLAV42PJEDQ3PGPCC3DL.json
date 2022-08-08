@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1196648641.992559700,
+    "creationTime" : null,
+    "fileCRC" : 1262202117,
+    "fileName" : "gorkovskaia_obl_1966_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 2498109,
+    "fullUnpackSize" : 16269095,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

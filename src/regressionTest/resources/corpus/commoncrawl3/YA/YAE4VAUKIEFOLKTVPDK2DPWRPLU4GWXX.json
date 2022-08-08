@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1220415662.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2107152390,
+    "fileName" : "soundcraft_fx8.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 562680,
+    "fullUnpackSize" : 648093,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

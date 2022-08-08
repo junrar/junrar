@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1423143290.096047800,
+    "creationTime" : null,
+    "fileCRC" : 461041542,
+    "fileName" : "T460HVN05.3_46T21-C07.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3966062,
+    "fullUnpackSize" : 3968699,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

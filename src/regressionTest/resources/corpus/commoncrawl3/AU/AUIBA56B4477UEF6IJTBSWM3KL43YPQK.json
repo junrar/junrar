@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1199534525.312500000,
+    "creationTime" : null,
+    "fileCRC" : -96507911,
+    "fileName" : "top1 (14).jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 33388,
+    "fullUnpackSize" : 38845,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1387171629.610606400,
+    "creationTime" : null,
+    "fileCRC" : -751281386,
+    "fileName" : "Baldurs Gate.epub",
+    "hostOS" : "win32",
+    "fullPackSize" : 2570115,
+    "fullUnpackSize" : 2625820,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

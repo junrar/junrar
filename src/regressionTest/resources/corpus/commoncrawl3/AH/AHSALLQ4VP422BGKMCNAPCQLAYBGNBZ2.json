@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362469779.727521000,
+    "creationTime" : null,
+    "fileCRC" : -575595096,
+    "fileName" : "Alcohol 52% Free\\Alcohol52_FE_2.0.2.4713.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 9556832,
+    "fullUnpackSize" : 9556832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

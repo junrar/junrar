@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1408148565.342773400,
+    "creationTime" : null,
+    "fileCRC" : -1624048187,
+    "fileName" : "فصلنامه بهار 93\\autorun.inf",
+    "hostOS" : "win32",
+    "fullPackSize" : 116,
+    "fullUnpackSize" : 182,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1408148574.562500000,
+    "creationTime" : null,
+    "fileCRC" : 1719289684,
+    "fileName" : "فصلنامه بهار 93\\فصلنامه بهار 93.eBook",
+    "hostOS" : "win32",
+    "fullPackSize" : 8328841,
+    "fullUnpackSize" : 8433099,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

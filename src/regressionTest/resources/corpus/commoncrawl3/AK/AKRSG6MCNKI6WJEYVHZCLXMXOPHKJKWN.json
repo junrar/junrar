@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510981015.286371000,
+    "creationTime" : null,
+    "fileCRC" : -832502539,
+    "fileName" : "World Quality Day 2017.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2587494,
+    "fullUnpackSize" : 2699841,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449478530.972890700,
+    "creationTime" : null,
+    "fileCRC" : 2109543822,
+    "fileName" : "Ascalon_Spectrum_H7L_Driver_V1.5.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 10841479,
+    "fullUnpackSize" : 10906064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

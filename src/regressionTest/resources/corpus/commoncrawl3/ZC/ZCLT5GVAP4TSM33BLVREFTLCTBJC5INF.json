@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1077617854.000000000,
+    "creationTime" : null,
+    "fileCRC" : 139335939,
+    "fileName" : "For it is written.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 568054,
+    "fullUnpackSize" : 605329,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

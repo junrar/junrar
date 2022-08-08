@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489110898.589961600,
+    "creationTime" : null,
+    "fileCRC" : 971134340,
+    "fileName" : "Комиэнерго\\Комэнерго_Сводный график технического обслуживания_март 2017 года..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 906301,
+    "fullUnpackSize" : 907994,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489110898.636761600,
+    "creationTime" : null,
+    "fileCRC" : 706714452,
+    "fileName" : "Комиэнерго\\Сводный график ремонта_Филиала_ Комиэнерго на март 2017 года..pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5520650,
+    "fullUnpackSize" : 6050103,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

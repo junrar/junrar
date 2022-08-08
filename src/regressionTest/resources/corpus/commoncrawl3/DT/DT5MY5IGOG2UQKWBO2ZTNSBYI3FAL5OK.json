@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1308972656.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1541635453,
+    "fileName" : "НПО для ВОП Офтальмология.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 4345239,
+    "fullUnpackSize" : 4930048,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

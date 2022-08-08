@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452839694.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1390965893,
+    "fileName" : "园区社保（公积金）电子期刊(2015年第12期).exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 9502846,
+    "fullUnpackSize" : 18620093,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

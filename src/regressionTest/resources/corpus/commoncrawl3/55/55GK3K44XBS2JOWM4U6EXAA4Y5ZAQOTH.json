@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393297612.110658700,
+    "creationTime" : null,
+    "fileCRC" : 312313014,
+    "fileName" : "TB6600HG.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 822448,
+    "fullUnpackSize" : 1115985,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1393484848.789133400,
+    "creationTime" : null,
+    "fileCRC" : 690358289,
+    "fileName" : "TB6600HG芯片中文说明书.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 237412,
+    "fullUnpackSize" : 287404,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1248062523.578125000,
+    "creationTime" : null,
+    "fileCRC" : 931355189,
+    "fileName" : "Инновации в электроэнергетике.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4753334,
+    "fullUnpackSize" : 4754550,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1254013870.140000000,
+    "creationTime" : null,
+    "fileCRC" : 498110455,
+    "fileName" : "الإحكام\\الجزء الأول.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1342986,
+    "fullUnpackSize" : 2869760,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

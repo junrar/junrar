@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1236046852.843000000,
+    "creationTime" : null,
+    "fileCRC" : -730896537,
+    "fileName" : "Ежеквартальный отчет эмитента эмиссионных бумаг за  4 квартал 2008 .doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 43005,
+    "fullUnpackSize" : 366592,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

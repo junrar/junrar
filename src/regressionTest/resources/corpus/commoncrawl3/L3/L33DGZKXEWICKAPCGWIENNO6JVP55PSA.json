@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1382965645.539191300,
+    "creationTime" : null,
+    "fileCRC" : 1878114213,
+    "fileName" : "Сущность, необходимость и структура бизнес-плана.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 1555323,
+    "fullUnpackSize" : 1659674,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

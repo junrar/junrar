@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433896524.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2093628802,
+    "fileName" : "Ianuarie\\1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1020697,
+    "fullUnpackSize" : 1040299,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1433897338.000000000,
+    "creationTime" : null,
+    "fileCRC" : -904799727,
+    "fileName" : "Ianuarie\\10.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1218545,
+    "fullUnpackSize" : 1230846,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

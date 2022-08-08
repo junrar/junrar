@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1274445172.656250000,
+    "creationTime" : null,
+    "fileCRC" : -1343111857,
+    "fileName" : "log2.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 8059,
+    "fullUnpackSize" : 8441,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1274442975.890625000,
+    "creationTime" : null,
+    "fileCRC" : 874292070,
+    "fileName" : "log.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 11805,
+    "fullUnpackSize" : 12330,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

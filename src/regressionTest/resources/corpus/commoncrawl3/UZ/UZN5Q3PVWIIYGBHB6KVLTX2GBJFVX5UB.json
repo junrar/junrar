@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1432708079.282009400,
+    "creationTime" : null,
+    "fileCRC" : 1201734780,
+    "fileName" : "IE9_64.EXE",
+    "hostOS" : "win32",
+    "fullPackSize" : 36898728,
+    "fullUnpackSize" : 36898728,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

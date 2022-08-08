@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534368776.000000000,
+    "creationTime" : null,
+    "fileCRC" : -309246828,
+    "fileName" : "ту\\1 ТУ Локомотив М 09.08.18.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1888818,
+    "fullUnpackSize" : 2451456,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

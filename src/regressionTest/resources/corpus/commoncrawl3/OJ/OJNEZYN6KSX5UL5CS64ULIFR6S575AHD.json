@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489739851.703125000,
+    "creationTime" : null,
+    "fileCRC" : 1626491229,
+    "fileName" : "в). основ.пок-ли фин-хоз. деят.рег.орг-и\\Инфор-я об основных фин.показателях за 2015 год.xlsm",
+    "hostOS" : "win32",
+    "fullPackSize" : 853240,
+    "fullUnpackSize" : 910018,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1489739851.812500000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "в). основ.пок-ли фин-хоз. деят.рег.орг-и",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1079076836.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1765655305,
+    "fileName" : "Dreamweaver_MX_tutorijal.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3655184,
+    "fullUnpackSize" : 4153975,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

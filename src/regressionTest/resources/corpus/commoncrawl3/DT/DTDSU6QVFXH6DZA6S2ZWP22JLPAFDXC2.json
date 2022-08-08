@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1437040406.000000000,
+    "creationTime" : null,
+    "fileCRC" : -2128288865,
+    "fileName" : "DIA2_DAY2\\EXPLORE_Presentation_VascoFigueiredo.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1413707,
+    "fullUnpackSize" : 1619901,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

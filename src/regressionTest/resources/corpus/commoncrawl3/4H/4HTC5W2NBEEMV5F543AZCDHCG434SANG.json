@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1367918937.984375000,
+    "creationTime" : null,
+    "fileCRC" : 2139043518,
+    "fileName" : "Книга.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3049908,
+    "fullUnpackSize" : 18658067,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

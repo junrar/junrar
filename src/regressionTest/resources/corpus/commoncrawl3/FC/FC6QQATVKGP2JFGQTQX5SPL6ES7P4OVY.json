@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527608057.595588000,
+    "creationTime" : null,
+    "fileCRC" : -2103012833,
+    "fileName" : "Indotextiles E Magazine 258 April 2 2018.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1260676,
+    "fullUnpackSize" : 2170880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

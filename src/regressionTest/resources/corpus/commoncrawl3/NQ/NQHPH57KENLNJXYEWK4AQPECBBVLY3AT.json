@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1266506644.078125000,
+    "creationTime" : null,
+    "fileCRC" : 1557701630,
+    "fileName" : "q3dm1.pk4",
+    "hostOS" : "win32",
+    "fullPackSize" : 13269213,
+    "fullUnpackSize" : 13652079,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1162709163.921875000,
+    "creationTime" : null,
+    "fileCRC" : 410725931,
+    "fileName" : "adria_32bobo32\\adria.tuh",
+    "hostOS" : "win32",
+    "fullPackSize" : 15894851,
+    "fullUnpackSize" : 15894851,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

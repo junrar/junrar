@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1177489458.500000000,
+    "creationTime" : null,
+    "fileCRC" : 907044210,
+    "fileName" : "022Hac.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 27264715,
+    "fullUnpackSize" : 28446741,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

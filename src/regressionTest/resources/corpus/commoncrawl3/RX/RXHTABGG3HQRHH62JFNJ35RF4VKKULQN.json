@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1195535545.611961600,
+    "creationTime" : null,
+    "fileCRC" : 1500052595,
+    "fileName" : "kaliningradskaia_obl_1975_god.djvu",
+    "hostOS" : "win32",
+    "fullPackSize" : 4599889,
+    "fullUnpackSize" : 5735193,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

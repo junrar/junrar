@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1165300526.000000000,
+    "creationTime" : null,
+    "fileCRC" : -59758467,
+    "fileName" : "DVM Part 4 - Outdoor.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 818320,
+    "fullUnpackSize" : 847885,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

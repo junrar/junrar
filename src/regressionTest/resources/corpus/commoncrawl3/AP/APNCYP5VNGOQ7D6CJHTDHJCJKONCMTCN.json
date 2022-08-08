@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533882062.942619900,
+    "creationTime" : null,
+    "fileCRC" : 1681484015,
+    "fileName" : "混淆\\慧号通车牌识别v1.0.1.8.apk",
+    "hostOS" : "win32",
+    "fullPackSize" : 3402453,
+    "fullUnpackSize" : 6149359,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

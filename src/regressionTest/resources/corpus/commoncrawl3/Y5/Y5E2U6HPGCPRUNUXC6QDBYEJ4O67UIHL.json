@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1023241716.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1185930171,
+    "fileName" : "Alesis SR16.drumkit",
+    "hostOS" : "win32",
+    "fullPackSize" : 1347508,
+    "fullUnpackSize" : 2301851,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

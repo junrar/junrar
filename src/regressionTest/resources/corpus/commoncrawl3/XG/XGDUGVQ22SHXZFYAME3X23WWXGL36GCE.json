@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1323861346.686557500,
+    "creationTime" : null,
+    "fileCRC" : -1135107602,
+    "fileName" : "52hxw\\52hxw.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 3756330,
+    "fullUnpackSize" : 3816296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

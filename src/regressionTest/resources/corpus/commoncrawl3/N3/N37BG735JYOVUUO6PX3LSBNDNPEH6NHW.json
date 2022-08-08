@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1513214092.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1782864633,
+    "fileName" : "Постановление (ОМСУ) от 14.12.2017 № 362-252-01-03 О внесении изменений в Муниципальный краткосрочный план реализации региональной программы капита.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 26842,
+    "fullUnpackSize" : 50688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533178587.071806900,
+    "creationTime" : null,
+    "fileCRC" : -1031701993,
+    "fileName" : "Кишертский МР Краткосрочный План 2018-2020_2.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 31810,
+    "fullUnpackSize" : 38564,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

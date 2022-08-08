@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1336353269.718750000,
+    "creationTime" : null,
+    "fileCRC" : -1193132071,
+    "fileName" : "Zadaci iz matematike 8.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 413024,
+    "fullUnpackSize" : 509885,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

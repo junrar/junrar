@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1432019766.097093200,
+    "creationTime" : null,
+    "fileCRC" : -1679265457,
+    "fileName" : "Предлагаемые к утверждению на 2 полугодие  2016 года размер цен (тарифова).xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 7617,
+    "fullUnpackSize" : 10382,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

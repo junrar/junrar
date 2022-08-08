@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1383543206.786339900,
+    "creationTime" : null,
+    "fileCRC" : -1767574276,
+    "fileName" : "SetupQuadrant-HRIS.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 25064876,
+    "fullUnpackSize" : 25064876,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

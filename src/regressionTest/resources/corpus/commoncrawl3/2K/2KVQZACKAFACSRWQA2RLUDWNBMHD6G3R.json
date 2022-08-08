@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1256620280.000000000,
+    "creationTime" : null,
+    "fileCRC" : -469228987,
+    "fileName" : "AnimeStudioDebut6Mac.zip",
+    "hostOS" : "unix",
+    "fullPackSize" : 24752120,
+    "fullUnpackSize" : 282130554,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

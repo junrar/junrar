@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1416526787.421000000,
+    "creationTime" : null,
+    "fileCRC" : 909416788,
+    "fileName" : "kursovaya raznica.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 33647,
+    "fullUnpackSize" : 151040,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1465517100.779000000,
+    "creationTime" : null,
+    "fileCRC" : 181985058,
+    "fileName" : "kursovaya raznica 2016.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 33970,
+    "fullUnpackSize" : 151040,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

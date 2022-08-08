@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1207321851.000000000,
+    "creationTime" : null,
+    "fileCRC" : 669272024,
+    "fileName" : "freewb4.5se正式版.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 1200199,
+    "fullUnpackSize" : 1211501,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

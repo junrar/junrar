@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1384870606.348984500,
+    "creationTime" : null,
+    "fileCRC" : -401445049,
+    "fileName" : "shoor.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 2194773,
+    "fullUnpackSize" : 2307602,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

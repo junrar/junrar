@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1338953879.376953100,
+    "creationTime" : null,
+    "fileCRC" : 1242889337,
+    "fileName" : "maltese.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 6200913,
+    "fullUnpackSize" : 6300578,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

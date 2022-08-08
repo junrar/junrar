@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 769825404.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1482124599,
+    "fileName" : "JOURNEY - Open Arms.kar",
+    "hostOS" : "win32",
+    "fullPackSize" : 2744,
+    "fullUnpackSize" : 10024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1128010705.274250000,
+    "creationTime" : null,
+    "fileCRC" : 1408665030,
+    "fileName" : "readme.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 792,
+    "fullUnpackSize" : 1334,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1123065371.481000000,
+    "creationTime" : null,
+    "fileCRC" : 678483360,
+    "fileName" : "monstera.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 20928,
+    "fullUnpackSize" : 51880,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487505863.328125000,
+    "creationTime" : null,
+    "fileCRC" : 1253514963,
+    "fileName" : "SSC1S311-Sanken.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 739433,
+    "fullUnpackSize" : 777458,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1487508019.000000000,
+    "creationTime" : null,
+    "fileCRC" : 962636568,
+    "fileName" : "3S111-1S311.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 45386,
+    "fullUnpackSize" : 55884,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

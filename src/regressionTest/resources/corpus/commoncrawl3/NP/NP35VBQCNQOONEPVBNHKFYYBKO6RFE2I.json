@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1396235874.564636900,
+    "creationTime" : null,
+    "fileCRC" : -600857104,
+    "fileName" : "Новатор №12_апрель 2014.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 799363,
+    "fullUnpackSize" : 818895,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

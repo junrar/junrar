@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1426839424.000000000,
+    "creationTime" : null,
+    "fileCRC" : -977444984,
+    "fileName" : "คู่มือ.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 14821975,
+    "fullUnpackSize" : 16729575,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

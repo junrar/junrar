@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1410334383.758728300,
+    "creationTime" : null,
+    "fileCRC" : -1650574122,
+    "fileName" : "SR 75.x_t",
+    "hostOS" : "win32",
+    "fullPackSize" : 1566799,
+    "fullUnpackSize" : 5210621,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

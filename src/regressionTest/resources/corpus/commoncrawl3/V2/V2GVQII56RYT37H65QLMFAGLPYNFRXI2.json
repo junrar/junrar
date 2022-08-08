@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1289819415.046000000,
+    "creationTime" : null,
+    "fileCRC" : -685456416,
+    "fileName" : "отчет 1 класс 2009.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 506128,
+    "fullUnpackSize" : 1122816,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

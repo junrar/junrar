@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1360198010.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2145773640,
+    "fileName" : "Обзор обращений граждан.за 2012 год.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 388245,
+    "fullUnpackSize" : 480768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

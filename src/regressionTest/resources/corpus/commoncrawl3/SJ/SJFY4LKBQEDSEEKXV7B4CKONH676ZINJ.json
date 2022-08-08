@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444900100.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1205504939,
+    "fileName" : "2016优选30套新课标2理综部分内容展示\\1.目录.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 615300,
+    "fullUnpackSize" : 1207406,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1444900104.000000000,
+    "creationTime" : null,
+    "fileCRC" : 248898161,
+    "fileName" : "2016优选30套新课标2理综部分内容展示\\2.正文.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 576821,
+    "fullUnpackSize" : 766701,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

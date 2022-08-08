@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1472528365.884158300,
+    "creationTime" : null,
+    "fileCRC" : 186365858,
+    "fileName" : "WaflBar.cdr",
+    "hostOS" : "win32",
+    "fullPackSize" : 680893,
+    "fullUnpackSize" : 1617050,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

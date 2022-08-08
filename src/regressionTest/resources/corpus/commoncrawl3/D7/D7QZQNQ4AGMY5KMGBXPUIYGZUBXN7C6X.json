@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 949352660.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1853274071,
+    "fileName" : "sl-41a_ymf724-ymf740_win2000-dos-xp_sp1\\YMF724&YMF740\\NT40\\DATA.TAG",
+    "hostOS" : "win32",
+    "fullPackSize" : 98,
+    "fullUnpackSize" : 98,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 949352666.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1633640543,
+    "fileName" : "sl-41a_ymf724-ymf740_win2000-dos-xp_sp1\\YMF724&YMF740\\NT40\\data1.cab",
+    "hostOS" : "win32",
+    "fullPackSize" : 2982455,
+    "fullUnpackSize" : 2994511,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

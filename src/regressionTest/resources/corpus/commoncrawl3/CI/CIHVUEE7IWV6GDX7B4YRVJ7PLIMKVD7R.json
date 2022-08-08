@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1457494945.759804400,
+    "creationTime" : null,
+    "fileCRC" : -2139589182,
+    "fileName" : "garant_nalogovy_kodeks_rf.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4203028,
+    "fullUnpackSize" : 5997133,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

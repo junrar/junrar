@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1319207560.148800000,
+    "creationTime" : null,
+    "fileCRC" : -297257235,
+    "fileName" : "mp_tower_nOs\\mp_tower_nOs.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 25785512,
+    "fullUnpackSize" : 25885088,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

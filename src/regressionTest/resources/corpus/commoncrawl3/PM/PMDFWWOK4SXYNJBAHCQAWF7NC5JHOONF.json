@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1485838274.000000000,
+    "creationTime" : null,
+    "fileCRC" : -910664779,
+    "fileName" : "digitador de propostas.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 508045,
+    "fullUnpackSize" : 517672,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1507620580.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1428110533,
+    "fileName" : "LOCAÇÃOTENDAS10417.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 1325,
+    "fullUnpackSize" : 6024,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

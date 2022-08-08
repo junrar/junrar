@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369721784.700796700,
+    "creationTime" : null,
+    "fileCRC" : -1268064548,
+    "fileName" : "Track No07.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 4453550,
+    "fullUnpackSize" : 4564241,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

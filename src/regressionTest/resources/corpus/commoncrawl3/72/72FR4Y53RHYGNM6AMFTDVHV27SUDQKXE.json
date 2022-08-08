@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1270520824.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1757563980,
+    "fileName" : "ока-102к-инструкция по эксплуатации.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 761005,
+    "fullUnpackSize" : 1662464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

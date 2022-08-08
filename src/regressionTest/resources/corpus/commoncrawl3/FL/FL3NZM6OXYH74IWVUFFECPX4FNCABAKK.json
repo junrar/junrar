@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1357271122.921875000,
+    "creationTime" : null,
+    "fileCRC" : 387303143,
+    "fileName" : "аппликация 1 класс.pptx",
+    "hostOS" : "win32",
+    "fullPackSize" : 4292578,
+    "fullUnpackSize" : 4542725,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

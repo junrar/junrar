@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1182576746.992000000,
+    "creationTime" : null,
+    "fileCRC" : -101286960,
+    "fileName" : "Tarr_video_1.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 46525548,
+    "fullUnpackSize" : 65032638,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

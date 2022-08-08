@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1365985296.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2033802852,
+    "fileName" : "tekst - plan.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 27918192,
+    "fullUnpackSize" : 28186184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

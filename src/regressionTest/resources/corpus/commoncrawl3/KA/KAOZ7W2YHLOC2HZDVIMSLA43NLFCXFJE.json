@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1497495342.590494200,
+    "creationTime" : null,
+    "fileCRC" : -467539109,
+    "fileName" : "收集年鉴资料通知.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8636,
+    "fullUnpackSize" : 78848,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

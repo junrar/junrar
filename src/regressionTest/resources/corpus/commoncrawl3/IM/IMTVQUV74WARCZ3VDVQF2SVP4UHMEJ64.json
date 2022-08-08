@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415062450.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1424303687,
+    "fileName" : "12-1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1011679,
+    "fullUnpackSize" : 1030289,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1415062522.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1402951501,
+    "fileName" : "12-2.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 985017,
+    "fullUnpackSize" : 1002907,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

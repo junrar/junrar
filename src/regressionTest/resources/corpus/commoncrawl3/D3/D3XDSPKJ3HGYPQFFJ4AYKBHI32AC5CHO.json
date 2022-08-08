@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510794509.825560900,
+    "creationTime" : null,
+    "fileCRC" : 1493546411,
+    "fileName" : "svettech.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 80953,
+    "fullUnpackSize" : 84117,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

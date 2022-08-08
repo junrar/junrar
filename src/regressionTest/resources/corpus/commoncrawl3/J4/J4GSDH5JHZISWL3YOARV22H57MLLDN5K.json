@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1440543046.156697400,
+    "creationTime" : null,
+    "fileCRC" : -1624365603,
+    "fileName" : "Анализ программы с подпрограммами.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 1759760,
+    "fullUnpackSize" : 2923520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

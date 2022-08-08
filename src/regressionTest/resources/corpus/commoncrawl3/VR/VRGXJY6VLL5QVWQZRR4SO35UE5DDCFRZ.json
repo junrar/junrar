@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369660259.152835900,
+    "creationTime" : null,
+    "fileCRC" : -1961215802,
+    "fileName" : "music29.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 7214162,
+    "fullUnpackSize" : 7273219,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

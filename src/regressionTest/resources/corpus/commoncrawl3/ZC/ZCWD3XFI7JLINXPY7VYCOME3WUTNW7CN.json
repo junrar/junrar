@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404204758.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1927972899,
+    "fileName" : "2014zgdxpjyjbg.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3651063,
+    "fullUnpackSize" : 4111575,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

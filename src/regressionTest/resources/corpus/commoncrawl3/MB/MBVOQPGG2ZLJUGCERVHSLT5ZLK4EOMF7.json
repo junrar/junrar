@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1395714058.086522900,
+    "creationTime" : null,
+    "fileCRC" : 358550403,
+    "fileName" : "Castells Segarra 2014 - Colla Cansalada.plt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16737,
+    "fullUnpackSize" : 137399,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

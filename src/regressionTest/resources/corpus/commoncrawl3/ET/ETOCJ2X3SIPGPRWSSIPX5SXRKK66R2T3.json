@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1194490914.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1862077688,
+    "fileName" : "Статья (Определение дефектов изоляции ...).doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 108757,
+    "fullUnpackSize" : 4947968,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

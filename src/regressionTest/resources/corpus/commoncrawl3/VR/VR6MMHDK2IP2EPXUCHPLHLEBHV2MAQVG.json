@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1148492239.078125000,
+    "creationTime" : null,
+    "fileCRC" : -141034014,
+    "fileName" : "combine_nonblood.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 525415,
+    "fullUnpackSize" : 2064384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1148486459.171875000,
+    "creationTime" : null,
+    "fileCRC" : 1350967740,
+    "fileName" : "combine.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 633287,
+    "fullUnpackSize" : 2564096,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

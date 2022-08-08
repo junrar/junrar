@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1490450063.625000000,
+    "creationTime" : null,
+    "fileCRC" : -1772019726,
+    "fileName" : "Толкование на Второе Послание апостола Павла к Коринфянам.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1592640,
+    "fullUnpackSize" : 1666688,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

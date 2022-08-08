@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1512967942.986766800,
+    "creationTime" : null,
+    "fileCRC" : 611125366,
+    "fileName" : "WELL概述20171114.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 3323291,
+    "fullUnpackSize" : 3477415,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

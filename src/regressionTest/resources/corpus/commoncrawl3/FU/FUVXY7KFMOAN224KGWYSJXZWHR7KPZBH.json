@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1447651572.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1496372700,
+    "fileName" : "IZP.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 74133,
+    "fullUnpackSize" : 83895,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

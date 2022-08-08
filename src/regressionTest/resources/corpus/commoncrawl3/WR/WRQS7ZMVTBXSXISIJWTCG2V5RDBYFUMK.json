@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464241154.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1356485105,
+    "fileName" : "ACR35 acsaudiojack\\07-TSP-ACR35-1.00 - CN.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 419302,
+    "fullUnpackSize" : 595968,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1464241154.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1557015588,
+    "fileName" : "ACR35 acsaudiojack\\ACR35 Android手机操作文档.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 785764,
+    "fullUnpackSize" : 791857,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

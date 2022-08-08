@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1126518880.177332800,
+    "creationTime" : null,
+    "fileCRC" : -184467291,
+    "fileName" : "Обследования зданий для реконструкции, ремонта.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 330610,
+    "fullUnpackSize" : 1143296,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

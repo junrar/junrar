@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297569316.828125000,
+    "creationTime" : null,
+    "fileCRC" : -1254492122,
+    "fileName" : "Internet_Arhiv.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 84297,
+    "fullUnpackSize" : 197632,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1297741670.062500000,
+    "creationTime" : null,
+    "fileCRC" : -1317450918,
+    "fileName" : "bee.ini",
+    "hostOS" : "win32",
+    "fullPackSize" : 69,
+    "fullUnpackSize" : 69,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

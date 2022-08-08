@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1390181795.019585800,
+    "creationTime" : null,
+    "fileCRC" : -586421671,
+    "fileName" : "Май.ppsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 5210663,
+    "fullUnpackSize" : 5333857,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

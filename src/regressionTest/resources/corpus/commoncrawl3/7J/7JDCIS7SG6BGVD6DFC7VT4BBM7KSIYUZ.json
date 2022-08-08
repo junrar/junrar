@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449080035.272454600,
+    "creationTime" : null,
+    "fileCRC" : 1042586577,
+    "fileName" : "приложение Шаг в будущее  2015.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 448647,
+    "fullUnpackSize" : 491069,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1449080035.242452900,
+    "creationTime" : null,
+    "fileCRC" : -1067775137,
+    "fileName" : "Приказ № 4846.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 69701,
+    "fullUnpackSize" : 73240,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

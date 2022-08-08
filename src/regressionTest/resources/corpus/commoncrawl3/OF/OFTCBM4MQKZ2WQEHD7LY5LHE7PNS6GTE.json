@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351057058.246093700,
+    "creationTime" : null,
+    "fileCRC" : 2119888166,
+    "fileName" : "DECLARATIE DE AVERE - REFERENT - KOKA EDITH.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 761769,
+    "fullUnpackSize" : 879602,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1351057085.881835900,
+    "creationTime" : null,
+    "fileCRC" : 1274637937,
+    "fileName" : "DECLARATIE DE AVERE - REFERENT - KOKA EDITH1.jpeg",
+    "hostOS" : "win32",
+    "fullPackSize" : 821084,
+    "fullUnpackSize" : 940182,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

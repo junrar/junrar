@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1355747115.316000000,
+    "creationTime" : null,
+    "fileCRC" : 2028671093,
+    "fileName" : "Connectify Dispatch 4.0 (Permite unir varias redes wifi en una para aumentar la conexion)\\ConnectifyDispatchInstaller.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 5002101,
+    "fullUnpackSize" : 5111568,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

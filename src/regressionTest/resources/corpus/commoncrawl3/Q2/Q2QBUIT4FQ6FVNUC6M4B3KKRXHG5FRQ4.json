@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506326684.288430700,
+    "creationTime" : null,
+    "fileCRC" : 1027693601,
+    "fileName" : "kz_cg_lavacliff_fykseN_0227.dem",
+    "hostOS" : "win32",
+    "fullPackSize" : 2280280,
+    "fullUnpackSize" : 10843585,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

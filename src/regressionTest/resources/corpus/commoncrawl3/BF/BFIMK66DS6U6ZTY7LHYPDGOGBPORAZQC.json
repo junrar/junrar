@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1339775752.431441800,
+    "creationTime" : null,
+    "fileCRC" : -193839212,
+    "fileName" : "prilojenie-1.ppt",
+    "hostOS" : "win32",
+    "fullPackSize" : 26617095,
+    "fullUnpackSize" : 27917312,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

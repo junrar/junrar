@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1048169612.000000000,
+    "creationTime" : 1166724898.156250000,
+    "fileCRC" : -692966501,
+    "fileName" : "В_С_Соловьев - Критика отвлеченных начал.htm",
+    "hostOS" : "win32",
+    "fullPackSize" : 11993,
+    "fullUnpackSize" : 47023,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

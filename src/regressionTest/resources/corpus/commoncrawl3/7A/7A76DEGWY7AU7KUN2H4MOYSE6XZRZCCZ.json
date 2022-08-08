@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1404975528.000000000,
+    "creationTime" : null,
+    "fileCRC" : 91588401,
+    "fileName" : "29105_xvid.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 4035570,
+    "fullUnpackSize" : 4382104,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377478320.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1201709965,
+    "fileName" : "106 Marine Cargo\\1   CARGO and GOODS in Transit Ins.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1031253,
+    "fullUnpackSize" : 1075438,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1377478320.000000000,
+    "creationTime" : null,
+    "fileCRC" : -920323071,
+    "fileName" : "106 Marine Cargo\\106 - Sudarno.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 93973,
+    "fullUnpackSize" : 178176,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

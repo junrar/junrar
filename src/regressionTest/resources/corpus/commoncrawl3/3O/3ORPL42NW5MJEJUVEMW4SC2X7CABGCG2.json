@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1159781322.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1586728773,
+    "fileName" : "winSkin_diamenu.gm6",
+    "hostOS" : "win32",
+    "fullPackSize" : 120579,
+    "fullUnpackSize" : 139213,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

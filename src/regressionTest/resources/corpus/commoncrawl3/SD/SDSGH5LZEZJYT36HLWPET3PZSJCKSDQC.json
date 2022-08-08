@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1212726860.265625000,
+    "creationTime" : null,
+    "fileCRC" : 1012055804,
+    "fileName" : "elegy.dff",
+    "hostOS" : "win32",
+    "fullPackSize" : 638930,
+    "fullUnpackSize" : 3104768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1213014530.375000000,
+    "creationTime" : null,
+    "fileCRC" : -851927554,
+    "fileName" : "elegy.txd",
+    "hostOS" : "win32",
+    "fullPackSize" : 507002,
+    "fullUnpackSize" : 1190184,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

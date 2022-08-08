@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328413693.970661500,
+    "creationTime" : null,
+    "fileCRC" : -110381412,
+    "fileName" : "Supernatural.S07E13.720p.WEB-DL.DD5.1.H.264-GFY.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20566,
+    "fullUnpackSize" : 49731,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1328342474.833652000,
+    "creationTime" : null,
+    "fileCRC" : 2090033774,
+    "fileName" : "supernatural.713.hdtv-lol.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 20585,
+    "fullUnpackSize" : 49787,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

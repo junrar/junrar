@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1452242794.884000000,
+    "creationTime" : null,
+    "fileCRC" : -1021732892,
+    "fileName" : "TelistPro60Demo.msi",
+    "hostOS" : "win32",
+    "fullPackSize" : 10134317,
+    "fullUnpackSize" : 10676736,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

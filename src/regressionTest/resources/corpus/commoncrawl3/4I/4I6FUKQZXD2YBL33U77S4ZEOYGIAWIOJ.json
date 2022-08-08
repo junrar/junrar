@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1488793250.359375000,
+    "creationTime" : null,
+    "fileCRC" : -389532050,
+    "fileName" : "A450 BOE 2017.03.06 线\\LZ_F23_Q103.bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 2098246,
+    "fullUnpackSize" : 4194304,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

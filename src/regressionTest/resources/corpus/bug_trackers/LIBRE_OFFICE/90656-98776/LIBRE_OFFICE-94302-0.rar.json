@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442450788.707057500,
+    "creationTime" : null,
+    "fileCRC" : -104373484,
+    "fileName" : "Inspettur version 1 [draft].odt",
+    "hostOS" : "win32",
+    "fullPackSize" : 635698,
+    "fullUnpackSize" : 677544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442450857.720840500,
+    "creationTime" : null,
+    "fileCRC" : 1936919016,
+    "fileName" : "Inspettur version 1 [draft].docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 621041,
+    "fullUnpackSize" : 660608,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

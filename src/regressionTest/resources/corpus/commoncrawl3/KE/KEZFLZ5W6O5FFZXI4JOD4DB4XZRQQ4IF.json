@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521171686.798310400,
+    "creationTime" : null,
+    "fileCRC" : 1384300409,
+    "fileName" : "CEPEX_FICHE_DEMANDE_INFOS_distributed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 438395,
+    "fullUnpackSize" : 460432,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

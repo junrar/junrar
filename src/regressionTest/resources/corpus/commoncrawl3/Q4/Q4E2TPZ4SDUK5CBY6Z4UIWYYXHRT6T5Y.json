@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505056468.244000000,
+    "creationTime" : null,
+    "fileCRC" : 2129558291,
+    "fileName" : "Итоги 3.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9482,
+    "fullUnpackSize" : 56832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1505056674.367000000,
+    "creationTime" : null,
+    "fileCRC" : 1174487409,
+    "fileName" : "Итоги 6.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 9473,
+    "fullUnpackSize" : 56832,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

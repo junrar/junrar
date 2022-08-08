@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501208158.529659500,
+    "creationTime" : null,
+    "fileCRC" : -301720096,
+    "fileName" : "Анкета_Малые предприятия.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 7842,
+    "fullUnpackSize" : 141785,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1501208130.147808500,
+    "creationTime" : null,
+    "fileCRC" : -1602557022,
+    "fileName" : "Анкета_Предприятия.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8030,
+    "fullUnpackSize" : 151079,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

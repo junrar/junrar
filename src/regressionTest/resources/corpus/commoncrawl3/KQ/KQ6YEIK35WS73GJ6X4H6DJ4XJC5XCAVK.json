@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1369721953.425447200,
+    "creationTime" : null,
+    "fileCRC" : -1265664011,
+    "fileName" : "Track 04.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 9227963,
+    "fullUnpackSize" : 9772150,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

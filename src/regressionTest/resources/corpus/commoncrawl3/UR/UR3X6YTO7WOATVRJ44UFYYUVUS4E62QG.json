@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1205585640.000000000,
+    "creationTime" : null,
+    "fileCRC" : -378786070,
+    "fileName" : "FK8RG.DWG",
+    "hostOS" : "win32",
+    "fullPackSize" : 3616,
+    "fullUnpackSize" : 26207,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

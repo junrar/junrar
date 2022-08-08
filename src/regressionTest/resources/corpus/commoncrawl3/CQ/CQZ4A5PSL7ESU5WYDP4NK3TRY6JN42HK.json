@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1279351514.000000000,
+    "creationTime" : null,
+    "fileCRC" : 304221098,
+    "fileName" : "islah21.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 41957410,
+    "fullUnpackSize" : 46713895,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

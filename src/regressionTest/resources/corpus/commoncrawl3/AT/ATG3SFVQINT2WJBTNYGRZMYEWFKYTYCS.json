@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461308731.988000000,
+    "creationTime" : null,
+    "fileCRC" : 1312887640,
+    "fileName" : "Ценово предложение.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 12853,
+    "fullUnpackSize" : 72704,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1461309911.004882800,
+    "creationTime" : null,
+    "fileCRC" : -1837965824,
+    "fileName" : "Документация за участие.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5595232,
+    "fullUnpackSize" : 6307151,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

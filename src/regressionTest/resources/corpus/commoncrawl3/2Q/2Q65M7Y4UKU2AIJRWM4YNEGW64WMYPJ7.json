@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1217556222.000000000,
+    "creationTime" : null,
+    "fileCRC" : -879443637,
+    "fileName" : "Switching_OFF_Static_Navigation.avi",
+    "hostOS" : "win32",
+    "fullPackSize" : 177194,
+    "fullUnpackSize" : 34881536,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

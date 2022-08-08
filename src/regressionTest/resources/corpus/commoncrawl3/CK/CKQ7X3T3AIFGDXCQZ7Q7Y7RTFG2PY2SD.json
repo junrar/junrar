@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1379418820.000000000,
+    "creationTime" : null,
+    "fileCRC" : -593808186,
+    "fileName" : "mp_sunset\\mp_sunset.ff",
+    "hostOS" : "win32",
+    "fullPackSize" : 10518452,
+    "fullUnpackSize" : 10626528,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1160132384.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1517989298,
+    "fileName" : "66-RPS Sofia 6\\Assessment\\66-RPS Sofia 6-Assessment sheet.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1427392,
+    "fullUnpackSize" : 1680384,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

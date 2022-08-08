@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1445863652.462779100,
+    "creationTime" : null,
+    "fileCRC" : 1164046612,
+    "fileName" : "common\\dota 2 beta\\game\\dota\\pak01_090.vpk",
+    "hostOS" : "win32",
+    "fullPackSize" : 34093912,
+    "fullUnpackSize" : 104856607,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

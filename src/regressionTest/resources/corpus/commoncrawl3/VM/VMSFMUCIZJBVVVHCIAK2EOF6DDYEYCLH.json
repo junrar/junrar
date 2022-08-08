@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1362969826.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1290572235,
+    "fileName" : "7. Даниил\\27_Daniel\\01.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 3362390,
+    "fullUnpackSize" : 3386245,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

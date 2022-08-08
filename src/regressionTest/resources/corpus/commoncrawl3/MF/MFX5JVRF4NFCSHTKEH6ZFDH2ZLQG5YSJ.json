@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511189674.474721300,
+    "creationTime" : null,
+    "fileCRC" : 511342920,
+    "fileName" : "info.xml",
+    "hostOS" : "win32",
+    "fullPackSize" : 447,
+    "fullUnpackSize" : 671,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514639096.999106500,
+    "creationTime" : null,
+    "fileCRC" : -308487027,
+    "fileName" : "JAAE.ips",
+    "hostOS" : "win32",
+    "fullPackSize" : 19,
+    "fullUnpackSize" : 19,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

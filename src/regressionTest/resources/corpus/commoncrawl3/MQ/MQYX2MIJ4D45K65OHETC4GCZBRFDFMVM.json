@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1439442477.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1845946105,
+    "fileName" : "GR01.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 346663,
+    "fullUnpackSize" : 352107,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1442379371.000000000,
+    "creationTime" : null,
+    "fileCRC" : -490587142,
+    "fileName" : "Estudio de Gestion de Residuos de construcción y demolición.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 360188,
+    "fullUnpackSize" : 377898,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}

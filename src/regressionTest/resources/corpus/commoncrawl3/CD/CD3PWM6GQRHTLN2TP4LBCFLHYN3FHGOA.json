@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528681195.781250000,
+    "creationTime" : null,
+    "fileCRC" : 100489699,
+    "fileName" : "HO SO TRUONG.rar",
+    "hostOS" : "win32",
+    "fullPackSize" : 704279,
+    "fullUnpackSize" : 778022,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528681190.125000000,
+    "creationTime" : null,
+    "fileCRC" : 1492328807,
+    "fileName" : "YEU CAU NOP BAO CAO THONG KE CUOI NAM 2017-2018_Signed.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 161467,
+    "fullUnpackSize" : 184015,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}
