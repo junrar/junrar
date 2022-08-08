@@ -30,8 +30,9 @@ group = 'com.github.junrar'
 description = 'rar decompression library in plain java'
 
 java {
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
 }
 
 // Set the '--release' compiler option if compiling on Java > 1.8.
@@ -127,8 +128,9 @@ testing {
             targets {
                 all {
                     testTask.configure {
-                        sourceCompatibility = '17'
-                        targetCompatibility = '17'
+                        java.toolchain {
+                            languageVersion = JavaLanguageVersion.of(17)
+                        }
                         systemProperty 'regressionTest.resourcesDir', sourceSets.getByName('regressionTest').resources.getSrcDirs().first()
                     }
                 }
