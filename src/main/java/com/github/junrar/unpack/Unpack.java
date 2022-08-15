@@ -566,18 +566,32 @@ public final class Unpack extends Unpack20 {
         lastLength = length;
     }
 
-    private void copyString(int length, int distance) {
+    private void copyString(int length, final int distance) {
         // System.out.println("copyString(" + length + ", " + distance + ")");
 
         int destPtr = unpPtr - distance;
         // System.out.println(unpPtr+":"+distance);
-        if (destPtr >= 0 && destPtr < Compress.MAXWINSIZE - 260
-                && unpPtr < Compress.MAXWINSIZE - 260) {
-
-            window[unpPtr++] = window[destPtr++];
-
-            while (--length > 0) {
-                window[unpPtr++] = window[destPtr++];
+        if (destPtr >= 0 && destPtr < Compress.MAXWINSIZE - 260 && unpPtr < Compress.MAXWINSIZE - 260) {
+            if (distance == 1) {
+                // Special case: if the distance is 1 we always copy the same value. We can skip reading the array for
+                // every value and only get it once
+                Arrays.fill(window, unpPtr, unpPtr + length, window[destPtr]);
+                // update values for correct crc
+                unpPtr += length;
+                destPtr += length;
+                length = 0;
+            } else if (destPtr + length <= unpPtr) {
+                // Case: array elements to copy from destPtr do not overlap with unpPtr target values
+                System.arraycopy(window, destPtr, window, unpPtr, length);
+                // update values for correct crc
+                unpPtr += length;
+                destPtr += length;
+                length = 0;
+            } else {
+                // Case: fallback to old copy mechanism
+                do {
+                    window[unpPtr++] = window[destPtr++];
+                } while (--length > 0);
             }
         } else {
             while (length-- != 0) {
