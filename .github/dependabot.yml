@@ -15,6 +15,5 @@ updates:
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
-    open-pull-requests-limit: 0
     schedule:
       interval: "weekly"
