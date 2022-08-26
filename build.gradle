@@ -18,12 +18,12 @@ dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.36'
 
     testRuntimeOnly 'ch.qos.logback:logback-classic:1.2.11'
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
     testImplementation 'commons-io:commons-io:2.11.0'
-    testImplementation 'org.mockito:mockito-core:4.3.1'
-    testImplementation 'org.assertj:assertj-core:3.22.0'
-    testImplementation 'com.tngtech.archunit:archunit-junit5:0.23.0'
-    testImplementation 'org.junit-pioneer:junit-pioneer:1.6.1'
+    testImplementation 'org.mockito:mockito-core:4.7.0'
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+    testImplementation 'com.tngtech.archunit:archunit-junit5:0.23.1'
+    testImplementation 'org.junit-pioneer:junit-pioneer:1.7.1'
 }
 
 group = 'com.github.junrar'
