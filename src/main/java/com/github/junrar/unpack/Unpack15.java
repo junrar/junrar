@@ -571,11 +571,29 @@ public abstract class Unpack15 extends BitInput {
         }
     }
 
-    protected void oldCopyString(int Distance, int Length) {
-        destUnpSize -= Length;
-        while ((Length--) != 0) {
-            window[unpPtr] = window[(unpPtr - Distance) & Compress.MAXWINMASK];
-            unpPtr = (unpPtr + 1) & Compress.MAXWINMASK;
+    protected void oldCopyString(final int distance, int length) {
+        destUnpSize -= length;
+        int destPtr = (unpPtr - distance) & Compress.MAXWINMASK;
+        if (distance == 1) {
+            // Special case: if the distance is 1 we always copy the same value. We can skip reading the array for
+            // every value and only get it once
+            Arrays.fill(window, unpPtr, unpPtr + length, window[destPtr]);
+            // update values for correct crc
+            unpPtr += length;
+            length = 0;
+        } else if (destPtr + length <= unpPtr) {
+            // Case: array elements to copy from destPtr do not overlap with unpPtr target values
+            System.arraycopy(window, destPtr, window, unpPtr, length);
+            // update values for correct crc
+            unpPtr += length;
+            length = 0;
+        } else {
+            // Case: fallback to old copy mechanism
+            while ((length--) != 0) {
+                window[unpPtr] = window[destPtr];
+                unpPtr = (unpPtr + 1) & Compress.MAXWINMASK;
+                destPtr = (destPtr + 1) & Compress.MAXWINMASK;
+            }
         }
     }
 
