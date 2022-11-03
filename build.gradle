@@ -135,8 +135,8 @@ checkstyle {
 
 jacocoTestReport {
     reports {
-        xml.enabled true
-        html.enabled false
+        xml.required.set(true)
+        html.required.set(false)
     }
 }
 
