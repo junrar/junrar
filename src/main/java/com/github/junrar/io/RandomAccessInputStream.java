@@ -22,7 +22,7 @@ public final class RandomAccessInputStream extends InputStream {
     private final InputStream src;
     private long pointer;
     private final Vector data;
-    private int length;
+    private long length;
     private boolean foundEOS;
 
     /**
@@ -107,7 +107,7 @@ public final class RandomAccessInputStream extends InputStream {
             return length;
         }
         int i = (int) (l >>> BLOCK_SHIFT);
-        int j = length >>> BLOCK_SHIFT;
+        int j = (int) (length >>> BLOCK_SHIFT);
         for (int k = j; k <= i; k++) {
             byte[] abyte0 = new byte[BLOCK_SIZE];
             data.addElement(abyte0);
