@@ -33,9 +33,6 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(8)
     }
-}
-
-java {
     withJavadocJar()
     withSourcesJar()
 }
