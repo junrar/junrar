@@ -206,23 +206,30 @@ public abstract class Unpack20 extends Unpack15 {
 
     }
 
-    protected void CopyString20(int Length, int Distance) {
-        lastDist = oldDist[oldDistPtr++ & 3] = Distance;
-        lastLength = Length;
-        destUnpSize -= Length;
+    protected void CopyString20(int length, final int distance) {
+        lastDist = oldDist[oldDistPtr++ & 3] = distance;
+        lastLength = length;
+        destUnpSize -= length;
 
-        int DestPtr = unpPtr - Distance;
-        if (DestPtr < Compress.MAXWINSIZE - 300
-                && unpPtr < Compress.MAXWINSIZE - 300) {
-            window[unpPtr++] = window[DestPtr++];
-            window[unpPtr++] = window[DestPtr++];
-            while (Length > 2) {
-                Length--;
-                window[unpPtr++] = window[DestPtr++];
+        int destPtr = unpPtr - distance;
+        if (destPtr < Compress.MAXWINSIZE - 300 && unpPtr < Compress.MAXWINSIZE - 300) {
+            if (destPtr + length <= unpPtr) {
+                // Case: array elements to copy from destPtr do not overlap with unpPtr target values
+                System.arraycopy(window, destPtr, window, unpPtr, length);
+                // update values for correct crc
+                unpPtr += length;
+            } else {
+                // Case: fallback to old copy mechanism
+                window[unpPtr++] = window[destPtr++];
+                window[unpPtr++] = window[destPtr++];
+                while (length > 2) {
+                    length--;
+                    window[unpPtr++] = window[destPtr++];
+                }
             }
         } else {
-            while ((Length--) != 0) {
-                window[unpPtr] = window[DestPtr++ & Compress.MAXWINMASK];
+            while ((length--) != 0) {
+                window[unpPtr] = window[destPtr++ & Compress.MAXWINMASK];
                 unpPtr = (unpPtr + 1) & Compress.MAXWINMASK;
             }
         }
