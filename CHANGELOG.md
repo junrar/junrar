@@ -1,3 +1,15 @@
+## [7.5.4](https://github.com/junrar/junrar/compare/v7.5.3...v7.5.4) (2022-11-04)
+
+
+### Bug Fixes
+
+* cannot extract large files (2G+) via InputStream ([cbbe99c](https://github.com/junrar/junrar/commit/cbbe99c45b6db8f2c2c8bec99db574729c0070c3)), closes [#104](https://github.com/junrar/junrar/issues/104)
+
+
+### Performance Improvements
+
+* improve copy string performance ([8e87641](https://github.com/junrar/junrar/commit/8e876416c5e6055eb7a9acce887f95a63e8c937b))
+
 ## [7.5.3](https://github.com/junrar/junrar/compare/v7.5.2...v7.5.3) (2022-08-08)
 
 
