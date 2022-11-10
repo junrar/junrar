@@ -395,5 +395,17 @@ public class ArchiveTest {
                 assertThat(names).containsExactlyInAnyOrder("新建文本文档.txt", "ウニコド.txt");
             }
         }
+
+        @Test
+        public void gh108_unicodeFileNamesAreDecodedProperly() throws Exception {
+            File f = new File(getClass().getResource("gh108.rar").getPath());
+            try (Archive archive = new Archive(f)) {
+                List<String> names = archive.getFileHeaders().stream()
+                    .map(FileHeader::getFileName)
+                    .collect(Collectors.toList());
+
+                assertThat(names).containsExactly("テ.txt");
+            }
+        }
     }
 }
