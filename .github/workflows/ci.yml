@@ -26,6 +26,12 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: build
+      - name: Upload Unit Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-jdk-${{ matrix.java }}-${{ matrix.os }}
+          path: build/test-results/
       - name: Jacoco
         uses: gradle/gradle-build-action@v2
         with:
