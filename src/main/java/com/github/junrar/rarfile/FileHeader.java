@@ -166,11 +166,8 @@ public class FileHeader extends BlockHeader {
                 fileNameW = "";
             }
 
-            if (!isFilenameValid(fileName)) {
+            if (!isFilenameValid(getFileName())) {
                 throw new CorruptHeaderException("Invalid filename: " + fileName);
-            }
-            if (!isFilenameValid(fileNameW)) {
-                throw new CorruptHeaderException("Invalid filename: " + fileNameW);
             }
         }
 
