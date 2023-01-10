@@ -120,6 +120,9 @@ testing {
                             languageVersion = JavaLanguageVersion.of(17)
                         }
                         systemProperty 'regressionTest.resourcesDir', sourceSets.getByName('regressionTest').resources.getSrcDirs().first()
+                        useJUnitPlatform {
+                            includeTags 'check' // in order to run `gradle regressionTest`
+                        }
                     }
                 }
             }
