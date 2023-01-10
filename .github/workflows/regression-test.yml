@@ -1,0 +1,92 @@
+name: Regression Test
+
+on:
+  workflow_dispatch:
+  issue_comment:
+    types: [ created ]
+
+jobs:
+  check:
+    name: Check conditions
+    runs-on: ubuntu-latest
+    outputs:
+      ref: ${{ steps.output.outputs.ref }}
+      repo: ${{ steps.output.outputs.repo }}
+    steps:
+      - name: Check if PR comment trigger is present
+        if: github.event_name == 'issue_comment'
+        uses: khan/pull-request-comment-trigger@v1.1.0
+        id: check
+        with:
+          trigger: '/regression'
+          reaction: rocket
+          prefix_only: true
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Get PR branch
+        uses: gotson/pull-request-comment-branch@head-repo-owner-dist
+        if: steps.check.outputs.triggered == 'true'
+        id: comment-branch
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+      # This will set the branch to use:
+      # - if workflow_dispatch, use the branch that was chosen when running the workflow
+      # - if it is a comment on a PR, and the trigger matches, use the PR branch
+      - name: Set job output
+        id: output
+        run: |
+          echo "::echo::on"
+          if [[ "${{ github.event_name == 'workflow_dispatch' }}" == 'true' ]]
+          then
+            echo "ref=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "repo=${{ github.repository }}" >> $GITHUB_OUTPUT
+          elif [[ "${{ steps.check.outputs.triggered }}" == 'true' ]]
+          then
+            echo "ref=${{ steps.comment-branch.outputs.head_ref }}" >> $GITHUB_OUTPUT
+            echo "repo=${{ steps.comment-branch.outputs.head_owner }}/${{ steps.comment-branch.outputs.head_repo }}" >> $GITHUB_OUTPUT
+          else
+            echo ""
+          fi
+
+  regression:
+    name: Regression test - ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    needs: [check]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ needs.check.outputs.repo }}
+          ref: ${{ needs.check.outputs.ref }}
+      - name: Download corpus
+        uses: k0staa/download-gdrive-file-action@v1
+        with:
+          service-account-key-json: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
+          download-file-name: rar-corpus.zip
+      - name: Unzip corpus
+        run: unzip rar-corpus.zip
+      - name: Regression test
+        id: regression
+        uses: gradle/gradle-build-action@v2
+        env:
+          JUNRAR_REGRESSION_TEST_CORPUS_ROOT: '${{ github.workspace }}/rar-corpus/'
+          JUNRAR_REGRESSION_TEST_CORPUS_DIR: '${{ github.workspace }}/rar-corpus/'
+        with:
+          arguments: regressionTest
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: regression-test-results-jdk-${{ matrix.os }}
+          path: build/test-results/
+      - name: Comment on PR
+        if: always() && github.event.comment.id
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ github.event.comment.id }}
+          body: |
+            ---
+            Regression test: ${{ (steps.regression.outcome == 'success' && ':white_check_mark:') || ':x:' }}
+            For more details see [here](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
