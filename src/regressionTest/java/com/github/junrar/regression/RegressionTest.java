@@ -11,6 +11,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.commons.logging.LoggerFactory;
+import org.junitpioneer.jupiter.DefaultTimeZone;
 
 import java.io.File;
 import java.io.IOException;
@@ -74,6 +75,7 @@ public class RegressionTest {
     @Tag("generate")
     @ParameterizedTest
     @MethodSource("listTestFiles")
+    @DefaultTimeZone("UTC")
     @Timeout(30)
     void generateData(Path filePath) throws Exception {
         Path relativeFile = root.relativize(filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
@@ -92,6 +94,7 @@ public class RegressionTest {
     @Tag("check")
     @ParameterizedTest
     @MethodSource("listTestFiles")
+    @DefaultTimeZone("UTC")
     @Timeout(30)
     void check(Path filePath) throws Exception {
         var relativeFile = root.relativize(filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
