@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169801615.000000000,
+    "lastModifiedTime" : 1169830415.000000000,
     "creationTime" : null,
     "fileCRC" : 653074856,
     "fileName" : "jmatrix\\bin\\jm.inp",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169801603.000000000,
+    "lastModifiedTime" : 1169830403.000000000,
     "creationTime" : null,
     "fileCRC" : -532390760,
     "fileName" : "jmatrix\\doc\\readme",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 1392007086,
     "fileName" : "jmatrix\\source\\user_potential",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -1953503465,
     "fileName" : "jmatrix\\source\\Makefile",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -1362089233,
     "fileName" : "jmatrix\\source\\jm_jm.f90",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -267776156,
     "fileName" : "jmatrix\\source\\jm_utils.f90",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -1919499048,
     "fileName" : "jmatrix\\source\\jm_tangent.f90",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 1094100487,
     "fileName" : "jmatrix\\source\\jm_eigensys.f90",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 1408368185,
     "fileName" : "jmatrix\\source\\jm_control.f90",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -30577648,
     "fileName" : "jmatrix\\source\\lib-rsm.f",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 843697254,
     "fileName" : "jmatrix\\source\\jm_constants.f90",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -44379356,
     "fileName" : "jmatrix\\source\\lib-rjbesl.f",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -832779256,
     "fileName" : "jmatrix\\source\\lib-rs.f90",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 401659235,
     "fileName" : "jmatrix\\source\\lib-int.f",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 2111410311,
     "fileName" : "jmatrix\\source\\jm_globals.f90",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -776881861,
     "fileName" : "jmatrix\\source\\jm_interfaces.f90",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 1017314287,
     "fileName" : "jmatrix\\source\\jm_g.f90",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -1660891039,
     "fileName" : "jmatrix\\source\\jm_integral.f90",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -1066564376,
     "fileName" : "jmatrix\\source\\lib-rybesl.f",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -1857357608,
     "fileName" : "jmatrix\\source\\lib-gamma.f",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -2071688745,
     "fileName" : "jmatrix\\source\\jmatrix.f90",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -1781727409,
     "fileName" : "jmatrix\\source\\jm_v.f90",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : -720788133,
     "fileName" : "jmatrix\\source\\jm_basis.f90",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 1022002514,
     "fileName" : "jmatrix\\source\\jm_specfun.f90",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 11776496,
     "fileName" : "jmatrix\\source\\jm_analytic.f90",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169801615.000000000,
+    "lastModifiedTime" : 1169830415.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "jmatrix\\bin",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169801603.000000000,
+    "lastModifiedTime" : 1169830403.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "jmatrix\\doc",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169824769.000000000,
+    "lastModifiedTime" : 1169853569.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "jmatrix\\source",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1169640052.000000000,
+    "lastModifiedTime" : 1169668852.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "jmatrix",

@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1496472950.174133700,
+    "lastModifiedTime" : 1496501750.174133700,
     "creationTime" : null,
     "fileCRC" : -2131323158,
     "fileName" : "common\\cultures\\00_cultures.txt",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1498383558.701879800,
+    "lastModifiedTime" : 1498412358.701879800,
     "creationTime" : null,
     "fileCRC" : -855555814,
     "fileName" : "common\\dynasties\\00_dynasties.txt",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387090.000000000,
+    "lastModifiedTime" : 1332415890.000000000,
     "creationTime" : null,
     "fileCRC" : -319240723,
     "fileName" : "gfx\\fonts\\Arial12.fnt",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387094.000000000,
+    "lastModifiedTime" : 1332415894.000000000,
     "creationTime" : null,
     "fileCRC" : 103515625,
     "fileName" : "gfx\\fonts\\Arial12.tga",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387094.000000000,
+    "lastModifiedTime" : 1332415894.000000000,
     "creationTime" : null,
     "fileCRC" : 1647753369,
     "fileName" : "gfx\\fonts\\Arial12_bold.fnt",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387096.000000000,
+    "lastModifiedTime" : 1332415896.000000000,
     "creationTime" : null,
     "fileCRC" : 1727917999,
     "fileName" : "gfx\\fonts\\Arial12_bold.tga",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387096.000000000,
+    "lastModifiedTime" : 1332415896.000000000,
     "creationTime" : null,
     "fileCRC" : 1186695600,
     "fileName" : "gfx\\fonts\\arial15.fnt",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387100.000000000,
+    "lastModifiedTime" : 1332415900.000000000,
     "creationTime" : null,
     "fileCRC" : -660243196,
     "fileName" : "gfx\\fonts\\arial15.tga",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387098.000000000,
+    "lastModifiedTime" : 1332415898.000000000,
     "creationTime" : null,
     "fileCRC" : 1931653754,
     "fileName" : "gfx\\fonts\\arial15bold.fnt",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387100.000000000,
+    "lastModifiedTime" : 1332415900.000000000,
     "creationTime" : null,
     "fileCRC" : 594941478,
     "fileName" : "gfx\\fonts\\arial15bold.tga",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387102.000000000,
+    "lastModifiedTime" : 1332415902.000000000,
     "creationTime" : null,
     "fileCRC" : -1681216880,
     "fileName" : "gfx\\fonts\\bookantiqua16.fnt",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387106.000000000,
+    "lastModifiedTime" : 1332415906.000000000,
     "creationTime" : null,
     "fileCRC" : 2057066610,
     "fileName" : "gfx\\fonts\\bookantiqua16.tga",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387102.000000000,
+    "lastModifiedTime" : 1332415902.000000000,
     "creationTime" : null,
     "fileCRC" : 2125522108,
     "fileName" : "gfx\\fonts\\bookantiqua16bold.fnt",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387106.000000000,
+    "lastModifiedTime" : 1332415906.000000000,
     "creationTime" : null,
     "fileCRC" : -1739344674,
     "fileName" : "gfx\\fonts\\bookantiqua16bold.tga",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387106.000000000,
+    "lastModifiedTime" : 1332415906.000000000,
     "creationTime" : null,
     "fileCRC" : 1398018129,
     "fileName" : "gfx\\fonts\\common.fnt",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387108.000000000,
+    "lastModifiedTime" : 1332415908.000000000,
     "creationTime" : null,
     "fileCRC" : 2143481830,
     "fileName" : "gfx\\fonts\\common.tga",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387108.000000000,
+    "lastModifiedTime" : 1332415908.000000000,
     "creationTime" : null,
     "fileCRC" : 1781326105,
     "fileName" : "gfx\\fonts\\common_bold.fnt",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387112.000000000,
+    "lastModifiedTime" : 1332415912.000000000,
     "creationTime" : null,
     "fileCRC" : -1739344674,
     "fileName" : "gfx\\fonts\\common_bold.tga",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387112.000000000,
+    "lastModifiedTime" : 1332415912.000000000,
     "creationTime" : null,
     "fileCRC" : -1111141543,
     "fileName" : "gfx\\fonts\\crap.fnt",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387112.000000000,
+    "lastModifiedTime" : 1332415912.000000000,
     "creationTime" : null,
     "fileCRC" : 1761814410,
     "fileName" : "gfx\\fonts\\crap.tga",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387116.000000000,
+    "lastModifiedTime" : 1332415916.000000000,
     "creationTime" : null,
     "fileCRC" : -452003971,
     "fileName" : "gfx\\fonts\\decorative.fnt",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387162.000000000,
+    "lastModifiedTime" : 1332415962.000000000,
     "creationTime" : null,
     "fileCRC" : -674443747,
     "fileName" : "gfx\\fonts\\decorative.tga",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387116.000000000,
+    "lastModifiedTime" : 1332415916.000000000,
     "creationTime" : null,
     "fileCRC" : -496644936,
     "fileName" : "gfx\\fonts\\headline.fnt",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387122.000000000,
+    "lastModifiedTime" : 1332415922.000000000,
     "creationTime" : null,
     "fileCRC" : 803077118,
     "fileName" : "gfx\\fonts\\headline.tga",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387120.000000000,
+    "lastModifiedTime" : 1332415920.000000000,
     "creationTime" : null,
     "fileCRC" : -2131905481,
     "fileName" : "gfx\\fonts\\headline_small.fnt",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387140.000000000,
+    "lastModifiedTime" : 1332415940.000000000,
     "creationTime" : null,
     "fileCRC" : -755951993,
     "fileName" : "gfx\\fonts\\headline_small.tga",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1361761186.000000000,
+    "lastModifiedTime" : 1361789986.000000000,
     "creationTime" : null,
     "fileCRC" : -88227938,
     "fileName" : "gfx\\fonts\\Mapfont.dds",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1361761550.000000000,
+    "lastModifiedTime" : 1361790350.000000000,
     "creationTime" : null,
     "fileCRC" : -378185596,
     "fileName" : "gfx\\fonts\\Mapfont.fnt",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1500207499.664036500,
+    "lastModifiedTime" : 1500236299.664036500,
     "creationTime" : null,
     "fileCRC" : -1537482972,
     "fileName" : "gfx\\fonts\\newsfeed_body.dds",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1395460710.000000000,
+    "lastModifiedTime" : 1395489510.000000000,
     "creationTime" : null,
     "fileCRC" : -1451956723,
     "fileName" : "gfx\\fonts\\newsfeed_body.fnt",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1500104486.834068300,
+    "lastModifiedTime" : 1500133286.834068300,
     "creationTime" : null,
     "fileCRC" : 279895880,
     "fileName" : "gfx\\fonts\\newsfeed_title.dds",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1500213396.896689900,
+    "lastModifiedTime" : 1500242196.896689900,
     "creationTime" : null,
     "fileCRC" : -448151001,
     "fileName" : "gfx\\fonts\\newsfeed_title.fnt",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387028.000000000,
+    "lastModifiedTime" : 1332415828.000000000,
     "creationTime" : null,
     "fileCRC" : -598174144,
     "fileName" : "gfx\\fonts\\small.fnt",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387044.000000000,
+    "lastModifiedTime" : 1332415844.000000000,
     "creationTime" : null,
     "fileCRC" : 561032020,
     "fileName" : "gfx\\fonts\\small.tga",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387030.000000000,
+    "lastModifiedTime" : 1332415830.000000000,
     "creationTime" : null,
     "fileCRC" : 647429561,
     "fileName" : "gfx\\fonts\\small_bold.fnt",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387042.000000000,
+    "lastModifiedTime" : 1332415842.000000000,
     "creationTime" : null,
     "fileCRC" : -1301815389,
     "fileName" : "gfx\\fonts\\small_bold.tga",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387038.000000000,
+    "lastModifiedTime" : 1332415838.000000000,
     "creationTime" : null,
     "fileCRC" : -359795888,
     "fileName" : "gfx\\fonts\\small_button_txt.fnt",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387052.000000000,
+    "lastModifiedTime" : 1332415852.000000000,
     "creationTime" : null,
     "fileCRC" : -225279453,
     "fileName" : "gfx\\fonts\\small_button_txt.tga",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387054.000000000,
+    "lastModifiedTime" : 1332415854.000000000,
     "creationTime" : null,
     "fileCRC" : -1252825066,
     "fileName" : "gfx\\fonts\\tahoma_60.fnt",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332387090.000000000,
+    "lastModifiedTime" : 1332415890.000000000,
     "creationTime" : null,
     "fileCRC" : 656892854,
     "fileName" : "gfx\\fonts\\tahoma_60.tga",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1395460710.000000000,
+    "lastModifiedTime" : 1395489510.000000000,
     "creationTime" : null,
     "fileCRC" : -1451956723,
     "fileName" : "gfx\\fonts\\vic_18.fnt",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1395460710.000000000,
+    "lastModifiedTime" : 1395489510.000000000,
     "creationTime" : null,
     "fileCRC" : 2112528947,
     "fileName" : "gfx\\fonts\\vic_18.tga",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1361781752.000000000,
+    "lastModifiedTime" : 1361810552.000000000,
     "creationTime" : null,
     "fileCRC" : 1101292445,
     "fileName" : "gfx\\fonts\\vic_22.fnt",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1361781712.000000000,
+    "lastModifiedTime" : 1361810512.000000000,
     "creationTime" : null,
     "fileCRC" : 36875897,
     "fileName" : "gfx\\fonts\\vic_22.tga",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1361285870.000000000,
+    "lastModifiedTime" : 1361314670.000000000,
     "creationTime" : null,
     "fileCRC" : 1495608159,
     "fileName" : "gfx\\fonts\\vic_36.fnt",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1361285780.000000000,
+    "lastModifiedTime" : 1361314580.000000000,
     "creationTime" : null,
     "fileCRC" : 1182338639,
     "fileName" : "gfx\\fonts\\vic_36.tga",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1430268710.000000000,
+    "lastModifiedTime" : 1430297510.000000000,
     "creationTime" : null,
     "fileCRC" : 950233735,
     "fileName" : "history\\characters\\bohemian.txt",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1500176041.728642500,
+    "lastModifiedTime" : 1500204841.728642500,
     "creationTime" : null,
     "fileCRC" : 227605251,
     "fileName" : "interface\\credits.txt",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501151538.000000000,
+    "lastModifiedTime" : 1501180338.000000000,
     "creationTime" : null,
     "fileCRC" : -751088009,
     "fileName" : "localisation\\CombatUpdate.csv",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1499533800.000000000,
+    "lastModifiedTime" : 1499562600.000000000,
     "creationTime" : null,
     "fileCRC" : -1056515209,
     "fileName" : "localisation\\India.csv",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501004646.000000000,
+    "lastModifiedTime" : 1501033446.000000000,
     "creationTime" : null,
     "fileCRC" : 1663048595,
     "fileName" : "localisation\\LegacyOfRome.csv",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1499533800.000000000,
+    "lastModifiedTime" : 1499562600.000000000,
     "creationTime" : null,
     "fileCRC" : -1943724357,
     "fileName" : "localisation\\RulerDesigner.csv",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501005062.000000000,
+    "lastModifiedTime" : 1501033862.000000000,
     "creationTime" : null,
     "fileCRC" : -1190134743,
     "fileName" : "localisation\\sunset_invasion.csv",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501083830.000000000,
+    "lastModifiedTime" : 1501112630.000000000,
     "creationTime" : null,
     "fileCRC" : 1214783420,
     "fileName" : "localisation\\SwordOfIslam.csv",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501150524.000000000,
+    "lastModifiedTime" : 1501179324.000000000,
     "creationTime" : null,
     "fileCRC" : 1097741251,
     "fileName" : "localisation\\text1.csv",

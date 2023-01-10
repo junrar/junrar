@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100069142.000000000,
+    "lastModifiedTime" : 1100097942.000000000,
     "creationTime" : null,
     "fileCRC" : -1358957417,
     "fileName" : "CConnection.cpp",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100133570.000000000,
+    "lastModifiedTime" : 1100162370.000000000,
     "creationTime" : null,
     "fileCRC" : -263057267,
     "fileName" : "CConnection.h",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1106036464.000000000,
+    "lastModifiedTime" : 1106065264.000000000,
     "creationTime" : null,
     "fileCRC" : -1972773785,
     "fileName" : "CNotifyIcon.cpp",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100134840.000000000,
+    "lastModifiedTime" : 1100163640.000000000,
     "creationTime" : null,
     "fileCRC" : -1378114251,
     "fileName" : "CNotifyIcon.h",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1103767100.000000000,
+    "lastModifiedTime" : 1103795900.000000000,
     "creationTime" : null,
     "fileCRC" : -1708404200,
     "fileName" : "link.bat",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1103849380.000000000,
+    "lastModifiedTime" : 1103878180.000000000,
     "creationTime" : null,
     "fileCRC" : 1740251947,
     "fileName" : "LogFile.cpp",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1103771626.000000000,
+    "lastModifiedTime" : 1103800426.000000000,
     "creationTime" : null,
     "fileCRC" : -1376809861,
     "fileName" : "LogFile.h",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100063750.000000000,
+    "lastModifiedTime" : 1100092550.000000000,
     "creationTime" : null,
     "fileCRC" : -1766742276,
     "fileName" : "Ports.h",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1105952258.000000000,
+    "lastModifiedTime" : 1105981058.000000000,
     "creationTime" : null,
     "fileCRC" : 1630219046,
     "fileName" : "Project.txt",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1106043262.000000000,
+    "lastModifiedTime" : 1106072062.000000000,
     "creationTime" : null,
     "fileCRC" : 615877373,
     "fileName" : "ReadMe.txt",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1106039760.000000000,
+    "lastModifiedTime" : 1106068560.000000000,
     "creationTime" : null,
     "fileCRC" : 278713634,
     "fileName" : "Resource.h",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1106042952.000000000,
+    "lastModifiedTime" : 1106071752.000000000,
     "creationTime" : null,
     "fileCRC" : 1281009669,
     "fileName" : "Resource.rc",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1106039910.000000000,
+    "lastModifiedTime" : 1106068710.000000000,
     "creationTime" : null,
     "fileCRC" : 2128972267,
     "fileName" : "ThermIcon.cfg",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1106042576.000000000,
+    "lastModifiedTime" : 1106071376.000000000,
     "creationTime" : null,
     "fileCRC" : 4593941,
     "fileName" : "ThermIcon.cpp",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1106042956.000000000,
+    "lastModifiedTime" : 1106071756.000000000,
     "creationTime" : null,
     "fileCRC" : 588038434,
     "fileName" : "ThermIcon.exe",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100596282.000000000,
+    "lastModifiedTime" : 1100625082.000000000,
     "creationTime" : null,
     "fileCRC" : 1056219365,
     "fileName" : "TransparentBlt.cpp",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100138452.000000000,
+    "lastModifiedTime" : 1100167252.000000000,
     "creationTime" : null,
     "fileCRC" : 636621238,
     "fileName" : "TransparentBlt.h",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100087270.000000000,
+    "lastModifiedTime" : 1100116070.000000000,
     "creationTime" : null,
     "fileCRC" : -2131559149,
     "fileName" : "Images\\bg_error.bmp",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100087090.000000000,
+    "lastModifiedTime" : 1100115890.000000000,
     "creationTime" : null,
     "fileCRC" : 327287331,
     "fileName" : "Images\\bg_minus.bmp",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100151360.000000000,
+    "lastModifiedTime" : 1100180160.000000000,
     "creationTime" : null,
     "fileCRC" : 1964455068,
     "fileName" : "Images\\bg_plus.bmp",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100087222.000000000,
+    "lastModifiedTime" : 1100116022.000000000,
     "creationTime" : null,
     "fileCRC" : -1334173339,
     "fileName" : "Images\\bg_zero.bmp",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100161428.000000000,
+    "lastModifiedTime" : 1100190228.000000000,
     "creationTime" : null,
     "fileCRC" : -1936424716,
     "fileName" : "Images\\digits.bmp",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1103790368.000000000,
+    "lastModifiedTime" : 1103819168.000000000,
     "creationTime" : null,
     "fileCRC" : -1388322030,
     "fileName" : "Images\\logo.bmp",

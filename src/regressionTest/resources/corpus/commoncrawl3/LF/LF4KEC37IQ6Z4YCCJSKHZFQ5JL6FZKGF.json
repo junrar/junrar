@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141184376.863125000,
+    "lastModifiedTime" : 1141213176.863125000,
     "creationTime" : null,
     "fileCRC" : -1631290240,
     "fileName" : "readme.txt",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1136097758.296875000,
+    "lastModifiedTime" : 1136126558.296875000,
     "creationTime" : null,
     "fileCRC" : -2031001375,
     "fileName" : "cl_dll\\ammo.cpp",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1420103875,
     "fileName" : "cl_dll\\ammo.h",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1789805566,
     "fileName" : "cl_dll\\ammohistory.cpp",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -654335162,
     "fileName" : "cl_dll\\ammohistory.h",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1999302505,
     "fileName" : "cl_dll\\ammo_secondary.cpp",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1895187116,
     "fileName" : "cl_dll\\battery.cpp",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 585712313,
     "fileName" : "cl_dll\\camera.h",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116126878.703125000,
+    "lastModifiedTime" : 1116155678.703125000,
     "creationTime" : null,
     "fileCRC" : 79340933,
     "fileName" : "cl_dll\\cdll_int.cpp",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1114786295.031250000,
+    "lastModifiedTime" : 1114815095.031250000,
     "creationTime" : null,
     "fileCRC" : -529368036,
     "fileName" : "cl_dll\\cl_dll.dsp",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1114744430.265625000,
+    "lastModifiedTime" : 1114773230.265625000,
     "creationTime" : null,
     "fileCRC" : -291736134,
     "fileName" : "cl_dll\\cl_dll.dsw",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 1167948085,
     "fileName" : "cl_dll\\cl_dll.h",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1137056930.578125000,
+    "lastModifiedTime" : 1137085730.578125000,
     "creationTime" : null,
     "fileCRC" : 1811466678,
     "fileName" : "cl_dll\\cl_dll.ncb",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1137056930.453000000,
+    "lastModifiedTime" : 1137085730.453000000,
     "creationTime" : null,
     "fileCRC" : -85438666,
     "fileName" : "cl_dll\\cl_dll.opt",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1136102046.953125000,
+    "lastModifiedTime" : 1136130846.953125000,
     "creationTime" : null,
     "fileCRC" : -683407552,
     "fileName" : "cl_dll\\cl_dll.plg",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116721444.671875000,
+    "lastModifiedTime" : 1116750244.671875000,
     "creationTime" : null,
     "fileCRC" : -562942301,
     "fileName" : "cl_dll\\cl_dll.sln",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116722014.484000000,
+    "lastModifiedTime" : 1116750814.484000000,
     "creationTime" : null,
     "fileCRC" : -1662431815,
     "fileName" : "cl_dll\\cl_dll.suo",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1140013767.178375000,
+    "lastModifiedTime" : 1140042567.178375000,
     "creationTime" : null,
     "fileCRC" : -276345140,
     "fileName" : "cl_dll\\cl_dll.vcproj",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115020844.015625000,
+    "lastModifiedTime" : 1115049644.015625000,
     "creationTime" : null,
     "fileCRC" : 190688854,
     "fileName" : "cl_dll\\cl_util.h",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -835952987,
     "fileName" : "cl_dll\\com_model.h",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 1983833061,
     "fileName" : "cl_dll\\com_weapons.cpp",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1456517795,
     "fileName" : "cl_dll\\com_weapons.h",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1289876801,
     "fileName" : "cl_dll\\death.cpp",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141184851.144375000,
+    "lastModifiedTime" : 1141213651.144375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "cl_dll\\Debug",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -340371154,
     "fileName" : "cl_dll\\demo.cpp",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 1775582681,
     "fileName" : "cl_dll\\demo.h",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 27959046,
     "fileName" : "cl_dll\\DMC_BSPFile.h",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1119056464.046875000,
+    "lastModifiedTime" : 1119085264.046875000,
     "creationTime" : null,
     "fileCRC" : 538801787,
     "fileName" : "cl_dll\\DMC_Teleporters.cpp",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 1029906940,
     "fileName" : "cl_dll\\DMC_Teleporters.h",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116125105.921875000,
+    "lastModifiedTime" : 1116153905.921875000,
     "creationTime" : null,
     "fileCRC" : 1259406197,
     "fileName" : "cl_dll\\entity.cpp",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 311564132,
     "fileName" : "cl_dll\\events.cpp",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -825809744,
     "fileName" : "cl_dll\\eventscripts.h",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 657677843,
     "fileName" : "cl_dll\\ev_common.cpp",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1122438995.078125000,
+    "lastModifiedTime" : 1122467795.078125000,
     "creationTime" : null,
     "fileCRC" : 296615772,
     "fileName" : "cl_dll\\ev_hldm.cpp",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : 883096659,
     "fileName" : "cl_dll\\ev_hldm.h",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -367213636,
     "fileName" : "cl_dll\\flashlight.cpp",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -962394198,
     "fileName" : "cl_dll\\GameStudioModelRenderer.cpp",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1621997709,
     "fileName" : "cl_dll\\GameStudioModelRenderer.h",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613854.000000000,
+    "lastModifiedTime" : 1033642654.000000000,
     "creationTime" : null,
     "fileCRC" : -1939931339,
     "fileName" : "cl_dll\\geiger.cpp",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115020820.500000000,
+    "lastModifiedTime" : 1115049620.500000000,
     "creationTime" : null,
     "fileCRC" : -1162208425,
     "fileName" : "cl_dll\\health.cpp",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -1767566417,
     "fileName" : "cl_dll\\health.h",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1122438995.062500000,
+    "lastModifiedTime" : 1122467795.062500000,
     "creationTime" : null,
     "fileCRC" : -1968165218,
     "fileName" : "cl_dll\\hud.cpp",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116225358.921875000,
+    "lastModifiedTime" : 1116254158.921875000,
     "creationTime" : null,
     "fileCRC" : -2018241440,
     "fileName" : "cl_dll\\hud.h",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 43298190,
     "fileName" : "cl_dll\\hud_iface.h",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -1384972224,
     "fileName" : "cl_dll\\hud_msg.cpp",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116225787.296875000,
+    "lastModifiedTime" : 1116254587.296875000,
     "creationTime" : null,
     "fileCRC" : 765988397,
     "fileName" : "cl_dll\\hud_redraw.cpp",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1123550128.218750000,
+    "lastModifiedTime" : 1123578928.218750000,
     "creationTime" : null,
     "fileCRC" : -2087017929,
     "fileName" : "cl_dll\\hud_servers.cpp",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 2012870082,
     "fileName" : "cl_dll\\hud_servers.h",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 941990769,
     "fileName" : "cl_dll\\hud_servers_priv.h",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1136102045.718750000,
+    "lastModifiedTime" : 1136130845.718750000,
     "creationTime" : null,
     "fileCRC" : -748863619,
     "fileName" : "cl_dll\\hud_spectator.cpp",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -900076796,
     "fileName" : "cl_dll\\hud_spectator.h",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -2052950473,
     "fileName" : "cl_dll\\hud_update.cpp",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -1302141291,
     "fileName" : "cl_dll\\input.cpp",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 372543185,
     "fileName" : "cl_dll\\inputw32.cpp",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 890966711,
     "fileName" : "cl_dll\\in_camera.cpp",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -1754420124,
     "fileName" : "cl_dll\\in_defs.h",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -1889420609,
     "fileName" : "cl_dll\\kbutton.h",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -1923339454,
     "fileName" : "cl_dll\\menu.cpp",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 623227841,
     "fileName" : "cl_dll\\message.cpp",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 597213419,
     "fileName" : "cl_dll\\MOTD.cpp",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1114821526.156250000,
+    "lastModifiedTime" : 1114850326.156250000,
     "creationTime" : null,
     "fileCRC" : -421409582,
     "fileName" : "cl_dll\\oldDMC_Teleporters.cpp",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 1444135806,
     "fileName" : "cl_dll\\parsemsg.cpp",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -1027900793,
     "fileName" : "cl_dll\\parsemsg.h",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -1053847056,
     "fileName" : "cl_dll\\quake\\quake_baseentity.cpp",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 1249421208,
     "fileName" : "cl_dll\\quake\\quake_events.cpp",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -1866619259,
     "fileName" : "cl_dll\\quake\\quake_objects.cpp",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1122436258.015625000,
+    "lastModifiedTime" : 1122465058.015625000,
     "creationTime" : null,
     "fileCRC" : -275378425,
     "fileName" : "cl_dll\\quake\\quake_weapons.cpp",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1139854954.096625000,
+    "lastModifiedTime" : 1139883754.096625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "cl_dll\\quake",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 1535566423,
     "fileName" : "cl_dll\\readme.txt",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141184860.222500000,
+    "lastModifiedTime" : 1141213660.222500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "cl_dll\\Release",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 571837322,
     "fileName" : "cl_dll\\saytext.cpp",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 2109922474,
     "fileName" : "cl_dll\\scoreboard.cpp",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1136101558.468750000,
+    "lastModifiedTime" : 1136130358.468750000,
     "creationTime" : null,
     "fileCRC" : -1476774325,
     "fileName" : "cl_dll\\statusbar.cpp",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 557181682,
     "fileName" : "cl_dll\\status_icons.cpp",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116721841.328125000,
+    "lastModifiedTime" : 1116750641.328125000,
     "creationTime" : null,
     "fileCRC" : -1228375149,
     "fileName" : "cl_dll\\StudioModelRenderer.cpp",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 597081253,
     "fileName" : "cl_dll\\StudioModelRenderer.h",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -458937207,
     "fileName" : "cl_dll\\studio_util.cpp",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 1941182868,
     "fileName" : "cl_dll\\studio_util.h",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -2072716239,
     "fileName" : "cl_dll\\text_message.cpp",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : -487079335,
     "fileName" : "cl_dll\\train.cpp",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613856.000000000,
+    "lastModifiedTime" : 1033642656.000000000,
     "creationTime" : null,
     "fileCRC" : 687756841,
     "fileName" : "cl_dll\\tri.cpp",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 1221118149,
     "fileName" : "cl_dll\\util.cpp",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -653555622,
     "fileName" : "cl_dll\\util.h",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 1485667327,
     "fileName" : "cl_dll\\util_vector.h",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -1656746563,
     "fileName" : "cl_dll\\vgui_ControlConfigPanel.h",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 632121391,
     "fileName" : "cl_dll\\vgui_CustomObjects.cpp",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 1447048981,
     "fileName" : "cl_dll\\vgui_int.cpp",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 1932021562,
     "fileName" : "cl_dll\\vgui_int.h",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1118299306.843750000,
+    "lastModifiedTime" : 1118328106.843750000,
     "creationTime" : null,
     "fileCRC" : 1531646109,
     "fileName" : "cl_dll\\vgui_MOTDWindow.cpp",
@@ -1430,7 +1430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -1518337371,
     "fileName" : "cl_dll\\vgui_SchemeManager.cpp",
@@ -1446,7 +1446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -2124921281,
     "fileName" : "cl_dll\\vgui_SchemeManager.h",
@@ -1462,7 +1462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -1940855131,
     "fileName" : "cl_dll\\vgui_ScorePanel.cpp",
@@ -1478,7 +1478,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 659862292,
     "fileName" : "cl_dll\\vgui_ScorePanel.h",
@@ -1494,7 +1494,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1123550729.078125000,
+    "lastModifiedTime" : 1123579529.078125000,
     "creationTime" : null,
     "fileCRC" : -507751982,
     "fileName" : "cl_dll\\vgui_ServerBrowser.cpp",
@@ -1510,7 +1510,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : 2088114486,
     "fileName" : "cl_dll\\vgui_ServerBrowser.h",
@@ -1526,7 +1526,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -1768387914,
     "fileName" : "cl_dll\\vgui_SpectatorPanel.cpp",
@@ -1542,7 +1542,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -565676063,
     "fileName" : "cl_dll\\vgui_SpectatorPanel.h",
@@ -1558,7 +1558,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033617458.000000000,
+    "lastModifiedTime" : 1033646258.000000000,
     "creationTime" : null,
     "fileCRC" : -1185626293,
     "fileName" : "cl_dll\\vgui_viewport.cpp",
@@ -1574,7 +1574,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115172008.984375000,
+    "lastModifiedTime" : 1115200808.984375000,
     "creationTime" : null,
     "fileCRC" : 1114114438,
     "fileName" : "cl_dll\\vgui_viewport.h",
@@ -1590,7 +1590,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1136100836.140625000,
+    "lastModifiedTime" : 1136129636.140625000,
     "creationTime" : null,
     "fileCRC" : -1104586788,
     "fileName" : "cl_dll\\view.cpp",
@@ -1606,7 +1606,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -958479872,
     "fileName" : "cl_dll\\view.h",
@@ -1622,7 +1622,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033613858.000000000,
+    "lastModifiedTime" : 1033642658.000000000,
     "creationTime" : null,
     "fileCRC" : -398975085,
     "fileName" : "cl_dll\\wrect.h",
@@ -1638,7 +1638,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1140040854.412750000,
+    "lastModifiedTime" : 1140069654.412750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "cl_dll",
@@ -1654,7 +1654,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : 1712745065,
     "fileName" : "dlls\\activity.h",
@@ -1670,7 +1670,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : 249408595,
     "fileName" : "dlls\\activitymap.h",
@@ -1686,7 +1686,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : 554494711,
     "fileName" : "dlls\\animating.cpp",
@@ -1702,7 +1702,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : -239820120,
     "fileName" : "dlls\\animation.cpp",
@@ -1718,7 +1718,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033631858.000000000,
+    "lastModifiedTime" : 1033660658.000000000,
     "creationTime" : null,
     "fileCRC" : -239820120,
     "fileName" : "dlls\\animation.cpp.orig",
@@ -1734,7 +1734,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : 409798289,
     "fileName" : "dlls\\animation.h",
@@ -1750,7 +1750,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1076353156.000000000,
+    "lastModifiedTime" : 1076381956.000000000,
     "creationTime" : null,
     "fileCRC" : -716336552,
     "fileName" : "dlls\\basemonster.h",
@@ -1766,7 +1766,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : -1887229914,
     "fileName" : "dlls\\bmodels.cpp",
@@ -1782,7 +1782,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : 1297539222,
     "fileName" : "dlls\\buttons.cpp",
@@ -1798,7 +1798,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1135576049.593750000,
+    "lastModifiedTime" : 1135604849.593750000,
     "creationTime" : null,
     "fileCRC" : -2121801947,
     "fileName" : "dlls\\cbase.cpp",
@@ -1814,7 +1814,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1133664479.140625000,
+    "lastModifiedTime" : 1133693279.140625000,
     "creationTime" : null,
     "fileCRC" : -1716802186,
     "fileName" : "dlls\\cbase.h",
@@ -1830,7 +1830,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033631860.000000000,
+    "lastModifiedTime" : 1033660660.000000000,
     "creationTime" : null,
     "fileCRC" : -6114875,
     "fileName" : "dlls\\cbase.h.orig",
@@ -1846,7 +1846,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : 823550560,
     "fileName" : "dlls\\cdll_dll.h",
@@ -1862,7 +1862,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033631860.000000000,
+    "lastModifiedTime" : 1033660660.000000000,
     "creationTime" : null,
     "fileCRC" : 823550560,
     "fileName" : "dlls\\cdll_dll.h.orig",
@@ -1878,7 +1878,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1140998241.218750000,
+    "lastModifiedTime" : 1141027041.218750000,
     "creationTime" : null,
     "fileCRC" : -281163489,
     "fileName" : "dlls\\client.cpp",
@@ -1894,7 +1894,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116730245.578125000,
+    "lastModifiedTime" : 1116759045.578125000,
     "creationTime" : null,
     "fileCRC" : 410266784,
     "fileName" : "dlls\\client.h",
@@ -1910,7 +1910,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1114688552.156250000,
+    "lastModifiedTime" : 1114717352.156250000,
     "creationTime" : null,
     "fileCRC" : 1959495106,
     "fileName" : "dlls\\combat.cpp",
@@ -1926,7 +1926,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1128570975.937500000,
+    "lastModifiedTime" : 1128599775.937500000,
     "creationTime" : null,
     "fileCRC" : -1744386293,
     "fileName" : "dlls\\Copy of multiplay_gamerules.cpp",
@@ -1942,7 +1942,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141184836.066250000,
+    "lastModifiedTime" : 1141213636.066250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dlls\\debugdmc",
@@ -1958,7 +1958,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : -400976215,
     "fileName" : "dlls\\decals.h",
@@ -1974,7 +1974,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : -1063282629,
     "fileName" : "dlls\\defaultai.cpp",
@@ -1990,7 +1990,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723732.000000000,
+    "lastModifiedTime" : 1062752532.000000000,
     "creationTime" : null,
     "fileCRC" : -1893582193,
     "fileName" : "dlls\\defaultai.h",
@@ -2006,7 +2006,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033610260.000000000,
+    "lastModifiedTime" : 1033639060.000000000,
     "creationTime" : null,
     "fileCRC" : 964311520,
     "fileName" : "dlls\\dmc.def",
@@ -2022,7 +2022,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1121769281.671875000,
+    "lastModifiedTime" : 1121798081.671875000,
     "creationTime" : null,
     "fileCRC" : 197923549,
     "fileName" : "dlls\\dmc.dep",
@@ -2038,7 +2038,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1128942038.828125000,
+    "lastModifiedTime" : 1128970838.828125000,
     "creationTime" : null,
     "fileCRC" : 1639593562,
     "fileName" : "dlls\\dmc.dsp",
@@ -2054,7 +2054,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1060025120.000000000,
+    "lastModifiedTime" : 1060053920.000000000,
     "creationTime" : null,
     "fileCRC" : -1352985808,
     "fileName" : "dlls\\dmc.dsw",
@@ -2070,7 +2070,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1121769281.671875000,
+    "lastModifiedTime" : 1121798081.671875000,
     "creationTime" : null,
     "fileCRC" : -210473319,
     "fileName" : "dlls\\dmc.mak",
@@ -2086,7 +2086,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1139940092.076726800,
+    "lastModifiedTime" : 1139968892.076726800,
     "creationTime" : null,
     "fileCRC" : 978423354,
     "fileName" : "dlls\\dmc.ncb",
@@ -2102,7 +2102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1137120120.187000000,
+    "lastModifiedTime" : 1137148920.187000000,
     "creationTime" : null,
     "fileCRC" : 1530594393,
     "fileName" : "dlls\\dmc.opt",
@@ -2118,7 +2118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1137118776.140625000,
+    "lastModifiedTime" : 1137147576.140625000,
     "creationTime" : null,
     "fileCRC" : 2052515825,
     "fileName" : "dlls\\dmc.plg",
@@ -2134,7 +2134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1139854997.315375000,
+    "lastModifiedTime" : 1139883797.315375000,
     "creationTime" : null,
     "fileCRC" : 1689416165,
     "fileName" : "dlls\\dmc.sln",
@@ -2150,7 +2150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1139940085.294000000,
+    "lastModifiedTime" : 1139968885.294000000,
     "creationTime" : null,
     "fileCRC" : -68492994,
     "fileName" : "dlls\\dmc.suo",
@@ -2166,7 +2166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1140983867.093750000,
+    "lastModifiedTime" : 1141012667.093750000,
     "creationTime" : null,
     "fileCRC" : -721589376,
     "fileName" : "dlls\\dmc.vcproj",
@@ -2182,7 +2182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033617460.000000000,
+    "lastModifiedTime" : 1033646260.000000000,
     "creationTime" : null,
     "fileCRC" : 1406039425,
     "fileName" : "dlls\\dmcgl.def",
@@ -2198,7 +2198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116743708.031250000,
+    "lastModifiedTime" : 1116772508.031250000,
     "creationTime" : null,
     "fileCRC" : 1132361416,
     "fileName" : "dlls\\dme_arena.cpp",
@@ -2214,7 +2214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115013232.812500000,
+    "lastModifiedTime" : 1115042032.812500000,
     "creationTime" : null,
     "fileCRC" : 359419385,
     "fileName" : "dlls\\dme_arena.h",
@@ -2230,7 +2230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1140998072.671875000,
+    "lastModifiedTime" : 1141026872.671875000,
     "creationTime" : null,
     "fileCRC" : -328959487,
     "fileName" : "dlls\\dme_clanarena.cpp",
@@ -2246,7 +2246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115013242.375000000,
+    "lastModifiedTime" : 1115042042.375000000,
     "creationTime" : null,
     "fileCRC" : 1813823325,
     "fileName" : "dlls\\dme_clanarena.h",
@@ -2262,7 +2262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1140998076.234375000,
+    "lastModifiedTime" : 1141026876.234375000,
     "creationTime" : null,
     "fileCRC" : 234598770,
     "fileName" : "dlls\\dme_ctf.cpp",
@@ -2278,7 +2278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115013232.781250000,
+    "lastModifiedTime" : 1115042032.781250000,
     "creationTime" : null,
     "fileCRC" : 1030249759,
     "fileName" : "dlls\\dme_ctf.h",
@@ -2294,7 +2294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116743708.031250000,
+    "lastModifiedTime" : 1116772508.031250000,
     "creationTime" : null,
     "fileCRC" : 1132361416,
     "fileName" : "dlls\\dme_direct.cpp",
@@ -2310,7 +2310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1126415424.562500000,
+    "lastModifiedTime" : 1126444224.562500000,
     "creationTime" : null,
     "fileCRC" : -501317929,
     "fileName" : "dlls\\dme_direct.h",
@@ -2326,7 +2326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141161962.472953400,
+    "lastModifiedTime" : 1141190762.472953400,
     "creationTime" : null,
     "fileCRC" : 677183099,
     "fileName" : "dlls\\dme_match.cpp",
@@ -2342,7 +2342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141075608.921875000,
+    "lastModifiedTime" : 1141104408.921875000,
     "creationTime" : null,
     "fileCRC" : -809487277,
     "fileName" : "dlls\\dme_match.h",
@@ -2358,7 +2358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1133656549.328125000,
+    "lastModifiedTime" : 1133685349.328125000,
     "creationTime" : null,
     "fileCRC" : 2076781266,
     "fileName" : "dlls\\dme_midair.cpp",
@@ -2374,7 +2374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115013232.890625000,
+    "lastModifiedTime" : 1115042032.890625000,
     "creationTime" : null,
     "fileCRC" : -2021901013,
     "fileName" : "dlls\\dme_midair.h",
@@ -2390,7 +2390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1116732929.828125000,
+    "lastModifiedTime" : 1116761729.828125000,
     "creationTime" : null,
     "fileCRC" : -211106413,
     "fileName" : "dlls\\dme_rumble.cpp",
@@ -2406,7 +2406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115013232.812500000,
+    "lastModifiedTime" : 1115042032.812500000,
     "creationTime" : null,
     "fileCRC" : 1138406244,
     "fileName" : "dlls\\dme_rumble.h",
@@ -2422,7 +2422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115013035.562500000,
+    "lastModifiedTime" : 1115041835.562500000,
     "creationTime" : null,
     "fileCRC" : 725572000,
     "fileName" : "dlls\\dme_utility.cpp",
@@ -2438,7 +2438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099845978.937500000,
+    "lastModifiedTime" : 1099874778.937500000,
     "creationTime" : null,
     "fileCRC" : -1354167906,
     "fileName" : "dlls\\dme_utility.h",
@@ -2454,7 +2454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723738.000000000,
+    "lastModifiedTime" : 1062752538.000000000,
     "creationTime" : null,
     "fileCRC" : 761794283,
     "fileName" : "dlls\\doors.cpp",
@@ -2470,7 +2470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723738.000000000,
+    "lastModifiedTime" : 1062752538.000000000,
     "creationTime" : null,
     "fileCRC" : -862434606,
     "fileName" : "dlls\\doors.h",
@@ -2486,7 +2486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1117706907.609375000,
+    "lastModifiedTime" : 1117735707.609375000,
     "creationTime" : null,
     "fileCRC" : -961343005,
     "fileName" : "dlls\\effects.cpp",
@@ -2502,7 +2502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033631860.000000000,
+    "lastModifiedTime" : 1033660660.000000000,
     "creationTime" : null,
     "fileCRC" : -961343005,
     "fileName" : "dlls\\effects.cpp.orig",
@@ -2518,7 +2518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723738.000000000,
+    "lastModifiedTime" : 1062752538.000000000,
     "creationTime" : null,
     "fileCRC" : 649126125,
     "fileName" : "dlls\\effects.h",
@@ -2534,7 +2534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723738.000000000,
+    "lastModifiedTime" : 1062752538.000000000,
     "creationTime" : null,
     "fileCRC" : -1511631870,
     "fileName" : "dlls\\enginecallback.h",
@@ -2550,7 +2550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033631860.000000000,
+    "lastModifiedTime" : 1033660660.000000000,
     "creationTime" : null,
     "fileCRC" : -1511631870,
     "fileName" : "dlls\\enginecallback.h.orig",
@@ -2566,7 +2566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1114689164.453125000,
+    "lastModifiedTime" : 1114717964.453125000,
     "creationTime" : null,
     "fileCRC" : 1931695544,
     "fileName" : "dlls\\explode.cpp",
@@ -2582,7 +2582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723738.000000000,
+    "lastModifiedTime" : 1062752538.000000000,
     "creationTime" : null,
     "fileCRC" : 757314189,
     "fileName" : "dlls\\explode.h",
@@ -2598,7 +2598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723738.000000000,
+    "lastModifiedTime" : 1062752538.000000000,
     "creationTime" : null,
     "fileCRC" : 1956860809,
     "fileName" : "dlls\\extdll.h",
@@ -2614,7 +2614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723740.000000000,
+    "lastModifiedTime" : 1062752540.000000000,
     "creationTime" : null,
     "fileCRC" : 1304985012,
     "fileName" : "dlls\\func_break.cpp",
@@ -2630,7 +2630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723740.000000000,
+    "lastModifiedTime" : 1062752540.000000000,
     "creationTime" : null,
     "fileCRC" : -1081918629,
     "fileName" : "dlls\\func_break.h",
@@ -2646,7 +2646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141125775.968750000,
+    "lastModifiedTime" : 1141154575.968750000,
     "creationTime" : null,
     "fileCRC" : -1881376922,
     "fileName" : "dlls\\game.cpp",
@@ -2662,7 +2662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1135567501.093750000,
+    "lastModifiedTime" : 1135596301.093750000,
     "creationTime" : null,
     "fileCRC" : -405491913,
     "fileName" : "dlls\\game.h",
@@ -2678,7 +2678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1118296058.968750000,
+    "lastModifiedTime" : 1118324858.968750000,
     "creationTime" : null,
     "fileCRC" : 32532285,
     "fileName" : "dlls\\gamerules.cpp",
@@ -2694,7 +2694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141075608.875000000,
+    "lastModifiedTime" : 1141104408.875000000,
     "creationTime" : null,
     "fileCRC" : -218472930,
     "fileName" : "dlls\\gamerules.h",
@@ -2710,7 +2710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1139864375.096625000,
+    "lastModifiedTime" : 1139893175.096625000,
     "creationTime" : null,
     "fileCRC" : 571670419,
     "fileName" : "dlls\\globals.cpp",
@@ -2726,7 +2726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1075029366.000000000,
+    "lastModifiedTime" : 1075058166.000000000,
     "creationTime" : null,
     "fileCRC" : 1585018302,
     "fileName" : "dlls\\hook.cpp",
@@ -2742,7 +2742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1072545710.000000000,
+    "lastModifiedTime" : 1072574510.000000000,
     "creationTime" : null,
     "fileCRC" : -1648779978,
     "fileName" : "dlls\\hook.h",
@@ -2758,7 +2758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723740.000000000,
+    "lastModifiedTime" : 1062752540.000000000,
     "creationTime" : null,
     "fileCRC" : -77223323,
     "fileName" : "dlls\\h_ai.cpp",
@@ -2774,7 +2774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723740.000000000,
+    "lastModifiedTime" : 1062752540.000000000,
     "creationTime" : null,
     "fileCRC" : -551332150,
     "fileName" : "dlls\\h_export.cpp",
@@ -2790,7 +2790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1140988565.062500000,
+    "lastModifiedTime" : 1141017365.062500000,
     "creationTime" : null,
     "fileCRC" : 140493823,
     "fileName" : "dlls\\items.cpp",
@@ -2806,7 +2806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1139867015.784125000,
+    "lastModifiedTime" : 1139895815.784125000,
     "creationTime" : null,
     "fileCRC" : 320774491,
     "fileName" : "dlls\\items.h",
@@ -2822,7 +2822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723740.000000000,
+    "lastModifiedTime" : 1062752540.000000000,
     "creationTime" : null,
     "fileCRC" : 563044410,
     "fileName" : "dlls\\lights.cpp",
@@ -2838,7 +2838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033610262.000000000,
+    "lastModifiedTime" : 1033639062.000000000,
     "creationTime" : null,
     "fileCRC" : -926753641,
     "fileName" : "dlls\\Makefile",
@@ -2854,7 +2854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1117707401.125000000,
+    "lastModifiedTime" : 1117736201.125000000,
     "creationTime" : null,
     "fileCRC" : -661187579,
     "fileName" : "dlls\\maprules.cpp",
@@ -2870,7 +2870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : -1144353007,
     "fileName" : "dlls\\maprules.h",
@@ -2886,7 +2886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : 1325098806,
     "fileName" : "dlls\\monsterevent.h",
@@ -2902,7 +2902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : 1729866162,
     "fileName" : "dlls\\monsters.cpp",
@@ -2918,7 +2918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : 286114074,
     "fileName" : "dlls\\monsters.h",
@@ -2934,7 +2934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : 1987088772,
     "fileName" : "dlls\\monsterstate.cpp",
@@ -2950,7 +2950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141137271.754203400,
+    "lastModifiedTime" : 1141166071.754203400,
     "creationTime" : null,
     "fileCRC" : 1591838034,
     "fileName" : "dlls\\multiplay_gamerules.cpp",
@@ -2966,7 +2966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : 86291606,
     "fileName" : "dlls\\nodes.cpp",
@@ -2982,7 +2982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : -734889965,
     "fileName" : "dlls\\nodes.h",
@@ -2998,7 +2998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1124437425.468750000,
+    "lastModifiedTime" : 1124466225.468750000,
     "creationTime" : null,
     "fileCRC" : 1961900280,
     "fileName" : "dlls\\observer.cpp",
@@ -3014,7 +3014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1033631862.000000000,
+    "lastModifiedTime" : 1033660662.000000000,
     "creationTime" : null,
     "fileCRC" : -1219944938,
     "fileName" : "dlls\\observer.cpp.orig",
@@ -3030,7 +3030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099153547.375000000,
+    "lastModifiedTime" : 1099182347.375000000,
     "creationTime" : null,
     "fileCRC" : 768547203,
     "fileName" : "dlls\\osmod_corpses.cpp",
@@ -3046,7 +3046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099237424.625000000,
+    "lastModifiedTime" : 1099266224.625000000,
     "creationTime" : null,
     "fileCRC" : 1667362788,
     "fileName" : "dlls\\osmod_gamerules.cpp",
@@ -3062,7 +3062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1115013232.765625000,
+    "lastModifiedTime" : 1115042032.765625000,
     "creationTime" : null,
     "fileCRC" : 1986312193,
     "fileName" : "dlls\\osmod_gamerules.h",
@@ -3078,7 +3078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : -243232615,
     "fileName" : "dlls\\pathcorner.cpp",
@@ -3094,7 +3094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : 623305854,
     "fileName" : "dlls\\plane.cpp",
@@ -3110,7 +3110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : -930963022,
     "fileName" : "dlls\\plane.h",
@@ -3126,7 +3126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723742.000000000,
+    "lastModifiedTime" : 1062752542.000000000,
     "creationTime" : null,
     "fileCRC" : 1773105497,
     "fileName" : "dlls\\plats.cpp",
@@ -3142,7 +3142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141183332.191250000,
+    "lastModifiedTime" : 1141212132.191250000,
     "creationTime" : null,
     "fileCRC" : -1033287741,
     "fileName" : "dlls\\player.cpp",
@@ -3158,7 +3158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141000044.171875000,
+    "lastModifiedTime" : 1141028844.171875000,
     "creationTime" : null,
     "fileCRC" : -1849317455,
     "fileName" : "dlls\\player.h",
@@ -3174,7 +3174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1126435055.953125000,
+    "lastModifiedTime" : 1126463855.953125000,
     "creationTime" : null,
     "fileCRC" : -1020159823,
     "fileName" : "dlls\\quake_gun.cpp",
@@ -3190,7 +3190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062723744.000000000,
+    "lastModifiedTime" : 1062752544.000000000,
     "creationTime" : null,
     "fileCRC" : 2094986001,
     "fileName" : "dlls\\quake_gun.h",
@@ -3206,7 +3206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1141125973.203125000,
+    "lastModifiedTime" : 1141154773.203125000,
     "creationTime" : null,
     "fileCRC" : 1236057659,
     "fileName" : "dlls\\quake_items.cpp",
@@ -3222,7 +3222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1117704139.578125000,
+    "lastModifiedTime" : 1117732939.578125000,
     "creationTime" : null,
     "fileCRC" : -736413559,
     "fileName" : "dlls\\quake_items.h",

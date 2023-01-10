@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1185798656.000000000,
+    "lastModifiedTime" : 1185827456.000000000,
     "creationTime" : null,
     "fileCRC" : -2092721360,
     "fileName" : "SpellBinder\\Bindings.xml",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 315504000.000000000,
+    "lastModifiedTime" : 315532800.000000000,
     "creationTime" : null,
     "fileCRC" : 712464963,
     "fileName" : "SpellBinder\\Changelog-SpellBinder-r70031.txt",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1187930410.000000000,
+    "lastModifiedTime" : 1187959210.000000000,
     "creationTime" : null,
     "fileCRC" : -201018308,
     "fileName" : "SpellBinder\\embeds.xml",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1185798656.000000000,
+    "lastModifiedTime" : 1185827456.000000000,
     "creationTime" : null,
     "fileCRC" : -283380860,
     "fileName" : "SpellBinder\\GPLv2.txt",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1222639690.000000000,
+    "lastModifiedTime" : 1222668490.000000000,
     "creationTime" : null,
     "fileCRC" : 121963710,
     "fileName" : "SpellBinder\\libs\\AceAddon-2.0\\AceAddon-2.0.lua",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1206491730.000000000,
+    "lastModifiedTime" : 1206520530.000000000,
     "creationTime" : null,
     "fileCRC" : 878098576,
     "fileName" : "SpellBinder\\libs\\AceAddon-2.0\\AceAddon-2.0.toc",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1222639690.000000000,
+    "lastModifiedTime" : 1222668490.000000000,
     "creationTime" : null,
     "fileCRC" : -718960082,
     "fileName" : "SpellBinder\\libs\\AceConsole-2.0\\AceConsole-2.0.lua",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1206491730.000000000,
+    "lastModifiedTime" : 1206520530.000000000,
     "creationTime" : null,
     "fileCRC" : 1362412540,
     "fileName" : "SpellBinder\\libs\\AceConsole-2.0\\AceConsole-2.0.toc",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1222639690.000000000,
+    "lastModifiedTime" : 1222668490.000000000,
     "creationTime" : null,
     "fileCRC" : -1231041333,
     "fileName" : "SpellBinder\\libs\\AceEvent-2.0\\AceEvent-2.0.lua",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1206491730.000000000,
+    "lastModifiedTime" : 1206520530.000000000,
     "creationTime" : null,
     "fileCRC" : -558008944,
     "fileName" : "SpellBinder\\libs\\AceEvent-2.0\\AceEvent-2.0.toc",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1222639690.000000000,
+    "lastModifiedTime" : 1222668490.000000000,
     "creationTime" : null,
     "fileCRC" : -962508293,
     "fileName" : "SpellBinder\\libs\\AceLibrary\\AceLibrary.lua",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1206491730.000000000,
+    "lastModifiedTime" : 1206520530.000000000,
     "creationTime" : null,
     "fileCRC" : -216884126,
     "fileName" : "SpellBinder\\libs\\AceLibrary\\AceLibrary.toc",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1222639690.000000000,
+    "lastModifiedTime" : 1222668490.000000000,
     "creationTime" : null,
     "fileCRC" : 1370255905,
     "fileName" : "SpellBinder\\libs\\AceLocale-2.2\\AceLocale-2.2.lua",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1206491730.000000000,
+    "lastModifiedTime" : 1206520530.000000000,
     "creationTime" : null,
     "fileCRC" : -786856987,
     "fileName" : "SpellBinder\\libs\\AceLocale-2.2\\AceLocale-2.2.toc",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1222639690.000000000,
+    "lastModifiedTime" : 1222668490.000000000,
     "creationTime" : null,
     "fileCRC" : 1262206379,
     "fileName" : "SpellBinder\\libs\\AceOO-2.0\\AceOO-2.0.lua",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1206491730.000000000,
+    "lastModifiedTime" : 1206520530.000000000,
     "creationTime" : null,
     "fileCRC" : 1323614196,
     "fileName" : "SpellBinder\\libs\\AceOO-2.0\\AceOO-2.0.toc",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1216298184.000000000,
+    "lastModifiedTime" : 1216326984.000000000,
     "creationTime" : null,
     "fileCRC" : 1789177093,
     "fileName" : "SpellBinder\\libs\\Dewdrop-2.0\\Dewdrop-2.0.lua",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1185798656.000000000,
+    "lastModifiedTime" : 1185827456.000000000,
     "creationTime" : null,
     "fileCRC" : 1871273312,
     "fileName" : "SpellBinder\\SpellBinder ReadMe.html",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1185798656.000000000,
+    "lastModifiedTime" : 1185827456.000000000,
     "creationTime" : null,
     "fileCRC" : 352324609,
     "fileName" : "SpellBinder\\SpellBinder-enUS.lua",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1185798656.000000000,
+    "lastModifiedTime" : 1185827456.000000000,
     "creationTime" : null,
     "fileCRC" : -370012985,
     "fileName" : "SpellBinder\\SpellBinder-esES.lua",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1185798656.000000000,
+    "lastModifiedTime" : 1185827456.000000000,
     "creationTime" : null,
     "fileCRC" : 583890263,
     "fileName" : "SpellBinder\\SpellBinder-koKR.lua",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1208299102.000000000,
+    "lastModifiedTime" : 1208327902.000000000,
     "creationTime" : null,
     "fileCRC" : -410751652,
     "fileName" : "SpellBinder\\SpellBinder-zhTW.lua",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1196095216.000000000,
+    "lastModifiedTime" : 1196124016.000000000,
     "creationTime" : null,
     "fileCRC" : 1246504891,
     "fileName" : "SpellBinder\\SpellBinder.lua",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1206537904.000000000,
+    "lastModifiedTime" : 1206566704.000000000,
     "creationTime" : null,
     "fileCRC" : -1464857482,
     "fileName" : "SpellBinder\\SpellBinder.toc",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.828125000,
+    "lastModifiedTime" : 1302467112.828125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs\\AceAddon-2.0",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.843750000,
+    "lastModifiedTime" : 1302467112.843750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs\\AceConsole-2.0",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.890625000,
+    "lastModifiedTime" : 1302467112.890625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs\\AceEvent-2.0",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.890625000,
+    "lastModifiedTime" : 1302467112.890625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs\\AceLibrary",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.890625000,
+    "lastModifiedTime" : 1302467112.890625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs\\AceLocale-2.2",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.890625000,
+    "lastModifiedTime" : 1302467112.890625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs\\AceOO-2.0",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.890625000,
+    "lastModifiedTime" : 1302467112.890625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs\\Dewdrop-2.0",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.890625000,
+    "lastModifiedTime" : 1302467112.890625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder\\libs",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302438312.921875000,
+    "lastModifiedTime" : 1302467112.921875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "SpellBinder",

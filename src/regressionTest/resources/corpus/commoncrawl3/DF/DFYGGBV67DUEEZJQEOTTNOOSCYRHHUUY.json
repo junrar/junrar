@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511243.070930500,
+    "lastModifiedTime" : 1476540043.070930500,
     "creationTime" : null,
     "fileCRC" : -623703770,
     "fileName" : "Analog clock\\Analog clock\\Analog clock.csproj",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502306.576295200,
+    "lastModifiedTime" : 1476531106.576295200,
     "creationTime" : null,
     "fileCRC" : -834635325,
     "fileName" : "Analog clock\\Analog clock\\App.config",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502306.579296500,
+    "lastModifiedTime" : 1476531106.579296500,
     "creationTime" : null,
     "fileCRC" : 1014824788,
     "fileName" : "Analog clock\\Analog clock\\App.xaml",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502314.850120200,
+    "lastModifiedTime" : 1476531114.850120200,
     "creationTime" : null,
     "fileCRC" : 2053502600,
     "fileName" : "Analog clock\\Analog clock\\App.xaml.cs",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525893.276330600,
+    "lastModifiedTime" : 1476554693.276330600,
     "creationTime" : null,
     "fileCRC" : -1175216621,
     "fileName" : "Analog clock\\Analog clock\\bin\\Debug\\Analog clock.exe",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502306.576295200,
+    "lastModifiedTime" : 1476531106.576295200,
     "creationTime" : null,
     "fileCRC" : -834635325,
     "fileName" : "Analog clock\\Analog clock\\bin\\Debug\\Analog clock.exe.config",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525893.190127400,
+    "lastModifiedTime" : 1476554693.190127400,
     "creationTime" : null,
     "fileCRC" : 40636081,
     "fileName" : "Analog clock\\Analog clock\\bin\\Debug\\Analog clock.pdb",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476526065.252630800,
+    "lastModifiedTime" : 1476554865.252630800,
     "creationTime" : null,
     "fileCRC" : 987443206,
     "fileName" : "Analog clock\\Analog clock\\bin\\Debug\\Analog clock.vshost.exe",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502306.576295200,
+    "lastModifiedTime" : 1476531106.576295200,
     "creationTime" : null,
     "fileCRC" : -834635325,
     "fileName" : "Analog clock\\Analog clock\\bin\\Debug\\Analog clock.vshost.exe.config",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502434.683365700,
+    "lastModifiedTime" : 1476531234.683365700,
     "creationTime" : null,
     "fileCRC" : -1058580865,
     "fileName" : "Analog clock\\Analog clock\\Images\\Background.png",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511234.029035300,
+    "lastModifiedTime" : 1476540034.029035300,
     "creationTime" : null,
     "fileCRC" : 631205305,
     "fileName" : "Analog clock\\Analog clock\\Images\\Center.png",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502434.848641800,
+    "lastModifiedTime" : 1476531234.848641800,
     "creationTime" : null,
     "fileCRC" : 2026599579,
     "fileName" : "Analog clock\\Analog clock\\Images\\HourHand.png",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502434.853643400,
+    "lastModifiedTime" : 1476531234.853643400,
     "creationTime" : null,
     "fileCRC" : 1819790052,
     "fileName" : "Analog clock\\Analog clock\\Images\\MinuteHand.png",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502434.874658300,
+    "lastModifiedTime" : 1476531234.874658300,
     "creationTime" : null,
     "fileCRC" : -1767784532,
     "fileName" : "Analog clock\\Analog clock\\Images\\SecondHand.png",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525892.202796200,
+    "lastModifiedTime" : 1476554692.202796200,
     "creationTime" : null,
     "fileCRC" : 1328994157,
     "fileName" : "Analog clock\\Analog clock\\MainWindow.xaml",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511416.914495300,
+    "lastModifiedTime" : 1476540216.914495300,
     "creationTime" : null,
     "fileCRC" : 609704915,
     "fileName" : "Analog clock\\Analog clock\\MainWindow.xaml.cs",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476526065.540007800,
+    "lastModifiedTime" : 1476554865.540007800,
     "creationTime" : null,
     "fileCRC" : -1117307751,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock.csproj.FileListAbsolute.txt",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476503000.931950900,
+    "lastModifiedTime" : 1476531800.931950900,
     "creationTime" : null,
     "fileCRC" : -55775983,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock.csproj.GenerateResource.Cache",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502999.925692100,
+    "lastModifiedTime" : 1476531799.925692100,
     "creationTime" : null,
     "fileCRC" : 1395735140,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock.csprojResolveAssemblyReference.cache",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525893.276330600,
+    "lastModifiedTime" : 1476554693.276330600,
     "creationTime" : null,
     "fileCRC" : -1175216621,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock.exe",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525893.005474500,
+    "lastModifiedTime" : 1476554693.005474500,
     "creationTime" : null,
     "fileCRC" : -514115574,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock.g.resources",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525893.190127400,
+    "lastModifiedTime" : 1476554693.190127400,
     "creationTime" : null,
     "fileCRC" : 40636081,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock.pdb",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511234.257786300,
+    "lastModifiedTime" : 1476540034.257786300,
     "creationTime" : null,
     "fileCRC" : -470506694,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock_Content.g.i.cs",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525892.957844800,
+    "lastModifiedTime" : 1476554692.957844800,
     "creationTime" : null,
     "fileCRC" : 385817023,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock_MarkupCompile.cache",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511234.450444200,
+    "lastModifiedTime" : 1476540034.450444200,
     "creationTime" : null,
     "fileCRC" : 1673785661,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog clock_MarkupCompile.i.cache",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511245.438639200,
+    "lastModifiedTime" : 1476540045.438639200,
     "creationTime" : null,
     "fileCRC" : 541285438,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\Analog_clock.Properties.Resources.resources",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476503000.505205000,
+    "lastModifiedTime" : 1476531800.505205000,
     "creationTime" : null,
     "fileCRC" : 54021436,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\App.g.cs",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476503000.505205000,
+    "lastModifiedTime" : 1476531800.505205000,
     "creationTime" : null,
     "fileCRC" : 54021436,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\App.g.i.cs",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511234.558529600,
+    "lastModifiedTime" : 1476540034.558529600,
     "creationTime" : null,
     "fileCRC" : -971569232,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\DesignTimeResolveAssemblyReferencesInput.cache",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525892.953841000,
+    "lastModifiedTime" : 1476554692.953841000,
     "creationTime" : null,
     "fileCRC" : -760527,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\MainWindow.baml",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525892.914489000,
+    "lastModifiedTime" : 1476554692.914489000,
     "creationTime" : null,
     "fileCRC" : -1699537938,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\MainWindow.g.cs",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525892.914489000,
+    "lastModifiedTime" : 1476554692.914489000,
     "creationTime" : null,
     "fileCRC" : -1699537938,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\MainWindow.g.i.cs",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502317.072033800,
+    "lastModifiedTime" : 1476531117.072033800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502317.073033300,
+    "lastModifiedTime" : 1476531117.073033300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502317.071033900,
+    "lastModifiedTime" : 1476531117.071033900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502311.904194700,
+    "lastModifiedTime" : 1476531111.904194700,
     "creationTime" : null,
     "fileCRC" : -1787173979,
     "fileName" : "Analog clock\\Analog clock\\Properties\\AssemblyInfo.cs",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502312.135938100,
+    "lastModifiedTime" : 1476531112.135938100,
     "creationTime" : null,
     "fileCRC" : -1086796334,
     "fileName" : "Analog clock\\Analog clock\\Properties\\Resources.Designer.cs",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502306.563286100,
+    "lastModifiedTime" : 1476531106.563286100,
     "creationTime" : null,
     "fileCRC" : 1987336852,
     "fileName" : "Analog clock\\Analog clock\\Properties\\Resources.resx",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502312.194487200,
+    "lastModifiedTime" : 1476531112.194487200,
     "creationTime" : null,
     "fileCRC" : 600814895,
     "fileName" : "Analog clock\\Analog clock\\Properties\\Settings.Designer.cs",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502306.571292300,
+    "lastModifiedTime" : 1476531106.571292300,
     "creationTime" : null,
     "fileCRC" : 569746906,
     "fileName" : "Analog clock\\Analog clock\\Properties\\Settings.settings",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502332.840305000,
+    "lastModifiedTime" : 1476531132.840305000,
     "creationTime" : null,
     "fileCRC" : -635632833,
     "fileName" : "Analog clock\\Analog clock.sln",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476526069.711000000,
+    "lastModifiedTime" : 1476554869.711000000,
     "creationTime" : null,
     "fileCRC" : -1232074318,
     "fileName" : "Analog clock\\Analog clock.v12.suo",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502315.153591900,
+    "lastModifiedTime" : 1476531115.153591900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug\\TempPE",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476503001.805792800,
+    "lastModifiedTime" : 1476531801.805792800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\bin\\Debug",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502307.684486800,
+    "lastModifiedTime" : 1476531107.684486800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\bin\\Release",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525893.276330600,
+    "lastModifiedTime" : 1476554693.276330600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\obj\\Debug",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502307.684486800,
+    "lastModifiedTime" : 1476531107.684486800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\bin",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476511234.027034300,
+    "lastModifiedTime" : 1476540034.027034300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\Images",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502307.723515200,
+    "lastModifiedTime" : 1476531107.723515200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\obj",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502312.197486100,
+    "lastModifiedTime" : 1476531112.197486100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock\\Properties",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476525892.205797900,
+    "lastModifiedTime" : 1476554692.205797900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock\\Analog clock",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1476502332.887397100,
+    "lastModifiedTime" : 1476531132.887397100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Analog clock",

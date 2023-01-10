@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177799060.000000000,
+    "lastModifiedTime" : 1177827860.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\BUGS",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1181038562.000000000,
+    "lastModifiedTime" : 1181067362.000000000,
     "creationTime" : null,
     "fileCRC" : 1023660482,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\CHANGES",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1178658604.000000000,
+    "lastModifiedTime" : 1178687404.000000000,
     "creationTime" : null,
     "fileCRC" : -1149605188,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\cnxtmodem.spec.in",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177867786.000000000,
+    "lastModifiedTime" : 1177896586.000000000,
     "creationTime" : null,
     "fileCRC" : 1424650857,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\config.mak",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062972092.000000000,
+    "lastModifiedTime" : 1063000892.000000000,
     "creationTime" : null,
     "fileCRC" : -706001901,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\changelog.in",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061808758.000000000,
+    "lastModifiedTime" : 1061837558.000000000,
     "creationTime" : null,
     "fileCRC" : 189471343,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\control.in",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061771554.000000000,
+    "lastModifiedTime" : 1061800354.000000000,
     "creationTime" : null,
     "fileCRC" : -401631453,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\copyright.in",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159896122.000000000,
+    "lastModifiedTime" : 1159924922.000000000,
     "creationTime" : null,
     "fileCRC" : 668137133,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\postinst.in",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061806440.000000000,
+    "lastModifiedTime" : 1061835240.000000000,
     "creationTime" : null,
     "fileCRC" : -1718292042,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\postrm.in",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061806390.000000000,
+    "lastModifiedTime" : 1061835190.000000000,
     "creationTime" : null,
     "fileCRC" : -871289516,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\preinst.in",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061808550.000000000,
+    "lastModifiedTime" : 1061837350.000000000,
     "creationTime" : null,
     "fileCRC" : 62734754,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\prerm.in",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177934778.000000000,
+    "lastModifiedTime" : 1177963578.000000000,
     "creationTime" : null,
     "fileCRC" : -1928242986,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\debian\\rules.in",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1181038742.000000000,
+    "lastModifiedTime" : 1181067542.000000000,
     "creationTime" : null,
     "fileCRC" : 340612064,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\dgcmodem.spec",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287561.075166000,
+    "lastModifiedTime" : 1448316361.075166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\HELP_YOUR_FILES.PNG",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177867662.000000000,
+    "lastModifiedTime" : 1177896462.000000000,
     "creationTime" : null,
     "fileCRC" : 1742610400,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\INSTALL",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1180707850.000000000,
+    "lastModifiedTime" : 1180736650.000000000,
     "creationTime" : null,
     "fileCRC" : -255744775,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\LICENSE",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1180708428.000000000,
+    "lastModifiedTime" : 1180737228.000000000,
     "creationTime" : null,
     "fileCRC" : -229013397,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\makefile",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287558.835166000,
+    "lastModifiedTime" : 1448316358.835166000,
     "creationTime" : null,
     "fileCRC" : 348162726,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\GPL\\1uhqj6vu18.kg19",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1180707888.000000000,
+    "lastModifiedTime" : 1180736688.000000000,
     "creationTime" : null,
     "fileCRC" : -430871782,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\GPL\\COPYING",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287558.985166000,
+    "lastModifiedTime" : 1448316358.985166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\GPL\\HELP_YOUR_FILES.PNG",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287560.985166000,
+    "lastModifiedTime" : 1448316360.985166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\HELP_YOUR_FILES.PNG",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287560.405166000,
+    "lastModifiedTime" : 1448316360.405166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\HELP_YOUR_FILES.PNG",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287559.765166000,
+    "lastModifiedTime" : 1448316359.765166000,
     "creationTime" : null,
     "fileCRC" : -1449158725,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\4r2xx4yl9q.901o",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287559.425166000,
+    "lastModifiedTime" : 1448316359.425166000,
     "creationTime" : null,
     "fileCRC" : 590464551,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\5kjinlkzn1.wmcb4",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287559.955166000,
+    "lastModifiedTime" : 1448316359.955166000,
     "creationTime" : null,
     "fileCRC" : -645445278,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\650c79jmt.39",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287559.175166000,
+    "lastModifiedTime" : 1448316359.175166000,
     "creationTime" : null,
     "fileCRC" : 1427141128,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\9edpj23l3m.c10uz",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177800760.000000000,
+    "lastModifiedTime" : 1177829560.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\comtypes.h",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177800766.000000000,
+    "lastModifiedTime" : 1177829566.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\configcodes.h",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177800762.000000000,
+    "lastModifiedTime" : 1177829562.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\configtypes.h",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177799752.000000000,
+    "lastModifiedTime" : 1177828552.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\framewrk.h",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287560.335166000,
+    "lastModifiedTime" : 1448316360.335166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\HELP_YOUR_FILES.PNG",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287559.305166000,
+    "lastModifiedTime" : 1448316359.305166000,
     "creationTime" : null,
     "fileCRC" : -415247573,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\kjcp7zv.1v",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287560.185166000,
+    "lastModifiedTime" : 1448316360.185166000,
     "creationTime" : null,
     "fileCRC" : -56735379,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\m02m75x.4a66",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287559.585166000,
+    "lastModifiedTime" : 1448316359.585166000,
     "creationTime" : null,
     "fileCRC" : -291688496,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\include\\vwf82autb.k9n4",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1181038516.000000000,
+    "lastModifiedTime" : 1181067316.000000000,
     "creationTime" : null,
     "fileCRC" : 2045616355,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\imported\\makeflags.mak",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287560.785166000,
+    "lastModifiedTime" : 1448316360.785166000,
     "creationTime" : null,
     "fileCRC" : -1197863392,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\include\\2hr7cso2.r00",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287560.925166000,
+    "lastModifiedTime" : 1448316360.925166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\include\\HELP_YOUR_FILES.PNG",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287560.565166000,
+    "lastModifiedTime" : 1448316360.565166000,
     "creationTime" : null,
     "fileCRC" : 1098120003,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\include\\y7l2bgd9dd.q4",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287558.275166000,
+    "lastModifiedTime" : 1448316358.275166000,
     "creationTime" : null,
     "fileCRC" : 1741477736,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\jmfx4n2kjw.4r",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1176559072.000000000,
+    "lastModifiedTime" : 1176587872.000000000,
     "creationTime" : null,
     "fileCRC" : -1874356139,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\kernelcompiler.sh",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177879766.000000000,
+    "lastModifiedTime" : 1177908566.000000000,
     "creationTime" : null,
     "fileCRC" : 207730436,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\Makefile",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287558.465166000,
+    "lastModifiedTime" : 1448316358.465166000,
     "creationTime" : null,
     "fileCRC" : -1789537717,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\modules\\qaz57.29e6",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1181038440.000000000,
+    "lastModifiedTime" : 1181067240.000000000,
     "creationTime" : null,
     "fileCRC" : 472808607,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\README",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177933406.000000000,
+    "lastModifiedTime" : 1177962206.000000000,
     "creationTime" : null,
     "fileCRC" : 192374387,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\scripts\\cnxtconfig.in",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1170022658.000000000,
+    "lastModifiedTime" : 1170051458.000000000,
     "creationTime" : null,
     "fileCRC" : 382365273,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\scripts\\cnxtdcpd.in",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177808358.000000000,
+    "lastModifiedTime" : 1177837158.000000000,
     "creationTime" : null,
     "fileCRC" : -1163055995,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\scripts\\cnxtmodconflicts.in",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177861800.000000000,
+    "lastModifiedTime" : 1177890600.000000000,
     "creationTime" : null,
     "fileCRC" : -1819806777,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\scripts\\cnxtstop.in",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1177805100.000000000,
+    "lastModifiedTime" : 1177833900.000000000,
     "creationTime" : null,
     "fileCRC" : 112902608,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\scripts\\makefile",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1133994802.000000000,
+    "lastModifiedTime" : 1134023602.000000000,
     "creationTime" : null,
     "fileCRC" : -707280886,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\scripts\\patcher.in",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1101142770.000000000,
+    "lastModifiedTime" : 1101171570.000000000,
     "creationTime" : null,
     "fileCRC" : -1059761512,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\dgcmodem-1.01\\scripts\\rccnxt.in",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287561.125166000,
+    "lastModifiedTime" : 1448316361.125166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01\\HELP_YOUR_FILES.PNG",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1180996832.000000000,
+    "lastModifiedTime" : 1181025632.000000000,
     "creationTime" : null,
     "fileCRC" : 1612485805,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01-1.i386.rpm\\dgcmodem-1.01-1.i386.rpm",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1180664650.000000000,
+    "lastModifiedTime" : 1180693450.000000000,
     "creationTime" : null,
     "fileCRC" : -255744775,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem-1.01-1.i386.rpm\\LICENSE",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1180995574.000000000,
+    "lastModifiedTime" : 1181024374.000000000,
     "creationTime" : null,
     "fileCRC" : 1681792799,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem_1.01_i386.deb\\dgcmodem_1.01_i386.deb",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1180664650.000000000,
+    "lastModifiedTime" : 1180693450.000000000,
     "creationTime" : null,
     "fileCRC" : -255744775,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\dgcmodem_1.01_i386.deb\\LICENSE",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1448287561.225166000,
+    "lastModifiedTime" : 1448316361.225166000,
     "creationTime" : null,
     "fileCRC" : -407258844,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Linux\\HELP_YOUR_FILES.PNG",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159907746.000000000,
+    "lastModifiedTime" : 1159936546.000000000,
     "creationTime" : null,
     "fileCRC" : 515147437,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Vista32\\difxapi.dll",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1173913452.000000000,
+    "lastModifiedTime" : 1173942252.000000000,
     "creationTime" : null,
     "fileCRC" : 1006156263,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Vista32\\dusbutzk.cat",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1340146650.000000000,
+    "lastModifiedTime" : 1340175450.000000000,
     "creationTime" : null,
     "fileCRC" : 754095472,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Vista32\\DUSBUTzK.inf",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1171928092.000000000,
+    "lastModifiedTime" : 1171956892.000000000,
     "creationTime" : null,
     "fileCRC" : -1271798403,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Vista32\\HSFProf.cty",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1171859748.000000000,
+    "lastModifiedTime" : 1171888548.000000000,
     "creationTime" : null,
     "fileCRC" : -1596410914,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Vista32\\HSXHWCD2.sys",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1171859714.000000000,
+    "lastModifiedTime" : 1171888514.000000000,
     "creationTime" : null,
     "fileCRC" : -1687057449,
     "fileName" : "sl-u56k_cx-fu02plus_linux-winxp-vista-7-8_32-64bit\\Vista32\\HSX_CNXT.sys",

@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1176373236.125000000,
+    "lastModifiedTime" : 1176402036.125000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "searches",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 958989480.000000000,
+    "lastModifiedTime" : 959018280.000000000,
     "creationTime" : null,
     "fileCRC" : 1538110563,
     "fileName" : "comdlg32.ocx",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1196326682.265625000,
+    "lastModifiedTime" : 1196355482.265625000,
     "creationTime" : null,
     "fileCRC" : -290193395,
     "fileName" : "emulators.cfg",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159494259.937500000,
+    "lastModifiedTime" : 1159523059.937500000,
     "creationTime" : null,
     "fileCRC" : -76956299,
     "fileName" : "n64.ini",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159852749.515625000,
+    "lastModifiedTime" : 1159881549.515625000,
     "creationTime" : null,
     "fileCRC" : -406645777,
     "fileName" : "n64pt.ini",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159334116.140625000,
+    "lastModifiedTime" : 1159362916.140625000,
     "creationTime" : null,
     "fileCRC" : 1929639762,
     "fileName" : "psx.ini",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207588710.156250000,
+    "lastModifiedTime" : 1207617510.156250000,
     "creationTime" : null,
     "fileCRC" : -1233038317,
     "fileName" : "readme.html",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1201404564.921125000,
+    "lastModifiedTime" : 1201433364.921125000,
     "creationTime" : null,
     "fileCRC" : -2054693120,
     "fileName" : "renegade64.dll",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1203570057.203000000,
+    "lastModifiedTime" : 1203598857.203000000,
     "creationTime" : null,
     "fileCRC" : -1414274425,
     "fileName" : "Renegade64.exe",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207585435.921875000,
+    "lastModifiedTime" : 1207614235.921875000,
     "creationTime" : null,
     "fileCRC" : 1719137660,
     "fileName" : "gpl.txt",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587010.000000000,
+    "lastModifiedTime" : 1207615810.000000000,
     "creationTime" : null,
     "fileCRC" : 2021659355,
     "fileName" : "Renegade64_DLLv17\\d64type0.c",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587020.000000000,
+    "lastModifiedTime" : 1207615820.000000000,
     "creationTime" : null,
     "fileCRC" : -504541277,
     "fileName" : "Renegade64_DLLv17\\d64type1.c",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587028.000000000,
+    "lastModifiedTime" : 1207615828.000000000,
     "creationTime" : null,
     "fileCRC" : -1744328976,
     "fileName" : "Renegade64_DLLv17\\d64type2.c",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587034.000000000,
+    "lastModifiedTime" : 1207615834.000000000,
     "creationTime" : null,
     "fileCRC" : 1351909733,
     "fileName" : "Renegade64_DLLv17\\dllmain2.c",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587044.000000000,
+    "lastModifiedTime" : 1207615844.000000000,
     "creationTime" : null,
     "fileCRC" : 862307123,
     "fileName" : "Renegade64_DLLv17\\fileio.c",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587050.000000000,
+    "lastModifiedTime" : 1207615850.000000000,
     "creationTime" : null,
     "fileCRC" : 858836084,
     "fileName" : "Renegade64_DLLv17\\globals.h",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586994.015625000,
+    "lastModifiedTime" : 1207615794.015625000,
     "creationTime" : null,
     "fileCRC" : 440488210,
     "fileName" : "Renegade64_DLLv17\\libRenegade64.def",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586992.000000000,
+    "lastModifiedTime" : 1207615792.000000000,
     "creationTime" : null,
     "fileCRC" : 1751901515,
     "fileName" : "Renegade64_DLLv17\\Makefile.win",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587054.000000000,
+    "lastModifiedTime" : 1207615854.000000000,
     "creationTime" : null,
     "fileCRC" : 521187521,
     "fileName" : "Renegade64_DLLv17\\misc.c",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587058.000000000,
+    "lastModifiedTime" : 1207615858.000000000,
     "creationTime" : null,
     "fileCRC" : 1877849621,
     "fileName" : "Renegade64_DLLv17\\misc.h",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587066.000000000,
+    "lastModifiedTime" : 1207615866.000000000,
     "creationTime" : null,
     "fileCRC" : -1167673696,
     "fileName" : "Renegade64_DLLv17\\n64lib.c",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1158110239.125000000,
+    "lastModifiedTime" : 1158139039.125000000,
     "creationTime" : null,
     "fileCRC" : -395501951,
     "fileName" : "Renegade64_DLLv17\\Project1.dev",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587138.812500000,
+    "lastModifiedTime" : 1207615938.812500000,
     "creationTime" : null,
     "fileCRC" : -1228169897,
     "fileName" : "Renegade64_DLLv17\\Project1.layout",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586994.062500000,
+    "lastModifiedTime" : 1207615794.062500000,
     "creationTime" : null,
     "fileCRC" : 165311457,
     "fileName" : "Renegade64_DLLv17\\Renegade64.dll",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587070.000000000,
+    "lastModifiedTime" : 1207615870.000000000,
     "creationTime" : null,
     "fileCRC" : 899579872,
     "fileName" : "Renegade64_DLLv17\\results.c",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1147699972.000000000,
+    "lastModifiedTime" : 1147728772.000000000,
     "creationTime" : null,
     "fileCRC" : -709419739,
     "fileName" : "Renegade64_DLLv17\\results2.c",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586992.000000000,
+    "lastModifiedTime" : 1207615792.000000000,
     "creationTime" : null,
     "fileCRC" : -1119173335,
     "fileName" : "Renegade64_DLLv17\\search.c",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1147610024.000000000,
+    "lastModifiedTime" : 1147638824.000000000,
     "creationTime" : null,
     "fileCRC" : -615898932,
     "fileName" : "Renegade64_DLLv17\\searchtext.c",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587076.000000000,
+    "lastModifiedTime" : 1207615876.000000000,
     "creationTime" : null,
     "fileCRC" : 1337066685,
     "fileName" : "Renegade64_DLLv17\\searchxt.c",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587080.000000000,
+    "lastModifiedTime" : 1207615880.000000000,
     "creationTime" : null,
     "fileCRC" : 121561780,
     "fileName" : "Renegade64_DLLv17\\types.h",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587084.000000000,
+    "lastModifiedTime" : 1207615884.000000000,
     "creationTime" : null,
     "fileCRC" : -2121556392,
     "fileName" : "Renegade64_DLLv17\\vb64dis.c",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587088.000000000,
+    "lastModifiedTime" : 1207615888.000000000,
     "creationTime" : null,
     "fileCRC" : 245302399,
     "fileName" : "Renegade64_DLLv17\\vbAPI.c",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587092.000000000,
+    "lastModifiedTime" : 1207615892.000000000,
     "creationTime" : null,
     "fileCRC" : 1477346955,
     "fileName" : "Renegade64_DLLv17\\vbfileio.c",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587096.000000000,
+    "lastModifiedTime" : 1207615896.000000000,
     "creationTime" : null,
     "fileCRC" : 1397224735,
     "fileName" : "Renegade64_DLLv17\\vbresults.c",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207587102.000000000,
+    "lastModifiedTime" : 1207615902.000000000,
     "creationTime" : null,
     "fileCRC" : -488560652,
     "fileName" : "Renegade64_DLLv17\\vbsearch.c",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586312.812500000,
+    "lastModifiedTime" : 1207615112.812500000,
     "creationTime" : null,
     "fileCRC" : -2144474453,
     "fileName" : "Renegade64v17_SRC\\ActWriter.frm",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586308.906250000,
+    "lastModifiedTime" : 1207615108.906250000,
     "creationTime" : null,
     "fileCRC" : 1196818497,
     "fileName" : "Renegade64v17_SRC\\asmGS.frm",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586308.890625000,
+    "lastModifiedTime" : 1207615108.890625000,
     "creationTime" : null,
     "fileCRC" : -1047297382,
     "fileName" : "Renegade64v17_SRC\\asmGS.frx",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1145016574.438750000,
+    "lastModifiedTime" : 1145045374.438750000,
     "creationTime" : null,
     "fileCRC" : -974149043,
     "fileName" : "Renegade64v17_SRC\\Bloody Bruce_799x599.jpg",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586305.125000000,
+    "lastModifiedTime" : 1207615105.125000000,
     "creationTime" : null,
     "fileCRC" : 279614598,
     "fileName" : "Renegade64v17_SRC\\ByteSwapTool.frm",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586305.125000000,
+    "lastModifiedTime" : 1207615105.125000000,
     "creationTime" : null,
     "fileCRC" : -2091383219,
     "fileName" : "Renegade64v17_SRC\\ByteSwapTool.frx",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586302.890625000,
+    "lastModifiedTime" : 1207615102.890625000,
     "creationTime" : null,
     "fileCRC" : 1752689204,
     "fileName" : "Renegade64v17_SRC\\CodeFormat.frm",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586302.890625000,
+    "lastModifiedTime" : 1207615102.890625000,
     "creationTime" : null,
     "fileCRC" : 866716599,
     "fileName" : "Renegade64v17_SRC\\CodeFormat.frx",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161045027.421875000,
+    "lastModifiedTime" : 1161073827.421875000,
     "creationTime" : null,
     "fileCRC" : -1524906304,
     "fileName" : "Renegade64v17_SRC\\CodeFormat.log",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586292.375000000,
+    "lastModifiedTime" : 1207615092.375000000,
     "creationTime" : null,
     "fileCRC" : 573094774,
     "fileName" : "Renegade64v17_SRC\\CodePortTool.frm",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586292.375000000,
+    "lastModifiedTime" : 1207615092.375000000,
     "creationTime" : null,
     "fileCRC" : -1283333842,
     "fileName" : "Renegade64v17_SRC\\CodePortTool.frx",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586289.812500000,
+    "lastModifiedTime" : 1207615089.812500000,
     "creationTime" : null,
     "fileCRC" : 1264224714,
     "fileName" : "Renegade64v17_SRC\\CodeSearch.frm",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586289.812500000,
+    "lastModifiedTime" : 1207615089.812500000,
     "creationTime" : null,
     "fileCRC" : 1750038619,
     "fileName" : "Renegade64v17_SRC\\CodeSearch.frx",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159433091.953125000,
+    "lastModifiedTime" : 1159461891.953125000,
     "creationTime" : null,
     "fileCRC" : 285970869,
     "fileName" : "Renegade64v17_SRC\\Copy of Disassembler.frm",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586287.453125000,
+    "lastModifiedTime" : 1207615087.453125000,
     "creationTime" : null,
     "fileCRC" : 1513046183,
     "fileName" : "Renegade64v17_SRC\\CSresults.frm",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586287.453125000,
+    "lastModifiedTime" : 1207615087.453125000,
     "creationTime" : null,
     "fileCRC" : 508229037,
     "fileName" : "Renegade64v17_SRC\\CSresults.frx",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586108.218750000,
+    "lastModifiedTime" : 1207614908.218750000,
     "creationTime" : null,
     "fileCRC" : -351565782,
     "fileName" : "Renegade64v17_SRC\\DirPick.bas",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586283.453125000,
+    "lastModifiedTime" : 1207615083.453125000,
     "creationTime" : null,
     "fileCRC" : -1852614624,
     "fileName" : "Renegade64v17_SRC\\Disassembler.frm",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586283.437500000,
+    "lastModifiedTime" : 1207615083.437500000,
     "creationTime" : null,
     "fileCRC" : 1141578424,
     "fileName" : "Renegade64v17_SRC\\Disassembler.frx",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586278.937500000,
+    "lastModifiedTime" : 1207615078.937500000,
     "creationTime" : null,
     "fileCRC" : -1215713764,
     "fileName" : "Renegade64v17_SRC\\DisGS.frm",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586278.937500000,
+    "lastModifiedTime" : 1207615078.937500000,
     "creationTime" : null,
     "fileCRC" : 1889110136,
     "fileName" : "Renegade64v17_SRC\\DisGS.frx",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159862570.843750000,
+    "lastModifiedTime" : 1159891370.843750000,
     "creationTime" : null,
     "fileCRC" : -1952578569,
     "fileName" : "Renegade64v17_SRC\\DisSearch.frm",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159862570.843750000,
+    "lastModifiedTime" : 1159891370.843750000,
     "creationTime" : null,
     "fileCRC" : 1501059879,
     "fileName" : "Renegade64v17_SRC\\DisSearch.frx",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1146894024.939500000,
+    "lastModifiedTime" : 1146922824.939500000,
     "creationTime" : null,
     "fileCRC" : -199739023,
     "fileName" : "Renegade64v17_SRC\\dlgCreateOP.frm",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159430551.000000000,
+    "lastModifiedTime" : 1159459351.000000000,
     "creationTime" : null,
     "fileCRC" : 583858243,
     "fileName" : "Renegade64v17_SRC\\dlgEditASM.frm",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586276.312500000,
+    "lastModifiedTime" : 1207615076.312500000,
     "creationTime" : null,
     "fileCRC" : -1513986144,
     "fileName" : "Renegade64v17_SRC\\dlgEmuAttach.frm",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586276.312500000,
+    "lastModifiedTime" : 1207615076.312500000,
     "creationTime" : null,
     "fileCRC" : 553613509,
     "fileName" : "Renegade64v17_SRC\\dlgEmuAttach.frx",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586273.859375000,
+    "lastModifiedTime" : 1207615073.859375000,
     "creationTime" : null,
     "fileCRC" : 87514746,
     "fileName" : "Renegade64v17_SRC\\dlgEndianSelect.frm",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586273.859375000,
+    "lastModifiedTime" : 1207615073.859375000,
     "creationTime" : null,
     "fileCRC" : 57308735,
     "fileName" : "Renegade64v17_SRC\\dlgEndianSelect.frx",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586269.890625000,
+    "lastModifiedTime" : 1207615069.890625000,
     "creationTime" : null,
     "fileCRC" : 1048070352,
     "fileName" : "Renegade64v17_SRC\\dlgExportCS.frm",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586269.890625000,
+    "lastModifiedTime" : 1207615069.890625000,
     "creationTime" : null,
     "fileCRC" : -179214553,
     "fileName" : "Renegade64v17_SRC\\dlgExportCS.frx",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586267.531250000,
+    "lastModifiedTime" : 1207615067.531250000,
     "creationTime" : null,
     "fileCRC" : 328946521,
     "fileName" : "Renegade64v17_SRC\\dlgExportDis.frm",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586267.531250000,
+    "lastModifiedTime" : 1207615067.531250000,
     "creationTime" : null,
     "fileCRC" : 1889110136,
     "fileName" : "Renegade64v17_SRC\\dlgExportDis.frx",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159430990.109375000,
+    "lastModifiedTime" : 1159459790.109375000,
     "creationTime" : null,
     "fileCRC" : 1573657866,
     "fileName" : "Renegade64v17_SRC\\dlgGoToASM.frm",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586263.906250000,
+    "lastModifiedTime" : 1207615063.906250000,
     "creationTime" : null,
     "fileCRC" : 1572448142,
     "fileName" : "Renegade64v17_SRC\\dlgOptionsCS.frm",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586263.906250000,
+    "lastModifiedTime" : 1207615063.906250000,
     "creationTime" : null,
     "fileCRC" : -179214553,
     "fileName" : "Renegade64v17_SRC\\dlgOptionsCS.frx",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586260.406250000,
+    "lastModifiedTime" : 1207615060.406250000,
     "creationTime" : null,
     "fileCRC" : -2124425288,
     "fileName" : "Renegade64v17_SRC\\dlgROMheader.frm",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1147766443.468750000,
+    "lastModifiedTime" : 1147795243.468750000,
     "creationTime" : null,
     "fileCRC" : -1760939377,
     "fileName" : "Renegade64v17_SRC\\DlgSetResPath.frm",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586481.640625000,
+    "lastModifiedTime" : 1207615281.640625000,
     "creationTime" : null,
     "fileCRC" : -681083948,
     "fileName" : "Renegade64v17_SRC\\dlgSplash.frm",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586481.640625000,
+    "lastModifiedTime" : 1207615281.640625000,
     "creationTime" : null,
     "fileCRC" : 1243347934,
     "fileName" : "Renegade64v17_SRC\\dlgSplash.frx",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586253.328125000,
+    "lastModifiedTime" : 1207615053.328125000,
     "creationTime" : null,
     "fileCRC" : 1327728228,
     "fileName" : "Renegade64v17_SRC\\EmuCheat.frm",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586253.328125000,
+    "lastModifiedTime" : 1207615053.328125000,
     "creationTime" : null,
     "fileCRC" : 2086294299,
     "fileName" : "Renegade64v17_SRC\\EmuCheat.frx",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1196326682.265625000,
+    "lastModifiedTime" : 1196355482.265625000,
     "creationTime" : null,
     "fileCRC" : -290193395,
     "fileName" : "Renegade64v17_SRC\\emulators.cfg",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586249.812500000,
+    "lastModifiedTime" : 1207615049.812500000,
     "creationTime" : null,
     "fileCRC" : 1732721781,
     "fileName" : "Renegade64v17_SRC\\GE007TTcalc.frm",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207585435.921875000,
+    "lastModifiedTime" : 1207614235.921875000,
     "creationTime" : null,
     "fileCRC" : 1719137660,
     "fileName" : "Renegade64v17_SRC\\gpl.txt",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586137.765625000,
+    "lastModifiedTime" : 1207614937.765625000,
     "creationTime" : null,
     "fileCRC" : -1983504070,
     "fileName" : "Renegade64v17_SRC\\HexCalc.frm",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159359941.562500000,
+    "lastModifiedTime" : 1159388741.562500000,
     "creationTime" : null,
     "fileCRC" : 456588884,
     "fileName" : "Renegade64v17_SRC\\Main.frm",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159359941.562500000,
+    "lastModifiedTime" : 1159388741.562500000,
     "creationTime" : null,
     "fileCRC" : 1573879827,
     "fileName" : "Renegade64v17_SRC\\Main.frx",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586133.828125000,
+    "lastModifiedTime" : 1207614933.828125000,
     "creationTime" : null,
     "fileCRC" : -227268281,
     "fileName" : "Renegade64v17_SRC\\MainMDI.frm",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586133.828125000,
+    "lastModifiedTime" : 1207614933.828125000,
     "creationTime" : null,
     "fileCRC" : 1714868080,
     "fileName" : "Renegade64v17_SRC\\MainMDI.frx",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586128.562500000,
+    "lastModifiedTime" : 1207614928.562500000,
     "creationTime" : null,
     "fileCRC" : -307669367,
     "fileName" : "Renegade64v17_SRC\\MemEditor.frm",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586128.562500000,
+    "lastModifiedTime" : 1207614928.562500000,
     "creationTime" : null,
     "fileCRC" : -826525484,
     "fileName" : "Renegade64v17_SRC\\MemEditor.frx",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586121.359375000,
+    "lastModifiedTime" : 1207614921.359375000,
     "creationTime" : null,
     "fileCRC" : -256334932,
     "fileName" : "Renegade64v17_SRC\\Misc.bas",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1178677160.281250000,
+    "lastModifiedTime" : 1178705960.281250000,
     "creationTime" : null,
     "fileCRC" : 145576851,
     "fileName" : "Renegade64v17_SRC\\n64.ini",
@@ -1430,7 +1430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159849149.515625000,
+    "lastModifiedTime" : 1159877949.515625000,
     "creationTime" : null,
     "fileCRC" : -406645777,
     "fileName" : "Renegade64v17_SRC\\n64pt.ini",
@@ -1446,7 +1446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1159330516.140625000,
+    "lastModifiedTime" : 1159359316.140625000,
     "creationTime" : null,
     "fileCRC" : 1929639762,
     "fileName" : "Renegade64v17_SRC\\psx.ini",
@@ -1462,7 +1462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586103.156250000,
+    "lastModifiedTime" : 1207614903.156250000,
     "creationTime" : null,
     "fileCRC" : -1299312687,
     "fileName" : "Renegade64v17_SRC\\r4300i_ASMmisc.bas",
@@ -1478,7 +1478,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586098.093750000,
+    "lastModifiedTime" : 1207614898.093750000,
     "creationTime" : null,
     "fileCRC" : 259672249,
     "fileName" : "Renegade64v17_SRC\\r4300i_ASMops.bas",
@@ -1494,7 +1494,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586095.234375000,
+    "lastModifiedTime" : 1207614895.234375000,
     "creationTime" : null,
     "fileCRC" : -67383012,
     "fileName" : "Renegade64v17_SRC\\r4300i_ASMoptypes.bas",
@@ -1510,7 +1510,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586091.812500000,
+    "lastModifiedTime" : 1207614891.812500000,
     "creationTime" : null,
     "fileCRC" : 1439828875,
     "fileName" : "Renegade64v17_SRC\\r4300i_dis.bas",
@@ -1526,7 +1526,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1203407998.619312000,
+    "lastModifiedTime" : 1203436798.619312000,
     "creationTime" : null,
     "fileCRC" : -1919023798,
     "fileName" : "Renegade64v17_SRC\\readme.html",
@@ -1542,7 +1542,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1176470078.531250000,
+    "lastModifiedTime" : 1176498878.531250000,
     "creationTime" : null,
     "fileCRC" : -1472999539,
     "fileName" : "Renegade64v17_SRC\\Renegade.ico",
@@ -1558,7 +1558,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1201406884.608625000,
+    "lastModifiedTime" : 1201435684.608625000,
     "creationTime" : null,
     "fileCRC" : -1810261623,
     "fileName" : "Renegade64v17_SRC\\Renegade.vbp",
@@ -1574,7 +1574,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586528.515625000,
+    "lastModifiedTime" : 1207615328.515625000,
     "creationTime" : null,
     "fileCRC" : 1831045206,
     "fileName" : "Renegade64v17_SRC\\Renegade.vbw",
@@ -1590,7 +1590,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1201404564.921125000,
+    "lastModifiedTime" : 1201433364.921125000,
     "creationTime" : null,
     "fileCRC" : -2054693120,
     "fileName" : "Renegade64v17_SRC\\renegade64.dll",
@@ -1606,7 +1606,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586496.671000000,
+    "lastModifiedTime" : 1207615296.671000000,
     "creationTime" : null,
     "fileCRC" : -1926532057,
     "fileName" : "Renegade64v17_SRC\\Renegade64.exe",
@@ -1622,7 +1622,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586088.546875000,
+    "lastModifiedTime" : 1207614888.546875000,
     "creationTime" : null,
     "fileCRC" : -1690479263,
     "fileName" : "Renegade64v17_SRC\\Thumb_ASM.bas",
@@ -1638,7 +1638,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586083.125000000,
+    "lastModifiedTime" : 1207614883.125000000,
     "creationTime" : null,
     "fileCRC" : 1274733110,
     "fileName" : "Renegade64v17_SRC\\Thumb_Misc.bas",
@@ -1654,7 +1654,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586077.593750000,
+    "lastModifiedTime" : 1207614877.593750000,
     "creationTime" : null,
     "fileCRC" : 135472205,
     "fileName" : "Renegade64v17_SRC\\Thumb_Types.bas",
@@ -1670,7 +1670,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207586124.453125000,
+    "lastModifiedTime" : 1207614924.453125000,
     "creationTime" : null,
     "fileCRC" : -1552028771,
     "fileName" : "Renegade64v17_SRC\\Unpatcher.frm",
@@ -1686,7 +1686,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1144999508.235625000,
+    "lastModifiedTime" : 1145028308.235625000,
     "creationTime" : null,
     "fileCRC" : -273030257,
     "fileName" : "Renegade64v17_SRC\\Unpatcher.frx",
@@ -1702,7 +1702,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207588311.281250000,
+    "lastModifiedTime" : 1207617111.281250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Renegade64_DLLv17",
@@ -1718,7 +1718,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1207588306.328125000,
+    "lastModifiedTime" : 1207617106.328125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Renegade64v17_SRC",

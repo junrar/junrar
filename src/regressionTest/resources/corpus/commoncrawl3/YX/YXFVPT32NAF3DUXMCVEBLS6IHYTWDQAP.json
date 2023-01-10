@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1286885699.062500000,
+    "lastModifiedTime" : 1286914499.062500000,
     "creationTime" : null,
     "fileCRC" : 646354400,
     "fileName" : "ControlPanel\\app.config",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288272925.437500000,
+    "lastModifiedTime" : 1288301725.437500000,
     "creationTime" : null,
     "fileCRC" : 1413371870,
     "fileName" : "ControlPanel\\ConnectForm.cs",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.921875000,
+    "lastModifiedTime" : 1278969763.921875000,
     "creationTime" : null,
     "fileCRC" : -1743236257,
     "fileName" : "ControlPanel\\ConnectForm.Designer.cs",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.937500000,
+    "lastModifiedTime" : 1278969763.937500000,
     "creationTime" : null,
     "fileCRC" : -1164427358,
     "fileName" : "ControlPanel\\ConnectForm.resx",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1286885699.078125000,
+    "lastModifiedTime" : 1286914499.078125000,
     "creationTime" : null,
     "fileCRC" : 1083366310,
     "fileName" : "ControlPanel\\DigiTV Control Panel.csproj",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1286885048.187500000,
+    "lastModifiedTime" : 1286913848.187500000,
     "creationTime" : null,
     "fileCRC" : -1009057962,
     "fileName" : "ControlPanel\\DigiTV Control Panel.csproj.user",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.921875000,
+    "lastModifiedTime" : 1278969763.921875000,
     "creationTime" : null,
     "fileCRC" : 820915100,
     "fileName" : "ControlPanel\\Logo.png",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.937500000,
+    "lastModifiedTime" : 1278969763.937500000,
     "creationTime" : null,
     "fileCRC" : -92591584,
     "fileName" : "ControlPanel\\Main.ico",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288264010.250000000,
+    "lastModifiedTime" : 1288292810.250000000,
     "creationTime" : null,
     "fileCRC" : 591343722,
     "fileName" : "ControlPanel\\MainForm.cs",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288261891.484375000,
+    "lastModifiedTime" : 1288290691.484375000,
     "creationTime" : null,
     "fileCRC" : -1413891557,
     "fileName" : "ControlPanel\\MainForm.Designer.cs",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288261891.484375000,
+    "lastModifiedTime" : 1288290691.484375000,
     "creationTime" : null,
     "fileCRC" : -1322779750,
     "fileName" : "ControlPanel\\MainForm.resx",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.921875000,
+    "lastModifiedTime" : 1278969763.921875000,
     "creationTime" : null,
     "fileCRC" : 1521475635,
     "fileName" : "ControlPanel\\Program.cs",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.906250000,
+    "lastModifiedTime" : 1278969763.906250000,
     "creationTime" : null,
     "fileCRC" : -264422136,
     "fileName" : "ControlPanel\\Properties\\AssemblyInfo.cs",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1286885699.406250000,
+    "lastModifiedTime" : 1286914499.406250000,
     "creationTime" : null,
     "fileCRC" : 1261735521,
     "fileName" : "ControlPanel\\Properties\\Resources.Designer.cs",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.906250000,
+    "lastModifiedTime" : 1278969763.906250000,
     "creationTime" : null,
     "fileCRC" : 845101055,
     "fileName" : "ControlPanel\\Properties\\Resources.resx",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1286885699.718750000,
+    "lastModifiedTime" : 1286914499.718750000,
     "creationTime" : null,
     "fileCRC" : -1629347573,
     "fileName" : "ControlPanel\\Properties\\Settings.Designer.cs",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.906250000,
+    "lastModifiedTime" : 1278969763.906250000,
     "creationTime" : null,
     "fileCRC" : 2048440351,
     "fileName" : "ControlPanel\\Properties\\Settings.settings",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940963.906250000,
+    "lastModifiedTime" : 1278969763.906250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ControlPanel\\Properties",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1286885048.187500000,
+    "lastModifiedTime" : 1286913848.187500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ControlPanel",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288271858.953125000,
+    "lastModifiedTime" : 1288300658.953125000,
     "creationTime" : null,
     "fileCRC" : 2095064939,
     "fileName" : "DigiTV\\App.cs",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288260399.781250000,
+    "lastModifiedTime" : 1288289199.781250000,
     "creationTime" : null,
     "fileCRC" : -1342928764,
     "fileName" : "DigiTV\\Capture.cs",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288272897.140625000,
+    "lastModifiedTime" : 1288301697.140625000,
     "creationTime" : null,
     "fileCRC" : 1145526638,
     "fileName" : "DigiTV\\ConnectForm.cs",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288271950.750000000,
+    "lastModifiedTime" : 1288300750.750000000,
     "creationTime" : null,
     "fileCRC" : 886205035,
     "fileName" : "DigiTV\\ConnectForm.designer.cs",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288271950.734375000,
+    "lastModifiedTime" : 1288300750.734375000,
     "creationTime" : null,
     "fileCRC" : 1229290686,
     "fileName" : "DigiTV\\ConnectForm.resx",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288272846.687500000,
+    "lastModifiedTime" : 1288301646.687500000,
     "creationTime" : null,
     "fileCRC" : -938243953,
     "fileName" : "DigiTV\\Crypt.cs",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358381.681731400,
+    "lastModifiedTime" : 1288387181.681731400,
     "creationTime" : null,
     "fileCRC" : -1085587145,
     "fileName" : "DigiTV\\DigiTV.csproj",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1286885044.687500000,
+    "lastModifiedTime" : 1286913844.687500000,
     "creationTime" : null,
     "fileCRC" : -1009057962,
     "fileName" : "DigiTV\\DigiTV.csproj.user",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940964.000000000,
+    "lastModifiedTime" : 1278969764.000000000,
     "creationTime" : null,
     "fileCRC" : 835596151,
     "fileName" : "DigiTV\\Exceptions.cs",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288257394.218750000,
+    "lastModifiedTime" : 1288286194.218750000,
     "creationTime" : null,
     "fileCRC" : 1877509927,
     "fileName" : "DigiTV\\Info.cs",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288261366.375000000,
+    "lastModifiedTime" : 1288290166.375000000,
     "creationTime" : null,
     "fileCRC" : -296562973,
     "fileName" : "DigiTV\\Live.cs",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288257433.484375000,
+    "lastModifiedTime" : 1288286233.484375000,
     "creationTime" : null,
     "fileCRC" : -1692425259,
     "fileName" : "DigiTV\\PlayList.cs",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288257097.093750000,
+    "lastModifiedTime" : 1288285897.093750000,
     "creationTime" : null,
     "fileCRC" : -2075981431,
     "fileName" : "DigiTV\\Properties\\AssemblyInfo.cs",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1278940964.000000000,
+    "lastModifiedTime" : 1278969764.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DigiTV\\Properties",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288259179.265625000,
+    "lastModifiedTime" : 1288287979.265625000,
     "creationTime" : null,
     "fileCRC" : 1099646259,
     "fileName" : "DigiTV\\WebConnect.cs",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288272477.265625000,
+    "lastModifiedTime" : 1288301277.265625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DigiTV",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358995.712981400,
+    "lastModifiedTime" : 1288387795.712981400,
     "creationTime" : null,
     "fileCRC" : 1446660673,
     "fileName" : "DigiTV RecordTiming\\DigiTV RecordTiming.csproj",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358368.791106400,
+    "lastModifiedTime" : 1288387168.791106400,
     "creationTime" : null,
     "fileCRC" : 715362729,
     "fileName" : "DigiTV RecordTiming\\DigiTV RecordTiming.sln",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288360589.275000000,
+    "lastModifiedTime" : 1288389389.275000000,
     "creationTime" : null,
     "fileCRC" : -969080867,
     "fileName" : "DigiTV RecordTiming\\DigiTV RecordTiming.suo",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288362939.775481400,
+    "lastModifiedTime" : 1288391739.775481400,
     "creationTime" : null,
     "fileCRC" : -1732669829,
     "fileName" : "DigiTV RecordTiming\\frmAddItem.cs",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.744231400,
+    "lastModifiedTime" : 1288386972.744231400,
     "creationTime" : null,
     "fileCRC" : -1766634820,
     "fileName" : "DigiTV RecordTiming\\frmAddItem.Designer.cs",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.775481400,
+    "lastModifiedTime" : 1288386972.775481400,
     "creationTime" : null,
     "fileCRC" : 782427072,
     "fileName" : "DigiTV RecordTiming\\frmAddItem.resx",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.775481400,
+    "lastModifiedTime" : 1288386972.775481400,
     "creationTime" : null,
     "fileCRC" : -662150258,
     "fileName" : "DigiTV RecordTiming\\frmLogin.cs",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.759856400,
+    "lastModifiedTime" : 1288386972.759856400,
     "creationTime" : null,
     "fileCRC" : -2039984576,
     "fileName" : "DigiTV RecordTiming\\frmLogin.Designer.cs",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.791106400,
+    "lastModifiedTime" : 1288386972.791106400,
     "creationTime" : null,
     "fileCRC" : 293832135,
     "fileName" : "DigiTV RecordTiming\\frmLogin.resx",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288362275.181731400,
+    "lastModifiedTime" : 1288391075.181731400,
     "creationTime" : null,
     "fileCRC" : 723197385,
     "fileName" : "DigiTV RecordTiming\\frmMain.cs",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.775481400,
+    "lastModifiedTime" : 1288386972.775481400,
     "creationTime" : null,
     "fileCRC" : 1637691642,
     "fileName" : "DigiTV RecordTiming\\frmMain.Designer.cs",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.775481400,
+    "lastModifiedTime" : 1288386972.775481400,
     "creationTime" : null,
     "fileCRC" : 454008061,
     "fileName" : "DigiTV RecordTiming\\frmMain.resx",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.775481400,
+    "lastModifiedTime" : 1288386972.775481400,
     "creationTime" : null,
     "fileCRC" : -1961083601,
     "fileName" : "DigiTV RecordTiming\\Program.cs",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.587981400,
+    "lastModifiedTime" : 1288386972.587981400,
     "creationTime" : null,
     "fileCRC" : -1018391910,
     "fileName" : "DigiTV RecordTiming\\Properties\\AssemblyInfo.cs",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.603606400,
+    "lastModifiedTime" : 1288386972.603606400,
     "creationTime" : null,
     "fileCRC" : -1407281087,
     "fileName" : "DigiTV RecordTiming\\Properties\\Resources.Designer.cs",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.603606400,
+    "lastModifiedTime" : 1288386972.603606400,
     "creationTime" : null,
     "fileCRC" : 1987336852,
     "fileName" : "DigiTV RecordTiming\\Properties\\Resources.resx",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.587981400,
+    "lastModifiedTime" : 1288386972.587981400,
     "creationTime" : null,
     "fileCRC" : 486838763,
     "fileName" : "DigiTV RecordTiming\\Properties\\Settings.Designer.cs",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.587981400,
+    "lastModifiedTime" : 1288386972.587981400,
     "creationTime" : null,
     "fileCRC" : 316184416,
     "fileName" : "DigiTV RecordTiming\\Properties\\Settings.settings",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.603606400,
+    "lastModifiedTime" : 1288386972.603606400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DigiTV RecordTiming\\Properties",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.775481400,
+    "lastModifiedTime" : 1288386972.775481400,
     "creationTime" : null,
     "fileCRC" : -1759760514,
     "fileName" : "DigiTV RecordTiming\\time.ico",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288358172.775481400,
+    "lastModifiedTime" : 1288386972.775481400,
     "creationTime" : null,
     "fileCRC" : -1950415517,
     "fileName" : "DigiTV RecordTiming\\TimetableItem.cs",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288362939.775481400,
+    "lastModifiedTime" : 1288391739.775481400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DigiTV RecordTiming",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.384856400,
+    "lastModifiedTime" : 1288388507.384856400,
     "creationTime" : null,
     "fileCRC" : -36615494,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\app.config",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359757.400481400,
+    "lastModifiedTime" : 1288388557.400481400,
     "creationTime" : null,
     "fileCRC" : 712303062,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\DigiTV Thermolog.csproj",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288360282.322356400,
+    "lastModifiedTime" : 1288389082.322356400,
     "creationTime" : null,
     "fileCRC" : 246766957,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Form1.cs",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288360282.322356400,
+    "lastModifiedTime" : 1288389082.322356400,
     "creationTime" : null,
     "fileCRC" : 1846075435,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Form1.Designer.cs",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.369231400,
+    "lastModifiedTime" : 1288388507.369231400,
     "creationTime" : null,
     "fileCRC" : -2077408661,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Form1.resx",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.384856400,
+    "lastModifiedTime" : 1288388507.384856400,
     "creationTime" : null,
     "fileCRC" : -1151549437,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Program.cs",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.337981400,
+    "lastModifiedTime" : 1288388507.337981400,
     "creationTime" : null,
     "fileCRC" : 349333539,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Properties\\AssemblyInfo.cs",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.337981400,
+    "lastModifiedTime" : 1288388507.337981400,
     "creationTime" : null,
     "fileCRC" : 251402157,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Properties\\Resources.Designer.cs",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.337981400,
+    "lastModifiedTime" : 1288388507.337981400,
     "creationTime" : null,
     "fileCRC" : 1987336852,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Properties\\Resources.resx",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.337981400,
+    "lastModifiedTime" : 1288388507.337981400,
     "creationTime" : null,
     "fileCRC" : -803825809,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Properties\\Settings.Designer.cs",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.337981400,
+    "lastModifiedTime" : 1288388507.337981400,
     "creationTime" : null,
     "fileCRC" : -1074085360,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Properties\\Settings.settings",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.337981400,
+    "lastModifiedTime" : 1288388507.337981400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\Properties",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359707.384856400,
+    "lastModifiedTime" : 1288388507.384856400,
     "creationTime" : null,
     "fileCRC" : -1301262309,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog\\sun.ico",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288360282.322356400,
+    "lastModifiedTime" : 1288389082.322356400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359757.416106400,
+    "lastModifiedTime" : 1288388557.416106400,
     "creationTime" : null,
     "fileCRC" : -1379888080,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog.sln",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288360592.197000000,
+    "lastModifiedTime" : 1288389392.197000000,
     "creationTime" : null,
     "fileCRC" : 141394080,
     "fileName" : "DigiTV Thermolog\\DigiTV Thermolog.suo",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288359757.416106400,
+    "lastModifiedTime" : 1288388557.416106400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DigiTV Thermolog",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : 1816139633,
     "fileName" : "MiniSample\\DigiTV Api Sample\\DigiTV Api Sample.csproj",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : -1065108895,
     "fileName" : "MiniSample\\DigiTV Api Sample\\frmIP.cs",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : -2079891737,
     "fileName" : "MiniSample\\DigiTV Api Sample\\frmIP.Designer.cs",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : 1229290686,
     "fileName" : "MiniSample\\DigiTV Api Sample\\frmIP.resx",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : -415993094,
     "fileName" : "MiniSample\\DigiTV Api Sample\\frmMain.cs",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : 626862137,
     "fileName" : "MiniSample\\DigiTV Api Sample\\frmMain.Designer.cs",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : 1229290686,
     "fileName" : "MiniSample\\DigiTV Api Sample\\frmMain.resx",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.453125000,
+    "lastModifiedTime" : 1288740380.453125000,
     "creationTime" : null,
     "fileCRC" : 44079526,
     "fileName" : "MiniSample\\DigiTV Api Sample\\Program.cs",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.437500000,
+    "lastModifiedTime" : 1288740380.437500000,
     "creationTime" : null,
     "fileCRC" : -1560695796,
     "fileName" : "MiniSample\\DigiTV Api Sample\\Properties\\AssemblyInfo.cs",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.437500000,
+    "lastModifiedTime" : 1288740380.437500000,
     "creationTime" : null,
     "fileCRC" : 708157365,
     "fileName" : "MiniSample\\DigiTV Api Sample\\Properties\\Resources.Designer.cs",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.437500000,
+    "lastModifiedTime" : 1288740380.437500000,
     "creationTime" : null,
     "fileCRC" : 1987336852,
     "fileName" : "MiniSample\\DigiTV Api Sample\\Properties\\Resources.resx",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.437500000,
+    "lastModifiedTime" : 1288740380.437500000,
     "creationTime" : null,
     "fileCRC" : 1335016454,
     "fileName" : "MiniSample\\DigiTV Api Sample\\Properties\\Settings.Designer.cs",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.437500000,
+    "lastModifiedTime" : 1288740380.437500000,
     "creationTime" : null,
     "fileCRC" : 316184416,
     "fileName" : "MiniSample\\DigiTV Api Sample\\Properties\\Settings.settings",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.437500000,
+    "lastModifiedTime" : 1288740380.437500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "MiniSample\\DigiTV Api Sample\\Properties",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711646.093750000,
+    "lastModifiedTime" : 1288740446.093750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "MiniSample\\DigiTV Api Sample",
@@ -1430,7 +1430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.468750000,
+    "lastModifiedTime" : 1288740380.468750000,
     "creationTime" : null,
     "fileCRC" : -1980431896,
     "fileName" : "MiniSample\\DigiTV Api Sample.sln",
@@ -1446,7 +1446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288711580.468750000,
+    "lastModifiedTime" : 1288740380.468750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "MiniSample",
@@ -1462,7 +1462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1288712000.546875000,
+    "lastModifiedTime" : 1288740800.546875000,
     "creationTime" : null,
     "fileCRC" : -29406469,
     "fileName" : "DigiTV API.sln",

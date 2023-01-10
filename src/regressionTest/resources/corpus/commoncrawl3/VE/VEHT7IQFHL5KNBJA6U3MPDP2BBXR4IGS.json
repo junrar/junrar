@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991027.687500000,
+    "lastModifiedTime" : 1358019827.687500000,
     "creationTime" : null,
     "fileCRC" : 1286688344,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Debug\\Content\\shipanimated.xnb",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991027.843750000,
+    "lastModifiedTime" : 1358019827.843750000,
     "creationTime" : null,
     "fileCRC" : 797353866,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Debug\\Content\\SpriteFont1.xnb",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991028.453125000,
+    "lastModifiedTime" : 1358019828.453125000,
     "creationTime" : null,
     "fileCRC" : 1122196729,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Debug\\Scripting.exe",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991028.359375000,
+    "lastModifiedTime" : 1358019828.359375000,
     "creationTime" : null,
     "fileCRC" : -1966626573,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Debug\\Scripting.pdb",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991028.359375000,
+    "lastModifiedTime" : 1358019828.359375000,
     "creationTime" : null,
     "fileCRC" : -836121417,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Debug\\Scripting.xml",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164728.315807700,
+    "lastModifiedTime" : 1302193528.315807700,
     "creationTime" : null,
     "fileCRC" : -923821003,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Release\\Content\\shipanimated.xnb",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164728.597057700,
+    "lastModifiedTime" : 1302193528.597057700,
     "creationTime" : null,
     "fileCRC" : -679337980,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Release\\Scripting.exe",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164728.534557700,
+    "lastModifiedTime" : 1302193528.534557700,
     "creationTime" : null,
     "fileCRC" : 535105212,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Release\\Scripting.pdb",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164077.000000000,
+    "lastModifiedTime" : 1302192877.000000000,
     "creationTime" : null,
     "fileCRC" : 36094323,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Game.ico",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302613812.937500000,
+    "lastModifiedTime" : 1302642612.937500000,
     "creationTime" : null,
     "fileCRC" : 114405652,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Game1.cs",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164077.031250000,
+    "lastModifiedTime" : 1302192877.031250000,
     "creationTime" : null,
     "fileCRC" : -1415906467,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\GameThumbnail.png",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302260193.578125000,
+    "lastModifiedTime" : 1302288993.578125000,
     "creationTime" : null,
     "fileCRC" : -63324232,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\ObjectTranslator.cs",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164077.468750000,
+    "lastModifiedTime" : 1302192877.468750000,
     "creationTime" : null,
     "fileCRC" : -439733755,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Program.cs",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164077.375000000,
+    "lastModifiedTime" : 1302192877.375000000,
     "creationTime" : null,
     "fileCRC" : 454320480,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Properties\\AssemblyInfo.cs",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302769661.538062400,
+    "lastModifiedTime" : 1302798461.538062400,
     "creationTime" : null,
     "fileCRC" : -984227855,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\RegisteredObject.cs",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302259360.406250000,
+    "lastModifiedTime" : 1302288160.406250000,
     "creationTime" : null,
     "fileCRC" : 970991748,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\ScriptException.cs",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302260433.031250000,
+    "lastModifiedTime" : 1302289233.031250000,
     "creationTime" : null,
     "fileCRC" : 1769878846,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Scripting.csproj",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991028.687500000,
+    "lastModifiedTime" : 1358019828.687500000,
     "creationTime" : null,
     "fileCRC" : 1909338671,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Scripting.csproj.Debug.cachefile",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164728.612682700,
+    "lastModifiedTime" : 1302193528.612682700,
     "creationTime" : null,
     "fileCRC" : -1873001857,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Scripting.csproj.Release.cachefile",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164081.328125000,
+    "lastModifiedTime" : 1302192881.328125000,
     "creationTime" : null,
     "fileCRC" : -263723950,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Scripting.csproj.user",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991028.359375000,
+    "lastModifiedTime" : 1358019828.359375000,
     "creationTime" : null,
     "fileCRC" : -836121417,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Scripting.xml",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302261601.484375000,
+    "lastModifiedTime" : 1302290401.484375000,
     "creationTime" : null,
     "fileCRC" : -1892242033,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\ScriptManager.cs",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302261227.500000000,
+    "lastModifiedTime" : 1302290027.500000000,
     "creationTime" : null,
     "fileCRC" : -225650852,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\ScriptUtils.cs",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302176223.065807700,
+    "lastModifiedTime" : 1302205023.065807700,
     "creationTime" : null,
     "fileCRC" : 689817385,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Test.cs",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302262859.078125000,
+    "lastModifiedTime" : 1302291659.078125000,
     "creationTime" : null,
     "fileCRC" : 1222533130,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\TODO.txt",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991027.968750000,
+    "lastModifiedTime" : 1358019827.968750000,
     "creationTime" : null,
     "fileCRC" : -1962573048,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Debug\\ContentPipeline.xml",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991014.718750000,
+    "lastModifiedTime" : 1358019814.718750000,
     "creationTime" : null,
     "fileCRC" : -1503092953,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Debug\\DesignTimeResolveAssemblyReferencesInput.cache",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164211.265625000,
+    "lastModifiedTime" : 1302193011.265625000,
     "creationTime" : null,
     "fileCRC" : -2123052861,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Debug\\ResolveAssemblyReference.cache",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991028.015625000,
+    "lastModifiedTime" : 1358019828.015625000,
     "creationTime" : null,
     "fileCRC" : 630488296,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Debug\\ScriptingContent.contentproj.FileListAbsolute.txt",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164728.331432700,
+    "lastModifiedTime" : 1302193528.331432700,
     "creationTime" : null,
     "fileCRC" : 2078656949,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Release\\ContentPipeline.xml",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164727.065807700,
+    "lastModifiedTime" : 1302193527.065807700,
     "creationTime" : null,
     "fileCRC" : -1994567984,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Release\\DesignTimeResolveAssemblyReferencesInput.cache",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164728.347057700,
+    "lastModifiedTime" : 1302193528.347057700,
     "creationTime" : null,
     "fileCRC" : 2064229579,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Release\\ScriptingContent.contentproj.FileListAbsolute.txt",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302165185.128307700,
+    "lastModifiedTime" : 1302193985.128307700,
     "creationTime" : null,
     "fileCRC" : 389268147,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\ScriptingContent.contentproj",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164516.972057700,
+    "lastModifiedTime" : 1302193316.972057700,
     "creationTime" : null,
     "fileCRC" : -1459662768,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\shipanimated.dds",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164990.300182700,
+    "lastModifiedTime" : 1302193790.300182700,
     "creationTime" : null,
     "fileCRC" : -1231660710,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\SpriteFont1.spritefont",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164081.453125000,
+    "lastModifiedTime" : 1302192881.453125000,
     "creationTime" : null,
     "fileCRC" : -1056783348,
     "fileName" : "ScriptingPOC\\Scripting.sln",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991066.046000000,
+    "lastModifiedTime" : 1358019866.046000000,
     "creationTime" : null,
     "fileCRC" : -842934360,
     "fileName" : "ScriptingPOC\\Scripting.suo",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991080.953125000,
+    "lastModifiedTime" : 1358019880.953125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Debug\\Content",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991084.421875000,
+    "lastModifiedTime" : 1358019884.421875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Release\\Content",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164081.187500000,
+    "lastModifiedTime" : 1302192881.187500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Debug\\TempPE",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164727.003307700,
+    "lastModifiedTime" : 1302193527.003307700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Release\\TempPE",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991079.859375000,
+    "lastModifiedTime" : 1358019879.859375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Debug",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991083.203125000,
+    "lastModifiedTime" : 1358019883.203125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86\\Release",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991098.453125000,
+    "lastModifiedTime" : 1358019898.453125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\bin\\x86\\Debug",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991101.031250000,
+    "lastModifiedTime" : 1358019901.031250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\bin\\x86\\Release",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164211.984375000,
+    "lastModifiedTime" : 1302193011.984375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Debug",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164728.347057700,
+    "lastModifiedTime" : 1302193528.347057700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86\\Release",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991078.187500000,
+    "lastModifiedTime" : 1358019878.187500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin\\x86",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991097.546875000,
+    "lastModifiedTime" : 1358019897.546875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\bin\\x86",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164727.003307700,
+    "lastModifiedTime" : 1302193527.003307700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj\\x86",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991076.078125000,
+    "lastModifiedTime" : 1358019876.078125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\bin",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991091.750000000,
+    "lastModifiedTime" : 1358019891.750000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting\\Properties",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991096.500000000,
+    "lastModifiedTime" : 1358019896.500000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\bin",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1302164080.984375000,
+    "lastModifiedTime" : 1302192880.984375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent\\obj",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991090.078125000,
+    "lastModifiedTime" : 1358019890.078125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\Scripting",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991095.390625000,
+    "lastModifiedTime" : 1358019895.390625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting\\ScriptingContent",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991073.562500000,
+    "lastModifiedTime" : 1358019873.562500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC\\Scripting",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1357991071.843750000,
+    "lastModifiedTime" : 1358019871.843750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ScriptingPOC",

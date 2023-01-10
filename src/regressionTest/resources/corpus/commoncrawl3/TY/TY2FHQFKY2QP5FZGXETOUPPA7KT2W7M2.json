@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062396552.194528000,
+    "lastModifiedTime" : 1062425352.194528000,
     "creationTime" : null,
     "fileCRC" : 2061263863,
     "fileName" : "FILE_ID.DIZ",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893468.000000000,
+    "lastModifiedTime" : 1061922268.000000000,
     "creationTime" : null,
     "fileCRC" : -970130767,
     "fileName" : "src\\OtherPluginFiles\\FILE_ID.DIZ",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1015993724.000000000,
+    "lastModifiedTime" : 1016022524.000000000,
     "creationTime" : null,
     "fileCRC" : 1151048786,
     "fileName" : "src\\Project\\FarHeaders\\Descript.ion",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893490.000000000,
+    "lastModifiedTime" : 1061922290.000000000,
     "creationTime" : null,
     "fileCRC" : -1629635569,
     "fileName" : "readme.Rus.txt",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893490.000000000,
+    "lastModifiedTime" : 1061922290.000000000,
     "creationTime" : null,
     "fileCRC" : -1629635569,
     "fileName" : "src\\OtherPluginFiles\\readme.Rus.txt",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893820.000000000,
+    "lastModifiedTime" : 1061922620.000000000,
     "creationTime" : null,
     "fileCRC" : 383621530,
     "fileName" : "src\\readme.txt",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893506.000000000,
+    "lastModifiedTime" : 1061922306.000000000,
     "creationTime" : null,
     "fileCRC" : -1764774687,
     "fileName" : "readme.txt",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893506.000000000,
+    "lastModifiedTime" : 1061922306.000000000,
     "creationTime" : null,
     "fileCRC" : -1764774687,
     "fileName" : "src\\OtherPluginFiles\\readme.txt",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1040789900.000000000,
+    "lastModifiedTime" : 1040818700.000000000,
     "creationTime" : null,
     "fileCRC" : 459028373,
     "fileName" : "src\\Project\\cln.bat",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061888664.000000000,
+    "lastModifiedTime" : 1061917464.000000000,
     "creationTime" : null,
     "fileCRC" : 1381311969,
     "fileName" : "src\\Project\\ModuleWork.h",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1048668798.000000000,
+    "lastModifiedTime" : 1048697598.000000000,
     "creationTime" : null,
     "fileCRC" : -1276746705,
     "fileName" : "src\\Project\\MsgBox.h",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1045463282.000000000,
+    "lastModifiedTime" : 1045492082.000000000,
     "creationTime" : null,
     "fileCRC" : 1748901014,
     "fileName" : "src\\Project\\Registry.h",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061890162.000000000,
+    "lastModifiedTime" : 1061918962.000000000,
     "creationTime" : null,
     "fileCRC" : -1526821952,
     "fileName" : "src\\Project\\TextMessages.h",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1045214156.000000000,
+    "lastModifiedTime" : 1045242956.000000000,
     "creationTime" : null,
     "fileCRC" : -533492584,
     "fileName" : "src\\Project\\utils.h",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061889866.000000000,
+    "lastModifiedTime" : 1061918666.000000000,
     "creationTime" : null,
     "fileCRC" : -1291514962,
     "fileName" : "src\\Project\\Main.cpp",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061891172.000000000,
+    "lastModifiedTime" : 1061919972.000000000,
     "creationTime" : null,
     "fileCRC" : 1218159194,
     "fileName" : "src\\Project\\ModuleWork.cpp",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1048668784.000000000,
+    "lastModifiedTime" : 1048697584.000000000,
     "creationTime" : null,
     "fileCRC" : -430201257,
     "fileName" : "src\\Project\\MsgBox.cpp",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1045463364.000000000,
+    "lastModifiedTime" : 1045492164.000000000,
     "creationTime" : null,
     "fileCRC" : 264277640,
     "fileName" : "src\\Project\\Registry.cpp",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1048669026.000000000,
+    "lastModifiedTime" : 1048697826.000000000,
     "creationTime" : null,
     "fileCRC" : 693945324,
     "fileName" : "src\\Project\\utils.cpp",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061891222.000000000,
+    "lastModifiedTime" : 1061920022.000000000,
     "creationTime" : null,
     "fileCRC" : -480657624,
     "fileName" : "kvmodule.dll",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061891222.000000000,
+    "lastModifiedTime" : 1061920022.000000000,
     "creationTime" : null,
     "fileCRC" : 1850621113,
     "fileName" : "src\\Project\\kvmodule.lib",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062396455.675740800,
+    "lastModifiedTime" : 1062425255.675740800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "src\\Project\\FarHeaders",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061891274.000000000,
+    "lastModifiedTime" : 1061920074.000000000,
     "creationTime" : null,
     "fileCRC" : 1586815082,
     "fileName" : "src\\Project\\makefile",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062396455.485467200,
+    "lastModifiedTime" : 1062425255.485467200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "src\\OtherPluginFiles",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062396455.635683200,
+    "lastModifiedTime" : 1062425255.635683200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "src\\Project",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1062396455.425380800,
+    "lastModifiedTime" : 1062425255.425380800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "src",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061889782.000000000,
+    "lastModifiedTime" : 1061918582.000000000,
     "creationTime" : null,
     "fileCRC" : 727129271,
     "fileName" : "src\\Project\\kvmodule.bpf",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061891216.000000000,
+    "lastModifiedTime" : 1061920016.000000000,
     "creationTime" : null,
     "fileCRC" : -1276426259,
     "fileName" : "src\\Project\\kvmodule.bpr",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893326.000000000,
+    "lastModifiedTime" : 1061922126.000000000,
     "creationTime" : null,
     "fileCRC" : 311074403,
     "fileName" : "src\\Project\\kvmodule.cesettings",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893468.000000000,
+    "lastModifiedTime" : 1061922268.000000000,
     "creationTime" : null,
     "fileCRC" : -970130767,
     "fileName" : "FILE_ID.DI",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893326.000000000,
+    "lastModifiedTime" : 1061922126.000000000,
     "creationTime" : null,
     "fileCRC" : -758853616,
     "fileName" : "src\\Project\\kvmodule.dsk",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061892430.000000000,
+    "lastModifiedTime" : 1061921230.000000000,
     "creationTime" : null,
     "fileCRC" : 539197301,
     "fileName" : "kvmodule.hlf",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061892430.000000000,
+    "lastModifiedTime" : 1061921230.000000000,
     "creationTime" : null,
     "fileCRC" : 539197301,
     "fileName" : "src\\OtherPluginFiles\\kvmodule.hlf",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1060137798.000000000,
+    "lastModifiedTime" : 1060166598.000000000,
     "creationTime" : null,
     "fileCRC" : 1744102527,
     "fileName" : "src\\Project\\kvmodule.hlf",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893448.000000000,
+    "lastModifiedTime" : 1061922248.000000000,
     "creationTime" : null,
     "fileCRC" : 657722356,
     "fileName" : "kvmodulee.hlf",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893448.000000000,
+    "lastModifiedTime" : 1061922248.000000000,
     "creationTime" : null,
     "fileCRC" : 657722356,
     "fileName" : "src\\OtherPluginFiles\\kvmodulee.hlf",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1015993724.000000000,
+    "lastModifiedTime" : 1016022524.000000000,
     "creationTime" : null,
     "fileCRC" : -1875694912,
     "fileName" : "src\\Project\\FarHeaders\\farcolor.hpp",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1015993724.000000000,
+    "lastModifiedTime" : 1016022524.000000000,
     "creationTime" : null,
     "fileCRC" : -1478750420,
     "fileName" : "src\\Project\\FarHeaders\\farkeys.hpp",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1015993724.000000000,
+    "lastModifiedTime" : 1016022524.000000000,
     "creationTime" : null,
     "fileCRC" : -287621266,
     "fileName" : "src\\Project\\FarHeaders\\fmt.hpp",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1045213722.000000000,
+    "lastModifiedTime" : 1045242522.000000000,
     "creationTime" : null,
     "fileCRC" : 425097165,
     "fileName" : "src\\Project\\FarHeaders\\plugin.hpp",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061890150.000000000,
+    "lastModifiedTime" : 1061918950.000000000,
     "creationTime" : null,
     "fileCRC" : -2033055134,
     "fileName" : "kvmodulee.lng",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061890150.000000000,
+    "lastModifiedTime" : 1061918950.000000000,
     "creationTime" : null,
     "fileCRC" : -2033055134,
     "fileName" : "src\\OtherPluginFiles\\kvmodulee.lng",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893632.000000000,
+    "lastModifiedTime" : 1061922432.000000000,
     "creationTime" : null,
     "fileCRC" : -211592116,
     "fileName" : "kvmoduler.lng",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061893632.000000000,
+    "lastModifiedTime" : 1061922432.000000000,
     "creationTime" : null,
     "fileCRC" : -211592116,
     "fileName" : "src\\OtherPluginFiles\\kvmoduler.lng",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1061890150.000000000,
+    "lastModifiedTime" : 1061918950.000000000,
     "creationTime" : null,
     "fileCRC" : -2033055134,
     "fileName" : "src\\Project\\kvmoduler.lng",

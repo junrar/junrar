@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : -1075856245,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\areas\\homeds.lvl",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : -793490489,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\containers.json",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.076950700,
+    "lastModifiedTime" : 1447530672.076950700,
     "creationTime" : null,
     "fileCRC" : -880573874,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\creatures.json",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1446902960.684216500,
+    "lastModifiedTime" : 1446931760.684216500,
     "creationTime" : null,
     "fileCRC" : 1033833929,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\drin.json",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 1996126708,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\effects.json",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 223132457,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\encounters.json",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 1765203799,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\items.json",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 223132457,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\journal.json",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.011737400,
+    "lastModifiedTime" : 1436820177.011737400,
     "creationTime" : null,
     "fileCRC" : 883725023,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageBeginnersGuide.txt",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.027337500,
+    "lastModifiedTime" : 1436820177.027337500,
     "creationTime" : null,
     "fileCRC" : 1369164903,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageCastSelector.txt",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.027337500,
+    "lastModifiedTime" : 1436820177.027337500,
     "creationTime" : null,
     "fileCRC" : 1936135824,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageCombat.txt",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.027337500,
+    "lastModifiedTime" : 1436820177.027337500,
     "creationTime" : null,
     "fileCRC" : -1308206522,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageInventory.txt",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.027337500,
+    "lastModifiedTime" : 1436820177.027337500,
     "creationTime" : null,
     "fileCRC" : -134753042,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageMainMap.txt",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.027337500,
+    "lastModifiedTime" : 1436820177.027337500,
     "creationTime" : null,
     "fileCRC" : -133221572,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageParty.txt",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.042937500,
+    "lastModifiedTime" : 1436820177.042937500,
     "creationTime" : null,
     "fileCRC" : -1255857134,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessagePartyBuild.txt",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.042937500,
+    "lastModifiedTime" : 1436820177.042937500,
     "creationTime" : null,
     "fileCRC" : 798990596,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessagePcCreation.txt",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1441506931.098570500,
+    "lastModifiedTime" : 1441535731.098570500,
     "creationTime" : null,
     "fileCRC" : 1954480750,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessagePlayersGuide.txt",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.042937500,
+    "lastModifiedTime" : 1436820177.042937500,
     "creationTime" : null,
     "fileCRC" : -690365077,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageShop.txt",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.042937500,
+    "lastModifiedTime" : 1436820177.042937500,
     "creationTime" : null,
     "fileCRC" : 1003872038,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageSpellLevelUp.txt",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.058537500,
+    "lastModifiedTime" : 1436820177.058537500,
     "creationTime" : null,
     "fileCRC" : -1735133643,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\MessageTraitLevelUp.txt",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 287549371,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\playerClasses.json",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 68336416,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\props.json",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : -1145745084,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\races.json",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : -1651780795,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\shops.json",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : -1415238013,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\spells.json",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 1935822937,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\data\\traits.json",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : 955568995,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\dialog\\Jaden.json",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1447501872.154950800,
+    "lastModifiedTime" : 1447530672.154950800,
     "creationTime" : null,
     "fileCRC" : -1073608354,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\dialog\\Marissa.json",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791377.105337600,
+    "lastModifiedTime" : 1436820177.105337600,
     "creationTime" : null,
     "fileCRC" : -1986208228,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\fonts\\Metamorphous-Regular.ttf",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.093560900,
+    "lastModifiedTime" : 1436820190.093560900,
     "creationTime" : null,
     "fileCRC" : -1074007777,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\fonts\\Molot.otf",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1443957242.673876800,
+    "lastModifiedTime" : 1443986042.673876800,
     "creationTime" : null,
     "fileCRC" : 985338724,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\fonts\\Orbitron Light.ttf",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.093560900,
+    "lastModifiedTime" : 1436820190.093560900,
     "creationTime" : null,
     "fileCRC" : -870450804,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\black_tile.png",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1441110463.176078800,
+    "lastModifiedTime" : 1441139263.176078800,
     "creationTime" : null,
     "fileCRC" : -1814005423,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\blank.png",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1429505271.962141500,
+    "lastModifiedTime" : 1429534071.962141500,
     "creationTime" : null,
     "fileCRC" : 539061243,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_acid1x1end.png",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1429505330.491716600,
+    "lastModifiedTime" : 1429534130.491716600,
     "creationTime" : null,
     "fileCRC" : -1965952050,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_acidball.png",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.155961000,
+    "lastModifiedTime" : 1436820190.155961000,
     "creationTime" : null,
     "fileCRC" : -388159413,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_arrow.png",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.155961000,
+    "lastModifiedTime" : 1436820190.155961000,
     "creationTime" : null,
     "fileCRC" : -410521972,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_fireball.png",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.155961000,
+    "lastModifiedTime" : 1436820190.155961000,
     "creationTime" : null,
     "fileCRC" : 1740629717,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_fireball3x3end.png",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.171561100,
+    "lastModifiedTime" : 1436820190.171561100,
     "creationTime" : null,
     "fileCRC" : -283895309,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_heal.png",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.171561100,
+    "lastModifiedTime" : 1436820190.171561100,
     "creationTime" : null,
     "fileCRC" : 807468919,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_heal1x1end.png",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1441110559.302861400,
+    "lastModifiedTime" : 1441139359.302861400,
     "creationTime" : null,
     "fileCRC" : 764484126,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_held.png",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.171561100,
+    "lastModifiedTime" : 1436820190.171561100,
     "creationTime" : null,
     "fileCRC" : -1469904021,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_iceball.png",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.171561100,
+    "lastModifiedTime" : 1436820190.171561100,
     "creationTime" : null,
     "fileCRC" : 954803924,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_iceball3x3end.png",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.187161100,
+    "lastModifiedTime" : 1436820190.187161100,
     "creationTime" : null,
     "fileCRC" : -993905913,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_mage_bolt.png",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1441110671.330283500,
+    "lastModifiedTime" : 1441139471.330283500,
     "creationTime" : null,
     "fileCRC" : 1550571374,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_regen.png",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1441110643.363430200,
+    "lastModifiedTime" : 1441139443.363430200,
     "creationTime" : null,
     "fileCRC" : 1401622993,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_sleeping.png",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.187161100,
+    "lastModifiedTime" : 1436820190.187161100,
     "creationTime" : null,
     "fileCRC" : -701220590,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_stone.png",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.187161100,
+    "lastModifiedTime" : 1436820190.187161100,
     "creationTime" : null,
     "fileCRC" : 1787474699,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_web.png",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436791390.202761100,
+    "lastModifiedTime" : 1436820190.202761100,
     "creationTime" : null,
     "fileCRC" : -1885787198,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_web3x3end.png",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1441110652.435249200,
+    "lastModifiedTime" : 1441139452.435249200,
     "creationTime" : null,
     "fileCRC" : 1673999503,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\fx_webbed.png",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1406296623.784293100,
+    "lastModifiedTime" : 1406325423.784293100,
     "creationTime" : null,
     "fileCRC" : 1851958504,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\homeds.jpg",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1406296623.872298100,
+    "lastModifiedTime" : 1406325423.872298100,
     "creationTime" : null,
     "fileCRC" : -1423585635,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\homeus.jpg",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436597277.747002100,
+    "lastModifiedTime" : 1436626077.747002100,
     "creationTime" : null,
     "fileCRC" : 1014262879,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\iblogo.jpg",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405728250.255840500,
+    "lastModifiedTime" : 1405757050.255840500,
     "creationTime" : null,
     "fileCRC" : 180316011,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_amulet.png",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1415195105.514109800,
+    "lastModifiedTime" : 1415223905.514109800,
     "creationTime" : null,
     "fileCRC" : -542081241,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_arrow.png",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403180824.988000000,
+    "lastModifiedTime" : 1403209624.988000000,
     "creationTime" : null,
     "fileCRC" : -118891436,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_axe.png",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405944176.068436800,
+    "lastModifiedTime" : 1405972976.068436800,
     "creationTime" : null,
     "fileCRC" : 2011204118,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_blackbow.png",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405232591.551828800,
+    "lastModifiedTime" : 1405261391.551828800,
     "creationTime" : null,
     "fileCRC" : 2072914818,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_bluesword.png",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184242.850000000,
+    "lastModifiedTime" : 1403213042.850000000,
     "creationTime" : null,
     "fileCRC" : -337673200,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_book.png",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184318.037000000,
+    "lastModifiedTime" : 1403213118.037000000,
     "creationTime" : null,
     "fileCRC" : -1740077643,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_bowlong.png",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183770.112000000,
+    "lastModifiedTime" : 1403212570.112000000,
     "creationTime" : null,
     "fileCRC" : -68709902,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_bowshort.png",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184128.372000000,
+    "lastModifiedTime" : 1403212928.372000000,
     "creationTime" : null,
     "fileCRC" : -1478608997,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_campkit.png",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405728250.303843200,
+    "lastModifiedTime" : 1405757050.303843200,
     "creationTime" : null,
     "fileCRC" : -1013461376,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_chainmail.png",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1404621107.836000000,
+    "lastModifiedTime" : 1404649907.836000000,
     "creationTime" : null,
     "fileCRC" : -56449086,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_crossbow.png",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183810.559000000,
+    "lastModifiedTime" : 1403212610.559000000,
     "creationTime" : null,
     "fileCRC" : 1982552409,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_dagger.png",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183825.029000000,
+    "lastModifiedTime" : 1403212625.029000000,
     "creationTime" : null,
     "fileCRC" : 1265798677,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_daggerfire.png",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405232640.436624900,
+    "lastModifiedTime" : 1405261440.436624900,
     "creationTime" : null,
     "fileCRC" : 961354415,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_firewand.png",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184007.094000000,
+    "lastModifiedTime" : 1403212807.094000000,
     "creationTime" : null,
     "fileCRC" : -980466172,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_gemblue.png",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183962.582000000,
+    "lastModifiedTime" : 1403212762.582000000,
     "creationTime" : null,
     "fileCRC" : 885426406,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_gemgreen.png",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184062.293000000,
+    "lastModifiedTime" : 1403212862.293000000,
     "creationTime" : null,
     "fileCRC" : 458597890,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_gempurple.png",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183906.754000000,
+    "lastModifiedTime" : 1403212706.754000000,
     "creationTime" : null,
     "fileCRC" : 272854552,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_gemred.png",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183117.890000000,
+    "lastModifiedTime" : 1403211917.890000000,
     "creationTime" : null,
     "fileCRC" : 1116326930,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_goblet.png",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183339.901000000,
+    "lastModifiedTime" : 1403212139.901000000,
     "creationTime" : null,
     "fileCRC" : 665260682,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_helmet.png",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405232525.190033200,
+    "lastModifiedTime" : 1405261325.190033200,
     "creationTime" : null,
     "fileCRC" : -1491721460,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_icemace.png",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184157.697000000,
+    "lastModifiedTime" : 1403212957.697000000,
     "creationTime" : null,
     "fileCRC" : 1027511375,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_key.png",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405232473.000000000,
+    "lastModifiedTime" : 1405261273.000000000,
     "creationTime" : null,
     "fileCRC" : -20997818,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_lakering.png",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183485.558000000,
+    "lastModifiedTime" : 1403212285.558000000,
     "creationTime" : null,
     "fileCRC" : -702218606,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_leather.png",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184213.635000000,
+    "lastModifiedTime" : 1403213013.635000000,
     "creationTime" : null,
     "fileCRC" : 1594555021,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_letter.png",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183675.091000000,
+    "lastModifiedTime" : 1403212475.091000000,
     "creationTime" : null,
     "fileCRC" : -467513412,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_mace.png",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184095.681000000,
+    "lastModifiedTime" : 1403212895.681000000,
     "creationTime" : null,
     "fileCRC" : 448733255,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_meliakit.png",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183575.885000000,
+    "lastModifiedTime" : 1403212375.885000000,
     "creationTime" : null,
     "fileCRC" : 743553435,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_platemail.png",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183279.651000000,
+    "lastModifiedTime" : 1403212079.651000000,
     "creationTime" : null,
     "fileCRC" : -495109983,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_potionblue.png",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183297.559000000,
+    "lastModifiedTime" : 1403212097.559000000,
     "creationTime" : null,
     "fileCRC" : -1571038359,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_potiongreen.png",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183261.933000000,
+    "lastModifiedTime" : 1403212061.933000000,
     "creationTime" : null,
     "fileCRC" : 349587113,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_potionpurple.png",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183379.070000000,
+    "lastModifiedTime" : 1403212179.070000000,
     "creationTime" : null,
     "fileCRC" : 1057950919,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_ringgold.png",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183169.005000000,
+    "lastModifiedTime" : 1403211969.005000000,
     "creationTime" : null,
     "fileCRC" : 1476248567,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_robe.png",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183641.104000000,
+    "lastModifiedTime" : 1403212441.104000000,
     "creationTime" : null,
     "fileCRC" : -1428247203,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_shield.png",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184276.530000000,
+    "lastModifiedTime" : 1403213076.530000000,
     "creationTime" : null,
     "fileCRC" : -1752481313,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_sling.png",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403184289.386000000,
+    "lastModifiedTime" : 1403213089.386000000,
     "creationTime" : null,
     "fileCRC" : -598226264,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_slingfire.png",
@@ -1430,7 +1430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1415195158.230125000,
+    "lastModifiedTime" : 1415223958.230125000,
     "creationTime" : null,
     "fileCRC" : 492349370,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_stone.png",
@@ -1446,7 +1446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1415195186.406736600,
+    "lastModifiedTime" : 1415223986.406736600,
     "creationTime" : null,
     "fileCRC" : 760661770,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_stonefire.png",
@@ -1462,7 +1462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183511.301000000,
+    "lastModifiedTime" : 1403212311.301000000,
     "creationTime" : null,
     "fileCRC" : 1034196512,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_studdedleather.png",
@@ -1478,7 +1478,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183711.132000000,
+    "lastModifiedTime" : 1403212511.132000000,
     "creationTime" : null,
     "fileCRC" : 194299438,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_sword.png",
@@ -1494,7 +1494,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1403183732.505000000,
+    "lastModifiedTime" : 1403212532.505000000,
     "creationTime" : null,
     "fileCRC" : -2130340015,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_swordfire.png",
@@ -1510,7 +1510,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1404905128.331000000,
+    "lastModifiedTime" : 1404933928.331000000,
     "creationTime" : null,
     "fileCRC" : -1694022140,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_voltkey.png",
@@ -1526,7 +1526,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1405728250.447851500,
+    "lastModifiedTime" : 1405757050.447851500,
     "creationTime" : null,
     "fileCRC" : -2135377012,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\it_wyrm.png",
@@ -1542,7 +1542,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410070606.270272200,
+    "lastModifiedTime" : 1410099406.270272200,
     "creationTime" : null,
     "fileCRC" : -1248982662,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\missingtexture.png",
@@ -1558,7 +1558,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1406296624.111311800,
+    "lastModifiedTime" : 1406325424.111311800,
     "creationTime" : null,
     "fileCRC" : 1150330369,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\mountainpass.jpg",
@@ -1574,7 +1574,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1404024489.000000000,
+    "lastModifiedTime" : 1404053289.000000000,
     "creationTime" : null,
     "fileCRC" : 567217421,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\nar_blob.png",
@@ -1590,7 +1590,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1404021408.000000000,
+    "lastModifiedTime" : 1404050208.000000000,
     "creationTime" : null,
     "fileCRC" : -1151130826,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\nar_cave.png",
@@ -1606,7 +1606,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1404024372.000000000,
+    "lastModifiedTime" : 1404053172.000000000,
     "creationTime" : null,
     "fileCRC" : -1292124929,
     "fileName" : "IB2_beta_v14\\default\\NewModule\\graphics\\nar_forest_bear.png",

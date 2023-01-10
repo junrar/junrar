@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162949693.000000000,
+    "lastModifiedTime" : 1162978493.000000000,
     "creationTime" : null,
     "fileCRC" : 1921727330,
     "fileName" : "dbaccess\\source\\core\\resource\\localize.sdf",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162949757.531250000,
+    "lastModifiedTime" : 1162978557.531250000,
     "creationTime" : null,
     "fileCRC" : -439627031,
     "fileName" : "dbaccess\\source\\ui\\app\\localize.sdf",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162962546.500000000,
+    "lastModifiedTime" : 1162991346.500000000,
     "creationTime" : null,
     "fileCRC" : -1311144152,
     "fileName" : "dbaccess\\source\\ui\\browser\\localize.sdf",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162962868.609375000,
+    "lastModifiedTime" : 1162991668.609375000,
     "creationTime" : null,
     "fileCRC" : -886733477,
     "fileName" : "dbaccess\\source\\ui\\control\\localize.sdf",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1163125709.187500000,
+    "lastModifiedTime" : 1163154509.187500000,
     "creationTime" : null,
     "fileCRC" : 1230322702,
     "fileName" : "dbaccess\\source\\ui\\dlg\\localize.sdf",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160622496.671125000,
+    "lastModifiedTime" : 1160651296.671125000,
     "creationTime" : null,
     "fileCRC" : 782277455,
     "fileName" : "dbaccess\\source\\ui\\inc\\localize.sdf",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161838410.125000000,
+    "lastModifiedTime" : 1161867210.125000000,
     "creationTime" : null,
     "fileCRC" : 1109507828,
     "fileName" : "dbaccess\\source\\ui\\misc\\localize.sdf",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162957213.515625000,
+    "lastModifiedTime" : 1162986013.515625000,
     "creationTime" : null,
     "fileCRC" : 983389635,
     "fileName" : "dbaccess\\source\\ui\\querydesign\\localize.sdf",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162961314.031250000,
+    "lastModifiedTime" : 1162990114.031250000,
     "creationTime" : null,
     "fileCRC" : 165358388,
     "fileName" : "dbaccess\\source\\ui\\relationdesign\\localize.sdf",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1163126486.140625000,
+    "lastModifiedTime" : 1163155286.140625000,
     "creationTime" : null,
     "fileCRC" : -1372067494,
     "fileName" : "dbaccess\\source\\ui\\tabledesign\\localize.sdf",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1163050889.000000000,
+    "lastModifiedTime" : 1163079689.000000000,
     "creationTime" : null,
     "fileCRC" : 1576082235,
     "fileName" : "dbaccess\\source\\ui\\uno\\localize.sdf",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162949693.000000000,
+    "lastModifiedTime" : 1162978493.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\core\\resource",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162949757.531250000,
+    "lastModifiedTime" : 1162978557.531250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\app",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162962546.500000000,
+    "lastModifiedTime" : 1162991346.500000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\browser",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162962868.609375000,
+    "lastModifiedTime" : 1162991668.609375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\control",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1163125752.546875000,
+    "lastModifiedTime" : 1163154552.546875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\dlg",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161571866.125000000,
+    "lastModifiedTime" : 1161600666.125000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\inc",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161838410.125000000,
+    "lastModifiedTime" : 1161867210.125000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\misc",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161838272.328125000,
+    "lastModifiedTime" : 1161867072.328125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\querydesign",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162961314.031250000,
+    "lastModifiedTime" : 1162990114.031250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\relationdesign",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1163126561.812500000,
+    "lastModifiedTime" : 1163155361.812500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\tabledesign",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1163050889.046875000,
+    "lastModifiedTime" : 1163079689.046875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui\\uno",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161571866.140625000,
+    "lastModifiedTime" : 1161600666.140625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\core",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1162949947.671875000,
+    "lastModifiedTime" : 1162978747.671875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source\\ui",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161571866.140625000,
+    "lastModifiedTime" : 1161600666.140625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess\\source",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1161571866.156250000,
+    "lastModifiedTime" : 1161600666.156250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dbaccess",

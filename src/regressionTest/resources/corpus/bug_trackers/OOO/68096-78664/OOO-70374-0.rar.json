@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160553354.921625000,
+    "lastModifiedTime" : 1160582154.921625000,
     "creationTime" : null,
     "fileCRC" : 226789783,
     "fileName" : "resource\\basctl\\source\\basicide\\localize.sdf",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160555674.687250000,
+    "lastModifiedTime" : 1160584474.687250000,
     "creationTime" : null,
     "fileCRC" : -31512342,
     "fileName" : "resource\\basic\\source\\classes\\localize.sdf",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160616426.671125000,
+    "lastModifiedTime" : 1160645226.671125000,
     "creationTime" : null,
     "fileCRC" : 1996150343,
     "fileName" : "resource\\chart2\\source\\controller\\dialogs\\localize.sdf",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160630874.436750000,
+    "lastModifiedTime" : 1160659674.436750000,
     "creationTime" : null,
     "fileCRC" : -519808472,
     "fileName" : "resource\\desktop\\source\\app\\localize.sdf",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631229.577375000,
+    "lastModifiedTime" : 1160660029.577375000,
     "creationTime" : null,
     "fileCRC" : 827278844,
     "fileName" : "resource\\desktop\\source\\deployment\\gui\\localize.sdf",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631547.405500000,
+    "lastModifiedTime" : 1160660347.405500000,
     "creationTime" : null,
     "fileCRC" : -2060464284,
     "fileName" : "resource\\desktop\\source\\migration\\localize.sdf",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631870.655500000,
+    "lastModifiedTime" : 1160660670.655500000,
     "creationTime" : null,
     "fileCRC" : 1460679355,
     "fileName" : "resource\\desktop\\win32\\source\\setup\\localize.sdf",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632390.843000000,
+    "lastModifiedTime" : 1160661190.843000000,
     "creationTime" : null,
     "fileCRC" : -568525691,
     "fileName" : "resource\\extensions\\source\\adpilot\\localize.sdf",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632628.577375000,
+    "lastModifiedTime" : 1160661428.577375000,
     "creationTime" : null,
     "fileCRC" : -385300782,
     "fileName" : "resource\\extensions\\source\\bibliography\\localize.sdf",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632827.014875000,
+    "lastModifiedTime" : 1160661627.014875000,
     "creationTime" : null,
     "fileCRC" : 75545256,
     "fileName" : "resource\\extensions\\source\\dbpilots\\localize.sdf",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632992.874250000,
+    "lastModifiedTime" : 1160661792.874250000,
     "creationTime" : null,
     "fileCRC" : -1743151452,
     "fileName" : "resource\\extensions\\source\\installation\\office\\protchk\\localize.sdf",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160633774.202375000,
+    "lastModifiedTime" : 1160662574.202375000,
     "creationTime" : null,
     "fileCRC" : 313441865,
     "fileName" : "resource\\extensions\\source\\propctrlr\\localize.sdf",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160633940.077375000,
+    "lastModifiedTime" : 1160662740.077375000,
     "creationTime" : null,
     "fileCRC" : 838559537,
     "fileName" : "resource\\extensions\\source\\scanner\\localize.sdf",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160635130.030500000,
+    "lastModifiedTime" : 1160663930.030500000,
     "creationTime" : null,
     "fileCRC" : -1690536606,
     "fileName" : "resource\\filter\\source\\config\\fragments\\filters\\localize.sdf",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160635763.780500000,
+    "lastModifiedTime" : 1160664563.780500000,
     "creationTime" : null,
     "fileCRC" : -2138983577,
     "fileName" : "resource\\filter\\source\\pdf\\localize.sdf",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636228.921125000,
+    "lastModifiedTime" : 1160665028.921125000,
     "creationTime" : null,
     "fileCRC" : -921669550,
     "fileName" : "resource\\filter\\source\\xsltdialog\\localize.sdf",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636718.639875000,
+    "lastModifiedTime" : 1160665518.639875000,
     "creationTime" : null,
     "fileCRC" : 76912434,
     "fileName" : "resource\\forms\\source\\resource\\localize.sdf",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636779.999250000,
+    "lastModifiedTime" : 1160665579.999250000,
     "creationTime" : null,
     "fileCRC" : 1590703137,
     "fileName" : "resource\\fpicker\\source\\office\\localize.sdf",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637067.374250000,
+    "lastModifiedTime" : 1160665867.374250000,
     "creationTime" : null,
     "fileCRC" : 311449496,
     "fileName" : "resource\\framework\\source\\classes\\localize.sdf",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637752.421125000,
+    "lastModifiedTime" : 1160666552.421125000,
     "creationTime" : null,
     "fileCRC" : 1263631720,
     "fileName" : "resource\\goodies\\source\\filter.vcl\\egif\\localize.sdf",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637778.093000000,
+    "lastModifiedTime" : 1160666578.093000000,
     "creationTime" : null,
     "fileCRC" : -1189140273,
     "fileName" : "resource\\goodies\\source\\filter.vcl\\eps\\localize.sdf",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632992.874250000,
+    "lastModifiedTime" : 1160661792.874250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\installation\\office\\protchk",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160635130.030500000,
+    "lastModifiedTime" : 1160663930.030500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\filter\\source\\config\\fragments\\filters",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160616426.671125000,
+    "lastModifiedTime" : 1160645226.671125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\chart2\\source\\controller\\dialogs",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631229.577375000,
+    "lastModifiedTime" : 1160660029.577375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\source\\deployment\\gui",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631870.655500000,
+    "lastModifiedTime" : 1160660670.655500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\win32\\source\\setup",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632949.499250000,
+    "lastModifiedTime" : 1160661749.499250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\installation\\office",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160634876.249250000,
+    "lastModifiedTime" : 1160663676.249250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\filter\\source\\config\\fragments",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637752.421125000,
+    "lastModifiedTime" : 1160666552.421125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\goodies\\source\\filter.vcl\\egif",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637778.093000000,
+    "lastModifiedTime" : 1160666578.093000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\goodies\\source\\filter.vcl\\eps",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160553354.952875000,
+    "lastModifiedTime" : 1160582154.952875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\basctl\\source\\basicide",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160555721.374750000,
+    "lastModifiedTime" : 1160584521.374750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\basic\\source\\classes",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160616183.124250000,
+    "lastModifiedTime" : 1160644983.124250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\chart2\\source\\controller",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160630874.436750000,
+    "lastModifiedTime" : 1160659674.436750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\source\\app",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631199.530500000,
+    "lastModifiedTime" : 1160659999.530500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\source\\deployment",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631547.405500000,
+    "lastModifiedTime" : 1160660347.405500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\source\\migration",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631828.327375000,
+    "lastModifiedTime" : 1160660628.327375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\win32\\source",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632390.843000000,
+    "lastModifiedTime" : 1160661190.843000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\adpilot",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632628.593000000,
+    "lastModifiedTime" : 1160661428.593000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\bibliography",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632827.014875000,
+    "lastModifiedTime" : 1160661627.014875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\dbpilots",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632940.358625000,
+    "lastModifiedTime" : 1160661740.358625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\installation",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160633774.202375000,
+    "lastModifiedTime" : 1160662574.202375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\propctrlr",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160633940.077375000,
+    "lastModifiedTime" : 1160662740.077375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source\\scanner",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160634857.014875000,
+    "lastModifiedTime" : 1160663657.014875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\filter\\source\\config",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160635763.780500000,
+    "lastModifiedTime" : 1160664563.780500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\filter\\source\\pdf",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636228.921125000,
+    "lastModifiedTime" : 1160665028.921125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\filter\\source\\xsltdialog",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636718.639875000,
+    "lastModifiedTime" : 1160665518.639875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\forms\\source\\resource",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636779.999250000,
+    "lastModifiedTime" : 1160665579.999250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\fpicker\\source\\office",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637067.389875000,
+    "lastModifiedTime" : 1160665867.389875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\framework\\source\\classes",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637707.046125000,
+    "lastModifiedTime" : 1160666507.046125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\goodies\\source\\filter.vcl",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160552836.812250000,
+    "lastModifiedTime" : 1160581636.812250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\basctl\\source",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160555092.999750000,
+    "lastModifiedTime" : 1160583892.999750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\basic\\source",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160616177.702375000,
+    "lastModifiedTime" : 1160644977.702375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\chart2\\source",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631498.593000000,
+    "lastModifiedTime" : 1160660298.593000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\source",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160631824.139875000,
+    "lastModifiedTime" : 1160660624.139875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop\\win32",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160633914.139875000,
+    "lastModifiedTime" : 1160662714.139875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions\\source",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636134.749250000,
+    "lastModifiedTime" : 1160664934.749250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\filter\\source",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636587.139875000,
+    "lastModifiedTime" : 1160665387.139875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\forms\\source",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636615.593000000,
+    "lastModifiedTime" : 1160665415.593000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\fpicker\\source",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637009.280500000,
+    "lastModifiedTime" : 1160665809.280500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\framework\\source",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637585.874250000,
+    "lastModifiedTime" : 1160666385.874250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\goodies\\source",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160552829.827875000,
+    "lastModifiedTime" : 1160581629.827875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\basctl",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160555085.031000000,
+    "lastModifiedTime" : 1160583885.031000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\basic",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160616164.577375000,
+    "lastModifiedTime" : 1160644964.577375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\chart2",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160635947.093000000,
+    "lastModifiedTime" : 1160664747.093000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\desktop",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160632301.186750000,
+    "lastModifiedTime" : 1160661101.186750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\extensions",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160635876.780500000,
+    "lastModifiedTime" : 1160664676.780500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\filter",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636577.233625000,
+    "lastModifiedTime" : 1160665377.233625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\forms",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160636610.702375000,
+    "lastModifiedTime" : 1160665410.702375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\fpicker",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637003.780500000,
+    "lastModifiedTime" : 1160665803.780500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\framework",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160637578.671125000,
+    "lastModifiedTime" : 1160666378.671125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource\\goodies",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1160704770.313710100,
+    "lastModifiedTime" : 1160733570.313710100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "resource",

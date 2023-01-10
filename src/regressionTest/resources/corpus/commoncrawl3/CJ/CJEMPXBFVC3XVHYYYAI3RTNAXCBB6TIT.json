@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781348.144401600,
+    "lastModifiedTime" : 1317810148.144401600,
     "creationTime" : null,
     "fileCRC" : -1801803556,
     "fileName" : "formeln\\aaaaa_README.txt",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317305678.000000000,
+    "lastModifiedTime" : 1317334478.000000000,
     "creationTime" : null,
     "fileCRC" : -329707253,
     "fileName" : "formeln\\ansaetze.txt",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317302602.000000000,
+    "lastModifiedTime" : 1317331402.000000000,
     "creationTime" : null,
     "fileCRC" : 529042347,
     "fileName" : "formeln\\energie.txt",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317434260.000000000,
+    "lastModifiedTime" : 1317463060.000000000,
     "creationTime" : null,
     "fileCRC" : -1101920330,
     "fileName" : "formeln\\EZ.txt",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317434326.000000000,
+    "lastModifiedTime" : 1317463126.000000000,
     "creationTime" : null,
     "fileCRC" : 1008132211,
     "fileName" : "formeln\\magnet.txt",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317301096.000000000,
+    "lastModifiedTime" : 1317329896.000000000,
     "creationTime" : null,
     "fileCRC" : 1656659130,
     "fileName" : "formeln\\materie.txt",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317301264.000000000,
+    "lastModifiedTime" : 1317330064.000000000,
     "creationTime" : null,
     "fileCRC" : -572532083,
     "fileName" : "formeln\\maxwell.txt",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704078.693428800,
+    "lastModifiedTime" : 1317732878.693428800,
     "creationTime" : null,
     "fileCRC" : -1589627591,
     "fileName" : "formeln\\relax.txt",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317299590.000000000,
+    "lastModifiedTime" : 1317328390.000000000,
     "creationTime" : null,
     "fileCRC" : 1852974548,
     "fileName" : "formeln\\summen.txt",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317306066.000000000,
+    "lastModifiedTime" : 1317334866.000000000,
     "creationTime" : null,
     "fileCRC" : 261301693,
     "fileName" : "formeln\\tabellen.txt",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781131.312612800,
+    "lastModifiedTime" : 1317809931.312612800,
     "creationTime" : null,
     "fileCRC" : 1518599579,
     "fileName" : "formeln\\TI89\\ansaetze.89y",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781142.548769600,
+    "lastModifiedTime" : 1317809942.548769600,
     "creationTime" : null,
     "fileCRC" : 571648574,
     "fileName" : "formeln\\TI89\\energie.89y",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781151.091052800,
+    "lastModifiedTime" : 1317809951.091052800,
     "creationTime" : null,
     "fileCRC" : 923361902,
     "fileName" : "formeln\\TI89\\EZ.89y",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781159.413019200,
+    "lastModifiedTime" : 1317809959.413019200,
     "creationTime" : null,
     "fileCRC" : 1584045681,
     "fileName" : "formeln\\TI89\\magnet.89y",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781169.347304000,
+    "lastModifiedTime" : 1317809969.347304000,
     "creationTime" : null,
     "fileCRC" : -1433786236,
     "fileName" : "formeln\\TI89\\materie.89y",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781177.458968000,
+    "lastModifiedTime" : 1317809977.458968000,
     "creationTime" : null,
     "fileCRC" : -1381576494,
     "fileName" : "formeln\\TI89\\maxwell.89y",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781185.750891200,
+    "lastModifiedTime" : 1317809985.750891200,
     "creationTime" : null,
     "fileCRC" : 231610632,
     "fileName" : "formeln\\TI89\\relax.89y",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781194.092886400,
+    "lastModifiedTime" : 1317809994.092886400,
     "creationTime" : null,
     "fileCRC" : -919788173,
     "fileName" : "formeln\\TI89\\summen.89y",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781201.904118400,
+    "lastModifiedTime" : 1317810001.904118400,
     "creationTime" : null,
     "fileCRC" : -740380458,
     "fileName" : "formeln\\TI89\\tabellen.89y",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781215.053025600,
+    "lastModifiedTime" : 1317810015.053025600,
     "creationTime" : null,
     "fileCRC" : 750736917,
     "fileName" : "formeln\\TI89\\useful.89y",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781225.508059200,
+    "lastModifiedTime" : 1317810025.508059200,
     "creationTime" : null,
     "fileCRC" : -1272208043,
     "fileName" : "formeln\\TI89\\wellen.89y",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704192.847574400,
+    "lastModifiedTime" : 1317732992.847574400,
     "creationTime" : null,
     "fileCRC" : -656702503,
     "fileName" : "formeln\\useful.txt",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704390.521816000,
+    "lastModifiedTime" : 1317733190.521816000,
     "creationTime" : null,
     "fileCRC" : 386903743,
     "fileName" : "formeln\\V200_92p\\ansaetze.v2y",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704429.087270400,
+    "lastModifiedTime" : 1317733229.087270400,
     "creationTime" : null,
     "fileCRC" : -342467524,
     "fileName" : "formeln\\V200_92p\\energie.v2y",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704455.595387200,
+    "lastModifiedTime" : 1317733255.595387200,
     "creationTime" : null,
     "fileCRC" : -587221921,
     "fileName" : "formeln\\V200_92p\\EZ.v2y",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704463.456691200,
+    "lastModifiedTime" : 1317733263.456691200,
     "creationTime" : null,
     "fileCRC" : -1727293781,
     "fileName" : "formeln\\V200_92p\\magnet.v2y",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704475.203582400,
+    "lastModifiedTime" : 1317733275.203582400,
     "creationTime" : null,
     "fileCRC" : 71515525,
     "fileName" : "formeln\\V200_92p\\materie.v2y",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704486.019134400,
+    "lastModifiedTime" : 1317733286.019134400,
     "creationTime" : null,
     "fileCRC" : 1629515895,
     "fileName" : "formeln\\V200_92p\\maxwell.v2y",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704494.581446400,
+    "lastModifiedTime" : 1317733294.581446400,
     "creationTime" : null,
     "fileCRC" : -1525231133,
     "fileName" : "formeln\\V200_92p\\relax.v2y",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704501.801828800,
+    "lastModifiedTime" : 1317733301.801828800,
     "creationTime" : null,
     "fileCRC" : 1801792269,
     "fileName" : "formeln\\V200_92p\\summen.v2y",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704513.648864000,
+    "lastModifiedTime" : 1317733313.648864000,
     "creationTime" : null,
     "fileCRC" : -412017783,
     "fileName" : "formeln\\V200_92p\\tabellen.v2y",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704522.431492800,
+    "lastModifiedTime" : 1317733322.431492800,
     "creationTime" : null,
     "fileCRC" : 1333686257,
     "fileName" : "formeln\\V200_92p\\useful.v2y",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704528.690492800,
+    "lastModifiedTime" : 1317733328.690492800,
     "creationTime" : null,
     "fileCRC" : -2103392341,
     "fileName" : "formeln\\V200_92p\\wellen.v2y",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317434512.000000000,
+    "lastModifiedTime" : 1317463312.000000000,
     "creationTime" : null,
     "fileCRC" : -1808677918,
     "fileName" : "formeln\\wellen.txt",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781244.164886400,
+    "lastModifiedTime" : 1317810044.164886400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "formeln\\TI89",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317704540.487456000,
+    "lastModifiedTime" : 1317733340.487456000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "formeln\\V200_92p",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317781317.159848000,
+    "lastModifiedTime" : 1317810117.159848000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "formeln",

@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1500970340.172631100,
+    "lastModifiedTime" : 1500999140.172631100,
     "creationTime" : null,
     "fileCRC" : -874756041,
     "fileName" : "edpDeclaration.xml",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1500970316.895886300,
+    "lastModifiedTime" : 1500999116.895886300,
     "creationTime" : null,
     "fileCRC" : -713257964,
     "fileName" : "salesDeclaration - forExport.xml",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1499745914.480346200,
+    "lastModifiedTime" : 1499774714.480346200,
     "creationTime" : null,
     "fileCRC" : 1323979298,
     "fileName" : "baseDeclarationSchema_v1.1.xsd",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : -371711320,
     "fileName" : "changeDestinationDeclaration.xml",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : -1794004421,
     "fileName" : "changeDestinationDeclaration - forExport.xml",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : 595800310,
     "fileName" : "changeTransportDeclarationType.xml",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : 107834669,
     "fileName" : "declarationWithPipe.xml",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : 2037204503,
     "fileName" : "edpDeclaration - withoutUnloading.xml",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : -1270683671,
     "fileName" : "edpDeclaration- WithoutMove.xml",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : 735303305,
     "fileName" : "salesDeclaration - withoutUnloading.xml",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : -632972984,
     "fileName" : "salesDeclaration- WithoutMove.xml",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1482896047.058512400,
+    "lastModifiedTime" : 1482924847.058512400,
     "creationTime" : null,
     "fileCRC" : -1631967092,
     "fileName" : "stayTransportDeclarationType.xml",

@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436951572.000000000,
+    "lastModifiedTime" : 1436980372.000000000,
     "creationTime" : null,
     "fileCRC" : 313040106,
     "fileName" : "ReShade\\BasicFX\\Border.h",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1439071355.000000000,
+    "lastModifiedTime" : 1439100155.000000000,
     "creationTime" : null,
     "fileCRC" : 1658035918,
     "fileName" : "ReShade\\BasicFX\\DisplayDepth.h",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1443477244.000000000,
+    "lastModifiedTime" : 1443506044.000000000,
     "creationTime" : null,
     "fileCRC" : -1268957102,
     "fileName" : "ReShade\\BasicFX\\Magnify.h",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436951537.000000000,
+    "lastModifiedTime" : 1436980337.000000000,
     "creationTime" : null,
     "fileCRC" : 2094521615,
     "fileName" : "ReShade\\BasicFX\\SplitScreen.h",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1426272453.000000000,
+    "lastModifiedTime" : 1426301253.000000000,
     "creationTime" : null,
     "fileCRC" : -107121460,
     "fileName" : "ReShade\\BasicFX\\Textures\\bMask.png",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1446236875.000000000,
+    "lastModifiedTime" : 1446265675.000000000,
     "creationTime" : null,
     "fileCRC" : -1256924739,
     "fileName" : "ReShade\\BasicFX\\Textures\\dMask.png",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1426272448.000000000,
+    "lastModifiedTime" : 1426301248.000000000,
     "creationTime" : null,
     "fileCRC" : -965890419,
     "fileName" : "ReShade\\BasicFX\\Textures\\sMask.png",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1429423894.000000000,
+    "lastModifiedTime" : 1429452694.000000000,
     "creationTime" : null,
     "fileCRC" : -567317375,
     "fileName" : "ReShade\\BasicFX\\Textures\\uiMask.png",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1436951556.000000000,
+    "lastModifiedTime" : 1436980356.000000000,
     "creationTime" : null,
     "fileCRC" : -273829167,
     "fileName" : "ReShade\\BasicFX\\UIMask.h",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1439182507.989148500,
+    "lastModifiedTime" : 1439211307.989148500,
     "creationTime" : null,
     "fileCRC" : -31532928,
     "fileName" : "ReShade\\BasicFX\\Util.h",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1454248373.926256600,
+    "lastModifiedTime" : 1454277173.926256600,
     "creationTime" : null,
     "fileCRC" : -484529855,
     "fileName" : "ReShade\\BasicFX.cfg",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1443477127.000000000,
+    "lastModifiedTime" : 1443505927.000000000,
     "creationTime" : null,
     "fileCRC" : 512262718,
     "fileName" : "ReShade\\BasicFX.undef",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1446331201.000000000,
+    "lastModifiedTime" : 1446360001.000000000,
     "creationTime" : null,
     "fileCRC" : 1381865923,
     "fileName" : "ReShade\\Common.cfg",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1446959554.000000000,
+    "lastModifiedTime" : 1446988354.000000000,
     "creationTime" : null,
     "fileCRC" : -1435069319,
     "fileName" : "ReShade\\CustomFX\\AdaptiveSharpen.h",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1434658963.000000000,
+    "lastModifiedTime" : 1434687763.000000000,
     "creationTime" : null,
     "fileCRC" : -569593653,
     "fileName" : "ReShade\\CustomFX\\Cel.h",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1434863355.000000000,
+    "lastModifiedTime" : 1434892155.000000000,
     "creationTime" : null,
     "fileCRC" : -1281854054,
     "fileName" : "ReShade\\CustomFX\\ColorCorrection.h",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1428906631.000000000,
+    "lastModifiedTime" : 1428935431.000000000,
     "creationTime" : null,
     "fileCRC" : 721495108,
     "fileName" : "ReShade\\CustomFX\\Custom.h",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1446240536.000000000,
+    "lastModifiedTime" : 1446269336.000000000,
     "creationTime" : null,
     "fileCRC" : 624583465,
     "fileName" : "ReShade\\CustomFX\\DaltonizeFX.h",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1443626626.992501900,
+    "lastModifiedTime" : 1443655426.992501900,
     "creationTime" : null,
     "fileCRC" : -1673840730,
     "fileName" : "ReShade\\CustomFX\\Deband.h",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1446238616.000000000,
+    "lastModifiedTime" : 1446267416.000000000,
     "creationTime" : null,
     "fileCRC" : -1675458980,
     "fileName" : "ReShade\\CustomFX\\DOSFX.h",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1439195640.000000000,
+    "lastModifiedTime" : 1439224440.000000000,
     "creationTime" : null,
     "fileCRC" : -2062846742,
     "fileName" : "ReShade\\CustomFX\\Emboss.h",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1443626399.251475800,
+    "lastModifiedTime" : 1443655199.251475800,
     "creationTime" : null,
     "fileCRC" : 1201842409,
     "fileName" : "ReShade\\CustomFX\\Gaussian.h",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1430522593.000000000,
+    "lastModifiedTime" : 1430551393.000000000,
     "creationTime" : null,
     "fileCRC" : 478160237,
     "fileName" : "ReShade\\CustomFX\\Gr8mmFilm.h",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1437786795.000000000,
+    "lastModifiedTime" : 1437815595.000000000,
     "creationTime" : null,
     "fileCRC" : 1977942767,
     "fileName" : "ReShade\\CustomFX\\Grain.h",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1446239902.000000000,
+    "lastModifiedTime" : 1446268702.000000000,
     "creationTime" : null,
     "fileCRC" : 1180122906,
     "fileName" : "ReShade\\CustomFX\\HQ4X.h",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1441435449.000000000,
+    "lastModifiedTime" : 1441464249.000000000,
     "creationTime" : null,
     "fileCRC" : 1210616199,
     "fileName" : "ReShade\\CustomFX\\HSV.h",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1443626399.854510300,
+    "lastModifiedTime" : 1443655199.854510300,
     "creationTime" : null,
     "fileCRC" : -645340341,
     "fileName" : "ReShade\\CustomFX\\Paint.h",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1431771045.000000000,
+    "lastModifiedTime" : 1431799845.000000000,
     "creationTime" : null,
     "fileCRC" : 1294443434,
     "fileName" : "ReShade\\CustomFX\\Textures\\CFX_ColorLUTDst.png",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1439195174.178891500,
+    "lastModifiedTime" : 1439223974.178891500,
     "creationTime" : null,
     "fileCRC" : 277178423,
     "fileName" : "ReShade\\CustomFX\\Textures\\CFX_Gr8mmFilm.png",

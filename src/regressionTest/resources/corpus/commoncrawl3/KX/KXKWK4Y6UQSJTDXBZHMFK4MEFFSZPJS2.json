@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1256566826.000000000,
+    "lastModifiedTime" : 1256595626.000000000,
     "creationTime" : null,
     "fileCRC" : -1396053115,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\appicon.ico",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1292325436.000000000,
+    "lastModifiedTime" : 1292354236.000000000,
     "creationTime" : null,
     "fileCRC" : -875688101,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\appicon_128.png",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1256566816.000000000,
+    "lastModifiedTime" : 1256595616.000000000,
     "creationTime" : null,
     "fileCRC" : 1102369190,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\appicon_16.png",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1256566820.000000000,
+    "lastModifiedTime" : 1256595620.000000000,
     "creationTime" : null,
     "fileCRC" : 667047250,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\appicon_32.png",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1328989920.000000000,
+    "lastModifiedTime" : 1329018720.000000000,
     "creationTime" : null,
     "fileCRC" : -27213454,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\appinfo.ini",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1293559932.000000000,
+    "lastModifiedTime" : 1293588732.000000000,
     "creationTime" : null,
     "fileCRC" : -716012135,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\installer.ini",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1293559394.000000000,
+    "lastModifiedTime" : 1293588194.000000000,
     "creationTime" : null,
     "fileCRC" : 516594229,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\Launcher\\Custom.nsh",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1306792436.000000000,
+    "lastModifiedTime" : 1306821236.000000000,
     "creationTime" : null,
     "fileCRC" : 415390317,
     "fileName" : "FoxitReaderPortable\\App\\AppInfo\\Launcher\\FoxitReaderPortable.ini",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1306791960.000000000,
+    "lastModifiedTime" : 1306820760.000000000,
     "creationTime" : null,
     "fileCRC" : 593031533,
     "fileName" : "FoxitReaderPortable\\App\\DefaultData\\settings\\FoxitReaderPortable.reg",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1306794752.000000000,
+    "lastModifiedTime" : 1306823552.000000000,
     "creationTime" : null,
     "fileCRC" : -284890612,
     "fileName" : "FoxitReaderPortable\\App\\DefaultData\\settings\\FoxitReaderPortable5.reg",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1283147434.000000000,
+    "lastModifiedTime" : 1283176234.000000000,
     "creationTime" : null,
     "fileCRC" : -1617725484,
     "fileName" : "FoxitReaderPortable\\App\\DefaultData\\settings\\FoxitReaderPortableSettings.ini",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : -1180602206,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Add your own PDF features.bmp",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 1823309658,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Batch convert PDFs .bmp",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 1849548846,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Business Ready PDF Tool .bmp",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : -719028854,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Create your own PDF viewer.bmp",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : -1977744097,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Customize User Interface.bmp",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : -785764723,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Extract PDF contents.bmp",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 272902896,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Fastest PDF Index and  Search.bmp",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 974358407,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Integrate with Security Solutions.bmp",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 1185035841,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\OCR Text Recognition.bmp",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 2005684515,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Profile.xml",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : -808434183,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Protect PDFs with AD RMS.bmp",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 1265722358,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Protect Sensitive PDF Documents.bmp",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : -1944030276,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Redact your PDFs.bmp",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : 644067092,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\Unique editing capabilities.bmp",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322126800.000000000,
+    "lastModifiedTime" : 1322155600.000000000,
     "creationTime" : null,
     "fileCRC" : -723847164,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Advertisement\\View PDFs on mobile devices.bmp",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325759042.000000000,
+    "lastModifiedTime" : 1325787842.000000000,
     "creationTime" : null,
     "fileCRC" : 505065371,
     "fileName" : "FoxitReaderPortable\\App\\Foxit Reader\\Foxit Reader.exe",

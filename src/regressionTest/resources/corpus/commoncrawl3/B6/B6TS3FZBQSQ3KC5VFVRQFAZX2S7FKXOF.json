@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582923.256326300,
+    "lastModifiedTime" : 1483611723.256326300,
     "creationTime" : null,
     "fileCRC" : 214160743,
     "fileName" : "HRMCore\\.vs\\config\\applicationhost.config",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483592328.461000000,
+    "lastModifiedTime" : 1483621128.461000000,
     "creationTime" : null,
     "fileCRC" : -970837450,
     "fileName" : "HRMCore\\.vs\\HRMCore\\v14\\.suo",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582585.423927700,
+    "lastModifiedTime" : 1483611385.423927700,
     "creationTime" : null,
     "fileCRC" : 2065625674,
     "fileName" : "HRMCore\\.vs\\restore.dg",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.291243900,
+    "lastModifiedTime" : 1483611363.291243900,
     "creationTime" : null,
     "fileCRC" : -894267708,
     "fileName" : "HRMCore\\global.json",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.662348200,
+    "lastModifiedTime" : 1483611381.662348200,
     "creationTime" : null,
     "fileCRC" : -1473205724,
     "fileName" : "HRMCore\\HRMCore.sln",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.283530500,
+    "lastModifiedTime" : 1483611365.283530500,
     "creationTime" : null,
     "fileCRC" : 459403892,
     "fileName" : "HRMCore\\src\\HRMCore\\.bowerrc",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582773.270185900,
+    "lastModifiedTime" : 1483611573.270185900,
     "creationTime" : null,
     "fileCRC" : 1739549115,
     "fileName" : "HRMCore\\src\\HRMCore\\appsettings.json",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584954.064038400,
+    "lastModifiedTime" : 1483613754.064038400,
     "creationTime" : null,
     "fileCRC" : 122321479,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.deps.json",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584953.805994100,
+    "lastModifiedTime" : 1483613753.805994100,
     "creationTime" : null,
     "fileCRC" : 2033937995,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.dll",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584953.690345800,
+    "lastModifiedTime" : 1483613753.690345800,
     "creationTime" : null,
     "fileCRC" : -1847589175,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.pdb",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584954.068040800,
+    "lastModifiedTime" : 1483613754.068040800,
     "creationTime" : null,
     "fileCRC" : -898656189,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.runtimeconfig.dev.json",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584954.067040800,
+    "lastModifiedTime" : 1483613754.067040800,
     "creationTime" : null,
     "fileCRC" : 1905662977,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.runtimeconfig.json",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583641.211888900,
+    "lastModifiedTime" : 1483612441.211888900,
     "creationTime" : null,
     "fileCRC" : 122321479,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.deps.json",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583640.911676400,
+    "lastModifiedTime" : 1483612440.911676400,
     "creationTime" : null,
     "fileCRC" : -315055704,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.dll",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583640.774579600,
+    "lastModifiedTime" : 1483612440.774579600,
     "creationTime" : null,
     "fileCRC" : 1314793774,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.pdb",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583641.213891200,
+    "lastModifiedTime" : 1483612441.213891200,
     "creationTime" : null,
     "fileCRC" : -898656189,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.runtimeconfig.dev.json",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583641.212889800,
+    "lastModifiedTime" : 1483612441.212889800,
     "creationTime" : null,
     "fileCRC" : 1905662977,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0\\HRMCore.runtimeconfig.json",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583641.088803000,
+    "lastModifiedTime" : 1483612441.088803000,
     "creationTime" : null,
     "fileCRC" : 796348240,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\.IncrementalCache",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583640.967716200,
+    "lastModifiedTime" : 1483612440.967716200,
     "creationTime" : null,
     "fileCRC" : -1675185500,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\.SDKVersion",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583637.860507400,
+    "lastModifiedTime" : 1483612437.860507400,
     "creationTime" : null,
     "fileCRC" : -1266885012,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\dotnet-compile-csc.rsp",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583637.833491900,
+    "lastModifiedTime" : 1483612437.833491900,
     "creationTime" : null,
     "fileCRC" : 1435691113,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\dotnet-compile.assemblyinfo.cs",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583637.709398800,
+    "lastModifiedTime" : 1483612437.709398800,
     "creationTime" : null,
     "fileCRC" : -953854466,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\dotnet-compile.rsp",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583637.698391700,
+    "lastModifiedTime" : 1483612437.698391700,
     "creationTime" : null,
     "fileCRC" : -1419536597,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\HRMCoredotnet-compile.deps.json",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.301042600,
+    "lastModifiedTime" : 1483611365.301042600,
     "creationTime" : null,
     "fileCRC" : -546941771,
     "fileName" : "HRMCore\\src\\HRMCore\\bower.json",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.325059600,
+    "lastModifiedTime" : 1483611365.325059600,
     "creationTime" : null,
     "fileCRC" : 1486196951,
     "fileName" : "HRMCore\\src\\HRMCore\\bundleconfig.json",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582579.703264300,
+    "lastModifiedTime" : 1483611379.703264300,
     "creationTime" : null,
     "fileCRC" : -1397760933,
     "fileName" : "HRMCore\\src\\HRMCore\\Controllers\\AccountController.cs",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583897.307550200,
+    "lastModifiedTime" : 1483612697.307550200,
     "creationTime" : null,
     "fileCRC" : 300455940,
     "fileName" : "HRMCore\\src\\HRMCore\\Controllers\\DeptsController.cs",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584786.665389400,
+    "lastModifiedTime" : 1483613586.665389400,
     "creationTime" : null,
     "fileCRC" : 403738835,
     "fileName" : "HRMCore\\src\\HRMCore\\Controllers\\EmployeesController.cs",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.489383800,
+    "lastModifiedTime" : 1483611363.489383800,
     "creationTime" : null,
     "fileCRC" : 154743379,
     "fileName" : "HRMCore\\src\\HRMCore\\Controllers\\HomeController.cs",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582579.760567400,
+    "lastModifiedTime" : 1483611379.760567400,
     "creationTime" : null,
     "fileCRC" : -2060498634,
     "fileName" : "HRMCore\\src\\HRMCore\\Controllers\\ManageController.cs",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583547.968741700,
+    "lastModifiedTime" : 1483612347.968741700,
     "creationTime" : null,
     "fileCRC" : 211700524,
     "fileName" : "HRMCore\\src\\HRMCore\\Data\\ApplicationDbContext.cs",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582579.867144800,
+    "lastModifiedTime" : 1483611379.867144800,
     "creationTime" : null,
     "fileCRC" : 1164574802,
     "fileName" : "HRMCore\\src\\HRMCore\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582579.912676000,
+    "lastModifiedTime" : 1483611379.912676000,
     "creationTime" : null,
     "fileCRC" : 1322195474,
     "fileName" : "HRMCore\\src\\HRMCore\\Data\\Migrations\\00000000000000_CreateIdentitySchema.Designer.cs",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583613.871566300,
+    "lastModifiedTime" : 1483612413.871566300,
     "creationTime" : null,
     "fileCRC" : -1017260304,
     "fileName" : "HRMCore\\src\\HRMCore\\Data\\Migrations\\20170105043333_addmodel.cs",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583613.900587100,
+    "lastModifiedTime" : 1483612413.900587100,
     "creationTime" : null,
     "fileCRC" : 915622643,
     "fileName" : "HRMCore\\src\\HRMCore\\Data\\Migrations\\20170105043333_addmodel.Designer.cs",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583613.909592900,
+    "lastModifiedTime" : 1483612413.909592900,
     "creationTime" : null,
     "fileCRC" : 98690398,
     "fileName" : "HRMCore\\src\\HRMCore\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.494928400,
+    "lastModifiedTime" : 1483611365.494928400,
     "creationTime" : null,
     "fileCRC" : 1603037520,
     "fileName" : "HRMCore\\src\\HRMCore\\HRMCore.xproj",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583900.334336200,
+    "lastModifiedTime" : 1483612700.334336200,
     "creationTime" : null,
     "fileCRC" : 651536035,
     "fileName" : "HRMCore\\src\\HRMCore\\HRMCore.xproj.user",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.063782700,
+    "lastModifiedTime" : 1483611380.063782700,
     "creationTime" : null,
     "fileCRC" : -1824625695,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels\\ExternalLoginConfirmationViewModel.cs",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.083297600,
+    "lastModifiedTime" : 1483611380.083297600,
     "creationTime" : null,
     "fileCRC" : 1173207589,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels\\ForgotPasswordViewModel.cs",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.107314200,
+    "lastModifiedTime" : 1483611380.107314200,
     "creationTime" : null,
     "fileCRC" : 1156702504,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels\\LoginViewModel.cs",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.135834400,
+    "lastModifiedTime" : 1483611380.135834400,
     "creationTime" : null,
     "fileCRC" : -359519997,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels\\RegisterViewModel.cs",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.185870800,
+    "lastModifiedTime" : 1483611380.185870800,
     "creationTime" : null,
     "fileCRC" : -450314583,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels\\ResetPasswordViewModel.cs",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.207385400,
+    "lastModifiedTime" : 1483611380.207385400,
     "creationTime" : null,
     "fileCRC" : 10790174,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels\\SendCodeViewModel.cs",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.260924900,
+    "lastModifiedTime" : 1483611380.260924900,
     "creationTime" : null,
     "fileCRC" : -1845552273,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels\\VerifyCodeViewModel.cs",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582579.997235500,
+    "lastModifiedTime" : 1483611379.997235500,
     "creationTime" : null,
     "fileCRC" : -530605727,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ApplicationUser.cs",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583487.708964200,
+    "lastModifiedTime" : 1483612287.708964200,
     "creationTime" : null,
     "fileCRC" : -1288202022,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\DataSeeder.cs",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1474709362.725752800,
+    "lastModifiedTime" : 1474738162.725752800,
     "creationTime" : null,
     "fileCRC" : 20299163,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\Dept.cs",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1472866321.975958700,
+    "lastModifiedTime" : 1472895121.975958700,
     "creationTime" : null,
     "fileCRC" : -1749128028,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\Designation.cs",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1472865281.747990000,
+    "lastModifiedTime" : 1472894081.747990000,
     "creationTime" : null,
     "fileCRC" : 359622207,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\Employee.cs",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.287942100,
+    "lastModifiedTime" : 1483611380.287942100,
     "creationTime" : null,
     "fileCRC" : 1532445259,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\AddPhoneNumberViewModel.cs",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.319987100,
+    "lastModifiedTime" : 1483611380.319987100,
     "creationTime" : null,
     "fileCRC" : -1529813122,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\ChangePasswordViewModel.cs",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.336498800,
+    "lastModifiedTime" : 1483611380.336498800,
     "creationTime" : null,
     "fileCRC" : -1739183639,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\ConfigureTwoFactorViewModel.cs",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.384533800,
+    "lastModifiedTime" : 1483611380.384533800,
     "creationTime" : null,
     "fileCRC" : -1680822533,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\FactorViewModel.cs",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.397041700,
+    "lastModifiedTime" : 1483611380.397041700,
     "creationTime" : null,
     "fileCRC" : 2124298252,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\IndexViewModel.cs",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.411397500,
+    "lastModifiedTime" : 1483611380.411397500,
     "creationTime" : null,
     "fileCRC" : 765191743,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\ManageLoginsViewModel.cs",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.423906700,
+    "lastModifiedTime" : 1483611380.423906700,
     "creationTime" : null,
     "fileCRC" : 2137576192,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\RemoveLoginViewModel.cs",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.455930800,
+    "lastModifiedTime" : 1483611380.455930800,
     "creationTime" : null,
     "fileCRC" : 1463309438,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\SetPasswordViewModel.cs",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.571073100,
+    "lastModifiedTime" : 1483611380.571073100,
     "creationTime" : null,
     "fileCRC" : 1539520209,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels\\VerifyPhoneNumberViewModel.cs",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584953.927180800,
+    "lastModifiedTime" : 1483613753.927180800,
     "creationTime" : null,
     "fileCRC" : 1677920017,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\.IncrementalCache",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584953.870157900,
+    "lastModifiedTime" : 1483613753.870157900,
     "creationTime" : null,
     "fileCRC" : -1675185500,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\.SDKVersion",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584948.513416500,
+    "lastModifiedTime" : 1483613748.513416500,
     "creationTime" : null,
     "fileCRC" : 1050177344,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\dotnet-compile-csc.rsp",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584948.489616300,
+    "lastModifiedTime" : 1483613748.489616300,
     "creationTime" : null,
     "fileCRC" : 1435691113,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\dotnet-compile.assemblyinfo.cs",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584947.991411100,
+    "lastModifiedTime" : 1483613747.991411100,
     "creationTime" : null,
     "fileCRC" : 1802085171,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\dotnet-compile.rsp",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584947.975418500,
+    "lastModifiedTime" : 1483613747.975418500,
     "creationTime" : null,
     "fileCRC" : -1419536597,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0\\HRMCoredotnet-compile.deps.json",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.365588800,
+    "lastModifiedTime" : 1483611365.365588800,
     "creationTime" : null,
     "fileCRC" : 309438974,
     "fileName" : "HRMCore\\src\\HRMCore\\Program.cs",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.441364800,
+    "lastModifiedTime" : 1483611381.441364800,
     "creationTime" : null,
     "fileCRC" : 1672496759,
     "fileName" : "HRMCore\\src\\HRMCore\\project.json",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582708.386124700,
+    "lastModifiedTime" : 1483611508.386124700,
     "creationTime" : null,
     "fileCRC" : 1963704232,
     "fileName" : "HRMCore\\src\\HRMCore\\project.lock.json",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.405085300,
+    "lastModifiedTime" : 1483611365.405085300,
     "creationTime" : null,
     "fileCRC" : -983082717,
     "fileName" : "HRMCore\\src\\HRMCore\\Project_Readme.html",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582584.073894700,
+    "lastModifiedTime" : 1483611384.073894700,
     "creationTime" : null,
     "fileCRC" : -704392342,
     "fileName" : "HRMCore\\src\\HRMCore\\Properties\\launchSettings.json",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.681652000,
+    "lastModifiedTime" : 1483611380.681652000,
     "creationTime" : null,
     "fileCRC" : 822499957,
     "fileName" : "HRMCore\\src\\HRMCore\\Services\\IEmailSender.cs",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.712673800,
+    "lastModifiedTime" : 1483611380.712673800,
     "creationTime" : null,
     "fileCRC" : 513282471,
     "fileName" : "HRMCore\\src\\HRMCore\\Services\\ISmsSender.cs",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.751202500,
+    "lastModifiedTime" : 1483611380.751202500,
     "creationTime" : null,
     "fileCRC" : 994450964,
     "fileName" : "HRMCore\\src\\HRMCore\\Services\\MessageServices.cs",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584338.761105600,
+    "lastModifiedTime" : 1483613138.761105600,
     "creationTime" : null,
     "fileCRC" : -629012976,
     "fileName" : "HRMCore\\src\\HRMCore\\Startup.cs",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.772253300,
+    "lastModifiedTime" : 1483611380.772253300,
     "creationTime" : null,
     "fileCRC" : 188872644,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\ConfirmEmail.cshtml",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.795854000,
+    "lastModifiedTime" : 1483611380.795854000,
     "creationTime" : null,
     "fileCRC" : 954975117,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\ExternalLoginConfirmation.cshtml",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.806361400,
+    "lastModifiedTime" : 1483611380.806361400,
     "creationTime" : null,
     "fileCRC" : 1354416246,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\ExternalLoginFailure.cshtml",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.863902900,
+    "lastModifiedTime" : 1483611380.863902900,
     "creationTime" : null,
     "fileCRC" : 1601800985,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\ForgotPassword.cshtml",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.878913300,
+    "lastModifiedTime" : 1483611380.878913300,
     "creationTime" : null,
     "fileCRC" : 2073904065,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\ForgotPasswordConfirmation.cshtml",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.910904400,
+    "lastModifiedTime" : 1483611380.910904400,
     "creationTime" : null,
     "fileCRC" : -755052836,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\Lockout.cshtml",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.984374700,
+    "lastModifiedTime" : 1483611380.984374700,
     "creationTime" : null,
     "fileCRC" : 735242142,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\Login.cshtml",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.005021700,
+    "lastModifiedTime" : 1483611381.005021700,
     "creationTime" : null,
     "fileCRC" : 2088584153,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\Register.cshtml",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.025555300,
+    "lastModifiedTime" : 1483611381.025555300,
     "creationTime" : null,
     "fileCRC" : -38099091,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\ResetPassword.cshtml",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.042547100,
+    "lastModifiedTime" : 1483611381.042547100,
     "creationTime" : null,
     "fileCRC" : 124032811,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\ResetPasswordConfirmation.cshtml",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.062062900,
+    "lastModifiedTime" : 1483611381.062062900,
     "creationTime" : null,
     "fileCRC" : 26022024,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\SendCode.cshtml",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.080709800,
+    "lastModifiedTime" : 1483611381.080709800,
     "creationTime" : null,
     "fileCRC" : -707040613,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account\\VerifyCode.cshtml",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584905.082947700,
+    "lastModifiedTime" : 1483613705.082947700,
     "creationTime" : null,
     "fileCRC" : -471654370,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Depts\\Create.cshtml",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583899.300454000,
+    "lastModifiedTime" : 1483612699.300454000,
     "creationTime" : null,
     "fileCRC" : 68966644,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Depts\\Delete.cshtml",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583898.782586200,
+    "lastModifiedTime" : 1483612698.782586200,
     "creationTime" : null,
     "fileCRC" : 44501163,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Depts\\Details.cshtml",
@@ -1430,7 +1430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483585165.967783600,
+    "lastModifiedTime" : 1483613965.967783600,
     "creationTime" : null,
     "fileCRC" : 770355448,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Depts\\Edit.cshtml",
@@ -1446,7 +1446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584943.402683200,
+    "lastModifiedTime" : 1483613743.402683200,
     "creationTime" : null,
     "fileCRC" : 2045131522,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Depts\\Index.cshtml",
@@ -1462,7 +1462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483585269.964218500,
+    "lastModifiedTime" : 1483614069.964218500,
     "creationTime" : null,
     "fileCRC" : -957754799,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Employees\\Create.cshtml",
@@ -1478,7 +1478,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583975.409093100,
+    "lastModifiedTime" : 1483612775.409093100,
     "creationTime" : null,
     "fileCRC" : 1049800323,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Employees\\Delete.cshtml",
@@ -1494,7 +1494,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583975.118378900,
+    "lastModifiedTime" : 1483612775.118378900,
     "creationTime" : null,
     "fileCRC" : -657006243,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Employees\\Details.cshtml",
@@ -1510,7 +1510,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483585291.306703200,
+    "lastModifiedTime" : 1483614091.306703200,
     "creationTime" : null,
     "fileCRC" : -242855851,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Employees\\Edit.cshtml",
@@ -1526,7 +1526,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583975.796398000,
+    "lastModifiedTime" : 1483612775.796398000,
     "creationTime" : null,
     "fileCRC" : -2050453260,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Employees\\Index.cshtml",
@@ -1542,7 +1542,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.530423900,
+    "lastModifiedTime" : 1483611363.530423900,
     "creationTime" : null,
     "fileCRC" : 438123674,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Home\\About.cshtml",
@@ -1558,7 +1558,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.563445400,
+    "lastModifiedTime" : 1483611363.563445400,
     "creationTime" : null,
     "fileCRC" : -813444660,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Home\\Contact.cshtml",
@@ -1574,7 +1574,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.604741600,
+    "lastModifiedTime" : 1483611363.604741600,
     "creationTime" : null,
     "fileCRC" : -1627783655,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Home\\Index.cshtml",
@@ -1590,7 +1590,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.097111200,
+    "lastModifiedTime" : 1483611381.097111200,
     "creationTime" : null,
     "fileCRC" : 1648802309,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Manage\\AddPhoneNumber.cshtml",
@@ -1606,7 +1606,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.104614900,
+    "lastModifiedTime" : 1483611381.104614900,
     "creationTime" : null,
     "fileCRC" : -1855851238,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Manage\\ChangePassword.cshtml",
@@ -1622,7 +1622,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.124143100,
+    "lastModifiedTime" : 1483611381.124143100,
     "creationTime" : null,
     "fileCRC" : 1178134224,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Manage\\Index.cshtml",
@@ -1638,7 +1638,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.166672800,
+    "lastModifiedTime" : 1483611381.166672800,
     "creationTime" : null,
     "fileCRC" : -554606438,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Manage\\ManageLogins.cshtml",
@@ -1654,7 +1654,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.176679500,
+    "lastModifiedTime" : 1483611381.176679500,
     "creationTime" : null,
     "fileCRC" : -1527395873,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Manage\\SetPassword.cshtml",
@@ -1670,7 +1670,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.195692800,
+    "lastModifiedTime" : 1483611381.195692800,
     "creationTime" : null,
     "fileCRC" : -2029697905,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Manage\\VerifyPhoneNumber.cshtml",
@@ -1686,7 +1686,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.655782100,
+    "lastModifiedTime" : 1483611363.655782100,
     "creationTime" : null,
     "fileCRC" : 223730624,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Shared\\Error.cshtml",
@@ -1702,7 +1702,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584851.908404900,
+    "lastModifiedTime" : 1483613651.908404900,
     "creationTime" : null,
     "fileCRC" : 592364536,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Shared\\_Layout.cshtml",
@@ -1718,7 +1718,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.254736700,
+    "lastModifiedTime" : 1483611381.254736700,
     "creationTime" : null,
     "fileCRC" : 294442779,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Shared\\_LoginPartial.cshtml",
@@ -1734,7 +1734,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.285756300,
+    "lastModifiedTime" : 1483611381.285756300,
     "creationTime" : null,
     "fileCRC" : -1571605222,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -1750,7 +1750,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.361305700,
+    "lastModifiedTime" : 1483611381.361305700,
     "creationTime" : null,
     "fileCRC" : -2064432537,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\_ViewImports.cshtml",
@@ -1766,7 +1766,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.718028400,
+    "lastModifiedTime" : 1483611363.718028400,
     "creationTime" : null,
     "fileCRC" : 2094920195,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\_ViewStart.cshtml",
@@ -1782,7 +1782,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.477880000,
+    "lastModifiedTime" : 1483611365.477880000,
     "creationTime" : null,
     "fileCRC" : -1020067063,
     "fileName" : "HRMCore\\src\\HRMCore\\web.config",
@@ -1798,7 +1798,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.308271300,
+    "lastModifiedTime" : 1483611381.308271300,
     "creationTime" : null,
     "fileCRC" : -107200751,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\css\\site.css",
@@ -1814,7 +1814,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.316773700,
+    "lastModifiedTime" : 1483611381.316773700,
     "creationTime" : null,
     "fileCRC" : -714589674,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\css\\site.min.css",
@@ -1830,7 +1830,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1438151176.000000000,
+    "lastModifiedTime" : 1438179976.000000000,
     "creationTime" : null,
     "fileCRC" : 732478157,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\favicon.ico",
@@ -1846,7 +1846,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -391744751,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\images\\banner1.svg",
@@ -1862,7 +1862,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -690194516,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\images\\banner2.svg",
@@ -1878,7 +1878,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -1522545957,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\images\\banner3.svg",
@@ -1894,7 +1894,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 189982441,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\images\\banner4.svg",
@@ -1910,7 +1910,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1445473280.000000000,
+    "lastModifiedTime" : 1445502080.000000000,
     "creationTime" : null,
     "fileCRC" : 1137071233,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\js\\site.js",
@@ -1926,7 +1926,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1465187644.000000000,
+    "lastModifiedTime" : 1465216444.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\js\\site.min.js",
@@ -1942,7 +1942,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -2145718590,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\.bower.json",
@@ -1958,7 +1958,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1709669223,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
@@ -1974,7 +1974,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -2093915014,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
@@ -1990,7 +1990,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1811842076,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
@@ -2006,7 +2006,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1729377307,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
@@ -2022,7 +2022,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -400173996,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -2038,7 +2038,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1012492733,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
@@ -2054,7 +2054,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 155310915,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
@@ -2070,7 +2070,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -461177326,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
@@ -2086,7 +2086,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1458520148.000000000,
+    "lastModifiedTime" : 1458548948.000000000,
     "creationTime" : null,
     "fileCRC" : -1666070696,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.eot",
@@ -2102,7 +2102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1458520148.000000000,
+    "lastModifiedTime" : 1458548948.000000000,
     "creationTime" : null,
     "fileCRC" : -909709700,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.svg",
@@ -2118,7 +2118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1458520148.000000000,
+    "lastModifiedTime" : 1458548948.000000000,
     "creationTime" : null,
     "fileCRC" : -1673783398,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.ttf",
@@ -2134,7 +2134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1458520148.000000000,
+    "lastModifiedTime" : 1458548948.000000000,
     "creationTime" : null,
     "fileCRC" : -176483094,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.woff",
@@ -2150,7 +2150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1458520148.000000000,
+    "lastModifiedTime" : 1458548948.000000000,
     "creationTime" : null,
     "fileCRC" : 1640228982,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\fonts\\glyphicons-halflings-regular.woff2",
@@ -2166,7 +2166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -1767586754,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
@@ -2182,7 +2182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -1905717298,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
@@ -2198,7 +2198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1458520148.000000000,
+    "lastModifiedTime" : 1458548948.000000000,
     "creationTime" : null,
     "fileCRC" : -867114163,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\js\\npm.js",
@@ -2214,7 +2214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1458520148.000000000,
+    "lastModifiedTime" : 1458548948.000000000,
     "creationTime" : null,
     "fileCRC" : 1458270848,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -2230,7 +2230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -365131728,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery\\.bower.json",
@@ -2246,7 +2246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : -590093511,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
@@ -2262,7 +2262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1314660779,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
@@ -2278,7 +2278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1578795659,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
@@ -2294,7 +2294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1112489189,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery\\LICENSE.txt",
@@ -2310,7 +2310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1459397990.000000000,
+    "lastModifiedTime" : 1459426790.000000000,
     "creationTime" : null,
     "fileCRC" : -2098119774,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation\\.bower.json",
@@ -2326,7 +2326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1449630624.000000000,
+    "lastModifiedTime" : 1449659424.000000000,
     "creationTime" : null,
     "fileCRC" : -1156661691,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
@@ -2342,7 +2342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1449630624.000000000,
+    "lastModifiedTime" : 1449659424.000000000,
     "creationTime" : null,
     "fileCRC" : -1738619811,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
@@ -2358,7 +2358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1449630624.000000000,
+    "lastModifiedTime" : 1449659424.000000000,
     "creationTime" : null,
     "fileCRC" : -1533198286,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
@@ -2374,7 +2374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1449630624.000000000,
+    "lastModifiedTime" : 1449659424.000000000,
     "creationTime" : null,
     "fileCRC" : -466031203,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
@@ -2390,7 +2390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1449630624.000000000,
+    "lastModifiedTime" : 1449659424.000000000,
     "creationTime" : null,
     "fileCRC" : 850709550,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
@@ -2406,7 +2406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1461560254.000000000,
+    "lastModifiedTime" : 1461589054.000000000,
     "creationTime" : null,
     "fileCRC" : 1787570082,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\.bower.json",
@@ -2422,7 +2422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1460078888.000000000,
+    "lastModifiedTime" : 1460107688.000000000,
     "creationTime" : null,
     "fileCRC" : -1016185237,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
@@ -2438,7 +2438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1460079222.000000000,
+    "lastModifiedTime" : 1460108022.000000000,
     "creationTime" : null,
     "fileCRC" : -1176817448,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
@@ -2454,7 +2454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1466038678.000000000,
+    "lastModifiedTime" : 1466067478.000000000,
     "creationTime" : null,
     "fileCRC" : -1168557244,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\_references.js",
@@ -2470,7 +2470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583156.684418300,
+    "lastModifiedTime" : 1483611956.684418300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0",
@@ -2486,7 +2486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583156.453259100,
+    "lastModifiedTime" : 1483611956.453259100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0",
@@ -2502,7 +2502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583146.076548500,
+    "lastModifiedTime" : 1483611946.076548500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin\\Debug",
@@ -2518,7 +2518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583146.077549000,
+    "lastModifiedTime" : 1483611946.077549000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj\\Debug",
@@ -2534,7 +2534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.213978700,
+    "lastModifiedTime" : 1483611364.213978700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\css",
@@ -2550,7 +2550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.334564700,
+    "lastModifiedTime" : 1483611364.334564700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\fonts",
@@ -2566,7 +2566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.494135900,
+    "lastModifiedTime" : 1483611364.494135900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist\\js",
@@ -2582,7 +2582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583146.075583300,
+    "lastModifiedTime" : 1483611946.075583300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\bin",
@@ -2598,7 +2598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583146.077549000,
+    "lastModifiedTime" : 1483611946.077549000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore\\obj",
@@ -2614,7 +2614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.335565700,
+    "lastModifiedTime" : 1483611364.335565700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap\\dist",
@@ -2630,7 +2630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.779139800,
+    "lastModifiedTime" : 1483611364.779139800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery\\dist",
@@ -2646,7 +2646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.081887500,
+    "lastModifiedTime" : 1483611365.081887500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation\\dist",
@@ -2662,7 +2662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582793.191582800,
+    "lastModifiedTime" : 1483611593.191582800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\Debug\\netcoreapp1.0",
@@ -2678,7 +2678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583146.076548500,
+    "lastModifiedTime" : 1483611946.076548500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src\\HRMCore",
@@ -2694,7 +2694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582792.948721700,
+    "lastModifiedTime" : 1483611592.948721700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug\\netcoreapp1.0",
@@ -2710,7 +2710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.535668700,
+    "lastModifiedTime" : 1483611364.535668700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\bootstrap",
@@ -2726,7 +2726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.804156500,
+    "lastModifiedTime" : 1483611364.804156500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery",
@@ -2742,7 +2742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.103902700,
+    "lastModifiedTime" : 1483611365.103902700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation",
@@ -2758,7 +2758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.194466900,
+    "lastModifiedTime" : 1483611365.194466900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib\\jquery-validation-unobtrusive",
@@ -2774,7 +2774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582787.385279000,
+    "lastModifiedTime" : 1483611587.385279000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\Debug",
@@ -2790,7 +2790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583146.057500900,
+    "lastModifiedTime" : 1483611946.057500900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin\\src",
@@ -2806,7 +2806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583613.873569500,
+    "lastModifiedTime" : 1483612413.873569500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Data\\Migrations",
@@ -2822,7 +2822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.233403900,
+    "lastModifiedTime" : 1483611380.233403900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\AccountViewModels",
@@ -2838,7 +2838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.562567100,
+    "lastModifiedTime" : 1483611380.562567100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Models\\ManageViewModels",
@@ -2854,7 +2854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582787.415299000,
+    "lastModifiedTime" : 1483611587.415299000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\obj\\Debug",
@@ -2870,7 +2870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.079708400,
+    "lastModifiedTime" : 1483611381.079708400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Account",
@@ -2886,7 +2886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483585166.066856000,
+    "lastModifiedTime" : 1483613966.066856000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Depts",
@@ -2902,7 +2902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483585291.325715200,
+    "lastModifiedTime" : 1483614091.325715200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Employees",
@@ -2918,7 +2918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.603740200,
+    "lastModifiedTime" : 1483611363.603740200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Home",
@@ -2934,7 +2934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.195191200,
+    "lastModifiedTime" : 1483611381.195191200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Manage",
@@ -2950,7 +2950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584851.911406400,
+    "lastModifiedTime" : 1483613651.911406400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Views\\Shared",
@@ -2966,7 +2966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.762578700,
+    "lastModifiedTime" : 1483611363.762578700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\css",
@@ -2982,7 +2982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.950716800,
+    "lastModifiedTime" : 1483611363.950716800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\images",
@@ -2998,7 +2998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582564.004752100,
+    "lastModifiedTime" : 1483611364.004752100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\js",
@@ -3014,7 +3014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.104903600,
+    "lastModifiedTime" : 1483611365.104903600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot\\lib",
@@ -3030,7 +3030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.666350600,
+    "lastModifiedTime" : 1483611381.666350600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\.vs\\HRMCore\\v14",
@@ -3046,7 +3046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583146.026502300,
+    "lastModifiedTime" : 1483611946.026502300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\bin",
@@ -3062,7 +3062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584786.668391800,
+    "lastModifiedTime" : 1483613586.668391800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Controllers",
@@ -3078,7 +3078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583547.971738700,
+    "lastModifiedTime" : 1483612347.971738700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Data",
@@ -3094,7 +3094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583487.722972800,
+    "lastModifiedTime" : 1483612287.722972800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Models",
@@ -3110,7 +3110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582786.052546600,
+    "lastModifiedTime" : 1483611586.052546600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\obj",
@@ -3126,7 +3126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.498390400,
+    "lastModifiedTime" : 1483611363.498390400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Properties",
@@ -3142,7 +3142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582580.726683800,
+    "lastModifiedTime" : 1483611380.726683800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Services",
@@ -3158,7 +3158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483583974.189300300,
+    "lastModifiedTime" : 1483612774.189300300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\Views",
@@ -3174,7 +3174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582565.273022200,
+    "lastModifiedTime" : 1483611365.273022200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore\\wwwroot",
@@ -3190,7 +3190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582922.667728600,
+    "lastModifiedTime" : 1483611722.667728600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\.vs\\config",
@@ -3206,7 +3206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.665849900,
+    "lastModifiedTime" : 1483611381.665849900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\.vs\\HRMCore",
@@ -3222,7 +3222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483584338.775056200,
+    "lastModifiedTime" : 1483613138.775056200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src\\HRMCore",
@@ -3238,7 +3238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582922.613735300,
+    "lastModifiedTime" : 1483611722.613735300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\.vs",
@@ -3254,7 +3254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582563.372802400,
+    "lastModifiedTime" : 1483611363.372802400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore\\src",
@@ -3270,7 +3270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1483582581.665350100,
+    "lastModifiedTime" : 1483611381.665350100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "HRMCore",

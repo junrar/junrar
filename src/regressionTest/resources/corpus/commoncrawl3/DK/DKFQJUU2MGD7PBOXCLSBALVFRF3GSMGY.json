@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085606.478597500,
+    "lastModifiedTime" : 1410114406.478597500,
     "creationTime" : null,
     "fileCRC" : -327287997,
     "fileName" : "zhy_ormlite\\.classpath",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410082671.329716600,
+    "lastModifiedTime" : 1410111471.329716600,
     "creationTime" : null,
     "fileCRC" : -450083374,
     "fileName" : "zhy_ormlite\\.project",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085424.083165100,
+    "lastModifiedTime" : 1410114224.083165100,
     "creationTime" : null,
     "fileCRC" : 1053065570,
     "fileName" : "zhy_ormlite\\AndroidManifest.xml",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085694.552635000,
+    "lastModifiedTime" : 1410114494.552635000,
     "creationTime" : null,
     "fileCRC" : 1053065570,
     "fileName" : "zhy_ormlite\\bin\\AndroidManifest.xml",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410100935.060342200,
+    "lastModifiedTime" : 1410129735.060342200,
     "creationTime" : null,
     "fileCRC" : 736524308,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\bean\\Article.class",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410100005.849194400,
+    "lastModifiedTime" : 1410128805.849194400,
     "creationTime" : null,
     "fileCRC" : 1250783916,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\bean\\Student.class",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410100074.676131100,
+    "lastModifiedTime" : 1410128874.676131100,
     "creationTime" : null,
     "fileCRC" : -1131023827,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\bean\\User.class",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085703.925171100,
+    "lastModifiedTime" : 1410114503.925171100,
     "creationTime" : null,
     "fileCRC" : 2132944365,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\BuildConfig.class",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103771.096554200,
+    "lastModifiedTime" : 1410132571.096554200,
     "creationTime" : null,
     "fileCRC" : 1157242766,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\db\\ArticleDao.class",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410100585.044322500,
+    "lastModifiedTime" : 1410129385.044322500,
     "creationTime" : null,
     "fileCRC" : -1135843390,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\db\\DatabaseHelper.class",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103800.814254000,
+    "lastModifiedTime" : 1410132600.814254000,
     "creationTime" : null,
     "fileCRC" : -2078780996,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\db\\UserDao.class",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085703.881168600,
+    "lastModifiedTime" : 1410114503.881168600,
     "creationTime" : null,
     "fileCRC" : -267474762,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\MainActivity.class",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.922173400,
+    "lastModifiedTime" : 1410132581.922173400,
     "creationTime" : null,
     "fileCRC" : -165145349,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$attr.class",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.920173300,
+    "lastModifiedTime" : 1410132581.920173300,
     "creationTime" : null,
     "fileCRC" : 1433777303,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$dimen.class",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.917173100,
+    "lastModifiedTime" : 1410132581.917173100,
     "creationTime" : null,
     "fileCRC" : -358585732,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$drawable.class",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.923173500,
+    "lastModifiedTime" : 1410132581.923173500,
     "creationTime" : null,
     "fileCRC" : -905334243,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$id.class",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.918173200,
+    "lastModifiedTime" : 1410132581.918173200,
     "creationTime" : null,
     "fileCRC" : 2140895525,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$layout.class",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.925173600,
+    "lastModifiedTime" : 1410132581.925173600,
     "creationTime" : null,
     "fileCRC" : 120924233,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$menu.class",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.921173400,
+    "lastModifiedTime" : 1410132581.921173400,
     "creationTime" : null,
     "fileCRC" : 1206955192,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$string.class",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.926173600,
+    "lastModifiedTime" : 1410132581.926173600,
     "creationTime" : null,
     "fileCRC" : -673749448,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R$style.class",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.916173100,
+    "lastModifiedTime" : 1410132581.916173100,
     "creationTime" : null,
     "fileCRC" : -864793945,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\R.class",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103798.346112800,
+    "lastModifiedTime" : 1410132598.346112800,
     "creationTime" : null,
     "fileCRC" : -1306654001,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\test\\OrmLiteDbTest.class",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410092557.138152500,
+    "lastModifiedTime" : 1410121357.138152500,
     "creationTime" : null,
     "fileCRC" : 1315261350,
     "fileName" : "zhy_ormlite\\bin\\classes\\com\\zhy\\zhy_ormlite\\utils\\L.class",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410101273.498699800,
+    "lastModifiedTime" : 1410130073.498699800,
     "creationTime" : null,
     "fileCRC" : 2112069549,
     "fileName" : "zhy_ormlite\\bin\\classes.dex",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085715.114811100,
+    "lastModifiedTime" : 1410114515.114811100,
     "creationTime" : null,
     "fileCRC" : -1614320487,
     "fileName" : "zhy_ormlite\\bin\\dexedLibs\\ormlite-android-4.48-471d9e7e9d3287eab275536141882cd5.jar",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085714.934800800,
+    "lastModifiedTime" : 1410114514.934800800,
     "creationTime" : null,
     "fileCRC" : -1638338033,
     "fileName" : "zhy_ormlite\\bin\\dexedLibs\\ormlite-core-4.48-a22efd8c53fb140889d310afcdcca085.jar",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085712.579666100,
+    "lastModifiedTime" : 1410114512.579666100,
     "creationTime" : null,
     "fileCRC" : -230105246,
     "fileName" : "zhy_ormlite\\bin\\res\\drawable-hdpi\\ic_launcher.png",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085712.608667800,
+    "lastModifiedTime" : 1410114512.608667800,
     "creationTime" : null,
     "fileCRC" : 1787092953,
     "fileName" : "zhy_ormlite\\bin\\res\\drawable-mdpi\\ic_launcher.png",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085712.930686200,
+    "lastModifiedTime" : 1410114512.930686200,
     "creationTime" : null,
     "fileCRC" : -1574437750,
     "fileName" : "zhy_ormlite\\bin\\res\\drawable-xhdpi\\ic_launcher.png",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085713.298707300,
+    "lastModifiedTime" : 1410114513.298707300,
     "creationTime" : null,
     "fileCRC" : 709532113,
     "fileName" : "zhy_ormlite\\bin\\res\\drawable-xxhdpi\\ic_launcher.png",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085713.347710100,
+    "lastModifiedTime" : 1410114513.347710100,
     "creationTime" : null,
     "fileCRC" : -1990103761,
     "fileName" : "zhy_ormlite\\bin\\resources.ap_",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410101273.637707700,
+    "lastModifiedTime" : 1410130073.637707700,
     "creationTime" : null,
     "fileCRC" : 1013247351,
     "fileName" : "zhy_ormlite\\bin\\zhy_ormlite.apk",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410085694.551635000,
+    "lastModifiedTime" : 1410114494.551635000,
     "creationTime" : null,
     "fileCRC" : 2122620533,
     "fileName" : "zhy_ormlite\\gen\\com\\zhy\\zhy_ormlite\\BuildConfig.java",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410103781.398143400,
+    "lastModifiedTime" : 1410132581.398143400,
     "creationTime" : null,
     "fileCRC" : 1065657758,
     "fileName" : "zhy_ormlite\\gen\\com\\zhy\\zhy_ormlite\\R.java",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410082676.301000900,
+    "lastModifiedTime" : 1410111476.301000900,
     "creationTime" : null,
     "fileCRC" : 1751877124,
     "fileName" : "zhy_ormlite\\ic_launcher-web.png",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1410082674.759912800,
+    "lastModifiedTime" : 1410111474.759912800,
     "creationTime" : null,
     "fileCRC" : 347354231,
     "fileName" : "zhy_ormlite\\libs\\android-support-v4.jar",

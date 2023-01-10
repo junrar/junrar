@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265544.000000000,
+    "lastModifiedTime" : 1275294344.000000000,
     "creationTime" : null,
     "fileCRC" : -570171181,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\info.txt",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265550.000000000,
+    "lastModifiedTime" : 1275294350.000000000,
     "creationTime" : null,
     "fileCRC" : -1775814970,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\FAT32.c",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265550.000000000,
+    "lastModifiedTime" : 1275294350.000000000,
     "creationTime" : null,
     "fileCRC" : -2099978036,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\FAT32.h",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265554.000000000,
+    "lastModifiedTime" : 1275294354.000000000,
     "creationTime" : null,
     "fileCRC" : 1622867901,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\SD_Card.aps",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265554.000000000,
+    "lastModifiedTime" : 1275294354.000000000,
     "creationTime" : null,
     "fileCRC" : -865075580,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\sd_card.aws",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265554.000000000,
+    "lastModifiedTime" : 1275294354.000000000,
     "creationTime" : null,
     "fileCRC" : 909422397,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\SD_main.c",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265556.000000000,
+    "lastModifiedTime" : 1275294356.000000000,
     "creationTime" : null,
     "fileCRC" : 947394763,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\SD_routines.c",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265556.000000000,
+    "lastModifiedTime" : 1275294356.000000000,
     "creationTime" : null,
     "fileCRC" : 398159435,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\sd_routines.h",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265556.000000000,
+    "lastModifiedTime" : 1275294356.000000000,
     "creationTime" : null,
     "fileCRC" : 1415689395,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\SPI_routines.c",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265558.000000000,
+    "lastModifiedTime" : 1275294358.000000000,
     "creationTime" : null,
     "fileCRC" : 305044928,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\SPI_routines.h",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265558.000000000,
+    "lastModifiedTime" : 1275294358.000000000,
     "creationTime" : null,
     "fileCRC" : -1124465386,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\UART_routines.c",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265558.000000000,
+    "lastModifiedTime" : 1275294358.000000000,
     "creationTime" : null,
     "fileCRC" : 1378391770,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\UART_routines.h",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275265564.000000000,
+    "lastModifiedTime" : 1275294364.000000000,
     "creationTime" : null,
     "fileCRC" : 1060458372,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32\\SD_Card.hex",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267306.000000000,
+    "lastModifiedTime" : 1275296106.000000000,
     "creationTime" : null,
     "fileCRC" : -1468971189,
     "fileName" : "AVRStudio\\Przyklad UART\\config.h",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267306.000000000,
+    "lastModifiedTime" : 1275296106.000000000,
     "creationTime" : null,
     "fileCRC" : 1374465285,
     "fileName" : "AVRStudio\\Przyklad UART\\makefile",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267308.000000000,
+    "lastModifiedTime" : 1275296108.000000000,
     "creationTime" : null,
     "fileCRC" : -957889372,
     "fileName" : "AVRStudio\\Przyklad UART\\uart.aps",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267308.000000000,
+    "lastModifiedTime" : 1275296108.000000000,
     "creationTime" : null,
     "fileCRC" : -649036112,
     "fileName" : "AVRStudio\\Przyklad UART\\uart.c",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267308.000000000,
+    "lastModifiedTime" : 1275296108.000000000,
     "creationTime" : null,
     "fileCRC" : -61953160,
     "fileName" : "AVRStudio\\Przyklad UART\\uart.hex",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267282.000000000,
+    "lastModifiedTime" : 1275296082.000000000,
     "creationTime" : null,
     "fileCRC" : -1417414169,
     "fileName" : "AVRStudio\\Przyklad RC5\\config.h",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267282.000000000,
+    "lastModifiedTime" : 1275296082.000000000,
     "creationTime" : null,
     "fileCRC" : 420611671,
     "fileName" : "AVRStudio\\Przyklad RC5\\makefile",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267284.000000000,
+    "lastModifiedTime" : 1275296084.000000000,
     "creationTime" : null,
     "fileCRC" : -1650148944,
     "fileName" : "AVRStudio\\Przyklad RC5\\rc5.aps",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267284.000000000,
+    "lastModifiedTime" : 1275296084.000000000,
     "creationTime" : null,
     "fileCRC" : -822521615,
     "fileName" : "AVRStudio\\Przyklad RC5\\rc5.c",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267290.000000000,
+    "lastModifiedTime" : 1275296090.000000000,
     "creationTime" : null,
     "fileCRC" : -344710934,
     "fileName" : "AVRStudio\\Przyklad RC5\\info.txt",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267258.000000000,
+    "lastModifiedTime" : 1275296058.000000000,
     "creationTime" : null,
     "fileCRC" : 930775366,
     "fileName" : "AVRStudio\\Przyklad PCF8583\\config.h",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267260.000000000,
+    "lastModifiedTime" : 1275296060.000000000,
     "creationTime" : null,
     "fileCRC" : 1085367171,
     "fileName" : "AVRStudio\\Przyklad PCF8583\\makefile",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267260.000000000,
+    "lastModifiedTime" : 1275296060.000000000,
     "creationTime" : null,
     "fileCRC" : 941691292,
     "fileName" : "AVRStudio\\Przyklad PCF8583\\pcf8583.aps",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267260.000000000,
+    "lastModifiedTime" : 1275296060.000000000,
     "creationTime" : null,
     "fileCRC" : 912307561,
     "fileName" : "AVRStudio\\Przyklad PCF8583\\pcf8583.c",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267268.000000000,
+    "lastModifiedTime" : 1275296068.000000000,
     "creationTime" : null,
     "fileCRC" : 14345376,
     "fileName" : "AVRStudio\\Przyklad PCF8583\\info.txt",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267238.000000000,
+    "lastModifiedTime" : 1275296038.000000000,
     "creationTime" : null,
     "fileCRC" : 232463872,
     "fileName" : "AVRStudio\\Przyklad MMC\\info.txt",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267156.000000000,
+    "lastModifiedTime" : 1275295956.000000000,
     "creationTime" : null,
     "fileCRC" : 1569986930,
     "fileName" : "AVRStudio\\Przyklad MMC\\adc.c",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267156.000000000,
+    "lastModifiedTime" : 1275295956.000000000,
     "creationTime" : null,
     "fileCRC" : -540365871,
     "fileName" : "AVRStudio\\Przyklad MMC\\adc.h",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267156.000000000,
+    "lastModifiedTime" : 1275295956.000000000,
     "creationTime" : null,
     "fileCRC" : 2071662638,
     "fileName" : "AVRStudio\\Przyklad MMC\\aux_func.c",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267158.000000000,
+    "lastModifiedTime" : 1275295958.000000000,
     "creationTime" : null,
     "fileCRC" : 931742948,
     "fileName" : "AVRStudio\\Przyklad MMC\\aux_func.h",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267158.000000000,
+    "lastModifiedTime" : 1275295958.000000000,
     "creationTime" : null,
     "fileCRC" : -68499061,
     "fileName" : "AVRStudio\\Przyklad MMC\\crc8.c",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267158.000000000,
+    "lastModifiedTime" : 1275295958.000000000,
     "creationTime" : null,
     "fileCRC" : 352492163,
     "fileName" : "AVRStudio\\Przyklad MMC\\crc8.h",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267160.000000000,
+    "lastModifiedTime" : 1275295960.000000000,
     "creationTime" : null,
     "fileCRC" : -1848066904,
     "fileName" : "AVRStudio\\Przyklad MMC\\delay.c",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267160.000000000,
+    "lastModifiedTime" : 1275295960.000000000,
     "creationTime" : null,
     "fileCRC" : 1501302654,
     "fileName" : "AVRStudio\\Przyklad MMC\\delay.h",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267160.000000000,
+    "lastModifiedTime" : 1275295960.000000000,
     "creationTime" : null,
     "fileCRC" : 954921775,
     "fileName" : "AVRStudio\\Przyklad MMC\\dir.c",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267162.000000000,
+    "lastModifiedTime" : 1275295962.000000000,
     "creationTime" : null,
     "fileCRC" : 1566329829,
     "fileName" : "AVRStudio\\Przyklad MMC\\dir.h",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267162.000000000,
+    "lastModifiedTime" : 1275295962.000000000,
     "creationTime" : null,
     "fileCRC" : -1801880856,
     "fileName" : "AVRStudio\\Przyklad MMC\\dos.c",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267164.000000000,
+    "lastModifiedTime" : 1275295964.000000000,
     "creationTime" : null,
     "fileCRC" : -118436001,
     "fileName" : "AVRStudio\\Przyklad MMC\\dos.h",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267164.000000000,
+    "lastModifiedTime" : 1275295964.000000000,
     "creationTime" : null,
     "fileCRC" : 446070483,
     "fileName" : "AVRStudio\\Przyklad MMC\\dosdefs.h",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267164.000000000,
+    "lastModifiedTime" : 1275295964.000000000,
     "creationTime" : null,
     "fileCRC" : 701325958,
     "fileName" : "AVRStudio\\Przyklad MMC\\drivefree.c",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267164.000000000,
+    "lastModifiedTime" : 1275295964.000000000,
     "creationTime" : null,
     "fileCRC" : -1059985479,
     "fileName" : "AVRStudio\\Przyklad MMC\\drivefree.h",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267166.000000000,
+    "lastModifiedTime" : 1275295966.000000000,
     "creationTime" : null,
     "fileCRC" : 1291190229,
     "fileName" : "AVRStudio\\Przyklad MMC\\ds18x20.c",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267166.000000000,
+    "lastModifiedTime" : 1275295966.000000000,
     "creationTime" : null,
     "fileCRC" : -1431227176,
     "fileName" : "AVRStudio\\Przyklad MMC\\ds18x20.h",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267166.000000000,
+    "lastModifiedTime" : 1275295966.000000000,
     "creationTime" : null,
     "fileCRC" : 600084236,
     "fileName" : "AVRStudio\\Przyklad MMC\\dumpsect.c",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267168.000000000,
+    "lastModifiedTime" : 1275295968.000000000,
     "creationTime" : null,
     "fileCRC" : -1358559842,
     "fileName" : "AVRStudio\\Przyklad MMC\\dumpsect.h",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267168.000000000,
+    "lastModifiedTime" : 1275295968.000000000,
     "creationTime" : null,
     "fileCRC" : -1918911590,
     "fileName" : "AVRStudio\\Przyklad MMC\\fat.c",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267170.000000000,
+    "lastModifiedTime" : 1275295970.000000000,
     "creationTime" : null,
     "fileCRC" : -2133993969,
     "fileName" : "AVRStudio\\Przyklad MMC\\fat.h",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267170.000000000,
+    "lastModifiedTime" : 1275295970.000000000,
     "creationTime" : null,
     "fileCRC" : -251849851,
     "fileName" : "AVRStudio\\Przyklad MMC\\find_x.c",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267170.000000000,
+    "lastModifiedTime" : 1275295970.000000000,
     "creationTime" : null,
     "fileCRC" : 2098896922,
     "fileName" : "AVRStudio\\Przyklad MMC\\find_x.h",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267172.000000000,
+    "lastModifiedTime" : 1275295972.000000000,
     "creationTime" : null,
     "fileCRC" : -1702072273,
     "fileName" : "AVRStudio\\Przyklad MMC\\i2cmaster.c",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267172.000000000,
+    "lastModifiedTime" : 1275295972.000000000,
     "creationTime" : null,
     "fileCRC" : 1125132125,
     "fileName" : "AVRStudio\\Przyklad MMC\\i2cmaster.h",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267172.000000000,
+    "lastModifiedTime" : 1275295972.000000000,
     "creationTime" : null,
     "fileCRC" : 1839237310,
     "fileName" : "AVRStudio\\Przyklad MMC\\lcd.c",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267174.000000000,
+    "lastModifiedTime" : 1275295974.000000000,
     "creationTime" : null,
     "fileCRC" : 633946441,
     "fileName" : "AVRStudio\\Przyklad MMC\\lcd.h",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267174.000000000,
+    "lastModifiedTime" : 1275295974.000000000,
     "creationTime" : null,
     "fileCRC" : -1875695450,
     "fileName" : "AVRStudio\\Przyklad MMC\\main.c",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267174.000000000,
+    "lastModifiedTime" : 1275295974.000000000,
     "creationTime" : null,
     "fileCRC" : -1453204646,
     "fileName" : "AVRStudio\\Przyklad MMC\\mem-check.c",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267176.000000000,
+    "lastModifiedTime" : 1275295976.000000000,
     "creationTime" : null,
     "fileCRC" : -904682863,
     "fileName" : "AVRStudio\\Przyklad MMC\\mem-check.h",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267176.000000000,
+    "lastModifiedTime" : 1275295976.000000000,
     "creationTime" : null,
     "fileCRC" : -328284372,
     "fileName" : "AVRStudio\\Przyklad MMC\\menus.c",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267176.000000000,
+    "lastModifiedTime" : 1275295976.000000000,
     "creationTime" : null,
     "fileCRC" : -1558328482,
     "fileName" : "AVRStudio\\Przyklad MMC\\menus.h",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267180.000000000,
+    "lastModifiedTime" : 1275295980.000000000,
     "creationTime" : null,
     "fileCRC" : -2000944830,
     "fileName" : "AVRStudio\\Przyklad MMC\\mmc_spi.c",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267180.000000000,
+    "lastModifiedTime" : 1275295980.000000000,
     "creationTime" : null,
     "fileCRC" : 1490376449,
     "fileName" : "AVRStudio\\Przyklad MMC\\mmc_spi.h",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267182.000000000,
+    "lastModifiedTime" : 1275295982.000000000,
     "creationTime" : null,
     "fileCRC" : -1111185584,
     "fileName" : "AVRStudio\\Przyklad MMC\\onewire.c",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267184.000000000,
+    "lastModifiedTime" : 1275295984.000000000,
     "creationTime" : null,
     "fileCRC" : 2130750423,
     "fileName" : "AVRStudio\\Przyklad MMC\\onewire.h",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267184.000000000,
+    "lastModifiedTime" : 1275295984.000000000,
     "creationTime" : null,
     "fileCRC" : -1565569051,
     "fileName" : "AVRStudio\\Przyklad MMC\\printf.c",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267186.000000000,
+    "lastModifiedTime" : 1275295986.000000000,
     "creationTime" : null,
     "fileCRC" : 750886849,
     "fileName" : "AVRStudio\\Przyklad MMC\\printf.h",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267186.000000000,
+    "lastModifiedTime" : 1275295986.000000000,
     "creationTime" : null,
     "fileCRC" : 1369914384,
     "fileName" : "AVRStudio\\Przyklad MMC\\readraw.c",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267186.000000000,
+    "lastModifiedTime" : 1275295986.000000000,
     "creationTime" : null,
     "fileCRC" : 1369914384,
     "fileName" : "AVRStudio\\Przyklad MMC\\readraw.h",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267188.000000000,
+    "lastModifiedTime" : 1275295988.000000000,
     "creationTime" : null,
     "fileCRC" : 1345426965,
     "fileName" : "AVRStudio\\Przyklad MMC\\rename.c",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267188.000000000,
+    "lastModifiedTime" : 1275295988.000000000,
     "creationTime" : null,
     "fileCRC" : -570620700,
     "fileName" : "AVRStudio\\Przyklad MMC\\serial.c",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267190.000000000,
+    "lastModifiedTime" : 1275295990.000000000,
     "creationTime" : null,
     "fileCRC" : -1818668656,
     "fileName" : "AVRStudio\\Przyklad MMC\\serial.h",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267194.000000000,
+    "lastModifiedTime" : 1275295994.000000000,
     "creationTime" : null,
     "fileCRC" : 972164467,
     "fileName" : "AVRStudio\\Przyklad MMC\\tinymenu.aps",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267196.000000000,
+    "lastModifiedTime" : 1275295996.000000000,
     "creationTime" : null,
     "fileCRC" : -390054810,
     "fileName" : "AVRStudio\\Przyklad MMC\\tinymenu.c",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267200.000000000,
+    "lastModifiedTime" : 1275296000.000000000,
     "creationTime" : null,
     "fileCRC" : 51521551,
     "fileName" : "AVRStudio\\Przyklad MMC\\tinymenu.h",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267202.000000000,
+    "lastModifiedTime" : 1275296002.000000000,
     "creationTime" : null,
     "fileCRC" : -1965890273,
     "fileName" : "AVRStudio\\Przyklad MMC\\tinymenu_hw.h",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267202.000000000,
+    "lastModifiedTime" : 1275296002.000000000,
     "creationTime" : null,
     "fileCRC" : 1904682014,
     "fileName" : "AVRStudio\\Przyklad MMC\\uart.c",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267202.000000000,
+    "lastModifiedTime" : 1275296002.000000000,
     "creationTime" : null,
     "fileCRC" : -998032116,
     "fileName" : "AVRStudio\\Przyklad MMC\\uart.h",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267080.000000000,
+    "lastModifiedTime" : 1275295880.000000000,
     "creationTime" : null,
     "fileCRC" : 2102305023,
     "fileName" : "AVRStudio\\Przyklad LED3\\info.txt",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267086.000000000,
+    "lastModifiedTime" : 1275295886.000000000,
     "creationTime" : null,
     "fileCRC" : 1810901613,
     "fileName" : "AVRStudio\\Przyklad LED3\\Led_night_rider.aps",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267086.000000000,
+    "lastModifiedTime" : 1275295886.000000000,
     "creationTime" : null,
     "fileCRC" : -880384862,
     "fileName" : "AVRStudio\\Przyklad LED3\\Led_night_rider.c",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267088.000000000,
+    "lastModifiedTime" : 1275295888.000000000,
     "creationTime" : null,
     "fileCRC" : -291566956,
     "fileName" : "AVRStudio\\Przyklad LED3\\Makefile",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267092.000000000,
+    "lastModifiedTime" : 1275295892.000000000,
     "creationTime" : null,
     "fileCRC" : 978223400,
     "fileName" : "AVRStudio\\Przyklad LED3\\led_night_rider.hex",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267060.000000000,
+    "lastModifiedTime" : 1275295860.000000000,
     "creationTime" : null,
     "fileCRC" : -957969252,
     "fileName" : "AVRStudio\\Przyklad LED2\\info.txt",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267064.000000000,
+    "lastModifiedTime" : 1275295864.000000000,
     "creationTime" : null,
     "fileCRC" : -908235223,
     "fileName" : "AVRStudio\\Przyklad LED2\\led_delay.aps",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267066.000000000,
+    "lastModifiedTime" : 1275295866.000000000,
     "creationTime" : null,
     "fileCRC" : 1049297906,
     "fileName" : "AVRStudio\\Przyklad LED2\\led_delay.c",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267066.000000000,
+    "lastModifiedTime" : 1275295866.000000000,
     "creationTime" : null,
     "fileCRC" : 85704428,
     "fileName" : "AVRStudio\\Przyklad LED2\\Makefile",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267070.000000000,
+    "lastModifiedTime" : 1275295870.000000000,
     "creationTime" : null,
     "fileCRC" : -1745686325,
     "fileName" : "AVRStudio\\Przyklad LED2\\led_delay.hex",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267036.000000000,
+    "lastModifiedTime" : 1275295836.000000000,
     "creationTime" : null,
     "fileCRC" : -279588966,
     "fileName" : "AVRStudio\\Przyklad LED Timer\\info.txt",
@@ -1430,7 +1430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267044.000000000,
+    "lastModifiedTime" : 1275295844.000000000,
     "creationTime" : null,
     "fileCRC" : -2422189,
     "fileName" : "AVRStudio\\Przyklad LED Timer\\config.h",
@@ -1446,7 +1446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267044.000000000,
+    "lastModifiedTime" : 1275295844.000000000,
     "creationTime" : null,
     "fileCRC" : 1315480354,
     "fileName" : "AVRStudio\\Przyklad LED Timer\\led_timer.aps",
@@ -1462,7 +1462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267046.000000000,
+    "lastModifiedTime" : 1275295846.000000000,
     "creationTime" : null,
     "fileCRC" : 297078662,
     "fileName" : "AVRStudio\\Przyklad LED Timer\\led_timer.c",
@@ -1478,7 +1478,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267046.000000000,
+    "lastModifiedTime" : 1275295846.000000000,
     "creationTime" : null,
     "fileCRC" : 1714979608,
     "fileName" : "AVRStudio\\Przyklad LED Timer\\led_timer.hex",
@@ -1494,7 +1494,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267046.000000000,
+    "lastModifiedTime" : 1275295846.000000000,
     "creationTime" : null,
     "fileCRC" : 2010470248,
     "fileName" : "AVRStudio\\Przyklad LED Timer\\makefile",
@@ -1510,7 +1510,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267012.000000000,
+    "lastModifiedTime" : 1275295812.000000000,
     "creationTime" : null,
     "fileCRC" : 1827523279,
     "fileName" : "AVRStudio\\Przyklad LED SWITCH\\info.txt",
@@ -1526,7 +1526,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267018.000000000,
+    "lastModifiedTime" : 1275295818.000000000,
     "creationTime" : null,
     "fileCRC" : 1446897392,
     "fileName" : "AVRStudio\\Przyklad LED SWITCH\\LEDswitch.aps",
@@ -1542,7 +1542,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267018.000000000,
+    "lastModifiedTime" : 1275295818.000000000,
     "creationTime" : null,
     "fileCRC" : 607139130,
     "fileName" : "AVRStudio\\Przyklad LED SWITCH\\LEDswitch.c",
@@ -1558,7 +1558,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267020.000000000,
+    "lastModifiedTime" : 1275295820.000000000,
     "creationTime" : null,
     "fileCRC" : -1897124342,
     "fileName" : "AVRStudio\\Przyklad LED SWITCH\\library.h",
@@ -1574,7 +1574,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267026.000000000,
+    "lastModifiedTime" : 1275295826.000000000,
     "creationTime" : null,
     "fileCRC" : 427845385,
     "fileName" : "AVRStudio\\Przyklad LED SWITCH\\LEDswitch.hex",
@@ -1590,7 +1590,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267026.000000000,
+    "lastModifiedTime" : 1275295826.000000000,
     "creationTime" : null,
     "fileCRC" : 1333912169,
     "fileName" : "AVRStudio\\Przyklad LED SWITCH\\Makefile",
@@ -1606,7 +1606,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266998.000000000,
+    "lastModifiedTime" : 1275295798.000000000,
     "creationTime" : null,
     "fileCRC" : 1403628275,
     "fileName" : "AVRStudio\\Przyklad LED PWM\\config.h",
@@ -1622,7 +1622,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267000.000000000,
+    "lastModifiedTime" : 1275295800.000000000,
     "creationTime" : null,
     "fileCRC" : -1265929788,
     "fileName" : "AVRStudio\\Przyklad LED PWM\\led_pwm.aps",
@@ -1638,7 +1638,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267000.000000000,
+    "lastModifiedTime" : 1275295800.000000000,
     "creationTime" : null,
     "fileCRC" : -1738225516,
     "fileName" : "AVRStudio\\Przyklad LED PWM\\led_pwm.c",
@@ -1654,7 +1654,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267000.000000000,
+    "lastModifiedTime" : 1275295800.000000000,
     "creationTime" : null,
     "fileCRC" : 1266500710,
     "fileName" : "AVRStudio\\Przyklad LED PWM\\led_pwm.hex",
@@ -1670,7 +1670,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267002.000000000,
+    "lastModifiedTime" : 1275295802.000000000,
     "creationTime" : null,
     "fileCRC" : -287322678,
     "fileName" : "AVRStudio\\Przyklad LED PWM\\makefile",
@@ -1686,7 +1686,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275267004.000000000,
+    "lastModifiedTime" : 1275295804.000000000,
     "creationTime" : null,
     "fileCRC" : -233597162,
     "fileName" : "AVRStudio\\Przyklad LED PWM\\info.txt",
@@ -1702,7 +1702,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266972.000000000,
+    "lastModifiedTime" : 1275295772.000000000,
     "creationTime" : null,
     "fileCRC" : 1089849758,
     "fileName" : "AVRStudio\\Przyklad LED INT\\info.txt",
@@ -1718,7 +1718,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266976.000000000,
+    "lastModifiedTime" : 1275295776.000000000,
     "creationTime" : null,
     "fileCRC" : 1729019065,
     "fileName" : "AVRStudio\\Przyklad LED INT\\led_sw_i.aps",
@@ -1734,7 +1734,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266978.000000000,
+    "lastModifiedTime" : 1275295778.000000000,
     "creationTime" : null,
     "fileCRC" : 767800239,
     "fileName" : "AVRStudio\\Przyklad LED INT\\led_sw_i.c",
@@ -1750,7 +1750,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266982.000000000,
+    "lastModifiedTime" : 1275295782.000000000,
     "creationTime" : null,
     "fileCRC" : 1751623581,
     "fileName" : "AVRStudio\\Przyklad LED INT\\led_sw_i.hex",
@@ -1766,7 +1766,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266984.000000000,
+    "lastModifiedTime" : 1275295784.000000000,
     "creationTime" : null,
     "fileCRC" : 1303600232,
     "fileName" : "AVRStudio\\Przyklad LED INT\\Makefile",
@@ -1782,7 +1782,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266946.000000000,
+    "lastModifiedTime" : 1275295746.000000000,
     "creationTime" : null,
     "fileCRC" : -1735153033,
     "fileName" : "AVRStudio\\Przyklad LED\\led.aps",
@@ -1798,7 +1798,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266948.000000000,
+    "lastModifiedTime" : 1275295748.000000000,
     "creationTime" : null,
     "fileCRC" : -1300756344,
     "fileName" : "AVRStudio\\Przyklad LED\\led.c",
@@ -1814,7 +1814,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266948.000000000,
+    "lastModifiedTime" : 1275295748.000000000,
     "creationTime" : null,
     "fileCRC" : -1188681735,
     "fileName" : "AVRStudio\\Przyklad LED\\Makefile",
@@ -1830,7 +1830,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266952.000000000,
+    "lastModifiedTime" : 1275295752.000000000,
     "creationTime" : null,
     "fileCRC" : -1146476917,
     "fileName" : "AVRStudio\\Przyklad LED\\led.hex",
@@ -1846,7 +1846,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266958.000000000,
+    "lastModifiedTime" : 1275295758.000000000,
     "creationTime" : null,
     "fileCRC" : -224785685,
     "fileName" : "AVRStudio\\Przyklad LED\\info.txt",
@@ -1862,7 +1862,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266928.000000000,
+    "lastModifiedTime" : 1275295728.000000000,
     "creationTime" : null,
     "fileCRC" : -1600956754,
     "fileName" : "AVRStudio\\Przyklad LCD\\config.h",
@@ -1878,7 +1878,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266930.000000000,
+    "lastModifiedTime" : 1275295730.000000000,
     "creationTime" : null,
     "fileCRC" : -1220826527,
     "fileName" : "AVRStudio\\Przyklad LCD\\lcd.aps",
@@ -1894,7 +1894,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266930.000000000,
+    "lastModifiedTime" : 1275295730.000000000,
     "creationTime" : null,
     "fileCRC" : 2003891497,
     "fileName" : "AVRStudio\\Przyklad LCD\\lcd.c",
@@ -1910,7 +1910,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266932.000000000,
+    "lastModifiedTime" : 1275295732.000000000,
     "creationTime" : null,
     "fileCRC" : 843366025,
     "fileName" : "AVRStudio\\Przyklad LCD\\makefile",
@@ -1926,7 +1926,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266936.000000000,
+    "lastModifiedTime" : 1275295736.000000000,
     "creationTime" : null,
     "fileCRC" : 302687321,
     "fileName" : "AVRStudio\\Przyklad LCD\\info.txt",
@@ -1942,7 +1942,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266910.000000000,
+    "lastModifiedTime" : 1275295710.000000000,
     "creationTime" : null,
     "fileCRC" : 348679523,
     "fileName" : "AVRStudio\\Przyklad EEPROM\\config.h",
@@ -1958,7 +1958,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266912.000000000,
+    "lastModifiedTime" : 1275295712.000000000,
     "creationTime" : null,
     "fileCRC" : 692685275,
     "fileName" : "AVRStudio\\Przyklad EEPROM\\eeprom.aps",
@@ -1974,7 +1974,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266912.000000000,
+    "lastModifiedTime" : 1275295712.000000000,
     "creationTime" : null,
     "fileCRC" : -844966647,
     "fileName" : "AVRStudio\\Przyklad EEPROM\\eeprom.c",
@@ -1990,7 +1990,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266912.000000000,
+    "lastModifiedTime" : 1275295712.000000000,
     "creationTime" : null,
     "fileCRC" : 54531809,
     "fileName" : "AVRStudio\\Przyklad EEPROM\\eeprom.hex",
@@ -2006,7 +2006,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266914.000000000,
+    "lastModifiedTime" : 1275295714.000000000,
     "creationTime" : null,
     "fileCRC" : 215010450,
     "fileName" : "AVRStudio\\Przyklad EEPROM\\makefile",
@@ -2022,7 +2022,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266916.000000000,
+    "lastModifiedTime" : 1275295716.000000000,
     "creationTime" : null,
     "fileCRC" : -1617912185,
     "fileName" : "AVRStudio\\Przyklad EEPROM\\info.txt",
@@ -2038,7 +2038,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266892.000000000,
+    "lastModifiedTime" : 1275295692.000000000,
     "creationTime" : null,
     "fileCRC" : -1812631152,
     "fileName" : "AVRStudio\\Przyklad DS18B20\\config.h",
@@ -2054,7 +2054,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266892.000000000,
+    "lastModifiedTime" : 1275295692.000000000,
     "creationTime" : null,
     "fileCRC" : -1515795246,
     "fileName" : "AVRStudio\\Przyklad DS18B20\\ds18b20.aps",
@@ -2070,7 +2070,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266894.000000000,
+    "lastModifiedTime" : 1275295694.000000000,
     "creationTime" : null,
     "fileCRC" : -185681625,
     "fileName" : "AVRStudio\\Przyklad DS18B20\\ds18b20.c",
@@ -2086,7 +2086,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266894.000000000,
+    "lastModifiedTime" : 1275295694.000000000,
     "creationTime" : null,
     "fileCRC" : -220441817,
     "fileName" : "AVRStudio\\Przyklad DS18B20\\makefile",
@@ -2102,7 +2102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266898.000000000,
+    "lastModifiedTime" : 1275295698.000000000,
     "creationTime" : null,
     "fileCRC" : 1205354391,
     "fileName" : "AVRStudio\\Przyklad DS18B20\\info.txt",
@@ -2118,7 +2118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266872.000000000,
+    "lastModifiedTime" : 1275295672.000000000,
     "creationTime" : null,
     "fileCRC" : 92623329,
     "fileName" : "AVRStudio\\Przyklad ADC2\\adc.aps",
@@ -2134,7 +2134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266872.000000000,
+    "lastModifiedTime" : 1275295672.000000000,
     "creationTime" : null,
     "fileCRC" : 1076691652,
     "fileName" : "AVRStudio\\Przyklad ADC2\\adc.c",
@@ -2150,7 +2150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266872.000000000,
+    "lastModifiedTime" : 1275295672.000000000,
     "creationTime" : null,
     "fileCRC" : 1691901001,
     "fileName" : "AVRStudio\\Przyklad ADC2\\adc.hex",
@@ -2166,7 +2166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266874.000000000,
+    "lastModifiedTime" : 1275295674.000000000,
     "creationTime" : null,
     "fileCRC" : 1403628275,
     "fileName" : "AVRStudio\\Przyklad ADC2\\config.h",
@@ -2182,7 +2182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266874.000000000,
+    "lastModifiedTime" : 1275295674.000000000,
     "creationTime" : null,
     "fileCRC" : 2007120070,
     "fileName" : "AVRStudio\\Przyklad ADC2\\makefile",
@@ -2198,7 +2198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266878.000000000,
+    "lastModifiedTime" : 1275295678.000000000,
     "creationTime" : null,
     "fileCRC" : -117924879,
     "fileName" : "AVRStudio\\Przyklad ADC2\\info.txt",
@@ -2214,7 +2214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266852.000000000,
+    "lastModifiedTime" : 1275295652.000000000,
     "creationTime" : null,
     "fileCRC" : 773974661,
     "fileName" : "AVRStudio\\Przyklad ADC_PWM\\adc_pwm.aps",
@@ -2230,7 +2230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266852.000000000,
+    "lastModifiedTime" : 1275295652.000000000,
     "creationTime" : null,
     "fileCRC" : 1005684175,
     "fileName" : "AVRStudio\\Przyklad ADC_PWM\\adc_pwm.c",
@@ -2246,7 +2246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266854.000000000,
+    "lastModifiedTime" : 1275295654.000000000,
     "creationTime" : null,
     "fileCRC" : -1733452395,
     "fileName" : "AVRStudio\\Przyklad ADC_PWM\\adc_pwm.hex",
@@ -2262,7 +2262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266854.000000000,
+    "lastModifiedTime" : 1275295654.000000000,
     "creationTime" : null,
     "fileCRC" : 1403628275,
     "fileName" : "AVRStudio\\Przyklad ADC_PWM\\config.h",
@@ -2278,7 +2278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266854.000000000,
+    "lastModifiedTime" : 1275295654.000000000,
     "creationTime" : null,
     "fileCRC" : 40771873,
     "fileName" : "AVRStudio\\Przyklad ADC_PWM\\makefile",
@@ -2294,7 +2294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266858.000000000,
+    "lastModifiedTime" : 1275295658.000000000,
     "creationTime" : null,
     "fileCRC" : 1461391619,
     "fileName" : "AVRStudio\\Przyklad ADC_PWM\\info.txt",
@@ -2310,7 +2310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266788.000000000,
+    "lastModifiedTime" : 1275295588.000000000,
     "creationTime" : null,
     "fileCRC" : 1158387213,
     "fileName" : "AVRStudio\\Przyklad 7SEG\\info.txt",
@@ -2326,7 +2326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266824.000000000,
+    "lastModifiedTime" : 1275295624.000000000,
     "creationTime" : null,
     "fileCRC" : 711091554,
     "fileName" : "AVRStudio\\Przyklad 7SEG\\makefile",
@@ -2342,7 +2342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266794.000000000,
+    "lastModifiedTime" : 1275295594.000000000,
     "creationTime" : null,
     "fileCRC" : 190525285,
     "fileName" : "AVRStudio\\Przyklad 7SEG\\led7seg.aps",
@@ -2358,7 +2358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266794.000000000,
+    "lastModifiedTime" : 1275295594.000000000,
     "creationTime" : null,
     "fileCRC" : -1695018382,
     "fileName" : "AVRStudio\\Przyklad 7SEG\\led7seg.c",
@@ -2374,7 +2374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275266798.000000000,
+    "lastModifiedTime" : 1275295598.000000000,
     "creationTime" : null,
     "fileCRC" : -188377609,
     "fileName" : "AVRStudio\\Przyklad 7SEG\\led7seg.hex",
@@ -2390,7 +2390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1295403460.000000000,
+    "lastModifiedTime" : 1295432260.000000000,
     "creationTime" : null,
     "fileCRC" : -1814187892,
     "fileName" : "AVRStudio\\lib.rar",
@@ -2406,7 +2406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268994.000000000,
+    "lastModifiedTime" : 1275297794.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad MMC-FAT32",
@@ -2422,7 +2422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268994.000000000,
+    "lastModifiedTime" : 1275297794.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad UART",
@@ -2438,7 +2438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268994.000000000,
+    "lastModifiedTime" : 1275297794.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad RC5",
@@ -2454,7 +2454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268994.000000000,
+    "lastModifiedTime" : 1275297794.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad PCF8583",
@@ -2470,7 +2470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad MMC",
@@ -2486,7 +2486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LED3",
@@ -2502,7 +2502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LED2",
@@ -2518,7 +2518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LED Timer",
@@ -2534,7 +2534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LED SWITCH",
@@ -2550,7 +2550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LED PWM",
@@ -2566,7 +2566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LED INT",
@@ -2582,7 +2582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268996.000000000,
+    "lastModifiedTime" : 1275297796.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LED",
@@ -2598,7 +2598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268998.000000000,
+    "lastModifiedTime" : 1275297798.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad LCD",
@@ -2614,7 +2614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268998.000000000,
+    "lastModifiedTime" : 1275297798.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad EEPROM",
@@ -2630,7 +2630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268998.000000000,
+    "lastModifiedTime" : 1275297798.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad DS18B20",
@@ -2646,7 +2646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268998.000000000,
+    "lastModifiedTime" : 1275297798.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad ADC2",
@@ -2662,7 +2662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268998.000000000,
+    "lastModifiedTime" : 1275297798.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad ADC_PWM",
@@ -2678,7 +2678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268998.000000000,
+    "lastModifiedTime" : 1275297798.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio\\Przyklad 7SEG",
@@ -2694,7 +2694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1275268994.000000000,
+    "lastModifiedTime" : 1275297794.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AVRStudio",

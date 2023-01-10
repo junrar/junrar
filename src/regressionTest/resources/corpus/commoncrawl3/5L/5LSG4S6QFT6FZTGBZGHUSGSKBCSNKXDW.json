@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1347511830.906250000,
+    "lastModifiedTime" : 1347540630.906250000,
     "creationTime" : null,
     "fileCRC" : -908689456,
     "fileName" : "Sanguino\\boards.txt",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1277977732.000000000,
+    "lastModifiedTime" : 1278006532.000000000,
     "creationTime" : null,
     "fileCRC" : -415346387,
     "fileName" : "Sanguino\\bootloaders\\atmega\\ATmegaBOOT_168.c",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329636526.000000000,
+    "lastModifiedTime" : 1329665326.000000000,
     "creationTime" : null,
     "fileCRC" : -1896878600,
     "fileName" : "Sanguino\\bootloaders\\atmega\\ATmegaBOOT_168_atmega1284p.hex",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329636680.000000000,
+    "lastModifiedTime" : 1329665480.000000000,
     "creationTime" : null,
     "fileCRC" : 1595059346,
     "fileName" : "Sanguino\\bootloaders\\atmega\\ATmegaBOOT_168_atmega1284p_8m.hex",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329636678.000000000,
+    "lastModifiedTime" : 1329665478.000000000,
     "creationTime" : null,
     "fileCRC" : -2122557533,
     "fileName" : "Sanguino\\bootloaders\\atmega\\Makefile",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329637240.000000000,
+    "lastModifiedTime" : 1329666040.000000000,
     "creationTime" : null,
     "fileCRC" : 716806661,
     "fileName" : "Sanguino\\bootloaders\\atmega644p\\ATmegaBOOT.c",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1299846830.000000000,
+    "lastModifiedTime" : 1299875630.000000000,
     "creationTime" : null,
     "fileCRC" : -1196130968,
     "fileName" : "Sanguino\\bootloaders\\atmega644p\\ATmegaBOOT.c.tst",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329637312.000000000,
+    "lastModifiedTime" : 1329666112.000000000,
     "creationTime" : null,
     "fileCRC" : -862227344,
     "fileName" : "Sanguino\\bootloaders\\atmega644p\\ATmegaBOOT_644P.elf",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329637312.000000000,
+    "lastModifiedTime" : 1329666112.000000000,
     "creationTime" : null,
     "fileCRC" : -1318707282,
     "fileName" : "Sanguino\\bootloaders\\atmega644p\\ATmegaBOOT_644P.hex",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329637312.000000000,
+    "lastModifiedTime" : 1329666112.000000000,
     "creationTime" : null,
     "fileCRC" : 401452928,
     "fileName" : "Sanguino\\bootloaders\\atmega644p\\ATmegaBOOT_644P.o",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1329638484.000000000,
+    "lastModifiedTime" : 1329667284.000000000,
     "creationTime" : null,
     "fileCRC" : -201458778,
     "fileName" : "Sanguino\\bootloaders\\atmega644p\\Makefile",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1273153704.000000000,
+    "lastModifiedTime" : 1273182504.000000000,
     "creationTime" : null,
     "fileCRC" : 454573028,
     "fileName" : "Sanguino\\bootloaders\\atmega644p\\README.txt",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -816636578,
     "fileName" : "Sanguino\\cores\\arduino\\binary.h",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 796042038,
     "fileName" : "Sanguino\\cores\\arduino\\HardwareSerial.cpp",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -1016797307,
     "fileName" : "Sanguino\\cores\\arduino\\HardwareSerial.h",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1205031924,
     "fileName" : "Sanguino\\cores\\arduino\\main.cpp",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322285200.000000000,
+    "lastModifiedTime" : 1322314000.000000000,
     "creationTime" : null,
     "fileCRC" : 359428627,
     "fileName" : "Sanguino\\cores\\arduino\\pins_arduino.c",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322488238.000000000,
+    "lastModifiedTime" : 1322517038.000000000,
     "creationTime" : null,
     "fileCRC" : -1949163515,
     "fileName" : "Sanguino\\cores\\arduino\\pins_arduino.h",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -449835639,
     "fileName" : "Sanguino\\cores\\arduino\\Print.cpp",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1547409676,
     "fileName" : "Sanguino\\cores\\arduino\\Print.h",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -359560672,
     "fileName" : "Sanguino\\cores\\arduino\\Stream.h",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1315844346,
     "fileName" : "Sanguino\\cores\\arduino\\Tone.cpp",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -877296687,
     "fileName" : "Sanguino\\cores\\arduino\\WCharacter.h",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1991178014,
     "fileName" : "Sanguino\\cores\\arduino\\WConstants.h",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -1028318940,
     "fileName" : "Sanguino\\cores\\arduino\\WInterrupts.c",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1306620177,
     "fileName" : "Sanguino\\cores\\arduino\\wiring.c",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -1771473929,
     "fileName" : "Sanguino\\cores\\arduino\\wiring.h",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -1462508821,
     "fileName" : "Sanguino\\cores\\arduino\\wiring_analog.c",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1876197340,
     "fileName" : "Sanguino\\cores\\arduino\\wiring_digital.c",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1274961790,
     "fileName" : "Sanguino\\cores\\arduino\\wiring_private.h",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -1432859420,
     "fileName" : "Sanguino\\cores\\arduino\\wiring_pulse.c",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -689309522,
     "fileName" : "Sanguino\\cores\\arduino\\wiring_shift.c",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -1508479398,
     "fileName" : "Sanguino\\cores\\arduino\\WMath.cpp",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 805243850,
     "fileName" : "Sanguino\\cores\\arduino\\WProgram.h",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : -1616237253,
     "fileName" : "Sanguino\\cores\\arduino\\WString.cpp",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320813464.000000000,
+    "lastModifiedTime" : 1320842264.000000000,
     "creationTime" : null,
     "fileCRC" : 1323211565,
     "fileName" : "Sanguino\\cores\\arduino\\WString.h",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1342009573.812500000,
+    "lastModifiedTime" : 1342038373.812500000,
     "creationTime" : null,
     "fileCRC" : -777811879,
     "fileName" : "Sanguino\\programmers.txt",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1339762731.937500000,
+    "lastModifiedTime" : 1339791531.937500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Sanguino\\bootloaders\\atmega",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1339762731.718750000,
+    "lastModifiedTime" : 1339791531.718750000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Sanguino\\bootloaders\\atmega644p",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1339762731.312500000,
+    "lastModifiedTime" : 1339791531.312500000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Sanguino\\cores\\arduino",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1339762731.765625000,
+    "lastModifiedTime" : 1339791531.765625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Sanguino\\bootloaders",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1339762730.546875000,
+    "lastModifiedTime" : 1339791530.546875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Sanguino\\cores",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1339762731.328125000,
+    "lastModifiedTime" : 1339791531.328125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Sanguino",

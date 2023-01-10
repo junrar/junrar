@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1426103614.513834600,
+    "lastModifiedTime" : 1426132414.513834600,
     "creationTime" : null,
     "fileCRC" : 513280680,
     "fileName" : "truss_2D_FEM_displacement.m",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1426089376.104722000,
+    "lastModifiedTime" : 1426118176.104722000,
     "creationTime" : null,
     "fileCRC" : 1666501001,
     "fileName" : "conductor.m",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1426090156.167079400,
+    "lastModifiedTime" : 1426118956.167079400,
     "creationTime" : null,
     "fileCRC" : 101738143,
     "fileName" : "element_stiffness.m",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1426092388.123994800,
+    "lastModifiedTime" : 1426121188.123994800,
     "creationTime" : null,
     "fileCRC" : 1696466760,
     "fileName" : "element_stress.m",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1425996691.471145100,
+    "lastModifiedTime" : 1426025491.471145100,
     "creationTime" : null,
     "fileCRC" : -423631600,
     "fileName" : "total_stiffness.m",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1426126118.047492200,
+    "lastModifiedTime" : 1426154918.047492200,
     "creationTime" : null,
     "fileCRC" : 490052819,
     "fileName" : "truss FEM.pdf",

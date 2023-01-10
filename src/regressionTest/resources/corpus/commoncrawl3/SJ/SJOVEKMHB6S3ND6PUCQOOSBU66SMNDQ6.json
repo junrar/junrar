@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.529785700,
+    "lastModifiedTime" : 1396484439.529785700,
     "creationTime" : null,
     "fileCRC" : 65009124,
     "fileName" : "TestPhoto\\TestPhoto\\App.xaml",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.539785700,
+    "lastModifiedTime" : 1396484439.539785700,
     "creationTime" : null,
     "fileCRC" : -1929501066,
     "fileName" : "TestPhoto\\TestPhoto\\App.xaml.cs",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1394765690.000000000,
+    "lastModifiedTime" : 1394794490.000000000,
     "creationTime" : null,
     "fileCRC" : -1527261264,
     "fileName" : "TestPhoto\\TestPhoto\\Assets\\Logo.scale-240.png",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1394765690.000000000,
+    "lastModifiedTime" : 1394794490.000000000,
     "creationTime" : null,
     "fileCRC" : 23989016,
     "fileName" : "TestPhoto\\TestPhoto\\Assets\\SmallLogo.scale-240.png",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1394765690.000000000,
+    "lastModifiedTime" : 1394794490.000000000,
     "creationTime" : null,
     "fileCRC" : 241171044,
     "fileName" : "TestPhoto\\TestPhoto\\Assets\\SplashScreen.scale-240.png",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1394765690.000000000,
+    "lastModifiedTime" : 1394794490.000000000,
     "creationTime" : null,
     "fileCRC" : -1125078268,
     "fileName" : "TestPhoto\\TestPhoto\\Assets\\Square71x71Logo.scale-240.png",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1394765690.000000000,
+    "lastModifiedTime" : 1394794490.000000000,
     "creationTime" : null,
     "fileCRC" : -1465493839,
     "fileName" : "TestPhoto\\TestPhoto\\Assets\\StoreLogo.scale-240.png",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1394765690.000000000,
+    "lastModifiedTime" : 1394794490.000000000,
     "creationTime" : null,
     "fileCRC" : -464809263,
     "fileName" : "TestPhoto\\TestPhoto\\Assets\\WideLogo.scale-240.png",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455799.876103800,
+    "lastModifiedTime" : 1396484599.876103800,
     "creationTime" : null,
     "fileCRC" : 419644081,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\App.xbf",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545275.526132000,
+    "lastModifiedTime" : 1396574075.526132000,
     "creationTime" : null,
     "fileCRC" : -837366615,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\AppxManifest.xml",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545274.597049300,
+    "lastModifiedTime" : 1396574074.597049300,
     "creationTime" : null,
     "fileCRC" : 937588814,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\MainPage.xbf",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545275.393111600,
+    "lastModifiedTime" : 1396574075.393111600,
     "creationTime" : null,
     "fileCRC" : -65282305,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\resources.pri",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.379986600,
+    "lastModifiedTime" : 1396577359.379986600,
     "creationTime" : null,
     "fileCRC" : -403434376,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\TestPhoto.build.appxrecipe",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.207976100,
+    "lastModifiedTime" : 1396577359.207976100,
     "creationTime" : null,
     "fileCRC" : -2043422648,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\TestPhoto.exe",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.166974900,
+    "lastModifiedTime" : 1396577359.166974900,
     "creationTime" : null,
     "fileCRC" : 952801459,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\TestPhoto.pdb",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396529000.824458900,
+    "lastModifiedTime" : 1396557800.824458900,
     "creationTime" : null,
     "fileCRC" : 1933934810,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug\\TestPhoto.xr.xml",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548454.160929300,
+    "lastModifiedTime" : 1396577254.160929300,
     "creationTime" : null,
     "fileCRC" : -1352778015,
     "fileName" : "TestPhoto\\TestPhoto\\FileMetadataHelper.cs",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545273.190994100,
+    "lastModifiedTime" : 1396574073.190994100,
     "creationTime" : null,
     "fileCRC" : -1708373639,
     "fileName" : "TestPhoto\\TestPhoto\\ImageMetadataExtensions.cs",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396528999.707393700,
+    "lastModifiedTime" : 1396557799.707393700,
     "creationTime" : null,
     "fileCRC" : -1904385268,
     "fileName" : "TestPhoto\\TestPhoto\\MainPage.xaml",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548557.016851100,
+    "lastModifiedTime" : 1396577357.016851100,
     "creationTime" : null,
     "fileCRC" : -302785758,
     "fileName" : "TestPhoto\\TestPhoto\\MainPage.xaml.cs",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.529785700,
+    "lastModifiedTime" : 1396484439.529785700,
     "creationTime" : null,
     "fileCRC" : 1399004971,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\App.g.cs",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.529785700,
+    "lastModifiedTime" : 1396484439.529785700,
     "creationTime" : null,
     "fileCRC" : 1038566911,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\App.g.i.cs",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.529785700,
+    "lastModifiedTime" : 1396484439.529785700,
     "creationTime" : null,
     "fileCRC" : -25560454,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\App.xaml",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455799.876103800,
+    "lastModifiedTime" : 1396484599.876103800,
     "creationTime" : null,
     "fileCRC" : 419644081,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\App.xbf",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396544668.721496900,
+    "lastModifiedTime" : 1396573468.721496900,
     "creationTime" : null,
     "fileCRC" : -1926122027,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\DesignTimeResolveAssemblyReferencesInput.cache",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548558.276922300,
+    "lastModifiedTime" : 1396577358.276922300,
     "creationTime" : null,
     "fileCRC" : 2025653206,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\intermediatexaml\\TestPhoto.exe",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548558.233929400,
+    "lastModifiedTime" : 1396577358.233929400,
     "creationTime" : null,
     "fileCRC" : -609320028,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\intermediatexaml\\TestPhoto.pdb",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455800.314129100,
+    "lastModifiedTime" : 1396484600.314129100,
     "creationTime" : null,
     "fileCRC" : 73740494,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\layout.resfiles",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.288980400,
+    "lastModifiedTime" : 1396577359.288980400,
     "creationTime" : null,
     "fileCRC" : 73740494,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\layout.resfiles.intermediate",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396528999.707393700,
+    "lastModifiedTime" : 1396557799.707393700,
     "creationTime" : null,
     "fileCRC" : 722400735,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\MainPage.g.cs",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396528999.707393700,
+    "lastModifiedTime" : 1396557799.707393700,
     "creationTime" : null,
     "fileCRC" : 2128694895,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\MainPage.g.i.cs",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396528999.707393700,
+    "lastModifiedTime" : 1396557799.707393700,
     "creationTime" : null,
     "fileCRC" : 1823241279,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\MainPage.xaml",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545274.597049300,
+    "lastModifiedTime" : 1396574074.597049300,
     "creationTime" : null,
     "fileCRC" : 937588814,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\MainPage.xbf",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455800.494142000,
+    "lastModifiedTime" : 1396484600.494142000,
     "creationTime" : null,
     "fileCRC" : -368294092,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\MultipleQualifiersPerDimensionFound.txt",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455800.323131200,
+    "lastModifiedTime" : 1396484600.323131200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\pri.resfiles",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.291981500,
+    "lastModifiedTime" : 1396577359.291981500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\pri.resfiles.intermediate",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455800.331130500,
+    "lastModifiedTime" : 1396484600.331130500,
     "creationTime" : null,
     "fileCRC" : -1230047389,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\priconfig.xml",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.295982400,
+    "lastModifiedTime" : 1396577359.295982400,
     "creationTime" : null,
     "fileCRC" : -1230047389,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\priconfig.xml.intermediate",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396528837.461415300,
+    "lastModifiedTime" : 1396557637.461415300,
     "creationTime" : null,
     "fileCRC" : 1051338773,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\ProjectArchitectures.txt",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455800.481140800,
+    "lastModifiedTime" : 1396484600.481140800,
     "creationTime" : null,
     "fileCRC" : -930802613,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\qualifiers.txt",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545275.443123900,
+    "lastModifiedTime" : 1396574075.443123900,
     "creationTime" : null,
     "fileCRC" : -930802613,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\qualifiers.txt.intermediate",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455800.318131200,
+    "lastModifiedTime" : 1396484600.318131200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\resources.resfiles",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.290981100,
+    "lastModifiedTime" : 1396577359.290981100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\resources.resfiles.intermediate",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455641.653634300,
+    "lastModifiedTime" : 1396484441.653634300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455641.654634100,
+    "lastModifiedTime" : 1396484441.654634100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455641.652632700,
+    "lastModifiedTime" : 1396484441.652632700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545636.768451900,
+    "lastModifiedTime" : 1396574436.768451900,
     "creationTime" : null,
     "fileCRC" : 12818451,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TestPhoto.csproj.FileListAbsolute.txt",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.207976100,
+    "lastModifiedTime" : 1396577359.207976100,
     "creationTime" : null,
     "fileCRC" : -2043422648,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TestPhoto.exe",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.166974900,
+    "lastModifiedTime" : 1396577359.166974900,
     "creationTime" : null,
     "fileCRC" : 952801459,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TestPhoto.pdb",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396529000.824458900,
+    "lastModifiedTime" : 1396557800.824458900,
     "creationTime" : null,
     "fileCRC" : 1933934810,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TestPhoto.xr.xml",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548558.872986700,
+    "lastModifiedTime" : 1396577358.872986700,
     "creationTime" : null,
     "fileCRC" : 1220684917,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\XamlSaveStateFile.xml",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455799.804099800,
+    "lastModifiedTime" : 1396484599.804099800,
     "creationTime" : null,
     "fileCRC" : -1892492194,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\XamlTypeInfo.g.cs",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455799.804099800,
+    "lastModifiedTime" : 1396484599.804099800,
     "creationTime" : null,
     "fileCRC" : -1892492194,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\XamlTypeInfo.g.cs.backup",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396529059.455765000,
+    "lastModifiedTime" : 1396557859.455765000,
     "creationTime" : null,
     "fileCRC" : 762373274,
     "fileName" : "TestPhoto\\TestPhoto\\Package.appxmanifest",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.562791700,
+    "lastModifiedTime" : 1396484439.562791700,
     "creationTime" : null,
     "fileCRC" : 28588469,
     "fileName" : "TestPhoto\\TestPhoto\\Properties\\AssemblyInfo.cs",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396545264.599283100,
+    "lastModifiedTime" : 1396574064.599283100,
     "creationTime" : null,
     "fileCRC" : 1472434401,
     "fileName" : "TestPhoto\\TestPhoto\\TestPhoto.csproj",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455642.231667400,
+    "lastModifiedTime" : 1396484442.231667400,
     "creationTime" : null,
     "fileCRC" : 1227834255,
     "fileName" : "TestPhoto\\TestPhoto.sln",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396524886.634000000,
+    "lastModifiedTime" : 1396553686.634000000,
     "creationTime" : null,
     "fileCRC" : 1744318619,
     "fileName" : "TestPhoto\\TestPhoto.v12.suo",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548558.277923800,
+    "lastModifiedTime" : 1396577358.277923800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\intermediatexaml",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.793804500,
+    "lastModifiedTime" : 1396484439.793804500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug\\TempPE",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455800.616148000,
+    "lastModifiedTime" : 1396484600.616148000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\bin\\Debug",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548559.208977000,
+    "lastModifiedTime" : 1396577359.208977000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj\\Debug",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.521782700,
+    "lastModifiedTime" : 1396484439.521782700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\Assets",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.767799200,
+    "lastModifiedTime" : 1396484439.767799200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\bin",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.770801500,
+    "lastModifiedTime" : 1396484439.770801500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\obj",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455639.557803200,
+    "lastModifiedTime" : 1396484439.557803200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto\\Properties",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396548557.021852400,
+    "lastModifiedTime" : 1396577357.021852400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto\\TestPhoto",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1396455642.235667700,
+    "lastModifiedTime" : 1396484442.235667700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "TestPhoto",

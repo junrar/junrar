@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1334284819.483250000,
+    "lastModifiedTime" : 1334313619.483250000,
     "creationTime" : null,
     "fileCRC" : -1092838140,
     "fileName" : "VHostSystemService.exe.config.bak",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1333164404.375000000,
+    "lastModifiedTime" : 1333193204.375000000,
     "creationTime" : null,
     "fileCRC" : 358938730,
     "fileName" : "VHostSystemService.InstallLog",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1333158207.312500000,
+    "lastModifiedTime" : 1333187007.312500000,
     "creationTime" : null,
     "fileCRC" : 511133707,
     "fileName" : "VHostSystemService.vshost.exe",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1184952800.000000000,
+    "lastModifiedTime" : 1184981600.000000000,
     "creationTime" : null,
     "fileCRC" : 644594118,
     "fileName" : "VHostSystemService.vshost.exe.manifest",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1333164055.218750000,
+    "lastModifiedTime" : 1333192855.218750000,
     "creationTime" : null,
     "fileCRC" : 1192533854,
     "fileName" : "一键安装.bat",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1333164470.031250000,
+    "lastModifiedTime" : 1333193270.031250000,
     "creationTime" : null,
     "fileCRC" : 714926014,
     "fileName" : "一键卸载.bat",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1334286917.984375000,
+    "lastModifiedTime" : 1334315717.984375000,
     "creationTime" : null,
     "fileCRC" : 13213911,
     "fileName" : "版本更新日志.txt",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.953125000,
+    "lastModifiedTime" : 1332408386.953125000,
     "creationTime" : null,
     "fileCRC" : 1930699537,
     "fileName" : "WinRAR\\Default.SFX",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.984375000,
+    "lastModifiedTime" : 1332408386.984375000,
     "creationTime" : null,
     "fileCRC" : 880939453,
     "fileName" : "WinRAR\\Descript.ion",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.937500000,
+    "lastModifiedTime" : 1332408386.937500000,
     "creationTime" : null,
     "fileCRC" : -2048833233,
     "fileName" : "WinRAR\\File_Id.diz",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.875000000,
+    "lastModifiedTime" : 1332408386.875000000,
     "creationTime" : null,
     "fileCRC" : -262935793,
     "fileName" : "WinRAR\\Formats\\7z.fmt",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.875000000,
+    "lastModifiedTime" : 1332408386.875000000,
     "creationTime" : null,
     "fileCRC" : -567762453,
     "fileName" : "WinRAR\\Formats\\7zxa.dll",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.906250000,
+    "lastModifiedTime" : 1332408386.906250000,
     "creationTime" : null,
     "fileCRC" : 1334711781,
     "fileName" : "WinRAR\\Formats\\ace.fmt",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.859375000,
+    "lastModifiedTime" : 1332408386.859375000,
     "creationTime" : null,
     "fileCRC" : 811663030,
     "fileName" : "WinRAR\\Formats\\arj.fmt",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.859375000,
+    "lastModifiedTime" : 1332408386.859375000,
     "creationTime" : null,
     "fileCRC" : -348911635,
     "fileName" : "WinRAR\\Formats\\bz2.fmt",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.890625000,
+    "lastModifiedTime" : 1332408386.890625000,
     "creationTime" : null,
     "fileCRC" : 1906242542,
     "fileName" : "WinRAR\\Formats\\cab.fmt",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.890625000,
+    "lastModifiedTime" : 1332408386.890625000,
     "creationTime" : null,
     "fileCRC" : 1759087226,
     "fileName" : "WinRAR\\Formats\\gz.fmt",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.859375000,
+    "lastModifiedTime" : 1332408386.859375000,
     "creationTime" : null,
     "fileCRC" : 1172384600,
     "fileName" : "WinRAR\\Formats\\iso.fmt",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.859375000,
+    "lastModifiedTime" : 1332408386.859375000,
     "creationTime" : null,
     "fileCRC" : 1663363561,
     "fileName" : "WinRAR\\Formats\\lzh.fmt",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.890625000,
+    "lastModifiedTime" : 1332408386.890625000,
     "creationTime" : null,
     "fileCRC" : -595215443,
     "fileName" : "WinRAR\\Formats\\tar.fmt",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.890625000,
+    "lastModifiedTime" : 1332408386.890625000,
     "creationTime" : null,
     "fileCRC" : -70187035,
     "fileName" : "WinRAR\\Formats\\UNACEV2.DLL",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.875000000,
+    "lastModifiedTime" : 1332408386.875000000,
     "creationTime" : null,
     "fileCRC" : 1211379564,
     "fileName" : "WinRAR\\Formats\\uue.fmt",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.906250000,
+    "lastModifiedTime" : 1332408386.906250000,
     "creationTime" : null,
     "fileCRC" : 1916266908,
     "fileName" : "WinRAR\\Formats\\z.fmt",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.984375000,
+    "lastModifiedTime" : 1332408386.984375000,
     "creationTime" : null,
     "fileCRC" : -1284881468,
     "fileName" : "WinRAR\\License.txt",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.984375000,
+    "lastModifiedTime" : 1332408386.984375000,
     "creationTime" : null,
     "fileCRC" : -1830762212,
     "fileName" : "WinRAR\\Order.htm",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379587.000000000,
+    "lastModifiedTime" : 1332408387.000000000,
     "creationTime" : null,
     "fileCRC" : 1807890846,
     "fileName" : "WinRAR\\Rar.exe",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379587.000000000,
+    "lastModifiedTime" : 1332408387.000000000,
     "creationTime" : null,
     "fileCRC" : -924363647,
     "fileName" : "WinRAR\\Rar.txt",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.937500000,
+    "lastModifiedTime" : 1332408386.937500000,
     "creationTime" : null,
     "fileCRC" : -1105123057,
     "fileName" : "WinRAR\\RarExt.dll",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.968750000,
+    "lastModifiedTime" : 1332408386.968750000,
     "creationTime" : null,
     "fileCRC" : -1762896768,
     "fileName" : "WinRAR\\RarExt64.dll",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379587.015625000,
+    "lastModifiedTime" : 1332408387.015625000,
     "creationTime" : null,
     "fileCRC" : -349267389,
     "fileName" : "WinRAR\\RarFiles.lst",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379587.000000000,
+    "lastModifiedTime" : 1332408387.000000000,
     "creationTime" : null,
     "fileCRC" : -353717446,
     "fileName" : "WinRAR\\rarnew.dat",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379587.015625000,
+    "lastModifiedTime" : 1332408387.015625000,
     "creationTime" : null,
     "fileCRC" : -1087765982,
     "fileName" : "WinRAR\\ReadMe.txt",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.968750000,
+    "lastModifiedTime" : 1332408386.968750000,
     "creationTime" : null,
     "fileCRC" : -1388882769,
     "fileName" : "WinRAR\\TechNote.txt",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379586.968750000,
+    "lastModifiedTime" : 1332408386.968750000,
     "creationTime" : null,
     "fileCRC" : 1981087090,
     "fileName" : "WinRAR\\Uninstall.exe",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379587.015625000,
+    "lastModifiedTime" : 1332408387.015625000,
     "creationTime" : null,
     "fileCRC" : 1512869444,
     "fileName" : "WinRAR\\Uninstall.lst",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332379587.015625000,
+    "lastModifiedTime" : 1332408387.015625000,
     "creationTime" : null,
     "fileCRC" : 125150642,
     "fileName" : "WinRAR\\UnRAR.exe",

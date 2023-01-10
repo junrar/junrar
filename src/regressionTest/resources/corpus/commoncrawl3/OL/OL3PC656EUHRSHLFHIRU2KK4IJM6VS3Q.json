@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1444667046.000000000,
+    "lastModifiedTime" : 1444695846.000000000,
     "creationTime" : null,
     "fileCRC" : -626603800,
     "fileName" : "PMoEP_V1\\ALM_UV.m",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451381652.000000000,
+    "lastModifiedTime" : 1451410452.000000000,
     "creationTime" : null,
     "fileCRC" : -796943219,
     "fileName" : "PMoEP_V1\\Demo_EP.m",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451382068.000000000,
+    "lastModifiedTime" : 1451410868.000000000,
     "creationTime" : null,
     "fileCRC" : 45295604,
     "fileName" : "PMoEP_V1\\Demo_Gauss.m",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451382080.000000000,
+    "lastModifiedTime" : 1451410880.000000000,
     "creationTime" : null,
     "fileCRC" : 249052990,
     "fileName" : "PMoEP_V1\\Demo_Laplace.m",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451382226.000000000,
+    "lastModifiedTime" : 1451411026.000000000,
     "creationTime" : null,
     "fileCRC" : 2077244272,
     "fileName" : "PMoEP_V1\\Demo_Mixture1.m",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451382370.000000000,
+    "lastModifiedTime" : 1451411170.000000000,
     "creationTime" : null,
     "fileCRC" : 1580558486,
     "fileName" : "PMoEP_V1\\Demo_Mixture2.m",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451382522.000000000,
+    "lastModifiedTime" : 1451411322.000000000,
     "creationTime" : null,
     "fileCRC" : -1002660997,
     "fileName" : "PMoEP_V1\\Demo_Sparse.m",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451461624.489996900,
+    "lastModifiedTime" : 1451490424.489996900,
     "creationTime" : null,
     "fileCRC" : -421934454,
     "fileName" : "PMoEP_V1\\EM_PMoEP.m",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1444667046.000000000,
+    "lastModifiedTime" : 1444695846.000000000,
     "creationTime" : null,
     "fileCRC" : -589232481,
     "fileName" : "PMoEP_V1\\expectation.m",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1444667046.000000000,
+    "lastModifiedTime" : 1444695846.000000000,
     "creationTime" : null,
     "fileCRC" : -19363225,
     "fileName" : "PMoEP_V1\\initialization_PMoEP.m",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1444667046.000000000,
+    "lastModifiedTime" : 1444695846.000000000,
     "creationTime" : null,
     "fileCRC" : 992230490,
     "fileName" : "PMoEP_V1\\logeppdf.m",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1444667046.000000000,
+    "lastModifiedTime" : 1444695846.000000000,
     "creationTime" : null,
     "fileCRC" : -1589056344,
     "fileName" : "PMoEP_V1\\logsumexp.m",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1444667046.000000000,
+    "lastModifiedTime" : 1444695846.000000000,
     "creationTime" : null,
     "fileCRC" : -1941839407,
     "fileName" : "PMoEP_V1\\maximizationModel.m",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1451363320.000000000,
+    "lastModifiedTime" : 1451392120.000000000,
     "creationTime" : null,
     "fileCRC" : 381729610,
     "fileName" : "PMoEP_V1\\MoG\\expectation_PMoG.m",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1418815443.148768400,
+    "lastModifiedTime" : 1418844243.148768400,
     "creationTime" : null,
     "fileCRC" : -1247541753,
     "fileName" : "PMoEP_V1\\MoG\\ICCV-MoG.pdf",

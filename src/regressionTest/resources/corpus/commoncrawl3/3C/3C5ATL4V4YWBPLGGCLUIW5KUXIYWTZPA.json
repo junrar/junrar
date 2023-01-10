@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1326729737.000000000,
+    "lastModifiedTime" : 1326758537.000000000,
     "creationTime" : null,
     "fileCRC" : 585472177,
     "fileName" : "AI\\AI.lua",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1326729737.000000000,
+    "lastModifiedTime" : 1326758537.000000000,
     "creationTime" : null,
     "fileCRC" : -1506753522,
     "fileName" : "AI\\AI_M.lua",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1326729737.000000000,
+    "lastModifiedTime" : 1326758537.000000000,
     "creationTime" : null,
     "fileCRC" : 700492651,
     "fileName" : "AI\\Const.lua",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1388967864.000000000,
+    "lastModifiedTime" : 1388996664.000000000,
     "creationTime" : null,
     "fileCRC" : 1709925196,
     "fileName" : "AI\\USER_AI\\AI.lua",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1388967870.000000000,
+    "lastModifiedTime" : 1388996670.000000000,
     "creationTime" : null,
     "fileCRC" : -436777459,
     "fileName" : "AI\\USER_AI\\AI_M.lua",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401424853.515761500,
+    "lastModifiedTime" : 1401453653.515761500,
     "creationTime" : null,
     "fileCRC" : 1800543525,
     "fileName" : "AI\\USER_AI\\AI_main.lua",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1413720500.000000000,
+    "lastModifiedTime" : 1413749300.000000000,
     "creationTime" : null,
     "fileCRC" : 61513852,
     "fileName" : "AI\\USER_AI\\AzzyAIConfig.exe",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401424929.824126100,
+    "lastModifiedTime" : 1401453729.824126100,
     "creationTime" : null,
     "fileCRC" : -279686752,
     "fileName" : "AI\\USER_AI\\AzzyUtil.lua",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1438098114.773572400,
+    "lastModifiedTime" : 1438126914.773572400,
     "creationTime" : null,
     "fileCRC" : 273340971,
     "fileName" : "AI\\USER_AI\\A_Friends.lua",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1390725336.000000000,
+    "lastModifiedTime" : 1390754136.000000000,
     "creationTime" : null,
     "fileCRC" : 1793778408,
     "fileName" : "AI\\USER_AI\\Changelog.txt",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1390475964.000000000,
+    "lastModifiedTime" : 1390504764.000000000,
     "creationTime" : null,
     "fileCRC" : -533769148,
     "fileName" : "AI\\USER_AI\\Const_.lua",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1390273440.000000000,
+    "lastModifiedTime" : 1390302240.000000000,
     "creationTime" : null,
     "fileCRC" : -144376275,
     "fileName" : "AI\\USER_AI\\data\\dummy.txt",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501232397.625983900,
+    "lastModifiedTime" : 1501261197.625983900,
     "creationTime" : null,
     "fileCRC" : -102101130,
     "fileName" : "AI\\USER_AI\\data\\H_2000000.txt",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501232397.625983900,
+    "lastModifiedTime" : 1501261197.625983900,
     "creationTime" : null,
     "fileCRC" : 1998868412,
     "fileName" : "AI\\USER_AI\\data\\H_2000000Timeouts.lua",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401425741.123529800,
+    "lastModifiedTime" : 1401454541.123529800,
     "creationTime" : null,
     "fileCRC" : -1478723127,
     "fileName" : "AI\\USER_AI\\data\\H_2000049.txt",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401427649.783698900,
+    "lastModifiedTime" : 1401456449.783698900,
     "creationTime" : null,
     "fileCRC" : -1058375925,
     "fileName" : "AI\\USER_AI\\data\\H_2000049Timeouts.lua",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1439063864.135278100,
+    "lastModifiedTime" : 1439092664.135278100,
     "creationTime" : null,
     "fileCRC" : 951563590,
     "fileName" : "AI\\USER_AI\\data\\H_2000289.txt",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1439063864.135278100,
+    "lastModifiedTime" : 1439092664.135278100,
     "creationTime" : null,
     "fileCRC" : 1993549988,
     "fileName" : "AI\\USER_AI\\data\\H_2000289Timeouts.lua",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1435751687.238363900,
+    "lastModifiedTime" : 1435780487.238363900,
     "creationTime" : null,
     "fileCRC" : -1401913038,
     "fileName" : "AI\\USER_AI\\data\\H_2000290.txt",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1435751687.238363900,
+    "lastModifiedTime" : 1435780487.238363900,
     "creationTime" : null,
     "fileCRC" : -1023325330,
     "fileName" : "AI\\USER_AI\\data\\H_2000290Timeouts.lua",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501168098.612567100,
+    "lastModifiedTime" : 1501196898.612567100,
     "creationTime" : null,
     "fileCRC" : 888409173,
     "fileName" : "AI\\USER_AI\\data\\M_2000000.txt",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501168098.612567100,
+    "lastModifiedTime" : 1501196898.612567100,
     "creationTime" : null,
     "fileCRC" : -163560170,
     "fileName" : "AI\\USER_AI\\data\\M_2000000Timeouts.lua",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501232397.624983800,
+    "lastModifiedTime" : 1501261197.624983800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AI\\USER_AI\\data\\test.txt",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501168098.611567000,
+    "lastModifiedTime" : 1501196898.611567000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AI\\USER_AI\\data\\testM.txt",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501232432.991006600,
+    "lastModifiedTime" : 1501261232.991006600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AI\\USER_AI\\data",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401424957.130687900,
+    "lastModifiedTime" : 1401453757.130687900,
     "creationTime" : null,
     "fileCRC" : -2058773560,
     "fileName" : "AI\\USER_AI\\Defaults.lua",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1390476688.000000000,
+    "lastModifiedTime" : 1390505488.000000000,
     "creationTime" : null,
     "fileCRC" : -2055441877,
     "fileName" : "AI\\USER_AI\\Documentation.pdf",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1328682282.000000000,
+    "lastModifiedTime" : 1328711082.000000000,
     "creationTime" : null,
     "fileCRC" : -1553208059,
     "fileName" : "AI\\USER_AI\\H_Avoid.lua",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.933265400,
+    "lastModifiedTime" : 1501258142.933265400,
     "creationTime" : null,
     "fileCRC" : 1638426391,
     "fileName" : "AI\\USER_AI\\H_Config.lua",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.940265800,
+    "lastModifiedTime" : 1501258142.940265800,
     "creationTime" : null,
     "fileCRC" : -768167361,
     "fileName" : "AI\\USER_AI\\H_Extra.lua",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.941265900,
+    "lastModifiedTime" : 1501258142.941265900,
     "creationTime" : null,
     "fileCRC" : 333527905,
     "fileName" : "AI\\USER_AI\\H_PVP_Tact.lua",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1390339064.000000000,
+    "lastModifiedTime" : 1390367864.000000000,
     "creationTime" : null,
     "fileCRC" : -1076179293,
     "fileName" : "AI\\USER_AI\\H_SkillList.lua",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.939265800,
+    "lastModifiedTime" : 1501258142.939265800,
     "creationTime" : null,
     "fileCRC" : 1717217979,
     "fileName" : "AI\\USER_AI\\H_Tactics.lua",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501232357.303677600,
+    "lastModifiedTime" : 1501261157.303677600,
     "creationTime" : null,
     "fileCRC" : -377942628,
     "fileName" : "AI\\USER_AI\\MobID.lua",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1328682282.000000000,
+    "lastModifiedTime" : 1328711082.000000000,
     "creationTime" : null,
     "fileCRC" : -1576518986,
     "fileName" : "AI\\USER_AI\\Mob_ID.lua",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.939265800,
+    "lastModifiedTime" : 1501258142.939265800,
     "creationTime" : null,
     "fileCRC" : 1381076254,
     "fileName" : "AI\\USER_AI\\M_Config.lua",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.940265800,
+    "lastModifiedTime" : 1501258142.940265800,
     "creationTime" : null,
     "fileCRC" : -1134611210,
     "fileName" : "AI\\USER_AI\\M_Extra.lua",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.941265900,
+    "lastModifiedTime" : 1501258142.941265900,
     "creationTime" : null,
     "fileCRC" : 1075217486,
     "fileName" : "AI\\USER_AI\\M_PVP_Tact.lua",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1390338658.000000000,
+    "lastModifiedTime" : 1390367458.000000000,
     "creationTime" : null,
     "fileCRC" : 1310579461,
     "fileName" : "AI\\USER_AI\\M_SkillList.lua",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501229342.939265800,
+    "lastModifiedTime" : 1501258142.939265800,
     "creationTime" : null,
     "fileCRC" : -1811332602,
     "fileName" : "AI\\USER_AI\\M_Tactics.lua",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1375064628.000000000,
+    "lastModifiedTime" : 1375093428.000000000,
     "creationTime" : null,
     "fileCRC" : 434981451,
     "fileName" : "AI\\USER_AI\\Stubs.lua",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1385681998.000000000,
+    "lastModifiedTime" : 1385710798.000000000,
     "creationTime" : null,
     "fileCRC" : 1941400587,
     "fileName" : "AI\\USER_AI\\twRO.lua",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501232432.981006100,
+    "lastModifiedTime" : 1501261232.981006100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AI\\USER_AI",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1326729737.000000000,
+    "lastModifiedTime" : 1326758537.000000000,
     "creationTime" : null,
     "fileCRC" : -1635532051,
     "fileName" : "AI\\Util.lua",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1501232432.956004600,
+    "lastModifiedTime" : 1501261232.956004600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "AI",

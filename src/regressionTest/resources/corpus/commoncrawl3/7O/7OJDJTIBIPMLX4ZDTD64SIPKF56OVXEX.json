@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356159371.421875000,
+    "lastModifiedTime" : 1356188171.421875000,
     "creationTime" : null,
     "fileCRC" : -1613507054,
     "fileName" : "Ziron.exe",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356160626.968750000,
+    "lastModifiedTime" : 1356189426.968750000,
     "creationTime" : null,
     "fileCRC" : 229157721,
     "fileName" : "changelog.txt",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1336736181.343750000,
+    "lastModifiedTime" : 1336764981.343750000,
     "creationTime" : null,
     "fileCRC" : -1619372988,
     "fileName" : "license.rtf",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317018609.312500000,
+    "lastModifiedTime" : 1317047409.312500000,
     "creationTime" : null,
     "fileCRC" : -1674619027,
     "fileName" : "samples\\api_window\\api_window.zir",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317017571.062500000,
+    "lastModifiedTime" : 1317046371.062500000,
     "creationTime" : null,
     "fileCRC" : -836887664,
     "fileName" : "samples\\api_window\\build.bat",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317018965.328125000,
+    "lastModifiedTime" : 1317047765.328125000,
     "creationTime" : null,
     "fileCRC" : 1790921111,
     "fileName" : "samples\\loadfs\\build.bat",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317015019.375000000,
+    "lastModifiedTime" : 1317043819.375000000,
     "creationTime" : null,
     "fileCRC" : 1614296575,
     "fileName" : "samples\\loadfs\\loadfs.zir",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317014979.171875000,
+    "lastModifiedTime" : 1317043779.171875000,
     "creationTime" : null,
     "fileCRC" : 321842754,
     "fileName" : "samples\\loadfs\\readme.txt",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317018956.687500000,
+    "lastModifiedTime" : 1317047756.687500000,
     "creationTime" : null,
     "fileCRC" : 1496257181,
     "fileName" : "samples\\remote_app\\build.bat",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317014508.953125000,
+    "lastModifiedTime" : 1317043308.953125000,
     "creationTime" : null,
     "fileCRC" : 1172244466,
     "fileName" : "samples\\remote_app\\remote_app.zir",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317018975.406250000,
+    "lastModifiedTime" : 1317047775.406250000,
     "creationTime" : null,
     "fileCRC" : -1540027795,
     "fileName" : "samples\\simple_message_server\\build.bat",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356070877.140625000,
+    "lastModifiedTime" : 1356099677.140625000,
     "creationTime" : null,
     "fileCRC" : 1182431542,
     "fileName" : "samples\\simple_message_server\\simple_message_server.zir",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317022532.328125000,
+    "lastModifiedTime" : 1317051332.328125000,
     "creationTime" : null,
     "fileCRC" : -2107173555,
     "fileName" : "samples\\string_sample\\build.bat",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1319708687.640625000,
+    "lastModifiedTime" : 1319737487.640625000,
     "creationTime" : null,
     "fileCRC" : 462489288,
     "fileName" : "samples\\string_sample\\string_sample.zir",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317018985.640625000,
+    "lastModifiedTime" : 1317047785.640625000,
     "creationTime" : null,
     "fileCRC" : -770079192,
     "fileName" : "samples\\using_directives\\build.bat",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317017373.796875000,
+    "lastModifiedTime" : 1317046173.796875000,
     "creationTime" : null,
     "fileCRC" : -414048402,
     "fileName" : "samples\\using_directives\\using_directives.zir",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1336827452.500000000,
+    "lastModifiedTime" : 1336856252.500000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\api_window",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317014981.828125000,
+    "lastModifiedTime" : 1317043781.828125000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\loadfs",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317018947.000000000,
+    "lastModifiedTime" : 1317047747.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\remote_app",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356070879.046875000,
+    "lastModifiedTime" : 1356099679.046875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\simple_message_server",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1355056093.031250000,
+    "lastModifiedTime" : 1355084893.031250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\string_sample",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317017394.359375000,
+    "lastModifiedTime" : 1317046194.359375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\using_directives",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356160554.781250000,
+    "lastModifiedTime" : 1356189354.781250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318076326.745044600,
+    "lastModifiedTime" : 1318105126.745044600,
     "creationTime" : null,
     "fileCRC" : -145247795,
     "fileName" : "samples\\directx9_basic\\build.bat",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1319378695.555327100,
+    "lastModifiedTime" : 1319407495.555327100,
     "creationTime" : null,
     "fileCRC" : -1493060109,
     "fileName" : "samples\\directx9_basic\\dx9_basic.zir",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318079914.448169600,
+    "lastModifiedTime" : 1318108714.448169600,
     "creationTime" : null,
     "fileCRC" : -395405712,
     "fileName" : "samples\\enum\\build.bat",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318079897.354419600,
+    "lastModifiedTime" : 1318108697.354419600,
     "creationTime" : null,
     "fileCRC" : -1824011395,
     "fileName" : "samples\\enum\\enum.zir",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337089195.156250000,
+    "lastModifiedTime" : 1337117995.156250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\directx9_basic",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318079890.666919600,
+    "lastModifiedTime" : 1318108690.666919600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\enum",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337264274.928625300,
+    "lastModifiedTime" : 1337293074.928625300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "plugins",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1319546933.375000000,
+    "lastModifiedTime" : 1319575733.375000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "projects",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320312649.796875000,
+    "lastModifiedTime" : 1320341449.796875000,
     "creationTime" : null,
     "fileCRC" : 70188496,
     "fileName" : "plugins\\emit.dll",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337264203.725500300,
+    "lastModifiedTime" : 1337293003.725500300,
     "creationTime" : null,
     "fileCRC" : 417256647,
     "fileName" : "plugins\\plugin_interface.rtf",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337264253.678625300,
+    "lastModifiedTime" : 1337293053.678625300,
     "creationTime" : null,
     "fileCRC" : 2138082836,
     "fileName" : "plugins\\source\\emit.zir",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337264223.506750300,
+    "lastModifiedTime" : 1337293023.506750300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "plugins\\source",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1319029825.359375000,
+    "lastModifiedTime" : 1319058625.359375000,
     "creationTime" : null,
     "fileCRC" : -86613545,
     "fileName" : "includes\\application.zir",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337237834.756750300,
+    "lastModifiedTime" : 1337266634.756750300,
     "creationTime" : null,
     "fileCRC" : 1187341340,
     "fileName" : "includes\\ch.zir",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337009995.609375000,
+    "lastModifiedTime" : 1337038795.609375000,
     "creationTime" : null,
     "fileCRC" : 2008414120,
     "fileName" : "includes\\classes.zir",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322552510.953125000,
+    "lastModifiedTime" : 1322581310.953125000,
     "creationTime" : null,
     "fileCRC" : 980373857,
     "fileName" : "includes\\colors.zir",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1300951306.372615800,
+    "lastModifiedTime" : 1300980106.372615800,
     "creationTime" : null,
     "fileCRC" : 1790987824,
     "fileName" : "includes\\comctl32.zir",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356157084.515625000,
+    "lastModifiedTime" : 1356185884.515625000,
     "creationTime" : null,
     "fileCRC" : -363897671,
     "fileName" : "includes\\console.zir",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318861140.687500000,
+    "lastModifiedTime" : 1318889940.687500000,
     "creationTime" : null,
     "fileCRC" : -586511799,
     "fileName" : "includes\\c_compat.zir",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1322393932.250000000,
+    "lastModifiedTime" : 1322422732.250000000,
     "creationTime" : null,
     "fileCRC" : -1976516278,
     "fileName" : "includes\\dclib\\dcutils.zir",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301591649.859375000,
+    "lastModifiedTime" : 1301620449.859375000,
     "creationTime" : null,
     "fileCRC" : 795240785,
     "fileName" : "includes\\dclib\\hexhub.zir",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318167299.656250000,
+    "lastModifiedTime" : 1318196099.656250000,
     "creationTime" : null,
     "fileCRC" : 777301494,
     "fileName" : "includes\\directx\\direct3d9.zir",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356067899.093750000,
+    "lastModifiedTime" : 1356096699.093750000,
     "creationTime" : null,
     "fileCRC" : -578669049,
     "fileName" : "includes\\fileio.zir",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317957675.015625000,
+    "lastModifiedTime" : 1317986475.015625000,
     "creationTime" : null,
     "fileCRC" : -24864046,
     "fileName" : "includes\\forms.zir",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318932599.781250000,
+    "lastModifiedTime" : 1318961399.781250000,
     "creationTime" : null,
     "fileCRC" : -1795606630,
     "fileName" : "includes\\gdi32.zir",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1306210121.656250000,
+    "lastModifiedTime" : 1306238921.656250000,
     "creationTime" : null,
     "fileCRC" : 876412364,
     "fileName" : "includes\\inifiles.zir",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356067421.765625000,
+    "lastModifiedTime" : 1356096221.765625000,
     "creationTime" : null,
     "fileCRC" : 581588063,
     "fileName" : "includes\\kernel32.zir",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1321007292.703125000,
+    "lastModifiedTime" : 1321036092.703125000,
     "creationTime" : null,
     "fileCRC" : 320166988,
     "fileName" : "includes\\masm_compat.zir",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1323606715.062500000,
+    "lastModifiedTime" : 1323635515.062500000,
     "creationTime" : null,
     "fileCRC" : 2113095118,
     "fileName" : "includes\\messages.zir",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1315220499.484375000,
+    "lastModifiedTime" : 1315249299.484375000,
     "creationTime" : null,
     "fileCRC" : 1503107198,
     "fileName" : "includes\\opcodes.zir",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320757303.890625000,
+    "lastModifiedTime" : 1320786103.890625000,
     "creationTime" : null,
     "fileCRC" : -1611962490,
     "fileName" : "includes\\pascal_compat.zir",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1336884276.031250000,
+    "lastModifiedTime" : 1336913076.031250000,
     "creationTime" : null,
     "fileCRC" : -1987130301,
     "fileName" : "includes\\smm32.zir",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337355203.312500000,
+    "lastModifiedTime" : 1337384003.312500000,
     "creationTime" : null,
     "fileCRC" : -2017103787,
     "fileName" : "includes\\system.zir",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1318252790.593750000,
+    "lastModifiedTime" : 1318281590.593750000,
     "creationTime" : null,
     "fileCRC" : -928668852,
     "fileName" : "includes\\types.zir",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1323438676.734375000,
+    "lastModifiedTime" : 1323467476.734375000,
     "creationTime" : null,
     "fileCRC" : 935037036,
     "fileName" : "includes\\user32.zir",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1316608691.890625000,
+    "lastModifiedTime" : 1316637491.890625000,
     "creationTime" : null,
     "fileCRC" : -1441046896,
     "fileName" : "includes\\wsock32.zir",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356067183.656250000,
+    "lastModifiedTime" : 1356095983.656250000,
     "creationTime" : null,
     "fileCRC" : 177835669,
     "fileName" : "includes\\ziron32.zir",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1337329388.593750000,
+    "lastModifiedTime" : 1337358188.593750000,
     "creationTime" : null,
     "fileCRC" : 1812782097,
     "fileName" : "includes\\zirplug\\framework.zir",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1355646049.203125000,
+    "lastModifiedTime" : 1355674849.203125000,
     "creationTime" : null,
     "fileCRC" : -199670675,
     "fileName" : "includes\\zirutils.zir",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317878704.906250000,
+    "lastModifiedTime" : 1317907504.906250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "includes\\dclib",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1354792163.306699600,
+    "lastModifiedTime" : 1354820963.306699600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "includes\\directx",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320668465.359375000,
+    "lastModifiedTime" : 1320697265.359375000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "includes\\zirplug",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356159914.546875000,
+    "lastModifiedTime" : 1356188714.546875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "includes",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1320311307.843750000,
+    "lastModifiedTime" : 1320340107.843750000,
     "creationTime" : null,
     "fileCRC" : 486454629,
     "fileName" : "plugins\\source\\build.emit.bat",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1355660270.203125000,
+    "lastModifiedTime" : 1355689070.203125000,
     "creationTime" : null,
     "fileCRC" : -789398646,
     "fileName" : "includes\\strings.zir",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1336884440.406250000,
+    "lastModifiedTime" : 1336913240.406250000,
     "creationTime" : null,
     "fileCRC" : 699790631,
     "fileName" : "includes\\memutils.zir",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1336732772.125000000,
+    "lastModifiedTime" : 1336761572.125000000,
     "creationTime" : null,
     "fileCRC" : -2072850796,
     "fileName" : "samples\\try_except\\build.bat",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1336733036.531250000,
+    "lastModifiedTime" : 1336761836.531250000,
     "creationTime" : null,
     "fileCRC" : -1167897792,
     "fileName" : "samples\\try_except\\try_except.zir",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1336733050.281250000,
+    "lastModifiedTime" : 1336761850.281250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\try_except",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1354954992.265625000,
+    "lastModifiedTime" : 1354983792.265625000,
     "creationTime" : null,
     "fileCRC" : 736420927,
     "fileName" : "samples\\structures\\build.bat",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1354956161.687500000,
+    "lastModifiedTime" : 1354984961.687500000,
     "creationTime" : null,
     "fileCRC" : 731250811,
     "fileName" : "samples\\structures\\structures.zir",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1354955146.515625000,
+    "lastModifiedTime" : 1354983946.515625000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\structures",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356159994.171875000,
+    "lastModifiedTime" : 1356188794.171875000,
     "creationTime" : null,
     "fileCRC" : -1485360621,
     "fileName" : "includes\\threading.zir",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1355056093.031250000,
+    "lastModifiedTime" : 1355084893.031250000,
     "creationTime" : null,
     "fileCRC" : -1180473555,
     "fileName" : "samples\\string_sample\\string_sample.exe",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325152513.453125000,
+    "lastModifiedTime" : 1325181313.453125000,
     "creationTime" : null,
     "fileCRC" : -1220829131,
     "fileName" : "samples\\surge_engine\\build.bat",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325152438.359375000,
+    "lastModifiedTime" : 1325181238.359375000,
     "creationTime" : null,
     "fileCRC" : 330484543,
     "fileName" : "samples\\surge_engine\\SURGE.dll",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325152680.296875000,
+    "lastModifiedTime" : 1325181480.296875000,
     "creationTime" : null,
     "fileCRC" : 1083876780,
     "fileName" : "samples\\surge_engine\\SURGE.zir",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325153446.140625000,
+    "lastModifiedTime" : 1325182246.140625000,
     "creationTime" : null,
     "fileCRC" : -20926621,
     "fileName" : "samples\\surge_engine\\surge_engine.exe",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325153442.828125000,
+    "lastModifiedTime" : 1325182242.828125000,
     "creationTime" : null,
     "fileCRC" : 485024382,
     "fileName" : "samples\\surge_engine\\surge_engine.zir",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356160580.968750000,
+    "lastModifiedTime" : 1356189380.968750000,
     "creationTime" : null,
     "fileCRC" : 1558573845,
     "fileName" : "samples\\threads\\build.bat",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356160377.671875000,
+    "lastModifiedTime" : 1356189177.671875000,
     "creationTime" : null,
     "fileCRC" : 827865693,
     "fileName" : "samples\\threads\\threads.zir",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1317018942.375000000,
+    "lastModifiedTime" : 1317047742.375000000,
     "creationTime" : null,
     "fileCRC" : -592631874,
     "fileName" : "samples\\using_classes\\build.bat",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325068739.296875000,
+    "lastModifiedTime" : 1325097539.296875000,
     "creationTime" : null,
     "fileCRC" : 1770676139,
     "fileName" : "samples\\using_classes\\using_classes.zir",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1325152714.921875000,
+    "lastModifiedTime" : 1325181514.921875000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\surge_engine",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1356160594.031250000,
+    "lastModifiedTime" : 1356189394.031250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\threads",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1354914957.531250000,
+    "lastModifiedTime" : 1354943757.531250000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "samples\\using_classes",

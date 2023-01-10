@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.908372000,
+    "lastModifiedTime" : 1301445001.908372000,
     "creationTime" : null,
     "fileCRC" : -71238703,
     "fileName" : "dxsdk\\readme.txt",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.760372000,
+    "lastModifiedTime" : 1301445001.760372000,
     "creationTime" : null,
     "fileCRC" : -1993563640,
     "fileName" : "copying.txt",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.908372000,
+    "lastModifiedTime" : 1301445001.908372000,
     "creationTime" : null,
     "fileCRC" : 1898508689,
     "fileName" : "helpers\\common.h",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.909372000,
+    "lastModifiedTime" : 1301445001.909372000,
     "creationTime" : null,
     "fileCRC" : -960863853,
     "fileName" : "helpers\\config.h",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.761372000,
+    "lastModifiedTime" : 1301445001.761372000,
     "creationTime" : null,
     "fileCRC" : 1471711209,
     "fileName" : "ddraw\\ddraw_emu.h",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.763372000,
+    "lastModifiedTime" : 1301445001.763372000,
     "creationTime" : null,
     "fileCRC" : 257194181,
     "fileName" : "ddraw\\device_emu.h",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.910372000,
+    "lastModifiedTime" : 1301445001.910372000,
     "creationTime" : null,
     "fileCRC" : -450590175,
     "fileName" : "helpers\\interface.h",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.912372000,
+    "lastModifiedTime" : 1301445001.912372000,
     "creationTime" : null,
     "fileCRC" : -862558461,
     "fileName" : "helpers\\log.h",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.764372000,
+    "lastModifiedTime" : 1301445001.764372000,
     "creationTime" : null,
     "fileCRC" : 988681232,
     "fileName" : "ddraw\\material_emu.h",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.912372000,
+    "lastModifiedTime" : 1301445001.912372000,
     "creationTime" : null,
     "fileCRC" : -1219301816,
     "fileName" : "resource.h",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.766372000,
+    "lastModifiedTime" : 1301445001.766372000,
     "creationTime" : null,
     "fileCRC" : -1847380662,
     "fileName" : "ddraw\\structure_log.h",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.767372000,
+    "lastModifiedTime" : 1301445001.767372000,
     "creationTime" : null,
     "fileCRC" : 385872709,
     "fileName" : "ddraw\\surface_emu.h",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.768372000,
+    "lastModifiedTime" : 1301445001.768372000,
     "creationTime" : null,
     "fileCRC" : -1076004113,
     "fileName" : "ddraw\\vertex_buffer_emu.h",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.909372000,
+    "lastModifiedTime" : 1301445001.909372000,
     "creationTime" : null,
     "fileCRC" : 2125971924,
     "fileName" : "helpers\\config.cpp",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.761372000,
+    "lastModifiedTime" : 1301445001.761372000,
     "creationTime" : null,
     "fileCRC" : 1288852525,
     "fileName" : "ddraw\\ddraw_emu.cpp",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.762372000,
+    "lastModifiedTime" : 1301445001.762372000,
     "creationTime" : null,
     "fileCRC" : 1509694363,
     "fileName" : "ddraw\\device_emu.cpp",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.769372000,
+    "lastModifiedTime" : 1301445001.769372000,
     "creationTime" : null,
     "fileCRC" : -2020366926,
     "fileName" : "dllmain.cpp",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.911372000,
+    "lastModifiedTime" : 1301445001.911372000,
     "creationTime" : null,
     "fileCRC" : -1329320322,
     "fileName" : "helpers\\log.cpp",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.764372000,
+    "lastModifiedTime" : 1301445001.764372000,
     "creationTime" : null,
     "fileCRC" : -2047855718,
     "fileName" : "ddraw\\material_emu.cpp",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.765372000,
+    "lastModifiedTime" : 1301445001.765372000,
     "creationTime" : null,
     "fileCRC" : 174097488,
     "fileName" : "ddraw\\structure_log.cpp",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.766372000,
+    "lastModifiedTime" : 1301445001.766372000,
     "creationTime" : null,
     "fileCRC" : 779799526,
     "fileName" : "ddraw\\surface_emu.cpp",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.768372000,
+    "lastModifiedTime" : 1301445001.768372000,
     "creationTime" : null,
     "fileCRC" : -631760338,
     "fileName" : "ddraw\\vertex_buffer_emu.cpp",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.913372000,
+    "lastModifiedTime" : 1301445001.913372000,
     "creationTime" : null,
     "fileCRC" : -367779293,
     "fileName" : "wrapper.def",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.913372000,
+    "lastModifiedTime" : 1301445001.913372000,
     "creationTime" : null,
     "fileCRC" : 1524875595,
     "fileName" : "wrapper.rc",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416201.914372000,
+    "lastModifiedTime" : 1301445001.914372000,
     "creationTime" : null,
     "fileCRC" : -1773869734,
     "fileName" : "wrapper.sln",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416202.035372000,
+    "lastModifiedTime" : 1301445002.035372000,
     "creationTime" : null,
     "fileCRC" : -167605374,
     "fileName" : "wrapper.vcproj",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416211.589372000,
+    "lastModifiedTime" : 1301445011.589372000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "ddraw",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416211.594372000,
+    "lastModifiedTime" : 1301445011.594372000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "dxsdk",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1301416211.587372000,
+    "lastModifiedTime" : 1301445011.587372000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "helpers",

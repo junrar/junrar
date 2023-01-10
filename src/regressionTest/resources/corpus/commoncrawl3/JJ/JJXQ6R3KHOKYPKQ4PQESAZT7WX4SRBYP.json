@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510641528.657199400,
+    "lastModifiedTime" : 1510670328.657199400,
     "creationTime" : null,
     "fileCRC" : 1308388147,
     "fileName" : "Senpai 2.exe",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510218382.000000000,
+    "lastModifiedTime" : 1510247182.000000000,
     "creationTime" : null,
     "fileCRC" : 1445655721,
     "fileName" : "src\\.DS_Store",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 985530589,
     "fileName" : "src\\attack.cpp",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 140519169,
     "fileName" : "src\\attack.hpp",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 110303906,
     "fileName" : "src\\bit.cpp",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1537038026,
     "fileName" : "src\\bit.hpp",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -738163066,
     "fileName" : "src\\common.cpp",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 2130555796,
     "fileName" : "src\\common.hpp",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -384594274,
     "fileName" : "src\\eval.cpp",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 81310103,
     "fileName" : "src\\eval.hpp",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -518146818,
     "fileName" : "src\\fen.cpp",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -315934332,
     "fileName" : "src\\fen.hpp",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1704556076,
     "fileName" : "src\\game.cpp",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -101915112,
     "fileName" : "src\\game.hpp",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1633700755,
     "fileName" : "src\\gen.cpp",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1529382927,
     "fileName" : "src\\gen.hpp",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 2015143325,
     "fileName" : "src\\hash.cpp",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1528622288,
     "fileName" : "src\\hash.hpp",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 1224228644,
     "fileName" : "src\\libmy.cpp",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 853902900,
     "fileName" : "src\\libmy.hpp",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 824441514,
     "fileName" : "src\\list.cpp",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -579240229,
     "fileName" : "src\\list.hpp",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 807299328,
     "fileName" : "src\\main.cpp",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 404740497,
     "fileName" : "src\\Makefile",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -374273145,
     "fileName" : "src\\math.cpp",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1691053761,
     "fileName" : "src\\math.hpp",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -397527275,
     "fileName" : "src\\move.cpp",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 944436529,
     "fileName" : "src\\move.hpp",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1330567556,
     "fileName" : "src\\pawn.cpp",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 2032016833,
     "fileName" : "src\\pawn.hpp",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 738500921,
     "fileName" : "src\\pos.cpp",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1560581573,
     "fileName" : "src\\pos.hpp",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 1576164929,
     "fileName" : "src\\score.cpp",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 625179547,
     "fileName" : "src\\score.hpp",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -2068329595,
     "fileName" : "src\\search.cpp",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -823953639,
     "fileName" : "src\\search.hpp",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -990589545,
     "fileName" : "src\\sort.cpp",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -32015541,
     "fileName" : "src\\sort.hpp",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -994986084,
     "fileName" : "src\\thread.cpp",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 1828935618,
     "fileName" : "src\\thread.hpp",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 1003185363,
     "fileName" : "src\\tt.cpp",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -171992056,
     "fileName" : "src\\tt.hpp",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 1777437542,
     "fileName" : "src\\util.cpp",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : 1548195189,
     "fileName" : "src\\util.hpp",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -610290710,
     "fileName" : "src\\var.cpp",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510264318.000000000,
+    "lastModifiedTime" : 1510293118.000000000,
     "creationTime" : null,
     "fileCRC" : -1359904786,
     "fileName" : "src\\var.hpp",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1493779851.000000000,
+    "lastModifiedTime" : 1493808651.000000000,
     "creationTime" : null,
     "fileCRC" : -875667564,
     "fileName" : "libgcc_s_seh-1.dll",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1493779851.000000000,
+    "lastModifiedTime" : 1493808651.000000000,
     "creationTime" : null,
     "fileCRC" : -1319857893,
     "fileName" : "libstdc++-6.dll",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1493779851.000000000,
+    "lastModifiedTime" : 1493808651.000000000,
     "creationTime" : null,
     "fileCRC" : 1750972167,
     "fileName" : "libwinpthread-1.dll",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510265700.000000000,
+    "lastModifiedTime" : 1510294500.000000000,
     "creationTime" : null,
     "fileCRC" : -1165176410,
     "fileName" : "licence.txt",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510265700.000000000,
+    "lastModifiedTime" : 1510294500.000000000,
     "creationTime" : null,
     "fileCRC" : -1079403887,
     "fileName" : "readme.txt",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1510265700.000000000,
+    "lastModifiedTime" : 1510294500.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "src",

@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344348697.000000000,
+    "lastModifiedTime" : 1344377497.000000000,
     "creationTime" : null,
     "fileCRC" : -215895919,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\BasePackage.cs",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344346413.000000000,
+    "lastModifiedTime" : 1344375213.000000000,
     "creationTime" : null,
     "fileCRC" : -193376435,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\bin\\Debug\\DecoratorPattern.exe",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344346413.000000000,
+    "lastModifiedTime" : 1344375213.000000000,
     "creationTime" : null,
     "fileCRC" : 1809942530,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\bin\\Debug\\DecoratorPattern.pdb",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344238527.000000000,
+    "lastModifiedTime" : 1344267327.000000000,
     "creationTime" : null,
     "fileCRC" : 1358197843,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\bin\\Debug\\DecoratorPattern.vshost.exe",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1268887156.000000000,
+    "lastModifiedTime" : 1268915956.000000000,
     "creationTime" : null,
     "fileCRC" : 644594118,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\bin\\Debug\\DecoratorPattern.vshost.exe.manifest",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344404377.000000000,
+    "lastModifiedTime" : 1344433177.000000000,
     "creationTime" : null,
     "fileCRC" : -1592117661,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\ClassDiagram1.cd",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344406353.000000000,
+    "lastModifiedTime" : 1344435153.000000000,
     "creationTime" : null,
     "fileCRC" : 739326564,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\CricketInstrument.cs",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344409612.000000000,
+    "lastModifiedTime" : 1344438412.000000000,
     "creationTime" : null,
     "fileCRC" : 436692837,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\DecoratorPattern.csproj",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344406022.000000000,
+    "lastModifiedTime" : 1344434822.000000000,
     "creationTime" : null,
     "fileCRC" : 1231837763,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\ICricketInstrument.cs",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344339302.000000000,
+    "lastModifiedTime" : 1344368102.000000000,
     "creationTime" : null,
     "fileCRC" : -665403322,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj\\x86\\Debug\\DecoratorPattern.csproj.FileListAbsolute.txt",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344346413.000000000,
+    "lastModifiedTime" : 1344375213.000000000,
     "creationTime" : null,
     "fileCRC" : -193376435,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj\\x86\\Debug\\DecoratorPattern.exe",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344346413.000000000,
+    "lastModifiedTime" : 1344375213.000000000,
     "creationTime" : null,
     "fileCRC" : 1809942530,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj\\x86\\Debug\\DecoratorPattern.pdb",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344403985.000000000,
+    "lastModifiedTime" : 1344432785.000000000,
     "creationTime" : null,
     "fileCRC" : 1466359689,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj\\x86\\Debug\\DesignTimeResolveAssemblyReferencesInput.cache",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344348670.000000000,
+    "lastModifiedTime" : 1344377470.000000000,
     "creationTime" : null,
     "fileCRC" : 153817211,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\PackageOption.cs",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344348840.000000000,
+    "lastModifiedTime" : 1344377640.000000000,
     "creationTime" : null,
     "fileCRC" : -804076685,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\Program.cs",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344238522.000000000,
+    "lastModifiedTime" : 1344267322.000000000,
     "creationTime" : null,
     "fileCRC" : 644013978,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\Properties\\AssemblyInfo.cs",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344406512.000000000,
+    "lastModifiedTime" : 1344435312.000000000,
     "creationTime" : null,
     "fileCRC" : -1668339735,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\SmartPackage.cs",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344406575.000000000,
+    "lastModifiedTime" : 1344435375.000000000,
     "creationTime" : null,
     "fileCRC" : -767260943,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\SpecialPackage.cs",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344240126.000000000,
+    "lastModifiedTime" : 1344268926.000000000,
     "creationTime" : null,
     "fileCRC" : 1060149335,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern.sln",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344409614.000000000,
+    "lastModifiedTime" : 1344438414.000000000,
     "creationTime" : null,
     "fileCRC" : 1872240183,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern.suo",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344238522.000000000,
+    "lastModifiedTime" : 1344267322.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj\\x86\\Debug\\TempPE",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401170878.523710900,
+    "lastModifiedTime" : 1401199678.523710900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj\\x86\\Debug",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401169424.406878200,
+    "lastModifiedTime" : 1401198224.406878200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\bin\\Debug",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1344340114.000000000,
+    "lastModifiedTime" : 1344368914.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\bin\\Release",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401165517.858686400,
+    "lastModifiedTime" : 1401194317.858686400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj\\x86",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401165478.931452100,
+    "lastModifiedTime" : 1401194278.931452100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\bin",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401164640.257849400,
+    "lastModifiedTime" : 1401193440.257849400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\obj",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401167746.909898800,
+    "lastModifiedTime" : 1401196546.909898800,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern\\Properties",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401167377.741631100,
+    "lastModifiedTime" : 1401196177.741631100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern\\DecoratorPattern",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401165192.580803700,
+    "lastModifiedTime" : 1401193992.580803700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern\\DecoratorPattern",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1401161703.095324300,
+    "lastModifiedTime" : 1401190503.095324300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "DecoratorPattern",

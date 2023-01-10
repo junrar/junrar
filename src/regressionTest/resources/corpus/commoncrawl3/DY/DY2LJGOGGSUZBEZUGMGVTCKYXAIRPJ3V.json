@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100584672.156250000,
+    "lastModifiedTime" : 1100613472.156250000,
     "creationTime" : null,
     "fileCRC" : 252226621,
     "fileName" : "ACTION.TXT",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1000111102.000000000,
+    "lastModifiedTime" : 1000139902.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "H3BITMAP.TXT",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1000615138.000000000,
+    "lastModifiedTime" : 1000643938.000000000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "H3sprite.txt",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100525236.000000000,
+    "lastModifiedTime" : 1100554036.000000000,
     "creationTime" : null,
     "fileCRC" : 305642379,
     "fileName" : "INFORM.TXT",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1000613144.000000000,
+    "lastModifiedTime" : 1000641944.000000000,
     "creationTime" : null,
     "fileCRC" : -548566346,
     "fileName" : "INSTMULT.TXT",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098073614.000000000,
+    "lastModifiedTime" : 1098102414.000000000,
     "creationTime" : null,
     "fileCRC" : 1778892246,
     "fileName" : "Mapmaker Tools.txt",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100525256.000000000,
+    "lastModifiedTime" : 1100554056.000000000,
     "creationTime" : null,
     "fileCRC" : 670843988,
     "fileName" : "README.TXT",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1002454496.000000000,
+    "lastModifiedTime" : 1002483296.000000000,
     "creationTime" : null,
     "fileCRC" : -993783823,
     "fileName" : "erm_help\\images\\Sand\\SANDTL.TXT",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093520802.000000000,
+    "lastModifiedTime" : 1093549602.000000000,
     "creationTime" : null,
     "fileCRC" : -424862174,
     "fileName" : "erm_help\\OTHER\\about.htm",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098589138.000000000,
+    "lastModifiedTime" : 1098617938.000000000,
     "creationTime" : null,
     "fileCRC" : -1808235584,
     "fileName" : "erm_help\\OTHER\\about_left.htm",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100470826.000000000,
+    "lastModifiedTime" : 1100499626.000000000,
     "creationTime" : null,
     "fileCRC" : -165508217,
     "fileName" : "erm_help\\OTHER\\about_right.htm",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1048406636.000000000,
+    "lastModifiedTime" : 1048435436.000000000,
     "creationTime" : null,
     "fileCRC" : 1244706658,
     "fileName" : "erm_help\\OTHER\\annexe.htm",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092817264.000000000,
+    "lastModifiedTime" : 1092846064.000000000,
     "creationTime" : null,
     "fileCRC" : 1614398092,
     "fileName" : "erm_help\\OTHER\\annexe1.htm",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098194396.000000000,
+    "lastModifiedTime" : 1098223196.000000000,
     "creationTime" : null,
     "fileCRC" : 1236213848,
     "fileName" : "erm_help\\OTHER\\annexe2.htm",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100468412.000000000,
+    "lastModifiedTime" : 1100497212.000000000,
     "creationTime" : null,
     "fileCRC" : -1790372103,
     "fileName" : "erm_help\\OTHER\\anx2.htm",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073904128.000000000,
+    "lastModifiedTime" : 1073932928.000000000,
     "creationTime" : null,
     "fileCRC" : -1744382133,
     "fileName" : "erm_help\\OTHER\\bless.htm",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097447336.000000000,
+    "lastModifiedTime" : 1097476136.000000000,
     "creationTime" : null,
     "fileCRC" : 873386308,
     "fileName" : "erm_help\\OTHER\\castle object.htm",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093528428.000000000,
+    "lastModifiedTime" : 1093557228.000000000,
     "creationTime" : null,
     "fileCRC" : 2108217479,
     "fileName" : "erm_help\\OTHER\\claimed.htm",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093528642.000000000,
+    "lastModifiedTime" : 1093557442.000000000,
     "creationTime" : null,
     "fileCRC" : -1169934292,
     "fileName" : "erm_help\\OTHER\\claimed_left.htm",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098758448.000000000,
+    "lastModifiedTime" : 1098787248.000000000,
     "creationTime" : null,
     "fileCRC" : -1453465941,
     "fileName" : "erm_help\\OTHER\\claimed_right.htm",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099891370.000000000,
+    "lastModifiedTime" : 1099920170.000000000,
     "creationTime" : null,
     "fileCRC" : -716848701,
     "fileName" : "erm_help\\OTHER\\dialogue.htm",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099667068.000000000,
+    "lastModifiedTime" : 1099695868.000000000,
     "creationTime" : null,
     "fileCRC" : 1325677739,
     "fileName" : "erm_help\\OTHER\\format.htm",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1094474004.000000000,
+    "lastModifiedTime" : 1094502804.000000000,
     "creationTime" : null,
     "fileCRC" : 650198054,
     "fileName" : "erm_help\\format\\format_a1.htm",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1094474136.000000000,
+    "lastModifiedTime" : 1094502936.000000000,
     "creationTime" : null,
     "fileCRC" : -1995180964,
     "fileName" : "erm_help\\format\\format_a1a.htm",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092960772.000000000,
+    "lastModifiedTime" : 1092989572.000000000,
     "creationTime" : null,
     "fileCRC" : 770837774,
     "fileName" : "erm_help\\format\\format_ac.htm",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818100.000000000,
+    "lastModifiedTime" : 1073846900.000000000,
     "creationTime" : null,
     "fileCRC" : -1341520017,
     "fileName" : "erm_help\\format\\format_ap.htm",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818106.000000000,
+    "lastModifiedTime" : 1073846906.000000000,
     "creationTime" : null,
     "fileCRC" : -1663868749,
     "fileName" : "erm_help\\format\\format_bg.htm",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074854212.000000000,
+    "lastModifiedTime" : 1074883012.000000000,
     "creationTime" : null,
     "fileCRC" : 718159017,
     "fileName" : "erm_help\\format\\format_bi.htm",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089982352.000000000,
+    "lastModifiedTime" : 1090011152.000000000,
     "creationTime" : null,
     "fileCRC" : -199234711,
     "fileName" : "erm_help\\format\\format_c.htm",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089551908.000000000,
+    "lastModifiedTime" : 1089580708.000000000,
     "creationTime" : null,
     "fileCRC" : 1053583870,
     "fileName" : "erm_help\\format\\format_ca.htm",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818126.000000000,
+    "lastModifiedTime" : 1073846926.000000000,
     "creationTime" : null,
     "fileCRC" : 126063959,
     "fileName" : "erm_help\\format\\format_cb.htm",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099751292.000000000,
+    "lastModifiedTime" : 1099780092.000000000,
     "creationTime" : null,
     "fileCRC" : -1707576878,
     "fileName" : "erm_help\\format\\format_cbl.htm",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818134.000000000,
+    "lastModifiedTime" : 1073846934.000000000,
     "creationTime" : null,
     "fileCRC" : 637134574,
     "fileName" : "erm_help\\format\\format_cc.htm",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092693354.000000000,
+    "lastModifiedTime" : 1092722154.000000000,
     "creationTime" : null,
     "fileCRC" : 1315159159,
     "fileName" : "erm_help\\format\\format_cg.htm",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818196.000000000,
+    "lastModifiedTime" : 1073846996.000000000,
     "creationTime" : null,
     "fileCRC" : 1359313105,
     "fileName" : "erm_help\\format\\format_co.htm",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818228.000000000,
+    "lastModifiedTime" : 1073847028.000000000,
     "creationTime" : null,
     "fileCRC" : 1796097639,
     "fileName" : "erm_help\\format\\format_e.htm",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818232.000000000,
+    "lastModifiedTime" : 1073847032.000000000,
     "creationTime" : null,
     "fileCRC" : -807391609,
     "fileName" : "erm_help\\format\\format_e1.htm",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818236.000000000,
+    "lastModifiedTime" : 1073847036.000000000,
     "creationTime" : null,
     "fileCRC" : 2071375322,
     "fileName" : "erm_help\\format\\format_h.htm",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818240.000000000,
+    "lastModifiedTime" : 1073847040.000000000,
     "creationTime" : null,
     "fileCRC" : 2072308307,
     "fileName" : "erm_help\\format\\format_ha.htm",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092645226.000000000,
+    "lastModifiedTime" : 1092674026.000000000,
     "creationTime" : null,
     "fileCRC" : -1046061535,
     "fileName" : "erm_help\\format\\format_hc.htm",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818258.000000000,
+    "lastModifiedTime" : 1073847058.000000000,
     "creationTime" : null,
     "fileCRC" : 203076506,
     "fileName" : "erm_help\\format\\format_hl.htm",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092693638.000000000,
+    "lastModifiedTime" : 1092722438.000000000,
     "creationTime" : null,
     "fileCRC" : 936054056,
     "fileName" : "erm_help\\format\\format_hs.htm",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818268.000000000,
+    "lastModifiedTime" : 1073847068.000000000,
     "creationTime" : null,
     "fileCRC" : -986227202,
     "fileName" : "erm_help\\format\\format_m1.htm",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818274.000000000,
+    "lastModifiedTime" : 1073847074.000000000,
     "creationTime" : null,
     "fileCRC" : -993523542,
     "fileName" : "erm_help\\format\\format_m2.htm",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818286.000000000,
+    "lastModifiedTime" : 1073847086.000000000,
     "creationTime" : null,
     "fileCRC" : -1964026595,
     "fileName" : "erm_help\\format\\format_mi.htm",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818394.000000000,
+    "lastModifiedTime" : 1073847194.000000000,
     "creationTime" : null,
     "fileCRC" : 956197559,
     "fileName" : "erm_help\\format\\format_mp.htm",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093149942.000000000,
+    "lastModifiedTime" : 1093178742.000000000,
     "creationTime" : null,
     "fileCRC" : 1990022986,
     "fileName" : "erm_help\\format\\format_ob.htm",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818430.000000000,
+    "lastModifiedTime" : 1073847230.000000000,
     "creationTime" : null,
     "fileCRC" : 980372592,
     "fileName" : "erm_help\\format\\format_oba.htm",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099754096.000000000,
+    "lastModifiedTime" : 1099782896.000000000,
     "creationTime" : null,
     "fileCRC" : -277212860,
     "fileName" : "erm_help\\format\\format_p2.htm",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073818986.000000000,
+    "lastModifiedTime" : 1073847786.000000000,
     "creationTime" : null,
     "fileCRC" : 303751009,
     "fileName" : "erm_help\\format\\format_pk.htm",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1094570948.000000000,
+    "lastModifiedTime" : 1094599748.000000000,
     "creationTime" : null,
     "fileCRC" : 252573016,
     "fileName" : "erm_help\\format\\format_pm.htm",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1094570968.000000000,
+    "lastModifiedTime" : 1094599768.000000000,
     "creationTime" : null,
     "fileCRC" : -1395555840,
     "fileName" : "erm_help\\format\\format_pm1.htm",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1094473722.000000000,
+    "lastModifiedTime" : 1094502522.000000000,
     "creationTime" : null,
     "fileCRC" : 1954372827,
     "fileName" : "erm_help\\format\\format_pm2.htm",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1094473768.000000000,
+    "lastModifiedTime" : 1094502568.000000000,
     "creationTime" : null,
     "fileCRC" : 1871772219,
     "fileName" : "erm_help\\format\\format_pm3.htm",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099751886.000000000,
+    "lastModifiedTime" : 1099780686.000000000,
     "creationTime" : null,
     "fileCRC" : -1505823332,
     "fileName" : "erm_help\\format\\format_r.htm",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098078526.000000000,
+    "lastModifiedTime" : 1098107326.000000000,
     "creationTime" : null,
     "fileCRC" : 2046957588,
     "fileName" : "erm_help\\format\\format_se1.htm",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092693942.000000000,
+    "lastModifiedTime" : 1092722742.000000000,
     "creationTime" : null,
     "fileCRC" : 2058163718,
     "fileName" : "erm_help\\format\\format_se2.htm",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092693960.000000000,
+    "lastModifiedTime" : 1092722760.000000000,
     "creationTime" : null,
     "fileCRC" : 1075415361,
     "fileName" : "erm_help\\format\\format_se3.htm",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092693978.000000000,
+    "lastModifiedTime" : 1092722778.000000000,
     "creationTime" : null,
     "fileCRC" : -1549269641,
     "fileName" : "erm_help\\format\\format_se4.htm",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092694098.000000000,
+    "lastModifiedTime" : 1092722898.000000000,
     "creationTime" : null,
     "fileCRC" : 1429478720,
     "fileName" : "erm_help\\format\\format_se5.htm",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092242906.000000000,
+    "lastModifiedTime" : 1092271706.000000000,
     "creationTime" : null,
     "fileCRC" : 1534412481,
     "fileName" : "erm_help\\format\\format_sn.htm",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097447020.000000000,
+    "lastModifiedTime" : 1097475820.000000000,
     "creationTime" : null,
     "fileCRC" : 1156335686,
     "fileName" : "erm_help\\format\\format_sp.htm",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097447060.000000000,
+    "lastModifiedTime" : 1097475860.000000000,
     "creationTime" : null,
     "fileCRC" : -339095753,
     "fileName" : "erm_help\\format\\format_spa.htm",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819006.000000000,
+    "lastModifiedTime" : 1073847806.000000000,
     "creationTime" : null,
     "fileCRC" : 1410213890,
     "fileName" : "erm_help\\format\\format_sq.htm",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819012.000000000,
+    "lastModifiedTime" : 1073847812.000000000,
     "creationTime" : null,
     "fileCRC" : 811031451,
     "fileName" : "erm_help\\format\\format_ss.htm",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819016.000000000,
+    "lastModifiedTime" : 1073847816.000000000,
     "creationTime" : null,
     "fileCRC" : -841580015,
     "fileName" : "erm_help\\format\\format_t.htm",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074853208.000000000,
+    "lastModifiedTime" : 1074882008.000000000,
     "creationTime" : null,
     "fileCRC" : 1380531952,
     "fileName" : "erm_help\\format\\format_to.htm",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819020.000000000,
+    "lastModifiedTime" : 1073847820.000000000,
     "creationTime" : null,
     "fileCRC" : -889489716,
     "fileName" : "erm_help\\format\\format_tr.htm",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819026.000000000,
+    "lastModifiedTime" : 1073847826.000000000,
     "creationTime" : null,
     "fileCRC" : 2010872011,
     "fileName" : "erm_help\\format\\format_u.htm",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100468038.000000000,
+    "lastModifiedTime" : 1100496838.000000000,
     "creationTime" : null,
     "fileCRC" : 1175185118,
     "fileName" : "erm_help\\index.htm",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353390.000000000,
+    "lastModifiedTime" : 1042382190.000000000,
     "creationTime" : null,
     "fileCRC" : -348288796,
     "fileName" : "erm_help\\receivers\\receiver_ai.htm",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814874.000000000,
+    "lastModifiedTime" : 1073843674.000000000,
     "creationTime" : null,
     "fileCRC" : 981874215,
     "fileName" : "erm_help\\receivers\\receiver_ai_left.htm",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073903108.000000000,
+    "lastModifiedTime" : 1073931908.000000000,
     "creationTime" : null,
     "fileCRC" : -1025516621,
     "fileName" : "erm_help\\receivers\\receiver_ai_right.htm",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353372.000000000,
+    "lastModifiedTime" : 1042382172.000000000,
     "creationTime" : null,
     "fileCRC" : 296255300,
     "fileName" : "erm_help\\receivers\\receiver_ar.htm",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814874.000000000,
+    "lastModifiedTime" : 1073843674.000000000,
     "creationTime" : null,
     "fileCRC" : 868188019,
     "fileName" : "erm_help\\receivers\\receiver_ar_left.htm",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089825212.000000000,
+    "lastModifiedTime" : 1089854012.000000000,
     "creationTime" : null,
     "fileCRC" : 960228279,
     "fileName" : "erm_help\\receivers\\receiver_ar_right.htm",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1046227806.000000000,
+    "lastModifiedTime" : 1046256606.000000000,
     "creationTime" : null,
     "fileCRC" : 969995626,
     "fileName" : "erm_help\\receivers\\receiver_ba.htm",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092650284.000000000,
+    "lastModifiedTime" : 1092679084.000000000,
     "creationTime" : null,
     "fileCRC" : 35037525,
     "fileName" : "erm_help\\receivers\\receiver_ba_left.htm",
@@ -1254,7 +1254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098409566.000000000,
+    "lastModifiedTime" : 1098438366.000000000,
     "creationTime" : null,
     "fileCRC" : -484780523,
     "fileName" : "erm_help\\receivers\\receiver_ba_right.htm",
@@ -1270,7 +1270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353436.000000000,
+    "lastModifiedTime" : 1042382236.000000000,
     "creationTime" : null,
     "fileCRC" : 1616253518,
     "fileName" : "erm_help\\receivers\\receiver_bf.htm",
@@ -1286,7 +1286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814872.000000000,
+    "lastModifiedTime" : 1073843672.000000000,
     "creationTime" : null,
     "fileCRC" : -1838419437,
     "fileName" : "erm_help\\receivers\\receiver_bf_left.htm",
@@ -1302,7 +1302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098198262.000000000,
+    "lastModifiedTime" : 1098227062.000000000,
     "creationTime" : null,
     "fileCRC" : 603850848,
     "fileName" : "erm_help\\receivers\\receiver_bf_right.htm",
@@ -1318,7 +1318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353462.000000000,
+    "lastModifiedTime" : 1042382262.000000000,
     "creationTime" : null,
     "fileCRC" : -505196436,
     "fileName" : "erm_help\\receivers\\receiver_bg.htm",
@@ -1334,7 +1334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814872.000000000,
+    "lastModifiedTime" : 1073843672.000000000,
     "creationTime" : null,
     "fileCRC" : -1640210046,
     "fileName" : "erm_help\\receivers\\receiver_bg_left.htm",
@@ -1350,7 +1350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073903106.000000000,
+    "lastModifiedTime" : 1073931906.000000000,
     "creationTime" : null,
     "fileCRC" : -1118463138,
     "fileName" : "erm_help\\receivers\\receiver_bg_right.htm",
@@ -1366,7 +1366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353492.000000000,
+    "lastModifiedTime" : 1042382292.000000000,
     "creationTime" : null,
     "fileCRC" : 1643600819,
     "fileName" : "erm_help\\receivers\\receiver_bh.htm",
@@ -1382,7 +1382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814872.000000000,
+    "lastModifiedTime" : 1073843672.000000000,
     "creationTime" : null,
     "fileCRC" : 1068688575,
     "fileName" : "erm_help\\receivers\\receiver_bh_left.htm",
@@ -1398,7 +1398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092641132.000000000,
+    "lastModifiedTime" : 1092669932.000000000,
     "creationTime" : null,
     "fileCRC" : 103721449,
     "fileName" : "erm_help\\receivers\\receiver_bh_right.htm",
@@ -1414,7 +1414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353514.000000000,
+    "lastModifiedTime" : 1042382314.000000000,
     "creationTime" : null,
     "fileCRC" : -1916811125,
     "fileName" : "erm_help\\receivers\\receiver_bm.htm",
@@ -1430,7 +1430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089826800.000000000,
+    "lastModifiedTime" : 1089855600.000000000,
     "creationTime" : null,
     "fileCRC" : 259318267,
     "fileName" : "erm_help\\receivers\\receiver_bm_left.htm",
@@ -1446,7 +1446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097725724.000000000,
+    "lastModifiedTime" : 1097754524.000000000,
     "creationTime" : null,
     "fileCRC" : -1682752003,
     "fileName" : "erm_help\\receivers\\receiver_bm_right.htm",
@@ -1462,7 +1462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353540.000000000,
+    "lastModifiedTime" : 1042382340.000000000,
     "creationTime" : null,
     "fileCRC" : -710597749,
     "fileName" : "erm_help\\receivers\\receiver_bu.htm",
@@ -1478,7 +1478,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089908432.000000000,
+    "lastModifiedTime" : 1089937232.000000000,
     "creationTime" : null,
     "fileCRC" : -1817066862,
     "fileName" : "erm_help\\receivers\\receiver_bu_left.htm",
@@ -1494,7 +1494,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097725874.000000000,
+    "lastModifiedTime" : 1097754674.000000000,
     "creationTime" : null,
     "fileCRC" : 415034768,
     "fileName" : "erm_help\\receivers\\receiver_bu_right.htm",
@@ -1510,7 +1510,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353560.000000000,
+    "lastModifiedTime" : 1042382360.000000000,
     "creationTime" : null,
     "fileCRC" : 1549177302,
     "fileName" : "erm_help\\receivers\\receiver_ca.htm",
@@ -1526,7 +1526,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089979954.000000000,
+    "lastModifiedTime" : 1090008754.000000000,
     "creationTime" : null,
     "fileCRC" : -457348608,
     "fileName" : "erm_help\\receivers\\receiver_ca_left.htm",
@@ -1542,7 +1542,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100423324.000000000,
+    "lastModifiedTime" : 1100452124.000000000,
     "creationTime" : null,
     "fileCRC" : -762165601,
     "fileName" : "erm_help\\receivers\\receiver_ca_right.htm",
@@ -1558,7 +1558,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353578.000000000,
+    "lastModifiedTime" : 1042382378.000000000,
     "creationTime" : null,
     "fileCRC" : -1340210450,
     "fileName" : "erm_help\\receivers\\receiver_cd.htm",
@@ -1574,7 +1574,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814870.000000000,
+    "lastModifiedTime" : 1073843670.000000000,
     "creationTime" : null,
     "fileCRC" : 269229583,
     "fileName" : "erm_help\\receivers\\receiver_cd_left.htm",
@@ -1590,7 +1590,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073901908.000000000,
+    "lastModifiedTime" : 1073930708.000000000,
     "creationTime" : null,
     "fileCRC" : -1155891977,
     "fileName" : "erm_help\\receivers\\receiver_cd_right.htm",
@@ -1606,7 +1606,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353606.000000000,
+    "lastModifiedTime" : 1042382406.000000000,
     "creationTime" : null,
     "fileCRC" : -2036107082,
     "fileName" : "erm_help\\receivers\\receiver_ce.htm",
@@ -1622,7 +1622,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814868.000000000,
+    "lastModifiedTime" : 1073843668.000000000,
     "creationTime" : null,
     "fileCRC" : 1106348778,
     "fileName" : "erm_help\\receivers\\receiver_ce_left.htm",
@@ -1638,7 +1638,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073902414.000000000,
+    "lastModifiedTime" : 1073931214.000000000,
     "creationTime" : null,
     "fileCRC" : -328004299,
     "fileName" : "erm_help\\receivers\\receiver_ce_right.htm",
@@ -1654,7 +1654,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353626.000000000,
+    "lastModifiedTime" : 1042382426.000000000,
     "creationTime" : null,
     "fileCRC" : -398873545,
     "fileName" : "erm_help\\receivers\\receiver_cm.htm",
@@ -1670,7 +1670,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074860688.000000000,
+    "lastModifiedTime" : 1074889488.000000000,
     "creationTime" : null,
     "fileCRC" : -2076471100,
     "fileName" : "erm_help\\receivers\\receiver_cm_left.htm",
@@ -1686,7 +1686,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097727038.000000000,
+    "lastModifiedTime" : 1097755838.000000000,
     "creationTime" : null,
     "fileCRC" : -1883355524,
     "fileName" : "erm_help\\receivers\\receiver_cm_right.htm",
@@ -1702,7 +1702,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353644.000000000,
+    "lastModifiedTime" : 1042382444.000000000,
     "creationTime" : null,
     "fileCRC" : -1648546384,
     "fileName" : "erm_help\\receivers\\receiver_co.htm",
@@ -1718,7 +1718,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814868.000000000,
+    "lastModifiedTime" : 1073843668.000000000,
     "creationTime" : null,
     "fileCRC" : -1468091215,
     "fileName" : "erm_help\\receivers\\receiver_co_left.htm",
@@ -1734,7 +1734,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097448948.000000000,
+    "lastModifiedTime" : 1097477748.000000000,
     "creationTime" : null,
     "fileCRC" : 180067629,
     "fileName" : "erm_help\\receivers\\receiver_co_right.htm",
@@ -1750,7 +1750,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353664.000000000,
+    "lastModifiedTime" : 1042382464.000000000,
     "creationTime" : null,
     "fileCRC" : 1721852402,
     "fileName" : "erm_help\\receivers\\receiver_do.htm",
@@ -1766,7 +1766,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814866.000000000,
+    "lastModifiedTime" : 1073843666.000000000,
     "creationTime" : null,
     "fileCRC" : -1598258941,
     "fileName" : "erm_help\\receivers\\receiver_do_left.htm",
@@ -1782,7 +1782,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099983008.000000000,
+    "lastModifiedTime" : 1100011808.000000000,
     "creationTime" : null,
     "fileCRC" : 479212981,
     "fileName" : "erm_help\\receivers\\receiver_do_right.htm",
@@ -1798,7 +1798,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093251880.000000000,
+    "lastModifiedTime" : 1093280680.000000000,
     "creationTime" : null,
     "fileCRC" : 1479050937,
     "fileName" : "erm_help\\receivers\\receiver_ea.htm",
@@ -1814,7 +1814,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089813920.000000000,
+    "lastModifiedTime" : 1089842720.000000000,
     "creationTime" : null,
     "fileCRC" : -1314562751,
     "fileName" : "erm_help\\receivers\\receiver_ea_left.htm",
@@ -1830,7 +1830,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098114448.000000000,
+    "lastModifiedTime" : 1098143248.000000000,
     "creationTime" : null,
     "fileCRC" : -1843615499,
     "fileName" : "erm_help\\receivers\\receiver_ea_right.htm",
@@ -1846,7 +1846,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093347242.000000000,
+    "lastModifiedTime" : 1093376042.000000000,
     "creationTime" : null,
     "fileCRC" : -30299176,
     "fileName" : "erm_help\\receivers\\receiver_ex.htm",
@@ -1862,7 +1862,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093347214.000000000,
+    "lastModifiedTime" : 1093376014.000000000,
     "creationTime" : null,
     "fileCRC" : 122383688,
     "fileName" : "erm_help\\receivers\\receiver_ex_left.htm",
@@ -1878,7 +1878,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098070074.000000000,
+    "lastModifiedTime" : 1098098874.000000000,
     "creationTime" : null,
     "fileCRC" : -1664569393,
     "fileName" : "erm_help\\receivers\\receiver_ex_right.htm",
@@ -1894,7 +1894,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1048633456.000000000,
+    "lastModifiedTime" : 1048662256.000000000,
     "creationTime" : null,
     "fileCRC" : -342509326,
     "fileName" : "erm_help\\receivers\\receiver_fu.htm",
@@ -1910,7 +1910,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098072258.000000000,
+    "lastModifiedTime" : 1098101058.000000000,
     "creationTime" : null,
     "fileCRC" : 1297397204,
     "fileName" : "erm_help\\receivers\\receiver_fu_left.htm",
@@ -1926,7 +1926,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098613178.000000000,
+    "lastModifiedTime" : 1098641978.000000000,
     "creationTime" : null,
     "fileCRC" : 113710296,
     "fileName" : "erm_help\\receivers\\receiver_fu_right.htm",
@@ -1942,7 +1942,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353722.000000000,
+    "lastModifiedTime" : 1042382522.000000000,
     "creationTime" : null,
     "fileCRC" : 1502287959,
     "fileName" : "erm_help\\receivers\\receiver_ge.htm",
@@ -1958,7 +1958,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073814866.000000000,
+    "lastModifiedTime" : 1073843666.000000000,
     "creationTime" : null,
     "fileCRC" : -754073579,
     "fileName" : "erm_help\\receivers\\receiver_ge_left.htm",
@@ -1974,7 +1974,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092641562.000000000,
+    "lastModifiedTime" : 1092670362.000000000,
     "creationTime" : null,
     "fileCRC" : -517984944,
     "fileName" : "erm_help\\receivers\\receiver_ge_right.htm",
@@ -1990,7 +1990,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1046061260.000000000,
+    "lastModifiedTime" : 1046090060.000000000,
     "creationTime" : null,
     "fileCRC" : -185044576,
     "fileName" : "erm_help\\receivers\\receiver_he.htm",
@@ -2006,7 +2006,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092220014.000000000,
+    "lastModifiedTime" : 1092248814.000000000,
     "creationTime" : null,
     "fileCRC" : -1999323005,
     "fileName" : "erm_help\\receivers\\receiver_he_left.htm",
@@ -2022,7 +2022,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098366522.000000000,
+    "lastModifiedTime" : 1098395322.000000000,
     "creationTime" : null,
     "fileCRC" : -499584315,
     "fileName" : "erm_help\\receivers\\receiver_he_right.htm",
@@ -2038,7 +2038,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353778.000000000,
+    "lastModifiedTime" : 1042382578.000000000,
     "creationTime" : null,
     "fileCRC" : 1587771185,
     "fileName" : "erm_help\\receivers\\receiver_hl.htm",
@@ -2054,7 +2054,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815156.000000000,
+    "lastModifiedTime" : 1073843956.000000000,
     "creationTime" : null,
     "fileCRC" : -1756679242,
     "fileName" : "erm_help\\receivers\\receiver_hl_left.htm",
@@ -2070,7 +2070,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092641976.000000000,
+    "lastModifiedTime" : 1092670776.000000000,
     "creationTime" : null,
     "fileCRC" : -729735656,
     "fileName" : "erm_help\\receivers\\receiver_hl_right.htm",
@@ -2086,7 +2086,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353800.000000000,
+    "lastModifiedTime" : 1042382600.000000000,
     "creationTime" : null,
     "fileCRC" : -330911764,
     "fileName" : "erm_help\\receivers\\receiver_ho.htm",
@@ -2102,7 +2102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815154.000000000,
+    "lastModifiedTime" : 1073843954.000000000,
     "creationTime" : null,
     "fileCRC" : -2045124949,
     "fileName" : "erm_help\\receivers\\receiver_ho_left.htm",
@@ -2118,7 +2118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092642038.000000000,
+    "lastModifiedTime" : 1092670838.000000000,
     "creationTime" : null,
     "fileCRC" : 1552181042,
     "fileName" : "erm_help\\receivers\\receiver_ho_right.htm",
@@ -2134,7 +2134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353822.000000000,
+    "lastModifiedTime" : 1042382622.000000000,
     "creationTime" : null,
     "fileCRC" : -908418530,
     "fileName" : "erm_help\\receivers\\receiver_ht.htm",
@@ -2150,7 +2150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815154.000000000,
+    "lastModifiedTime" : 1073843954.000000000,
     "creationTime" : null,
     "fileCRC" : -1716491482,
     "fileName" : "erm_help\\receivers\\receiver_ht_left.htm",
@@ -2166,7 +2166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1075374410.000000000,
+    "lastModifiedTime" : 1075403210.000000000,
     "creationTime" : null,
     "fileCRC" : -130053742,
     "fileName" : "erm_help\\receivers\\receiver_ht_right.htm",
@@ -2182,7 +2182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100424036.000000000,
+    "lastModifiedTime" : 1100452836.000000000,
     "creationTime" : null,
     "fileCRC" : -1154305207,
     "fileName" : "erm_help\\receivers\\receiver_if.htm",
@@ -2198,7 +2198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100424030.000000000,
+    "lastModifiedTime" : 1100452830.000000000,
     "creationTime" : null,
     "fileCRC" : -1971653716,
     "fileName" : "erm_help\\receivers\\receiver_if_left.htm",
@@ -2214,7 +2214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100471704.000000000,
+    "lastModifiedTime" : 1100500504.000000000,
     "creationTime" : null,
     "fileCRC" : 1018427231,
     "fileName" : "erm_help\\receivers\\receiver_if_right.htm",
@@ -2230,7 +2230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093528082.000000000,
+    "lastModifiedTime" : 1093556882.000000000,
     "creationTime" : null,
     "fileCRC" : 17361102,
     "fileName" : "erm_help\\receivers\\receiver_ip.htm",
@@ -2246,7 +2246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093528082.000000000,
+    "lastModifiedTime" : 1093556882.000000000,
     "creationTime" : null,
     "fileCRC" : -752381460,
     "fileName" : "erm_help\\receivers\\receiver_ip_left.htm",
@@ -2262,7 +2262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097724982.000000000,
+    "lastModifiedTime" : 1097753782.000000000,
     "creationTime" : null,
     "fileCRC" : -1225410109,
     "fileName" : "erm_help\\receivers\\receiver_ip_right.htm",
@@ -2278,7 +2278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353882.000000000,
+    "lastModifiedTime" : 1042382682.000000000,
     "creationTime" : null,
     "fileCRC" : 1900647005,
     "fileName" : "erm_help\\receivers\\receiver_le.htm",
@@ -2294,7 +2294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815154.000000000,
+    "lastModifiedTime" : 1073843954.000000000,
     "creationTime" : null,
     "fileCRC" : 1384223860,
     "fileName" : "erm_help\\receivers\\receiver_le_left.htm",
@@ -2310,7 +2310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097727936.000000000,
+    "lastModifiedTime" : 1097756736.000000000,
     "creationTime" : null,
     "fileCRC" : -735183058,
     "fileName" : "erm_help\\receivers\\receiver_le_right.htm",
@@ -2326,7 +2326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353902.000000000,
+    "lastModifiedTime" : 1042382702.000000000,
     "creationTime" : null,
     "fileCRC" : -232092064,
     "fileName" : "erm_help\\receivers\\receiver_ma.htm",
@@ -2342,7 +2342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815152.000000000,
+    "lastModifiedTime" : 1073843952.000000000,
     "creationTime" : null,
     "fileCRC" : -1306757206,
     "fileName" : "erm_help\\receivers\\receiver_ma_left.htm",
@@ -2358,7 +2358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073901390.000000000,
+    "lastModifiedTime" : 1073930190.000000000,
     "creationTime" : null,
     "fileCRC" : -136502616,
     "fileName" : "erm_help\\receivers\\receiver_ma_right.htm",
@@ -2374,7 +2374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073802744.000000000,
+    "lastModifiedTime" : 1073831544.000000000,
     "creationTime" : null,
     "fileCRC" : -618889200,
     "fileName" : "erm_help\\receivers\\receiver_mc.htm",
@@ -2390,7 +2390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1075642568.000000000,
+    "lastModifiedTime" : 1075671368.000000000,
     "creationTime" : null,
     "fileCRC" : 651872429,
     "fileName" : "erm_help\\receivers\\receiver_mf.htm",
@@ -2406,7 +2406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092650122.000000000,
+    "lastModifiedTime" : 1092678922.000000000,
     "creationTime" : null,
     "fileCRC" : -1378897174,
     "fileName" : "erm_help\\receivers\\receiver_mf_left.htm",
@@ -2422,7 +2422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092650248.000000000,
+    "lastModifiedTime" : 1092679048.000000000,
     "creationTime" : null,
     "fileCRC" : -785188186,
     "fileName" : "erm_help\\receivers\\receiver_mf_right.htm",
@@ -2438,7 +2438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1075642226.000000000,
+    "lastModifiedTime" : 1075671026.000000000,
     "creationTime" : null,
     "fileCRC" : 327652036,
     "fileName" : "erm_help\\receivers\\receiver_mm.htm",
@@ -2454,7 +2454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1075641904.000000000,
+    "lastModifiedTime" : 1075670704.000000000,
     "creationTime" : null,
     "fileCRC" : 1823327448,
     "fileName" : "erm_help\\receivers\\receiver_mm_left.htm",
@@ -2470,7 +2470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097724374.000000000,
+    "lastModifiedTime" : 1097753174.000000000,
     "creationTime" : null,
     "fileCRC" : -1988042800,
     "fileName" : "erm_help\\receivers\\receiver_mm_right.htm",
@@ -2486,7 +2486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353946.000000000,
+    "lastModifiedTime" : 1042382746.000000000,
     "creationTime" : null,
     "fileCRC" : 1044870526,
     "fileName" : "erm_help\\receivers\\receiver_mo.htm",
@@ -2502,7 +2502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815152.000000000,
+    "lastModifiedTime" : 1073843952.000000000,
     "creationTime" : null,
     "fileCRC" : -1062123901,
     "fileName" : "erm_help\\receivers\\receiver_mo_left.htm",
@@ -2518,7 +2518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098076860.000000000,
+    "lastModifiedTime" : 1098105660.000000000,
     "creationTime" : null,
     "fileCRC" : 1669215991,
     "fileName" : "erm_help\\receivers\\receiver_mo_right.htm",
@@ -2534,7 +2534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074733296.000000000,
+    "lastModifiedTime" : 1074762096.000000000,
     "creationTime" : null,
     "fileCRC" : 1281391743,
     "fileName" : "erm_help\\receivers\\receiver_mp.htm",
@@ -2550,7 +2550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815152.000000000,
+    "lastModifiedTime" : 1073843952.000000000,
     "creationTime" : null,
     "fileCRC" : -442283299,
     "fileName" : "erm_help\\receivers\\receiver_mp_left.htm",
@@ -2566,7 +2566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089207608.000000000,
+    "lastModifiedTime" : 1089236408.000000000,
     "creationTime" : null,
     "fileCRC" : 1684773035,
     "fileName" : "erm_help\\receivers\\receiver_mp_right.htm",
@@ -2582,7 +2582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074856228.000000000,
+    "lastModifiedTime" : 1074885028.000000000,
     "creationTime" : null,
     "fileCRC" : 555387087,
     "fileName" : "erm_help\\receivers\\receiver_mr.htm",
@@ -2598,7 +2598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074857332.000000000,
+    "lastModifiedTime" : 1074886132.000000000,
     "creationTime" : null,
     "fileCRC" : -282151976,
     "fileName" : "erm_help\\receivers\\receiver_mr_left.htm",
@@ -2614,7 +2614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097728142.000000000,
+    "lastModifiedTime" : 1097756942.000000000,
     "creationTime" : null,
     "fileCRC" : 1323265195,
     "fileName" : "erm_help\\receivers\\receiver_mr_right.htm",
@@ -2630,7 +2630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042353964.000000000,
+    "lastModifiedTime" : 1042382764.000000000,
     "creationTime" : null,
     "fileCRC" : -1455513519,
     "fileName" : "erm_help\\receivers\\receiver_mw.htm",
@@ -2646,7 +2646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815150.000000000,
+    "lastModifiedTime" : 1073843950.000000000,
     "creationTime" : null,
     "fileCRC" : 280969098,
     "fileName" : "erm_help\\receivers\\receiver_mw_left.htm",
@@ -2662,7 +2662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073901484.000000000,
+    "lastModifiedTime" : 1073930284.000000000,
     "creationTime" : null,
     "fileCRC" : 1675605549,
     "fileName" : "erm_help\\receivers\\receiver_mw_right.htm",
@@ -2678,7 +2678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073563118.000000000,
+    "lastModifiedTime" : 1073591918.000000000,
     "creationTime" : null,
     "fileCRC" : 106877583,
     "fileName" : "erm_help\\receivers\\receiver_ow.htm",
@@ -2694,7 +2694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1075639976.000000000,
+    "lastModifiedTime" : 1075668776.000000000,
     "creationTime" : null,
     "fileCRC" : 923434144,
     "fileName" : "erm_help\\receivers\\receiver_ow_left.htm",
@@ -2710,7 +2710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099747580.000000000,
+    "lastModifiedTime" : 1099776380.000000000,
     "creationTime" : null,
     "fileCRC" : 1298899784,
     "fileName" : "erm_help\\receivers\\receiver_ow_right.htm",
@@ -2726,7 +2726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042354076.000000000,
+    "lastModifiedTime" : 1042382876.000000000,
     "creationTime" : null,
     "fileCRC" : 761887177,
     "fileName" : "erm_help\\receivers\\receiver_pm.htm",
@@ -2742,7 +2742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815150.000000000,
+    "lastModifiedTime" : 1073843950.000000000,
     "creationTime" : null,
     "fileCRC" : 1196078647,
     "fileName" : "erm_help\\receivers\\receiver_pm_left.htm",
@@ -2758,7 +2758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073900268.000000000,
+    "lastModifiedTime" : 1073929068.000000000,
     "creationTime" : null,
     "fileCRC" : -952386446,
     "fileName" : "erm_help\\receivers\\receiver_pm_right.htm",
@@ -2774,7 +2774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042354108.000000000,
+    "lastModifiedTime" : 1042382908.000000000,
     "creationTime" : null,
     "fileCRC" : 1191242592,
     "fileName" : "erm_help\\receivers\\receiver_po.htm",
@@ -2790,7 +2790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815148.000000000,
+    "lastModifiedTime" : 1073843948.000000000,
     "creationTime" : null,
     "fileCRC" : -323136376,
     "fileName" : "erm_help\\receivers\\receiver_po_left.htm",
@@ -2806,7 +2806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073900344.000000000,
+    "lastModifiedTime" : 1073929144.000000000,
     "creationTime" : null,
     "fileCRC" : -654301259,
     "fileName" : "erm_help\\receivers\\receiver_po_right.htm",
@@ -2822,7 +2822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042354134.000000000,
+    "lastModifiedTime" : 1042382934.000000000,
     "creationTime" : null,
     "fileCRC" : -2016868576,
     "fileName" : "erm_help\\receivers\\receiver_qw.htm",
@@ -2838,7 +2838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815148.000000000,
+    "lastModifiedTime" : 1073843948.000000000,
     "creationTime" : null,
     "fileCRC" : 1906894576,
     "fileName" : "erm_help\\receivers\\receiver_qw_left.htm",
@@ -2854,7 +2854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073900380.000000000,
+    "lastModifiedTime" : 1073929180.000000000,
     "creationTime" : null,
     "fileCRC" : 439602638,
     "fileName" : "erm_help\\receivers\\receiver_qw_right.htm",
@@ -2870,7 +2870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074762648.000000000,
+    "lastModifiedTime" : 1074791448.000000000,
     "creationTime" : null,
     "fileCRC" : 1734142629,
     "fileName" : "erm_help\\receivers\\receiver_sn.htm",
@@ -2886,7 +2886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074763534.000000000,
+    "lastModifiedTime" : 1074792334.000000000,
     "creationTime" : null,
     "fileCRC" : 1081748434,
     "fileName" : "erm_help\\receivers\\receiver_sn_left.htm",
@@ -2902,7 +2902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098158058.000000000,
+    "lastModifiedTime" : 1098186858.000000000,
     "creationTime" : null,
     "fileCRC" : 1014179593,
     "fileName" : "erm_help\\receivers\\receiver_sn_right.htm",
@@ -2918,7 +2918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042354156.000000000,
+    "lastModifiedTime" : 1042382956.000000000,
     "creationTime" : null,
     "fileCRC" : -1462199756,
     "fileName" : "erm_help\\receivers\\receiver_tm.htm",
@@ -2934,7 +2934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815148.000000000,
+    "lastModifiedTime" : 1073843948.000000000,
     "creationTime" : null,
     "fileCRC" : -867616176,
     "fileName" : "erm_help\\receivers\\receiver_tm_left.htm",
@@ -2950,7 +2950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092642080.000000000,
+    "lastModifiedTime" : 1092670880.000000000,
     "creationTime" : null,
     "fileCRC" : 651510989,
     "fileName" : "erm_help\\receivers\\receiver_tm_right.htm",
@@ -2966,7 +2966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073822924.000000000,
+    "lastModifiedTime" : 1073851724.000000000,
     "creationTime" : null,
     "fileCRC" : 1713025447,
     "fileName" : "erm_help\\receivers\\receiver_tr.htm",
@@ -2982,7 +2982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074853282.000000000,
+    "lastModifiedTime" : 1074882082.000000000,
     "creationTime" : null,
     "fileCRC" : -163525231,
     "fileName" : "erm_help\\receivers\\receiver_tr_left.htm",
@@ -2998,7 +2998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1097728268.000000000,
+    "lastModifiedTime" : 1097757068.000000000,
     "creationTime" : null,
     "fileCRC" : -351923512,
     "fileName" : "erm_help\\receivers\\receiver_tr_right.htm",
@@ -3014,7 +3014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042354196.000000000,
+    "lastModifiedTime" : 1042382996.000000000,
     "creationTime" : null,
     "fileCRC" : -492091584,
     "fileName" : "erm_help\\receivers\\receiver_un.htm",
@@ -3030,7 +3030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098411990.000000000,
+    "lastModifiedTime" : 1098440790.000000000,
     "creationTime" : null,
     "fileCRC" : 1743644556,
     "fileName" : "erm_help\\receivers\\receiver_un_left.htm",
@@ -3046,7 +3046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092640726.000000000,
+    "lastModifiedTime" : 1092669526.000000000,
     "creationTime" : null,
     "fileCRC" : -1520319085,
     "fileName" : "erm_help\\receivers\\receiver_un_right.htm",
@@ -3062,7 +3062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042354236.000000000,
+    "lastModifiedTime" : 1042383036.000000000,
     "creationTime" : null,
     "fileCRC" : -1154039757,
     "fileName" : "erm_help\\receivers\\receiver_vc.htm",
@@ -3078,7 +3078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815146.000000000,
+    "lastModifiedTime" : 1073843946.000000000,
     "creationTime" : null,
     "fileCRC" : -1799305514,
     "fileName" : "erm_help\\receivers\\receiver_vc_left.htm",
@@ -3094,7 +3094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073900832.000000000,
+    "lastModifiedTime" : 1073929632.000000000,
     "creationTime" : null,
     "fileCRC" : 1636653284,
     "fileName" : "erm_help\\receivers\\receiver_vc_right.htm",
@@ -3110,7 +3110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042354280.000000000,
+    "lastModifiedTime" : 1042383080.000000000,
     "creationTime" : null,
     "fileCRC" : 1037280758,
     "fileName" : "erm_help\\receivers\\receiver_vr.htm",
@@ -3126,7 +3126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092240228.000000000,
+    "lastModifiedTime" : 1092269028.000000000,
     "creationTime" : null,
     "fileCRC" : 630847897,
     "fileName" : "erm_help\\receivers\\receiver_vr_left.htm",
@@ -3142,7 +3142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1098202038.000000000,
+    "lastModifiedTime" : 1098230838.000000000,
     "creationTime" : null,
     "fileCRC" : -1393266666,
     "fileName" : "erm_help\\receivers\\receiver_vr_right.htm",
@@ -3158,7 +3158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099656266.000000000,
+    "lastModifiedTime" : 1099685066.000000000,
     "creationTime" : null,
     "fileCRC" : 1610311895,
     "fileName" : "erm_help\\OTHER\\receivers.htm",
@@ -3174,7 +3174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1042355004.000000000,
+    "lastModifiedTime" : 1042383804.000000000,
     "creationTime" : null,
     "fileCRC" : 1939914403,
     "fileName" : "erm_help\\receivers\\receivers_ob.htm",
@@ -3190,7 +3190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815150.000000000,
+    "lastModifiedTime" : 1073843950.000000000,
     "creationTime" : null,
     "fileCRC" : 662762042,
     "fileName" : "erm_help\\receivers\\receivers_ob_left.htm",
@@ -3206,7 +3206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073901536.000000000,
+    "lastModifiedTime" : 1073930336.000000000,
     "creationTime" : null,
     "fileCRC" : -171890836,
     "fileName" : "erm_help\\receivers\\receivers_ob_right.htm",
@@ -3222,7 +3222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089526808.000000000,
+    "lastModifiedTime" : 1089555608.000000000,
     "creationTime" : null,
     "fileCRC" : 207422533,
     "fileName" : "erm_help\\receivers\\receivers_objects.htm",
@@ -3238,7 +3238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089528576.000000000,
+    "lastModifiedTime" : 1089557376.000000000,
     "creationTime" : null,
     "fileCRC" : -1383163186,
     "fileName" : "erm_help\\receivers\\receivers_objects_left.htm",
@@ -3254,7 +3254,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1092650074.000000000,
+    "lastModifiedTime" : 1092678874.000000000,
     "creationTime" : null,
     "fileCRC" : -1611174762,
     "fileName" : "erm_help\\receivers\\receivers_objects_right.htm",
@@ -3270,7 +3270,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819528.000000000,
+    "lastModifiedTime" : 1073848328.000000000,
     "creationTime" : null,
     "fileCRC" : 2036423135,
     "fileName" : "erm_help\\OTHER\\scripts.htm",
@@ -3286,7 +3286,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073815272.000000000,
+    "lastModifiedTime" : 1073844072.000000000,
     "creationTime" : null,
     "fileCRC" : -1674922858,
     "fileName" : "erm_help\\OTHER\\scripts_left.htm",
@@ -3302,7 +3302,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819528.000000000,
+    "lastModifiedTime" : 1073848328.000000000,
     "creationTime" : null,
     "fileCRC" : 1284137878,
     "fileName" : "erm_help\\OTHER\\scripts_right.htm",
@@ -3318,7 +3318,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100472016.000000000,
+    "lastModifiedTime" : 1100500816.000000000,
     "creationTime" : null,
     "fileCRC" : 823704944,
     "fileName" : "erm_help\\OTHER\\titre.htm",
@@ -3334,7 +3334,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1089344748.000000000,
+    "lastModifiedTime" : 1089373548.000000000,
     "creationTime" : null,
     "fileCRC" : -1498155935,
     "fileName" : "erm_help\\OTHER\\trigger_left.htm",
@@ -3350,7 +3350,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099654572.000000000,
+    "lastModifiedTime" : 1099683372.000000000,
     "creationTime" : null,
     "fileCRC" : -1018889802,
     "fileName" : "erm_help\\OTHER\\trigger_right.htm",
@@ -3366,7 +3366,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1074735192.000000000,
+    "lastModifiedTime" : 1074763992.000000000,
     "creationTime" : null,
     "fileCRC" : 1153928416,
     "fileName" : "erm_help\\OTHER\\triggers.htm",
@@ -3382,7 +3382,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093790048.000000000,
+    "lastModifiedTime" : 1093818848.000000000,
     "creationTime" : null,
     "fileCRC" : 345063902,
     "fileName" : "erm_help\\OTHER\\tutor.htm",
@@ -3398,7 +3398,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073803316.000000000,
+    "lastModifiedTime" : 1073832116.000000000,
     "creationTime" : null,
     "fileCRC" : -1295151918,
     "fileName" : "erm_help\\OTHER\\tutor_left.htm",
@@ -3414,7 +3414,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1093790852.000000000,
+    "lastModifiedTime" : 1093819652.000000000,
     "creationTime" : null,
     "fileCRC" : 1876368610,
     "fileName" : "erm_help\\OTHER\\tutor_right.htm",
@@ -3430,7 +3430,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1073819418.000000000,
+    "lastModifiedTime" : 1073848218.000000000,
     "creationTime" : null,
     "fileCRC" : -58219845,
     "fileName" : "erm_help\\OTHER\\tutor_right2.htm",
@@ -3446,7 +3446,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100468836.000000000,
+    "lastModifiedTime" : 1100497636.000000000,
     "creationTime" : null,
     "fileCRC" : -733938695,
     "fileName" : "erm_help\\OTHER\\variable.htm",
@@ -3462,7 +3462,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100471018.000000000,
+    "lastModifiedTime" : 1100499818.000000000,
     "creationTime" : null,
     "fileCRC" : 260694650,
     "fileName" : "erm_help\\OTHER\\variable_left.htm",
@@ -3478,7 +3478,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1100470586.000000000,
+    "lastModifiedTime" : 1100499386.000000000,
     "creationTime" : null,
     "fileCRC" : -681807338,
     "fileName" : "erm_help\\OTHER\\variable_right.htm",
@@ -3494,7 +3494,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1099364220.000000000,
+    "lastModifiedTime" : 1099393020.000000000,
     "creationTime" : null,
     "fileCRC" : -235421686,
     "fileName" : "erm_s\\erm.hlp",

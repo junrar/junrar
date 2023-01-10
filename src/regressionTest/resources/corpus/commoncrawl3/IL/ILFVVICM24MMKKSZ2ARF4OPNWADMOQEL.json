@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1247487160.000000000,
+    "lastModifiedTime" : 1247515960.000000000,
     "creationTime" : null,
     "fileCRC" : 1285809920,
     "fileName" : "Driver\\x64\\DPInst.exe",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1367201762.000000000,
+    "lastModifiedTime" : 1367230562.000000000,
     "creationTime" : null,
     "fileCRC" : -576851341,
     "fileName" : "Driver\\x64\\G3GKB.inf",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1350985390.000000000,
+    "lastModifiedTime" : 1351014190.000000000,
     "creationTime" : null,
     "fileCRC" : -1361418022,
     "fileName" : "Driver\\x64\\G3GKB.sys",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1367202150.000000000,
+    "lastModifiedTime" : 1367230950.000000000,
     "creationTime" : null,
     "fileCRC" : 2041715306,
     "fileName" : "Driver\\x64\\g3gkb64.cat",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1132271178.000000000,
+    "lastModifiedTime" : 1132299978.000000000,
     "creationTime" : null,
     "fileCRC" : -969669641,
     "fileName" : "Driver\\x86\\DPInst.exe",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1368668232.000000000,
+    "lastModifiedTime" : 1368697032.000000000,
     "creationTime" : null,
     "fileCRC" : 2087088879,
     "fileName" : "Driver\\x86\\G3GKB.inf",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1350985394.000000000,
+    "lastModifiedTime" : 1351014194.000000000,
     "creationTime" : null,
     "fileCRC" : -1334619337,
     "fileName" : "Driver\\x86\\G3GKB.sys",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1367202022.000000000,
+    "lastModifiedTime" : 1367230822.000000000,
     "creationTime" : null,
     "fileCRC" : -1213719884,
     "fileName" : "Driver\\x86\\g3gkb32.cat",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1245805136.000000000,
+    "lastModifiedTime" : 1245833936.000000000,
     "creationTime" : null,
     "fileCRC" : -1974580343,
     "fileName" : "CheckPidVid.dll",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1388639582.000000000,
+    "lastModifiedTime" : 1388668382.000000000,
     "creationTime" : null,
     "fileCRC" : 2136954419,
     "fileName" : "FWUpdate.exe",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1459922220.000000000,
+    "lastModifiedTime" : 1459951020.000000000,
     "creationTime" : null,
     "fileCRC" : 1459740478,
     "fileName" : "G3_207.bin",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1311585206.000000000,
+    "lastModifiedTime" : 1311614006.000000000,
     "creationTime" : null,
     "fileCRC" : -1974580343,
     "fileName" : "GetOSVer.dll",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1332817116.000000000,
+    "lastModifiedTime" : 1332845916.000000000,
     "creationTime" : null,
     "fileCRC" : -1405163158,
     "fileName" : "license.txt",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1400639878.815325000,
+    "lastModifiedTime" : 1400668678.815325000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Driver\\x64",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1400639878.836326200,
+    "lastModifiedTime" : 1400668678.836326200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Driver\\x86",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1400489934.509478400,
+    "lastModifiedTime" : 1400518734.509478400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Driver",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1477104236.673874200,
+    "lastModifiedTime" : 1477133036.673874200,
     "creationTime" : null,
     "fileCRC" : -187233881,
     "fileName" : "说明.txt",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1477105869.964293100,
+    "lastModifiedTime" : 1477134669.964293100,
     "creationTime" : null,
     "fileCRC" : 2040086961,
     "fileName" : "G3G5G7固件更新方法2016.pdf",

@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.723516200,
+    "lastModifiedTime" : 1370813429.723516200,
     "creationTime" : null,
     "fileCRC" : -1074181549,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\App.xaml",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784630.050580600,
+    "lastModifiedTime" : 1370813430.050580600,
     "creationTime" : null,
     "fileCRC" : -1781843086,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\App.xaml.cs",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.712518600,
+    "lastModifiedTime" : 1370813429.712518600,
     "creationTime" : null,
     "fileCRC" : 384036502,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\AlignmentGrid.png",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.713516200,
+    "lastModifiedTime" : 1370813429.713516200,
     "creationTime" : null,
     "fileCRC" : -1323550008,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\ApplicationIcon.png",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.704518900,
+    "lastModifiedTime" : 1370813429.704518900,
     "creationTime" : null,
     "fileCRC" : 203346831,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\Tiles\\FlipCycleTileLarge.png",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.707517800,
+    "lastModifiedTime" : 1370813429.707517800,
     "creationTime" : null,
     "fileCRC" : 1650737439,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\Tiles\\FlipCycleTileMedium.png",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.708519000,
+    "lastModifiedTime" : 1370813429.708519000,
     "creationTime" : null,
     "fileCRC" : 735036581,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\Tiles\\FlipCycleTileSmall.png",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.709519200,
+    "lastModifiedTime" : 1370813429.709519200,
     "creationTime" : null,
     "fileCRC" : -987489805,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\Tiles\\IconicTileMediumLarge.png",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.711516400,
+    "lastModifiedTime" : 1370813429.711516400,
     "creationTime" : null,
     "fileCRC" : -1591362276,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\Tiles\\IconicTileSmall.png",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370787229.994683700,
+    "lastModifiedTime" : 1370816029.994683700,
     "creationTime" : null,
     "fileCRC" : -344988817,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\AppManifest.xaml",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.713516200,
+    "lastModifiedTime" : 1370813429.713516200,
     "creationTime" : null,
     "fileCRC" : -1323550008,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets\\ApplicationIcon.png",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.704518900,
+    "lastModifiedTime" : 1370813429.704518900,
     "creationTime" : null,
     "fileCRC" : 203346831,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets\\Tiles\\FlipCycleTileLarge.png",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.707517800,
+    "lastModifiedTime" : 1370813429.707517800,
     "creationTime" : null,
     "fileCRC" : 1650737439,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets\\Tiles\\FlipCycleTileMedium.png",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.708519000,
+    "lastModifiedTime" : 1370813429.708519000,
     "creationTime" : null,
     "fileCRC" : 735036581,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets\\Tiles\\FlipCycleTileSmall.png",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.709519200,
+    "lastModifiedTime" : 1370813429.709519200,
     "creationTime" : null,
     "fileCRC" : -987489805,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets\\Tiles\\IconicTileMediumLarge.png",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.711516400,
+    "lastModifiedTime" : 1370813429.711516400,
     "creationTime" : null,
     "fileCRC" : -1591362276,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets\\Tiles\\IconicTileSmall.png",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370787230.015688500,
+    "lastModifiedTime" : 1370816030.015688500,
     "creationTime" : null,
     "fileCRC" : 603653179,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\MDIL\\WMAppManifest.xml",
@@ -278,7 +278,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275371.849917600,
+    "lastModifiedTime" : 1373304171.849917600,
     "creationTime" : null,
     "fileCRC" : 1775680547,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\MDIL\\Wp8_yeni_launcher_ve_chooserlar.dll",
@@ -294,7 +294,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370787230.015688500,
+    "lastModifiedTime" : 1370816030.015688500,
     "creationTime" : null,
     "fileCRC" : 603653179,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Properties\\WMAppManifest.xml",
@@ -310,7 +310,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289423.771466500,
+    "lastModifiedTime" : 1373318223.771466500,
     "creationTime" : null,
     "fileCRC" : 537021235,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Wp8_yeni_launcher_ve_chooserlar.dll",
@@ -326,7 +326,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289423.744463300,
+    "lastModifiedTime" : 1373318223.744463300,
     "creationTime" : null,
     "fileCRC" : 495554352,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Wp8_yeni_launcher_ve_chooserlar.pdb",
@@ -342,7 +342,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289424.611658500,
+    "lastModifiedTime" : 1373318224.611658500,
     "creationTime" : null,
     "fileCRC" : -2138498273,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Wp8_yeni_launcher_ve_chooserlar_Debug_AnyCPU.xap",
@@ -358,7 +358,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784630.057579100,
+    "lastModifiedTime" : 1370813430.057579100,
     "creationTime" : null,
     "fileCRC" : -517610495,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\LocalizedStrings.cs",
@@ -374,7 +374,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372931646.728915900,
+    "lastModifiedTime" : 1372960446.728915900,
     "creationTime" : null,
     "fileCRC" : 1173504305,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\MainPage.xaml",
@@ -390,7 +390,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289420.346863400,
+    "lastModifiedTime" : 1373318220.346863400,
     "creationTime" : null,
     "fileCRC" : 1883951715,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\MainPage.xaml.cs",
@@ -406,7 +406,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.723516200,
+    "lastModifiedTime" : 1370813429.723516200,
     "creationTime" : null,
     "fileCRC" : -1938263147,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\App.g.cs",
@@ -422,7 +422,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.723516200,
+    "lastModifiedTime" : 1370813429.723516200,
     "creationTime" : null,
     "fileCRC" : -1108635289,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\App.g.i.cs",
@@ -438,7 +438,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784633.959274500,
+    "lastModifiedTime" : 1370813433.959274500,
     "creationTime" : null,
     "fileCRC" : 915895222,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\DesignTimeResolveAssemblyReferences.cache",
@@ -454,7 +454,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275004.663309700,
+    "lastModifiedTime" : 1373303804.663309700,
     "creationTime" : null,
     "fileCRC" : -720533332,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\DesignTimeResolveAssemblyReferencesInput.cache",
@@ -470,7 +470,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372931646.728915900,
+    "lastModifiedTime" : 1372960446.728915900,
     "creationTime" : null,
     "fileCRC" : 2057997328,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\MainPage.g.cs",
@@ -486,7 +486,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372931645.479432500,
+    "lastModifiedTime" : 1372960445.479432500,
     "creationTime" : null,
     "fileCRC" : 207870924,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\MainPage.g.i.cs",
@@ -502,7 +502,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275375.667823500,
+    "lastModifiedTime" : 1373304175.667823500,
     "creationTime" : null,
     "fileCRC" : 1398963226,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\MDIL\\MDILFileList.xml",
@@ -518,7 +518,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275375.671824100,
+    "lastModifiedTime" : 1373304175.671824100,
     "creationTime" : null,
     "fileCRC" : 1945750173,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\MDIL\\MDILXapCompileLog.txt",
@@ -534,7 +534,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275375.659826800,
+    "lastModifiedTime" : 1373304175.659826800,
     "creationTime" : null,
     "fileCRC" : 164663898,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\MDIL\\Wp8_yeni_launcher_ve_chooserlar.dll",
@@ -550,7 +550,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275372.413389600,
+    "lastModifiedTime" : 1373304172.413389600,
     "creationTime" : null,
     "fileCRC" : 536838857,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\MDILCacheFile.xml",
@@ -566,7 +566,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784630.707691300,
+    "lastModifiedTime" : 1370813430.707691300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs",
@@ -582,7 +582,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784630.707691300,
+    "lastModifiedTime" : 1370813430.707691300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs",
@@ -598,7 +598,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784630.706672100,
+    "lastModifiedTime" : 1370813430.706672100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs",
@@ -614,7 +614,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372932833.369777000,
+    "lastModifiedTime" : 1372961633.369777000,
     "creationTime" : null,
     "fileCRC" : 1230489245,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\Wp8_yeni_launcher_ve_chooserlar.csproj.FileListAbsolute.txt",
@@ -630,7 +630,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370787229.284593500,
+    "lastModifiedTime" : 1370816029.284593500,
     "creationTime" : null,
     "fileCRC" : -1416848126,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\Wp8_yeni_launcher_ve_chooserlar.csproj.GenerateResource.Cache",
@@ -646,7 +646,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289423.771466500,
+    "lastModifiedTime" : 1373318223.771466500,
     "creationTime" : null,
     "fileCRC" : 537021235,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\Wp8_yeni_launcher_ve_chooserlar.dll",
@@ -662,7 +662,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275371.540875900,
+    "lastModifiedTime" : 1373304171.540875900,
     "creationTime" : null,
     "fileCRC" : -1582586688,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\Wp8_yeni_launcher_ve_chooserlar.g.resources",
@@ -678,7 +678,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289423.744463300,
+    "lastModifiedTime" : 1373318223.744463300,
     "creationTime" : null,
     "fileCRC" : 495554352,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\Wp8_yeni_launcher_ve_chooserlar.pdb",
@@ -694,7 +694,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275371.555878800,
+    "lastModifiedTime" : 1373304171.555878800,
     "creationTime" : null,
     "fileCRC" : -273950731,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\Wp8_yeni_launcher_ve_chooserlar.Resources.AppResources.resources",
@@ -710,7 +710,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289424.616655200,
+    "lastModifiedTime" : 1373318224.616655200,
     "creationTime" : null,
     "fileCRC" : 1104507897,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\XapCacheFile.xml",
@@ -726,7 +726,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.715516000,
+    "lastModifiedTime" : 1370813429.715516000,
     "creationTime" : null,
     "fileCRC" : -225639792,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Properties\\AppManifest.xml",
@@ -742,7 +742,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.898539600,
+    "lastModifiedTime" : 1370813429.898539600,
     "creationTime" : null,
     "fileCRC" : -1676117512,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Properties\\AssemblyInfo.cs",
@@ -758,7 +758,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.717519900,
+    "lastModifiedTime" : 1370813429.717519900,
     "creationTime" : null,
     "fileCRC" : -1037901974,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Properties\\WMAppManifest.xml",
@@ -774,7 +774,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.917541500,
+    "lastModifiedTime" : 1370813429.917541500,
     "creationTime" : null,
     "fileCRC" : -2063780996,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Resources\\AppResources.Designer.cs",
@@ -790,7 +790,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.721541600,
+    "lastModifiedTime" : 1370813429.721541600,
     "creationTime" : null,
     "fileCRC" : 911397702,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Resources\\AppResources.resx",
@@ -806,7 +806,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372849942.536232400,
+    "lastModifiedTime" : 1372878742.536232400,
     "creationTime" : null,
     "fileCRC" : -575828380,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\ringtone\\Super_Mario_Ringtone.mp3",
@@ -822,7 +822,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275371.316867600,
+    "lastModifiedTime" : 1373304171.316867600,
     "creationTime" : null,
     "fileCRC" : 694464162,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Wp8_yeni_launcher_ve_chooserlar.csproj",
@@ -838,7 +838,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275371.319850600,
+    "lastModifiedTime" : 1373304171.319850600,
     "creationTime" : null,
     "fileCRC" : 2121798737,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Wp8_yeni_launcher_ve_chooserlar.csproj.user",
@@ -854,7 +854,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784631.969021000,
+    "lastModifiedTime" : 1370813431.969021000,
     "creationTime" : null,
     "fileCRC" : -1545966441,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Wp8_yeni_launcher_ve_chooserlar.sln",
@@ -870,7 +870,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372874928.936000000,
+    "lastModifiedTime" : 1372903728.936000000,
     "creationTime" : null,
     "fileCRC" : -384873783,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Wp8_yeni_launcher_ve_chooserlar.v11.suo",
@@ -886,7 +886,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370787229.574629600,
+    "lastModifiedTime" : 1370816029.574629600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets\\Tiles",
@@ -902,7 +902,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.251279900,
+    "lastModifiedTime" : 1373221813.251279900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\ARM\\Debug",
@@ -918,7 +918,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.310247600,
+    "lastModifiedTime" : 1373221813.310247600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\ARM\\Release",
@@ -934,7 +934,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370787229.570650500,
+    "lastModifiedTime" : 1370816029.570650500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Assets",
@@ -950,7 +950,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372758048.994757100,
+    "lastModifiedTime" : 1372786848.994757100,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\MDIL",
@@ -966,7 +966,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370787229.998684300,
+    "lastModifiedTime" : 1370816029.998684300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug\\Properties",
@@ -982,7 +982,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.221237300,
+    "lastModifiedTime" : 1373221813.221237300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\x86\\Debug",
@@ -998,7 +998,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.290245000,
+    "lastModifiedTime" : 1373221813.290245000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\x86\\Release",
@@ -1014,7 +1014,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372758049.429626600,
+    "lastModifiedTime" : 1372786849.429626600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\MDIL",
@@ -1030,7 +1030,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784630.198578300,
+    "lastModifiedTime" : 1370813430.198578300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug\\TempPE",
@@ -1046,7 +1046,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.710515700,
+    "lastModifiedTime" : 1370813429.710515700,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets\\Tiles",
@@ -1062,7 +1062,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.310247600,
+    "lastModifiedTime" : 1373221813.310247600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\ARM",
@@ -1078,7 +1078,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372758048.991766400,
+    "lastModifiedTime" : 1372786848.991766400,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Debug",
@@ -1094,7 +1094,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.271243000,
+    "lastModifiedTime" : 1373221813.271243000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\Release",
@@ -1110,7 +1110,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.290245000,
+    "lastModifiedTime" : 1373221813.290245000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin\\x86",
@@ -1126,7 +1126,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373289423.771466500,
+    "lastModifiedTime" : 1373318223.771466500,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj\\Debug",
@@ -1142,7 +1142,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.712518600,
+    "lastModifiedTime" : 1370813429.712518600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Assets",
@@ -1158,7 +1158,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373193013.271243000,
+    "lastModifiedTime" : 1373221813.271243000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Bin",
@@ -1174,7 +1174,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.760552200,
+    "lastModifiedTime" : 1370813429.760552200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\obj",
@@ -1190,7 +1190,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.717519900,
+    "lastModifiedTime" : 1370813429.717519900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Properties",
@@ -1206,7 +1206,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1370784629.721541600,
+    "lastModifiedTime" : 1370813429.721541600,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\Resources",
@@ -1222,7 +1222,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1372849942.533232900,
+    "lastModifiedTime" : 1372878742.533232900,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar\\ringtone",
@@ -1238,7 +1238,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1373275004.372268300,
+    "lastModifiedTime" : 1373303804.372268300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "Wp8_yeni_launcher_ve_chooserlar",

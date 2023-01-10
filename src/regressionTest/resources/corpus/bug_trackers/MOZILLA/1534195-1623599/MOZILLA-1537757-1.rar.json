@@ -6,7 +6,7 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.748312800,
+    "lastModifiedTime" : 1527685455.748312800,
     "creationTime" : null,
     "fileCRC" : -1589769380,
     "fileName" : "app\\.gitignore",
@@ -22,7 +22,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.745311400,
+    "lastModifiedTime" : 1527685455.745311400,
     "creationTime" : null,
     "fileCRC" : -902307358,
     "fileName" : "app\\package.json",
@@ -38,7 +38,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.751315700,
+    "lastModifiedTime" : 1527685455.751315700,
     "creationTime" : null,
     "fileCRC" : 1804374601,
     "fileName" : "app\\public\\favicon.ico",
@@ -54,7 +54,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.752316100,
+    "lastModifiedTime" : 1527685455.752316100,
     "creationTime" : null,
     "fileCRC" : -1171088564,
     "fileName" : "app\\public\\index.html",
@@ -70,7 +70,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.752316100,
+    "lastModifiedTime" : 1527685455.752316100,
     "creationTime" : null,
     "fileCRC" : 863268065,
     "fileName" : "app\\public\\manifest.json",
@@ -86,7 +86,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.753316400,
+    "lastModifiedTime" : 1527685455.753316400,
     "creationTime" : null,
     "fileCRC" : -1138092591,
     "fileName" : "app\\README.md",
@@ -102,7 +102,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.755317800,
+    "lastModifiedTime" : 1527685455.755317800,
     "creationTime" : null,
     "fileCRC" : 648918030,
     "fileName" : "app\\src\\App.css",
@@ -118,7 +118,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1552890685.830582600,
+    "lastModifiedTime" : 1552919485.830582600,
     "creationTime" : null,
     "fileCRC" : 1075759326,
     "fileName" : "app\\src\\App.js",
@@ -134,7 +134,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.756317500,
+    "lastModifiedTime" : 1527685455.756317500,
     "creationTime" : null,
     "fileCRC" : -1200725367,
     "fileName" : "app\\src\\App.test.js",
@@ -150,7 +150,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.758319800,
+    "lastModifiedTime" : 1527685455.758319800,
     "creationTime" : null,
     "fileCRC" : -192056866,
     "fileName" : "app\\src\\index.css",
@@ -166,7 +166,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.758319800,
+    "lastModifiedTime" : 1527685455.758319800,
     "creationTime" : null,
     "fileCRC" : 538028116,
     "fileName" : "app\\src\\index.js",
@@ -182,7 +182,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.761321800,
+    "lastModifiedTime" : 1527685455.761321800,
     "creationTime" : null,
     "fileCRC" : -506534068,
     "fileName" : "app\\src\\logo.svg",
@@ -198,7 +198,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656655.762322100,
+    "lastModifiedTime" : 1527685455.762322100,
     "creationTime" : null,
     "fileCRC" : -1237731108,
     "fileName" : "app\\src\\registerServiceWorker.js",
@@ -214,7 +214,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1527656654.262320800,
+    "lastModifiedTime" : 1527685454.262320800,
     "creationTime" : null,
     "fileCRC" : 426519902,
     "fileName" : "app\\yarn.lock",
@@ -230,7 +230,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1553150578.396562000,
+    "lastModifiedTime" : 1553179378.396562000,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "app\\public",
@@ -246,7 +246,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1553150578.521485200,
+    "lastModifiedTime" : 1553179378.521485200,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "app\\src",
@@ -262,7 +262,7 @@
   }, {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : 1553150855.026596300,
+    "lastModifiedTime" : 1553179655.026596300,
     "creationTime" : null,
     "fileCRC" : 0,
     "fileName" : "app",
