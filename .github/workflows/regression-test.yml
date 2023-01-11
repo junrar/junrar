@@ -53,8 +53,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
     needs: [check]
+    if: needs.check.outputs.ref && needs.check.outputs.repo
     steps:
       - uses: actions/checkout@v3
         with:
