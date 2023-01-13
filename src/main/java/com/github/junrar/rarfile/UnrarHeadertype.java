@@ -68,18 +68,6 @@ public enum UnrarHeadertype {
         if (UnrarHeadertype.ProtectHeader.equals(headerType)) {
             return UnrarHeadertype.ProtectHeader;
         }
-        if (UnrarHeadertype.MarkHeader.equals(headerType)) {
-            return UnrarHeadertype.MarkHeader;
-        }
-        if (UnrarHeadertype.MainHeader.equals(headerType)) {
-            return UnrarHeadertype.MainHeader;
-        }
-        if (UnrarHeadertype.FileHeader.equals(headerType)) {
-            return UnrarHeadertype.FileHeader;
-        }
-        if (UnrarHeadertype.EndArcHeader.equals(headerType)) {
-            return UnrarHeadertype.EndArcHeader;
-        }
         if (UnrarHeadertype.CommHeader.equals(headerType)) {
             return UnrarHeadertype.CommHeader;
         }
@@ -89,7 +77,7 @@ public enum UnrarHeadertype {
         return null;
     }
 
-    private byte headerByte;
+    private final byte headerByte;
 
     UnrarHeadertype(byte headerByte) {
         this.headerByte = headerByte;
