@@ -1,0 +1,26 @@
+# This builds a SLSA provenance statement for the artifacts in 'artifact-list'.
+---
+name: SLSA Provenance
+on:
+  - workflow_dispatch
+
+permissions: read-all
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  ISSUE_REPOSITORY: ${{ github.repository }}
+jobs:
+  usetrw:
+    permissions:
+      contents: write
+      id-token: write
+      actions: read
+      packages: write
+    uses: AdamKorcz/java-slsa-generator/.github/workflows/gradle-trw.yml@main
+    with:
+      rekor-log-public: true
+      jdk-version: 8
+      artifact-list: |
+        ./build/libs/junrar-GRADLE_VERSION.jar,
+        ./build/libs/junrar-GRADLE_VERSION-sources.jar,
+        ./build/libs/junrar-GRADLE_VERSION-javadoc.jar
