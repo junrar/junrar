@@ -20,30 +20,27 @@ Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
 ## Installation
 
-<table>
-<tr>
-    <td>Gradle</td>
-    <td>
-        <pre>implementation "com.github.junrar:junrar:{version}"</pre>
-    </td>
-</tr>
-<tr>
-    <td>Gradle (Kotlin DSL)</td>
-    <td>
-        <pre>implementation("com.github.junrar:junrar:{version}")</pre>
-        </td>
-</tr>
-<tr>
-    <td>Maven</td>
-    <td>
-        <pre>&lt;dependency&gt;
-    &lt;groupId&gt;com.github.junrar&lt;/groupId&gt;
-    &lt;artifactId&gt;junrar&lt;/artifactId&gt;
-    &lt;version&gt;{version}&lt;/version&gt;
-&lt;/dependency&gt;</pre>
-    </td>
-</tr>
-</table>
+### Gradle
+
+```groovy
+implementation "com.github.junrar:junrar:{version}"
+```
+
+### Gradle (Kotlin DSL)
+
+```kotlin
+implementation("com.github.junrar:junrar:{version}")
+```
+
+### Maven
+
+```xml
+<dependency>
+  <groupId>com.github.junrar</groupId>
+  <artifactId>junrar</artifactId>
+  <version>{version}</version>
+</dependency>
+```
 
 where `{version}` corresponds to version as below:
 
