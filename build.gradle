@@ -17,7 +17,7 @@ repositories {
 dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.36'
 
-    testRuntimeOnly 'ch.qos.logback:logback-classic:1.2.11'
+    testRuntimeOnly 'ch.qos.logback:logback-classic:1.4.7'
     testImplementation 'commons-io:commons-io:2.11.0'
     testImplementation 'org.mockito:mockito-core:4.8.1'
     testImplementation 'org.assertj:assertj-core:3.24.2'
