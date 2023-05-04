@@ -11,6 +11,16 @@ on:
         description: 'Perform release'
         default: false
         type: boolean
+      bump:
+        description: 'Bump type'
+        required: false
+        default: 'next'
+        type: choice
+        options:
+          - 'next'
+          - 'major'
+          - 'minor'
+          - 'patch'
 
 jobs:
   test:
@@ -30,6 +40,10 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: build
+          gradle-home-cache-includes: |
+            caches
+            notifications
+            jdks
       - name: Upload Unit Test Results
         if: always()
         uses: actions/upload-artifact@v3
@@ -43,30 +57,76 @@ jobs:
       - uses: codecov/codecov-action@v3
         if: matrix.os == 'ubuntu-latest'
 
-  release:
-    name: semantic release
-    runs-on: ubuntu-latest
-    needs: test
-    if: github.repository_owner == 'junrar' && inputs.perform_release && github.ref == 'refs/heads/master'
+  version:
+    runs-on: macos-latest
+    if: github.repository_owner == 'junrar' && github.ref == 'refs/heads/master'
+    outputs:
+      version_current: ${{ steps.versions.outputs.version_current }}
+      version_next: ${{ steps.versions.outputs.version_next }}
+      should_release: ${{ steps.versions.outputs.should_release }}
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
         with:
-          node-version: '16'
-          cache: 'npm'
+          fetch-depth: 0
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Install svu
+        run: brew install caarlos0/tap/svu
+      - name: Compute next version for release
+        if: inputs.perform_release
+        run: |
+          echo "VERSION_NEXT=`svu --pattern="v[0-9]*" --strip-prefix ${{ inputs.bump }}`" | tee -a $GITHUB_ENV
+          echo "VERSION_NEXT_SUFFIX=`svu --pattern="v[0-9]*" --strip-prefix ${{ inputs.bump }}`" | tee -a $GITHUB_ENV
+      - name: Compute next version for snapshot
+        if: inputs.perform_release != true
+        run: |
+          echo "VERSION_NEXT=`svu --pattern="v[0-9]*" --strip-prefix next`" | tee -a $GITHUB_ENV
+          echo "VERSION_NEXT_SUFFIX=`svu --pattern="v[0-9]*" --strip-prefix --pre-release SNAPSHOT next`" | tee -a $GITHUB_ENV
+      - name: Set Versions
+        id: versions
+        run: |
+          echo "version_current=`svu --pattern="v[0-9]*" --strip-prefix current`" >> $GITHUB_OUTPUT
+          echo "version_next=${{ env.VERSION_NEXT_SUFFIX }}" >> $GITHUB_OUTPUT
+          [[ `svu --pattern="v[0-9]*" --strip-prefix current` != ${{ env.VERSION_NEXT }} ]] && echo "should_release=true" >> $GITHUB_OUTPUT || echo
+
+  release:
+    needs: [ version, test ]
+    runs-on: ubuntu-latest
+    if: needs.version.outputs.should_release
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Display versions
+        run: |
+          echo "Current version: ${{ needs.version.outputs.version_current }}, should release: ${{ needs.version.outputs.version_next }}"
+      - name: Update version in gradle.properties
+        run: echo "version=${{ needs.version.outputs.version_next }}" > gradle.properties
       - uses: actions/setup-java@v3
         with:
           java-version: '8'
           java-package: 'jdk'
           distribution: 'temurin'
-          cache: 'gradle'
-      - name: Install dependencies
-        run: npm ci --omit=dev --ignore-scripts
-      - name: Release
+      - name: Nexus publish
+        uses: gradle/gradle-build-action@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.GPG_KEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.GPG_PASSPHRASE }}
           ORG_GRADLE_PROJECT_sonatypeUsername: ${{ secrets.MAVENCENTRAL_USER }}
           ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.MAVENCENTRAL_PASSWORD }}
-        run: npx semantic-release
+        with:
+          arguments: publishToSonatype closeAndReleaseSonatypeStagingRepository
+      - name: Release commit and push
+        uses: EndBug/add-and-commit@v9
+        if: inputs.perform_release
+        with:
+          message: 'chore(release): ${{ needs.version.outputs.version_next }} [skip ci]'
+          default_author: github_actions
+      - name: JReleaser full release
+        uses: gradle/gradle-build-action@v2
+        if: inputs.perform_release
+        env:
+          JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          arguments: jreleaserFullRelease
