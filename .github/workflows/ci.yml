@@ -117,12 +117,6 @@ jobs:
           ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.MAVENCENTRAL_PASSWORD }}
         with:
           arguments: publishToSonatype closeAndReleaseSonatypeStagingRepository
-      - name: Release commit and push
-        uses: EndBug/add-and-commit@v9
-        if: inputs.perform_release
-        with:
-          message: 'chore(release): ${{ needs.version.outputs.version_next }} [skip ci]'
-          default_author: github_actions
       - name: JReleaser full release
         uses: gradle/gradle-build-action@v2
         if: inputs.perform_release
@@ -130,3 +124,18 @@ jobs:
           JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           arguments: jreleaserFullRelease
+      - name: JReleaser release output
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: jreleaser-release
+          path: |
+            komga/build/jreleaser/trace.log
+            komga/build/jreleaser/output.properties
+      - name: Release commit and push
+        uses: EndBug/add-and-commit@v9
+        if: inputs.perform_release
+        with:
+          message: 'chore(release): ${{ needs.version.outputs.version_next }} [skip ci]'
+          default_author: github_actions
+
