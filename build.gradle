@@ -92,7 +92,7 @@ jreleaser {
     }
     files {
         artifact {
-            path = 'build/{{projectName}}-{{projectVersion}}.jar'
+            path = 'build/libs/{{projectName}}-{{projectVersion}}.jar'
         }
     }
 }
