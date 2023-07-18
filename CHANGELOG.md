@@ -1,3 +1,68 @@
+# [7.5.5](https://github.com/junrar/junrar/compare/v7.5.4...v7.5.5) (2023-07-18)
+## 🐛 Fixes
+
+- use correct filename in exception message ([7bfed98](https://github.com/junrar/junrar/commits/7bfed98))
+- fix parsing VMSF_UPCASE in VMStandardFilters values from raw value to enum ([bc9889b](https://github.com/junrar/junrar/commits/bc9889b))
+- better filename validation ([a5186a8](https://github.com/junrar/junrar/commits/a5186a8)), closes [#108](https://github.com/junrar/junrar/issues/108)
+
+## 🛠  Build
+**dependabot**
+- allow dependabot PRs for Gradle ([5372493](https://github.com/junrar/junrar/commits/5372493))
+- remove unused npm ([27c0d7f](https://github.com/junrar/junrar/commits/27c0d7f))
+
+**deps**
+- bump org.jreleaser from 1.6.0 to 1.7.0 ([0cdcffd](https://github.com/junrar/junrar/commits/0cdcffd))
+- bump ch.qos.logback:logback-classic from 1.2.11 to 1.2.12 ([ad64851](https://github.com/junrar/junrar/commits/ad64851))
+- bump org.mockito:mockito-core from 5.3.1 to 5.4.0 ([93a36c5](https://github.com/junrar/junrar/commits/93a36c5))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([adaf41f](https://github.com/junrar/junrar/commits/adaf41f))
+- bump com.fasterxml.jackson.core:jackson-databind ([b2a1637](https://github.com/junrar/junrar/commits/b2a1637))
+- bump commons-io:commons-io from 2.12.0 to 2.13.0 ([a61e662](https://github.com/junrar/junrar/commits/a61e662))
+- bump com.github.ben-manes.versions from 0.46.0 to 0.47.0 ([559093e](https://github.com/junrar/junrar/commits/559093e))
+- bump com.fasterxml.jackson.core:jackson-databind ([7967ecc](https://github.com/junrar/junrar/commits/7967ecc))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([892be80](https://github.com/junrar/junrar/commits/892be80))
+- bump commons-io:commons-io from 2.11.0 to 2.12.0 ([920b524](https://github.com/junrar/junrar/commits/920b524))
+- bump io.github.gradle-nexus.publish-plugin ([e7a5c8a](https://github.com/junrar/junrar/commits/e7a5c8a))
+- bump org.junit-pioneer:junit-pioneer from 1.7.1 to 1.9.1 ([4a845dd](https://github.com/junrar/junrar/commits/4a845dd))
+- bump org.mockito:mockito-core from 4.8.1 to 5.3.1 ([4442266](https://github.com/junrar/junrar/commits/4442266))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([f5a40c7](https://github.com/junrar/junrar/commits/f5a40c7))
+- bump com.github.ben-manes.versions from 0.43.0 to 0.46.0 ([f02470f](https://github.com/junrar/junrar/commits/f02470f))
+- bump dev.jacomet.logging-capabilities from 0.10.0 to 0.11.1 ([20c58fd](https://github.com/junrar/junrar/commits/20c58fd))
+- bump com.fasterxml.jackson.core:jackson-databind ([42af8fd](https://github.com/junrar/junrar/commits/42af8fd))
+- bump ch.qos.logback:logback-classic from 1.2.11 to 1.4.7 ([de9b981](https://github.com/junrar/junrar/commits/de9b981))
+- bump org.assertj:assertj-core from 3.23.1 to 3.24.2 ([28c66a5](https://github.com/junrar/junrar/commits/28c66a5))
+- bump peter-evans/create-or-update-comment from 2 to 3 ([602a9f0](https://github.com/junrar/junrar/commits/602a9f0))
+
+**regression**
+- comment formatting ([1852b23](https://github.com/junrar/junrar/commits/1852b23))
+- remove multi-os as it's not supported for gdrive download ([9cb62b1](https://github.com/junrar/junrar/commits/9cb62b1))
+- regenerate corpus data in UTC timezone ([0ab266c](https://github.com/junrar/junrar/commits/0ab266c))
+- force UTC timezone ([024986e](https://github.com/junrar/junrar/commits/024986e))
+
+**unscoped**
+- remove codeql ([95fa9ed](https://github.com/junrar/junrar/commits/95fa9ed))
+- don't verify gradle wrapper twice for dependabot ([48721d5](https://github.com/junrar/junrar/commits/48721d5))
+- remove semantic-release and husky ([7d1338c](https://github.com/junrar/junrar/commits/7d1338c))
+- use svu and JReleaser for releases ([d827cec](https://github.com/junrar/junrar/commits/d827cec))
+- add JReleaser ([9c9b4d6](https://github.com/junrar/junrar/commits/9c9b4d6))
+- regression-test fixes and multi-os run ([878119b](https://github.com/junrar/junrar/commits/878119b))
+- run regression test on PR comment or workflow_dispatch ([313e2a1](https://github.com/junrar/junrar/commits/313e2a1))
+- only run check tag for regressionTest ([ae663be](https://github.com/junrar/junrar/commits/ae663be))
+- add parameter to trigger release ([24ecc0a](https://github.com/junrar/junrar/commits/24ecc0a))
+- disable stalebot ([96ac91d](https://github.com/junrar/junrar/commits/96ac91d))
+- only run release job on master ([7bd6803](https://github.com/junrar/junrar/commits/7bd6803))
+- remove matrix.java as we use Gradle toolchains ([ad96bf4](https://github.com/junrar/junrar/commits/ad96bf4))
+- upload unit test results ([81c84d7](https://github.com/junrar/junrar/commits/81c84d7))
+- add test for gh-108 ([092db9e](https://github.com/junrar/junrar/commits/092db9e))
+- run tests on windows and macos ([fe0f765](https://github.com/junrar/junrar/commits/fe0f765))
+
+## 📝 Documentation
+
+- remove outdated documentation ([3e8674a](https://github.com/junrar/junrar/commits/3e8674a))
+- document regression testing ([6e8e1af](https://github.com/junrar/junrar/commits/6e8e1af))
+- reformat installation section for README ([e414d9f](https://github.com/junrar/junrar/commits/e414d9f))
+- add maven snapshot badge in README ([b82b96a](https://github.com/junrar/junrar/commits/b82b96a))
+- amend historical changelog to fit JReleaser format ([4f44af3](https://github.com/junrar/junrar/commits/4f44af3))
+
 # [7.5.4](https://github.com/junrar/junrar/compare/v7.5.3...v7.5.4) (2022-11-04)
 
 
