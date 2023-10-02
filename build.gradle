@@ -21,7 +21,7 @@ dependencies {
     }
 
     testRuntimeOnly 'ch.qos.logback:logback-classic:1.2.12'
-    testImplementation 'commons-io:commons-io:2.13.0'
+    testImplementation 'commons-io:commons-io:2.14.0'
     testImplementation 'org.mockito:mockito-core:5.5.0'
     testImplementation 'org.assertj:assertj-core:3.24.2'
     testImplementation 'com.tngtech.archunit:archunit-junit5:0.23.1' // 1.0.0 brings SLF4J 2
