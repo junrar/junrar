@@ -5,6 +5,7 @@ import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.output.NullOutputStream;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -16,7 +17,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.stream.Stream;
 
-import static org.apache.commons.io.output.NullOutputStream.NULL_OUTPUT_STREAM;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 
@@ -69,7 +69,7 @@ public class AbnormalFilesTest {
                 if (fileHeader == null) {
                     break;
                 }
-                archive.extractFile(fileHeader, NULL_OUTPUT_STREAM);
+                archive.extractFile(fileHeader, NullOutputStream.INSTANCE);
             }
         });
 
@@ -88,7 +88,7 @@ public class AbnormalFilesTest {
                     if (fileHeader == null) {
                         break;
                     }
-                    archive.extractFile(fileHeader, NULL_OUTPUT_STREAM);
+                    archive.extractFile(fileHeader, NullOutputStream.INSTANCE);
                 }
             });
 
