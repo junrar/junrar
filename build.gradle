@@ -154,7 +154,7 @@ nexusPublishing {
     }
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
@@ -172,7 +172,7 @@ testing {
         regressionTest(JvmTestSuite) {
             useJUnitJupiter('5.9.1')
             dependencies {
-                implementation project
+                implementation project(':')
                 implementation 'org.assertj:assertj-core:3.24.2'
                 implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
                 implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2'
@@ -180,12 +180,12 @@ testing {
             }
 
             targets {
-                all {
+                configureEach {
+                    java.toolchain {
+                        languageVersion = JavaLanguageVersion.of(17)
+                    }
                     testTask.configure {
-                        java.toolchain {
-                            languageVersion = JavaLanguageVersion.of(17)
-                        }
-                        systemProperty 'regressionTest.resourcesDir', sourceSets.getByName('regressionTest').resources.getSrcDirs().first()
+                        systemProperty 'regressionTest.resourcesDir', sourceSets.named('regressionTest').get().resources.getSrcDirs().first()
                         useJUnitPlatform {
                             includeTags 'check' // in order to run `gradle regressionTest`
                         }
