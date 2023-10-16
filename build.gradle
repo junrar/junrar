@@ -175,7 +175,7 @@ testing {
                 implementation project(':')
                 implementation 'org.assertj:assertj-core:3.24.2'
                 implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
-                implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2'
+                implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.3'
                 implementation 'org.junit-pioneer:junit-pioneer:1.9.1'
             }
 
