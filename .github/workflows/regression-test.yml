@@ -75,7 +75,7 @@ jobs:
           arguments: regressionTest
       - name: Upload Test Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: regression-test-results
           path: build/test-results/
