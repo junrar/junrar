@@ -46,7 +46,7 @@ jobs:
             jdks
       - name: Upload Unit Test Results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-results-jdk-${{ matrix.os }}
           path: build/test-results/
@@ -126,7 +126,7 @@ jobs:
           arguments: jreleaserFullRelease
       - name: JReleaser release output
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: jreleaser-release
           path: |
