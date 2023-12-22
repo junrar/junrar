@@ -82,7 +82,7 @@ jobs:
         if: inputs.perform_release != true
         run: |
           echo "VERSION_NEXT=`svu --pattern="v[0-9]*" --strip-prefix next`" | tee -a $GITHUB_ENV
-          echo "VERSION_NEXT_SUFFIX=`svu --pattern="v[0-9]*" --strip-prefix --pre-release SNAPSHOT next`" | tee -a $GITHUB_ENV
+          echo "VERSION_NEXT_SUFFIX=`svu --pattern="v[0-9]*" --strip-prefix next`-SNAPSHOT" | tee -a $GITHUB_ENV
       - name: Set Versions
         id: versions
         run: |
