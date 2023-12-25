@@ -174,7 +174,7 @@ testing {
             dependencies {
                 implementation project(':')
                 implementation 'org.assertj:assertj-core:3.24.2'
-                implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
+                implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
                 implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.16.0'
                 implementation 'org.junit-pioneer:junit-pioneer:1.9.1'
             }
