@@ -37,7 +37,7 @@ jobs:
           java-package: 'jdk'
           distribution: 'temurin'
       - name: Build
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/actions/setup-gradle@v3
         with:
           arguments: build
           gradle-home-cache-includes: |
@@ -51,7 +51,7 @@ jobs:
           name: test-results-jdk-${{ matrix.os }}
           path: build/test-results/
       - name: Jacoco
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/actions/setup-gradle@v3
         with:
           arguments: jacocoTestReport
       - uses: codecov/codecov-action@v3
@@ -109,7 +109,7 @@ jobs:
           java-package: 'jdk'
           distribution: 'temurin'
       - name: Nexus publish
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/actions/setup-gradle@v3
         env:
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.GPG_KEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.GPG_PASSPHRASE }}
@@ -118,7 +118,7 @@ jobs:
         with:
           arguments: publishToSonatype closeAndReleaseSonatypeStagingRepository
       - name: JReleaser full release
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/actions/setup-gradle@v3
         if: inputs.perform_release
         env:
           JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
