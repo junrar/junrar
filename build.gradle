@@ -159,7 +159,7 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 tasks.wrapper {
-    gradleVersion = '8.4'
+    gradleVersion = '8.11.1'
     distributionType = Wrapper.DistributionType.ALL
 }
 
