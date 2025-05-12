@@ -65,14 +65,14 @@ jobs:
           download-file-name: rar-corpus.zip
       - name: Unzip corpus
         run: unzip rar-corpus.zip
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
       - name: Regression test
         id: regression
-        uses: gradle/actions/setup-gradle@v3
         env:
           JUNRAR_REGRESSION_TEST_CORPUS_ROOT: '${{ github.workspace }}/rar-corpus/'
           JUNRAR_REGRESSION_TEST_CORPUS_DIR: '${{ github.workspace }}/rar-corpus/'
-        with:
-          arguments: regressionTest
+        run: ./gradlew regressionTest
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v4
