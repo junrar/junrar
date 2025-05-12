@@ -36,14 +36,10 @@ jobs:
           java-version: '8'
           java-package: 'jdk'
           distribution: 'temurin'
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
       - name: Build
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          arguments: build
-          gradle-home-cache-includes: |
-            caches
-            notifications
-            jdks
+        run: ./gradlew build
       - name: Upload Unit Test Results
         if: always()
         uses: actions/upload-artifact@v4
@@ -51,9 +47,7 @@ jobs:
           name: test-results-jdk-${{ matrix.os }}
           path: build/test-results/
       - name: Jacoco
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          arguments: jacocoTestReport
+        run: ./gradlew jacocoTestReport
       - uses: codecov/codecov-action@v3
         if: matrix.os == 'ubuntu-latest'
 
@@ -108,22 +102,20 @@ jobs:
           java-version: '8'
           java-package: 'jdk'
           distribution: 'temurin'
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
       - name: Nexus publish
-        uses: gradle/actions/setup-gradle@v3
         env:
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.GPG_KEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.GPG_PASSPHRASE }}
           ORG_GRADLE_PROJECT_sonatypeUsername: ${{ secrets.MAVENCENTRAL_USER }}
           ORG_GRADLE_PROJECT_sonatypePassword: ${{ secrets.MAVENCENTRAL_PASSWORD }}
-        with:
-          arguments: publishToSonatype closeAndReleaseSonatypeStagingRepository
+        run: ./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository
       - name: JReleaser full release
-        uses: gradle/actions/setup-gradle@v3
         if: inputs.perform_release
         env:
           JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          arguments: jreleaserFullRelease
+        run: ./gradlew jreleaserFullRelease
       - name: JReleaser release output
         if: always()
         uses: actions/upload-artifact@v4
