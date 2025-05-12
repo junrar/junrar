@@ -48,7 +48,7 @@ jobs:
           path: build/test-results/
       - name: Jacoco
         run: ./gradlew jacocoTestReport
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v5
         if: matrix.os == 'ubuntu-latest'
 
   version:
