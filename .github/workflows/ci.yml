@@ -30,7 +30,7 @@ jobs:
         os: [ubuntu-latest, macos-13, windows-latest]
     name: Test on ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-java@v4
         with:
           java-version: '8'
@@ -59,7 +59,7 @@ jobs:
       version_next: ${{ steps.versions.outputs.version_next }}
       should_release: ${{ steps.versions.outputs.should_release }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Set up Homebrew
@@ -89,7 +89,7 @@ jobs:
     runs-on: ubuntu-latest
     if: needs.version.outputs.should_release
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Display versions
