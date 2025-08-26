@@ -31,7 +31,7 @@ jobs:
     name: Test on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           java-version: '8'
           java-package: 'jdk'
@@ -97,7 +97,7 @@ jobs:
           echo "Current version: ${{ needs.version.outputs.version_current }}, should release: ${{ needs.version.outputs.version_next }}"
       - name: Update version in gradle.properties
         run: echo "version=${{ needs.version.outputs.version_next }}" > gradle.properties
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           java-version: '8'
           java-package: 'jdk'
