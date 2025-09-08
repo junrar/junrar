@@ -17,7 +17,7 @@ repositories {
 dependencies {
     implementation 'org.slf4j:slf4j-api:2.0.17'
     if (version.toString().endsWith('.0.0')) {
-        annotationProcessor 'com.github.gotson.bestbefore:bestbefore-processor-java:0.1.0'
+        annotationProcessor 'com.github.gotson.bestbefore:bestbefore-processor-java:0.2.0'
     }
 
     testRuntimeOnly 'ch.qos.logback:logback-classic:1.5.18'
