@@ -81,7 +81,7 @@ jobs:
           path: build/test-results/
       - name: Comment on PR
         if: always() && github.event.comment.id
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           comment-id: ${{ github.event.comment.id }}
           body: |
