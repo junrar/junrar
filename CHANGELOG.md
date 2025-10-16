@@ -1,3 +1,85 @@
+# [7.5.6](https://github.com/junrar/junrar/compare/v7.5.5...v7.5.6) (2025-10-16)
+## 🐛 Fixes
+
+- CorruptHeaderException when EndArcHeader is missing and parsing as stream ([964801c](https://github.com/junrar/junrar/commits/964801c)), closes [#216](https://github.com/junrar/junrar/issues/216)
+
+## 🧪 Tests
+
+- replace deprecation ([ae8870d](https://github.com/junrar/junrar/commits/ae8870d))
+
+## 🛠  Build
+**deps**
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 from 2.19.0 to 2.20.0 ([a1143e2](https://github.com/junrar/junrar/commits/a1143e2))
+- bump ch.qos.logback:logback-classic from 1.5.18 to 1.5.19 ([06ba358](https://github.com/junrar/junrar/commits/06ba358))
+- bump org.mockito:mockito-core from 5.17.0 to 5.20.0 ([9880cc4](https://github.com/junrar/junrar/commits/9880cc4))
+- bump com.fasterxml.jackson.core:jackson-databind ([9912de1](https://github.com/junrar/junrar/commits/9912de1))
+- bump commons-io:commons-io from 2.19.0 to 2.20.0 ([716b0fc](https://github.com/junrar/junrar/commits/716b0fc))
+- bump org.assertj:assertj-core from 3.27.4 to 3.27.6 ([23ba3d7](https://github.com/junrar/junrar/commits/23ba3d7))
+- bump peter-evans/create-or-update-comment from 4 to 5 ([932af2e](https://github.com/junrar/junrar/commits/932af2e))
+- bump gradle/actions from 4 to 5 ([d3b4237](https://github.com/junrar/junrar/commits/d3b4237))
+- bump org.assertj:assertj-core from 3.27.3 to 3.27.4 ([a7b88da](https://github.com/junrar/junrar/commits/a7b88da))
+- bump com.github.gotson.bestbefore:bestbefore-processor-java ([acf11b2](https://github.com/junrar/junrar/commits/acf11b2))
+- bump org.jreleaser from 1.18.0 to 1.20.0 ([694c46c](https://github.com/junrar/junrar/commits/694c46c))
+- bump actions/setup-java from 4 to 5 ([c6c2cb9](https://github.com/junrar/junrar/commits/c6c2cb9))
+- bump actions/checkout from 4 to 5 ([f55f514](https://github.com/junrar/junrar/commits/f55f514))
+- bump archunit to 1.4.1 ([4942838](https://github.com/junrar/junrar/commits/4942838))
+- bump junit-pioneer to 2.3.0 ([75bd572](https://github.com/junrar/junrar/commits/75bd572))
+- bump slf4j-api from 2.0.9 to 2.0.17 ([cd598e6](https://github.com/junrar/junrar/commits/cd598e6))
+- bump ch.qos.logback:logback-classic from 1.4.11 to 1.5.18 ([666e572](https://github.com/junrar/junrar/commits/666e572))
+- bump com.fasterxml.jackson.core:jackson-databind ([9258830](https://github.com/junrar/junrar/commits/9258830))
+- bump org.mockito:mockito-core from 5.6.0 to 5.17.0 ([c2eeadc](https://github.com/junrar/junrar/commits/c2eeadc))
+- bump io.github.gradle-nexus.publish-plugin ([777d966](https://github.com/junrar/junrar/commits/777d966))
+- bump org.assertj:assertj-core from 3.24.2 to 3.27.3 ([76c8474](https://github.com/junrar/junrar/commits/76c8474))
+- bump com.github.ben-manes.versions from 0.50.0 to 0.52.0 ([b6fa2a8](https://github.com/junrar/junrar/commits/b6fa2a8))
+- bump codecov/codecov-action from 3 to 5 ([9c37e01](https://github.com/junrar/junrar/commits/9c37e01))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([ea99789](https://github.com/junrar/junrar/commits/ea99789))
+- bump commons-io:commons-io from 2.15.0 to 2.19.0 ([2c02c73](https://github.com/junrar/junrar/commits/2c02c73))
+- bump org.jreleaser from 1.9.0 to 1.18.0 ([d588832](https://github.com/junrar/junrar/commits/d588832))
+- bump peter-evans/create-or-update-comment from 3 to 4 ([57b16d9](https://github.com/junrar/junrar/commits/57b16d9))
+- bump gradle/wrapper-validation-action from 1 to 2 ([b589e68](https://github.com/junrar/junrar/commits/b589e68))
+- bump actions/upload-artifact from 3 to 4 ([0c24976](https://github.com/junrar/junrar/commits/0c24976))
+- bump actions/setup-java from 3 to 4 ([87ed611](https://github.com/junrar/junrar/commits/87ed611))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([fbfdc6c](https://github.com/junrar/junrar/commits/fbfdc6c))
+- bump org.jreleaser from 1.8.0 to 1.9.0 ([ccae280](https://github.com/junrar/junrar/commits/ccae280))
+- bump com.github.ben-manes.versions from 0.49.0 to 0.50.0 ([de20909](https://github.com/junrar/junrar/commits/de20909))
+- bump com.fasterxml.jackson.core:jackson-databind ([2dc28e1](https://github.com/junrar/junrar/commits/2dc28e1))
+- bump commons-io:commons-io from 2.14.0 to 2.15.0 ([13c6f8a](https://github.com/junrar/junrar/commits/13c6f8a))
+- bump com.fasterxml.jackson.core:jackson-databind ([9968d24](https://github.com/junrar/junrar/commits/9968d24))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([2620ae0](https://github.com/junrar/junrar/commits/2620ae0))
+- bump slf4j-api to 2.0.9 ([0f5ddb4](https://github.com/junrar/junrar/commits/0f5ddb4))
+- bump com.github.ben-manes.versions to 0.49.0 ([081ad83](https://github.com/junrar/junrar/commits/081ad83))
+- bump com.github.ben-manes.versions from 0.47.0 to 0.48.0 ([997ec6c](https://github.com/junrar/junrar/commits/997ec6c))
+- bump actions/checkout from 3 to 4 ([3f5b413](https://github.com/junrar/junrar/commits/3f5b413))
+- bump org.jreleaser from 1.7.0 to 1.8.0 ([8b87b05](https://github.com/junrar/junrar/commits/8b87b05))
+- bump org.mockito:mockito-core from 5.4.0 to 5.5.0 ([377770b](https://github.com/junrar/junrar/commits/377770b))
+
+**deps-dev**
+- bump logback to 1.4.11 ([0474143](https://github.com/junrar/junrar/commits/0474143))
+- bump mockito to 5.5.0 ([d81dfc6](https://github.com/junrar/junrar/commits/d81dfc6))
+- bump archunit to 1.1.0 ([122ed81](https://github.com/junrar/junrar/commits/122ed81))
+- bump junit-pioneer to 2.1.0 ([3514a03](https://github.com/junrar/junrar/commits/3514a03))
+- bump commons-io to 2.14.0 ([1fe2be1](https://github.com/junrar/junrar/commits/1fe2be1))
+
+**unscoped**
+- OSSRH migration ([ea5ab2f](https://github.com/junrar/junrar/commits/ea5ab2f))
+- bump gradle to 8.14 ([97a69f3](https://github.com/junrar/junrar/commits/97a69f3))
+- migrate to gradle/actions/setup-gradlev4 ([9e5affe](https://github.com/junrar/junrar/commits/9e5affe))
+- migrate to gradle/actions/setup-gradlev4 ([70c3834](https://github.com/junrar/junrar/commits/70c3834))
+- use .svu.yml configuration file ([9472903](https://github.com/junrar/junrar/commits/9472903))
+- adjust svu options for v3 ([74f643e](https://github.com/junrar/junrar/commits/74f643e))
+- use macos-13 ([b4e51ae](https://github.com/junrar/junrar/commits/b4e51ae))
+- bump gradle to 8.11.1 ([d74c30e](https://github.com/junrar/junrar/commits/d74c30e))
+- migrate to gradle/actions/wrapper-validation@v3 ([9ea7d0f](https://github.com/junrar/junrar/commits/9ea7d0f))
+- migrate to gradle/actions/setup-gradle@v3 ([6342706](https://github.com/junrar/junrar/commits/6342706))
+- adjust svu command ([6b31739](https://github.com/junrar/junrar/commits/6b31739))
+- fix quirks in the Gradle build file ([fe5d186](https://github.com/junrar/junrar/commits/fe5d186))
+- bump gradle to 8.4 ([cab1bf2](https://github.com/junrar/junrar/commits/cab1bf2))
+- add bestbefore to avoid shipping deprecated code in major versions ([3b9d690](https://github.com/junrar/junrar/commits/3b9d690))
+
+## 📝 Documentation
+
+- fix CI badge in README ([44dd10c](https://github.com/junrar/junrar/commits/44dd10c))
+
 # [7.5.5](https://github.com/junrar/junrar/compare/v7.5.4...v7.5.5) (2023-07-18)
 ## 🐛 Fixes
 
