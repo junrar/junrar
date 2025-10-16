@@ -24,9 +24,10 @@ import com.github.junrar.rarfile.HostSystem;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import org.junitpioneer.jupiter.DefaultTimeZone;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junitpioneer.jupiter.DefaultTimeZone;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -36,10 +37,12 @@ import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.Calendar.FEBRUARY;
 import static java.util.Calendar.MARCH;
@@ -79,63 +82,80 @@ public class ArchiveTest {
         }
     }
 
-    @ValueSource(strings = {
-        "audio/BoatModernEnglish-audio-text-unpack30.rar",  // special audio/text compression enabled, RAR 2.9
-        "audio/BoatModernEnglish-audio-text-unpack20.rar",  // special audio/text compression enabled, RAR 2.0
-        "audio/BoatModernEnglish-regular-unpack30.rar",     // special audio/text compression disabled, RAR 2.9
-        "audio/BoatModernEnglish-regular-unpack20.rar",     // special audio/text compression disabled, RAR 2.0
-        "audio/BoatModernEnglish-regular-unpack15-dos.rar", // special audio/text compression disabled, RAR 1.5 DOS
-        "audio/BoatModernEnglish-regular-unpack15-win.rar"  // special audio/text compression disabled, RAR 1.5 Windows
-    })
     @ParameterizedTest
-    public void testAudioDecompression(String fileName) throws Exception {
-        File f = new File(getClass().getResource(fileName).toURI());
-        try (Archive archive = new Archive(f)) {
-            assertThat(archive.isPasswordProtected()).isFalse();
-            assertThat(archive.isEncrypted()).isFalse();
-
-            FileHeader fileHeader = archive.nextFileHeader();
-            boolean isDos = fileName.endsWith("-dos.rar");
-            if (isDos) {
-                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.msdos);
-                assertThat(fileHeader.getFileName()).isEqualTo("BOATMO~1.WAV");
-            } else {
-                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.win32);
-                assertThat(fileHeader.getFileName()).isEqualTo("BoatModernEnglish.wav");
-            }
-            assertThat(fileHeader.getUnpSize()).isEqualTo(56464);
-            assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
-            byte[] audioData;
-            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                archive.extractFile(fileHeader, baos);
-                audioData = baos.toByteArray();
-            }
-            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                try (InputStream is = getClass().getResource("audio/BoatModernEnglish.wav").openStream()) {
-                    IOUtils.copy(is, baos);
-                }
-                byte[] expectedAudioData = baos.toByteArray();
-                assertThat(audioData).containsExactly(expectedAudioData);
-            }
-
-            fileHeader = archive.nextFileHeader();
-            if (isDos) {
-                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.msdos);
-                assertThat(fileHeader.getFileName()).isEqualTo("LICENSE.TXT");
-            } else {
-                assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.win32);
-                assertThat(fileHeader.getFileName()).isEqualTo("LICENSE.txt");
-            }
-            assertThat(fileHeader.getUnpSize()).isEqualTo(107);
-            assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
-            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                archive.extractFile(fileHeader, baos);
-                assertThat(baos.toString()).isEqualTo("UofG Language Modules, CC BY-SA 4.0 "
-                    + "<https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons");
-            }
-
-            assertThat(archive.nextFileHeader()).isNull();
+    @MethodSource("provideAudioDecompression")
+    public void testAudioDecompression(String fileName, Boolean asFile) throws Exception {
+        boolean isDos = fileName.endsWith("-dos.rar");
+        Archive archive;
+        if (asFile) {
+            File f = new File(getClass().getResource(fileName).toURI());
+            archive = new Archive(f);
+        } else {
+            InputStream is = getClass().getResourceAsStream(fileName);
+            archive = new Archive(is);
         }
+        validateAudioDecompression(archive, isDos);
+    }
+
+    private static Stream<Arguments> provideAudioDecompression() {
+        List<String> files = List.of(
+            "audio/BoatModernEnglish-audio-text-unpack30.rar",  // special audio/text compression enabled, RAR 2.9
+            "audio/BoatModernEnglish-audio-text-unpack20.rar",  // special audio/text compression enabled, RAR 2.0
+            "audio/BoatModernEnglish-regular-unpack30.rar",     // special audio/text compression disabled, RAR 2.9
+            "audio/BoatModernEnglish-regular-unpack20.rar",     // special audio/text compression disabled, RAR 2.0
+            "audio/BoatModernEnglish-regular-unpack15-dos.rar", // special audio/text compression disabled, RAR 1.5 DOS
+            "audio/BoatModernEnglish-regular-unpack15-win.rar"  // special audio/text compression disabled, RAR 1.5 Windows
+        );
+
+        return files.stream()
+            .map(path -> List.of(Arguments.of(path, false), Arguments.of(path, true)))
+            .flatMap(Collection::stream);
+    }
+
+    private void validateAudioDecompression(Archive archive, Boolean isDos) throws RarException, IOException {
+        assertThat(archive.isPasswordProtected()).isFalse();
+        assertThat(archive.isEncrypted()).isFalse();
+
+        FileHeader fileHeader = archive.nextFileHeader();
+        if (isDos) {
+            assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.msdos);
+            assertThat(fileHeader.getFileName()).isEqualTo("BOATMO~1.WAV");
+        } else {
+            assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.win32);
+            assertThat(fileHeader.getFileName()).isEqualTo("BoatModernEnglish.wav");
+        }
+        assertThat(fileHeader.getUnpSize()).isEqualTo(56464);
+        assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
+        byte[] audioData;
+        try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+            archive.extractFile(fileHeader, baos);
+            audioData = baos.toByteArray();
+        }
+        try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+            try (InputStream is = getClass().getResource("audio/BoatModernEnglish.wav").openStream()) {
+                IOUtils.copy(is, baos);
+            }
+            byte[] expectedAudioData = baos.toByteArray();
+            assertThat(audioData).containsExactly(expectedAudioData);
+        }
+
+        fileHeader = archive.nextFileHeader();
+        if (isDos) {
+            assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.msdos);
+            assertThat(fileHeader.getFileName()).isEqualTo("LICENSE.TXT");
+        } else {
+            assertThat(fileHeader.getHostOS()).isEqualTo(HostSystem.win32);
+            assertThat(fileHeader.getFileName()).isEqualTo("LICENSE.txt");
+        }
+        assertThat(fileHeader.getUnpSize()).isEqualTo(107);
+        assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
+        try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+            archive.extractFile(fileHeader, baos);
+            assertThat(baos.toString()).isEqualTo("UofG Language Modules, CC BY-SA 4.0 "
+                                                  + "<https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons");
+        }
+
+        assertThat(archive.nextFileHeader()).isNull();
     }
 
     /*

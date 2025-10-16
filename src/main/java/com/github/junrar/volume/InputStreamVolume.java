@@ -4,6 +4,7 @@ import com.github.junrar.Archive;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
 import com.github.junrar.io.SeekableReadOnlyInputStream;
 
+import java.io.IOException;
 import java.io.InputStream;
 
 public class InputStreamVolume implements Volume {
@@ -25,7 +26,11 @@ public class InputStreamVolume implements Volume {
 
     @Override
     public long getLength() {
-        return Long.MAX_VALUE;
+        try {
+            return inputStream.available();
+        } catch (IOException e) {
+            return Long.MAX_VALUE;
+        }
     }
 
     @Override
