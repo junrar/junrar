@@ -20,7 +20,7 @@ dependencies {
         annotationProcessor 'com.github.gotson.bestbefore:bestbefore-processor-java:0.2.0'
     }
 
-    testRuntimeOnly 'ch.qos.logback:logback-classic:1.5.18'
+    testRuntimeOnly 'ch.qos.logback:logback-classic:1.5.19'
     testImplementation 'commons-io:commons-io:2.20.0'
     testImplementation 'org.mockito:mockito-core:5.20.0'
     testImplementation 'org.assertj:assertj-core:3.27.6'
