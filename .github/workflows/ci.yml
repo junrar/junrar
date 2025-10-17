@@ -13,7 +13,7 @@ on:
         type: boolean
       bump:
         description: 'Bump type'
-        required: true
+        required: false
         default: 'next'
         type: choice
         options:
@@ -75,8 +75,8 @@ jobs:
       - name: Compute next version for snapshot
         if: inputs.perform_release != true
         run: |
-          echo "VERSION_NEXT=`svu ${{ inputs.bump }}`" | tee -a $GITHUB_ENV
-          echo "VERSION_NEXT_SUFFIX=`svu ${{ inputs.bump }}`-SNAPSHOT" | tee -a $GITHUB_ENV
+          echo "VERSION_NEXT=`svu ${{ inputs.bump || 'next' }}`" | tee -a $GITHUB_ENV
+          echo "VERSION_NEXT_SUFFIX=`svu ${{ inputs.bump || 'next' }}`-SNAPSHOT" | tee -a $GITHUB_ENV
       - name: Set Versions
         id: versions
         run: |
