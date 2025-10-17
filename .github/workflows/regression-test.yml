@@ -65,6 +65,11 @@ jobs:
           download-file-name: rar-corpus.zip
       - name: Unzip corpus
         run: unzip rar-corpus.zip
+      - uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          java-package: 'jdk'
+          distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
       - name: Regression test
