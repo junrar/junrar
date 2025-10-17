@@ -1,6 +1,6 @@
 [![CI](https://github.com/junrar/junrar/actions/workflows/ci.yml/badge.svg)](https://github.com/junrar/junrar/actions/workflows/ci.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.junrar/junrar)](https://search.maven.org/artifact/com.github.junrar/junrar)
-[![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/com.github.junrar/junrar?color=blue&label=maven%20snapshot&server=https%3A%2F%2Foss.sonatype.org%2F)](https://oss.sonatype.org/content/repositories/snapshots/com/github/junrar/junrar/)
+![Maven Snapshots](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fcentral.sonatype.com%2Frepository%2Fmaven-snapshots%2Fcom%2Fgithub%2Fjunrar%2Fjunrar%2Fmaven-metadata.xml&label=maven%20snapshot&color=blue)
 [![javadoc](https://javadoc.io/badge2/com.github.junrar/junrar/javadoc.svg)](https://javadoc.io/doc/com.github.junrar/junrar)
 [![codecov](https://codecov.io/gh/junrar/junrar/branch/master/graph/badge.svg)](https://codecov.io/gh/junrar/junrar)
 
