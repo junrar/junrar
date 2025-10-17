@@ -1,3 +1,16 @@
+# [7.5.7](https://github.com/junrar/junrar/compare/v7.5.6...v7.5.7) (2025-10-17)
+## 🛠  Build
+
+- fix failing version ([beccd50](https://github.com/junrar/junrar/commits/beccd50))
+- fix failing version ([4ccf1d2](https://github.com/junrar/junrar/commits/4ccf1d2))
+- use bump when computing snapshot version ([20e9105](https://github.com/junrar/junrar/commits/20e9105))
+- use java 21 ([ae8bff6](https://github.com/junrar/junrar/commits/ae8bff6))
+- remove java toolchains and use release flag instead ([0d99993](https://github.com/junrar/junrar/commits/0d99993)), closes [#218](https://github.com/junrar/junrar/issues/218)
+
+## 📝 Documentation
+
+- update maven snapshot badge ([04481cf](https://github.com/junrar/junrar/commits/04481cf))
+
 # [7.5.6](https://github.com/junrar/junrar/compare/v7.5.5...v7.5.6) (2025-10-16)
 ## 🐛 Fixes
 
