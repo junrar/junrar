@@ -13,7 +13,7 @@ on:
         type: boolean
       bump:
         description: 'Bump type'
-        required: false
+        required: true
         default: 'next'
         type: choice
         options:
