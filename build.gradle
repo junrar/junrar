@@ -32,11 +32,11 @@ group = 'com.github.junrar'
 description = 'rar decompression library in plain java'
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(8)
-    }
     withJavadocJar()
     withSourcesJar()
+}
+compileJava {
+    options.release = 8
 }
 
 jreleaser {
@@ -184,10 +184,7 @@ testing {
             }
 
             targets {
-                configureEach {
-                    java.toolchain {
-                        languageVersion = JavaLanguageVersion.of(17)
-                    }
+                all {
                     testTask.configure {
                         systemProperty 'regressionTest.resourcesDir', sourceSets.named('regressionTest').get().resources.getSrcDirs().first()
                         useJUnitPlatform {
