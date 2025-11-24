@@ -54,7 +54,7 @@ jobs:
     needs: [check]
     if: needs.check.outputs.ref && needs.check.outputs.repo
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: ${{ needs.check.outputs.repo }}
           ref: ${{ needs.check.outputs.ref }}
