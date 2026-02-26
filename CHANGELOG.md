@@ -1,3 +1,34 @@
+# [7.5.8](https://github.com/junrar/junrar/compare/v7.5.7...v7.5.8) (2026-02-26)
+## 🐛 Fixes
+
+- better handle files outside directory when extracting ([947ff1d](https://github.com/junrar/junrar/commits/947ff1d))
+
+## 🛠  Build
+**deps**
+- bump jreleaser to 1.22.0 ([a489f58](https://github.com/junrar/junrar/commits/a489f58))
+- bump gradle-wrapper from 8.14 to 9.3.1 ([a319fc7](https://github.com/junrar/junrar/commits/a319fc7))
+- bump com.fasterxml.jackson.core:jackson-databind ([c7041fc](https://github.com/junrar/junrar/commits/c7041fc))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([618feeb](https://github.com/junrar/junrar/commits/618feeb))
+- bump ch.qos.logback:logback-classic from 1.5.24 to 1.5.26 ([55399ea](https://github.com/junrar/junrar/commits/55399ea))
+- bump org.assertj:assertj-core from 3.27.6 to 3.27.7 ([de33003](https://github.com/junrar/junrar/commits/de33003))
+- bump ch.qos.logback:logback-classic from 1.5.23 to 1.5.24 ([a4ba2c1](https://github.com/junrar/junrar/commits/a4ba2c1))
+- bump ch.qos.logback:logback-classic from 1.5.22 to 1.5.23 ([75864b6](https://github.com/junrar/junrar/commits/75864b6))
+- bump ch.qos.logback:logback-classic from 1.5.21 to 1.5.22 ([b937e7f](https://github.com/junrar/junrar/commits/b937e7f))
+- bump org.mockito:mockito-core from 5.20.0 to 5.21.0 ([9e861fa](https://github.com/junrar/junrar/commits/9e861fa))
+- bump actions/upload-artifact from 5 to 6 ([c1e7ef4](https://github.com/junrar/junrar/commits/c1e7ef4))
+- bump actions/checkout from 5 to 6 ([add2452](https://github.com/junrar/junrar/commits/add2452))
+- bump ch.qos.logback:logback-classic from 1.5.19 to 1.5.20 ([7d1047c](https://github.com/junrar/junrar/commits/7d1047c))
+- bump commons-io:commons-io from 2.20.0 to 2.21.0 ([0bd12a9](https://github.com/junrar/junrar/commits/0bd12a9))
+- bump org.jreleaser from 1.20.0 to 1.21.0 ([6d16d40](https://github.com/junrar/junrar/commits/6d16d40))
+- bump actions/upload-artifact from 4 to 5 ([23788a9](https://github.com/junrar/junrar/commits/23788a9))
+- bump com.github.ben-manes.versions from 0.52.0 to 0.53.0 ([b0cc6b3](https://github.com/junrar/junrar/commits/b0cc6b3))
+
+**unscoped**
+- more ci fixes ([97bf405](https://github.com/junrar/junrar/commits/97bf405))
+- add flags to rerun partial releases ([36f6011](https://github.com/junrar/junrar/commits/36f6011))
+- replace macos-13 with macos-latest ([d7dc7d6](https://github.com/junrar/junrar/commits/d7dc7d6))
+- fix svu install ([3d1a3f7](https://github.com/junrar/junrar/commits/3d1a3f7))
+
 # [7.5.7](https://github.com/junrar/junrar/compare/v7.5.6...v7.5.7) (2025-10-17)
 ## 🛠  Build
 
