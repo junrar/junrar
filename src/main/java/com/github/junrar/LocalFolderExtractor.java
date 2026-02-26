@@ -55,7 +55,7 @@ class LocalFolderExtractor {
     }
 
     private File createFile(final FileHeader fh, final File destination) throws IOException {
-        String name = fh.getFileName();
+        String name = invariantSeparatorsPathString(fh.getFileName());
         File f = new File(destination, name);
         String dirCanonPath = f.getCanonicalPath();
         if (!dirCanonPath.startsWith(destination.getCanonicalPath())) {
@@ -73,7 +73,7 @@ class LocalFolderExtractor {
     }
 
     private File makeFile(final File destination, final String name) throws IOException {
-        final String[] dirs = name.split("\\\\");
+        final String[] dirs = name.split("/");
         String path = "";
         final int size = dirs.length;
         if (size == 1) {
@@ -93,5 +93,7 @@ class LocalFolderExtractor {
         }
     }
 
-
+    static String invariantSeparatorsPathString(String path) {
+        return path.replace("\\", "/");
+    }
 }
