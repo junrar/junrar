@@ -109,7 +109,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
       - name: Maven publish
-        if: inputs.maven_publish
+        if: inputs.maven_publish || github.event_name == 'push'
         env:
           ORG_GRADLE_PROJECT_signingKey: ${{ secrets.GPG_KEY }}
           ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.GPG_PASSPHRASE }}
@@ -120,7 +120,7 @@ jobs:
         if: inputs.perform_release
         env:
           JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew jreleaserFullRelease
+        run: ./gradlew jar jreleaserFullRelease
       - name: JReleaser release output
         if: always()
         uses: actions/upload-artifact@v6
