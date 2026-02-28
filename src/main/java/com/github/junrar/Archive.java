@@ -526,6 +526,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     break;
                             }
 
+                            // Always seek past the full subblock (header + packed data) so that
+                            // partially-handled subtypes (e.g. MAC_HEAD, EA_HEAD) don't leave the
+                            // channel positioned mid-block, corrupting all subsequent header reads.
+                            newpos = subHead.getPositionInFile() + subHead.getHeaderSize(isEncrypted()) + subHead.getDataSize();
+                            this.channel.setPosition(newpos);
+
+                            if (processedPositions.contains(newpos)) {
+                                throw new BadRarArchiveException();
+                            }
+                            processedPositions.add(newpos);
+
                             break;
                         }
                         default:
