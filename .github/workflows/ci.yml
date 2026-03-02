@@ -46,7 +46,7 @@ jobs:
         run: ./gradlew build
       - name: Upload Unit Test Results
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: test-results-jdk-${{ matrix.os }}
           path: build/test-results/
@@ -123,7 +123,7 @@ jobs:
         run: ./gradlew jar jreleaserFullRelease
       - name: JReleaser release output
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: jreleaser-release
           path: |
