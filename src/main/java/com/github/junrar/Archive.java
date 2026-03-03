@@ -48,6 +48,7 @@ import com.github.junrar.rarfile.SubBlockHeader;
 import com.github.junrar.rarfile.SubBlockHeaderType;
 import com.github.junrar.rarfile.UnixOwnersHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
+import com.github.junrar.rarfile.StreamHeader;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
 import com.github.junrar.volume.FileVolumeManager;
@@ -509,6 +510,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                 case NTACL_HEAD:
                                     break;
                                 case STREAM_HEAD:
+                                    final byte[] streamHeaderBuffer = safelyAllocate(StreamHeader.streamHeaderSize, MAX_HEADER_SIZE);
+                                    rawData.readFully(streamHeaderBuffer, streamHeaderBuffer.length);
+                                    final StreamHeader streamHeader = new StreamHeader(subHead, streamHeaderBuffer);
+                                    streamHeader.print();
+                                    this.headers.add(streamHeader);
                                     break;
                                 case UO_HEAD:
                                     toRead = subHead.getHeaderSize(false);
