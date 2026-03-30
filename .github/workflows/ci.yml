@@ -41,7 +41,7 @@ jobs:
           java-package: 'jdk'
           distribution: 'temurin'
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v5
+        uses: gradle/actions/setup-gradle@v6
       - name: Build
         run: ./gradlew build
       - name: Upload Unit Test Results
@@ -107,7 +107,7 @@ jobs:
           java-package: 'jdk'
           distribution: 'temurin'
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v5
+        uses: gradle/actions/setup-gradle@v6
       - name: Maven publish
         if: inputs.maven_publish || github.event_name == 'push'
         env:
