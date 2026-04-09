@@ -18,8 +18,10 @@ public record ArchiveRecord(
     String exception
 ) {
     static ArchiveRecord fromArchive(Archive from) throws RarException {
+        boolean isRarV5 = from.getHeaders().stream()
+            .anyMatch(h -> h instanceof com.github.junrar.rar5.header.Rar5FileHeader);
         return new ArchiveRecord(
-            false,
+            isRarV5,
             from.isEncrypted(),
             from.isPasswordProtected(),
             from.isOldFormat(),

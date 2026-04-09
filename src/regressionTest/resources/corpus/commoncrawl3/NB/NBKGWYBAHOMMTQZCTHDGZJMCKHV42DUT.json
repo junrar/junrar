@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : 898769785,
+    "fileName" : "New loader geant 2500 hd hybrid  2017.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 160,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

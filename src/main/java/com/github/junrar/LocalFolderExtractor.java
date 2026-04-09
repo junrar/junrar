@@ -1,7 +1,7 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.rarfile.FileHeaderEntry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,10 +19,10 @@ class LocalFolderExtractor {
         this.folderDestination = destination;
     }
 
-    File createDirectory(final FileHeader fh) {
+    File createDirectory(final FileHeaderEntry entry) {
         String fileName = null;
-        if (fh.isDirectory()) {
-            fileName = fh.getFileName();
+        if (entry.isDirectory()) {
+            fileName = entry.getFileName();
         }
 
         if (fileName == null) {
@@ -45,17 +45,17 @@ class LocalFolderExtractor {
 
     File extract(
         final Archive arch,
-        final FileHeader fileHeader
+        final FileHeaderEntry entry
     ) throws RarException, IOException {
-        final File f = createFile(fileHeader, folderDestination);
+        final File f = createFile(entry, folderDestination);
         try (OutputStream stream = new FileOutputStream(f)) {
-            arch.extractFile(fileHeader, stream);
+            arch.extractFile(entry, stream);
         }
         return f;
     }
 
-    private File createFile(final FileHeader fh, final File destination) throws IOException {
-        String name = invariantSeparatorsPathString(fh.getFileName());
+    private File createFile(final FileHeaderEntry entry, final File destination) throws IOException {
+        String name = invariantSeparatorsPathString(entry.getFileName());
         File f = new File(destination, name);
         String dirCanonPath = f.getCanonicalPath();
         if (!dirCanonPath.startsWith(destination.getCanonicalPath())) {

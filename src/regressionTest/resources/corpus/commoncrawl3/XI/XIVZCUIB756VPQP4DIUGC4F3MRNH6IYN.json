@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : 174946685,
+    "fileName" : "沈阳市2018年各类防汛责任人表（网站发布）.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 356352,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

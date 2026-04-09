@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : -719744446,
+    "fileName" : "AriaEbook_01.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 4201773056,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

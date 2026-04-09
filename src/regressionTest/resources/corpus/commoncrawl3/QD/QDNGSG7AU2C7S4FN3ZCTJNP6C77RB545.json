@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : 1963526516,
+    "fileName" : "Содержание 3.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 92717,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : 1334763274,
+    "fileName" : "++Обложка лицевая.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 126149,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

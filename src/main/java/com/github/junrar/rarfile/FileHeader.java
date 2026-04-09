@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class FileHeader extends BlockHeader {
+public class FileHeader extends BlockHeader implements FileHeaderEntry {
 
     private static final Logger logger = LoggerFactory.getLogger(FileHeader.class);
 
@@ -90,6 +90,23 @@ public class FileHeader extends BlockHeader {
     private int subFlags; // same as fileAttr (in header)
 
     private int recoverySectors = -1;
+
+    /**
+     * Protected constructor for subclasses that parse non-RAR4 formats,
+     * allowing explicit initialization of final fields.
+     */
+    protected FileHeader(final long unpSize, final HostSystem hostOS,
+                         final int fileCRC, final int highPackSize,
+                         final byte[] fileNameBytes) {
+        super();
+        this.unpSize = unpSize;
+        this.hostOS = hostOS;
+        this.fileCRC = fileCRC;
+        this.highPackSize = highPackSize;
+        this.fileNameBytes = fileNameBytes != null ? fileNameBytes : new byte[0];
+        this.fileName = "";
+        this.fileNameW = "";
+    }
 
     public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
@@ -338,6 +355,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return the timestamp, or null if absent.
      */
+    @Override
     public FileTime getArchivalTime() {
         return arcTime;
     }
@@ -397,6 +415,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return the date, or null if absent.
      */
+    @Override
     public Date getATime() {
         return toDate(getLastAccessTime());
     }
@@ -436,6 +455,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return the date, or null if absent.
      */
+    @Override
     public Date getCTime() {
         return toDate(getCreationTime());
     }
@@ -457,6 +477,7 @@ public class FileHeader extends BlockHeader {
         this.fileAttr = fileAttr;
     }
 
+    @Override
     public int getFileCRC() {
         return fileCRC;
     }
@@ -507,6 +528,11 @@ public class FileHeader extends BlockHeader {
         return hostOS;
     }
 
+    @Override
+    public byte getHostOSByte() {
+        return hostOS != null ? hostOS.getHostByte() : 0;
+    }
+
     /**
      * The time in which the file was last modified.
      * Corresponds to te {@link FileHeader#mTime} field.
@@ -533,6 +559,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return the date, or null if absent.
      */
+    @Override
     public Date getMTime() {
         return toDate(getLastModifiedTime());
     }
@@ -554,6 +581,7 @@ public class FileHeader extends BlockHeader {
         return recoverySectors;
     }
 
+    @Override
     public byte[] getSalt() {
         return salt;
     }
@@ -566,6 +594,7 @@ public class FileHeader extends BlockHeader {
         return subFlags;
     }
 
+    @Override
     public byte getUnpMethod() {
         return unpMethod;
     }
@@ -574,14 +603,17 @@ public class FileHeader extends BlockHeader {
         return unpSize;
     }
 
+    @Override
     public byte getUnpVersion() {
         return unpVersion;
     }
 
+    @Override
     public long getFullPackSize() {
         return fullPackSize;
     }
 
+    @Override
     public long getFullUnpackSize() {
         return fullUnpackSize;
     }
@@ -596,6 +628,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return isSplitAfter
      */
+    @Override
     public boolean isSplitAfter() {
         return (this.flags & BlockHeader.LHD_SPLIT_AFTER) != 0;
     }
@@ -605,6 +638,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return isSplitBefore
      */
+    @Override
     public boolean isSplitBefore() {
         return (this.flags & LHD_SPLIT_BEFORE) != 0;
     }
@@ -614,6 +648,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return isSolid
      */
+    @Override
     public boolean isSolid() {
         return (this.flags & LHD_SOLID) != 0;
     }
@@ -623,6 +658,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return isEncrypted
      */
+    @Override
     public boolean isEncrypted() {
         return (this.flags & BlockHeader.LHD_PASSWORD) != 0;
     }
@@ -657,6 +693,7 @@ public class FileHeader extends BlockHeader {
      *
      * @return isDirectory
      */
+    @Override
     public boolean isDirectory() {
         return (flags & LHD_WINDOWMASK) == LHD_DIRECTORY;
     }
@@ -667,6 +704,7 @@ public class FileHeader extends BlockHeader {
      * @return the Unicode filename if it exists, else the ASCII filename
      * @since 7.2.0
      */
+    @Override
     public String getFileName() {
         return isUnicode() && fileNameW != null && !fileNameW.isEmpty() ? fileNameW : fileName;
     }

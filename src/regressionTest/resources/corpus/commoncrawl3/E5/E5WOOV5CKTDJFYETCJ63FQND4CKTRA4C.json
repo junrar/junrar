@@ -1,8 +1,24 @@
 {
   "isRarV5" : true,
   "isEncrypted" : false,
-  "isPasswordProtected" : false,
+  "isPasswordProtected" : true,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : -587092291,
+    "fileName" : "MGP18-CP/data1.cpi",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 6282495950,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

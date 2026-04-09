@@ -62,31 +62,14 @@ public class JunrarTest {
         assertThat(extractedFiles.get(1)).isEqualTo(fooDir);
     }
 
-    @Test
-    public void listContents() throws IOException, RarException {
-        final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar");
-        final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);
+    @Nested
+    class ListContent {
 
-        final ContentDescription[] expected = {
-                new ContentDescription("test-documents\\testEXCEL.xls", 13824),
-                new ContentDescription("test-documents\\testHTML.html", 167),
-                new ContentDescription("test-documents\\testOpenOffice2.odt", 26448),
-                new ContentDescription("test-documents\\testPDF.pdf", 34824),
-                new ContentDescription("test-documents\\testPPT.ppt", 16384),
-                new ContentDescription("test-documents\\testRTF.rtf", 3410),
-                new ContentDescription("test-documents\\testTXT.txt", 49),
-                new ContentDescription("test-documents\\testWORD.doc", 19456),
-                new ContentDescription("test-documents\\testXML.xml", 766)
-        };
+        @Test
+        public void rar4() throws IOException, RarException {
+            final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar");
+            final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);
 
-        assertThat(contentDescriptions.toArray()).isEqualTo(expected);
-    }
-
-    @Test
-    public void listContentsFromStream() throws IOException, RarException {
-        final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar");
-        try (InputStream fi = new FileInputStream(testDocuments)) {
-            final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(fi);
             final ContentDescription[] expected = {
                     new ContentDescription("test-documents\\testEXCEL.xls", 13824),
                     new ContentDescription("test-documents\\testHTML.html", 167),
@@ -100,6 +83,72 @@ public class JunrarTest {
             };
 
             assertThat(contentDescriptions.toArray()).isEqualTo(expected);
+        }
+
+        @Test
+        public void rar5() throws IOException, RarException {
+            final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar5.rar");
+            final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);
+
+            final ContentDescription[] expected = {
+                    new ContentDescription("test-documents/testEXCEL.xls", 13824),
+                    new ContentDescription("test-documents/testHTML.html", 167),
+                    new ContentDescription("test-documents/testOpenOffice2.odt", 26448),
+                    new ContentDescription("test-documents/testPDF.pdf", 34824),
+                    new ContentDescription("test-documents/testPPT.ppt", 16384),
+                    new ContentDescription("test-documents/testRTF.rtf", 3410),
+                    new ContentDescription("test-documents/testTXT.txt", 49),
+                    new ContentDescription("test-documents/testWORD.doc", 19456),
+                    new ContentDescription("test-documents/testXML.xml", 766)
+            };
+
+            assertThat(contentDescriptions.toArray()).isEqualTo(expected);
+        }
+    }
+
+    @Nested
+    class StreamListContent {
+
+        @Test
+        public void rar4() throws IOException, RarException {
+            final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar");
+            try (InputStream fi = new FileInputStream(testDocuments)) {
+                final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(fi);
+                final ContentDescription[] expected = {
+                        new ContentDescription("test-documents\\testEXCEL.xls", 13824),
+                        new ContentDescription("test-documents\\testHTML.html", 167),
+                        new ContentDescription("test-documents\\testOpenOffice2.odt", 26448),
+                        new ContentDescription("test-documents\\testPDF.pdf", 34824),
+                        new ContentDescription("test-documents\\testPPT.ppt", 16384),
+                        new ContentDescription("test-documents\\testRTF.rtf", 3410),
+                        new ContentDescription("test-documents\\testTXT.txt", 49),
+                        new ContentDescription("test-documents\\testWORD.doc", 19456),
+                        new ContentDescription("test-documents\\testXML.xml", 766)
+                };
+
+                assertThat(contentDescriptions.toArray()).isEqualTo(expected);
+            }
+        }
+
+        @Test
+        public void rar5() throws IOException, RarException {
+            final File testDocuments = TestCommons.writeResourceToFolder(tempFolder, "tika-documents.rar5.rar");
+            try (InputStream fi = new FileInputStream(testDocuments)) {
+                final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(fi);
+                final ContentDescription[] expected = {
+                        new ContentDescription("test-documents/testEXCEL.xls", 13824),
+                        new ContentDescription("test-documents/testHTML.html", 167),
+                        new ContentDescription("test-documents/testOpenOffice2.odt", 26448),
+                        new ContentDescription("test-documents/testPDF.pdf", 34824),
+                        new ContentDescription("test-documents/testPPT.ppt", 16384),
+                        new ContentDescription("test-documents/testRTF.rtf", 3410),
+                        new ContentDescription("test-documents/testTXT.txt", 49),
+                        new ContentDescription("test-documents/testWORD.doc", 19456),
+                        new ContentDescription("test-documents/testXML.xml", 766)
+                };
+
+                assertThat(contentDescriptions.toArray()).isEqualTo(expected);
+            }
         }
     }
 
