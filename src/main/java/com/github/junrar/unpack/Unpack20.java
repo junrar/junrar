@@ -212,7 +212,7 @@ public abstract class Unpack20 extends Unpack15 {
         destUnpSize -= length;
 
         int destPtr = unpPtr - distance;
-        if (destPtr < Compress.MAXWINSIZE - 300 && unpPtr < Compress.MAXWINSIZE - 300) {
+        if (destPtr >= 0 && destPtr < Compress.MAXWINSIZE - 300 && unpPtr < Compress.MAXWINSIZE - 300) {
             if (destPtr + length <= unpPtr) {
                 // Case: array elements to copy from destPtr do not overlap with unpPtr target values
                 System.arraycopy(window, destPtr, window, unpPtr, length);
