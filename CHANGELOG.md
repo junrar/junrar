@@ -1,3 +1,24 @@
+# [7.5.9](https://github.com/junrar/junrar/compare/v7.5.8...v7.5.9) (2026-04-13)
+## 🐛 Fixes
+
+- ArrayIndexOutOfBoundsException in solid RAR v20 archive extraction ([9b69c6b](https://github.com/junrar/junrar/commits/9b69c6b))
+- seek past SubHeader packed data after parsing to prevent corrupt reads ([ad7ad33](https://github.com/junrar/junrar/commits/ad7ad33))
+
+## 🛠  Build
+**deps**
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([7e1b558](https://github.com/junrar/junrar/commits/7e1b558))
+- bump org.mockito:mockito-core from 5.22.0 to 5.23.0 ([f800f10](https://github.com/junrar/junrar/commits/f800f10))
+- bump com.fasterxml.jackson.core:jackson-databind ([1886aec](https://github.com/junrar/junrar/commits/1886aec))
+- bump gradle-wrapper from 9.4.0 to 9.4.1 ([832f685](https://github.com/junrar/junrar/commits/832f685))
+- bump gradle/actions from 5 to 6 ([b2f434d](https://github.com/junrar/junrar/commits/b2f434d))
+- bump codecov/codecov-action from 5 to 6 ([aaaede2](https://github.com/junrar/junrar/commits/aaaede2))
+- bump EndBug/add-and-commit from 9 to 10 ([884dde4](https://github.com/junrar/junrar/commits/884dde4))
+- bump gradle-wrapper from 9.3.1 to 9.4.0 ([5ff5c7e](https://github.com/junrar/junrar/commits/5ff5c7e))
+- bump org.mockito:mockito-core from 5.21.0 to 5.22.0 ([d9e9e49](https://github.com/junrar/junrar/commits/d9e9e49))
+- bump ch.qos.logback:logback-classic from 1.5.26 to 1.5.32 ([935ece8](https://github.com/junrar/junrar/commits/935ece8))
+- bump org.jreleaser from 1.22.0 to 1.23.0 ([000fcdb](https://github.com/junrar/junrar/commits/000fcdb))
+- bump actions/upload-artifact from 6 to 7 ([2c83103](https://github.com/junrar/junrar/commits/2c83103))
+
 # [7.5.8](https://github.com/junrar/junrar/compare/v7.5.7...v7.5.8) (2026-02-26)
 ## 🐛 Fixes
 
