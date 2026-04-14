@@ -18,35 +18,21 @@
  */
 package com.github.junrar;
 
-import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.HeaderNotInArchiveException;
-import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.MainHeaderNullException;
-import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
-import com.github.junrar.io.RawDataIo;
+import com.github.junrar.impl.HeaderReader;
+import com.github.junrar.impl.HeaderReaderFactory;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
-import com.github.junrar.rarfile.AVHeader;
 import com.github.junrar.rarfile.BaseBlock;
-import com.github.junrar.rarfile.BlockHeader;
-import com.github.junrar.rarfile.CommentHeader;
-import com.github.junrar.rarfile.EAHeader;
-import com.github.junrar.rarfile.EndArcHeader;
 import com.github.junrar.rarfile.FileHeader;
-import com.github.junrar.rarfile.MacInfoHeader;
 import com.github.junrar.rarfile.MainHeader;
 import com.github.junrar.rarfile.MarkHeader;
-import com.github.junrar.rarfile.ProtectHeader;
-import com.github.junrar.rarfile.RARVersion;
-import com.github.junrar.rarfile.SignHeader;
-import com.github.junrar.rarfile.SubBlockHeader;
-import com.github.junrar.rarfile.SubBlockHeaderType;
-import com.github.junrar.rarfile.UnixOwnersHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
@@ -57,9 +43,7 @@ import com.github.junrar.volume.VolumeManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.crypto.Cipher;
 import java.io.Closeable;
-import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -67,11 +51,9 @@ import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
-import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -88,8 +70,6 @@ import java.util.function.Function;
 public class Archive implements Closeable, Iterable<FileHeader> {
 
     private static final Logger logger = LoggerFactory.getLogger(Archive.class);
-
-    private static final int MAX_HEADER_SIZE = 20971520; //20MB
 
     private static final int PIPE_BUFFER_SIZE = getPropertyAs(
         "junrar.extractor.buffer-size",
@@ -292,271 +272,37 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * Read the headers of the archive
      *
      * @param fileLength Length of file.
-     * @throws IOException, RarException
+     * @throws Exception
      */
-    private void readHeaders(final long fileLength) throws IOException, RarException {
+    private void readHeaders(final long fileLength) throws Exception {
         this.markHead = null;
         this.newMhd = null;
         this.headers.clear();
         this.currentHeaderIndex = 0;
-        int toRead = 0;
 
-        //keep track of positions already processed for
-        //more robustness against corrupt files
-        final Set<Long> processedPositions = new HashSet<>();
-        while (true) {
-            int size = 0;
-            long newpos = 0;
-            RawDataIo rawData = new RawDataIo(channel);
-            final byte[] baseBlockBuffer = safelyAllocate(BaseBlock.BaseBlockSize, MAX_HEADER_SIZE);
+        HeaderReader reader = null;
+        try {
+            reader = HeaderReaderFactory.create(channel);
+            reader.readHeaders(channel, fileLength, password);
+        } finally {
+            if (reader != null) {
+                this.headers.addAll(reader.getHeaders());
+            }
 
-            // if header is encrypted,there is a 8-byte salt before each header
-            if (newMhd != null && newMhd.isEncrypted()) {
-                byte[] salt = new byte[8];
-                rawData.readFully(salt, 8);
-                try {
-                    Cipher cipher = Rijndael.buildDecipherer(password, salt);
-                    rawData.setCipher(cipher);
-                } catch (Exception e) {
-                    throw new InitDeciphererFailedException(e);
+            for (final BaseBlock header : this.headers) {
+                if (header instanceof MarkHeader) {
+                    this.markHead = (MarkHeader) header;
+                } else if (header instanceof MainHeader) {
+                    this.newMhd = (MainHeader) header;
                 }
             }
-
-            final long position = this.channel.getPosition();
-
-            // Weird, but is trying to read beyond the end of the file
-            if (position >= fileLength) {
-                break;
-            }
-
-            // logger.info("\n--------reading header--------");
-            size = rawData.readFully(baseBlockBuffer, baseBlockBuffer.length);
-
-            if (size == 0) {
-                break;
-            }
-            final BaseBlock block = new BaseBlock(baseBlockBuffer);
-
-            block.setPositionInFile(position);
-
-            UnrarHeadertype headerType = block.getHeaderType();
-            if (headerType == null) {
-                logger.warn("unknown block header!");
-                throw new CorruptHeaderException();
-            }
-            switch (headerType) {
-
-                case MarkHeader:
-                    this.markHead = new MarkHeader(block);
-                    if (!this.markHead.isSignature()) {
-                        if (markHead.getVersion() == RARVersion.V5) {
-                            logger.warn("Support for rar version 5 is not yet implemented!");
-                            throw new UnsupportedRarV5Exception();
-                        } else {
-                            throw new BadRarArchiveException();
-                        }
-                    }
-                    if (!markHead.isValid()) {
-                        throw new CorruptHeaderException("Invalid Mark Header");
-                    }
-                    this.headers.add(this.markHead);
-                    // markHead.print();
-                    break;
-
-                case MainHeader:
-                    toRead = block.hasEncryptVersion() ? MainHeader.mainHeaderSizeWithEnc
-                        : MainHeader.mainHeaderSize;
-                    final byte[] mainbuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    rawData.readFully(mainbuff, mainbuff.length);
-                    final MainHeader mainhead = new MainHeader(block, mainbuff);
-                    this.headers.add(mainhead);
-                    this.newMhd = mainhead;
-                    break;
-
-                case SignHeader:
-                    toRead = SignHeader.signHeaderSize;
-                    final byte[] signBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    rawData.readFully(signBuff, signBuff.length);
-                    final SignHeader signHead = new SignHeader(block, signBuff);
-                    this.headers.add(signHead);
-                    break;
-
-                case AvHeader:
-                    toRead = AVHeader.avHeaderSize;
-                    final byte[] avBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    rawData.readFully(avBuff, avBuff.length);
-                    final AVHeader avHead = new AVHeader(block, avBuff);
-                    this.headers.add(avHead);
-                    break;
-
-                case CommHeader:
-                    toRead = CommentHeader.commentHeaderSize;
-                    final byte[] commBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                    rawData.readFully(commBuff, commBuff.length);
-                    final CommentHeader commHead = new CommentHeader(block, commBuff);
-                    this.headers.add(commHead);
-
-                    newpos = commHead.getPositionInFile() + commHead.getHeaderSize(isEncrypted());
-                    this.channel.setPosition(newpos);
-
-                    if (processedPositions.contains(newpos)) {
-                        throw new BadRarArchiveException();
-                    }
-                    processedPositions.add(newpos);
-
-                    break;
-                case EndArcHeader:
-
-                    toRead = 0;
-                    if (block.hasArchiveDataCRC()) {
-                        toRead += EndArcHeader.endArcArchiveDataCrcSize;
-                    }
-                    if (block.hasVolumeNumber()) {
-                        toRead += EndArcHeader.endArcVolumeNumberSize;
-                    }
-                    EndArcHeader endArcHead;
-                    if (toRead > 0) {
-                        final byte[] endArchBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                        rawData.readFully(endArchBuff, endArchBuff.length);
-                        endArcHead = new EndArcHeader(block, endArchBuff);
-                    } else {
-                        endArcHead = new EndArcHeader(block, null);
-                    }
-                    if (!this.newMhd.isMultiVolume() && !endArcHead.isValid()) {
-                        throw new CorruptHeaderException("Invalid End Archive Header");
-                    }
-                    this.headers.add(endArcHead);
-                    return;
-
-                default:
-                    final byte[] blockHeaderBuffer = safelyAllocate(BlockHeader.blockHeaderSize, MAX_HEADER_SIZE);
-                    rawData.readFully(blockHeaderBuffer, blockHeaderBuffer.length);
-                    final BlockHeader blockHead = new BlockHeader(block,
-                        blockHeaderBuffer);
-
-                    switch (blockHead.getHeaderType()) {
-                        case NewSubHeader:
-                        case FileHeader:
-                            toRead = blockHead.getHeaderSize(false)
-                                - BlockHeader.BaseBlockSize
-                                - BlockHeader.blockHeaderSize;
-                            final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                            try {
-                                rawData.readFully(fileHeaderBuffer, fileHeaderBuffer.length);
-                            } catch (EOFException e) {
-                                throw new CorruptHeaderException("Unexpected end of file");
-                            }
-
-                            final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
-                            this.headers.add(fh);
-                            newpos = fh.getPositionInFile() + fh.getHeaderSize(isEncrypted()) + fh.getFullPackSize();
-                            this.channel.setPosition(newpos);
-
-                            if (processedPositions.contains(newpos)) {
-                                throw new BadRarArchiveException();
-                            }
-                            processedPositions.add(newpos);
-                            break;
-
-                        case ProtectHeader:
-                            toRead = blockHead.getHeaderSize(false)
-                                - BlockHeader.BaseBlockSize
-                                - BlockHeader.blockHeaderSize;
-                            final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                            rawData.readFully(protectHeaderBuffer, protectHeaderBuffer.length);
-                            final ProtectHeader ph = new ProtectHeader(blockHead, protectHeaderBuffer);
-                            newpos = ph.getPositionInFile() + ph.getHeaderSize(isEncrypted()) + ph.getDataSize();
-                            this.channel.setPosition(newpos);
-
-                            if (processedPositions.contains(newpos)) {
-                                throw new BadRarArchiveException();
-                            }
-                            processedPositions.add(newpos);
-                            break;
-
-                        case SubHeader: {
-                            final byte[] subHeadbuffer = safelyAllocate(SubBlockHeader.SubBlockHeaderSize, MAX_HEADER_SIZE);
-                            rawData.readFully(subHeadbuffer, subHeadbuffer.length);
-                            final SubBlockHeader subHead = new SubBlockHeader(blockHead,
-                                subHeadbuffer);
-                            subHead.print();
-                            SubBlockHeaderType subType = subHead.getSubType();
-                            if (subType == null) break;
-                            switch (subType) {
-                                case MAC_HEAD: {
-                                    final byte[] macHeaderbuffer = safelyAllocate(MacInfoHeader.MacInfoHeaderSize, MAX_HEADER_SIZE);
-                                    rawData.readFully(macHeaderbuffer, macHeaderbuffer.length);
-                                    final MacInfoHeader macHeader = new MacInfoHeader(subHead,
-                                        macHeaderbuffer);
-                                    macHeader.print();
-                                    this.headers.add(macHeader);
-
-                                    break;
-                                }
-                                // TODO implement other subheaders
-                                case BEEA_HEAD:
-                                    break;
-                                case EA_HEAD: {
-                                    final byte[] eaHeaderBuffer = safelyAllocate(EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
-                                    rawData.readFully(eaHeaderBuffer, eaHeaderBuffer.length);
-                                    final EAHeader eaHeader = new EAHeader(subHead,
-                                        eaHeaderBuffer);
-                                    eaHeader.print();
-                                    this.headers.add(eaHeader);
-
-                                    break;
-                                }
-                                case NTACL_HEAD:
-                                    break;
-                                case STREAM_HEAD:
-                                    break;
-                                case UO_HEAD:
-                                    toRead = subHead.getHeaderSize(false);
-                                    toRead -= BaseBlock.BaseBlockSize;
-                                    toRead -= BlockHeader.blockHeaderSize;
-                                    toRead -= SubBlockHeader.SubBlockHeaderSize;
-                                    final byte[] uoHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                                    rawData.readFully(uoHeaderBuffer, uoHeaderBuffer.length);
-                                    final UnixOwnersHeader uoHeader = new UnixOwnersHeader(
-                                        subHead, uoHeaderBuffer);
-                                    uoHeader.print();
-                                    this.headers.add(uoHeader);
-                                    break;
-                                default:
-                                    break;
-                            }
-
-                            // Always seek past the full subblock (header + packed data) so that
-                            // partially-handled subtypes (e.g. MAC_HEAD, EA_HEAD) don't leave the
-                            // channel positioned mid-block, corrupting all subsequent header reads.
-                            newpos = subHead.getPositionInFile() + subHead.getHeaderSize(isEncrypted()) + subHead.getDataSize();
-                            this.channel.setPosition(newpos);
-
-                            if (processedPositions.contains(newpos)) {
-                                throw new BadRarArchiveException();
-                            }
-                            processedPositions.add(newpos);
-
-                            break;
-                        }
-                        default:
-                            logger.warn("Unknown Header");
-                            throw new NotRarArchiveException();
-
-                    }
-            }
-            // logger.info("\n--------end header--------");
         }
-    }
 
-    private static byte[] safelyAllocate(final long len, final int maxSize) throws RarException {
-        if (maxSize < 0) {
-            throw new IllegalArgumentException("maxsize must be >= 0");
+        if (this.markHead == null) {
+            throw new CorruptHeaderException();
+        } else if (this.newMhd == null) {
+            throw new CorruptHeaderException();
         }
-        if (len < 0 || len > maxSize) {
-            throw new BadRarArchiveException();
-        }
-        return new byte[(int) len];
     }
 
     /**
