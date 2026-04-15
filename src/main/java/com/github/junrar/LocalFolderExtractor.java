@@ -32,7 +32,7 @@ class LocalFolderExtractor {
         File f = new File(folderDestination, fileName);
         try {
             String fileCanonPath = f.getCanonicalPath();
-            if (!fileCanonPath.startsWith(folderDestination.getCanonicalPath())) {
+            if (!fileCanonPath.startsWith(folderDestination.getCanonicalPath() + File.separator)) {
                 String errorMessage = "Rar contains invalid path: '" + fileCanonPath + "'";
                 throw new IllegalStateException(errorMessage);
             }
@@ -58,7 +58,7 @@ class LocalFolderExtractor {
         String name = invariantSeparatorsPathString(fh.getFileName());
         File f = new File(destination, name);
         String dirCanonPath = f.getCanonicalPath();
-        if (!dirCanonPath.startsWith(destination.getCanonicalPath())) {
+        if (!dirCanonPath.startsWith(destination.getCanonicalPath() + File.separator)) {
             String errorMessage = "Rar contains file with invalid path: '" + dirCanonPath + "'";
             throw new IllegalStateException(errorMessage);
         }

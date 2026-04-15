@@ -86,4 +86,24 @@ public class LocalFolderExtractorTest {
                 .containsIgnoringCase(expectedInvalidPath.toString());
         }
     }
+
+    @Test
+    public void rarWithFileOutsideTarget_ShouldThrowException3() throws Exception {
+        File file = TestCommons.writeResourceToFolder(tempFolder, "sibling-prefix-traversal.rar");
+
+        File tempDir = new File("/tmp/extract");
+        LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(tempDir);
+
+        try (Archive archive = new Archive(file)) {
+            FileHeader fileHeader = archive.nextFileHeader();
+
+            String expectedInvalidPath = "/tmp/extract_evil/pwned.txt";
+            Throwable thrown = catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
+
+            assertThat(thrown).isInstanceOf(IllegalStateException.class);
+            assertThat(thrown.getMessage())
+                .containsIgnoringCase("Rar contains file with invalid path")
+                .containsIgnoringCase(expectedInvalidPath);
+        }
+    }
 }
