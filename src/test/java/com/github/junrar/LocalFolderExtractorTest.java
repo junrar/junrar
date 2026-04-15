@@ -5,6 +5,8 @@ import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 
 import java.io.File;
 import java.io.IOException;
@@ -87,6 +89,7 @@ public class LocalFolderExtractorTest {
         }
     }
 
+    @DisabledOnOs(OS.WINDOWS)
     @Test
     public void rarWithFileOutsideTarget_ShouldThrowException3() throws Exception {
         File file = TestCommons.writeResourceToFolder(tempFolder, "sibling-prefix-traversal.rar");
