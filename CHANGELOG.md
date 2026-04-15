@@ -1,3 +1,17 @@
+# [7.5.10](https://github.com/junrar/junrar/compare/v7.5.9...v7.5.10) (2026-04-15)
+## 🐛 Fixes
+
+- better handling of files outside directory when extracting ([d77e9a8](https://github.com/junrar/junrar/commits/d77e9a8))
+
+## 🧪 Tests
+
+- disable test on windows due to path ([154e3bf](https://github.com/junrar/junrar/commits/154e3bf))
+
+## 🛠  Build
+
+- publish test results ([e36ee09](https://github.com/junrar/junrar/commits/e36ee09))
+- update homebrew action ([a60857b](https://github.com/junrar/junrar/commits/a60857b))
+
 # [7.5.9](https://github.com/junrar/junrar/compare/v7.5.8...v7.5.9) (2026-04-13)
 ## 🐛 Fixes
 
