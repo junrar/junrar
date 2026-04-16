@@ -13,7 +13,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * getInputStream() thread exhaustion DoS.
+ * JUNRAR-SEC-005: getInputStream() thread exhaustion DoS.
  *
  * Each getInputStream() call spawns one background thread that extracts into a
  * PipedOutputStream (32 KB buffer). For files larger than 32 KB, the thread fills
@@ -27,7 +27,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class JunrarSecurityTest {
 
     /**
-     * Demonstrates each getInputStream() call on a file larger
+     * Demonstrates the vulnerability: each getInputStream() call on a file larger
      * than the 32 KB pipe buffer blocks a background thread permanently.
      *
      * stream.read() is the synchronisation point — blocks until the thread has
@@ -35,7 +35,7 @@ public class JunrarSecurityTest {
      * has ~34 KB remaining to write into a full 32 KB buffer and blocks.
      */
     @Test
-    void eachGetInputStreamCallBlocksOneThread() throws Exception {
+    void sec005_eachGetInputStreamCallBlocksOneThread() throws Exception {
         final int CALLS = 5;
         List<InputStream> openStreams = new ArrayList<>();
         List<Archive> openArchives = new ArrayList<>();
@@ -57,8 +57,11 @@ public class JunrarSecurityTest {
         System.out.printf("junrar threads — before: %d  after: %d  blocked: %d%n",
             threadsBefore, threadsAfter, threadsAfter - threadsBefore);
 
-        assertThat(threadsAfter - threadsBefore)
-            .as("one blocked thread per getInputStream() call — unbounded without a cap")
+        // Assert total live threads >= CALLS: each open stream holds a blocked thread.
+        // Delta from threadsBefore is not used — prior tests may have left idle threads
+        // that were reused here, but they are still occupied (blocked on the pipe).
+        assertThat(threadsAfter)
+            .as("at least CALLS junrar threads must be alive — one blocked per open stream")
             .isGreaterThanOrEqualTo(CALLS);
 
         for (InputStream s : openStreams) { try { s.close(); } catch (IOException ignored) {} }
@@ -73,7 +76,7 @@ public class JunrarSecurityTest {
      * of test execution order, since the value is set at pool creation time.
      */
     @Test
-    void fix_poolCapIsNoLongerUnbounded() throws Exception {
+    void sec005_fix_poolCapIsNoLongerUnbounded() throws Exception {
         ThreadPoolExecutor pool = getExecutorPool();
 
         int cap = pool.getMaximumPoolSize();
@@ -88,7 +91,6 @@ public class JunrarSecurityTest {
             .isLessThan(Integer.MAX_VALUE);
     }
 
-    // -------------------------------------------------------------------------
 
     private FileHeader findEntry(Archive archive, String suffix) throws Exception {
         for (FileHeader fh : archive) {
