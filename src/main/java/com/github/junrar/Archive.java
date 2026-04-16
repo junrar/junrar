@@ -73,6 +73,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -619,7 +620,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             });
 
         private static int getMaxThreads() {
-            return getPropertyAs("junrar.extractor.max-threads", Integer::parseInt, Integer.MAX_VALUE);
+            return getPropertyAs("junrar.extractor.max-threads", Integer::parseInt,
+                Runtime.getRuntime().availableProcessors() * 2);
         }
 
         private static int getThreadKeepAlive() {
@@ -707,7 +709,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             }
         };
         if (USE_EXECUTOR) {
-            ExtractorExecutorHolder.cachedExecutorService.submit(r);
+            try {
+                ExtractorExecutorHolder.cachedExecutorService.submit(r);
+            } catch (RejectedExecutionException e) {
+                throw new IOException("Too many concurrent extractions. Increase junrar.extractor.max-threads or process entries sequentially.", e);
+            }
         } else {
             new Thread(r).start();
         }
