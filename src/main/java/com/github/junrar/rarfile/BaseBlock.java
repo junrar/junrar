@@ -151,6 +151,14 @@ public class BaseBlock {
         return flags;
     }
 
+    public void setFlags(short flags) {
+        this.flags = flags;
+    }
+
+    public void setHeaderSize(short headerSize) {
+        this.headerSize = headerSize;
+    }
+
     public short getHeadCRC() {
         return headCRC;
     }
@@ -186,6 +194,10 @@ public class BaseBlock {
 
     public UnrarHeadertype getHeaderType() {
         return UnrarHeadertype.findType(headerType);
+    }
+
+    public void setHeaderType(UnrarHeadertype headerType) {
+        this.headerType = headerType.getHeaderByte();
     }
 
     public void setPositionInFile(long positionInFile) {

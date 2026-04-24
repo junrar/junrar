@@ -25,6 +25,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.Calendar;
@@ -54,8 +55,22 @@ public class FileHeader extends BlockHeader {
 
     private final int fileCRC;
 
+    /**
+     * Compression algorithm version.
+     * <ul>
+     *   <li>RAR4: Read from byte 13 of file header</li>
+     *   <li>RAR5: Translated from algo field — VER_PACK5 (50) for algo v0, VER_PACK7 (70) for algo v1</li>
+     * </ul>
+     */
     private byte unpVersion;
 
+    /**
+     * Compression method.
+     * <ul>
+     *   <li>RAR4: Read from byte 14 of file header</li>
+     *   <li>RAR5: Bits 8-10 of compression info (values 0-5)</li>
+     * </ul>
+     */
     private byte unpMethod;
 
     private short nameSize;
@@ -90,6 +105,25 @@ public class FileHeader extends BlockHeader {
     private int subFlags; // same as fileAttr (in header)
 
     private int recoverySectors = -1;
+
+    /**
+     * Protected constructor for subclasses that parse non-RAR4 formats,
+     * allowing explicit initialization of final fields.
+     */
+    protected FileHeader(final long unpSize, final HostSystem hostOS,
+                         final int fileCRC, final int highPackSize,
+                         final String utf8FileName,
+                         final byte unpMethod, final byte unpVersion) {
+        super();
+        this.unpSize = unpSize;
+        this.hostOS = hostOS;
+        this.fileCRC = fileCRC;
+        this.highPackSize = highPackSize;
+        this.fileNameBytes = utf8FileName.getBytes(StandardCharsets.UTF_8);
+        this.fileNameW = utf8FileName;
+        this.unpMethod = unpMethod;
+        this.unpVersion = unpVersion;
+    }
 
     public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
