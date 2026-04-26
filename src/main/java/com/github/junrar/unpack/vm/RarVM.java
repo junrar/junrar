@@ -17,11 +17,11 @@
  */
 package com.github.junrar.unpack.vm;
 
-import com.github.junrar.crc.RarCRC;
 import com.github.junrar.io.Raw;
 
 import java.util.List;
 import java.util.Vector;
+import java.util.zip.CRC32;
 
 
 /**
@@ -900,7 +900,9 @@ public class RarVM extends BitInput {
                 new VMStandardFilterSignature(216, 0xbc85e701, VMStandardFilters.VMSF_AUDIO),
                 new VMStandardFilterSignature(40, 0x46b9c560, VMStandardFilters.VMSF_UPCASE)
         };
-        int CodeCRC = RarCRC.checkCrc(0xffffffff, code, 0, code.length) ^ 0xffffffff;
+        CRC32 crc32 = new CRC32();
+        crc32.update(code, 0, code.length);
+        int CodeCRC = (int) crc32.getValue();
         for (int i = 0; i < stdList.length; i++) {
             if (stdList[i].getCRC() == CodeCRC && stdList[i].getLength() == code.length) {
                 return (stdList[i].getType());

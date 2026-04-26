@@ -32,6 +32,7 @@ import javax.crypto.Cipher;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.zip.CRC32;
 
 /**
  * DOCUMENT ME
@@ -70,6 +71,8 @@ public class ComprDataIO {
     private long processedArcSize, totalArcSize;
 
     private long packFileCRC, unpFileCRC, packedCRC;
+    private CRC32 unpCrc32;
+    private CRC32 packCrc32;
 
     private int encryption;
 
@@ -97,6 +100,8 @@ public class ComprDataIO {
         packFileCRC = unpFileCRC = packedCRC = 0xffffffff;
         subHead = null;
         processedArcSize = totalArcSize = 0;
+        unpCrc32 = new CRC32();
+        packCrc32 = new CRC32();
     }
 
     public void init(FileHeader hd) throws IOException, RarException {
@@ -108,6 +113,8 @@ public class ComprDataIO {
         curUnpRead = 0;
         curPackWrite = 0;
         packedCRC = 0xFFffFFff;
+        unpCrc32.reset();
+        packCrc32.reset();
 
         if (hd.isEncrypted()) {
             try {
@@ -129,7 +136,8 @@ public class ComprDataIO {
             }
 
             if (subHead.isSplitAfter()) {
-                packedCRC = RarCRC.checkCrc((int) packedCRC, addr, offset, retCode);
+                packCrc32.update(addr, offset, retCode);
+                packedCRC = (int) (~packCrc32.getValue());
             }
 
             totalRead += retCode;
@@ -186,7 +194,8 @@ public class ComprDataIO {
             if (archive.isOldFormat()) {
                 unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, count);
             } else {
-                unpFileCRC = RarCRC.checkCrc((int) unpFileCRC, addr, offset, count);
+                unpCrc32.update(addr, offset, count);
+                unpFileCRC = (int) (~unpCrc32.getValue());
             }
         }
         // if (!skipArcCRC) {
