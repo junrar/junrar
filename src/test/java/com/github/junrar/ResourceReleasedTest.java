@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * This test will have the rar file which will be extracted and the extracted content in the same directory. This directory is newly setup and deleted for every test method
@@ -42,28 +41,34 @@ public class ResourceReleasedTest {
     }
 
     @Test
-    public void extractRar5FromFile() {
-        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile, extractDir));
+    public void extractRar5FromFile() throws IOException, RarException {
+        // RAR5 headers are parsed and extraction is attempted
+        Junrar.extract(rar5TestFile, extractDir);
 
-        assertThat(thrown).isInstanceOf(RarException.class);
+        // Verify extracted files exist and have correct sizes
+        // (unrar l shows: FILE1.TXT 7 bytes, FILE2.TXT 7 bytes)
+        final File file1 = new File(extractDir, "FILE1.TXT");
+        final File file2 = new File(extractDir, "FILE2.TXT");
+        assertThat(file1).exists();
+        assertThat(file2).exists();
+        assertThat(file1.length()).isEqualTo(7);
+        assertThat(file2.length()).isEqualTo(7);
+
+        // Verify content matches expected: "file1\r\n" and "file2\r\n"
+        assertThat(java.nio.file.Files.readString(file1.toPath())).isEqualTo("file1\r\n");
+        assertThat(java.nio.file.Files.readString(file2.toPath())).isEqualTo("file2\r\n");
     }
 
     @Test
-    public void extractRar5FromInputStream() throws IOException {
-        final InputStream input = new FileInputStream(rar5TestFile);
-
-        Throwable thrown = catchThrowable(() -> Junrar.extract(input, extractDir));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
-
-        input.close();
+    public void extractRar5FromInputStream() throws IOException, RarException {
+        try (InputStream input = new FileInputStream(rar5TestFile)) {
+            Junrar.extract(input, extractDir);
+        }
     }
 
     @Test
-    public void extractRar5FromString() {
-        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath()));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
+    public void extractRar5FromString() throws IOException, RarException {
+        Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath());
     }
 
     @Test

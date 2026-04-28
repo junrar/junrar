@@ -18,6 +18,7 @@
  */
 package com.github.junrar;
 
+import com.github.junrar.crc.Blake2sp;
 import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.CorruptHeaderException;
@@ -31,6 +32,10 @@ import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.io.RawDataIo;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
+import com.github.junrar.rar5.crypt.Rar5Crypto;
+import com.github.junrar.rar5.header.Rar5BlockHeader;
+import com.github.junrar.rar5.header.Rar5FileHeader;
+import com.github.junrar.rar5.io.VInt;
 import com.github.junrar.rarfile.AVHeader;
 import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.BlockHeader;
@@ -190,11 +195,63 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new InputStreamVolumeManager(rarAsStream), unrarCallback, password);
     }
 
+    /**
+     * Solid archive decompressor state for RAR5.
+     * In solid archives, the decompressor state (window, distances) persists
+     * across files, so we must reuse the same Unpack50 instance.
+     */
+    private com.github.junrar.rar5.unpack.Unpack50 rar5Unpacker;
+
+    /**
+     * RAR5 archive-level encryption header (type 4 CRYPT block).
+     * Used for header encryption and password validation.
+     */
+    private com.github.junrar.rar5.header.Rar5CryptHeader rar5CryptHeader;
+
+    /**
+     * Adapts a SeekableReadOnlyByteChannel to an InputStream with a byte limit.
+     * Used to feed compressed data from the channel to Unpack50.
+     */
+    private static final class ChannelInputStream extends java.io.InputStream {
+        private final SeekableReadOnlyByteChannel channel;
+        private long remaining;
+        private final byte[] singleByte = new byte[1];
+
+        ChannelInputStream(final SeekableReadOnlyByteChannel channel, final long byteCount) {
+            this.channel = channel;
+            this.remaining = byteCount;
+        }
+
+        @Override
+        public int read() throws java.io.IOException {
+            if (remaining <= 0) return -1;
+            final int n = channel.read(singleByte, 0, 1);
+            if (n <= 0) return -1;
+            remaining--;
+            return singleByte[0] & 0xFF;
+        }
+
+        @Override
+        public int read(final byte[] b, final int off, final int len) throws java.io.IOException {
+            if (remaining <= 0) return -1;
+            final int toRead = (int) Math.min(len, remaining);
+            final int n = channel.read(b, off, toRead);
+            if (n > 0) remaining -= n;
+            return n;
+        }
+
+        @Override
+        public int available() {
+            return (int) Math.min(remaining, Integer.MAX_VALUE);
+        }
+    }
+
     private void setChannel(final SeekableReadOnlyByteChannel channel, final long length) throws IOException, RarException {
         this.totalPackedSize = 0L;
         this.totalPackedRead = 0L;
         close();
         this.channel = channel;
+
         try {
             readHeaders(length);
         } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException | BadRarArchiveException e) {
@@ -206,7 +263,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         }
         // Calculate size of packed data
         for (final BaseBlock block : this.headers) {
-            if (block.getHeaderType() == UnrarHeadertype.FileHeader) {
+            if (block instanceof Rar5FileHeader) {
+                this.totalPackedSize += ((Rar5FileHeader) block).getPackedSize();
+            } else if (block instanceof FileHeader) {
                 this.totalPackedSize += ((FileHeader) block).getFullPackSize();
             }
         }
@@ -240,12 +299,16 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * @return returns all file headers of the archive
+     * @return returns all file headers of the archive (RAR4 and RAR5)
      */
     public List<FileHeader> getFileHeaders() {
         final List<FileHeader> list = new ArrayList<>();
         for (final BaseBlock block : this.headers) {
-            if (block.getHeaderType().equals(UnrarHeadertype.FileHeader)) {
+            if (block instanceof Rar5FileHeader) {
+                list.add((Rar5FileHeader) block);
+            } else if (block instanceof FileHeader
+                    && block.getHeaderType() != null
+                    && block.getHeaderType().equals(UnrarHeadertype.FileHeader)) {
                 list.add((FileHeader) block);
             }
         }
@@ -256,8 +319,35 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         final int n = this.headers.size();
         while (this.currentHeaderIndex < n) {
             final BaseBlock block = this.headers.get(this.currentHeaderIndex++);
+            if (block instanceof Rar5FileHeader) {
+                return (Rar5FileHeader) block;
+            }
             if (block.getHeaderType() == UnrarHeadertype.FileHeader) {
                 return (FileHeader) block;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Resets the header iteration position to the beginning.
+     */
+    public void reset() {
+        this.currentHeaderIndex = 0;
+        this.nextFileHeader = null;
+    }
+
+    /**
+     * Returns the next file header entry (RAR4 or RAR5).
+     *
+     * @return the next file header entry, or null if no more files
+     */
+    public com.github.junrar.rarfile.FileHeaderEntry nextFileHeaderEntry() {
+        final int n = this.headers.size();
+        while (this.currentHeaderIndex < n) {
+            final BaseBlock block = this.headers.get(this.currentHeaderIndex++);
+            if (block instanceof com.github.junrar.rarfile.FileHeaderEntry) {
+                return (com.github.junrar.rarfile.FileHeaderEntry) block;
             }
         }
         return null;
@@ -300,6 +390,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.headers.clear();
         this.currentHeaderIndex = 0;
         int toRead = 0;
+        boolean isRar5 = false;
+        long rar5Position = 0; // Manual position tracking for RAR5
 
         //keep track of positions already processed for
         //more robustness against corrupt files
@@ -308,6 +400,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             int size = 0;
             long newpos = 0;
             RawDataIo rawData = new RawDataIo(channel);
+
+            if (isRar5) {
+                rar5Position = readRar5Block(rawData, rar5Position);
+                if (rar5Position < 0) {
+                    break;
+                }
+                continue;
+            }
+
             final byte[] baseBlockBuffer = safelyAllocate(BaseBlock.BaseBlockSize, MAX_HEADER_SIZE);
 
             // if header is encrypted,there is a 8-byte salt before each header
@@ -350,13 +451,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     this.markHead = new MarkHeader(block);
                     if (!this.markHead.isSignature()) {
                         if (markHead.getVersion() == RARVersion.V5) {
-                            logger.warn("Support for rar version 5 is not yet implemented!");
-                            throw new UnsupportedRarV5Exception();
+                            isRar5 = true;
+                            rar5Position = 8; // RAR5 mark header is 8 bytes
+                            // RAR5 signature is 8 bytes but BaseBlock only read 7.
+                            // Skip the 8th byte (0x00) to position at the first real block.
+                            rawData.read();
+                            // Don't increment rar5Position - the 8th byte is part of the mark header
+                            // which is already accounted for in the initial position of 8.
                         } else {
                             throw new BadRarArchiveException();
                         }
                     }
-                    if (!markHead.isValid()) {
+                    if (!isRar5 && !markHead.isValid()) {
                         throw new CorruptHeaderException("Invalid Mark Header");
                     }
                     this.headers.add(this.markHead);
@@ -523,6 +629,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     this.headers.add(uoHeader);
                                     break;
                                 default:
+                                    if (isRar5) {
+                                        // RAR5 blocks are handled by readRar5Block above
+                                        break;
+                                    }
                                     break;
                             }
 
@@ -546,6 +656,182 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     }
             }
             // logger.info("\n--------end header--------");
+        }
+    }
+
+    /**
+     * Reads a RAR5 block header and processes it.
+     * RAR5 blocks use a completely different format: CRC32 + vint size + vint type + vint flags.
+     *
+     * @param rawData the raw data reader
+     * @param currentPosition the current file position (tracked manually)
+     * @return the new file position after reading this block, or -1 if end of archive
+     */
+    private long readRar5Block(final RawDataIo rawData, long currentPosition) throws IOException, RarException {
+        // Read CRC32 (4 bytes, little-endian)
+        final byte[] crcBuf = new byte[4];
+        if (rawData.read(crcBuf, 0, 4) < 4) {
+            return -1;
+        }
+        currentPosition += 4;
+
+        // Read header size vint
+        long headerSize = 0;
+        int shift = 0;
+        int sizeBytesRead = 0;
+        for (int i = 0; i < 3; i++) {
+            final int b = rawData.read();
+            if (b < 0) return -1;
+            headerSize |= (b & 0x7FL) << shift;
+            sizeBytesRead++;
+            currentPosition++;
+            if ((b & 0x80) == 0) break;
+            shift += 7;
+        }
+        if (headerSize <= 0 || headerSize > MAX_HEADER_SIZE) {
+            return -1;
+        }
+
+        // Read the full header data
+        final byte[] headerData = new byte[(int) headerSize];
+        rawData.readFully(headerData, (int) headerSize);
+        currentPosition += headerSize;
+
+        int pos = 0;
+
+        // Header type (vint)
+        final VInt.Result typeResult = VInt.read(headerData, pos);
+        final long typeValue = typeResult.getValue();
+        pos += typeResult.getBytesConsumed();
+
+        // Header flags (vint)
+        final VInt.Result flagsResult = VInt.read(headerData, pos);
+        final long flags = flagsResult.getValue();
+        pos += flagsResult.getBytesConsumed();
+
+        final boolean hasExtra = (flags & 0x0001) != 0;
+        final boolean hasData = (flags & 0x0002) != 0;
+
+        long extraSize = 0;
+        if (hasExtra) {
+            final VInt.Result extraResult = VInt.read(headerData, pos);
+            extraSize = extraResult.getValue();
+            pos += extraResult.getBytesConsumed();
+        }
+
+        long dataSize = 0;
+        if (hasData) {
+            final VInt.Result dataResult = VInt.read(headerData, pos);
+            dataSize = dataResult.getValue();
+            pos += dataResult.getBytesConsumed();
+        }
+
+        final int fieldEnd = (int) headerSize - (int) extraSize;
+        final Rar5BlockHeader blockHeader = new Rar5BlockHeader(
+            0, headerSize, null, flags, extraSize, dataSize, hasExtra, hasData);
+
+        switch ((int) typeValue) {
+            case 1: // ARCHIVE
+                // Parse archive flags for synthetic main header
+                final long archiveFlags = VInt.read(headerData, pos).getValue();
+                short mainFlags = 0;
+                if ((archiveFlags & 0x0004) != 0) mainFlags |= BaseBlock.MHD_SOLID;
+                if ((archiveFlags & 0x0001) != 0) mainFlags |= BaseBlock.MHD_VOLUME;
+                if ((archiveFlags & 0x0010) != 0) mainFlags |= BaseBlock.MHD_LOCK;
+                if ((archiveFlags & 0x0008) != 0) mainFlags |= BaseBlock.MHD_PROTECT;
+                final byte[] mainBlockData = new byte[BaseBlock.BaseBlockSize];
+                mainBlockData[2] = 0x73; // RAR4 MainHeader type code
+                mainBlockData[3] = (byte) (mainFlags & 0xFF);
+                mainBlockData[4] = (byte) ((mainFlags >> 8) & 0xFF);
+                mainBlockData[5] = (byte) BaseBlock.BaseBlockSize;
+                mainBlockData[6] = 0x00;
+                this.newMhd = new MainHeader(new BaseBlock(mainBlockData), new byte[6]);
+                this.headers.add(this.newMhd);
+                break;
+
+            case 2: // FILE
+            case 3: // SERVICE
+                try {
+                    final Rar5FileHeader fileHeader = Rar5FileHeader.parse(headerData, blockHeader, pos);
+                    // Use the manually tracked position for data start
+                    fileHeader.setDataPosition(currentPosition);
+                    fileHeader.setPackedSize(dataSize);
+                    if (typeValue == 2) {
+                        this.headers.add(fileHeader);
+                    }
+                } catch (Exception e) {
+                    logger.warn("Failed to parse RAR5 file header: {}", e.getMessage());
+                }
+                break;
+
+            case 4: { // CRYPT
+                // Parse archive-level encryption header
+                final VInt.Result cverRes = VInt.read(headerData, pos);
+                int cpos = pos + cverRes.getBytesConsumed();
+                final VInt.Result cflagsRes = VInt.read(headerData, cpos);
+                final long cflags = cflagsRes.getValue();
+                cpos += cflagsRes.getBytesConsumed();
+                final int ckdfCount = headerData[cpos] & 0xFF;
+                cpos++;
+                final byte[] csalt = new byte[16];
+                System.arraycopy(headerData, cpos, csalt, 0, 16);
+                cpos += 16;
+                byte[] ccheckValue = null;
+                if ((cflags & 0x0001) != 0) {
+                    ccheckValue = new byte[12];
+                    System.arraycopy(headerData, cpos, ccheckValue, 0, 12);
+                }
+                this.rar5CryptHeader = new com.github.junrar.rar5.header.Rar5CryptHeader(
+                    0, cflags, ckdfCount, csalt, ccheckValue);
+                break;
+            }
+
+            case 5: // ENDARC
+                return -1;
+
+            default:
+                if ((flags & 0x0004) == 0) {
+                    logger.warn("Unknown RAR5 block type: {}", typeValue);
+                }
+                break;
+        }
+
+        // Skip data area
+        if (hasData && dataSize > 0) {
+            skipRar5Data(rawData, dataSize);
+            currentPosition += dataSize;
+        }
+
+        return currentPosition;
+    }
+
+    /**
+     * Reads a RAR5 block header size as vint.
+     */
+    private long readRar5VIntSize(final RawDataIo rawData) throws IOException {
+        long value = 0;
+        int shift = 0;
+        for (int i = 0; i < 3; i++) {
+            final int b = rawData.read();
+            if (b < 0) return 0;
+            value |= (b & 0x7FL) << shift;
+            if ((b & 0x80) == 0) break;
+            shift += 7;
+        }
+        return value;
+    }
+
+    /**
+     * Skips RAR5 data area.
+     */
+    private void skipRar5Data(final RawDataIo rawData, final long dataSize) throws IOException {
+        final byte[] buf = new byte[8192];
+        long remaining = dataSize;
+        while (remaining > 0) {
+            final int toRead = (int) Math.min(remaining, buf.length);
+            final int read = rawData.read(buf, 0, toRead);
+            if (read <= 0) break;
+            remaining -= read;
         }
     }
 
@@ -582,6 +868,210 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         }
     }
 
+    /**
+     * Extract a RAR5 file header entry to the given output stream.
+     *
+     * @param hd the RAR5 file header entry
+     * @param os the output stream
+     * @throws RarException if extraction fails
+     */
+    public void extractFile(final com.github.junrar.rarfile.FileHeaderEntry hd,
+                            final OutputStream os) throws RarException {
+        if (hd instanceof Rar5FileHeader) {
+            extractRar5File((Rar5FileHeader) hd, os);
+        } else if (hd instanceof FileHeader) {
+            extractFile((FileHeader) hd, os);
+        } else {
+            throw new RarException("Unsupported header type: " + hd.getClass().getName());
+        }
+    }
+
+    /**
+     * Extracts a RAR5 file using the Unpack50 decompressor.
+     * For solid archives, reuses the same Unpack50 instance to preserve
+     * decompressor state (window, distances) across files.
+     */
+    private void extractRar5File(final Rar5FileHeader hd, final OutputStream os) throws RarException {
+        try {
+            final long dataStart = hd.getDataPosition();
+            final long packedSize = hd.getPackedSize();
+
+            if (dataStart < 0 || packedSize <= 0) {
+                return;
+            }
+
+            // For stored files (method 0), read raw data directly from channel
+            if (hd.getCompressionMethod() == 0) {
+                channel.setPosition(dataStart);
+                final byte[] buf = new byte[8192];
+                long remaining = packedSize;
+                final java.util.zip.CRC32 crc32 = new java.util.zip.CRC32();
+                while (remaining > 0) {
+                    final int toRead = (int) Math.min(remaining, buf.length);
+                    final int read = channel.read(buf, 0, toRead);
+                    if (read <= 0) break;
+                    os.write(buf, 0, read);
+                    crc32.update(buf, 0, read);
+                    remaining -= read;
+                }
+
+                if (hd.getDataCrc32() != null) {
+                    long actualCrc = crc32.getValue();
+                    long expectedCrc = hd.getDataCrc32() & 0xFFFFFFFFL;
+
+                    final com.github.junrar.rar5.header.extra.Rar5FileCryptRecord cryptRecord = hd.getCryptRecord();
+                    if (cryptRecord != null && cryptRecord.hasHashMac()) {
+                        try {
+                            final Rar5Crypto.DerivedKeys keys = Rar5Crypto.deriveKeys(
+                                password, cryptRecord.getSalt(), cryptRecord.getKdfCount());
+                            actualCrc = Rar5Crypto.convertCrc32ToMac((int) actualCrc, keys.getHashKey()) & 0xFFFFFFFFL;
+                        } catch (java.security.GeneralSecurityException e) {
+                            throw new RarException(e);
+                        }
+                    }
+
+                    if (actualCrc != expectedCrc) {
+                        throw new com.github.junrar.exception.CrcErrorException();
+                    }
+                }
+                return;
+            }
+
+            // Check if this is a solid archive
+            final boolean isSolid = newMhd != null && newMhd.isSolid();
+
+            // Create or reuse unpacker (singleton for solid archives)
+            if (rar5Unpacker == null) {
+                rar5Unpacker = new com.github.junrar.rar5.unpack.Unpack50();
+            }
+
+            // For non-solid files, reset state. For solid files, preserve state.
+            if (!isSolid) {
+                rar5Unpacker.resetState(false);
+            }
+
+            // Handle encryption
+            final com.github.junrar.rar5.header.extra.Rar5FileCryptRecord cryptRecord = hd.getCryptRecord();
+            final java.io.InputStream compressedStream;
+            if (cryptRecord != null) {
+                // File is encrypted - derive keys and decrypt
+                if (password == null || password.isEmpty()) {
+                    throw new com.github.junrar.exception.UnsupportedRarEncryptedException();
+                }
+
+                final Rar5Crypto.DerivedKeys keys = Rar5Crypto.deriveKeys(
+                    password, cryptRecord.getSalt(), cryptRecord.getKdfCount());
+
+                // Validate password if check value is present
+                if (cryptRecord.hasPswCheck() && cryptRecord.getPswCheck() != null) {
+                    if (!Rar5Crypto.validatePassword(keys.getCheckValue(), cryptRecord.getPswCheck())) {
+                        throw new com.github.junrar.exception.UnsupportedRarEncryptedException();
+                    }
+                }
+
+                // Stream decryption with 32KB chunks (matching UnRAR)
+                channel.setPosition(dataStart);
+                final java.io.InputStream encryptedStream = new ChannelInputStream(channel, packedSize);
+                compressedStream = new com.github.junrar.rar5.crypt.DecryptingInputStream(
+                    encryptedStream, keys.getEncryptionKey(), cryptRecord.getIv());
+            } else {
+                // Non-encrypted: stream directly from channel
+                channel.setPosition(dataStart);
+                compressedStream = new ChannelInputStream(channel, packedSize);
+            }
+
+            // Wrap output stream for CRC32 tracking when CRC is present in header
+            final java.util.zip.CRC32 crc32 = new java.util.zip.CRC32();
+            final Blake2sp blake2sp = hd.getHashRecord() != null && hd.getHashRecord().isBlake2()
+                ? new Blake2sp() : null;
+
+            java.io.OutputStream crcOut = hd.getDataCrc32() != null
+                ? new java.util.zip.CheckedOutputStream(os, crc32)
+                : os;
+
+            if (blake2sp != null) {
+                final java.io.OutputStream blakeOut = crcOut;
+                crcOut = new java.io.OutputStream() {
+                    @Override
+                    public void write(final int b) throws java.io.IOException {
+                        blakeOut.write(b);
+                        blake2sp.update(new byte[]{(byte) b});
+                    }
+
+                    @Override
+                    public void write(final byte[] b, final int off, final int len) throws java.io.IOException {
+                        blakeOut.write(b, off, len);
+                        blake2sp.update(b, off, len);
+                    }
+
+                    @Override
+                    public void flush() throws java.io.IOException {
+                        blakeOut.flush();
+                    }
+
+                    @Override
+                    public void close() {
+                        // Don't close the underlying stream
+                    }
+                };
+            }
+
+            rar5Unpacker.setMaxWinSize(hd.getDictionarySize());
+            rar5Unpacker.setExpectedSize(hd.getFullUnpackSize());
+            rar5Unpacker.setOutputStream(crcOut);
+
+            rar5Unpacker.doUnpack(compressedStream);
+
+            // Verify CRC32 when present (primary verification for RAR archives)
+            // Blake2sp verification is also available when both hash record and CRC32 are present
+            if (hd.getDataCrc32() != null) {
+                long actualCrc = crc32.getValue();
+                long expectedCrc = hd.getDataCrc32() & 0xFFFFFFFFL;
+
+                // When HashMAC flag is set, the stored CRC is HMAC-SHA256 transformed
+                if (cryptRecord != null && cryptRecord.hasHashMac()) {
+                    try {
+                        final Rar5Crypto.DerivedKeys keys = Rar5Crypto.deriveKeys(
+                            password, cryptRecord.getSalt(), cryptRecord.getKdfCount());
+                        actualCrc = Rar5Crypto.convertCrc32ToMac((int) actualCrc, keys.getHashKey()) & 0xFFFFFFFFL;
+                    } catch (java.security.GeneralSecurityException e) {
+                        throw new RarException(e);
+                    }
+                }
+
+                if (actualCrc != expectedCrc) {
+                    throw new com.github.junrar.exception.CrcErrorException();
+                }
+
+                if (blake2sp != null) {
+                    final byte[] actualHash = blake2sp.digest();
+                    final byte[] expectedHash = hd.getHashRecord().getDigest();
+                    if (expectedHash != null && actualHash.length == expectedHash.length) {
+                        boolean hashMatch = true;
+                        for (int i = 0; i < actualHash.length; i++) {
+                            if (actualHash[i] != expectedHash[i]) {
+                                hashMatch = false;
+                                break;
+                            }
+                        }
+                        if (!hashMatch) {
+                            throw new com.github.junrar.exception.CrcErrorException();
+                        }
+                    }
+                }
+            }
+        } catch (final Exception e) {
+            if (e instanceof RarException) {
+                throw (RarException) e;
+            } else {
+                throw new RarException(e);
+            }
+        }
+    }
+
+    /**
+     * Decrypts RAR5 compressed data blocks using AES-256-CBC.
+     *
     /**
      * Class to ensure the lazy initialization of the {@link ThreadPoolExecutor} upon first usage.<br><br>
      * <p>

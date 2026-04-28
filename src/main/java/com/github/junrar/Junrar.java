@@ -149,9 +149,9 @@ public class Junrar {
     private static List<File> extractArchiveTo(final Archive arch, final LocalFolderExtractor destination) throws IOException, RarException {
         final List<File> extractedFiles = new ArrayList<>();
         try {
-            for (final FileHeader fh : arch) {
+            for (final com.github.junrar.rarfile.FileHeaderEntry entry : getHeaderEntries(arch)) {
                 try {
-                    final File file = tryToExtract(destination, arch, fh);
+                    final File file = tryToExtract(destination, arch, entry);
                     if (file != null) {
                         extractedFiles.add(file);
                     }
@@ -166,18 +166,34 @@ public class Junrar {
         return extractedFiles;
     }
 
+    /**
+     * Returns all file header entries from the archive (RAR4 and RAR5).
+     */
+    private static java.util.List<com.github.junrar.rarfile.FileHeaderEntry> getHeaderEntries(final Archive arch) {
+        final java.util.List<com.github.junrar.rarfile.FileHeaderEntry> entries = new java.util.ArrayList<>();
+        // Reset to beginning
+        arch.reset();
+        com.github.junrar.rarfile.FileHeaderEntry entry;
+        while ((entry = arch.nextFileHeaderEntry()) != null) {
+            entries.add(entry);
+        }
+        // Reset again for extraction
+        arch.reset();
+        return entries;
+    }
+
     private static File tryToExtract(
             final LocalFolderExtractor destination,
             final Archive arch,
-            final FileHeader fileHeader
+            final com.github.junrar.rarfile.FileHeaderEntry entry
     ) throws IOException, RarException {
-        final String fileNameString = fileHeader.getFileName();
+        final String fileNameString = entry.getFileName();
 
         Junrar.logger.info("extracting: {}", fileNameString);
-        if (fileHeader.isDirectory()) {
-            return destination.createDirectory(fileHeader);
+        if (entry.isDirectory()) {
+            return destination.createDirectory(entry);
         } else {
-            return destination.extract(arch, fileHeader);
+            return destination.extract(arch, entry);
         }
     }
 
