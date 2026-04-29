@@ -82,10 +82,10 @@ public final class VInt {
      * @throws IllegalArgumentException if offset is negative or data is null
      * @throws VIntOverflowException    if the vint exceeds 10 bytes or overflows a long
      */
-    public static Result read(final byte[] data, final int offset) {
+    public static Result read(final byte[] data, final int offset) throws VIntOverflowException {
         Objects.requireNonNull(data, "data must not be null");
         if (offset < 0) {
-            throw new IllegalArgumentException("offset must not be negative");
+            throw new VIntOverflowException("offset must not be negative");
         }
         if (offset >= data.length) {
             throw new VIntOverflowException("offset " + offset + " is beyond data length " + data.length);

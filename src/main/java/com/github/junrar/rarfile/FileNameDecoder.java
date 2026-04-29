@@ -19,7 +19,10 @@
 package com.github.junrar.rarfile;
 
 public class FileNameDecoder {
-    public static int getChar(byte[] name, int pos) {
+    private static int getChar(byte[] name, int pos) {
+        if (pos < 0 || pos >= name.length) {
+            return 0;
+        }
         return name[pos] & 0xff;
     }
 
@@ -30,7 +33,7 @@ public class FileNameDecoder {
 
         int low = 0;
         int high = 0;
-        int highByte = getChar(name, encPos++);
+        int highByte = encPos < name.length ? getChar(name, encPos++) : 0;
         StringBuilder buf = new StringBuilder();
         while (encPos < name.length) {
             if (flagBits == 0) {
@@ -39,14 +42,23 @@ public class FileNameDecoder {
             }
             switch (flags >>> 6) {
                 case 0:
+                    if (encPos >= name.length) {
+                        break;
+                    }
                     buf.append((char) (getChar(name, encPos++)));
                     ++decPos;
                     break;
                 case 1:
+                    if (encPos >= name.length) {
+                        break;
+                    }
                     buf.append((char) (getChar(name, encPos++) + (highByte << 8)));
                     ++decPos;
                     break;
                 case 2:
+                    if (encPos + 1 >= name.length) {
+                        break;
+                    }
                     low = getChar(name, encPos);
                     high = getChar(name, encPos + 1);
                     buf.append((char) ((high << 8) + low));
@@ -54,12 +66,17 @@ public class FileNameDecoder {
                     encPos += 2;
                     break;
                 case 3:
+                    if (encPos >= name.length) {
+                        break;
+                    }
                     int length = getChar(name, encPos++);
                     if ((length & 0x80) != 0) {
+                        if (encPos >= name.length) {
+                            break;
+                        }
                         int correction = getChar(name, encPos++);
                         for (length = (length & 0x7f) + 2; length > 0 && decPos < name.length; length--, decPos++) {
-                            low = (getChar(name, decPos) + correction) & 0xff;
-                            buf.append((char) ((highByte << 8) + low));
+                            buf.append((char) (((getChar(name, decPos) + correction) & 0xff) + (highByte << 8)));
                         }
                     } else {
                         for (length += 2; length > 0 && decPos < name.length; length--, decPos++) {

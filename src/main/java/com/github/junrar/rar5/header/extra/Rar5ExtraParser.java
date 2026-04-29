@@ -2,6 +2,7 @@ package com.github.junrar.rar5.header.extra;
 
 import com.github.junrar.io.Raw;
 import com.github.junrar.rar5.io.VInt;
+import com.github.junrar.rar5.io.VIntOverflowException;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -28,8 +29,9 @@ public final class Rar5ExtraParser {
      * @param extraSize  the size of the extra area in bytes
      * @return an unmodifiable list of parsed extra records
      * @throws IllegalArgumentException if parameters are invalid
+     * @throws VIntOverflowException if a vint value is malformed
      */
-    public static List<Rar5ExtraRecord> parse(final byte[] data, final int extraStart, final int extraSize) {
+    public static List<Rar5ExtraRecord> parse(final byte[] data, final int extraStart, final int extraSize) throws VIntOverflowException {
         if (data == null) {
             throw new IllegalArgumentException("data must not be null");
         }
@@ -47,18 +49,21 @@ public final class Rar5ExtraParser {
         final int end = extraStart + extraSize;
         int pos = extraStart;
 
-        while (pos < end) {
+        while (pos >= 0 && pos < end && pos < data.length) {
             // Read field size (vint) — size starting from Type field
+            if (end - pos < 2) {
+                break; // Need at least 2 bytes for vint size
+            }
             final VInt.Result sizeResult = VInt.read(data, pos);
             final long fieldSize = sizeResult.getValue();
             pos += sizeResult.getBytesConsumed();
 
-            if (fieldSize <= 0) {
-                break;
+            if (fieldSize <= 0 || fieldSize > end - pos) {
+                break; // Invalid size
             }
 
             final int fieldEnd = pos + (int) fieldSize;
-            if (fieldEnd > end) {
+            if (fieldEnd < pos || fieldEnd > end) { // Check for overflow
                 break;
             }
 
@@ -79,16 +84,16 @@ public final class Rar5ExtraParser {
     }
 
     private static Rar5ExtraRecord parseRecord(final byte[] data, int pos,
-                                               final int end, final long type) {
+                                                final int end, final long type) throws VIntOverflowException {
         switch ((int) type) {
             case (int) Rar5FileCryptRecord.TYPE:
-                return parseCryptRecord(data, pos);
+                return parseCryptRecord(data, pos, end);
             case (int) Rar5FileHashRecord.TYPE:
-                return parseHashRecord(data, pos);
+                return parseHashRecord(data, pos, end);
             case (int) Rar5FileTimeRecord.TYPE:
-                return parseTimeRecord(data, pos);
+                return parseTimeRecord(data, pos, end);
             case (int) Rar5FileVersionRecord.TYPE:
-                return parseVersionRecord(data, pos);
+                return parseVersionRecord(data, pos, end);
             case (int) Rar5RedirRecord.TYPE:
                 return parseRedirRecord(data, pos, end);
             case (int) Rar5UnixOwnerRecord.TYPE:
@@ -99,22 +104,37 @@ public final class Rar5ExtraParser {
         }
     }
 
-    private static Rar5FileCryptRecord parseCryptRecord(final byte[] data, int pos) {
+    private static Rar5FileCryptRecord parseCryptRecord(final byte[] data, int pos, final int end) throws VIntOverflowException {
+        if (pos >= end) {
+            return null;
+        }
         final VInt.Result verResult = VInt.read(data, pos);
         final long version = verResult.getValue();
         pos += verResult.getBytesConsumed();
 
+        if (pos >= end) {
+            return null;
+        }
         final VInt.Result flagsResult = VInt.read(data, pos);
         final long flags = flagsResult.getValue();
         pos += flagsResult.getBytesConsumed();
 
+        if (pos >= end) {
+            return null;
+        }
         final int kdfCount = data[pos] & 0xFF;
         pos++;
 
+        if (pos + Rar5FileCryptRecord.SALT_SIZE > end) {
+            return null;
+        }
         final byte[] salt = new byte[Rar5FileCryptRecord.SALT_SIZE];
         System.arraycopy(data, pos, salt, 0, salt.length);
         pos += salt.length;
 
+        if (pos + Rar5FileCryptRecord.IV_SIZE > end) {
+            return null;
+        }
         final byte[] iv = new byte[Rar5FileCryptRecord.IV_SIZE];
         System.arraycopy(data, pos, iv, 0, iv.length);
         pos += iv.length;
@@ -124,6 +144,9 @@ public final class Rar5ExtraParser {
 
         byte[] pswCheck = null;
         if (hasPswCheck) {
+            if (pos + Rar5FileCryptRecord.PSWCHECK_SIZE > end) {
+                return null;
+            }
             pswCheck = new byte[Rar5FileCryptRecord.PSWCHECK_SIZE];
             System.arraycopy(data, pos, pswCheck, 0, pswCheck.length);
             pos += pswCheck.length;
@@ -135,13 +158,19 @@ public final class Rar5ExtraParser {
         return new Rar5FileCryptRecord(version, flags, kdfCount, salt, iv, pswCheck, hasPswCheck, hasHashMac);
     }
 
-    private static Rar5FileHashRecord parseHashRecord(final byte[] data, int pos) {
+    private static Rar5FileHashRecord parseHashRecord(final byte[] data, int pos, final int end) throws VIntOverflowException {
+        if (pos >= end) {
+            return null;
+        }
         final VInt.Result typeResult = VInt.read(data, pos);
         final long hashType = typeResult.getValue();
         pos += typeResult.getBytesConsumed();
 
         final byte[] digest;
         if (hashType == Rar5FileHashRecord.HASH_BLAKE2) {
+            if (pos + Rar5FileHashRecord.BLAKE2_DIGEST_SIZE > end) {
+                return null;
+            }
             digest = new byte[Rar5FileHashRecord.BLAKE2_DIGEST_SIZE];
             System.arraycopy(data, pos, digest, 0, digest.length);
         } else {
@@ -151,7 +180,10 @@ public final class Rar5ExtraParser {
         return new Rar5FileHashRecord(hashType, digest);
     }
 
-    private static Rar5FileTimeRecord parseTimeRecord(final byte[] data, int pos) {
+    private static Rar5FileTimeRecord parseTimeRecord(final byte[] data, int pos, final int end) throws VIntOverflowException {
+        if (pos >= end) {
+            return null;
+        }
         final VInt.Result flagsResult = VInt.read(data, pos);
         final long flags = flagsResult.getValue();
         pos += flagsResult.getBytesConsumed();
@@ -164,41 +196,68 @@ public final class Rar5ExtraParser {
 
         if ((flags & Rar5FileTimeRecord.FHEXTRA_HTIME_MTIME) != 0) {
             if (unixTime) {
+                if (pos + 4 > end) {
+                    return null;
+                }
                 mtime = Raw.readIntLittleEndianAsLong(data, pos);
                 pos += 4;
             } else {
+                if (pos + 8 > end) {
+                    return null;
+                }
                 mtime = Raw.readLongLittleEndian(data, pos);
                 pos += 8;
             }
         }
         if ((flags & Rar5FileTimeRecord.FHEXTRA_HTIME_CTIME) != 0) {
             if (unixTime) {
+                if (pos + 4 > end) {
+                    return null;
+                }
                 ctime = Raw.readIntLittleEndianAsLong(data, pos);
                 pos += 4;
             } else {
+                if (pos + 8 > end) {
+                    return null;
+                }
                 ctime = Raw.readLongLittleEndian(data, pos);
                 pos += 8;
             }
         }
         if ((flags & Rar5FileTimeRecord.FHEXTRA_HTIME_ATIME) != 0) {
             if (unixTime) {
+                if (pos + 4 > end) {
+                    return null;
+                }
                 atime = Raw.readIntLittleEndianAsLong(data, pos);
                 pos += 4;
             } else {
+                if (pos + 8 > end) {
+                    return null;
+                }
                 atime = Raw.readLongLittleEndian(data, pos);
                 pos += 8;
             }
         }
         if (unixTime && unixNs) {
             if ((flags & Rar5FileTimeRecord.FHEXTRA_HTIME_MTIME) != 0) {
+                if (pos + 4 > end) {
+                    return null;
+                }
                 mtimeNs = Raw.readIntLittleEndianAsLong(data, pos) & 0x3FFFFFFFL;
                 pos += 4;
             }
             if ((flags & Rar5FileTimeRecord.FHEXTRA_HTIME_CTIME) != 0) {
+                if (pos + 4 > end) {
+                    return null;
+                }
                 ctimeNs = Raw.readIntLittleEndianAsLong(data, pos) & 0x3FFFFFFFL;
                 pos += 4;
             }
             if ((flags & Rar5FileTimeRecord.FHEXTRA_HTIME_ATIME) != 0) {
+                if (pos + 4 > end) {
+                    return null;
+                }
                 atimeNs = Raw.readIntLittleEndianAsLong(data, pos) & 0x3FFFFFFFL;
                 pos += 4;
             }
@@ -207,17 +266,23 @@ public final class Rar5ExtraParser {
         return new Rar5FileTimeRecord(flags, unixTime, unixNs, mtime, ctime, atime, mtimeNs, ctimeNs, atimeNs);
     }
 
-    private static Rar5FileVersionRecord parseVersionRecord(final byte[] data, int pos) {
+    private static Rar5FileVersionRecord parseVersionRecord(final byte[] data, int pos, final int end) throws VIntOverflowException {
+        if (pos >= end) {
+            return null;
+        }
         final VInt.Result flagsResult = VInt.read(data, pos);
         pos += flagsResult.getBytesConsumed();
 
+        if (pos >= end) {
+            return null;
+        }
         final VInt.Result verResult = VInt.read(data, pos);
         final long version = verResult.getValue();
 
         return new Rar5FileVersionRecord(version);
     }
 
-    private static Rar5RedirRecord parseRedirRecord(final byte[] data, int pos, final int end) {
+    private static Rar5RedirRecord parseRedirRecord(final byte[] data, int pos, final int end) throws VIntOverflowException {
         final VInt.Result redirResult = VInt.read(data, pos);
         final long redirType = redirResult.getValue();
         pos += redirResult.getBytesConsumed();
@@ -242,7 +307,7 @@ public final class Rar5ExtraParser {
         return new Rar5RedirRecord(redirType, flags, targetName, dirTarget);
     }
 
-    private static Rar5UnixOwnerRecord parseUnixOwnerRecord(final byte[] data, int pos, final int end) {
+    private static Rar5UnixOwnerRecord parseUnixOwnerRecord(final byte[] data, int pos, final int end) throws VIntOverflowException {
         final VInt.Result flagsResult = VInt.read(data, pos);
         final long flags = flagsResult.getValue();
         pos += flagsResult.getBytesConsumed();

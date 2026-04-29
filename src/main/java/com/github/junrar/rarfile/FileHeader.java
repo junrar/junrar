@@ -125,43 +125,81 @@ public class FileHeader extends BlockHeader {
         this.unpVersion = unpVersion;
     }
 
+    private static void checkBounds(byte[] array, int pos, int bytesNeeded) throws CorruptHeaderException {
+        if (array == null) {
+            throw new CorruptHeaderException("Array is null");
+        }
+        if (pos < 0 || pos + bytesNeeded > array.length) {
+            throw new CorruptHeaderException("Array index out of bounds: pos=" + pos
+                    + ", need=" + bytesNeeded + ", length=" + array.length);
+        }
+    }
+
     public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
 
+        if (fileHeader == null) {
+            throw new CorruptHeaderException("File header is null");
+        }
+
         int position = 0;
+
+        // Read unpSize (4 bytes)
+        checkBounds(fileHeader, position, 4);
         unpSize = Raw.readIntLittleEndianAsLong(fileHeader, position);
         position += 4;
-        hostOS = HostSystem.findHostSystem(fileHeader[4]);
+
+        // Read hostOS (1 byte)
+        checkBounds(fileHeader, position, 1);
+        hostOS = HostSystem.findHostSystem(fileHeader[position]);
         position++;
 
+        // Read fileCRC (4 bytes)
+        checkBounds(fileHeader, position, 4);
         fileCRC = Raw.readIntLittleEndian(fileHeader, position);
         position += 4;
 
+        // Read fileTime (4 bytes)
+        checkBounds(fileHeader, position, 4);
         int fileTime = Raw.readIntLittleEndian(fileHeader, position);
         position += 4;
 
-        unpVersion |= fileHeader[13] & 0xff;
+        // Read unpVersion (1 byte)
+        checkBounds(fileHeader, position, 1);
+        unpVersion |= fileHeader[position] & 0xff;
         position++;
-        unpMethod |= fileHeader[14] & 0xff;
+
+        // Read unpMethod (1 byte)
+        checkBounds(fileHeader, position, 1);
+        unpMethod |= fileHeader[position] & 0xff;
         position++;
+
+        // Read nameSize (2 bytes)
+        checkBounds(fileHeader, position, 2);
         nameSize = Raw.readShortLittleEndian(fileHeader, position);
         position += 2;
 
+        // Read fileAttr (4 bytes)
+        checkBounds(fileHeader, position, 4);
         fileAttr = Raw.readIntLittleEndian(fileHeader, position);
         position += 4;
+
         if (isLargeBlock()) {
+            // Read highPackSize (4 bytes)
+            checkBounds(fileHeader, position, 4);
             highPackSize = Raw.readIntLittleEndian(fileHeader, position);
             position += 4;
 
+            // Read highUnpackSize (4 bytes)
+            checkBounds(fileHeader, position, 4);
             highUnpackSize = Raw.readIntLittleEndian(fileHeader, position);
             position += 4;
         } else {
             highPackSize = 0;
             highUnpackSize = 0;
-            if (unpSize == 0xffffffff) {
+            if (unpSize == 0xffffffffL) {
                 highUnpackSize = Integer.MAX_VALUE;
             }
-
         }
         fullPackSize |= highPackSize;
         fullPackSize <<= 32;
@@ -177,6 +215,7 @@ public class FileHeader extends BlockHeader {
             throw new CorruptHeaderException("Invalid file name with negative size");
         }
 
+        checkBounds(fileHeader, position, nameSize);
         fileNameBytes = new byte[nameSize];
         System.arraycopy(fileHeader, position, fileNameBytes, 0, nameSize);
         position += nameSize;
@@ -211,6 +250,7 @@ public class FileHeader extends BlockHeader {
                 datasize -= SALT_SIZE;
             }
             if (datasize > 0) {
+                checkBounds(fileHeader, position, datasize);
                 subData = new byte[datasize];
                 for (int i = 0; i < datasize; i++) {
                     subData[i] = (fileHeader[position]);
@@ -225,6 +265,7 @@ public class FileHeader extends BlockHeader {
         }
 
         if (hasSalt()) {
+            checkBounds(fileHeader, position, SALT_SIZE);
             for (int i = 0; i < SALT_SIZE; i++) {
                 salt[i] = fileHeader[position];
                 position++;
@@ -280,23 +321,25 @@ public class FileHeader extends BlockHeader {
         }
     }
 
-    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position) {
+    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position) throws CorruptHeaderException {
         return parseExtTime(shift, flags, fileHeader, position, null);
     }
 
-    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
+    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) throws CorruptHeaderException {
         int flag = flags >>> shift;
         if ((flag & 0x8) != 0) {
             long seconds;
             if (baseTime != null) {
                 seconds = baseTime.to(TimeUnit.SECONDS);
             } else {
+                checkBounds(fileHeader, position, 4);
                 seconds = TimeUnit.MILLISECONDS.toSeconds(getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
                 position += 4;
             }
             int count = flag & 0x3;
             long remainder = 0;
             for (int i = 0; i < count; i++) {
+                checkBounds(fileHeader, position, 1);
                 int b = fileHeader[position] & 0xff;
                 remainder = (b << 16) | (remainder >>> 8);
                 position++;

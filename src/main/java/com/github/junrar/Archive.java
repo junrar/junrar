@@ -231,7 +231,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     public List<FileHeader> getFileHeaders() {
         final List<FileHeader> list = new ArrayList<>();
         for (final BaseBlock block : this.headers) {
-            if (block.getHeaderType().equals(UnrarHeadertype.FileHeader)) {
+            if (block.getHeaderType() == UnrarHeadertype.FileHeader) {
                 list.add((FileHeader) block);
             }
         }

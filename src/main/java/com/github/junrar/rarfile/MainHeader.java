@@ -42,10 +42,11 @@ public class MainHeader extends BaseBlock {
         int pos = 0;
         highPosAv = Raw.readShortLittleEndian(mainHeader, pos);
         pos += 2;
+
         posAv = Raw.readIntLittleEndian(mainHeader, pos);
         pos += 4;
 
-        if (hasEncryptVersion()) {
+        if (hasEncryptVersion() && pos < mainHeader.length) {
             encryptVersion |= mainHeader[pos] & 0xff;
         }
     }

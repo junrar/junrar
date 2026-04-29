@@ -16,6 +16,7 @@ import com.github.junrar.rar5.Rar5Constants;
 import com.github.junrar.rar5.header.extra.Rar5ExtraParser;
 import com.github.junrar.rar5.header.extra.Rar5ExtraRecord;
 import com.github.junrar.rar5.io.VInt;
+import com.github.junrar.rar5.io.VIntOverflowException;
 import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.MarkHeader;
 import org.slf4j.Logger;
@@ -173,7 +174,7 @@ public class RAR5HeaderReader implements HeaderReader {
 
                     // Read optional mtime (uint32, Unix time)
                     FileTime mtime = null;
-                    if ((fileFlags & FHFL_UTIME) != 0) {
+                    if ((fileFlags & FHFL_UTIME) != 0 && pos + 4 <= headerData.length) {
                         long mtimeValue = Raw.readIntLittleEndianAsLong(headerData, pos);
                         pos += 4;
                         // Unix timestamp (seconds since 1970-01-01 UTC) - store as UTC
@@ -182,7 +183,7 @@ public class RAR5HeaderReader implements HeaderReader {
 
                     // Read optional CRC32
                     Long dataCrc32 = null;
-                    if ((fileFlags & FHFL_CRC32) != 0) {
+                    if ((fileFlags & FHFL_CRC32) != 0 && pos + 4 <= headerData.length) {
                         dataCrc32 = Raw.readIntLittleEndianAsLong(headerData, pos);
                         pos += 4;
                     }
@@ -235,18 +236,23 @@ public class RAR5HeaderReader implements HeaderReader {
 
                     // Read file name (always UTF-8)
                     String fileName = "";
-                    if (nameLength > 0 && nameLength <= Integer.MAX_VALUE) {
+                    if (nameLength > 0 && nameLength <= Integer.MAX_VALUE
+                            && pos + nameLength <= headerData.length) {
                         fileName = new String(headerData, pos, (int) nameLength, StandardCharsets.UTF_8);
                         pos += (int) nameLength;
                     }
 
                     // Parse extra area records (always at the end of the header data)
                     final List<Rar5ExtraRecord> extraRecords;
-                    if (hasExtra && extraSize > 0) {
+                    if (hasExtra && extraSize > 0 && extraSize <= headerSize && headerSize <= Integer.MAX_VALUE) {
                         // Seek from end of header to guarantee correct position even if
                         // future optional fields appear between the name and extra area.
-                        final int extraStart = (int) headerSize - (int) extraSize;
-                        extraRecords = Rar5ExtraParser.parse(headerData, extraStart, (int) extraSize);
+                        final int extraStart = (int) (headerSize - extraSize);
+                        if (extraStart >= 0 && extraStart >= pos && extraStart + extraSize <= headerData.length) {
+                            extraRecords = Rar5ExtraParser.parse(headerData, extraStart, (int) extraSize);
+                        } else {
+                            extraRecords = Collections.emptyList();
+                        }
                     } else {
                         extraRecords = Collections.emptyList();
                     }
@@ -290,14 +296,31 @@ public class RAR5HeaderReader implements HeaderReader {
         return headers;
     }
 
-    private void parseMainHeaderExtraArea(RAR5MainHeader mainHeader, byte[] headerData, int startPos, int extraSize) {
+    private void parseMainHeaderExtraArea(RAR5MainHeader mainHeader, byte[] headerData, int startPos, int extraSize) throws VIntOverflowException {
+        if (startPos + extraSize > headerData.length) {
+            return; // Invalid extra size, skip parsing
+        }
         int pos = startPos;
-        final int endPos = startPos + extraSize;
+        final int endPos = Math.min(startPos + extraSize, headerData.length);
 
-        while (pos < endPos) {
+        while (pos < endPos && pos < headerData.length) {
+            final int recordStart = pos;
             final VInt.Result recordSizeResult = VInt.read(headerData, pos);
-            final int recordSize = (int) recordSizeResult.getValue();
+            final long recordSizeLong = recordSizeResult.getValue();
+            if (recordSizeLong <= 0 || recordSizeLong > Integer.MAX_VALUE) {
+                return; // Invalid record size, stop parsing
+            }
+            final int recordSize = (int) recordSizeLong;
             pos += recordSizeResult.getBytesConsumed();
+
+            if (pos >= headerData.length) {
+                return; // No more data for record type
+            }
+
+            // Check for overflow
+            if (recordStart + recordSize < recordStart || recordStart + recordSize > headerData.length) {
+                return; // Record extends beyond data or overflow, stop parsing
+            }
 
             final VInt.Result recordTypeResult = VInt.read(headerData, pos);
             final int recordType = (int) recordTypeResult.getValue();
@@ -315,11 +338,11 @@ public class RAR5HeaderReader implements HeaderReader {
                     break;
             }
 
-            pos += recordSize - recordTypeResult.getBytesConsumed();
+            pos = recordStart + recordSize;
         }
     }
 
-    private void parseLocatorRecord(RAR5MainHeader mainHeader, byte[] headerData, int startPos, int recordSize) {
+    private void parseLocatorRecord(RAR5MainHeader mainHeader, byte[] headerData, int startPos, int recordSize) throws VIntOverflowException {
         int pos = startPos;
         final int recordEnd = startPos + recordSize - 1;
 
@@ -341,7 +364,7 @@ public class RAR5HeaderReader implements HeaderReader {
         }
     }
 
-    private void parseMetadataRecord(RAR5MainHeader mainHeader, byte[] headerData, int startPos, int recordSize) {
+    private void parseMetadataRecord(RAR5MainHeader mainHeader, byte[] headerData, int startPos, int recordSize) throws VIntOverflowException {
         int pos = startPos;
         final int recordEnd = startPos + recordSize - 1;
 
@@ -351,26 +374,27 @@ public class RAR5HeaderReader implements HeaderReader {
 
         if ((metadataFlags & 0x0001) != 0 && pos < recordEnd) {
             final VInt.Result nameLenResult = VInt.read(headerData, pos);
-            final int nameLen = (int) nameLenResult.getValue();
+            final long nameLenLong = nameLenResult.getValue();
             pos += nameLenResult.getBytesConsumed();
 
-            if (nameLen > 0 && nameLen < recordEnd - pos) {
+            if (nameLenLong > 0 && nameLenLong <= Integer.MAX_VALUE - pos && pos + nameLenLong <= headerData.length) {
+                final int nameLen = (int) nameLenLong;
                 String name = new String(headerData, pos, nameLen, StandardCharsets.UTF_8);
                 int nullPos = name.indexOf('\0');
                 if (nullPos >= 0) {
                     name = name.substring(0, nullPos);
                 }
                 mainHeader.setOrigName(name);
+                pos += nameLen;
             }
-            pos += nameLen;
         }
 
-        if ((metadataFlags & 0x0002) != 0 && pos < recordEnd) {
+        if ((metadataFlags & 0x0002) != 0 && pos + 8 <= headerData.length) {
             if ((metadataFlags & 0x0004) != 0) {
                 if ((metadataFlags & 0x0008) != 0) {
                     long time = Raw.readLongLittleEndian(headerData, pos);
                     mainHeader.setOrigTime(FileTime.from(time, TimeUnit.NANOSECONDS));
-                } else {
+                } else if (pos + 4 <= headerData.length) {
                     long time = Raw.readIntLittleEndianAsLong(headerData, pos);
                     mainHeader.setOrigTime(FileTime.from(time, TimeUnit.SECONDS));
                 }
