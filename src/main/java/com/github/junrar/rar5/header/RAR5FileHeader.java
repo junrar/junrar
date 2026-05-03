@@ -3,8 +3,10 @@ package com.github.junrar.rar5.header;
 import com.github.junrar.rar5.Rar5Constants;
 import com.github.junrar.rar5.header.extra.Rar5ExtraRecord;
 import com.github.junrar.rar5.header.extra.Rar5FileTimeRecord;
+import com.github.junrar.rarfile.CompressionMethod;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.HostSystem;
+import com.github.junrar.rarfile.UnrarHeadertype;
 
 import java.nio.file.attribute.FileTime;
 import java.nio.file.attribute.PosixFilePermission;
@@ -62,6 +64,8 @@ public class RAR5FileHeader extends FileHeader {
     private final long fileFlags;
     private final long dictionarySize;
     private final boolean isSolid;
+    private final long dataAreaPosition;
+    private final long packSize;
 
     public RAR5FileHeader(final long fileFlags, final long unpackedSize,
                            final long attributes, final FileTime mtime,
@@ -69,13 +73,16 @@ public class RAR5FileHeader extends FileHeader {
                            final int hostOS, final String fileName,
                            final int unpackVersion, final int compressionMethod,
                            final long dictionarySize, final boolean isSolid,
-                           final List<Rar5ExtraRecord> extraRecords) {
+                           final List<Rar5ExtraRecord> extraRecords,
+                           final long dataAreaPosition, final long packSize) {
         super(unpackedSize, hostOS == HOST_UNIX ? HostSystem.unix : HostSystem.win32,
                 dataCrc32 != null ? (int) dataCrc32.longValue() : 0, 0, fileName, (byte) compressionMethod,
                 (byte) unpackVersion);
         this.fileFlags = fileFlags;
         this.dictionarySize = dictionarySize;
         this.isSolid = isSolid;
+        this.dataAreaPosition = dataAreaPosition;
+        this.packSize = packSize;
         setFileNameW(fileName);
 
         if (mtime != null) {
@@ -123,6 +130,27 @@ public class RAR5FileHeader extends FileHeader {
             mappedFlags |= LHD_DIRECTORY;
         }
         setFlags(mappedFlags);
+        setHeaderType(UnrarHeadertype.FileHeader);
+    }
+
+    @Override
+    public long getPositionInFile() {
+        return dataAreaPosition;
+    }
+
+    @Override
+    public short getHeaderSize(boolean encrypted) {
+        return 0;
+    }
+
+    @Override
+    public long getFullPackSize() {
+        return packSize;
+    }
+
+    @Override
+    public long getFullUnpackSize() {
+        return getUnpSize();
     }
 
     /**
@@ -159,6 +187,16 @@ public class RAR5FileHeader extends FileHeader {
      */
     public long getDictionarySize() {
         return dictionarySize;
+    }
+
+    /**
+     * Returns the compression method used for this file.
+     * <p>
+     * For RAR5 archives, method {@code 0} indicates the file is stored without compression.
+     */
+    @Override
+    public CompressionMethod getCompressionMethod() {
+        return getUnpMethod() == 0 ? CompressionMethod.STORED : CompressionMethod.COMPRESSED;
     }
 
     public Set<PosixFilePermission> getPermissions() {

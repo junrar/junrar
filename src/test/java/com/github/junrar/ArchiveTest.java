@@ -237,6 +237,60 @@ public class ArchiveTest {
     }
 
     @Nested
+    class Rar5Stored {
+        @Test
+        public void givenStoredRar5File_whenExtractingFiles_thenContentMatchesExpected() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("rar5.rar")) {
+                try (Archive archive = new Archive(is)) {
+                    FileHeader header = archive.nextFileHeader();
+                    assertThat(header).isNotNull();
+                    assertThat(header.getFileName()).isEqualTo("FILE1.TXT");
+                    assertThat(header.getUnpSize()).isEqualTo(7);
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(header, baos);
+                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '1', '\r', '\n');
+                    }
+
+                    header = archive.nextFileHeader();
+                    assertThat(header).isNotNull();
+                    assertThat(header.getFileName()).isEqualTo("FILE2.TXT");
+                    assertThat(header.getUnpSize()).isEqualTo(7);
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(header, baos);
+                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '2', '\r', '\n');
+                    }
+
+                    assertThat(archive.nextFileHeader()).isNull();
+                }
+            }
+        }
+
+        @Test
+        public void givenStoredRar5File_whenReadingViaInputStream_thenContentMatchesExpected() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("rar5.rar")) {
+                try (Archive archive = new Archive(is)) {
+                    List<FileHeader> headers = archive.getFileHeaders();
+                    assertThat(headers).hasSize(2);
+
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        try (InputStream fis = archive.getInputStream(headers.get(0))) {
+                            IOUtils.copy(fis, baos);
+                        }
+                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '1', '\r', '\n');
+                    }
+
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        try (InputStream fis = archive.getInputStream(headers.get(1))) {
+                            IOUtils.copy(fis, baos);
+                        }
+                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '2', '\r', '\n');
+                    }
+                }
+            }
+        }
+    }
+
+    @Nested
     class Solid {
         @Test
         public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone() throws Exception {
@@ -337,11 +391,12 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenSolidRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
+        public void givenSolidRar5File_whenCreatingArchive_thenFileHeadersAreAccessible() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar5-solid.rar")) {
-                Throwable thrown = catchThrowable(() -> new Archive(is));
-
-                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
+                try (Archive archive = new Archive(is)) {
+                    assertThat(archive.getMainHeader().isSolid()).isTrue();
+                    assertThat(archive.getFileHeaders()).hasSize(9);
+                }
             }
         }
     }
@@ -425,11 +480,12 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenPasswordProtectedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
+        public void givenPasswordProtectedRar5File_whenCreatingArchive_thenFileHeadersAreAccessible() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("password/rar5-password-junrar.rar")) {
-                Throwable thrown = catchThrowable(() -> new Archive(is));
-
-                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
+                try (Archive archive = new Archive(is)) {
+                    assertThat(archive.getFileHeaders()).hasSize(1);
+                    assertThat(archive.getFileHeaders().get(0).getFileName()).isEqualTo("file1.txt");
+                }
             }
         }
     }

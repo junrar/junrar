@@ -652,6 +652,17 @@ public class FileHeader extends BlockHeader {
         return unpMethod;
     }
 
+    /**
+     * Returns the compression method used for this file.
+     * <p>
+     * For RAR4 archives, method {@code 0x30} indicates the file is stored without compression.
+     *
+     * @return the compression method
+     */
+    public CompressionMethod getCompressionMethod() {
+        return unpMethod == 0x30 ? CompressionMethod.STORED : CompressionMethod.COMPRESSED;
+    }
+
     public long getUnpSize() {
         return unpSize;
     }

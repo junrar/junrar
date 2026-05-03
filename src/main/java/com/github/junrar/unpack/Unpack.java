@@ -18,6 +18,8 @@
 package com.github.junrar.unpack;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.exception.UnsupportedRarV5Exception;
+import com.github.junrar.rarfile.CompressionMethod;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.ppm.BlockTypes;
 import com.github.junrar.unpack.ppm.ModelPPM;
@@ -100,8 +102,9 @@ public final class Unpack extends Unpack20 {
 
     public void doUnpack(int method, boolean solid) throws IOException,
             RarException {
-        if (unpIO.getSubHeader().getUnpMethod() == 0x30) {
+        if (unpIO.getSubHeader().getCompressionMethod() == CompressionMethod.STORED) {
             unstoreFile();
+            return;
         }
         switch (method) {
             case 15: // rar 1.5 compression
@@ -115,6 +118,9 @@ public final class Unpack extends Unpack20 {
             case 36: // alternative hash
                 unpack29(solid);
                 break;
+            case 50: // RAR5 compression (VER_PACK5)
+            case 70: // RAR7 compression (VER_PACK7)
+                throw new UnsupportedRarV5Exception();
         }
     }
 

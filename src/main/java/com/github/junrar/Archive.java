@@ -33,7 +33,6 @@ import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.MainHeader;
 import com.github.junrar.rarfile.MarkHeader;
-import com.github.junrar.rarfile.RARVersion;
 import com.github.junrar.rarfile.UnrarHeadertype;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
@@ -311,9 +310,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             throw new CorruptHeaderException();
         }
 
-        if (markHead.getVersion() == RARVersion.V5) {
-            throw new UnsupportedRarV5Exception();
-        }
     }
 
     /**

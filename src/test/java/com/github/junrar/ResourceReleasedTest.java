@@ -12,9 +12,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
-
 /**
  * This test will have the rar file which will be extracted and the extracted content in the same directory. This directory is newly setup and deleted for every test method
  * to ensure all resources are released after the extraction.
@@ -42,28 +39,20 @@ public class ResourceReleasedTest {
     }
 
     @Test
-    public void extractRar5FromFile() {
-        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile, extractDir));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
+    public void extractRar5FromFile() throws IOException, RarException {
+        Junrar.extract(rar5TestFile, extractDir);
     }
 
     @Test
-    public void extractRar5FromInputStream() throws IOException {
-        final InputStream input = new FileInputStream(rar5TestFile);
-
-        Throwable thrown = catchThrowable(() -> Junrar.extract(input, extractDir));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
-
-        input.close();
+    public void extractRar5FromInputStream() throws IOException, RarException {
+        try (InputStream input = new FileInputStream(rar5TestFile)) {
+            Junrar.extract(input, extractDir);
+        }
     }
 
     @Test
-    public void extractRar5FromString() {
-        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath()));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
+    public void extractRar5FromString() throws IOException, RarException {
+        Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath());
     }
 
     @Test

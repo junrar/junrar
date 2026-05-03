@@ -260,7 +260,7 @@ public class RAR5HeaderReader implements HeaderReader {
                     RAR5FileHeader fileHeader = new RAR5FileHeader(fileFlags, unpackedSize, attributes, mtime,
                             dataCrc32, compressionInfo, hostOS, fileName,
                             unpackVersion, compressionMethod, dictionarySize,
-                            isSolid, extraRecords);
+                            isSolid, extraRecords, currentPosition, dataSize);
                     this.headers.add(fileHeader);
                     break;
                 case CRYPT:
