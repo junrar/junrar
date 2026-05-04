@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527747942.312000000,
+    "creationTime" : null,
+    "fileCRC" : "FA13F6DC",
+    "fileName" : "1600红/01.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 656517,
+    "fullUnpackSize" : 730614,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525680066.341000000,
+    "creationTime" : null,
+    "fileCRC" : "3D4FC455",
+    "fileName" : "1600红/02.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 779509,
+    "fullUnpackSize" : 881003,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

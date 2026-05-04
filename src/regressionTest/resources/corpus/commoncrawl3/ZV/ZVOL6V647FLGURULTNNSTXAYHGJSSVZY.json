@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1535936996.838000000,
+    "creationTime" : null,
+    "fileCRC" : "584570D4",
+    "fileName" : "musica2a.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 1848505,
+    "fullUnpackSize" : 1848505,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

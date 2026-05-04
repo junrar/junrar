@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531105148.618000000,
+    "creationTime" : null,
+    "fileCRC" : "D1433F12",
+    "fileName" : "Loader GX 6621 16MB by Platini-2018/Loader GX 6621 16MB by Platini-2018.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 163,
+    "fullUnpackSize" : 204,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531105075.159000000,
+    "creationTime" : null,
+    "fileCRC" : "0",
+    "fileName" : "Loader GX 6621 16MB by Platini-2018",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
 }

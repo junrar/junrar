@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530601269.059000000,
+    "creationTime" : null,
+    "fileCRC" : "8FDC4160",
+    "fileName" : "Załącznik nr 14 - dokumentacja projektowa/1.ekspertyza+proj wzmocn fundam  - 2011-2012.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2681462,
+    "fullUnpackSize" : 2769470,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

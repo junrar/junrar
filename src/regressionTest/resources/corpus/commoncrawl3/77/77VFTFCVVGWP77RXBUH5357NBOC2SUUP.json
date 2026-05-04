@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533819895.843000000,
+    "creationTime" : null,
+    "fileCRC" : "C2921356",
+    "fileName" : "СОВРЕМЕННЫЙ СПОСОБ НЕ СТАРЕТЬ_от 08_08_2018.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 1178778,
+    "fullUnpackSize" : 2950656,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

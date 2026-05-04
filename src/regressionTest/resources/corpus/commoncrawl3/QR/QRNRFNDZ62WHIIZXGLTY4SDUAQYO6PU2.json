@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1515325231.183000000,
+    "creationTime" : null,
+    "fileCRC" : "EC44D7A8",
+    "fileName" : "loader atlas 200 hd by platini.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 178,
+    "fullUnpackSize" : 282,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

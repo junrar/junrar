@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519772310.834000000,
+    "creationTime" : null,
+    "fileCRC" : "5F399DB8",
+    "fileName" : "Elite.5.0.9.x64-(www.Patoghu.com)/Read me.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 32,
+    "fullUnpackSize" : 15,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

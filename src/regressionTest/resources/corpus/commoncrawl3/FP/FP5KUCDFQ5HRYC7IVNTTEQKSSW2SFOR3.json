@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531105162.857000000,
+    "creationTime" : null,
+    "fileCRC" : "A255478B",
+    "fileName" : "Loader-Géant Mini HD plus  By Platini-2018/Loader-Géant Mini HD plus  By Platini-2018.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 167,
+    "fullUnpackSize" : 210,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531105085.327000000,
+    "creationTime" : null,
+    "fileCRC" : "0",
+    "fileName" : "Loader-Géant Mini HD plus  By Platini-2018",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
 }

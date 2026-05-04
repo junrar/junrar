@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531302284.921000000,
+    "creationTime" : null,
+    "fileCRC" : "8A31936D",
+    "fileName" : "Усть-Катавский городской округ/ул. Чапаева, д. 13.xlsx",
+    "hostOS" : "win32",
+    "fullPackSize" : 12047,
+    "fullUnpackSize" : 13516,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

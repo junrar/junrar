@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536839280.589000000,
+    "creationTime" : null,
+    "fileCRC" : "7515ECC5",
+    "fileName" : "BILANT LA 31.03.2018.PDF",
+    "hostOS" : "win32",
+    "fullPackSize" : 2654809,
+    "fullUnpackSize" : 2885326,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

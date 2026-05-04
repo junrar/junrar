@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1518200640.818000000,
+    "creationTime" : null,
+    "fileCRC" : "B72B00C6",
+    "fileName" : "iptv m3u playlist 10 February 2018.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 126,
+    "fullUnpackSize" : 147,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517999725.849000000,
+    "creationTime" : null,
+    "fileCRC" : "87841F0B",
+    "fileName" : "博王计划软件-重庆人工计划.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 54382996,
+    "fullUnpackSize" : 54680576,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

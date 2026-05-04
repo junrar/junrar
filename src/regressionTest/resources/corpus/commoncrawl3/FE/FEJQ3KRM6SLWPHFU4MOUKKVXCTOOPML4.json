@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525080111.219000000,
+    "creationTime" : null,
+    "fileCRC" : "843C0D65",
+    "fileName" : "SatTubeTv  Free Beinsport     In Hotbird.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 536,
+    "fullUnpackSize" : 890,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

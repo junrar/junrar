@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1527749378.000000000,
+    "creationTime" : null,
+    "fileCRC" : "7FE70A7F",
+    "fileName" : "Продажа гаража/Договор задатка.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 8632,
+    "fullUnpackSize" : 43520,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533380486.000000000,
+    "creationTime" : null,
+    "fileCRC" : "D30C23B2",
+    "fileName" : "Продажа гаража/ПРОЕКТ Договор купли-продажи кафе.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 15411,
+    "fullUnpackSize" : 87552,
+    "isSolid" : true,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

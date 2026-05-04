@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534741628.000000000,
+    "creationTime" : null,
+    "fileCRC" : "8BE92A9D",
+    "fileName" : "中国科大校园歌曲汇总/00 中国科大校园歌曲汇总.xls",
+    "hostOS" : "win32",
+    "fullPackSize" : 7121,
+    "fullUnpackSize" : 24064,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1532308276.000000000,
+    "creationTime" : null,
+    "fileCRC" : "28FB89C0",
+    "fileName" : "中国科大校园歌曲汇总/01 萤火虫.mp3",
+    "hostOS" : "win32",
+    "fullPackSize" : 8788634,
+    "fullUnpackSize" : 8854464,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

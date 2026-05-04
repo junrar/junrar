@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511990071.649000000,
+    "creationTime" : null,
+    "fileCRC" : "F3366818",
+    "fileName" : "Supernatural.S13E06.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 15291,
+    "fullUnpackSize" : 39981,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : "0",
+    "fileName" : "QO",
+    "hostOS" : "win32",
+    "fullPackSize" : 76,
+    "fullUnpackSize" : 76,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

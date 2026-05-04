@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1510501347.910000000,
+    "creationTime" : null,
+    "fileCRC" : "E12576EF",
+    "fileName" : "Supernatural.S13E04.XviD-AFG.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 16956,
+    "fullUnpackSize" : 44368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : "0",
+    "fileName" : "QO",
+    "hostOS" : "win32",
+    "fullPackSize" : 77,
+    "fullUnpackSize" : 77,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536687833.515000000,
+    "creationTime" : null,
+    "fileCRC" : "7FCCDA70",
+    "fileName" : "Patch-URET.zip",
+    "hostOS" : "win32",
+    "fullPackSize" : 609800,
+    "fullUnpackSize" : 609800,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536342681.000000000,
+    "creationTime" : null,
+    "fileCRC" : "174351A8",
+    "fileName" : "YouTubeByClick-Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 15521552,
+    "fullUnpackSize" : 15521552,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

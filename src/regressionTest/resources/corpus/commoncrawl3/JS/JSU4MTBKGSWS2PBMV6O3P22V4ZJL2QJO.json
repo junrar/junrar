@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522303459.806000000,
+    "creationTime" : null,
+    "fileCRC" : "391220F1",
+    "fileName" : "EAX61354204_0_EBR72642732_LD01B.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1481919,
+    "fullUnpackSize" : 1479355,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

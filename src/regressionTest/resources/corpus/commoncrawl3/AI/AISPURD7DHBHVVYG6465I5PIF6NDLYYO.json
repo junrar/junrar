@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530521952.395000000,
+    "creationTime" : null,
+    "fileCRC" : "A8E6444F",
+    "fileName" : "关于印发市水利局拆违控违工作方案的通知.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 985273,
+    "fullUnpackSize" : 1272346,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : "0",
+    "fileName" : "QO",
+    "hostOS" : "win32",
+    "fullPackSize" : 111,
+    "fullUnpackSize" : 111,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

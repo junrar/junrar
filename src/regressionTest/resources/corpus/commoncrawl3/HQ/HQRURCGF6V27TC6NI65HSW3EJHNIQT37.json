@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1536776303.974000000,
+    "creationTime" : null,
+    "fileCRC" : "2F87C417",
+    "fileName" : "Caratula_PES2019_ps4.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 1587639,
+    "fullUnpackSize" : 1725126,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

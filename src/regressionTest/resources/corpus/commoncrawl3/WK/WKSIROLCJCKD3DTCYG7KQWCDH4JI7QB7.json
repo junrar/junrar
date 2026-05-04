@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530544642.013000000,
+    "creationTime" : null,
+    "fileCRC" : "C0C5C048",
+    "fileName" : "Movavi Video Converter.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 40001599,
+    "fullUnpackSize" : 40331807,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

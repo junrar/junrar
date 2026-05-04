@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511829521.218000000,
+    "creationTime" : null,
+    "fileCRC" : "9920B74F",
+    "fileName" : "专家报告-浙江大学黄晨-图书馆大数据与大数据图书馆@湖州.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 4980651,
+    "fullUnpackSize" : 6272680,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

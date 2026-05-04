@@ -3,6 +3,7 @@ package com.github.junrar.regression;
 import com.github.junrar.Archive;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
+import com.github.junrar.rarfile.RARVersion;
 
 import java.util.Collections;
 import java.util.List;
@@ -19,7 +20,7 @@ public record ArchiveRecord(
 ) {
     static ArchiveRecord fromArchive(Archive from) throws RarException {
         return new ArchiveRecord(
-            false,
+            from.getVersion() == RARVersion.V5,
             from.isEncrypted(),
             from.isPasswordProtected(),
             from.isOldFormat(),

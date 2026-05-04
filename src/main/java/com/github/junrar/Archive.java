@@ -34,6 +34,7 @@ import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.MainHeader;
 import com.github.junrar.rarfile.MarkHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
+import com.github.junrar.rarfile.RARVersion;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
 import com.github.junrar.volume.FileVolumeManager;
@@ -555,6 +556,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     public MainHeader getMainHeader() {
         return this.newMhd;
+    }
+
+    /**
+     * Returns the RAR version of this archive.
+     * @return RARVersion enum (OLD, V4, V5) or null if version is unavailable
+     */
+    public RARVersion getVersion() {
+        return this.markHead != null ? this.markHead.getVersion() : null;
     }
 
     /**

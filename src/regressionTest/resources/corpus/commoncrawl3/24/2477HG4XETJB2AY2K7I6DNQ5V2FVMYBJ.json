@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521347974.307000000,
+    "creationTime" : null,
+    "fileCRC" : "287F1D28",
+    "fileName" : "récupérer numéro de série icone-sat illimité-géant-écholink.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 508,
+    "fullUnpackSize" : 1189,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

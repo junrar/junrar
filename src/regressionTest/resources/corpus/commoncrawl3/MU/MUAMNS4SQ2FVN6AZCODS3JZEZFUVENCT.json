@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530070368.867000000,
+    "creationTime" : null,
+    "fileCRC" : "24C3F928",
+    "fileName" : "HDSD_PDF/OTS_MOBILE -HBS.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 5638381,
+    "fullUnpackSize" : 6131544,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

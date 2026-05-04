@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531105180.720000000,
+    "creationTime" : null,
+    "fileCRC" : "B254EFDA",
+    "fileName" : "New loader geant 2500 hd hybrid-plus-new/New loader geant 2500 hd hybrid-plus-new.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 157,
+    "fullUnpackSize" : 217,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531105093.661000000,
+    "creationTime" : null,
+    "fileCRC" : "0",
+    "fileName" : "New loader geant 2500 hd hybrid-plus-new",
+    "hostOS" : "win32",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  } ],
+  "exception" : null
 }

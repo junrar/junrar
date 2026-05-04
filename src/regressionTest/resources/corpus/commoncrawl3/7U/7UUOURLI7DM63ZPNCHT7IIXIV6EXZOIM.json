@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534314414.000000000,
+    "creationTime" : null,
+    "fileCRC" : "5A92CB2E",
+    "fileName" : "JAWA TENGAH SEPTEMBER 2018/59 Provinsi Jawa Tengah.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 8145802,
+    "fullUnpackSize" : 8777677,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

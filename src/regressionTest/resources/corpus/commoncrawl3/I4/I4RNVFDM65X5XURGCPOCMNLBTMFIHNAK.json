@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534820014.747000000,
+    "creationTime" : null,
+    "fileCRC" : "C08BFB02",
+    "fileName" : "KAB SUKOHARJO DAN KOTA SOLO SEP 2018/1. GERTAN JATENG SEPTEMBER 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 170973,
+    "fullUnpackSize" : 299128,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534387316.000000000,
+    "creationTime" : null,
+    "fileCRC" : "5C39C380",
+    "fileName" : "KAB SUKOHARJO DAN KOTA SOLO SEP 2018/29 Kabupaten Sukoharjo dan Kota Solo.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3697571,
+    "fullUnpackSize" : 4308824,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

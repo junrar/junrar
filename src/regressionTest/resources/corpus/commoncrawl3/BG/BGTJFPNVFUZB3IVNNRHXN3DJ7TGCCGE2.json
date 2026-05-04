@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534314848.000000000,
+    "creationTime" : null,
+    "fileCRC" : "6D3153CD",
+    "fileName" : "BALI SEPTEMBER 2018/85 Provinsi Bali.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 5121520,
+    "fullUnpackSize" : 5805623,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

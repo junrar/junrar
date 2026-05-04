@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534315308.000000000,
+    "creationTime" : null,
+    "fileCRC" : "64E52C0C",
+    "fileName" : "KALIMANTAN TIMUR SEPTEMBER 2018/98 Provinsi Kalimantan Timur.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 3410662,
+    "fullUnpackSize" : 4701962,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

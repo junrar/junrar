@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1531852038.000000000,
+    "creationTime" : null,
+    "fileCRC" : "AFC1776F",
+    "fileName" : "Anexo 8 - Processo Administrativo Tributos/Processo Administrativo PGFN.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 2717863,
+    "fullUnpackSize" : 2999383,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

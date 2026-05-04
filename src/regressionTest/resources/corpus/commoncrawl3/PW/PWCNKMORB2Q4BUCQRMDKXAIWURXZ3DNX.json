@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1500244335.745000000,
+    "creationTime" : null,
+    "fileCRC" : "5998E2AF",
+    "fileName" : "Declaratie Avere Buceanu Maria.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 1221294,
+    "fullUnpackSize" : 1430261,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1533750132.056000000,
+    "creationTime" : null,
+    "fileCRC" : "E35B41AD",
+    "fileName" : "fotos rolezinho cortada.png",
+    "hostOS" : "win32",
+    "fullPackSize" : 8086162,
+    "fullUnpackSize" : 8107684,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : true,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }
