@@ -211,16 +211,8 @@ public class ComprDataIO {
         testMode = mode;
     }
 
-    public boolean isTestMode() {
-        return testMode;
-    }
-
     public void setSkipUnpCRC(boolean skip) {
         skipUnpCRC = skip;
-    }
-
-    public boolean isSkipUnpCRC() {
-        return skipUnpCRC;
     }
 
     public void setSubHeader(FileHeader hd) {

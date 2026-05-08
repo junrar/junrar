@@ -573,17 +573,21 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @throws RarException .
      */
     public void extractFile(final FileHeader hd, final OutputStream os) throws RarException {
-        if (!this.headers.contains(hd)) {
+        List<FileHeader> fileHeaders = getFileHeaders();
+        int targetIdx = fileHeaders.indexOf(hd);
+        if (targetIdx < 0) {
             throw new HeaderNotInArchiveException();
         }
         try {
-            int targetIdx = getFileHeaderIndex(hd);
             boolean isSolidStream = newMhd.isSolid() || hd.isSolid();
 
             if (isSolidStream) {
-                List<FileHeader> fileHeaders = getFileHeaders();
                 if (targetIdx < lastProcessedFileIndex) {
-                    resetSolidStream(fileHeaders);
+                    // Reset the dictionary unconditionally: doExtractFile only resets it when
+                    // the first file is non-solid, which malformed archives may violate.
+                    if (unpack != null) {
+                        unpack.init(null);
+                    }
                     lastProcessedFileIndex = -1;
                 }
                 for (int i = lastProcessedFileIndex + 1; i < targetIdx; i++) {
@@ -601,43 +605,16 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         }
     }
 
-    private int getFileHeaderIndex(FileHeader target) throws HeaderNotInArchiveException {
-        List<FileHeader> fileHeaders = getFileHeaders();
-        for (int i = 0; i < fileHeaders.size(); i++) {
-            if (fileHeaders.get(i) == target) {
-                return i;
-            }
-        }
-        throw new HeaderNotInArchiveException();
-    }
-
-    private void resetSolidStream(List<FileHeader> fileHeaders) throws IOException, RarException {
-        FileHeader firstFile = fileHeaders.get(0);
-        long startPos = firstFile.getPositionInFile() + firstFile.getHeaderSize(isEncrypted());
-        getChannel().setPosition(startPos);
-        if (unpack != null) {
-            unpack.init(null);
-        }
-        dataIO.init((OutputStream) null);
-    }
-
     private void skipFile(FileHeader skipHd) {
         if (skipHd.getFullUnpackSize() <= 0) {
             return;
         }
-        boolean origTest = dataIO.isTestMode();
-        boolean origSkip = dataIO.isSkipUnpCRC();
         try {
-            dataIO.setTestMode(true);
-            dataIO.setSkipUnpCRC(true);
             doExtractFile(skipHd, new NullOutputStream(), true);
         } catch (RarException e) {
             logger.warn("Error skipping file {}: {}", skipHd.getFileName(), e.getMessage());
         } catch (IOException e) {
             logger.warn("IO error skipping file {}: {}", skipHd.getFileName(), e.getMessage());
-        } finally {
-            dataIO.setTestMode(origTest);
-            dataIO.setSkipUnpCRC(origSkip);
         }
     }
 
