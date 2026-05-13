@@ -120,6 +120,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private int currentHeaderIndex;
 
     /**
+     * Tracks the highest file index processed in the current solid stream.
+     */
+    private int lastProcessedFileIndex = -1;
+
+    /**
      * Size of packed data in current file.
      */
     private long totalPackedSize = 0L;
@@ -568,17 +573,55 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @throws RarException .
      */
     public void extractFile(final FileHeader hd, final OutputStream os) throws RarException {
-        if (!this.headers.contains(hd)) {
+        List<FileHeader> fileHeaders = getFileHeaders();
+        int targetIdx = fileHeaders.indexOf(hd);
+        if (targetIdx < 0) {
             throw new HeaderNotInArchiveException();
         }
         try {
+            boolean isSolidStream = newMhd.isSolid() || hd.isSolid();
+
+            if (isSolidStream) {
+                if (targetIdx < lastProcessedFileIndex) {
+                    // Reset the dictionary unconditionally: doExtractFile only resets it when
+                    // the first file is non-solid, which malformed archives may violate.
+                    if (unpack != null) {
+                        unpack.init(null);
+                    }
+                    lastProcessedFileIndex = -1;
+                }
+                for (int i = lastProcessedFileIndex + 1; i < targetIdx; i++) {
+                    skipFile(fileHeaders.get(i));
+                }
+            }
             doExtractFile(hd, os);
+            lastProcessedFileIndex = targetIdx;
         } catch (final Exception e) {
             if (e instanceof RarException) {
                 throw (RarException) e;
             } else {
                 throw new RarException(e);
             }
+        }
+    }
+
+    private void skipFile(FileHeader skipHd) {
+        if (skipHd.getFullUnpackSize() <= 0) {
+            return;
+        }
+        try {
+            doExtractFile(skipHd, new NullOutputStream(), true);
+        } catch (RarException e) {
+            logger.warn("Error skipping file {}: {}", skipHd.getFileName(), e.getMessage());
+        } catch (IOException e) {
+            logger.warn("IO error skipping file {}: {}", skipHd.getFileName(), e.getMessage());
+        }
+    }
+
+    private static class NullOutputStream extends OutputStream {
+        @Override
+        public void write(int b) {
+            // No-op
         }
     }
 
@@ -717,6 +760,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private void doExtractFile(FileHeader hd, final OutputStream os)
         throws RarException, IOException {
+        doExtractFile(hd, os, false);
+    }
+
+    private void doExtractFile(FileHeader hd, final OutputStream os, boolean skip)
+        throws RarException, IOException {
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
@@ -729,13 +777,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.unpack.setDestSize(hd.getFullUnpackSize());
         try {
             this.unpack.doUnpack(hd.getUnpVersion(), hd.isSolid());
-            // Verify file CRC
-            hd = this.dataIO.getSubHeader();
-            final long actualCRC = hd.isSplitAfter() ? ~this.dataIO.getPackedCRC()
-                : ~this.dataIO.getUnpFileCRC();
-            final int expectedCRC = hd.getFileCRC();
-            if (actualCRC != expectedCRC) {
-                throw new CrcErrorException();
+            if (!skip) {
+                // Verify file CRC
+                hd = this.dataIO.getSubHeader();
+                final long actualCRC = hd.isSplitAfter() ? ~this.dataIO.getPackedCRC()
+                    : ~this.dataIO.getUnpFileCRC();
+                final int expectedCRC = hd.getFileCRC();
+                if (actualCRC != expectedCRC) {
+                    throw new CrcErrorException();
+                }
             }
             // if (!hd.isSplitAfter()) {
             // // Verify file CRC
@@ -746,7 +796,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         } catch (final Exception e) {
             this.unpack.cleanUp();
             if (e instanceof RarException) {
-                // throw new RarException((RarException)e);
                 throw (RarException) e;
             } else {
                 throw new RarException(e);

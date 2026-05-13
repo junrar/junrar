@@ -16,7 +16,6 @@
  */
 package com.github.junrar;
 
-import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
@@ -38,6 +37,7 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
@@ -287,7 +287,7 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenSolidRar4File_whenExtractingOutOfOrder_thenExceptionIsThrown() throws Exception {
+        public void givenSolidRar4File_whenExtractingOutOfOrder_thenExtractionIsDone() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isTrue();
@@ -295,10 +295,42 @@ public class ArchiveTest {
                     List<FileHeader> fileHeaders = archive.getFileHeaders();
                     assertThat(fileHeaders).hasSize(9);
 
+                    // Extract file 5 (index 4) out of order - should skip files 1-4
                     try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                        Throwable thrown = catchThrowable(() -> archive.extractFile(fileHeaders.get(4), baos));
+                        archive.extractFile(fileHeaders.get(4), baos);
+                        assertThat(baos.toString()).isEqualTo("file5\n");
+                    }
 
-                        assertThat(thrown).isExactlyInstanceOf(CrcErrorException.class);
+                    // Extract file 2 (index 1) - backward access should reset and re-process
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(fileHeaders.get(1), baos);
+                        assertThat(baos.toString()).isEqualTo("file2\n");
+                    }
+
+                    // Extract file 9 (index 8) - forward access after backward access
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(fileHeaders.get(8), baos);
+                        assertThat(baos.toString()).isEqualTo("file9\n");
+                    }
+                }
+            }
+        }
+
+        @Test
+        public void givenSolidRar4File_whenExtractingInReverse_theExtractionIsDone() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar");
+                 Archive archive = new Archive(is)) {
+                assertThat(archive.getMainHeader().isSolid()).isTrue();
+
+                List<FileHeader> fileHeaders = archive.getFileHeaders();
+                assertThat(fileHeaders).hasSize(9);
+                Collections.reverse(fileHeaders);
+
+                for (FileHeader fileHeader : fileHeaders) {
+                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                        archive.extractFile(fileHeader, baos);
+                        String expected = fileHeader.getFileName().replace(".txt", "") + "\n";
+                        assertThat(baos.toString()).isEqualTo(expected);
                     }
                 }
             }
