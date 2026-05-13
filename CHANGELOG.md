@@ -1,3 +1,24 @@
+# [7.6.0](https://github.com/junrar/junrar/compare/v7.5.10...v7.6.0) (2026-05-13)
+## 🚀 Features
+
+- support random access for files in solid RAR4 archives ([e0874d2](https://github.com/junrar/junrar/commits/e0874d2))
+
+## 🏎 Perf
+
+- replace RarCRC.checkCrc with java.util.zip.CRC32 ([5270d23](https://github.com/junrar/junrar/commits/5270d23))
+
+## 🛠  Build
+**deps**
+- bump gradle-wrapper to 9.5.1 ([cb4b7fd](https://github.com/junrar/junrar/commits/cb4b7fd))
+- bump com.fasterxml.jackson.core:jackson-databind ([0bb56b3](https://github.com/junrar/junrar/commits/0bb56b3))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([ca621b2](https://github.com/junrar/junrar/commits/ca621b2))
+- bump org.jreleaser from 1.23.0 to 1.24.0 ([90f0548](https://github.com/junrar/junrar/commits/90f0548))
+- bump commons-io:commons-io from 2.21.0 to 2.22.0 ([83a5d08](https://github.com/junrar/junrar/commits/83a5d08))
+- bump com.github.ben-manes.versions from 0.53.0 to 0.54.0 ([d5abcdb](https://github.com/junrar/junrar/commits/d5abcdb))
+
+**unscoped**
+- replace deprecated action ([338efcb](https://github.com/junrar/junrar/commits/338efcb))
+
 # [7.5.10](https://github.com/junrar/junrar/compare/v7.5.9...v7.5.10) (2026-04-15)
 ## 🐛 Fixes
 
