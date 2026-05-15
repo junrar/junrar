@@ -11,7 +11,7 @@ public record FileHeaderRecord(
     Instant lastAccessTime,
     Instant lastModifiedTime,
     Instant creationTime,
-    int fileCRC,
+    String fileCRC,
     String fileName,
     String hostOS,
     long fullPackSize,

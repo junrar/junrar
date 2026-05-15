@@ -53,7 +53,7 @@ public class FileHeader extends BlockHeader {
 
     private final HostSystem hostOS;
 
-    private final int fileCRC;
+    private final FileChecksum fileCRC;
 
     /**
      * Compression algorithm version.
@@ -117,7 +117,7 @@ public class FileHeader extends BlockHeader {
         super();
         this.unpSize = unpSize;
         this.hostOS = hostOS;
-        this.fileCRC = fileCRC;
+        this.fileCRC = new CrcChecksum(fileCRC);
         this.highPackSize = highPackSize;
         this.fileNameBytes = utf8FileName.getBytes(StandardCharsets.UTF_8);
         this.fileNameW = utf8FileName;
@@ -156,7 +156,7 @@ public class FileHeader extends BlockHeader {
 
         // Read fileCRC (4 bytes)
         checkBounds(fileHeader, position, 4);
-        fileCRC = Raw.readIntLittleEndian(fileHeader, position);
+        fileCRC = new CrcChecksum(Raw.readIntLittleEndian(fileHeader, position));
         position += 4;
 
         // Read fileTime (4 bytes)
@@ -534,8 +534,13 @@ public class FileHeader extends BlockHeader {
         this.fileAttr = fileAttr;
     }
 
-    public int getFileCRC() {
-        return fileCRC;
+    /**
+     * Returns the checksum of the file data.
+     *
+     * @return the checksum value
+     */
+    public String getFileCRC() {
+        return fileCRC.getChecksum();
     }
 
     public byte[] getFileNameByteArray() {

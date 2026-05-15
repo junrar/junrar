@@ -54,6 +54,7 @@ import java.io.PipedOutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.SynchronousQueue;
@@ -531,10 +532,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             if (!skip) {
                 // Verify file CRC
                 hd = this.dataIO.getSubHeader();
-                final long actualCRC = hd.isSplitAfter() ? ~this.dataIO.getPackedCRC()
-                    : ~this.dataIO.getUnpFileCRC();
-                final int expectedCRC = hd.getFileCRC();
-                if (actualCRC != expectedCRC) {
+                final long actualCRC = hd.isSplitAfter() ? this.dataIO.getPackedCRC() : this.dataIO.getUnpFileCRC();
+                final String expectedCRC = hd.getFileCRC();
+                if (!expectedCRC.equals(Long.toHexString(actualCRC).toUpperCase(Locale.ROOT))) {
                     throw new CrcErrorException();
                 }
             }

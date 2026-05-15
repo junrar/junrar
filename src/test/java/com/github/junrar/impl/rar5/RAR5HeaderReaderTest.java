@@ -50,7 +50,7 @@ class RAR5HeaderReaderTest {
             assertThat(mainHeader.getHeaderSize(false)).isEqualTo((short) 11);
             assertThat(headers.get(2)).isInstanceOf(RAR5FileHeader.class);
             final RAR5FileHeader file1 = (RAR5FileHeader) headers.get(2);
-            assertFileInfo(file1, "FILE1.TXT", 7, 2048490938, (byte) 0, 131072, FileTime.from(
+            assertFileInfo(file1, "FILE1.TXT", 7, "7A197DBA", (byte) 0, 131072, FileTime.from(
                     ZonedDateTime.of(2010, 11, 2, 23, 27, 28, 0, ZoneOffset.UTC)
                             .toInstant()
             ), HostSystem.win32, false, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
@@ -58,7 +58,7 @@ class RAR5HeaderReaderTest {
 
             assertThat(headers.get(3)).isInstanceOf(RAR5FileHeader.class);
             final RAR5FileHeader file2 = (RAR5FileHeader) headers.get(3);
-            assertFileInfo(file2, "FILE2.TXT", 7, 2019541987, (byte) 0, 131072, FileTime.from(
+            assertFileInfo(file2, "FILE2.TXT", 7, "785FC3E3", (byte) 0, 131072, FileTime.from(
                     ZonedDateTime.of(2010, 11, 2, 23, 27, 34, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.win32, false, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
@@ -89,56 +89,56 @@ class RAR5HeaderReaderTest {
 
             assertThat(headers.get(2)).isInstanceOf(RAR5FileHeader.class);
             final RAR5FileHeader file1 = (RAR5FileHeader) headers.get(2);
-            assertFileInfo(file1, "file1.txt", 6, -500566268, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file1, "file1.txt", 6, "E229F704", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, false, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             assertThat(headers.get(3)).isInstanceOf(RAR5FileHeader.class);
             final RAR5FileHeader file2 = (RAR5FileHeader) headers.get(3);
-            assertFileInfo(file2, "file2.txt", 6, -922442553, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file2, "file2.txt", 6, "C904A4C7", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             final RAR5FileHeader file3 = (RAR5FileHeader) headers.get(4);
-            assertFileInfo(file3, "file3.txt", 6, -803236474, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file3, "file3.txt", 6, "D01F9586", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             final RAR5FileHeader file4 = (RAR5FileHeader) headers.get(5);
-            assertFileInfo(file4, "file4.txt", 6, -1621228735, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file4, "file4.txt", 6, "9F5E0341", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             final RAR5FileHeader file5 = (RAR5FileHeader) headers.get(6);
-            assertFileInfo(file5, "file5.txt", 6, -2042285568, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file5, "file5.txt", 6, "86453200", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             final RAR5FileHeader file6 = (RAR5FileHeader) headers.get(7);
-            assertFileInfo(file6, "file6.txt", 6, -1385668157, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file6, "file6.txt", 6, "AD6861C3", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             final RAR5FileHeader file7 = (RAR5FileHeader) headers.get(8);
-            assertFileInfo(file7, "file7.txt", 6, -1267511166, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file7, "file7.txt", 6, "B4735082", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             final RAR5FileHeader file8 = (RAR5FileHeader) headers.get(9);
-            assertFileInfo(file8, "file8.txt", 6, 871058509, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file8, "file8.txt", 6, "33EB4C4D", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
 
             final RAR5FileHeader file9 = (RAR5FileHeader) headers.get(10);
-            assertFileInfo(file9, "file9.txt", 6, 720403724, (byte) 3, 1048576L, FileTime.from(
+            assertFileInfo(file9, "file9.txt", 6, "2AF07D0C", (byte) 3, 1048576L, FileTime.from(
                     ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
             ), HostSystem.unix, true, new HashSet<>(Arrays.asList(PosixFilePermission.OWNER_READ,
                     PosixFilePermission.OWNER_WRITE, PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
@@ -148,7 +148,7 @@ class RAR5HeaderReaderTest {
         }
     }
 
-    private void assertFileInfo(RAR5FileHeader fileHeader, String fileName, long unpSize, int crc,
+    private void assertFileInfo(RAR5FileHeader fileHeader, String fileName, long unpSize, String crc,
                                 byte compressionMethod, long dictionarySize, FileTime lastModifiedTime,
                                 HostSystem hostOs, boolean solid, Set<PosixFilePermission> filePermissions) {
         assertThat(fileHeader.getFileName()).isEqualTo(fileName);

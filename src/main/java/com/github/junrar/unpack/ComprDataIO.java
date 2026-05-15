@@ -32,6 +32,7 @@ import javax.crypto.Cipher;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Locale;
 import java.util.zip.CRC32;
 
 /**
@@ -137,7 +138,7 @@ public class ComprDataIO {
 
             if (subHead.isSplitAfter()) {
                 packCrc32.update(addr, offset, retCode);
-                packedCRC = (int) (~packCrc32.getValue());
+                packedCRC = packCrc32.getValue();
             }
 
             totalRead += retCode;
@@ -156,8 +157,8 @@ public class ComprDataIO {
                 }
 
                 FileHeader hd = this.getSubHeader();
-                if (hd.getUnpVersion() >= 20 && hd.getFileCRC() != 0xffffffff
-                        && this.getPackedCRC() != ~hd.getFileCRC()) {
+                if (hd.getUnpVersion() >= 20 && !hd.getFileCRC().equals("FFFFFFFF")
+                        && !hd.getFileCRC().equals(Long.toHexString(this.getPackedCRC()).toUpperCase(Locale.ROOT))) {
                     throw new CrcErrorException();
                 }
                 UnrarCallback callback = archive.getUnrarCallback();
@@ -195,7 +196,7 @@ public class ComprDataIO {
                 unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, count);
             } else {
                 unpCrc32.update(addr, offset, count);
-                unpFileCRC = (int) (~unpCrc32.getValue());
+                unpFileCRC = unpCrc32.getValue();
             }
         }
         // if (!skipArcCRC) {
