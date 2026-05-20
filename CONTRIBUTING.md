@@ -27,9 +27,7 @@ Regression testing analyzes each RAR file in the corpus, and compares the result
 
 ### Run on Github
 
-The regression tests can be ran:
-- on a PR, by commenting `/regression`
-- on a branch, by manually triggering the _Regression Test_ workflow 
+The regression tests will run after manual approval from maintainers.
 
 ### Run locally
 
