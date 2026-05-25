@@ -20,7 +20,7 @@ package com.github.junrar.unpack.ppm;
 import java.io.IOException;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.unpack.Unpack;
+import com.github.junrar.unpack.Unpack29;
 
 
 /**
@@ -41,13 +41,13 @@ public class RangeCoder {
 
     private final SubRange subRange = new SubRange();
 
-    private Unpack unpackRead;
+    private Unpack29 unpackRead;
 
     public SubRange getSubRange() {
         return subRange;
     }
 
-    public void initDecoder(Unpack unpackRead) throws IOException, RarException {
+    public void initDecoder(Unpack29 unpackRead) throws IOException, RarException {
         this.unpackRead = unpackRead;
 
         low = code = 0L;

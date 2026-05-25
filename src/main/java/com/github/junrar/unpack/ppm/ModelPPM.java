@@ -18,7 +18,7 @@
 package com.github.junrar.unpack.ppm;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.unpack.Unpack;
+import com.github.junrar.unpack.Unpack29;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -176,7 +176,7 @@ public class ModelPPM {
         Arrays.fill(charMask, 0);
     }
 
-    public boolean decodeInit(Unpack unpackRead, int escChar/* ref */)
+    public boolean decodeInit(Unpack29 unpackRead, int escChar/* ref */)
             throws IOException, RarException {
 
         int MaxOrder = unpackRead.getChar() & 0xff;
