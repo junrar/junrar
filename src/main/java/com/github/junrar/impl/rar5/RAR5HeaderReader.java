@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.zip.CRC32;
 
 import static com.github.junrar.rar5.header.RAR5FileHeader.FCI_ALGO_MASK;
 import static com.github.junrar.rar5.header.RAR5FileHeader.FCI_DICT_MASK;
@@ -66,6 +67,7 @@ public class RAR5HeaderReader implements HeaderReader {
         long currentPosition = Rar5Constants.SIZEOF_MARKHEAD5;
 
         while (currentPosition < fileLength) {
+            final long blockStart = currentPosition;
             RawDataIo rawData = new RawDataIo(channel);
             rawData.setPosition(currentPosition);
 
@@ -79,6 +81,8 @@ public class RAR5HeaderReader implements HeaderReader {
             currentPosition += CRC32_SIZE;
 
             // Read header size vint (manual loop: must read from channel before full header buffer exists)
+            final byte[] headerSizeVint = new byte[3];
+            int headerSizeVintLen = 0;
             long headerSize = 0;
             int shift = 0;
             for (int i = 0; i < 3; i++) {
@@ -86,6 +90,7 @@ public class RAR5HeaderReader implements HeaderReader {
                 if (b < 0) {
                     return;
                 }
+                headerSizeVint[headerSizeVintLen++] = (byte) b;
                 headerSize |= (b & 0x7FL) << shift;
                 currentPosition++;
                 if ((b & 0x80) == 0) break;
@@ -99,6 +104,14 @@ public class RAR5HeaderReader implements HeaderReader {
             final byte[] headerData = safelyAllocate(headerSize);
             rawData.readFully(headerData, (int) headerSize);
             currentPosition += headerSize;
+
+            // Verify header CRC32: covers header size vint + header body; excludes the CRC field itself and the data area.
+            final CRC32 crc = new CRC32();
+            crc.update(headerSizeVint, 0, headerSizeVintLen);
+            crc.update(headerData, 0, (int) headerSize);
+            if ((crc.getValue() & 0xFFFFFFFFL) != headerCrc32) {
+                throw new CorruptHeaderException("Header CRC32 mismatch at position " + blockStart);
+            }
 
             int pos = 0;
 
