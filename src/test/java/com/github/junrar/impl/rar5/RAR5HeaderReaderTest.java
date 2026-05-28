@@ -4,6 +4,7 @@ import com.github.junrar.impl.HeaderReader;
 import com.github.junrar.impl.HeaderReaderFactory;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
 import com.github.junrar.io.SeekableReadOnlyInputStream;
+import com.github.junrar.rar5.Rar5Constants;
 import com.github.junrar.rar5.header.RAR5EndArcHeader;
 import com.github.junrar.rar5.header.RAR5FileHeader;
 import com.github.junrar.rar5.header.RAR5MainHeader;
@@ -11,6 +12,7 @@ import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.HostSystem;
 import com.github.junrar.rarfile.MarkHeader;
 import com.github.junrar.rarfile.RARVersion;
+import com.github.junrar.rarfile.UnrarHeadertype;
 import org.junit.jupiter.api.Test;
 
 import java.io.InputStream;
@@ -145,6 +147,41 @@ class RAR5HeaderReaderTest {
 
             assertThat(headers.get(11)).isInstanceOf(RAR5EndArcHeader.class);
             assertThat(((RAR5EndArcHeader) headers.get(11)).isNextVolume()).isFalse();
+        }
+    }
+
+    @Test
+    void readHeaderRar7Compression() throws Exception {
+        Path f = Paths.get("").resolve("src/test/resources/com/github/junrar/rar5-v1.rar");
+        try (InputStream in = Files.newInputStream(f)) {
+            final SeekableReadOnlyByteChannel channel = new SeekableReadOnlyInputStream(in);
+            final HeaderReader headerReader = HeaderReaderFactory.create(channel);
+            headerReader.readHeaders(channel, Files.size(f), null);
+
+            final List<BaseBlock> headers = headerReader.getHeaders();
+            assertThat(headers).hasSize(5);
+            assertThat(headers.get(0)).isInstanceOf(MarkHeader.class);
+            assertThat(headers.get(1)).isInstanceOf(RAR5MainHeader.class);
+
+            assertThat(headers.get(2)).isInstanceOf(RAR5FileHeader.class);
+            final RAR5FileHeader bigBin = (RAR5FileHeader) headers.get(2);
+            assertThat(bigBin.getUnpSize()).isEqualTo(5368709120L);
+            assertThat(bigBin.getFileCRC()).isEqualTo("193838C3");
+            assertThat(bigBin.getUnpMethod()).isEqualTo((byte) 1);
+            assertThat(bigBin.getUnpVersion()).isEqualTo((byte) Rar5Constants.VER_PACK7);
+            assertThat(bigBin.getDictionarySize()).isEqualTo(5368709120L);
+            assertThat(bigBin.getHostOS()).isEqualTo(HostSystem.unix);
+            assertThat(bigBin.isSolid()).isFalse();
+
+            // Quick Open service block
+            assertThat(headers.get(3)).isInstanceOf(RAR5FileHeader.class);
+            final RAR5FileHeader quickOpen = (RAR5FileHeader) headers.get(3);
+            assertThat(quickOpen.getFileName()).isEqualTo("QO");
+            assertThat(quickOpen.getUnpSize()).isEqualTo(63L);
+            assertThat(quickOpen.getPackSize()).isEqualTo(63L);
+            assertThat(quickOpen.getHeaderType()).isEqualTo(UnrarHeadertype.NewSubHeader);
+
+            assertThat(headers.get(4)).isInstanceOf(RAR5EndArcHeader.class);
         }
     }
 

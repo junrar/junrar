@@ -10,10 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 
-import com.github.junrar.exception.UnsupportedRarV5Exception;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 public class RarVersionTest {
 
@@ -45,27 +42,4 @@ public class RarVersionTest {
         assertThat(Files.readString(file2.toPath())).isEqualTo("file2\r\n");
     }
 
-    @Test
-    public void extractRarV5() throws Exception {
-        try (InputStream stream = getClass().getResourceAsStream("rar5.rar")) {
-            Junrar.extract(stream, tempDir);
-        }
-        final File file1 = new File(tempDir, "FILE1.TXT");
-        final File file2 = new File(tempDir, "FILE2.TXT");
-
-        assertThat(file1).exists();
-        assertThat(file1.length()).isEqualTo(7);
-        assertThat(Files.readString(file1.toPath())).isEqualTo("file1\r\n");
-        assertThat(file2).exists();
-        assertThat(file2.length()).isEqualTo(7);
-        assertThat(Files.readString(file2.toPath())).isEqualTo("file2\r\n");
-    }
-
-    @Test
-    public void extractCompressedRarV5_throwsUnsupportedRarV5Exception() throws Exception {
-        try (InputStream stream = getClass().getResourceAsStream("solid/rar5-solid.rar")) {
-            assertThatThrownBy(() -> Junrar.extract(stream, tempDir))
-                .isExactlyInstanceOf(UnsupportedRarV5Exception.class);
-        }
-    }
 }

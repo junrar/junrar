@@ -19,6 +19,7 @@ import com.github.junrar.rar5.io.VInt;
 import com.github.junrar.rar5.io.VIntOverflowException;
 import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.MarkHeader;
+import com.github.junrar.rarfile.UnrarHeadertype;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -274,6 +275,14 @@ public class RAR5HeaderReader implements HeaderReader {
                             dataCrc32, compressionInfo, hostOS, fileName,
                             unpackVersion, compressionMethod, dictionarySize,
                             isSolid, extraRecords, currentPosition, dataSize);
+                    // RAR5 SERVICE blocks (QO/CMT/ACL/STM/RR) are the same concept as RAR4
+                    // NewSubHeader entries: named metadata sub-blocks, not user files. Mark them
+                    // as such so Archive#getFileHeaders / #nextFileHeader skip them. Discriminate
+                    // the specific record by getFileName() — same convention as RAR4 (see
+                    // NewSubHeaderType).
+                    if (headerType == HeaderType.SERVICE) {
+                        fileHeader.setHeaderType(UnrarHeadertype.NewSubHeader);
+                    }
                     this.headers.add(fileHeader);
                     break;
                 case CRYPT:

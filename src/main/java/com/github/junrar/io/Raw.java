@@ -90,6 +90,30 @@ public class Raw {
     }
 
     /**
+     * Read 64 bits from a byte array starting at a bit-aligned position. The bit at
+     * ({@code pos}, {@code bit}) becomes the highest bit of the returned long; the next
+     * 63 bits in big-endian order follow. Requires 9 readable bytes at {@code pos}.
+     *
+     * <p>Mirrors {@code BitInput::getbits64} from the unrar reference (getbits.hpp:61).
+     *
+     * @param array the array to read from
+     * @param pos   byte position
+     * @param bit   bit offset within the byte at {@code pos} (0..7)
+     * @return the 64-bit value
+     */
+    public static long getbits64(byte[] array, int pos, int bit) {
+        long bf = ((array[pos] & 0xFFL) << 56)
+                | ((array[pos + 1] & 0xFFL) << 48)
+                | ((array[pos + 2] & 0xFFL) << 40)
+                | ((array[pos + 3] & 0xFFL) << 32)
+                | ((array[pos + 4] & 0xFFL) << 24)
+                | ((array[pos + 5] & 0xFFL) << 16)
+                | ((array[pos + 6] & 0xFFL) << 8)
+                | (array[pos + 7] & 0xFFL);
+        return (bf << bit) | ((array[pos + 8] & 0xFF) >>> (8 - bit));
+    }
+
+    /**
      * Read a short value from the byte array at the given position (little
      * Endian)
      *

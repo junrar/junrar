@@ -6,22 +6,6 @@
   "fileHeaders" : [ {
     "archivalTime" : null,
     "lastAccessTime" : null,
-    "lastModifiedTime" : null,
-    "creationTime" : null,
-    "fileCRC" : "87B0991C",
-    "fileName" : "CMT",
-    "hostOS" : "win32",
-    "fullPackSize" : 25,
-    "fullUnpackSize" : 25,
-    "isSolid" : false,
-    "isEncrypted" : false,
-    "isUnicode" : true,
-    "hasExtTime" : false,
-    "isLargeBlock" : false,
-    "isDirectory" : false
-  }, {
-    "archivalTime" : null,
-    "lastAccessTime" : null,
     "lastModifiedTime" : 1512191535.580000000,
     "creationTime" : null,
     "fileCRC" : "DB310984",

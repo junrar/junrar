@@ -144,6 +144,11 @@ public class RAR5FileHeader extends FileHeader {
     }
 
     @Override
+    public long getPackSize() {
+        return packSize;
+    }
+
+    @Override
     public long getFullPackSize() {
         return packSize;
     }

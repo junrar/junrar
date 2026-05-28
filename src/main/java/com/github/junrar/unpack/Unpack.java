@@ -18,7 +18,7 @@
 package com.github.junrar.unpack;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.exception.UnsupportedRarV5Exception;
+import com.github.junrar.rar5.header.RAR5FileHeader;
 import com.github.junrar.rarfile.CompressionMethod;
 import com.github.junrar.unpack.decode.Compress;
 
@@ -31,7 +31,7 @@ import java.io.IOException;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public final class Unpack extends Unpack29 {
+public final class Unpack extends Unpack50 {
 
     public Unpack(ComprDataIO DataIO) {
         unpIO = DataIO;
@@ -71,7 +71,15 @@ public final class Unpack extends Unpack29 {
                 break;
             case 50: // RAR5 compression (VER_PACK5)
             case 70: // RAR7 compression (VER_PACK7)
-                throw new UnsupportedRarV5Exception();
+                long dictSize = 0;
+                if (unpIO.getSubHeader() instanceof RAR5FileHeader) {
+                    dictSize = ((RAR5FileHeader) unpIO.getSubHeader()).getDictionarySize();
+                }
+                setDictionarySize(dictSize);
+                setDestSize(destUnpSize);
+                setExtraDist(method == 70);
+                unpack50(solid);
+                break;
             default:
                 break;
         }

@@ -26,6 +26,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.junitpioneer.jupiter.DefaultTimeZone;
 
 import java.io.ByteArrayOutputStream;
@@ -237,64 +238,11 @@ public class ArchiveTest {
     }
 
     @Nested
-    class Rar5Stored {
-        @Test
-        public void givenStoredRar5File_whenExtractingFiles_thenContentMatchesExpected() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("rar5.rar")) {
-                try (Archive archive = new Archive(is)) {
-                    FileHeader header = archive.nextFileHeader();
-                    assertThat(header).isNotNull();
-                    assertThat(header.getFileName()).isEqualTo("FILE1.TXT");
-                    assertThat(header.getUnpSize()).isEqualTo(7);
-                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                        archive.extractFile(header, baos);
-                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '1', '\r', '\n');
-                    }
-
-                    header = archive.nextFileHeader();
-                    assertThat(header).isNotNull();
-                    assertThat(header.getFileName()).isEqualTo("FILE2.TXT");
-                    assertThat(header.getUnpSize()).isEqualTo(7);
-                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                        archive.extractFile(header, baos);
-                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '2', '\r', '\n');
-                    }
-
-                    assertThat(archive.nextFileHeader()).isNull();
-                }
-            }
-        }
-
-        @Test
-        public void givenStoredRar5File_whenReadingViaInputStream_thenContentMatchesExpected() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("rar5.rar")) {
-                try (Archive archive = new Archive(is)) {
-                    List<FileHeader> headers = archive.getFileHeaders();
-                    assertThat(headers).hasSize(2);
-
-                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                        try (InputStream fis = archive.getInputStream(headers.get(0))) {
-                            IOUtils.copy(fis, baos);
-                        }
-                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '1', '\r', '\n');
-                    }
-
-                    try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                        try (InputStream fis = archive.getInputStream(headers.get(1))) {
-                            IOUtils.copy(fis, baos);
-                        }
-                        assertThat(baos.toByteArray()).containsExactly('f', 'i', 'l', 'e', '2', '\r', '\n');
-                    }
-                }
-            }
-        }
-    }
-
-    @Nested
     class Solid {
-        @Test
-        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
+        @ParameterizedTest
+        @ValueSource(strings = {"solid/rar4-solid.rar", "solid/rar5-solid.rar"})
+        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone(final String solidRar) throws Exception {
+            try (InputStream is = getClass().getResourceAsStream(solidRar)) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isTrue();
 
@@ -315,9 +263,10 @@ public class ArchiveTest {
             }
         }
 
-        @Test
-        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone_withInputStream() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
+        @ParameterizedTest
+        @ValueSource(strings = {"solid/rar4-solid.rar", "solid/rar5-solid.rar"})
+        public void givenSolidRarFile_whenExtractingInOrder_thenExtractionIsDone_withInputStream(final String solidRar) throws Exception {
+            try (InputStream is = getClass().getResourceAsStream(solidRar)) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isTrue();
 
@@ -340,9 +289,10 @@ public class ArchiveTest {
             }
         }
 
-        @Test
-        public void givenSolidRar4File_whenExtractingOutOfOrder_thenExtractionIsDone() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
+        @ParameterizedTest
+        @ValueSource(strings = {"solid/rar4-solid.rar", "solid/rar5-solid.rar"})
+        public void givenSolidRarFile_whenExtractingOutOfOrder_thenExtractionIsDone(final String solidRar) throws Exception {
+            try (InputStream is = getClass().getResourceAsStream(solidRar)) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isTrue();
 
@@ -370,9 +320,10 @@ public class ArchiveTest {
             }
         }
 
-        @Test
-        public void givenSolidRar4File_whenExtractingInReverse_theExtractionIsDone() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar");
+        @ParameterizedTest
+        @ValueSource(strings = {"solid/rar4-solid.rar", "solid/rar5-solid.rar"})
+        public void givenSolidRarFile_whenExtractingInReverse_theExtractionIsDone(final String solidRar) throws Exception {
+            try (InputStream is = getClass().getResourceAsStream(solidRar);
                  Archive archive = new Archive(is)) {
                 assertThat(archive.getMainHeader().isSolid()).isTrue();
 
@@ -390,15 +341,6 @@ public class ArchiveTest {
             }
         }
 
-        @Test
-        public void givenSolidRar5File_whenCreatingArchive_thenFileHeadersAreAccessible() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("solid/rar5-solid.rar")) {
-                try (Archive archive = new Archive(is)) {
-                    assertThat(archive.getMainHeader().isSolid()).isTrue();
-                    assertThat(archive.getFileHeaders()).hasSize(9);
-                }
-            }
-        }
     }
 
     /**

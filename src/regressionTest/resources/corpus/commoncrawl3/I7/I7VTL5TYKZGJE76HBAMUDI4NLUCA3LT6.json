@@ -19,22 +19,6 @@
     "hasExtTime" : false,
     "isLargeBlock" : false,
     "isDirectory" : false
-  }, {
-    "archivalTime" : null,
-    "lastAccessTime" : null,
-    "lastModifiedTime" : null,
-    "creationTime" : null,
-    "fileCRC" : "0",
-    "fileName" : "QO",
-    "hostOS" : "win32",
-    "fullPackSize" : 59,
-    "fullUnpackSize" : 59,
-    "isSolid" : false,
-    "isEncrypted" : false,
-    "isUnicode" : true,
-    "hasExtTime" : false,
-    "isLargeBlock" : false,
-    "isDirectory" : false
   } ],
   "exception" : null
 }

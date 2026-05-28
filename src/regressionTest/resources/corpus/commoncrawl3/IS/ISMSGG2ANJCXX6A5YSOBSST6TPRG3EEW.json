@@ -3,22 +3,6 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ {
-    "archivalTime" : null,
-    "lastAccessTime" : null,
-    "lastModifiedTime" : null,
-    "creationTime" : null,
-    "fileCRC" : "B88DA534",
-    "fileName" : "CMT",
-    "hostOS" : "win32",
-    "fullPackSize" : 462,
-    "fullUnpackSize" : 462,
-    "isSolid" : false,
-    "isEncrypted" : false,
-    "isUnicode" : true,
-    "hasExtTime" : false,
-    "isLargeBlock" : false,
-    "isDirectory" : false
-  } ],
+  "fileHeaders" : [ ],
   "exception" : null
 }

@@ -19,38 +19,6 @@
     "hasExtTime" : false,
     "isLargeBlock" : false,
     "isDirectory" : false
-  }, {
-    "archivalTime" : null,
-    "lastAccessTime" : null,
-    "lastModifiedTime" : null,
-    "creationTime" : null,
-    "fileCRC" : "0",
-    "fileName" : "QO",
-    "hostOS" : "win32",
-    "fullPackSize" : 55,
-    "fullUnpackSize" : 55,
-    "isSolid" : false,
-    "isEncrypted" : false,
-    "isUnicode" : true,
-    "hasExtTime" : false,
-    "isLargeBlock" : false,
-    "isDirectory" : false
-  }, {
-    "archivalTime" : null,
-    "lastAccessTime" : null,
-    "lastModifiedTime" : null,
-    "creationTime" : null,
-    "fileCRC" : "0",
-    "fileName" : "RR",
-    "hostOS" : "win32",
-    "fullPackSize" : 1136,
-    "fullUnpackSize" : 1136,
-    "isSolid" : false,
-    "isEncrypted" : false,
-    "isUnicode" : true,
-    "hasExtTime" : false,
-    "isLargeBlock" : false,
-    "isDirectory" : false
   } ],
   "exception" : null
 }
