@@ -62,7 +62,7 @@ jobs:
 
       - name: Jacoco
         run: ./gradlew jacocoTestReport
-      - uses: codecov/codecov-action@v6
+      - uses: codecov/codecov-action@v7
         if: matrix.os == 'ubuntu-latest'
 
   version:
