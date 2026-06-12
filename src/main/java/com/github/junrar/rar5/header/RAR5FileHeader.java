@@ -2,8 +2,12 @@ package com.github.junrar.rar5.header;
 
 import com.github.junrar.rar5.Rar5Constants;
 import com.github.junrar.rar5.header.extra.Rar5ExtraRecord;
+import com.github.junrar.rar5.header.extra.Rar5FileHashRecord;
 import com.github.junrar.rar5.header.extra.Rar5FileTimeRecord;
+import com.github.junrar.rarfile.Blake2Checksum;
 import com.github.junrar.rarfile.CompressionMethod;
+import com.github.junrar.rarfile.CrcChecksum;
+import com.github.junrar.rarfile.FileChecksum;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.HostSystem;
 import com.github.junrar.rarfile.UnrarHeadertype;
@@ -76,8 +80,8 @@ public class RAR5FileHeader extends FileHeader {
                            final List<Rar5ExtraRecord> extraRecords,
                            final long dataAreaPosition, final long packSize) {
         super(unpackedSize, hostOS == HOST_UNIX ? HostSystem.unix : HostSystem.win32,
-                dataCrc32 != null ? (int) dataCrc32.longValue() : 0, 0, fileName, (byte) compressionMethod,
-                (byte) unpackVersion);
+                computeChecksum(fileFlags, dataCrc32, extraRecords), 0, fileName,
+                (byte) compressionMethod, (byte) unpackVersion);
         this.fileFlags = fileFlags;
         this.dictionarySize = dictionarySize;
         this.isSolid = isSolid;
@@ -202,6 +206,41 @@ public class RAR5FileHeader extends FileHeader {
     @Override
     public CompressionMethod getCompressionMethod() {
         return getUnpMethod() == 0 ? CompressionMethod.STORED : CompressionMethod.COMPRESSED;
+    }
+
+    /**
+     * @return true if the file header carries a CRC32 (FHFL_CRC32 flag set).
+     *         BLAKE2-only RAR5 archives return false.
+     */
+    public boolean hasFileCrc32() {
+        return (fileFlags & Rar5Constants.FHFL_CRC32) != 0;
+    }
+
+    /**
+     * Determines the appropriate {@link FileChecksum} for this RAR5 file header.
+     * <ul>
+     *   <li>If FHFL_CRC32 is set, uses the 32-bit CRC value as a {@link CrcChecksum}</li>
+     *   <li>Otherwise if a BLAKE2sp hash record is present, returns a {@link Blake2Checksum}</li>
+     *   <li>Otherwise falls back to {@link CrcChecksum} with value 0</li>
+     * </ul>
+     */
+    private static FileChecksum computeChecksum(final long fileFlags, final Long dataCrc32,
+                                                 final List<Rar5ExtraRecord> extraRecords) {
+        if ((fileFlags & Rar5Constants.FHFL_CRC32) != 0 && dataCrc32 != null) {
+            return new CrcChecksum((int) dataCrc32.longValue());
+        }
+        // Check for BLAKE2sp hash record
+        if (extraRecords != null) {
+            for (Rar5ExtraRecord record : extraRecords) {
+                if (record instanceof Rar5FileHashRecord) {
+                    Rar5FileHashRecord hashRecord = (Rar5FileHashRecord) record;
+                    if (hashRecord.isBlake2()) {
+                        return new Blake2Checksum(hashRecord.getDigest());
+                    }
+                }
+            }
+        }
+        return new CrcChecksum(0);
     }
 
     public Set<PosixFilePermission> getPermissions() {

@@ -54,7 +54,6 @@ import java.io.PipedOutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.SynchronousQueue;
@@ -516,7 +515,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         throws RarException, IOException {
         this.dataIO.init(os);
         this.dataIO.init(hd);
-        this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
+        this.dataIO.beginFileHashing(hd);
         if (this.unpack == null) {
             this.unpack = new Unpack(this.dataIO);
         }
@@ -527,20 +526,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         try {
             this.unpack.doUnpack(hd.getUnpVersion(), hd.isSolid());
             if (!skip) {
-                // Verify file CRC
                 hd = this.dataIO.getSubHeader();
-                final long actualCRC = hd.isSplitAfter() ? this.dataIO.getPackedCRC() : this.dataIO.getUnpFileCRC();
-                final String expectedCRC = hd.getFileCRC();
-                if (!expectedCRC.equals(Long.toHexString(actualCRC).toUpperCase(Locale.ROOT))) {
+                final String expected = hd.getFileCRC();
+                final String actual = this.dataIO.getComputedChecksum();
+                if (!expected.equals(actual)) {
                     throw new CrcErrorException();
                 }
             }
-            // if (!hd.isSplitAfter()) {
-            // // Verify file CRC
-            // if(~dataIO.getUnpFileCRC() != hd.getFileCRC()){
-            // throw new RarException(RarExceptionType.crcError);
-            // }
-            // }
         } catch (final Exception e) {
             this.unpack.cleanUp();
             if (e instanceof RarException) {

@@ -16,6 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public enum Rar5TestArchive {
 
     STORED("rar5.rar", buildRar5ExpectedFiles()),
+    BLAKE2("rar5-blake2.rar", buildRar5ExpectedFiles()),
     LEVEL0("rar5-level0.rar", buildRar5LevelExpectedFiles()),
     LEVEL1("rar5-level1.rar", buildRar5LevelExpectedFiles()),
     LEVEL2("rar5-level2.rar", buildRar5LevelExpectedFiles()),

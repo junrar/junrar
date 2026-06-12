@@ -111,13 +111,13 @@ public class FileHeader extends BlockHeader {
      * allowing explicit initialization of final fields.
      */
     protected FileHeader(final long unpSize, final HostSystem hostOS,
-                         final int fileCRC, final int highPackSize,
+                         final FileChecksum fileCRC, final int highPackSize,
                          final String utf8FileName,
                          final byte unpMethod, final byte unpVersion) {
         super();
         this.unpSize = unpSize;
         this.hostOS = hostOS;
-        this.fileCRC = new CrcChecksum(fileCRC);
+        this.fileCRC = fileCRC;
         this.highPackSize = highPackSize;
         this.fileNameBytes = utf8FileName.getBytes(StandardCharsets.UTF_8);
         this.fileNameW = utf8FileName;

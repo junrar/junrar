@@ -19,12 +19,14 @@ package com.github.junrar.unpack;
 
 import com.github.junrar.Archive;
 import com.github.junrar.UnrarCallback;
+import com.github.junrar.crc.Blake2sp;
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.io.RawDataIo;
+import com.github.junrar.rarfile.ChecksumAlgorithm;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.volume.Volume;
 
@@ -75,6 +77,12 @@ public class ComprDataIO {
     private CRC32 unpCrc32;
     private CRC32 packCrc32;
 
+    private Blake2sp blake2sp;
+
+    private boolean skipFileCrc;
+
+    private ChecksumAlgorithm activeAlgorithm = ChecksumAlgorithm.NONE;
+
     private int encryption;
 
     private int decryption;
@@ -101,8 +109,11 @@ public class ComprDataIO {
         packFileCRC = unpFileCRC = packedCRC = 0xffffffff;
         subHead = null;
         processedArcSize = totalArcSize = 0;
-        unpCrc32 = new CRC32();
+        unpCrc32 = null; // created lazily in beginFileHashing when CRC32 is active
         packCrc32 = new CRC32();
+        blake2sp = null;
+        skipFileCrc = false;
+        activeAlgorithm = ChecksumAlgorithm.NONE;
     }
 
     public void init(FileHeader hd) throws IOException, RarException {
@@ -114,7 +125,9 @@ public class ComprDataIO {
         curUnpRead = 0;
         curPackWrite = 0;
         packedCRC = 0xFFffFFff;
-        unpCrc32.reset();
+        if (unpCrc32 != null) {
+            unpCrc32.reset();
+        }
         packCrc32.reset();
 
         if (hd.isEncrypted()) {
@@ -192,11 +205,16 @@ public class ComprDataIO {
         curUnpWrite += count;
 
         if (!skipUnpCRC) {
-            if (archive.isOldFormat()) {
-                unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, count);
-            } else {
-                unpCrc32.update(addr, offset, count);
-                unpFileCRC = unpCrc32.getValue();
+            if (!skipFileCrc) {
+                if (archive.isOldFormat()) {
+                    unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, count);
+                } else {
+                    unpCrc32.update(addr, offset, count);
+                    unpFileCRC = unpCrc32.getValue();
+                }
+            }
+            if (activeAlgorithm == ChecksumAlgorithm.BLAKE2SP && blake2sp != null) {
+                blake2sp.update(addr, offset, count);
             }
         }
         // if (!skipArcCRC) {
@@ -351,5 +369,76 @@ public class ComprDataIO {
 
     public FileHeader getSubHeader() {
         return subHead;
+    }
+
+    /**
+     * Configures hashing for the next file: skips CRC32 when the RAR5 header
+     * doesn't carry one, allocates a BLAKE2sp hasher when the extras contain a
+     * BLAKE2 digest, and seeds the CRC32 starting value when CRC is actually
+     * going to be computed. Called once per file, before
+     * {@link com.github.junrar.unpack.Unpack#doUnpack}.
+     */
+    public void beginFileHashing(FileHeader hd) {
+        // BLAKE2sp digests are 32 bytes = 64 hex chars, CRC32 is at most 8 hex chars.
+        boolean isBlake2 = hd.getFileCRC().length() == 64;
+        if (isBlake2) {
+            skipFileCrc = true;
+            blake2sp = new Blake2sp();
+            activeAlgorithm = ChecksumAlgorithm.BLAKE2SP;
+            unpCrc32 = null; // not needed for BLAKE2
+        } else {
+            skipFileCrc = false;
+            blake2sp = null;
+            activeAlgorithm = ChecksumAlgorithm.CRC32;
+            ensureUnpCrc32();
+            // Old format starts CRC16 at 0; new format CRC32 at 0xFFFFFFFF.
+            unpFileCRC = archive.isOldFormat() ? 0 : 0xFFFFFFFFL;
+        }
+    }
+
+    /**
+     * Ensures the unpacked CRC32 hasher is initialised. Safe to call multiple
+     * times — only creates a new instance on first invocation.
+     */
+    private void ensureUnpCrc32() {
+        if (unpCrc32 == null) {
+            unpCrc32 = new CRC32();
+        } else {
+            unpCrc32.reset();
+        }
+    }
+
+    /**
+     * Returns the computed checksum of the extracted data as a hex string,
+     * using the algorithm configured by the most recent call to
+     * {@link #beginFileHashing(FileHeader)}.
+     * <p>
+     * The returned format matches the format of
+     * {@link com.github.junrar.rarfile.FileHeader#getFileCRC()} for the
+     * same algorithm, allowing direct string comparison.
+     *
+     * @return hex string of the computed checksum
+     */
+    public String getComputedChecksum() {
+        if (activeAlgorithm == ChecksumAlgorithm.BLAKE2SP && blake2sp != null) {
+            return bytesToHex(blake2sp.digest());
+        }
+        // CRC32: for split-after volumes, use the packed (compressed) CRC;
+        // otherwise use the unpacked CRC.
+        if (subHead != null && subHead.isSplitAfter()) {
+            return Long.toHexString(packedCRC).toUpperCase(Locale.ROOT);
+        }
+        return Long.toHexString(unpFileCRC).toUpperCase(Locale.ROOT);
+    }
+
+    /**
+     * Converts a byte array to a lowercase hex string.
+     */
+    private static String bytesToHex(byte[] bytes) {
+        StringBuilder sb = new StringBuilder(bytes.length * 2);
+        for (byte b : bytes) {
+            sb.append(String.format("%02x", b & 0xFF));
+        }
+        return sb.toString();
     }
 }

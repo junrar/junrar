@@ -185,6 +185,56 @@ class RAR5HeaderReaderTest {
         }
     }
 
+    @Test
+    void readHeadersBlake2() throws Exception {
+        Path f = Paths.get("").resolve("src/test/resources/com/github/junrar/rar5-blake2.rar");
+        try (InputStream in = Files.newInputStream(f)) {
+            final SeekableReadOnlyByteChannel channel = new SeekableReadOnlyInputStream(in);
+            final HeaderReader headerReader = HeaderReaderFactory.create(channel);
+            headerReader.readHeaders(channel, Files.size(f), null);
+
+            final List<BaseBlock> headers = headerReader.getHeaders();
+            assertThat(headers).hasSize(5);
+
+            assertThat(headers.get(0)).isInstanceOf(MarkHeader.class);
+            final MarkHeader markHeader = (MarkHeader) headers.get(0);
+            assertThat(markHeader.getVersion()).isEqualTo(RARVersion.V5);
+            assertThat(markHeader.getFlags()).isEqualTo((short) 0x1A21);
+            assertThat(markHeader.getHeaderSize(false)).isEqualTo((short) 263);
+
+            assertThat(headers.get(1)).isInstanceOf(RAR5MainHeader.class);
+            final RAR5MainHeader mainHeader = (RAR5MainHeader) headers.get(1);
+            assertThat(mainHeader.getHeaderSize(false)).isEqualTo((short) 10);
+
+            assertThat(headers.get(2)).isInstanceOf(RAR5FileHeader.class);
+            final RAR5FileHeader file1 = (RAR5FileHeader) headers.get(2);
+            assertFileInfo(file1, "FILE1.TXT", 7,
+                    "fc30504f38dd39d30fa68ea2a702b8fd79756a4330b28c7d36e44c7139827721",
+                    (byte) 0, 131072, FileTime.from(
+                    ZonedDateTime.of(2010, 11, 2, 23, 27, 28, 0, ZoneOffset.UTC).toInstant()
+            ), HostSystem.unix, false, new HashSet<>(Arrays.asList(
+                    PosixFilePermission.OWNER_READ, PosixFilePermission.OWNER_WRITE,
+                    PosixFilePermission.GROUP_READ, PosixFilePermission.GROUP_WRITE,
+                    PosixFilePermission.OTHERS_READ)));
+            assertThat(file1.hasFileCrc32()).isFalse();
+
+            assertThat(headers.get(3)).isInstanceOf(RAR5FileHeader.class);
+            final RAR5FileHeader file2 = (RAR5FileHeader) headers.get(3);
+            assertFileInfo(file2, "FILE2.TXT", 7,
+                    "09b37c45def427a4a6c84b9cb899825426caa0e74b7109252101d26938166a00",
+                    (byte) 0, 131072, FileTime.from(
+                    ZonedDateTime.of(2010, 11, 2, 23, 27, 34, 0, ZoneOffset.UTC).toInstant()
+            ), HostSystem.unix, false, new HashSet<>(Arrays.asList(
+                    PosixFilePermission.OWNER_READ, PosixFilePermission.OWNER_WRITE,
+                    PosixFilePermission.GROUP_READ, PosixFilePermission.GROUP_WRITE,
+                    PosixFilePermission.OTHERS_READ)));
+            assertThat(file2.hasFileCrc32()).isFalse();
+
+            assertThat(headers.get(4)).isInstanceOf(RAR5EndArcHeader.class);
+            assertThat(((RAR5EndArcHeader) headers.get(4)).isNextVolume()).isFalse();
+        }
+    }
+
     private void assertFileInfo(RAR5FileHeader fileHeader, String fileName, long unpSize, String crc,
                                 byte compressionMethod, long dictionarySize, FileTime lastModifiedTime,
                                 HostSystem hostOs, boolean solid, Set<PosixFilePermission> filePermissions) {
