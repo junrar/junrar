@@ -80,6 +80,13 @@ public abstract class Unpack20 extends Unpack15 {
 
     public static final int[] SDBits = {2, 2, 3, 4, 5, 6, 6, 6 };
 
+    /**
+     * Maximum LZ match length across RAR 2.0+ formats. Used as the safety margin
+     * from the window end below which the fast path is guaranteed not to wrap.
+     * Equals unrar's {@code MAX_INC_LZ_MATCH} (the largest of all formats).
+     */
+    protected static final int MAX_LZ_MATCH = 0x1001 + 3;
+
     protected void unpack20(boolean solid) throws IOException, RarException {
 
         int Bits;
@@ -210,29 +217,73 @@ public abstract class Unpack20 extends Unpack15 {
         lastDist = oldDist[oldDistPtr++ & 3] = distance;
         lastLength = length;
         destUnpSize -= length;
+        unpPtr = copyMatch(window, Compress.MAXWINSIZE, unpPtr, length, distance, false, false);
+    }
 
-        int destPtr = unpPtr - distance;
-        if (destPtr >= 0 && destPtr < Compress.MAXWINSIZE - 300 && unpPtr < Compress.MAXWINSIZE - 300) {
-            if (destPtr + length <= unpPtr) {
-                // Case: array elements to copy from destPtr do not overlap with unpPtr target values
-                System.arraycopy(window, destPtr, window, unpPtr, length);
-                // update values for correct crc
-                unpPtr += length;
-            } else {
-                // Case: fallback to old copy mechanism
-                window[unpPtr++] = window[destPtr++];
-                window[unpPtr++] = window[destPtr++];
-                while (length > 2) {
-                    length--;
-                    window[unpPtr++] = window[destPtr++];
+    /**
+     * Shared optimized LZ match copy for RAR 2.0+ formats. Mirrors unrar's single
+     * {@code CopyString} in unpackinline.cpp, which RAR 2.0/3.0/5.0 all delegate to.
+     * Copies {@code length} bytes from {@code distance} positions back within the
+     * circular {@code window} of {@code winSize} bytes, starting at write position
+     * {@code pos}, and returns the advanced write position.
+     *
+     * <p>Fast path (when no copy can cross the window boundary): {@link Arrays#fill}
+     * for a single-byte run, a single {@link System#arraycopy} for non-overlapping
+     * copies, and geometric doubling for overlapping (RLE) runs so each arraycopy
+     * only reads already-written bytes. The slow path near the boundary wraps every
+     * byte. When {@code zeroFillInvalid} is set (RAR 5.0), a distance pointing outside
+     * the populated window is zero-filled instead of copied, so the output never
+     * depends on previously extracted data.
+     */
+    protected final int copyMatch(final byte[] window, final int winSize, int pos,
+            int length, final long distance, final boolean firstWinDone, final boolean zeroFillInvalid) {
+        long srcL = pos - distance;
+        if (distance > pos) {
+            srcL += winSize;
+            if (zeroFillInvalid && (distance > winSize || !firstWinDone)) {
+                while (length-- > 0) {
+                    window[pos] = 0;
+                    if (++pos >= winSize) {
+                        pos = 0;
+                    }
                 }
-            }
-        } else {
-            while ((length--) != 0) {
-                window[unpPtr] = window[destPtr++ & Compress.MAXWINMASK];
-                unpPtr = (unpPtr + 1) & Compress.MAXWINMASK;
+                return pos;
             }
         }
+        int src = (int) srcL;
+
+        if (src >= 0 && src < winSize - MAX_LZ_MATCH && pos < winSize - MAX_LZ_MATCH) {
+            if (distance == 1) {
+                Arrays.fill(window, pos, pos + length, window[src]);
+            } else if (distance >= length) {
+                System.arraycopy(window, src, window, pos, length);
+            } else {
+                int chunk = (int) distance;
+                int remaining = length;
+                int dest = pos;
+                while (remaining > chunk) {
+                    System.arraycopy(window, src, window, dest, chunk);
+                    dest += chunk;
+                    remaining -= chunk;
+                    chunk <<= 1;
+                }
+                System.arraycopy(window, src, window, dest, remaining);
+            }
+            return pos + length;
+        }
+
+        // Slow path with full wrap protection near the window boundary.
+        src = (int) (((srcL % winSize) + winSize) % winSize);
+        while (length-- > 0) {
+            window[pos] = window[src];
+            if (++src >= winSize) {
+                src = 0;
+            }
+            if (++pos >= winSize) {
+                pos = 0;
+            }
+        }
+        return pos;
     }
 
     protected void makeDecodeTables(byte[] lenTab, int offset, Decode dec,

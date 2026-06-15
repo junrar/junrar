@@ -23,7 +23,6 @@ public class Unpack50 extends Unpack29 {
     private static final int HUFF_TABLE_SIZEB = NC + DCB + LDC + RC; // 430
     private static final int HUFF_TABLE_SIZEX = NC + DCX + LDC + RC; // 446
     private static final int MAX_QUICK_DECODE_BITS = 9;
-    private static final int MAX_INC_LZ_MATCH = 0x1001 + 3;
     private static final int UNPACK_MAX_WRITE = 0x400000;
     private static final int MAX_FILTER_BLOCK_SIZE = 0x400000;
     private static final int MAX_UNPACK_FILTERS = 8192;
@@ -175,7 +174,7 @@ public class Unpack50 extends Unpack29 {
                 }
             }
 
-            if (wrapDown(writeBorder - unpPtr50) <= MAX_INC_LZ_MATCH && writeBorder != unpPtr50) {
+            if (wrapDown(writeBorder - unpPtr50) <= MAX_LZ_MATCH && writeBorder != unpPtr50) {
                 writeBuf();
                 if (writtenFileSize > destUnpSize) {
                     return;
@@ -556,23 +555,7 @@ public class Unpack50 extends Unpack29 {
     }
 
     private void copyString(int length, long distance) {
-        long srcPtrL = (long) unpPtr50 - distance;
-        if (distance > unpPtr50) {
-            srcPtrL += maxWinSize;
-            if (distance > maxWinSize || !firstWinDone) {
-                while (length-- > 0) {
-                    window[unpPtr50] = 0;
-                    unpPtr50 = wrapUp(unpPtr50 + 1);
-                }
-                return;
-            }
-        }
-        int srcPtr = (int) srcPtrL;
-        while (length-- > 0) {
-            window[unpPtr50] = window[srcPtr];
-            unpPtr50 = wrapUp(unpPtr50 + 1);
-            srcPtr = wrapUp(srcPtr + 1);
-        }
+        unpPtr50 = copyMatch(window, maxWinSize, unpPtr50, length, distance, firstWinDone, true);
     }
 
     // ─── Filter reading ───────────────────────────────────────────────────────────
