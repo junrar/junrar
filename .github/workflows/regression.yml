@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: regression
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Download corpus
         uses: k0staa/download-gdrive-file-action@v1.1
