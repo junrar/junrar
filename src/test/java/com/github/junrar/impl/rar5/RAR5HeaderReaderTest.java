@@ -185,6 +185,41 @@ class RAR5HeaderReaderTest {
         }
     }
 
+    @Test
+    void readHeaderLargeDictionary() throws Exception {
+        Path f = Paths.get("").resolve("src/test/resources/com/github/junrar/rar5-largedict.rar");
+        try (InputStream in = Files.newInputStream(f)) {
+            final SeekableReadOnlyByteChannel channel = new SeekableReadOnlyInputStream(in);
+            final HeaderReader headerReader = HeaderReaderFactory.create(channel);
+            headerReader.readHeaders(channel, Files.size(f), null);
+
+            final List<BaseBlock> headers = headerReader.getHeaders();
+            assertThat(headers).hasSize(4);
+            assertThat(headers.get(0)).isInstanceOf(MarkHeader.class);
+            final MarkHeader markHeader = (MarkHeader) headers.get(0);
+            assertThat(markHeader.getVersion()).isEqualTo(RARVersion.V5);
+            assertThat(markHeader.getFlags()).isEqualTo((short) 0x1A21);
+            assertThat(markHeader.getHeaderSize(false)).isEqualTo((short) 263);
+
+            assertThat(headers.get(1)).isInstanceOf(RAR5MainHeader.class);
+
+            assertThat(headers.get(2)).isInstanceOf(RAR5FileHeader.class);
+            final RAR5FileHeader fileHeader = (RAR5FileHeader) headers.get(2);
+            final long eightMb = 8L * 1024 * 1024;
+            assertFileInfo(fileHeader, "file.bin", eightMb, "1AD2BC45", (byte) 3,
+                    eightMb, FileTime.from(
+                            ZonedDateTime.of(2026, 6, 23, 19, 34, 55, 62_000_000, ZoneOffset.UTC)
+                                    .toInstant()
+                    ), HostSystem.unix, false, new HashSet<>(Arrays.asList(
+                            PosixFilePermission.OWNER_READ, PosixFilePermission.OWNER_WRITE,
+                            PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
+            assertThat(fileHeader.getUnpVersion()).isEqualTo((byte) Rar5Constants.VER_PACK5);
+
+            assertThat(headers.get(3)).isInstanceOf(RAR5EndArcHeader.class);
+            assertThat(((RAR5EndArcHeader) headers.get(3)).isNextVolume()).isFalse();
+        }
+    }
+
     private void assertFileInfo(RAR5FileHeader fileHeader, String fileName, long unpSize, String crc,
                                 byte compressionMethod, long dictionarySize, FileTime lastModifiedTime,
                                 HostSystem hostOs, boolean solid, Set<PosixFilePermission> filePermissions) {

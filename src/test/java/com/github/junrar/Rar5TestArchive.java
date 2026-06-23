@@ -37,6 +37,21 @@ public enum Rar5TestArchive {
                 }
                 assertThat(crc.getValue()).isEqualTo(423114947L);
             })
+    )),
+    LARGE_DICT("rar5-largedict.rar", List.of(
+            new ExpectedFile("file.bin", (Path file) -> {
+                assertThat(Files.size(file)).isEqualTo(8L * 1024 * 1024);
+
+                CRC32 crc = new CRC32();
+                try (InputStream is = new BufferedInputStream(Files.newInputStream(file))) {
+                    byte[] buffer = new byte[8192];
+                    int bytesRead;
+                    while ((bytesRead = is.read(buffer)) != -1) {
+                        crc.update(buffer, 0, bytesRead);
+                    }
+                }
+                assertThat(crc.getValue()).isEqualTo(450018373L);
+            })
     ));
 
     public static final class ExpectedFile {

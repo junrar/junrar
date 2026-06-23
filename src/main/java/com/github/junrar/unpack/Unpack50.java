@@ -184,7 +184,7 @@ public class Unpack50 extends Unpack29 {
             int mainSlot = decodeNumber(ldTable);
 
             if (mainSlot < 256) {
-                window[unpPtr50++] = (byte) mainSlot;
+                window50[unpPtr50++] = (byte) mainSlot;
                 continue;
             }
 
@@ -555,7 +555,7 @@ public class Unpack50 extends Unpack29 {
     }
 
     private void copyString(int length, long distance) {
-        unpPtr50 = copyMatch(window, maxWinSize, unpPtr50, length, distance, firstWinDone, true);
+        unpPtr50 = copyMatch(window50, maxWinSize, unpPtr50, length, distance, firstWinDone, true);
     }
 
     // ─── Filter reading ───────────────────────────────────────────────────────────
@@ -632,11 +632,11 @@ public class Unpack50 extends Unpack29 {
                         int blockEnd = wrapUp(blockStart + blockLength);
                         if (filterSrcMemory.length < blockLength) filterSrcMemory = new byte[blockLength];
                         if (blockStart < blockEnd || blockEnd == 0) {
-                            System.arraycopy(window, blockStart, filterSrcMemory, 0, blockLength);
+                            System.arraycopy(window50, blockStart, filterSrcMemory, 0, blockLength);
                         } else {
                             int firstPart = maxWinSize - blockStart;
-                            System.arraycopy(window, blockStart, filterSrcMemory, 0, firstPart);
-                            System.arraycopy(window, 0, filterSrcMemory, firstPart, blockEnd);
+                            System.arraycopy(window50, blockStart, filterSrcMemory, 0, firstPart);
+                            System.arraycopy(window50, 0, filterSrcMemory, firstPart, blockEnd);
                         }
                         byte[] outMem = applyFilter(filterSrcMemory, blockLength, flt);
                         flt.type = FILTER_NONE;
@@ -676,10 +676,10 @@ public class Unpack50 extends Unpack29 {
 
     private void writeArea(int startPtr, int endPtr) throws IOException, RarException {
         if (endPtr < startPtr) {
-            writeData(window, startPtr, maxWinSize - startPtr);
-            writeData(window, 0, endPtr);
+            writeData(window50, startPtr, maxWinSize - startPtr);
+            writeData(window50, 0, endPtr);
         } else if (endPtr > startPtr) {
-            writeData(window, startPtr, endPtr - startPtr);
+            writeData(window50, startPtr, endPtr - startPtr);
         }
     }
 
