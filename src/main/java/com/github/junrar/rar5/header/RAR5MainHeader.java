@@ -72,6 +72,8 @@ public class RAR5MainHeader extends MainHeader {
      */
     private long headerCrc32;
 
+    private boolean encrypted;
+
     public RAR5MainHeader() {
         super(createBaseBlock(), new byte[10]);
     }
@@ -270,6 +272,17 @@ public class RAR5MainHeader extends MainHeader {
 
     @Override
     public boolean isEncrypted() {
-        return false;
+        return encrypted;
+    }
+
+    /**
+     * Marks the archive as having encrypted headers, set when a HEAD_CRYPT block
+     * precedes the main header. RAR5 does not store an encryption flag in the
+     * main header itself (unlike RAR4's MHD_PASSWORD).
+     *
+     * @param encrypted whether the archive headers are encrypted
+     */
+    public void setEncrypted(final boolean encrypted) {
+        this.encrypted = encrypted;
     }
 }

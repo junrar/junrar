@@ -2,6 +2,7 @@ package com.github.junrar.rar5.header;
 
 import com.github.junrar.rar5.Rar5Constants;
 import com.github.junrar.rar5.header.extra.Rar5ExtraRecord;
+import com.github.junrar.rar5.header.extra.Rar5FileCryptRecord;
 import com.github.junrar.rar5.header.extra.Rar5FileHashRecord;
 import com.github.junrar.rar5.header.extra.Rar5FileTimeRecord;
 import com.github.junrar.rarfile.Blake2Checksum;
@@ -70,6 +71,7 @@ public class RAR5FileHeader extends FileHeader {
     private final boolean isSolid;
     private final long dataAreaPosition;
     private final long packSize;
+    private final Rar5FileCryptRecord cryptRecord;
 
     public RAR5FileHeader(final long fileFlags, final long unpackedSize,
                            final long attributes, final FileTime mtime,
@@ -87,6 +89,7 @@ public class RAR5FileHeader extends FileHeader {
         this.isSolid = isSolid;
         this.dataAreaPosition = dataAreaPosition;
         this.packSize = packSize;
+        this.cryptRecord = findCryptRecord(extraRecords);
         setFileNameW(fileName);
 
         if (mtime != null) {
@@ -135,6 +138,35 @@ public class RAR5FileHeader extends FileHeader {
         }
         setFlags(mappedFlags);
         setHeaderType(UnrarHeadertype.FileHeader);
+    }
+
+    private static Rar5FileCryptRecord findCryptRecord(final List<Rar5ExtraRecord> extraRecords) {
+        if (extraRecords != null) {
+            for (Rar5ExtraRecord record : extraRecords) {
+                if (record instanceof Rar5FileCryptRecord) {
+                    return (Rar5FileCryptRecord) record;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * @return the file encryption record (FHEXTRA_CRYPT) if this file's data is
+     *         encrypted, otherwise {@code null}
+     */
+    public Rar5FileCryptRecord getCryptRecord() {
+        return cryptRecord;
+    }
+
+    /**
+     * RAR5 records encryption via the FHEXTRA_CRYPT extra-area record rather than
+     * the RAR4 {@code LHD_PASSWORD} flag, so override the base check.
+     * @return true if the file data is encrypted
+     */
+    @Override
+    public boolean isEncrypted() {
+        return cryptRecord != null;
     }
 
     @Override

@@ -1,9 +1,10 @@
 package com.github.junrar.impl.rar5;
 
+import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.CorruptHeaderException;
+import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.impl.HeaderReader;
 import com.github.junrar.io.Raw;
 import com.github.junrar.io.RawDataIo;
@@ -47,6 +48,14 @@ public class RAR5HeaderReader implements HeaderReader {
     private static final Logger logger = LoggerFactory.getLogger(RAR5HeaderReader.class);
     private static final int CRC32_SIZE = 4;
 
+    /** Size of the per-block IV prefixed to each encrypted header (SIZE_INITV). */
+    private static final int HEADER_IV_SIZE = 16;
+
+    /** Rounds {@code n} up to the next multiple of the 16-byte AES block size. */
+    private static int align16(final int n) {
+        return (n + 15) & ~15;
+    }
+
     private final List<BaseBlock> headers = new ArrayList<>();
 
     public RAR5HeaderReader(MarkHeader markHeader) {
@@ -67,10 +76,31 @@ public class RAR5HeaderReader implements HeaderReader {
         // We only read 7 bytes for the MarkHeader. Next header starts at 8 bytes.
         long currentPosition = Rar5Constants.SIZEOF_MARKHEAD5;
 
+        // Set once a HEAD_CRYPT block is seen: every subsequent block on disk is
+        // [16-byte IV][AES-256-CBC ciphertext padded to 16 bytes].
+        boolean headersEncrypted = false;
+        byte[] headerKey = null;
+
         while (currentPosition < fileLength) {
             final long blockStart = currentPosition;
+            final boolean blockEncrypted = headersEncrypted;
             RawDataIo rawData = new RawDataIo(channel);
             rawData.setPosition(currentPosition);
+
+            // For encrypted headers, the block is prefixed on disk by a 16-byte
+            // IV (plaintext). Read it before installing the decrypting cipher so
+            // the CRC/size/body reads below decrypt transparently.
+            if (blockEncrypted) {
+                final byte[] iv = new byte[HEADER_IV_SIZE];
+                if (rawData.readFully(iv, HEADER_IV_SIZE) < HEADER_IV_SIZE) {
+                    break;
+                }
+                try {
+                    rawData.setCipher(Rijndael.buildDecipherer(headerKey, iv));
+                } catch (Exception e) {
+                    throw new InitDeciphererFailedException(e);
+                }
+            }
 
             // Read CRC32 (4 bytes, little endian)
             final byte[] crc32Buffer = new byte[CRC32_SIZE];
@@ -114,6 +144,18 @@ public class RAR5HeaderReader implements HeaderReader {
                 throw new CorruptHeaderException("Header CRC32 mismatch at position " + blockStart);
             }
 
+            // On-disk start of this block's data area (right after the header). For
+            // encrypted headers the header is prefixed by a 16-byte IV and padded
+            // to the AES block size, so the disk offset differs from the plaintext
+            // bytes the reads accumulated into currentPosition.
+            final long dataAreaStart;
+            if (blockEncrypted) {
+                final int plainConsumed = CRC32_SIZE + headerSizeVintLen + (int) headerSize;
+                dataAreaStart = blockStart + HEADER_IV_SIZE + align16(plainConsumed);
+            } else {
+                dataAreaStart = currentPosition;
+            }
+
             int pos = 0;
 
             // Header type (vint)
@@ -153,6 +195,9 @@ public class RAR5HeaderReader implements HeaderReader {
 
                     final RAR5MainHeader mainHeader = new RAR5MainHeader((int) archiveFlags, (short) headerSize);
                     mainHeader.setHeaderCrc32(headerCrc32);
+                    if (headersEncrypted) {
+                        mainHeader.setEncrypted(true);
+                    }
 
                     // Read volume number if present (archive flag 0x0002)
                     if ((archiveFlags & 0x0002) != 0) {
@@ -274,7 +319,7 @@ public class RAR5HeaderReader implements HeaderReader {
                     RAR5FileHeader fileHeader = new RAR5FileHeader(fileFlags, unpackedSize, attributes, mtime,
                             dataCrc32, compressionInfo, hostOS, fileName,
                             unpackVersion, compressionMethod, dictionarySize,
-                            isSolid, extraRecords, currentPosition, dataSize);
+                            isSolid, extraRecords, dataAreaStart, dataSize);
                     // RAR5 SERVICE blocks (QO/CMT/ACL/STM/RR) are the same concept as RAR4
                     // NewSubHeader entries: named metadata sub-blocks, not user files. Mark them
                     // as such so Archive#getFileHeaders / #nextFileHeader skip them. Discriminate
@@ -285,8 +330,32 @@ public class RAR5HeaderReader implements HeaderReader {
                     }
                     this.headers.add(fileHeader);
                     break;
-                case CRYPT:
-                    throw new UnsupportedRarV5Exception();
+                case CRYPT: {
+                    // HEAD_CRYPT: archive header encryption. The block itself is
+                    // plaintext; it carries the salt/iteration count used to derive
+                    // the key for decrypting every subsequent header block.
+                    final VInt.Result cryptVerResult = VInt.read(headerData, pos);
+                    pos += cryptVerResult.getBytesConsumed();
+
+                    final VInt.Result cryptFlagsResult = VInt.read(headerData, pos);
+                    pos += cryptFlagsResult.getBytesConsumed();
+
+                    final int lg2Count = headerData[pos] & 0xFF;
+                    pos++;
+
+                    final byte[] cryptSalt = new byte[HEADER_IV_SIZE];
+                    System.arraycopy(headerData, pos, cryptSalt, 0, cryptSalt.length);
+                    // Remaining optional PswCheck/csum fields are not verified
+                    // (we match RAR4: a wrong password surfaces as a header CRC error).
+
+                    try {
+                        headerKey = Rijndael.deriveRar5Key(password, cryptSalt, lg2Count);
+                    } catch (Exception e) {
+                        throw new InitDeciphererFailedException(e);
+                    }
+                    headersEncrypted = true;
+                    break;
+                }
                 case ENDARC: {
                     final VInt.Result endFlagsResult = VInt.read(headerData, pos);
                     final RAR5EndArcHeader endArcHeader = new RAR5EndArcHeader(
@@ -301,7 +370,10 @@ public class RAR5HeaderReader implements HeaderReader {
                     break;
             }
 
-            // Skip data area
+            // Advance to the data area (a no-op for plaintext headers, where
+            // dataAreaStart == currentPosition) then skip the data to reach the
+            // next block.
+            currentPosition = dataAreaStart;
             if (hasData && dataSize > 0) {
                 // Next iteration will skip the channel to the current position. Skipping the data with it.
                 currentPosition += dataSize;

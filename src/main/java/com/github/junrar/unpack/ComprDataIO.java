@@ -26,6 +26,8 @@ import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.io.RawDataIo;
+import com.github.junrar.rar5.header.RAR5FileHeader;
+import com.github.junrar.rar5.header.extra.Rar5FileCryptRecord;
 import com.github.junrar.rarfile.ChecksumAlgorithm;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.volume.Volume;
@@ -89,6 +91,11 @@ public class ComprDataIO {
 
     private RawDataIo underlyingDataIo;
 
+    // RAR5 HashMAC: when non-null, the file checksum stored in the header is the
+    // HMAC-SHA256 of the real hash keyed by this key, so the computed hash must
+    // be converted the same way before comparison.
+    private byte[] hashKey;
+
     public ComprDataIO(Archive arc) {
         this.archive = arc;
     }
@@ -114,6 +121,7 @@ public class ComprDataIO {
         blake2sp = null;
         skipFileCrc = false;
         activeAlgorithm = ChecksumAlgorithm.NONE;
+        hashKey = null;
     }
 
     public void init(FileHeader hd) throws IOException, RarException {
@@ -132,7 +140,18 @@ public class ComprDataIO {
 
         if (hd.isEncrypted()) {
             try {
-                Cipher cipher = Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+                final Cipher cipher;
+                if (hd instanceof RAR5FileHeader && ((RAR5FileHeader) hd).getCryptRecord() != null) {
+                    final Rar5FileCryptRecord crypt = ((RAR5FileHeader) hd).getCryptRecord();
+                    final String password = archive.getPassword();
+                    final byte[] key = Rijndael.deriveRar5Key(password, crypt.getSalt(), crypt.getKdfCount());
+                    cipher = Rijndael.buildDecipherer(key, crypt.getIv());
+                    if (crypt.hasHashMac()) {
+                        this.hashKey = Rijndael.deriveRar5HashKey(password, crypt.getSalt(), crypt.getKdfCount());
+                    }
+                } else {
+                    cipher = Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+                }
                 this.underlyingDataIo.setCipher(cipher);
             } catch (Exception e) {
                 throw new InitDeciphererFailedException(e);
@@ -421,14 +440,19 @@ public class ComprDataIO {
      */
     public String getComputedChecksum() {
         if (activeAlgorithm == ChecksumAlgorithm.BLAKE2SP && blake2sp != null) {
-            return bytesToHex(blake2sp.digest());
+            byte[] digest = blake2sp.digest();
+            if (hashKey != null) {
+                digest = Rijndael.convertRar5Blake2ToMac(hashKey, digest);
+            }
+            return bytesToHex(digest);
         }
         // CRC32: for split-after volumes, use the packed (compressed) CRC;
         // otherwise use the unpacked CRC.
-        if (subHead != null && subHead.isSplitAfter()) {
-            return Long.toHexString(packedCRC).toUpperCase(Locale.ROOT);
+        long crc = (subHead != null && subHead.isSplitAfter()) ? packedCRC : unpFileCRC;
+        if (hashKey != null) {
+            crc = Rijndael.convertRar5Crc32ToMac(hashKey, crc);
         }
-        return Long.toHexString(unpFileCRC).toUpperCase(Locale.ROOT);
+        return Long.toHexString(crc).toUpperCase(Locale.ROOT);
     }
 
     /**

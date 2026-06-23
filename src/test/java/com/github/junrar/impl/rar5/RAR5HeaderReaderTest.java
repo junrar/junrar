@@ -8,6 +8,7 @@ import com.github.junrar.rar5.Rar5Constants;
 import com.github.junrar.rar5.header.RAR5EndArcHeader;
 import com.github.junrar.rar5.header.RAR5FileHeader;
 import com.github.junrar.rar5.header.RAR5MainHeader;
+import com.github.junrar.rar5.header.extra.Rar5FileCryptRecord;
 import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.HostSystem;
 import com.github.junrar.rarfile.MarkHeader;
@@ -232,6 +233,85 @@ class RAR5HeaderReaderTest {
 
             assertThat(headers.get(4)).isInstanceOf(RAR5EndArcHeader.class);
             assertThat(((RAR5EndArcHeader) headers.get(4)).isNextVolume()).isFalse();
+        }
+    }
+
+    @Test
+    void readHeadersFileContentEncrypted() throws Exception {
+        // Headers are plaintext; the file header carries an FHEXTRA_CRYPT record.
+        Path f = Paths.get("").resolve("src/test/resources/com/github/junrar/password/rar5-password-junrar.rar");
+        try (InputStream in = Files.newInputStream(f)) {
+            final SeekableReadOnlyByteChannel channel = new SeekableReadOnlyInputStream(in);
+            final HeaderReader headerReader = HeaderReaderFactory.create(channel);
+            headerReader.readHeaders(channel, Files.size(f), null);
+
+            final List<BaseBlock> headers = headerReader.getHeaders();
+            assertThat(headers).hasSize(4);
+            assertThat(headers.get(0)).isInstanceOf(MarkHeader.class);
+            assertThat(headers.get(1)).isInstanceOf(RAR5MainHeader.class);
+            assertThat(((RAR5MainHeader) headers.get(1)).isEncrypted()).isFalse();
+
+            assertThat(headers.get(2)).isInstanceOf(RAR5FileHeader.class);
+            final RAR5FileHeader file1 = (RAR5FileHeader) headers.get(2);
+            // Values verified against `unrar lta -pjunrar` (this fixture lists the
+            // checksum as "CRC32 MAC", i.e. the HashMAC-transformed CRC32).
+            assertFileInfo(file1, "file1.txt", 6, "EBD3E719", (byte) 3, 131072, FileTime.from(
+                    ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
+            ), HostSystem.unix, false, new HashSet<>(Arrays.asList(
+                    PosixFilePermission.OWNER_READ, PosixFilePermission.OWNER_WRITE,
+                    PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
+            assertThat(file1.getPackSize()).isEqualTo(32);
+            assertThat(file1.getUnpVersion()).isEqualTo((byte) 50);
+            assertThat(file1.isEncrypted()).isTrue();
+
+            final Rar5FileCryptRecord crypt = file1.getCryptRecord();
+            assertThat(crypt).isNotNull();
+            assertThat(crypt.getKdfCount()).isEqualTo(15);
+            assertThat(crypt.getSalt()).hasSize(16);
+            assertThat(crypt.getIv()).hasSize(16);
+            assertThat(crypt.hasPswCheck()).isTrue();
+            assertThat(crypt.hasHashMac()).isTrue();
+
+            assertThat(headers.get(3)).isInstanceOf(RAR5EndArcHeader.class);
+        }
+    }
+
+    @Test
+    void readHeadersHeaderEncrypted() throws Exception {
+        // The HEAD_CRYPT block decrypts every subsequent header with the password.
+        Path f = Paths.get("").resolve("src/test/resources/com/github/junrar/password/rar5-encrypted-junrar.rar");
+        try (InputStream in = Files.newInputStream(f)) {
+            final SeekableReadOnlyByteChannel channel = new SeekableReadOnlyInputStream(in);
+            final HeaderReader headerReader = HeaderReaderFactory.create(channel);
+            headerReader.readHeaders(channel, Files.size(f), "junrar");
+
+            final List<BaseBlock> headers = headerReader.getHeaders();
+            assertThat(headers).hasSize(4);
+            assertThat(headers.get(0)).isInstanceOf(MarkHeader.class);
+            assertThat(headers.get(1)).isInstanceOf(RAR5MainHeader.class);
+            assertThat(((RAR5MainHeader) headers.get(1)).isEncrypted()).isTrue();
+
+            assertThat(headers.get(2)).isInstanceOf(RAR5FileHeader.class);
+            final RAR5FileHeader file1 = (RAR5FileHeader) headers.get(2);
+            // Values verified against `unrar lta -pjunrar` (this fixture lists a plain
+            // "CRC32" — no HashMAC — unlike the file-content-only fixture).
+            assertFileInfo(file1, "file1.txt", 6, "E229F704", (byte) 3, 131072, FileTime.from(
+                    ZonedDateTime.of(2020, 7, 19, 13, 23, 47, 0, ZoneOffset.UTC).toInstant()
+            ), HostSystem.unix, false, new HashSet<>(Arrays.asList(
+                    PosixFilePermission.OWNER_READ, PosixFilePermission.OWNER_WRITE,
+                    PosixFilePermission.GROUP_READ, PosixFilePermission.OTHERS_READ)));
+            assertThat(file1.getPackSize()).isEqualTo(32);
+            assertThat(file1.getUnpVersion()).isEqualTo((byte) 50);
+            assertThat(file1.isEncrypted()).isTrue();
+
+            final Rar5FileCryptRecord crypt = file1.getCryptRecord();
+            assertThat(crypt).isNotNull();
+            assertThat(crypt.getKdfCount()).isEqualTo(15);
+            assertThat(crypt.getSalt()).hasSize(16);
+            assertThat(crypt.getIv()).hasSize(16);
+            assertThat(crypt.hasHashMac()).isFalse();
+
+            assertThat(headers.get(3)).isInstanceOf(RAR5EndArcHeader.class);
         }
     }
 

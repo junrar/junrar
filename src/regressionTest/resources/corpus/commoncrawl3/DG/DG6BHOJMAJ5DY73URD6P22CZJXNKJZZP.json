@@ -1,7 +1,7 @@
 {
   "isRarV5" : true,
   "isEncrypted" : false,
-  "isPasswordProtected" : false,
+  "isPasswordProtected" : true,
   "isOldFormat" : false,
   "fileHeaders" : [ {
     "archivalTime" : null,
@@ -14,7 +14,7 @@
     "fullPackSize" : 1041691998,
     "fullUnpackSize" : 6282495950,
     "isSolid" : false,
-    "isEncrypted" : false,
+    "isEncrypted" : true,
     "isUnicode" : true,
     "hasExtTime" : false,
     "isLargeBlock" : false,
