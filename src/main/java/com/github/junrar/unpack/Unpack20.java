@@ -288,100 +288,24 @@ public abstract class Unpack20 extends Unpack15 {
 
     protected void makeDecodeTables(byte[] lenTab, int offset, Decode dec,
             int size) {
-        int[] lenCount = new int[16];
-        int[] tmpPos = new int[16];
-        int i;
-        long M, N;
-
-        Arrays.fill(lenCount, 0); // memset(LenCount,0,sizeof(LenCount));
-
-        Arrays.fill(dec.getDecodeNum(), 0); // memset(Dec->DecodeNum,0,Size*sizeof(*Dec->DecodeNum));
-
-        for (i = 0; i < size; i++) {
-            lenCount[(int) (lenTab[offset + i] & 0xF)]++;
-        }
-        lenCount[0] = 0;
-        for (tmpPos[0] = 0, dec.getDecodePos()[0] = 0, dec.getDecodeLen()[0] = 0, N = 0, i = 1; i < 16; i++) {
-            N = 2 * (N + lenCount[i]);
-            M = N << (15 - i);
-            if (M > 0xFFFF) {
-                M = 0xFFFF;
-            }
-            dec.getDecodeLen()[i] = (int) M;
-            tmpPos[i] = dec.getDecodePos()[i] = dec.getDecodePos()[i - 1]
-                    + lenCount[i - 1];
-        }
-
-        for (i = 0; i < size; i++) {
-            if (lenTab[offset + i] != 0) {
-                dec.getDecodeNum()[tmpPos[lenTab[offset + i] & 0xF]++] = i;
-            }
-        }
-        dec.setMaxNum(size);
+        dec.buildDecodeTable(lenTab, offset, size);
     }
 
     protected int decodeNumber(Decode dec) {
         int bits;
         long bitField = getbits() & 0xfffe;
-//        if (bitField < dec.getDecodeLen()[8]) {
-//            if (bitField < dec.getDecodeLen()[4]) {
-//                if (bitField < dec.getDecodeLen()[2]) {
-//                    if (bitField < dec.getDecodeLen()[1]) {
-//                        bits = 1;
-//                    } else {
-//                        bits = 2;
-//                    }
-//                } else {
-//                    if (bitField < dec.getDecodeLen()[3]) {
-//                        bits = 3;
-//                    } else {
-//                        bits = 4;
-//                    }
-//                }
-//            } else {
-//                if (bitField < dec.getDecodeLen()[6]) {
-//                    if (bitField < dec.getDecodeLen()[5])
-//                        bits = 5;
-//                    else
-//                        bits = 6;
-//                } else {
-//                    if (bitField < dec.getDecodeLen()[7]) {
-//                        bits = 7;
-//                    } else {
-//                        bits = 8;
-//                    }
-//                }
-//            }
-//        } else {
-//            if (bitField < dec.getDecodeLen()[12]) {
-//                if (bitField < dec.getDecodeLen()[10])
-//                    if (bitField < dec.getDecodeLen()[9])
-//                        bits = 9;
-//                    else
-//                        bits = 10;
-//                else if (bitField < dec.getDecodeLen()[11])
-//                    bits = 11;
-//                else
-//                    bits = 12;
-//            } else {
-//                if (bitField < dec.getDecodeLen()[14]) {
-//                    if (bitField < dec.getDecodeLen()[13]) {
-//                        bits = 13;
-//                    } else {
-//                        bits = 14;
-//                    }
-//                } else {
-//                    bits = 15;
-//                }
-//            }
-//        }
-//        addbits(bits);
-//        int N = dec.getDecodePos()[bits]
-//                + (((int) bitField - dec.getDecodeLen()[bits - 1]) >>> (16 - bits));
-//        if (N >= dec.getMaxNum()) {
-//            N = 0;
-//        }
-//        return (dec.getDecodeNum()[N]);
+        // Quick-decode fast path — shared shape with Unpack50.decodeNumber; the
+        // only difference is the (deliberately separate) bit reader.
+        int quickBits = dec.getQuickBits();
+        if (bitField < dec.getDecodeLen()[quickBits]) {
+            int quickCode = (int) (bitField >>> (16 - quickBits));
+            addbits(dec.getQuickLen()[quickCode] & 0xFF);
+            return dec.getQuickNum()[quickCode];
+        }
+
+        // Slow-path fallback for codes longer than QuickBits.
+        // Performs a binary search over decodeLen[1..15] to determine
+        // the exact bit length of this Huffman code.
         int[] decodeLen = dec.getDecodeLen();
         if (bitField < decodeLen[8]) {
             if (bitField < decodeLen[4]) {

@@ -2,6 +2,7 @@ package com.github.junrar.unpack;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.io.Raw;
+import com.github.junrar.unpack.decode.Decode;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,7 +23,6 @@ public class Unpack50 extends Unpack29 {
     private static final int BC = 20;
     private static final int HUFF_TABLE_SIZEB = NC + DCB + LDC + RC; // 430
     private static final int HUFF_TABLE_SIZEX = NC + DCX + LDC + RC; // 446
-    private static final int MAX_QUICK_DECODE_BITS = 9;
     private static final int UNPACK_MAX_WRITE = 0x400000;
     private static final int MAX_FILTER_BLOCK_SIZE = 0x400000;
     private static final int MAX_UNPACK_FILTERS = 8192;
@@ -33,16 +33,6 @@ public class Unpack50 extends Unpack29 {
     private static final int FILTER_E8E9 = 2;
     private static final int FILTER_ARM = 3;
     private static final int FILTER_NONE = 10;
-
-    private static class DecodeTable {
-        int maxNum;
-        final int[] decodeLen = new int[16];
-        final int[] decodePos = new int[16];
-        int quickBits;
-        final byte[] quickLen = new byte[1 << MAX_QUICK_DECODE_BITS];
-        final int[] quickNum = new int[1 << MAX_QUICK_DECODE_BITS];
-        int[] decodeNum = new int[0];
-    }
 
     private static class BlockHeader {
         int blockSize = -1;
@@ -86,11 +76,11 @@ public class Unpack50 extends Unpack29 {
     private boolean extraDist;
 
     // Decode tables
-    private final DecodeTable ldTable = new DecodeTable();
-    private final DecodeTable ddTable = new DecodeTable();
-    private final DecodeTable lddTable = new DecodeTable();
-    private final DecodeTable rdTable = new DecodeTable();
-    private final DecodeTable bdTable = new DecodeTable();
+    private final Decode ldTable = new Decode();
+    private final Decode ddTable = new Decode();
+    private final Decode lddTable = new Decode();
+    private final Decode rdTable = new Decode();
+    private final Decode bdTable = new Decode();
 
     private final BlockHeader blockHeader = new BlockHeader();
 
@@ -181,7 +171,7 @@ public class Unpack50 extends Unpack29 {
                 }
             }
 
-            int mainSlot = decodeNumber(ldTable);
+            int mainSlot = decodeNumber50(ldTable);
 
             if (mainSlot < 256) {
                 window50[unpPtr50++] = (byte) mainSlot;
@@ -190,7 +180,7 @@ public class Unpack50 extends Unpack29 {
 
             if (mainSlot >= 262) {
                 int length = slotToLength(mainSlot - 262);
-                int distSlot = decodeNumber(ddTable);
+                int distSlot = decodeNumber50(ddTable);
                 long distance;
                 int dBits;
                 if (distSlot < 4) {
@@ -211,7 +201,7 @@ public class Unpack50 extends Unpack29 {
                             }
                             addbits50(dBits - 4);
                         }
-                        distance += decodeNumber(lddTable);
+                        distance += decodeNumber50(lddTable);
                     } else {
                         distance += getbits50() >>> (16 - dBits);
                         addbits50(dBits);
@@ -248,7 +238,7 @@ public class Unpack50 extends Unpack29 {
             long distance = oldDist[distNum];
             System.arraycopy(oldDist, 0, oldDist, 1, distNum);
             oldDist[0] = distance;
-            int lengthSlot = decodeNumber(rdTable);
+            int lengthSlot = decodeNumber50(rdTable);
             int length = slotToLength(lengthSlot);
             lastLength = length;
             copyString(length, distance);
@@ -410,7 +400,7 @@ public class Unpack50 extends Unpack29 {
                     return false;
                 }
             }
-            int number = decodeNumber(bdTable);
+            int number = decodeNumber50(bdTable);
             if (number < 16) {
                 table[i++] = (byte) number;
             } else if (number < 18) {
@@ -455,75 +445,35 @@ public class Unpack50 extends Unpack29 {
         return true;
     }
 
-    // ─── Huffman table constructor ────────────────────────────────────────────────
-
-    private void makeDecodeTables(byte[] lengthTable, int tableOffset, DecodeTable dec, int size) {
-        dec.maxNum = size;
-
-        int[] lengthCount = new int[16];
-        for (int i = 0; i < size; i++) lengthCount[lengthTable[tableOffset + i] & 0xF]++;
-        lengthCount[0] = 0;
-
-        dec.decodeNum = new int[size];
-        dec.decodePos[0] = 0;
-        dec.decodeLen[0] = 0;
-
-        int upperLimit = 0;
-        for (int i = 1; i < 16; i++) {
-            upperLimit += lengthCount[i];
-            dec.decodeLen[i] = upperLimit << (16 - i);
-            upperLimit *= 2;
-            dec.decodePos[i] = dec.decodePos[i - 1] + lengthCount[i - 1];
-        }
-
-        int[] copyDecodePos = dec.decodePos.clone();
-        for (int i = 0; i < size; i++) {
-            int curBitLength = lengthTable[tableOffset + i] & 0xF;
-            if (curBitLength != 0) {
-                dec.decodeNum[copyDecodePos[curBitLength]++] = i;
-            }
-        }
-
-        dec.quickBits = (size == NC) ? MAX_QUICK_DECODE_BITS : Math.max(0, MAX_QUICK_DECODE_BITS - 3);
-        int quickDataSize = 1 << dec.quickBits;
-        int curBitLength = 1;
-        for (int code = 0; code < quickDataSize; code++) {
-            int bitField = code << (16 - dec.quickBits);
-            while (curBitLength < 16 && bitField >= dec.decodeLen[curBitLength]) curBitLength++;
-            dec.quickLen[code] = (byte) curBitLength;
-            int dist = bitField - dec.decodeLen[curBitLength - 1];
-            dist >>>= (16 - curBitLength);
-            if (curBitLength < 16) {
-                int pos = dec.decodePos[curBitLength] + dist;
-                dec.quickNum[code] = (pos < size) ? dec.decodeNum[pos] : 0;
-            } else {
-                dec.quickNum[code] = 0;
-            }
-        }
-    }
-
     // ─── Symbol decoder ───────────────────────────────────────────────────────────
 
-    private int decodeNumber(DecodeTable dec) {
+    // RAR5's symbol decoder. Uses the shared Decode tables (built by the shared
+    // makeDecodeTables/Decode#buildDecodeTable) but its own RAR5 bit reader, so
+    // it is a distinct method from Unpack20#decodeNumber rather than an override
+    // — a single Unpack50 instance runs every format's loop, so overriding would
+    // hijack the RAR2/3 loops' decodeNumber calls.
+    private int decodeNumber50(Decode dec) {
         int bitField = getbits50() & 0xFFFE;
-        if (bitField < dec.decodeLen[dec.quickBits]) {
-            int code = bitField >>> (16 - dec.quickBits);
-            addbits50(dec.quickLen[code] & 0xFF);
-            return dec.quickNum[code];
+        int quickBits = dec.getQuickBits();
+        int[] decodeLen = dec.getDecodeLen();
+        if (bitField < decodeLen[quickBits]) {
+            int code = bitField >>> (16 - quickBits);
+            addbits50(dec.getQuickLen()[code] & 0xFF);
+            return dec.getQuickNum()[code];
         }
         int bits = 15;
-        for (int i = dec.quickBits + 1; i < 15; i++) {
-            if (bitField < dec.decodeLen[i]) {
+        for (int i = quickBits + 1; i < 15; i++) {
+            if (bitField < decodeLen[i]) {
                 bits = i;
                 break;
             }
         }
         addbits50(bits);
-        int dist = bitField - dec.decodeLen[bits - 1];
+        int dist = bitField - decodeLen[bits - 1];
         dist >>>= (16 - bits);
-        int pos = dec.decodePos[bits] + dist;
-        if (pos >= dec.maxNum) pos = 0;
-        return dec.decodeNum[pos];
+        int pos = dec.getDecodePos()[bits] + dist;
+        if (pos >= dec.getMaxNum()) pos = 0;
+        return dec.getDecodeNum()[pos];
     }
 
     // ─── Length slot decoder ──────────────────────────────────────────────────────

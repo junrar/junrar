@@ -37,6 +37,8 @@ public class Compress {
     public static final int HUFF_TABLE_SIZE     = (NC + DC + RC + LDC);
     public static final int BC                  = 20;
 
+    public static final int NC50                = 306;  /* RAR5 literal/length alphabet size */
+
     public static final int NC20                = 298;  /* alphabet = {0, 1, 2, ..., NC - 1} */
     public static final int DC20                = 48;
     public static final int RC20                = 28;
