@@ -1370,8 +1370,15 @@ RAR5 support ships as a **breaking major** (conventional commit
 (review F8 — this section and §7 previously contradicted each other): the major's
 breaking rationale is **the RAR5 flip alone** (RAR5 archives open instead of
 throwing `UnsupportedRarV5Exception`; the exception's deprecation). The
-`ArchiveOptions` surface (P0.8) is **additive** — new type, new overloads, no
-existing signature touched — and ships as a minor before the major. P0.7's
+`ArchiveOptions` surface (P0.8) is **binary-compatible and touches no existing
+signature** — new type, new overloads only — but is **source-incompatible** for
+a caller passing a bare `null` password literal to the three-argument
+`Junrar.extract` overloads, since the new `ArchiveOptions` overload makes that
+call site javac-ambiguous. Remedies are disclosed in the affected overloads'
+Javadoc: drop the password argument, cast to `(String) null`, or pass a
+password-less `ArchiveOptions`. It ships as **minor-with-release-note** — the
+same disposition class as the P0.7/M2 items below — rather than a bare
+additive minor before the major. P0.7's
 header-CRC verification (unrar-tolerance contract, one named narrower
 strictness) and M2's filter semantics are declared **acceptable
 minor-with-release-note changes** — each moves junrar toward unrar's own semantics
