@@ -20,6 +20,10 @@ correctness regression.**
 | (a) port-faithful / behavior-preserving perf | 5 | Must stay behaviorally equivalent |
 | (d) refactor / style / build / deps / ci / docs | ~460 | Not behavior-load-bearing |
 
+> **Snapshot note (added during Phase 0):** statuses below are as of this report's
+> writing (2026-07-17, pre-P0). Live pin status is tracked in `MIGRATION_MANUAL.md` §7
+> only; rows pinned since (C1, C7, C13, D1, …) are NOT updated here.
+
 **UNPINNED count: 6** (behaviors with NO regression test — must add a test before re-port):
 solid-v20 AIOOBE (9b69c6b7), PPM MaxMB clamp (0dc9d457), large-file 2G+ InputStream
 (cbbe99c4), protect-header seek-past-data (8e91d695), unsigned-shift `>>>` correctness class

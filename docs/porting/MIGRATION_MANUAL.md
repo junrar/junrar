@@ -685,8 +685,8 @@ C++ will show them as "extra" code; they are load-bearing. Source (verbatim, wit
 commit archaeology): [`reports/divergences-no-go.md`](reports/divergences-no-go.md).
 
 **The UNPINNED rule: an UNPINNED behavior gets its pinning test BEFORE any re-port
-touches its file.** UNPINNED count: 4 (S8, C13, C15, D1) — C1 pinned by chunk P0.1,
-C7 by P0.2 (rows below).
+touches its file.** UNPINNED count: 2 (S8, C15) — C1 pinned by chunk P0.1, C7 by
+P0.2, C13 + D1 by P0.3 (rows below).
 
 ### Security (CVE-backed)
 
@@ -717,7 +717,7 @@ C7 by P0.2 (rows below).
 | C10 | **Unicode filename validation (#108)**: validate the *effective* `getFileName()` once via `isFilenameValid`, not fileName/fileNameW separately. | `a5186a8b` (2023) | `FileHeader.java:169-170,230-237` | `ArchiveTest.gh108_…` → `gh108.rar` |
 | C11 | **VMSF_UPCASE lookup (#110)**: `findFilter(7)` returns UPCASE, not null (junrar-only lookup-omission class). | `bc9889bc` (2023) | `VMStandardFilters.java` | `VMStandardFiltersTest` (@EnumSource, all 8) + companion enum tests |
 | C12 | **Empty file → InputStream (#88/#90)**: `EmptyInputStream` for size ≤ 0; pipe buffer `max(min(size,PIPE),1)`. | `c95a211a` (2022) | `Archive.java` `getInputStream` | `GitHub88EmptyFile` → `gh-88-empty.rar` |
-| C13 | **>2 GB via InputStream (#104)**: `RandomAccessInputStream.length` is `long`. | `cbbe99c4` (2022) | `RandomAccessInputStream.java` | **UNPINNED** (impractical fixture size) |
+| C13 | **>2 GB via InputStream (#104)**: `RandomAccessInputStream.length` is `long`. | `cbbe99c4` (2022) | `RandomAccessInputStream.java` | `LargeEntryContractTest` (virtual channel, no giant fixture; pinned by P0.3, `33473861`) |
 | C14 | **Missing EndArcHeader on stream parse (#216)**: `InputStreamVolume.getLength()` = `available()` (fallback `Long.MAX_VALUE`), so a truncated stream terminates instead of throwing. | `964801cd` (2025) | `InputStreamVolume.java` | `ArchiveTest` stream-parse assertions |
 | C15 | **Unsigned-shift class rule**: every C++ unsigned right shift is Java `>>>`. Applied across `RandomAccessStream`, `FileNameDecoder`, `Unpack15`, `BitInput`, `RarVM`. | `25491b50` (2020), `d276f937` (2022) | those 5 files | **UNPINNED as a class** — re-audit every `>>` on re-port (§4.2) |
 
@@ -725,7 +725,7 @@ C7 by P0.2 (rows below).
 
 | # | Divergence to preserve | Commit(s) | Note |
 | - | ---------------------- | --------- | ---- |
-| D1 | **>2 GB single entry deliberately NOT extracted to `byte[]`** — a prior attempt (`6ecfb718`) was reverted (Java arrays cap at `Integer.MAX_VALUE`). | `a43a5192` (2019) | **UNPINNED** documented divergence. Don't "fix" by re-porting a `byte[]` path. |
+| D1 | **>2 GB single entry deliberately NOT extracted to `byte[]`** — a prior attempt (`6ecfb718`) was reverted (Java arrays cap at `Integer.MAX_VALUE`). | `a43a5192` (2019) | `LargeEntryContractTest` pins the streaming observable (P0.3, `33473861`). Don't "fix" by re-porting a `byte[]` path. |
 | D2 | **CRC32 via `java.util.zip.CRC32`** (JDK intrinsics) replaced the hand-rolled table — behavior-preserving; **`RarCRC.checkOldCrc` (RAR 1.5) is RETAINED** — do not delete. | `5270d235` (2026) | Sites: `ComprDataIO.java:103-104,195`, `RarVM.java:903`. Must stay bit-identical to the table version. |
 
 Also preserve the **Java-API features** unrar has no notion of (extract-from-InputStream,
