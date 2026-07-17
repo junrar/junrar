@@ -391,11 +391,17 @@ The RAR3 precedent (`crypt/Rijndael.java:38-89`): hand-ported KDF loop
 `crypt.cpp:188-286`), primitives via `Cipher.getInstance("AES/CBC/NoPadding")` +
 `MessageDigest.getInstance("sha-1")`.
 
-For RAR5: AES-256/CBC = same `Cipher` with a 256-bit key; KDF = PBKDF2-HMAC-SHA256 =
-JDK `SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256")`; port only RAR5's specifics
-on top (2^Lg2Count iterations, reject lg2 > 24, the derived trio key/HashKey/PswCheck
-via count+16/count+17 extra rounds, `ConvertHashToMAC` — `crypt5.cpp:85,193`;
-`unrar-delta-map.md` §2.6). SHA-256 = `MessageDigest.getInstance("SHA-256")`.
+For RAR5: AES-256/CBC = same `Cipher` with a 256-bit key; KDF = a small hand-rolled
+PBKDF2 loop over `Mac.getInstance("HmacSHA256")` — NOT
+`SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256")`: Java 8 mandates `HmacSHA256`
+as a `Mac` algorithm but requires NO PBKDF2 `SecretKeyFactory` at all (required list =
+DES, DESede — Java 8 javadoc, doc-verified 2026-07-17), and RAR5's derived trio
+(key at count, HashKey at count+16, PswCheck source at count+**32** — the upstream
+loop runs segments `{Count-1, 16, 16}` and snapshots one running accumulator,
+`crypt5.cpp:105-125`) falls out of ONE pass, where three provider calls would do ~3×
+the HMAC work. Port RAR5's specifics on top (2^Lg2Count iterations, reject lg2 > 24,
+`ConvertHashToMAC` — `crypt5.cpp:85,193`; `unrar-delta-map.md` §2.6).
+SHA-256 = `MessageDigest.getInstance("SHA-256")`.
 Blake2sp is the one primitive the JDK lacks — explicit port-or-dependency decision
 (§5.5). Two RAR3 warts NOT to inherit (§6 T4/T5): platform-charset password bytes and
 the O(n²) digest recompute.
@@ -490,8 +496,15 @@ the header (`positionInFile`); "seek to next" is recomputed as
 - RAR5 16-byte salt + Lg2Count are **new fields on RAR5 header classes** — do not
   widen the RAR3 `SALT_SIZE 8` path (`FileHeader.java:45,193-198`).
 - **junrar verifies NO header CRCs** (parses `headCRC`, checks only the fixed-value
-  Mark/EndArc `isValid`s) — a known gap vs unrar (`arcread.cpp:258-271`). **The RAR5
-  port must verify header CRC32s, not inherit the gap** (§6 T7).
+  Mark/EndArc `isValid`s) — a known gap vs unrar. Unrar's verification is
+  format-specific (verified at `2e71167`/`d861246:arcread.cpp`, 2026-07-17): RAR3
+  headers carry a **16-bit** CRC (`~CRC32 & 0xffff`, `GetCRC15`) with legacy
+  exemptions (SIGN, AV, old Unix-owner sub-blocks; comment-bearing headers CRC only
+  the processed bytes) and a mismatch is *recorded* (`BrokenHeader`) while processing
+  continues — fatal only for encrypted headers; RAR5 headers carry a full CRC32
+  (`GetCRC50`) and an unencrypted mismatch is likewise "report, but attempt to
+  process". **The RAR5 port must verify header CRCs, not inherit the gap** (§6 T7) —
+  with the format-correct width and tolerance, not a blanket fatal CRC32 check.
 
 ### 5.2 Unpack core (LZ engines)
 
@@ -657,7 +670,7 @@ fix-or-avoid consciously; never propagate the idiom.
 | T4 | **Platform-charset passwords** | `Rijndael.java:47` | `password.getBytes()` assumes 1 byte/char + platform charset; non-Latin-1 passwords diverge from unrar. RAR5 mandates UTF-8 — convert explicitly. |
 | T5 | **KDF O(n²)** | `Rijndael.java:56-74` | Java re-hashes the whole accumulated buffer where C++ snapshots the running SHA-1 context. Same output, quadratic cost. Unnecessary under PBKDF2 — do not imitate. |
 | T6 | **Charset / missing UTF-8 branch** | `FileHeader.java:157-165` | ANSI names decoded with platform default charset; the whole-name-UTF-8 branch of `arcread.cpp:189-194` was never ported (`fileNameW=""`). Fix rather than extend. |
-| T7 | **No header-CRC verification** | `BaseBlock.java:88,110` (parsed, unchecked) | unrar checks every header CRC (`arcread.cpp:258-271`) and flags `BrokenFileHeader`; junrar checks none (only Mark/EndArc magic constants). **RAR5 must not inherit the gap** — verify header CRC32s. |
+| T7 | **No header-CRC verification** | `BaseBlock.java:88,110` (parsed, unchecked) | unrar verifies RAR3 header CRCs as **16-bit** (`GetCRC15`, `~CRC32 & 0xffff`) with legacy exemptions (SIGN/AV/old-UO; comment-bearing headers cover processed bytes only) and *records* a file-header mismatch while continuing (`BrokenHeader` + warning; fatal only for encrypted headers) — `d861246:arcread.cpp:431-445,514-545`; RAR5 uses full CRC32 (`GetCRC50`) and likewise attempts to process an unencrypted bad header (`d861246:arcread.cpp:683-696`). junrar checks none (only Mark/EndArc magic constants). **RAR5 must not inherit the gap** — verify with the format-correct width and tolerance. |
 | T8 | **Vestigial `unsigned/` package** | `unsigned/*.java` | Three empty classes + one helper class, **zero importers** (re-probed 2026-07-17). Ignore it; never extend it; the mask idioms (§4.2) are the house style. |
 | T9 | **PrgStack compaction dropped** | `Unpack.java:360,860` | C++ compacts executed (NULL) filter slots on every `AddVMCode` (`unpack.cpp:524-539`); Java appends forever and skips nulls — unbounded list growth on filter-heavy archives. Fix or bound when touching the filter path (unrar's later `MAX3_UNPACK_FILTERS 8192` cap is the M1 answer). |
 | T10 | **Vestigial / dead code to not trust** | various | Old (RAR 1.x) format plumbing is dead (`isOldFormat`/`ReadOldHeader` never ported — headers report S2); `suspended` machinery never engaged; commented first-translations retained (`Unpack20.java:275-333`); the RAR3 DDecode lazy-init guard is vestigial (`Unpack.java:140-154`). Provenance breadcrumbs, not behavior. |
