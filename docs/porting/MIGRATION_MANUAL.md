@@ -205,7 +205,7 @@ C++ unsigned semantics do not survive naive translation.
 | `uint` (u32), **sizes/offsets that must not go negative** | `long` via `Raw.readIntLittleEndianAsLong` | `BlockHeader.java:54` packSize; `FileHeader.java:98` unpSize |
 | `uint` full-range **arithmetic** (range coders, hashes) | `long` + `& 0xFFFFFFFFL` **after every mutation** | `RangeCoder.java:37-97` (`uintMask`) |
 | `Int64` | native `long`; compose from two u32 halves | `FileHeader.java:132-138` |
-| unsigned `>>` | Java `>>>` — **always**; sign-extension silently corrupts bitstreams | class rule, no-go C15 (commits `25491b50`, `d276f937`) |
+| unsigned `>>` | Java `>>>` — **always**; sign-extension silently corrupts bitstreams | class rule, no-go C15 (commit `25491b50`; the same sweep style in `Unpack.java`/`Rijndael.java` is `d276f937` — outside the 5 C15 files, see `reports/signedness-audit.md`) |
 | signed `>>` the C++ casts to `(int)` | Java `>>` | correct model `rarvm.cpp:414` (junrar's VM_SAR got this wrong — §6 T3) |
 | unsigned-subtraction wrap guard | add explicit `>= 0` to the fast-path condition | `Unpack20.java:215`, `Unpack.java:574` — C++ `unsigned DestPtr=UnpPtr-Distance` wraps huge and fails `< MAXWINSIZE-260` (`unpack.cpp:88-89`); signed Java passes it and AIOOBEs (no-go C1) |
 | u32 sentinel comparisons | suffix the literal with `L` against a `long` | **trap:** `FileHeader.java:127` `unpSize == 0xffffffff` compares long vs int −1 — can never be true (§6 T1) |
@@ -685,8 +685,8 @@ C++ will show them as "extra" code; they are load-bearing. Source (verbatim, wit
 commit archaeology): [`reports/divergences-no-go.md`](reports/divergences-no-go.md).
 
 **The UNPINNED rule: an UNPINNED behavior gets its pinning test BEFORE any re-port
-touches its file.** UNPINNED count: 2 (S8, C15) — C1 pinned by chunk P0.1, C7 by
-P0.2, C13 + D1 by P0.3 (rows below).
+touches its file.** UNPINNED count: 1 (S8) — C1 pinned by chunk P0.1, C7 by P0.2,
+C13 + D1 by P0.3, C15 by P0.4 (as far as unit-pinnable; rows below).
 
 ### Security (CVE-backed)
 
@@ -719,7 +719,7 @@ P0.2, C13 + D1 by P0.3 (rows below).
 | C12 | **Empty file → InputStream (#88/#90)**: `EmptyInputStream` for size ≤ 0; pipe buffer `max(min(size,PIPE),1)`. | `c95a211a` (2022) | `Archive.java` `getInputStream` | `GitHub88EmptyFile` → `gh-88-empty.rar` |
 | C13 | **>2 GB via InputStream (#104)**: `RandomAccessInputStream.length` is `long`. | `cbbe99c4` (2022) | `RandomAccessInputStream.java` | `LargeEntryContractTest` (virtual channel, no giant fixture; pinned by P0.3, `33473861`) |
 | C14 | **Missing EndArcHeader on stream parse (#216)**: `InputStreamVolume.getLength()` = `available()` (fallback `Long.MAX_VALUE`), so a truncated stream terminates instead of throwing. | `964801cd` (2025) | `InputStreamVolume.java` | `ArchiveTest` stream-parse assertions |
-| C15 | **Unsigned-shift class rule**: every C++ unsigned right shift is Java `>>>`. Applied across `RandomAccessStream`, `FileNameDecoder`, `Unpack15`, `BitInput`, `RarVM`. | `25491b50` (2020), `d276f937` (2022) | those 5 files | **UNPINNED as a class** — re-audit every `>>` on re-port (§4.2) |
+| C15 | **Unsigned-shift class rule**: every C++ unsigned right shift is Java `>>>`. Applied across `RandomAccessStream`, `FileNameDecoder`, `Unpack15`, `BitInput`, `RarVM`. | `25491b50` (2020; `d276f937` 2022 touched `Unpack.java`/`Rijndael.java` only — not these 5, per `reports/signedness-audit.md`) | those 5 files | `*SignednessTest` (13+1 boundary tests) + `reports/signedness-audit.md` (P0.4, `92011126`+fixes: zero bare `>>` in all 5 files; decode-loop sites deferred to suite coverage per ledger) — pinned as far as unit-pinnable |
 
 ### Deliberate divergences (look like bugs/dead code — must stay)
 
