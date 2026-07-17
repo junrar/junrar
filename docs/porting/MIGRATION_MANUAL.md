@@ -665,7 +665,7 @@ fix-or-avoid consciously; never propagate the idiom.
 | # | Trap | Site | Detail |
 | --- | --- | --- | --- |
 | T1 | **Inert unsigned-sentinel compare** | `FileHeader.java:127` | `unpSize == 0xffffffff` — `long` vs int −1, can never be true; the port of `arcread.cpp:148`'s INT64MAX promotion is silently dead. Rule: suffix u32 sentinel literals with `L`. |
-| T2 | **ProtectHeader double-read** | `ProtectHeader.java:24-33` | reads `version` at pos 0 **without advancing**, then `recSectors` also at pos 0; `mark` is 1 byte vs C++ `byte Mark[8]`; size constant 8 vs the real 15 tail bytes (`SIZEOF_PROTECTHEAD 26`, `headers.hpp:242-249`). Harmless only because the block is skipped by size. Never copy this pattern. |
+| T2 | **ProtectHeader double-read** — FIXED on rar5-port by chunk P0.2 (`5c467c2e`); description kept as a never-copy exemplar | `ProtectHeader.java:24-33` | read `version` at pos 0 **without advancing**, then `recSectors` also at pos 0; `mark` was 1 byte vs C++ `byte Mark[8]`; size constant 8 vs the real 15 tail bytes (`SIZEOF_PROTECTHEAD 26`, `headers.hpp:242-249`). Harmless only because the block is skipped by size. Never copy this pattern. |
 | T3 | **RarVM precedence bugs** | `RarVM.java:250-251,300-393,509,565-609,636` | (a) `a & 0xFFffFFff + b` parses as `a & (0xFFffFFff + b)` — VM_ADDB/SUBB/INC/DEC/MUL/ADC/SBB all wrong; (b) ternary-vs-`\|` flag computation drops the sign bit + signed compare where C++ is unsigned; (c) VM_SAR uses `>>>` where C++ is arithmetic `>>`; (d) `prepare()` copies code with `inBuf[i] \|= code[i]` — a second prepare() can OR stale bytes. Survive because real archives hit the standard-filter path. **Rule: parenthesize every masked term; per-opcode unit tests for anything new.** |
 | T4 | **Platform-charset passwords** | `Rijndael.java:47` | `password.getBytes()` assumes 1 byte/char + platform charset; non-Latin-1 passwords diverge from unrar. RAR5 mandates UTF-8 — convert explicitly. |
 | T5 | **KDF O(n²)** | `Rijndael.java:56-74` | Java re-hashes the whole accumulated buffer where C++ snapshots the running SHA-1 context. Same output, quadratic cost. Unnecessary under PBKDF2 — do not imitate. |
@@ -685,7 +685,8 @@ C++ will show them as "extra" code; they are load-bearing. Source (verbatim, wit
 commit archaeology): [`reports/divergences-no-go.md`](reports/divergences-no-go.md).
 
 **The UNPINNED rule: an UNPINNED behavior gets its pinning test BEFORE any re-port
-touches its file.** UNPINNED count: 6 (S8, C1, C7, C13, C15, D1).
+touches its file.** UNPINNED count: 4 (S8, C13, C15, D1) — C1 pinned by chunk P0.1,
+C7 by P0.2 (rows below).
 
 ### Security (CVE-backed)
 
@@ -704,13 +705,13 @@ touches its file.** UNPINNED count: 6 (S8, C1, C7, C13, C15, D1).
 
 | # | Behavior that MUST survive | Commit(s) | Code site today | Guard test + fixture |
 | - | -------------------------- | --------- | --------------- | -------------------- |
-| C1 | **Solid RAR v20 AIOOBE**: `CopyString20` guards `destPtr >= 0` (solid back-ref into a previous file goes negative; C++ unsigned wraps into the masked slow path, signed Java arraycopies a negative index). | `9b69c6b7` (2026) | `Unpack20.java:215` | **UNPINNED** — existing `rar4-solid.rar` is v29. **Craft a solid-v20 negative-back-ref fixture before re-port.** |
+| C1 | **Solid RAR v20 AIOOBE**: `CopyString20` guards `destPtr >= 0` (solid back-ref into a previous file goes negative; C++ unsigned wraps into the masked slow path, signed Java arraycopies a negative index). | `9b69c6b7` (2026) | `Unpack20.java:215` | `Unpack20SolidTest` → `solid/v20-solid-negative-backref.rar` (pinned by P0.1, `07cdfa6b`) |
 | C2 | **Audio-decode per-slot init**: `AudV`/`MD` arrays filled with *distinct* new objects per slot (shared-ref `Arrays.fill(…, new X())` caused CRC errors; null `MD` → NPE). | `15f4afa2`, `952436b2` (2022) | `Unpack20.java` init block | `ArchiveTest.testAudioDecompression` → `audio/*.rar` vs `.wav` |
 | C3 | **RAR4 EXTTIME parsing**: mTime/cTime/aTime/arcTime as `FileTime`, 100 ns units; DOS mtime base. | `d5cc784c` (2022) | `FileHeader.java:200-224,249-273` | `ArchiveTest.testArchiveExtTimes_*` (4 TZ) → `rar4-ext_time.rar` |
 | C4 | **OOB read on corrupt ext-time (#86)**: require `position+1 < fileHeader.length` before the 2-byte flags, else flags=0 + warn; `getFileName()` falls back to `fileName` when `fileNameW` empty despite unicode bit. | `1d52d5d3` (2022) | `FileHeader.java:204-210,670` | `GitHub86MissingDataTest` → `gh-86-missing-data.rar` |
 | C5 | **DOS-time millisecond zeroing**: `cal.set(MILLISECOND, 0)`. | `b1f96385` (2020) | `FileHeader.java:323` | indirectly by C3 |
 | C6 | **Subblock seek-past-data**: after any 0x77 SubHeader, unconditionally seek `positionInFile + headerSize + dataSize` (else later headers parse at wrong offsets); loop guard on that path. | `ad7ad33b` (2026) | `Archive.java:405-410` | `MacSubblockTest` → `mac-subblock.rar` |
-| C7 | **Protect-header seek-past-data**: `+ getDataSize()` in the ProtectHeader seek. | `8e91d695` (2011) | `Archive.java` ProtectHeader case | **UNPINNED** — no corrupt protect-header fixture |
+| C7 | **Protect-header seek-past-data**: `+ getDataSize()` in the ProtectHeader seek. | `8e91d695` (2011) | `Archive.java` ProtectHeader case | `bugfixes/ProtectHeaderTest` → `bugfixes/protect-header-seek.rar` (pinned by P0.2, `8d77f210`) |
 | C8 | **Null main header → typed exception**, never NPE. | `8433b1b6` (2018) | `Archive.java` `isEncrypted()` | `abnormal/mainHeaderNull.rar` → `BadRarArchiveException` |
 | C9 | **Corrupt header → `CorruptHeaderException`**, never NPE (#36/#45). | `b7215896` (2020) | `Archive.java` header loop | `abnormal/corrupt-header.rar` |
 | C10 | **Unicode filename validation (#108)**: validate the *effective* `getFileName()` once via `isFilenameValid`, not fileName/fileNameW separately. | `a5186a8b` (2023) | `FileHeader.java:169-170,230-237` | `ArchiveTest.gh108_…` → `gh108.rar` |
