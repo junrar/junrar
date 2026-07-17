@@ -29,14 +29,17 @@ import com.github.junrar.io.Raw;
 public class ProtectHeader extends BlockHeader {
 
     /**
-     * the header size
+     * the header size, incremental past BlockHeader (unrar 3.7.3
+     * headers.hpp:242-249 SIZEOF_PROTECTHEAD 26 minus SIZEOF_LONGBLOCKHEAD 11)
      */
-    public static final int protectHeaderSize = 8;
+    public static final int protectHeaderSize = 15;
+
+    private static final int MARK_SIZE = 8;
 
     private byte version;
     private final short recSectors;
     private final int totalBlocks;
-    private byte mark;
+    private final byte[] mark;
 
 
     public ProtectHeader(BlockHeader bh, byte[] protectHeader) {
@@ -44,16 +47,19 @@ public class ProtectHeader extends BlockHeader {
 
         int pos = 0;
         version |= protectHeader[pos] & 0xff;
+        pos++;
 
         recSectors = Raw.readShortLittleEndian(protectHeader, pos);
         pos += 2;
         totalBlocks = Raw.readIntLittleEndian(protectHeader, pos);
         pos += 4;
-        mark |= protectHeader[pos] & 0xff;
+
+        mark = new byte[MARK_SIZE];
+        System.arraycopy(protectHeader, pos, mark, 0, MARK_SIZE);
     }
 
 
-    public byte getMark() {
+    public byte[] getMark() {
         return mark;
     }
 
