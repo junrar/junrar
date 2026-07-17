@@ -18,6 +18,7 @@ package com.github.junrar.crypt;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.MessageDigest;
@@ -42,14 +43,12 @@ public class Rijndael {
         }
         byte[] AESInit = new byte[16];
         byte[] AESKey = new byte[16];
-        int rawLength = 2 * password.length();
-        byte[] rawpsw = new byte[rawLength + 8];
-        byte[] pwd = password.getBytes();
-        for (int i = 0; i < password.length(); i++) {
-            rawpsw[i * 2] = pwd[i];
-            rawpsw[i * 2 + 1] = 0;
-        }
-        System.arraycopy(salt, 0, rawpsw, rawLength, salt.length);
+        // unrar 3.7.3 crypt.cpp:240-249: CharToWide+WideToRaw serialize the
+        // password as UTF-16LE, not the platform charset.
+        byte[] pwd = password.getBytes(StandardCharsets.UTF_16LE);
+        byte[] rawpsw = new byte[pwd.length + salt.length];
+        System.arraycopy(pwd, 0, rawpsw, 0, pwd.length);
+        System.arraycopy(salt, 0, rawpsw, pwd.length, salt.length);
 
         MessageDigest sha = MessageDigest.getInstance("sha-1");
 
