@@ -49,7 +49,10 @@ class Unpack15SignednessTest {
 
         // Num &= 0xfff0 -> 0x8000 (32768); decHf0[0]=0x8000 <= Num (equal counts),
         // decHf0[1]=0xc000 > Num, StartPos 4->5; (32768 - decHf0[0]) >>> (16-5) = 0 >>> 11 = 0;
-        // + posHf0[5]=8 => 8.
+        // + posHf0[5]=8 => 8. The subtracted operand is exactly 0 here, so a wrong shift
+        // AMOUNT would still return 8 (0 >>> anything = 0) — givenMaxMaskedNum's nonzero
+        // operand (3568) is what discriminates shift-amount mutations; this case pins the
+        // table-boundary equality (`DecTab[I] <= Num`) and StartPos/PosTab indexing instead.
         assertThat(unpack.decodeNum(0x8000, 4, decHf0, posHf0)).isEqualTo(8);
     }
 

@@ -48,16 +48,46 @@ above for reproducibility:
 
 **Zero rows in every file** — the pipeline output above is 0 for all 5 files, so the ledger
 row count (0) equals it trivially. **Finding: the C15 class rule already holds with no
-exceptions as of this audit.** The two historical commits this row cites —
-`25491b50` (2020, "refactor: replace >> with >>>") and `d276f937` (2022, "perf: reduce
-array creation, unsigned shifts") — converted every unsigned right shift in these 5 files
-to `>>>`, and no plain `>>` has been reintroduced since (`git log -p` on these 5 paths
-shows no shift-operator edit after `d276f937`). There is therefore nothing to classify
+exceptions as of this audit.**
+
+History re-derived for this fix round (`git diff-tree --no-commit-id --name-only -r <sha>`
+per cited commit; `git log --follow --oneline -- <path>` per file — commands + full output
+in the handoff):
+
+- `25491b50` (2020-07-21, "refactor: replace >> with >>>") is the true sweep: its
+  `--name-only` diff touches EXACTLY these 5 paths (`io/RandomAccessStream.java`,
+  `rarfile/FileNameDecoder.java`, `unpack/Unpack15.java`, `unpack/vm/BitInput.java`,
+  `unpack/vm/RarVM.java`) — no more, no fewer.
+- `d276f937` (2022-03-11, "perf: reduce array creation, unsigned shifts") does **not**
+  belong in this row's citation: its `--name-only` diff touches only
+  `crypt/Rijndael.java` and `unpack/Unpack.java` — neither is one of the 5 C15 files, and it
+  appears in the `git log --follow` history of none of them.
+- Per-file `git log --follow` confirms `25491b50` is the newest commit touching
+  `FileNameDecoder.java` and `BitInput.java` (nothing has edited them since).
+  `Unpack15.java` and `RarVM.java` each have later commits (`e8050e7e`, `36a58836`, plus
+  `8e876416`/`5270d235` respectively); `git show <sha> -- <path> | grep '>>'` is empty for
+  every one — no shift-operator edit.
+- `RandomAccessInputStream.java` (the renamed `RandomAccessStream.java`) has one genuine
+  post-`25491b50` shift-adjacent edit: `cbbe99c4` (2022-11-03, "fix: cannot extract large
+  files (2G+) via InputStream") widened `length` `int`→`long` and changed `int j = length
+  >>> BLOCK_SHIFT;` to `int j = (int) (length >>> BLOCK_SHIFT);` — moving the cast to
+  *after* the shift. That is the safe shift-then-truncate order per the cast-order
+  discussion below; the commit did not introduce the hazardous truncate-then-shift order
+  and did not touch the `>>>` operator itself.
+
+Net: no plain `>>` has been reintroduced in these 5 files since `25491b50`, and `25491b50`
+alone is the correct citation for the sweep (`d276f937` is misattributed; `cbbe99c4` is the
+one relevant later touch, noted above). There is therefore nothing to classify
 `signed-on-purpose` / `unsigned-required` / `non-code`: the class rule's entire purpose —
 keep every C++-unsigned shift as Java `>>>` — is met with zero exceptions, and the risk
 addressed by this chunk is a **future regression** (a `>>>`→`>>` typo), not a present
 defect. That risk is what the boundary tests in `src/test/java/**/*SignednessTest.java`
 pin against.
+
+*(`MIGRATION_MANUAL.md` §4.2 + §7 row C15, and `divergences-no-go.md`'s C15 row, all cite
+`25491b50` + `d276f937` together for this class rule — the `d276f937` half does not match
+git history per the re-derivation above. Not corrected in those documents; out of this
+chunk's scope.)*
 
 ## Why the boundary tests still have value (and their real discriminating power)
 
@@ -146,8 +176,23 @@ chunk).
 `InitBitInput()`, `addbits(int)`, `getbits()`, `faddbits(int)`, `fgetbits()`,
 `Overflow(int)`, `getInBuf()`. Only `getbits()`/`fgetbits()` derive a value from a buffer
 byte through widening + shift ("bit-reading" per the chunk brief); `addbits`/`faddbits`
-advance the bit position from the caller-supplied bit **count** (never a buffer byte — every
-call site in the codebase passes a small non-negative literal, max `faddbits(16)`),
+advance the bit position from the caller-supplied bit **count**, never a buffer byte.
+
+Verification fix round: the original claim ("every call site in the codebase passes a small
+non-negative literal, max `faddbits(16)`") is false. `git grep -n
+"addbits(\|faddbits("  src/main/java` surfaces variable-argument call sites:
+`faddbits(getShortLen1(Length))`, `faddbits(getShortLen2(Length))`, `faddbits(Length + 1)`,
+`faddbits(StartPos)` (all `Unpack15.java`), and `addbits(Bits)`/`addbits(Bits - 4)`
+(`Unpack.java`, `Unpack20.java`, and `BitInput.faddbits` itself delegates to `addbits`).
+Checked each: `getShortLen1`/`getShortLen2` return static-table lookups (`ShortLen1`/
+`ShortLen2`, max entry 8) or `Buf60 + 3`; `Length + 1`/`StartPos` are bounded loop counters
+over those same small tables; `Bits` in `Unpack.java`/`Unpack20.java` is always
+`LBits[..]`/`DBits[..]`/`SDBits[..]` (static byte tables, max entry 16), guarded
+`> 0` before use. The defensible invariant, true at every one of these sites: the argument
+is always an **algorithm-derived bit count**, bounded by a static table or a small loop —
+**never a value widened from a raw buffer byte**. No call site violates this; the "literal"
+half of the original claim was wrong, the "never a buffer byte" substance was not.
+
 `Overflow` is a bounds predicate, `getInBuf` a plain accessor, `InitBitInput` a reset. None
 of the latter five widen a buffer byte, so none carry the "high-bit-set buffer" risk this
 chunk targets — justified exclusion, not an oversight.
@@ -187,20 +232,41 @@ deferral"):
 Every `>>>` occurrence, by file and line (`grep -n '>>>' <file>`), for future audits:
 
 - `RandomAccessInputStream.java`: 55, 77, 109, 110 — all
-  `(int)(pointer|l|length >>> BLOCK_SHIFT)` block-index arithmetic. Covered.
-- `FileNameDecoder.java`: 40 — `flags >>> 6` case selector. Covered.
+  `(int)(pointer|l|length >>> BLOCK_SHIFT)` block-index arithmetic. Covered — for the
+  cast/shift-ORDER hazard (see "discriminating sites" above); the isolated operator swap is
+  separately argued immune there (pointer/length never negative), which is why
+  `LargeEntryContractTest`'s 2^31 case can't discriminate it and this chunk's test targets
+  the >2^31 case instead — order, not operator, is what this coverage protects.
+- `FileNameDecoder.java`: 40 — `flags >>> 6` case selector. Covered for the mask-removal
+  hazard (`getChar`'s `& 0xff` dropped — verifier mutation-confirmed RED); provably immune
+  (Pattern 1 above) to an isolated `>>>`→`>>` operator swap on this line, so not needing —
+  and not able to have — coverage for that specific mutation (verifier mutation-confirmed
+  GREEN/uncaught, matching the Pattern-1 prediction; independently re-derived by direct
+  computation this round, see handoff).
 - `Unpack15.java`: 263, 266, 273, 289, 322, 351, 375, 388, 402 (×2), 409, 477, 489, 493,
   496, 519 — 16 decode-loop occurrences, deferred (see "Deferred sites"). 606 —
-  `decodeNum`, covered.
+  `decodeNum`, covered for the shift-amount/table-walk arithmetic (`Unpack15SignednessTest`);
+  provably immune (Pattern 1 — `Num &= 0xfff0` runs before the shift) to an isolated
+  operator swap, so not needing coverage for that mutation (re-derived by direct
+  computation this round, see handoff).
 - `BitInput.java`: 46 (`addbits`, not a bit-reading method — see enumeration), 58
-  (comment-only, `non-code` if counted), 62 (`getbits`, covered).
+  (comment-only, `non-code` if counted), 62 (`getbits`, covered for the pre-shift `& 0xff`
+  buffer-byte masks and the `8 - inBit` shift-amount arithmetic; provably immune (Pattern 1
+  — the masked 3-byte composition tops out at `0xFFFFFF`, bit 31 always clear) to an
+  isolated operator swap on the outer `>>>`, so not needing coverage for that mutation
+  — re-derived by direct computation this round, see handoff).
 - `RarVM.java`, by role:
   - `non-code` (comments): 104-106, 110-112 (`setValue` reference translation), 123-125
     (`setLowEndianValue(byte[], int, int)` reference translation — its active line 121
     delegates to `Raw.writeIntLittleEndian`, no `>>>` of its own), 661 (×2), 663 (×2), 705
     (`prepare()` TODO-comment ASCII arrows `>>>>>>`/`<<<<<<<<<<`, not operators — the
     6-character run of `>` on 661/663 is 2 pipeline occurrences each).
-  - Covered: 129-131 (`setLowEndianValue(Vector<Byte>, int, int)`).
+  - Covered: 129-131 (`setLowEndianValue(Vector<Byte>, int, int)`, covered for the per-byte
+    shift-amount arithmetic (`RarVMSignednessTest`, strengthened this round with an
+    asymmetric value — see handoff); provably immune (Pattern 2 — each byte is masked with
+    `& 0xff` after the shift, and for shift amounts 8/16/24 the masked byte's source bits
+    never cross the sign-extension boundary) to an isolated operator swap, so not needing
+    coverage for that mutation — re-derived by direct computation this round, see handoff).
   - Deferred, opcode execution (`VM_SHR`/`VM_SAR`): 499, 502, 509, 512.
   - Deferred, `prepare()`/`decodeArg()`/`ReadData()` bytecode decode — all operate on a
     `fgetbits()`-derived value (always non-negative) and/or an immediate `& 0xff`/`& 7`/
