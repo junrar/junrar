@@ -22,7 +22,10 @@ human-parseable (small logical commits); every row of the manual §7 no-go table
 before any re-port touches their files.
 
 Revision history: revised 2026-07-17 after independent adversarial review
-(APPROVE-WITH-CHANGES); per-finding dispositions in Appendix A.
+(APPROVE-WITH-CHANGES); per-finding dispositions in Appendix A. Revised again
+2026-07-17 after external review (GPT-5.6 Sol, REQUEST CHANGES); per-finding
+dispositions in Appendix B — notably the RAR5 KDF contract (B-S1) and the
+dictionary-guard redesign (B-S3).
 
 ---
 
@@ -76,7 +79,10 @@ micro structure (because the guard trail is release-shaped).
    segmented window but does not stage it.
 3. **The RAR5 integration gate stays closed until M3's final chunk**: the existing
    `UnsupportedRarV5Exception` throw (`Archive.java:359`) is lifted once, at the end,
-   so the 12,475-JSON corpus flips exactly once (§4.4).
+   so the RAR5 members of the regression corpus flip exactly once (§4.4 — **345**
+   of the 12,475 committed JSONs reference RAR5, counted 2026-07-17:
+   `grep -rl 'UnsupportedRarV5Exception' src/regressionTest/resources --include='*.json' | wc -l`
+   → 345; the other 12,130 must stay byte-identical).
 
 ---
 
@@ -90,7 +96,7 @@ actually needs shows none is missing at 8:
 
 | Port need | API | Available since |
 | --- | --- | --- |
-| RAR5 KDF (crypt5.cpp:85) | `SecretKeyFactory` `PBKDF2WithHmacSHA256` | 8 |
+| RAR5 KDF (crypt5.cpp:85) | hand-rolled PBKDF2 loop over `Mac` `HmacSHA256` (M3.4) — `HmacSHA256` is a **required** `Mac` algorithm on Java 8; NO PBKDF2 `SecretKeyFactory` is required on any Java 8 implementation (required list = DES, DESede — Java 8 javadoc, doc-verified 2026-07-17), so `PBKDF2WithHmacSHA256` is a SunJCE accident, not a platform guarantee | 8 |
 | AES-256-CBC (headers + data) | `Cipher` `AES/CBC/NoPadding`, 256-bit key | 8 (unlimited policy default since 8u161) |
 | pswcheck csum, SetKey50 | `MessageDigest` `SHA-256` | 1.4 |
 | `ConvertHashToMAC` (crypt5.cpp:193) | `Mac` `HmacSHA256` | 8 |
@@ -117,6 +123,13 @@ enabling zero port-relevant APIs — all cost, no benefit.
 floor for AES-256 in the README at M3. Revisit only if M4's segmented window turns
 out untenable in practice (it will not — it is shift+mask arithmetic).
 **Flagged for owner sign-off.**
+
+**Runtime proof, not just bytecode proof (review B-S8):** `options.release = 8`
+proves API/bytecode compatibility only; CI runs the suite on JDK 21 exclusively
+(`ci.yml` — probed 2026-07-17: `java-version: '21'`, three OS, no other JDK).
+Provider behavior (JCE algorithm availability, crypto-policy defaults) is a
+runtime property of the JRE actually used. P0.9 adds a JRE 8 extraction smoke to
+CI; M3.11 extends it with RAR5 AES/PBKDF2 fixtures.
 
 ### 2.2 Dependencies — **zero new runtime dependencies; port Blake2sp in pure Java**
 
@@ -162,9 +175,13 @@ chunk covering its files has landed.
   junrar guard `Unpack20.java:215` (commit `9b69c6b7`).
 - **Patterns:** manual §4.2 (unsigned-subtraction wrap), §8.1 corrupt-input pattern.
 - **Acceptance:** `./gradlew test --tests "com.github.junrar.Unpack20SolidTest"`
-  green; test asserts extraction of the fixture yields
-  `CrcErrorException`/`CorruptHeaderException` (whichever the guard produces —
-  recorded in the test) and NOT `ArrayIndexOutOfBoundsException`.
+  green; test asserts extraction of the fixture yields **`CrcErrorException`**
+  and NOT `ArrayIndexOutOfBoundsException`. (Pinned by code probe 2026-07-17:
+  the `Unpack20.java:215` guard routes out-of-range `destPtr` to a masked-wrap
+  copy — `window[destPtr++ & Compress.MAXWINMASK]`, lines 230-235 — which throws
+  nothing and emits garbage; the typed failure is the data-CRC check at
+  extraction end. If the executed test observes a different type, that is an
+  ESCALATE-worthy contradiction, not a blank to fill.)
 - **Fixtures:** solid v20 archive with a negative back-ref — produced per §4.3
   (RAR 2.x binary if obtainable, else byte-patched v20 fixture; the hostile variant
   is a corrupt archive by construction, so byte-patching is legitimate).
@@ -230,12 +247,14 @@ chunk covering its files has landed.
 #### P0.5 — S8 decision: PPM MaxMB policy (investigate → decide → red→green)
 
 - **Objective:** replace the silent `MaxMB = 1` clamp (`ModelPPM.java:188-189`) with
-  a conscious policy. Investigation step: probe `d861246:model.cpp` for the bound
-  unrar honors (the field is one byte, so the format-inherent max is ≤ 256 MB
-  suballocator). **Recommended decision (to be confirmed by the probe): honor the
-  header value like unrar does — the inherent ≤ 256 MB bound is the DoS ceiling —
-  and document it; a configurable cap is added only if the probe shows unrar itself
-  caps lower.**
+  the unrar policy. **Decision (probe executed 2026-07-17, no longer open):**
+  `d861246:model.cpp` `DecodeInit` reads `MaxMB=UnpackRead->GetChar()` (one byte,
+  0–255) and calls `SubAlloc.StartSubAllocator(MaxMB+1)` **verbatim, with no
+  additional cap** — the format-inherent ceiling is 256 MB. junrar honors
+  `MaxMB+1` MB exactly the same. The 256 MB header-driven exposure is then
+  bounded by the shared `maxDictionarySize` budget once P0.8 lands (default
+  4 GiB ⇒ PPMd never gated by default — parity preserved; DoS-sensitive callers
+  lowering the budget below `MaxMB+1` MB get the typed refusal).
 - **Files:** `unpack/ppm/ModelPPM.java`, tests, fixtures.
 - **C++ refs:** `d861246:model.cpp` (`RestartModelRare`, suballoc init);
   `2e71167:model.cpp` for baseline shape.
@@ -272,25 +291,149 @@ chunk covering its files has landed.
 - **No-go rows:** C10 (filename validation must keep passing), C4 fallback behavior.
 - **Est. diff:** ~350 lines + fixtures.
 
-#### P0.7 — header-CRC verification scaffolding (T7)
+#### P0.7 — header-CRC verification scaffolding (T7) — unrar-tolerance contract
 
-- **Objective:** introduce header-CRC32 verification for RAR3 block headers
-  (mismatch → `CorruptHeaderException`), the infrastructure RAR5 (which MUST verify,
-  manual §5.1) will reuse. Behavior change on corrupt archives — gate on corpus
-  evidence: run the regression corpus before merge; any legit archive newly failing
-  is investigated before the chunk lands.
-- **Files:** `rarfile/BaseBlock.java`, `Archive.java` read loop, tests, fixtures.
-- **C++ refs:** `2e71167:arcread.cpp:258-271` (`BrokenHeaderMsg` semantics);
-  `d861246:arcread.cpp` for current shape.
-- **Patterns:** manual §6 T7, §4.9 (new failure mode → typed exception? no — reuse
-  `CorruptHeaderException`; no `setChannel` filter change needed since it already
-  rethrows CorruptHeader).
-- **Acceptance:** byte-patched bad-CRC fixture → `CorruptHeaderException` through
-  all four public surfaces (manual §8.1); corpus run delta reviewed and attached to
-  the PR (expected: only genuinely corrupt members change outcome).
-- **Fixtures:** `abnormal/bad-header-crc.rar` (byte-patched).
+- **Objective:** introduce RAR3 header-CRC verification with **unrar's own
+  format-specific contract** (probed 2026-07-17 at both `2e71167` and `d861246`;
+  review B-S4 — an earlier revision wrongly specified blanket-fatal CRC32):
+  - **Algorithm/width:** 16-bit — `~CRC32(header bytes from offset 2) & 0xffff`
+    (`d861246:rawread.cpp` `GetCRC15`; identical math at 3.7.3,
+    `2e71167:arcread.cpp:258` `~Raw.GetCRC(...)&0xffff`). NOT a 32-bit check.
+  - **Coverage:** byte 2 to end of parsed header; comment-bearing headers
+    (`LHD_COMMENT`) cover only the processed prefix (`CRCProcessedOnly`,
+    `d861246:arcread.cpp:430-431`).
+  - **Exemptions (skip verification):** SIGN headers, AV headers, old
+    Unix-owner sub-blocks (`HEAD3_SIGN`/`HEAD3_AV`/`HEAD3_OLDSERVICE`+`UO_HEAD` —
+    upstream: "Old AV header does not have header CRC properly set",
+    `d861246:arcread.cpp:514-523`); ENDARC with rev-space recovery
+    (trailing-7-zero-bytes rule, `d861246:arcread.cpp:525-535`).
+  - **Tolerance:** a FILE/NEWSUB mismatch is **recorded and processing
+    continues** (upstream `BrokenHeader=true` + warning,
+    `d861246:arcread.cpp:432-445`): junrar marks the header — new public
+    `FileHeader.isBrokenHeader()` accessor — and logs a warning; **extracting**
+    a broken-header entry throws `CorruptHeaderException` (upstream analog:
+    `ReadSubData` refuses on `BrokenHeader`, `d861246:arcread.cpp:1487-1492`).
+    Other unencrypted header types: record + continue. **Encrypted headers with
+    a bad CRC are fatal** — `CorruptHeaderException` at open (upstream returns 0
+    and stops, both eras).
+  - **Divergence note (conscious, recorded):** junrar throws at *extract time*
+    for a broken file header where the unrar CLI merely warns and lets the data
+    CRC decide; junrar has no CLI warning channel, and silent garbage extraction
+    would be worse. Everything else matches unrar tolerance — this chunk is
+    "toward unrar semantics" plus one named, narrower-scoped strictness.
+  This is the infrastructure RAR5 reuses in M3.2 (full-CRC32 variant, same
+  record-vs-fatal split). Behavior change on corrupt archives — gate on corpus
+  evidence: run the regression corpus before merge; any legit archive newly
+  failing is investigated before the chunk lands.
+- **Files:** `rarfile/BaseBlock.java`, `rarfile/FileHeader.java`, `Archive.java`
+  read loop, tests, fixtures.
+- **C++ refs:** `2e71167:arcread.cpp:258-271`; `d861246:arcread.cpp:431-445`
+  (file-header check), `:514-545` (generic check + exemptions + encrypted-fatal
+  split); `d861246:rawread.cpp` (`GetCRC15`).
+- **Patterns:** manual §6 T7, §4.9 (reuse `CorruptHeaderException`; no `setChannel`
+  filter change needed since it already rethrows CorruptHeader).
+- **Acceptance:** byte-patched bad-CRC **file** header → archive OPENS and lists,
+  the header reports `isBrokenHeader()`, extracting that entry →
+  `CorruptHeaderException` through all four public surfaces (manual §8.1);
+  byte-patched bad-CRC **encrypted-header** fixture → `CorruptHeaderException`
+  at open; exemption rows: SIGN/AV/old-UO fixtures with a wrong stored CRC still
+  parse (byte-patched, one each); corpus run delta reviewed and attached to the
+  PR (expected: only genuinely corrupt members change outcome).
+- **Fixtures:** `abnormal/bad-header-crc.rar`, `abnormal/bad-crc-enc-headers.rar`,
+  exemption-class fixtures (all byte-patched).
 - **No-go rows:** S1–S4 (same read loop — their tests must stay green), C9.
-- **Est. diff:** ~200 lines + fixture.
+- **Est. diff:** ~300 lines + fixtures.
+
+#### P0.8 — `ArchiveOptions`: the construction-time configuration path (API)
+
+- **Objective:** one construction-time configuration object covering password and
+  resource limits — the API contract of §5.2 (review B-S7; designed here, consumed
+  by M3.4/M3.6/M4). Deliverables:
+  - **`ArchiveOptions`** (immutable, builder): `password(char[])` (defensive copy
+    at the builder; `password(String)` convenience delegates),
+    `maxDictionarySize(long bytes)` — default **4 GiB** = unrar 7.2.7's own
+    default extraction limit (`d861246:options.cpp:13` `WinSizeLimit=0x100000000`;
+    raised by callers exactly like unrar's `-mdx`), `unrarCallback(...)`.
+    `build()` validates (`maxDictionarySize > 0`).
+  - **New canonical constructors:** `Archive(VolumeManager, ArchiveOptions)`,
+    `Archive(File, ArchiveOptions)`, `Archive(InputStream, ArchiveOptions)`. No
+    new String/char[] overload pairs anywhere — probe 2026-07-17: javac already
+    rejects `new Archive(file, null)` as ambiguous between the existing
+    `(File,String)`/`(File,UnrarCallback)` ctors ("reference to A is ambiguous");
+    adding `char[]` twins would widen that hole, `ArchiveOptions` is a distinct
+    type and adds no new null-ambiguity beyond the pre-existing one.
+  - **`Junrar` facade:** one `ArchiveOptions` overload per source shape
+    (`extract(File, File, ArchiveOptions)`, `extract(InputStream, File,
+    ArchiveOptions)`, `extract(VolumeManager, File, ArchiveOptions)`,
+    `extract(String, String, ArchiveOptions)`) — the options path reaches
+    one-shot extraction (the old setter idea could not).
+  - **Password hygiene contract:** `Archive` copies the password `char[]` at
+    construction and **wipes its copy in `close()`** (`Arrays.fill('\0')`);
+    internal plumbing carries `char[]` (RAR3 UTF-16LE and RAR5 UTF-8 encode
+    straight from `char[]`); the `String` entry points remain (ubiquitous) with
+    Javadoc noting a `String` password cannot be wiped — prefer `char[]`.
+    `ArchiveOptions` retains its defensive copy for its own lifetime
+    (documented: scope the options object as narrowly as the password). Honest
+    JVM substitute for upstream secpassword (`unrar-delta-map.md` §5.5).
+  - **Deprecation path (decided):** existing constructors and `Junrar` methods
+    stay **undeprecated** in the RAR5 major (they delegate to the options path;
+    churn for every consumer buys nothing); Javadoc cross-references
+    `ArchiveOptions`. Revisit deprecation no earlier than the next major.
+  - **Budget wiring (first consumer):** `maxDictionarySize` gates the PPMd
+    suballocator target (P0.5): `MaxMB+1` MB > budget → new
+    **`UnsupportedDictionarySizeException`** (introduced here; `setChannel`
+    filter decision NO — extraction-time, §5.3). Default 4 GiB > 256 MB format
+    ceiling ⇒ no behavior change by default.
+- **Files:** new `ArchiveOptions.java`, `Archive.java` (ctors + close-wipe),
+  `Junrar.java`, `exception/UnsupportedDictionarySizeException.java`,
+  `unpack/ppm/ModelPPM.java` (budget check), tests.
+- **C++ refs:** `d861246:options.cpp:13`, `d861246:extract.cpp:1758`
+  (`CheckWinLimit`), `d861246:uiconsole.cpp` (`uiDictLimit` returns false = refuse
+  — the non-interactive analog is the typed exception).
+- **Patterns:** manual §3 (house API style), §4.9 (new exception → filter decision
+  recorded).
+- **Acceptance:** options-path tests: password via `char[]` opens an encrypted
+  RAR3 fixture (existing `password/` fixtures); wipe-on-close asserted (the
+  array handed to `Archive` internals is zeroed after `close()` — test hook);
+  builder defensive copy asserted (mutating the caller's array after `build()`
+  does not affect extraction); `Junrar.extract(..., options)` end-to-end row;
+  PPMd budget row: P0.5's MaxMB>1 fixture with `maxDictionarySize` set below
+  `MaxMB+1` MB → `UnsupportedDictionarySizeException`, and with default options
+  extracts unchanged (before-state asserted); existing ctor surface untouched
+  (compile + suite green).
+- **Fixtures:** none new (reuses `password/` + P0.5's PPMd fixture).
+- **No-go rows:** Java-API class-c rows (`divergences-no-go.md` — existing entry
+  points preserved).
+- **Est. diff:** ~450 lines.
+- Runs **after P0.5** (consumes its fixture); parallel-safe with P0.6/P0.7.
+
+#### P0.9 — CI: JRE 8 runtime extraction smoke (provider behavior gate)
+
+- **Objective:** prove Java-8 *runtime* behavior, not just `options.release=8`
+  bytecode (review B-S8; ci.yml probed 2026-07-17 — JDK 21 only, 3 OS). New
+  `jre8-smoke` job in `ci.yml`: build the jar with the normal JDK 21 toolchain,
+  then set up **Temurin 8** (`actions/setup-java`, ubuntu only — provider
+  behavior is JRE-, not OS-, dependent) and run a **framework-free**
+  `public static void main` smoke runner (compiled with `--release 8`; JUnit 5
+  needs newer JDKs, so the suite itself cannot run — the runner is deliberately
+  minimal) against committed fixtures: plain RAR3 extraction + **an AES
+  (password) RAR3 fixture** (exercises `Cipher AES/CBC/NoPadding` through the
+  real JRE 8 JCE), asserting extracted SHA-256s. M3.11 extends the fixture list
+  with RAR5 plain + encrypted (PBKDF2/`Mac HmacSHA256` path) rows.
+- **Files:** `.github/workflows/ci.yml`, `src/jre8smoke/` (or equivalent minimal
+  source set — one Main class), no production code.
+- **C++ refs:** none.
+- **Patterns:** CLAUDE-grade red canary: the job proves its red path once at
+  introduction (feed a wrong expected digest, watch the job fail) — evidence in
+  the chunk handoff, not committed.
+- **Acceptance:** CI run with the job green on the branch; red-canary run
+  demonstrated in-session; job runtime < 2 min (it is one jar + two
+  extractions).
+- **Fixtures:** existing (`test.rar`, `password/` AES fixture).
+- **No-go rows:** none (CI-only).
+- **Est. diff:** ~150 lines.
+- Parallel-safe with everything after P0.6 (needs an AES fixture that already
+  exists in-tree).
 
 **Trap triage ledger (owner-visible dispositions for the rest of §6):** T3 —
 **defer to M2**, which deletes the interpreter wholesale; fixing individual opcodes
@@ -317,8 +460,8 @@ diffs against 4.2.4 (`5db30e6`) where 3.7.3-shaped context is needed.
 - **Patterns:** manual §4.13.4.
 - **Acceptance:** documented one-command run producing byte-identical dumps across
   two consecutive runs; golden dumps committed for ≥1 PPMd fixture.
-- **Fixtures:** existing PPMd-compressed fixtures (identify via corpus/`audio` set;
-  add one `-mc`-forced PPMd fixture if none exists — reuse P0.5's).
+- **Fixtures:** P0.5's `-mc`-forced PPMd fixture (M1.1 runs after P0.5 — no
+  fixture-discovery step; the in-tree suite has no confirmed PPMd member).
 - **No-go rows:** none directly; enables S8-adjacent safety.
 - **Est. diff:** ~250 lines.
 
@@ -327,10 +470,13 @@ diffs against 4.2.4 (`5db30e6`) where 3.7.3-shaped context is needed.
 - **Objective:** port, in release order: range-coder `count >= scale → false` in
   decodeSymbol1/2 (3.9.1 `a0d5a16`); `SafePPMDecodeChar` wrapper (3.9.8 `48bbbd3`,
   now `d861246:unpack30.cpp:4`); `ps[MAX_O]` overflow guards in
-  `CreateSuccessors`/`decodeSymbol2` (5.6.1 `9c55010`). Decide the error-latch shape
-  first: keep junrar's `ppmError` latch OR adopt 3.7.7+ `CleanUp()`+`BLOCK_LZ` —
-  one shape, never mixed (manual §5.3). Default: keep `ppmError` (smaller diff,
-  already pinned by engine-entry checks `Unpack.java:74,168-170`).
+  `CreateSuccessors`/`decodeSymbol2` (5.6.1 `9c55010`). **Error-latch shape
+  (decided, not implementer-chosen — review B-S9): keep junrar's `ppmError`
+  latch**; do NOT adopt 3.7.7+ `CleanUp()`+`BLOCK_LZ`, and never mix the two
+  shapes (manual §5.3). Grounding (probed 2026-07-17): the latch already exists
+  and is engine-entry-checked at `Unpack.java:74` (field), `:168` (entry check),
+  `:197` (set site), `:622` (reset) — the guards land as new set-sites on the
+  existing latch, the smallest correct diff.
 - **Files:** `unpack/ppm/ModelPPM.java`, `RangeCoder.java`, `unpack/Unpack.java`
   (PPM call sites), tests.
 - **C++ refs:** `git -C ~/git/unrar diff 2e71167 d861246 -- model.cpp suballoc.cpp`
@@ -394,8 +540,9 @@ diffs against 4.2.4 (`5db30e6`) where 3.7.3-shaped context is needed.
   `FileNameDecoder` (every index access preceded by a bounds check, growable
   output); drop method 36 ("alternative hash" experiment, dropped upstream in 5.0.0
   — `unrar-delta-map.md` §3) with corpus evidence that no corpus member regresses.
-- **Files:** `unpack/decode/…FileNameDecoder…` (actual path: `io/…` — locate via
-  `grep -rn FileNameDecoder src/main`), `Unpack.java` dispatch, tests.
+- **Files:** `rarfile/FileNameDecoder.java` (path probed 2026-07-17:
+  `grep -rn "class FileNameDecoder" src/main` → `rarfile/FileNameDecoder.java:21`),
+  `Unpack.java` dispatch, tests.
 - **C++ refs:** `d861246:encname.cpp` vs `2e71167:encname.cpp`;
   method dispatch `d861246:unpack.cpp` (`DoUnpack`).
 - **Patterns:** manual §4.7, §4.2 (C15 applies to FileNameDecoder — P0.4 pins).
@@ -472,15 +619,29 @@ asserting real behavior).
 #### M3.1 — vint reader + signature dispatch skeleton + SFX signature scan
 
 - **Objective:** shared vint reader (base-128 LE, continuation bit 0x80, overflow
-  guard — max 10 bytes); RAR format detection (`52 61 72 21 1A 07` + version byte:
-  `00`→RAR15, `01`→RAR50, `02..04`→ graceful `UnsupportedRarVersionException`
-  (new)); an internal `RarFormat` tag on `Archive`; **SFX support** (review F4 —
+  guard — max 10 bytes for the general reader; the RAR5 *header-size* field is
+  additionally capped at 3 vint bytes by M3.2's contract); RAR format detection
+  (`52 61 72 21 1A 07` + version byte: `00`→RAR15, `01`→RAR50, `02..04`→ graceful
+  `UnsupportedRarVersionException` (new)); a `RarFormat` enum tag on `Archive`
+  with a **public accessor** (`Archive.getFormat()`); **regression-record model
+  fix (review B-S2, must land before M3.11):** `ArchiveRecord.fromArchive`
+  hardcodes `isRarV5=false` and `fromException` derives it solely from
+  `UnsupportedRarV5Exception` (probed 2026-07-17), so post-flip successful-RAR5
+  and wrong-password-RAR5 records would be falsely non-RAR5 — `fromArchive` now
+  reads `archive.getFormat()`, and `fromException` gains the file path and
+  derives `isRarV5` from the 8-byte signature (`52 61 72 21 1A 07 01 00`) probe
+  of the input file. Zero corpus churn now (pre-flip, no RAR5 archive
+  constructs successfully, and the 345 exception records keep `isRarV5: true`
+  by the signature probe); **SFX support** (review F4 —
   previously an unstated hole): a bounded signature scan for the marker within the
   first `MAXSFXSIZE` = 0x400000 (4 MB, `d861246:rardefs.hpp`; was 512 KB at 3.7.3)
   bytes before MarkHeader parse, benefiting RAR3 and RAR5 SFX alike; no signature
   within the bound → `BadRarArchiveException`.
-- **Files:** `io/Raw.java` or new `io/VInt.java`; `rarfile/MarkHeader.java`;
-  `Archive.java` (detection + scan — V5 gate untouched); new exception; tests.
+- **Files:** new `io/VInt.java` (decided — `io/Raw.java` is stateless
+  static-offset helpers, a poor fit for a position-advancing variable-length
+  read); `rarfile/MarkHeader.java`; `Archive.java` (detection + scan — V5 gate
+  untouched); new exception; `regressionTest` `ArchiveRecord.java`/
+  `RegressionTest.java`; tests.
 - **C++ refs:** `d861246:archive.cpp:100-126` (`IsSignature`),
   `d861246:rawread.cpp` (`GetV`/`RawGetV` overflow handling),
   `d861246:rardefs.hpp` (`MAXSFXSIZE`).
@@ -502,8 +663,25 @@ asserting real behavior).
 #### M3.2 — RAR5 block-header framework (CRC-verified, loop-guarded)
 
 - **Objective:** the RAR5 read loop: `CRC32(4) | vint HeadSize | vint Type | vint
-  Flags [| vint ExtraSize][| vint DataSize]`; header CRC32 **verified** (P0.7 infra;
-  manual §5.1 — the gap must not be inherited); HFL_SKIPIFUNKNOWN honored; unknown
+  Flags [| vint ExtraSize][| vint DataSize]`. **Header-size boundary contract
+  (review B-S5, verified 2026-07-17 at `d861246:arcread.cpp:634-668` +
+  `archive.hpp:24`):** the first read is exactly 7 bytes (4 CRC + at most **3**
+  header-size vint bytes — upstream comment: "Header size must not occupy more
+  than 3 variable length integer bytes resulting in 2 MB maximum header size
+  (MAX_HEADER_SIZE_RAR5)", = `0x200000`); a size vint spilling past 3 bytes, a
+  zero BlockSize, or total `HeaderSize < SIZEOF_SHORTBLOCKHEAD5` →
+  `CorruptHeaderException` **before any tail allocation** — the header buffer is
+  allocated only after the ≤ 2 MB bound holds (`safelyAllocate` capped at
+  `MAX_HEADER_SIZE_RAR5`, not a generic cap). **Header CRC32 verified** with
+  P0.7's infra and P0.7's record-vs-fatal split, RAR5 shape
+  (`d861246:arcread.cpp:674-696`): full CRC32 over bytes 4..end (`GetCRC50`);
+  unencrypted mismatch → header marked broken, parse attempts to continue
+  (upstream: "Report, but attempt to process"), extraction of a broken-header
+  entry throws; **encrypted** mismatch → fatal at open (upstream sets
+  `FailedHeaderDecryption`, returns 0) — M3.4 maps it onto
+  `WrongPasswordException` (indistinguishable from a wrong key under CBC).
+  `ExtraSize >= HeadSize` → `CorruptHeaderException`
+  (`d861246:arcread.cpp:700-707`); HFL_SKIPIFUNKNOWN honored; unknown
   non-skippable → `CorruptHeaderException`; `safelyAllocate` on every tail;
   `processedPositions` loop guard + explicit seek-past-data (S1/C6 parity);
   eager-parse into the same `headers` list. **Deliverable: the pre-gate test
@@ -519,7 +697,12 @@ asserting real behavior).
 - **Patterns:** manual §5.1 (new-block recipe + RAR5 hook points), §4.6 (wire-value
   enums with null-returning `findX` + `@EnumSource` test — the C11 lesson), §4.8.
 - **Acceptance:** header-level unit tests parsing crafted blocks; hostile rows:
-  bad CRC, HeadSize overflow/underflow, ExtraSize > HeadSize, vint flood, truncated
+  bad CRC (unencrypted → broken-marked + extract-time throw; encrypted → fatal
+  at open), HeadSize overflow/underflow, **boundary rows (B-S5): size vint of
+  exactly 3 bytes at max value (2 MB − ε) accepted-shape, size vint of 4 bytes →
+  reject, BlockSize 0 → reject, declared size > `MAX_HEADER_SIZE_RAR5` → reject
+  with no allocation (asserted via allocation-free path, e.g. the reject fires
+  before `safelyAllocate`)**, ExtraSize ≥ HeadSize, vint flood, truncated
   mid-header, repeated position → typed exceptions (direct-parse tests + the
   pre-gate harness; the manual §8.1 four-surface pattern re-runs at M3.11);
   harness demonstrably suppresses only the V5 throw (a RAR3 archive through the
@@ -534,14 +717,21 @@ asserting real behavior).
 
 - **Objective:** parse HEAD_MAIN (+MHFL flags, MHEXTRA_LOCATOR skipped consciously,
   MHEXTRA_METADATA), HEAD_ENDARC (+EHFL_NEXTVOLUME), HEAD_CRYPT (fields only:
-  version==0 check, Lg2Count ≤ 24 reject, Salt16, pswcheck presence); HEAD_FILE /
+  version==0 check, Lg2Count **> 24 → reject** (`CRYPT5_KDF_LG2_COUNT_MAX 24`,
+  `d861246:crypt.hpp:20`), Salt16, pswcheck presence); HEAD_FILE /
   HEAD_SERVICE with every FHEXTRA record: CRYPT, HASH (Blake2sp digest bytes),
   HTIME (Unix/Windows, ns flag), VERSION, REDIR (type + flags + target), UOWNER,
   SUBDATA; UTF-8 names via explicit `StandardCharsets.UTF_8`; map onto the existing
   `FileHeader` surface (unified model — `unrar-delta-map.md` §4.2) so
   `getFileName()/getFullUnpackSize()/isDirectory()/…` behave for RAR5 entries.
-- **Files:** `rarfile/rar5/*` (MainHeader5, FileHeader5 or loader into FileHeader —
-  decide for the unified-model shape, record in PR), tests.
+- **Files:** `rarfile/rar5/*` — **shape decided (review B-S9): loader into the
+  unified `FileHeader`, no parallel `FileHeader5` type.** A package-private
+  `rarfile/rar5/Rar5FileHeaderReader` parses the RAR5 wire format and populates
+  the existing `FileHeader` (plus its new RAR5-fact accessors, §5.1) — mirroring
+  upstream's one-`FileHeader`-model/per-format-loader topology
+  (`unrar-delta-map.md` §4.2) and keeping every existing consumer accessor
+  working unmodified; `Rar5MainHeader` for HEAD_MAIN/HEAD_CRYPT/HEAD_ENDARC
+  facts. Tests.
 - **C++ refs:** `8f437ab:arcread.cpp` (`ReadHeader50` file branch,
   `ProcessExtra50` at `d861246:arcread.cpp:982`), `d861246:headers5.hpp`
   (FHFL/FHEXTRA values), `unrar-delta-map.md` §2.3–2.5.
@@ -561,35 +751,69 @@ asserting real behavior).
 
 #### M3.4 — RAR5 crypto: KDF, pswcheck, header + data decryption
 
-- **Objective:** PBKDF2-HMAC-SHA256 KDF via JDK (`2^Lg2Count` iterations); the
-  SetKey50 derived trio (AES key at count, HashKey at count+16, PswCheck at
-  count+17 folded to 8 bytes); pswcheck verification (+SHA-256-truncated 4-byte
+- **Objective:** RAR5 KDF — **contract corrected per review B-S1 (the previous
+  revision's c/c+16/c+17 was wrong; so was its Appendix-A F7 predecessor):** a
+  **hand-rolled single-pass PBKDF2 loop over `Mac.getInstance("HmacSHA256")`**,
+  the exact upstream shape (`d861246:crypt5.cpp:105-125`): U1 = HMAC(pwd,
+  salt‖00000001), then segment counts `{Count-1, 16, 16}` over ONE running XOR
+  accumulator, snapshotting after each segment — **AES key at `Count` = 2^Lg2Count
+  total iterations, HashKey at `Count+16`, PswCheck source at `Count+32`**. NOT
+  `SecretKeyFactory "PBKDF2WithHmacSHA256"` (Java 8 requires NO PBKDF2
+  SecretKeyFactory of any flavor — §2.1, doc-verified; SunJCE shipping one is a
+  provider accident) and NOT three provider calls (≈3× the HMAC work of the
+  single pass); reuse one initialized `Mac` instance across iterations (the Java
+  analog of upstream's cached inner/outer contexts, `ICtxOpt`/`RCtxOpt`).
+  PswCheck folds V2 32→8 bytes (`PswCheck[i % 8] ^= V2[i]`,
+  `d861246:crypt5.cpp:177-182`); pswcheck verification (+SHA-256-truncated 4-byte
   csum) → new `WrongPasswordException` **added to the `setChannel` rethrow filter**
-  (manual §4.9 trap — stated in PR); header decryption: AES-256-CBC via
+  (manual §4.9 trap — stated in PR), thrown equally for a **missing** password on
+  header-encrypted archives (unrar's own passwordless `-hp` open reports
+  "Incorrect password" — probed 2026-07-17) and for an encrypted-header CRC
+  failure after decryption (M3.2); header decryption: AES-256-CBC via
   `RawDataIo.setCipher` with per-header 16-byte IV, align-to-16 applied on BOTH the
   read path and `getHeaderSize(encrypted)` accounting (manual §4.12); per-file
   decryption via the `ComprDataIO.init(FileHeader)` FHEXTRA_CRYPT branch;
   `ConvertHashToMAC` (HMAC-SHA256 with HashKey) for HASHMAC-protected checksums;
-  4-entry KDF cache (5.2.1 `f0474dc` — cheap, needed for multi-file archives);
-  password bytes = UTF-8 (T4 lesson).
-- **Files:** new `crypt/Rar5Crypt.java` (or similar), `io/RawDataIo.java`,
-  `unpack/ComprDataIO.java`, `exception/WrongPasswordException.java`,
-  `Archive.java` filter list, tests.
-- **C++ refs:** `8f437ab:crypt5.cpp` (`pbkdf2` :85, `SetKey50`,
-  `ConvertHashToMAC` :193), `unrar-delta-map.md` §2.4/§2.6; the disabled
-  `TestPBKDF2` vector in crypt5.cpp as a port reference vector.
-- **Patterns:** manual §4.11, §4.12 (align-16 both paths), §4.9.
-- **Acceptance:** KDF unit tests — **the brief mandates the derived-trio shape:
-  three separate PBKDF2 invocations at iteration counts c, c+16, c+17 (dkLen=32
-  each; the continued XOR accumulation makes these exactly PBKDF2 at the higher
-  counts), NEVER one call with dkLen=96, whose blocks 2–3 are not RAR5's values**
-  (review F7); vectors: the crypt5.cpp `TestPBKDF2` Key vectors
-  (`d861246:crypt5.cpp:219-235` — they pin only `Key`) PLUS V1/V2 (HashKey,
-  PswCheck-source) vectors computed once from an instrumented unrar run and
-  committed beside them; wrong password on a pswcheck archive →
-  `WrongPasswordException` (not CRC failure); `-p`/`-hp` fixtures LIST correctly
-  and pswcheck verifies — all via the pre-gate harness (M3.2); Lg2Count 25 → typed
-  reject; non-ASCII UTF-8 password fixture green. **Deferred rows (carried in the
+  4-entry KDF cache (5.2.1 `f0474dc`; `KDF5Cache[4]`, `d861246:crypt.hpp:88` —
+  cheap, needed for multi-file archives); password bytes = UTF-8 from the
+  `char[]` (T4 lesson; upstream `WideToUtf`, `d861246:crypt5.cpp:158-160`).
+- **Files:** new `crypt/Rar5Crypt.java` (pinned — sibling of `crypt/Rijndael.java`),
+  `io/RawDataIo.java`, `unpack/ComprDataIO.java`,
+  `exception/WrongPasswordException.java`, `Archive.java` filter list, tests.
+- **C++ refs:** `d861246:crypt5.cpp` (`hmac_sha256` :1-80, `pbkdf2` :85-131,
+  `SetKey50` :134-191, `ConvertHashToMAC` :193, `TestPBKDF2` :219-235);
+  `unrar-delta-map.md` §2.4/§2.6 (corrected 2026-07-17).
+- **Patterns:** manual §4.11 (corrected 2026-07-17), §4.12 (align-16 both paths),
+  §4.9.
+- **Acceptance:** KDF unit tests — **mandated KATs, all six independently
+  recomputable with any PBKDF2-HMAC-SHA256 (verified 2026-07-17: Python
+  `hashlib.pbkdf2_hmac` at counts c/c+16/c+32 reproduces upstream's three
+  `TestPBKDF2` Key vectors byte-exact, proving the snapshot semantics):**
+
+  ```text
+  ("password","salt",c=1):
+    Key(c)      120fb6cffcf8b32c43e7225256c4f837a86548c92ccc35480805987cb70be17b
+    V1(c+16)    ae4ee2d75b78ca4b52c833c7a2c46aa5afcda84910c816129180c7db94d12828
+    V2(c+32)    8d0d186304625d4fdf487b4f929c0224d6e26bbd33a698e446fdb17e876f6975
+  ("password","salt",c=4096):
+    Key(c)      c5e478d59288c841aa530db6845c4c8d962893a001ce4e11a4963873aa98134a
+    V1(c+16)    f5813aeb14cd6ad5a2714b4f82f277a5c9d3b5441199fd731cebf707eaf39f12
+    V2(c+32)    9de7fbbc3868a043dd5a14e254be45a9afb7feaca0ce4f4a6e2713ff8e7bea7f
+  ("just some long string pretending to be a password",
+   "salt, salt, salt, a lot of salt",c=65536):
+    Key(c)      080fa31d422db047839bce3a3bce4951e262b9ff762f57e9c47196ce4b6b6ebf
+    V1(c+16)    62c33556fc0d8238ff9a11f7d1463dbf8eb384e2f5227a060224444a7647d0f7
+    V2(c+32)    d85dd4f96fc85298a93e2af7cf0d6555b835856e11dce700604f7fad2808a119
+  ```
+
+  (Key rows = upstream `TestPBKDF2` Res1/Res2/Res3 verbatim; V1/V2 rows replace
+  the previously planned "instrumented unrar run" — plain PBKDF2 at the higher
+  counts needs no instrumentation.) A one-call-dkLen=96 implementation and a
+  c/c+16/c+17 implementation both FAIL these vectors; wrong password on a
+  pswcheck archive → `WrongPasswordException` (not CRC failure); passwordless
+  open of a `-hp` fixture → `WrongPasswordException`; `-p`/`-hp` fixtures LIST
+  correctly and pswcheck verifies — all via the pre-gate harness (M3.2);
+  Lg2Count 25 → typed reject; non-ASCII UTF-8 password fixture green. **Deferred rows (carried in the
   handoff, executed once their dependency lands): "extracts oracle-identical"
   needs M3.6/M3.7 (decode) — runs in M3.7's acceptance; the HASHMAC row needs
   M3.5 (Blake2sp) — runs after M3.5, latest at M3.11.**
@@ -626,22 +850,44 @@ asserting real behavior).
 - **Objective:** `Unpack5` as a **sibling** engine class taking `ComprDataIO`
   (manual §5.2 — NOT extending `Unpack20`); dynamic window sizing from the header
   (`0x20000 << bits`, 128 KB–4 GB; min alloc 0x40000; solid streams never shrink or
-  grow the window mid-set); **M3 cap: window ≤ 1 GB in a single `byte[]`** — larger
-  → new `UnsupportedDictionarySizeException` (typed, documented, lifted in M4);
-  **the `maxDictionarySize` guard knob ships HERE, not in M4** (review F5): a
-  public setter on `Archive`, default 1 GB (== the M3 engine capability), checked
-  BEFORE any window allocation — the `CheckWinLimit` analog
-  (`d861246:extract.cpp:1758`); DoS-sensitive consumers lower it; M4.1 only raises
-  the ceiling. Precedent: junrar's own S1 (20 MB header-alloc cap) and S8 treat
-  header-driven eager allocation as a defect class — the breaking major must not
-  ship a tiny-archive-forces-1-GB-alloc hole. Also: bit input with `getbits32`
-  (check `8f437ab:getbits.hpp` before reuse — manual §5.2); RAR5 block header read
+  grow the window mid-set). **Dictionary resource model (redesigned per review
+  B-S3 — three separated concepts, upstream-anchored):**
+  1. **Engine capability ceiling** (what the code can decode): M3 = **1 GB flat
+     `byte[]`**; larger → `UnsupportedDictionarySizeException` (typed,
+     documented; capability raised to 64 GB only when M4.3's segmented window
+     lands — M4.1 raises nothing).
+  2. **Caller resource limit:** `ArchiveOptions.maxDictionarySize` (shipped in
+     P0.8; default **4 GiB = unrar's own default**, `d861246:options.cpp:13`
+     `WinSizeLimit=0x100000000`; the `-mdx`/`CheckWinLimit` analog,
+     `d861246:extract.cpp:1758` — non-interactive junrar refuses with the typed
+     exception where console unrar refuses via `uiDictLimit`). Checked BEFORE
+     any window allocation; the default never moves across M3/M4 (kills the
+     prior revision's raise-default-before-capability ordering bug).
+  3. **Allocation policy — growth-capped, never header-eager:** the flat window
+     starts at `min(winSize, 0x40000)` and grows by doubling (arraycopy) as
+     `unpPtr` actually advances, capped at `winSize`. Sound because pre-wrap
+     reads beyond the written region are rejected by the day-one FirstWinDone
+     semantics (M3.7), and reaching the first wrap means `winSize` real bytes
+     were written — a legit archive; amortized copy cost ≤ 2× bytes written. A
+     tiny archive claiming a 1 GB dict therefore allocates KBs **under default
+     options** — strictly better than upstream, which eagerly allocates up to
+     its limit; recorded as a conscious positive divergence. Precedent:
+     junrar's own S1 (20 MB header-alloc cap) and S8 treat header-driven eager
+     allocation as a defect class — the breaking major must not ship a
+     tiny-archive-forces-1-GB-alloc hole (the prior revision's knob-default-1-GB
+     "fix" still shipped exactly that hole; review B-S3).
+  Also: bit input with 16-bit `getbits` + 32-bit `getbits32` mirroring
+  `8f437ab:getbits.hpp` (probed 2026-07-17: junrar has no `getbits32` anywhere —
+  only the 16-bit `getbits()`/`fgetbits()` family on the `Unpack` base — so
+  `Unpack5` implements its own bit input; sibling rule keeps it off the RAR3
+  base class); RAR5 block header read
   (BlockSize/BitSize/LastBlockInFile/TablePresent) + the 5 Huffman tables
   {LD 306, DD 64, LDD 16, RD 44, BD 20} with table-present logic; `ExtraDist`
   constructor flag designed in from day one (RAR7 = same engine, manual §5.2) but
   fixed `false` until M4.
 - **Files:** new `unpack/Unpack5.java` (+ small `unpack/decode/` additions for
-  RAR5 alphabets), `exception/…`, tests.
+  RAR5 alphabets; the window abstraction with its growth policy), tests
+  (`UnsupportedDictionarySizeException` and the knob already exist — P0.8).
 - **C++ refs:** `8f437ab:unpack50.cpp` (block header + table read),
   `8f437ab:unpack.cpp:80-158` (`Init(uint64,bool)` window rules),
   `d861246:compress.hpp` (NC=306, DCB=64, LDC=16, RC=44, BC=20, MAX_LZ_MATCH).
@@ -649,11 +895,17 @@ asserting real behavior).
   from 6.2.12 source, never copied from RAR3's −260/−270/−300), §5.2.
 - **Acceptance:** table-read unit tests on crafted block streams (incl. hostile:
   truncated tables, oversized bit lengths); window-size matrix test: 128 KB, 32 MB,
-  1 GB accepted; 2 GB/4 GB → typed exception; solid window rule pinned; **hostile
-  row (F5): a ~100-byte archive whose header claims a 1 GB dict, with
-  `maxDictionarySize` set to 16 MB → typed exception BEFORE any window allocation
-  (asserted via allocation-free code path, e.g. the exception fires in the size
-  check, not in `new byte[]`)**.
+  1 GB accepted; 2 GB/4 GB → typed exception (M3 capability); solid window rule
+  pinned; **hostile rows (B-S3, both mandatory):** (a) a ~100-byte archive whose
+  header claims a 1 GB dict, with `maxDictionarySize` lowered to 16 MB → typed
+  exception BEFORE any window allocation (the guard fires in the size check, not
+  in `new byte[]` — asserted via test hook); (b) window-abstraction unit test:
+  init with a 1 GB declared size under DEFAULT options allocates only the
+  0x40000 floor, and after writing N bytes capacity stays ≤ 2×N (growth-capped
+  policy proven at the unit level here; the archive-level twin — tiny 1 GB-claim
+  archive extracts with KB-scale peak window — runs in M3.7's acceptance once
+  the decode loop exists); growth-boundary row: writes crossing several doubling
+  boundaries read back byte-identical (growth is invisible to content).
 - **Fixtures:** synthetic streams + byte-patched dict-bits headers (§4.3 sanctioned
   class) for the accept/reject matrix; real decode fixtures land with M3.7.
 - **No-go rows:** D1 (window is engine state, not entry extraction — no byte[]
@@ -681,7 +933,11 @@ asserting real behavior).
   harness, M3.2); M3.4's deferred "extracts oracle-identical" rows (`-p`/`-hp`)
   execute here; solid multi-file fixture extracts in-order, out-of-order, and
   reverse (mirroring the existing RAR4 solid tests); hostile rows:
-  distance-into-void, oversized match, truncated stream → typed exception.
+  distance-into-void, oversized match, truncated stream → typed exception;
+  **carried from M3.6 (B-S3):** a tiny byte-patched 1 GB-claim archive extracts
+  under DEFAULT options with peak window capacity ≤ 2× bytes written (KBs —
+  window-capacity test hook), the archive-level proof of the growth-capped
+  policy.
 - **Fixtures:** core RAR5 matrix (§4.2): m0/m3/m5 × {plain, solid} × dict
   {128 KB, 32 MB} — dict-bearing rows use compressible payloads ≥ dict size
   (§4.2; rar silently reduces the recorded dict to the payload size otherwise).
@@ -768,21 +1024,36 @@ asserting real behavior).
 #### M3.11 — integration: lift the V5 gate, corpus flip, API surface
 
 - **Objective:** remove the `UnsupportedRarV5Exception` throw (`Archive.java:359`)
-  **and delete the M3.2 pre-gate harness in the same commit** (tests move to the
-  public surfaces), route RARFMT50 archives through the new stack end-to-end;
+  **and delete the M3.2 pre-gate harness in the same commit** (the harness-scoped
+  test plumbing goes with it; the public-surface tests are the NEW files below),
+  route RARFMT50 archives through the new stack end-to-end;
   `@Deprecated` the now-unthrown exception class (retirement path §5.3); audit the
   `setChannel` catch filter one final time against every new exception type
   (checklist in PR); four-surface tests (manual §8.1) for the whole RAR5 fixture
-  matrix; regression corpus regeneration per §4.4.
+  matrix; extend the P0.9 JRE 8 smoke with RAR5 plain + encrypted rows;
+  regression corpus regeneration per §4.4.
 - **Files:** `Archive.java`, `Junrar.java` (no signature changes expected),
-  exception Javadoc, regression JSONs, tests.
+  exception Javadoc, regression JSONs, `src/jre8smoke/`, tests.
 - **C++ refs:** none new.
 - **Patterns:** manual §8.2 (the corpus gate), §4.9.
-- **Acceptance:** **red→green (behavior change):** the red run = existing tests
-  asserting `UnsupportedRarV5Exception` on RAR5 fixtures, executed before the gate
-  lift, then flipped in the same commit as documented expectation changes; full
-  fixture matrix green through all four public surfaces; corpus regeneration diff
-  passes the scripted audit (§4.4) and the maintainer-approved regression run.
+- **Acceptance:** **red→green (behavior change), frozen-test discipline
+  (respecified per review B-S6 — the prior "flip the expectations in the same
+  commit" procedure edited the tests between red and green, which proves
+  nothing):**
+  1. AUTHOR the new public-surface success tests first — the full §4.2 RAR5
+     matrix through all four public surfaces, asserting successful extraction
+     and oracle digests — and EXECUTE them on the gate-closed tree: every one
+     RED, failing with `UnsupportedRarV5Exception` (output pasted in the
+     handoff; `git hash-object` of each test file recorded at red time).
+  2. Lift the gate (+ delete the harness). The SAME tests, **zero edits**
+     (hash-verified), run GREEN in the same commit's CI.
+  3. The OLD gate-pinning tests (asserting `UnsupportedRarV5Exception` on RAR5
+     fixtures) are **retired in the gate-lift commit as a separate concern** —
+     deleted, or where a fixture still earns coverage, rewritten as success
+     tests *counted as new tests* (they are not evidence; the frozen set from
+     step 1 is the proof).
+  Corpus regeneration diff passes the scripted audit (§4.4) and the
+  maintainer-approved regression run.
 - **Fixtures:** the complete §4.2 matrix.
 - **No-go rows:** ALL — every row of manual §7 (25 rows: S1–S8, C1–C15, D1–D2)
   gets a final sweep: each row's guard test re-run and ticked in the PR body.
@@ -795,13 +1066,14 @@ asserting real behavior).
 - **Objective:** parse RAR7 compression info: algo version 1 → `VER_PACK7`; 5 dict
   bits + 5 fraction bits (`WinSize = 0x20000L << bits; WinSize += WinSize/32*frac` —
   `d861246:arcread.cpp:868-874`); `FCI_RAR5_COMPAT` (RAR7-written, RAR5-decodable →
-  route without ExtraDist); reject > `UNPACK_MAX_DICT` 64 GB; **raise the
-  `maxDictionarySize` guard** (shipped in M3.6, review F5) — default moves
-  1 GB → 4 GB alongside the engine capability, exceeded →
-  `UnsupportedDictionarySizeException` with the size in the message (a guard,
-  never a blind allocation).
-- **Files:** `rarfile/rar5/*` (compression-info parse), `Archive.java` config knob,
-  tests.
+  route without ExtraDist); reject > `UNPACK_MAX_DICT` 64 GB. **Parse only —
+  neither the engine capability (1 GB until M4.3) nor the `maxDictionarySize`
+  default (4 GiB since P0.8, permanent) moves here** (review B-S3: the prior
+  revision raised the default to 4 GB in this chunk, before M4.3 shipped the
+  mechanism — a RAR7 dict > 1 GB keeps throwing
+  `UnsupportedDictionarySizeException` with the size in the message until M4.3
+  lands; ≤ 1 GB RAR7 dicts extract from M4.2 on).
+- **Files:** `rarfile/rar5/*` (compression-info parse), tests.
 - **C++ refs:** `d52ee2f` diff (`git -C ~/git/unrar diff 8f437ab d52ee2f --
   arcread.cpp headers5.hpp rardefs.hpp | cat`), `d861246:rardefs.hpp:40`.
 - **Patterns:** manual §5.2 (RAR7 hook), §4.2 (64-bit window math — `long`
@@ -837,8 +1109,11 @@ asserting real behavior).
 - **Objective:** replace the single `byte[]` window with a long-indexed segmented
   window (power-of-two segments, e.g. 256 MB; shift+mask addressing) used only when
   `winSize > 1 GB`; segments allocated **lazily as the window actually fills** (a
-  dict-bomb header allocates nothing beyond the guard check); raise the supported
-  cap to `min(maxDictionarySize, 64 GB)`. Note (review F2): lazy allocation does
+  dict-bomb header allocates nothing beyond the guard check — the segmented
+  sibling of M3.6's growth-capped flat policy); **this is the one chunk that
+  raises the engine capability** (1 GB → `min(maxDictionarySize, 64 GB)`; the
+  knob default stays 4 GiB — B-S3, so > 4 GiB dicts remain caller opt-in
+  exactly like unrar's `-mdx`). Note (review F2): lazy allocation does
   NOT make big-dict extraction cheap — a genuinely large-dict archive carries a
   payload ≥ its dict size, so the window really fills; the CI/local split below is
   the consequence.
@@ -961,7 +1236,7 @@ byte-patched headers used for parse/guard tests only.
 | RAR7: default, `-md` fractional sizes realizable by payload, RAR5-compat mode | rar 7.23 (v7 format switches; payload ≥ dict rule applies) | M4.1–M4.2 |
 | RAR7 real `-md2g` extraction check | generated on the fly (never committed): ≥ 2 GiB zeros payload (~20 s + ~4 GiB scratch, extrapolated from the 1 GiB probe); scheduled/local job only | M4.3 |
 | SFX (RAR3 + RAR5) | scripted concatenation of a stub blob + existing fixture | M3.1 |
-| RAR3 gap-fills: PPMd `-mc` forced text model (MaxMB>1), non-ASCII `-p`, UTF-8 names | probe `rar 7.23 a -ma4` first (ASSUMED unavailable — WinRAR 7 reportedly dropped RAR4-format creation); on refusal, fetch an era 5.x/6.x binary from the same `win-rar.com/fileadmin/winrar-versions/` scheme | P0.5, P0.6, M1.1 |
+| RAR3 gap-fills: PPMd `-mc` forced text model (MaxMB>1), non-ASCII `-p`, UTF-8 names | era rar 6.24 binary (rar 7.23 `-ma4` probe EXECUTED 2026-07-17: `ERROR: Unknown option: ma4` — see procurement note; tarball pre-verified there) | P0.5, P0.6, M1.1 |
 | solid v20 (C1) | RAR 2.x binary if obtainable; else byte-patch a v20 fixture (hostile-by-construction) | P0.1 |
 | hostile set (always byte-patched from legit fixtures, one mutation each): bad header CRC, vint flood/overflow, HeadSize/ExtraSize lies, truncated mid-header/mid-stream, name size 0/huge, dict-bomb header, bad pswcheck, filter flood >8192, filter block >0x400000, distance-into-void, REDIR traversal targets (backslash, `..`, absolute, sibling-prefix), protect-header corrupt | scripted patcher committed next to the fixtures | P0.*, M1.*, M2.*, M3.* |
 
@@ -998,18 +1273,27 @@ members (manual §8.2). The M3.11 flip procedure — reviewed, mechanical:
 2. Flip to `generate` mode (build.gradle `includeTags`), run, commit the churn as a
    dedicated commit touching ONLY `src/regressionTest/resources/corpus/**`.
 3. **Scripted audit of the diff** (script committed under `docs/porting/` or
-   `scripts/`): every changed JSON must match one of the TWO allowed shapes
-   (review F10) — **(a) plain RAR5 members:** `exception:
+   `scripts/`): every changed JSON must match one of the THREE allowed shapes
+   (review F10 + B-S2 — file-encrypted `-p` archives ARE listable without a
+   password, header-encrypted `-hp` are not; probed 2026-07-17 with rar 7.23:
+   `unrar l -p- tp.rar` lists the entry, `unrar l -p- thp.rar` → "Incorrect
+   password") — **(a) plain RAR5 members:** `exception:
    UnsupportedRarV5Exception` removed, `fileHeaders[]` populated, `isRarV5: true`
-   retained; **(b) encrypted / header-encrypted RAR5 members** (the corpus runs
-   without passwords, so headers cannot populate): the exception swaps
-   `UnsupportedRarV5Exception` → the §5.3-defined encrypted-open outcome
-   (`WrongPasswordException` or the recorded encrypted-open exception type),
-   headers absent, `isEncrypted`/`isPasswordProtected` consistent. Any OTHER field
+   retained; **(b) file-encrypted (`-p`) RAR5 members:** same as (a) plus
+   `isPasswordProtected: true` and per-header `isEncrypted: true` (headers are
+   NOT encrypted — they populate); **(c) header-encrypted (`-hp`) RAR5 members**
+   (passwordless corpus run cannot read headers): the exception swaps
+   `UnsupportedRarV5Exception` → `WrongPasswordException` (§5.3 — pinned, no
+   longer "or the recorded type"), headers absent, `isRarV5: true` retained (the
+   signature probe — M3.1), `isEncrypted` consistent. Any OTHER field
    change (RAR3 members, unexpected new exceptions) is a finding that blocks the
    merge and gets investigated.
-4. Spot-check N≥20 randomly-sampled flipped members against live `unrar lt` output
-   (names, sizes, times) — sample list + outputs attached to the PR.
+4. **Oracle-check ALL flipped members, not a sample** (review B-S2 — at 345
+   members this is one scripted loop, and a random 20 adds little confidence):
+   scripted comparison of every flipped member's record against `unrar lt`
+   output (names, sizes, times; `-hp` members: against the expected
+   `WrongPasswordException` shape) — script + summarized output attached to the
+   PR; any mismatch blocks.
 5. The maintainer-approved `regression.yml` environment run is the final gate
    (manual §8.3).
 
@@ -1031,16 +1315,32 @@ flushed.
 support arrives *inside* them (format dispatch on the signature version byte,
 M3.1). New accessors only where RAR5 has new facts: e.g.
 `FileHeader.getHashDigest()` (Blake2sp), `getRedirection()` (type + target),
-nanosecond time accessors reusing the C3 `FileTime` pattern. The unified-header
-approach mirrors upstream (one `FileHeader` model, per-format loaders —
-`unrar-delta-map.md` §4.2).
+nanosecond time accessors reusing the C3 `FileTime` pattern; `Archive.getFormat()`
+(the `RarFormat` enum — M3.1) and `FileHeader.isBrokenHeader()` (P0.7). The
+unified-header approach mirrors upstream (one `FileHeader` model, per-format
+loaders — `unrar-delta-map.md` §4.2; pinned in M3.3).
 
-### 5.2 Passwords — char[] first-class, String kept
+### 5.2 Passwords & configuration — `ArchiveOptions` is THE path (review B-S7)
 
-- Add `char[]` overloads beside every `String password` entry point
-  (`Archive`, `Junrar`); `String` variants delegate and are kept (not deprecated —
-  ubiquitous, harmless); document that char[] allows caller-side wipe
-  (secpassword's honest JVM substitute — `unrar-delta-map.md` §5.5).
+- **One construction-time configuration object, `ArchiveOptions` (P0.8 — full
+  contract there):** builder with `password(char[])` (defensive copy),
+  `password(String)` convenience, `maxDictionarySize(long)` (default 4 GiB =
+  upstream's `WinSizeLimit`), `unrarCallback(...)`; new
+  `Archive(<source>, ArchiveOptions)` constructors and
+  `Junrar.extract(..., ArchiveOptions)` overloads — so one-shot extraction is
+  configurable too (a post-construction setter cannot reach `Junrar.extract`).
+- **NO parallel `char[]` overloads beside the `String` ones** — probed
+  2026-07-17: `new Archive(file, null)` is ALREADY a javac ambiguity between
+  `(File,String)`/`(File,UnrarCallback)`; a `char[]` twin per `String` entry
+  point would compound it, an options type does not. Existing `String`
+  constructors/methods stay, delegate to the options path, and are **not
+  deprecated in the RAR5 major** (Javadoc cross-references `ArchiveOptions` and
+  notes a `String` password cannot be wiped; deprecation revisited no earlier
+  than the following major).
+- **Hygiene contract:** defensive copy at the builder AND at `Archive`
+  construction; `Archive.close()` wipes its copy (`Arrays.fill('\0')`);
+  internals carry `char[]` end-to-end (secpassword's honest JVM substitute —
+  `unrar-delta-map.md` §5.5).
 - Encoding is format-owned and explicit: RAR5 → UTF-8 (`crypt5.cpp` contract);
   RAR3 → what `2e71167:crypt.cpp:188-286` actually does (UTF-16LE wide-char
   serialization — verified in P0.6/T4), never platform default.
@@ -1054,8 +1354,8 @@ below records its `setChannel` catch-filter decision **at introduction time**
 | New exception | Thrown when | In `setChannel` rethrow filter? |
 | --- | --- | --- |
 | `UnsupportedRarVersionException` | signature version bytes 02..04 | YES (archive is unreadable by design) |
-| `WrongPasswordException` | pswcheck mismatch (RAR5) | YES (open cannot proceed meaningfully) |
-| `UnsupportedDictionarySizeException` | dict > cap (M3 1 GB; M4 configurable) | NO — headers parse fine; extraction of that entry throws (matches "extract working files" tolerance). Recorded consciously. |
+| `WrongPasswordException` | pswcheck mismatch; missing password on a header-encrypted archive; encrypted-header CRC failure after decryption (all RAR5 — M3.2/M3.4) | YES (open cannot proceed meaningfully) |
+| `UnsupportedDictionarySizeException` | header-declared memory > engine capability (RAR5 window: 1 GB until M4.3, then 64 GB) or > `maxDictionarySize` budget (default 4 GiB; also gates PPMd `MaxMB+1` — P0.8) | NO — headers parse fine; extraction of that entry throws (matches "extract working files" tolerance). Recorded consciously. Introduced at P0.8. |
 
 `UnsupportedRarV5Exception`: after M3.11 it is never thrown; `@Deprecated` +
 `@deprecated As of <version>` Javadoc, removed at the **next** major after the one
@@ -1069,9 +1369,11 @@ RAR5 support ships as a **breaking major** (conventional commit
 `BREAKING CHANGE:` footer — manual §3). Decision on the release-event split
 (review F8 — this section and §7 previously contradicted each other): the major's
 breaking rationale is **the RAR5 flip alone** (RAR5 archives open instead of
-throwing `UnsupportedRarV5Exception`; the exception's deprecation; the new
-`maxDictionarySize` config surface — M3.6, default 1 GB, raised to 4 GB at M4.1).
-P0.7's header-CRC strictness and M2's filter semantics are declared **acceptable
+throwing `UnsupportedRarV5Exception`; the exception's deprecation). The
+`ArchiveOptions` surface (P0.8) is **additive** — new type, new overloads, no
+existing signature touched — and ships as a minor before the major. P0.7's
+header-CRC verification (unrar-tolerance contract, one named narrower
+strictness) and M2's filter semantics are declared **acceptable
 minor-with-release-note changes** — each moves junrar toward unrar's own semantics
 and lands with corpus evidence (§4.4) — and are NOT held behind the major; §7's
 version-event column is authoritative for them.
@@ -1082,8 +1384,8 @@ version-event column is authoritative for them.
 
 | # | Risk | Impact | Mitigation |
 | --- | --- | --- | --- |
-| R1 | **RAR5/RAR7 windows vs Java's 2^31 array cap** — RAR5 alone encodes 4 GB dicts; RAR7 to 64 GB; D1's >2 GB `byte[]` limitation is a *deliberate* divergence for entry extraction and must not be "fixed" sideways | Extraction failures or an accidental D1 regression | Staged: M3 hard-caps window at 1 GB flat `byte[]` + typed exception (covers the overwhelming majority of real archives — rar default dict is 32 MB), **guarded by the `maxDictionarySize` knob from M3.6 (review F5) so the breaking major never ships header-driven eager allocation unguarded**; M4.3 adds a lazily-allocated segmented long-indexed window to the 64 GB format cap (knob default raised to 4 GB at M4.1). Entry-extraction byte[] paths untouched (D1 pinned in P0.3). Dict-bomb headers defused by the guard + lazy segment allocation. |
-| R2 | **Regression-corpus churn** — thousands of JSON expectation flips at M3.11 could smuggle regressions past review | Silent RAR3 regressions | §4.4 procedure: single dedicated commit, scripted shape-audit (only the three expected field changes allowed), ≥20-sample live-oracle spot check, maintainer-gated corpus run. Intermediate behavior changes (P0.7/M1.5/M2.1) flush their corpus deltas early instead of folding into the big flip. |
+| R1 | **RAR5/RAR7 windows vs Java's 2^31 array cap** — RAR5 alone encodes 4 GB dicts; RAR7 to 64 GB; D1's >2 GB `byte[]` limitation is a *deliberate* divergence for entry extraction and must not be "fixed" sideways | Extraction failures or an accidental D1 regression | Staged (review B-S3): capability = 1 GB flat `byte[]` at M3 (covers the overwhelming majority of real archives — rar default dict is 32 MB), 64 GB segmented+lazy at M4.3; budget = `ArchiveOptions.maxDictionarySize`, default 4 GiB (= upstream `WinSizeLimit`) from P0.8, never moved; allocation = growth-capped (M3.6) / lazy segments (M4.3), so a dict-bomb header allocates KBs even under DEFAULT options. Entry-extraction byte[] paths untouched (D1 pinned in P0.3). |
+| R2 | **Regression-corpus churn** — 345 JSON expectation flips at M3.11 (of 12,475; the rest must stay byte-identical) could smuggle regressions past review | Silent RAR3 regressions | §4.4 procedure: single dedicated commit, scripted three-shape audit, ALL-flipped-members oracle check (B-S2), maintainer-gated corpus run. Intermediate behavior changes (P0.7/M1.5/M2.1) flush their corpus deltas early instead of folding into the big flip. |
 | R3 | **PPMd heap drift** — M1.2 edits pointer-emulation code where a one-byte layout slip corrupts everything downstream | Wrong output, latent corruption | M1.1 rebuilds the byte-diff heap harness BEFORE any guard lands (manual §4.13.4); golden dumps committed; guards land one release-pin at a time. |
 | R4 | **M2 behavior change on custom-VM archives** (incl. UPCASE) — output flips from interpreted to no-op | User-visible extraction change; C11 test conflict | Parity with unrar ≥5.5.1 IS the spec (upstream made the same flip a decade ago); oracle red→green on a custom-program fixture; C11 supersession documented in-PR (enum lookup test survives, execution changes); corpus delta reviewed. |
 | R5 | **Fixture-generation dependency on proprietary rar binaries** (and a RAR 2.x relic for C1) | Blocked chunks, irreproducible fixtures | Committed generation manifest (rar version + command per fixture, §4.2); oracle digests recorded at generation time so CI never needs the binary; byte-patch fallback for hostile/legacy variants (P0.1); fixtures are small and committed. |
@@ -1103,11 +1405,11 @@ work item — not a silent gap, a named deferral.
 
 | After | A junrar user can… | Version event |
 | --- | --- | --- |
-| Phase 0 | …nothing new (internal): all 6 UNPINNED no-go rows pinned; T1/T4/T6 fixed (non-ASCII RAR3 passwords + UTF-8 names now correct); header CRCs verified on RAR3 | patch/minor |
+| Phase 0 | …configure junrar via `ArchiveOptions` (char[] passwords, `maxDictionarySize` default 4 GiB — P0.8); otherwise internal: all 6 UNPINNED no-go rows pinned; T1/T4/T6 fixed (non-ASCII RAR3 passwords + UTF-8 names now correct); RAR3 header CRCs verified with unrar tolerance; JRE 8 runtime smoke in CI | patch/minor |
 | M1 | …feed junrar hostile RAR3 archives that now fail deterministically like unrar 7.2.7 (PPMd/LZ/name-decoder guards, filter/channel caps); PPMd archives with MaxMB>1 extract (S8 decision) | minor |
 | M2 | …extract RAR3 VM-filter archives with unrar ≥5.5.1 semantics (6 canonical filters native, others no-op); interpreter attack/bug surface (T3) deleted | minor (behavior note) |
 | M3 | …**extract RAR5 archives end-to-end**: plain/solid/multi-volume (`.partN`), `-p` and `-hp` encrypted (with wrong-password detection), Blake2sp-verified, UTF-8 names, ns timestamps, uowner/version records, symlinks/hardlinks with full traversal safety — dictionaries ≤ 1 GB | **breaking major** (the RAR5 release) |
-| M4 | …extract RAR7 (method 70) archives incl. fractional dictionaries, ≤ 64 GB dicts gated by a configurable `maxDictionarySize` (default 4 GB), RAR5-compat streams | minor on the new major |
+| M4 | …extract RAR7 (method 70) archives incl. fractional dictionaries; dicts ≤ 1 GB from M4.2, ≤ 64 GB from M4.3 (engine capability raise; > 4 GiB stays caller opt-in via `maxDictionarySize`), RAR5-compat streams | minor on the new major |
 
 ---
 
@@ -1121,11 +1423,15 @@ work item — not a silent gap, a named deferral.
   named in its objective.
 - Open decisions requiring owner sign-off before implementation: Java floor stays 8
   (§2.1); Blake2sp pure-Java port with `bcprov` as a `testImplementation`-only
-  differential oracle (§2.2, re-argued on corrected facts per review F1); S8
-  recommendation pending the P0.5 probe; the M3 1 GB dictionary cap +
-  `maxDictionarySize` knob (default 1 GB at M3.6, raised to 4 GB at M4.1 — §6 R1,
-  review F5); C11 execution-semantics supersession in M2 (§3 M2.1); SFX in-scope
-  disposition (M3.1, review F4); the release-event split (§5.4, review F8).
+  differential oracle (§2.2, re-argued on corrected facts per review F1); the S8
+  PPMd policy (P0.5 — probe now executed, decision pinned: honor `MaxMB+1` like
+  upstream, budget-gated via P0.8); the dictionary resource model (capability
+  1 GB→64 GB at M4.3, `ArchiveOptions.maxDictionarySize` default 4 GiB
+  permanent, growth-capped/lazy allocation — §6 R1, reviews F5 + B-S3); the
+  `ArchiveOptions` API shape incl. the no-deprecation decision (P0.8/§5.2,
+  review B-S7); C11 execution-semantics supersession in M2 (§3 M2.1); SFX
+  in-scope disposition (M3.1, review F4); the release-event split (§5.4,
+  review F8).
 
 ---
 
@@ -1141,9 +1447,9 @@ inherited from the review.
 | F2 — tiny-payload big-dict fixtures unproducible | APPLIED | Probes re-executed (19 B payload + `-md2g` → recorded `-md=128k`; 33 MB zeros + `-md32m` → `-md=32m`, 1,543 B archive; 1.1 GiB zeros + `-md1g` → `-md=1g`, 46,769 B archive, 9 s) and pasted into §4.2; dict rows reworked (payload ≥ dict; ≥1 GB rows non-PR digest-sink; 2–64 GB rows byte-patched); §4.3 gained the sanctioned inflated-header class; M3.6/M3.7/M4.1/M4.3 acceptance reworked with CI vs scheduled/local split. |
 | F3 — M3 acceptance unexecutable behind the V5 gate | APPLIED | Pre-gate harness = package-private test-only `Archive` factory, a named M3.2 deliverable, deleted in M3.11's gate-lift commit; M3.3–M3.10 acceptance lines annotated; M3.4's decode-dependent rows explicitly deferred to M3.7 / post-M3.5. |
 | F4 — SFX silently undispositioned | APPLIED | In scope: bounded ≤ 4 MB (`MAXSFXSIZE`, `d861246:rardefs.hpp`) signature scan added to M3.1 with concatenation fixtures + hostile no-signature row; non-goals section cross-references it. |
-| F5 — M3 header-driven 1 GB alloc unguarded until M4.1 | APPLIED | `maxDictionarySize` knob pulled into M3.6 (default 1 GB = engine cap, checked BEFORE allocation; hostile "tiny archive claims 1 GB, knob=16 MB → no allocation" row); M4.1 only raises ceiling + default; §5.4/§6 R1/§8 updated. |
+| F5 — M3 header-driven 1 GB alloc unguarded until M4.1 | APPLIED — **superseded by B-S3** | Round-1 fix: `maxDictionarySize` knob pulled into M3.6, default 1 GB. External review B-S3 showed that fix still shipped the hole (a default-config tiny archive could force a 1 GB alloc) and kept a default-raise at M4.1 ahead of the M4.3 capability. Current design (Appendix B S3): knob in P0.8 (`ArchiveOptions`, default 4 GiB = upstream, permanent), growth-capped/lazy allocation, capability raised only at M4.3. |
 | F6 — three wrong §1.1 census cells | APPLIED | Re-executed: 161 steps (`rev-list --count`); 5.0.0 = 134 files +13541/−9332, 32 new files (`--diff-filter=A -M`; 29–33 rename-detection-sensitive, noted); 7.1.1 = 45 files +862/−406, `array.hpp` −169, zero unicode.cpp churn (unicode moved at 7.0.1, +266). Conclusion unchanged (strengthened). |
-| F7 — KDF acceptance couldn't catch dkLen=96 mistake | APPLIED | M3.4 brief mandates three PBKDF2 invocations at c/c+16/c+17 (dkLen=32 each), never one dkLen=96 call; V1/V2 vectors computed once from unrar committed beside the crypt5 Key vectors. |
+| F7 — KDF acceptance couldn't catch dkLen=96 mistake | APPLIED — **but the fix itself was wrong** | M3.4 brief mandated three PBKDF2 invocations at c/c+16/**c+17** — the c+17 offset was wrong (correct: c+32), inherited from the planner's own pre-review M3.4 text and `unrar-delta-map.md` §2.6, and repeated (not caught) by this finding. Corrected per external review B-S1 (Appendix B): upstream runs segments `{Count-1,16,16}`, snapshots at c/c+16/c+32 (`d861246:crypt5.cpp:105-125`, confirmed by independent recomputation of the `TestPBKDF2` vectors). The dkLen=96 prohibition stands. |
 | F8 — §5.4 vs §7 release-event contradiction | APPLIED | Decision recorded in §5.4: breaking-major rationale = RAR5 flip alone; P0.7 strictness + M2 filter semantics = minor-with-release-note (both corpus-evidenced moves toward unrar semantics); §7 authoritative. |
 | F9 — intermediate corpus audits under-enumerated | APPLIED | Scoped §4.4 steps 1–3 runs added to P0.6, M1.2, M1.3, M1.4 acceptance; §4.4 intermediate list widened accordingly. |
 | F10 — corpus audit shape rejects encrypted members' legitimate flip | APPLIED | §4.4 step 3 now allows shape (b): exception swap to the §5.3 encrypted-open outcome, headers absent, encryption flags consistent. |
@@ -1158,3 +1464,47 @@ inherited from the review.
 
 Also applied from the axis verdicts: the axis-G perf note — a benchmark harness for
 the M1.2/M1.4 hot paths is consciously waived (named deferral after §6's table).
+
+---
+
+## Appendix B — external review disposition (GPT-5.6 Sol, 2026-07-17)
+
+Verdict was REQUEST CHANGES (9 findings). Every finding independently verified
+against primary sources before disposition; all probes below executed this
+session (2026-07-17).
+
+| Finding | Disposition | Where / evidence |
+| --- | --- | --- |
+| S1 (BLOCKING) — KDF derivation wrong (c/c+16/c+17; 3× provider calls; PBKDF2WithHmacSHA256 not guaranteed) | APPLIED | Confirmed: `d861246:crypt5.cpp:105-125` runs `CurCount[]={Count-1,16,16}` over one XOR accumulator → snapshots at c/c+16/**c+32**; independent Python `hashlib.pbkdf2_hmac` reproduces all three `TestPBKDF2` Key vectors byte-exact, proving the semantics. Java 8 javadoc (doc-verified): required `SecretKeyFactory` = DES, DESede only — NO PBKDF2 of any flavor; `Mac HmacSHA256` required. M3.4 respecified: hand-rolled single-pass loop over `Mac("HmacSHA256")`, all six KATs (Key/V1/V2 × 3 cases) computed and pasted into the chunk (replacing the "instrumented unrar" plan). Provenance fixed at the root: `unrar-delta-map.md` §2.6 and manual §4.11 carried c+17 and the SecretKeyFactory recommendation — both corrected (`7179f6e`); Appendix A F7 row annotated (its "fix" repeated the c+17 error, which the planner's own pre-review text introduced). |
+| S2 — regression flip cannot produce the specified JSON shapes | APPLIED | Confirmed: `ArchiveRecord.fromArchive` hardcodes `isRarV5=false`; `fromException` keys on `UnsupportedRarV5Exception` only. Counts confirmed: 345 of 12,475 JSONs reference RAR5 (grep executed; the "12,475 flip" wording fixed to "345 flip, 12,130 byte-identical"). `-p` vs `-hp` probed with rar 7.23: `-p` lists passwordless, `-hp` → "Incorrect password". Fixes: record model repaired in M3.1 (public `Archive.getFormat()`; `fromException` gains the path + 8-byte signature probe — zero corpus churn pre-flip); §4.4 audit now has THREE shapes (plain / file-encrypted listable / header-encrypted exception-swap to `WrongPasswordException`); oracle check covers ALL 345 flipped members, not a 20-sample. |
+| S3 — dictionary guard unsafe (default still allows tiny-archive 1 GB alloc) and mis-ordered (default raised at M4.1 before M4.3 capability) | APPLIED | Confirmed, plus upstream anchor found: unrar's own default extraction limit is 4 GiB (`d861246:options.cpp:13` `WinSizeLimit=0x100000000`; `-mdx` raises; `uiDictLimit` refuses). Redesign: capability (1 GB flat at M3.6 → 64 GB at M4.3 only) / budget (`ArchiveOptions.maxDictionarySize`, default 4 GiB, permanent — M4.1 raises nothing, now parse-only) / allocation (growth-capped flat window at M3.6, lazy segments at M4.3 — a dict-bomb allocates KBs under DEFAULT options, asserted by a new mandatory hostile row). PPMd 256 MB exposure budget-gated by the same knob (P0.5 + P0.8). |
+| S4 — header-CRC contract diverges from unrar semantics | APPLIED | Confirmed at both eras: RAR3 = 16-bit (`GetCRC15`, `~CRC32&0xffff`; `2e71167:arcread.cpp:258`), exemptions (SIGN/AV/old-UO; comment-prefix coverage), file-header mismatch = record+continue, encrypted = fatal (`d861246:arcread.cpp:431-445,514-545`); RAR5 = CRC32 (`GetCRC50`), unencrypted mismatch = "Report, but attempt to process" (`:683-696`). P0.7 respecified with the full format-specific contract + one named conscious divergence (extract-time throw on broken file headers); M3.2 carries the RAR5 record-vs-fatal split; manual §5.1 + §6 T7 corrected (`7179f6e`). |
+| S5 — RAR5 exact header-size boundary missing | APPLIED | Confirmed: first read = 7 bytes (4 CRC + ≤3 size-vint bytes), `MAX_HEADER_SIZE_RAR5 0x200000` (`d861246:arcread.cpp:634-641`, `archive.hpp:24`). M3.2 gains the pre-allocation rejection contract (allocate only after the ≤2 MB bound holds) + boundary rows (3-byte max accepted / 4-byte reject / BlockSize 0 / no-allocation assertion); M3.1 notes the general 10-byte vint vs the 3-byte header-size field split. |
+| S6 — M3.11 red→green invalid (expectations edited between red and green) | APPLIED | Confirmed against the frozen-test mandate. M3.11 respecified: NEW public-surface success tests authored + executed RED (failing with `UnsupportedRarV5Exception`, hashes recorded) before the gate lift, byte-identical through GREEN; old gate-pinning tests retired separately in the lift commit, counted as evidence of nothing. |
+| S7 — API needs one construction-time config path; char[] overloads ambiguous | APPLIED (with one nuance) | Nuance: `new Archive(file, null)` is ALREADY ambiguous today — javac probe: "reference to A is ambiguous" between `(File,String)`/`(File,UnrarCallback)` — so the hole predates char[]; the conclusion stands and the fix removes rather than compounds it. New P0.8 chunk = the contract: `ArchiveOptions` builder (password char[] defensive-copy, `maxDictionarySize` long, callback), new `(source, ArchiveOptions)` ctors, `Junrar.extract(..., options)` overloads (reaches one-shot calls), wipe-on-close on `Archive`, String ctors kept undeprecated with Javadoc pointer; §5.2 rewritten as THE contract. |
+| S8 — Java 8 needs a runtime gate | APPLIED | Confirmed: `ci.yml` runs JDK 21 only (probed). New P0.9 chunk: `jre8-smoke` CI job — JDK 21-built jar, Temurin 8 runtime, framework-free main extracting plain + AES RAR3 fixtures with digest asserts (JCE provider behavior on a real JRE 8); M3.11 extends with RAR5 plain + encrypted rows. Red canary demonstrated at introduction. |
+| S9 — unresolved implementer choices | APPLIED | Full-document sweep + probes executed, every hit pinned: P0.1 → `CrcErrorException` (masked-wrap else branch probed, `Unpack20.java:230-235`); P0.5 → policy pinned (`d861246:model.cpp` `DecodeInit`: `StartSubAllocator(MaxMB+1)`, no extra cap); M1.1 → fixture = P0.5's (no discovery step); M1.2 → keep `ppmError` latch (sites `Unpack.java:74,168,197,622`); M1.5 → path = `rarfile/FileNameDecoder.java`; M3.1 → new `io/VInt.java`; M3.3 → loader-into-unified-`FileHeader` (no `FileHeader5` type); M3.4 → `crypt/Rar5Crypt.java`; M3.6 → own bit input with `getbits32` (junrar has none — grep probe); §4.2 `-ma4` row updated to the executed probe. |
+
+### Own-initiative changes (same evidence bar, beyond the 9)
+
+- **KDF KATs generated and embedded** (M3.4): V1/V2 vectors at c+16/c+32 for all
+  three upstream test cases computed via independent PBKDF2 — no instrumented
+  unrar run needed; a c+17 or dkLen=96 implementation fails them by construction.
+- **`WrongPasswordException` pinned for passwordless `-hp` open** (§4.4 shape (c),
+  §5.3, M3.4): unrar itself reports passwordless header-encrypted open as
+  "Incorrect password" (probe); kills the residual "or the recorded
+  encrypted-open exception type" vagueness, and M3.2's encrypted-bad-CRC path
+  maps to the same type (indistinguishable from a wrong key under CBC).
+- **Lg2Count wording fixed** (M3.3): "≤ 24 reject" → "> 24 → reject"
+  (`CRYPT5_KDF_LG2_COUNT_MAX 24`, `d861246:crypt.hpp:20`).
+- **KDF cache size cited** (M3.4): `KDF5Cache[4]`, `d861246:crypt.hpp:88`.
+- **PswCheck fold made precise** (M3.4): `PswCheck[i%8] ^= V2[i]`
+  (`SIZE_PSWCHECK 8`).
+- **§2.1 stdlib table row corrected** (part of S1 fallout): the KDF row no longer
+  cites `SecretKeyFactory PBKDF2WithHmacSHA256` as the Java-8 API.
+- **Delta-map inventory re-check**: every §2 component of
+  `reports/unrar-delta-map.md` maps to a chunk (2.1→M3.1, 2.2→M3.2, 2.3–2.5→M3.3
+  /M3.10, 2.6→M3.4, 2.7→M3.5–M3.8, 2.8→M4, 2.9→M3.9); no uncovered component
+  found.
+- **P0.7 broken-header surfacing**: new `FileHeader.isBrokenHeader()` accessor
+  named in §5.1 (the tolerance contract needs an observable).
