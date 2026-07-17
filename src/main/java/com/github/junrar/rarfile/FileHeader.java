@@ -124,7 +124,7 @@ public class FileHeader extends BlockHeader {
         } else {
             highPackSize = 0;
             highUnpackSize = 0;
-            if (unpSize == 0xffffffff) {
+            if (unpSize == 0xffffffffL) {
                 highUnpackSize = Integer.MAX_VALUE;
             }
 
