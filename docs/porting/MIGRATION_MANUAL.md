@@ -627,12 +627,18 @@ everywhere else, `unpack/ComprDataIO.java`, `io/RawDataIo.java`.
 - The `unpWrite` CRC branch = where RAR5's optional **Blake2sp** (32-byte,
   FHEXTRA_HASH type 0) plugs in — mirror unrar's `DataHash` (CRC32 | Blake2sp) as a
   small Java interface. Blake2sp is the one JDK-missing primitive: port
-  `blake2s.cpp` (~300 lines, self-contained, 8-lane "sp" tree composition) or use
-  Bouncy Castle's `Blake2sDigest` (the sp composition still hand-built) — an
-  owner-level dependency decision (§3).
+  `blake2s.cpp` + `blake2sp.cpp` (183 + 153 lines at `8f437ab`, self-contained,
+  8-lane "sp" tree composition) or use Bouncy Castle's `Blake2spDigest` (bcprov
+  ships the full sp tree mode) — an owner-level dependency decision (§3).
 - pswcheck makes wrong-password a first-class detectable error (8-byte check +
   4-byte csum) instead of a CRC failure — surface it as a distinct exception type,
   minding the `setChannel` filter (§4.9).
+- Correction (2026-07-17, plan-review finding F1): an earlier revision of the
+  Blake2sp bullet above claimed Bouncy Castle provides only `Blake2sDigest` and that
+  the sp composition "still hand-built" — false. bcprov ships
+  `org.bouncycastle.crypto.digests.Blake2spDigest` (full 8-lane sp tree mode;
+  verified against the bcprov-jdk18on 1.85 javadoc). The port-vs-dependency decision
+  is re-argued on the true facts in `PARITY_PLAN.md` §2.2.
 - ComprDataIO return/throw mix: EOF throws `EOFException`, missing next volume
   returns `-1` (`ComprDataIO.java:134-136,156`) — mind it when adding RAR5 paths.
 
@@ -798,7 +804,7 @@ compare semantics, not lines). Use 4.2.4 (`5db30e6`) for 3.7.3-shaped diff conte
 | Header encryption (HEAD_CRYPT: AES-256-CBC, per-header IV, Lg2Count≤24, Salt16, pswcheck) | `crypt5.cpp` | `RawDataIo.setCipher` (§5.5) |
 | File crypto (FHEXTRA_CRYPT) + PBKDF2-HMAC-SHA256 KDF + pswcheck + `ConvertHashToMAC` | `crypt5.cpp:85,193` | `ComprDataIO.init` + JDK `SecretKeyFactory` (§4.11) |
 | SHA-256 | `sha256.cpp` | `MessageDigest` — no port |
-| Blake2sp file hashes | `blake2s.cpp`, `blake2sp.cpp` | port (~300 lines) or Bouncy Castle — owner decision (§5.5) |
+| Blake2sp file hashes | `blake2s.cpp`, `blake2sp.cpp` | port (~340 lines) or Bouncy Castle `Blake2spDigest` — owner decision (§5.5) |
 | Hash abstraction (CRC32 \| Blake2sp) | `hash.cpp` | small Java interface in the `unpWrite` branch |
 | RAR5 LZ decoder + 4 filters (DELTA/E8/E8E9/ARM) | `unpack50.cpp`, `unpackinline.cpp` | sibling `Unpack5` engine (§5.2) |
 | Dynamic window (128 KB–4 GB; RAR7 to 64 GB, `UNPACK_MAX_DICT`) | `unpack.cpp` `Init(uint64,bool)` | per-archive window + segmented abstraction >2 GB (§5.2) |
