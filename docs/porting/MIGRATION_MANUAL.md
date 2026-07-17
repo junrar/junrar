@@ -218,7 +218,8 @@ C++ unsigned semantics do not survive naive translation.
 Never mix (b) and (c) in one expression without parentheses — Java `+`/`-` bind tighter
 than `&`, and `a & 0xFFFFFFFFL + b` computes `a & (0xFFFFFFFFL + b)` (§6 T3 is the
 graveyard of this mistake). On any re-port, **re-audit every `>>` on a value that is
-unsigned in C++** (no-go C15 is UNPINNED as a class).
+unsigned in C++** (no-go C15 — audit procedure + boundary pins in
+`reports/signedness-audit.md` and `*SignednessTest`, chunk P0.4).
 
 ### 4.3 Pointers & memory
 
@@ -569,9 +570,10 @@ bring over: 3.9.1 range-coder `count >= scale → return false` in decodeSymbol1
 `ppmError` latch (3.7.6-era shape — `Unpack.java:74`): 3.7.7+ replaced it with
 `PPM.CleanUp()` + `UnpBlockType=BLOCK_LZ`; decide one shape, don't mix.
 
-**Standing decision needed.** junrar clamps PPM `MaxMB` to 1 (`ModelPPM.java:188-189`)
-— a DoS guard absent from unrar that may truncate legitimate PPMd archives (no-go S8,
-UNPINNED). Any PPMd re-port must consciously decide this policy first.
+**Standing decision — RESOLVED by chunk P0.5 (`8df63444`).** The `MaxMB = 1` clamp is
+gone: junrar now honors `MaxMB+1` MB verbatim like unrar (format ceiling 256 MB; no-go
+S8 row below). The 256 MB header-driven exposure becomes budget-gated by
+`ArchiveOptions.maxDictionarySize` when P0.8 lands.
 
 ### 5.4 VM / filters
 
@@ -685,8 +687,8 @@ C++ will show them as "extra" code; they are load-bearing. Source (verbatim, wit
 commit archaeology): [`reports/divergences-no-go.md`](reports/divergences-no-go.md).
 
 **The UNPINNED rule: an UNPINNED behavior gets its pinning test BEFORE any re-port
-touches its file.** UNPINNED count: 1 (S8) — C1 pinned by chunk P0.1, C7 by P0.2,
-C13 + D1 by P0.3, C15 by P0.4 (as far as unit-pinnable; rows below).
+touches its file.** UNPINNED count: 0 — C1 pinned by chunk P0.1, C7 by P0.2, C13 + D1
+by P0.3, C15 by P0.4 (as far as unit-pinnable), S8 resolved+pinned by P0.5 (rows below).
 
 ### Security (CVE-backed)
 
@@ -699,7 +701,7 @@ C13 + D1 by P0.3, C15 by P0.4 (as far as unit-pinnable; rows below).
 | S5 | **CVE-2026-28208 backslash traversal (Linux)**: separator-normalize (`\`→`/`) BEFORE the canonical-path check; `makeFile` splits on `/` not `\\`. | `947ff1d3` (2026) | `LocalFolderExtractor.java:58,76,96` | `LocalFolderExtractorTest…Exception2` → `parent-dir.rar` |
 | S6 | **CVE-2026-41245 sibling-prefix Zip-Slip**: containment compares against `destination.getCanonicalPath() + File.separator`, never a bare prefix. | `d77e9a83` (2026) | `LocalFolderExtractor.java:35,61` | `…Exception3` → `sibling-prefix-traversal.rar` |
 | S7 | **Original path-traversal guard (#31)**: canonical-path `startsWith` in createFile/createDirectory; traversal → `IllegalStateException`. | `e60b915f` (2019) | `LocalFolderExtractor.java` | `LocalFolderExtractorTest.rarWithDirectoriesOutsideTarget_…` |
-| S8 | **PPM suballocator memory clamp**: archive-supplied `MaxMB` clamped to 1 MB (OOM DoS guard). | `0dc9d457` (2020) | `ModelPPM.java:188-189` | **UNPINNED** — and SUSPICIOUS: hard clamp diverges from unrar and may truncate legitimate PPMd decoding. **Pending investigation: a re-port must consciously decide this policy — silently dropping AND silently keeping are both wrong.** |
+| S8 | **PPM `MaxMB` policy** — historical `MaxMB=1` clamp (`0dc9d457`, 2020) RESOLVED by P0.5 (`8df63444`): honor `MaxMB+1` verbatim per unrar `model.cpp` `DecodeInit` (format ceiling 256 MB); budget-gating arrives with P0.8 `maxDictionarySize`. | `0dc9d457` (2020), `8df63444` (P0.5) | `ModelPPM.java` `decodeInit` | `PpmMaxMbTest` → `ppm/legit-maxmb63.rar` (+ oracle), `ppm/preserved-maxmb0.rar`, `ppm/hostile-maxmb255.rar` |
 
 ### Correctness / robustness
 
