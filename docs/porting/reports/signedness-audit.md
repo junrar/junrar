@@ -65,8 +65,10 @@ in the handoff):
 - Per-file `git log --follow` confirms `25491b50` is the newest commit touching
   `FileNameDecoder.java` and `BitInput.java` (nothing has edited them since).
   `Unpack15.java` and `RarVM.java` each have later commits (`e8050e7e`, `36a58836`, plus
-  `8e876416`/`5270d235` respectively); `git show <sha> -- <path> | grep '>>'` is empty for
-  every one — no shift-operator edit.
+  `8e876416`/`5270d235` respectively); none contains an operator or shift-amount edit:
+  `git show <sha> -- <path> | grep '>>'` is empty for `e8050e7e`, `8e876416`, and
+  `5270d235`, while `36a58836`'s 8 matching lines are `Byte.valueOf()`-unwrap noise on
+  both diff sides of unchanged `>>>` expressions (verified by reading its diff).
 - `RandomAccessInputStream.java` (the renamed `RandomAccessStream.java`) has one genuine
   post-`25491b50` shift-adjacent edit: `cbbe99c4` (2022-11-03, "fix: cannot extract large
   files (2G+) via InputStream") widened `length` `int`→`long` and changed `int j = length
