@@ -25,6 +25,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.Calendar;
@@ -154,15 +155,18 @@ public class FileHeader extends BlockHeader {
                     && fileNameBytes[length] != 0) {
                     length++;
                 }
-                fileName = new String(fileNameBytes, 0, length);
+                fileName = new String(fileNameBytes, 0, length, StandardCharsets.UTF_8);
                 if (length != nameSize) {
                     length++;
                     fileNameW = FileNameDecoder.decode(fileNameBytes, length);
                 } else {
-                    fileNameW = "";
+                    // unrar 3.7.3 arcread.cpp:189-194: no NUL split means the
+                    // whole field is the unicode name, UTF-8 encoded
+                    // (UtfToWide), not the RLE FileNameDecoder blob.
+                    fileNameW = new String(fileNameBytes, 0, nameSize, StandardCharsets.UTF_8);
                 }
             } else {
-                fileName = new String(fileNameBytes);
+                fileName = new String(fileNameBytes, StandardCharsets.UTF_8);
                 fileNameW = "";
             }
 
