@@ -22,6 +22,13 @@ public class Junrar {
         return extract(rarPath, destinationPath, (String) null);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer
+     * {@link #extract(String, String, ArchiveOptions)} with a {@code char[]} password. Also,
+     * since that overload's introduction, a bare {@code null} literal is ambiguous here and no
+     * longer compiles — use the two-argument overload, cast to {@code (String) null}, or an
+     * {@code ArchiveOptions} without a password.
+     */
     public static List<File> extract(final String rarPath, final String destinationPath, final String password) throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
             throw new IllegalArgumentException("archive and destination must be set");
@@ -30,7 +37,10 @@ public class Junrar {
     }
 
     /**
-     * @see #extract(String, String, ArchiveOptions)
+     * Since this overload's introduction, a bare {@code null} password literal is ambiguous
+     * against {@link #extract(String, String, String)} and no longer compiles. Use the
+     * two-argument overload, cast to {@code (String) null}, or pass an {@code ArchiveOptions}
+     * without a password.
      */
     public static List<File> extract(final String rarPath, final String destinationPath, final ArchiveOptions options) throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
@@ -44,6 +54,13 @@ public class Junrar {
         return extract(rar, destinationFolder, (String) null);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer
+     * {@link #extract(File, File, ArchiveOptions)} with a {@code char[]} password. Also, since
+     * that overload's introduction, a bare {@code null} literal is ambiguous here and no
+     * longer compiles — use the two-argument overload, cast to {@code (String) null}, or an
+     * {@code ArchiveOptions} without a password.
+     */
     public static List<File> extract(final File rar, final File destinationFolder, final String password)
             throws RarException, IOException {
         validateRarPath(rar);
@@ -55,6 +72,11 @@ public class Junrar {
     }
 
     /**
+     * Since this overload's introduction, a bare {@code null} password literal is ambiguous
+     * against {@link #extract(File, File, String)} and no longer compiles. Use the
+     * two-argument overload, cast to {@code (String) null}, or pass an {@code ArchiveOptions}
+     * without a password.
+     *
      * @see ArchiveOptions
      */
     public static List<File> extract(final File rar, final File destinationFolder, final ArchiveOptions options)
@@ -72,6 +94,13 @@ public class Junrar {
         return extract(resourceAsStream, destinationFolder, (String) null);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer
+     * {@link #extract(InputStream, File, ArchiveOptions)} with a {@code char[]} password. Also,
+     * since that overload's introduction, a bare {@code null} literal is ambiguous here and no
+     * longer compiles — use the two-argument overload, cast to {@code (String) null}, or an
+     * {@code ArchiveOptions} without a password.
+     */
     public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder, final String password) throws RarException, IOException {
         validateDestinationPath(destinationFolder);
 
@@ -80,6 +109,12 @@ public class Junrar {
         return extractArchiveTo(arch, lfe);
     }
 
+    /**
+     * Since this overload's introduction, a bare {@code null} password literal is ambiguous
+     * against {@link #extract(InputStream, File, String)} and no longer compiles. Use the
+     * two-argument overload, cast to {@code (String) null}, or pass an {@code ArchiveOptions}
+     * without a password.
+     */
     public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder, final ArchiveOptions options) throws RarException, IOException {
         validateDestinationPath(destinationFolder);
 
@@ -97,6 +132,13 @@ public class Junrar {
         return extractArchiveTo(arch, lfe);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer
+     * {@link #extract(VolumeManager, File, ArchiveOptions)} with a {@code char[]} password.
+     * Also, since that overload's introduction, a bare {@code null} literal is ambiguous here
+     * and no longer compiles — use the two-argument overload, cast to {@code (String) null},
+     * or an {@code ArchiveOptions} without a password.
+     */
     public static List<File> extract(final VolumeManager volumeManager, final File destinationFolder, final String password) throws IOException, RarException {
         validateDestinationPath(destinationFolder);
 
@@ -105,6 +147,12 @@ public class Junrar {
         return extractArchiveTo(arch, lfe);
     }
 
+    /**
+     * Since this overload's introduction, a bare {@code null} password literal is ambiguous
+     * against {@link #extract(VolumeManager, File, String)} and no longer compiles. Use the
+     * two-argument overload, cast to {@code (String) null}, or pass an {@code ArchiveOptions}
+     * without a password.
+     */
     public static List<File> extract(final VolumeManager volumeManager, final File destinationFolder, final ArchiveOptions options) throws IOException, RarException {
         validateDestinationPath(destinationFolder);
 

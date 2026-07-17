@@ -190,10 +190,19 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new FileVolumeManager(firstVolume), unrarCallback, null);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer
+     * {@link #Archive(File, ArchiveOptions)} with a {@code char[]} password via
+     * {@link ArchiveOptions#builder()}.
+     */
     public Archive(final File firstVolume, final String password) throws RarException, IOException {
         this(new FileVolumeManager(firstVolume), null, password);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer {@link ArchiveOptions}
+     * (via {@link ArchiveOptions#builder()}) with a {@code char[]} password.
+     */
     public Archive(final File firstVolume, final UnrarCallback unrarCallback, final String password) throws RarException, IOException {
         this(new FileVolumeManager(firstVolume), unrarCallback, password);
     }
@@ -210,10 +219,19 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new InputStreamVolumeManager(rarAsStream), unrarCallback, null);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer
+     * {@link #Archive(InputStream, ArchiveOptions)} with a {@code char[]} password via
+     * {@link ArchiveOptions#builder()}.
+     */
     public Archive(final InputStream rarAsStream, final String password) throws IOException, RarException {
         this(new InputStreamVolumeManager(rarAsStream), null, password);
     }
 
+    /**
+     * A {@code String} password cannot be wiped from memory; prefer {@link ArchiveOptions}
+     * (via {@link ArchiveOptions#builder()}) with a {@code char[]} password.
+     */
     public Archive(final InputStream rarAsStream, final UnrarCallback unrarCallback, final String password) throws IOException, RarException {
         this(new InputStreamVolumeManager(rarAsStream), unrarCallback, password);
     }

@@ -74,6 +74,28 @@ public class ArchiveOptionsTest {
     }
 
     @Test
+    public void givenBuilderPasswordArray_whenCallerMutatesBetweenPasswordAndBuild_thenExtractionStillWorks() throws Exception {
+        char[] password = "junrar".toCharArray();
+        ArchiveOptions.Builder builder = ArchiveOptions.builder().password(password);
+        // Mutate the caller's array between Builder.password(char[]) and build(): only the
+        // Builder's OWN defensive copy (taken at password(char[]) time) can protect against
+        // this. The existing mutate-after-build() test cannot discriminate this layer, because
+        // by then the Builder is no longer consulted.
+        Arrays.fill(password, 'X');
+        ArchiveOptions options = builder.build();
+
+        try (InputStream is = getClass().getResourceAsStream(ENCRYPTED_FIXTURE);
+             Archive archive = new Archive(is, options)) {
+            List<FileHeader> fileHeaders = archive.getFileHeaders();
+            FileHeader fileHeader = fileHeaders.get(0);
+            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                archive.extractFile(fileHeader, baos);
+                assertThat(baos.toString()).isEqualTo("file1\n");
+            }
+        }
+    }
+
+    @Test
     public void givenMaxDictionarySizeNotPositive_whenBuild_thenThrowsIllegalArgumentException() {
         ArchiveOptions.Builder builder = ArchiveOptions.builder().maxDictionarySize(0);
 
