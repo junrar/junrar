@@ -184,9 +184,9 @@ public class ModelPPM {
 
         int MaxMB = 0;
         if (reset) {
+            // no-go S8: honor MaxMB verbatim (unrar d861246:model.cpp DecodeInit),
+            // no extra cap -- format ceiling is 256 MB (MaxMB is one byte, 0-255).
             MaxMB = unpackRead.getChar();
-            final int MaxMBLimit = 1;
-            if (MaxMB > MaxMBLimit) MaxMB = MaxMBLimit;
         } else {
             if (subAlloc.GetAllocatedMemory() == 0) {
                 return (false);
