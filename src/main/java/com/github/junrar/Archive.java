@@ -67,6 +67,7 @@ import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -138,17 +139,23 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private Volume volume;
 
     private FileHeader nextFileHeader;
-    private String password;
+    private char[] passwordChars;
+    private final long maxDictionarySize;
 
+    /**
+     * Canonical constructor: every other {@code Archive} constructor delegates here,
+     * directly or transitively. See {@link ArchiveOptions} for the password/resource
+     * configuration contract (password hygiene, {@code maxDictionarySize} budget).
+     */
     public Archive(
         final VolumeManager volumeManager,
-        final UnrarCallback unrarCallback,
-        final String password
+        final ArchiveOptions options
     ) throws RarException, IOException {
 
         this.volumeManager = volumeManager;
-        this.unrarCallback = unrarCallback;
-        this.password = password;
+        this.unrarCallback = options.getUnrarCallback();
+        this.passwordChars = options.getPassword();
+        this.maxDictionarySize = options.getMaxDictionarySize();
 
         try {
             setVolume(this.volumeManager.nextVolume(this, null));
@@ -161,6 +168,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             throw e;
         }
         this.dataIO = new ComprDataIO(this);
+    }
+
+    /**
+     * @see #Archive(VolumeManager, ArchiveOptions)
+     * @see ArchiveOptions#builder()
+     */
+    public Archive(
+        final VolumeManager volumeManager,
+        final UnrarCallback unrarCallback,
+        final String password
+    ) throws RarException, IOException {
+        this(volumeManager, ArchiveOptions.builder().unrarCallback(unrarCallback).password(password).build());
     }
 
     public Archive(final File firstVolume) throws RarException, IOException {
@@ -179,6 +198,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new FileVolumeManager(firstVolume), unrarCallback, password);
     }
 
+    public Archive(final File firstVolume, final ArchiveOptions options) throws RarException, IOException {
+        this(new FileVolumeManager(firstVolume), options);
+    }
+
     public Archive(final InputStream rarAsStream) throws RarException, IOException {
         this(new InputStreamVolumeManager(rarAsStream), null, null);
     }
@@ -195,10 +218,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new InputStreamVolumeManager(rarAsStream), unrarCallback, password);
     }
 
+    public Archive(final InputStream rarAsStream, final ArchiveOptions options) throws IOException, RarException {
+        this(new InputStreamVolumeManager(rarAsStream), options);
+    }
+
     private void setChannel(final SeekableReadOnlyByteChannel channel, final long length) throws IOException, RarException {
         this.totalPackedSize = 0L;
         this.totalPackedRead = 0L;
-        close();
+        resetChannel();
         this.channel = channel;
         try {
             readHeaders(length);
@@ -320,7 +347,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 byte[] salt = new byte[8];
                 rawData.readFully(salt, 8);
                 try {
-                    Cipher cipher = Rijndael.buildDecipherer(password, salt);
+                    Cipher cipher = Rijndael.buildDecipherer(passwordAsString(), salt);
                     rawData.setCipher(cipher);
                 } catch (Exception e) {
                     throw new InitDeciphererFailedException(e);
@@ -818,16 +845,28 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * Close the underlying compressed file.
+     * Tears down the current channel/unpacker without wiping the password, so a
+     * volume switch (multi-volume archives) can keep decrypting headers. Internal
+     * use only; {@link #close()} is the password-wiping terminal counterpart.
      */
-    @Override
-    public void close() throws IOException {
+    private void resetChannel() throws IOException {
         if (this.channel != null) {
             this.channel.close();
             this.channel = null;
         }
         if (this.unpack != null) {
             this.unpack.cleanUp();
+        }
+    }
+
+    /**
+     * Close the underlying compressed file and wipe the internal password copy.
+     */
+    @Override
+    public void close() throws IOException {
+        resetChannel();
+        if (this.passwordChars != null) {
+            Arrays.fill(this.passwordChars, '\0');
         }
     }
 
@@ -852,12 +891,37 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         return this.volume;
     }
 
+    /**
+     * @return the password as a {@code String}, which cannot be wiped from memory;
+     *         prefer keeping the password as {@code char[]} where feasible.
+     * @see ArchiveOptions#getPassword()
+     */
     public String getPassword() {
-        return password;
+        return passwordAsString();
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.passwordChars = password == null ? null : password.toCharArray();
+    }
+
+    private String passwordAsString() {
+        return this.passwordChars == null ? null : new String(this.passwordChars);
+    }
+
+    /**
+     * @return the extraction dictionary-size budget in bytes ({@link ArchiveOptions#getMaxDictionarySize()}).
+     */
+    public long getMaxDictionarySize() {
+        return this.maxDictionarySize;
+    }
+
+    /**
+     * Test hook (P0.8 wipe-on-close acceptance row): exposes the live internal
+     * array reference, not a copy, so a test can observe it being zeroed by
+     * {@link #close()}.
+     */
+    char[] getPasswordChars() {
+        return this.passwordChars;
     }
 
 

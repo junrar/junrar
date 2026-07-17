@@ -268,6 +268,15 @@ public class ComprDataIO {
         this.encryption = encryption;
     }
 
+    /**
+     * @return the archive's extraction dictionary-size budget in bytes
+     *         ({@code ArchiveOptions.maxDictionarySize}); conduit for the PPMd
+     *         suballocator budget check (P0.8).
+     */
+    public long getMaxDictionarySize() {
+        return archive.getMaxDictionarySize();
+    }
+
     public boolean isNextVolumeMissing() {
         return nextVolumeMissing;
     }

@@ -1,6 +1,7 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.rarfile.FileHeader;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -39,6 +40,47 @@ public class PpmMaxMbTest {
         byte[] expected = readResource(LEGIT_EXPECTED);
         byte[] extracted = extractSoleEntry(LEGIT_FIXTURE);
         assertThat(extracted).isEqualTo(expected);
+    }
+
+    @Test
+    public void givenLegitMaxMb63Archive_whenDefaultArchiveOptions_thenByteIdenticalToRealUnrarOracle() throws Exception {
+        byte[] expected = readResource(LEGIT_EXPECTED);
+        ArchiveOptions options = ArchiveOptions.builder().build();
+        try (InputStream is = getClass().getResourceAsStream(LEGIT_FIXTURE);
+             Archive archive = new Archive(is, options)) {
+            List<FileHeader> fileHeaders = archive.getFileHeaders();
+            assertThat(fileHeaders).hasSize(1);
+            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                archive.extractFile(fileHeaders.get(0), baos);
+                assertThat(baos.toByteArray()).isEqualTo(expected);
+            }
+        }
+    }
+
+    @Test
+    public void givenLegitMaxMb63Archive_whenMaxDictionarySizeBelowRequirement_thenUnsupportedDictionarySizeException() throws Exception {
+        // MaxMB=63 in the fixture => PPMd needs (63+1) MB = 64 MB of suballocator memory.
+        long requiredBytes = 64L * 1024 * 1024;
+
+        // Before-state: the same fixture extracts fine under the default (unconstrained) budget.
+        assertThat(extractSoleEntry(LEGIT_FIXTURE)).isEqualTo(readResource(LEGIT_EXPECTED));
+
+        // After: a budget one byte short of the requirement refuses the same fixture.
+        ArchiveOptions options = ArchiveOptions.builder().maxDictionarySize(requiredBytes - 1).build();
+        try (InputStream is = getClass().getResourceAsStream(LEGIT_FIXTURE);
+             Archive archive = new Archive(is, options)) {
+            List<FileHeader> fileHeaders = archive.getFileHeaders();
+            assertThat(fileHeaders).hasSize(1);
+            FileHeader fileHeader = fileHeaders.get(0);
+
+            Throwable thrown = catchThrowable(() -> {
+                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                    archive.extractFile(fileHeader, baos);
+                }
+            });
+
+            assertThat(thrown).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
+        }
     }
 
     @Test

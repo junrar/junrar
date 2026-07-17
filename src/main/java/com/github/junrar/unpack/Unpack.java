@@ -1044,6 +1044,15 @@ public final class Unpack extends Unpack20 {
         this.ppmEscChar = ppmEscChar;
     }
 
+    /**
+     * @return the archive's extraction dictionary-size budget in bytes;
+     *         conduit from {@code Archive} through {@code ComprDataIO} for
+     *         {@code ModelPPM.decodeInit}'s budget check (P0.8).
+     */
+    public long getMaxDictionarySize() {
+        return unpIO.getMaxDictionarySize();
+    }
+
     public void cleanUp() {
         if (ppm != null) {
             SubAllocator allocator = ppm.getSubAlloc();

@@ -18,6 +18,7 @@
 package com.github.junrar.unpack.ppm;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.unpack.Unpack;
 
 import java.io.IOException;
@@ -205,6 +206,15 @@ public class ModelPPM {
             if (MaxOrder == 1) {
                 subAlloc.stopSubAllocator();
                 return (false);
+            }
+            // P0.8: gate MaxMB+1 MB against ArchiveOptions.maxDictionarySize (default 4 GiB,
+            // above the 256 MB format ceiling -- no behavior change by default).
+            long requiredBytes = (long) (MaxMB + 1) << 20;
+            long budget = unpackRead.getMaxDictionarySize();
+            if (requiredBytes > budget) {
+                throw new UnsupportedDictionarySizeException(
+                    "PPMd requires " + requiredBytes + " bytes (MaxMB=" + MaxMB
+                        + ") but the configured maxDictionarySize budget is " + budget + " bytes");
             }
             subAlloc.startSubAllocator(MaxMB + 1);
             minContext = new PPMContext(getHeap());
