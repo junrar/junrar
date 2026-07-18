@@ -131,8 +131,8 @@ untouched implementation. The fixture is a defensive safety pin for the
 required latch propagation.
 
 Run: python3 generate_maxmb_fixtures.py
-Regenerates both hostile fixtures next to this script from the already-
-committed legit-maxmb63.rar (no external rar binary needed for this step).
+Regenerates all hostile fixtures next to this script from the already-committed
+legit-maxmb63.rar (no external rar binary needed for this step).
 """
 import hashlib
 import pathlib
@@ -152,6 +152,15 @@ PPM_ERROR_PATCH_OFFSET = 78
 PPM_ERROR_BEFORE_BYTE = 0xB7
 PPM_ERROR_AFTER_BYTE = 0xFF
 PPM_ERROR_HOSTILE_SHA256 = "9d4861d4e1a923071852198e3b3f1ee33240fabe8557fe22ff7f407ca59267e4"
+
+PS_PATCHES = (
+    ("hostile-ppm-ps-collect.rar", 254, 0x5E, 0xFF,
+     "24a680b3b87f2a4f940120b31ad19d503d34fd30a56ce5415d328008fcaacf5b"),
+    ("hostile-ppm-ps-count.rar", 85, 0x03, 0x00,
+     "7609247ef7f9c719d25445bdb7570c063bf6046ae8bdc3800cdf4f4a914c9400"),
+    ("hostile-ppm-ps-mask.rar", 199, 0x8D, 0x00,
+     "77f7a23d893bbdd074071ab72552fb36124d1aebbcbc4d879ecd6cf85c4f6953"),
+)
 
 
 def main():
@@ -200,6 +209,26 @@ def main():
         f"0x{PPM_ERROR_BEFORE_BYTE:02x} -> 0x{PPM_ERROR_AFTER_BYTE:02x}; "
         f"sha256={ppm_error_sha256}"
     )
+
+    for name, offset, before_byte, after_byte, expected_sha256 in PS_PATCHES:
+        data = bytearray(source)
+        if data[offset] != before_byte:
+            raise SystemExit(
+                f"expected 0x{before_byte:02x} at offset {offset}, "
+                f"got 0x{data[offset]:02x} -- legit-maxmb63.rar changed?"
+            )
+        data[offset] = after_byte
+        output = DIR / name
+        output.write_bytes(data)
+        sha256 = hashlib.sha256(data).hexdigest()
+        if sha256 != expected_sha256:
+            raise SystemExit(
+                f"generated {name} sha256 {sha256}, expected {expected_sha256}"
+            )
+        print(
+            f"patched offset {offset}: 0x{before_byte:02x} -> 0x{after_byte:02x}; "
+            f"sha256={sha256}"
+        )
 
 
 if __name__ == "__main__":

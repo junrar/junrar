@@ -312,6 +312,10 @@ public class PPMContext extends Pointer {
                 p.incAddress(); // p++;
             } while (model.getCharMask()[p.getSymbol()] == model.getEscCount());
             hiCnt += p.getFreq();
+            // Bug fixed
+            if (pps >= ps.length) {
+                return false;
+            }
             ps[pps++] = p.getAddress();
         } while (--i != 0);
         coder.getSubRange().incScale(hiCnt);
@@ -324,7 +328,12 @@ public class PPMContext extends Pointer {
         if (count < hiCnt) {
             hiCnt = 0;
             while ((hiCnt += p.getFreq()) <= count) {
-                p.setAddress(ps[++pps]); // p=*++pps;
+                pps++;
+                // Bug fixed
+                if (pps >= ps.length) {
+                    return false;
+                }
+                p.setAddress(ps[pps]); // p=*++pps;
             }
             coder.getSubRange().setHighCount(hiCnt);
             coder.getSubRange().setLowCount(hiCnt - p.getFreq());
@@ -336,7 +345,12 @@ public class PPMContext extends Pointer {
             i = getNumStats() - model.getNumMasked(); // ->NumMasked;
             pps--;
             do {
-                temp.setAddress(ps[++pps]); // (*++pps)
+                pps++;
+                // Bug fixed
+                if (pps >= ps.length) {
+                    return false;
+                }
+                temp.setAddress(ps[pps]); // (*++pps)
                 model.getCharMask()[temp.getSymbol()] = model.getEscCount();
             } while (--i != 0);
             psee2c.incSumm((int) coder.getSubRange().getScale());

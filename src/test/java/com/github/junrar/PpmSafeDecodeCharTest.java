@@ -23,6 +23,11 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 public class PpmSafeDecodeCharTest {
 
     private static final String FIXTURE = "/com/github/junrar/ppm/hostile-ppm-decodechar.rar";
+    private static final String[] PS_FIXTURES = {
+        "/com/github/junrar/ppm/hostile-ppm-ps-collect.rar",
+        "/com/github/junrar/ppm/hostile-ppm-ps-count.rar",
+        "/com/github/junrar/ppm/hostile-ppm-ps-mask.rar"
+    };
     private static final String EXPECTED = "/com/github/junrar/ppm/legit-maxmb63-expected.bin";
 
     @Test
@@ -49,8 +54,44 @@ public class PpmSafeDecodeCharTest {
         assertSurface(this::extractWithArchiveStream);
     }
 
+    @Test
+    @Timeout(5)
+    public void hostilePpmPsBoundsAreBoundedOnJunrarFileSurface() throws Exception {
+        for (String fixture : PS_FIXTURES) {
+            assertSurface(fixture, this::extractWithJunrarFile);
+        }
+    }
+
+    @Test
+    @Timeout(5)
+    public void hostilePpmPsBoundsAreBoundedOnJunrarStreamSurface() throws Exception {
+        for (String fixture : PS_FIXTURES) {
+            assertSurface(fixture, this::extractWithJunrarStream);
+        }
+    }
+
+    @Test
+    @Timeout(5)
+    public void hostilePpmPsBoundsAreBoundedOnArchiveFileSurface() throws Exception {
+        for (String fixture : PS_FIXTURES) {
+            assertSurface(fixture, this::extractWithArchiveFile);
+        }
+    }
+
+    @Test
+    @Timeout(5)
+    public void hostilePpmPsBoundsAreBoundedOnArchiveStreamSurface() throws Exception {
+        for (String fixture : PS_FIXTURES) {
+            assertSurface(fixture, this::extractWithArchiveStream);
+        }
+    }
+
     private void assertSurface(Extraction extraction) throws Exception {
-        SurfaceResult result = runSurface(extraction);
+        assertSurface(FIXTURE, extraction);
+    }
+
+    private void assertSurface(String fixture, Extraction extraction) throws Exception {
+        SurfaceResult result = runSurface(fixture, extraction);
         if (result.thrown == null) {
             assertThat(result.bytes).isEqualTo(readResource(EXPECTED));
         } else {
@@ -61,11 +102,15 @@ public class PpmSafeDecodeCharTest {
     }
 
     private SurfaceResult runSurface(Extraction extraction) throws Exception {
+        return runSurface(FIXTURE, extraction);
+    }
+
+    private SurfaceResult runSurface(String fixture, Extraction extraction) throws Exception {
         Path root = Files.createTempDirectory("junrar-ppm-safe-");
         Path archive = root.resolve("hostile.rar");
         Path destination = root.resolve("out");
         Files.createDirectories(destination);
-        Files.write(archive, readResource(FIXTURE));
+        Files.write(archive, readResource(fixture));
         try {
             AtomicReference<byte[]> extracted = new AtomicReference<>();
             Throwable thrown = catchThrowable(() -> extracted.set(extraction.extract(archive, destination)));

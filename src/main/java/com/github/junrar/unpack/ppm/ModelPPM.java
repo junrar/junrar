@@ -438,6 +438,10 @@ public class ModelPPM {
                     pc.setAddress(p.getSuccessor()); // =p->Successor;
                     break;
                 }
+                // Bug fixed
+                if (pps >= ps.length) {
+                    return 0;
+                }
                 ps[pps++] = p.getAddress();
             } while (pc.getSuffix() != 0);
 
