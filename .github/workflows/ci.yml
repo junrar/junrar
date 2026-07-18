@@ -89,7 +89,7 @@ jobs:
       - name: Compile JRE 8 smoke runner
         run: |
           mkdir -p build/jre8smoke
-          javac --release 8 -cp build/libs/junrar-*.jar -d build/jre8smoke \
+          javac --release 8 -encoding UTF-8 -cp build/libs/junrar-*.jar -d build/jre8smoke \
             src/jre8smoke/java/com/github/junrar/jre8smoke/Jre8SmokeMain.java
 
       - uses: actions/setup-java@v5
