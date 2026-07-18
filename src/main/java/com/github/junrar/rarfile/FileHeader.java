@@ -92,6 +92,17 @@ public class FileHeader extends BlockHeader {
 
     private int recoverySectors = -1;
 
+    /**
+     * How many bytes of the type-specific header buffer field-by-field
+     * parsing actually consumed (P0.7, issue #12). Equal to the buffer's
+     * full length except for an old-style ({@code LHD_COMMENT}) file header,
+     * whose trailing bytes are a legacy embedded comment blob this
+     * constructor never reads -- see {@link #hasComment()}, used by
+     * {@code Archive}'s header-CRC coverage computation (unrar
+     * {@code CRCProcessedOnly}, {@code d861246:arcread.cpp:430-431}).
+     */
+    private final int parsedLength;
+
     public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
 
@@ -236,6 +247,8 @@ public class FileHeader extends BlockHeader {
             arcTime = arcTimeTuple.time;
             position = arcTimeTuple.position;
         }
+
+        this.parsedLength = Math.min(position, fileHeader.length);
     }
 
     private static boolean isFilenameValid(String filename) {
@@ -657,6 +670,32 @@ public class FileHeader extends BlockHeader {
 
     public boolean hasExtTime() {
         return (flags & LHD_EXTTIME) != 0;
+    }
+
+    /**
+     * Whether this header carries an old-style (up to RAR 2.9) comment blob
+     * embedded past the fields this constructor parses (P0.7, issue #12;
+     * unrar {@code CommentInHeader}, {@code d861246:arcread.cpp:268}). Only
+     * meaningful for {@link #isFileHeader()} entries -- see
+     * {@link #getParsedLength()}.
+     *
+     * @return isComment
+     */
+    public boolean hasComment() {
+        return (flags & LHD_COMMENT) != 0;
+    }
+
+    /**
+     * How many bytes of the type-specific header buffer field-by-field
+     * parsing actually consumed (P0.7, issue #12) -- see
+     * {@link #hasComment()}.
+     *
+     * @return the parsed length, in bytes, relative to the start of the
+     *         type-specific header buffer (i.e. excluding the base and block
+     *         header portions).
+     */
+    public int getParsedLength() {
+        return parsedLength;
     }
 
     public boolean isLargeBlock() {

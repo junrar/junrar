@@ -17,6 +17,7 @@
  */
 package com.github.junrar.crc;
 
+import java.util.zip.CRC32;
 
 /**
  * DOCUMENT ME
@@ -27,6 +28,34 @@ package com.github.junrar.crc;
 public class RarCRC {
 
     private RarCRC() {
+    }
+
+    /**
+     * Computes the RAR3 16-bit header-CRC check (P0.7, issue #12; unrar
+     * {@code GetCRC15}, {@code d861246:rawread.cpp}): standard CRC-32 over
+     * {@code header[offset, offset + length)}, masked to the low 16 bits.
+     * <p>
+     * unrar computes this as {@code ~CRC32raw(...) & 0xffff}, where
+     * {@code CRC32raw} is unrar's own pre-final-invert running accumulator
+     * ({@code crc.cpp}); bitwise-NOT of a pre-invert CRC-32 accumulator is
+     * exactly the standard (post-invert) CRC-32 value, which is what
+     * {@link CRC32#getValue()} already returns -- no extra inversion needed
+     * here (verified against real {@code rar}-produced archives at three
+     * independent header types before this method was written).
+     *
+     * @param header the raw header bytes, including the 2-byte headCRC field
+     *               itself at the front (NOT covered by the checksum)
+     * @param offset start offset within {@code header} (2, to skip headCRC)
+     * @param length number of bytes to cover, non-positive means "none"
+     * @return the 16-bit header CRC
+     */
+    public static short computeHeaderCrc16(final byte[] header, final int offset, final int length) {
+        if (length <= 0) {
+            return 0;
+        }
+        final CRC32 crc32 = new CRC32();
+        crc32.update(header, offset, length);
+        return (short) (crc32.getValue() & 0xffffL);
     }
 
     /**

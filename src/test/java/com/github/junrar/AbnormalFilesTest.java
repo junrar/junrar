@@ -108,7 +108,78 @@ public class AbnormalFilesTest {
             Arguments.of("abnormal/loop.rar", CorruptHeaderException.class),
             Arguments.of("abnormal/loop1.rar", CorruptHeaderException.class),
             Arguments.of("abnormal/loop2.rar", CorruptHeaderException.class),
-            Arguments.of("abnormal/loop3.rar", CorruptHeaderException.class)
+            Arguments.of("abnormal/loop3.rar", CorruptHeaderException.class),
+            // P0.7 / issue #12: the archive OPENS and lists fine (record + continue,
+            // unencrypted FILE header -- FileHeader.isBrokenHeader() is true, see
+            // HeaderCrcVerificationTest), but *extracting* the broken-header entry is
+            // junrar's one conscious, narrower-scoped divergence from unrar's own
+            // "warn and let the data CRC decide" tolerance: it throws
+            // CorruptHeaderException instead.
+            Arguments.of("abnormal/bad-header-crc.rar", CorruptHeaderException.class)
+        );
+    }
+
+    // P0.7 / issue #12: encrypted-headers archive with a corrupted FILE header CRC --
+    // fatal at open (unrar: decrypt succeeds, CRC still fails to match -> stop), so this
+    // needs the correct password to even reach the CRC check and can't share the
+    // no-password method source above. Same four-surface shape (Junrar.extract from File
+    // and InputStream; manual Archive loop from File and InputStream).
+
+    @ParameterizedTest
+    @MethodSource("provideEncryptedFilesAndExpectedExceptionType")
+    public void extractEncryptedFile(String filePath, String password, Class<?> expectedException) throws Exception {
+        File file = new File(getClass().getResource(filePath).toURI());
+
+        Throwable thrown = catchThrowable(() -> Junrar.extract(file, tempDir, password));
+
+        assertThat(thrown).isInstanceOf(RarException.class);
+        assertThat(thrown).isExactlyInstanceOf(expectedException);
+    }
+
+    @ParameterizedTest
+    @MethodSource("provideEncryptedFilesAndExpectedExceptionType")
+    public void extractEncryptedFromStream(String filePath, String password, Class<?> expectedException) throws Exception {
+        try (InputStream stream = getClass().getResourceAsStream(filePath)) {
+            Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir, password));
+
+            assertThat(thrown).isInstanceOf(RarException.class);
+            assertThat(thrown).isExactlyInstanceOf(expectedException);
+        }
+    }
+
+    @ParameterizedTest
+    @MethodSource("provideEncryptedFilesAndExpectedExceptionType")
+    public void extractEncryptedFileByArchive(String filePath, String password, Class<?> expectedException) throws Exception {
+        File file = new File(getClass().getResource(filePath).toURI());
+
+        Throwable thrown = catchThrowable(() -> {
+            try (Archive archive = new Archive(file, password)) {
+                // Construction itself must throw; nothing further to do.
+            }
+        });
+
+        assertThat(thrown).isInstanceOf(RarException.class);
+        assertThat(thrown).isExactlyInstanceOf(expectedException);
+    }
+
+    @ParameterizedTest
+    @MethodSource("provideEncryptedFilesAndExpectedExceptionType")
+    public void extractEncryptedStreamByArchive(String filePath, String password, Class<?> expectedException) throws Exception {
+        try (InputStream stream = getClass().getResourceAsStream(filePath)) {
+            Throwable thrown = catchThrowable(() -> {
+                try (Archive archive = new Archive(stream, password)) {
+                    // Construction itself must throw; nothing further to do.
+                }
+            });
+
+            assertThat(thrown).isInstanceOf(RarException.class);
+            assertThat(thrown).isExactlyInstanceOf(expectedException);
+        }
+    }
+
+    private static Stream<Arguments> provideEncryptedFilesAndExpectedExceptionType() {
+        return Stream.of(
+            Arguments.of("abnormal/bad-crc-enc-headers.rar", "secret", CorruptHeaderException.class)
         );
     }
 

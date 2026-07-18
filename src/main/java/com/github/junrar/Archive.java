@@ -18,6 +18,7 @@
  */
 package com.github.junrar;
 
+import com.github.junrar.crc.RarCRC;
 import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.CorruptHeaderException;
@@ -419,11 +420,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     final byte[] mainbuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
                     rawData.readFully(mainbuff, mainbuff.length);
                     final MainHeader mainhead = new MainHeader(block, mainbuff);
+                    verifyHeaderCrc(mainhead, fileLength, baseBlockBuffer, mainbuff);
                     this.headers.add(mainhead);
                     this.newMhd = mainhead;
                     break;
 
                 case SignHeader:
+                    // Upstream-exempt (HEAD3_SIGN): no header-CRC verification at all.
                     toRead = SignHeader.signHeaderSize;
                     final byte[] signBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
                     rawData.readFully(signBuff, signBuff.length);
@@ -432,6 +435,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     break;
 
                 case AvHeader:
+                    // Upstream-exempt (HEAD3_AV): "Old AV header does not have header
+                    // CRC properly set" (d861246:arcread.cpp:514-523).
                     toRead = AVHeader.avHeaderSize;
                     final byte[] avBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
                     rawData.readFully(avBuff, avBuff.length);
@@ -444,6 +449,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     final byte[] commBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
                     rawData.readFully(commBuff, commBuff.length);
                     final CommentHeader commHead = new CommentHeader(block, commBuff);
+                    verifyHeaderCrc(commHead, fileLength, baseBlockBuffer, commBuff);
                     this.headers.add(commHead);
 
                     newpos = commHead.getPositionInFile() + commHead.getHeaderSize(isEncrypted());
@@ -465,16 +471,19 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                         toRead += EndArcHeader.endArcVolumeNumberSize;
                     }
                     EndArcHeader endArcHead;
+                    final byte[] endArchBuff;
                     if (toRead > 0) {
-                        final byte[] endArchBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                        endArchBuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
                         rawData.readFully(endArchBuff, endArchBuff.length);
                         endArcHead = new EndArcHeader(block, endArchBuff);
                     } else {
+                        endArchBuff = new byte[0];
                         endArcHead = new EndArcHeader(block, null);
                     }
                     if (!this.newMhd.isMultiVolume() && !endArcHead.isValid()) {
                         throw new CorruptHeaderException("Invalid End Archive Header");
                     }
+                    verifyHeaderCrc(endArcHead, fileLength, baseBlockBuffer, endArchBuff);
                     this.headers.add(endArcHead);
                     return;
 
@@ -498,6 +507,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             }
 
                             final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
+                            // unrar CRCProcessedOnly (d861246:arcread.cpp:268,430-431):
+                            // an old-style embedded comment (LHD_COMMENT) on a genuine
+                            // FILE header leaves unparsed trailing bytes past
+                            // getParsedLength() -- cover only the processed prefix then.
+                            // NEWSUB_HEAD always consumes its whole buffer as subData,
+                            // so the distinction is moot there; always use the full
+                            // buffer.
+                            final int fileHeaderCoverage = (fh.isFileHeader() && fh.hasComment())
+                                ? BaseBlock.BaseBlockSize + BlockHeader.blockHeaderSize + fh.getParsedLength()
+                                : -1;
+                            verifyHeaderCrc(fh, fileLength, fileHeaderCoverage, baseBlockBuffer, blockHeaderBuffer, fileHeaderBuffer);
                             this.headers.add(fh);
                             newpos = fh.getPositionInFile() + fh.getHeaderSize(isEncrypted()) + fh.getFullPackSize();
                             this.channel.setPosition(newpos);
@@ -515,6 +535,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
                             rawData.readFully(protectHeaderBuffer, protectHeaderBuffer.length);
                             final ProtectHeader ph = new ProtectHeader(blockHead, protectHeaderBuffer);
+                            verifyHeaderCrc(ph, fileLength, baseBlockBuffer, blockHeaderBuffer, protectHeaderBuffer);
                             newpos = ph.getPositionInFile() + ph.getHeaderSize(isEncrypted()) + ph.getDataSize();
                             this.channel.setPosition(newpos);
 
@@ -539,12 +560,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     final MacInfoHeader macHeader = new MacInfoHeader(subHead,
                                         macHeaderbuffer);
                                     macHeader.print();
+                                    verifyHeaderCrc(macHeader, fileLength, baseBlockBuffer, blockHeaderBuffer, subHeadbuffer, macHeaderbuffer);
                                     this.headers.add(macHeader);
 
                                     break;
                                 }
                                 // TODO implement other subheaders
                                 case BEEA_HEAD:
+                                    // Not parsed (junrar never reads BEEA_HEAD's payload,
+                                    // unlike unrar) -- no CRC check: our read stops short
+                                    // of unrar's true coverage, so a partial-buffer check
+                                    // would false-positive against a real archive.
                                     break;
                                 case EA_HEAD: {
                                     final byte[] eaHeaderBuffer = safelyAllocate(EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
@@ -552,15 +578,23 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     final EAHeader eaHeader = new EAHeader(subHead,
                                         eaHeaderBuffer);
                                     eaHeader.print();
+                                    verifyHeaderCrc(eaHeader, fileLength, baseBlockBuffer, blockHeaderBuffer, subHeadbuffer, eaHeaderBuffer);
                                     this.headers.add(eaHeader);
 
                                     break;
                                 }
                                 case NTACL_HEAD:
+                                    // Same rationale as BEEA_HEAD: not parsed here.
                                     break;
                                 case STREAM_HEAD:
+                                    // Same rationale as BEEA_HEAD: not parsed here.
                                     break;
                                 case UO_HEAD:
+                                    // Upstream-exempt (HEAD3_OLDSERVICE + UO_HEAD): "Old
+                                    // Unix owners header didn't include string fields into
+                                    // header size, but included them into CRC, so it
+                                    // couldn't be verified with generic approach here"
+                                    // (d861246:arcread.cpp:514-523).
                                     toRead = subHead.getHeaderSize(false);
                                     toRead -= BaseBlock.BaseBlockSize;
                                     toRead -= BlockHeader.blockHeaderSize;
@@ -596,6 +630,101 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     }
             }
             // logger.info("\n--------end header--------");
+        }
+    }
+
+    /**
+     * unrar RAR3 header-CRC verification (P0.7, issue #12; {@code d861246:arcread.cpp
+     * :514-545}, math = {@code GetCRC15} at {@code d861246:rawread.cpp}): full coverage
+     * of every byte in {@code segments}. See
+     * {@link #verifyHeaderCrc(BaseBlock, long, int, byte[]...)}.
+     */
+    private void verifyHeaderCrc(final BaseBlock block, final long fileLength, final byte[]... segments) throws IOException, CorruptHeaderException {
+        verifyHeaderCrc(block, fileLength, -1, segments);
+    }
+
+    /**
+     * unrar RAR3 header-CRC verification (P0.7, issue #12; {@code d861246:arcread.cpp
+     * :431-445} file-header check, {@code :514-545} generic check + exemptions;
+     * {@code d861246:rawread.cpp GetCRC15}): 16-bit CRC over header bytes
+     * [2, coverageLength). A mismatch is <em>recorded</em> on {@code block}
+     * ({@link BaseBlock#setBrokenHeader}) and logged; unencrypted headers keep parsing
+     * (upstream "warn and continue" tolerance). Encrypted headers are fatal at open
+     * (upstream: decrypt succeeds, CRC still fails to match -> stop). EndArc headers
+     * with {@code EARC_REVSPACE} get the trailing-7-zero-bytes recovery check before
+     * being marked broken.
+     * <p>
+     * Callers skip this method entirely for upstream-exempt types (SIGN, AV, old-Unix-
+     * owner sub-blocks -- "Old AV header does not have header CRC properly set") and for
+     * sub-block types junrar does not fully parse (BEEA_HEAD/NTACL_HEAD/STREAM_HEAD --
+     * a partial read would false-positive against a real archive's true, fuller-coverage
+     * CRC) and for {@link MarkHeader} (no CRC concept, its own {@code isSignature}/
+     * {@code isValid} checks the magic bytes instead).
+     * <p>
+     * Divergence (conscious, issue #12): unrar warns and lets the file data CRC decide
+     * at extract time for a broken FILE/NEWSUB header; junrar instead throws
+     * {@link CorruptHeaderException} when a {@link BaseBlock#isBrokenHeader()} entry is
+     * extracted (see {@link #doExtractFile}) -- junrar has no CLI warning channel, and
+     * silent garbage extraction would be worse.
+     *
+     * @param block          the freshly parsed header (its own headCRC is compared)
+     * @param fileLength     the archive's total length (EndArc REVSPACE recovery seeks
+     *                       to {@code fileLength - 7})
+     * @param coverageLength number of header bytes to feed the CRC (counted from the
+     *                       start of {@code segments}, concatenated), or a negative
+     *                       value to cover every byte in {@code segments}
+     * @param segments       the raw byte buffers that make up this header, in read
+     *                       order (base block, block header, type-specific)
+     */
+    private void verifyHeaderCrc(final BaseBlock block, final long fileLength, final int coverageLength, final byte[]... segments) throws IOException, CorruptHeaderException {
+        int totalLength = 0;
+        for (final byte[] segment : segments) {
+            totalLength += segment.length;
+        }
+        final byte[] header = new byte[totalLength];
+        int pos = 0;
+        for (final byte[] segment : segments) {
+            System.arraycopy(segment, 0, header, pos, segment.length);
+            pos += segment.length;
+        }
+        final int coverage = coverageLength >= 0 ? coverageLength : totalLength;
+        final short expected = RarCRC.computeHeaderCrc16(header, 2, coverage - 2);
+        if (block.getHeadCRC() == expected) {
+            return;
+        }
+        if (block.getHeaderType() == UnrarHeadertype.EndArcHeader
+            && block.hasRevSpace()
+            && isEndArcRevSpaceRecovered(fileLength)) {
+            return;
+        }
+        block.setBrokenHeader(true);
+        logger.warn("Header CRC mismatch for {} at position {}", block.getHeaderType(), block.getPositionInFile());
+        if (this.newMhd != null && this.newMhd.isEncrypted()) {
+            throw new CorruptHeaderException("Header CRC mismatch on encrypted header at position " + block.getPositionInFile());
+        }
+    }
+
+    /**
+     * unrar's ENDARC {@code EARC_REVSPACE} recovery ({@code d861246:arcread.cpp
+     * :525-535}): a REV-recovery-volume archive's last 7 bytes can legitimately be zero
+     * (REV files stash their own metadata there), which would otherwise fail the generic
+     * header-CRC check; treat that specific shape as recovered, not broken.
+     */
+    private boolean isEndArcRevSpaceRecovered(final long fileLength) throws IOException {
+        if (fileLength < 7) {
+            return false;
+        }
+        final long savedPosition = this.channel.getPosition();
+        try {
+            this.channel.setPosition(fileLength - 7);
+            for (int i = 0; i < 7; i++) {
+                if (this.channel.read() != 0) {
+                    return false;
+                }
+            }
+            return true;
+        } finally {
+            this.channel.setPosition(savedPosition);
         }
     }
 
@@ -810,6 +939,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private void doExtractFile(FileHeader hd, final OutputStream os, boolean skip)
         throws RarException, IOException {
+        // P0.7 / issue #12 conscious divergence: unrar warns and lets the file data CRC
+        // decide at extract time for a broken FILE/NEWSUB header; junrar has no CLI
+        // warning channel, so silent garbage extraction would be worse -- refuse instead.
+        if (hd.isBrokenHeader()) {
+            throw new CorruptHeaderException("Cannot extract '" + hd.getFileName() + "': header CRC mismatch");
+        }
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);

@@ -90,6 +90,8 @@ public class BaseBlock {
     protected short flags = 0;
     protected short headerSize = 0;
 
+    private boolean brokenHeader;
+
     /**
      *
      */
@@ -117,12 +119,46 @@ public class BaseBlock {
     }
 
 
+    /**
+     * Whether this header's stored CRC failed the P0.7 verification (issue #12): unrar's
+     * "record and continue" tolerance -- a mismatch does not, by itself, abort archive
+     * open. {@link com.github.junrar.rarfile.FileHeader} extraction refuses a broken
+     * header instead (see {@code Archive#doExtractFile}); junrar's one conscious,
+     * narrower-scoped divergence from unrar's own "warn at open, let the file data CRC
+     * decide at extract" tolerance. Always {@code false} for header types exempt from
+     * verification (SIGN, AV, old-Unix-owner sub-blocks) and for {@link MarkHeader},
+     * which has no CRC of its own.
+     *
+     * @return true if the header CRC did not match the computed value.
+     */
+    public boolean isBrokenHeader() {
+        return brokenHeader;
+    }
+
+    /**
+     * @param brokenHeader see {@link #isBrokenHeader()}.
+     */
+    public void setBrokenHeader(boolean brokenHeader) {
+        this.brokenHeader = brokenHeader;
+    }
+
     public boolean hasArchiveDataCRC() {
         return (this.flags & EARC_DATACRC) != 0;
     }
 
     public boolean hasVolumeNumber() {
         return (this.flags & EARC_VOLNUMBER) != 0;
+    }
+
+    /**
+     * Whether this (EndArc) header signals REV-recovery-volume space (P0.7, issue #12;
+     * unrar {@code EARC_REVSPACE}): its last 7 bytes may legitimately be zero, which
+     * {@code Archive}'s header-CRC verification treats as a recovery, not a mismatch.
+     *
+     * @return isRevSpace
+     */
+    public boolean hasRevSpace() {
+        return (this.flags & EARC_REVSPACE) != 0;
     }
 
     public boolean hasEncryptVersion() {
