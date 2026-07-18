@@ -198,7 +198,7 @@ public final class Unpack extends Unpack20 {
                     break;
                 }
                 if (Ch == ppmEscChar) {
-                    int NextCh = ppm.decodeChar();
+                    int NextCh = safePpmDecodeChar();
                     if (NextCh == 0) {
                         if (!readTables()) {
                             break;
@@ -218,7 +218,7 @@ public final class Unpack extends Unpack20 {
                         int Distance = 0, Length = 0;
                         boolean failed = false;
                         for (int I = 0; I < 4 && !failed; I++) {
-                            int ch = ppm.decodeChar();
+                            int ch = safePpmDecodeChar();
                             if (ch == -1) {
                                 failed = true;
                             } else {
@@ -238,7 +238,7 @@ public final class Unpack extends Unpack20 {
                         continue;
                     }
                     if (NextCh == 5) {
-                        int Length = ppm.decodeChar();
+                        int Length = safePpmDecodeChar();
                         if (Length == -1) {
                             break;
                         }
@@ -566,6 +566,14 @@ public final class Unpack extends Unpack20 {
         lastLength = length;
     }
 
+    private int safePpmDecodeChar() throws IOException, RarException {
+        int value = ppm.decodeChar();
+        if (value == -1) {
+            ppmError = true;
+        }
+        return value;
+    }
+
     private void copyString(int length, final int distance) {
         // System.out.println("copyString(" + length + ", " + distance + ")");
 
@@ -775,23 +783,23 @@ public final class Unpack extends Unpack20 {
     }
 
     private boolean readVMCodePPM() throws IOException, RarException {
-        int FirstByte = ppm.decodeChar();
+        int FirstByte = safePpmDecodeChar();
         if (FirstByte == -1) {
             return (false);
         }
         int Length = (FirstByte & 7) + 1;
         if (Length == 7) {
-            int B1 = ppm.decodeChar();
+            int B1 = safePpmDecodeChar();
             if (B1 == -1) {
                 return (false);
             }
             Length = B1 + 7;
         } else if (Length == 8) {
-            int B1 = ppm.decodeChar();
+            int B1 = safePpmDecodeChar();
             if (B1 == -1) {
                 return (false);
             }
-            int B2 = ppm.decodeChar();
+            int B2 = safePpmDecodeChar();
             if (B2 == -1) {
                 return (false);
             }
@@ -799,7 +807,7 @@ public final class Unpack extends Unpack20 {
         }
         List<Byte> vmCode = new ArrayList<>();
         for (int I = 0; I < Length; I++) {
-            int Ch = ppm.decodeChar();
+            int Ch = safePpmDecodeChar();
             if (Ch == -1) {
                 return (false);
             }
