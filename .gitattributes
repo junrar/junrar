@@ -1,1 +1,9 @@
 * text=auto
+
+# Byte-identical oracle fixtures for round-trip/PPM tests (e.g.
+# PpmMaxMbTest's *-expected.bin): `text=auto` heuristically classifies
+# them as text (pure ASCII, no NUL byte) and autocrlf on Windows
+# checkout rewrites every LF to CRLF, corrupting the byte-for-byte
+# comparison against real-unrar-decoded output (issue #37). Never
+# text-normalize these regardless of platform/autocrlf.
+*.bin binary
