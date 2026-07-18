@@ -19,6 +19,21 @@ To run the tests, just run `./gradlew check`.
 
 Before committing, run `./gradlew build` to ensure the build and tests run correctly.
 
+### PPMd heap oracle
+
+`./gradlew ppmHeapDumpTest` extracts `ppm/legit-maxmb63.rar` twice using fresh
+`Archive` instances, streams the live allocator bytes in the historical `[1, heapEnd)`
+span, and checks both raw dumps against each other and the committed
+`ppm/legit-maxmb63-heap.gz` golden. The golden is compressed raw PPMd heap state, not
+extracted file content; it is generated only from that committed fixture.
+
+Regenerate the oracle only after an intentional, reviewed change to the PPMd heap layout:
+
+```sh
+./gradlew generatePpmHeapDump
+./gradlew ppmHeapDumpTest
+```
+
 ## Regression testing
 ### Context
 Regression tests are run against a corpus of RAR files. The corpus is a ~7 GB zip file containing over 13,000 RAR files.

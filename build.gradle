@@ -252,3 +252,40 @@ tasks.named("dependencyUpdates").configure {
         isNonStable(it.candidate.version) && !isNonStable(it.currentVersion)
     }
 }
+
+def ppmHeapGolden = file('src/test/resources/com/github/junrar/ppm/legit-maxmb63-heap.gz')
+
+tasks.named('test', Test).configure {
+    useJUnitPlatform {
+        excludeTags 'generate'
+    }
+}
+
+tasks.register('ppmHeapDumpTest', Test) {
+    description = 'Checks two PPMd heap dumps against the committed golden.'
+    group = 'verification'
+    dependsOn testClasses
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+    filter {
+        includeTestsMatching 'com.github.junrar.PpmHeapDumpTest'
+    }
+    useJUnitPlatform {
+        includeTags 'check'
+    }
+}
+
+tasks.register('generatePpmHeapDump', Test) {
+    description = 'Regenerates the committed PPMd heap golden from its fixture.'
+    group = 'verification'
+    dependsOn testClasses
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+    systemProperty 'ppm.heap.golden', ppmHeapGolden.absolutePath
+    filter {
+        includeTestsMatching 'com.github.junrar.PpmHeapDumpTest'
+    }
+    useJUnitPlatform {
+        includeTags 'generate'
+    }
+}
