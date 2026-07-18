@@ -155,7 +155,11 @@ public class FileHeader extends BlockHeader {
                     && fileNameBytes[length] != 0) {
                     length++;
                 }
-                fileName = new String(fileNameBytes, 0, length, StandardCharsets.UTF_8);
+                // unrar 3.7.3 arcread.cpp:186-205: the ANSI-fallback bytes
+                // (before the NUL, or the whole field when there is no
+                // split) get NO charset conversion (raw strncpyz) -- decode
+                // byte-transparently, not as UTF-8.
+                fileName = new String(fileNameBytes, 0, length, StandardCharsets.ISO_8859_1);
                 if (length != nameSize) {
                     length++;
                     fileNameW = FileNameDecoder.decode(fileNameBytes, length);
@@ -166,7 +170,10 @@ public class FileHeader extends BlockHeader {
                     fileNameW = new String(fileNameBytes, 0, nameSize, StandardCharsets.UTF_8);
                 }
             } else {
-                fileName = new String(fileNameBytes, StandardCharsets.UTF_8);
+                // unrar 3.7.3 arcread.cpp:186-205: the non-LHD_UNICODE path
+                // does no charset conversion either (raw strncpyz) -- decode
+                // byte-transparently, not as UTF-8.
+                fileName = new String(fileNameBytes, StandardCharsets.ISO_8859_1);
                 fileNameW = "";
             }
 
