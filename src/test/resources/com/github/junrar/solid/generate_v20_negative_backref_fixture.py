@@ -126,6 +126,17 @@ def le32(v):
     return struct.pack("<I", v)
 
 
+def crc16(header_from_offset2: bytes) -> int:
+    """RAR3 16-bit header-CRC (P0.7, issue #12): CRC-32 over the header bytes from
+    offset 2 (past the stored headCRC field), low 16 bits -- unrar GetCRC15. Added when
+    P0.7 landed: this fixture's original placeholder headCRC=0x0000 on every header
+    made junrar's new extract-time broken-header refusal fire on file "f1" before ever
+    reaching the CopyString20 guard this test exists to pin (Unpack20SolidTest), a
+    regression P0.7's own corpus-gate mandate requires fixing before landing. Real CRCs
+    change no other byte -- the hand-assembled RAR v20 bitstream bodies are untouched."""
+    return zlib.crc32(header_from_offset2) & 0xFFFF
+
+
 def file_header(name, flags, unp_version, unp_method, unp_size, pack_size, file_crc):
     name_bytes = name.encode("ascii")
     body = (
@@ -139,18 +150,18 @@ def file_header(name, flags, unp_version, unp_method, unp_size, pack_size, file_
         + name_bytes
     )
     header_size = 7 + 4 + len(body)
-    base = le16(0) + bytes([0x74]) + le16(flags) + le16(header_size)
+    rest = bytes([0x74]) + le16(flags) + le16(header_size)
     block = le32(pack_size)
-    return base + block + body
+    return le16(crc16(rest + block + body)) + rest + block + body
 
 
 def main():
     mark = bytes([0x52, 0x61, 0x72, 0x21, 0x1A, 0x07, 0x00])
 
     main_flags = 0x0008  # MHD_SOLID
-    main_base = le16(0) + bytes([0x73]) + le16(main_flags) + le16(13)
+    main_rest = bytes([0x73]) + le16(main_flags) + le16(13)
     main_body = le16(0) + le32(0)  # highPosAv, posAv
-    main_header = main_base + main_body
+    main_header = le16(crc16(main_rest + main_body)) + main_rest + main_body
 
     body0 = build_body0()
     body1 = build_body1()
