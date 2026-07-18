@@ -66,6 +66,45 @@ jobs:
       - uses: codecov/codecov-action@v7
         if: matrix.os == 'ubuntu-latest'
 
+  jre8-smoke:
+    runs-on: ubuntu-latest
+    name: JRE 8 runtime extraction smoke
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v5
+        with:
+          java-version: '21'
+          java-package: 'jdk'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+      - name: Build jar with the JDK 21 toolchain
+        run: ./gradlew jar
+
+      # javac --release 8 needs a JDK >= 9 (javac itself); the JDK 21 set up
+      # above is still active here. JUnit 5 cannot run on JRE 8 (manual §8.1),
+      # so this compiles one framework-free `public static void main` runner,
+      # not the test suite.
+      - name: Compile JRE 8 smoke runner
+        run: |
+          mkdir -p build/jre8smoke
+          javac --release 8 -cp build/libs/junrar-*.jar -d build/jre8smoke \
+            src/jre8smoke/java/com/github/junrar/jre8smoke/Jre8SmokeMain.java
+
+      - uses: actions/setup-java@v5
+        with:
+          java-version: '8'
+          java-package: 'jdk'
+          distribution: 'temurin'
+
+      - name: Run extraction smoke on a real JRE 8
+        run: |
+          jar="$(ls build/libs/junrar-*.jar)"
+          slf4j_jar="$(find "$HOME/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api" -name '*.jar' | head -1)"
+          java -cp "build/jre8smoke:${jar}:${slf4j_jar}" \
+            com.github.junrar.jre8smoke.Jre8SmokeMain
+
   version:
     runs-on: macos-latest
     if: github.repository_owner == 'junrar' && github.ref == 'refs/heads/master'
