@@ -136,6 +136,8 @@ public class BaseBlock {
     }
 
     /**
+     * Sets whether this header's stored CRC failed verification.
+     *
      * @param brokenHeader see {@link #isBrokenHeader()}.
      */
     public void setBrokenHeader(boolean brokenHeader) {
