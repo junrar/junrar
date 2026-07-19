@@ -32,6 +32,17 @@ class UnpackFilterStackLimitTest {
     }
 
     @Test
+    void givenFilterIndex8193_whenAddingNewFilter_thenRejects() throws Exception {
+        Unpack unpack = new Unpack(null);
+        filters(unpack).addAll(repeatedFilters(MAX3_UNPACK_FILTERS + 1));
+        oldFilterLengths(unpack).addAll(repeatedLengths(MAX3_UNPACK_FILTERS + 1));
+        setLastFilter(unpack, MAX3_UNPACK_FILTERS + 1);
+
+        assertThat(addVmCode(unpack, newFilterVmCode())).isFalse();
+        assertThat(filters(unpack)).hasSize(MAX3_UNPACK_FILTERS + 1);
+    }
+
+    @Test
     void givenStackSize8192_whenAddingFilter_thenAcceptsAndGrowsOnce() throws Exception {
         Unpack unpack = withOneFilter();
         prgStack(unpack).addAll(repeatedFilters(MAX3_UNPACK_FILTERS));
