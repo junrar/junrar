@@ -396,7 +396,7 @@ public abstract class Unpack15 extends BitInput {
             }
         }
 
-        ChSetB[DistancePlace] = ChSetB[NewDistancePlace];
+        ChSetB[DistancePlace & 0xff] = ChSetB[NewDistancePlace];
         ChSetB[NewDistancePlace] = Distance;
 
         Distance = ((Distance & 0xff00) | (fgetbits() >>> 8)) >>> 1;

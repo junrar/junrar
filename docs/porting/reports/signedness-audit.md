@@ -179,6 +179,15 @@ chunk).
 0x00}` keeps the valid index `255` path exercised. This is array-bound coverage only; it
 does not claim additional shift coverage.
 
+M1.3 index audit of `longLZ`: `DistancePlace = decodeNum(...)` can return `256` on corrupt
+RAR1.5 input, exactly like `FlagsPlace`. The read at the top of the rehash loop already
+masks (`ChSetB[DistancePlace & 0xff]`), but the write-back was `ChSetB[DistancePlace] = …`
+— unmasked, so index `256` threw `ArrayIndexOutOfBoundsException` past the `getFlagsBuf`
+guard. unrar 7.2.7 (`d861246:unpack15.cpp:291`) masks the write-back too
+(`ChSetB[DistancePlace & 0xff] = …`); junrar now mirrors that. Valid input keeps
+`DistancePlace < 256`, so the mask is a no-op there — no shift touched, index-bound only.
+Driven end-to-end by `abnormal/flagsplace-oob.rar` (`UnpackLimitHostileArchiveTest`).
+
 ### BitInput — full public-method enumeration
 
 `InitBitInput()`, `addbits(int)`, `getbits()`, `faddbits(int)`, `fgetbits()`,
