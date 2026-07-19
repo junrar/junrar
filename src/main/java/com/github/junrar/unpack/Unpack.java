@@ -839,7 +839,8 @@ public final class Unpack extends Unpack20 {
             FiltPos = lastFilter; // use the same filter as last time
         }
 
-        if (FiltPos > filters.size() || FiltPos > oldFilterLengths.size()) {
+        if (Integer.compareUnsigned(FiltPos, filters.size()) > 0
+                || Integer.compareUnsigned(FiltPos, oldFilterLengths.size()) > 0) {
             return (false);
         }
         lastFilter = FiltPos;
@@ -851,7 +852,7 @@ public final class Unpack extends Unpack20 {
         UnpackFilter Filter;
         if (NewFilter) { // new filter code, never used before since VM reset
             // too many different filters, corrupt archive
-            if (FiltPos > MAX3_UNPACK_FILTERS) {
+            if (Integer.compareUnsigned(FiltPos, MAX3_UNPACK_FILTERS) > 0) {
                 return (false);
             }
 

@@ -43,6 +43,14 @@ class UnpackFilterStackLimitTest {
     }
 
     @Test
+    void givenUnsignedFilterPosition_whenAddingFilter_thenRejectsWithoutThrowing() throws Exception {
+        Unpack unpack = new Unpack(null);
+
+        assertThat(addVmCode(unpack, 0x80,
+                Arrays.asList((byte) 0x40, (byte) 0, (byte) 0))).isFalse();
+    }
+
+    @Test
     void givenStackSize8192_whenAddingFilter_thenAcceptsAndGrowsOnce() throws Exception {
         Unpack unpack = withOneFilter();
         prgStack(unpack).addAll(repeatedFilters(MAX3_UNPACK_FILTERS));
@@ -81,10 +89,15 @@ class UnpackFilterStackLimitTest {
 
     private static boolean addVmCode(Unpack unpack, List<Byte> vmCode)
             throws ReflectiveOperationException, RarException {
+        return addVmCode(unpack, 0, vmCode);
+    }
+
+    private static boolean addVmCode(Unpack unpack, int firstByte, List<Byte> vmCode)
+            throws ReflectiveOperationException, RarException {
         java.lang.reflect.Method addVmCode = Unpack.class.getDeclaredMethod(
                 "addVMCode", int.class, List.class, int.class);
         addVmCode.setAccessible(true);
-        return (boolean) addVmCode.invoke(unpack, 0, vmCode, vmCode.size());
+        return (boolean) addVmCode.invoke(unpack, firstByte, vmCode, vmCode.size());
     }
 
     private static List<Byte> zeroVmCode() {
