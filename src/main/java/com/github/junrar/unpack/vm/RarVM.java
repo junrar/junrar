@@ -42,6 +42,8 @@ public class RarVM extends BitInput {
 
     public static final int VM_FIXEDGLOBALSIZE = 64;
 
+    private static final int MAX3_UNPACK_CHANNELS = 1024;
+
     private static final int regCount = 8;
 
     private static final long UINT_MASK = 0xffffFFFF; //((long)2*(long)Integer.MAX_VALUE);
@@ -1000,7 +1002,8 @@ public class RarVM extends BitInput {
                 int srcPos = 0;
                 int border = (dataSize * 2) & 0xFFffFFff;
                 setValue(false, mem, VM_GLOBALMEMADDR + 0x20, (int) dataSize);
-                if (dataSize >= VM_GLOBALMEMADDR / 2) {
+                if (dataSize >= VM_GLOBALMEMADDR / 2
+                        || Integer.compareUnsigned(channels, MAX3_UNPACK_CHANNELS) > 0) {
                     break;
                 }
 //         bytes from same channels are grouped to continual data blocks,
