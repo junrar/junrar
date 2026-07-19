@@ -1002,7 +1002,7 @@ public class RarVM extends BitInput {
                 int srcPos = 0;
                 int border = (dataSize * 2) & 0xFFffFFff;
                 setValue(false, mem, VM_GLOBALMEMADDR + 0x20, (int) dataSize);
-                if (dataSize >= VM_GLOBALMEMADDR / 2
+                if (Integer.compareUnsigned(dataSize, VM_GLOBALMEMADDR / 2) >= 0
                         || Integer.compareUnsigned(channels, MAX3_UNPACK_CHANNELS) > 0) {
                     break;
                 }

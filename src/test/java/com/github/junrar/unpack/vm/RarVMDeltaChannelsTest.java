@@ -1,5 +1,6 @@
 package com.github.junrar.unpack.vm;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -10,6 +11,34 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class RarVMDeltaChannelsTest {
+
+    @Test
+    void deltaFilterRejectsUnsignedHighBitDataSize() {
+        RarVM vm = new RarVM();
+        vm.init();
+        Arrays.fill(vm.getMem(), 0, 16, (byte) 0x55);
+
+        VMPreparedProgram program = new VMPreparedProgram();
+        program.getInitR()[0] = 1;
+        program.getInitR()[4] = Integer.MIN_VALUE;
+        VMPreparedCommand filter = new VMPreparedCommand();
+        filter.setOpCode(VMCommands.VM_STANDARD);
+        filter.getOp1().setData(VMStandardFilters.VMSF_DELTA.getFilter());
+        filter.getOp1().setType(VMOpType.VM_OPNONE);
+        filter.getOp2().setType(VMOpType.VM_OPNONE);
+        program.getCmd().add(filter);
+        VMPreparedCommand ret = new VMPreparedCommand();
+        ret.setOpCode(VMCommands.VM_RET);
+        program.getCmd().add(ret);
+        program.setCmdCount(2);
+        program.setAltCmd(Arrays.asList());
+
+        vm.execute(program);
+
+        assertThat(Arrays.copyOfRange(vm.getMem(), 0, 16)).containsExactly(bytes(
+                0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
+                0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55));
+    }
 
     @ParameterizedTest
     @MethodSource("deltaChannels")
