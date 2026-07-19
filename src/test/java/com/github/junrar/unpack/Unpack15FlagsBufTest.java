@@ -35,7 +35,8 @@ class Unpack15FlagsBufTest {
     }
 
     @Test
-    void givenFlagsFieldAtLastTableEntry_whenGetFlagsBuf_thenDoesNotThrow() {
+    void givenFlagsFieldAtLastTableEntry_whenGetFlagsBuf_thenProcessesEntry()
+            throws ReflectiveOperationException {
         Unpack15 unpack = newUnpack15();
         byte[] input = unpack.getInBuf();
         input[0] = (byte) 0xff;
@@ -43,7 +44,12 @@ class Unpack15FlagsBufTest {
         input[2] = 0;
         unpack.InitBitInput();
 
+        assertThat(unpack.decodeNum(unpack.fgetbits(), 5,
+                getDecHf2(), getPosHf2())).isEqualTo(255);
+        unpack.InitBitInput();
+        unpack.initHuff();
         assertThatCode(unpack::getFlagsBuf).doesNotThrowAnyException();
+        assertThat(unpack.FlagBuf).isEqualTo(1);
     }
 
     private static int[] getDecHf2() throws ReflectiveOperationException {
