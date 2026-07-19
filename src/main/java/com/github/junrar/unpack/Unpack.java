@@ -41,6 +41,8 @@ import java.util.Vector;
  */
 public final class Unpack extends Unpack20 {
 
+    private static final int MAX3_UNPACK_FILTERS = 8192;
+
     private final ModelPPM ppm = new ModelPPM();
 
     private int ppmEscChar;
@@ -849,7 +851,7 @@ public final class Unpack extends Unpack20 {
         UnpackFilter Filter;
         if (NewFilter) { // new filter code, never used before since VM reset
             // too many different filters, corrupt archive
-            if (FiltPos > 1024) {
+            if (FiltPos > MAX3_UNPACK_FILTERS) {
                 return (false);
             }
 
@@ -865,7 +867,25 @@ public final class Unpack extends Unpack20 {
             Filter.setExecCount(Filter.getExecCount() + 1); // ->ExecCount++;
         }
 
-        prgStack.add(StackFilter);
+        int emptyCount = 0;
+        for (int i = 0; i < prgStack.size(); i++) {
+            UnpackFilter current = prgStack.get(i);
+            prgStack.set(i - emptyCount, current);
+            if (current == null) {
+                emptyCount++;
+            }
+            if (emptyCount > 0) {
+                prgStack.set(i, null);
+            }
+        }
+        if (emptyCount == 0) {
+            if (prgStack.size() > MAX3_UNPACK_FILTERS) {
+                return (false);
+            }
+            prgStack.add(null);
+            emptyCount = 1;
+        }
+        prgStack.set(prgStack.size() - emptyCount, StackFilter);
         StackFilter.setExecCount(Filter.getExecCount()); // ->ExecCount;
 
         int BlockStart = RarVM.ReadData(Inp);
