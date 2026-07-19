@@ -374,7 +374,7 @@ public final class Unpack extends Unpack20 {
                     WrittenBorder = BlockStart;
                     WriteSize = (unpPtr - WrittenBorder) & Compress.MAXWINMASK;
                 }
-                if (BlockLength <= WriteSize) {
+                if (Integer.compareUnsigned(BlockLength, WriteSize) <= 0) {
                     int BlockEnd = (BlockStart + BlockLength)
                             & Compress.MAXWINMASK;
                     if (BlockStart < BlockEnd || BlockEnd == 0) {
@@ -903,7 +903,8 @@ public final class Unpack extends Unpack20 {
                             : 0);
         }
         StackFilter.setNextWindow((wrPtr != unpPtr)
-                && ((wrPtr - unpPtr) & Compress.MAXWINMASK) <= BlockStart);
+                && Integer.compareUnsigned(
+                        (wrPtr - unpPtr) & Compress.MAXWINMASK, BlockStart) <= 0);
 
         // DebugLog("\nNextWindow: UnpPtr=%08x WrPtr=%08x
         // BlockStart=%08x",UnpPtr,WrPtr,BlockStart);
@@ -930,7 +931,8 @@ public final class Unpack extends Unpack20 {
 
         if (NewFilter) {
             int VMCodeSize = RarVM.ReadData(Inp);
-            if (VMCodeSize >= 0x10000 || VMCodeSize == 0) {
+            if (Integer.compareUnsigned(VMCodeSize, 0x10000) >= 0
+                    || VMCodeSize == 0) {
                 return (false);
             }
             byte[] VMCode = new byte[VMCodeSize];
@@ -990,7 +992,8 @@ public final class Unpack extends Unpack20 {
                 return (false);
             }
             int DataSize = RarVM.ReadData(Inp);
-            if (DataSize > RarVM.VM_GLOBALMEMSIZE - RarVM.VM_FIXEDGLOBALSIZE) {
+            if (Integer.compareUnsigned(DataSize,
+                    RarVM.VM_GLOBALMEMSIZE - RarVM.VM_FIXEDGLOBALSIZE) > 0) {
                 return (false);
             }
             int CurSize = StackFilter.getPrg().getGlobalData().size();

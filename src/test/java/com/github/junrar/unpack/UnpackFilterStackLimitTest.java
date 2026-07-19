@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatCode;
 
 /**
  * Pins the RAR3 filter stack limit and the null-hole reuse performed before
@@ -80,6 +81,49 @@ class UnpackFilterStackLimitTest {
         assertThat(stack).doesNotContainNull();
     }
 
+    @Test
+    void givenUnsignedVmCodeSize_whenAddingNewFilter_thenRejectsWithoutAllocating()
+            throws Exception {
+        Unpack unpack = new Unpack(null);
+
+        assertThatCode(() -> assertThat(addVmCode(unpack, 0,
+                bytes(0x03, 0x80, 0, 0, 0))).isFalse())
+                .doesNotThrowAnyException();
+    }
+
+    @Test
+    void givenUnsignedOptionalDataSize_whenAddingFilter_thenRejects() throws Exception {
+        Unpack unpack = withOneFilter();
+
+        assertThat(addVmCode(unpack, 0x08,
+                bytes(0x03, 0xff, 0xff, 0xff, 0xff, 0x04, 0))).isFalse();
+    }
+
+    @Test
+    void givenUnsignedBlockStart_whenAddingFilter_thenMarksNextWindow() throws Exception {
+        Unpack unpack = withOneFilter();
+        unpack.wrPtr = 2;
+        unpack.unpPtr = 1;
+
+        assertThat(addVmCode(unpack, 0,
+                bytes(0xff, 0xff, 0xff, 0xff, 0xc1, 0))).isTrue();
+        assertThat(lastStackFilter(unpack).isNextWindow()).isTrue();
+    }
+
+    @Test
+    void givenUnsignedBlockLength_whenWritingBuffer_thenDefersFilter() throws Exception {
+        Unpack unpack = withOneFilter();
+        unpack.wrPtr = 0;
+        unpack.unpPtr = 1;
+
+        assertThat(addVmCode(unpack, 0x20,
+                bytes(0x03, 0xff, 0xff, 0xff, 0xff, 0x04, 0))).isTrue();
+        lastStackFilter(unpack).setBlockStart(0);
+        assertThat(lastStackFilter(unpack).getBlockLength()).isEqualTo(-1);
+        assertThatCode(() -> unpWriteBuf(unpack)).doesNotThrowAnyException();
+        assertThat(unpack.wrPtr).isZero();
+    }
+
     private static Unpack withOneFilter() throws ReflectiveOperationException {
         Unpack unpack = new Unpack(null);
         filters(unpack).add(new UnpackFilter());
@@ -97,11 +141,30 @@ class UnpackFilterStackLimitTest {
         java.lang.reflect.Method addVmCode = Unpack.class.getDeclaredMethod(
                 "addVMCode", int.class, List.class, int.class);
         addVmCode.setAccessible(true);
-        return (boolean) addVmCode.invoke(unpack, firstByte, vmCode, vmCode.size());
+        try {
+            return (boolean) addVmCode.invoke(unpack, firstByte, vmCode, vmCode.size());
+        } catch (java.lang.reflect.InvocationTargetException e) {
+            Throwable cause = e.getCause();
+            if (cause instanceof RuntimeException) {
+                throw (RuntimeException) cause;
+            }
+            if (cause instanceof RarException) {
+                throw (RarException) cause;
+            }
+            throw e;
+        }
     }
 
     private static List<Byte> zeroVmCode() {
         return Arrays.asList((byte) 0, (byte) 0, (byte) 0);
+    }
+
+    private static List<Byte> bytes(int... values) {
+        List<Byte> bytes = new ArrayList<>(values.length);
+        for (int value : values) {
+            bytes.add((byte) value);
+        }
+        return bytes;
     }
 
     private static List<Byte> newFilterVmCode() {
@@ -123,6 +186,30 @@ class UnpackFilterStackLimitTest {
             lengths.add(0);
         }
         return lengths;
+    }
+
+    private static UnpackFilter lastStackFilter(Unpack unpack)
+            throws ReflectiveOperationException {
+        List<UnpackFilter> stack = prgStack(unpack);
+        return stack.get(stack.size() - 1);
+    }
+
+    private static void unpWriteBuf(Unpack unpack)
+            throws ReflectiveOperationException, java.io.IOException {
+        java.lang.reflect.Method method = Unpack.class.getDeclaredMethod("UnpWriteBuf");
+        method.setAccessible(true);
+        try {
+            method.invoke(unpack);
+        } catch (java.lang.reflect.InvocationTargetException e) {
+            Throwable cause = e.getCause();
+            if (cause instanceof java.io.IOException) {
+                throw (java.io.IOException) cause;
+            }
+            if (cause instanceof RuntimeException) {
+                throw (RuntimeException) cause;
+            }
+            throw new RuntimeException(cause);
+        }
     }
 
     @SuppressWarnings("unchecked")
