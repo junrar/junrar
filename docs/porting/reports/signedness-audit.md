@@ -173,6 +173,12 @@ chunk).
 | `Unpack15.java` | `decodeNum(int, int, int[], int[])` | `unpack/Unpack15SignednessTest.java` |
 | `RarVM.java` | `setLowEndianValue(Vector<Byte>, int, int)` | `unpack/vm/RarVMSignednessTest.java` |
 
+`Unpack15FlagsBufTest` adds boundary coverage for `getFlagsBuf`: the exact input bytes
+`{0xff, 0xf0, 0x00}` decode through the static `DecHf2`/`PosHf2` tables to
+`FlagsPlace == 256` and assert that the guard prevents an array exception; `{0xff, 0x90,
+0x00}` keeps the valid index `255` path exercised. This is array-bound coverage only; it
+does not claim additional shift coverage.
+
 ### BitInput — full public-method enumeration
 
 `InitBitInput()`, `addbits(int)`, `getbits()`, `faddbits(int)`, `fgetbits()`,

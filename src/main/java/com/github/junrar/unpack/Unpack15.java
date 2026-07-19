@@ -513,6 +513,7 @@ public abstract class Unpack15 extends BitInput {
     protected void getFlagsBuf() {
         int Flags, NewFlagsPlace;
         int FlagsPlace = decodeNum(fgetbits(), STARTHF2, DecHf2, PosHf2);
+        if (FlagsPlace >= ChSetC.length) return;
 
         while (true) {
             Flags = ChSetC[FlagsPlace];
