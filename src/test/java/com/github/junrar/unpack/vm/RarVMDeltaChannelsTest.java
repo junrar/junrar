@@ -10,6 +10,14 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * Migrated for M2.1 (recognition model): the DELTA filter is now selected via
+ * {@link VMPreparedProgram#setType(VMStandardFilters)} and invoked directly by
+ * {@link RarVM#execute(VMPreparedProgram)} — there is no more VM_STANDARD
+ * command/AltCmd/CmdCount scaffolding to build. The native transform itself
+ * (ExecuteStandardFilter) is unchanged, so the expected byte assertions below
+ * are byte-identical to the pre-M2.1 versions of this test.
+ */
 class RarVMDeltaChannelsTest {
 
     @Test
@@ -21,17 +29,7 @@ class RarVMDeltaChannelsTest {
         VMPreparedProgram program = new VMPreparedProgram();
         program.getInitR()[0] = 1;
         program.getInitR()[4] = Integer.MIN_VALUE;
-        VMPreparedCommand filter = new VMPreparedCommand();
-        filter.setOpCode(VMCommands.VM_STANDARD);
-        filter.getOp1().setData(VMStandardFilters.VMSF_DELTA.getFilter());
-        filter.getOp1().setType(VMOpType.VM_OPNONE);
-        filter.getOp2().setType(VMOpType.VM_OPNONE);
-        program.getCmd().add(filter);
-        VMPreparedCommand ret = new VMPreparedCommand();
-        ret.setOpCode(VMCommands.VM_RET);
-        program.getCmd().add(ret);
-        program.setCmdCount(2);
-        program.setAltCmd(Arrays.asList());
+        program.setType(VMStandardFilters.VMSF_DELTA);
 
         vm.execute(program);
 
@@ -53,17 +51,7 @@ class RarVMDeltaChannelsTest {
         VMPreparedProgram program = new VMPreparedProgram();
         program.getInitR()[0] = channels;
         program.getInitR()[4] = 8;
-        VMPreparedCommand filter = new VMPreparedCommand();
-        filter.setOpCode(VMCommands.VM_STANDARD);
-        filter.getOp1().setData(VMStandardFilters.VMSF_DELTA.getFilter());
-        filter.getOp1().setType(VMOpType.VM_OPNONE);
-        filter.getOp2().setType(VMOpType.VM_OPNONE);
-        program.getCmd().add(filter);
-        VMPreparedCommand ret = new VMPreparedCommand();
-        ret.setOpCode(VMCommands.VM_RET);
-        program.getCmd().add(ret);
-        program.setCmdCount(2);
-        program.setAltCmd(Arrays.asList());
+        program.setType(VMStandardFilters.VMSF_DELTA);
 
         vm.execute(program);
 

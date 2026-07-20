@@ -961,6 +961,7 @@ public final class Unpack extends Unpack20 {
             // VM.Prepare(&VMCode[0],VMCodeSize,&Filter->Prg);
             rarVM.prepare(VMCode, VMCodeSize, Filter.getPrg());
         }
+        StackFilter.getPrg().setType(Filter.getPrg().getType()); // StackFilter->Prg.Type=Filter->Prg.Type;
         StackFilter.getPrg().setAltCmd(Filter.getPrg().getCmd()); // StackFilter->Prg.AltCmd=&Filter->Prg.Cmd[0];
         StackFilter.getPrg().setCmdCount(Filter.getPrg().getCmdCount()); // StackFilter->Prg.CmdCount=Filter->Prg.CmdCount;
 

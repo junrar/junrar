@@ -7,4 +7,5 @@
 # comparison against real-unrar-decoded output (issue #37). Never
 # text-normalize these regardless of platform/autocrlf.
 *.bin binary
+*.expected binary
 *.gz binary

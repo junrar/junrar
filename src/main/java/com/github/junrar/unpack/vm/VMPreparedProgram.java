@@ -31,6 +31,7 @@ public class VMPreparedProgram {
     private List<VMPreparedCommand> Cmd = new ArrayList<>();
     private List<VMPreparedCommand> AltCmd;
     private int CmdCount;
+    private VMStandardFilters Type = VMStandardFilters.VMSF_NONE;
 
 
     private Vector<Byte> GlobalData = new Vector<>();
@@ -120,5 +121,12 @@ public class VMPreparedProgram {
         StaticData = staticData;
     }
 
+    public VMStandardFilters getType() {
+        return Type;
+    }
+
+    public void setType(VMStandardFilters type) {
+        Type = type;
+    }
 
 }
