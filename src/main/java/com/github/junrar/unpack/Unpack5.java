@@ -4,11 +4,13 @@
  */
 package com.github.junrar.unpack;
 
+import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.decode.Decode5;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 /**
@@ -71,9 +73,31 @@ public class Unpack5 {
 
     private boolean tablesRead5;
 
+    // ---- decode-loop state (M3.7; 8f437ab:unpack.hpp fields, 8f437ab:unpack50.cpp) -----------
+
+    /** Input buffer size for the archive-driven refill (8f437ab:getbits.hpp MAX_SIZE). */
+    private static final int MAX_SIZE = 0x8000;
+
+    // Sliding-window pointers into the per-archive window (masked to maxWinMask each step).
+    private int maxWinSize;
+    private int maxWinMask;
+    private int unpPtr;   // next window write position
+    private int wrPtr;    // window position up to which output was flushed
+    private int writeBorder;
+    private int prevPtr;  // previous masked unpPtr, to detect a window wrap
+    private boolean firstWinDone; // the window has wrapped at least once (FirstWinDone parity, M1.4)
+
+    // The 4 most-recent LZ distances (OldDist) and the last match length (unpackinline.cpp).
+    private final int[] oldDist = new int[4];
+    private int lastLength;
+
+    private long destUnpSize;      // remaining bytes this entry must produce (setDestSize)
+    private long writtenFileSize;  // bytes handed to unpWrite so far, this entry
+
     /**
-     * @param unpIO     packed-byte pump + CRC/hash seam (manual &sect;4.12); the stream refill path
-     *                  that consumes it lands with the M3.7 decode loop.
+     * @param unpIO     packed-byte pump + CRC/hash seam (manual &sect;4.12); the archive-driven
+     *                  {@link #unpReadBuf()} refill consumes it. {@code null} in external-buffer
+     *                  (test) mode, where {@link #feed} supplies the whole packed stream.
      * @param extraDist RAR7 (method 0x70) selects the 80-slot distance alphabet with this flag; the
      *                  same engine serves RAR5 and RAR7 (manual &sect;5.2). Fixed {@code false}
      *                  until M4 — designed in from day one so RAR7 is a flag, not a fork.
@@ -163,13 +187,51 @@ public class Unpack5 {
         this.inBit = 0;
     }
 
-    /** ponytail: M3.6 skeleton has no ComprDataIO refill; that lands with the M3.7 decode loop. */
-    private boolean unpReadBuf() {
-        return false;
+    /**
+     * Refill the input buffer from the packed stream (8f437ab:unpack50.cpp:217 UnpReadBuf).
+     * Compacts the unread tail to the buffer front once past the halfway mark, reads up to a full
+     * {@link #MAX_SIZE} block, and re-derives {@link #readBorder} (the 30-byte over-read margin
+     * getbits/getbits32 rely on) and the block-size clamp. Returns {@code false} in external-buffer
+     * (test) mode — {@link #feed} supplied everything — and on a spent stream ({@code readCode==-1},
+     * a missing next volume). A genuinely truncated single-volume stream throws through
+     * {@link ComprDataIO#unpRead} instead (the typed-exception path).
+     */
+    private boolean unpReadBuf() throws IOException, RarException {
+        if (unpIO == null) {
+            return false; // external-buffer mode: no channel to refill from (M3.6 tests)
+        }
+        int dataSize = readTop - inAddr; // data left to process
+        if (dataSize < 0) {
+            return false;
+        }
+        blockSize -= inAddr - blockStart;
+        if (inAddr > MAX_SIZE / 2) {
+            // Past the halfway mark: slide the unread tail to the front to free space for new data.
+            if (dataSize > 0) {
+                System.arraycopy(inBuf, inAddr, inBuf, 0, dataSize);
+            }
+            inAddr = 0;
+            readTop = dataSize;
+        } else {
+            dataSize = readTop;
+        }
+        int readCode = 0;
+        if (MAX_SIZE != dataSize) {
+            readCode = unpIO.unpRead(inBuf, dataSize, MAX_SIZE - dataSize);
+        }
+        if (readCode > 0) {
+            readTop += readCode;
+        }
+        readBorder = readTop - 30;
+        blockStart = inAddr;
+        if (blockSize != -1) { // '-1' means not defined yet
+            readBorder = Math.min(readBorder, blockStart + blockSize - 1);
+        }
+        return readCode != -1;
     }
 
     /** Ensure at least {@code need} bytes are readable ahead, else try to refill. */
-    private boolean ensure(final int need) {
+    private boolean ensure(final int need) throws IOException, RarException {
         return inAddr <= readTop - need || unpReadBuf();
     }
 
@@ -212,7 +274,7 @@ public class Unpack5 {
      * Read one RAR5 compressed block header (flags, block size, checksum). Returns {@code false} on
      * a bad checksum, a 4-byte size count (reserved), or truncation.
      */
-    boolean readBlockHeader() {
+    boolean readBlockHeader() throws IOException, RarException {
         headerSize = 0;
         if (!ensure(7)) {
             return false;
@@ -256,7 +318,7 @@ public class Unpack5 {
      * truncation or a malformed table (a "repeat previous" code at position 0). When no table is
      * present, returns {@code true} and the previously read tables stay in effect.
      */
-    boolean readTables() {
+    boolean readTables() throws IOException, RarException {
         if (!tablePresent) {
             return true;
         }
@@ -431,6 +493,275 @@ public class Unpack5 {
             pos = 0; // out-of-bounds safety for damaged archives
         }
         return dec.getDecodeNum()[pos];
+    }
+
+    // ---- decode loop (8f437ab:unpack50.cpp Unpack5) ------------------------------------------
+
+    /** Bytes this entry must produce; the write-out meters against it (8f437ab: DestUnpSize). */
+    public void setDestSize(final long destSize) {
+        this.destUnpSize = destSize;
+    }
+
+    /**
+     * Per-entry reset (8f437ab:unpack.cpp:193 UnpInitData + unpack50.cpp:528 UnpInitData50). A
+     * non-solid entry wipes the LZ state (distances, window pointers, tables, write border); a
+     * solid continuation keeps the window and tables and only re-arms the bit input for this
+     * file's independent packed stream. The window itself is never cleared (unrar comments out the
+     * memset; the growth-capped {@link Unpack5Window} is Java-zeroed on allocation).
+     */
+    private void unpInitData(final boolean solid) {
+        maxWinSize = window.size();
+        maxWinMask = window.mask();
+        if (!solid) {
+            Arrays.fill(oldDist, 0);
+            lastLength = 0;
+            unpPtr = 0;
+            wrPtr = 0;
+            prevPtr = 0;
+            firstWinDone = false;
+            tablesRead5 = false;
+            writeBorder = Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE) & maxWinMask;
+        }
+        writtenFileSize = 0;
+        readTop = 0;
+        readBorder = 0;
+        inAddr = 0;
+        inBit = 0;
+        blockStart = 0;
+        blockSize = -1; // '-1' means not defined yet
+        if (inBuf.length < MAX_SIZE + 64) {
+            inBuf = new byte[MAX_SIZE + 64];
+        }
+    }
+
+    /**
+     * Decode one RAR5 file into the window, flushing to {@link ComprDataIO#unpWrite} as it goes
+     * (8f437ab:unpack50.cpp:1-155 Unpack5). The case order below is verbatim from upstream and
+     * <em>is</em> the format spec (manual &sect;4.5): literal ({@code <256}), match ({@code >=262}),
+     * filter (256), repeat-last-length (257), and repeat-distance (258..261).
+     */
+    public void unpack5(final boolean solid) throws IOException, RarException {
+        unpInitData(solid);
+        if (!unpReadBuf()) {
+            return;
+        }
+        // TablesRead5 guards use-before-read even when a block header omits the table.
+        if (!readBlockHeader() || !readTables() || !tablesRead5) {
+            return;
+        }
+
+        while (true) {
+            unpPtr &= maxWinMask;
+            firstWinDone |= (prevPtr > unpPtr);
+            prevPtr = unpPtr;
+
+            if (inAddr >= readBorder) {
+                boolean fileDone = false;
+                // 'while' (not 'if'): an empty block that carries only a Huffman table lands us
+                // back on the block border immediately after reading the table.
+                while (inAddr > blockStart + blockSize - 1
+                    || (inAddr == blockStart + blockSize - 1 && inBit >= blockBitSize)) {
+                    if (lastBlockInFile) {
+                        fileDone = true;
+                        break;
+                    }
+                    if (!readBlockHeader() || !readTables()) {
+                        return;
+                    }
+                }
+                if (fileDone || !unpReadBuf()) {
+                    break;
+                }
+            }
+
+            if (((writeBorder - unpPtr) & maxWinMask) <= Compress.MAX_INC_LZ_MATCH && writeBorder != unpPtr) {
+                unpWriteBuf();
+                if (writtenFileSize > destUnpSize) {
+                    return;
+                }
+            }
+
+            final int mainSlot = decodeNumber(ld);
+            if (mainSlot < 256) {
+                window.put(unpPtr++, (byte) mainSlot);
+                continue;
+            }
+            if (mainSlot >= 262) {
+                int length = slotToLength(mainSlot - 262);
+
+                int distance = 1;
+                final int distSlot = decodeNumber(dd);
+                final int dbits;
+                if (distSlot < 4) {
+                    dbits = 0;
+                    distance += distSlot;
+                } else {
+                    dbits = distSlot / 2 - 1;
+                    distance += (2 | (distSlot & 1)) << dbits;
+                }
+                if (dbits > 0) {
+                    if (dbits >= 4) {
+                        if (dbits > 4) {
+                            distance += (getbits32() >>> (36 - dbits)) << 4;
+                            addbits(dbits - 4);
+                        }
+                        distance += decodeNumber(ldd);
+                    } else {
+                        distance += getbits() >>> (16 - dbits);
+                        addbits(dbits);
+                    }
+                }
+                // C++ Distance is uint; a top-of-alphabet distSlot can set bit 31, so compare
+                // unsigned (no-go C15 signedness ledger) — matters for hostile streams now and for
+                // the M4.3 >2 GB capability ceiling later.
+                if (Integer.compareUnsigned(distance, 0x100) > 0) {
+                    length++;
+                    if (Integer.compareUnsigned(distance, 0x2000) > 0) {
+                        length++;
+                        if (Integer.compareUnsigned(distance, 0x40000) > 0) {
+                            length++;
+                        }
+                    }
+                }
+                insertOldDist(distance);
+                lastLength = length;
+                copyString(length, distance);
+                continue;
+            }
+            if (mainSlot == 256) {
+                // RAR5 filters (E8/E8E9/DELTA/ARM) land in M3.8; a plain stream never emits
+                // slot 256, and decoding a filter block without the filter stack would desync the
+                // bit stream, so refuse rather than mis-decode.
+                throw new CorruptHeaderException("RAR5 filters are not supported yet (slot 256)");
+            }
+            if (mainSlot == 257) {
+                if (lastLength != 0) {
+                    copyString(lastLength, oldDist[0]);
+                }
+                continue;
+            }
+            // mainSlot 258..261: reuse one of the 4 recent distances, moving it to the front.
+            final int distNum = mainSlot - 258;
+            final int distance = oldDist[distNum];
+            for (int i = distNum; i > 0; i--) {
+                oldDist[i] = oldDist[i - 1];
+            }
+            oldDist[0] = distance;
+
+            final int length = slotToLength(decodeNumber(rd));
+            lastLength = length;
+            copyString(length, distance);
+        }
+        unpWriteBuf();
+    }
+
+    /** Stored (method 0) RAR5 entry: pump packed bytes straight through the CRC/hash seam. */
+    public void unstore() throws IOException, RarException {
+        final byte[] buffer = new byte[0x10000];
+        long left = destUnpSize;
+        while (left > 0) {
+            final int code = unpIO.unpRead(buffer, 0, (int) Math.min(buffer.length, left));
+            if (code <= 0) {
+                break;
+            }
+            unpIO.unpWrite(buffer, 0, code);
+            left -= code;
+        }
+    }
+
+    /** Match length from a length slot (8f437ab:unpackinline.cpp SlotToLength). */
+    private int slotToLength(final int slot) {
+        int length = 2;
+        final int lbits;
+        if (slot < 8) {
+            lbits = 0;
+            length += slot;
+        } else {
+            lbits = slot / 4 - 1;
+            length += (4 | (slot & 3)) << lbits;
+        }
+        if (lbits > 0) {
+            length += getbits() >>> (16 - lbits);
+            addbits(lbits);
+        }
+        return length;
+    }
+
+    /** Push a distance onto the recent-distance list (8f437ab:unpackinline.cpp InsertOldDist). */
+    private void insertOldDist(final int distance) {
+        oldDist[3] = oldDist[2];
+        oldDist[2] = oldDist[1];
+        oldDist[1] = oldDist[0];
+        oldDist[0] = distance;
+    }
+
+    /**
+     * Copy an LZ match into the window (8f437ab:unpackinline.cpp CopyString + the FirstWinDone
+     * arm, manual M1.4). Uniformly byte-sequential with per-byte masking: this reproduces
+     * upstream's fast/slow paths bit-for-bit (both copy byte-by-byte forward, overlap-safe — the
+     * memcpy self-overlap trap, manual &sect;4.3), and per-byte masking keeps the growth-capped
+     * window from being read before a position is written.
+     *
+     * <p>A distance pointing into never-written window space (before the first wrap, or beyond the
+     * whole window) is zero-filled deterministically instead of reading ungrown bytes, matching
+     * unrar's zero-initialized window; the resulting CRC mismatch is what surfaces the typed error.
+     */
+    private void copyString(int length, final int distance) {
+        // Unsigned compares: distance is a C++ uint, so a hostile/large value with bit 31 set must
+        // read as "far into the window", not negative (no-go C15 signedness ledger).
+        if (Integer.compareUnsigned(distance, unpPtr) > 0
+            && (!firstWinDone || Integer.compareUnsigned(distance, maxWinSize) > 0)) {
+            while (length-- > 0) {
+                window.put(unpPtr, (byte) 0);
+                unpPtr = (unpPtr + 1) & maxWinMask;
+            }
+            return;
+        }
+        int srcPtr = (unpPtr - distance) & maxWinMask;
+        while (length-- > 0) {
+            window.put(unpPtr, window.get(srcPtr));
+            srcPtr = (srcPtr + 1) & maxWinMask;
+            unpPtr = (unpPtr + 1) & maxWinMask;
+        }
+    }
+
+    /**
+     * Flush freshly decoded window bytes to the output (8f437ab:unpack50.cpp:255 UnpWriteBuf, the
+     * no-filter M3.7 path — filters land in M3.8), then re-arm the write border ahead of the
+     * window pointer, capped at {@link Compress#UNPACK_MAX_WRITE}.
+     */
+    private void unpWriteBuf() throws IOException {
+        unpWriteArea(wrPtr, unpPtr);
+        wrPtr = unpPtr;
+        writeBorder = (unpPtr + Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE)) & maxWinMask;
+        if (writeBorder == unpPtr
+            || (wrPtr != unpPtr && ((wrPtr - unpPtr) & maxWinMask) < ((writeBorder - unpPtr) & maxWinMask))) {
+            writeBorder = wrPtr;
+        }
+    }
+
+    /** Write the window range {@code [start, end)}, splitting a wrap into two parts (UnpWriteArea). */
+    private void unpWriteArea(final int startPtr, final int endPtr) throws IOException {
+        if (endPtr < startPtr) {
+            unpWriteData(startPtr, maxWinSize - startPtr);
+            unpWriteData(0, endPtr);
+        } else {
+            unpWriteData(startPtr, endPtr - startPtr);
+        }
+    }
+
+    /** Write one contiguous window run, clamped to the remaining {@code destUnpSize} (UnpWriteData). */
+    private void unpWriteData(final int pos, final int size) throws IOException {
+        if (size <= 0 || writtenFileSize >= destUnpSize) {
+            return;
+        }
+        int writeSize = size;
+        final long leftToWrite = destUnpSize - writtenFileSize;
+        if (writeSize > leftToWrite) {
+            writeSize = (int) leftToWrite;
+        }
+        unpIO.unpWrite(window.buffer(), pos, writeSize);
+        writtenFileSize += size;
     }
 
     // ---- accessors (test / M3.7 seams) -------------------------------------------------------

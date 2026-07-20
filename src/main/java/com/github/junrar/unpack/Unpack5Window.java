@@ -83,6 +83,15 @@ public class Unpack5Window {
         return buffer[pos];
     }
 
+    /**
+     * The backing array, for the write-out path ({@code UnpWriteData}) to hand a contiguous
+     * range straight to {@link ComprDataIO#unpWrite}. Only positions that were {@link #put} are
+     * valid to read; callers never write through it.
+     */
+    byte[] buffer() {
+        return buffer;
+    }
+
     private void grow(final int pos) {
         int cap = buffer.length;
         // Double until pos fits, but never past the cap (and never overflow int).

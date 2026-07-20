@@ -59,6 +59,7 @@ import com.github.junrar.rarfile.rar5.Rar5BlockType;
 import com.github.junrar.rarfile.rar5.Rar5MainHeader;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
+import com.github.junrar.unpack.Unpack5;
 import com.github.junrar.volume.FileVolumeManager;
 import com.github.junrar.volume.InputStreamVolumeManager;
 import com.github.junrar.volume.Volume;
@@ -150,6 +151,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private MainHeader newMhd = null;
 
     private Unpack unpack;
+
+    /** RAR5 (method 0x50) decode engine — one per archive, sibling of {@link #unpack} (M3.7). */
+    private Unpack5 unpack5;
 
     private int currentHeaderIndex;
 
@@ -306,6 +310,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     static Archive testOnlyOpenSuppressingV5Gate(final File firstVolume) throws RarException, IOException {
         return testOnlyOpenSuppressingV5Gate(firstVolume, ArchiveOptions.builder().build());
+    }
+
+    /**
+     * M3.7 test-only hook: the current backing capacity of the RAR5 decode window, i.e. the bytes
+     * actually allocated (never the header-declared window size). Proves the growth-capped,
+     * never-header-eager allocation policy at the archive level (review B-S3): a 1 GB-claim archive
+     * that writes only kilobytes keeps a kilobyte-scale window. {@code -1} if no RAR5 file was
+     * extracted. Deleted with the pre-gate harness at M3.11.
+     */
+    int testOnlyLastUnpack5WindowCapacity() {
+        return (this.unpack5 == null || this.unpack5.window() == null) ? -1 : this.unpack5.window().capacity();
     }
 
     /** @see #testOnlyOpenSuppressingV5Gate(File) */
@@ -956,6 +971,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             // Encrypted headers consume the 16-byte IV plus the header padded up to the AES block
             // size (unrar FullHeaderSize, archive.cpp:292-302 -- align-16 on BOTH paths, manual 4.12).
             final long consumed = encrypted ? (Rar5Crypt.SIZE_INITV + alignTo16(headerSize)) : headerSize;
+            // The packed data starts right after the on-disk header; record it for the extractor
+            // (M3.7) so encrypted-header entries locate their data past the IV + AES padding too.
+            if (block instanceof FileHeader) {
+                ((FileHeader) block).setRar5DataStartOffset(position + consumed);
+            }
             final long newpos = position + consumed + rar5DataSize;
             // consumed is always positive, so newpos <= position only when the DataSize vint is
             // negative-as-signed (>= 2^63) or overflows the sum -- a hostile pointer that would
@@ -1181,7 +1201,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             throw new HeaderNotInArchiveException();
         }
         try {
-            boolean isSolidStream = newMhd.isSolid() || hd.isSolid();
+            // newMhd is the RAR4 main header and is null for RAR5 (its solid flag lives on the
+            // Rar5MainHeader / per-file compression info instead), so guard the deref (M3.7).
+            boolean isSolidStream = (newMhd != null && newMhd.isSolid()) || hd.isSolid();
 
             if (isSolidStream) {
                 if (targetIdx < lastProcessedFileIndex) {
@@ -1190,6 +1212,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     if (unpack != null) {
                         unpack.init(null);
                     }
+                    // RAR5 engine carries the window across a solid set; a rewind must replay from
+                    // the start with a fresh window, so drop it (re-created lazily in doExtractFile).
+                    this.unpack5 = null;
                     lastProcessedFileIndex = -1;
                 }
                 for (int i = lastProcessedFileIndex + 1; i < targetIdx; i++) {
@@ -1376,15 +1401,19 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
-        if (this.unpack == null) {
-            this.unpack = new Unpack(this.dataIO);
-        }
-        if (!hd.isSolid()) {
-            this.unpack.init(null);
-        }
-        this.unpack.setDestSize(hd.getFullUnpackSize());
         try {
-            this.unpack.doUnpack(hd.getUnpVersion(), hd.isSolid());
+            if (hd.getUnpVersion() == 50) {
+                extractRar5(hd);
+            } else {
+                if (this.unpack == null) {
+                    this.unpack = new Unpack(this.dataIO);
+                }
+                if (!hd.isSolid()) {
+                    this.unpack.init(null);
+                }
+                this.unpack.setDestSize(hd.getFullUnpackSize());
+                this.unpack.doUnpack(hd.getUnpVersion(), hd.isSolid());
+            }
             if (!skip) {
                 // Verify file CRC
                 hd = this.dataIO.getSubHeader();
@@ -1402,12 +1431,33 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             // }
             // }
         } catch (final Exception e) {
-            this.unpack.cleanUp();
+            if (this.unpack != null) {
+                this.unpack.cleanUp();
+            }
             if (e instanceof RarException) {
                 throw (RarException) e;
             } else {
                 throw new RarException(e);
             }
+        }
+    }
+
+    /**
+     * Extract one RAR5 (method 0x50) entry through the per-archive {@link Unpack5} engine (M3.7).
+     * Stored entries (method 0) copy straight through the CRC/hash seam; compressed entries size
+     * the per-archive window from the header dictionary and run the decode loop. A solid entry
+     * reuses the same engine so its LZ window continues from the preceding file.
+     */
+    private void extractRar5(final FileHeader hd) throws IOException, RarException {
+        if (this.unpack5 == null) {
+            this.unpack5 = new Unpack5(this.dataIO, false);
+        }
+        this.unpack5.setDestSize(hd.getFullUnpackSize());
+        if (hd.getUnpMethod() == 0) {
+            this.unpack5.unstore();
+        } else {
+            this.unpack5.init(hd.getRar5WinSize(), hd.isSolid());
+            this.unpack5.unpack5(hd.isSolid());
         }
     }
 

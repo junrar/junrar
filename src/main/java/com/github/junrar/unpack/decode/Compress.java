@@ -53,4 +53,11 @@ public class Compress {
     public static final int HUFF_TABLE_SIZE5    = (NC5 + DC5 + RC5 + LDC5);   /* 430 */
     public static final int LARGEST_TABLE_SIZE5 = 306;
     public static final int MAX_QUICK_DECODE_BITS = 10;
+
+    // Match-length ceilings (compress.hpp:10,17) — the write-out reserve margin the decode loop
+    // keeps between the window pointer and the write border.
+    public static final int MAX_LZ_MATCH        = 0x1001;
+    public static final int MAX_INC_LZ_MATCH    = MAX_LZ_MATCH + 3;   /* 0x1004 */
+    // Preferred write-block cap (unpack.hpp:28): bound the per-flush size instead of huge windows.
+    public static final int UNPACK_MAX_WRITE    = 0x400000;
 }

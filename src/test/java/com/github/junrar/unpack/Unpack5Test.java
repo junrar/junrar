@@ -167,7 +167,7 @@ class Unpack5Test {
     // ---- block header ------------------------------------------------------------------------
 
     @Test
-    void readBlockHeaderParsesFlagsAndValidatesChecksum() {
+    void readBlockHeaderParsesFlagsAndValidatesChecksum() throws Exception {
         final Unpack5 u = new Unpack5(false);
         u.feed(blockHeaderBytes(0x80 | 0x40, 3, 0x23, false), 16); // readTop slack for the -7 guard
         assertThat(u.readBlockHeader()).isTrue();
@@ -178,7 +178,7 @@ class Unpack5Test {
     }
 
     @Test
-    void readBlockHeaderRejectsBadChecksum() {
+    void readBlockHeaderRejectsBadChecksum() throws Exception {
         final Unpack5 u = new Unpack5(false);
         u.feed(blockHeaderBytes(0x80, 1, 0x10, true), 16); // checksum corrupted
         assertThat(u.readBlockHeader()).isFalse();
@@ -187,7 +187,7 @@ class Unpack5Test {
     // ---- full 5-table read -------------------------------------------------------------------
 
     @Test
-    void readTablesBuildsAllFiveTablesAndDecodes() {
+    void readTablesBuildsAllFiveTablesAndDecodes() throws Exception {
         // Main bit-length table: LD symbols {0,1,2,3}=len 2; DD symbols {0,1}=len 1; rest length 0.
         final int[] mainLen = new int[Compress.HUFF_TABLE_SIZE5];
         mainLen[0] = 2; mainLen[1] = 2; mainLen[2] = 2; mainLen[3] = 2;      // LD (offset 0)
@@ -227,7 +227,7 @@ class Unpack5Test {
     }
 
     @Test
-    void readTablesWithoutTablePresentReturnsTrueImmediately() {
+    void readTablesWithoutTablePresentReturnsTrueImmediately() throws Exception {
         final Unpack5 u = new Unpack5(false);
         final BitWriter bw = new BitWriter();
         writeBlockHeader(bw, 0x40, 1, 1); // LastBlock, TablePresent=0
@@ -239,7 +239,7 @@ class Unpack5Test {
     }
 
     @Test
-    void readTablesRejectsTruncatedTableStream() {
+    void readTablesRejectsTruncatedTableStream() throws Exception {
         final Unpack5 u = new Unpack5(false);
         final BitWriter bw = new BitWriter();
         writeBlockHeader(bw, 0x80 | 0x40, 1, 1); // TablePresent=1

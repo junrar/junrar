@@ -82,6 +82,8 @@ public class ComprDataIO {
     private CRC32 unpCrc32;
     private CRC32 packCrc32;
     private DataHash unpHash;
+    /** KDF hash key for encrypted files that store a HASHMAC checksum; {@code null} otherwise. */
+    private byte[] unpHashMacKey;
 
     private int encryption;
 
@@ -115,7 +117,7 @@ public class ComprDataIO {
     }
 
     public void init(FileHeader hd) throws IOException, RarException {
-        long startPos = hd.getPositionInFile() + hd.getHeaderSize(archive.isEncrypted());
+        long startPos = hd.getDataStartOffset(archive.isEncrypted());
         unpPackedSize = hd.getFullPackSize();
         archive.getChannel().setPosition(startPos);
         this.underlyingDataIo = new RawDataIo(archive.getChannel());
@@ -126,6 +128,7 @@ public class ComprDataIO {
         unpCrc32.reset();
         packCrc32.reset();
         unpHash = (hd.getHashType() == Rar5HashType.BLAKE2) ? new Blake2sp() : null;
+        unpHashMacKey = null;
 
         if (hd.getSalt16() != null) {
             initRar5Decipherer(hd);
@@ -160,6 +163,11 @@ public class ComprDataIO {
                 throw new WrongPasswordException("RAR5 password check failed for " + hd.getFileName());
             }
             this.underlyingDataIo.setCipher(Rar5Crypt.buildDecipherer(kdf.aesKey, hd.getInitVector()));
+            // Encrypted files store a keyed MAC, not the raw checksum (ConvertHashToMAC); keep the
+            // hash key so the extract-time checksum can be transformed before comparison (M3.7).
+            if (hd.isUseHashKey()) {
+                this.unpHashMacKey = kdf.hashKey;
+            }
         } catch (final CorruptHeaderException e) {
             throw e;
         } catch (final GeneralSecurityException e) {
@@ -388,6 +396,12 @@ public class ComprDataIO {
     }
 
     public long getUnpFileCRC() {
+        if (unpHashMacKey != null) {
+            // Mask the plain CRC32 into the stored HASHMAC form, preserving the (int)(~crc) storage
+            // shape so the extractor's own ~ recovers the MAC the header holds.
+            final int plainCrc = ~((int) unpFileCRC);
+            return (int) ~Rar5Crypt.convertCrc32ToMac(plainCrc, unpHashMacKey);
+        }
         return unpFileCRC;
     }
 

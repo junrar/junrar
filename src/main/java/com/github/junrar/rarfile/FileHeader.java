@@ -63,6 +63,16 @@ public class FileHeader extends BlockHeader {
 
     private byte unpMethod;
 
+    /** RAR5 decode window size in bytes (0x20000 &lt;&lt; dictBits); 0 for RAR3 headers and directories. */
+    private long rar5WinSize;
+
+    /**
+     * Absolute file offset of this RAR5 entry's packed data, set by the archive reader once the
+     * on-disk header size is known (it includes the encryption IV + AES padding for
+     * header-encrypted archives, which the plaintext header size cannot express). 0 for RAR3.
+     */
+    private long rar5DataStartOffset;
+
     private short nameSize;
 
     private final int highPackSize;
@@ -329,6 +339,7 @@ public class FileHeader extends BlockHeader {
 
         this.unpMethod = (byte) p.unpMethod;
         this.unpVersion = p.unpVersion;
+        this.rar5WinSize = p.winSize;
 
         this.rar5HostOsValue = p.hostOsRaw;
         this.rar5HostOS = p.hostOsEnum;
@@ -717,6 +728,34 @@ public class FileHeader extends BlockHeader {
 
     public byte getUnpVersion() {
         return unpVersion;
+    }
+
+    /**
+     * @return the RAR5 decode dictionary/window size in bytes ({@code 0x20000 << dictBits} from
+     *         the compression-info field, {@code arcread.cpp:855}); 0 for RAR3 headers and RAR5
+     *         directory entries. Consumed by {@code Unpack5.init} for per-archive window sizing.
+     */
+    public long getRar5WinSize() {
+        return rar5WinSize;
+    }
+
+    /** @param offset absolute file offset of this RAR5 entry's packed data (archive reader only). */
+    public void setRar5DataStartOffset(final long offset) {
+        this.rar5DataStartOffset = offset;
+    }
+
+    /**
+     * @param archiveEncrypted whether the archive uses header encryption (RAR3/4 padding only)
+     * @return the absolute file offset where this entry's packed data begins. RAR5 entries carry
+     *         it precomputed ({@link #setRar5DataStartOffset}, which folds in the encryption IV and
+     *         AES padding a plaintext header size cannot express); RAR3/4 keep the existing
+     *         {@code position + headerSize(+padding)} formula.
+     */
+    public long getDataStartOffset(final boolean archiveEncrypted) {
+        if (rar5DataStartOffset > 0) {
+            return rar5DataStartOffset;
+        }
+        return positionInFile + getHeaderSize(archiveEncrypted);
     }
 
     public long getFullPackSize() {

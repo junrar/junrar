@@ -128,6 +128,9 @@ public final class Rar5FileHeaderReader {
         // RAR3 unpVersion byte, but RAR3 never emits 0xFF -- a named constant if that changes.
         p.unpVersion = (byte) (((compInfo & 0x3f) + 50) == 50 ? 50 : -1);
         p.solid = !p.service && (compInfo & FCI_SOLID) != 0;
+        // Dictionary/window size (arcread.cpp:855): directories carry none; files decode
+        // 0x20000 << dictBits. The engine capability ceiling / budget guards live in Unpack5.init.
+        p.winSize = p.directory ? 0 : (0x20000L << ((compInfo >>> 10) & 0xf));
 
         v = new VInt(header, pos);
         final long hostOsRaw = v.read();
@@ -479,6 +482,7 @@ public final class Rar5FileHeaderReader {
 
         int unpMethod;
         byte unpVersion;
+        long winSize;
 
         long hostOsRaw;
         Rar5HostOS hostOsEnum;
