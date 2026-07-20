@@ -56,6 +56,7 @@ import com.github.junrar.rarfile.UnixOwnersHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
 import com.github.junrar.rarfile.rar5.Rar5BlockType;
+import com.github.junrar.rarfile.rar5.Rar5HashType;
 import com.github.junrar.rarfile.rar5.Rar5MainHeader;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
@@ -321,6 +322,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     int testOnlyLastUnpack5WindowCapacity() {
         return (this.unpack5 == null || this.unpack5.window() == null) ? -1 : this.unpack5.window().capacity();
+    }
+
+    /**
+     * M3.8 test-only hook: how many RAR5 filters the last extraction actually applied. Proves a
+     * filter fixture exercised the sweep instead of passing vacuously (plan &sect;4.2 filter row).
+     * {@code -1} if no RAR5 file was extracted. Deleted with the pre-gate harness at M3.11.
+     */
+    int testOnlyLastUnpack5FiltersApplied() {
+        return this.unpack5 == null ? -1 : this.unpack5.filtersApplied();
     }
 
     /** @see #testOnlyOpenSuppressingV5Gate(File) */
@@ -1415,13 +1425,21 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 this.unpack.doUnpack(hd.getUnpVersion(), hd.isSolid());
             }
             if (!skip) {
-                // Verify file CRC
                 hd = this.dataIO.getSubHeader();
-                final long actualCRC = hd.isSplitAfter() ? ~this.dataIO.getPackedCRC()
-                    : ~this.dataIO.getUnpFileCRC();
-                final int expectedCRC = hd.getFileCRC();
-                if (actualCRC != expectedCRC) {
-                    throw new CrcErrorException();
+                if (!hd.isSplitAfter() && hd.getHashType() == Rar5HashType.BLAKE2) {
+                    // A BLAKE2 entry carries no CRC32 word: verify the 32-byte digest instead
+                    // (MAC-space for encrypted entries — ConvertHashToMAC, M3.8 issue #29).
+                    if (!Arrays.equals(this.dataIO.getUnpHashDigest(), hd.getHashDigest())) {
+                        throw new CrcErrorException();
+                    }
+                } else {
+                    // Verify file CRC
+                    final long actualCRC = hd.isSplitAfter() ? ~this.dataIO.getPackedCRC()
+                        : ~this.dataIO.getUnpFileCRC();
+                    final int expectedCRC = hd.getFileCRC();
+                    if (actualCRC != expectedCRC) {
+                        throw new CrcErrorException();
+                    }
                 }
             }
             // if (!hd.isSplitAfter()) {

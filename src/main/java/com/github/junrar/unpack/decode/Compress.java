@@ -60,4 +60,16 @@ public class Compress {
     public static final int MAX_INC_LZ_MATCH    = MAX_LZ_MATCH + 3;   /* 0x1004 */
     // Preferred write-block cap (unpack.hpp:28): bound the per-flush size instead of huge windows.
     public static final int UNPACK_MAX_WRITE    = 0x400000;
+
+    // RAR5 filter types (compress.hpp enum FilterType, M3.8 issue #29). Only DELTA/E8/E8E9/ARM
+    // are ever applied by RAR5 (d861246:unpack50.cpp:427-485, the 4-type census); FILTER_NONE
+    // marks a processed slot in the filter queue.
+    public static final int FILTER_DELTA        = 0;
+    public static final int FILTER_E8           = 1;
+    public static final int FILTER_E8E9         = 2;
+    public static final int FILTER_ARM          = 3;
+    public static final int FILTER_NONE         = 8;
+    // Filter limits (unpack.hpp:9,24): queue flood cap and single-block memory cap.
+    public static final int MAX_UNPACK_FILTERS  = 8192;
+    public static final int MAX_FILTER_BLOCK_SIZE = 0x400000;
 }

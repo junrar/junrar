@@ -4,14 +4,15 @@
  */
 package com.github.junrar.unpack;
 
-import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.decode.Decode5;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * RAR5 (unpack method 0x50) decode engine — <b>skeleton</b> (issue #27, M3.6). Built as a
@@ -93,6 +94,20 @@ public class Unpack5 {
 
     private long destUnpSize;      // remaining bytes this entry must produce (setDestSize)
     private long writtenFileSize;  // bytes handed to unpWrite so far, this entry
+
+    /** Filters applied during the current entry (test seam; see Archive test-only hooks). */
+    private int filtersApplied;
+
+    // ---- filter state (M3.8; 8f437ab:unpack50.cpp ReadFilter/AddFilter/UnpWriteBuf) -----------
+
+    /** Pending filter queue (unrar {@code Filters}); flood-capped at {@code MAX_UNPACK_FILTERS}. */
+    private final List<Unpack5Filter> filters = new ArrayList<Unpack5Filter>();
+
+    // Scratch buffers for the copy-out-then-filter rule (unrar FilterSrcMemory/FilterDstMemory):
+    // filters never run in place in the window, because window bytes feed future matches
+    // (manual §4.3). Grown on demand, bounded by MAX_FILTER_BLOCK_SIZE via the ReadFilter clamp.
+    private byte[] filterSrcMemory;
+    private byte[] filterDstMemory;
 
     /**
      * @param unpIO     packed-byte pump + CRC/hash seam (manual &sect;4.12); the archive-driven
@@ -522,6 +537,10 @@ public class Unpack5 {
             tablesRead5 = false;
             writeBorder = Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE) & maxWinMask;
         }
+        // Filters never span several solid files, so they reset at the start of every file
+        // (8f437ab:unpack.cpp UnpInitData — InitFilters() runs even for solid continuations).
+        initFilters();
+        filtersApplied = 0;
         writtenFileSize = 0;
         readTop = 0;
         readBorder = 0;
@@ -629,10 +648,11 @@ public class Unpack5 {
                 continue;
             }
             if (mainSlot == 256) {
-                // RAR5 filters (E8/E8E9/DELTA/ARM) land in M3.8; a plain stream never emits
-                // slot 256, and decoding a filter block without the filter stack would desync the
-                // bit stream, so refuse rather than mis-decode.
-                throw new CorruptHeaderException("RAR5 filters are not supported yet (slot 256)");
+                final Unpack5Filter filter = new Unpack5Filter();
+                if (!readFilter(filter) || !addFilter(filter)) {
+                    break;
+                }
+                continue;
             }
             if (mainSlot == 257) {
                 if (lastLength != 0) {
@@ -725,14 +745,276 @@ public class Unpack5 {
         }
     }
 
+    // ---- filters (M3.8, issue #29; 8f437ab:unpack50.cpp:158-214 + d861246 4-type census) ------
+
     /**
-     * Flush freshly decoded window bytes to the output (8f437ab:unpack50.cpp:255 UnpWriteBuf, the
-     * no-filter M3.7 path — filters land in M3.8), then re-arm the write border ahead of the
-     * window pointer, capped at {@link Compress#UNPACK_MAX_WRITE}.
+     * One variable-length filter field: a 2-bit byte count ({@code 1..4}), then that many bytes
+     * assembled little-endian (8f437ab:unpack50.cpp:158 ReadFilterData). The value is a C++
+     * {@code uint}; 4-byte fields can set bit 31, so callers compare unsigned (no-go C15).
+     */
+    private int readFilterData() {
+        final int byteCount = (fgetbits() >>> 14) + 1;
+        addbits(2);
+        int data = 0;
+        for (int i = 0; i < byteCount; i++) {
+            data += (fgetbits() >>> 8) << (i * 8);
+            addbits(8);
+        }
+        return data;
+    }
+
+    /**
+     * Read one filter announcement from the bit stream (8f437ab:unpack50.cpp:173 ReadFilter):
+     * relative block start, block length, 3-bit type, and — for DELTA — the 5-bit channel count.
+     * An oversized block length (&gt; {@link Compress#MAX_FILTER_BLOCK_SIZE}, unsigned) is forced
+     * to 0, which the sweep treats as a no-op filter, matching unrar.
+     */
+    boolean readFilter(final Unpack5Filter filter) throws IOException, RarException {
+        if (!ensure(16)) {
+            return false;
+        }
+        filter.setBlockStart(readFilterData());
+        filter.setBlockLength(readFilterData());
+        if (Integer.compareUnsigned(filter.getBlockLength(), Compress.MAX_FILTER_BLOCK_SIZE) > 0) {
+            filter.setBlockLength(0);
+        }
+
+        filter.setType(fgetbits() >>> 13);
+        faddbits(3);
+
+        if (filter.getType() == Compress.FILTER_DELTA) {
+            filter.setChannels((fgetbits() >>> 11) + 1);
+            faddbits(5);
+        }
+        return true;
+    }
+
+    /**
+     * Queue a filter for the write sweep (8f437ab:unpack50.cpp:197 AddFilter). At the
+     * {@link Compress#MAX_UNPACK_FILTERS} flood cap unrar flushes via {@link #unpWriteBuf()} and,
+     * if still over the cap, drops the whole queue ({@link #initFilters()}) — a no-op, never an
+     * error. A filter whose start lies in not-yet-written data of the circular window is deferred
+     * with the {@code NextWindow} flag until that older data has been written.
+     */
+    private boolean addFilter(final Unpack5Filter filter) throws IOException {
+        if (filters.size() >= Compress.MAX_UNPACK_FILTERS) {
+            unpWriteBuf(); // write data, apply and flush filters
+            if (filters.size() >= Compress.MAX_UNPACK_FILTERS) {
+                initFilters(); // still too many filters, prevent excessive memory use
+            }
+        }
+        // BlockStart is still the raw header-relative distance here — a C++ uint, so the wrap
+        // test against the written-data distance must compare unsigned (no-go C15).
+        filter.setNextWindow(wrPtr != unpPtr
+            && Integer.compareUnsigned((wrPtr - unpPtr) & maxWinMask, filter.getBlockStart()) <= 0);
+        filter.setBlockStart((filter.getBlockStart() + unpPtr) & maxWinMask);
+        filters.add(filter);
+        return true;
+    }
+
+    /** Drop every pending filter (8f437ab:unpack50.cpp:684 InitFilters). */
+    private void initFilters() {
+        filters.clear();
+    }
+
+    /**
+     * Apply one filter to a copied-out block (8f437ab:unpack50.cpp:398 ApplyFilter;
+     * d861246:unpack50.cpp:427-485 is the authoritative 4-type census — DELTA/E8/E8E9/ARM only).
+     * E8/E8E9/ARM transform {@code data} in place and return it; DELTA de-interleaves into the
+     * destination scratch buffer; any other type returns {@code null} (nothing written, matching
+     * unrar's NULL). {@code data} is always the scratch copy, never window storage.
+     */
+    byte[] applyFilter(final byte[] data, final int dataSize, final Unpack5Filter flt) {
+        switch (flt.getType()) {
+            case Compress.FILTER_E8:
+            case Compress.FILTER_E8E9: {
+                final int fileOffset = (int) writtenFileSize; // C++ (uint)WrittenFileSize
+                final int fileSize = 0x1000000;
+                final int cmpByte2 = flt.getType() == Compress.FILTER_E8E9 ? 0xe9 : 0xe8;
+                // C++ guards with "CurPos+4" (not "DataSize-4") against uint underflow for
+                // DataSize<4; dataSize is <= MAX_FILTER_BLOCK_SIZE here, so int stays exact.
+                for (int curPos = 0; curPos + 4 < dataSize;) {
+                    final int curByte = data[curPos] & 0xff;
+                    curPos++;
+                    if (curByte == 0xe8 || curByte == cmpByte2) {
+                        // fileOffset is a truncated uint; the sum can wrap, so unsigned remainder.
+                        final int offset = Integer.remainderUnsigned(curPos + fileOffset, fileSize);
+                        final int addr = rawGet4(data, curPos);
+                        // Upstream tests the 0x80000000 bit rather than '< 0'; addr is a uint.
+                        if ((addr & 0x80000000) != 0) {              // addr < 0
+                            if (((addr + offset) & 0x80000000) == 0) { // addr + offset >= 0
+                                rawPut4(addr + fileSize, data, curPos);
+                            }
+                        } else if (((addr - fileSize) & 0x80000000) != 0) { // addr < fileSize
+                            rawPut4(addr - offset, data, curPos);
+                        }
+                        curPos += 4;
+                    }
+                }
+                return data;
+            }
+            case Compress.FILTER_ARM: {
+                final int fileOffset = (int) writtenFileSize;
+                // "CurPos+3" guard as above; BL condition byte 0xEB = '1110' (always).
+                for (int curPos = 0; curPos + 3 < dataSize; curPos += 4) {
+                    if (data[curPos + 3] == (byte) 0xeb) {
+                        int offset = (data[curPos] & 0xff)
+                            | ((data[curPos + 1] & 0xff) << 8)
+                            | ((data[curPos + 2] & 0xff) << 16);
+                        offset -= (fileOffset + curPos) >>> 2; // uint division by 4
+                        data[curPos] = (byte) offset;
+                        data[curPos + 1] = (byte) (offset >>> 8);
+                        data[curPos + 2] = (byte) (offset >>> 16);
+                    }
+                }
+                return data;
+            }
+            case Compress.FILTER_DELTA: {
+                // RAR5 stores the channel count in 5 bits, so no excessive-channels rejection
+                // is needed (unlike RAR3).
+                final int channels = flt.getChannels();
+                int srcPos = 0;
+                if (filterDstMemory == null || filterDstMemory.length < dataSize) {
+                    filterDstMemory = new byte[dataSize];
+                }
+                final byte[] dstData = filterDstMemory;
+                // Bytes of one channel are grouped into continual blocks; place them back to
+                // their interleaved positions.
+                for (int curChannel = 0; curChannel < channels; curChannel++) {
+                    byte prevByte = 0;
+                    for (int destPos = curChannel; destPos < dataSize; destPos += channels) {
+                        prevByte -= data[srcPos++];
+                        dstData[destPos] = prevByte;
+                    }
+                }
+                return dstData;
+            }
+            default:
+                return null;
+        }
+    }
+
+    /** Little-endian 32-bit read (unrar RawGet4). */
+    private static int rawGet4(final byte[] d, final int pos) {
+        return (d[pos] & 0xff)
+            | ((d[pos + 1] & 0xff) << 8)
+            | ((d[pos + 2] & 0xff) << 16)
+            | ((d[pos + 3] & 0xff) << 24);
+    }
+
+    /** Little-endian 32-bit write (unrar RawPut4). */
+    private static void rawPut4(final int value, final byte[] d, final int pos) {
+        d[pos] = (byte) value;
+        d[pos + 1] = (byte) (value >>> 8);
+        d[pos + 2] = (byte) (value >>> 16);
+        d[pos + 3] = (byte) (value >>> 24);
+    }
+
+    /**
+     * Flush freshly decoded window bytes to the output with the written-region filter sweep
+     * (8f437ab:unpack50.cpp:255 UnpWriteBuf). Each pending filter whose block lies inside the
+     * write range is applied to a wrap-aware two-part <em>copy</em> of the window bytes and the
+     * filtered output is written INSTEAD of them (the window itself is never modified — its bytes
+     * feed future matches, manual &sect;4.3). A filter block extending past the write pass rolls
+     * {@code wrPtr} back to defer the tail (and clears {@code NextWindow} on every later filter);
+     * processed filters are compacted out of the queue. Finally the write border is re-armed
+     * ahead of the window pointer, capped at {@link Compress#UNPACK_MAX_WRITE}.
      */
     private void unpWriteBuf() throws IOException {
-        unpWriteArea(wrPtr, unpPtr);
-        wrPtr = unpPtr;
+        int writtenBorder = wrPtr;
+        final int fullWriteSize = (unpPtr - writtenBorder) & maxWinMask;
+        int writeSizeLeft = fullWriteSize;
+        boolean notAllFiltersProcessed = false;
+        for (int i = 0; i < filters.size(); i++) {
+            final Unpack5Filter flt = filters.get(i);
+            if (flt.getType() == Compress.FILTER_NONE) {
+                continue;
+            }
+            if (flt.isNextWindow()) {
+                // A filter deferred by the circular-window wrap becomes applicable once the
+                // write range has covered its block start (upstream keeps this check "just in
+                // case"; the compressor bounds start-to-announcement distance by the window).
+                if (((flt.getBlockStart() - wrPtr) & maxWinMask) <= fullWriteSize) {
+                    flt.setNextWindow(false);
+                }
+                continue;
+            }
+            final int blockStart = flt.getBlockStart();
+            final int blockLength = flt.getBlockLength();
+            if (((blockStart - writtenBorder) & maxWinMask) < writeSizeLeft) {
+                if (writtenBorder != blockStart) {
+                    unpWriteArea(writtenBorder, blockStart);
+                    writtenBorder = blockStart;
+                    writeSizeLeft = (unpPtr - writtenBorder) & maxWinMask;
+                }
+                if (blockLength <= writeSizeLeft) {
+                    if (blockLength > 0) { // ReadFilter sets 0 for invalid filters: a no-op
+                        final int blockEnd = (blockStart + blockLength) & maxWinMask;
+                        if (filterSrcMemory == null || filterSrcMemory.length < blockLength) {
+                            filterSrcMemory = new byte[blockLength];
+                        }
+                        final byte[] mem = filterSrcMemory;
+                        // Real copy-out, wrap split into two arraycopies (manual §4.3): the
+                        // window bytes stay untouched for future string matches.
+                        if (blockStart < blockEnd || blockEnd == 0) {
+                            System.arraycopy(window.buffer(), blockStart, mem, 0, blockLength);
+                        } else {
+                            final int firstPartLength = maxWinSize - blockStart;
+                            System.arraycopy(window.buffer(), blockStart, mem, 0, firstPartLength);
+                            System.arraycopy(window.buffer(), 0, mem, firstPartLength, blockEnd);
+                        }
+
+                        final byte[] outMem = applyFilter(mem, blockLength, flt);
+
+                        flt.setType(Compress.FILTER_NONE);
+
+                        if (outMem != null) {
+                            unpIO.unpWrite(outMem, 0, blockLength);
+                            filtersApplied++;
+                        }
+                        writtenFileSize += blockLength;
+                        writtenBorder = blockEnd;
+                        writeSizeLeft = (unpPtr - writtenBorder) & maxWinMask;
+                    }
+                } else {
+                    // The filter block intersects the write border: roll the window border back
+                    // so the whole block is processed in a later pass, and stop here.
+                    wrPtr = writtenBorder;
+                    // Filter start positions only increase, so no later filter can apply in this
+                    // pass either; their NextWindow deferral is reset.
+                    for (int j = i; j < filters.size(); j++) {
+                        final Unpack5Filter later = filters.get(j);
+                        if (later.getType() != Compress.FILTER_NONE) {
+                            later.setNextWindow(false);
+                        }
+                    }
+                    notAllFiltersProcessed = true;
+                    break;
+                }
+            }
+        }
+
+        // Compact processed filters out of the queue (upstream's shift-down + truncate).
+        int emptyCount = 0;
+        for (int i = 0; i < filters.size(); i++) {
+            final Unpack5Filter flt = filters.get(i);
+            if (emptyCount > 0) {
+                filters.set(i - emptyCount, flt);
+            }
+            if (flt.getType() == Compress.FILTER_NONE) {
+                emptyCount++;
+            }
+        }
+        if (emptyCount > 0) {
+            filters.subList(filters.size() - emptyCount, filters.size()).clear();
+        }
+
+        if (!notAllFiltersProcessed) { // only if all filters are processed
+            // Write the data left after the last filter.
+            unpWriteArea(writtenBorder, unpPtr);
+            wrPtr = unpPtr;
+        }
+
         writeBorder = (unpPtr + Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE)) & maxWinMask;
         if (writeBorder == unpPtr
             || (wrPtr != unpPtr && ((wrPtr - unpPtr) & maxWinMask) < ((writeBorder - unpPtr) & maxWinMask))) {
@@ -804,5 +1086,15 @@ public class Unpack5 {
 
     Decode5 bd() {
         return bd;
+    }
+
+    /** @return filters applied during the current entry (M3.8 fixture-honesty seam). */
+    public int filtersApplied() {
+        return filtersApplied;
+    }
+
+    /** @return filters still queued (M3.8 flood-policy seam). */
+    int pendingFilterCount() {
+        return filters.size();
     }
 }

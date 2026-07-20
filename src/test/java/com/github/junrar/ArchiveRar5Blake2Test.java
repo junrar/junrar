@@ -2,6 +2,7 @@ package com.github.junrar;
 
 import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.crypt.blake2.Blake2sp;
+import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5HashType;
 import com.github.junrar.unpack.ComprDataIO;
@@ -18,6 +19,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * M3.5 (issue #26) archive-level acceptance coverage: RAR5 FHEXTRA_HASH parsing of a BLAKE2sp
@@ -57,6 +59,46 @@ class ArchiveRar5Blake2Test {
             out[i] = (byte) Integer.parseInt(hex.substring(2 * i, 2 * i + 2), 16);
         }
         return out;
+    }
+
+    // ---- M3.8 (issue #29): BLAKE2 digest verification through the decoder ---------------------
+
+    @Test
+    void htbEntryExtractsAndVerifiesBlake2Digest() throws Exception {
+        // RED before M3.8: the extract path compared the (never-fed) CRC32 word for BLAKE2
+        // entries, so a perfectly good BLAKE2 entry failed extraction.
+        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-htb.rar"))) {
+            final ByteArrayOutputStream os = new ByteArrayOutputStream();
+            a.extractFile(a.getFileHeaders().get(0), os);
+            assertThat(os.toByteArray()).isEqualTo(payload());
+        }
+    }
+
+    @Test
+    void htbMacEntryExtractsAndVerifiesHashMac() throws Exception {
+        // Encrypted entry stores ConvertHashToMAC(digest, hashKey); verification must compare in
+        // MAC space (Rar5Crypt.convertBlake2ToMac), not the raw digest.
+        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(
+                fixture("rar5-htb-mac.rar"), ArchiveOptions.builder().password("junrar").build())) {
+            final ByteArrayOutputStream os = new ByteArrayOutputStream();
+            a.extractFile(a.getFileHeaders().get(0), os);
+            assertThat(os.toByteArray()).isEqualTo(payload());
+        }
+    }
+
+    @Test
+    void htbEntryWithTamperedDataFailsDigestVerification() throws Exception {
+        // Regression guard: a corrupted payload must be rejected by the BLAKE2 comparison.
+        final File f = fixture("rar5-htb.rar");
+        final byte[] bytes = Files.readAllBytes(f.toPath());
+        bytes[bytes.length - 30] ^= 0x01; // deep in the packed data, past every header
+        final Path p = tempDir.resolve("rar5-htb-tampered.rar");
+        Files.write(p, bytes);
+        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(p.toFile())) {
+            final FileHeader fh = a.getFileHeaders().get(0);
+            assertThat(catchThrowable(() -> a.extractFile(fh, new ByteArrayOutputStream())))
+                .isInstanceOf(CrcErrorException.class);
+        }
     }
 
     @Test

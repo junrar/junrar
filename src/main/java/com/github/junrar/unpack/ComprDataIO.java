@@ -423,11 +423,17 @@ public class ComprDataIO {
 
     /**
      * @return the RAR5 BLAKE2sp digest of the unpacked data accumulated through the
-     *         {@link DataHash} seam, or {@code null} when this entry uses the legacy CRC32
-     *         checksum instead (M3.5, issue #26). The decode/verify wiring that compares this
-     *         against {@link FileHeader#getHashDigest()} lands in M3.6/M3.7.
+     *         {@link DataHash} seam — converted to MAC space ({@code ConvertHashToMAC}) when the
+     *         entry is encrypted and stores a keyed MAC — or {@code null} when this entry uses
+     *         the legacy CRC32 checksum instead (M3.5/M3.8). Compared against
+     *         {@link FileHeader#getHashDigest()} at extract time; one-shot, as
+     *         {@link DataHash#digest()} finalizes the accumulator.
      */
     public byte[] getUnpHashDigest() {
-        return unpHash == null ? null : unpHash.digest();
+        if (unpHash == null) {
+            return null;
+        }
+        final byte[] digest = unpHash.digest();
+        return unpHashMacKey != null ? Rar5Crypt.convertBlake2ToMac(digest, unpHashMacKey) : digest;
     }
 }
