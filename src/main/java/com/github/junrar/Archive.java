@@ -45,6 +45,7 @@ import com.github.junrar.rarfile.MainHeader;
 import com.github.junrar.rarfile.MarkHeader;
 import com.github.junrar.rarfile.ProtectHeader;
 import com.github.junrar.rarfile.RARVersion;
+import com.github.junrar.rarfile.Rar5FileHeaderReader;
 import com.github.junrar.rarfile.SignHeader;
 import com.github.junrar.rarfile.SubBlockHeader;
 import com.github.junrar.rarfile.SubBlockHeaderType;
@@ -52,6 +53,7 @@ import com.github.junrar.rarfile.UnixOwnersHeader;
 import com.github.junrar.rarfile.UnrarHeadertype;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
 import com.github.junrar.rarfile.rar5.Rar5BlockType;
+import com.github.junrar.rarfile.rar5.Rar5MainHeader;
 import com.github.junrar.unpack.ComprDataIO;
 import com.github.junrar.unpack.Unpack;
 import com.github.junrar.volume.FileVolumeManager;
@@ -356,7 +358,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     public List<FileHeader> getFileHeaders() {
         final List<FileHeader> list = new ArrayList<>();
         for (final BaseBlock block : this.headers) {
-            if (block.getHeaderType().equals(UnrarHeadertype.FileHeader)) {
+            // UnrarHeadertype.equals(BaseBlock) rather than the reverse (M3.3, issue #24): a
+            // RAR5 MAIN/CRYPT/ENDARC block's inherited RAR3 headerType byte is never set (those
+            // facts live on Rar5MainHeader's getRar5Type() instead), so getHeaderType() is null
+            // for them -- null.equals(...) would NPE, UnrarHeadertype.FileHeader.equals(null)
+            // is just false.
+            if (UnrarHeadertype.FileHeader.equals(block.getHeaderType())) {
                 list.add((FileHeader) block);
             }
         }
@@ -885,18 +892,31 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             // M3.4 flips this once a HEAD_CRYPT block has been parsed; until then no RAR5
             // header is encrypted, so the CRC record-vs-fatal split always takes the record
             // branch here.
-            final Rar5BaseBlock block = Rar5BaseBlock.parse(headerBuffer, false);
+            final Rar5BaseBlock base = Rar5BaseBlock.parse(headerBuffer, false);
+            final Rar5BlockType rar5Type = base.getRar5Type();
+            // Captured before dispatch so the seek math below is unaffected by which typed
+            // subclass (if any) the block turns into (M3.3, issue #24).
+            final long rar5DataSize = base.getDataSize();
+
+            final BaseBlock block;
+            if (rar5Type == Rar5BlockType.MAIN || rar5Type == Rar5BlockType.CRYPT || rar5Type == Rar5BlockType.ENDARC) {
+                block = Rar5MainHeader.from(base, headerBuffer);
+            } else if (rar5Type == Rar5BlockType.FILE || rar5Type == Rar5BlockType.SERVICE) {
+                block = Rar5FileHeaderReader.read(base, headerBuffer);
+            } else {
+                block = base;
+            }
             block.setPositionInFile(position);
             this.headers.add(block);
 
-            final long newpos = position + headerSize + block.getDataSize();
+            final long newpos = position + headerSize + rar5DataSize;
             this.channel.setPosition(newpos);
             if (processedPositions.contains(newpos)) {
                 throw new BadRarArchiveException();
             }
             processedPositions.add(newpos);
 
-            if (block.getRar5Type() == Rar5BlockType.ENDARC) {
+            if (rar5Type == Rar5BlockType.ENDARC) {
                 break;
             }
         }

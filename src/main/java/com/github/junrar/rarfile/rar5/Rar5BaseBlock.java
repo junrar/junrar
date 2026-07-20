@@ -51,6 +51,7 @@ public class Rar5BaseBlock extends BaseBlock {
     private final int rar5HeaderSize;
     private final long extraSize;
     private final long dataSize;
+    private int fieldsOffset;
 
     private Rar5BaseBlock(final Rar5BlockType rar5Type, final long rar5TypeValue, final long rar5Flags,
                           final int headerCrc32, final int rar5HeaderSize, final long extraSize, final long dataSize) {
@@ -61,6 +62,27 @@ public class Rar5BaseBlock extends BaseBlock {
         this.rar5HeaderSize = rar5HeaderSize;
         this.extraSize = extraSize;
         this.dataSize = dataSize;
+    }
+
+    /**
+     * Copy constructor for the typed M3.3 subclasses ({@code Rar5MainHeader}): the private
+     * all-args constructor above blocks subclassing, so a typed header is built by parsing the
+     * shared framework fields once via {@link #parse}, then copying the result into the
+     * subclass and parsing its type-specific fields from the same buffer.
+     *
+     * @param copy the already-parsed generic block to copy the framework fields from.
+     */
+    protected Rar5BaseBlock(final Rar5BaseBlock copy) {
+        this.rar5Type = copy.rar5Type;
+        this.rar5TypeValue = copy.rar5TypeValue;
+        this.rar5Flags = copy.rar5Flags;
+        this.headerCrc32 = copy.headerCrc32;
+        this.rar5HeaderSize = copy.rar5HeaderSize;
+        this.extraSize = copy.extraSize;
+        this.dataSize = copy.dataSize;
+        this.fieldsOffset = copy.fieldsOffset;
+        setBrokenHeader(copy.isBrokenHeader());
+        setPositionInFile(copy.getPositionInFile());
     }
 
     /**
@@ -145,8 +167,10 @@ public class Rar5BaseBlock extends BaseBlock {
         if ((flags & HFL_DATA) != 0) {
             dataSize = reader.read();
         }
+        final int fieldsOffset = reader.position();
 
         final Rar5BaseBlock block = new Rar5BaseBlock(type, typeValue, flags, storedCrc, header.length, extraSize, dataSize);
+        block.fieldsOffset = fieldsOffset;
         block.setBrokenHeader(broken);
         return block;
     }
@@ -184,6 +208,15 @@ public class Rar5BaseBlock extends BaseBlock {
     /** @return the declared packed-data size following the header, or 0 if {@link #hasData()} is false. */
     public long getDataSize() {
         return this.dataSize;
+    }
+
+    /**
+     * @return the header-buffer offset of the first byte past the common framework fields
+     *         (Size/Type/Flags and, when present, ExtraSize/DataSize) -- where a typed
+     *         subclass's type-specific fixed fields begin (manual &sect;M3.3).
+     */
+    public int getFieldsOffset() {
+        return this.fieldsOffset;
     }
 
     public boolean hasExtra() {

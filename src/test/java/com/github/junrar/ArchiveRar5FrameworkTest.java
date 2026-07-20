@@ -3,8 +3,9 @@ package com.github.junrar;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.BaseBlock;
+import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
-import com.github.junrar.rarfile.rar5.Rar5BlockType;
+import com.github.junrar.rarfile.rar5.Rar5MainHeader;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.io.TempDir;
@@ -44,9 +45,17 @@ class ArchiveRar5FrameworkTest {
         return Files.readAllBytes(Paths.get(getClass().getResource(name).toURI()));
     }
 
-    private static List<Rar5BlockType> types(Archive archive) {
+    /**
+     * M3.3 (issue #24) parses MAIN/FILE/SERVICE/CRYPT/ENDARC into typed subclasses ({@link
+     * com.github.junrar.rarfile.rar5.Rar5MainHeader}, the unified {@link FileHeader}), so a
+     * single {@code Rar5BlockType} cast no longer works for every header in the list -- dispatch
+     * on the concrete Java type instead (manual &sect;7d: "keep Rar5BlockType via a per-instance
+     * check").
+     */
+    private static List<String> types(Archive archive) {
         return archive.getHeaders().stream()
-            .map(b -> ((Rar5BaseBlock) b).getRar5Type())
+            .map(b -> b instanceof Rar5BaseBlock ? ((Rar5BaseBlock) b).getRar5Type().name()
+                : b.getHeaderType().name())
             .collect(Collectors.toList());
     }
 
@@ -54,13 +63,61 @@ class ArchiveRar5FrameworkTest {
     void rar5FixtureIsParsedIntoTheHeadersList() throws Exception {
         try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5.rar", fixtureBytes("rar5.rar")))) {
             assertThat(archive.getFormat()).isEqualTo(RarFormat.RAR50);
-            assertThat(types(archive)).containsExactly(
-                Rar5BlockType.MAIN, Rar5BlockType.FILE, Rar5BlockType.FILE, Rar5BlockType.ENDARC);
+            assertThat(types(archive)).containsExactly("MAIN", "FileHeader", "FileHeader", "ENDARC");
             // A clean fixture: every header CRC verifies.
             assertThat(archive.getHeaders()).noneMatch(BaseBlock::isBrokenHeader);
             // Block file positions (decoded from the 130-byte fixture).
             assertThat(archive.getHeaders().stream().map(BaseBlock::getPositionInFile))
                 .containsExactly(8L, 24L, 73L, 122L);
+
+            // Archive-level listing asserts (manual &sect;8 ground truth).
+            final List<FileHeader> files = archive.getFileHeaders();
+            assertThat(files).extracting(FileHeader::getFileName).containsExactly("FILE1.TXT", "FILE2.TXT");
+            assertThat(files).extracting(FileHeader::getFullUnpackSize).containsExactly(7L, 7L);
+            final FileHeader file1 = files.get(0);
+            assertThat(file1.getFileCRC()).isEqualTo(0x7a197dba);
+            assertThat(file1.getLastModifiedTime()).isNotNull();
+        }
+    }
+
+    /**
+     * M3.3 (issue #24) real-fixture row (manual &sect;7e), cross-checked against the unrar 7.23
+     * oracle: {@code unrar l -v src/test/resources/com/github/junrar/solid/rar5-solid.rar}
+     * reports {@code Details: RAR 5, solid} and 9 entries {@code file1.txt}..{@code file9.txt},
+     * 6 bytes each.
+     */
+    @Test
+    void solidFixtureMainHeaderIsSolidAndListsNineFiles() throws Exception {
+        try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(
+            writeTemp("rar5-solid.rar", fixtureBytes("solid/rar5-solid.rar")))) {
+            final Rar5MainHeader main = (Rar5MainHeader) archive.getHeaders().get(0);
+            assertThat(main.isSolid()).isTrue();
+
+            final List<FileHeader> files = archive.getFileHeaders();
+            assertThat(files).extracting(FileHeader::getFileName).containsExactly(
+                "file1.txt", "file2.txt", "file3.txt", "file4.txt", "file5.txt",
+                "file6.txt", "file7.txt", "file8.txt", "file9.txt");
+            assertThat(files).extracting(FileHeader::getFullUnpackSize).containsOnly(6L);
+        }
+    }
+
+    /**
+     * M3.3 (issue #24) real-fixture row (manual &sect;7e), cross-checked against the unrar 7.23
+     * oracle: {@code unrar l -v src/test/resources/com/github/junrar/password/rar5-password-junrar.rar}
+     * lists {@code file1.txt} marked {@code *} (per-file encrypted data; the archive headers
+     * themselves are not encrypted, so the M3.2 harness parses this without a password).
+     */
+    @Test
+    void passwordFixtureFileEntryCarriesRar5CryptFacts() throws Exception {
+        try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(
+            writeTemp("rar5-password.rar", fixtureBytes("password/rar5-password-junrar.rar")))) {
+            final List<FileHeader> files = archive.getFileHeaders();
+            assertThat(files).hasSize(1);
+            final FileHeader fh = files.get(0);
+            assertThat(fh.getFileName()).isEqualTo("file1.txt");
+            assertThat(fh.isEncrypted()).isTrue();
+            assertThat(fh.getSalt16()).hasSize(16);
+            assertThat(fh.getLg2Count()).isGreaterThan(0);
         }
     }
 

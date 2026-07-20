@@ -20,6 +20,10 @@ package com.github.junrar.rarfile;
 
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.io.Raw;
+import com.github.junrar.rarfile.rar5.Rar5HashType;
+import com.github.junrar.rarfile.rar5.Rar5HostOS;
+import com.github.junrar.rarfile.rar5.Rar5Redirection;
+import com.github.junrar.rarfile.rar5.Rar5UnixOwner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -102,6 +106,27 @@ public class FileHeader extends BlockHeader {
      * {@code CRCProcessedOnly}, {@code d861246:arcread.cpp:430-431}).
      */
     private final int parsedLength;
+
+    // ---- RAR5-only facts (M3.3, issue #24) -- unset (false/0/null) for a RAR3 entry. ----
+
+    private boolean unknownUnpSize;
+
+    private byte[] hashDigest;
+    private Rar5HashType hashType;
+
+    private Rar5Redirection redirection;
+
+    private long fileVersion;
+
+    private Rar5UnixOwner unixOwner;
+
+    private byte[] salt16;
+    private byte[] initV;
+    private int lg2Count;
+    private boolean usePswCheck;
+
+    private long rar5HostOsValue;
+    private Rar5HostOS rar5HostOS;
 
     public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
@@ -250,6 +275,93 @@ public class FileHeader extends BlockHeader {
         }
 
         this.parsedLength = Math.min(position, fileHeader.length);
+    }
+
+    /**
+     * RAR5 FILE/SERVICE constructor (M3.3, issue #24). Populates the SAME unified header the
+     * RAR3 constructor above builds, from a {@link Rar5FileHeaderReader.Parsed} field bag -- see
+     * that reader for the wire-format transcription (unrar {@code ReadHeader50}'s
+     * {@code HEAD_FILE}/{@code HEAD_SERVICE} case plus {@code ProcessExtra50}'s FHEXTRA
+     * records). Normalizes RAR5 facts onto the inherited RAR3 {@code flags} short (directory/
+     * split-before/split-after/solid/password) so every EXISTING predicate ({@link
+     * #isDirectory()}, {@link #isSplitBefore()}, {@link #isSplitAfter()}, {@link #isSolid()},
+     * {@link #isEncrypted()}) works unmodified; RAR3-only flag bits (unicode/salt/large/exttime/
+     * comment) are deliberately left unset so those RAR3-only parse paths stay dormant.
+     *
+     * @param p the parsed RAR5 fields.
+     * @throws CorruptHeaderException if the (post version-suffix) entry name fails the same
+     *                                {@link #isFilenameValid} gate the RAR3 constructor applies
+     *                                (C10) -- a REDIR target is not gated, only the entry name.
+     */
+    FileHeader(Rar5FileHeaderReader.Parsed p) throws CorruptHeaderException {
+        this.headerType = p.service ? UnrarHeadertype.NewSubHeader.getHeaderByte() : UnrarHeadertype.FileHeader.getHeaderByte();
+
+        short f = 0;
+        if (p.directory) {
+            f |= LHD_DIRECTORY;
+        }
+        if (p.splitBefore) {
+            f |= LHD_SPLIT_BEFORE;
+        }
+        if (p.splitAfter) {
+            f |= LHD_SPLIT_AFTER;
+        }
+        if (p.solid) {
+            f |= LHD_SOLID;
+        }
+        if (p.encrypted) {
+            f |= LHD_PASSWORD;
+        }
+        this.flags = f;
+
+        setPackAndDataSize(p.packSize);
+        this.fullPackSize = p.packSize;
+        this.highPackSize = 0;
+
+        this.unpSize = p.unpSize;
+        this.fullUnpackSize = p.unpSize;
+        this.unknownUnpSize = p.unknownUnpSize;
+
+        this.fileAttr = (int) p.fileAttr;
+        this.fileCRC = p.hasCrc32 ? p.fileCRC : 0;
+
+        this.unpMethod = (byte) p.unpMethod;
+        this.unpVersion = p.unpVersion;
+
+        this.rar5HostOsValue = p.hostOsRaw;
+        this.rar5HostOS = p.hostOsEnum;
+        this.hostOS = p.hostOsEnum == Rar5HostOS.WINDOWS ? HostSystem.win32
+            : p.hostOsEnum == Rar5HostOS.UNIX ? HostSystem.unix : null;
+
+        this.fileNameBytes = p.fileNameBytes;
+        this.fileName = p.fileName;
+        this.fileNameW = "";
+        this.nameSize = (short) p.fileNameBytes.length;
+
+        if (isFileHeader() && !isFilenameValid(getFileName())) {
+            throw new CorruptHeaderException("Invalid filename: " + getFileName());
+        }
+
+        this.mTime = p.mTime;
+        this.cTime = p.cTime;
+        this.aTime = p.aTime;
+
+        this.subData = p.subData;
+
+        this.hashDigest = p.hashDigest;
+        this.hashType = p.hashType;
+
+        this.redirection = p.redirType == null ? null : new Rar5Redirection(p.redirType, p.redirIsDirectory, p.redirTarget);
+
+        this.fileVersion = p.fileVersion;
+        this.unixOwner = p.unixOwner;
+
+        this.salt16 = p.salt16;
+        this.initV = p.initV;
+        this.lg2Count = p.lg2Count;
+        this.usePswCheck = p.usePswCheck;
+
+        this.parsedLength = 0;
     }
 
     private static boolean isFilenameValid(String filename) {
@@ -720,5 +832,101 @@ public class FileHeader extends BlockHeader {
      */
     public String getFileName() {
         return isUnicode() && fileNameW != null && !fileNameW.isEmpty() ? fileNameW : fileName;
+    }
+
+    // ---- RAR5-only accessors (M3.3, issue #24) -- see the RAR5 constructor. ----
+
+    /**
+     * @return whether the RAR5 unpacked size is unknown (unrar {@code FHFL_UNPUNKNOWN}/
+     *         {@code INT64NDF}); always {@code false} for a RAR3 entry.
+     */
+    public boolean isUnpSizeUnknown() {
+        return unknownUnpSize;
+    }
+
+    /**
+     * @return the Blake2sp digest from a FHEXTRA_HASH record, or {@code null} if this entry
+     *         has none (a RAR3 entry, or a RAR5 entry whose only checksum is the legacy CRC32).
+     */
+    public byte[] getHashDigest() {
+        return hashDigest == null ? null : hashDigest.clone();
+    }
+
+    /**
+     * @return the hash algorithm of {@link #getHashDigest()}, or {@code null} if none.
+     */
+    public Rar5HashType getHashType() {
+        return hashType;
+    }
+
+    /**
+     * @return the FHEXTRA_REDIR fact (symlink/junction/hardlink/file-copy target), or
+     *         {@code null} if this entry has none. The target is parsed verbatim, not
+     *         sanitized -- see {@link Rar5Redirection}.
+     */
+    public Rar5Redirection getRedirection() {
+        return redirection;
+    }
+
+    /**
+     * @return the FHEXTRA_VERSION file version, or 0 if this entry has none (unrar appends
+     *         {@code ";N"} to {@link #getFileName()} when this is non-zero).
+     */
+    public long getFileVersion() {
+        return fileVersion;
+    }
+
+    /**
+     * @return the FHEXTRA_UOWNER fact, or {@code null} if this entry has none.
+     */
+    public Rar5UnixOwner getUnixOwner() {
+        return unixOwner;
+    }
+
+    /**
+     * @return the FHEXTRA_CRYPT 16-byte salt, or {@code null} if this entry is not
+     *         RAR5-encrypted. Distinct from the RAR3 8-byte {@link #getSalt()}.
+     */
+    public byte[] getSalt16() {
+        return salt16 == null ? null : salt16.clone();
+    }
+
+    /**
+     * @return the FHEXTRA_CRYPT 16-byte initialization vector, or {@code null} if this entry is
+     *         not RAR5-encrypted.
+     */
+    public byte[] getInitVector() {
+        return initV == null ? null : initV.clone();
+    }
+
+    /**
+     * @return the FHEXTRA_CRYPT KDF iteration count (log2), or 0 if this entry is not
+     *         RAR5-encrypted.
+     */
+    public int getLg2Count() {
+        return lg2Count;
+    }
+
+    /**
+     * @return whether a FHEXTRA_CRYPT password-check record is present. The check bytes are not
+     *         verified here (SHA-256 verification is M3.4).
+     */
+    public boolean isUsePswCheck() {
+        return usePswCheck;
+    }
+
+    /**
+     * @return the raw RAR5 {@code HostOS} wire value.
+     */
+    public long getRar5HostOsValue() {
+        return rar5HostOsValue;
+    }
+
+    /**
+     * @return the RAR5 host OS, or {@code null} for a RAR3 entry or an unrecognized value
+     *         (unrar {@code HSYS_UNKNOWN}).
+     */
+    public Rar5HostOS getRar5HostOS() {
+        return rar5HostOS;
     }
 }
