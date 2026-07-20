@@ -193,8 +193,8 @@ public final class Rar5Crypt {
 
     /**
      * {@code ConvertHashToMAC} for a CRC32 checksum (unrar {@code crypt5.cpp:193-205}): the
-     * stored CRC is HMAC-masked with the hash key so it leaks no plaintext information. The
-     * Blake2 variant is deferred to M3.5 (Blake2sp).
+     * stored CRC is HMAC-masked with the hash key so it leaks no plaintext information. See
+     * {@link #convertBlake2ToMac} for the BLAKE2sp variant.
      *
      * @param crc32     the raw little-endian CRC32 value
      * @param hashKey32 the 32-byte HMAC hash key from {@link Kdf#hashKey}
@@ -217,5 +217,25 @@ public final class Rar5Crypt {
             result ^= (digest[i] & 0xff) << ((i & 3) * 8);
         }
         return result;
+    }
+
+    /**
+     * {@code ConvertHashToMAC} for a BLAKE2sp digest (unrar {@code crypt5.cpp:206-211}, M3.5,
+     * issue #26): the stored digest is replaced by {@code HMAC-SHA256(hashKey, digest)}, unlike
+     * the CRC32 arm's fold-into-32-bits ({@link #convertCrc32ToMac}) this keeps the full 32-byte
+     * width.
+     *
+     * @param digest32  the raw 32-byte BLAKE2sp digest ({@link com.github.junrar.crypt.blake2.Blake2sp#digest()})
+     * @param hashKey32 the 32-byte HMAC hash key from {@link Kdf#hashKey}
+     * @return the 32-byte MAC-converted digest
+     */
+    public static byte[] convertBlake2ToMac(final byte[] digest32, final byte[] hashKey32) {
+        try {
+            final Mac mac = Mac.getInstance("HmacSHA256");
+            mac.init(new SecretKeySpec(hashKey32, "HmacSHA256"));
+            return mac.doFinal(digest32);
+        } catch (final GeneralSecurityException e) {
+            throw new IllegalStateException("HmacSHA256 unavailable", e);
+        }
     }
 }

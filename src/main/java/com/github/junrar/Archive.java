@@ -1412,10 +1412,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * @return whether the archive is old format
+     * @return whether the archive is old format; always {@code false} for RAR5 ({@code markHead}
+     *         is never populated on the {@link #readHeadersRar5} path -- M3.5, issue #26, "old
+     *         format" is a RAR 1.3-era wire fact RAR5 cannot have).
      */
     public boolean isOldFormat() {
-        return this.markHead.isOldFormat();
+        return this.markHead != null && this.markHead.isOldFormat();
     }
 
     /**

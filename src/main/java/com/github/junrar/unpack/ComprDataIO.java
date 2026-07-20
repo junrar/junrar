@@ -22,6 +22,8 @@ import com.github.junrar.UnrarCallback;
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.crypt.Rijndael;
+import com.github.junrar.crypt.blake2.Blake2sp;
+import com.github.junrar.crypt.blake2.DataHash;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.InitDeciphererFailedException;
@@ -29,6 +31,7 @@ import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.WrongPasswordException;
 import com.github.junrar.io.RawDataIo;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.rarfile.rar5.Rar5HashType;
 import com.github.junrar.volume.Volume;
 
 import javax.crypto.Cipher;
@@ -78,6 +81,7 @@ public class ComprDataIO {
     private long packFileCRC, unpFileCRC, packedCRC;
     private CRC32 unpCrc32;
     private CRC32 packCrc32;
+    private DataHash unpHash;
 
     private int encryption;
 
@@ -107,6 +111,7 @@ public class ComprDataIO {
         processedArcSize = totalArcSize = 0;
         unpCrc32 = new CRC32();
         packCrc32 = new CRC32();
+        unpHash = null;
     }
 
     public void init(FileHeader hd) throws IOException, RarException {
@@ -120,6 +125,7 @@ public class ComprDataIO {
         packedCRC = 0xFFffFFff;
         unpCrc32.reset();
         packCrc32.reset();
+        unpHash = (hd.getHashType() == Rar5HashType.BLAKE2) ? new Blake2sp() : null;
 
         if (hd.getSalt16() != null) {
             initRar5Decipherer(hd);
@@ -231,6 +237,8 @@ public class ComprDataIO {
         if (!skipUnpCRC) {
             if (archive.isOldFormat()) {
                 unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, count);
+            } else if (unpHash != null) {
+                unpHash.update(addr, offset, count);
             } else {
                 unpCrc32.update(addr, offset, count);
                 unpFileCRC = (int) (~unpCrc32.getValue());
@@ -397,5 +405,15 @@ public class ComprDataIO {
 
     public FileHeader getSubHeader() {
         return subHead;
+    }
+
+    /**
+     * @return the RAR5 BLAKE2sp digest of the unpacked data accumulated through the
+     *         {@link DataHash} seam, or {@code null} when this entry uses the legacy CRC32
+     *         checksum instead (M3.5, issue #26). The decode/verify wiring that compares this
+     *         against {@link FileHeader#getHashDigest()} lands in M3.6/M3.7.
+     */
+    public byte[] getUnpHashDigest() {
+        return unpHash == null ? null : unpHash.digest();
     }
 }
