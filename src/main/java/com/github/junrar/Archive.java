@@ -27,6 +27,7 @@ import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.HeaderNotInArchiveException;
 import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.MainHeaderNullException;
+import com.github.junrar.exception.MissingPreviousVolumeException;
 import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
@@ -336,6 +337,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     /** @see #testOnlyOpenSuppressingV5Gate(File) */
     static Archive testOnlyOpenSuppressingV5Gate(final File firstVolume, final ArchiveOptions options) throws RarException, IOException {
         return new Archive(new FileVolumeManager(firstVolume), options, true);
+    }
+
+    /**
+     * M3.9 multi-volume flavor of the pre-gate harness (issue #30): same gate suppression,
+     * arbitrary {@link VolumeManager} so the InputStream volume rows run before M3.11.
+     * Deleted with the gate at M3.11.
+     *
+     * @see #testOnlyOpenSuppressingV5Gate(File)
+     */
+    static Archive testOnlyOpenSuppressingV5Gate(final VolumeManager volumeManager) throws RarException, IOException {
+        return new Archive(volumeManager, ArchiveOptions.builder().build(), true);
     }
 
     private void setChannel(final SeekableReadOnlyByteChannel channel, final long length) throws IOException, RarException {
@@ -1232,7 +1244,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 }
             }
             doExtractFile(hd, os);
-            lastProcessedFileIndex = targetIdx;
+            // A volume switch during extraction re-parses the header list, so the requested
+            // header's index can go stale; track solid progress by the entry the dataIO
+            // actually finished on (the continuation header in the final volume) as located
+            // in the *current* list (M3.9, issue #30).
+            final int processedIdx = getFileHeaders().indexOf(this.dataIO.getSubHeader());
+            lastProcessedFileIndex = processedIdx >= 0 ? processedIdx : targetIdx;
         } catch (final Exception e) {
             if (e instanceof RarException) {
                 throw (RarException) e;
@@ -1407,6 +1424,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         // warning channel, so silent garbage extraction would be worse -- refuse instead.
         if (hd.isBrokenHeader()) {
             throw new CorruptHeaderException("Cannot extract '" + hd.getFileName() + "': header CRC mismatch");
+        }
+        // Started mid-set: the entry's data begins in a volume this extraction never saw
+        // (M3.9, issue #30; unrar UIERROR_NEEDPREVVOL, 8f437ab:extract.cpp:471-482 — the
+        // AnalyzeArchive first-volume rewind is CLI convenience, a recorded non-goal).
+        // RAR3/RAR4 keep their historical untyped behavior.
+        if (hd.getUnpVersion() == 50 && hd.isSplitBefore()) {
+            throw new MissingPreviousVolumeException(
+                "Extraction of '" + hd.getFileName() + "' must start from a previous volume");
         }
         this.dataIO.init(os);
         this.dataIO.init(hd);

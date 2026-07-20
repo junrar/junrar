@@ -27,6 +27,7 @@ import com.github.junrar.crypt.blake2.DataHash;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.InitDeciphererFailedException;
+import com.github.junrar.exception.MissingNextVolumeException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.WrongPasswordException;
 import com.github.junrar.io.RawDataIo;
@@ -82,6 +83,12 @@ public class ComprDataIO {
     private CRC32 unpCrc32;
     private CRC32 packCrc32;
     private DataHash unpHash;
+    /**
+     * RAR5 per-volume packed-chunk digest for BLAKE2 split entries (unrar
+     * {@code PackedDataHash}, {@code 8f437ab:rdwrfn.cpp} UnpRead / {@code volume.cpp:19-26});
+     * {@code null} for CRC32 entries, which keep accumulating through {@link #packCrc32}.
+     */
+    private DataHash packHash;
     /** KDF hash key for encrypted files that store a HASHMAC checksum; {@code null} otherwise. */
     private byte[] unpHashMacKey;
 
@@ -128,6 +135,7 @@ public class ComprDataIO {
         unpCrc32.reset();
         packCrc32.reset();
         unpHash = (hd.getHashType() == Rar5HashType.BLAKE2) ? new Blake2sp() : null;
+        packHash = newPackHash(hd);
         unpHashMacKey = null;
 
         if (hd.getSalt16() != null) {
@@ -178,6 +186,88 @@ public class ComprDataIO {
         }
     }
 
+    /**
+     * RAR5 volume switch (M3.9, issue #30; unrar {@code MergeArchive},
+     * {@code 8f437ab:volume.cpp:10-185}): verify the finished part's packed-chunk checksum,
+     * acquire the next volume through the {@link com.github.junrar.volume.VolumeManager} SPI
+     * (never by constructing names here — manual §4.12), re-parse it, and continue the entry
+     * from its {@code HFL_SPLITBEFORE} continuation header. Unlike the RAR3/RAR4 branch's
+     * return-of-{@code -1}, every failure is a typed exception; unlike {@link #init(FileHeader)},
+     * the unpacked-side accumulators survive — the final part stores the end-to-end unpacked
+     * checksum ({@code extract.cpp:866}), so resetting them mid-file would break the M3.8
+     * digest compare.
+     */
+    private void mergeRar5Volume() throws IOException, RarException {
+        final FileHeader finished = this.subHead;
+        checkRar5PackedHash(finished);
+
+        final Volume nextVolume = archive.getVolumeManager().nextVolume(archive, archive.getVolume());
+        UnrarCallback callback = archive.getUnrarCallback();
+        if (nextVolume == null || (callback != null && !callback.isNextVolumeReady(nextVolume))) {
+            nextVolumeMissing = true;
+            throw new MissingNextVolumeException("Next volume of '" + finished.getFileName() + "' not supplied");
+        }
+        try {
+            archive.setVolume(nextVolume);
+        } catch (IOException e) {
+            nextVolumeMissing = true;
+            throw new MissingNextVolumeException(e);
+        }
+        final FileHeader continuation = archive.nextFileHeader();
+        if (continuation == null || !continuation.isSplitBefore()) {
+            throw new CorruptHeaderException("Next volume lacks the split continuation header of '"
+                + finished.getFileName() + "'");
+        }
+        initNextVolume(continuation);
+    }
+
+    /**
+     * unrar {@code MergeArchive} packed-hash check ({@code 8f437ab:volume.cpp:19-26}): every
+     * RAR5 {@code HFL_SPLITAFTER} part header stores the checksum of its own <em>packed</em>
+     * chunk, verified when that part is exhausted. junrar reads packed bytes through the
+     * decrypting {@link RawDataIo} seam, while unrar hashes the raw pre-decryption stream —
+     * the two are only comparable for unencrypted entries, so encrypted entries skip the
+     * per-volume check; their end-to-end unpacked MAC digest still verifies the whole file.
+     */
+    private void checkRar5PackedHash(final FileHeader hd) throws RarException {
+        if (hd.getSalt16() != null) {
+            return;
+        }
+        if (hd.getHashType() == Rar5HashType.BLAKE2) {
+            if (packHash == null || !Arrays.equals(packHash.digest(), hd.getHashDigest())) {
+                throw new CrcErrorException();
+            }
+        } else if (this.getPackedCRC() != ~hd.getFileCRC()) {
+            throw new CrcErrorException();
+        }
+    }
+
+    /**
+     * Re-arms the packed-side state on the continuation header (unrar {@code MergeArchive}
+     * tail, {@code 8f437ab:volume.cpp:165-183}: {@code SetPackedSizeToRead} +
+     * {@code PackedDataHash.Init} + per-volume {@code SetKey}); the unpacked-side
+     * accumulators ({@link #unpHash}/{@link #unpCrc32}) deliberately keep running.
+     */
+    private void initNextVolume(final FileHeader hd) throws IOException, RarException {
+        archive.getChannel().setPosition(hd.getDataStartOffset(archive.isEncrypted()));
+        this.underlyingDataIo = new RawDataIo(archive.getChannel());
+        subHead = hd;
+        unpPackedSize = hd.getFullPackSize();
+        curUnpRead = 0;
+        packedCRC = 0xFFffFFff;
+        packCrc32.reset();
+        packHash = newPackHash(hd);
+        if (hd.getSalt16() != null) {
+            initRar5Decipherer(hd);
+        }
+    }
+
+    private static DataHash newPackHash(final FileHeader hd) {
+        final boolean packedBlake2 = hd.isSplitAfter()
+            && hd.getHashType() == Rar5HashType.BLAKE2 && hd.getSalt16() == null;
+        return packedBlake2 ? new Blake2sp() : null;
+    }
+
     public int unpRead(byte[] addr, int offset, int count) throws IOException, RarException {
         int retCode = 0, totalRead = 0;
         while (count > 0) {
@@ -188,8 +278,12 @@ public class ComprDataIO {
             }
 
             if (subHead.isSplitAfter()) {
-                packCrc32.update(addr, offset, retCode);
-                packedCRC = (int) (~packCrc32.getValue());
+                if (packHash != null) {
+                    packHash.update(addr, offset, retCode);
+                } else {
+                    packCrc32.update(addr, offset, retCode);
+                    packedCRC = (int) (~packCrc32.getValue());
+                }
             }
 
             totalRead += retCode;
@@ -201,6 +295,10 @@ public class ComprDataIO {
             archive.bytesReadRead(retCode);
 
             if (unpPackedSize == 0 && subHead.isSplitAfter()) {
+                if (subHead.getUnpVersion() == 50) {
+                    mergeRar5Volume();
+                    continue;
+                }
                 Volume nextVolume = archive.getVolumeManager().nextVolume(archive, archive.getVolume());
                 if (nextVolume == null) {
                     nextVolumeMissing = true;
