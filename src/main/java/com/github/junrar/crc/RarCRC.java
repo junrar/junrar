@@ -59,6 +59,26 @@ public class RarCRC {
     }
 
     /**
+     * Computes the RAR5 full 32-bit header CRC (M3.2, issue #23; unrar {@code GetCRC50},
+     * {@code d861246:rawread.cpp:185-190}): standard CRC-32 over
+     * {@code header[offset, offset + length)}. Unlike the RAR3 16-bit check this keeps the
+     * whole 32-bit width. The caller feeds the header bytes past the 4-byte stored CRC
+     * (i.e. {@code offset == 4}, {@code length == HeaderSize - 4}) and compares the result
+     * to the little-endian stored value.
+     *
+     * @param header the raw header bytes, including the 4-byte headCRC field at the front
+     *               (NOT covered by the checksum)
+     * @param offset start offset within {@code header} (4, to skip the stored CRC)
+     * @param length number of bytes to cover
+     * @return the 32-bit header CRC
+     */
+    public static int computeHeaderCrc32(final byte[] header, final int offset, final int length) {
+        final CRC32 crc32 = new CRC32();
+        crc32.update(header, offset, length);
+        return (int) crc32.getValue();
+    }
+
+    /**
      * Computes the legacy 16-bit checksum used by RAR 1.5 archives.
      * <p>
      * This is not a standard CRC-16 algorithm. It is a simple rotating-add
