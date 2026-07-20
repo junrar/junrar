@@ -10,18 +10,33 @@ jobs:
   regression:
     name: Regression test
     runs-on: ubuntu-latest
-    environment: regression
     steps:
       - uses: actions/checkout@v7
 
-      - name: Download corpus
-        uses: k0staa/download-gdrive-file-action@v1.1
+      # Corpus is a ~7 GB public Google Drive file. Cache the downloaded zip so the
+      # download only runs on a cache miss (bump the key suffix to force a refresh).
+      - name: Cache corpus
+        id: corpus-cache
+        uses: actions/cache@v4
         with:
-          service-account-key-json: ${{ secrets.SERVICE_ACCOUNT_KEY_JSON }}
-          download-file-name: rar-corpus.zip
+          path: rar-corpus.zip
+          key: rar-corpus-v1-1BvUT1jDkXon9-uqu2-QhBHjOthWcCL8G
+
+      - name: Download corpus
+        if: steps.corpus-cache.outputs.cache-hit != 'true'
+        run: |
+          python3 -m pip install --user --quiet gdown
+          python3 - <<'PY'
+          import gdown
+          gdown.download(
+              "https://drive.google.com/uc?id=1BvUT1jDkXon9-uqu2-QhBHjOthWcCL8G",
+              "rar-corpus.zip",
+              quiet=False,
+          )
+          PY
 
       - name: Unzip corpus
-        run: unzip rar-corpus.zip
+        run: unzip -q rar-corpus.zip
 
       - uses: actions/setup-java@v5
         with:
