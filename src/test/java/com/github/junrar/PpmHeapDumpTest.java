@@ -97,7 +97,9 @@ public class PpmHeapDumpTest {
             archive.extractFile(headers.get(0), discardOutput());
 
             Unpack unpack = (Unpack) ARCHIVE_UNPACK.get(archive);
+            assertThat(unpack).as("Archive.unpack after extraction").isNotNull();
             ModelPPM ppm = (ModelPPM) UNPACK_PPM.get(unpack);
+            assertThat(ppm).as("Unpack.ppm after PPMd extraction").isNotNull();
             SubAllocator allocator = ppm.getSubAlloc();
             byte[] heap = allocator.getHeap();
             int heapEnd = allocator.getHeapEnd();
