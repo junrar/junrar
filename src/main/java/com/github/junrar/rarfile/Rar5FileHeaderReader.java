@@ -1,5 +1,6 @@
 package com.github.junrar.rarfile;
 
+import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.io.VInt;
@@ -44,6 +45,7 @@ public final class Rar5FileHeaderReader {
     // FHEXTRA_CRYPT payload.
     private static final long CRYPT_VERSION = 0;
     private static final long FHEXTRA_CRYPT_PSWCHECK = 0x01;
+    private static final long FHEXTRA_CRYPT_HASHMAC = 0x02;
     private static final int SIZE_SALT50 = 16;
     private static final int SIZE_INITV = 16;
     private static final int SIZE_PSWCHECK = 8;
@@ -247,14 +249,37 @@ public final class Rar5FileHeaderReader {
         pos += SIZE_SALT50;
         final byte[] initV = Arrays.copyOfRange(header, pos, pos + SIZE_INITV);
         pos += SIZE_INITV;
-        final boolean usePswCheck = (flags & FHEXTRA_CRYPT_PSWCHECK) != 0;
-        // csum (SHA-256 prefix of pswCheck) verification deferred to M3.4; not read further here.
 
         p.encrypted = true;
         p.salt16 = salt16;
         p.initV = initV;
         p.lg2Count = lg2Count;
-        p.usePswCheck = usePswCheck && pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM <= end;
+        p.useHashKey = (flags & FHEXTRA_CRYPT_HASHMAC) != 0;
+
+        boolean usePswCheck = (flags & FHEXTRA_CRYPT_PSWCHECK) != 0
+            && pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM <= end;
+        if (usePswCheck) {
+            final byte[] check = Arrays.copyOfRange(header, pos, pos + SIZE_PSWCHECK);
+            final byte[] csum = Arrays.copyOfRange(header, pos + SIZE_PSWCHECK, pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM);
+            // unrar arcread.cpp:1096-1107: a pswcheck whose SHA-256-prefix csum does not match is
+            // unusable; a service header with an all-zero pswcheck (RAR 5.21 and earlier) also
+            // drops the flag.
+            if (Rar5Crypt.pswCheckCsumValid(check, csum) && !(p.service && isAllZero(check))) {
+                p.pswCheck = check;
+            } else {
+                usePswCheck = false;
+            }
+        }
+        p.usePswCheck = usePswCheck;
+    }
+
+    private static boolean isAllZero(final byte[] b) {
+        for (final byte v : b) {
+            if (v != 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     private static void parseHash(final byte[] header, final int start, final int end, final Parsed p) throws CorruptHeaderException {
@@ -481,6 +506,8 @@ public final class Rar5FileHeaderReader {
         byte[] initV;
         int lg2Count;
         boolean usePswCheck;
+        boolean useHashKey;
+        byte[] pswCheck;
 
         byte[] subData;
     }

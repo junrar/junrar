@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.nio.file.attribute.FileTime;
+import java.security.MessageDigest;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.zip.CRC32;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -210,7 +212,7 @@ class Rar5MainHeaderTest {
             pswCheck[i] = (byte) (0x10 + i);
         }
         writeLen(fixed, pswCheck);
-        writeLen(fixed, new byte[4]); // csum, unverified in M3.3
+        writeLen(fixed, sha256Prefix(pswCheck)); // csum, verified in M3.4
 
         final Rar5MainHeader h = parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
         assertThat(h.getCryptVersion()).isEqualTo(0);
@@ -218,6 +220,48 @@ class Rar5MainHeaderTest {
         assertThat(h.getLg2Count()).isEqualTo(15);
         assertThat(h.getSalt16()).isEqualTo(salt);
         assertThat(h.getPswCheck()).isEqualTo(pswCheck);
+    }
+
+    /**
+     * M3.4: a pswcheck whose SHA-256-prefix csum does not match is unusable -- unrar keeps parsing
+     * but drops UsePswCheck ({@code arcread.cpp:752-755}) so a damaged check can't reject a valid
+     * password.
+     */
+    @Test
+    void cryptBlockWithBadPswCheckCsumDropsTheFlag() throws Exception {
+        final ByteArrayOutputStream fixed = new ByteArrayOutputStream();
+        writeLen(fixed, vint(0));
+        writeLen(fixed, vint(0x0001));
+        fixed.write(15);
+        writeLen(fixed, new byte[16]);
+        writeLen(fixed, new byte[8]);
+        writeLen(fixed, new byte[]{1, 2, 3, 4}); // csum that cannot match SHA-256(pswCheck)
+
+        final Rar5MainHeader h = parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
+        assertThat(h.isUsePswCheck()).isFalse();
+        assertThat(h.getPswCheck()).isNull();
+    }
+
+    /**
+     * M3.4: a CRYPT header that sets the PSWCHECK flag but is truncated before the pswcheck bytes
+     * must drop UsePswCheck (never leave it true with a null value) -- otherwise a subsequent
+     * encrypted header would throw a spurious WrongPasswordException for the correct password.
+     */
+    @Test
+    void cryptBlockWithFlagButTruncatedPswCheckDropsTheFlag() throws Exception {
+        final ByteArrayOutputStream fixed = new ByteArrayOutputStream();
+        writeLen(fixed, vint(0));
+        writeLen(fixed, vint(0x0001)); // PSWCHECK flag set
+        fixed.write(15);
+        writeLen(fixed, new byte[16]); // salt, then the header ends -- no pswcheck bytes follow
+
+        final Rar5MainHeader h = parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
+        assertThat(h.isUsePswCheck()).isFalse();
+        assertThat(h.getPswCheck()).isNull();
+    }
+
+    private static byte[] sha256Prefix(final byte[] data) throws Exception {
+        return Arrays.copyOf(MessageDigest.getInstance("SHA-256").digest(data), 4);
     }
 
     @Test

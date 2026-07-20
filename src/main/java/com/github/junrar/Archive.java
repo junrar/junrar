@@ -19,6 +19,7 @@
 package com.github.junrar;
 
 import com.github.junrar.crc.RarCRC;
+import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.CorruptHeaderException;
@@ -31,6 +32,8 @@ import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.exception.UnsupportedRarVersionException;
+import com.github.junrar.exception.WrongPasswordException;
+import com.github.junrar.io.Raw;
 import com.github.junrar.io.RawDataIo;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
 import com.github.junrar.rarfile.AVHeader;
@@ -72,6 +75,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
+import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -136,6 +140,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private MarkHeader markHead = null;
 
     private RarFormat format = null;
+
+    /**
+     * True once a RAR5 HEAD_CRYPT block has been parsed on the current volume (M3.4): every
+     * subsequent header is AES-256-CBC encrypted. Reset per volume in {@link #resetChannel}.
+     */
+    private boolean rar5HeadersEncrypted = false;
 
     private MainHeader newMhd = null;
 
@@ -310,7 +320,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.channel = channel;
         try {
             readHeaders(length);
-        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | UnsupportedRarVersionException | CorruptHeaderException | BadRarArchiveException e) {
+        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | UnsupportedRarVersionException
+                 | CorruptHeaderException | BadRarArchiveException | WrongPasswordException e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
             throw e;
         } catch (final Exception e) {
@@ -390,6 +401,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @throws RarException when the main header is not present
      */
     public boolean isEncrypted() throws RarException {
+        if (this.format == RarFormat.RAR50) {
+            // RAR5 has no RAR3 MainHeader; header encryption is tracked by the HEAD_CRYPT block.
+            return this.rar5HeadersEncrypted;
+        }
         if (this.newMhd != null) {
             return this.newMhd.isEncrypted();
         } else {
@@ -866,32 +881,54 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         }
 
         final Set<Long> processedPositions = new HashSet<>();
+        // Non-null once a HEAD_CRYPT block is parsed: every subsequent header is then AES-256-CBC
+        // encrypted with its own prepended 16-byte IV (unrar arcread.cpp:559-631).
+        Rar5HeaderCrypt crypto = null;
         while (true) {
             final long position = this.channel.getPosition();
             if (position >= fileLength) {
                 break;
             }
 
-            final byte[] first = new byte[Rar5BaseBlock.FIRST_READ_SIZE];
-            final int got = fill(first, 0, Rar5BaseBlock.FIRST_READ_SIZE);
-            if (got == 0) {
-                break;
+            final boolean encrypted = crypto != null;
+            final byte[] headerBuffer;
+            if (encrypted) {
+                headerBuffer = readEncryptedRar5Header(crypto);
+                if (headerBuffer == null) {
+                    break;
+                }
+            } else {
+                final byte[] first = new byte[Rar5BaseBlock.FIRST_READ_SIZE];
+                final int got = fill(first, 0, Rar5BaseBlock.FIRST_READ_SIZE);
+                if (got == 0) {
+                    break;
+                }
+                if (got < Rar5BaseBlock.FIRST_READ_SIZE) {
+                    throw new CorruptHeaderException("Truncated RAR5 block header");
+                }
+                final int headerSize = Rar5BaseBlock.checkHeaderSize(first);
+                headerBuffer = safelyAllocate(headerSize, Rar5BaseBlock.MAX_HEADER_SIZE_RAR5);
+                System.arraycopy(first, 0, headerBuffer, 0, Rar5BaseBlock.FIRST_READ_SIZE);
+                final int rest = headerSize - Rar5BaseBlock.FIRST_READ_SIZE;
+                if (fill(headerBuffer, Rar5BaseBlock.FIRST_READ_SIZE, rest) < rest) {
+                    throw new CorruptHeaderException("Truncated RAR5 header body");
+                }
             }
-            if (got < Rar5BaseBlock.FIRST_READ_SIZE) {
-                throw new CorruptHeaderException("Truncated RAR5 block header");
-            }
+            final int headerSize = headerBuffer.length;
 
-            final int headerSize = Rar5BaseBlock.checkHeaderSize(first);
-            final byte[] headerBuffer = safelyAllocate(headerSize, Rar5BaseBlock.MAX_HEADER_SIZE_RAR5);
-            System.arraycopy(first, 0, headerBuffer, 0, Rar5BaseBlock.FIRST_READ_SIZE);
-            final int rest = headerSize - Rar5BaseBlock.FIRST_READ_SIZE;
-            if (fill(headerBuffer, Rar5BaseBlock.FIRST_READ_SIZE, rest) < rest) {
-                throw new CorruptHeaderException("Truncated RAR5 header body");
+            if (encrypted) {
+                // The decrypted header's CRC is the only wrong-password signal under CBC (unrar
+                // maps a mismatch to FailedHeaderDecryption, arcread.cpp:691-696) -- verify it
+                // here so a wrong key surfaces as WrongPasswordException, while a CRC-valid but
+                // structurally broken header still falls through to CorruptHeaderException below.
+                final int storedCrc = Raw.readIntLittleEndian(headerBuffer, 0);
+                final int computedCrc = RarCRC.computeHeaderCrc32(headerBuffer, 4, headerBuffer.length - 4);
+                if (storedCrc != computedCrc) {
+                    throw new WrongPasswordException("RAR5 encrypted header CRC mismatch (wrong password or corrupt header)");
+                }
             }
-
-            // M3.4 flips this once a HEAD_CRYPT block has been parsed; until then no RAR5
-            // header is encrypted, so the CRC record-vs-fatal split always takes the record
-            // branch here.
+            // CRC already validated for the encrypted path, still record-vs-fatal for the
+            // unencrypted path -- pass encrypted=false either way (a wrong key never reaches here).
             final Rar5BaseBlock base = Rar5BaseBlock.parse(headerBuffer, false);
             final Rar5BlockType rar5Type = base.getRar5Type();
             // Captured before dispatch so the seek math below is unaffected by which typed
@@ -909,7 +946,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             block.setPositionInFile(position);
             this.headers.add(block);
 
-            final long newpos = position + headerSize + rar5DataSize;
+            // The HEAD_CRYPT block itself is plaintext; header encryption starts with the NEXT
+            // block (unrar sets Encrypted=true only after reading it, arcread.cpp:758).
+            if (rar5Type == Rar5BlockType.CRYPT && block instanceof Rar5MainHeader) {
+                crypto = Rar5HeaderCrypt.from((Rar5MainHeader) block);
+                this.rar5HeadersEncrypted = true;
+            }
+
+            // Encrypted headers consume the 16-byte IV plus the header padded up to the AES block
+            // size (unrar FullHeaderSize, archive.cpp:292-302 -- align-16 on BOTH paths, manual 4.12).
+            final long consumed = encrypted ? (Rar5Crypt.SIZE_INITV + alignTo16(headerSize)) : headerSize;
+            final long newpos = position + consumed + rar5DataSize;
             this.channel.setPosition(newpos);
             if (processedPositions.contains(newpos)) {
                 throw new BadRarArchiveException();
@@ -920,6 +967,91 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 break;
             }
         }
+    }
+
+    private static int alignTo16(final int size) {
+        return (size + 15) & ~15;
+    }
+
+    /**
+     * The archive-level RAR5 header-encryption facts carried from the HEAD_CRYPT block to every
+     * subsequent encrypted header (M3.4). The KDF salt/count are the same for the whole archive;
+     * only the per-header IV varies, so the derived key is served from {@link Rar5Crypt}'s cache.
+     */
+    private static final class Rar5HeaderCrypt {
+        final byte[] salt16;
+        final int lg2Count;
+        final boolean usePswCheck;
+        final byte[] pswCheck;
+
+        private Rar5HeaderCrypt(final byte[] salt16, final int lg2Count, final boolean usePswCheck, final byte[] pswCheck) {
+            this.salt16 = salt16;
+            this.lg2Count = lg2Count;
+            this.usePswCheck = usePswCheck;
+            this.pswCheck = pswCheck;
+        }
+
+        static Rar5HeaderCrypt from(final Rar5MainHeader h) {
+            return new Rar5HeaderCrypt(h.getSalt16(), h.getLg2Count(), h.isUsePswCheck(), h.getPswCheck());
+        }
+    }
+
+    /**
+     * Reads and AES-256-CBC-decrypts one RAR5 header (unrar {@code ReadHeader50}'s decrypt path,
+     * {@code arcread.cpp:559-631}): consume the 16-byte IV, verify the password check value
+     * against the HEAD_CRYPT block, then decrypt through {@link RawDataIo} (which rounds reads up
+     * to the AES block boundary, manual &sect;4.12). The returned buffer is exactly HeadSize bytes.
+     *
+     * @return the decrypted header buffer, or {@code null} at a clean end of channel
+     * @throws WrongPasswordException on a missing password or a password-check mismatch
+     */
+    private byte[] readEncryptedRar5Header(final Rar5HeaderCrypt crypto) throws IOException, RarException {
+        if (this.passwordChars == null) {
+            // unrar's own passwordless -hp open reports "Incorrect password" (probed 2026-07-17).
+            throw new WrongPasswordException("Missing password for header-encrypted RAR5 archive");
+        }
+        final byte[] iv = new byte[Rar5Crypt.SIZE_INITV];
+        final int ivGot = fill(iv, 0, iv.length);
+        if (ivGot == 0) {
+            return null;
+        }
+        if (ivGot < iv.length) {
+            throw new CorruptHeaderException("Truncated RAR5 header IV");
+        }
+
+        final byte[] pwdUtf8 = Rar5Crypt.passwordToUtf8(this.passwordChars);
+        final Rar5Crypt.Kdf kdf;
+        final Cipher cipher;
+        try {
+            kdf = Rar5Crypt.deriveKey(pwdUtf8, crypto.salt16, crypto.lg2Count);
+            cipher = Rar5Crypt.buildDecipherer(kdf.aesKey, iv);
+        } catch (final GeneralSecurityException e) {
+            throw new InitDeciphererFailedException(e);
+        } finally {
+            Arrays.fill(pwdUtf8, (byte) 0);
+        }
+        if (crypto.usePswCheck && !Arrays.equals(kdf.pswCheck, crypto.pswCheck)) {
+            throw new WrongPasswordException("RAR5 password check failed");
+        }
+
+        final RawDataIo rawData = new RawDataIo(this.channel);
+        rawData.setCipher(cipher);
+        final byte[] first = new byte[Rar5BaseBlock.FIRST_READ_SIZE];
+        if (rawData.readFully(first, first.length) < first.length) {
+            throw new CorruptHeaderException("Truncated RAR5 encrypted header");
+        }
+        final int headerSize = Rar5BaseBlock.checkHeaderSize(first);
+        final byte[] headerBuffer = safelyAllocate(headerSize, Rar5BaseBlock.MAX_HEADER_SIZE_RAR5);
+        System.arraycopy(first, 0, headerBuffer, 0, Rar5BaseBlock.FIRST_READ_SIZE);
+        final int rest = headerSize - Rar5BaseBlock.FIRST_READ_SIZE;
+        if (rest > 0) {
+            final byte[] tail = new byte[rest];
+            if (rawData.readFully(tail, rest) < rest) {
+                throw new CorruptHeaderException("Truncated RAR5 encrypted header body");
+            }
+            System.arraycopy(tail, 0, headerBuffer, Rar5BaseBlock.FIRST_READ_SIZE, rest);
+        }
+        return headerBuffer;
     }
 
     /**
@@ -1299,6 +1431,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         if (this.unpack != null) {
             this.unpack.cleanUp();
         }
+        this.rar5HeadersEncrypted = false;
     }
 
     /**

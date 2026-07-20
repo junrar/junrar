@@ -124,6 +124,8 @@ public class FileHeader extends BlockHeader {
     private byte[] initV;
     private int lg2Count;
     private boolean usePswCheck;
+    private boolean useHashKey;
+    private byte[] pswCheck;
 
     private long rar5HostOsValue;
     private Rar5HostOS rar5HostOS;
@@ -360,6 +362,8 @@ public class FileHeader extends BlockHeader {
         this.initV = p.initV;
         this.lg2Count = p.lg2Count;
         this.usePswCheck = p.usePswCheck;
+        this.useHashKey = p.useHashKey;
+        this.pswCheck = p.pswCheck;
 
         this.parsedLength = 0;
     }
@@ -908,11 +912,29 @@ public class FileHeader extends BlockHeader {
     }
 
     /**
-     * @return whether a FHEXTRA_CRYPT password-check record is present. The check bytes are not
-     *         verified here (SHA-256 verification is M3.4).
+     * @return whether a valid FHEXTRA_CRYPT password-check record is present (its SHA-256-prefix
+     *         csum verified at parse time, M3.4). When true, {@link #getPswCheck()} is non-null.
      */
     public boolean isUsePswCheck() {
         return usePswCheck;
+    }
+
+    /**
+     * @return the 8-byte FHEXTRA_CRYPT password-check value, or {@code null} if absent or its
+     *         csum failed to verify. Compared against the value {@code Rar5Crypt} derives from
+     *         the password to detect a wrong password before decrypting file data (M3.4).
+     */
+    public byte[] getPswCheck() {
+        return pswCheck == null ? null : pswCheck.clone();
+    }
+
+    /**
+     * @return whether the FHEXTRA_CRYPT HASHMAC flag is set, i.e. the stored checksum is
+     *         HMAC-masked with the KDF hash key ({@code ConvertHashToMAC}); consumed by the
+     *         extraction-time hash verification (Blake2 variant lands in M3.5).
+     */
+    public boolean isUseHashKey() {
+        return useHashKey;
     }
 
     /**

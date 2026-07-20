@@ -11,7 +11,9 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.attribute.FileTime;
+import java.security.MessageDigest;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.zip.CRC32;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -409,8 +411,9 @@ class Rar5FileHeaderReaderTest {
         payload.write(14); // Lg2Count
         writeLen(payload, salt);
         writeLen(payload, initV);
-        writeLen(payload, new byte[8]); // pswCheck
-        writeLen(payload, new byte[4]); // csum
+        final byte[] pswCheck = {1, 2, 3, 4, 5, 6, 7, 8};
+        writeLen(payload, pswCheck);
+        writeLen(payload, sha256Prefix(pswCheck)); // csum, verified in M3.4
         final byte[] extra = extraRecord(Rar5FileExtraType.CRYPT.getValue(), payload.toByteArray());
 
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("enc.txt"));
@@ -421,6 +424,35 @@ class Rar5FileHeaderReaderTest {
         assertThat(fh.getInitVector()).isEqualTo(initV);
         assertThat(fh.getLg2Count()).isEqualTo(14);
         assertThat(fh.isUsePswCheck()).isTrue();
+        assertThat(fh.getPswCheck()).isEqualTo(pswCheck);
+    }
+
+    /**
+     * M3.4: a per-file pswcheck whose SHA-256-prefix csum does not match drops UsePswCheck (unrar
+     * {@code arcread.cpp:1096-1102}), so a damaged check can't reject a valid password.
+     */
+    @Test
+    void cryptRecordWithBadPswCheckCsumDropsTheFlag() throws Exception {
+        final ByteArrayOutputStream payload = new ByteArrayOutputStream();
+        writeLen(payload, vint(0));
+        writeLen(payload, vint(0x01));
+        payload.write(14);
+        writeLen(payload, new byte[16]);
+        writeLen(payload, new byte[16]);
+        writeLen(payload, new byte[]{9, 9, 9, 9, 9, 9, 9, 9}); // pswCheck
+        writeLen(payload, new byte[]{0, 0, 0, 0}); // csum that cannot match
+        final byte[] extra = extraRecord(Rar5FileExtraType.CRYPT.getValue(), payload.toByteArray());
+
+        final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("enc.txt"));
+        final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
+
+        assertThat(fh.isEncrypted()).isTrue();
+        assertThat(fh.isUsePswCheck()).isFalse();
+        assertThat(fh.getPswCheck()).isNull();
+    }
+
+    private static byte[] sha256Prefix(final byte[] data) throws Exception {
+        return Arrays.copyOf(MessageDigest.getInstance("SHA-256").digest(data), 4);
     }
 
     // ---- SERVICE / SUBDATA -----------------------------------------------------------

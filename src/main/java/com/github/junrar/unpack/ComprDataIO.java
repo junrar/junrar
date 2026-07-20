@@ -20,10 +20,13 @@ package com.github.junrar.unpack;
 import com.github.junrar.Archive;
 import com.github.junrar.UnrarCallback;
 import com.github.junrar.crc.RarCRC;
+import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.crypt.Rijndael;
+import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
+import com.github.junrar.exception.WrongPasswordException;
 import com.github.junrar.io.RawDataIo;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.volume.Volume;
@@ -32,6 +35,8 @@ import javax.crypto.Cipher;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.security.GeneralSecurityException;
+import java.util.Arrays;
 import java.util.zip.CRC32;
 
 /**
@@ -116,13 +121,46 @@ public class ComprDataIO {
         unpCrc32.reset();
         packCrc32.reset();
 
-        if (hd.isEncrypted()) {
+        if (hd.getSalt16() != null) {
+            initRar5Decipherer(hd);
+        } else if (hd.isEncrypted()) {
             try {
                 Cipher cipher = Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
                 this.underlyingDataIo.setCipher(cipher);
             } catch (Exception e) {
                 throw new InitDeciphererFailedException(e);
             }
+        }
+    }
+
+    /**
+     * RAR5 per-file decryption setup (M3.4, issue #25; unrar {@code ComprDataIO} init +
+     * {@code SetKey50}, {@code crypt5.cpp:131}). Derives the AES-256 key from the FHEXTRA_CRYPT
+     * salt/count, verifies the password check value when present (a wrong or missing password
+     * throws {@link WrongPasswordException}), and installs the CBC cipher on the io channel. The
+     * decode that consumes the decrypted stream lands in M3.6/M3.7; {@code ConvertHashToMAC}
+     * verification of a HASHMAC checksum ({@link FileHeader#isUseHashKey()}) runs there.
+     */
+    private void initRar5Decipherer(final FileHeader hd) throws RarException {
+        final String password = archive.getPassword();
+        if (password == null) {
+            throw new WrongPasswordException("Missing password for encrypted RAR5 file " + hd.getFileName());
+        }
+        final char[] pw = password.toCharArray();
+        final byte[] pwdUtf8 = Rar5Crypt.passwordToUtf8(pw);
+        try {
+            final Rar5Crypt.Kdf kdf = Rar5Crypt.deriveKey(pwdUtf8, hd.getSalt16(), hd.getLg2Count());
+            if (hd.isUsePswCheck() && !Arrays.equals(kdf.pswCheck, hd.getPswCheck())) {
+                throw new WrongPasswordException("RAR5 password check failed for " + hd.getFileName());
+            }
+            this.underlyingDataIo.setCipher(Rar5Crypt.buildDecipherer(kdf.aesKey, hd.getInitVector()));
+        } catch (final CorruptHeaderException e) {
+            throw e;
+        } catch (final GeneralSecurityException e) {
+            throw new InitDeciphererFailedException(e);
+        } finally {
+            Arrays.fill(pwdUtf8, (byte) 0);
+            Arrays.fill(pw, '\0');
         }
     }
 

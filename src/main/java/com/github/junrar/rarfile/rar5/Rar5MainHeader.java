@@ -1,5 +1,6 @@
 package com.github.junrar.rarfile.rar5;
 
+import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.io.VInt;
@@ -187,9 +188,22 @@ public final class Rar5MainHeader extends Rar5BaseBlock {
         }
         this.salt16 = Arrays.copyOfRange(header, pos, pos + SIZE_SALT50);
         pos += SIZE_SALT50;
-        if (this.usePswCheck && pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM <= header.length) {
-            // csum (SHA-256 prefix) verification deferred to M3.4; not read further here.
-            this.pswCheck = Arrays.copyOfRange(header, pos, pos + SIZE_PSWCHECK);
+        if (this.usePswCheck) {
+            // unrar arcread.cpp:741-755: a pswcheck whose SHA-256-prefix csum does not match --
+            // or that a truncated header cannot supply at all -- is unusable; drop UsePswCheck so
+            // a damaged/absent check can't reject a valid password (the header CRC then decides),
+            // and never leave usePswCheck=true with a null pswCheck (a false WrongPasswordException).
+            if (pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM > header.length) {
+                this.usePswCheck = false;
+            } else {
+                final byte[] check = Arrays.copyOfRange(header, pos, pos + SIZE_PSWCHECK);
+                final byte[] csum = Arrays.copyOfRange(header, pos + SIZE_PSWCHECK, pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM);
+                if (Rar5Crypt.pswCheckCsumValid(check, csum)) {
+                    this.pswCheck = check;
+                } else {
+                    this.usePswCheck = false;
+                }
+            }
         }
     }
 
