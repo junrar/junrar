@@ -18,19 +18,32 @@
  */
 package com.github.junrar.rarfile;
 
+import com.github.junrar.exception.CorruptHeaderException;
+
 public class FileNameDecoder {
     public static int getChar(byte[] name, int pos) {
         return name[pos] & 0xff;
     }
 
-    public static String decode(byte[] name, int encPos) {
+    /**
+     * Ports unrar 7.2.7 (d861246) {@code encname.cpp EncodeFileName::Decode}: every read of the
+     * encoded stream is bounds-checked before the access. Where the upstream C++ silently
+     * {@code break}s on a truncated encoded stream, junrar surfaces the corruption as a typed
+     * {@link CorruptHeaderException} (MIGRATION_MANUAL &sect;4.7: junrar throws where unrar
+     * tolerates a short read). The RLE back-copy is bounded by the ANSI name length
+     * {@code nameSize} (C++ {@code NameSize}), not the whole field.
+     *
+     * @param name     full LHD name field: ANSI name bytes {@code [0, nameSize)}, then the
+     *                 encoded stream starting at {@code encPos}
+     * @param nameSize length of the ANSI name (C++ {@code NameSize}) -- the RLE copy source bound
+     * @param encPos   start offset of the encoded stream (just past the NUL separator)
+     */
+    public static String decode(byte[] name, int nameSize, int encPos) throws CorruptHeaderException {
         int decPos = 0;
         int flags = 0;
         int flagBits = 0;
-
-        int low = 0;
-        int high = 0;
-        int highByte = getChar(name, encPos++);
+        int low;
+        int highByte = encPos < name.length ? getChar(name, encPos++) : 0;
         StringBuilder buf = new StringBuilder();
         while (encPos < name.length) {
             if (flagBits == 0) {
@@ -39,31 +52,46 @@ public class FileNameDecoder {
             }
             switch (flags >>> 6) {
                 case 0:
-                    buf.append((char) (getChar(name, encPos++)));
+                    if (encPos >= name.length) {
+                        throw truncated();
+                    }
+                    buf.append((char) getChar(name, encPos++));
                     ++decPos;
                     break;
                 case 1:
+                    if (encPos >= name.length) {
+                        throw truncated();
+                    }
                     buf.append((char) (getChar(name, encPos++) + (highByte << 8)));
                     ++decPos;
                     break;
                 case 2:
+                    if (encPos + 1 >= name.length) {
+                        throw truncated();
+                    }
                     low = getChar(name, encPos);
-                    high = getChar(name, encPos + 1);
+                    int high = getChar(name, encPos + 1);
                     buf.append((char) ((high << 8) + low));
                     ++decPos;
                     encPos += 2;
                     break;
                 case 3:
+                    if (encPos >= name.length) {
+                        throw truncated();
+                    }
                     int length = getChar(name, encPos++);
                     if ((length & 0x80) != 0) {
+                        if (encPos >= name.length) {
+                            throw truncated();
+                        }
                         int correction = getChar(name, encPos++);
-                        for (length = (length & 0x7f) + 2; length > 0 && decPos < name.length; length--, decPos++) {
+                        for (length = (length & 0x7f) + 2; length > 0 && decPos < nameSize; length--, decPos++) {
                             low = (getChar(name, decPos) + correction) & 0xff;
                             buf.append((char) ((highByte << 8) + low));
                         }
                     } else {
-                        for (length += 2; length > 0 && decPos < name.length; length--, decPos++) {
-                            buf.append((char) (getChar(name, decPos)));
+                        for (length += 2; length > 0 && decPos < nameSize; length--, decPos++) {
+                            buf.append((char) getChar(name, decPos));
                         }
                     }
                     break;
@@ -72,5 +100,9 @@ public class FileNameDecoder {
             flagBits -= 2;
         }
         return buf.toString();
+    }
+
+    private static CorruptHeaderException truncated() {
+        return new CorruptHeaderException("Truncated encoded file name");
     }
 }

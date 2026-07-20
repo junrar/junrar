@@ -172,8 +172,9 @@ public class FileHeader extends BlockHeader {
                 // byte-transparently, not as UTF-8.
                 fileName = new String(fileNameBytes, 0, length, StandardCharsets.ISO_8859_1);
                 if (length != nameSize) {
+                    int ansiNameLen = length;
                     length++;
-                    fileNameW = FileNameDecoder.decode(fileNameBytes, length);
+                    fileNameW = FileNameDecoder.decode(fileNameBytes, ansiNameLen, length);
                 } else {
                     // unrar 3.7.3 arcread.cpp:189-194: no NUL split means the
                     // whole field is the unicode name, UTF-8 encoded

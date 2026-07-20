@@ -18,6 +18,7 @@
 package com.github.junrar.unpack;
 
 import com.github.junrar.exception.RarException;
+import com.github.junrar.exception.UnsupportedRarMethodException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.ppm.BlockTypes;
 import com.github.junrar.unpack.ppm.ModelPPM;
@@ -114,9 +115,10 @@ public final class Unpack extends Unpack20 {
                 unpack20(solid);
                 break;
             case 29: // rar 3.x compression
-            case 36: // alternative hash
                 unpack29(solid);
                 break;
+            case 36: // "alternative hash" -- dropped upstream in unrar 5.0.0 (reports/unrar-delta-map.md §3)
+                throw new UnsupportedRarMethodException("Unsupported RAR compression method: 36");
         }
     }
 

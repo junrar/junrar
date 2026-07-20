@@ -1,5 +1,6 @@
 package com.github.junrar.rarfile;
 
+import com.github.junrar.exception.CorruptHeaderException;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -9,7 +10,7 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Pins {@link FileNameDecoder#decode(byte[], int)} against names whose bytes are &gt;=0x80 in
+ * Pins {@link FileNameDecoder#decode(byte[], int, int)} against names whose bytes are &gt;=0x80 in
  * every field the algorithm widens: {@code highByte}, the flags selector byte (drives
  * {@code flags >>> 6}), and each switch case's data bytes. Expected chars are hand-derived
  * from the algorithm (derivation in each case's comment), not read back from the decoder.
@@ -51,8 +52,8 @@ class FileNameDecoderSignednessTest {
 
     @ParameterizedTest(name = "{2}")
     @MethodSource("highBitCases")
-    void givenHighBitSetBytes_whenDecode_thenMatchesHandDerivedOutput(byte[] name, int encPos, String description, String expected) {
-        assertThat(FileNameDecoder.decode(name, encPos)).as(description).isEqualTo(expected);
+    void givenHighBitSetBytes_whenDecode_thenMatchesHandDerivedOutput(byte[] name, int encPos, String description, String expected) throws CorruptHeaderException {
+        assertThat(FileNameDecoder.decode(name, name.length, encPos)).as(description).isEqualTo(expected);
     }
 
 }
