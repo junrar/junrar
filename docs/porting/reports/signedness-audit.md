@@ -321,3 +321,26 @@ Every `>>>` occurrence, by file and line (`grep -n '>>>' <file>`), for future au
     (`VMSF_ITANIUM`), 1087 (`VMSF_AUDIO`).
   - Deferred, `filterItanium_GetBits`/`SetBits` (private; see "discriminating sites" —
     `GetBits` is NOT pre/post-masked-invariant): 1176, 1184, 1185, 1197, 1198.
+
+## M3.6 ledger extension — RAR5 sibling engine (issue #27, no-go C15)
+
+New files, audited this chunk against the class rule "every shift of a C++-unsigned value is
+Java `>>>`". Pipeline (`grep -oE '>{2,3}' <file> | grep -cx '>>'`):
+
+| File | Plain `>>` count | Classification |
+| --- | --- | --- |
+| `unpack/Unpack5.java` | 1 | `non-code`: the sole hit is the javadoc `{@code >>}` stating the rule (line 37). Every executable shift is `>>>`. |
+| `unpack/Unpack5Window.java` | 0 | — |
+| `unpack/decode/Decode5.java` | 0 | — |
+
+All shift sites mirror C++-unsigned operands and use `>>>`: the bit input (`getbits`,
+`getbits32`, `addbits` — `8f437ab:getbits.hpp`, whose C++ `BitField>>=(8-InBit)` is on an
+unsigned `uint`), `readBlockHeader` (`fgetbits()>>>8/12`, block-size checksum
+`size>>>8/16`), `readTables` (`fgetbits()>>>13/9`), `makeDecodeTables`/`decodeNumber`
+(`dist>>>=(16-…)`, `bitField>>>(16-quickBits)`) — every operand is either an
+already-`& 0xff`/`& 0xfffe`-masked bit field (Pattern 1, provably immune to a `>>>`→`>>`
+swap) or a small non-negative `int` counter. `Unpack5Window` and `Decode5` use no shifts.
+No plain-`>>` was introduced; nothing to classify `signed-on-purpose` /
+`unsigned-required`. The `Unpack5Test` table-read/round-trip cases exercise the shift-heavy
+`getbits`/`decodeNumber`/`makeDecodeTables` paths and would fail on a sign-extension
+regression in the reachable bit widths.
