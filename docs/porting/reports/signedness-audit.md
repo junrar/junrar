@@ -198,6 +198,23 @@ and no shift audit is required. `prevPtr > unpPtr` and `distance > unpPtr` are p
 `boolean`. Driven end-to-end by `abnormal/void-dist-v15|v20|v29.rar`
 (`UnpackDistanceIntoVoidTest`).
 
+M2.2 interpreter deletion (issue #21): the T3 surface removal deleted `RarVM`'s generic
+bytecode interpreter (`ExecuteCode`, `getOperand`, `setIP`, `decodeArg`, `optimize`) and
+the parse-only VM types (`VMCommands`, `VMCmdFlags`, `VMOpType`, `VMFlags`,
+`VMPreparedCommand`, `VMPreparedOperand`) — mirroring unrar `1522ee0` (= 5.5.1), which
+removed `rarvmtbl.cpp` and the raw VM executor upstream. This **resolves by deletion** the
+"Deferred sites" that were reachable only through opcode dispatch: the `VM_SHR`/`VM_SAR`
+opcode-execution shifts and the `decodeArg` bytecode-decode `>>>` sites no longer exist.
+Still present and unchanged: `RarVM.ReadData` (kept — called by `Unpack.addVMCode` for
+filter-parameter decode; its `fgetbits()`-derived, pre-masked `>>>` sites remain in the
+same pre/post-masked-invariant class), `setLowEndianValue(Vector<Byte>, …)` (still covered
+by `RarVMSignednessTest`), and the native `filterItanium_GetBits`/`SetBits` +
+`VMSF_ITANIUM`/`VMSF_AUDIO` filter shifts (still reachable only via `execute()`'s
+standard-filter switch, deferred to decompression-suite coverage as before). The mechanical
+plain-`>>` row total stays **0** for all 5 files (deletion removed only `>>>`/other
+operators; the counting pipeline above re-run against the shrunken `RarVM.java` still
+yields 0). No `SignednessTest` file changed. `RarVM` remains a C15-class file.
+
 ### BitInput — full public-method enumeration
 
 `InitBitInput()`, `addbits(int)`, `getbits()`, `faddbits(int)`, `fgetbits()`,

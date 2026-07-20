@@ -17,8 +17,6 @@
  */
 package com.github.junrar.unpack.vm;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Vector;
 
 /**
@@ -28,9 +26,6 @@ import java.util.Vector;
  * @version $LastChangedRevision$
  */
 public class VMPreparedProgram {
-    private List<VMPreparedCommand> Cmd = new ArrayList<>();
-    private List<VMPreparedCommand> AltCmd;
-    private int CmdCount;
     private VMStandardFilters Type = VMStandardFilters.VMSF_NONE;
 
 
@@ -40,42 +35,6 @@ public class VMPreparedProgram {
 
     private int FilteredDataOffset;
     private int FilteredDataSize;
-
-    public VMPreparedProgram() {
-        AltCmd = null;
-    }
-
-
-
-    public List<VMPreparedCommand> getAltCmd() {
-        return AltCmd;
-    }
-
-
-
-    public void setAltCmd(List<VMPreparedCommand> altCmd) {
-        AltCmd = altCmd;
-    }
-
-
-
-    public List<VMPreparedCommand> getCmd() {
-        return Cmd;
-    }
-
-    public void setCmd(List<VMPreparedCommand> cmd) {
-        Cmd = cmd;
-    }
-
-    public int getCmdCount() {
-        return CmdCount;
-    }
-
-    public void setCmdCount(int cmdCount) {
-        CmdCount = cmdCount;
-    }
-
-
 
     public int getFilteredDataOffset() {
         return FilteredDataOffset;
