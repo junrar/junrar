@@ -27,12 +27,29 @@ jobs:
         run: |
           python3 -m pip install --user --quiet gdown
           python3 - <<'PY'
+          import sys
+          import time
+
           import gdown
-          gdown.download(
-              "https://drive.google.com/uc?id=1BvUT1jDkXon9-uqu2-QhBHjOthWcCL8G",
-              "rar-corpus.zip",
-              quiet=False,
-          )
+
+          # Google Drive rate-limits/quota errors are transient more often than not;
+          # retry before failing the job. Persistent quota exhaustion still fails.
+          for attempt in range(3):
+              out = None
+              try:
+                  out = gdown.download(
+                      "https://drive.google.com/uc?id=1BvUT1jDkXon9-uqu2-QhBHjOthWcCL8G",
+                      "rar-corpus.zip",
+                      quiet=False,
+                  )
+              except Exception as e:
+                  print("corpus download raised: %s" % e, file=sys.stderr)
+              if out is not None:
+                  break
+              if attempt < 2:
+                  time.sleep(60 * (attempt + 1))
+          else:
+              sys.exit("corpus download failed after 3 attempts")
           PY
 
       - name: Unzip corpus
