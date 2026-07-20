@@ -10,6 +10,8 @@ import org.junit.jupiter.api.condition.OS;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -107,6 +109,25 @@ public class LocalFolderExtractorTest {
             assertThat(thrown.getMessage())
                 .containsIgnoringCase("Rar contains file with invalid path")
                 .containsIgnoringCase(expectedInvalidPath);
+        }
+    }
+
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void rarWithDirectoryCreationOutsideTarget_ShouldThrowException() throws Exception {
+        File file = TestCommons.writeResourceToFolder(tempFolder, "mkdir-escape.rar");
+
+        Path root = Files.createTempDirectory("mkdir-escape");
+        Path tempDir = Files.createDirectories(root.resolve("extract"));
+        LocalFolderExtractor localFolderExtractor = new LocalFolderExtractor(tempDir.toFile());
+
+        try (Archive archive = new Archive(file)) {
+            FileHeader fileHeader = archive.nextFileHeader();
+
+            Path mkdirEscapeDir = root.resolve("extract_evil");
+            localFolderExtractor.extract(archive, fileHeader);
+
+            assertThat(mkdirEscapeDir).doesNotExist();
         }
     }
 }

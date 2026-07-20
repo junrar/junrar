@@ -9,6 +9,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 class LocalFolderExtractor {
 
@@ -64,7 +66,7 @@ class LocalFolderExtractor {
         }
         if (!f.exists()) {
             try {
-                f = makeFile(destination, name);
+                f = makeFile(f.toPath().normalize());
             } catch (final IOException e) {
                 logger.error("error creating the new file: {}", f.getName(), e);
             }
@@ -72,25 +74,10 @@ class LocalFolderExtractor {
         return f;
     }
 
-    private File makeFile(final File destination, final String name) throws IOException {
-        final String[] dirs = name.split("/");
-        String path = "";
-        final int size = dirs.length;
-        if (size == 1) {
-            return new File(destination, name);
-        } else if (size > 1) {
-            for (int i = 0; i < dirs.length - 1; i++) {
-                path = path + File.separator + dirs[i];
-                File dir = new File(destination, path);
-                dir.mkdir();
-            }
-            path = path + File.separator + dirs[dirs.length - 1];
-            final File f = new File(destination, path);
-            f.createNewFile();
-            return f;
-        } else {
-            return null;
-        }
+    private File makeFile(final Path file) throws IOException {
+        if(file.getParent() == null) return null;
+        Files.createDirectories(file.getParent());
+        return file.toFile();
     }
 
     static String invariantSeparatorsPathString(String path) {
