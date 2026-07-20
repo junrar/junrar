@@ -53,6 +53,13 @@ public abstract class Unpack15 extends BitInput {
 
     protected int unpPtr, wrPtr;
 
+    // FirstWinDone: at least one full dictionary window has been processed
+    // (unrar 7.0.3, commit 5faaa45). prevPtr holds unpPtr from the previous loop
+    // iteration; a wrap (prevPtr > unpPtr) marks the first window complete. Reset only
+    // on non-solid init so solid members keep a legitimately-filled window (no-go C1).
+    protected boolean firstWinDone;
+    protected int prevPtr;
+
     protected int oldDistPtr;
 
     protected int[] ChSet = new int[256], ChSetA = new int[256],
@@ -157,6 +164,9 @@ public abstract class Unpack15 extends BitInput {
 
         while (destUnpSize >= 0) {
             unpPtr &= Compress.MAXWINMASK;
+
+            firstWinDone |= (prevPtr > unpPtr);
+            prevPtr = unpPtr;
 
             if (inAddr > readTop - 30 && !unpReadBuf()) {
                 break;
@@ -574,6 +584,16 @@ public abstract class Unpack15 extends BitInput {
 
     protected void oldCopyString(final int distance, int length) {
         destUnpSize -= length;
+        // Distance-into-void: match reaches into the never-written window region. Zero-fill
+        // deterministically instead of copying stale/own leftover bytes (unrar 7.0.3
+        // CopyString15: !FirstWinDone && Distance>UnpPtr || Distance>MaxWinSize).
+        if ((!firstWinDone && distance > unpPtr) || distance > Compress.MAXWINSIZE) {
+            while (length-- != 0) {
+                window[unpPtr] = 0;
+                unpPtr = (unpPtr + 1) & Compress.MAXWINMASK;
+            }
+            return;
+        }
         int destPtr = (unpPtr - distance) & Compress.MAXWINMASK;
         if (distance == 1) {
             // Special case: if the distance is 1 we always copy the same value. We can skip reading the array for

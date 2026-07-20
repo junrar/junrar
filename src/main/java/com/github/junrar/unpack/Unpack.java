@@ -174,6 +174,9 @@ public final class Unpack extends Unpack20 {
         while (true) {
             unpPtr &= Compress.MAXWINMASK;
 
+            firstWinDone |= (prevPtr > unpPtr);
+            prevPtr = unpPtr;
+
             if (inAddr > readBorder) {
                 if (!unpReadBuf()) {
                     break;
@@ -603,6 +606,13 @@ public final class Unpack extends Unpack20 {
                     window[unpPtr++] = window[destPtr++];
                 } while (--length > 0);
             }
+        } else if (distance > unpPtr && (!firstWinDone || distance > Compress.MAXWINSIZE)) {
+            // Distance-into-void: never-written window region. Zero-fill deterministically
+            // rather than wrap-copying stale bytes (unrar 7.0.3 CopyString FirstWinDone arm).
+            while (length-- != 0) {
+                window[unpPtr] = 0;
+                unpPtr = (unpPtr + 1) & Compress.MAXWINMASK;
+            }
         } else {
             while (length-- != 0) {
                 window[unpPtr] = window[destPtr++ & Compress.MAXWINMASK];
@@ -625,6 +635,9 @@ public final class Unpack extends Unpack20 {
             unpPtr = 0;
             wrPtr = 0;
             ppmEscChar = 2;
+
+            firstWinDone = false;
+            prevPtr = 0;
 
             initFilters();
         }

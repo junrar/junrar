@@ -188,6 +188,16 @@ guard. unrar 7.2.7 (`d861246:unpack15.cpp:291`) masks the write-back too
 `DistancePlace < 256`, so the mask is a no-op there — no shift touched, index-bound only.
 Driven end-to-end by `abnormal/flagsplace-oob.rar` (`UnpackLimitHostileArchiveTest`).
 
+M1.4 FirstWinDone distance validation (issue #18): `Unpack15.oldCopyString`,
+`Unpack20.CopyString20`, `Unpack.copyString` gain a `firstWinDone`/`prevPtr` wrap tracker
+and a distance-into-void zero-fill arm (`!firstWinDone && distance > unpPtr || distance >
+MAXWINSIZE`). The added expressions use only `&`, `|=`, `+`, `-`, `>` — **no `>>`/`>>>`
+added or modified in `Unpack15.java` or elsewhere**, so the mechanical row total stays 0
+and no shift audit is required. `prevPtr > unpPtr` and `distance > unpPtr` are plain signed
+`int` comparisons on values already bounded to `[0, MAXWINSIZE)`; `firstWinDone` is a
+`boolean`. Driven end-to-end by `abnormal/void-dist-v15|v20|v29.rar`
+(`UnpackDistanceIntoVoidTest`).
+
 ### BitInput — full public-method enumeration
 
 `InitBitInput()`, `addbits(int)`, `getbits()`, `faddbits(int)`, `fgetbits()`,
