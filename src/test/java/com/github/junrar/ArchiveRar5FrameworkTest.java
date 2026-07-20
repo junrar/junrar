@@ -1,5 +1,6 @@
 package com.github.junrar;
 
+import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.BaseBlock;
@@ -189,6 +190,40 @@ class ArchiveRar5FrameworkTest {
         bytes[MARKER50.length + 6] = (byte) 0x7F;
         assertThat(catchThrowable(() ->
             Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5-huge.rar", bytes)).close()))
+            .isExactlyInstanceOf(CorruptHeaderException.class);
+    }
+
+    @Test
+    @Timeout(15)
+    void negativeDataSizeVintRejectsInsteadOfSeekingBackward() throws Exception {
+        // A CRC-valid block with HFL_DATA whose DataSize vint decodes to a negative long
+        // (bit 63 set: the 10-byte 0x80*9,0x01 encoding = Long.MIN_VALUE). The seek target
+        // position + consumed + DataSize is then <= the current position; unrar rejects
+        // NextBlockPos <= CurBlockPos as a broken header (arcread.cpp). junrar must reject with
+        // CorruptHeaderException rather than seek backward -- which RandomAccessFile.seek turns
+        // into a raw IOException ("Negative seek offset") -- or spin. Valid CRC isolates this
+        // from the CRC record-vs-fatal split.
+        final byte[] content = new byte[13]; // HeadSize(1) + Type(1) + Flags(1) + DataSize(10)
+        int p = 0;
+        content[p++] = 0x0C;   // HeadSize vint = 12 (bytes following this field)
+        content[p++] = 0x70;   // Type = unknown wire value (skippable)
+        content[p++] = 0x06;   // Flags = HFL_DATA | HFL_SKIPIFUNKNOWN
+        for (int i = 0; i < 9; i++) {
+            content[p++] = (byte) 0x80; // 9 continuation bytes, payload 0
+        }
+        content[p] = 0x01;     // final byte: bit 63 -> DataSize = Long.MIN_VALUE
+        final byte[] header = new byte[4 + content.length];
+        System.arraycopy(content, 0, header, 4, content.length);
+        final int crc = RarCRC.computeHeaderCrc32(header, 4, header.length - 4);
+        header[0] = (byte) crc;
+        header[1] = (byte) (crc >>> 8);
+        header[2] = (byte) (crc >>> 16);
+        header[3] = (byte) (crc >>> 24);
+        final byte[] bytes = new byte[MARKER50.length + header.length];
+        System.arraycopy(MARKER50, 0, bytes, 0, MARKER50.length);
+        System.arraycopy(header, 0, bytes, MARKER50.length, header.length);
+        assertThat(catchThrowable(() ->
+            Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5-negdata.rar", bytes)).close()))
             .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 }

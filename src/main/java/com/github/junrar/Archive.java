@@ -957,6 +957,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             // size (unrar FullHeaderSize, archive.cpp:292-302 -- align-16 on BOTH paths, manual 4.12).
             final long consumed = encrypted ? (Rar5Crypt.SIZE_INITV + alignTo16(headerSize)) : headerSize;
             final long newpos = position + consumed + rar5DataSize;
+            // consumed is always positive, so newpos <= position only when the DataSize vint is
+            // negative-as-signed (>= 2^63) or overflows the sum -- a hostile pointer that would
+            // seek backward and spin the loop. unrar rejects NextBlockPos <= CurBlockPos as a
+            // broken header (arcread.cpp); do the same before touching the channel.
+            if (newpos <= position) {
+                throw new CorruptHeaderException("RAR5 block does not advance (corrupt DataSize)");
+            }
             this.channel.setPosition(newpos);
             if (processedPositions.contains(newpos)) {
                 throw new BadRarArchiveException();
