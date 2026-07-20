@@ -30,6 +30,7 @@ import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
+import com.github.junrar.exception.UnsupportedRarVersionException;
 import com.github.junrar.io.RawDataIo;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
 import com.github.junrar.rarfile.AVHeader;
@@ -93,6 +94,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private static final int MAX_HEADER_SIZE = 20971520; //20MB
 
+    /**
+     * SFX-stub search bound (unrar {@code MAXSFXSIZE}, {@code d861246:rardefs.hpp} = 4 MB):
+     * the RAR marker may sit behind up to this many bytes of self-extractor code.
+     */
+    private static final int MAXSFXSIZE = 0x400000; // 4 MB
+
+    // Signature classification (unrar RARFORMAT, d861246:archive.cpp:100-126).
+    private static final int SIG_NONE = 0;
+    private static final int SIG_RAR15 = 1;
+    private static final int SIG_RAR50 = 2;
+    private static final int SIG_FUTURE = 3;
+
     private static final int PIPE_BUFFER_SIZE = getPropertyAs(
         "junrar.extractor.buffer-size",
         Integer::parseInt,
@@ -114,6 +127,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private final List<BaseBlock> headers = new ArrayList<>();
 
     private MarkHeader markHead = null;
+
+    private RarFormat format = null;
 
     private MainHeader newMhd = null;
 
@@ -248,7 +263,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.channel = channel;
         try {
             readHeaders(length);
-        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException | BadRarArchiveException e) {
+        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | UnsupportedRarVersionException | CorruptHeaderException | BadRarArchiveException e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
             throw e;
         } catch (final Exception e) {
@@ -340,6 +355,123 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
+     * @return the detected {@link RarFormat} of the current volume, or {@code null} if the
+     *         archive has not been (successfully) opened. Post-open this is always
+     *         {@link RarFormat#RAR15} until the V5 extraction gate is lifted (RAR5 archives
+     *         throw {@link UnsupportedRarV5Exception} during header parsing).
+     */
+    public RarFormat getFormat() {
+        return this.format;
+    }
+
+    /**
+     * unrar {@code Archive::IsArchive}/{@code IsSignature} ({@code d861246:archive.cpp
+     * :100-190}): locate the RAR marker, tolerating an SFX stub of up to {@link #MAXSFXSIZE}
+     * bytes ahead of it, classify the format from the signature's version byte, and seek the
+     * channel to the marker so {@link #readHeaders} reads it next. The V5 extraction gate is
+     * unaffected -- a RAR5 marker still throws {@link UnsupportedRarV5Exception} once the
+     * header loop parses it.
+     *
+     * @param fileLength the current volume's length (bounds the SFX scan).
+     * @return the detected {@link RarFormat}.
+     * @throws UnsupportedRarVersionException for a future RAR format (version byte 2..4).
+     * @throws BadRarArchiveException         if no signature is found within the bound.
+     */
+    private RarFormat detectFormatAndSeek(final long fileLength) throws IOException, RarException {
+        // Fast path: signature at offset 0 (the common, non-SFX case). Avoids the 4 MB scan.
+        this.channel.setPosition(0);
+        final byte[] head = new byte[BaseBlock.BaseBlockSize];
+        final int headRead = fill(head, 0, head.length);
+        final int type0 = signatureType(head, 0, headRead);
+        if (type0 != SIG_NONE) {
+            this.channel.setPosition(0);
+            return toFormat(type0);
+        }
+
+        // SFX path: scan for the marker within the first MAXSFXSIZE bytes, starting at
+        // offset 1 (offset 0 was just ruled out). Bounded read/alloc -- a signature-free
+        // file reads at most MAXSFXSIZE bytes then fails (no unbounded scan).
+        final int scanLen = (int) Math.min(Math.max(fileLength - 1, 0), MAXSFXSIZE);
+        final byte[] buffer = new byte[scanLen];
+        this.channel.setPosition(1);
+        final int filled = fill(buffer, 0, scanLen);
+        for (int i = 0; i < filled; i++) {
+            if ((buffer[i] & 0xff) != 0x52) {
+                continue;
+            }
+            final int type = signatureType(buffer, i, filled - i);
+            if (type != SIG_NONE) {
+                this.channel.setPosition(1L + i);
+                return toFormat(type);
+            }
+        }
+        throw new BadRarArchiveException();
+    }
+
+    /**
+     * Reads up to {@code len} bytes into {@code buffer} at {@code offset}, looping until the
+     * request is satisfied or the channel is exhausted (a single {@code read} may return
+     * fewer bytes than asked).
+     *
+     * @return the number of bytes actually read.
+     */
+    private int fill(final byte[] buffer, final int offset, final int len) throws IOException {
+        int filled = 0;
+        while (filled < len) {
+            final int n = this.channel.read(buffer, offset + filled, len - filled);
+            if (n <= 0) {
+                break;
+            }
+            filled += n;
+        }
+        return filled;
+    }
+
+    private RarFormat toFormat(final int signatureType) throws UnsupportedRarVersionException {
+        switch (signatureType) {
+            case SIG_RAR50:
+                return RarFormat.RAR50;
+            case SIG_FUTURE:
+                throw new UnsupportedRarVersionException();
+            default:
+                return RarFormat.RAR15;
+        }
+    }
+
+    /**
+     * unrar {@code Archive::IsSignature} ({@code d861246:archive.cpp:100-126}): classify the
+     * bytes at {@code d[off..off+len)} as a RAR marker. Returns one of {@link #SIG_NONE},
+     * {@link #SIG_RAR15}, {@link #SIG_RAR50}, {@link #SIG_FUTURE}. {@code len} is the number
+     * of readable bytes from {@code off}, so short buffers never read past their content.
+     */
+    private static int signatureType(final byte[] d, final int off, final int len) {
+        if (len < 1 || (d[off] & 0xff) != 0x52) {
+            return SIG_NONE;
+        }
+        // Old RAR 1.4 marker: 52 45 7e 5e (RARFMT14 -- part of the classic family).
+        if (len >= 4 && (d[off + 1] & 0xff) == 0x45 && (d[off + 2] & 0xff) == 0x7e
+            && (d[off + 3] & 0xff) == 0x5e) {
+            return SIG_RAR15;
+        }
+        // Modern marker: 52 61 72 21 1a 07 + version byte.
+        if (len >= 7 && (d[off + 1] & 0xff) == 0x61 && (d[off + 2] & 0xff) == 0x72
+            && (d[off + 3] & 0xff) == 0x21 && (d[off + 4] & 0xff) == 0x1a
+            && (d[off + 5] & 0xff) == 0x07) {
+            final int version = d[off + 6] & 0xff;
+            if (version == 0) {
+                return SIG_RAR15;
+            }
+            if (version == 1) {
+                return SIG_RAR50;
+            }
+            if (version > 1 && version < 5) {
+                return SIG_FUTURE;
+            }
+        }
+        return SIG_NONE;
+    }
+
+    /**
      * Read the headers of the archive
      *
      * @param fileLength Length of file.
@@ -351,6 +483,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.headers.clear();
         this.currentHeaderIndex = 0;
         int toRead = 0;
+
+        // Locate the marker (skipping any SFX stub) and classify the format before the
+        // header loop; also seeks the channel to the marker. V5 gate unchanged: a RAR5
+        // marker throws UnsupportedRarV5Exception when the loop below parses it.
+        this.format = detectFormatAndSeek(fileLength);
 
         //keep track of positions already processed for
         //more robustness against corrupt files

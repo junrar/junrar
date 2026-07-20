@@ -86,7 +86,7 @@ public class RegressionTest {
             var record = ArchiveRecord.fromArchive(archive);
             mapper.writeValue(outputFile.toFile(), record);
         } catch (RarException e) {
-            var record = ArchiveRecord.fromException(e);
+            var record = ArchiveRecord.fromException(e, filePath);
             mapper.writeValue(outputFile.toFile(), record);
         }
     }
@@ -112,7 +112,7 @@ public class RegressionTest {
             try (var archive = new Archive(filePath.toFile())) {
                 record = ArchiveRecord.fromArchive(archive);
             } catch (RarException e) {
-                record = ArchiveRecord.fromException(e);
+                record = ArchiveRecord.fromException(e, filePath);
             }
 
             assertThat(record).isEqualTo(inputRecord);
