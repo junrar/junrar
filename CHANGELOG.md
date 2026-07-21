@@ -1,3 +1,40 @@
+# [7.6.1](https://github.com/junrar/junrar/compare/v7.6.0...v7.6.1) (2026-07-21)
+## 🐛 Fixes
+
+- better handling of RarVM VM_JMP ([687a09c](https://github.com/junrar/junrar/commits/687a09c))
+- prevent directory creation outside target directory ([e6e333b](https://github.com/junrar/junrar/commits/e6e333b))
+
+## 🔄️ Changes
+
+- build: plugin isolation for spotless ([9fd65e3](https://github.com/junrar/junrar/commits/9fd65e3))
+- style: spotless apply" ([4a67eb6](https://github.com/junrar/junrar/commits/4a67eb6))
+- spotless apply ([0b15bec](https://github.com/junrar/junrar/commits/0b15bec))
+
+## 🛠  Build
+**deps**
+- bump gradle-wrapper from 9.5.1 to 9.6.1 ([5059b1a](https://github.com/junrar/junrar/commits/5059b1a))
+- bump ch.qos.logback:logback-classic from 1.5.32 to 1.5.38 ([631b5bb](https://github.com/junrar/junrar/commits/631b5bb))
+- bump org.jreleaser from 1.24.0 to 1.25.0 ([99866b7](https://github.com/junrar/junrar/commits/99866b7))
+- bump actions/checkout from 6 to 7 ([d4133ea](https://github.com/junrar/junrar/commits/d4133ea))
+- bump codecov/codecov-action from 6 to 7 ([609aa12](https://github.com/junrar/junrar/commits/609aa12))
+- bump shanegenschaw/pull-request-comment-trigger ([82d29d0](https://github.com/junrar/junrar/commits/82d29d0))
+
+**unscoped**
+- try fixing JReleaser JGit issue ([50665df](https://github.com/junrar/junrar/commits/50665df))
+- try fixing JReleaser JGit issue ([87102cd](https://github.com/junrar/junrar/commits/87102cd))
+- disable spotless ([51db43c](https://github.com/junrar/junrar/commits/51db43c))
+- rollback debugging steps ([8bf5c21](https://github.com/junrar/junrar/commits/8bf5c21))
+- try to debug jreleaser error ([815a9d9](https://github.com/junrar/junrar/commits/815a9d9))
+- try to debug jreleaser error ([a5597d1](https://github.com/junrar/junrar/commits/a5597d1))
+- try to debug jreleaser error ([208157d](https://github.com/junrar/junrar/commits/208157d))
+- fix jreleaser output step ([c84d5aa](https://github.com/junrar/junrar/commits/c84d5aa))
+- always perform release if the flag is set ([1181f48](https://github.com/junrar/junrar/commits/1181f48))
+- allow current version for release workflow ([4e495f6](https://github.com/junrar/junrar/commits/4e495f6))
+- plugin isolation for spotless ([0645360](https://github.com/junrar/junrar/commits/0645360))
+- replace checkstyle by spotless ([e59ed4b](https://github.com/junrar/junrar/commits/e59ed4b))
+- remove the old regression test workflow ([1303567](https://github.com/junrar/junrar/commits/1303567))
+- setup regression test to run with manual approval ([4872ae7](https://github.com/junrar/junrar/commits/4872ae7))
+
 # [7.6.0](https://github.com/junrar/junrar/compare/v7.5.10...v7.6.0) (2026-05-13)
 ## 🚀 Features
 
