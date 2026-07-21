@@ -51,8 +51,7 @@ public final class RandomAccessInputStream extends InputStream {
         long l = pointer + 1L;
         long l1 = readUntil(l);
         if (l1 >= l) {
-            byte[] abyte0 = (byte[]) data
-                .elementAt((int) (pointer >>> BLOCK_SHIFT));
+            byte[] abyte0 = (byte[]) data.elementAt((int) (pointer >>> BLOCK_SHIFT));
             return abyte0[(int) (pointer++ & BLOCK_MASK)] & 0xff;
         } else {
             return -1;
@@ -73,11 +72,9 @@ public final class RandomAccessInputStream extends InputStream {
         if (l <= pointer) {
             return -1;
         } else {
-            byte[] abyte1 = (byte[]) data
-                .elementAt((int) (pointer >>> BLOCK_SHIFT));
+            byte[] abyte1 = (byte[]) data.elementAt((int) (pointer >>> BLOCK_SHIFT));
             int k = Math.min(len, BLOCK_SIZE - (int) (pointer & BLOCK_MASK));
-            System.arraycopy(abyte1, (int) (pointer & BLOCK_MASK), bytes, off,
-                k);
+            System.arraycopy(abyte1, (int) (pointer & BLOCK_MASK), bytes, off, k);
             pointer += k;
             return k;
         }
@@ -123,7 +120,6 @@ public final class RandomAccessInputStream extends InputStream {
                 i1 -= k1;
                 length += k1;
             }
-
         }
 
         return length;
@@ -184,5 +180,4 @@ public final class RandomAccessInputStream extends InputStream {
         data.removeAllElements();
         src.close();
     }
-
 }

@@ -54,10 +54,6 @@ import com.github.junrar.volume.FileVolumeManager;
 import com.github.junrar.volume.InputStreamVolumeManager;
 import com.github.junrar.volume.Volume;
 import com.github.junrar.volume.VolumeManager;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.crypto.Cipher;
 import java.io.Closeable;
 import java.io.EOFException;
 import java.io.File;
@@ -78,6 +74,9 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Function;
+import javax.crypto.Cipher;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * The Main Rar Class; represents a rar Archive
@@ -89,19 +88,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private static final Logger logger = LoggerFactory.getLogger(Archive.class);
 
-    private static final int MAX_HEADER_SIZE = 20971520; //20MB
+    private static final int MAX_HEADER_SIZE = 20971520; // 20MB
 
-    private static final int PIPE_BUFFER_SIZE = getPropertyAs(
-        "junrar.extractor.buffer-size",
-        Integer::parseInt,
-        32 * 1024
-    );
+    private static final int PIPE_BUFFER_SIZE =
+            getPropertyAs("junrar.extractor.buffer-size", Integer::parseInt, 32 * 1024);
 
-    private static final boolean USE_EXECUTOR = getPropertyAs(
-        "junrar.extractor.use-executor",
-        Boolean::parseBoolean,
-        true
-    );
+    private static final boolean USE_EXECUTOR =
+            getPropertyAs("junrar.extractor.use-executor", Boolean::parseBoolean, true);
 
     private SeekableReadOnlyByteChannel channel;
 
@@ -141,10 +134,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private String password;
 
     public Archive(
-        final VolumeManager volumeManager,
-        final UnrarCallback unrarCallback,
-        final String password
-    ) throws RarException, IOException {
+            final VolumeManager volumeManager,
+            final UnrarCallback unrarCallback,
+            final String password)
+            throws RarException, IOException {
 
         this.volumeManager = volumeManager;
         this.unrarCallback = unrarCallback;
@@ -167,7 +160,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new FileVolumeManager(firstVolume), null, null);
     }
 
-    public Archive(final File firstVolume, final UnrarCallback unrarCallback) throws RarException, IOException {
+    public Archive(final File firstVolume, final UnrarCallback unrarCallback)
+            throws RarException, IOException {
         this(new FileVolumeManager(firstVolume), unrarCallback, null);
     }
 
@@ -175,7 +169,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new FileVolumeManager(firstVolume), null, password);
     }
 
-    public Archive(final File firstVolume, final UnrarCallback unrarCallback, final String password) throws RarException, IOException {
+    public Archive(final File firstVolume, final UnrarCallback unrarCallback, final String password)
+            throws RarException, IOException {
         this(new FileVolumeManager(firstVolume), unrarCallback, password);
     }
 
@@ -183,30 +178,44 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this(new InputStreamVolumeManager(rarAsStream), null, null);
     }
 
-    public Archive(final InputStream rarAsStream, final UnrarCallback unrarCallback) throws RarException, IOException {
+    public Archive(final InputStream rarAsStream, final UnrarCallback unrarCallback)
+            throws RarException, IOException {
         this(new InputStreamVolumeManager(rarAsStream), unrarCallback, null);
     }
 
-    public Archive(final InputStream rarAsStream, final String password) throws IOException, RarException {
+    public Archive(final InputStream rarAsStream, final String password)
+            throws IOException, RarException {
         this(new InputStreamVolumeManager(rarAsStream), null, password);
     }
 
-    public Archive(final InputStream rarAsStream, final UnrarCallback unrarCallback, final String password) throws IOException, RarException {
+    public Archive(
+            final InputStream rarAsStream, final UnrarCallback unrarCallback, final String password)
+            throws IOException, RarException {
         this(new InputStreamVolumeManager(rarAsStream), unrarCallback, password);
     }
 
-    private void setChannel(final SeekableReadOnlyByteChannel channel, final long length) throws IOException, RarException {
+    private void setChannel(final SeekableReadOnlyByteChannel channel, final long length)
+            throws IOException, RarException {
         this.totalPackedSize = 0L;
         this.totalPackedRead = 0L;
         close();
         this.channel = channel;
         try {
             readHeaders(length);
-        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | CorruptHeaderException | BadRarArchiveException e) {
-            logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
+        } catch (UnsupportedRarEncryptedException
+                | UnsupportedRarV5Exception
+                | CorruptHeaderException
+                | BadRarArchiveException e) {
+            logger.warn(
+                    "exception in archive constructor maybe file is encrypted, corrupt or support"
+                            + " not yet implemented",
+                    e);
             throw e;
         } catch (final Exception e) {
-            logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
+            logger.warn(
+                    "exception in archive constructor maybe file is encrypted, corrupt or support"
+                            + " not yet implemented",
+                    e);
             // ignore exceptions to allow extraction of working files in corrupt archive
         }
         // Calculate size of packed data
@@ -216,8 +225,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             }
         }
         if (this.unrarCallback != null) {
-            this.unrarCallback.volumeProgressChanged(this.totalPackedRead,
-                this.totalPackedSize);
+            this.unrarCallback.volumeProgressChanged(this.totalPackedRead, this.totalPackedSize);
         }
     }
 
@@ -225,8 +233,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         if (count > 0) {
             this.totalPackedRead += count;
             if (this.unrarCallback != null) {
-                this.unrarCallback.volumeProgressChanged(this.totalPackedRead,
-                    this.totalPackedSize);
+                this.unrarCallback.volumeProgressChanged(
+                        this.totalPackedRead, this.totalPackedSize);
             }
         }
     }
@@ -306,8 +314,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.currentHeaderIndex = 0;
         int toRead = 0;
 
-        //keep track of positions already processed for
-        //more robustness against corrupt files
+        // keep track of positions already processed for
+        // more robustness against corrupt files
         final Set<Long> processedPositions = new HashSet<>();
         while (true) {
             int size = 0;
@@ -350,7 +358,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 throw new CorruptHeaderException();
             }
             switch (headerType) {
-
                 case MarkHeader:
                     this.markHead = new MarkHeader(block);
                     if (!this.markHead.isSignature()) {
@@ -369,8 +376,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     break;
 
                 case MainHeader:
-                    toRead = block.hasEncryptVersion() ? MainHeader.mainHeaderSizeWithEnc
-                        : MainHeader.mainHeaderSize;
+                    toRead =
+                            block.hasEncryptVersion()
+                                    ? MainHeader.mainHeaderSizeWithEnc
+                                    : MainHeader.mainHeaderSize;
                     final byte[] mainbuff = safelyAllocate(toRead, MAX_HEADER_SIZE);
                     rawData.readFully(mainbuff, mainbuff.length);
                     final MainHeader mainhead = new MainHeader(block, mainbuff);
@@ -411,7 +420,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
                     break;
                 case EndArcHeader:
-
                     toRead = 0;
                     if (block.hasArchiveDataCRC()) {
                         toRead += EndArcHeader.endArcArchiveDataCrcSize;
@@ -434,17 +442,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     return;
 
                 default:
-                    final byte[] blockHeaderBuffer = safelyAllocate(BlockHeader.blockHeaderSize, MAX_HEADER_SIZE);
+                    final byte[] blockHeaderBuffer =
+                            safelyAllocate(BlockHeader.blockHeaderSize, MAX_HEADER_SIZE);
                     rawData.readFully(blockHeaderBuffer, blockHeaderBuffer.length);
-                    final BlockHeader blockHead = new BlockHeader(block,
-                        blockHeaderBuffer);
+                    final BlockHeader blockHead = new BlockHeader(block, blockHeaderBuffer);
 
                     switch (blockHead.getHeaderType()) {
                         case NewSubHeader:
                         case FileHeader:
-                            toRead = blockHead.getHeaderSize(false)
-                                - BlockHeader.BaseBlockSize
-                                - BlockHeader.blockHeaderSize;
+                            toRead =
+                                    blockHead.getHeaderSize(false)
+                                            - BlockHeader.BaseBlockSize
+                                            - BlockHeader.blockHeaderSize;
                             final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
                             try {
                                 rawData.readFully(fileHeaderBuffer, fileHeaderBuffer.length);
@@ -454,7 +463,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
                             final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
                             this.headers.add(fh);
-                            newpos = fh.getPositionInFile() + fh.getHeaderSize(isEncrypted()) + fh.getFullPackSize();
+                            newpos =
+                                    fh.getPositionInFile()
+                                            + fh.getHeaderSize(isEncrypted())
+                                            + fh.getFullPackSize();
                             this.channel.setPosition(newpos);
 
                             if (processedPositions.contains(newpos)) {
@@ -464,13 +476,19 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             break;
 
                         case ProtectHeader:
-                            toRead = blockHead.getHeaderSize(false)
-                                - BlockHeader.BaseBlockSize
-                                - BlockHeader.blockHeaderSize;
-                            final byte[] protectHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
+                            toRead =
+                                    blockHead.getHeaderSize(false)
+                                            - BlockHeader.BaseBlockSize
+                                            - BlockHeader.blockHeaderSize;
+                            final byte[] protectHeaderBuffer =
+                                    safelyAllocate(toRead, MAX_HEADER_SIZE);
                             rawData.readFully(protectHeaderBuffer, protectHeaderBuffer.length);
-                            final ProtectHeader ph = new ProtectHeader(blockHead, protectHeaderBuffer);
-                            newpos = ph.getPositionInFile() + ph.getHeaderSize(isEncrypted()) + ph.getDataSize();
+                            final ProtectHeader ph =
+                                    new ProtectHeader(blockHead, protectHeaderBuffer);
+                            newpos =
+                                    ph.getPositionInFile()
+                                            + ph.getHeaderSize(isEncrypted())
+                                            + ph.getDataSize();
                             this.channel.setPosition(newpos);
 
                             if (processedPositions.contains(newpos)) {
@@ -479,75 +497,91 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             processedPositions.add(newpos);
                             break;
 
-                        case SubHeader: {
-                            final byte[] subHeadbuffer = safelyAllocate(SubBlockHeader.SubBlockHeaderSize, MAX_HEADER_SIZE);
-                            rawData.readFully(subHeadbuffer, subHeadbuffer.length);
-                            final SubBlockHeader subHead = new SubBlockHeader(blockHead,
-                                subHeadbuffer);
-                            subHead.print();
-                            SubBlockHeaderType subType = subHead.getSubType();
-                            if (subType == null) break;
-                            switch (subType) {
-                                case MAC_HEAD: {
-                                    final byte[] macHeaderbuffer = safelyAllocate(MacInfoHeader.MacInfoHeaderSize, MAX_HEADER_SIZE);
-                                    rawData.readFully(macHeaderbuffer, macHeaderbuffer.length);
-                                    final MacInfoHeader macHeader = new MacInfoHeader(subHead,
-                                        macHeaderbuffer);
-                                    macHeader.print();
-                                    this.headers.add(macHeader);
+                        case SubHeader:
+                            {
+                                final byte[] subHeadbuffer =
+                                        safelyAllocate(
+                                                SubBlockHeader.SubBlockHeaderSize, MAX_HEADER_SIZE);
+                                rawData.readFully(subHeadbuffer, subHeadbuffer.length);
+                                final SubBlockHeader subHead =
+                                        new SubBlockHeader(blockHead, subHeadbuffer);
+                                subHead.print();
+                                SubBlockHeaderType subType = subHead.getSubType();
+                                if (subType == null) break;
+                                switch (subType) {
+                                    case MAC_HEAD:
+                                        {
+                                            final byte[] macHeaderbuffer =
+                                                    safelyAllocate(
+                                                            MacInfoHeader.MacInfoHeaderSize,
+                                                            MAX_HEADER_SIZE);
+                                            rawData.readFully(
+                                                    macHeaderbuffer, macHeaderbuffer.length);
+                                            final MacInfoHeader macHeader =
+                                                    new MacInfoHeader(subHead, macHeaderbuffer);
+                                            macHeader.print();
+                                            this.headers.add(macHeader);
 
-                                    break;
+                                            break;
+                                        }
+                                    // TODO implement other subheaders
+                                    case BEEA_HEAD:
+                                        break;
+                                    case EA_HEAD:
+                                        {
+                                            final byte[] eaHeaderBuffer =
+                                                    safelyAllocate(
+                                                            EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
+                                            rawData.readFully(
+                                                    eaHeaderBuffer, eaHeaderBuffer.length);
+                                            final EAHeader eaHeader =
+                                                    new EAHeader(subHead, eaHeaderBuffer);
+                                            eaHeader.print();
+                                            this.headers.add(eaHeader);
+
+                                            break;
+                                        }
+                                    case NTACL_HEAD:
+                                        break;
+                                    case STREAM_HEAD:
+                                        break;
+                                    case UO_HEAD:
+                                        toRead = subHead.getHeaderSize(false);
+                                        toRead -= BaseBlock.BaseBlockSize;
+                                        toRead -= BlockHeader.blockHeaderSize;
+                                        toRead -= SubBlockHeader.SubBlockHeaderSize;
+                                        final byte[] uoHeaderBuffer =
+                                                safelyAllocate(toRead, MAX_HEADER_SIZE);
+                                        rawData.readFully(uoHeaderBuffer, uoHeaderBuffer.length);
+                                        final UnixOwnersHeader uoHeader =
+                                                new UnixOwnersHeader(subHead, uoHeaderBuffer);
+                                        uoHeader.print();
+                                        this.headers.add(uoHeader);
+                                        break;
+                                    default:
+                                        break;
                                 }
-                                // TODO implement other subheaders
-                                case BEEA_HEAD:
-                                    break;
-                                case EA_HEAD: {
-                                    final byte[] eaHeaderBuffer = safelyAllocate(EAHeader.EAHeaderSize, MAX_HEADER_SIZE);
-                                    rawData.readFully(eaHeaderBuffer, eaHeaderBuffer.length);
-                                    final EAHeader eaHeader = new EAHeader(subHead,
-                                        eaHeaderBuffer);
-                                    eaHeader.print();
-                                    this.headers.add(eaHeader);
 
-                                    break;
+                                // Always seek past the full subblock (header + packed data) so that
+                                // partially-handled subtypes (e.g. MAC_HEAD, EA_HEAD) don't leave
+                                // the channel positioned mid-block, corrupting all subsequent
+                                // header reads.
+                                newpos =
+                                        subHead.getPositionInFile()
+                                                + subHead.getHeaderSize(isEncrypted())
+                                                + subHead.getDataSize();
+                                this.channel.setPosition(newpos);
+
+                                if (processedPositions.contains(newpos)) {
+                                    throw new BadRarArchiveException();
                                 }
-                                case NTACL_HEAD:
-                                    break;
-                                case STREAM_HEAD:
-                                    break;
-                                case UO_HEAD:
-                                    toRead = subHead.getHeaderSize(false);
-                                    toRead -= BaseBlock.BaseBlockSize;
-                                    toRead -= BlockHeader.blockHeaderSize;
-                                    toRead -= SubBlockHeader.SubBlockHeaderSize;
-                                    final byte[] uoHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
-                                    rawData.readFully(uoHeaderBuffer, uoHeaderBuffer.length);
-                                    final UnixOwnersHeader uoHeader = new UnixOwnersHeader(
-                                        subHead, uoHeaderBuffer);
-                                    uoHeader.print();
-                                    this.headers.add(uoHeader);
-                                    break;
-                                default:
-                                    break;
+                                processedPositions.add(newpos);
+
+                                break;
                             }
-
-                            // Always seek past the full subblock (header + packed data) so that
-                            // partially-handled subtypes (e.g. MAC_HEAD, EA_HEAD) don't leave the
-                            // channel positioned mid-block, corrupting all subsequent header reads.
-                            newpos = subHead.getPositionInFile() + subHead.getHeaderSize(isEncrypted()) + subHead.getDataSize();
-                            this.channel.setPosition(newpos);
-
-                            if (processedPositions.contains(newpos)) {
-                                throw new BadRarArchiveException();
-                            }
-                            processedPositions.add(newpos);
-
-                            break;
-                        }
                         default:
                             logger.warn("Unknown Header");
                             throw new NotRarArchiveException();
-
                     }
             }
             // logger.info("\n--------end header--------");
@@ -643,30 +677,36 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * </ul>
      */
     private static final class ExtractorExecutorHolder {
-        private ExtractorExecutorHolder() {
-        }
+        private ExtractorExecutorHolder() {}
 
         private static final AtomicLong threadIndex = new AtomicLong();
 
         /**
          * Equivalent to {@link java.util.concurrent.Executors#newCachedThreadPool()}, but customizable through system properties.
          */
-        private static final ExecutorService cachedExecutorService = new ThreadPoolExecutor(
-            0, getMaxThreads(),
-            getThreadKeepAlive(), TimeUnit.SECONDS,
-            new SynchronousQueue<>(),
-            r -> {
-                Thread t = new Thread(r, "junrar-extractor-" + threadIndex.getAndIncrement());
-                t.setDaemon(true);
-                return t;
-            });
+        private static final ExecutorService cachedExecutorService =
+                new ThreadPoolExecutor(
+                        0,
+                        getMaxThreads(),
+                        getThreadKeepAlive(),
+                        TimeUnit.SECONDS,
+                        new SynchronousQueue<>(),
+                        r -> {
+                            Thread t =
+                                    new Thread(
+                                            r, "junrar-extractor-" + threadIndex.getAndIncrement());
+                            t.setDaemon(true);
+                            return t;
+                        });
 
         private static int getMaxThreads() {
-            return getPropertyAs("junrar.extractor.max-threads", Integer::parseInt, Integer.MAX_VALUE);
+            return getPropertyAs(
+                    "junrar.extractor.max-threads", Integer::parseInt, Integer.MAX_VALUE);
         }
 
         private static int getThreadKeepAlive() {
-            return getPropertyAs("junrar.extractor.thread-keep-alive-seconds", Integer::parseInt, 5);
+            return getPropertyAs(
+                    "junrar.extractor.thread-keep-alive-seconds", Integer::parseInt, 5);
         }
     }
 
@@ -679,12 +719,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             }
         } catch (SecurityException | NumberFormatException e) {
             logger.error(
-                "Could not parse the System Property '{}' into an '{}'. Defaulting to '{}'",
-                key,
-                defaultValue.getClass().getTypeName(),
-                defaultValue,
-                e
-            );
+                    "Could not parse the System Property '{}' into an '{}'. Defaulting to '{}'",
+                    key,
+                    defaultValue.getClass().getTypeName(),
+                    defaultValue,
+                    e);
         }
         return defaultValue;
     }
@@ -731,24 +770,26 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
         // Small optimization to prevent the creation of large buffers for very small files
         // Never allocate more than needed, but ensure the buffer will be at least 1-byte long
-        final int bufferSize = (int) Math.max(Math.min(hd.getFullUnpackSize(), PIPE_BUFFER_SIZE), 1);
+        final int bufferSize =
+                (int) Math.max(Math.min(hd.getFullUnpackSize(), PIPE_BUFFER_SIZE), 1);
 
         final PipedInputStream in = new PipedInputStream(bufferSize);
         final PipedOutputStream out = new PipedOutputStream(in);
 
         // Data will be available in another InputStream, connected to the OutputStream
         // Delegates execution to the cached executor service.
-        Runnable r = () -> {
-            try {
-                extractFile(hd, out);
-            } catch (final RarException ignored) {
-            } finally {
-                try {
-                    out.close();
-                } catch (final IOException ignored) {
-                }
-            }
-        };
+        Runnable r =
+                () -> {
+                    try {
+                        extractFile(hd, out);
+                    } catch (final RarException ignored) {
+                    } finally {
+                        try {
+                            out.close();
+                        } catch (final IOException ignored) {
+                        }
+                    }
+                };
         if (USE_EXECUTOR) {
             ExtractorExecutorHolder.cachedExecutorService.submit(r);
         } else {
@@ -759,12 +800,12 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     private void doExtractFile(FileHeader hd, final OutputStream os)
-        throws RarException, IOException {
+            throws RarException, IOException {
         doExtractFile(hd, os, false);
     }
 
     private void doExtractFile(FileHeader hd, final OutputStream os, boolean skip)
-        throws RarException, IOException {
+            throws RarException, IOException {
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
@@ -780,8 +821,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             if (!skip) {
                 // Verify file CRC
                 hd = this.dataIO.getSubHeader();
-                final long actualCRC = hd.isSplitAfter() ? ~this.dataIO.getPackedCRC()
-                    : ~this.dataIO.getUnpFileCRC();
+                final long actualCRC =
+                        hd.isSplitAfter()
+                                ? ~this.dataIO.getPackedCRC()
+                                : ~this.dataIO.getUnpFileCRC();
                 final int expectedCRC = hd.getFileCRC();
                 if (actualCRC != expectedCRC) {
                     throw new CrcErrorException();
@@ -860,7 +903,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.password = password;
     }
 
-
     /**
      * @param volume the volume to set
      * @throws IOException  .
@@ -893,5 +935,4 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             }
         };
     }
-
 }

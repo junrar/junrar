@@ -22,7 +22,6 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 public class SubBlockHeader extends BlockHeader {
     private static final Logger logger = LoggerFactory.getLogger(SubBlockHeader.class);
 

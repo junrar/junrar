@@ -1,14 +1,13 @@
 package com.github.junrar.bugfixes;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.Archive;
 import com.github.junrar.rarfile.FileHeader;
-import org.apache.commons.io.IOUtils;
-import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.apache.commons.io.IOUtils;
+import org.junit.jupiter.api.Test;
 
 /*
 Test cases for https://github.com/junrar/junrar/issues/88
@@ -19,7 +18,8 @@ public class GitHub88EmptyFile {
 
     @Test
     public void testCorruptExtendedTimeData() throws Exception {
-        try (Archive archive = new Archive(new File(getClass().getResource("gh-88-empty.rar").toURI()))) {
+        try (Archive archive =
+                new Archive(new File(getClass().getResource("gh-88-empty.rar").toURI()))) {
             FileHeader fileHeader;
             int i = 0;
             while ((fileHeader = archive.nextFileHeader()) != null) {

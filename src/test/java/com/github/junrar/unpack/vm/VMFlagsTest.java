@@ -1,10 +1,10 @@
 package com.github.junrar.unpack.vm;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 class VMFlagsTest {
 
@@ -18,5 +18,4 @@ class VMFlagsTest {
     void unknownVMFlags() {
         assertThat(VMFlags.findFlag(3)).isNull();
     }
-
 }

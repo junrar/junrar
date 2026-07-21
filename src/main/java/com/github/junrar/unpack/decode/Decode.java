@@ -71,5 +71,4 @@ public class Decode {
     public void setMaxNum(int maxNum) {
         this.maxNum = maxNum;
     }
-
 }

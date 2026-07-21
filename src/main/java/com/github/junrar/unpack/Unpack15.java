@@ -20,10 +20,8 @@ package com.github.junrar.unpack;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.vm.BitInput;
-
 import java.io.IOException;
 import java.util.Arrays;
-
 
 /**
  * DOCUMENT ME
@@ -55,83 +53,83 @@ public abstract class Unpack15 extends BitInput {
 
     protected int oldDistPtr;
 
-    protected int[] ChSet = new int[256], ChSetA = new int[256],
-            ChSetB = new int[256], ChSetC = new int[256];
-
-    protected int[] Place = new int[256], PlaceA = new int[256],
-            PlaceB = new int[256], PlaceC = new int[256];
-
-    protected int[] NToPl = new int[256], NToPlB = new int[256],
-            NToPlC = new int[256];
-
+    protected int[] ChSet = new int[256],
+            ChSetA = new int[256],
+            ChSetB = new int[256],
+            ChSetC = new int[256];
+    protected int[] Place = new int[256],
+            PlaceA = new int[256],
+            PlaceB = new int[256],
+            PlaceC = new int[256];
+    protected int[] NToPl = new int[256], NToPlB = new int[256], NToPlC = new int[256];
     protected int FlagBuf, AvrPlc, AvrPlcB, AvrLn1, AvrLn2, AvrLn3;
-
     protected int Buf60, NumHuf, StMode, LCount, FlagsCnt;
-
     protected int Nhfb, Nlzb, MaxDist3;
-
     protected int lastDist, lastLength;
 
     private static final int STARTL1 = 2;
 
-    private static final int[] DecL1 = {0x8000, 0xa000, 0xc000, 0xd000, 0xe000,
-        0xea00, 0xee00, 0xf000, 0xf200, 0xf200, 0xffff};
+    private static final int[] DecL1 = {
+        0x8000, 0xa000, 0xc000, 0xd000, 0xe000, 0xea00, 0xee00, 0xf000, 0xf200, 0xf200, 0xffff
+    };
 
     private static final int[] PosL1 = {0, 0, 0, 2, 3, 5, 7, 11, 16, 20, 24, 32, 32};
 
     private static final int STARTL2 = 3;
 
-    private static final int[] DecL2 = {0xa000, 0xc000, 0xd000, 0xe000, 0xea00,
-        0xee00, 0xf000, 0xf200, 0xf240, 0xffff};
+    private static final int[] DecL2 = {
+        0xa000, 0xc000, 0xd000, 0xe000, 0xea00, 0xee00, 0xf000, 0xf200, 0xf240, 0xffff
+    };
 
     private static final int[] PosL2 = {0, 0, 0, 0, 5, 7, 9, 13, 18, 22, 26, 34, 36};
 
     private static final int STARTHF0 = 4;
 
-    private static final int[] DecHf0 = {0x8000, 0xc000, 0xe000, 0xf200, 0xf200,
-        0xf200, 0xf200, 0xf200, 0xffff};
+    private static final int[] DecHf0 = {
+        0x8000, 0xc000, 0xe000, 0xf200, 0xf200, 0xf200, 0xf200, 0xf200, 0xffff
+    };
 
-    private static final int[] PosHf0 = {0, 0, 0, 0, 0, 8, 16, 24, 33, 33, 33, 33,
-        33};
+    private static final int[] PosHf0 = {0, 0, 0, 0, 0, 8, 16, 24, 33, 33, 33, 33, 33};
 
     private static final int STARTHF1 = 5;
 
-    private static final int[] DecHf1 = {0x2000, 0xc000, 0xe000, 0xf000, 0xf200,
-        0xf200, 0xf7e0, 0xffff};
+    private static final int[] DecHf1 = {
+        0x2000, 0xc000, 0xe000, 0xf000, 0xf200, 0xf200, 0xf7e0, 0xffff
+    };
 
-    private static final int[] PosHf1 = {0, 0, 0, 0, 0, 0, 4, 44, 60, 76, 80, 80,
-        127};
+    private static final int[] PosHf1 = {0, 0, 0, 0, 0, 0, 4, 44, 60, 76, 80, 80, 127};
 
     private static final int STARTHF2 = 5;
 
-    private static final int[] DecHf2 = {0x1000, 0x2400, 0x8000, 0xc000, 0xfa00,
-        0xffff, 0xffff, 0xffff};
+    private static final int[] DecHf2 = {
+        0x1000, 0x2400, 0x8000, 0xc000, 0xfa00, 0xffff, 0xffff, 0xffff
+    };
 
     private static final int[] PosHf2 = {0, 0, 0, 0, 0, 0, 2, 7, 53, 117, 233, 0, 0};
 
     private static final int STARTHF3 = 6;
 
-    private static final int[] DecHf3 = {0x800, 0x2400, 0xee00, 0xfe80, 0xffff,
-        0xffff, 0xffff};
+    private static final int[] DecHf3 = {0x800, 0x2400, 0xee00, 0xfe80, 0xffff, 0xffff, 0xffff};
 
     private static final int[] PosHf3 = {0, 0, 0, 0, 0, 0, 0, 2, 16, 218, 251, 0, 0};
 
     private static final int STARTHF4 = 8;
 
-    private static final int[] DecHf4 = {0xff00, 0xffff, 0xffff, 0xffff, 0xffff,
-        0xffff};
+    private static final int[] DecHf4 = {0xff00, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff};
 
     private static final int[] PosHf4 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0};
 
-    static int[] ShortLen1 = {1, 3, 4, 4, 5, 6, 7, 8, 8, 4, 4, 5, 6, 6, 4, 0 };
+    static int[] ShortLen1 = {1, 3, 4, 4, 5, 6, 7, 8, 8, 4, 4, 5, 6, 6, 4, 0};
 
-    static int[] ShortXor1 = {0, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8, 0xfc, 0xfe,
-            0xff, 0xc0, 0x80, 0x90, 0x98, 0x9c, 0xb0 };
+    static int[] ShortXor1 = {
+        0, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8, 0xfc, 0xfe, 0xff, 0xc0, 0x80, 0x90, 0x98, 0x9c, 0xb0
+    };
 
-    static int[] ShortLen2 = {2, 3, 3, 3, 4, 4, 5, 6, 6, 4, 4, 5, 6, 6, 4, 0 };
+    static int[] ShortLen2 = {2, 3, 3, 3, 4, 4, 5, 6, 6, 4, 4, 5, 6, 6, 4, 0};
 
-    static int[] ShortXor2 = {0, 0x40, 0x60, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8,
-            0xfc, 0xc0, 0x80, 0x90, 0x98, 0x9c, 0xb0 };
+    static int[] ShortXor2 = {
+        0, 0x40, 0x60, 0xa0, 0xd0, 0xe0, 0xf0, 0xf8, 0xfc, 0xc0, 0x80, 0x90, 0x98, 0x9c, 0xb0
+    };
 
     protected abstract void unpInitData(boolean solid);
 
@@ -161,8 +159,7 @@ public abstract class Unpack15 extends BitInput {
             if (inAddr > readTop - 30 && !unpReadBuf()) {
                 break;
             }
-            if (((wrPtr - unpPtr) & Compress.MAXWINMASK) < 270
-                    && wrPtr != unpPtr) {
+            if (((wrPtr - unpPtr) & Compress.MAXWINMASK) < 270 && wrPtr != unpPtr) {
                 oldUnpWriteBuf();
                 if (suspended) {
                     return;
@@ -207,7 +204,6 @@ public abstract class Unpack15 extends BitInput {
         oldUnpWriteBuf();
     }
 
-
     protected boolean unpReadBuf() throws IOException, RarException {
         int dataSize = readTop - inAddr;
         if (dataSize < 0) {
@@ -215,10 +211,10 @@ public abstract class Unpack15 extends BitInput {
         }
         if (inAddr > BitInput.MAX_SIZE / 2) {
             if (dataSize > 0) {
-                //memmove(InBuf,InBuf+InAddr,DataSize);
-//                for (int i = 0; i < dataSize; i++) {
-//                    inBuf[i] = inBuf[inAddr + i];
-//                }
+                // memmove(InBuf,InBuf+InAddr,DataSize);
+                //                for (int i = 0; i < dataSize; i++) {
+                //                    inBuf[i] = inBuf[inAddr + i];
+                //                }
                 System.arraycopy(inBuf, inAddr, inBuf, 0, dataSize);
             }
             inAddr = 0;
@@ -226,7 +222,7 @@ public abstract class Unpack15 extends BitInput {
         } else {
             dataSize = readTop;
         }
-        //int readCode=UnpIO->UnpRead(InBuf+DataSize,(BitInput::MAX_SIZE-DataSize)&~0xf);
+        // int readCode=UnpIO->UnpRead(InBuf+DataSize,(BitInput::MAX_SIZE-DataSize)&~0xf);
         int readCode = unpIO.unpRead(inBuf, dataSize, (BitInput.MAX_SIZE - dataSize) & ~0xf);
         if (readCode > 0) {
             readTop += readCode;
@@ -262,14 +258,14 @@ public abstract class Unpack15 extends BitInput {
         }
         BitField >>>= 8;
         if (AvrLn1 < 37) {
-            for (Length = 0;; Length++) {
+            for (Length = 0; ; Length++) {
                 if (((BitField ^ ShortXor1[Length]) & (~(0xff >>> getShortLen1(Length)))) == 0) {
                     break;
                 }
             }
             faddbits(getShortLen1(Length));
         } else {
-            for (Length = 0;; Length++) {
+            for (Length = 0; ; Length++) {
                 if (((BitField ^ ShortXor2[Length]) & (~(0xff >>> getShortLen2(Length)))) == 0) {
                     break;
                 }
@@ -450,11 +446,9 @@ public abstract class Unpack15 extends BitInput {
                     BytePlace = decodeNum(BitField, STARTHF2, DecHf2, PosHf2);
                 } else {
                     if (AvrPlc > 0x0dff) {
-                        BytePlace = decodeNum(BitField, STARTHF1, DecHf1,
-                                PosHf1);
+                        BytePlace = decodeNum(BitField, STARTHF1, DecHf1, PosHf1);
                     } else {
-                        BytePlace = decodeNum(BitField, STARTHF0, DecHf0,
-                                PosHf0);
+                        BytePlace = decodeNum(BitField, STARTHF0, DecHf0, PosHf0);
                     }
                 }
             }
@@ -575,7 +569,8 @@ public abstract class Unpack15 extends BitInput {
         destUnpSize -= length;
         int destPtr = (unpPtr - distance) & Compress.MAXWINMASK;
         if (distance == 1) {
-            // Special case: if the distance is 1 we always copy the same value. We can skip reading the array for
+            // Special case: if the distance is 1 we always copy the same value. We can skip reading
+            // the array for
             // every value and only get it once
             Arrays.fill(window, unpPtr, unpPtr + length, window[destPtr]);
             // update values for correct crc
@@ -619,6 +614,4 @@ public abstract class Unpack15 extends BitInput {
         }
         wrPtr = unpPtr;
     }
-
-
 }

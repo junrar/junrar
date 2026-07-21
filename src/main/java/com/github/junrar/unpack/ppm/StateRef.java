@@ -17,7 +17,6 @@
  */
 package com.github.junrar.unpack.ppm;
 
-
 /**
  * DOCUMENT ME
  *
@@ -32,8 +31,7 @@ public class StateRef {
 
     private int successor; // pointer ppmcontext
 
-    public StateRef() {
-    }
+    public StateRef() {}
 
     public int getSymbol() {
         return symbol;

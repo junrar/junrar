@@ -29,13 +29,13 @@ public class FreqData extends Pointer {
 
     public static final int size = 6;
 
-//    struct FreqData
-//    {
-//        ushort SummFreq;
-//        STATE _PACK_ATTR * Stats;
-//    };
+    //    struct FreqData
+    //    {
+    //        ushort SummFreq;
+    //        STATE _PACK_ATTR * Stats;
+    //    };
 
-    public FreqData(byte[]mem) {
+    public FreqData(byte[] mem) {
         super(mem);
     }
 
@@ -46,7 +46,7 @@ public class FreqData extends Pointer {
     }
 
     public int getSummFreq() {
-        return Raw.readShortLittleEndian(mem,  pos) & 0xffff;
+        return Raw.readShortLittleEndian(mem, pos) & 0xffff;
     }
 
     public void setSummFreq(int summFreq) {
@@ -58,7 +58,7 @@ public class FreqData extends Pointer {
     }
 
     public int getStats() {
-        return Raw.readIntLittleEndian(mem,  pos + 2);
+        return Raw.readIntLittleEndian(mem, pos + 2);
     }
 
     public void setStats(State state) {
@@ -83,5 +83,4 @@ public class FreqData extends Pointer {
         buffer.append("\n]");
         return buffer.toString();
     }
-
 }

@@ -5,8 +5,7 @@ public class CorruptHeaderException extends RarException {
         super(cause);
     }
 
-    public CorruptHeaderException() {
-    }
+    public CorruptHeaderException() {}
 
     public CorruptHeaderException(String message) {
         super(message);

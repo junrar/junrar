@@ -22,7 +22,6 @@ import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
@@ -35,8 +34,12 @@ import javax.crypto.spec.SecretKeySpec;
  * @version $LastChangedRevision$
  */
 public class Rijndael {
-    public static Cipher buildDecipherer(final String password, byte[] salt) throws IOException,
-            NoSuchAlgorithmException, InvalidKeyException, InvalidAlgorithmParameterException, NoSuchPaddingException {
+    public static Cipher buildDecipherer(final String password, byte[] salt)
+            throws IOException,
+                    NoSuchAlgorithmException,
+                    InvalidKeyException,
+                    InvalidAlgorithmParameterException,
+                    NoSuchPaddingException {
         if (password == null) {
             throw new InvalidAlgorithmParameterException("password should be specified");
         }
@@ -77,14 +80,21 @@ public class Rijndael {
         digest = sha.digest();
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                AESKey[i * 4 + j] = (byte) (((digest[i * 4] * 0x1000000) & 0xff000000
-                        | ((digest[i * 4 + 1] * 0x10000) & 0xff0000) | ((digest[i * 4 + 2] * 0x100) & 0xff00)
-                        | digest[i * 4 + 3] & 0xff) >>> (j * 8));
+                AESKey[i * 4 + j] =
+                        (byte)
+                                (((digest[i * 4] * 0x1000000) & 0xff000000
+                                                | ((digest[i * 4 + 1] * 0x10000) & 0xff0000)
+                                                | ((digest[i * 4 + 2] * 0x100) & 0xff00)
+                                                | digest[i * 4 + 3] & 0xff)
+                                        >>> (j * 8));
             }
         }
 
         Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
-        cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(AESKey, "AES"), new IvParameterSpec(AESInit));
+        cipher.init(
+                Cipher.DECRYPT_MODE,
+                new SecretKeySpec(AESKey, "AES"),
+                new IvParameterSpec(AESInit));
         return cipher;
     }
 }

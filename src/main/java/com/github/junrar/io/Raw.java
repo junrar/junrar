@@ -119,8 +119,9 @@ public class Raw {
      */
     public static int readIntLittleEndian(byte[] array, int pos) {
         return ((array[pos + 3] & 0xff) << 24)
-            | ((array[pos + 2] & 0xff) << 16)
-            | ((array[pos + 1] & 0xff) << 8) | ((array[pos] & 0xff));
+                | ((array[pos + 2] & 0xff) << 16)
+                | ((array[pos + 1] & 0xff) << 8)
+                | ((array[pos] & 0xff));
     }
 
     /**
@@ -133,9 +134,9 @@ public class Raw {
      */
     public static long readIntLittleEndianAsLong(byte[] array, int pos) {
         return (((long) array[pos + 3] & 0xff) << 24)
-            | (((long) array[pos + 2] & 0xff) << 16)
-            | (((long) array[pos + 1] & 0xff) << 8)
-            | (((long) array[pos] & 0xff));
+                | (((long) array[pos + 2] & 0xff) << 16)
+                | (((long) array[pos + 1] & 0xff) << 8)
+                | (((long) array[pos] & 0xff));
     }
 
     /**

@@ -1,11 +1,10 @@
 package com.github.junrar.unsigned;
 
-
-import org.junit.jupiter.api.Test;
-
 import static com.github.junrar.unsigned.UnsignedByte.add;
 import static com.github.junrar.unsigned.UnsignedByte.sub;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 public class UnsignedByteTest {
 

@@ -5,6 +5,5 @@ public class UnsupportedRarV5Exception extends RarException {
         super(cause);
     }
 
-    public UnsupportedRarV5Exception() {
-    }
+    public UnsupportedRarV5Exception() {}
 }

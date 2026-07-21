@@ -3,10 +3,8 @@ package com.github.junrar.volume;
 import com.github.junrar.Archive;
 import com.github.junrar.io.SeekableReadOnlyByteChannel;
 import com.github.junrar.io.SeekableReadOnlyFile;
-
 import java.io.File;
 import java.io.IOException;
-
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>

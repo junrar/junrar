@@ -26,13 +26,11 @@ import java.util.Arrays;
  * @version $LastChangedRevision$
  */
 public class SubAllocator {
-    public static final int N1 = 4, N2 = 4, N3 = 4, N4 = (128 + 3 - 1 * N1 - 2
-        * N2 - 3 * N3) / 4;
+    public static final int N1 = 4, N2 = 4, N3 = 4, N4 = (128 + 3 - 1 * N1 - 2 * N2 - 3 * N3) / 4;
 
     public static final int N_INDEXES = N1 + N2 + N3 + N4;
 
-    public static final int UNIT_SIZE = Math.max(PPMContext.size,
-        RarMemBlock.size);
+    public static final int UNIT_SIZE = Math.max(PPMContext.size, RarMemBlock.size);
 
     public static final int FIXED_UNIT_SIZE = 12;
 
@@ -71,7 +69,7 @@ public class SubAllocator {
         subAllocatorSize = 0;
     }
 
-    private void insertNode(int p/* rarnode ptr */, int indx) {
+    private void insertNode(int p /* rarnode ptr */, int indx) {
         RarNode temp = tempRarNode;
         temp.setAddress(p);
         temp.setNext(freeList[indx].getNext());
@@ -91,7 +89,7 @@ public class SubAllocator {
     }
 
     private int U2B(int NU) {
-        return /* 8*NU+4*NU */UNIT_SIZE * NU;
+        return /* 8*NU+4*NU */ UNIT_SIZE * NU;
     }
 
     /* memblockptr */
@@ -99,7 +97,7 @@ public class SubAllocator {
         return (BasePtr + U2B(Items));
     }
 
-    private void splitBlock(int pv/* ptr */, int oldIndx, int newIndx) {
+    private void splitBlock(int pv /* ptr */, int oldIndx, int newIndx) {
         int i, uDiff = indx2Units[oldIndx] - indx2Units[newIndx];
         int p = pv + U2B(indx2Units[newIndx]);
         if (indx2Units[i = units2Indx[uDiff - 1]] != uDiff) {
@@ -149,8 +147,8 @@ public class SubAllocator {
         subAllocatorSize = t;
         // Bug fixed
         freeListPos = heapStart + allocSize;
-        assert (realAllocSize - tempMemBlockPos == RarMemBlock.size) : realAllocSize
-                + " " + tempMemBlockPos + " " + RarMemBlock.size;
+        assert (realAllocSize - tempMemBlockPos == RarMemBlock.size)
+                : realAllocSize + " " + tempMemBlockPos + " " + RarMemBlock.size;
 
         // Init freeList
         for (int i = 0, pos = freeListPos; i < freeList.length; i++, pos += RarNode.size) {
@@ -184,8 +182,9 @@ public class SubAllocator {
                 p.setNU(indx2Units[i]); // p->NU=Indx2Units[i];
             }
         }
-        for (p.setAddress(s0.getNext()); p.getAddress() != s0.getAddress(); p
-                .setAddress(p.getNext())) {
+        for (p.setAddress(s0.getNext());
+                p.getAddress() != s0.getAddress();
+                p.setAddress(p.getNext())) {
             // while ((p1=MBPtr(p,p->NU))->Stamp == 0xFFFF && int(p->NU)+p1->NU
             // < 0x10000)
             // Bug fixed
@@ -200,8 +199,9 @@ public class SubAllocator {
         // Bug fixed
         p.setAddress(s0.getNext());
         while (p.getAddress() != s0.getAddress()) {
-            for (p.remove(), sz = p.getNU(); sz > 128; sz -= 128, p
-                    .setAddress(MBPtr(p.getAddress(), 128))) {
+            for (p.remove(), sz = p.getNU();
+                    sz > 128;
+                    sz -= 128, p.setAddress(MBPtr(p.getAddress(), 128))) {
                 insertNode(p.getAddress(), N_INDEXES - 1);
             }
             if (indx2Units[i = units2Indx[sz - 1]] != sz) {
@@ -344,12 +344,10 @@ public class SubAllocator {
 
         pText = heapStart;
 
-        int size2 = FIXED_UNIT_SIZE
-                * (subAllocatorSize / 8 / FIXED_UNIT_SIZE * 7);
+        int size2 = FIXED_UNIT_SIZE * (subAllocatorSize / 8 / FIXED_UNIT_SIZE * 7);
         int realSize2 = size2 / FIXED_UNIT_SIZE * UNIT_SIZE;
         int size1 = subAllocatorSize - size2;
-        int realSize1 = size1 / FIXED_UNIT_SIZE * UNIT_SIZE + size1
-                % FIXED_UNIT_SIZE;
+        int realSize1 = size1 / FIXED_UNIT_SIZE * UNIT_SIZE + size1 % FIXED_UNIT_SIZE;
         hiUnit = heapStart + subAllocatorSize;
         loUnit = unitsStart = heapStart + realSize1;
         fakeUnitsStart = heapStart + size1;
@@ -372,7 +370,6 @@ public class SubAllocator {
             i += ((indx2Units[i] < (k + 1)) ? 1 : 0);
             units2Indx[k] = i & 0xff;
         }
-
     }
 
     private int sizeOfFreeList() {
@@ -422,5 +419,4 @@ public class SubAllocator {
         buffer.append("\n]");
         return buffer.toString();
     }
-
 }

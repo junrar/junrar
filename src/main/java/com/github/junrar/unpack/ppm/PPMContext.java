@@ -43,7 +43,7 @@ public class PPMContext extends Pointer {
 
     private int suffix; // pointer ppmcontext
 
-    public static final int[] ExpEscape = {25, 14, 9, 7, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2 };
+    public static final int[] ExpEscape = {25, 14, 9, 7, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, 2, 2};
 
     // Temp fields
     private final State tempState1 = new State(null);
@@ -79,7 +79,7 @@ public class PPMContext extends Pointer {
 
     public final int getNumStats() {
         if (mem != null) {
-            numStats = Raw.readShortLittleEndian(mem,  pos) & 0xffff;
+            numStats = Raw.readShortLittleEndian(mem, pos) & 0xffff;
         }
         return numStats;
     }
@@ -131,8 +131,7 @@ public class PPMContext extends Pointer {
         return tempPPMContext.init(mem);
     }
 
-    public int createChild(ModelPPM model, State pStats/* ptr */,
-            StateRef firstState /* ref */) {
+    public int createChild(ModelPPM model, State pStats /* ptr */, StateRef firstState /* ref */) {
         PPMContext pc = getTempPPMContext(model.getSubAlloc().getHeap());
         pc.setAddress(model.getSubAlloc().allocContext());
         if (pc != null) {
@@ -260,25 +259,25 @@ public class PPMContext extends Pointer {
             model.setPrevSuccess(0);
             model.getFoundState().setAddress(0);
         }
-        //int a = 0;//TODO just 4 debugging
+        // int a = 0;//TODO just 4 debugging
     }
 
-//    public static void ppmdSwap(ModelPPM model, StatePtr state1, StatePtr state2)
-//    {
-//        byte[] bytes = model.getSubAlloc().getHeap();
-//        int p1 = state1.getAddress();
-//        int p2 = state2.getAddress();
-//
-//        for (int i = 0; i < StatePtr.size; i++) {
-//            byte temp = bytes[p1+i];
-//            bytes[p1+i] = bytes[p2+i];
-//            bytes[p2+i] = temp;
-//        }
-//        state1.setAddress(p1);
-//        state2.setAddress(p2);
-//    }
+    //    public static void ppmdSwap(ModelPPM model, StatePtr state1, StatePtr state2)
+    //    {
+    //        byte[] bytes = model.getSubAlloc().getHeap();
+    //        int p1 = state1.getAddress();
+    //        int p2 = state2.getAddress();
+    //
+    //        for (int i = 0; i < StatePtr.size; i++) {
+    //            byte temp = bytes[p1+i];
+    //            bytes[p1+i] = bytes[p2+i];
+    //            bytes[p2+i] = temp;
+    //        }
+    //        state1.setAddress(p1);
+    //        state2.setAddress(p2);
+    //    }
 
-    public void update1(ModelPPM model, int p/* ptr */) {
+    public void update1(ModelPPM model, int p /* ptr */) {
         model.getFoundState().setAddress(p);
         model.getFoundState().incFreq(4);
         freqData.incSummFreq(4);
@@ -345,7 +344,7 @@ public class PPMContext extends Pointer {
         return (true);
     }
 
-    public void update2(ModelPPM model, int p/* state ptr */) {
+    public void update2(ModelPPM model, int p /* state ptr */) {
         State temp = tempState5.init(model.getHeap());
         temp.setAddress(p);
         model.getFoundState().setAddress(p);
@@ -450,5 +449,4 @@ public class PPMContext extends Pointer {
         buffer.append("\n]");
         return buffer.toString();
     }
-
 }

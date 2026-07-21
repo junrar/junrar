@@ -34,6 +34,7 @@ public abstract class Pointer {
     public Pointer(byte[] mem) {
         this.mem = mem;
     }
+
     /**
      * returns the position of this object in the byte[]
      * @return the address of this object

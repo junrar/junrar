@@ -22,8 +22,6 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-
 /**
  * Base class of all rar headers
  *
@@ -36,20 +34,20 @@ public class BaseBlock {
 
     public static final short BaseBlockSize = 7;
 
-    //TODO move somewhere else
+    // TODO move somewhere else
 
-    public static final short MHD_VOLUME = 0x0001;
-    public static final short MHD_COMMENT = 0x0002;
-    public static final short MHD_LOCK = 0x0004;
-    public static final short MHD_SOLID = 0x0008;
+    // spotless:off
+    public static final short MHD_VOLUME       = 0x0001;
+    public static final short MHD_COMMENT      = 0x0002;
+    public static final short MHD_LOCK         = 0x0004;
+    public static final short MHD_SOLID        = 0x0008;
     public static final short MHD_PACK_COMMENT = 0x0010;
     public static final short MHD_NEWNUMBERING = 0x0010;
-    public static final short MHD_AV = 0x0020;
-    public static final short MHD_PROTECT = 0x0040;
-    public static final short MHD_PASSWORD = 0x0080;
-    public static final short MHD_FIRSTVOLUME = 0x0100;
-    public static final short MHD_ENCRYPTVER = 0x0200;
-
+    public static final short MHD_AV           = 0x0020;
+    public static final short MHD_PROTECT      = 0x0040;
+    public static final short MHD_PASSWORD     = 0x0080;
+    public static final short MHD_FIRSTVOLUME  = 0x0100;
+    public static final short MHD_ENCRYPTVER   = 0x0200;
 
     public static final short LHD_SPLIT_BEFORE =  0x0001;
     public static final short LHD_SPLIT_AFTER  =  0x0002;
@@ -81,7 +79,7 @@ public class BaseBlock {
     public static final short EARC_DATACRC     =  0x0002;
     public static final short EARC_REVSPACE    =  0x0004;
     public static final short EARC_VOLNUMBER   =  0x0008;
-
+    // spotless:on
 
     protected long positionInFile;
 
@@ -93,9 +91,7 @@ public class BaseBlock {
     /**
      *
      */
-    public BaseBlock() {
-
-    }
+    public BaseBlock() {}
 
     public BaseBlock(BaseBlock bb) {
         this.flags = bb.getFlags();
@@ -104,6 +100,7 @@ public class BaseBlock {
         this.headerSize = bb.getHeaderSize(false);
         this.positionInFile = bb.getPositionInFile();
     }
+
     public BaseBlock(byte[] baseBlockHeader) {
 
         int pos = 0;
@@ -115,7 +112,6 @@ public class BaseBlock {
         pos += 2;
         this.headerSize = Raw.readShortLittleEndian(baseBlockHeader, pos);
     }
-
 
     public boolean hasArchiveDataCRC() {
         return (this.flags & EARC_DATACRC) != 0;
@@ -140,7 +136,6 @@ public class BaseBlock {
             return (true);
         }
         return (false);
-
     }
 
     public long getPositionInFile() {
