@@ -1,0 +1,12 @@
+plugins {
+    id 'groovy-gradle-plugin'
+}
+
+repositories {
+    gradlePluginPortal()
+}
+
+dependencies {
+    // Add Spotless to the buildSrc classpath (forces JGit v7 here only)
+    implementation 'com.diffplug.spotless:spotless-plugin-gradle:8.8.0'
+}
