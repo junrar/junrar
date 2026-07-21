@@ -17,7 +17,6 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
-import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.HostSystem;
 import org.apache.commons.io.IOUtils;
@@ -47,7 +46,6 @@ import java.util.stream.Stream;
 import static java.util.Calendar.FEBRUARY;
 import static java.util.Calendar.MARCH;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 
 public class ArchiveTest {
@@ -335,15 +333,6 @@ public class ArchiveTest {
                 }
             }
         }
-
-        @Test
-        public void givenSolidRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("solid/rar5-solid.rar")) {
-                Throwable thrown = catchThrowable(() -> new Archive(is));
-
-                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
-            }
-        }
     }
 
     /**
@@ -412,24 +401,6 @@ public class ArchiveTest {
                         assertThat(baos.toString()).isEqualTo("file1\n");
                     }
                 }
-            }
-        }
-
-        @Test
-        public void givenEncryptedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("password/rar5-encrypted-junrar.rar")) {
-                Throwable thrown = catchThrowable(() -> new Archive(is));
-
-                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
-            }
-        }
-
-        @Test
-        public void givenPasswordProtectedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
-            try (InputStream is = getClass().getResourceAsStream("password/rar5-password-junrar.rar")) {
-                Throwable thrown = catchThrowable(() -> new Archive(is));
-
-                assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
             }
         }
     }

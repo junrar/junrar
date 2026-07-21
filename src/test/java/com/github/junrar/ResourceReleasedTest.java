@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * This test will have the rar file which will be extracted and the extracted content in the same directory. This directory is newly setup and deleted for every test method
@@ -41,29 +40,25 @@ public class ResourceReleasedTest {
         FileUtils.cleanDirectory(extractDir);
     }
 
-    @Test
-    public void extractRar5FromFile() {
-        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile, extractDir));
+    // RAR5 rows are success rows since the M3.11 gate lift (pre-lift they asserted the
+    // extraction failed with a RarException); the release-of-resources observable is
+    // unchanged — cleanup()'s cleanDirectory fails on any leaked handle.
 
-        assertThat(thrown).isInstanceOf(RarException.class);
+    @Test
+    public void extractRar5FromFile() throws IOException, RarException {
+        assertThat(Junrar.extract(rar5TestFile, extractDir)).isNotEmpty();
     }
 
     @Test
-    public void extractRar5FromInputStream() throws IOException {
-        final InputStream input = new FileInputStream(rar5TestFile);
-
-        Throwable thrown = catchThrowable(() -> Junrar.extract(input, extractDir));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
-
-        input.close();
+    public void extractRar5FromInputStream() throws IOException, RarException {
+        try (InputStream input = new FileInputStream(rar5TestFile)) {
+            assertThat(Junrar.extract(input, extractDir)).isNotEmpty();
+        }
     }
 
     @Test
-    public void extractRar5FromString() {
-        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath()));
-
-        assertThat(thrown).isInstanceOf(RarException.class);
+    public void extractRar5FromString() throws IOException, RarException {
+        assertThat(Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath())).isNotEmpty();
     }
 
     @Test

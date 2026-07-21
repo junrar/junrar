@@ -2,7 +2,6 @@ package com.github.junrar;
 
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.CorruptHeaderException;
-import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
@@ -23,11 +22,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
- * M3.2 (issue #23) archive-level tests for the RAR5 read loop through the pre-gate harness
- * ({@link Archive#testOnlyOpenSuppressingV5Gate}). Verifies the loop parses a real RAR5
- * fixture into the shared headers list, that the harness suppresses ONLY the V5 gate (a RAR3
- * archive behaves identically to the public path), and that hostile fixtures reject in
- * bounded time (S1 analog).
+ * M3.2 (issue #23) archive-level tests for the RAR5 read loop, on the public {@code Archive}
+ * path since the M3.11 gate lift. Verifies the loop parses a real RAR5 fixture into the
+ * shared headers list and that hostile fixtures reject in bounded time (S1 analog).
  */
 class ArchiveRar5FrameworkTest {
 
@@ -62,7 +59,7 @@ class ArchiveRar5FrameworkTest {
 
     @Test
     void rar5FixtureIsParsedIntoTheHeadersList() throws Exception {
-        try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5.rar", fixtureBytes("rar5.rar")))) {
+        try (Archive archive = new Archive(writeTemp("rar5.rar", fixtureBytes("rar5.rar")))) {
             assertThat(archive.getFormat()).isEqualTo(RarFormat.RAR50);
             assertThat(types(archive)).containsExactly("MAIN", "FileHeader", "FileHeader", "ENDARC");
             // A clean fixture: every header CRC verifies.
@@ -89,7 +86,7 @@ class ArchiveRar5FrameworkTest {
      */
     @Test
     void solidFixtureMainHeaderIsSolidAndListsNineFiles() throws Exception {
-        try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(
+        try (Archive archive = new Archive(
             writeTemp("rar5-solid.rar", fixtureBytes("solid/rar5-solid.rar")))) {
             final Rar5MainHeader main = (Rar5MainHeader) archive.getHeaders().get(0);
             assertThat(main.isSolid()).isTrue();
@@ -106,11 +103,11 @@ class ArchiveRar5FrameworkTest {
      * M3.3 (issue #24) real-fixture row (manual &sect;7e), cross-checked against the unrar 7.23
      * oracle: {@code unrar l -v src/test/resources/com/github/junrar/password/rar5-password-junrar.rar}
      * lists {@code file1.txt} marked {@code *} (per-file encrypted data; the archive headers
-     * themselves are not encrypted, so the M3.2 harness parses this without a password).
+     * themselves are not encrypted, so this parses without a password).
      */
     @Test
     void passwordFixtureFileEntryCarriesRar5CryptFacts() throws Exception {
-        try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(
+        try (Archive archive = new Archive(
             writeTemp("rar5-password.rar", fixtureBytes("password/rar5-password-junrar.rar")))) {
             final List<FileHeader> files = archive.getFileHeaders();
             assertThat(files).hasSize(1);
@@ -123,56 +120,23 @@ class ArchiveRar5FrameworkTest {
     }
 
     @Test
-    void publicPathStillHitsTheV5Gate() throws Exception {
-        final File f = writeTemp("rar5-public.rar", fixtureBytes("rar5.rar"));
-        assertThat(catchThrowable(() -> new Archive(f).close()))
-            .isExactlyInstanceOf(UnsupportedRarV5Exception.class);
-    }
-
-    @Test
-    void harnessSuppressesOnlyV5GateRar3IsIdentical() throws Exception {
-        final byte[] rar3 = fixtureBytes("test.rar");
-        final List<String> viaPublic;
-        try (Archive archive = new Archive(writeTemp("t-public.rar", rar3))) {
-            viaPublic = archive.getFileHeaders().stream()
-                .map(fh -> fh.getFileNameString()).collect(Collectors.toList());
-        }
-        final List<String> viaHarness;
-        try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(writeTemp("t-harness.rar", rar3))) {
-            assertThat(archive.getFormat()).isEqualTo(RarFormat.RAR15);
-            viaHarness = archive.getFileHeaders().stream()
-                .map(fh -> fh.getFileNameString()).collect(Collectors.toList());
-        }
-        assertThat(viaHarness).isNotEmpty().isEqualTo(viaPublic);
-    }
-
-    @Test
     void unencryptedBadCrcMarksBrokenButArchiveOpens() throws Exception {
         final byte[] bytes = fixtureBytes("rar5.rar");
         bytes[8] ^= 0xFF; // corrupt the first block's stored CRC32 (offset 8 = after the 8-byte marker)
-        try (Archive archive = Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5-badcrc.rar", bytes))) {
+        try (Archive archive = new Archive(writeTemp("rar5-badcrc.rar", bytes))) {
             assertThat(archive.getHeaders()).isNotEmpty();
             assertThat(archive.getHeaders().get(0).isBrokenHeader()).isTrue();
         }
     }
 
     @Test
-    void truncatedRar5OnPublicPathStillReportsV5NotCorrupt() throws Exception {
-        // Regression guard (issue #23): the V5 gate must fire before any parsing, so a
-        // truncated/corrupt RAR5 archive surfaces UnsupportedRarV5Exception on the public path
-        // -- exactly as pre-M3.2 -- rather than a parse-time CorruptHeaderException. A
-        // parse-then-gate order changed the recorded exception for real (truncated) corpus
-        // RAR5 archives.
-        final byte[] truncated = Arrays.copyOf(fixtureBytes("rar5.rar"), 40);
-        assertThat(catchThrowable(() -> new Archive(writeTemp("rar5-trunc-public.rar", truncated)).close()))
-            .isExactlyInstanceOf(UnsupportedRarV5Exception.class);
-    }
-
-    @Test
     void truncatedMidHeaderThrows() throws Exception {
+        // Post-M3.11: with the V5 gate lifted, a truncated RAR5 archive surfaces the
+        // parse-time CorruptHeaderException on the public path (the pre-lift gate-pinning
+        // twin of this test asserted UnsupportedRarV5Exception; retired with the gate).
         final byte[] truncated = Arrays.copyOf(fixtureBytes("rar5.rar"), 40); // cuts into the 2nd block's body
         assertThat(catchThrowable(() ->
-            Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5-trunc.rar", truncated)).close()))
+            new Archive(writeTemp("rar5-trunc.rar", truncated)).close()))
             .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
@@ -189,7 +153,7 @@ class ArchiveRar5FrameworkTest {
         bytes[MARKER50.length + 5] = (byte) 0xFF;
         bytes[MARKER50.length + 6] = (byte) 0x7F;
         assertThat(catchThrowable(() ->
-            Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5-huge.rar", bytes)).close()))
+            new Archive(writeTemp("rar5-huge.rar", bytes)).close()))
             .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
@@ -223,7 +187,7 @@ class ArchiveRar5FrameworkTest {
         System.arraycopy(MARKER50, 0, bytes, 0, MARKER50.length);
         System.arraycopy(header, 0, bytes, MARKER50.length, header.length);
         assertThat(catchThrowable(() ->
-            Archive.testOnlyOpenSuppressingV5Gate(writeTemp("rar5-negdata.rar", bytes)).close()))
+            new Archive(writeTemp("rar5-negdata.rar", bytes)).close()))
             .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 }

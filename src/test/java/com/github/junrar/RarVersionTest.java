@@ -1,7 +1,5 @@
 package com.github.junrar;
 
-import com.github.junrar.exception.RarException;
-import com.github.junrar.exception.UnsupportedRarV5Exception;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,7 +10,6 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 
 public class RarVersionTest {
@@ -45,10 +42,17 @@ public class RarVersionTest {
 
     @Test
     public void extractRarV5() throws Exception {
+        // Success row since the M3.11 gate lift (the pre-lift twin asserted
+        // UnsupportedRarV5Exception); mirrors extractRarV4.
         try (InputStream stream = getClass().getResourceAsStream("rar5.rar")) {
-            Throwable thrown = catchThrowable(() -> Junrar.extract(stream, tempDir));
-            assertThat(thrown).isInstanceOf(RarException.class);
-            assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
+            Junrar.extract(stream, tempDir);
         }
+        final File file1 = new File(tempDir, "FILE1.TXT");
+        final File file2 = new File(tempDir, "FILE2.TXT");
+
+        assertThat(file1).exists();
+        assertThat(file1.length()).isEqualTo(7);
+        assertThat(file2).exists();
+        assertThat(file2.length()).isEqualTo(7);
     }
 }

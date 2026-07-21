@@ -17,8 +17,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
- * M3.4 (issue #25) archive-level crypto tests through the M3.2 pre-gate harness
- * ({@link Archive#testOnlyOpenSuppressingV5Gate}). Covers header decryption of a {@code -hp}
+ * M3.4 (issue #25) archive-level crypto tests, on the public {@code Archive} path since
+ * the M3.11 gate lift. Covers header decryption of a {@code -hp}
  * archive, plaintext listing of a {@code -p} archive, and the {@link WrongPasswordException}
  * paths (wrong password, missing password) that must survive the {@code setChannel} catch
  * filter rather than "opening" the archive with partial, undecryptable headers (manual &sect;4.9).
@@ -48,7 +48,7 @@ class ArchiveRar5CryptoTest {
 
     @Test
     void headerEncryptedArchiveListsWithCorrectPassword() throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-encrypted-junrar.rar"), pw("junrar"))) {
+        try (Archive a = new Archive(fixture("rar5-encrypted-junrar.rar"), pw("junrar"))) {
             assertThat(a.isEncrypted()).isTrue();
             assertThat(names(a)).containsExactly("file1.txt");
             final FileHeader fh = a.getFileHeaders().get(0);
@@ -59,7 +59,7 @@ class ArchiveRar5CryptoTest {
 
     @Test
     void headerEncryptedArchiveNonAsciiPassword() throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-nonascii-password.rar"), pw("пароль密码ü"))) {
+        try (Archive a = new Archive(fixture("rar5-nonascii-password.rar"), pw("пароль密码ü"))) {
             assertThat(a.isEncrypted()).isTrue();
             assertThat(names(a)).containsExactly("file1.txt");
         }
@@ -68,14 +68,14 @@ class ArchiveRar5CryptoTest {
     @Test
     void wrongPasswordOnHeaderEncryptedArchiveThrowsWrongPassword() throws Exception {
         final File f = fixture("rar5-encrypted-junrar.rar");
-        assertThat(catchThrowable(() -> Archive.testOnlyOpenSuppressingV5Gate(f, pw("wrongpass"))))
+        assertThat(catchThrowable(() -> new Archive(f, pw("wrongpass"))))
             .isExactlyInstanceOf(WrongPasswordException.class);
     }
 
     @Test
     void missingPasswordOnHeaderEncryptedArchiveThrowsWrongPassword() throws Exception {
         final File f = fixture("rar5-encrypted-junrar.rar");
-        assertThat(catchThrowable(() -> Archive.testOnlyOpenSuppressingV5Gate(f, pw(null))))
+        assertThat(catchThrowable(() -> new Archive(f, pw(null))))
             .isExactlyInstanceOf(WrongPasswordException.class);
     }
 
@@ -87,7 +87,7 @@ class ArchiveRar5CryptoTest {
     @Test
     void wrongPasswordIsNotSwallowedIntoAPartialOpen() throws Exception {
         final File f = fixture("rar5-encrypted-junrar.rar");
-        assertThat(catchThrowable(() -> Archive.testOnlyOpenSuppressingV5Gate(f, pw("nope"))))
+        assertThat(catchThrowable(() -> new Archive(f, pw("nope"))))
             .isInstanceOf(WrongPasswordException.class);
     }
 
@@ -95,7 +95,7 @@ class ArchiveRar5CryptoTest {
 
     @Test
     void dataEncryptedArchiveListsWithoutPassword() throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-password-junrar.rar"))) {
+        try (Archive a = new Archive(fixture("rar5-password-junrar.rar"))) {
             // No HEAD_CRYPT block: archive-level header encryption is off even though the file is.
             assertThat(a.isEncrypted()).isFalse();
             assertThat(names(a)).containsExactly("file1.txt");

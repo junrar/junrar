@@ -52,7 +52,8 @@ class ArchiveRar5LinkTest {
         return Files.createDirectory(tempDir.resolve("out-" + System.nanoTime())).toFile();
     }
 
-    /** Junrar.tryToExtract routing, driven through the pre-gate harness until M3.11. */
+    /** Mirrors Junrar.tryToExtract routing at the Archive level (the four-surface public-path
+     * matrix lives in ArchiveRar5PublicSurfaceTest). */
     private static List<File> extractInto(final Archive a, final File destination) throws Exception {
         final LocalFolderExtractor lfe = new LocalFolderExtractor(destination);
         final List<File> out = new ArrayList<>();
@@ -79,7 +80,7 @@ class ArchiveRar5LinkTest {
     @Test
     void benignLinksExtractWithOracleSemantics() throws Exception {
         final File out = dest();
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-links.rar"))) {
+        try (Archive a = new Archive(fixture("rar5-links.rar"))) {
             extractInto(a, out);
         }
         final Path root = out.toPath();
@@ -110,7 +111,7 @@ class ArchiveRar5LinkTest {
     /** Metadata surfaces on every OS (Windows CI asserts this instead of creation). */
     @Test
     void redirectionMetadataSurfacesOnAllPlatforms() throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-links.rar"))) {
+        try (Archive a = new Archive(fixture("rar5-links.rar"))) {
             final Rar5Redirection flat = redirectionOf(a, "link-flat");
             assertThat(flat.getType()).isEqualTo(Rar5RedirType.UNIX_SYMLINK);
             assertThat(flat.getTarget()).isEqualTo("file.txt");
@@ -158,7 +159,7 @@ class ArchiveRar5LinkTest {
         final File archive = fixture("rar5-links-hostile.rar");
         patchTarget(archive, "dqqq/evil.txt", "dqqq", "dlnk");
         final File out = dest();
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(archive)) {
+        try (Archive a = new Archive(archive)) {
             final Throwable thrown = catchThrowable(() -> extractInto(a, out));
             assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
             assertThat(thrown.getMessage()).contains("dlnk");
@@ -171,7 +172,7 @@ class ArchiveRar5LinkTest {
         final File archive = fixture("rar5-links-hostile.rar");
         patchTarget(archive, entry, from, to);
         final File out = dest();
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(archive)) {
+        try (Archive a = new Archive(archive)) {
             final Throwable thrown = catchThrowable(() -> extractInto(a, out));
             assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
         }
@@ -200,7 +201,7 @@ class ArchiveRar5LinkTest {
             throw new IllegalArgumentException("patch must be length-preserving");
         }
         long position = -1;
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(archive)) {
+        try (Archive a = new Archive(archive)) {
             for (final FileHeader fh : a.getFileHeaders()) {
                 if (fh.getFileName().equals(entry)) {
                     position = fh.getPositionInFile();

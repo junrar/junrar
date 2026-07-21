@@ -35,7 +35,7 @@ import static org.assertj.core.api.Assertions.entry;
 
 /**
  * M3.9 (issue #30) RAR5 multi-volume acceptance: {@code .partN.rar} sets spanning through
- * {@code ComprDataIO}'s volume path, driven through the M3.2 pre-gate harness until M3.11.
+ * {@code ComprDataIO}'s volume path, on the public {@code Archive} path since the M3.11 gate lift.
  * Fixtures were produced with {@code rar 7.23 -ma5 -v100k} ({@code volumes/rar5-part/README.md});
  * expected SHA-256s are the {@code unrar 7.23} {@code p} oracle output.
  *
@@ -97,7 +97,7 @@ class ArchiveRar5VolumeTest {
         final File first = part("vols", 1);
         part("vols", 2);
         part("vols", 3);
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(first)) {
+        try (Archive a = new Archive(first)) {
             // MHFL_VOLUME/MHFL_VOLNUMBER parse facts on the first volume.
             final Rar5MainHeader main = mainHeader(a);
             assertThat(main.isVolume()).isTrue();
@@ -122,7 +122,7 @@ class ArchiveRar5VolumeTest {
         for (int n = 1; n <= 3; n++) {
             streams.add(new FileInputStream(part("vols", n)));
         }
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(new InputStreamVolumeManager(streams))) {
+        try (Archive a = new Archive(new InputStreamVolumeManager(streams), ArchiveOptions.builder().build())) {
             final Map<String, String> digests = extractAll(a);
             assertThat(digests).containsOnly(
                 entry("note.txt", SHA_NOTE),
@@ -136,7 +136,7 @@ class ArchiveRar5VolumeTest {
         for (int n = 2; n <= 4; n++) {
             part("solid", n);
         }
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(first)) {
+        try (Archive a = new Archive(first)) {
             // Beyond the first member, every entry depends on the preceding solid window.
             assertThat(a.getFileHeaders().get(1).isSolid()).isTrue();
             final Map<String, String> digests = extractAll(a);
@@ -153,7 +153,7 @@ class ArchiveRar5VolumeTest {
         final File first = part("blake", 1);
         part("blake", 2);
         part("blake", 3);
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(first)) {
+        try (Archive a = new Archive(first)) {
             final List<FileHeader> files = a.getFileHeaders();
             // -htb row is not vacuous: the split entry really carries a BLAKE2 digest.
             assertThat(files.get(1).getHashType()).isEqualTo(Rar5HashType.BLAKE2);
@@ -177,7 +177,7 @@ class ArchiveRar5VolumeTest {
         for (int n = 2; n <= 4; n++) {
             part("big", n);
         }
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(first)) {
+        try (Archive a = new Archive(first)) {
             final Map<String, String> digests = extractAll(a);
             assertThat(digests).containsOnly(entry("spanned2.bin", SHA_SPANNED2));
         }
@@ -187,7 +187,7 @@ class ArchiveRar5VolumeTest {
     void missingPart2FileThrowsTyped() throws Exception {
         final File first = part("vols", 1);
         part("vols", 3); // part2 deliberately absent
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(first)) {
+        try (Archive a = new Archive(first)) {
             final Throwable thrown = catchThrowable(() -> extractAll(a));
             assertThat(thrown).isExactlyInstanceOf(MissingNextVolumeException.class);
         }
@@ -198,7 +198,7 @@ class ArchiveRar5VolumeTest {
         // Only the first stream is supplied: the manager's null return is the missing-volume path.
         final List<InputStream> streams = new ArrayList<>();
         streams.add(new FileInputStream(part("vols", 1)));
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(new InputStreamVolumeManager(streams))) {
+        try (Archive a = new Archive(new InputStreamVolumeManager(streams), ArchiveOptions.builder().build())) {
             final Throwable thrown = catchThrowable(() -> extractAll(a));
             assertThat(thrown).isExactlyInstanceOf(MissingNextVolumeException.class);
         }
@@ -208,7 +208,7 @@ class ArchiveRar5VolumeTest {
     void startedMidSetThrowsTyped() throws Exception {
         final File second = part("vols", 2);
         part("vols", 3);
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(second)) {
+        try (Archive a = new Archive(second)) {
             final List<FileHeader> files = a.getFileHeaders();
             assertThat(files.get(0).isSplitBefore()).isTrue();
             final Throwable thrown = catchThrowable(() -> extractAll(a));
@@ -230,7 +230,7 @@ class ArchiveRar5VolumeTest {
 
         final long position;
         final int fileCrc;
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(first)) {
+        try (Archive a = new Archive(first)) {
             final FileHeader spanned = a.getFileHeaders().get(1);
             position = spanned.getPositionInFile();
             fileCrc = spanned.getFileCRC();
@@ -254,7 +254,7 @@ class ArchiveRar5VolumeTest {
         System.arraycopy(header, 0, bytes, (int) position, header.length);
         Files.write(first.toPath(), bytes);
 
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(first)) {
+        try (Archive a = new Archive(first)) {
             final Throwable thrown = catchThrowable(() -> extractAll(a));
             assertThat(thrown).isExactlyInstanceOf(CrcErrorException.class);
         }

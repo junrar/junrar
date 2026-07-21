@@ -67,7 +67,7 @@ class ArchiveRar5Blake2Test {
     void htbEntryExtractsAndVerifiesBlake2Digest() throws Exception {
         // RED before M3.8: the extract path compared the (never-fed) CRC32 word for BLAKE2
         // entries, so a perfectly good BLAKE2 entry failed extraction.
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-htb.rar"))) {
+        try (Archive a = new Archive(fixture("rar5-htb.rar"))) {
             final ByteArrayOutputStream os = new ByteArrayOutputStream();
             a.extractFile(a.getFileHeaders().get(0), os);
             assertThat(os.toByteArray()).isEqualTo(payload());
@@ -78,7 +78,7 @@ class ArchiveRar5Blake2Test {
     void htbMacEntryExtractsAndVerifiesHashMac() throws Exception {
         // Encrypted entry stores ConvertHashToMAC(digest, hashKey); verification must compare in
         // MAC space (Rar5Crypt.convertBlake2ToMac), not the raw digest.
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(
+        try (Archive a = new Archive(
                 fixture("rar5-htb-mac.rar"), ArchiveOptions.builder().password("junrar").build())) {
             final ByteArrayOutputStream os = new ByteArrayOutputStream();
             a.extractFile(a.getFileHeaders().get(0), os);
@@ -94,7 +94,7 @@ class ArchiveRar5Blake2Test {
         bytes[bytes.length - 30] ^= 0x01; // deep in the packed data, past every header
         final Path p = tempDir.resolve("rar5-htb-tampered.rar");
         Files.write(p, bytes);
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(p.toFile())) {
+        try (Archive a = new Archive(p.toFile())) {
             final FileHeader fh = a.getFileHeaders().get(0);
             assertThat(catchThrowable(() -> a.extractFile(fh, new ByteArrayOutputStream())))
                 .isInstanceOf(CrcErrorException.class);
@@ -103,7 +103,7 @@ class ArchiveRar5Blake2Test {
 
     @Test
     void htbEntryParsesBlake2Hash() throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-htb.rar"))) {
+        try (Archive a = new Archive(fixture("rar5-htb.rar"))) {
             final FileHeader fh = a.getFileHeaders().get(0);
             assertThat(fh.getHashType()).isEqualTo(Rar5HashType.BLAKE2);
             assertThat(fh.getHashDigest())
@@ -114,7 +114,7 @@ class ArchiveRar5Blake2Test {
     @Test
     void htbEntryThroughTheComprDataIoSeamMatchesOracle() throws Exception {
         final byte[] payload = payload();
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-htb.rar"))) {
+        try (Archive a = new Archive(fixture("rar5-htb.rar"))) {
             final FileHeader fh = a.getFileHeaders().get(0);
 
             final ComprDataIO cdio = new ComprDataIO(a);
@@ -131,7 +131,7 @@ class ArchiveRar5Blake2Test {
     @Test
     void htbMacEntryEndToEndHashMacVerification() throws Exception {
         final byte[] payload = payload();
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("rar5-htb-mac.rar"))) {
+        try (Archive a = new Archive(fixture("rar5-htb-mac.rar"))) {
             final FileHeader fh = a.getFileHeaders().get(0);
 
             assertThat(fh.isUseHashKey()).isTrue();

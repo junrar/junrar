@@ -2,7 +2,6 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
-import com.github.junrar.unpack.Unpack5Window;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.io.TempDir;
@@ -21,7 +20,7 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 /**
  * M3.7 (issue #28) archive-level RAR5 decode acceptance. Extracts the core fixture matrix
  * (m0/m3/m5 &times; plain/solid &times; dict {128 KB, 32 MB}, plus {@code -p}/{@code -hp}
- * encrypted rows deferred from M3.4) through the M3.2 pre-gate harness and asserts each
+ * encrypted rows deferred from M3.4) on the public {@code Archive} path and asserts each
  * payload is byte-identical to the unrar 7.23 oracle SHA-256. Fixtures were produced by
  * {@code rar 7.23 -ma5} (see {@code rar5unpack/README.md}); the recorded digests are the
  * oracle {@code unrar p} output SHA-256s.
@@ -74,7 +73,7 @@ class ArchiveRar5UnpackTest {
     }
 
     private void assertSingleFile(final String archive, final String expectedSha, final ArchiveOptions opts) throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture(archive), opts)) {
+        try (Archive a = new Archive(fixture(archive), opts)) {
             final List<FileHeader> files = a.getFileHeaders();
             assertThat(files).hasSize(1);
             assertThat(sha256(extract(a, files.get(0)))).isEqualTo(expectedSha);
@@ -135,7 +134,7 @@ class ArchiveRar5UnpackTest {
     }
 
     private void assertSolid(final String archive, final int[] order) throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture(archive))) {
+        try (Archive a = new Archive(fixture(archive))) {
             final List<FileHeader> files = a.getFileHeaders();
             assertThat(files).hasSize(SHA_SOLID.length);
             for (final int idx : order) {
@@ -155,7 +154,7 @@ class ArchiveRar5UnpackTest {
         bytes[bytes.length / 2] ^= 0xFF; // flip a byte deep in the compressed data (past the header)
         final Path p = tempDir.resolve("m3-corrupt.rar");
         Files.write(p, bytes);
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(p.toFile())) {
+        try (Archive a = new Archive(p.toFile())) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream())))
                 .isInstanceOf(RarException.class);
@@ -172,7 +171,7 @@ class ArchiveRar5UnpackTest {
         final Path p = tempDir.resolve("m3-trunc.rar");
         Files.write(p, truncated);
         assertThat(catchThrowable(() -> {
-            try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(p.toFile())) {
+            try (Archive a = new Archive(p.toFile())) {
                 a.extractFile(a.getFileHeaders().get(0), new ByteArrayOutputStream());
             }
         })).isInstanceOf(RarException.class);
@@ -182,20 +181,16 @@ class ArchiveRar5UnpackTest {
 
     @Test
     @Timeout(30)
-    void oneGbClaimExtractsWithKilobyteScaleWindow() throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture("m3-1gb-claim.rar"))) {
+    void oneGbClaimExtractsUnderDefaultOptions() throws Exception {
+        // The archive-level window-capacity seam was deleted with the M3.11 gate lift; the
+        // growth-capped allocation policy stays pinned at the unit level (Unpack5Test).
+        // The archive-level fact that survives here is B-S3's user-visible half: a 1 GB claim
+        // extracts under DEFAULT options, with no eager gigabyte allocation blowing the heap.
+        try (Archive a = new Archive(fixture("m3-1gb-claim.rar"))) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getRar5WinSize()).as("header claims a 1 GB dictionary").isEqualTo(1L << 30);
-            final byte[] out = extract(a, hd);
-            assertThat(sha256(out))
+            assertThat(sha256(extract(a, hd)))
                 .isEqualTo("d77aa01d309fea8acfcf79acf0140b83e4f72f413ecc807f603190d4bfa55576");
-
-            final int capacity = a.testOnlyLastUnpack5WindowCapacity();
-            // Growth-capped: the backing array never exceeds 2x the bytes written (the 0x40000
-            // min-alloc floor dominates for a tiny payload), and is nowhere near the 1 GB claim.
-            assertThat(capacity).isLessThanOrEqualTo(2 * Math.max(out.length, Unpack5Window.MIN_ALLOC));
-            assertThat(capacity).as("kilobyte-scale, not the gigabyte the header claimed")
-                .isLessThan(1 << 20);
         }
     }
 }

@@ -1,7 +1,6 @@
 package com.github.junrar;
 
 import com.github.junrar.exception.BadRarArchiveException;
-import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.exception.UnsupportedRarVersionException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -18,9 +17,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
- * M3.1 signature dispatch, SFX-stub scan, and hostile-scan bound. The V5 extraction gate
- * stays in force: a RAR5 marker is <em>recognized</em> (format detected, SFX stub skipped)
- * but still throws {@link UnsupportedRarV5Exception} during header parsing.
+ * M3.1 signature dispatch, SFX-stub scan, and hostile-scan bound. Since the M3.11 gate
+ * lift a RAR5 marker is not just recognized (format detected, SFX stub skipped) — the
+ * archive opens and lists on the public path.
  */
 class ArchiveSignatureDispatchTest {
 
@@ -64,9 +63,13 @@ class ArchiveSignatureDispatchTest {
     }
 
     @Test
-    void version01HitsV5GateButIsRecognized() throws Exception {
-        Throwable thrown = catchThrowable(() -> new Archive(writeTemp("v01.rar", MARKER50)).close());
-        assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
+    void version01DetectsRar50() throws Exception {
+        // Success row since the M3.11 gate lift (the pre-lift twin asserted
+        // UnsupportedRarV5Exception): a bare RAR5 marker opens as an empty RAR50 archive.
+        try (Archive archive = new Archive(writeTemp("v01.rar", MARKER50))) {
+            assertThat(archive.getFormat()).isEqualTo(RarFormat.RAR50);
+            assertThat(archive.getFileHeaders()).isEmpty();
+        }
     }
 
     @ParameterizedTest
@@ -87,10 +90,14 @@ class ArchiveSignatureDispatchTest {
     }
 
     @Test
-    void sfxStubBeforeRar5MarkerIsRecognizedButHitsV5Gate() throws Exception {
+    void sfxStubBeforeRar5MarkerOpensAndLists() throws Exception {
+        // Success row since the M3.11 gate lift (the pre-lift twin asserted
+        // UnsupportedRarV5Exception); mirrors sfxStubBeforeRar4MarkerOpensAndLists.
         byte[] sfx = concat(sfxStub(2048), fixtureBytes("rar5.rar"));
-        Throwable thrown = catchThrowable(() -> new Archive(writeTemp("sfx-rar5.rar", sfx)).close());
-        assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
+        try (Archive archive = new Archive(writeTemp("sfx-rar5.rar", sfx))) {
+            assertThat(archive.getFormat()).isEqualTo(RarFormat.RAR50);
+            assertThat(archive.getFileHeaders()).hasSize(2);
+        }
     }
 
     @Test

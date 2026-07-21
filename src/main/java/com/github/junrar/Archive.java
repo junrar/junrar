@@ -48,7 +48,6 @@ import com.github.junrar.rarfile.MacInfoHeader;
 import com.github.junrar.rarfile.MainHeader;
 import com.github.junrar.rarfile.MarkHeader;
 import com.github.junrar.rarfile.ProtectHeader;
-import com.github.junrar.rarfile.RARVersion;
 import com.github.junrar.rarfile.Rar5FileHeaderReader;
 import com.github.junrar.rarfile.SignHeader;
 import com.github.junrar.rarfile.SubBlockHeader;
@@ -182,37 +181,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private final long maxDictionarySize;
 
     /**
-     * M3.2 pre-gate test harness ({@link #testOnlyOpenSuppressingV5Gate}): suppresses the
-     * RAR5 extraction gate so {@link #readHeadersRar5} can parse RAR5 headers into the list
-     * instead of throwing {@link UnsupportedRarV5Exception}. Always {@code false} on every
-     * public constructor path; deleted with the gate at M3.11.
-     */
-    private final boolean suppressV5Gate;
-
-    /**
-     * @see #Archive(VolumeManager, ArchiveOptions)
+     * Canonical constructor: every other {@code Archive} constructor delegates here,
+     * directly or transitively. See {@link ArchiveOptions} for the password/resource
+     * configuration contract (password hygiene, {@code maxDictionarySize} budget).
      */
     public Archive(
         final VolumeManager volumeManager,
         final ArchiveOptions options
     ) throws RarException, IOException {
-        this(volumeManager, options, false);
-    }
 
-    /**
-     * Canonical constructor: every other {@code Archive} constructor delegates here,
-     * directly or transitively. See {@link ArchiveOptions} for the password/resource
-     * configuration contract (password hygiene, {@code maxDictionarySize} budget).
-     *
-     * @param suppressV5Gate M3.2 test-only: see {@link #suppressV5Gate}.
-     */
-    Archive(
-        final VolumeManager volumeManager,
-        final ArchiveOptions options,
-        final boolean suppressV5Gate
-    ) throws RarException, IOException {
-
-        this.suppressV5Gate = suppressV5Gate;
         this.volumeManager = volumeManager;
         this.unrarCallback = options.getUnrarCallback();
         this.passwordChars = options.getPassword();
@@ -299,55 +276,6 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     public Archive(final InputStream rarAsStream, final ArchiveOptions options) throws IOException, RarException {
         this(new InputStreamVolumeManager(rarAsStream), options);
-    }
-
-    /**
-     * M3.2 pre-gate test harness (issue #23): opens {@code firstVolume} with the RAR5
-     * extraction gate suppressed, so a RAR5 archive parses its headers instead of throwing
-     * {@link UnsupportedRarV5Exception}. Package-private on purpose -- the tests live in
-     * {@code com.github.junrar}, so no system property or production-reachable flag is
-     * needed. It suppresses <em>only</em> the V5 throw; every other failure mode (corrupt
-     * header, bad archive) behaves exactly as on the public path. Deleted with the gate at
-     * M3.11.
-     */
-    static Archive testOnlyOpenSuppressingV5Gate(final File firstVolume) throws RarException, IOException {
-        return testOnlyOpenSuppressingV5Gate(firstVolume, ArchiveOptions.builder().build());
-    }
-
-    /**
-     * M3.7 test-only hook: the current backing capacity of the RAR5 decode window, i.e. the bytes
-     * actually allocated (never the header-declared window size). Proves the growth-capped,
-     * never-header-eager allocation policy at the archive level (review B-S3): a 1 GB-claim archive
-     * that writes only kilobytes keeps a kilobyte-scale window. {@code -1} if no RAR5 file was
-     * extracted. Deleted with the pre-gate harness at M3.11.
-     */
-    int testOnlyLastUnpack5WindowCapacity() {
-        return (this.unpack5 == null || this.unpack5.window() == null) ? -1 : this.unpack5.window().capacity();
-    }
-
-    /**
-     * M3.8 test-only hook: how many RAR5 filters the last extraction actually applied. Proves a
-     * filter fixture exercised the sweep instead of passing vacuously (plan &sect;4.2 filter row).
-     * {@code -1} if no RAR5 file was extracted. Deleted with the pre-gate harness at M3.11.
-     */
-    int testOnlyLastUnpack5FiltersApplied() {
-        return this.unpack5 == null ? -1 : this.unpack5.filtersApplied();
-    }
-
-    /** @see #testOnlyOpenSuppressingV5Gate(File) */
-    static Archive testOnlyOpenSuppressingV5Gate(final File firstVolume, final ArchiveOptions options) throws RarException, IOException {
-        return new Archive(new FileVolumeManager(firstVolume), options, true);
-    }
-
-    /**
-     * M3.9 multi-volume flavor of the pre-gate harness (issue #30): same gate suppression,
-     * arbitrary {@link VolumeManager} so the InputStream volume rows run before M3.11.
-     * Deleted with the gate at M3.11.
-     *
-     * @see #testOnlyOpenSuppressingV5Gate(File)
-     */
-    static Archive testOnlyOpenSuppressingV5Gate(final VolumeManager volumeManager) throws RarException, IOException {
-        return new Archive(volumeManager, ArchiveOptions.builder().build(), true);
     }
 
     private void setChannel(final SeekableReadOnlyByteChannel channel, final long length) throws IOException, RarException {
@@ -460,9 +388,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     /**
      * @return the detected {@link RarFormat} of the current volume, or {@code null} if the
-     *         archive has not been (successfully) opened. Post-open this is always
-     *         {@link RarFormat#RAR15} until the V5 extraction gate is lifted (RAR5 archives
-     *         throw {@link UnsupportedRarV5Exception} during header parsing).
+     *         archive has not been (successfully) opened.
      */
     public RarFormat getFormat() {
         return this.format;
@@ -472,9 +398,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * unrar {@code Archive::IsArchive}/{@code IsSignature} ({@code d861246:archive.cpp
      * :100-190}): locate the RAR marker, tolerating an SFX stub of up to {@link #MAXSFXSIZE}
      * bytes ahead of it, classify the format from the signature's version byte, and seek the
-     * channel to the marker so {@link #readHeaders} reads it next. The V5 extraction gate is
-     * unaffected -- a RAR5 marker still throws {@link UnsupportedRarV5Exception} once the
-     * header loop parses it.
+     * channel to the marker so {@link #readHeaders} reads it next.
      *
      * @param fileLength the current volume's length (bounds the SFX scan).
      * @return the detected {@link RarFormat}.
@@ -593,9 +517,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.format = detectFormatAndSeek(fileLength);
 
         // RAR5 headers are vint-encoded and incompatible with the RAR3 BaseBlock loop below;
-        // dispatch to the dedicated RAR5 framework (M3.2, issue #23). The V5 extraction gate
-        // moves with the branch -- readHeadersRar5 throws UnsupportedRarV5Exception once the
-        // headers are parsed, unless the M3.2 test harness suppresses it.
+        // dispatch to the dedicated RAR5 framework (M3.2, issue #23).
         if (this.format == RarFormat.RAR50) {
             readHeadersRar5(fileLength);
             return;
@@ -649,12 +571,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 case MarkHeader:
                     this.markHead = new MarkHeader(block);
                     if (!this.markHead.isSignature()) {
-                        if (markHead.getVersion() == RARVersion.V5) {
-                            logger.warn("Support for rar version 5 is not yet implemented!");
-                            throw new UnsupportedRarV5Exception();
-                        } else {
-                            throw new BadRarArchiveException();
-                        }
+                        // A RAR5 marker can never reach this RAR3 loop (readHeaders dispatches
+                        // RAR50 to readHeadersRar5 first), so any non-signature block here is
+                        // simply a bad archive.
+                        throw new BadRarArchiveException();
                     }
                     if (!markHead.isValid()) {
                         throw new CorruptHeaderException("Invalid Mark Header");
@@ -896,20 +816,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * the generic {@link #MAX_HEADER_SIZE}); the 2 MB / 3-byte-size-vint bound is enforced by
      * {@link Rar5BaseBlock#checkHeaderSize} <em>before</em> that allocation.
      * <p>
-     * The V5 extraction gate lives here now (the RAR3 loop's gate at the {@code MarkHeader}
-     * case is unreachable for a RAR5 archive, which branches away before it). The gate is
-     * checked <em>before</em> any parsing so production behavior is byte-identical to
-     * pre-M3.2: every RAR5 archive -- valid, truncated or corrupt -- surfaces
-     * {@link UnsupportedRarV5Exception}, never a parse-time {@link CorruptHeaderException}.
-     * The parse loop below runs only under the M3.2 test harness ({@link #suppressV5Gate}),
-     * which the M3.3-M3.10 archive-level acceptance lines drive; the corpus flips at M3.11.
+     * The M3.2-M3.10 V5 extraction gate ({@link UnsupportedRarV5Exception} thrown here before
+     * any parsing) was lifted at M3.11 (issue #32): RAR5 archives parse and extract on every
+     * public path.
      */
     private void readHeadersRar5(final long fileLength) throws IOException, RarException {
-        if (!this.suppressV5Gate) {
-            logger.warn("Support for rar version 5 is not yet implemented!");
-            throw new UnsupportedRarV5Exception();
-        }
-
         // detectFormatAndSeek left the channel at the marker; consume and re-validate it.
         final byte[] marker = new byte[SIZEOF_MARKHEAD5];
         if (fill(marker, 0, SIZEOF_MARKHEAD5) < SIZEOF_MARKHEAD5

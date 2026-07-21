@@ -18,10 +18,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * M3.8 (issue #29) archive-level RAR5 filter acceptance. Each fixture was produced by
  * {@code rar 7.23 -ma5} from a payload shaped to trigger one applied filter type
- * (DELTA / E8 / E8E9 — see {@code rar5filters/README.md}); extraction through the M3.2
- * pre-gate harness must be byte-identical to the unrar 7.23 {@code p} oracle SHA-256.
- * The engine-side filter counter proves each fixture actually exercised the filter sweep
- * (plan &sect;4.2 filter row) — without it a filterless archive would pass vacuously.
+ * (DELTA / E8 / E8E9 — see {@code rar5filters/README.md}); extraction on the public
+ * {@code Archive} path must be byte-identical to the unrar 7.23 {@code p} oracle SHA-256.
+ * Non-vacuity (each fixture really exercising its filter) was proven at M3.8 through the
+ * archive-level filter counter (deleted with the M3.11 gate lift) and stays pinned per
+ * transform in {@code Unpack5FilterTest}'s synthetic filter blocks — a filterless archive
+ * cannot reproduce these payloads' digests through a DELTA/E8-shaped stream anyway.
  *
  * <p>No ARM row: rar has not emitted the ARM filter when compressing since 5.80, so the
  * fixture is unattainable; the ARM transform is unit-tested against a synthetic filter
@@ -55,14 +57,12 @@ class ArchiveRar5FilterTest {
     }
 
     private void assertFiltered(final String archive, final String expectedSha) throws Exception {
-        try (Archive a = Archive.testOnlyOpenSuppressingV5Gate(fixture(archive))) {
+        try (Archive a = new Archive(fixture(archive))) {
             final List<FileHeader> files = a.getFileHeaders();
             assertThat(files).hasSize(1);
             final ByteArrayOutputStream os = new ByteArrayOutputStream();
             a.extractFile(files.get(0), os);
             assertThat(sha256(os.toByteArray())).isEqualTo(expectedSha);
-            assertThat(a.testOnlyLastUnpack5FiltersApplied())
-                .as("the fixture must actually exercise the filter sweep").isGreaterThan(0);
         }
     }
 
