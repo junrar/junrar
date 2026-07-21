@@ -80,6 +80,24 @@ class ArchiveSignatureDispatchTest {
         assertThat(thrown).isExactlyInstanceOf(UnsupportedRarVersionException.class);
     }
 
+    /**
+     * unrar {@code Archive::IsArchive} rejects any file too short to hold the 7-byte marker
+     * ("is not RAR archive"), and so must junrar. Before M3.1 the constructor accepted such a
+     * file, left {@code markHead} null, reported zero file headers -- so a caller that only
+     * lists entries saw "valid archive, no files" -- and leaked a raw
+     * {@link NullPointerException} out of {@link Archive#isOldFormat()} (junrar/junrar#288).
+     * The corpus carries a live instance of the 6-byte case
+     * ({@code commoncrawl3/VC/VCUIW4PKXVEOZEE4U6F4XH6OS25NGZKV}).
+     */
+    @ParameterizedTest
+    @ValueSource(ints = {0, 1, 3, 6})
+    void inputTooShortForMarkerIsRejected(int length) throws Exception {
+        byte[] truncated = java.util.Arrays.copyOf(MARKER15, length);
+        Throwable thrown = catchThrowable(
+            () -> new Archive(writeTemp("short" + length + ".rar", truncated)).close());
+        assertThat(thrown).isExactlyInstanceOf(BadRarArchiveException.class);
+    }
+
     @Test
     void sfxStubBeforeRar4MarkerOpensAndLists() throws Exception {
         byte[] sfx = concat(sfxStub(2048), fixtureBytes("test.rar"));
