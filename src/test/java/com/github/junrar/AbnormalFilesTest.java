@@ -201,6 +201,18 @@ public class AbnormalFilesTest {
             Junrar.extract(file, tempDir);
         });
 
-        assertThat(thrown).isInstanceOf(CrcErrorException.class);
+        // Upstream asserts CrcErrorException here, because its interpreter breaks out of the
+        // filter part-way and produces bytes that fail the checksum. This branch has no
+        // interpreter to break out of: M2.2 (16d03472) deleted it, so `setIP`, `ExecuteCode`,
+        // `getOperand` and `decodeArg` do not exist and the runaway loop is unreachable by
+        // construction rather than by a guard. An unrecognized VM filter is a no-op, matching
+        // unrar >= 5.5.1, which dropped the generic interpreter the same way -- and
+        // `unrar 7.23` tests this very PoC `All OK` (rc=0). So the oracle-correct outcome on
+        // this branch is a clean extraction, and asserting upstream's exception would pin
+        // upstream's architecture rather than the format.
+        //
+        // The invariant upstream's fix actually protects is termination, and the @Timeout above
+        // is what pins it: this must not hang.
+        assertThat(thrown).as("an unrecognized VM filter is a no-op, as in unrar >= 5.5.1").isNull();
     }
 }

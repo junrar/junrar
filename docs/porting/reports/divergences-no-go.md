@@ -142,3 +142,57 @@ C13 >2 GB entry, S8/D1 PPM/2GB limits, C15 signedness. These are the UNPINNED ga
    `unsigned int` distance/pointer for signed-Java overflow.
 4. Preserve the retained legacy `RarCRC.checkOldCrc` (D2) and the deliberate >2 GB `byte[]`
    limitation (D1) — both look like "dead code / missing feature" to a re-porter and are not.
+
+---
+
+## Upstream sync 2026-07-21 — `99866b74` → `afc1aeb8` (v7.6.1), plan §6 R6 phase-boundary rebase
+
+Phase M4 closed the plan's last phase, so `rar5-port` was rebased onto `upstream/master`
+(74 commits replayed). R6 requires new upstream commits to be classified here. Only two of the
+20 are functional; the spotless churn cancels out (`0b15bece` applied, `4a67eb6e` reverted), and
+the net source delta is 7 files.
+
+### `e6e333b1` — "prevent directory creation outside target directory" (**security**) — ADOPTED
+
+The entry name `../extract_evil/../extract/payload.txt` passes canonical containment (it resolves
+back inside the destination), but the old `makeFile` `mkdir`'d every path component on the way,
+creating the sibling `extract_evil` *outside* it. The fix normalizes first, then
+`Files.createDirectories(parent)`. Taken verbatim; it is the only thing on this branch that
+prevents the escape.
+
+**It is NOT covered by this branch's header-CRC gate, and must never be assumed to be.**
+`LocalFolderExtractor.extract` calls `createFile` → `makeFile` — which creates the directories —
+*before* `Archive.extractFile`, which is where the P0.7/#12 broken-header refusal throws. By then
+the directories already exist. The two guards are sequential, not redundant.
+
+Pinned by two rows in `LocalFolderExtractorTest`, both verified against an executed negative
+control (revert `makeFile` to the per-component `mkdir` loop → both fail):
+`mkdirEscapePocCreatesNoDirectoryOutsideTarget` (upstream's PoC archive) and
+`wellFormedHeaderCannotMkdirOutsideDestination` (the same escaping name through a well-formed
+header, so no fixture property can mask the guard). Note upstream's PoC archive additionally has
+corrupt headers — `unrar 7.23` reports "the file header is corrupt", `Total errors: 5` — which
+upstream ignores and this branch refuses; that refusal is asserted separately and is not the
+security property.
+
+### `687a09c4` — "better handling of RarVM VM_JMP" — SUPERSEDED by M2.2, not adopted
+
+Upstream's `setIP(int)` returned `void` and early-returned when `ip >= codeSize` or `maxOpCount`
+was exhausted, leaving `IP` unchanged so the interpreter loop spun forever — a hang, reachable
+from a crafted archive. The fix returns `boolean` and `break`s at all 11 call sites.
+
+M2.2 (`16d03472`) deleted that interpreter outright: `setIP`, `ExecuteCode`, `getOperand` and
+`decodeArg` do not exist on this branch (0 occurrences), so the runaway loop is unreachable by
+construction rather than by a guard. An unrecognized VM filter is a no-op, matching unrar ≥ 5.5.1,
+which dropped the generic interpreter the same way.
+
+Upstream's accompanying test asserts `CrcErrorException`, which pins upstream's architecture (its
+interpreter breaks out mid-filter and produces bytes that fail the checksum) rather than the
+format. **`unrar 7.23` tests the same PoC `All OK`, rc=0**, so the oracle-correct outcome here is
+a clean extraction, and `AbnormalFilesTest#VM_JMP_maxOpCount_bypass` asserts that plus the
+5-second `@Timeout` — termination being the invariant the upstream fix actually protects.
+
+### Checkstyle
+
+Upstream deleted `checkstyle.xml` and the plugin, and left spotless fully commented out, so
+`./gradlew check` runs no style gate on either side of the sync. Carried as-is deliberately
+(owner decision 2026-07-21: upstream will re-introduce a formatter on its own schedule).

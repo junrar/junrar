@@ -1,5 +1,6 @@
 package com.github.junrar;
 
+import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.UnsafeLinkException;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5RedirType;
@@ -117,8 +118,29 @@ public class LocalFolderExtractorTest {
     }
 
     @DisabledOnOs(OS.WINDOWS)
+    /**
+     * Upstream's mkdir-escape PoC (junrar `e6e333b1`). The entry name
+     * {@code ../extract_evil/../extract/payload.txt} passes canonical containment — it resolves
+     * back inside the destination — but the pre-fix {@code makeFile} mkdir'd every path component
+     * on the way, creating the sibling {@code extract_evil} outside it.
+     *
+     * <p>The fixture's headers are additionally corrupt — {@code unrar 7.23} reports "the file
+     * header is corrupt" and {@code Total errors: 5} — which upstream ignores, since it does not
+     * verify RAR3 header CRCs. This branch does (P0.7 / issue #12, {@code abfe34f2}), so the entry
+     * is also refused with {@link CorruptHeaderException} where upstream extracts it.
+     *
+     * <p>That refusal is <b>not</b> what stops the escape, and it must not be mistaken for it:
+     * {@code extract} calls {@code createFile} — and therefore {@code makeFile}, which creates
+     * directories — <em>before</em> {@code Archive.extractFile}, which is where the header-CRC
+     * gate throws. The directories would already exist by then. The {@code doesNotExist} assertion
+     * below consequently depends on {@code makeFile} alone, exactly as upstream's does; reverting
+     * {@code makeFile} to its pre-fix per-component {@code mkdir} loop makes this row fail
+     * (executed negative control), alongside
+     * {@link #wellFormedHeaderCannotMkdirOutsideDestination()}, which pins the same guard without
+     * relying on a corrupt fixture at all.
+     */
     @Test
-    public void rarWithDirectoryCreationOutsideTarget_ShouldThrowException() throws Exception {
+    public void mkdirEscapePocCreatesNoDirectoryOutsideTarget() throws Exception {
         File file = TestCommons.writeResourceToFolder(tempFolder, "mkdir-escape.rar");
 
         Path root = Files.createTempDirectory("mkdir-escape");
@@ -129,10 +151,38 @@ public class LocalFolderExtractorTest {
             FileHeader fileHeader = archive.nextFileHeader();
 
             Path mkdirEscapeDir = root.resolve("extract_evil");
-            localFolderExtractor.extract(archive, fileHeader);
+            final Throwable thrown =
+                catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
+            // The security property: no directory outside the destination, whatever the outcome.
             assertThat(mkdirEscapeDir).doesNotExist();
+            // And, unlike upstream, the corrupt header is refused rather than extracted.
+            assertThat(thrown)
+                .as("a broken FILE header is refused (P0.7, issue #12)")
+                .isExactlyInstanceOf(CorruptHeaderException.class);
         }
+    }
+
+    /**
+     * The mkdir-escape guard itself, independent of the PoC fixture's corrupt headers: the same
+     * escaping name driven through a well-formed header, so nothing but {@code makeFile} can be
+     * what stops it. Reverting {@code makeFile} to its pre-fix per-component {@code mkdir} loop
+     * makes this fail (executed negative control), so the guard is load-bearing, not decorative.
+     */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void wellFormedHeaderCannotMkdirOutsideDestination() throws Exception {
+        final Path root = Files.createTempDirectory("mkdir-escape-wellformed");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+        final FileHeader fh = mock(FileHeader.class);
+        when(fh.getFileName()).thenReturn("../extract_evil/../extract/payload.txt");
+
+        new LocalFolderExtractor(dest.toFile()).extract(mock(Archive.class), fh);
+
+        assertThat(new File(root.toFile(), "extract_evil"))
+            .as("no directory is created outside the destination").doesNotExist();
+        assertThat(new File(dest.toFile(), "payload.txt"))
+            .as("the entry itself still lands, normalized, inside the destination").exists();
     }
 
     // ---- S5/S6/S7 RAR5 twins: the same guards, re-applied to the new symlink-target path -------
