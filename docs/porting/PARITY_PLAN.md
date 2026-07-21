@@ -1103,6 +1103,17 @@ asserting real behavior).
 - **Fixtures:** rar 7.x fixtures: default, `-md` large-ish, RAR5-compat mode.
 - **No-go rows:** C15 (new distance math audited).
 - **Est. diff:** ~250 lines.
+- **Acceptance deviation (executed probes 2026-07-21, rar/unrar 7.23 — see
+  `rar7/README.md`):** the "small dict" RAR7 fixture is **unproducible**, so row 1 moves
+  to M4.3. `rar` only writes `algo=1` once the *recorded* dictionary passes the 4 GB that
+  RAR5's four dict bits can encode (below that regime it accepts only powers of two, and
+  neither `-mdx`, `-mc*` nor a format switch defeats the payload-size reduction), so every
+  genuine RAR7 stream declares a >4 GB window — past the 1 GB capability, past the 4 GiB
+  `maxDictionarySize` default, and past what a flat Java `byte[]` can address. `unrar`
+  itself refuses the fixture by default and needs ~6 GB to force it. ExtraDist is therefore
+  driven from crafted engine-level streams (the M3.6/M3.8 seam) and mutation-probed. Row 2
+  is kept, from a `FCI_RAR5_COMPAT` word patched over a real RAR5 stream — a third
+  sanctioned byte-patch class, see §4.3.
 
 #### M4.3 — segmented window > 1 GB (lazy-allocated)
 
@@ -1248,11 +1259,23 @@ unrar. The oracle binary is the `unrar` bundled in the same rar 7.23 tarball
 
 ### 4.3 Byte-patched fixtures — legitimacy rule
 
-Byte-patching is legitimate for two fixture classes (review F2 widened the rule):
+Byte-patching is legitimate for three fixture classes (review F2 widened the rule; M4.2
+added class 2):
 
 1. **Hostile/corrupt variants** — a corrupt archive is corrupt however it was made;
    follows the house corrupt-input pattern (manual §8.1).
-2. **Inflated-resource headers over a valid stream** (sanctioned positive class):
+2. **Version-flag headers over a stream that really is in that format** (sanctioned
+   positive class, added M4.2): rewrite the compression-info word of a real archive and refix
+   the header CRC32, but *only* where the untouched stream already satisfies what the new
+   word claims. Two instances: `algo=1` + `FCI_RAR5_COMPAT` over a RAR5 stream, whose entire
+   meaning is "RAR7 header, RAR5-decodable stream"; and `algo=1` over a **stored** stream,
+   which carries no version-specific encoding at all. Both are faithful specimens rather than
+   claims the stream cannot back, and `unrar 7.23` tests both patched archives `All OK`.
+   Legitimate as an extraction oracle **only** because the expected output is the unpatched
+   original's own. The compat patch is not length-preserving (a RAR5 compression-info word
+   never reaches bit 14, so it is at most 2 vint bytes while bit 20 needs 3): the extra byte
+   is absorbed by the header-size vint. The stored promotion is length-preserving.
+3. **Inflated-resource headers over a valid stream** (sanctioned positive class):
    patch the dict-bits field of a valid small archive's file header and refix the
    header CRC32. The stream stays decodable — its true back-references never exceed
    the originally-encoded distances, so a larger declared window is semantically

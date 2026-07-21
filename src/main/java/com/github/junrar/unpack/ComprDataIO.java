@@ -295,7 +295,9 @@ public class ComprDataIO {
             archive.bytesReadRead(retCode);
 
             if (unpPackedSize == 0 && subHead.isSplitAfter()) {
-                if (subHead.getUnpVersion() == 50) {
+                // Version 70 merges here too: RAR7 reuses the RARFMT50 container, so the RAR3
+                // volume path below would apply the wrong split semantics (M4.2, issue #34).
+                if (subHead.isRar5Family()) {
                     mergeRar5Volume();
                     continue;
                 }

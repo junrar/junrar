@@ -31,3 +31,7 @@ for i in range(6):
 # Big set: larger than the 256 KB window min-alloc floor, so unpacked-data flushes
 # interleave with the volume switches (see README).
 write("payload/spanned2.bin", 39102, 400_000)
+
+# Stored set (M4.2): the only stream that survives a version-70 header promotion unchanged,
+# so it is what reaches the volume-merge path with a RAR7 entry (see README).
+write("payload/stored2.bin", 39103, 120_000)

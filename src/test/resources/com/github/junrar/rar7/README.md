@@ -68,7 +68,40 @@ two >4 GB payloads. A probe appending a `-md1m` entry to a `-ma5 -md128k` solid 
 
 ## Extraction
 
-Not an extraction fixture: the declared 6 GB dictionary is far past both the M4-era
-1 GB engine capability and the 4 GiB default `maxDictionarySize` budget, and method-70
-streams need the ExtraDist decode that lands in M4.2 (issue #34). M4.1 asserts header
-parse facts plus a typed refusal on the public path.
+Not an extraction fixture, and — as of M4.2 (issue #34) — no RAR7 archive can be one until
+M4.3 (issue #35) ships the segmented window.
+
+The M4.1 finding above generalizes: RAR5's four dict bits encode *every* dictionary `rar`
+records at or below 4 GB, because below that regime only powers of two are accepted. So
+`algo=1` is written **iff** the recorded dictionary exceeds 4 GB, and since `rar` reduces the
+recorded dictionary to the payload size, every genuine RAR7 stream needs a >4 GB payload and
+declares a >4 GB window. That is past the 1 GB engine capability, past the 4 GiB default
+`maxDictionarySize`, and past what a flat Java `byte[]` can address at all.
+
+Probes executed 2026-07-21 with rar 7.23, closing the remaining escape hatches:
+
+| Probe | Result |
+| --- | --- |
+| `-md` accepted set | powers of two `128k`…`4g`, then `5g, 6g, 8g, 12g, 16g, 24g, 32g, 48g, 64g, 96g, 128g` — fractions exist only above 4 GB |
+| `-mdx384k`, `-mdx768k`, `-mdx192m`, `-mdx1536m`, `-mdx3g` | *"Unknown option"*, same as the plain `-md` forms |
+| `-mdx128k`/`-mdx1m`/`-mdx4m`/`-mdx6g`/`-mdx64g`, 2 MB payload | all record `algo=0`, `-md=4m` (the `-m3` default) — the `md[x]` form does not defeat the reduction; `-md1m` on the same payload records 1 MB, so `-md` is honoured and `-mdx` is not |
+| `-ma6`, `-ma7` | *"Unknown option"* — no format-forcing switch |
+| `-mc1g`, `-mcl1g`, `-mclong`, `-mcx`, `-mc+longrange` | accepted, no effect on the recorded word (`algo=0`, `-md=4m`) |
+| append onto `rar7-md6g.rar` (`-s -md1m`, `-md1m`, `-s`) | the new entry is written at `algo=0` every time — still no `FCI_RAR5_COMPAT` |
+
+`unrar 7.23` agrees the fixture is out of reach by default:
+
+```
+$ unrar t -qo- rar7-md6g.rar "*"
+zeros.bin
+6 GB dictionary exceeds 4 GB limit and needs more than 6 GB memory to unpack.
+Use -md6g or -mdx6g switches to extract anyway.
+```
+
+Forced through with `-md6g` it tests `All OK` in 7.3 s at 3.0 GiB peak RSS — the declared
+dictionary *is* the window (`d861246:unpack.cpp:110`, `MaxWinSize=(size_t)WinSize`, with no
+clamp to the unpacked size).
+
+M4.2 therefore drives the `ExtraDist` decode from crafted engine-level streams
+(`Unpack5ExtraDistTest`) and pins version-70 routing through the dictionary gate
+(`ArchiveRar7ExtractionTest`). The archive-level oracle-identical row moves to M4.3.

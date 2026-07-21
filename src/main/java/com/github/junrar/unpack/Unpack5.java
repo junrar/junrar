@@ -45,7 +45,7 @@ public class Unpack5 {
     public static final long CAPABILITY_MAX_WIN_SIZE = 1L << 30;
 
     private final ComprDataIO unpIO;
-    private final boolean extraDist;
+    private boolean extraDist;
 
     private Unpack5Window window;
 
@@ -67,7 +67,10 @@ public class Unpack5 {
 
     // The 5 Huffman tables (struct UnpackBlockTables).
     private final Decode5 ld = new Decode5(Compress.NC5);   // literals / lengths
-    private final Decode5 dd = new Decode5(Compress.DC5);   // distances
+    // Sized for the extended alphabet unconditionally, the way unrar's fixed DecodeTable struct is
+    // (unpack.hpp:87): a RAR5 block just fills the first DC5 slots. Sizing it per entry instead
+    // would break a solid stream that mixes versions, where the flag flips but the window does not.
+    private final Decode5 dd = new Decode5(Compress.DCX5);  // distances
     private final Decode5 ldd = new Decode5(Compress.LDC5); // low distance bits
     private final Decode5 rd = new Decode5(Compress.RC5);   // repeat distances
     private final Decode5 bd = new Decode5(Compress.BC5);   // bit lengths (table decode)
@@ -89,7 +92,10 @@ public class Unpack5 {
     private boolean firstWinDone; // the window has wrapped at least once (FirstWinDone parity, M1.4)
 
     // The 4 most-recent LZ distances (OldDist) and the last match length (unpackinline.cpp).
-    private final int[] oldDist = new int[4];
+    // 64-bit, as in d861246:unpack.hpp:252 -- an extended distance slot reaches 1 TB, and even a
+    // plain RAR5 top slot overflows 32 bits (see the 4 GB-multiple case unrar patches out at
+    // unpack50.cpp:108-114). Window positions stay int; only the distance itself is wide.
+    private final long[] oldDist = new long[4];
     private int lastLength;
 
     private long destUnpSize;      // remaining bytes this entry must produce (setDestSize)
@@ -113,9 +119,10 @@ public class Unpack5 {
      * @param unpIO     packed-byte pump + CRC/hash seam (manual &sect;4.12); the archive-driven
      *                  {@link #unpReadBuf()} refill consumes it. {@code null} in external-buffer
      *                  (test) mode, where {@link #feed} supplies the whole packed stream.
-     * @param extraDist RAR7 (method 0x70) selects the 80-slot distance alphabet with this flag; the
-     *                  same engine serves RAR5 and RAR7 (manual &sect;5.2). Fixed {@code false}
-     *                  until M4 — designed in from day one so RAR7 is a flag, not a fork.
+     * @param extraDist the initial {@code ExtraDist} state ({@code d861246:unpack.cpp:26}); RAR7
+     *                  (version 70) selects the 80-slot distance alphabet with this flag, and the
+     *                  same engine serves RAR5 and RAR7 (manual &sect;5.2). Per-entry routing goes
+     *                  through {@link #setExtraDist}.
      */
     public Unpack5(final ComprDataIO unpIO, final boolean extraDist) {
         this.unpIO = unpIO;
@@ -129,6 +136,16 @@ public class Unpack5 {
 
     public boolean isExtraDist() {
         return extraDist;
+    }
+
+    /**
+     * Select the distance alphabet for the next entry: {@code true} for version 70 (RAR7),
+     * {@code false} for version 50 — including a RAR7 header that {@code FCI_RAR5_COMPAT} demoted.
+     * Mirrors {@code ExtraDist=(Method==VER_PACK7)} in {@code d861246:unpack.cpp:184}, which is set
+     * per file rather than per engine so a solid stream can mix versions without losing its window.
+     */
+    public void setExtraDist(final boolean extraDist) {
+        this.extraDist = extraDist;
     }
 
     /**
@@ -269,6 +286,22 @@ public class Unpack5 {
         return v;
     }
 
+    /**
+     * 64 bits from the current position, highest bit first ({@code d861246:getbits.hpp} getbits64).
+     * Needed only by the extended distance decode, where {@code DBits} can reach 38 and the 32-bit
+     * read would not hold the whole field.
+     */
+    long getbits64() {
+        long bitField = 0;
+        for (int i = 0; i < 8; i++) {
+            bitField = (bitField << 8) | (inBuf[inAddr + i] & 0xffL);
+        }
+        bitField <<= inBit;
+        // C++ reads the spill byte as uint and shifts by 8 when InBit is 0, which yields 0 there.
+        bitField |= (inBuf[inAddr + 8] & 0xff) >>> (8 - inBit);
+        return bitField;
+    }
+
     void addbits(final int bits) {
         final int total = bits + inBit;
         inAddr += total >>> 3;
@@ -363,8 +396,13 @@ public class Unpack5 {
         }
         makeDecodeTables(bitLength, 0, bd, Compress.BC5);
 
-        final int[] table = new int[Compress.HUFF_TABLE_SIZE5];
-        for (int i = 0; i < Compress.HUFF_TABLE_SIZE5;) {
+        // ExtraDist widens the distance alphabet, which lengthens the whole bit-length table and
+        // shifts every slice after it (d861246:unpack50.cpp:647,710).
+        final int dCodes = extraDist ? Compress.DCX5 : Compress.DC5;
+        final int tableSize = extraDist ? Compress.HUFF_TABLE_SIZE5X : Compress.HUFF_TABLE_SIZE5;
+
+        final int[] table = new int[tableSize];
+        for (int i = 0; i < tableSize;) {
             if (!ensure(5)) {
                 return false;
             }
@@ -386,7 +424,7 @@ public class Unpack5 {
                     return false;
                 }
                 int repeat = n;
-                while (repeat-- > 0 && i < Compress.HUFF_TABLE_SIZE5) {
+                while (repeat-- > 0 && i < tableSize) {
                     table[i] = table[i - 1];
                     i++;
                 }
@@ -400,7 +438,7 @@ public class Unpack5 {
                     faddbits(7);
                 }
                 int zeros = n;
-                while (zeros-- > 0 && i < Compress.HUFF_TABLE_SIZE5) {
+                while (zeros-- > 0 && i < tableSize) {
                     table[i++] = 0;
                 }
             }
@@ -410,9 +448,9 @@ public class Unpack5 {
             return false;
         }
         makeDecodeTables(table, 0, ld, Compress.NC5);
-        makeDecodeTables(table, Compress.NC5, dd, Compress.DC5);
-        makeDecodeTables(table, Compress.NC5 + Compress.DC5, ldd, Compress.LDC5);
-        makeDecodeTables(table, Compress.NC5 + Compress.DC5 + Compress.LDC5, rd, Compress.RC5);
+        makeDecodeTables(table, Compress.NC5, dd, dCodes);
+        makeDecodeTables(table, Compress.NC5 + dCodes, ldd, Compress.LDC5);
+        makeDecodeTables(table, Compress.NC5 + dCodes + Compress.LDC5, rd, Compress.RC5);
         return true;
     }
 
@@ -608,7 +646,7 @@ public class Unpack5 {
             if (mainSlot >= 262) {
                 int length = slotToLength(mainSlot - 262);
 
-                int distance = 1;
+                long distance = 1;
                 final int distSlot = decodeNumber(dd);
                 final int dbits;
                 if (distSlot < 4) {
@@ -616,28 +654,35 @@ public class Unpack5 {
                     distance += distSlot;
                 } else {
                     dbits = distSlot / 2 - 1;
-                    distance += (2 | (distSlot & 1)) << dbits;
+                    distance += (long) (2 | (distSlot & 1)) << dbits;
                 }
                 if (dbits > 0) {
                     if (dbits >= 4) {
                         if (dbits > 4) {
-                            distance += (getbits32() >>> (36 - dbits)) << 4;
+                            // ExtraDist reaches dbits 38 (slot 79), too wide for the 32-bit read.
+                            if (dbits > 36) {
+                                distance += (getbits64() >>> (68 - dbits)) << 4;
+                            } else {
+                                distance += ((getbits32() & 0xffffffffL) >>> (36 - dbits)) << 4;
+                            }
                             addbits(dbits - 4);
                         }
                         distance += decodeNumber(ldd);
+                        // d861246:unpack50.cpp:108-114 forces distances that overflowed a 32-bit
+                        // size_t to -1 here. No Java counterpart: the long above never truncates,
+                        // which is the same result that branch exists to reproduce.
                     } else {
                         distance += getbits() >>> (16 - dbits);
                         addbits(dbits);
                     }
                 }
-                // C++ Distance is uint; a top-of-alphabet distSlot can set bit 31, so compare
-                // unsigned (no-go C15 signedness ledger) — matters for hostile streams now and for
-                // the M4.3 >2 GB capability ceiling later.
-                if (Integer.compareUnsigned(distance, 0x100) > 0) {
+                // Signed compares are exact: distance is built up from non-negative terms and
+                // tops out near 2^40 (slot 79), so it never reaches the sign bit (no-go C15).
+                if (distance > 0x100) {
                     length++;
-                    if (Integer.compareUnsigned(distance, 0x2000) > 0) {
+                    if (distance > 0x2000) {
                         length++;
-                        if (Integer.compareUnsigned(distance, 0x40000) > 0) {
+                        if (distance > 0x40000) {
                             length++;
                         }
                     }
@@ -662,7 +707,7 @@ public class Unpack5 {
             }
             // mainSlot 258..261: reuse one of the 4 recent distances, moving it to the front.
             final int distNum = mainSlot - 258;
-            final int distance = oldDist[distNum];
+            final long distance = oldDist[distNum];
             for (int i = distNum; i > 0; i--) {
                 oldDist[i] = oldDist[i - 1];
             }
@@ -708,7 +753,7 @@ public class Unpack5 {
     }
 
     /** Push a distance onto the recent-distance list (8f437ab:unpackinline.cpp InsertOldDist). */
-    private void insertOldDist(final int distance) {
+    private void insertOldDist(final long distance) {
         oldDist[3] = oldDist[2];
         oldDist[2] = oldDist[1];
         oldDist[1] = oldDist[0];
@@ -726,18 +771,17 @@ public class Unpack5 {
      * whole window) is zero-filled deterministically instead of reading ungrown bytes, matching
      * unrar's zero-initialized window; the resulting CRC mismatch is what surfaces the typed error.
      */
-    private void copyString(int length, final int distance) {
-        // Unsigned compares: distance is a C++ uint, so a hostile/large value with bit 31 set must
-        // read as "far into the window", not negative (no-go C15 signedness ledger).
-        if (Integer.compareUnsigned(distance, unpPtr) > 0
-            && (!firstWinDone || Integer.compareUnsigned(distance, maxWinSize) > 0)) {
+    private void copyString(int length, final long distance) {
+        // 64-bit distance against int window positions: a slot-79 distance is ~2^40, far past any
+        // window, and must read as "out of range" rather than wrapping into it (no-go C15).
+        if (distance > unpPtr && (!firstWinDone || distance > maxWinSize)) {
             while (length-- > 0) {
                 window.put(unpPtr, (byte) 0);
                 unpPtr = (unpPtr + 1) & maxWinMask;
             }
             return;
         }
-        int srcPtr = (unpPtr - distance) & maxWinMask;
+        int srcPtr = (int) ((unpPtr - distance) & maxWinMask);
         while (length-- > 0) {
             window.put(unpPtr, window.get(srcPtr));
             srcPtr = (srcPtr + 1) & maxWinMask;
@@ -1086,6 +1130,15 @@ public class Unpack5 {
 
     Decode5 bd() {
         return bd;
+    }
+
+    /**
+     * @return the 4 most-recent LZ distances, newest first. An extended distance is far past any
+     *         M4-era window, so it zero-fills and leaves no trace in the output; this is the only
+     *         way a test can pin the decoded value itself (M4.2 arithmetic seam).
+     */
+    long[] oldDist() {
+        return oldDist;
     }
 
     /** @return filters applied during the current entry (M3.8 fixture-honesty seam). */

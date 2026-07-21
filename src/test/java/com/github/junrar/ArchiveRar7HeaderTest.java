@@ -2,7 +2,6 @@ package com.github.junrar;
 
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
-import com.github.junrar.exception.UnsupportedRarMethodException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
@@ -38,8 +37,8 @@ import static org.assertj.core.api.Assertions.catchThrowable;
  * chunk parses ({@code FCI_RAR5_COMPAT} is bit 20), so each patch is a length-preserving
  * overwrite plus a header CRC32 refix. Nothing hostile is committed.
  *
- * <p>This chunk is parse-only: RAR7 streams do not extract until M4.2, so the public path pins a
- * typed refusal rather than a mis-decode.
+ * <p>Header facts only. The public extraction path — version-70 routing and the
+ * {@code FCI_RAR5_COMPAT} decode — is pinned by {@link ArchiveRar7ExtractionTest} from M4.2 on.
  */
 class ArchiveRar7HeaderTest {
 
@@ -158,20 +157,7 @@ class ArchiveRar7HeaderTest {
         }
     }
 
-    // ---- public-path behaviour (parse-only chunk) ----------------------------------------------
-
-    @Test
-    void rar7StreamIsRefusedWithATypedErrorUntilM42() throws Exception {
-        // M4.1 parses RAR7 headers but cannot decode a method-70 stream (ExtraDist lands in M4.2).
-        // The refusal must name the unsupported compression, not surface as a CRC error on a
-        // perfectly valid archive.
-        try (Archive a = new Archive(fixture())) {
-            final FileHeader hd = a.getFileHeaders().get(0);
-            final Throwable thrown = catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
-            assertThat(thrown).isExactlyInstanceOf(UnsupportedRarMethodException.class);
-            assertThat(thrown.getMessage()).contains("70");
-        }
-    }
+    // ---- public-path behaviour -----------------------------------------------------------------
 
     @Test
     void dictionaryBombIsRefusedBeforeAllocationUnderDefaultOptions() throws Exception {

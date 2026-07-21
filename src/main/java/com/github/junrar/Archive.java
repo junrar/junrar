@@ -31,7 +31,6 @@ import com.github.junrar.exception.MissingPreviousVolumeException;
 import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
-import com.github.junrar.exception.UnsupportedRarMethodException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.exception.UnsupportedRarVersionException;
 import com.github.junrar.exception.WrongPasswordException;
@@ -1341,7 +1340,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         // (M3.9, issue #30; unrar UIERROR_NEEDPREVVOL, 8f437ab:extract.cpp:471-482 — the
         // AnalyzeArchive first-volume rewind is CLI convenience, a recorded non-goal).
         // RAR3/RAR4 keep their historical untyped behavior.
-        if (hd.getUnpVersion() == 50 && hd.isSplitBefore()) {
+        if (hd.isRar5Family() && hd.isSplitBefore()) {
             throw new MissingPreviousVolumeException(
                 "Extraction of '" + hd.getFileName() + "' must start from a previous volume");
         }
@@ -1349,22 +1348,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
         try {
-            if (hd.getUnpVersion() == 70) {
-                // M4.1 parses RAR7 headers but decodes no RAR7 entry: a compressed stream needs
-                // the ExtraDist decode that lands in M4.2 (issue #34). Refuse by name -- falling
-                // through to the RAR3 dispatcher would decode nothing and surface as a bogus CRC
-                // error on a perfectly valid archive.
-                // ponytail: deliberately broader than unrar, which unstores a method-0 entry
-                // before it ever consults UnpVer (d861246:extract.cpp:901), so a STORED RAR7
-                // entry needs no RAR7 algorithm and would extract. Refused here anyway: rar
-                // cannot record algo=1 on a stored entry (the dictionary is what forces RAR7,
-                // see rar7/README.md), so the only such fixture would be byte-patched, and plan
-                // 4.3 forbids a patched header as an extraction-correctness oracle. M4.2 owns
-                // RAR7 extraction and narrows this to compressed streams with a real fixture.
-                throw new UnsupportedRarMethodException(
-                    "RAR7 compression (version 70) is not supported yet: '" + hd.getFileName() + "'");
-            }
-            if (hd.getUnpVersion() == 50) {
+            if (hd.isRar5Family()) {
                 extractRar5(hd);
             } else {
                 if (this.unpack == null) {
@@ -1413,7 +1397,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * Extract one RAR5 (method 0x50) entry through the per-archive {@link Unpack5} engine (M3.7).
+     * Extract one RAR5/RAR7 entry through the per-archive {@link Unpack5} engine (M3.7, M4.2).
      * Stored entries (method 0) copy straight through the CRC/hash seam; compressed entries size
      * the per-archive window from the header dictionary and run the decode loop. A solid entry
      * reuses the same engine so its LZ window continues from the preceding file.
@@ -1422,6 +1406,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         if (this.unpack5 == null) {
             this.unpack5 = new Unpack5(this.dataIO, false);
         }
+        // Per entry, not per engine: a solid stream may mix versions, and the window must survive
+        // the switch (d861246:unpack.cpp:184).
+        this.unpack5.setExtraDist(hd.getUnpVersion() == 70);
         this.unpack5.setDestSize(hd.getFullUnpackSize());
         if (hd.getUnpMethod() == 0) {
             this.unpack5.unstore();

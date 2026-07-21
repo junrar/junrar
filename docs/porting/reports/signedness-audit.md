@@ -344,3 +344,65 @@ No plain-`>>` was introduced; nothing to classify `signed-on-purpose` /
 `unsigned-required`. The `Unpack5Test` table-read/round-trip cases exercise the shift-heavy
 `getbits`/`decodeNumber`/`makeDecodeTables` paths and would fail on a sign-extension
 regression in the reachable bit widths.
+
+## M4.2 ledger extension — RAR7 extended distances (issue #34, no-go C15)
+
+The distance decode is the chunk's whole surface, so it is re-audited in full. Files touched:
+`unpack/Unpack5.java` (the decode arithmetic, `getbits64`, `copyString`, `oldDist`) and
+`unpack/decode/Compress.java` (constants only — no shifts, plain-`>>` count 0).
+
+Pipeline (`grep -oE '>{2,3}' <file> | grep -cx '>>'`):
+
+| File | Plain `>>` count | Classification |
+| --- | --- | --- |
+| `unpack/Unpack5.java` | 1 | `non-code`: still only the javadoc `{@code >>}` stating the rule (line 40). Every executable shift is `>>>`. |
+| `unpack/decode/Compress.java` | 0 | — |
+
+### New shift sites
+
+- `getbits64()` — `bitField <<= inBit` is a left shift (no sign path); the spill byte is
+  `(inBuf[inAddr + 8] & 0xff) >>> (8 - inBit)`, Pattern 1 (pre-masked byte, provably immune to
+  a `>>>`→`>>` swap). Mirrors `d861246:getbits.hpp` `getbits64`, whose `BitField` is `uint64`.
+- `(getbits64() >>> (68 - dbits)) << 4` — `long` throughout, against a C++ `uint64`.
+- `((getbits32() & 0xffffffffL) >>> (36 - dbits)) << 4` — **the `& 0xffffffffL` is
+  load-bearing, and it is a widening guard, not a shift guard.** `getbits32()` returns an
+  `int` holding a C++ `uint`; promoting it to `long` for the wider arithmetic must
+  zero-extend. At `dbits == 36` (slots 74/75) the shift amount is 0, so a raw field with bit
+  31 set reaches the distance unshifted and a signed widening would subtract ~34 GB instead of
+  adding it. Covered by `Unpack5ExtraDistTest#boundarySlotWithAFullWidthRawFieldTreatsItAsUnsigned`.
+- `(long) (2 | (distSlot & 1)) << dbits` — the cast is load-bearing the same way: `dbits`
+  reaches 38 for slot 79, and an `int` shift would mask the count to 6.
+
+### Two `Integer.compareUnsigned` sites deliberately removed
+
+`unpack5`'s length-threshold ladder and `copyString`'s range guards compared the distance
+unsigned while it was an `int`. With the distance widened to `long` (`d861246:unpack.hpp:252`,
+`size_t OldDist[4]`) the unsigned compare is no longer needed, and keeping it would be wrong:
+it would re-narrow the value.
+
+The bound is exact. The largest distance the format can encode is slot 79 —
+`1 + 3·2^38` base, a 34-bit raw field contributing at most `(2^34 - 1)·16 = 2^38 - 16`, and a
+low-distance symbol of at most 15:
+
+```text
+1 + 3·2^38 + (2^38 - 16) + 15  =  4·2^38  =  2^40  =  1 TB
+```
+
+which is exactly the ceiling `d861246:compress.hpp:22` names for `DCX` ("Extended distance
+codes up to 1 TB"). Every term is non-negative, so the distance lives in `[1, 2^40]` and never
+reaches the `long` sign bit: signed and unsigned compare agree on the whole reachable domain.
+This is a strengthening, not a relaxation — the previous `int` form truncated, which is the
+32-bit-build defect `d861246:unpack50.cpp:108-114` exists to paper over, and
+`Unpack5DistanceWidthTest` pins the reachable RAR5 case where truncation changed the output.
+
+The two surviving `Integer.compareUnsigned` calls (`readFilter`'s block-length clamp,
+`addFilter`'s block-start comparison) are unchanged: both operands stay C++ `uint` in the
+`int` domain.
+
+Mutation-probed this round (each mutation run against the full `Unpack5*` + `ArchiveRar7*`
+suites): dropping the `(long)` cast, dropping the `& 0xffffffffL` zero-extension, re-narrowing
+either `copyString` guard, moving the `getbits64` threshold off `36` in either direction, and
+shifting `68 - dbits` by one are all caught. Two mutations survive and are provably equivalent:
+using `getbits64` at `dbits == 36` as well (its top 32 bits are exactly `getbits32`, which
+upstream notes at `unpack50.cpp:95`), and narrowing `unpPtr - distance` before the mask rather
+than after (identical for any `maxWinMask < 2^31`, which the 1 GB capability ceiling enforces).

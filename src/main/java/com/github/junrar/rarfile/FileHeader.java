@@ -731,6 +731,18 @@ public class FileHeader extends BlockHeader {
     }
 
     /**
+     * @return whether this entry belongs to the RAR5-format engine family: version 50 (RAR5, and a
+     *         RAR7 header that {@code FCI_RAR5_COMPAT} demoted) or version 70 (RAR7). unrar treats
+     *         the two as one case throughout — {@code case VER_PACK5: case VER_PACK7:} in
+     *         {@code d861246:unpack.cpp:182-184} — and RAR7 reuses the RARFMT50 container
+     *         ({@code d861246:archive.cpp:120}), so volume merging and the split-before guard key
+     *         off this, not off version 50 alone (M4.2, issue #34).
+     */
+    public boolean isRar5Family() {
+        return unpVersion == 50 || unpVersion == 70;
+    }
+
+    /**
      * @return the RAR5 decode dictionary/window size in bytes ({@code 0x20000 << dictBits} from
      *         the compression-info field, {@code arcread.cpp:855}); 0 for RAR3 headers and RAR5
      *         directory entries. Consumed by {@code Unpack5.init} for per-archive window sizing.

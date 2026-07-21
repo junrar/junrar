@@ -52,6 +52,14 @@ public class Compress {
     public static final int BC5                 = 20;   /* bit-length (table) alphabet */
     public static final int HUFF_TABLE_SIZE5    = (NC5 + DC5 + RC5 + LDC5);   /* 430 */
     public static final int LARGEST_TABLE_SIZE5 = 306;
+
+    // RAR7 extended distances (issue #34, M4.2). d861246:compress.hpp:21-30 split the single DC
+    // into DCB ("base distance codes up to 4 GB") and DCX ("extended distance codes up to 1 TB"),
+    // with one HUFF_TABLE_SIZE per variant; DC5/HUFF_TABLE_SIZE5 above are that DCB pair, kept
+    // under their M3.6 names. Which pair a block uses is Unpack5's extraDist flag, i.e. whether
+    // the entry is version 70 (d861246:unpack.cpp:184, unpack50.cpp:647,710).
+    public static final int DCX5                = 80;   /* extended distance-slot alphabet */
+    public static final int HUFF_TABLE_SIZE5X   = (NC5 + DCX5 + RC5 + LDC5);  /* 446 */
     public static final int MAX_QUICK_DECODE_BITS = 10;
 
     // Match-length ceilings (compress.hpp:10,17) — the write-out reserve margin the decode loop

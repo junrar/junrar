@@ -20,6 +20,8 @@ reproduces every byte.
   window's 256 KB min-alloc floor, so unpacked-data flushes interleave with the
   volume switches and a mid-file reset of the unpacked checksum accumulators is
   observable (the smaller sets flush once at the end and cannot see it).
+- `stored2.bin` — 120 000 incompressible bytes, seed 39103; stored (`-m0`) so the
+  packed stream carries no version-specific encoding at all (M4.2, issue #34).
 
 ## Archives
 
@@ -29,6 +31,7 @@ reproduces every byte.
 | `solid.partN.rar` (N=1..4) | `rar a -ma5 -m3 -md128k -ep -s -v100k solid.rar solid0.bin … solid5.bin` |
 | `blake.partN.rar` (N=1..3) | `rar a -ma5 -m3 -md128k -ep -htb -v100k blake.rar note.txt spanned.bin` |
 | `big.partN.rar` (N=1..4)   | `rar a -ma5 -m3 -md128k -ep -htb -v100k big.rar spanned2.bin` |
+| `stored.partN.rar` (N=1..3)| `rar a -ma5 -m0 -ep -v50k -qo- stored.rar stored2.bin` |
 
 `vols` pins CRC32 split-entry checksum semantics, `blake` pins the BLAKE2 pair
 (per-volume packed digest on every `HFL_SPLITAFTER` part, end-to-end unpacked digest
@@ -48,3 +51,17 @@ on the final part — unrar `volume.cpp:19-26` / `extract.cpp:866` at 6.2.12 `8f
   in `part1`'s split file header and re-computes the header CRC32 (M3.7 patch recipe),
   so the merge-time packed-hash check must fail with `CrcErrorException` while the
   end-to-end unpacked checksum alone would still pass.
+
+## Version-70 promotion of the stored set (M4.2, issue #34)
+
+`ArchiveRar7ExtractionTest` promotes every `stored.partN.rar` header to algorithm
+version 1 at test runtime — a length-preserving overwrite of the 2-byte compression-info
+vint plus a header CRC32 refix — and asserts the set still extracts byte-identically.
+
+This is plan §4.3 class 2, not an inflated-resource claim: a **stored** stream is
+byte-identical under version 50 and version 70, so the promoted header describes the
+bytes truthfully, and the oracle is the unpromoted set's own output. `unrar 7.23` agrees
+(`unrar t -qo-` on the promoted set: `All OK`). It is the only way to reach the
+volume-merge path with a version-70 entry, because every *compressed* RAR7 stream
+declares a > 4 GB dictionary and is refused long before any packed byte is read
+(see `rar7/README.md`). Nothing promoted is committed.
