@@ -501,4 +501,127 @@ class Rar5FileHeaderReaderTest {
         assertThat(catchThrowable(() -> parse(craft(Rar5BlockType.FILE.getValue(), fixed, null))))
             .isExactlyInstanceOf(CorruptHeaderException.class);
     }
+
+    /**
+     * The HTIME nanosecond field is a 30-bit remainder, so a value at or above one full second
+     * is malformed. Folding it in anyway would silently push the timestamp into the next
+     * second (or further), which is why {@code adjustNanos} returns the whole-second base
+     * untouched instead.
+     */
+    @Test
+    void htimeNanosecondFieldAtOrAboveOneSecondLeavesTheTimestampWhole() throws Exception {
+        final long baseSeconds = 1_700_000_000L;
+        final ByteArrayOutputStream payload = new ByteArrayOutputStream();
+        payload.write((0x01 | 0x10 | 0x02)); // UNIXTIME | UNIX_NS | MTIME
+        writeIntLE(payload, (int) baseSeconds);
+        writeIntLE(payload, 1_000_000_000); // exactly one second: out of range for this field
+        final byte[] extra = extraRecord(Rar5FileExtraType.HTIME.getValue(), payload.toByteArray());
+
+        final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("t.txt"));
+        final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
+
+        assertThat(fh.getLastModifiedTime()).isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds)));
+    }
+
+    /**
+     * RAR 5.21 and earlier wrote an all-zero pswcheck into service headers. The csum over it is
+     * perfectly valid, so the csum test alone accepts it -- unrar additionally drops the flag
+     * for a service header whose check is all zeros ({@code arcread.cpp:1096-1107}), otherwise
+     * a correct password would be rejected against a placeholder. The FILE row below is the
+     * control: identical bytes, flag kept, so the assertion pins the service condition rather
+     * than the all-zero one.
+     */
+    @Test
+    void serviceHeaderWithAllZeroPswCheckDropsTheFlagButFileHeaderKeepsIt() throws Exception {
+        final byte[] zeroCheck = new byte[8];
+        final ByteArrayOutputStream payload = new ByteArrayOutputStream();
+        writeLen(payload, vint(0)); // encVersion
+        writeLen(payload, vint(0x01)); // FHEXTRA_CRYPT_PSWCHECK
+        payload.write(14); // Lg2Count
+        writeLen(payload, new byte[16]); // salt
+        writeLen(payload, new byte[16]); // initV
+        writeLen(payload, zeroCheck);
+        writeLen(payload, sha256Prefix(zeroCheck)); // a genuinely valid csum over the zeros
+        final byte[] extra = extraRecord(Rar5FileExtraType.CRYPT.getValue(), payload.toByteArray());
+
+        final byte[] serviceFixed = fixedFields(0, 0, 0, null, null, 0, 0, name("CMT"));
+        final FileHeader service = parse(craft(Rar5BlockType.SERVICE.getValue(), serviceFixed, extra));
+        assertThat(service.isUsePswCheck()).isFalse();
+        assertThat(service.getPswCheck()).isNull();
+
+        final byte[] fileFixed = fixedFields(0, 0, 0, null, null, 0, 0, name("enc.txt"));
+        final FileHeader file = parse(craft(Rar5BlockType.FILE.getValue(), fileFixed, extra));
+        assertThat(file.isUsePswCheck()).isTrue();
+        assertThat(file.getPswCheck()).isEqualTo(zeroCheck);
+    }
+
+    /**
+     * RAR 5.21 and earlier under-declare FHEXTRA_SUBDATA's size by one byte in service headers,
+     * leaving a single stray byte at the end of the extra area. unrar folds that byte back into
+     * SubData ({@code ProcessExtra50}, {@code arcread.cpp:1207-1213}); dropping it would truncate
+     * the last byte of every service payload written by those versions.
+     */
+    @Test
+    void serviceHeaderSubDataAbsorbsTheStrayRar521Byte() throws Exception {
+        final byte[] declared = {0x11, 0x22, 0x33};
+        final byte stray = 0x44;
+
+        final byte[] typeV = vint(Rar5FileExtraType.SUBDATA.getValue());
+        final ByteArrayOutputStream extra = new ByteArrayOutputStream();
+        writeLen(extra, vint(typeV.length + declared.length)); // FieldSize, one byte short
+        writeLen(extra, typeV);
+        writeLen(extra, declared);
+        extra.write(stray); // the byte RAR 5.21 forgot to declare
+
+        final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("CMT"));
+        final FileHeader fh = parse(craft(Rar5BlockType.SERVICE.getValue(), fixed, extra.toByteArray()));
+
+        assertThat(fh.getSubData()).isEqualTo(new byte[]{0x11, 0x22, 0x33, 0x44});
+    }
+
+    /**
+     * unrar warns and carries on for a CRYPT record it cannot interpret rather than rejecting
+     * the archive, so the entry must come back plainly unencrypted -- not half-populated with
+     * fields read under the wrong layout.
+     */
+    @Test
+    void cryptRecordWithUnsupportedVersionLeavesTheEntryUnencrypted() throws Exception {
+        final ByteArrayOutputStream payload = new ByteArrayOutputStream();
+        writeLen(payload, vint(1)); // encVersion: not CRYPT_VERSION
+        writeLen(payload, vint(0x01));
+        payload.write(14);
+        writeLen(payload, new byte[16]);
+        writeLen(payload, new byte[16]);
+        final byte[] extra = extraRecord(Rar5FileExtraType.CRYPT.getValue(), payload.toByteArray());
+
+        final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("enc.txt"));
+        final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
+
+        assertThat(fh.isEncrypted()).isFalse();
+        assertThat(fh.getSalt16()).isNull();
+        assertThat(fh.isUsePswCheck()).isFalse();
+    }
+
+    /**
+     * A CRYPT record that ends before its salt and IV cannot be honoured. The failure is silent
+     * without the length check -- {@code Arrays.copyOfRange} zero-pads a short range instead of
+     * throwing -- so the entry would be marked encrypted and carry a fabricated salt/IV, and
+     * every key derived from them would be wrong.
+     */
+    @Test
+    void cryptRecordEndingBeforeSaltAndIvLeavesTheEntryUnencrypted() throws Exception {
+        final ByteArrayOutputStream payload = new ByteArrayOutputStream();
+        writeLen(payload, vint(0)); // encVersion
+        writeLen(payload, vint(0x01));
+        payload.write(14); // Lg2Count, then the record simply stops
+        writeLen(payload, new byte[8]); // half a salt, no IV at all
+        final byte[] extra = extraRecord(Rar5FileExtraType.CRYPT.getValue(), payload.toByteArray());
+
+        final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("enc.txt"));
+        final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
+
+        assertThat(fh.isEncrypted()).isFalse();
+        assertThat(fh.getSalt16()).isNull();
+        assertThat(fh.getInitVector()).isNull();
+    }
 }
