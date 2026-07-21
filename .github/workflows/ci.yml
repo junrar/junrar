@@ -97,7 +97,7 @@ jobs:
         run: |
           echo "version_current=`svu current`" >> $GITHUB_OUTPUT
           echo "version_next=${{ env.VERSION_NEXT_SUFFIX }}" >> $GITHUB_OUTPUT
-          [[ `svu current` != ${{ env.VERSION_NEXT }} ]] && echo "should_release=true" >> $GITHUB_OUTPUT || echo
+          [[ `svu current` != ${{ env.VERSION_NEXT }} || "${{ inputs.perform_release }}" == 'true' ]] && echo "should_release=true" >> $GITHUB_OUTPUT || echo
 
   release:
     needs: [ version, test ]
