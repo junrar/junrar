@@ -1340,8 +1340,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         // Started mid-set: the entry's data begins in a volume this extraction never saw
         // (M3.9, issue #30; unrar UIERROR_NEEDPREVVOL, 8f437ab:extract.cpp:471-482 — the
         // AnalyzeArchive first-volume rewind is CLI convenience, a recorded non-goal).
-        // RAR3/RAR4 keep their historical untyped behavior.
-        if (hd.isRar5Family() && hd.isSplitBefore()) {
+        // RAR3/RAR4 keep their historical untyped behavior. A container fact, not a version one
+        // (issue #43): an unrecognized-algorithm-version entry is still in a RAR5 container and
+        // can still start mid-set, so isRar5Family() alone would let it slip past this guard.
+        if ((hd.isRar5Family() || hd.isRar5Container()) && hd.isSplitBefore()) {
             throw new MissingPreviousVolumeException(
                 "Extraction of '" + hd.getFileName() + "' must start from a previous volume");
         }

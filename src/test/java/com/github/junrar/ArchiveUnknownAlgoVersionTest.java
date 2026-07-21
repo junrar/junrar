@@ -1,6 +1,7 @@
 package com.github.junrar;
 
 import com.github.junrar.crc.RarCRC;
+import com.github.junrar.exception.MissingPreviousVolumeException;
 import com.github.junrar.exception.UnsupportedRarMethodException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.rarfile.FileHeader;
@@ -85,7 +86,88 @@ class ArchiveUnknownAlgoVersionTest {
             .isEqualTo(oracle);
     }
 
+    @Test
+    void storedUnknownAlgorithmVersionEntryStartedMidSetIsRefusedNotExtracted() throws Exception {
+        // The split-before guard in Archive.doExtractFile ("the entry's data begins in a volume
+        // this extraction never saw", M3.9 issue #30) keyed off isRar5Family() alone, which is
+        // false for VER_UNKNOWN -- so once the routing fix above lets a stored VER_UNKNOWN entry
+        // reach extractRar5, opening part2 of this set alone would extract mid-stream bytes as if
+        // they were the entry's start, instead of failing closed. That is a container fact (any
+        // RAR5-container entry can start mid-set), not a version fact.
+        final File first = volumeSet("stored");
+        promoteAllVolumesToUnknownAlgorithmVersion(first);
+
+        final File second = new File(first.getParentFile(), "stored.part2.rar");
+        try (Archive a = new Archive(second)) {
+            final FileHeader hd = a.getFileHeaders().get(0);
+            assertThat(hd.getUnpVersion()).as("unrecognized algorithm version").isEqualTo((byte) -1);
+            assertThat(hd.getUnpMethod()).as("stored").isZero();
+            assertThat(hd.isSplitBefore()).as("mid-set start").isTrue();
+
+            final Throwable thrown = catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
+            assertThat(thrown).isExactlyInstanceOf(MissingPreviousVolumeException.class);
+        }
+    }
+
     // ---- helpers ------------------------------------------------------------------------------
+
+    /** Copy a whole {@code .partN.rar} set into the temp dir and return its first volume. */
+    private File volumeSet(final String name) throws Exception {
+        File first = null;
+        for (int part = 1; ; part++) {
+            final String resource = "volumes/rar5-part/" + name + ".part" + part + ".rar";
+            if (getClass().getResource(resource) == null) {
+                break;
+            }
+            final File f = copyOf(resource);
+            if (first == null) {
+                first = f;
+            }
+        }
+        assertThat(first).as("volume set %s", name).isNotNull();
+        return first;
+    }
+
+    /**
+     * OR algorithm version 2 (an unrecognized value {@code rar} never writes) into every volume's
+     * first FILE header compression-info word, width-preserving, and refix each header CRC32 --
+     * the same per-volume promotion {@code ArchiveRar7ExtractionTest#compatPromoted}/
+     * {@code #promoteToRar7} use to promote this same fixture set to algorithm version 1.
+     */
+    private void promoteAllVolumesToUnknownAlgorithmVersion(final File firstVolume) throws Exception {
+        final File dir = firstVolume.getParentFile();
+        final String prefix = firstVolume.getName().substring(0, firstVolume.getName().indexOf(".part"));
+        for (final File f : dir.listFiles()) {
+            if (f.getName().startsWith(prefix + ".part")) {
+                orIntoFirstFileHeaderCompInfo(f, 2L);
+            }
+        }
+    }
+
+    private void orIntoFirstFileHeaderCompInfo(final File archive, final long orBits) throws Exception {
+        final long position;
+        try (Archive a = new Archive(archive)) {
+            position = a.getFileHeaders().get(0).getPositionInFile();
+        }
+
+        final byte[] bytes = Files.readAllBytes(archive.toPath());
+        final int start = (int) position;
+        final int headerLength = Rar5BaseBlock.checkHeaderSize(
+            Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
+        final byte[] header = Arrays.copyOfRange(bytes, start, start + headerLength);
+
+        final int[] cursor = {4}; // skip the 4-byte header CRC32
+        readVint(header, cursor); // header size
+        final int compInfoStart = compressionInfoOffset(header, cursor[0]);
+        cursor[0] = compInfoStart;
+        final long compInfo = readVint(header, cursor);
+        final int width = cursor[0] - compInfoStart;
+
+        System.arraycopy(vint(compInfo | orBits, width), 0, header, compInfoStart, width);
+        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        System.arraycopy(header, 0, bytes, start, header.length);
+        Files.write(archive.toPath(), bytes);
+    }
 
     private static byte[] extract(final File archive) throws Exception {
         try (Archive a = new Archive(archive)) {
