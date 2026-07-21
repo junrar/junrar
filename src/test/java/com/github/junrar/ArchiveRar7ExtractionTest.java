@@ -80,6 +80,52 @@ class ArchiveRar7ExtractionTest {
     }
 
     @Test
+    void fractionalDictionaryWrapsTheWindowAtItsRealSize() throws Exception {
+        // M4.3 (issue #35). RAR7 dictionaries carry a 5-bit fraction
+        // (Rar5FileHeaderReader:154, winSize += winSize/32*frac), so they are NOT powers of two
+        // — and a fractional dictionary is reachable well below the engine capability, not only
+        // above 4 GB. dictBits = 1 (256 KB) with fraction 1/32 declares 0x42000 = 270,336 bytes.
+        // The fixture's payload is 300 KB, so the window really wraps, and the whole point of
+        // d861246:unpack.hpp:416-435 (WrapUp/WrapDown "replaces &MaxWinMask for non-power 2
+        // window sizes") is that masking with size-1 wraps at 0x40000 instead and corrupts the
+        // decode. The untouched stream's own dictionary is 128 KB, so every distance in it stays
+        // valid under the larger declared window and the unpatched output is the exact oracle.
+        final byte[] oracle = extract(rar5Fixture());
+
+        final File patched = compatPatched(rar5Fixture(), (1L << 10) | (1L << 15));
+        try (Archive a = new Archive(patched)) {
+            final FileHeader hd = a.getFileHeaders().get(0);
+            assertThat(hd.getUnpVersion())
+                .as("FCI_RAR5_COMPAT still demotes the decode to RAR5").isEqualTo((byte) 50);
+            assertThat(hd.getRar5WinSize())
+                .as("256 KB + 1/32 — not a power of two").isEqualTo(0x42000L);
+        }
+        assertThat(extract(patched))
+            .as("a non-power-of-two window must wrap at its declared size, not at size rounded "
+                + "down to a power of two")
+            .isEqualTo(oracle);
+    }
+
+    @Test
+    void everyFractionalWindowBelowThePayloadDecodesIdentically() throws Exception {
+        // Sweeping the fraction moves the wrap point in 8 KB steps across the 300 KB payload, so
+        // between them the window end lands inside matches, inside filter blocks and inside write
+        // ranges — coverage a single wrap position cannot reach. Fractions 1..5 keep the window
+        // (0x40000 + 0x2000*frac) below the payload, so all of them really wrap.
+        final byte[] oracle = extract(rar5Fixture());
+        for (int frac = 1; frac <= 5; frac++) {
+            final long winSize = 0x40000L + 0x2000L * frac;
+            assertThat(winSize).as("fraction %d still wraps a 300 KB payload", frac)
+                .isLessThan(oracle.length);
+            final File patched = compatPatched(rar5Fixture(), (1L << 10) | ((long) frac << 15));
+            try (Archive a = new Archive(patched)) {
+                assertThat(a.getFileHeaders().get(0).getRar5WinSize()).isEqualTo(winSize);
+            }
+            assertThat(extract(patched)).as("fraction %d", frac).isEqualTo(oracle);
+        }
+    }
+
+    @Test
     void storedVersionSeventyEntryMergesVolumesTheRar5Way() throws Exception {
         // A stored stream is byte-identical under version 50 and 70, so promoting the header is a
         // faithful specimen (§4.3 class 2) — unrar 7.23 tests the patched set All OK. It is the
@@ -193,6 +239,15 @@ class ArchiveRar7ExtractionTest {
      * bumping the header-size vint, which keeps its own width, and refixing the header CRC32.
      */
     private File compatPatched(final File archive) throws Exception {
+        return compatPatched(archive, 0L);
+    }
+
+    /**
+     * @param dictWord extra compression-info bits to OR in — the RAR7 5-bit dictionary index
+     *                 (bit 10) and 5-bit fraction (bit 15), both zero in a RAR5 word, so OR-ing
+     *                 sets them outright.
+     */
+    private File compatPatched(final File archive, final long dictWord) throws Exception {
         final long position;
         try (Archive a = new Archive(archive)) {
             position = a.getFileHeaders().get(0).getPositionInFile();
@@ -215,7 +270,7 @@ class ArchiveRar7ExtractionTest {
         final long compInfo = readVint(bytes, cursor);
         final int compInfoWidth = cursor[0] - compInfoStart;
 
-        final byte[] newCompInfo = vint(compInfo | ALGO_RAR7 | FCI_RAR5_COMPAT, 3);
+        final byte[] newCompInfo = vint(compInfo | ALGO_RAR7 | FCI_RAR5_COMPAT | dictWord, 3);
         final int delta = newCompInfo.length - compInfoWidth;
         final byte[] newSizeField = vint(headerSize + delta, sizeFieldWidth);
 

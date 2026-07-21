@@ -82,13 +82,13 @@ public class Unpack5 {
     /** Input buffer size for the archive-driven refill (8f437ab:getbits.hpp MAX_SIZE). */
     private static final int MAX_SIZE = 0x8000;
 
-    // Sliding-window pointers into the per-archive window (masked to maxWinMask each step).
-    private int maxWinSize;
-    private int maxWinMask;
-    private int unpPtr;   // next window write position
-    private int wrPtr;    // window position up to which output was flushed
-    private int writeBorder;
-    private int prevPtr;  // previous masked unpPtr, to detect a window wrap
+    // Sliding-window pointers into the per-archive window (wrapped through wrapUp/wrapDown each
+    // step). C++ size_t (d861246:unpack.hpp:277-283), so long here: a RAR7 window reaches 64 GB.
+    private long maxWinSize;
+    private long unpPtr;   // next window write position
+    private long wrPtr;    // window position up to which output was flushed
+    private long writeBorder;
+    private long prevPtr;  // previous wrapped unpPtr, to detect a window wrap
     private boolean firstWinDone; // the window has wrapped at least once (FirstWinDone parity, M1.4)
 
     // The 4 most-recent LZ distances (OldDist) and the last match length (unpackinline.cpp).
@@ -190,7 +190,7 @@ public class Unpack5 {
             // Archiving guarantees a solid window never grows mid-set; a larger claim is malformed.
             throw new UnsupportedDictionarySizeException("solid RAR5 window must not grow mid-set");
         }
-        window = new Unpack5Window((int) winSize);
+        window = new Unpack5Window(winSize);
         tablesRead5 = false;
     }
 
@@ -564,7 +564,6 @@ public class Unpack5 {
      */
     private void unpInitData(final boolean solid) {
         maxWinSize = window.size();
-        maxWinMask = window.mask();
         if (!solid) {
             Arrays.fill(oldDist, 0);
             lastLength = 0;
@@ -573,7 +572,7 @@ public class Unpack5 {
             prevPtr = 0;
             firstWinDone = false;
             tablesRead5 = false;
-            writeBorder = Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE) & maxWinMask;
+            writeBorder = wrapUp(Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE));
         }
         // Filters never span several solid files, so they reset at the start of every file
         // (8f437ab:unpack.cpp UnpInitData — InitFilters() runs even for solid continuations).
@@ -589,6 +588,37 @@ public class Unpack5 {
         if (inBuf.length < MAX_SIZE + 64) {
             inBuf = new byte[MAX_SIZE + 64];
         }
+    }
+
+    /**
+     * A window position that crossed the window <em>end</em>, wrapped back to the beginning
+     * ({@code d861246:unpack.hpp:433} {@code WrapUp}). Every caller adds at most two in-window
+     * values, so the single subtraction upstream uses is exact here too.
+     *
+     * <p>This and {@link #wrapDown} replace the {@code & maxWinMask} idiom verbatim, and the
+     * upstream comment says why: a RAR7 dictionary carries a 5-bit fraction
+     * ({@code winSize += winSize/32*frac}, {@code d861246:arcread.cpp:867-882}), so window sizes
+     * are <b>not</b> powers of two and a {@code size - 1} mask wraps at the wrong position — it
+     * addresses window space that was never written.
+     */
+    private long wrapUp(final long winPos) {
+        return winPos >= maxWinSize ? winPos - maxWinSize : winPos;
+    }
+
+    /**
+     * A window position that crossed the window <em>beginning</em>, wrapped back to the end
+     * ({@code d861246:unpack.hpp:421} {@code WrapDown}).
+     *
+     * <p>Upstream computes the position in unsigned {@code size_t}, so crossing zero underflows to
+     * a huge value and its {@code WinPos >= MaxWinSize ? WinPos + MaxWinSize : WinPos} undoes that
+     * underflow by modular arithmetic. Java window positions are signed {@code long} and every
+     * caller forms {@code a - b} with {@code a, b} in {@code [0, maxWinSize)} and
+     * {@code maxWinSize <= 64 GB}, so the difference lives in {@code (-2^36, 2^36)} and cannot
+     * underflow at all: the faithful form of the same intent is a sign test. The two agree over
+     * the whole reachable domain (no-go C15).
+     */
+    private long wrapDown(final long winPos) {
+        return winPos < 0 ? winPos + maxWinSize : winPos;
     }
 
     /**
@@ -608,7 +638,7 @@ public class Unpack5 {
         }
 
         while (true) {
-            unpPtr &= maxWinMask;
+            unpPtr = wrapUp(unpPtr);
             firstWinDone |= (prevPtr > unpPtr);
             prevPtr = unpPtr;
 
@@ -631,7 +661,8 @@ public class Unpack5 {
                 }
             }
 
-            if (((writeBorder - unpPtr) & maxWinMask) <= Compress.MAX_INC_LZ_MATCH && writeBorder != unpPtr) {
+            // writeBorder == unpPtr means we have a whole maxWinSize of data ahead.
+            if (wrapDown(writeBorder - unpPtr) <= Compress.MAX_INC_LZ_MATCH && writeBorder != unpPtr) {
                 unpWriteBuf();
                 if (writtenFileSize > destUnpSize) {
                     return;
@@ -772,20 +803,20 @@ public class Unpack5 {
      * unrar's zero-initialized window; the resulting CRC mismatch is what surfaces the typed error.
      */
     private void copyString(int length, final long distance) {
-        // 64-bit distance against int window positions: a slot-79 distance is ~2^40, far past any
-        // window, and must read as "out of range" rather than wrapping into it (no-go C15).
+        // A slot-79 distance is ~2^40, far past any window, and must read as "out of range"
+        // rather than wrapping into it (no-go C15).
         if (distance > unpPtr && (!firstWinDone || distance > maxWinSize)) {
             while (length-- > 0) {
                 window.put(unpPtr, (byte) 0);
-                unpPtr = (unpPtr + 1) & maxWinMask;
+                unpPtr = wrapUp(unpPtr + 1);
             }
             return;
         }
-        int srcPtr = (int) ((unpPtr - distance) & maxWinMask);
+        long srcPtr = wrapDown(unpPtr - distance);
         while (length-- > 0) {
             window.put(unpPtr, window.get(srcPtr));
-            srcPtr = (srcPtr + 1) & maxWinMask;
-            unpPtr = (unpPtr + 1) & maxWinMask;
+            srcPtr = wrapUp(srcPtr + 1);
+            unpPtr = wrapUp(unpPtr + 1);
         }
     }
 
@@ -817,7 +848,8 @@ public class Unpack5 {
         if (!ensure(16)) {
             return false;
         }
-        filter.setBlockStart(readFilterData());
+        // Zero-extended: the raw field is a C++ uint and 4-byte fields can set bit 31.
+        filter.setBlockStart(readFilterData() & 0xffffffffL);
         filter.setBlockLength(readFilterData());
         if (Integer.compareUnsigned(filter.getBlockLength(), Compress.MAX_FILTER_BLOCK_SIZE) > 0) {
             filter.setBlockLength(0);
@@ -847,11 +879,13 @@ public class Unpack5 {
                 initFilters(); // still too many filters, prevent excessive memory use
             }
         }
-        // BlockStart is still the raw header-relative distance here — a C++ uint, so the wrap
-        // test against the written-data distance must compare unsigned (no-go C15).
-        filter.setNextWindow(wrPtr != unpPtr
-            && Integer.compareUnsigned((wrPtr - unpPtr) & maxWinMask, filter.getBlockStart()) <= 0);
-        filter.setBlockStart((filter.getBlockStart() + unpPtr) & maxWinMask);
+        // BlockStart is still the raw header-relative distance here, zero-extended from a C++
+        // uint, so the wrap test against the written-data distance is exact in long.
+        filter.setNextWindow(wrPtr != unpPtr && wrapDown(wrPtr - unpPtr) <= filter.getBlockStart());
+        // Remainder, not a wrap: in a malformed archive BlockStart can be many times the window
+        // size, so subtracting a single window would not land inside it
+        // (d861246:unpack50.cpp:228-233). Both operands are non-negative, so Java % is modulo.
+        filter.setBlockStart((filter.getBlockStart() + unpPtr) % maxWinSize);
         filters.add(filter);
         return true;
     }
@@ -965,9 +999,9 @@ public class Unpack5 {
      * ahead of the window pointer, capped at {@link Compress#UNPACK_MAX_WRITE}.
      */
     private void unpWriteBuf() throws IOException {
-        int writtenBorder = wrPtr;
-        final int fullWriteSize = (unpPtr - writtenBorder) & maxWinMask;
-        int writeSizeLeft = fullWriteSize;
+        long writtenBorder = wrPtr;
+        final long fullWriteSize = wrapDown(unpPtr - writtenBorder);
+        long writeSizeLeft = fullWriteSize;
         boolean notAllFiltersProcessed = false;
         for (int i = 0; i < filters.size(); i++) {
             final Unpack5Filter flt = filters.get(i);
@@ -978,34 +1012,34 @@ public class Unpack5 {
                 // A filter deferred by the circular-window wrap becomes applicable once the
                 // write range has covered its block start (upstream keeps this check "just in
                 // case"; the compressor bounds start-to-announcement distance by the window).
-                if (((flt.getBlockStart() - wrPtr) & maxWinMask) <= fullWriteSize) {
+                if (wrapDown(flt.getBlockStart() - wrPtr) <= fullWriteSize) {
                     flt.setNextWindow(false);
                 }
                 continue;
             }
-            final int blockStart = flt.getBlockStart();
+            final long blockStart = flt.getBlockStart();
             final int blockLength = flt.getBlockLength();
-            if (((blockStart - writtenBorder) & maxWinMask) < writeSizeLeft) {
+            if (wrapDown(blockStart - writtenBorder) < writeSizeLeft) {
                 if (writtenBorder != blockStart) {
                     unpWriteArea(writtenBorder, blockStart);
                     writtenBorder = blockStart;
-                    writeSizeLeft = (unpPtr - writtenBorder) & maxWinMask;
+                    writeSizeLeft = wrapDown(unpPtr - writtenBorder);
                 }
                 if (blockLength <= writeSizeLeft) {
                     if (blockLength > 0) { // ReadFilter sets 0 for invalid filters: a no-op
-                        final int blockEnd = (blockStart + blockLength) & maxWinMask;
+                        final long blockEnd = wrapUp(blockStart + blockLength);
                         if (filterSrcMemory == null || filterSrcMemory.length < blockLength) {
                             filterSrcMemory = new byte[blockLength];
                         }
                         final byte[] mem = filterSrcMemory;
-                        // Real copy-out, wrap split into two arraycopies (manual §4.3): the
-                        // window bytes stay untouched for future string matches.
+                        // Real copy-out, wrap split into two copies (manual §4.3): the window
+                        // bytes stay untouched for future string matches.
                         if (blockStart < blockEnd || blockEnd == 0) {
-                            System.arraycopy(window.buffer(), blockStart, mem, 0, blockLength);
+                            window.copyOut(blockStart, mem, 0, blockLength);
                         } else {
-                            final int firstPartLength = maxWinSize - blockStart;
-                            System.arraycopy(window.buffer(), blockStart, mem, 0, firstPartLength);
-                            System.arraycopy(window.buffer(), 0, mem, firstPartLength, blockEnd);
+                            final int firstPartLength = (int) (maxWinSize - blockStart);
+                            window.copyOut(blockStart, mem, 0, firstPartLength);
+                            window.copyOut(0, mem, firstPartLength, (int) blockEnd);
                         }
 
                         final byte[] outMem = applyFilter(mem, blockLength, flt);
@@ -1018,7 +1052,7 @@ public class Unpack5 {
                         }
                         writtenFileSize += blockLength;
                         writtenBorder = blockEnd;
-                        writeSizeLeft = (unpPtr - writtenBorder) & maxWinMask;
+                        writeSizeLeft = wrapDown(unpPtr - writtenBorder);
                     }
                 } else {
                     // The filter block intersects the write border: roll the window border back
@@ -1059,15 +1093,15 @@ public class Unpack5 {
             wrPtr = unpPtr;
         }
 
-        writeBorder = (unpPtr + Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE)) & maxWinMask;
+        writeBorder = wrapUp(unpPtr + Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE));
         if (writeBorder == unpPtr
-            || (wrPtr != unpPtr && ((wrPtr - unpPtr) & maxWinMask) < ((writeBorder - unpPtr) & maxWinMask))) {
+            || (wrPtr != unpPtr && wrapDown(wrPtr - unpPtr) < wrapDown(writeBorder - unpPtr))) {
             writeBorder = wrPtr;
         }
     }
 
     /** Write the window range {@code [start, end)}, splitting a wrap into two parts (UnpWriteArea). */
-    private void unpWriteArea(final int startPtr, final int endPtr) throws IOException {
+    private void unpWriteArea(final long startPtr, final long endPtr) throws IOException {
         if (endPtr < startPtr) {
             unpWriteData(startPtr, maxWinSize - startPtr);
             unpWriteData(0, endPtr);
@@ -1076,17 +1110,23 @@ public class Unpack5 {
         }
     }
 
-    /** Write one contiguous window run, clamped to the remaining {@code destUnpSize} (UnpWriteData). */
-    private void unpWriteData(final int pos, final int size) throws IOException {
+    /**
+     * Write one window run that does not cross the window end, clamped to the remaining
+     * {@code destUnpSize} (UnpWriteData). The clamp is computed once for the whole run, not per
+     * segment: {@code writtenFileSize} advances by the full {@code size} even when the write was
+     * truncated, and metering each piece separately would stop that advance short.
+     */
+    private void unpWriteData(final long pos, final long size) throws IOException {
         if (size <= 0 || writtenFileSize >= destUnpSize) {
             return;
         }
-        int writeSize = size;
-        final long leftToWrite = destUnpSize - writtenFileSize;
-        if (writeSize > leftToWrite) {
-            writeSize = (int) leftToWrite;
+        final long writeSize = Math.min(size, destUnpSize - writtenFileSize);
+        for (long p = pos, left = writeSize; left > 0;) {
+            final int chunk = window.run(p, left);
+            unpIO.unpWrite(window.bufferAt(p), window.offsetAt(p), chunk);
+            p += chunk;
+            left -= chunk;
         }
-        unpIO.unpWrite(window.buffer(), pos, writeSize);
         writtenFileSize += size;
     }
 

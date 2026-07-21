@@ -10,15 +10,16 @@ import com.github.junrar.unpack.decode.Compress;
  * One RAR5 filter queue entry (M3.8, issue #29; unrar {@code 8f437ab:unpack.hpp} struct
  * {@code UnpackFilter}). Mirrors the RAR3 {@link UnpackFilter} shape minus the VM fields —
  * RAR5 dropped the VM entirely, filters are just a type tag plus a window range (manual
- * &sect;5.4). {@code blockStart} and {@code blockLength} are C++ {@code uint}: raw header
- * values until {@code AddFilter} masks the start into the window, so callers comparing them
- * use unsigned semantics (no-go C15).
+ * &sect;5.4). {@code blockLength} is a C++ {@code uint} and stays {@code int}; {@code blockStart}
+ * is zero-extended to {@code long} on read, because {@code AddFilter} folds it into a window
+ * position ({@code size_t}, up to 64 GB) — {@code d861246:unpack.hpp:150}, where the field was
+ * widened from {@code uint} to {@code size_t} for exactly that reason (no-go C15).
  */
 class Unpack5Filter {
 
     private int type = Compress.FILTER_NONE;
 
-    private int blockStart;
+    private long blockStart;
 
     private int blockLength;
 
@@ -34,11 +35,11 @@ class Unpack5Filter {
         this.type = type;
     }
 
-    public int getBlockStart() {
+    public long getBlockStart() {
         return blockStart;
     }
 
-    public void setBlockStart(final int blockStart) {
+    public void setBlockStart(final long blockStart) {
         this.blockStart = blockStart;
     }
 

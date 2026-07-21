@@ -190,6 +190,84 @@ class Unpack5FilterTest {
         assertThat(f.getChannels()).isEqualTo(3);
     }
 
+    @Test
+    void readFilterKeepsBit31BlockStartUnsigned() throws Exception {
+        // A 4-byte block start with bit 31 set is a C++ uint; sign-extending it would make the
+        // window fold in AddFilter negative (no-go C15). M4.3: the field is now a long.
+        final Unpack5 u = new Unpack5(false);
+        u.feed(filterAnnouncement(0x80000004L, 4, Compress.FILTER_E8, 0));
+        final Unpack5Filter f = new Unpack5Filter();
+        assertThat(u.readFilter(f)).isTrue();
+        assertThat(f.getBlockStart()).isEqualTo(0x80000004L);
+    }
+
+    // ---- window folding: remainder, not a single wrap (d861246:unpack50.cpp:228-233) -----------
+
+    @Test
+    void filterStartManyWindowsAwayIsFoldedByRemainder() throws Exception {
+        // A malformed archive can announce a block start many times the window size. Upstream
+        // folds it with % MaxWinSize precisely because subtracting a single window (WrapUp) would
+        // leave it outside the window and the filter would silently never apply. 0x300000 is
+        // 12 windows of 0x40000, so the remainder lands it at 0 and it applies to the first
+        // 4 bytes; a single wrap would leave it at 0x2C0000 and drop it.
+        final BitWriter content = new BitWriter();
+        writeCraftedTables(content);
+        content.writeBits(0b10, 2);          // LD code for slot 256 (filter announcement)
+        writeFilterVint(content, 0x300000);  // blockStart, 12 windows away
+        writeFilterVint(content, 4);         // blockLength
+        content.writeBits(Compress.FILTER_E8, 3);
+        for (int i = 0; i < 4; i++) {
+            content.writeBits(0, 1);         // LD code for literal 0x41
+        }
+
+        final ByteArrayOutputStream out = new ByteArrayOutputStream();
+        final Unpack5 u = new Unpack5(collectingIO(frame(content), out), false);
+        u.init(0x40000, false, ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
+        u.setDestSize(4);
+        u.unpack5(false);
+
+        assertThat(out.toByteArray()).containsExactly(0x41, 0x41, 0x41, 0x41);
+        assertThat(u.filtersApplied())
+            .as("the remainder folds the start into the window, so the filter runs").isEqualTo(1);
+    }
+
+    @Test
+    void filterBlockStraddlingTheWindowEndIsCopiedOutInTwoParts() throws Exception {
+        // The only path that exercises UnpWriteBuf's wrap split: a block whose start sits just
+        // below the window end and whose length carries it past, so BlockEnd wraps below
+        // BlockStart. Without WrapUp on BlockEnd the copy-out runs off the end of the window.
+        final int winSize = 0x40000;
+        final int blockLength = 0x20;
+        final int leading = winSize - 0x10;  // announce with 0x10 bytes of window left
+        final int trailing = 0x30;
+
+        final BitWriter content = new BitWriter();
+        writeCraftedTables(content);
+        for (int i = 0; i < leading; i++) {
+            content.writeBits(0, 1);
+        }
+        content.writeBits(0b10, 2);          // filter announcement at unpPtr = winSize - 0x10
+        writeFilterVint(content, 0);         // blockStart, relative: right here
+        writeFilterVint(content, blockLength);
+        content.writeBits(Compress.FILTER_E8, 3);
+        for (int i = 0; i < trailing; i++) {
+            content.writeBits(0, 1);
+        }
+
+        final int total = leading + trailing;
+        final ByteArrayOutputStream out = new ByteArrayOutputStream();
+        final Unpack5 u = new Unpack5(collectingIO(frame(content), out), false);
+        u.init(winSize, false, ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
+        u.setDestSize(total);
+        u.unpack5(false);
+
+        final byte[] expected = new byte[total];
+        java.util.Arrays.fill(expected, (byte) 0x41);
+        assertThat(out.toByteArray())
+            .as("a block wrapping the window end must reassemble byte-identically").isEqualTo(expected);
+        assertThat(u.filtersApplied()).as("the wrapping block really was applied").isEqualTo(1);
+    }
+
     // ---- flood policy: > MAX_UNPACK_FILTERS is flush-then-drop, never a throw ------------------
 
     @Test
@@ -348,6 +426,24 @@ class Unpack5FilterTest {
         int bitCount() {
             return out.size() * 8 + nBits;
         }
+    }
+
+    /**
+     * Wrap crafted block content in a {@code TablePresent | LastBlockInFile} block header whose
+     * size and trailing bit count land exactly on the last content bit, the way a real archive's
+     * final block does (same shape as the flood test's inline framing).
+     */
+    private static byte[] frame(final BitWriter content) {
+        final int contentBits = content.bitCount();
+        final int blockSizeBytes = (contentBits + 7) / 8;
+        final int lastByteBits = contentBits - (blockSizeBytes - 1) * 8;
+        final BitWriter bw = new BitWriter();
+        writeBlockHeader(bw, 0x80 | 0x40, lastByteBits, blockSizeBytes);
+        for (final byte b : content.toByteArray()) {
+            bw.writeBits(b & 0xff, 8);
+        }
+        bw.pad(64); // slack for the 30-byte read-border margin getbits relies on
+        return bw.toByteArray();
     }
 
     private static void writeBlockHeader(final BitWriter bw, final int flags, final int bitSize, final int blockSize) {

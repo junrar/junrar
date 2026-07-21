@@ -32,29 +32,25 @@ public class Unpack5Window {
      */
     public static final int MIN_ALLOC = 0x40000;
 
-    private final int size;
-    private final int mask;
+    private final long size;
     private byte[] buffer;
 
     /**
-     * @param size the addressing domain and growth cap in bytes; must be a power of two that is
-     *             {@code >= }{@link #MIN_ALLOC} and fits a Java array (the caller enforces the
-     *             engine capability ceiling before constructing the window).
+     * @param size the addressing domain and growth cap in bytes; at least {@link #MIN_ALLOC} and
+     *             within a Java array (the caller enforces the engine capability ceiling before
+     *             constructing the window). <b>Not necessarily a power of two</b> — a RAR7
+     *             dictionary carries a 5-bit fraction ({@code winSize += winSize/32*frac}), so
+     *             positions wrap through {@code WrapUp}/{@code WrapDown} arithmetic in
+     *             {@link Unpack5}, never through a {@code size - 1} mask.
      */
-    public Unpack5Window(final int size) {
+    public Unpack5Window(final long size) {
         this.size = size;
-        this.mask = size - 1;
-        this.buffer = new byte[Math.min(size, MIN_ALLOC)];
+        this.buffer = new byte[(int) Math.min(size, MIN_ALLOC)];
     }
 
     /** @return the declared window size (addressing domain / growth cap), in bytes. */
-    public int size() {
+    public long size() {
         return size;
-    }
-
-    /** @return the mask {@code size - 1} for wrapping window positions. */
-    public int mask() {
-        return mask;
     }
 
     /** @return the current backing-array length, i.e. the bytes actually allocated so far. */
@@ -66,40 +62,62 @@ public class Unpack5Window {
      * Store a byte at an in-window position, growing the backing array (doubling, capped at
      * {@link #size}) if the position is beyond the current capacity.
      *
-     * @param pos an already-masked window position in {@code [0, size)}
+     * @param pos an already-wrapped window position in {@code [0, size)}
      */
-    public void put(final int pos, final byte value) {
+    public void put(final long pos, final byte value) {
         if (pos >= buffer.length) {
             grow(pos);
         }
-        buffer[pos] = value;
+        buffer[(int) pos] = value;
     }
 
     /**
-     * @param pos an already-written, already-masked window position
+     * @param pos an already-written, already-wrapped window position
      * @return the byte previously stored at {@code pos}
      */
-    public byte get(final int pos) {
-        return buffer[pos];
+    public byte get(final long pos) {
+        return buffer[(int) pos];
     }
 
     /**
-     * The backing array, for the write-out path ({@code UnpWriteData}) to hand a contiguous
-     * range straight to {@link ComprDataIO#unpWrite}. Only positions that were {@link #put} are
-     * valid to read; callers never write through it.
+     * The number of bytes readable contiguously from one backing array starting at {@code pos},
+     * capped at {@code required} (unrar {@code FragmentedWindow::GetBlockSize}). The write-out
+     * and filter-copy paths loop on this instead of assuming the whole window is one array.
+     *
+     * @param pos      an already-written, already-wrapped window position
+     * @param required the number of bytes still wanted; never crosses the window end
      */
-    byte[] buffer() {
+    public int run(final long pos, final long required) {
+        return (int) Math.min(required, size - pos);
+    }
+
+    /** @return the backing array holding {@code pos} — pair with {@link #offsetAt}. */
+    public byte[] bufferAt(final long pos) {
         return buffer;
     }
 
-    private void grow(final int pos) {
+    /** @return the index of {@code pos} within {@link #bufferAt(long)}. */
+    public int offsetAt(final long pos) {
+        return (int) pos;
+    }
+
+    /**
+     * Copy {@code len} written window bytes starting at {@code pos} into {@code dst}. The range
+     * must not cross the window end — callers split a wrap themselves, the way unrar's filter
+     * sweep does.
+     */
+    public void copyOut(final long pos, final byte[] dst, final int dstOff, final int len) {
+        System.arraycopy(buffer, (int) pos, dst, dstOff, len);
+    }
+
+    private void grow(final long pos) {
         int cap = buffer.length;
         // Double until pos fits, but never past the cap (and never overflow int).
         while (cap < size && cap <= pos) {
             cap <<= 1;
         }
         if (cap > size) {
-            cap = size;
+            cap = (int) size;
         }
         buffer = Arrays.copyOf(buffer, cap);
     }
