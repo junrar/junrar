@@ -167,6 +167,69 @@ class Rar5MainHeaderTest {
     }
 
     @Test
+    void metadataUnixSecondsCtime() throws Exception {
+        // CTIME | UNIXTIME with UNIX_NS *clear* selects the 4-byte seconds field -- the third
+        // and last of the three ctime encodings (the other two are pinned by
+        // metadataNameAndWindowsCtime and metadataUnixNsCtime). Reading it as anything else
+        // yields a wildly different instant, which is what the assertion below catches.
+        final byte[] fixed = vint(0);
+        final long metaFlags = 0x02 | 0x04; // CTIME | UNIXTIME, no UNIX_NS
+        final ByteArrayOutputStream payload = new ByteArrayOutputStream();
+        writeLen(payload, vint(metaFlags));
+        final long secondsSinceEpoch = 1_700_000_000L;
+        for (int i = 0; i < 4; i++) {
+            payload.write((int) (secondsSinceEpoch >>> (8 * i)) & 0xff);
+        }
+        final byte[] extra = extraRecord(Rar5MainExtraType.METADATA.getValue(), payload.toByteArray());
+
+        final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra));
+        assertThat(h.getMetadataTime()).isEqualTo(FileTime.from(Instant.ofEpochSecond(secondsSinceEpoch)));
+    }
+
+    @Test
+    void metadataRecordWithEmptyPayloadYieldsNoMetadata() throws Exception {
+        // A METADATA record whose declared size covers the FieldType vint and nothing else.
+        // parseMetadata must return before reading its flags vint rather than running off the
+        // end of the record into whatever follows.
+        final byte[] fixed = vint(0);
+        final byte[] extra = extraRecord(Rar5MainExtraType.METADATA.getValue(), new byte[0]);
+
+        final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra));
+        assertThat(h.getMetadataName()).isNull();
+        assertThat(h.getMetadataTime()).isNull();
+    }
+
+    @Test
+    void mainExtraRecordDeclaringMoreBytesThanTheHeaderHoldsIsNotDispatched() throws Exception {
+        // The loop-level size guard is what stops an over-long FieldSize from becoming an
+        // out-of-bounds read. Every bound inside parseMetadata is relative to the record end
+        // computed from FieldSize, so a record that declares far more bytes than the header
+        // holds hands parseMetadata an end past the buffer -- and the NAME branch then reads
+        // `nameSize` bytes that are not there. Declaring a 200-byte name inside a record that
+        // claims 0x7fff bytes makes that read run off a header only a few dozen bytes long.
+        //
+        // Guarded, the record is never dispatched and the header parses clean. Unguarded, the
+        // name read escapes the buffer as an IndexOutOfBoundsException -- not a
+        // CorruptHeaderException, so it would cross the public API untyped.
+        final ByteArrayOutputStream payload = new ByteArrayOutputStream();
+        writeLen(payload, vint(0x01)); // NAME
+        writeLen(payload, vint(200)); // a name far longer than this header
+        payload.write('A');
+
+        final byte[] typeV = vint(Rar5MainExtraType.METADATA.getValue());
+        final ByteArrayOutputStream extra = new ByteArrayOutputStream();
+        writeLen(extra, vint(0x7fff)); // FieldSize far past the end of this header
+        writeLen(extra, typeV);
+        writeLen(extra, payload.toByteArray());
+
+        final byte[] fixed = vint(0);
+        final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra.toByteArray()));
+
+        assertThat(h.getMetadataName()).isNull();
+        assertThat(h.getMetadataTime()).isNull();
+    }
+
+    @Test
     void locatorRecordsPresenceOnlyOffsetsSkipped() throws Exception {
         final byte[] fixed = vint(0);
         final byte[] extra = extraRecord(Rar5MainExtraType.LOCATOR.getValue(), vint(0));
@@ -279,6 +342,43 @@ class Rar5MainHeaderTest {
         fixed.write(25);
         assertThat(catchThrowable(() -> parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null))))
             .isExactlyInstanceOf(CorruptHeaderException.class);
+    }
+
+    @Test
+    void cryptHeaderEndingBeforeLg2CountRejected() {
+        // CryptVersion + EncFlags and nothing else. Without the length guard the very next
+        // statement indexes header[pos] past the end and escapes as a raw
+        // ArrayIndexOutOfBoundsException instead of the typed corruption error every other
+        // malformed-header path produces.
+        final ByteArrayOutputStream fixed = new ByteArrayOutputStream();
+        writeLen(fixed, vint(0)); // CryptVersion
+        writeLen(fixed, vint(0)); // EncFlags, no PSWCHECK
+
+        final Throwable thrown =
+            catchThrowable(() -> parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null)));
+        assertThat(thrown)
+            .isExactlyInstanceOf(CorruptHeaderException.class)
+            .hasMessageContaining("Truncated RAR5 CRYPT header");
+    }
+
+    @Test
+    void cryptHeaderEndingMidSaltRejected() {
+        // Lg2Count present and valid, but only 8 of the 16 salt bytes. This one cannot be
+        // caught by the guard above: the failure mode without the salt-length check is silent
+        // rather than loud, because Arrays.copyOfRange zero-pads a short range instead of
+        // throwing -- the header would parse "successfully" with a half-fabricated salt, and
+        // every key derived from it would be wrong.
+        final ByteArrayOutputStream fixed = new ByteArrayOutputStream();
+        writeLen(fixed, vint(0)); // CryptVersion
+        writeLen(fixed, vint(0)); // EncFlags
+        fixed.write(15); // Lg2Count, within range
+        fixed.write(new byte[8], 0, 8); // half a salt
+
+        final Throwable thrown =
+            catchThrowable(() -> parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null)));
+        assertThat(thrown)
+            .isExactlyInstanceOf(CorruptHeaderException.class)
+            .hasMessageContaining("Truncated RAR5 CRYPT header");
     }
 
     // ---- ENDARC -----------------------------------------------------------------
