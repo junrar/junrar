@@ -54,6 +54,17 @@ java {
 compileJava {
     options.release = 8
 }
+compileTestJava {
+    // Pinned so TestCodingRulesTest's ArchUnit import of `src/test` classes is never at the
+    // mercy of whichever JDK happens to run the build. ArchUnit 1.4.1 bundles ASM with no
+    // support for class-file major version 70 (JDK 26): on a JDK 26 toolchain, unpinned
+    // compileTestJava emits major-70 test classes, ArchUnit silently imports zero of them, and
+    // no_junit_assertions dies on ArchRule.java:201 ("failed to check any classes"). release=21
+    // (not 8, like compileJava) because junit-pioneer/mockito test deps require JVM 11+ to
+    // resolve, and 21 is what CI already targets -- comfortably under ArchUnit's ASM ceiling
+    // (max supported: V25 / JDK 25). See #36.
+    options.release = 21
+}
 
 jreleaser {
     project {
