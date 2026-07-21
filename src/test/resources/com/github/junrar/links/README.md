@@ -59,6 +59,20 @@ hostile is committed. Every row is rejected with a typed `UnsafeLinkException`:
   directory-symlink and re-creates a real directory, then writes the file inside the
   destination. junrar instead refuses with `UnsafeLinkException`, matching the M3.10 acceptance
   row ("rejected with a typed exception") and the divergences-no-go guidance.
+- **Hardlink/file-copy traversal target (`h-hard.txt` → `../../pt.x`).** unrar's `ConvertPath`
+  strips the leading `../` components and resolves the remainder against the destination root
+  (`pt.x`), linking to it if already extracted or skipping with a warning otherwise — it never
+  escapes the destination. junrar instead refuses the escaping target outright with
+  `UnsafeLinkException` (`resolveTargetWithinDestination`), never attempting a destination-relative
+  reinterpretation of the path.
+
+**Issue #40 decision (2026-07-21): all three CLOSED as working-as-intended — KEEP the reject,
+do not adopt unrar's strip-and-continue.** Ecosystem cross-check (Apache Commons Compress
+`ZipArchiveEntry.setName`, zip4j `getFileNameWithSystemFileSeparators` + its own zip-slip guard
+`assertCanonicalPathsAreSame`, both executed/read from local jars and upstream source — see
+`docs/porting/reports/divergences-no-go.md` row D3 for the full citations) confirms fail-closed
+reject over silent sanitize-and-continue is the mature-Java-library norm, not a junrar
+implementation accident. No code changed by this decision.
 
 ## Regenerate
 
