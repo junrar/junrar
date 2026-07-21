@@ -1,3 +1,12 @@
+buildscript {
+    configurations.classpath {
+        resolutionStrategy {
+            // Forced to match JReleaser 1.25.0 expectations and prevent JGit API linkage errors
+            force 'org.eclipse.jgit:org.eclipse.jgit:5.13.5.202508271544-r'
+        }
+    }
+}
+
 plugins {
     id 'java-library'
     id 'maven-publish'
