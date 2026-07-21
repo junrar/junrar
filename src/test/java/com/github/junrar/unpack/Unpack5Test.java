@@ -141,6 +141,24 @@ class Unpack5Test {
     }
 
     @Test
+    void solidStreamGrowingMidSetIsRejected() throws Exception {
+        // The other half of the solid rule named in the section header above. Archiving
+        // guarantees a solid set's window never grows partway through, so a continuation
+        // declaring a larger dict is malformed. Reallocating instead would silently discard the
+        // window the rest of the set back-references, turning every later match into garbage
+        // rather than a reported error.
+        final Unpack5 u = new Unpack5(false);
+        u.init(1 << 20, false, DEFAULT);
+        final Unpack5Window first = u.window();
+
+        final Throwable thrown = catchThrowable(() -> u.init(4 << 20, true, DEFAULT));
+
+        assertThat(thrown).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
+        assertThat(u.window()).isSameAs(first);
+        assertThat(u.window().size()).isEqualTo(1 << 20);
+    }
+
+    @Test
     void nonSolidSmallerReusesLargerWindow() throws Exception {
         // unrar: if (WinSize<=MaxWinSize) return; -- the larger buffer is kept, not reallocated.
         final Unpack5 u = new Unpack5(false);
