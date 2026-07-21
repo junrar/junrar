@@ -9,16 +9,20 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Pins the T6 fix round (docs/porting/MIGRATION_MANUAL.md SS6 T6,
- * FileHeader.java:158,169): a RAR3 FILE_HEAD with the LHD_UNICODE flag
- * CLEAR (the genuinely plain-ANSI path, {@code 2e71167:arcread.cpp:186-205}'s
- * non-LHD_UNICODE branch) must decode its name bytes byte-transparently
- * (unrar's {@code strncpyz} does NO charset conversion on this path -- raw
- * bytes straight into {@code FileHeader.FileName}), not as UTF-8. UTF-8
- * decoding a legacy-codepage byte that is not also valid UTF-8 silently and
- * irreversibly replaces it with U+FFFD -- exactly what this test's fixture
- * byte (0xE9, a lone non-UTF-8-valid byte) would suffer under the pre-fix
- * {@code StandardCharsets.UTF_8} decode.
+ * Pins the invalid-input half of the narrow-name decode rule
+ * (docs/porting/MIGRATION_MANUAL.md SS6 T6, no-go D4,
+ * {@link FileHeader}{@code .decodeNarrowName}): a RAR3 FILE_HEAD with the
+ * LHD_UNICODE flag CLEAR whose name bytes are NOT valid UTF-8 must fall back to
+ * a byte-transparent decode. UTF-8 decoding a legacy-codepage byte that is not
+ * also valid UTF-8 silently and irreversibly replaces it with U+FFFD -- exactly
+ * what this test's fixture byte (0xE9, a lone non-UTF-8-valid byte) would suffer
+ * under a plain {@code new String(..., StandardCharsets.UTF_8)}.
+ * <p>
+ * junrar deliberately diverges from unrar here, and only here: both of unrar's
+ * own fallbacks lose information (macOS truncates at the first bad byte -- real
+ * {@code unrar 7.23 lb} on this very fixture prints {@code caf}; glibc remaps
+ * bad bytes into the U+E000 private-use area). The valid-UTF-8 half of the same
+ * rule is parity, pinned by {@link FileHeaderNarrowNameUtf8Test}.
  * <p>
  * Fixture provenance: unicode/generate_ansi_name_fixture.py.
  */

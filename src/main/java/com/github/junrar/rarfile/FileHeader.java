@@ -29,6 +29,8 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.charset.CharacterCodingException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
@@ -211,26 +213,22 @@ public class FileHeader extends BlockHeader {
                     && fileNameBytes[length] != 0) {
                     length++;
                 }
-                // unrar 3.7.3 arcread.cpp:186-205: the ANSI-fallback bytes
-                // (before the NUL, or the whole field when there is no
-                // split) get NO charset conversion (raw strncpyz) -- decode
-                // byte-transparently, not as UTF-8.
-                fileName = new String(fileNameBytes, 0, length, StandardCharsets.ISO_8859_1);
+                // junrar keeps both halves of a split name where unrar keeps one, and falls
+                // back to this one when the RLE half decodes empty (no-go C4) -- which is
+                // exactly unrar's hd->FileName.empty() case, so it gets the same decode.
+                fileName = decodeNarrowName(fileNameBytes, 0, length);
                 if (length != nameSize) {
                     int ansiNameLen = length;
                     length++;
                     fileNameW = FileNameDecoder.decode(fileNameBytes, ansiNameLen, length);
                 } else {
-                    // unrar 3.7.3 arcread.cpp:189-194: no NUL split means the
-                    // whole field is the unicode name, UTF-8 encoded
-                    // (UtfToWide), not the RLE FileNameDecoder blob.
-                    fileNameW = new String(fileNameBytes, 0, nameSize, StandardCharsets.UTF_8);
+                    // No NUL split, so unrar never reaches EncodeFileName::Decode
+                    // and hd->FileName stays empty -- the whole field goes through
+                    // the same narrow decode as a plain-ANSI name.
+                    fileNameW = decodeNarrowName(fileNameBytes, 0, nameSize);
                 }
             } else {
-                // unrar 3.7.3 arcread.cpp:186-205: the non-LHD_UNICODE path
-                // does no charset conversion either (raw strncpyz) -- decode
-                // byte-transparently, not as UTF-8.
-                fileName = new String(fileNameBytes, StandardCharsets.ISO_8859_1);
+                fileName = decodeNarrowName(fileNameBytes, 0, nameSize);
                 fileNameW = "";
             }
 
@@ -391,6 +389,52 @@ public class FileHeader extends BlockHeader {
         this.rar5Container = true;
 
         this.parsedLength = 0;
+    }
+
+    /**
+     * Decodes a RAR3 narrow (non-RLE-encoded) name field, the port of unrar 7.2.7's
+     * {@code ArcCharToWide(FileName.data(),hd->FileName,ACTW_OEM)}
+     * ({@code d861246:arcread.cpp:359-360}). On Unix that is a strict multibyte decode in the
+     * process locale -- UTF-8 on any modern system -- so the rule is a validity scan: valid
+     * UTF-8 is decoded as UTF-8, anything else is not. junrar keeps a byte-transparent
+     * ISO-8859-1 fallback rather than porting unrar's lossy, platform-split failure branch.
+     * Rationale, evidence and the exact call sites are recorded as no-go D4 in
+     * docs/porting/reports/divergences-no-go.md (issue #44).
+     * <p>
+     * Two knowing deltas against the C++, both verified rather than assumed:
+     * <ul>
+     * <li>unrar hands {@code ArcCharToWide} a C string and so stops at the first NUL; this
+     * scans the whole field. Any embedded NUL survives both decodes identically as U+0000,
+     * and {@link #isFilenameValid} rejects every such name ({@code File.getCanonicalPath}
+     * throws {@code Invalid file path}), so the header is refused either way and the two
+     * cannot be told apart from outside.</li>
+     * <li>Java's UTF-8 decoder is stricter than macOS {@code UtfToWide}
+     * ({@code unicode.cpp:416-488}, which checks continuation bits and the 0x10FFFF ceiling
+     * only): it also rejects overlong forms, surrogate code points and 5/6-byte sequences.
+     * That matches glibc {@code mbsrtowcs}, and the extra rejections fall through to the
+     * lossless fallback, so being stricter cannot destroy a name.</li>
+     * </ul>
+     */
+    private static String decodeNarrowName(byte[] bytes, int offset, int length) {
+        // Ports the all-low-ASCII fast path of strfn.cpp:42-57, there "for archives with
+        // millions of small files" -- here it also skips the per-name CharsetDecoder.
+        int i = offset;
+        final int end = offset + length;
+        while (i < end && bytes[i] >= 0) {
+            i++;
+        }
+        if (i == end) {
+            return new String(bytes, offset, length, StandardCharsets.US_ASCII);
+        }
+        try {
+            // newDecoder() reports malformed input rather than replacing it (unlike
+            // new String(..., UTF_8)), which is what makes this a validity scan.
+            return StandardCharsets.UTF_8.newDecoder()
+                .decode(ByteBuffer.wrap(bytes, offset, length))
+                .toString();
+        } catch (CharacterCodingException e) {
+            return new String(bytes, offset, length, StandardCharsets.ISO_8859_1);
+        }
     }
 
     private static boolean isFilenameValid(String filename) {
