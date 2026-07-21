@@ -126,7 +126,7 @@ public class LocalFolderExtractorTest {
      *
      * <p>The fixture's headers are additionally corrupt — {@code unrar 7.23} reports "the file
      * header is corrupt" and {@code Total errors: 5} — which upstream ignores, since it does not
-     * verify RAR3 header CRCs. This branch does (P0.7 / issue #12, {@code abfe34f2}), so the entry
+     * verify RAR3 header CRCs. This branch does (P0.7 / issue #12, {@code a0870d38}), so the entry
      * is also refused with {@link CorruptHeaderException} where upstream extracts it.
      *
      * <p>That refusal is <b>not</b> what stops the escape, and it must not be mistaken for it:

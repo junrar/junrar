@@ -218,7 +218,7 @@ public class AbnormalFilesTest {
 
         // Upstream asserts CrcErrorException here, because its interpreter breaks out of the
         // filter part-way and produces bytes that fail the checksum. This branch has no
-        // interpreter to break out of: M2.2 (16d03472) deleted it, so `setIP`, `ExecuteCode`,
+        // interpreter to break out of: M2.2 (e2287ab7) deleted it, so `setIP`, `ExecuteCode`,
         // `getOperand` and `decodeArg` do not exist and the runaway loop is unreachable by
         // construction rather than by a guard. An unrecognized VM filter is a no-op, matching
         // unrar >= 5.5.1, which dropped the generic interpreter the same way -- and
