@@ -677,17 +677,29 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             }
 
                             final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
-                            // unrar CRCProcessedOnly (d861246:arcread.cpp:268,430-431):
-                            // an old-style embedded comment (LHD_COMMENT) on a genuine
-                            // FILE header leaves unparsed trailing bytes past
-                            // getParsedLength() -- cover only the processed prefix then.
-                            // NEWSUB_HEAD always consumes its whole buffer as subData,
-                            // so the distinction is moot there; always use the full
-                            // buffer.
-                            final int fileHeaderCoverage = (fh.isFileHeader() && fh.hasComment())
-                                ? BaseBlock.BaseBlockSize + BlockHeader.blockHeaderSize + fh.getParsedLength()
-                                : -1;
-                            verifyHeaderCrc(fh, fileLength, fileHeaderCoverage, baseBlockBuffer, blockHeaderBuffer, fileHeaderBuffer);
+                            if (fh.isFileHeader() && fh.hasComment()) {
+                                // unrar runs the FILE/SERVICE header through TWO CRC checks
+                                // (issue #38 item 2, P0.7 Finding A). First, the inline
+                                // CRCProcessedOnly check (d861246:arcread.cpp:268,430-445):
+                                // an old-style embedded comment (LHD_COMMENT) leaves unparsed
+                                // trailing bytes past getParsedLength() -- cover only the
+                                // processed prefix here.
+                                final int narrowCoverage =
+                                    BaseBlock.BaseBlockSize + BlockHeader.blockHeaderSize + fh.getParsedLength();
+                                verifyHeaderCrc(fh, fileLength, narrowCoverage, baseBlockBuffer, blockHeaderBuffer, fileHeaderBuffer);
+                                // Second, the generic check unconditionally re-run after the
+                                // switch (:514-522), which does NOT exempt FILE/SERVICE and
+                                // always covers the full header buffer -- this is what
+                                // actually catches corruption in the comment tail the narrow
+                                // check above skips.
+                                verifyHeaderCrc(fh, fileLength, baseBlockBuffer, blockHeaderBuffer, fileHeaderBuffer);
+                            } else {
+                                // No comment (the corpus-observed case, and NEWSUB_HEAD --
+                                // which always consumes its whole buffer as subData): the two
+                                // upstream checks degenerate to the same full-buffer
+                                // computation, so one call covers both.
+                                verifyHeaderCrc(fh, fileLength, baseBlockBuffer, blockHeaderBuffer, fileHeaderBuffer);
+                            }
                             this.headers.add(fh);
                             newpos = fh.getPositionInFile() + fh.getHeaderSize(isEncrypted()) + fh.getFullPackSize();
                             this.channel.setPosition(newpos);

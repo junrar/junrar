@@ -1,5 +1,6 @@
 package com.github.junrar;
 
+import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.rarfile.AVHeader;
 import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.FileHeader;
@@ -7,10 +8,12 @@ import com.github.junrar.rarfile.SignHeader;
 import com.github.junrar.rarfile.UnixOwnersHeader;
 import org.junit.jupiter.api.Test;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 /**
  * RAR3 header-CRC verification (P0.7, issue #12; docs/porting/PARITY_PLAN.md SS3, chunk
@@ -35,6 +38,38 @@ public class HeaderCrcVerificationTest {
             FileHeader fileHeader = fileHeaders.get(0);
             assertThat(fileHeader.getFileName()).isEqualTo("payload.txt");
             assertThat(fileHeader.isBrokenHeader()).isTrue();
+        }
+    }
+
+    @Test
+    public void givenLhdCommentFileHeaderWithNarrowCrcMatchButWideCrcMismatch_whenArchiveOpened_thenHeaderIsBrokenAndExtractionIsRefused() throws Exception {
+        // Issue #38 item 2 (P0.7 Finding A): unrar runs TWO CRC checks on FILE/SERVICE
+        // headers -- the CRCProcessedOnly-aware inline check (d861246:arcread.cpp
+        // :430-445), which for an old-style LHD_COMMENT header covers only the parsed
+        // fields (excludes the trailing embedded comment blob), AND an unconditional
+        // generic check after the switch (:514-522) that always covers the FULL header
+        // buffer and does NOT exempt FILE/SERVICE. This fixture is bad-header-crc.rar's
+        // pristine FILE header (LHD_COMMENT flag set, a 40-byte comment blob appended,
+        // HeadSize grown to match) with its stored headCRC set to the NARROW-coverage
+        // value -- i.e. exactly what the first check alone accepts -- while the
+        // full-buffer CRC (computed over the same bytes plus the appended blob)
+        // deliberately differs. A single-check implementation calls this header clean;
+        // the dual check must catch it.
+        File file = new File(getClass().getResource("abnormal/lhd-comment-dual-crc.rar").toURI());
+
+        try (Archive archive = new Archive(file)) {
+            List<FileHeader> fileHeaders = archive.getFileHeaders();
+            assertThat(fileHeaders).hasSize(1);
+
+            FileHeader fileHeader = fileHeaders.get(0);
+            assertThat(fileHeader.hasComment()).isTrue();
+            assertThat(fileHeader.isBrokenHeader())
+                .as("the narrow (processed-only) CRC matches; only the generic full-buffer "
+                    + "check (not exempt for FILE/SERVICE) catches the corrupted comment tail")
+                .isTrue();
+
+            assertThatThrownBy(() -> archive.extractFile(fileHeader, new ByteArrayOutputStream()))
+                .isInstanceOf(CorruptHeaderException.class);
         }
     }
 

@@ -99,6 +99,37 @@ implementation, not corrupt-archive tests.
 Run: python3 generate_header_crc_fixtures.py
 Regenerates all five fixtures next to this script (requires the rar 6.24 binary above
 and `openssl` on PATH for the first two; the exemption fixtures need neither).
+
+=====================================================================
+abnormal/lhd-comment-dual-crc.rar (issue #38 item 2, P0.7 Finding A)
+=====================================================================
+unrar runs TWO CRC checks on FILE/SERVICE headers: the CRCProcessedOnly-aware inline
+check (d861246:arcread.cpp:430-445), which for an old-style LHD_COMMENT header covers
+only the parsed fields (the trailing embedded comment blob is unread), and an
+unconditional generic check re-run after the switch (:514-522) that always covers the
+FULL header buffer and does not exempt FILE/SERVICE. junrar's P0.7 chunk implemented
+only the first -- for hasComment()==false (every corpus-observed archive) the two
+computations degenerate to the same value, so the gap is corpus-silent; for a genuine
+LHD_COMMENT header the single check is measurably more lenient than unrar's dual check.
+
+Base: bad-header-crc.rar's own (pristine, 1-bit-flip undone) FILE header -- same
+class-1 "hand-assembled/byte-patched, corrupt however it was made" rationale as that
+fixture and the three exemption fixtures below (no writer tool produces LHD_COMMENT
+archives anymore; this deliberately targets the dual-check code path, not a claim about
+a historical writer's exact CRC convention). Patch: set the LHD_COMMENT flag bit
+(0x0008), append a 40-byte comment-blob tail after the original header body, grow
+HeadSize to match, and set the stored headCRC to the NARROW-coverage value (type+flags+
+hsize+original body, i.e. exactly what today's single check accepts) -- the full-buffer
+CRC (same bytes plus the appended tail) differs by construction.
+
+RED (pre-fix, single narrow-only check): archive opens; FileHeader.hasComment() is
+true; FileHeader.isBrokenHeader() is FALSE (the narrow check matches); extraction
+succeeds. GREEN (post-fix, dual check): isBrokenHeader() is true (the added full-buffer
+check catches the mismatch the narrow check misses); extraction throws
+CorruptHeaderException (junrar's existing conscious refuse-on-broken-header policy).
+
+Reproducible without the rar 6.24 binary -- derives everything from the already-
+committed bad-header-crc.rar.
 """
 import hashlib
 import pathlib
@@ -329,17 +360,60 @@ def make_old_uo_header_fixture():
           f"0x{crc16(sub[2:]):04x})")
 
 
+def make_lhd_comment_dual_crc():
+    """Issue #38 item 2 (P0.7 Finding A): derives from the already-committed
+    bad-header-crc.rar, so it needs neither the rar 6.24 binary nor openssl."""
+    out = DIR / "lhd-comment-dual-crc.rar"
+    base = DIR / "bad-header-crc.rar"
+    data = bytearray(base.read_bytes())
+
+    headers = parse_headers(bytes(data))
+    file_hdr = next(h for h in headers if h[2] == 0x74)
+    pos, _stored_crc, htype, flags, hsize = file_hdr
+    assert htype == 0x74
+
+    orig_body = bytes(data[pos + 7: pos + hsize])
+    assert len(orig_body) == hsize - 7
+
+    LHD_COMMENT = 0x0008
+    new_flags = flags | LHD_COMMENT
+    comment_blob = b"OLD-STYLE-COMMENT-BLOB-PATCH-TEST-DATA-"  # 40 bytes, arbitrary
+    new_hsize = hsize + len(comment_blob)
+
+    # Narrow coverage (BaseBlockSize=7 + blockHeaderSize=4 + parsedLength(=hsize-11))
+    # equals the ORIGINAL hsize -- i.e. header[2:hsize_orig]: type(1)+flags(2)+hsize(2)+
+    # orig_body(hsize_orig-7).
+    narrow_input = bytes([0x74]) + le16(new_flags) + le16(new_hsize) + orig_body
+    full_input = narrow_input + comment_blob
+
+    narrow_crc = crc16(narrow_input)
+    full_crc = crc16(full_input)
+    assert narrow_crc != full_crc, "comment blob must change the full-buffer CRC"
+
+    new_prefix = le16(narrow_crc) + narrow_input[:5]  # crc(2) + type(1)+flags(2)+hsize(2)
+    new_header = new_prefix + orig_body + comment_blob
+    assert len(new_header) == new_hsize
+
+    new_data = bytes(data[:pos]) + new_header + bytes(data[pos + hsize:])
+    out.write_bytes(new_data)
+    print(f"wrote {out} ({len(new_data)} bytes), FILE header @0x{pos:x} narrow crc "
+          f"0x{narrow_crc:04x} (stored, matches today's single check) vs full crc "
+          f"0x{full_crc:04x} (mismatches -- the check the dual-CRC fix adds)")
+
+
 def main():
     if not RAR624.exists():
         print(f"rar 6.24 binary not found at {RAR624}; the two byte-patched-from-real-rar "
               f"fixtures (bad-header-crc.rar, bad-crc-enc-headers.rar) cannot be regenerated. "
-              f"The three hand-assembled exemption fixtures do not need it.", file=sys.stderr)
+              f"The three hand-assembled exemption fixtures and the dual-CRC fixture do not "
+              f"need it (the latter derives from the committed bad-header-crc.rar).", file=sys.stderr)
     else:
         make_bad_header_crc()
         make_bad_crc_enc_headers()
     make_sign_header_fixture()
     make_av_header_fixture()
     make_old_uo_header_fixture()
+    make_lhd_comment_dual_crc()
 
 
 if __name__ == "__main__":

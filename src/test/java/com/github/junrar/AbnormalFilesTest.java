@@ -115,7 +115,12 @@ public class AbnormalFilesTest {
             // junrar's one conscious, narrower-scoped divergence from unrar's own
             // "warn and let the data CRC decide" tolerance: it throws
             // CorruptHeaderException instead.
-            Arguments.of("abnormal/bad-header-crc.rar", CorruptHeaderException.class)
+            Arguments.of("abnormal/bad-header-crc.rar", CorruptHeaderException.class),
+            // Issue #38 item 2 (P0.7 Finding A): an LHD_COMMENT FILE header whose
+            // narrow (processed-only) CRC matches but whose full-buffer CRC (covering
+            // the appended comment tail) does not -- see HeaderCrcVerificationTest for
+            // the direct open-time isBrokenHeader()/hasComment() assertions.
+            Arguments.of("abnormal/lhd-comment-dual-crc.rar", CorruptHeaderException.class)
         );
     }
 
