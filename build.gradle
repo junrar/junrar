@@ -202,7 +202,9 @@ testing {
             targets {
                 all {
                     testTask.configure {
+                        dependsOn tasks.named('unpackCorpus')
                         systemProperty 'regressionTest.resourcesDir', sourceSets.named('regressionTest').get().resources.getSrcDirs().first()
+                        systemProperty 'regressionTest.bundledCorpus', layout.buildDirectory.dir('regressionCorpus').get().asFile.absolutePath
                         useJUnitPlatform {
                             includeTags 'check' // in order to run `gradle regressionTest`
                         }
@@ -234,6 +236,24 @@ testing {
 //        formatAnnotations()
 //    }
 //}
+
+// The regression corpus ships in the repository as payload-stripped archives, so
+// `./gradlew regressionTest` needs no download and no configuration. See CONTRIBUTING.md.
+tasks.register('unpackCorpus', Sync) {
+    description = 'Unpacks the bundled regression corpus into the build directory'
+    from zipTree(layout.projectDirectory.file('src/regressionTest/corpus/corpus.zip'))
+    into layout.buildDirectory.dir('regressionCorpus')
+}
+
+// Regenerates that bundled corpus from a payload-bearing one: every byte the parser never
+// reads is zeroed. Maintenance-only; see CONTRIBUTING.md for the verification procedure.
+tasks.register('stripCorpus', JavaExec) {
+    description = 'Zero every archive byte the parser never reads, from -PcorpusIn into -PcorpusOut'
+    group = 'verification'
+    classpath = sourceSets.regressionTest.runtimeClasspath
+    mainClass = 'com.github.junrar.regression.CorpusStripper'
+    args = [findProperty('corpusIn') ?: '', findProperty('corpusOut') ?: '']
+}
 
 jacocoTestReport {
     reports {

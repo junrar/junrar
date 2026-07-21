@@ -48,13 +48,17 @@ public class RegressionTest {
     private static final Path resourcesDir;
 
     static {
-        String corpusRoot = System.getenv("JUNRAR_REGRESSION_TEST_CORPUS_ROOT");
+        // Default to the payload-stripped corpus the build unpacks from
+        // src/regressionTest/corpus/corpus.zip, so `./gradlew regressionTest` needs no setup.
+        // The environment variables still win, for running against a payload-bearing corpus.
+        String bundled = System.getProperty("regressionTest.bundledCorpus");
+        String corpusRoot = envOrDefault("JUNRAR_REGRESSION_TEST_CORPUS_ROOT", bundled);
         if (corpusRoot == null) throw new IllegalArgumentException("Environment variable not set: JUNRAR_REGRESSION_TEST_CORPUS_ROOT");
         root = Paths.get(corpusRoot);
         if (!Files.isDirectory(root)) throw new IllegalArgumentException("Corpus root dir is not a directory: " + root);
         logger.info(() -> "Corpus root dir: " + root);
 
-        String corpusTestDir = System.getenv("JUNRAR_REGRESSION_TEST_CORPUS_DIR");
+        String corpusTestDir = envOrDefault("JUNRAR_REGRESSION_TEST_CORPUS_DIR", bundled);
         if (corpusTestDir == null) throw new IllegalArgumentException("Environment variable not set: JUNRAR_REGRESSION_TEST_CORPUS_DIR");
         testDir = Paths.get(corpusTestDir);
         logger.info(() -> "Corpus test dir: " + testDir);
@@ -63,6 +67,11 @@ public class RegressionTest {
         String resourcesDirProp = System.getProperty("regressionTest.resourcesDir");
         resourcesDir = Paths.get(resourcesDirProp, corpus);
         logger.info(() -> "Resources dir: " + resourcesDir);
+    }
+
+    private static String envOrDefault(String name, String fallback) {
+        String value = System.getenv(name);
+        return value != null ? value : fallback;
     }
 
     static List<Path> listTestFiles() throws IOException {

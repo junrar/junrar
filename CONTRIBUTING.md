@@ -36,23 +36,39 @@ Regenerate the oracle only after an intentional, reviewed change to the PPMd hea
 
 ## Regression testing
 ### Context
-Regression tests are run against a corpus of RAR files. The corpus is a ~7 GB zip file containing over 13,000 RAR files.
+Regression tests run against a corpus of 12,475 RAR files. Each one is opened, and the resulting `Archive` is compared to a serialized JSON reference stored in `src/regressionTest/resources/corpus`.
 
-Regression testing analyzes each RAR file in the corpus, and compares the resulting `Archive` to a serialized JSON version stored in the repo.
+The corpus ships in the repository, at `src/regressionTest/corpus/corpus.zip` (16 MB). The archives in it are **payload-stripped**: every byte the parser never reads has been overwritten with zeros, so the files carry no third-party content while driving the parser down exactly the same paths. Headers, block offsets, declared sizes, stored checksums and file lengths are all intact — only bytes that never influenced a parse are gone.
+
+Because a stripped archive's compressed data is zeros, this corpus can never back an extraction, decompression or computed-checksum test. It covers archive-open behaviour, which is what these tests assert.
+
+### Run locally
+
+```sh
+./gradlew regressionTest
+```
+
+There is nothing to download and nothing to configure; the build unpacks the bundled corpus into `build/regressionCorpus` first.
+
+To run against a payload-bearing corpus instead, set both environment variables and they take precedence:
+- `JUNRAR_REGRESSION_TEST_CORPUS_ROOT`: the root directory of the corpus (for example `~/corpus`)
+- `JUNRAR_REGRESSION_TEST_CORPUS_DIR`: the root directory, or any subdirectory to restrict the run to (for example `~/corpus/commoncrawl3`)
 
 ### Run on Github
 
 The regression tests will run after manual approval from maintainers.
 
-### Run locally
+### Regenerate the bundled corpus
 
-Here are the steps to run the regression tests locally:
-- download the [corpus](https://drive.google.com/file/d/1BvUT1jDkXon9-uqu2-QhBHjOthWcCL8G/view?usp=sharing)
-- unzip the corpus in any directory (for example `~/corpus`)
-- set 2 environment variables:
-  - `JUNRAR_REGRESSION_TEST_CORPUS_ROOT`: the root directory of the corpus (for example `~/corpus`)
-  - `JUNRAR_REGRESSION_TEST_CORPUS_DIR`: either the root directory of the corpus, or any of its subdirectories. If a subdirectory is set, regression tests will only run on that subdirectory (for example `~/corpus/commoncrawl3`)
-- run `./gradlew regressionTest`
+Needed when the parser starts reading regions of an archive it did not read before — the stripped corpus only preserves bytes that the parser read at the time it was generated, so a change that reaches further into a file could read zeros where the original had data. From a payload-bearing corpus:
+
+```sh
+./gradlew stripCorpus -PcorpusIn=~/corpus -PcorpusOut=/tmp/stripped
+```
+
+The task refuses to finish if stripping changed any archive's parse result. Verify the output before committing it, by running `regressionTest` against both the original and the stripped corpus and confirming the two runs agree — including when they fail. A useful check is to seed a deliberate defect in the parser and confirm both corpora produce the *same* set of failing archives; a corpus that only agrees when everything passes proves nothing.
+
+Then rezip it as `src/regressionTest/corpus/corpus.zip`.
 
 ### Update the reference data
 
