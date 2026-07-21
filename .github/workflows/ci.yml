@@ -21,6 +21,7 @@ on:
           - 'major'
           - 'minor'
           - 'patch'
+          - 'current'
       maven_publish:
         description: 'Push to Maven'
         default: true
