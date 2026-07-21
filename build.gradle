@@ -26,6 +26,12 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.27.7'
     testImplementation 'com.tngtech.archunit:archunit-junit5:1.4.1'
     testImplementation 'org.junit-pioneer:junit-pioneer:2.3.0'
+
+    constraints {
+        implementation('org.eclipse.jgit:org.eclipse.jgit:5.13.5.202508271544-r') {
+            because 'Required to keep JReleaser compatible with the active JGit classpath'
+        }
+    }
 }
 
 group = 'com.github.junrar'
