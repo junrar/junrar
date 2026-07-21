@@ -17,6 +17,7 @@
  */
 package com.github.junrar.crc;
 
+
 /**
  * DOCUMENT ME
  *
@@ -25,7 +26,8 @@ package com.github.junrar.crc;
  */
 public class RarCRC {
 
-    private RarCRC() {}
+    private RarCRC() {
+    }
 
     /**
      * Computes the legacy 16-bit checksum used by RAR 1.5 archives.
@@ -55,4 +57,5 @@ public class RarCRC {
         }
         return (startCrc);
     }
+
 }

@@ -32,6 +32,7 @@ public class VMPreparedProgram {
     private List<VMPreparedCommand> AltCmd;
     private int CmdCount;
 
+
     private Vector<Byte> GlobalData = new Vector<>();
     private Vector<Byte> StaticData = new Vector<>(); // static data contained in DB operators
     private int[] InitR = new int[7];
@@ -43,13 +44,19 @@ public class VMPreparedProgram {
         AltCmd = null;
     }
 
+
+
     public List<VMPreparedCommand> getAltCmd() {
         return AltCmd;
     }
 
+
+
     public void setAltCmd(List<VMPreparedCommand> altCmd) {
         AltCmd = altCmd;
     }
+
+
 
     public List<VMPreparedCommand> getCmd() {
         return Cmd;
@@ -67,13 +74,19 @@ public class VMPreparedProgram {
         CmdCount = cmdCount;
     }
 
+
+
     public int getFilteredDataOffset() {
         return FilteredDataOffset;
     }
 
+
+
     public void setFilteredDataOffset(int filteredDataOffset) {
         FilteredDataOffset = filteredDataOffset;
     }
+
+
 
     public int getFilteredDataSize() {
         return FilteredDataSize;
@@ -106,4 +119,6 @@ public class VMPreparedProgram {
     public void setStaticData(Vector<Byte> staticData) {
         StaticData = staticData;
     }
+
+
 }

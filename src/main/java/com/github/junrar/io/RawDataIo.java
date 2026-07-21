@@ -1,8 +1,8 @@
 package com.github.junrar.io;
 
+import javax.crypto.Cipher;
 import java.io.IOException;
 import java.util.LinkedList;
-import javax.crypto.Cipher;
 
 public class RawDataIo implements SeekableReadOnlyByteChannel {
     private Cipher cipher = null;
@@ -80,4 +80,5 @@ public class RawDataIo implements SeekableReadOnlyByteChannel {
     public void close() throws IOException {
         this.underlyingByteChannel.close();
     }
+
 }

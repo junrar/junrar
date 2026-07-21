@@ -30,4 +30,5 @@ public class LitDecode extends Decode {
     public LitDecode() {
         decodeNum = new int[Compress.NC];
     }
+
 }

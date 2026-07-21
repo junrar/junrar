@@ -30,4 +30,5 @@ public class RepDecode extends Decode {
     public RepDecode() {
         decodeNum = new int[Compress.RC];
     }
+
 }

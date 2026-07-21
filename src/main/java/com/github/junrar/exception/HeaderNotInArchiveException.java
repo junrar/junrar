@@ -5,5 +5,6 @@ public class HeaderNotInArchiveException extends RarException {
         super(cause);
     }
 
-    public HeaderNotInArchiveException() {}
+    public HeaderNotInArchiveException() {
+    }
 }

@@ -57,9 +57,7 @@ public class FileNameDecoder {
                     int length = getChar(name, encPos++);
                     if ((length & 0x80) != 0) {
                         int correction = getChar(name, encPos++);
-                        for (length = (length & 0x7f) + 2;
-                                length > 0 && decPos < name.length;
-                                length--, decPos++) {
+                        for (length = (length & 0x7f) + 2; length > 0 && decPos < name.length; length--, decPos++) {
                             low = (getChar(name, decPos) + correction) & 0xff;
                             buf.append((char) ((highByte << 8) + low));
                         }

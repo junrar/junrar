@@ -27,11 +27,12 @@ import com.github.junrar.exception.RarException;
 import com.github.junrar.io.RawDataIo;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.volume.Volume;
+
+import javax.crypto.Cipher;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.zip.CRC32;
-import javax.crypto.Cipher;
 
 /**
  * DOCUMENT ME
@@ -66,7 +67,9 @@ public class ComprDataIO {
     private long unpArcSize;
 
     private long curPackRead, curPackWrite, curUnpRead, curUnpWrite;
+
     private long processedArcSize, totalArcSize;
+
     private long packFileCRC, unpFileCRC, packedCRC;
     private CRC32 unpCrc32;
     private CRC32 packCrc32;
@@ -146,16 +149,14 @@ public class ComprDataIO {
             archive.bytesReadRead(retCode);
 
             if (unpPackedSize == 0 && subHead.isSplitAfter()) {
-                Volume nextVolume =
-                        archive.getVolumeManager().nextVolume(archive, archive.getVolume());
+                Volume nextVolume = archive.getVolumeManager().nextVolume(archive, archive.getVolume());
                 if (nextVolume == null) {
                     nextVolumeMissing = true;
                     return -1;
                 }
 
                 FileHeader hd = this.getSubHeader();
-                if (hd.getUnpVersion() >= 20
-                        && hd.getFileCRC() != 0xffffffff
+                if (hd.getUnpVersion() >= 20 && hd.getFileCRC() != 0xffffffff
                         && this.getPackedCRC() != ~hd.getFileCRC()) {
                     throw new CrcErrorException();
                 }
@@ -178,6 +179,7 @@ public class ComprDataIO {
             retCode = totalRead;
         }
         return retCode;
+
     }
 
     public void unpWrite(byte[] addr, int offset, int count) throws IOException {
@@ -215,6 +217,7 @@ public class ComprDataIO {
 
     public void setSubHeader(FileHeader hd) {
         subHead = hd;
+
     }
 
     public long getCurPackRead() {

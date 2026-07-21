@@ -17,9 +17,11 @@
  */
 package com.github.junrar.unpack.ppm;
 
+import java.io.IOException;
+
 import com.github.junrar.exception.RarException;
 import com.github.junrar.unpack.Unpack;
-import java.io.IOException;
+
 
 /**
  * DOCUMENT ME
@@ -75,13 +77,12 @@ public class RangeCoder {
     }
 
     public void ariDecNormalize() throws IOException, RarException {
-        //        while ((low ^ (low + range)) < TOP || range < BOT && ((range = -low & (BOT - 1))
-        // != 0 ? true : true))
-        //        {
-        //            code = ((code << 8) | unpackRead.getChar()&0xff)&uintMask;
-        //            range = (range << 8)&uintMask;
-        //            low = (low << 8)&uintMask;
-        //        }
+//        while ((low ^ (low + range)) < TOP || range < BOT && ((range = -low & (BOT - 1)) != 0 ? true : true))
+//        {
+//            code = ((code << 8) | unpackRead.getChar()&0xff)&uintMask;
+//            range = (range << 8)&uintMask;
+//            low = (low << 8)&uintMask;
+//        }
 
         // Rewrote for clarity
         boolean c2 = false;

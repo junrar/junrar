@@ -17,6 +17,7 @@
  */
 package com.github.junrar.unpack.ppm;
 
+
 /**
  * DOCUMENT ME
  *
@@ -24,8 +25,7 @@ package com.github.junrar.unpack.ppm;
  * @version $LastChangedRevision$
  */
 public enum BlockTypes {
-    BLOCK_LZ(0),
-    BLOCK_PPM(1);
+    BLOCK_LZ(0), BLOCK_PPM(1);
 
     private final int blockType;
 

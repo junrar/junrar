@@ -34,6 +34,7 @@ public class SignHeader extends BaseBlock {
     private short arcNameSize = 0;
     private short userNameSize = 0;
 
+
     public SignHeader(BaseBlock bb, byte[] signHeader) {
         super(bb);
 

@@ -1,21 +1,22 @@
 package com.github.junrar;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-
 import com.github.junrar.rarfile.FileHeader;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledOnOs;
 import org.junit.jupiter.api.condition.OS;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class LocalFolderExtractorTest {
     private static File tempFolder;
@@ -41,14 +42,15 @@ public class LocalFolderExtractorTest {
         when(fileHeader.isUnicode()).thenReturn(true);
         when(fileHeader.getFileName()).thenReturn("../../ops");
 
+
         File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
 
         Throwable thrown = catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
         assertThat(thrown).isInstanceOf(IllegalStateException.class);
         assertThat(thrown.getMessage())
-                .containsIgnoringCase("Rar contains file with invalid path")
-                .containsIgnoringCase(expectedInvalidPath.toString());
+            .containsIgnoringCase("Rar contains file with invalid path")
+            .containsIgnoringCase(expectedInvalidPath.toString());
     }
 
     @Test
@@ -61,13 +63,14 @@ public class LocalFolderExtractorTest {
         when(fileHeader.isUnicode()).thenReturn(true);
         when(fileHeader.getFileName()).thenReturn("../../ops/");
 
+
         File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
         Throwable thrown = catchThrowable(() -> localFolderExtractor.createDirectory(fileHeader));
 
         assertThat(thrown).isInstanceOf(IllegalStateException.class);
         assertThat(thrown.getMessage())
-                .containsIgnoringCase("Rar contains invalid path")
-                .containsIgnoringCase(expectedInvalidPath.toString());
+            .containsIgnoringCase("Rar contains invalid path")
+            .containsIgnoringCase(expectedInvalidPath.toString());
     }
 
     @Test
@@ -79,13 +82,12 @@ public class LocalFolderExtractorTest {
             FileHeader fileHeader = archive.nextFileHeader();
 
             File expectedInvalidPath = new File(tempFolder.getParentFile().getParentFile(), "tmp");
-            Throwable thrown =
-                    catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
+            Throwable thrown = catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
             assertThat(thrown).isInstanceOf(IllegalStateException.class);
             assertThat(thrown.getMessage())
-                    .containsIgnoringCase("Rar contains file with invalid path")
-                    .containsIgnoringCase(expectedInvalidPath.toString());
+                .containsIgnoringCase("Rar contains file with invalid path")
+                .containsIgnoringCase(expectedInvalidPath.toString());
         }
     }
 
@@ -101,13 +103,12 @@ public class LocalFolderExtractorTest {
             FileHeader fileHeader = archive.nextFileHeader();
 
             String expectedInvalidPath = "/tmp/extract_evil/pwned.txt";
-            Throwable thrown =
-                    catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
+            Throwable thrown = catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
             assertThat(thrown).isInstanceOf(IllegalStateException.class);
             assertThat(thrown.getMessage())
-                    .containsIgnoringCase("Rar contains file with invalid path")
-                    .containsIgnoringCase(expectedInvalidPath);
+                .containsIgnoringCase("Rar contains file with invalid path")
+                .containsIgnoringCase(expectedInvalidPath);
         }
     }
 

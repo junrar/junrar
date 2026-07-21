@@ -1,18 +1,19 @@
 package com.github.junrar;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
-
 import com.github.junrar.exception.RarException;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * This test will have the rar file which will be extracted and the extracted content in the same directory. This directory is newly setup and deleted for every test method
@@ -30,11 +31,9 @@ public class ResourceReleasedTest {
     public void setup() throws IOException {
         extractDir = TestCommons.createTempDir();
         rar5TestFile = new File(extractDir, "test5.rar");
-        FileUtils.writeByteArrayToFile(
-                rar5TestFile, IOUtils.toByteArray(getClass().getResource("rar5.rar").openStream()));
+        FileUtils.writeByteArrayToFile(rar5TestFile, IOUtils.toByteArray(getClass().getResource("rar5.rar").openStream()));
         rar4TestFile = new File(extractDir, "test4.rar");
-        FileUtils.writeByteArrayToFile(
-                rar4TestFile, IOUtils.toByteArray(getClass().getResource("rar4.rar").openStream()));
+        FileUtils.writeByteArrayToFile(rar4TestFile, IOUtils.toByteArray(getClass().getResource("rar4.rar").openStream()));
     }
 
     @AfterEach
@@ -62,12 +61,7 @@ public class ResourceReleasedTest {
 
     @Test
     public void extractRar5FromString() {
-        Throwable thrown =
-                catchThrowable(
-                        () ->
-                                Junrar.extract(
-                                        rar5TestFile.getAbsolutePath(),
-                                        extractDir.getAbsolutePath()));
+        Throwable thrown = catchThrowable(() -> Junrar.extract(rar5TestFile.getAbsolutePath(), extractDir.getAbsolutePath()));
 
         assertThat(thrown).isInstanceOf(RarException.class);
     }

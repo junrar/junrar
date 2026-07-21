@@ -20,6 +20,9 @@ package com.github.junrar.rarfile;
 
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.io.Raw;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.attribute.FileTime;
@@ -27,8 +30,7 @@ import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 /**
  * DOCUMENT ME
@@ -125,6 +127,7 @@ public class FileHeader extends BlockHeader {
             if (unpSize == 0xffffffff) {
                 highUnpackSize = Integer.MAX_VALUE;
             }
+
         }
         fullPackSize |= highPackSize;
         fullPackSize <<= 32;
@@ -147,7 +150,8 @@ public class FileHeader extends BlockHeader {
         if (isFileHeader()) {
             if (isUnicode()) {
                 int length = 0;
-                while (length < fileNameBytes.length && fileNameBytes[length] != 0) {
+                while (length < fileNameBytes.length
+                    && fileNameBytes[length] != 0) {
                     length++;
                 }
                 fileName = new String(fileNameBytes, 0, length);
@@ -181,11 +185,8 @@ public class FileHeader extends BlockHeader {
             }
 
             if (NewSubHeaderType.SUBHEAD_TYPE_RR.byteEquals(fileNameBytes)) {
-                recoverySectors =
-                        (subData[8] & 0xff)
-                                + ((subData[9] & 0xff) << 8)
-                                + ((subData[10] & 0xff) << 16)
-                                + ((subData[11] & 0xff) << 24);
+                recoverySectors = (subData[8] & 0xff) + ((subData[9] & 0xff) << 8)
+                    + ((subData[10] & 0xff) << 16) + ((subData[11] & 0xff) << 24);
             }
         }
 
@@ -205,14 +206,10 @@ public class FileHeader extends BlockHeader {
                 position += 2;
             } else {
                 extTimeFlags = 0;
-                logger.warn(
-                        "FileHeader for entry '{}' signals extended time data, but does not contain"
-                                + " any",
-                        (getFileName()));
+                logger.warn("FileHeader for entry '{}' signals extended time data, but does not contain any", (getFileName()));
             }
 
-            TimePositionTuple mTimeTuple =
-                    parseExtTime(12, extTimeFlags, fileHeader, position, mTime);
+            TimePositionTuple mTimeTuple = parseExtTime(12, extTimeFlags, fileHeader, position, mTime);
             mTime = mTimeTuple.time;
             position = mTimeTuple.position;
 
@@ -249,22 +246,18 @@ public class FileHeader extends BlockHeader {
         }
     }
 
-    private static TimePositionTuple parseExtTime(
-            int shift, short flags, byte[] fileHeader, int position) {
+    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position) {
         return parseExtTime(shift, flags, fileHeader, position, null);
     }
 
-    private static TimePositionTuple parseExtTime(
-            int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
+    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
         int flag = flags >>> shift;
         if ((flag & 0x8) != 0) {
             long seconds;
             if (baseTime != null) {
                 seconds = baseTime.to(TimeUnit.SECONDS);
             } else {
-                seconds =
-                        TimeUnit.MILLISECONDS.toSeconds(
-                                getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
+                seconds = TimeUnit.MILLISECONDS.toSeconds(getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
                 position += 4;
             }
             int count = flag & 0x3;

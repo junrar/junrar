@@ -5,5 +5,6 @@ public class MainHeaderNullException extends RarException {
         super(cause);
     }
 
-    public MainHeaderNullException() {}
+    public MainHeaderNullException() {
+    }
 }

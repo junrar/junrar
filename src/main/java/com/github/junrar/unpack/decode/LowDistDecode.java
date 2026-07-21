@@ -31,4 +31,5 @@ public class LowDistDecode extends Decode {
     public LowDistDecode() {
         decodeNum = new int[Compress.LDC];
     }
+
 }

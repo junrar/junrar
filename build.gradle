@@ -75,9 +75,9 @@ jreleaser {
                     enabled = true
                     title = '# [{{projectVersion}}]({{repoUrl}}/compare/{{previousTagName}}...{{tagName}}) ({{#f_now}}YYYY-MM-dd{{/f_now}})'
                     content = """
-                            {{changelogTitle}}
-                            {{changelogChanges}}
-                            """.stripIndent()
+                              {{changelogTitle}}
+                              {{changelogChanges}}
+                              """.stripIndent()
                 }
             }
 

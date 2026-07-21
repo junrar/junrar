@@ -60,4 +60,5 @@ public class VMStandardFilterSignature {
     public void setType(VMStandardFilters type) {
         this.type = type;
     }
+
 }

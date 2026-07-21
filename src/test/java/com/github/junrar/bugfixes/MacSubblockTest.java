@@ -1,14 +1,15 @@
 package com.github.junrar.bugfixes;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.github.junrar.Archive;
 import com.github.junrar.rarfile.FileHeader;
+import org.apache.commons.io.IOUtils;
+import org.junit.jupiter.api.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.util.List;
-import org.apache.commons.io.IOUtils;
-import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Regression test for archives containing MAC_HEAD (0x77 subtype 0x0102) subblocks

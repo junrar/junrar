@@ -39,15 +39,16 @@ public enum VMOpType {
         return opType;
     }
 
+
     public boolean equals(int opType) {
         return this.opType == opType;
     }
-
     public static VMOpType findOpType(int opType) {
 
         if (VM_OPREG.equals(opType)) {
             return VM_OPREG;
         }
+
 
         if (VM_OPINT.equals(opType)) {
             return VM_OPINT;

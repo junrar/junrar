@@ -67,4 +67,5 @@ public enum VMFlags {
     public int getFlag() {
         return flag;
     }
+
 }

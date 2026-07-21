@@ -31,6 +31,7 @@ import java.io.RandomAccessFile;
 public class SeekableReadOnlyFile implements SeekableReadOnlyByteChannel {
     private final RandomAccessFile file;
 
+
     /**
      * @param file the file
      * @throws FileNotFoundException .

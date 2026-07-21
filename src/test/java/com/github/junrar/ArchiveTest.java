@@ -16,15 +16,18 @@
  */
 package com.github.junrar;
 
-import static java.util.Calendar.FEBRUARY;
-import static java.util.Calendar.MARCH;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
-
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.HostSystem;
+import org.apache.commons.io.IOUtils;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junitpioneer.jupiter.DefaultTimeZone;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -40,31 +43,27 @@ import java.util.List;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.apache.commons.io.IOUtils;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junitpioneer.jupiter.DefaultTimeZone;
+
+import static java.util.Calendar.FEBRUARY;
+import static java.util.Calendar.MARCH;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 
 public class ArchiveTest {
 
     @Test
     public void testTikaDocs() throws Exception {
-        // spotless:off
-        String[] expected = {
-            "testEXCEL.xls",       "13824",
-            "testHTML.html",       "167",
+        String[] expected = {"testEXCEL.xls", "13824",
+            "testHTML.html", "167",
             "testOpenOffice2.odt", "26448",
-            "testPDF.pdf",         "34824",
-            "testPPT.ppt",         "16384",
-            "testRTF.rtf",         "3410",
-            "testTXT.txt",         "49",
-            "testWORD.doc",        "19456",
-            "testXML.xml",         "766"
-        };
-        // spotless:on
+            "testPDF.pdf", "34824",
+            "testPPT.ppt", "16384",
+            "testRTF.rtf", "3410",
+            "testTXT.txt", "49",
+            "testWORD.doc", "19456",
+            "testXML.xml", "766"};
+
 
         File f = new File(getClass().getResource("tika-documents.rar").toURI());
         try (Archive archive = new Archive(f)) {
@@ -99,7 +98,6 @@ public class ArchiveTest {
     }
 
     private static Stream<Arguments> provideAudioDecompression() {
-        // spotless:off
         List<String> files = List.of(
             "audio/BoatModernEnglish-audio-text-unpack30.rar",  // special audio/text compression enabled, RAR 2.9
             "audio/BoatModernEnglish-audio-text-unpack20.rar",  // special audio/text compression enabled, RAR 2.0
@@ -108,15 +106,13 @@ public class ArchiveTest {
             "audio/BoatModernEnglish-regular-unpack15-dos.rar", // special audio/text compression disabled, RAR 1.5 DOS
             "audio/BoatModernEnglish-regular-unpack15-win.rar"  // special audio/text compression disabled, RAR 1.5 Windows
         );
-        // spotless:on
 
         return files.stream()
-                .map(path -> List.of(Arguments.of(path, false), Arguments.of(path, true)))
-                .flatMap(Collection::stream);
+            .map(path -> List.of(Arguments.of(path, false), Arguments.of(path, true)))
+            .flatMap(Collection::stream);
     }
 
-    private void validateAudioDecompression(Archive archive, Boolean isDos)
-            throws RarException, IOException {
+    private void validateAudioDecompression(Archive archive, Boolean isDos) throws RarException, IOException {
         assertThat(archive.isPasswordProtected()).isFalse();
         assertThat(archive.isEncrypted()).isFalse();
 
@@ -136,8 +132,7 @@ public class ArchiveTest {
             audioData = baos.toByteArray();
         }
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-            try (InputStream is =
-                    getClass().getResource("audio/BoatModernEnglish.wav").openStream()) {
+            try (InputStream is = getClass().getResource("audio/BoatModernEnglish.wav").openStream()) {
                 IOUtils.copy(is, baos);
             }
             byte[] expectedAudioData = baos.toByteArray();
@@ -156,34 +151,30 @@ public class ArchiveTest {
         assertThat(fileHeader.getFullUnpackSize()).isEqualTo(fileHeader.getUnpSize());
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
             archive.extractFile(fileHeader, baos);
-            assertThat(baos.toString())
-                    .isEqualTo(
-                            "UofG Language Modules, CC BY-SA 4.0"
-                                + " <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia"
-                                + " Commons");
+            assertThat(baos.toString()).isEqualTo("UofG Language Modules, CC BY-SA 4.0 "
+                                                  + "<https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons");
         }
 
         assertThat(archive.nextFileHeader()).isNull();
     }
 
     /*
-    The file is shifted by 1-hour because it was created in Europe/Amsterdam.
-    Times in a RAR file are stored in the MS-DOS style, so the fields are always the same but the resulting timestamp is not.
+     The file is shifted by 1-hour because it was created in Europe/Amsterdam.
+     Times in a RAR file are stored in the MS-DOS style, so the fields are always the same but the resulting timestamp is not.
 
-    Original timestamps:
-    MTime: 2022-02-23T09:24:19.191543300Z
-    CTime: 2022-02-23T09:34:59.759754700Z
-    ATime: 2022-03-02T17:45:18.694091100Z
+     Original timestamps:
+     MTime: 2022-02-23T09:24:19.191543300Z
+     CTime: 2022-02-23T09:34:59.759754700Z
+     ATime: 2022-03-02T17:45:18.694091100Z
 
-    Ensure the fields remain constant across timezones.
-    */
+     Ensure the fields remain constant across timezones.
+     */
     @Nested
     class ExtendedTimeTest {
         @Test
         @DefaultTimeZone("America/Los_Angeles")
         public void testArchiveExtTimes_LosAngeles() throws Exception {
-            assertThat(TimeZone.getDefault())
-                    .isEqualTo(TimeZone.getTimeZone("America/Los_Angeles"));
+            assertThat(TimeZone.getDefault()).isEqualTo(TimeZone.getTimeZone("America/Los_Angeles"));
             testArchiveExtTimes();
         }
 
@@ -213,35 +204,27 @@ public class ArchiveTest {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isFalse();
 
-                    FileHeader fileHeader =
-                            archive.getFileHeaders().stream()
-                                    .filter(FileHeader::isFileHeader)
-                                    .findFirst()
-                                    .orElse(null);
+                    FileHeader fileHeader = archive.getFileHeaders().stream()
+                        .filter(FileHeader::isFileHeader)
+                        .findFirst()
+                        .orElse(null);
                     assertThat(fileHeader).isNotNull();
                     assertThat(fileHeader.getFileName()).isEqualTo("files\\test\\short-text.txt");
                     try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
                         archive.extractFile(fileHeader, baos);
                         assertThat(baos.toString()).isEqualTo("Short text for example");
                     }
-                    assertThat(fileHeader.getMTime())
-                            .isEqualTo(toDate(2022, FEBRUARY, 23, 10, 24, 19, 191));
-                    assertThat(fileHeader.getLastModifiedTime())
-                            .isEqualTo(toFileTime(fileHeader.getMTime(), 543300));
-                    assertThat(fileHeader.getCTime())
-                            .isEqualTo(toDate(2022, FEBRUARY, 23, 10, 34, 59, 759));
-                    assertThat(fileHeader.getCreationTime())
-                            .isEqualTo(toFileTime(fileHeader.getCTime(), 754700));
-                    assertThat(fileHeader.getATime())
-                            .isEqualTo(toDate(2022, MARCH, 2, 18, 45, 18, 694));
-                    assertThat(fileHeader.getLastAccessTime())
-                            .isEqualTo(toFileTime(fileHeader.getATime(), 91100));
+                    assertThat(fileHeader.getMTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 24, 19, 191));
+                    assertThat(fileHeader.getLastModifiedTime()).isEqualTo(toFileTime(fileHeader.getMTime(), 543300));
+                    assertThat(fileHeader.getCTime()).isEqualTo(toDate(2022, FEBRUARY, 23, 10, 34, 59, 759));
+                    assertThat(fileHeader.getCreationTime()).isEqualTo(toFileTime(fileHeader.getCTime(), 754700));
+                    assertThat(fileHeader.getATime()).isEqualTo(toDate(2022, MARCH, 2, 18, 45, 18, 694));
+                    assertThat(fileHeader.getLastAccessTime()).isEqualTo(toFileTime(fileHeader.getATime(), 91100));
                 }
             }
         }
 
-        private Date toDate(
-                int year, int month, int day, int hour, int minute, int second, int millis) {
+        private Date toDate(int year, int month, int day, int hour, int minute, int second, int millis) {
             Calendar calendar = Calendar.getInstance();
             calendar.set(year, month, day, hour, minute, second);
             calendar.set(Calendar.MILLISECOND, millis);
@@ -249,16 +232,14 @@ public class ArchiveTest {
         }
 
         private FileTime toFileTime(Date date, long nanos) {
-            return FileTime.from(
-                    Instant.ofEpochMilli(date.getTime()).plus(nanos, ChronoUnit.NANOS));
+            return FileTime.from(Instant.ofEpochMilli(date.getTime()).plus(nanos, ChronoUnit.NANOS));
         }
     }
 
     @Nested
     class Solid {
         @Test
-        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone()
-                throws Exception {
+        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isTrue();
@@ -281,8 +262,7 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone_withInputStream()
-                throws Exception {
+        public void givenSolidRar4File_whenExtractingInOrder_thenExtractionIsDone_withInputStream() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isTrue();
@@ -307,8 +287,7 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenSolidRar4File_whenExtractingOutOfOrder_thenExtractionIsDone()
-                throws Exception {
+        public void givenSolidRar4File_whenExtractingOutOfOrder_thenExtractionIsDone() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar")) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.getMainHeader().isSolid()).isTrue();
@@ -338,10 +317,9 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenSolidRar4File_whenExtractingInReverse_theExtractionIsDone()
-                throws Exception {
+        public void givenSolidRar4File_whenExtractingInReverse_theExtractionIsDone() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar4-solid.rar");
-                    Archive archive = new Archive(is)) {
+                 Archive archive = new Archive(is)) {
                 assertThat(archive.getMainHeader().isSolid()).isTrue();
 
                 List<FileHeader> fileHeaders = archive.getFileHeaders();
@@ -359,8 +337,7 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenSolidRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown()
-                throws Exception {
+        public void givenSolidRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
             try (InputStream is = getClass().getResourceAsStream("solid/rar5-solid.rar")) {
                 Throwable thrown = catchThrowable(() -> new Archive(is));
 
@@ -381,10 +358,8 @@ public class ArchiveTest {
     @Nested
     class PasswordProtected {
         @Test
-        public void givenEncryptedRar4File_whenCreatingArchiveWithPassword_thenItCanExtractContent()
-                throws Exception {
-            try (InputStream is =
-                    getClass().getResourceAsStream("password/rar4-encrypted-junrar.rar")) {
+        public void givenEncryptedRar4File_whenCreatingArchiveWithPassword_thenItCanExtractContent() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar4-encrypted-junrar.rar")) {
                 try (Archive archive = new Archive(is, "junrar")) {
                     assertThat(archive.isEncrypted()).isTrue();
                     assertThat(archive.isPasswordProtected()).isTrue();
@@ -404,10 +379,8 @@ public class ArchiveTest {
         }
 
         @Test
-        public void givenPasswordProtectedRar4File_whenCreatingArchive_thenItCanListContent()
-                throws Exception {
-            try (InputStream is =
-                    getClass().getResourceAsStream("password/rar4-password-junrar.rar")) {
+        public void givenPasswordProtectedRar4File_whenCreatingArchive_thenItCanListContent() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar4-password-junrar.rar")) {
                 try (Archive archive = new Archive(is)) {
                     assertThat(archive.isEncrypted()).isFalse();
                     assertThat(archive.isPasswordProtected()).isTrue();
@@ -422,11 +395,8 @@ public class ArchiveTest {
         }
 
         @Test
-        public void
-                givenPasswordProtectedRar4File_whenCreatingArchiveWithPassword_thenItCanExtractContent()
-                        throws Exception {
-            try (InputStream is =
-                    getClass().getResourceAsStream("password/rar4-password-junrar.rar")) {
+        public void givenPasswordProtectedRar4File_whenCreatingArchiveWithPassword_thenItCanExtractContent() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar4-password-junrar.rar")) {
                 try (Archive archive = new Archive(is, "junrar")) {
                     assertThat(archive.isEncrypted()).isFalse();
                     assertThat(archive.isPasswordProtected()).isTrue();
@@ -446,11 +416,8 @@ public class ArchiveTest {
         }
 
         @Test
-        public void
-                givenEncryptedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown()
-                        throws Exception {
-            try (InputStream is =
-                    getClass().getResourceAsStream("password/rar5-encrypted-junrar.rar")) {
+        public void givenEncryptedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar5-encrypted-junrar.rar")) {
                 Throwable thrown = catchThrowable(() -> new Archive(is));
 
                 assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
@@ -458,11 +425,8 @@ public class ArchiveTest {
         }
 
         @Test
-        public void
-                givenPasswordProtectedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown()
-                        throws Exception {
-            try (InputStream is =
-                    getClass().getResourceAsStream("password/rar5-password-junrar.rar")) {
+        public void givenPasswordProtectedRar5File_whenCreatingArchive_thenUnsupportedRarV5ExceptionIsThrown() throws Exception {
+            try (InputStream is = getClass().getResourceAsStream("password/rar5-password-junrar.rar")) {
                 Throwable thrown = catchThrowable(() -> new Archive(is));
 
                 assertThat(thrown).isExactlyInstanceOf(UnsupportedRarV5Exception.class);
@@ -476,10 +440,9 @@ public class ArchiveTest {
         public void unicodeFileNamesAreDecodedProperly() throws Exception {
             File f = new File(getClass().getResource("unicode.rar").getPath());
             try (Archive archive = new Archive(f)) {
-                List<String> names =
-                        archive.getFileHeaders().stream()
-                                .map(FileHeader::getFileName)
-                                .collect(Collectors.toList());
+                List<String> names = archive.getFileHeaders().stream()
+                    .map(FileHeader::getFileName)
+                    .collect(Collectors.toList());
 
                 assertThat(names).containsExactlyInAnyOrder("新建文本文档.txt", "ウニコド.txt");
             }
@@ -489,10 +452,9 @@ public class ArchiveTest {
         public void gh108_unicodeFileNamesAreDecodedProperly() throws Exception {
             File f = new File(getClass().getResource("gh108.rar").getPath());
             try (Archive archive = new Archive(f)) {
-                List<String> names =
-                        archive.getFileHeaders().stream()
-                                .map(FileHeader::getFileName)
-                                .collect(Collectors.toList());
+                List<String> names = archive.getFileHeaders().stream()
+                    .map(FileHeader::getFileName)
+                    .collect(Collectors.toList());
 
                 assertThat(names).containsExactly("テ.txt");
             }

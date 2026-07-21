@@ -24,4 +24,6 @@ package com.github.junrar.unsigned;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class UnsignedShort {}
+public class UnsignedShort {
+
+}

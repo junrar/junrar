@@ -4,6 +4,9 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+
+
+
 /**
  * InputStream based implementation of the <code>SeekableReadOnlyByteChannel</code> interface.
  * <p>
@@ -53,4 +56,5 @@ public class SeekableReadOnlyInputStream implements SeekableReadOnlyByteChannel 
     public void close() throws IOException {
         is.close();
     }
+
 }

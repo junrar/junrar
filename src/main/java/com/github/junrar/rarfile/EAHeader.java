@@ -22,6 +22,7 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 /**
  * extended archive CRC header
  *
@@ -86,3 +87,4 @@ public class EAHeader extends SubBlockHeader {
         }
     }
 }
+

@@ -38,6 +38,7 @@ public class ProtectHeader extends BlockHeader {
     private final int totalBlocks;
     private byte mark;
 
+
     public ProtectHeader(BlockHeader bh, byte[] protectHeader) {
         super(bh);
 
@@ -50,6 +51,7 @@ public class ProtectHeader extends BlockHeader {
         pos += 4;
         mark |= protectHeader[pos] & 0xff;
     }
+
 
     public byte getMark() {
         return mark;

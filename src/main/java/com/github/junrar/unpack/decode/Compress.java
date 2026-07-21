@@ -24,7 +24,6 @@ package com.github.junrar.unpack.decode;
  * @version $LastChangedRevision$
  */
 public class Compress {
-    // spotless:off
     public static final int CODEBUFSIZE         = 0x4000;
     public static final int MAXWINSIZE          = 0x400000;
     public static final int MAXWINMASK          = (MAXWINSIZE - 1);
@@ -43,5 +42,4 @@ public class Compress {
     public static final int RC20                = 28;
     public static final int BC20                = 19;
     public static final int MC20                = 257;
-    // spotless:on
 }

@@ -25,6 +25,8 @@ package com.github.junrar.rarfile;
  * @version $LastChangedRevision$
  */
 public enum UnrarHeadertype {
+
+
     MainHeader((byte) 0x73),
     MarkHeader((byte) 0x72),
     FileHeader((byte) 0x74),
@@ -97,4 +99,5 @@ public enum UnrarHeadertype {
     public byte getHeaderByte() {
         return headerByte;
     }
+
 }

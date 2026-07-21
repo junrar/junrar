@@ -33,6 +33,7 @@ public class EndArcHeader extends BaseBlock {
     private int archiveDataCRC;
     private short volumeNumber;
 
+
     public EndArcHeader(BaseBlock bb, byte[] endArcHeader) {
         super(bb);
 

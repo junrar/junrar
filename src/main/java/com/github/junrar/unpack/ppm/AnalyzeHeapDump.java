@@ -1,13 +1,14 @@
 package com.github.junrar.unpack.ppm;
 
 import com.github.junrar.rarfile.MainHeader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * For debugging purposes only.
@@ -18,7 +19,8 @@ public class AnalyzeHeapDump {
     private static final Logger logger = LoggerFactory.getLogger(MainHeader.class);
 
     /** Creates a new instance of AnalyzeHeapDump */
-    public AnalyzeHeapDump() {}
+    public AnalyzeHeapDump() {
+    }
 
     public static void main(String[] argv) {
         File cfile = new File("P:\\test\\heapdumpc");
@@ -44,8 +46,10 @@ public class AnalyzeHeapDump {
         InputStream jin = null;
         int bufferLen = 256 * 1024;
         try {
-            cin = new BufferedInputStream(new FileInputStream(cfile), bufferLen);
-            jin = new BufferedInputStream(new FileInputStream(jfile), bufferLen);
+            cin = new BufferedInputStream(
+                    new FileInputStream(cfile), bufferLen);
+            jin = new BufferedInputStream(
+                    new FileInputStream(jfile), bufferLen);
             boolean matching = true;
             boolean mismatchFound = false;
             long startOff = 0L;
@@ -86,11 +90,7 @@ public class AnalyzeHeapDump {
 
     private static void printMismatch(long startOff, long bytesRead) {
         if (logger.isInfoEnabled()) {
-            logger.info(
-                    "Mismatch: off={}(0x{}), len={}",
-                    startOff,
-                    Long.toHexString(startOff),
-                    (bytesRead - startOff));
+            logger.info("Mismatch: off={}(0x{}), len={}", startOff, Long.toHexString(startOff), (bytesRead - startOff));
         }
     }
 }

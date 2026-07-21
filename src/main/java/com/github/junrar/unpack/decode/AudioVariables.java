@@ -25,6 +25,7 @@ package com.github.junrar.unpack.decode;
  */
 public class AudioVariables {
     int k1, k2, k3, k4, k5;
+
     int d1, d2, d3, d4;
 
     int lastDelta;
@@ -138,4 +139,6 @@ public class AudioVariables {
     public void setLastDelta(int lastDelta) {
         this.lastDelta = lastDelta;
     }
+
+
 }

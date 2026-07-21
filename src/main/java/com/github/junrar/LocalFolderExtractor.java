@@ -2,14 +2,15 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 class LocalFolderExtractor {
 
@@ -44,7 +45,10 @@ class LocalFolderExtractor {
         return f;
     }
 
-    File extract(final Archive arch, final FileHeader fileHeader) throws RarException, IOException {
+    File extract(
+        final Archive arch,
+        final FileHeader fileHeader
+    ) throws RarException, IOException {
         final File f = createFile(fileHeader, folderDestination);
         try (OutputStream stream = new FileOutputStream(f)) {
             arch.extractFile(fileHeader, stream);

@@ -1,7 +1,9 @@
 package com.github.junrar.volume;
 
 import com.github.junrar.Archive;
+
 import java.io.File;
+
 
 /**
  * @author <a href="http://www.rogiel.com">Rogiel</a>
@@ -18,11 +20,9 @@ public class FileVolumeManager implements VolumeManager {
         if (last == null) return new FileVolume(archive, this.firstVolume);
 
         final FileVolume lastFileVolume = (FileVolume) last;
-        final boolean oldNumbering =
-                !archive.getMainHeader().isNewNumbering() || archive.isOldFormat();
-        final String nextName =
-                VolumeHelper.nextVolumeName(
-                        lastFileVolume.getFile().getAbsolutePath(), oldNumbering);
+        final boolean oldNumbering = !archive.getMainHeader().isNewNumbering()
+            || archive.isOldFormat();
+        final String nextName = VolumeHelper.nextVolumeName(lastFileVolume.getFile().getAbsolutePath(), oldNumbering);
         final File nextVolume = new File(nextName);
 
         return new FileVolume(archive, nextVolume);

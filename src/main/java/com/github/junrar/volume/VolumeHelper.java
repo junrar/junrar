@@ -5,7 +5,8 @@ package com.github.junrar.volume;
  * @author alban
  */
 public class VolumeHelper {
-    private VolumeHelper() {}
+    private VolumeHelper() {
+    }
 
     // public static boolean mergeArchive(Archive archive, ComprDataIO dataIO)
     // throws IOException {
@@ -77,7 +78,8 @@ public class VolumeHelper {
             StringBuilder buffer = new StringBuilder();
             int off = len - 3;
             buffer.append(arcName, 0, off);
-            if (!isDigit(arcName.charAt(off + 1)) || !isDigit(arcName.charAt(off + 2))) {
+            if (!isDigit(arcName.charAt(off + 1))
+                    || !isDigit(arcName.charAt(off + 2))) {
                 buffer.append("r00");
             } else {
                 char[] ext = new char[3];

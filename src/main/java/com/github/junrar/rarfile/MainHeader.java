@@ -22,6 +22,7 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 /**
  * The main header of an rar archive. holds information concerning the whole archive (solid, encrypted etc).
  *
@@ -56,7 +57,6 @@ public class MainHeader extends BaseBlock {
     public boolean hasArchCmt() {
         return (this.flags & BaseBlock.MHD_COMMENT) != 0;
     }
-
     /**
      * the version the the encryption
      * @return .
@@ -103,9 +103,7 @@ public class MainHeader extends BaseBlock {
             StringBuilder str = new StringBuilder();
             str.append("posav: ").append(getPosAv());
             str.append("\nhighposav: ").append(getHighPosAv());
-            str.append("\nhasencversion: ")
-                    .append(hasEncryptVersion())
-                    .append(hasEncryptVersion() ? getEncryptVersion() : "");
+            str.append("\nhasencversion: ").append(hasEncryptVersion()).append(hasEncryptVersion() ? getEncryptVersion() : "");
             str.append("\nhasarchcmt: ").append(hasArchCmt());
             str.append("\nisEncrypted: ").append(isEncrypted());
             str.append("\nisMultivolume: ").append(isMultiVolume());

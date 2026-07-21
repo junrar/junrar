@@ -1,9 +1,14 @@
 package com.github.junrar;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import com.github.junrar.exception.RarException;
 import com.github.junrar.volume.InputStreamVolumeManager;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,12 +20,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class VolumeExtractorTest {
     private static File tempFolder;
@@ -37,8 +38,7 @@ public class VolumeExtractorTest {
 
     @ParameterizedTest
     @MethodSource("volumeArgs")
-    public void extractionFromVolumedFile(String ressourceDir, String firstVolume)
-            throws RarException, IOException {
+    public void extractionFromVolumedFile(String ressourceDir, String firstVolume) throws RarException, IOException {
         File dir = new File(getClass().getResource(ressourceDir).getPath());
         TestCommons.copyRarsToFolder(tempFolder, dir);
 
@@ -54,16 +54,14 @@ public class VolumeExtractorTest {
 
     @ParameterizedTest
     @MethodSource("volumeArgs")
-    public void extractionFromVolumedStream(String ressourceDir, String firstVolume)
-            throws Exception {
+    public void extractionFromVolumedStream(String ressourceDir, String firstVolume) throws Exception {
         File dir = new File(getClass().getResource(ressourceDir).getPath());
         TestCommons.copyRarsToFolder(tempFolder, dir);
 
-        List<File> files =
-                Arrays.stream(tempFolder.listFiles())
-                        .filter(File::isFile)
-                        .sorted()
-                        .collect(Collectors.toList());
+        List<File> files = Arrays.stream(tempFolder.listFiles())
+            .filter(File::isFile)
+            .sorted()
+            .collect(Collectors.toList());
 
         List<InputStream> streams = new ArrayList<>();
         for (File f : files) {
@@ -81,8 +79,9 @@ public class VolumeExtractorTest {
 
     private static Stream<Arguments> volumeArgs() {
         return Stream.of(
-                Arguments.of("volumes/new-numbers", "test-documents.000.rar"),
-                Arguments.of("volumes/new-part", "test-documents.part1.rar"));
+            Arguments.of("volumes/new-numbers", "test-documents.000.rar"),
+            Arguments.of("volumes/new-part", "test-documents.part1.rar")
+        );
     }
 
     private static void checkContent(File unpackedDir) {
