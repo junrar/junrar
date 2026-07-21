@@ -1,6 +1,9 @@
 package com.github.junrar;
 
+import com.github.junrar.exception.UnsafeLinkException;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.rarfile.rar5.Rar5RedirType;
+import com.github.junrar.rarfile.rar5.Rar5Redirection;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,6 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -129,5 +133,66 @@ public class LocalFolderExtractorTest {
 
             assertThat(mkdirEscapeDir).doesNotExist();
         }
+    }
+
+    // ---- S5/S6/S7 RAR5 twins: the same guards, re-applied to the new symlink-target path -------
+    // (M3.10 issue #31; the no-go rows require each guard to survive on the RAR5 link path.)
+
+    @Test
+    public void s7_upLevelSymlinkTargetRejected() throws Exception {
+        final Throwable thrown = catchThrowable(() -> extractSymlink("link", "../../evil"));
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+    }
+
+    @Test
+    public void s5_backslashSymlinkTargetRejected() throws Exception {
+        // '\'->'/' normalization (S5) before the containment check catches the traversal.
+        final Throwable thrown = catchThrowable(() -> extractSymlink("link", "..\\..\\evil"));
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+    }
+
+    @Test
+    public void s6_siblingPrefixSymlinkTargetRejected() throws Exception {
+        // Destination "extract"; target resolves to the sibling "extract_evil", which shares a
+        // bare prefix. Containment compares against destCanonical + File.separator, so the
+        // sibling is rejected (a naive startsWith would let it through).
+        final File parent = TestCommons.createTempDir();
+        final File extract = new File(parent, "extract");
+        extract.mkdir();
+        final LocalFolderExtractor lfe = new LocalFolderExtractor(extract);
+        final Throwable thrown = catchThrowable(
+            () -> lfe.extract(mock(Archive.class), symlinkHeader("link", "../extract_evil/pwned")));
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+    }
+
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void layer3_writeThroughDirSymlinkViaDotDotRejected() throws Exception {
+        // Layer 6.2.3 must model the lexical write path: 'x/../dlnk/evil.txt' actually creates
+        // through dest/dlnk (makeFile mkdir's each component, including '..'), so the check must
+        // pop on '..' -- otherwise the interposed '..' hides the dir-symlink component.
+        final File out = TestCommons.createTempDir();
+        new File(out, "x").mkdir();
+        Files.createSymbolicLink(new File(out, "dlnk").toPath(), Paths.get("."));
+        final LocalFolderExtractor lfe = new LocalFolderExtractor(out);
+        final FileHeader fh = mock(FileHeader.class);
+        when(fh.getFileName()).thenReturn("x/../dlnk/evil.txt");
+
+        final Throwable thrown = catchThrowable(() -> lfe.extract(mock(Archive.class), fh));
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+        assertThat(new File(out, "evil.txt")).doesNotExist();
+    }
+
+    private void extractSymlink(final String name, final String target) throws Exception {
+        final File out = TestCommons.createTempDir();
+        new LocalFolderExtractor(out).extract(mock(Archive.class), symlinkHeader(name, target));
+    }
+
+    private static FileHeader symlinkHeader(final String name, final String target) {
+        final FileHeader fileHeader = mock(FileHeader.class);
+        when(fileHeader.getFileName()).thenReturn(name);
+        when(fileHeader.getRedirection())
+            .thenReturn(new Rar5Redirection(Rar5RedirType.UNIX_SYMLINK, false, target));
+        return fileHeader;
     }
 }

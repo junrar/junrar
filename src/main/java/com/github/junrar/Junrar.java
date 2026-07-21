@@ -2,6 +2,7 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
+import com.github.junrar.rarfile.rar5.Rar5RedirType;
 import com.github.junrar.volume.VolumeManager;
 
 import org.slf4j.Logger;
@@ -294,6 +295,13 @@ public class Junrar {
         final String fileNameString = fileHeader.getFileName();
 
         Junrar.logger.info("extracting: {}", fileNameString);
+        // A RAR5 FHEXTRA_REDIR entry (symlink/junction/hardlink/copy) is a link, not a plain
+        // directory, even when its dir flag is set -- route it to the link extractor first.
+        if (fileHeader.getRedirection() != null
+                && fileHeader.getRedirection().getType() != null
+                && fileHeader.getRedirection().getType() != Rar5RedirType.NONE) {
+            return destination.extract(arch, fileHeader);
+        }
         if (fileHeader.isDirectory()) {
             return destination.createDirectory(fileHeader);
         } else {
