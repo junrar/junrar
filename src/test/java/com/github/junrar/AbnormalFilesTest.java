@@ -139,6 +139,14 @@ public class AbnormalFilesTest {
 
         assertThat(thrown).isInstanceOf(RarException.class);
         assertThat(thrown).isExactlyInstanceOf(expectedException);
+        // Issue #38 item 3 (P0.7 Finding B): Junrar.extract opens AND extracts in one call,
+        // so a bare exception-type assertion here also passes if the fatal-at-open throw is
+        // removed -- doExtractFile's separate, unconditional isBrokenHeader() refusal at
+        // extract time (Archive.java "Cannot extract '...': header CRC mismatch") still
+        // fires and is caught by the assertions above. Pin the message too: only the
+        // open-time throw (Archive.java "Header CRC mismatch on encrypted header at
+        // position ...") proves construction itself failed, not extraction.
+        assertThat(thrown).hasMessageContaining("Header CRC mismatch on encrypted header");
     }
 
     @ParameterizedTest
@@ -149,6 +157,8 @@ public class AbnormalFilesTest {
 
             assertThat(thrown).isInstanceOf(RarException.class);
             assertThat(thrown).isExactlyInstanceOf(expectedException);
+            // Same precision gap and fix as extractEncryptedFile above.
+            assertThat(thrown).hasMessageContaining("Header CRC mismatch on encrypted header");
         }
     }
 
