@@ -855,7 +855,8 @@ asserting real behavior).
   1. **Engine capability ceiling** (what the code can decode): M3 = **1 GB flat
      `byte[]`**; larger → `UnsupportedDictionarySizeException` (typed,
      documented; capability raised to 64 GB only when M4.3's segmented window
-     lands — M4.1 raises nothing).
+     lands — M4.1 raises nothing). **Raised to 64 GB at M4.3 as planned**
+     (`Unpack5.CAPABILITY_MAX_WIN_SIZE`); the budget below did not move.
   2. **Caller resource limit:** `ArchiveOptions.maxDictionarySize` (shipped in
      P0.8; default **4 GiB = unrar's own default**, `d861246:options.cpp:13`
      `WinSizeLimit=0x100000000`; the `-mdx`/`CheckWinLimit` analog,
@@ -1151,6 +1152,33 @@ asserting real behavior).
   fly (never committed): the real `-md2g` archive for the scheduled job.
 - **No-go rows:** D1 (entry-extraction byte[] limits unchanged — window ≠ entry).
 - **Est. diff:** ~450 lines.
+- **Scope addition executed at M4.3 — the mask idiom, not just the array width.**
+  Segmentation is only half the chunk. junrar folded every window position with
+  `& (size - 1)`, and a RAR7 dictionary is **not** a power of two: the
+  compression-info word carries a 5-bit fraction on top of the dictionary bits
+  (`winSize += winSize/32*frac`), which M4.1 already parses, so a declared window
+  such as `0x42000` was reachable *below* the 1 GB capability. On such a window the
+  mask wraps at the size rounded down to a power of two and addresses window space
+  that was never written: a real `-md=264k` archive (`unrar 7.23`: `All OK`) failed
+  with `ArrayIndexOutOfBoundsException: Index 263878 out of bounds for length
+  262144`. `d861246:unpack.hpp:416-435` says so in its own comment — `WrapUp`/
+  `WrapDown` "replaces `&MaxWinMask` for non-power 2 window sizes" — and
+  `AddFilter` additionally needs `% MaxWinSize` rather than a wrap, because a
+  malformed block start can be many times the window size
+  (`d861246:unpack50.cpp:228-233`). Landed as its own commit ahead of the
+  segmentation, with the fractional-window extraction RED first. Window positions
+  widen to `long` with it (C++ `size_t`) — see the M4.3 addendum in
+  `reports/signedness-audit.md`.
+- **Acceptance as executed:** (a) shipped in PR CI, with the acceptance-row window
+  unit tests driven through an explicit-segment-shift test constructor so segment
+  boundaries are reachable without allocating 256 MB per segment. (b) is the
+  committed `rar7/rar7-md6g.rar` rather than an on-the-fly `-md2g` archive: it is a
+  genuine `algo=1` stream, its oracle was recorded from `unrar 7.23` at generation
+  time, and it needs no scratch disk. Tagged `bigdict`, excluded from `test`, run by
+  `./gradlew bigDictTest`. **Executed 2026-07-21:** 4,563,402,752 bytes,
+  CRC32 `8E9B8BF4`, 18.9 s at `-Xmx6g` through a digest sink (`unrar -md6g`: 7.3 s,
+  3.0 GiB RSS). This is the archive-level RAR7 oracle row deferred from M4.1 and
+  M4.2.
 
 **Explicit non-goals at every phase** (owner constraints +
 `unrar-delta-map.md` §2.9/§5.5): unpack50mt/threadpool, qopen, recvol3/recvol5/rs16
@@ -1414,6 +1442,7 @@ version-event column is authoritative for them.
 
 | # | Risk | Impact | Mitigation |
 | --- | --- | --- | --- |
+| R1 | RESOLVED at M4.3 (issue #35): capability 64 GB, `byte[][]` of lazily allocated 256 MB segments above 1 GB, flat layout kept at and below it, `maxDictionarySize` default unmoved at 4 GiB. Positions are `long` and wrap instead of masking, because RAR7 dictionaries are not powers of two. Original entry: | | |
 | R1 | **RAR5/RAR7 windows vs Java's 2^31 array cap** — RAR5 alone encodes 4 GB dicts; RAR7 to 64 GB; D1's >2 GB `byte[]` limitation is a *deliberate* divergence for entry extraction and must not be "fixed" sideways | Extraction failures or an accidental D1 regression | Staged (review B-S3): capability = 1 GB flat `byte[]` at M3 (covers the overwhelming majority of real archives — rar default dict is 32 MB), 64 GB segmented+lazy at M4.3; budget = `ArchiveOptions.maxDictionarySize`, default 4 GiB (= upstream `WinSizeLimit`) from P0.8, never moved; allocation = growth-capped (M3.6) / lazy segments (M4.3), so a dict-bomb header allocates KBs even under DEFAULT options. Entry-extraction byte[] paths untouched (D1 pinned in P0.3). |
 | R2 | **Regression-corpus churn** — 345 JSON expectation flips at M3.11 (of 12,475; the rest must stay byte-identical) could smuggle regressions past review | Silent RAR3 regressions | §4.4 procedure: single dedicated commit, scripted three-shape audit, ALL-flipped-members oracle check (B-S2), maintainer-gated corpus run. Intermediate behavior changes (P0.7/M1.5/M2.1) flush their corpus deltas early instead of folding into the big flip. |
 | R3 | **PPMd heap drift** — M1.2 edits pointer-emulation code where a one-byte layout slip corrupts everything downstream | Wrong output, latent corruption | M1.1 rebuilds the byte-diff heap harness BEFORE any guard lands (manual §4.13.4); golden dumps committed; guards land one release-pin at a time. |

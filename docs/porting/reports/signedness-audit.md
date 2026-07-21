@@ -406,3 +406,103 @@ shifting `68 - dbits` by one are all caught. Two mutations survive and are prova
 using `getbits64` at `dbits == 36` as well (its top 32 bits are exactly `getbits32`, which
 upstream notes at `unpack50.cpp:95`), and narrowing `unpPtr - distance` before the mask rather
 than after (identical for any `maxWinMask < 2^31`, which the 1 GB capability ceiling enforces).
+
+## M4.3 ledger extension — segmented, long-indexed window (issue #35, no-go C15)
+
+Window positions become C++ `size_t` this chunk, so the whole window-arithmetic surface is
+re-audited. Files touched: `unpack/Unpack5.java` (window pointers, `wrapUp`/`wrapDown`,
+`copyString`, the filter sweep, the write-out loop), `unpack/Unpack5Window.java` (segment
+addressing), `unpack/Unpack5Filter.java` (`blockStart` widened).
+
+Pipeline (`grep -oE '>{2,3}' <file> | grep -cx '>>'`):
+
+| File | Plain `>>` count | Classification |
+| --- | --- | --- |
+| `unpack/Unpack5.java` | 1 | `non-code`: still only the javadoc `{@code >>}` stating the rule. Every executable shift is `>>>`. |
+| `unpack/Unpack5Window.java` | 0 | — |
+| `unpack/Unpack5Filter.java` | 0 | — |
+
+### New shift sites
+
+Segment addressing in `Unpack5Window` is `pos >>> shift` on a position in `[0, size)` with
+`size <= 64 GB = 2^36`, so the value never reaches the `long` sign bit and `>>>` and `>>` agree
+over the whole reachable domain; `>>>` is used anyway, because the operand is a C++ `size_t`.
+`(size + offsetMask) >>> segmentShift` (the segment count) is the same shape. The companion
+`pos & offsetMask` needs no sign care: `offsetMask` is `(1L << shift) - 1`, a positive `long`.
+
+### `WrapDown` is ported by intent, not literally
+
+`d861246:unpack.hpp:421` reads
+
+```cpp
+inline size_t WrapDown(size_t WinPos) { return WinPos >= MaxWinSize ? WinPos + MaxWinSize : WinPos; }
+```
+
+which looks like nonsense until you note `size_t` is unsigned: every caller forms `a - b`, and
+when `b > a` that expression has already wrapped to `2^64 - (b - a)`, which is `>= MaxWinSize`, so
+adding `MaxWinSize` back lands on `MaxWinSize - (b - a)` by modular arithmetic. Java `long` is
+signed and cannot underflow here at all — every caller forms `a - b` with `a, b` in
+`[0, maxWinSize)` and `maxWinSize <= 2^36`, so the difference lives in `(-2^36, 2^36)` — so the
+faithful Java form is the sign test:
+
+```java
+private long wrapDown(final long winPos) { return winPos < 0 ? winPos + maxWinSize : winPos; }
+```
+
+Both map the same inputs to the same outputs over the reachable domain. Transcribing the C++
+literally would be *wrong* in Java: `winPos >= maxWinSize` is false for every reachable negative
+difference, so the wrap would simply never happen. A mutation to that literal form is caught
+(`wrapDown literal C++ form`, below).
+
+`WrapUp` needs no such reasoning — `winPos >= maxWinSize ? winPos - maxWinSize : winPos` is exact
+in both languages, because every caller adds two in-window values and a single subtraction
+suffices.
+
+### `AddFilter` keeps the remainder, and `blockStart` is zero-extended
+
+`Filter.BlockStart` is a C++ `uint` on the wire and a `size_t` once folded into the window
+(`d861246:unpack.hpp:150` widened the struct field for exactly this). It is read into a `long`
+with `readFilterData() & 0xffffffffL` — **the zero-extension is load-bearing**: a 4-byte filter
+field can set bit 31, and a sign-extended value would make the fold negative. That replaces the
+`Integer.compareUnsigned` the field used while it was an `int`, which is now unnecessary and would
+be wrong (it would re-narrow the value). The fold itself stays upstream's `% MaxWinSize` rather
+than a wrap, because a malformed block start can be many times the window size and subtracting a
+single window would leave it outside (`d861246:unpack50.cpp:228-233`); both operands are
+non-negative, so Java `%` is modulo, not remainder-with-sign.
+
+The two remaining `Integer.compareUnsigned` calls (`readFilter`'s block-length clamp, still a
+C++ `uint` in the `int` domain) are unchanged.
+
+### Mutation ledger
+
+20 mutations run against the full unit suite. Caught: `wrapUp >= to >`, `wrapUp adds instead`
+(diverges to an unbounded position — killed by timeout), `wrapDown <0 to <=0`,
+`wrapDown subtracts`, `wrapDown literal C++ form`, `loop-top wrap dropped`,
+`copyString src unwrapped`, `copyString src step raw`, `copyString dst step raw`,
+`blockStart mod to wrap`, `blockStart mask dropped`, `fullWriteSize raw`,
+`blockEnd wrap dropped`, `flat threshold off-by-one`, `segment count floors`,
+`tail segment full length`, `run ignores tail length`, `first segment over-sized`,
+`copyOut single arraycopy`, `grow cap not clamped`.
+
+Five of those were genuine coverage gaps when first probed, all pre-dating this chunk, and each
+is closed with a test: a match straddling the window end from the source side and from the
+destination side (`Unpack5WindowWrapTest` — no archive fixture reaches this, so the streams are
+crafted), a filter block straddling the window end, a filter start folded from beyond the window,
+and a fractional flat window doubling past its declared size.
+
+Three mutations survive and are equivalent, all in the same family — they change *when*
+`unpWriteBuf` flushes, never what it writes:
+
+- `init writeBorder raw` — dropping `wrapUp` around `Min(MaxWinSize, UNPACK_MAX_WRITE)` yields
+  `maxWinSize` instead of `0`. **Provably identical**: the only consumer is
+  `wrapDown(writeBorder - unpPtr) <= MAX_INC_LZ_MATCH && writeBorder != unpPtr`, and the two
+  values differ only at `unpPtr == 0`, where the first form fails the size test
+  (`maxWinSize >= 0x40000 > MAX_INC_LZ_MATCH`) and the second fails the inequality test. Both
+  decline to write, and the field is overwritten on the first flush.
+- `writeBorder test raw` and `writeBorder rearm raw` — both can make `unpWriteBuf` run on more
+  iterations. The output byte stream is the window ranges in position order with filter
+  substitutions, and `writtenFileSize` (the E8/ARM file offset) advances by bytes written, not by
+  call count, so chunk boundaries are not observable. Empirically: they survive the entire archive
+  matrix including `m3-plain-32m.rar` (40 MB payload, 32 MB dictionary, which does reach a
+  wrapping `writeBorder`), the filter fixtures, and the five-fraction wrap sweep — 514 unit tests
+  asserting extracted-payload digests.

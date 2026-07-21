@@ -25,14 +25,19 @@ import java.util.List;
  *
  * <p><b>Dictionary resource model (plan &sect;6 R1, review B-S3 — three separated concepts).</b>
  * <ol>
- *   <li><b>Engine capability ceiling</b> — what the flat {@code byte[]} window can address: 1 GB
- *       at M3 ({@link #CAPABILITY_MAX_WIN_SIZE}); larger throws {@link
- *       UnsupportedDictionarySizeException}. Raised to 64 GB only when the M4.3 segmented window
- *       lands.</li>
+ *   <li><b>Engine capability ceiling</b> — what {@link Unpack5Window} can address: 64 GB since
+ *       M4.3 ({@link #CAPABILITY_MAX_WIN_SIZE}), up from 1 GB while the window was a single flat
+ *       array; larger throws {@link UnsupportedDictionarySizeException}.</li>
  *   <li><b>Caller resource limit</b> — {@code ArchiveOptions.maxDictionarySize} (P0.8; default
- *       4 GiB = unrar's {@code WinSizeLimit}). Checked <em>before</em> any window allocation.</li>
- *   <li><b>Allocation policy</b> — growth-capped, never header-eager (see {@link Unpack5Window}).</li>
+ *       4 GiB = unrar's {@code WinSizeLimit}, permanent). Checked <em>before</em> any window
+ *       allocation, so dictionaries above 4 GiB stay caller opt-in exactly like unrar's
+ *       {@code -mdx}.</li>
+ *   <li><b>Allocation policy</b> — growth-capped and lazily segmented, never header-eager (see
+ *       {@link Unpack5Window}).</li>
  * </ol>
+ *
+ * <p><b>Window positions are {@code long} and wrap, never mask</b> ({@link #wrapUp}/
+ * {@link #wrapDown}, {@code d861246:unpack.hpp:416-435}): a RAR7 dictionary is not a power of two.
  *
  * <p>C++ refs: {@code 8f437ab:unpack.cpp:80-158} (Init window rules), {@code 8f437ab:unpack50.cpp}
  * (block header + table read), {@code 8f437ab:unpack.cpp:227} (MakeDecodeTables),
@@ -41,8 +46,12 @@ import java.util.List;
  */
 public class Unpack5 {
 
-    /** Engine capability ceiling at M3: the largest flat {@code byte[]} window we can address (1 GB). */
-    public static final long CAPABILITY_MAX_WIN_SIZE = 1L << 30;
+    /**
+     * Engine capability ceiling: the largest window {@link Unpack5Window} can address (64 GB,
+     * {@code UNPACK_MAX_DICT}). Raised from 1 GB at M4.3 (issue #35) by the segmented window; the
+     * {@code maxDictionarySize} budget, not this, is what keeps dictionaries above 4 GiB opt-in.
+     */
+    public static final long CAPABILITY_MAX_WIN_SIZE = 64L << 30;
 
     private final ComprDataIO unpIO;
     private boolean extraDist;
@@ -175,10 +184,10 @@ public class Unpack5 {
             throw new UnsupportedDictionarySizeException(
                 "RAR5 dictionary " + winSize + " exceeds the configured maxDictionarySize " + maxDictionarySize);
         }
-        // Engine capability ceiling — a flat byte[] cannot address beyond 1 GB at M3.
+        // Engine capability ceiling.
         if (winSize > CAPABILITY_MAX_WIN_SIZE) {
             throw new UnsupportedDictionarySizeException(
-                "RAR5 dictionary " + winSize + " exceeds the M3 engine capability " + CAPABILITY_MAX_WIN_SIZE);
+                "RAR5 dictionary " + winSize + " exceeds the engine capability " + CAPABILITY_MAX_WIN_SIZE);
         }
 
         if (window != null && winSize <= window.size()) {

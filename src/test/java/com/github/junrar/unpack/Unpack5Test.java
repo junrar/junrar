@@ -53,22 +53,66 @@ class Unpack5Test {
         assertThat(u.window().capacity()).isEqualTo(0x40000);
     }
 
-    // ---- window-size matrix (reject: engine capability ceiling = 1 GB) -----------------------
+    // ---- window-size matrix: capability 64 GB, flat path kept at 1 GB and below (M4.3) --------
 
     @Test
-    void windowMatrixRejects2gAsCapabilityBeforeAllocation() {
+    void windowMatrixAccepts2gAsASegmentedWindow() throws Exception {
         final Unpack5 u = new Unpack5(false);
-        final Throwable t = catchThrowable(() -> u.init(2L << 30, false, DEFAULT));
+        u.init(2L << 30, false, DEFAULT);
+        assertThat(u.window().size()).isEqualTo(2L << 30);
+        assertThat(u.window().isSegmented()).as("past 1 GB the window is segmented").isTrue();
+        assertThat(u.window().capacity()).as("lazy: nothing written, nothing allocated")
+            .isEqualTo(0x40000);
+    }
+
+    @Test
+    void windowMatrixAccepts4gAtTheDefaultBudget() throws Exception {
+        final Unpack5 u = new Unpack5(false);
+        u.init(4L << 30, false, DEFAULT);
+        assertThat(u.window().size()).isEqualTo(4L << 30);
+        assertThat(u.window().capacity()).isEqualTo(0x40000);
+    }
+
+    @Test
+    void oneGigabyteAndBelowStaysOnTheFlatPath() throws Exception {
+        final Unpack5 u = new Unpack5(false);
+        u.init(ONE_GB, false, DEFAULT);
+        assertThat(u.window().isSegmented()).as("1 GB is still a single flat segment").isFalse();
+        assertThat(u.window().segmentCount()).isEqualTo(1);
+    }
+
+    @Test
+    void aboveFourGigabytesStaysCallerOptIn() throws Exception {
+        // The capability now reaches 64 GB, so a 6 GB dictionary is refused by the BUDGET
+        // (default 4 GiB, permanent — review B-S3), exactly the way unrar needs -mdx.
+        final Unpack5 u = new Unpack5(false);
+        final Throwable t = catchThrowable(() -> u.init(6L << 30, false, DEFAULT));
         assertThat(t).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
+        assertThat(t.getMessage()).contains("maxDictionarySize");
+        assertThat(u.window()).as("guard fires before any window allocation").isNull();
+
+        final Unpack5 optedIn = new Unpack5(false);
+        optedIn.init(6L << 30, false, 8L << 30);
+        assertThat(optedIn.window().size()).isEqualTo(6L << 30);
+        assertThat(optedIn.window().capacity()).isEqualTo(0x40000);
+    }
+
+    @Test
+    void windowMatrixRejectsPast64gAsCapabilityBeforeAllocation() {
+        final Unpack5 u = new Unpack5(false);
+        final Throwable t = catchThrowable(() -> u.init((64L << 30) + 1, false, 128L << 30));
+        assertThat(t).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
+        assertThat(t.getMessage()).contains("engine capability");
         assertThat(u.window()).as("guard fires before any window allocation").isNull();
     }
 
     @Test
-    void windowMatrixRejects4g() {
+    void windowMatrixAcceptsExactly64g() throws Exception {
         final Unpack5 u = new Unpack5(false);
-        final Throwable t = catchThrowable(() -> u.init(4L << 30, false, DEFAULT));
-        assertThat(t).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
-        assertThat(u.window()).isNull();
+        u.init(64L << 30, false, 64L << 30);
+        assertThat(u.window().size()).isEqualTo(64L << 30);
+        assertThat(u.window().capacity()).as("a 64 GB claim still allocates only the floor")
+            .isEqualTo(0x40000);
     }
 
     // ---- hostile row (a): budget check fires before allocation --------------------------------
@@ -149,6 +193,112 @@ class Unpack5Test {
         }
         for (int i = 0; i < n; i++) {
             assertThat(w.get(i)).as("byte at %d", i).isEqualTo((byte) (i * 31 + 7));
+        }
+    }
+
+    // ---- segmented window (M4.3, issue #35) ---------------------------------------------------
+    //
+    // Driven through the explicit-shift constructor so segment boundaries are reachable without
+    // allocating 256 MB per segment; the production shift is exercised by the window-size matrix
+    // above and, end to end, by the >4 GB job in ArchiveRar7BigDictTest.
+
+    private static final int SEG = 4096;
+    private static final int SEG_SHIFT = 12;
+
+    @Test
+    void segmentedWindowAddressesEveryPositionByLongIndex() {
+        final Unpack5Window w = new Unpack5Window(4L * SEG, SEG_SHIFT);
+        assertThat(w.segmentCount()).isEqualTo(4);
+        assertThat(w.isSegmented()).isTrue();
+        for (long i = 0; i < 4L * SEG; i++) {
+            w.put(i, (byte) (i * 31 + 7));
+        }
+        for (long i = 0; i < 4L * SEG; i++) {
+            assertThat(w.get(i)).as("byte at %d", i).isEqualTo((byte) (i * 31 + 7));
+        }
+    }
+
+    @Test
+    void segmentsAreAllocatedOnlyAsTheWindowFills() {
+        final Unpack5Window w = new Unpack5Window(4L * SEG, SEG_SHIFT);
+        final long afterFirst = w.capacity();
+        for (int i = 0; i < SEG; i++) {
+            w.put(i, (byte) 1);
+        }
+        assertThat(w.capacity()).as("still only the first segment").isEqualTo(afterFirst);
+        w.put(SEG, (byte) 1);
+        assertThat(w.capacity()).as("the second segment appears only once it is written")
+            .isEqualTo(afterFirst + SEG);
+    }
+
+    @Test
+    void aFractionalSizeLeavesTheLastSegmentShort() {
+        // A RAR7 dictionary is size + size/32*frac, so the window is not a whole number of
+        // segments: the tail segment must be sized to the remainder, not to a full segment.
+        final long size = 3L * SEG + 1000;
+        final Unpack5Window w = new Unpack5Window(size, SEG_SHIFT);
+        assertThat(w.segmentCount()).isEqualTo(4);
+        for (long i = 0; i < size; i++) {
+            w.put(i, (byte) i);
+        }
+        assertThat(w.capacity()).as("the tail segment holds the remainder, not a full segment")
+            .isEqualTo(size);
+        assertThat(w.run(size - 1, 64)).as("no run reaches past the declared size").isEqualTo(1);
+    }
+
+    @Test
+    void aFractionalWindowNeverAllocatesPastItsDeclaredSize() {
+        // 256 KB + 1/32: the RAR7 fractional shape below 1 GB, so still one flat segment whose
+        // length is not a power of two. Doubling must stop at the declared size, not overshoot to
+        // the next power of two — the growth cap is an invariant of the resource model (B-S3).
+        final long size = 0x42000;
+        final Unpack5Window w = new Unpack5Window(size);
+        for (long i = 0; i < size; i++) {
+            w.put(i, (byte) i);
+        }
+        assertThat(w.capacity()).isEqualTo(size);
+        assertThat(w.get(size - 1)).isEqualTo((byte) (size - 1));
+    }
+
+    @Test
+    void runStopsAtTheSegmentBoundary() {
+        final Unpack5Window w = new Unpack5Window(4L * SEG, SEG_SHIFT);
+        assertThat(w.run(0, 4L * SEG)).as("capped at one segment").isEqualTo(SEG);
+        assertThat(w.run(SEG - 10, 100)).as("only the bytes left in this segment").isEqualTo(10);
+        assertThat(w.run(SEG - 10, 4)).as("never more than asked for").isEqualTo(4);
+        assertThat(w.offsetAt(SEG + 5)).isEqualTo(5);
+        assertThat(w.bufferAt(SEG + 5)).isNotSameAs(w.bufferAt(5));
+    }
+
+    @Test
+    void copyOutSpansSegmentBoundaries() {
+        final int size = 4 * SEG;
+        final Unpack5Window w = new Unpack5Window(size, SEG_SHIFT);
+        for (int i = 0; i < size; i++) {
+            w.put(i, (byte) (i * 13 + 5));
+        }
+        final int start = SEG - 7;
+        final int len = 2 * SEG + 20; // spans three segments
+        final byte[] dst = new byte[len + 3];
+        w.copyOut(start, dst, 3, len);
+        for (int i = 0; i < len; i++) {
+            assertThat(dst[3 + i]).as("copied byte %d", i).isEqualTo((byte) ((start + i) * 13 + 5));
+        }
+    }
+
+    @Test
+    void selfReferencingCopyAcrossASegmentBoundaryReadsWhatWasJustWritten() {
+        // copyString's byte-sequential overlap (distance 1) walked across a segment boundary:
+        // every read must see the byte written one step earlier, from the neighbouring segment.
+        final Unpack5Window w = new Unpack5Window(4L * SEG, SEG_SHIFT);
+        w.put(SEG - 3, (byte) 0x5a);
+        long src = SEG - 3;
+        long dst = SEG - 2;
+        for (int i = 0; i < 8; i++) { // runs from the tail of segment 0 into segment 1
+            w.put(dst++, w.get(src++));
+        }
+        for (long i = SEG - 3; i < SEG + 6; i++) {
+            assertThat(w.get(i)).as("byte at %d", i).isEqualTo((byte) 0x5a);
         }
     }
 

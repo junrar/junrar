@@ -126,6 +126,56 @@ class ArchiveRar7ExtractionTest {
     }
 
     @Test
+    void twoGigabyteDictionaryClaimExtractsThroughTheSegmentedWindow() throws Exception {
+        // M4.3 acceptance (a), plan §4.3 inflated-resource class: the header claims a 2 GB
+        // dictionary over a stream that really only needs 128 KB, so the segmented window is on
+        // the extraction path under DEFAULT options while the payload stays 300 KB. Declaring a
+        // larger window never changes a valid stream's output, so the unpatched original is the
+        // oracle. dictBits = 14 -> 0x20000 << 14 = 2 GB, inside RAR5's own four dict bits.
+        final byte[] oracle = extract(rar5Fixture());
+
+        final File patched = copyOf("rar5unpack/m3-plain-128k.rar");
+        patchDictBits(patched, 14);
+        try (Archive a = new Archive(patched)) {
+            final FileHeader hd = a.getFileHeaders().get(0);
+            assertThat(hd.getUnpVersion()).as("still a plain RAR5 header").isEqualTo((byte) 50);
+            assertThat(hd.getRar5WinSize()).isEqualTo(2L << 30);
+        }
+        assertThat(extract(patched))
+            .as("a 2 GB dictionary claim extracts byte-identically to the 128 KB original")
+            .isEqualTo(oracle);
+        // That the claim allocates only the floor is asserted at the engine level, in
+        // Unpack5Test#windowMatrixAccepts2gAsASegmentedWindow.
+    }
+
+    /** Set the four RAR5 dictionary bits (bits 10..13) of the first FILE header, refixing the CRC32. */
+    private void patchDictBits(final File archive, final int dictBits) throws Exception {
+        final long position;
+        try (Archive a = new Archive(archive)) {
+            position = a.getFileHeaders().get(0).getPositionInFile();
+        }
+        final byte[] bytes = Files.readAllBytes(archive.toPath());
+        final int start = (int) position;
+        final int headerLength = Rar5BaseBlock.checkHeaderSize(
+            Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
+
+        final int[] cursor = {start + 4};
+        readVint(bytes, cursor);
+        final int compInfoStart = compressionInfoOffset(bytes, cursor[0]);
+        cursor[0] = compInfoStart;
+        final long compInfo = readVint(bytes, cursor);
+        final int width = cursor[0] - compInfoStart;
+        // A RAR5 word never reaches bit 14, so setting the dict bits keeps its vint width.
+        final long patched = (compInfo & ~(0x0fL << 10)) | ((long) dictBits << 10);
+        System.arraycopy(vint(patched, width), 0, bytes, compInfoStart, width);
+
+        final byte[] header = Arrays.copyOfRange(bytes, start, start + headerLength);
+        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        System.arraycopy(header, 0, bytes, start, header.length);
+        Files.write(archive.toPath(), bytes);
+    }
+
+    @Test
     void storedVersionSeventyEntryMergesVolumesTheRar5Way() throws Exception {
         // A stored stream is byte-identical under version 50 and 70, so promoting the header is a
         // faithful specimen (§4.3 class 2) — unrar 7.23 tests the patched set All OK. It is the

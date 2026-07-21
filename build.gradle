@@ -258,7 +258,24 @@ def ppmHeapGolden = file('src/test/resources/com/github/junrar/ppm/legit-maxmb63
 
 tasks.named('test', Test).configure {
     useJUnitPlatform {
-        excludeTags 'generate'
+        excludeTags 'generate', 'bigdict'
+    }
+}
+
+tasks.register('bigDictTest', Test) {
+    description = 'Extracts the > 4 GB-dictionary RAR7 fixture through the segmented window ' +
+        '(M4.3). Local/scheduled only -- never a PR gate: it unpacks 4.25 GB and needs the heap ' +
+        'below plus maxDictionarySize raised past 6 GB in the test itself.'
+    group = 'verification'
+    dependsOn testClasses
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+    maxHeapSize = '6g'
+    filter {
+        includeTestsMatching 'com.github.junrar.ArchiveRar7BigDictTest'
+    }
+    useJUnitPlatform {
+        includeTags 'bigdict'
     }
 }
 

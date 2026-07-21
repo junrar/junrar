@@ -542,7 +542,23 @@ Unpack20 → Unpack` chain (§4.1), `decode/` table classes, `ComprDataIO`.
   unrar source, not copied.
 - Java arrays cap at 2^31 bytes — dictionaries > 2 GB need a segmented-window
   abstraction. That is junrar's own design problem (unrar's `unpack50frag.cpp`
-  fragmented allocator is a 32-bit-C++ concern, optional to mirror).
+  fragmented allocator is a 32-bit-C++ concern, optional to mirror). **Shipped at
+  M4.3** (issue #35): `Unpack5Window` is a `byte[][]` of 256 MB power-of-two
+  segments addressed by shift + mask, allocated lazily on first touch, with one
+  segment spanning the whole window at 1 GB and below so those archives keep the
+  flat layout. Engine capability 64 GB; the `maxDictionarySize` budget (4 GiB) is
+  what keeps larger dictionaries opt-in.
+- **The window is mask-addressed only if the window size is a power of two, and a
+  RAR7 one is not.** The dictionary is `0x20000 << dictBits` *plus* a 5-bit
+  fraction of itself (`winSize += winSize/32*frac`), so `& (size - 1)` wraps at the
+  wrong position and reads window space that was never written. Port
+  `WrapUp`/`WrapDown` (`d861246:unpack.hpp:416-435`, whose comment says exactly
+  this) instead of the mask, and note `AddFilter` uses `% MaxWinSize` rather than a
+  wrap because a malformed block start can exceed the window many times over
+  (`d861246:unpack50.cpp:228-233`). Port `WrapDown` by *intent*: its C++ body
+  (`WinPos >= MaxWinSize ? WinPos + MaxWinSize : WinPos`) undoes an unsigned
+  `size_t` underflow, which signed Java `long` never has — transcribed literally it
+  never wraps at all.
 - RAR7 (method 70) is NOT a new engine: `Unpack5(ExtraDist=true)` with the DCX=80
   distance table (`unrar-delta-map.md` §2.8). Design `Unpack5` with that flag from
   day one.
@@ -823,7 +839,8 @@ compare semantics, not lines). Use 4.2.4 (`5db30e6`) for 3.7.3-shaped diff conte
 | Blake2sp file hashes | `blake2s.cpp`, `blake2sp.cpp` | port (~340 lines) or Bouncy Castle `Blake2spDigest` — owner decision (§5.5) |
 | Hash abstraction (CRC32 \| Blake2sp) | `hash.cpp` | small Java interface in the `unpWrite` branch |
 | RAR5 LZ decoder + 4 filters (DELTA/E8/E8E9/ARM) | `unpack50.cpp`, `unpackinline.cpp` | sibling `Unpack5` engine (§5.2) |
-| Dynamic window (128 KB–4 GB; RAR7 to 64 GB, `UNPACK_MAX_DICT`) | `unpack.cpp` `Init(uint64,bool)` | per-archive window + segmented abstraction >2 GB (§5.2) |
+| Dynamic window (128 KB–4 GB; RAR7 to 64 GB, `UNPACK_MAX_DICT`) | `unpack.cpp` `Init(uint64,bool)` | per-archive window + lazily segmented abstraction >1 GB (§5.2, M4.3) |
+| Non-power-of-two window wrap (`WrapUp`/`WrapDown`, `%MaxWinSize` in `AddFilter`) | `unpack.hpp:416-435`, `unpack50.cpp:228-233` | `Unpack5.wrapUp`/`wrapDown` on `long` positions (§5.2, M4.3) |
 | UTF-8 names, HTIME extras (ns since 5.5.1), UOWNER, VERSION | `arcread.cpp` | RAR5 FileHeader loader |
 | REDIR link records + symlink-safety layers (5.2.5 / 6.1.7 / 6.2.3) | `extinfo.cpp`, `ulinks.cpp`, `extract.cpp` | `LocalFolderExtractor` parity (§7 S5–S7 rules) |
 | `.partN.rar` volumes, `MHFL_VOLNUMBER`, `EHFL_NEXTVOLUME` | `volume.cpp`, `arcread.cpp` | `VolumeManager` implementations (§4.12) |

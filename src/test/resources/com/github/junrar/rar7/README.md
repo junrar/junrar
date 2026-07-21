@@ -68,8 +68,17 @@ two >4 GB payloads. A probe appending a `-md1m` entry to a `-ma5 -md128k` solid 
 
 ## Extraction
 
-Not an extraction fixture, and — as of M4.2 (issue #34) — no RAR7 archive can be one until
-M4.3 (issue #35) ships the segmented window.
+**This is now the archive-level RAR7 extraction oracle** (M4.3, issue #35). The segmented window
+raised the engine capability to 64 GB, so the fixture extracts once the caller opts past the
+4 GiB `maxDictionarySize` default. `ArchiveRar7BigDictTest` does exactly that and meters the
+payload through a digest sink; executed 2026-07-21 it produced 4,563,402,752 bytes with CRC32
+`8E9B8BF4` — the `unrar 7.23` values recorded above — in 18.9 s at `-Xmx6g`.
+
+It is **never a PR gate**: it really unpacks 4.25 GB. Tagged `bigdict`, excluded from `test`,
+run with `./gradlew bigDictTest`.
+
+The reason it took until M4.3 still stands and is the reason no *cheaper* RAR7 extraction fixture
+exists:
 
 The M4.1 finding above generalizes: RAR5's four dict bits encode *every* dictionary `rar`
 records at or below 4 GB, because below that regime only powers of two are accepted. So
@@ -104,4 +113,5 @@ clamp to the unpacked size).
 
 M4.2 therefore drives the `ExtraDist` decode from crafted engine-level streams
 (`Unpack5ExtraDistTest`) and pins version-70 routing through the dictionary gate
-(`ArchiveRar7ExtractionTest`). The archive-level oracle-identical row moves to M4.3.
+(`ArchiveRar7ExtractionTest`). The archive-level oracle-identical row moved to M4.3 and is
+satisfied by this fixture, out of PR CI, as described above.
