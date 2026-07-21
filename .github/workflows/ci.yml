@@ -131,7 +131,10 @@ jobs:
         if: inputs.perform_release
         env:
           JRELEASER_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew jar jreleaserFullRelease
+        run: ./gradlew --debug jar jreleaserFullRelease
+      - run: |
+          ls build/jreleaser/
+          cat build/jreleaser/trace.log
       - name: JReleaser release output
         if: always()
         uses: actions/upload-artifact@v7
