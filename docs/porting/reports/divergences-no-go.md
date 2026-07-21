@@ -181,7 +181,7 @@ Upstream's `setIP(int)` returned `void` and early-returned when `ip >= codeSize`
 was exhausted, leaving `IP` unchanged so the interpreter loop spun forever — a hang, reachable
 from a crafted archive. The fix returns `boolean` and `break`s at all 11 call sites.
 
-M2.2 (`16d03472`) deleted that interpreter outright: `setIP`, `ExecuteCode`, `getOperand` and
+M2.2 (`e2287ab7`) deleted that interpreter outright: `setIP`, `ExecuteCode`, `getOperand` and
 `decodeArg` do not exist on this branch (0 occurrences), so the runaway loop is unreachable by
 construction rather than by a guard. An unrecognized VM filter is a no-op, matching unrar ≥ 5.5.1,
 which dropped the generic interpreter the same way.
@@ -197,3 +197,24 @@ a clean extraction, and `AbnormalFilesTest#VM_JMP_maxOpCount_bypass` asserts tha
 Upstream deleted `checkstyle.xml` and the plugin, and left spotless fully commented out, so
 `./gradlew check` runs no style gate on either side of the sync. Carried as-is deliberately
 (owner decision 2026-07-21: upstream will re-introduce a formatter on its own schedule).
+
+### Commit hashes in these documents were remapped by the rebase
+
+Replaying the 74 port commits onto `upstream/master` gave every one of them a new id, orphaning
+the hashes the porting docs cited. All 8 stale citations across `MIGRATION_MANUAL.md`,
+`PARITY_PLAN.md`, `divergences-no-go.md` and `signedness-audit.md` were remapped to their
+rebased equivalents (12 occurrences), each verified by `git patch-id --stable` showing the old
+and new commits carry an identical patch — subject matching alone was not trusted.
+
+Two consequences worth knowing when reading older text:
+
+- A hash quoted in a **closed issue comment or an older report narrative** is a historical
+  record of what was run at the time and was deliberately left alone; only living reference
+  documents were remapped. If such a hash does not resolve, that is why.
+- Where a document names a **different local clone** — `signedness-audit.md` cites
+  `~/git/junrar-issue9` at `issue/9-pin-c15-signedness` — the id now shown is the equivalent
+  commit *in this repository*, not an id that exists in that clone.
+
+Unchanged: the ~34 `~/git/unrar` C++ coordinates (`8f437ab`, `d861246`, `2e71167`, …), which
+live in a different repository and were never affected, and pre-merge-base junrar history
+(`a43a5192`, `0dc9d457`, `8e91d695`, …), which the rebase did not rewrite.

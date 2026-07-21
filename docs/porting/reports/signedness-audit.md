@@ -1,7 +1,7 @@
 # C15 signedness audit — the 5 unsigned-shift files
 
 Date: 2026-07-17. Chunk P0.4 (`docs/porting/PARITY_PLAN.md` §3). Audited tree:
-`~/git/junrar-issue9` at `9b7d1fc9` (branch `issue/9-pin-c15-signedness`). C++ coordinates
+`~/git/junrar-issue9` at `2f0a493b` (branch `issue/9-pin-c15-signedness`). C++ coordinates
 resolved against `~/git/unrar` (one commit per release): `2e71167` = 3.7.3 (the pinned
 translation baseline, `reports/baseline-pin.md`); `d861246` = current mirror HEAD (7.2.7),
 used only where a coordinate is unavoidably newer.
@@ -269,7 +269,7 @@ deferral"):
   no `>>>` of its own in `RarVM.java` and is outside this file's audit.
 - All other `>>>` occurrences in `RandomAccessInputStream`/`FileNameDecoder`/`BitInput` are
   covered by the tests in the table above (they are exactly the 4/1/3 total occurrences
-  each file has, per `git grep -n '>>>'` against these paths at `9b7d1fc9`).
+  each file has, per `git grep -n '>>>'` against these paths at `2f0a493b`).
 
 ## Appendix — full `>>>` inventory (context only; NOT counted toward the mechanical row total)
 
