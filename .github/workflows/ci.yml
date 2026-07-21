@@ -135,6 +135,7 @@ jobs:
       - run: |
           ls build/jreleaser/
           cat build/jreleaser/trace.log
+        if: always()
       - name: JReleaser release output
         if: always()
         uses: actions/upload-artifact@v7
