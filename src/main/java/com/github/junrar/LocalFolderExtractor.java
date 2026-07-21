@@ -75,7 +75,7 @@ class LocalFolderExtractor {
     }
 
     private File makeFile(final Path file) throws IOException {
-        if(file.getParent() == null) return null;
+        if (file.getParent() == null) return null;
         Files.createDirectories(file.getParent());
         return file.toFile();
     }
