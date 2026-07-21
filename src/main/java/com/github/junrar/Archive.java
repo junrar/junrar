@@ -31,6 +31,7 @@ import com.github.junrar.exception.MissingPreviousVolumeException;
 import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
+import com.github.junrar.exception.UnsupportedRarMethodException;
 import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.exception.UnsupportedRarVersionException;
 import com.github.junrar.exception.WrongPasswordException;
@@ -1349,6 +1350,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
         try {
             if (hd.isRar5Family()) {
+                extractRar5(hd);
+            } else if (hd.isRar5Container()) {
+                // A RAR5-container entry whose algorithm version this build does not recognize
+                // (VER_UNKNOWN) -- unrar's CheckUnpVer (d861246:extract.cpp:1517-1545) refuses it
+                // BY NAME above VER_UNPACK7, but extracts regardless when Method==0: a stored
+                // stream carries no version-specific encoding, so it must still reach extractRar5
+                // rather than the RAR3 unpack switch below, which matches no case, writes
+                // nothing, and would surface a bogus CrcErrorException (issue #43).
+                if (hd.getUnpMethod() != 0) {
+                    throw new UnsupportedRarMethodException(
+                        "Unsupported RAR5 compression algorithm version: " + hd.getUnpVersion());
+                }
                 extractRar5(hd);
             } else {
                 if (this.unpack == null) {

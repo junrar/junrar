@@ -140,6 +140,14 @@ public class FileHeader extends BlockHeader {
     private long rar5HostOsValue;
     private Rar5HostOS rar5HostOS;
 
+    /**
+     * Whether this entry's header block lives in a RAR5-format container ({@code
+     * Format==RARFMT50}), set unconditionally by the RAR5 constructor below -- true for EVERY
+     * RAR5-container entry regardless of its decoded algorithm version, unlike {@link
+     * #isRar5Family()} (issue #43).
+     */
+    private final boolean rar5Container;
+
     public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
 
@@ -286,6 +294,8 @@ public class FileHeader extends BlockHeader {
             position = arcTimeTuple.position;
         }
 
+        this.rar5Container = false;
+
         this.parsedLength = Math.min(position, fileHeader.length);
     }
 
@@ -375,6 +385,10 @@ public class FileHeader extends BlockHeader {
         this.usePswCheck = p.usePswCheck;
         this.useHashKey = p.useHashKey;
         this.pswCheck = p.pswCheck;
+
+        // This constructor is only ever invoked from Rar5FileHeaderReader.read, which is only
+        // ever invoked from Archive.readHeadersRar5 -- i.e. exactly when Format==RARFMT50.
+        this.rar5Container = true;
 
         this.parsedLength = 0;
     }
@@ -740,6 +754,18 @@ public class FileHeader extends BlockHeader {
      */
     public boolean isRar5Family() {
         return unpVersion == 50 || unpVersion == 70;
+    }
+
+    /**
+     * @return whether this entry's header block lives in a RAR5-format container ({@code
+     *         Format==RARFMT50}), independent of the decoded algorithm version -- unlike {@link
+     *         #isRar5Family()}, true even for an unrecognized ({@code VER_UNKNOWN}) algorithm
+     *         version. unrar's {@code CheckUnpVer} ({@code d861246:extract.cpp:1517-1520}) keys
+     *         its by-name method refusal off exactly this container fact, not off the decoded
+     *         version (issue #43).
+     */
+    public boolean isRar5Container() {
+        return rar5Container;
     }
 
     /**
