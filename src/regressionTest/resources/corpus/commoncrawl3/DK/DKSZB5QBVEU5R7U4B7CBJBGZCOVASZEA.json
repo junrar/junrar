@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1511477448.302235700,
+    "creationTime" : null,
+    "fileCRC" : -807381984,
+    "fileName" : "Terminator.2.Judgment.Day.1991.EXTENDED.REMASTERED.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-FGT(www.Top2Download.com)/Terminator.2.Judgment.Day.1991.EXTENDED.REMASTERED.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-FGT.mkv",
+    "hostOS" : "win32",
+    "fullPackSize" : 2042749664,
+    "fullUnpackSize" : 40831670459,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

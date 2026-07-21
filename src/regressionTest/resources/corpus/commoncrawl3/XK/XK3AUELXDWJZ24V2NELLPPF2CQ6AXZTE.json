@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1506523409.000000000,
+    "creationTime" : null,
+    "fileCRC" : 2057487505,
+    "fileName" : "Packtpub Distributing Electron Applications [Video]_git.ir/1.How Electron Applications are Packaged/01.The Course Overview.mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 21300857,
+    "fullUnpackSize" : 25781697,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

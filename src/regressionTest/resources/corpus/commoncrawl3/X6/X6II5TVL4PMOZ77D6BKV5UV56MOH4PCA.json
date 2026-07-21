@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1514133994.000000000,
+    "creationTime" : null,
+    "fileCRC" : -456161302,
+    "fileName" : "!2018 Постановление  57 и Порядок по оценки . критерии.docx",
+    "hostOS" : "win32",
+    "fullPackSize" : 2302136,
+    "fullUnpackSize" : 2347389,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

@@ -1,8 +1,24 @@
 {
   "isRarV5" : true,
   "isEncrypted" : false,
-  "isPasswordProtected" : false,
+  "isPasswordProtected" : true,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1519784945.373292200,
+    "creationTime" : null,
+    "fileCRC" : 392150190,
+    "fileName" : "Houdini-16.5-Masterclass-Fur-Hair-Grooming_(new).mp4",
+    "hostOS" : "win32",
+    "fullPackSize" : 377696752,
+    "fullUnpackSize" : 377696737,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

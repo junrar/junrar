@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534822207.174250500,
+    "creationTime" : null,
+    "fileCRC" : 57309296,
+    "fileName" : "KAB JOMBANG SEP 2018/1. GERTAN JATIM SEPTEMBER 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 153312,
+    "fullUnpackSize" : 268483,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534388742.000000000,
+    "creationTime" : null,
+    "fileCRC" : 972681900,
+    "fileName" : "KAB JOMBANG SEP 2018/18 Kabupaten Jombang.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4128415,
+    "fullUnpackSize" : 4766222,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

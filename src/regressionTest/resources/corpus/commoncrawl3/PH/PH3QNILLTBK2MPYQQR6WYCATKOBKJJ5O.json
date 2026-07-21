@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1480939838.000000000,
+    "creationTime" : null,
+    "fileCRC" : 424227584,
+    "fileName" : "Analogue.Sequences.School.of.Synthesis/Analogue_Sequences_School_of_Synthesis/Analogue Sequences - School of Synthesis.alp",
+    "hostOS" : "win32",
+    "fullPackSize" : 44849858,
+    "fullUnpackSize" : 44929127,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

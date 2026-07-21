@@ -1,8 +1,24 @@
 {
   "isRarV5" : true,
   "isEncrypted" : false,
-  "isPasswordProtected" : false,
+  "isPasswordProtected" : true,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1509421549.006077400,
+    "creationTime" : null,
+    "fileCRC" : -239231599,
+    "fileName" : "Call.of.Duty.World.War.II.CUSA05969.USA.PSN_ParandDl.Com/UP0002-CUSA05969_00-CODWWIITHEGAME01_0.pkg",
+    "hostOS" : "win32",
+    "fullPackSize" : 2147483187,
+    "fullUnpackSize" : 4294967296,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

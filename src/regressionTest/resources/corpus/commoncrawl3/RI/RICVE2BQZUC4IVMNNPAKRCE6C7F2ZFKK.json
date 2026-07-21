@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1517990400.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1847405631,
+    "fileName" : "Ableton.Live.Suite.v10.0.1.Incl.Patched.and.Keygen-R2R/ableton_live_suite_10.0.1/ableton_live_suite_10.0.1.iso",
+    "hostOS" : "win32",
+    "fullPackSize" : 1365522749,
+    "fullUnpackSize" : 2738726912,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }
