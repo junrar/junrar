@@ -38,6 +38,17 @@ public final class Rar5FileHeaderReader {
     private static final long FHFL_UNPUNKNOWN = 0x0008;
 
     private static final long FCI_SOLID = 0x40;
+    /** {@code headers5.hpp:65} — RAR7 compression flags carrying a RAR5 compression algorithm. */
+    private static final long FCI_RAR5_COMPAT = 0x00100000;
+
+    /** Maximum dictionary allowed by decompression, {@code d861246:rardefs.hpp:40} (64 GB). */
+    private static final long UNPACK_MAX_DICT = 0x1000000000L;
+
+    // Compression algorithm versions, stored as 0 and 1 (d861246:headers.hpp:17-22).
+    private static final byte VER_PACK5 = 50;
+    private static final byte VER_PACK7 = 70;
+    /** unrar's {@code VER_UNKNOWN}; junrar's sentinel is {@code -1}, see the parse site. */
+    private static final byte VER_UNKNOWN = -1;
 
     /** Mirrors the RAR3 path's 4K clamp (RAR3 {@code FileHeader}'s {@code nameSize} guard). */
     private static final int MAX_NAME_BYTES = 4 * 1024;
@@ -124,13 +135,33 @@ public final class Rar5FileHeaderReader {
         final long compInfo = v.read();
         pos = v.position();
         p.unpMethod = (int) ((compInfo >>> 7) & 7);
+        // Algorithm version (d861246:arcread.cpp:842-849): 0 -> RAR5, 1 -> RAR7, anything else is
+        // a format junrar predates.
         // ponytail: -1 (0xFF) as the VER_UNKNOWN sentinel could in principle collide with a raw
         // RAR3 unpVersion byte, but RAR3 never emits 0xFF -- a named constant if that changes.
-        p.unpVersion = (byte) (((compInfo & 0x3f) + 50) == 50 ? 50 : -1);
+        final long algoVersion = compInfo & 0x3f;
+        p.unpVersion = algoVersion == 0 ? VER_PACK5 : (algoVersion == 1 ? VER_PACK7 : VER_UNKNOWN);
         p.solid = !p.service && (compInfo & FCI_SOLID) != 0;
-        // Dictionary/window size (arcread.cpp:855): directories carry none; files decode
-        // 0x20000 << dictBits. The engine capability ceiling / budget guards live in Unpack5.init.
-        p.winSize = p.directory ? 0 : (0x20000L << ((compInfo >>> 10) & 0xf));
+        // Dictionary/window size (d861246:arcread.cpp:867-882). Directories and undecodable
+        // algorithms carry none; RAR5 decodes 4 dict bits, RAR7 decodes 5 dict bits plus a
+        // 5-bit fraction in 1/32 of that size. The engine capability ceiling / budget guards
+        // live in Unpack5.init.
+        if (p.directory || algoVersion > 1) {
+            p.winSize = 0;
+        } else {
+            p.winSize = 0x20000L << ((compInfo >>> 10) & (algoVersion == 0 ? 0x0f : 0x1f));
+            if (algoVersion == 1) {
+                p.winSize += p.winSize / 32 * ((compInfo >>> 15) & 0x1f);
+                // FCI_RAR5_COMPAT: written by RAR7, decodable by RAR5 (no ExtraDist) -- unrar
+                // needs it to append RAR7 files to a RAR5 solid stream with a larger dictionary.
+                if ((compInfo & FCI_RAR5_COMPAT) != 0) {
+                    p.unpVersion = VER_PACK5;
+                }
+                if (p.winSize > UNPACK_MAX_DICT) {
+                    p.unpVersion = VER_UNKNOWN;
+                }
+            }
+        }
 
         v = new VInt(header, pos);
         final long hostOsRaw = v.read();
