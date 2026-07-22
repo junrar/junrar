@@ -108,21 +108,24 @@ junrar's LICENSE is the UnRAR license: *code may not be used to develop a RAR
 
 ## 3. House rules (non-negotiable)
 
-All gates run in `./gradlew build` (= `check`); a violation fails CI, not just review.
-Evidence: [`reports/layer-idioms-style.md`](reports/layer-idioms-style.md).
+The ArchUnit and Javadoc gates run in `./gradlew build` (= `check`); a violation fails
+CI, not just review. The style rows are house style without an automated gate right now:
+Checkstyle was removed on `master` and Spotless is its planned replacement, currently
+present only as a commented-out block (build.gradle:19,229) — until it lands, style
+holds by review. Evidence: [`reports/layer-idioms-style.md`](reports/layer-idioms-style.md).
 
 | Rule | Enforcement |
 | --- | --- |
-| 4-space indent, no tabs, ≤175 cols, no trailing whitespace, newline at EOF | checkstyle 10.3.2 (`checkstyle.xml`; build.gradle:171-174) |
-| No star imports; no redundant/unused imports | checkstyle `AvoidStarImport` etc. |
-| K&R braces; `if (x) return y;` single-liners legal | checkstyle `LeftCurly`/`NeedBraces allowSingleLineStatement` |
-| No `System.out/err`, no `printStackTrace` | ArchUnit `CodingRulesTest.java:19` |
-| No bare `throw new RuntimeException/Exception` | ArchUnit `CodingRulesTest.java:22` |
-| No `java.util.logging`, no Joda-Time | ArchUnit `CodingRulesTest.java:25-28` |
-| Tests: JUnit 5 Jupiter + **AssertJ only** — `org.junit.jupiter.api.Assertions` import is build-failing | checkstyle `IllegalImport` + ArchUnit `TestCodingRulesTest.java:15` |
-| Javadoc must at least build (`withJavadocJar()`) | build.gradle:32 |
+| 4-space indent, no tabs, ≤175 cols, no trailing whitespace, newline at EOF | house style (was checkstyle 10.3.2; Spotless pending) |
+| No star imports; no redundant/unused imports | house style (was checkstyle `AvoidStarImport` etc.; Spotless pending) |
+| K&R braces; `if (x) return y;` single-liners legal | house style (was checkstyle `LeftCurly`/`NeedBraces`; Spotless pending) |
+| No `System.out/err`, no `printStackTrace` | ArchUnit `CodingRulesTest.java:18` |
+| No bare `throw new RuntimeException/Exception` | ArchUnit `CodingRulesTest.java:21` |
+| No `java.util.logging`, no Joda-Time | ArchUnit `CodingRulesTest.java:24-27` |
+| Tests: JUnit 5 Jupiter + **AssertJ only** — depending on `org.junit.jupiter.api.Assertions` is build-failing | ArchUnit `TestCodingRulesTest.java:14` (the old checkstyle `IllegalImport` half retired with checkstyle) |
+| Javadoc must at least build (`withJavadocJar()`) | build.gradle:51 |
 
-**Java level.** `src/main` compiles at **release 8 today** (build.gradle:36-38) — no
+**Java level.** `src/main` compiles at **release 8 today** (build.gradle:55) — no
 `var`, records, `List.of` in production code; tests/regressionTest compile at toolchain
 level (JDK 21) and freely use records/`var`. *Standing owner permission:* the floor may
 be bumped to 17 or 21 LTS **with strong justification** — that decision belongs to the
