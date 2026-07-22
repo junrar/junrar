@@ -34,6 +34,7 @@ import java.io.InputStream;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
@@ -96,7 +97,7 @@ public class ArchiveTest {
     }
 
     private static Stream<Arguments> provideAudioDecompression() {
-        List<String> files = List.of(
+        List<String> files = Arrays.asList(
             "audio/BoatModernEnglish-audio-text-unpack30.rar",  // special audio/text compression enabled, RAR 2.9
             "audio/BoatModernEnglish-audio-text-unpack20.rar",  // special audio/text compression enabled, RAR 2.0
             "audio/BoatModernEnglish-regular-unpack30.rar",     // special audio/text compression disabled, RAR 2.9
@@ -106,7 +107,7 @@ public class ArchiveTest {
         );
 
         return files.stream()
-            .map(path -> List.of(Arguments.of(path, false), Arguments.of(path, true)))
+            .map(path -> Arrays.asList(Arguments.of(path, false), Arguments.of(path, true)))
             .flatMap(Collection::stream);
     }
 

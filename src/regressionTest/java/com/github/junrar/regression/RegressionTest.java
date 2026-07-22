@@ -15,11 +15,13 @@ import org.junitpioneer.jupiter.DefaultTimeZone;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
@@ -75,7 +77,7 @@ public class RegressionTest {
     }
 
     static List<Path> listTestFiles() throws IOException {
-        try (var stream =
+        try (Stream<Path> stream =
                  Files.find(testDir, 100, (path, attr) -> attr.isRegularFile() && !path.getFileName().toString().startsWith("."))) {
             return stream.collect(Collectors.toList());
         }
@@ -91,11 +93,11 @@ public class RegressionTest {
         Path outputFile = resourcesDir.resolve(relativeFile);
 
         Files.createDirectories(outputFile.getParent());
-        try (var archive = new Archive(filePath.toFile())) {
-            var record = ArchiveRecord.fromArchive(archive);
+        try (Archive archive = new Archive(filePath.toFile())) {
+            ArchiveRecord record = ArchiveRecord.fromArchive(archive);
             mapper.writeValue(outputFile.toFile(), record);
         } catch (RarException e) {
-            var record = ArchiveRecord.fromException(e, filePath);
+            ArchiveRecord record = ArchiveRecord.fromException(e, filePath);
             mapper.writeValue(outputFile.toFile(), record);
         }
     }
@@ -106,19 +108,19 @@ public class RegressionTest {
     @DefaultTimeZone("UTC")
     @Timeout(30)
     void check(Path filePath) throws Exception {
-        var relativeFile = root.relativize(filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
-        var resourceName = Paths.get("/", corpus, relativeFile.toString()).toString();
-        var resource = getClass().getResource(resourceName);
+        Path relativeFile = root.relativize(filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
+        String resourceName = Paths.get("/", corpus, relativeFile.toString()).toString();
+        URL resource = getClass().getResource(resourceName);
 
         if (resource == null) {
             fail("Could not load resource: " + resourceName);
         } else {
-            var inputFile = new File(resource.toURI());
+            File inputFile = new File(resource.toURI());
 
-            var inputRecord = mapper.readValue(inputFile, ArchiveRecord.class);
+            ArchiveRecord inputRecord = mapper.readValue(inputFile, ArchiveRecord.class);
 
             ArchiveRecord record;
-            try (var archive = new Archive(filePath.toFile())) {
+            try (Archive archive = new Archive(filePath.toFile())) {
                 record = ArchiveRecord.fromArchive(archive);
             } catch (RarException e) {
                 record = ArchiveRecord.fromException(e, filePath);

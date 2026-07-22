@@ -17,6 +17,7 @@ import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -112,22 +113,22 @@ class ArchiveRar5PublicSurfaceTest {
 
     @Test
     void storePlain128kAllSurfaces() throws Exception {
-        assertAllSurfaces("rar5unpack/m0-plain-128k.rar", null, Map.of("small.bin", SHA_SMALL), Map.of("small.bin", 8400L));
+        assertAllSurfaces("rar5unpack/m0-plain-128k.rar", null, mapOf("small.bin", SHA_SMALL), mapOf("small.bin", 8400L));
     }
 
     @Test
     void m3Plain128kAllSurfaces() throws Exception {
-        assertAllSurfaces("rar5unpack/m3-plain-128k.rar", null, Map.of("med.bin", SHA_MED), Map.of("med.bin", 307200L));
+        assertAllSurfaces("rar5unpack/m3-plain-128k.rar", null, mapOf("med.bin", SHA_MED), mapOf("med.bin", 307200L));
     }
 
     @Test
     void m5Plain128kAllSurfaces() throws Exception {
-        assertAllSurfaces("rar5unpack/m5-plain-128k.rar", null, Map.of("med.bin", SHA_MED), Map.of("med.bin", 307200L));
+        assertAllSurfaces("rar5unpack/m5-plain-128k.rar", null, mapOf("med.bin", SHA_MED), mapOf("med.bin", 307200L));
     }
 
     @Test
     void m3Plain32mAllSurfaces() throws Exception {
-        assertAllSurfaces("rar5unpack/m3-plain-32m.rar", null, Map.of("big.bin", SHA_BIG), Map.of("big.bin", 41943040L));
+        assertAllSurfaces("rar5unpack/m3-plain-32m.rar", null, mapOf("big.bin", SHA_BIG), mapOf("big.bin", 41943040L));
     }
 
     @Test
@@ -143,13 +144,13 @@ class ArchiveRar5PublicSurfaceTest {
     @Test
     void m3DataEncryptedAllSurfaces() throws Exception {
         // -p: file data encrypted, headers plaintext — every surface works, listing needs no password.
-        assertAllSurfaces("rar5unpack/m3-enc-p.rar", PW, Map.of("med.bin", SHA_MED), Map.of("med.bin", 307200L));
+        assertAllSurfaces("rar5unpack/m3-enc-p.rar", PW, mapOf("med.bin", SHA_MED), mapOf("med.bin", 307200L));
     }
 
     @Test
     void m3HeaderEncryptedExtractionSurfaces() throws Exception {
         // -hp: headers encrypted; getContentsDescription (no password parameter) is consciously skipped.
-        assertExtractionSurfaces("rar5unpack/m3-enc-hp.rar", PW, Map.of("med.bin", SHA_MED));
+        assertExtractionSurfaces("rar5unpack/m3-enc-hp.rar", PW, mapOf("med.bin", SHA_MED));
     }
 
     @Test
@@ -158,43 +159,43 @@ class ArchiveRar5PublicSurfaceTest {
         final File dest = newDest();
         final List<File> out = Junrar.extract(fixture("rar5unpack/m3-enc-p.rar"), dest, PW);
         assertThat(out).isNotEmpty();
-        assertThat(digestTree(dest)).isEqualTo(Map.of("med.bin", SHA_MED));
+        assertThat(digestTree(dest)).isEqualTo(mapOf("med.bin", SHA_MED));
     }
 
     @Test
     void oneGbDictionaryClaimExtractsOnPublicPath() throws Exception {
         // Byte-patched 1 GB dictionary claim (B-S3): extracts under DEFAULT options on the public path.
-        assertAllSurfaces("rar5unpack/m3-1gb-claim.rar", null, Map.of("tiny.bin", SHA_TINY_1GB_CLAIM), Map.of("tiny.bin", 3200L));
+        assertAllSurfaces("rar5unpack/m3-1gb-claim.rar", null, mapOf("tiny.bin", SHA_TINY_1GB_CLAIM), mapOf("tiny.bin", 3200L));
     }
 
     // ---- filters ------------------------------------------------------------------------------
 
     @Test
     void deltaFilterAllSurfaces() throws Exception {
-        assertAllSurfaces("rar5filters/rar5-delta.rar", null, Map.of("delta.bin", SHA_DELTA), Map.of("delta.bin", 262144L));
+        assertAllSurfaces("rar5filters/rar5-delta.rar", null, mapOf("delta.bin", SHA_DELTA), mapOf("delta.bin", 262144L));
     }
 
     @Test
     void e8FilterAllSurfaces() throws Exception {
-        assertAllSurfaces("rar5filters/rar5-e8.rar", null, Map.of("e8.bin", SHA_E8), Map.of("e8.bin", 196608L));
+        assertAllSurfaces("rar5filters/rar5-e8.rar", null, mapOf("e8.bin", SHA_E8), mapOf("e8.bin", 196608L));
     }
 
     @Test
     void e8e9FilterAllSurfaces() throws Exception {
-        assertAllSurfaces("rar5filters/rar5-e8e9.rar", null, Map.of("e8e9.bin", SHA_E8E9), Map.of("e8e9.bin", 196608L));
+        assertAllSurfaces("rar5filters/rar5-e8e9.rar", null, mapOf("e8e9.bin", SHA_E8E9), mapOf("e8e9.bin", 196608L));
     }
 
     // ---- BLAKE2 -------------------------------------------------------------------------------
 
     @Test
     void blake2HtbAllSurfaces() throws Exception {
-        assertAllSurfaces("blake2/rar5-htb.rar", null, Map.of("payload.bin", SHA_BLAKE2_PAYLOAD), Map.of("payload.bin", 2000L));
+        assertAllSurfaces("blake2/rar5-htb.rar", null, mapOf("payload.bin", SHA_BLAKE2_PAYLOAD), mapOf("payload.bin", 2000L));
     }
 
     @Test
     void blake2HtbMacEncryptedAllSurfaces() throws Exception {
         // -htb + -p: headers plaintext, data encrypted with the HASHMAC digest scheme.
-        assertAllSurfaces("blake2/rar5-htb-mac.rar", PW, Map.of("payload.bin", SHA_BLAKE2_PAYLOAD), Map.of("payload.bin", 2000L));
+        assertAllSurfaces("blake2/rar5-htb-mac.rar", PW, mapOf("payload.bin", SHA_BLAKE2_PAYLOAD), mapOf("payload.bin", 2000L));
     }
 
     // ---- M3.3-era fixtures (names/metadata rows) ----------------------------------------------
@@ -202,8 +203,8 @@ class ArchiveRar5PublicSurfaceTest {
     @Test
     void tinyRar5FixtureAllSurfaces() throws Exception {
         assertAllSurfaces("rar5.rar", null,
-            Map.of("FILE1.TXT", SHA_FILE1_TXT, "FILE2.TXT", SHA_FILE2_TXT),
-            Map.of("FILE1.TXT", 7L, "FILE2.TXT", 7L));
+            mapOf("FILE1.TXT", SHA_FILE1_TXT, "FILE2.TXT", SHA_FILE2_TXT),
+            mapOf("FILE1.TXT", 7L, "FILE2.TXT", 7L));
     }
 
     @Test
@@ -221,24 +222,24 @@ class ArchiveRar5PublicSurfaceTest {
 
     @Test
     void dataEncryptedPasswordFixtureAllSurfaces() throws Exception {
-        assertAllSurfaces("password/rar5-password-junrar.rar", PW, Map.of("file1.txt", SHA_PW_FILE1), Map.of("file1.txt", 6L));
+        assertAllSurfaces("password/rar5-password-junrar.rar", PW, mapOf("file1.txt", SHA_PW_FILE1), mapOf("file1.txt", 6L));
     }
 
     @Test
     void headerEncryptedPasswordFixtureExtracts() throws Exception {
-        assertExtractionSurfaces("password/rar5-encrypted-junrar.rar", PW, Map.of("file1.txt", SHA_PW_FILE1));
+        assertExtractionSurfaces("password/rar5-encrypted-junrar.rar", PW, mapOf("file1.txt", SHA_PW_FILE1));
     }
 
     @Test
     void headerEncryptedNonAsciiPasswordExtracts() throws Exception {
-        assertExtractionSurfaces("password/rar5-nonascii-password.rar", "пароль密码ü", Map.of("file1.txt", SHA_NONASCII_PAYLOAD));
+        assertExtractionSurfaces("password/rar5-nonascii-password.rar", "пароль密码ü", mapOf("file1.txt", SHA_NONASCII_PAYLOAD));
     }
 
     // ---- multi-volume -------------------------------------------------------------------------
 
     @Test
     void threePartSetAllVolumeSurfaces() throws Exception {
-        assertVolumeSurfaces("vols", 3, Map.of("note.txt", SHA_NOTE, "spanned.bin", SHA_SPANNED));
+        assertVolumeSurfaces("vols", 3, mapOf("note.txt", SHA_NOTE, "spanned.bin", SHA_SPANNED));
     }
 
     @Test
@@ -252,12 +253,12 @@ class ArchiveRar5PublicSurfaceTest {
 
     @Test
     void blake2MultiVolumeAllVolumeSurfaces() throws Exception {
-        assertVolumeSurfaces("blake", 3, Map.of("note.txt", SHA_NOTE, "spanned.bin", SHA_SPANNED));
+        assertVolumeSurfaces("blake", 3, mapOf("note.txt", SHA_NOTE, "spanned.bin", SHA_SPANNED));
     }
 
     @Test
     void bigSpanMultiVolumeAllVolumeSurfaces() throws Exception {
-        assertVolumeSurfaces("big", 4, Map.of("spanned2.bin", SHA_SPANNED2));
+        assertVolumeSurfaces("big", 4, mapOf("spanned2.bin", SHA_SPANNED2));
     }
 
     @Test
@@ -424,5 +425,18 @@ class ArchiveRar5PublicSurfaceTest {
                 s.close();
             }
         }
+    }
+
+    // Java 8 stand-ins for Map.of (test sources compile at release 8).
+    private static <V> Map<String, V> mapOf(String k, V v) {
+        Map<String, V> m = new LinkedHashMap<>();
+        m.put(k, v);
+        return m;
+    }
+
+    private static <V> Map<String, V> mapOf(String k1, V v1, String k2, V v2) {
+        Map<String, V> m = mapOf(k1, v1);
+        m.put(k2, v2);
+        return m;
     }
 }

@@ -2,6 +2,7 @@ package com.github.junrar;
 
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.NullOutputStream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -142,7 +143,7 @@ public class UnpackLimitHostileArchiveTest {
     private byte[] readResource(String resource) throws Exception {
         try (InputStream input = getClass().getResourceAsStream(resource)) {
             assertThat(input).as("resource %s", resource).isNotNull();
-            return input.readAllBytes();
+            return IOUtils.toByteArray(input);
         }
     }
 

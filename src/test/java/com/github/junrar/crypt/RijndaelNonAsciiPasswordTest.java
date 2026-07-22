@@ -33,7 +33,7 @@ class RijndaelNonAsciiPasswordTest {
 
                 try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
                     archive.extractFile(fileHeader, baos);
-                    assertThat(baos.toString(StandardCharsets.UTF_8)).isEqualTo(EXPECTED_CONTENT);
+                    assertThat(new String(baos.toByteArray(), StandardCharsets.UTF_8)).isEqualTo(EXPECTED_CONTENT);
                 }
             }
         }

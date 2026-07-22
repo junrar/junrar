@@ -2,6 +2,7 @@ package com.github.junrar;
 
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.RarException;
+import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
@@ -73,7 +74,7 @@ class HostileEncnameArchiveTest {
         Path tmp = Files.createTempFile("junrar-encname-", ".rar");
         try (InputStream input = getClass().getResourceAsStream(FIXTURE)) {
             assertThat(input).as("resource %s", FIXTURE).isNotNull();
-            Files.write(tmp, input.readAllBytes());
+            Files.write(tmp, IOUtils.toByteArray(input));
         }
         return tmp;
     }

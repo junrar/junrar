@@ -29,12 +29,15 @@ dependencies {
         annotationProcessor 'com.github.gotson.bestbefore:bestbefore-processor-java:0.2.0'
     }
 
-    testRuntimeOnly 'ch.qos.logback:logback-classic:1.5.38'
+    // 1.3.x is the Java-8-capable logback line (1.4+ needs JVM 11); test runtime only.
+    testRuntimeOnly 'ch.qos.logback:logback-classic:1.3.15'
     testImplementation 'commons-io:commons-io:2.22.0'
-    testImplementation 'org.mockito:mockito-core:5.23.0'
+    // Pinned to the Java-8-capable lines so the suites run on a JVM 8 toolchain
+    // (mockito 5.x and junit-pioneer 2.x declare an 11+ floor).
+    testImplementation 'org.mockito:mockito-core:4.11.0'
     testImplementation 'org.assertj:assertj-core:3.27.7'
     testImplementation 'com.tngtech.archunit:archunit-junit5:1.4.1'
-    testImplementation 'org.junit-pioneer:junit-pioneer:2.3.0'
+    testImplementation 'org.junit-pioneer:junit-pioneer:1.9.1'
     testImplementation 'org.bouncycastle:bcprov-jdk18on:1.84'
 
     constraints {
@@ -51,9 +54,6 @@ java {
     withJavadocJar()
     withSourcesJar()
 }
-compileJava {
-    options.release = 8
-}
 // The framework-free JRE 8 extraction smoke runner (P0.9): one main-class file, compiled
 // at release 8 against the production classes and executed on real JREs by the CI
 // jre-smoke matrix. Not wired into `check`/`build`; the smoke-build CI job invokes
@@ -63,20 +63,6 @@ sourceSets {
         java.srcDir 'src/jre8smoke/java'
         compileClasspath += sourceSets.main.output
     }
-}
-compileJre8smokeJava {
-    options.release = 8
-}
-compileTestJava {
-    // Pinned so TestCodingRulesTest's ArchUnit import of `src/test` classes is never at the
-    // mercy of whichever JDK happens to run the build. ArchUnit 1.4.1 bundles ASM with no
-    // support for class-file major version 70 (JDK 26): on a JDK 26 toolchain, unpinned
-    // compileTestJava emits major-70 test classes, ArchUnit silently imports zero of them, and
-    // no_junit_assertions dies on ArchRule.java:201 ("failed to check any classes"). release=21
-    // (not 8, like compileJava) because junit-pioneer/mockito test deps require JVM 11+ to
-    // resolve, and 21 is what CI already targets -- comfortably under ArchUnit's ASM ceiling
-    // (max supported: V25 / JDK 25). See #36.
-    options.release = 21
 }
 jreleaser {
     project {
@@ -197,8 +183,26 @@ nexusPublishing {
     }
 }
 
+// Every source root compiles at release 8 -- production for the JRE 8 support floor,
+// and the test/regressionTest/jre8smoke sets so the suites can execute on a real JVM 8
+// (the -PtestJvm matrix below). One release also means deterministic bytecode (V52)
+// regardless of the launcher JDK -- the hazard #36 fixed for ArchUnit, whose bundled
+// ASM tops out at class-file V25, is structurally gone at V52.
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
+    options.release = 8
+}
+
+// Select the JVM the forked test processes run on: ./gradlew test -PtestJvm=8.
+// The Gradle daemon itself stays on 17+; toolchains auto-provision via the foojay
+// resolver (settings.gradle). Without the property, tests run on the daemon JVM.
+def testJvm = providers.gradleProperty('testJvm')
+tasks.withType(Test).configureEach {
+    if (testJvm.present) {
+        javaLauncher = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(testJvm.get().toInteger())
+        }
+    }
 }
 
 tasks.wrapper {
@@ -219,7 +223,7 @@ testing {
                 implementation 'org.assertj:assertj-core:3.27.7'
                 implementation 'com.fasterxml.jackson.core:jackson-databind:2.21.3'
                 implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.21.3'
-                implementation 'org.junit-pioneer:junit-pioneer:2.3.0'
+                implementation 'org.junit-pioneer:junit-pioneer:1.9.1'
             }
 
             targets {
@@ -236,14 +240,6 @@ testing {
             }
         }
     }
-}
-
-// Same determinism rationale as compileTestJava: without a pin the harness bytecode
-// tracks whichever JVM launches Gradle. 21, not 8: the harness uses records and
-// JUnit 5. Production stays release 8 either way. (Must sit after the testing block
-// that creates the source set.)
-tasks.named('compileRegressionTestJava') {
-    options.release = 21
 }
 
 //spotless {

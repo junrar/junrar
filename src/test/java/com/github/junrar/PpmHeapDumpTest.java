@@ -49,7 +49,7 @@ public class PpmHeapDumpTest {
         dumpHeap(first);
         dumpHeap(second);
 
-        long consecutiveMismatch = Files.mismatch(first, second);
+        long consecutiveMismatch = mismatch(first, second);
         assertThat(consecutiveMismatch)
             .as("consecutive PPMd heap dumps differ at byte offset %d (%s vs %s)",
                 consecutiveMismatch, first, second)
@@ -180,5 +180,18 @@ public class PpmHeapDumpTest {
         } catch (ReflectiveOperationException e) {
             throw new ExceptionInInitializerError(e);
         }
+    }
+
+    /** Java 8 stand-in for {@code Files.mismatch} (test sources compile at release 8). */
+    private static long mismatch(Path a, Path b) throws IOException {
+        byte[] x = Files.readAllBytes(a);
+        byte[] y = Files.readAllBytes(b);
+        int n = Math.min(x.length, y.length);
+        for (int i = 0; i < n; i++) {
+            if (x[i] != y[i]) {
+                return i;
+            }
+        }
+        return x.length == y.length ? -1L : n;
     }
 }
