@@ -14,12 +14,12 @@ import java.security.MessageDigest;
  * <p>{@code options.release = 8} (build.gradle) proves API/bytecode
  * compatibility only; JUnit 5 needs a newer JDK than 8 to run, so the real
  * test suite cannot execute on a JRE 8 runtime. This is a minimal
- * {@code public static void main} runner instead: the production sources and
- * this file are compiled by an <em>actual</em> JDK 8 {@code javac} in CI
- * ({@code .github/workflows/ci.yml}, job {@code jdk8-build}; Gradle itself
- * cannot run on 8), and the resulting jar is executed under real Temurin JREs
- * -- 8, the base version, and the latest LTS -- in the {@code jre-smoke}
- * matrix. That proves JCE *provider* behavior on those runtimes (Cipher
+ * {@code public static void main} runner instead: the jar is built on the
+ * latest LTS JDK in CI ({@code .github/workflows/ci.yml}, job
+ * {@code smoke-build}; Gradle itself cannot run on 8) with the normal
+ * {@code --release 8} compile, then executed under real Temurin JREs -- 8,
+ * the base version, and the latest LTS -- in the {@code jre-smoke} matrix.
+ * That proves JCE *provider* behavior on those runtimes (Cipher
  * AES/CBC/NoPadding, the 8u161 unlimited-policy floor documented in plan
  * ss2.1), not just that the bytecode targets release 8.
  *
