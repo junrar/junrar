@@ -14,17 +14,18 @@ import java.security.MessageDigest;
  * <p>{@code options.release = 8} (build.gradle) proves API/bytecode
  * compatibility only; JUnit 5 needs a newer JDK than 8 to run, so the real
  * test suite cannot execute on a JRE 8 runtime. This is a minimal
- * {@code public static void main} runner instead: built with the normal
- * JDK 21 toolchain, then executed under a real Temurin 8 JRE in CI
- * ({@code .github/workflows/ci.yml}, job {@code jre8-smoke}) to prove
- * JCE *provider* behavior on that runtime (Cipher AES/CBC/NoPadding, the
- * 8u161 unlimited-policy floor documented in plan ss2.1) -- not just that the
- * bytecode targets release 8.
+ * {@code public static void main} runner instead: the production sources and
+ * this file are compiled by an <em>actual</em> JDK 8 {@code javac} in CI
+ * ({@code .github/workflows/ci.yml}, job {@code jdk8-build}; Gradle itself
+ * cannot run on 8), and the resulting jar is executed under real Temurin JREs
+ * -- 8, the base version, and the latest LTS -- in the {@code jre-smoke}
+ * matrix. That proves JCE *provider* behavior on those runtimes (Cipher
+ * AES/CBC/NoPadding, the 8u161 unlimited-policy floor documented in plan
+ * ss2.1), not just that the bytecode targets release 8.
  *
  * <p>Not part of any Gradle source set (kept out of checkstyle/ArchUnit
- * scope on purpose): the CI job compiles and runs this one file directly
- * with {@code javac --release 8} / {@code java}. No production code is
- * touched by P0.9.
+ * scope on purpose): the CI jobs compile and run this one file directly with
+ * {@code javac} / {@code java}. No production code is touched by P0.9.
  *
  * <p>Fixtures (existing, committed under {@code src/test/resources}):
  * plain RAR3 {@code test.rar} (entry {@code foo\bar.txt}, content

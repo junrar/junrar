@@ -93,43 +93,70 @@ jobs:
           name: regression-test-results
           path: build/test-results/
 
-  jre8-smoke:
+  # The regular build compiles with the JDK 21 toolchain and --release 8, which proves
+  # API/bytecode compatibility only. This job builds the jar and the framework-free
+  # smoke runner with an actual JDK 8 javac (Gradle itself cannot run on 8), and the
+  # jre-smoke matrix below runs that genuinely JDK 8-built artifact on the base JRE 8
+  # and the latest LTS. JUnit 5 cannot run on JRE 8 (manual §8.1), hence one
+  # `public static void main` runner instead of the test suite.
+  jdk8-build:
     runs-on: ubuntu-latest
-    name: JRE 8 runtime extraction smoke
+    name: Build with a real JDK 8
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-java@v5
-        with:
-          java-version: '21'
-          java-package: 'jdk'
-          distribution: 'temurin'
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v6
-      - name: Build jar with the JDK 21 toolchain
-        run: ./gradlew jar
-
-      # javac --release 8 needs a JDK >= 9 (javac itself); the JDK 21 set up
-      # above is still active here. JUnit 5 cannot run on JRE 8 (manual §8.1),
-      # so this compiles one framework-free `public static void main` runner,
-      # not the test suite.
-      - name: Compile JRE 8 smoke runner
-        run: |
-          mkdir -p build/jre8smoke
-          javac --release 8 -encoding UTF-8 -cp build/libs/junrar-*.jar -d build/jre8smoke \
-            src/jre8smoke/java/com/github/junrar/jre8smoke/Jre8SmokeMain.java
-
       - uses: actions/setup-java@v5
         with:
           java-version: '8'
           java-package: 'jdk'
           distribution: 'temurin'
 
-      - name: Run extraction smoke on a real JRE 8
+      - name: Compile jar and smoke runner with javac 8
         run: |
-          jar="$(ls build/libs/junrar-*.jar)"
-          slf4j_jar="$(find "$HOME/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api" -name '*.jar' | head -1)"
-          java -cp "build/jre8smoke:${jar}:${slf4j_jar}" \
+          slf4j_version="$(grep -oE 'slf4j-api:[0-9]+\.[0-9]+\.[0-9]+' build.gradle | cut -d: -f2)"
+          curl -fsSL --create-dirs -o build/slf4j-api.jar \
+            "https://repo1.maven.org/maven2/org/slf4j/slf4j-api/${slf4j_version}/slf4j-api-${slf4j_version}.jar"
+          find src/main/java -name '*.java' > build/sources.txt
+          mkdir -p build/jdk8/classes build/jdk8/smoke
+          javac -encoding UTF-8 -cp build/slf4j-api.jar -d build/jdk8/classes @build/sources.txt
+          jar cf build/jdk8/junrar-jdk8.jar -C build/jdk8/classes .
+          javac -encoding UTF-8 -cp build/jdk8/junrar-jdk8.jar -d build/jdk8/smoke \
+            src/jre8smoke/java/com/github/junrar/jre8smoke/Jre8SmokeMain.java
+
+      - name: Upload JDK 8 build
+        uses: actions/upload-artifact@v7
+        with:
+          name: jdk8-build
+          path: |
+            build/jdk8/junrar-jdk8.jar
+            build/jdk8/smoke
+            build/slf4j-api.jar
+
+  jre-smoke:
+    needs: jdk8-build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ '8', '25' ]
+    name: JRE ${{ matrix.java }} runtime extraction smoke
+    steps:
+      # Checked out for the committed RAR fixtures the runner reads from src/test/resources.
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v5
+        with:
+          java-version: ${{ matrix.java }}
+          java-package: 'jre'
+          distribution: 'temurin'
+
+      - name: Download JDK 8 build
+        uses: actions/download-artifact@v8
+        with:
+          name: jdk8-build
+          path: jdk8-artifact
+
+      - name: Run extraction smoke on JRE ${{ matrix.java }}
+        run: |
+          java -version
+          java -cp "jdk8-artifact/jdk8/smoke:jdk8-artifact/jdk8/junrar-jdk8.jar:jdk8-artifact/slf4j-api.jar" \
             com.github.junrar.jre8smoke.Jre8SmokeMain
 
   version:
