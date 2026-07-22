@@ -38,6 +38,11 @@ Raw reports (long-tail detail, full evidence chains):
 | [`reports/divergences-no-go.md`](reports/divergences-no-go.md) | the 20-row regression no-go table, fixture map |
 | [`reports/unrar-delta-map.md`](reports/unrar-delta-map.md) | 3.7.3→7.2.7 census, RAR5/RAR7 inventory, milestones, pinned-evidence table |
 
+Issue citations: bare `#NN` numbers refer to two different trackers — upstream
+`junrar/junrar` for historical bugfix provenance, and the port's working tracker for
+the M/P chunks. **Appendix A** disambiguates them and carries a self-contained index
+of every port-tracker issue, so the citations survive if that tracker goes away.
+
 Report reconciliations (contradictions found during synthesis, resolved with fresh evidence):
 
 - **`unsigned/` package usage.** `layer-ppm-vm-crypt.md` §8 claims the package is
@@ -886,3 +891,38 @@ the milestones are the default shape, not dogma.*
 
 Every milestone obeys §7 (no-go rows + UNPINNED-first testing) and §8 (fixtures for
 every new guard; corpus regeneration when observable output changes).
+
+---
+
+## Appendix A — issue-number index
+
+Two different issue trackers are cited across `docs/porting/`, both by bare `#NN`:
+
+1. **Upstream `junrar/junrar` issues** — the provenance of historical bugfixes
+   (the §6 trap rows and the no-go S/C rows: #8, #14, #31 in S7, #36/#45 in C9,
+   #86, #88, #90, #104, #108, #110, #216). These live in this repository's own
+   tracker and are stable; they keep their bare form.
+2. **Port-tracker issues** — the working tracker the RAR5/RAR7 port was developed
+   under (`andrebrait/junrar`). That fork may not exist forever, so every
+   port-tracker issue cited anywhere in `docs/porting/` is summarized
+   self-containedly below; the citations remain readable even if the tracker
+   disappears.
+
+**Number collision warning:** `#31` means two different things. In no-go row **S7**
+it is upstream junrar#31 (the 2019 `directoryTraversalBug` path-traversal fix,
+`e60b915f`). Everywhere it appears next to M3.10 or issue #40 (no-go row D3) it is
+port-tracker #31, indexed below. Similarly, `#36`/`#45` in no-go row **C9** are
+upstream 2020 corrupt-header NPE reports, unrelated to the port tracker.
+
+| Port issue | Chunk | What it did |
+| --- | --- | --- |
+| #12 | P0.7 | RAR3 header-CRC verification scaffolding: 16-bit `GetCRC15` coverage with unrar's legacy exemptions, and the record-vs-fatal tolerance contract (broken headers are marked and refused at extract time, not at open). |
+| #18 | M1.4 | `FirstWinDone` distance validation (unrar 7.0.3 parity): a match distance reaching into the never-written part of the window zero-fills instead of self-copying stale bytes. |
+| #20 | M2.1 | Replaced the RarVM bytecode interpreter with unrar-5.5.1-style standard-filter fingerprint recognition ({length, CRC32} against the six canonical filters). |
+| #21 | M2.2 | Deleted the dead VM interpreter, opcode enums and parse-only VM types (§6 T3 surface removal); mirrors unrar `1522ee0`. |
+| #27 | M3.6 | `Unpack5` sibling-engine skeleton: per-archive window, bit input, block-header read, the five RAR5 Huffman tables, and the three-part dictionary resource model. |
+| #31 | M3.10 | `FHEXTRA_REDIR` link extraction with the three symlink-safety layers; unsafe targets throw `UnsafeLinkException`. (Port-tracker #31 — distinct from upstream #31 in S7.) |
+| #34 | M4.2 | RAR7 extended-distance decode (`DCX`=80 alphabet, `DBits>36` arm), distance state widened to `long` end to end, version-70 routing via `FileHeader.isRar5Family()`. |
+| #35 | M4.3 | Segmented window above 1 GB (`byte[][]` of lazily allocated 256 MB segments), engine capability raised to 64 GB, positions wrap instead of masking (RAR7 dictionaries are not powers of two). |
+| #40 | M3.10 follow-up | Investigation that closed the three link-path divergences as working-as-intended: keep junrar's fail-closed reject over unrar's sanitize-and-continue (no-go row D3). |
+| #44 | post-M4 | RAR3 narrow-name decode moved to the 7.2.7 rule: UTF-8 validity scan with a lossless ISO-8859-1 fallback (`FileHeader.decodeNarrowName`, §6 T6 round 3, no-go row D4); exactly one corpus member flipped. |

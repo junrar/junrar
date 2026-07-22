@@ -1,5 +1,8 @@
 # junrar → unrar 7.2.7 extraction parity plan
 
+Issue citations of the form "issue `#NN`" beside a chunk id are port-tracker issues,
+indexed self-containedly in [`MIGRATION_MANUAL.md`](MIGRATION_MANUAL.md) Appendix A.
+
 The execution plan for bringing junrar (Java, baseline = C++ unrar 3.7.3 `2e71167`) to
 extraction feature parity with unrar 7.2.7 (`d861246`): RAR 1.5–4 ("RAR3") robustness
 plus full RAR5/RAR7 extraction. Companion to

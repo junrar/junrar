@@ -1,5 +1,10 @@
 # junrar Regression NO-GO List
 
+Issue citations: bare `#NN` in the S/C rows are upstream `junrar/junrar` issues;
+`#NN` next to an M/P chunk id (D3, D4, and the M3.10 rows — including a `#31` that
+collides with S7's upstream `#31`) are port-tracker issues, indexed self-containedly
+in `../MIGRATION_MANUAL.md` Appendix A.
+
 **Purpose.** junrar is a Java port of C++ unrar 3.7.3. It has accumulated behavioral
 fixes, hardening, and deliberate divergences ON TOP of that C++ baseline. This document
 enumerates every such divergence so that a future re-sync onto unrar 7.2.7 (RAR5) does not

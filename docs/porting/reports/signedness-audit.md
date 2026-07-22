@@ -1,5 +1,9 @@
 # C15 signedness audit — the 5 unsigned-shift files
 
+Issue citations of the form "issue `#NN`" beside a chunk id (M1.4, M2.2, M3.6, M4.2,
+M4.3) are port-tracker issues, indexed self-containedly in
+`../MIGRATION_MANUAL.md` Appendix A.
+
 Date: 2026-07-17. Chunk P0.4 (`docs/porting/PARITY_PLAN.md` §3). Audited tree:
 `~/git/junrar-issue9` at `2f0a493b` (branch `issue/9-pin-c15-signedness`). C++ coordinates
 resolved against `~/git/unrar` (one commit per release): `2e71167` = 3.7.3 (the pinned
