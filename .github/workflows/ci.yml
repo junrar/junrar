@@ -28,16 +28,18 @@ on:
         type: boolean
 
 jobs:
-  # Build and test on the latest LTS. Bytecode targets are pinned in build.gradle
-  # (production release 8, test source sets release 21) regardless of this JDK. The
-  # JUnit suites cannot run on JDK 8 (Gradle needs 17+, the test frameworks 11+) --
-  # the jre-smoke matrix below is the JRE 8 runtime coverage.
+  # The whole pipeline runs per Java version: everything compiles at release 8
+  # (build.gradle pins every source root), and -PtestJvm points the forked test JVMs
+  # at a real toolchain of the matrix version -- 8, the base version, and 25, the
+  # latest LTS. The Gradle daemon itself runs on the setup JDK 25 (Gradle 9 needs
+  # 17+); the JDK 8 toolchain is auto-provisioned by the foojay resolver.
   test:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-    name: Test on ${{ matrix.os }}
+        java: [ '8', '25' ]
+    name: Test on ${{ matrix.os }} Java ${{ matrix.java }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-java@v5
@@ -49,13 +51,13 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
       - name: Build
-        run: ./gradlew build
+        run: ./gradlew build -PtestJvm=${{ matrix.java }}
 
       - name: Upload Unit Test Results
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: test-results-jdk-${{ matrix.os }}
+          name: test-results-${{ matrix.os }}-java-${{ matrix.java }}
           path: build/test-results/
 
       - name: Publish Test Report
@@ -63,18 +65,19 @@ jobs:
         if: always()
         with:
           report_paths: '**/build/test-results/test/TEST-*.xml'
-          check_name: 'JUnit Test Report: ${{ matrix.os }}'
+          check_name: 'JUnit Test Report: ${{ matrix.os }} Java ${{ matrix.java }}'
 
       - name: Jacoco
         run: ./gradlew jacocoTestReport
       - uses: codecov/codecov-action@v7
-        if: matrix.os == 'ubuntu-latest'
+        if: matrix.os == 'ubuntu-latest' && matrix.java == '25'
 
-  # Latest LTS only: the harness is JUnit 5 + records, so it cannot run on JDK 8
-  # (same constraints as the unit suite above).
   regression:
     runs-on: ubuntu-latest
-    name: Regression test
+    strategy:
+      matrix:
+        java: [ '8', '25' ]
+    name: Regression test Java ${{ matrix.java }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-java@v5
@@ -89,14 +92,14 @@ jobs:
       # The corpus ships in the repository as payload-stripped archives, so there is
       # nothing to download and nothing to configure. See CONTRIBUTING.md. Kept out of
       # `check` so the unit suite stays fast; one OS is enough for a pure-JVM parse.
-      - name: Regression test
-        run: ./gradlew regressionTest
+      - name: Regression test on Java ${{ matrix.java }}
+        run: ./gradlew regressionTest -PtestJvm=${{ matrix.java }}
 
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: regression-test-results
+          name: regression-test-results-java-${{ matrix.java }}
           path: build/test-results/
 
   # Builds the jar on JDK 25 (latest LTS; Gradle itself cannot run on 8) with the
