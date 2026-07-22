@@ -56,8 +56,8 @@ To run against a payload-bearing corpus instead, set both environment variables 
 
 ### Run on Github
 
-The regression tests run in their own workflow (`.github/workflows/regression.yml`), kept
-separate from the main CI because the run takes a while.
+The regression tests run as the `Regression test` job of the main CI workflow
+(`.github/workflows/ci.yml`) on every push and pull request.
 
 ### Regenerate the bundled corpus
 
