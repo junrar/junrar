@@ -107,10 +107,29 @@ class Rar5BaseBlockTest {
 
     @Test
     void fourByteSizeVintRejected() {
-        // Three continuation bytes exhaust the 7-byte first read before the vint terminates.
+        // A 4-byte size vint (0x81 0x80 0x80 0x00 = over-long encoding of BlockSize 1) that
+        // terminates inside the buffer, so the read succeeds and the sizeBytes > 3 guard itself
+        // must reject it. An 8-byte buffer is needed to reach the guard at all: production
+        // callers pass exactly FIRST_READ_SIZE = 7 bytes, where a 4-byte vint cannot terminate
+        // and VInt's underrun throw fires first -- checkHeaderSize is public, so the guard
+        // still backs the documented 3-byte contract for any other caller. The message
+        // assertion is what pins the guard: without it, BlockSize 1 decodes to HeaderSize 9 and
+        // parses clean.
+        final byte[] first = {0, 0, 0, 0, (byte) 0x81, (byte) 0x80, (byte) 0x80, 0x00};
+        assertThat(catchThrowable(() -> Rar5BaseBlock.checkHeaderSize(first)))
+            .isExactlyInstanceOf(CorruptHeaderException.class)
+            .hasMessageContaining("vint bytes");
+    }
+
+    @Test
+    void sizeVintFloodingTheSevenByteFirstReadRejected() {
+        // The production shape: both Archive callers pass exactly FIRST_READ_SIZE bytes, so a
+        // continuation-bit flood exhausts the buffer before the vint terminates and VInt's
+        // underrun throw -- not the sizeBytes guard -- is what rejects it.
         final byte[] first = {0, 0, 0, 0, (byte) 0x80, (byte) 0x80, (byte) 0x80};
         assertThat(catchThrowable(() -> Rar5BaseBlock.checkHeaderSize(first)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+            .isExactlyInstanceOf(CorruptHeaderException.class)
+            .hasMessageContaining("Truncated variable-length integer");
     }
 
     @Test

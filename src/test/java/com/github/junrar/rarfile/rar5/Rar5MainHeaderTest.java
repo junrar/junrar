@@ -238,6 +238,23 @@ class Rar5MainHeaderTest {
     }
 
     @Test
+    void zeroFieldSizeAtTheExtraAreaTailAbortsTheLoopCleanly() throws Exception {
+        // A FieldSize vint of 0 followed by a lone continuation byte. The fieldSize <= 0 break
+        // (unrar ProcessExtra50: "if (FieldSize<=0 || ...) break;") is what makes this a clean
+        // parse; without it the loop reads the 0x80 tail byte as a FieldType vint, runs off the
+        // buffer, and VInt's underrun throw rejects the whole otherwise-valid header. Not an
+        // equivalent mutant, which is why this row exists.
+        final byte[] fixed = vint(0);
+        final byte[] extra = {0x00, (byte) 0x80};
+
+        final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra));
+
+        assertThat(h.hasLocator()).isFalse();
+        assertThat(h.getMetadataName()).isNull();
+        assertThat(h.getMetadataTime()).isNull();
+    }
+
+    @Test
     void malformedMainExtraRecordFieldTypeLongerThanFieldSizeAbortsWholeLoop() throws Exception {
         // FieldSize declares only 1 byte total for type+payload, but the FieldType vint itself
         // is padded to 2 bytes (0x81 0x00 = value 1, LOCATOR) -- FieldType alone already
