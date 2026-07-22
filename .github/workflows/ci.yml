@@ -111,17 +111,17 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v6
-      - name: Build jar
-        run: ./gradlew jar
+      - name: Build jar and smoke runner
+        run: ./gradlew jar compileJre8smokeJava
 
       - name: Stage smoke artifact
         run: |
           mkdir -p build/smoke-artifact
-          cp build/libs/junrar-*.jar build/smoke-artifact/junrar.jar
+          cp "$(ls build/libs/junrar-*.jar | grep -v -e '-sources' -e '-javadoc' | head -1)" \
+            build/smoke-artifact/junrar.jar
           cp "$(find "$HOME/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api" -name '*.jar' | head -1)" \
             build/smoke-artifact/slf4j-api.jar
-          javac --release 8 -encoding UTF-8 -cp build/smoke-artifact/junrar.jar -d build/smoke-artifact/smoke \
-            src/jre8smoke/java/com/github/junrar/jre8smoke/Jre8SmokeMain.java
+          cp -R build/classes/java/jre8smoke build/smoke-artifact/smoke
 
       - name: Upload smoke artifact
         uses: actions/upload-artifact@v7

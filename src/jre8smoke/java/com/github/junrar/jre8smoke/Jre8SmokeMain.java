@@ -23,9 +23,11 @@ import java.security.MessageDigest;
  * AES/CBC/NoPadding, the 8u161 unlimited-policy floor documented in plan
  * ss2.1), not just that the bytecode targets release 8.
  *
- * <p>Not part of any Gradle source set (kept out of checkstyle/ArchUnit
- * scope on purpose): the CI jobs compile and run this one file directly with
- * {@code javac} / {@code java}. No production code is touched by P0.9.
+ * <p>Lives in its own {@code jre8smoke} source set (build.gradle), compiled at
+ * release 8 by {@code compileJre8smokeJava} against the production classes --
+ * deliberately not wired into {@code check}/{@code build}, not on the test
+ * runtime classpath (so outside ArchUnit scope), and never part of the
+ * published jar. No production code is touched by P0.9.
  *
  * <p>Fixtures (existing, committed under {@code src/test/resources}):
  * plain RAR3 {@code test.rar} (entry {@code foo\bar.txt}, content

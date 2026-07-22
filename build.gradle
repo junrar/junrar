@@ -54,6 +54,19 @@ java {
 compileJava {
     options.release = 8
 }
+// The framework-free JRE 8 extraction smoke runner (P0.9): one main-class file, compiled
+// at release 8 against the production classes and executed on real JREs by the CI
+// jre-smoke matrix. Not wired into `check`/`build`; the smoke-build CI job invokes
+// compileJre8smokeJava explicitly.
+sourceSets {
+    jre8smoke {
+        java.srcDir 'src/jre8smoke/java'
+        compileClasspath += sourceSets.main.output
+    }
+}
+compileJre8smokeJava {
+    options.release = 8
+}
 compileTestJava {
     // Pinned so TestCodingRulesTest's ArchUnit import of `src/test` classes is never at the
     // mercy of whichever JDK happens to run the build. ArchUnit 1.4.1 bundles ASM with no
