@@ -28,6 +28,10 @@ on:
         type: boolean
 
 jobs:
+  # Build and test on the latest LTS. Bytecode targets are pinned in build.gradle
+  # (production release 8, test source sets release 21) regardless of this JDK. The
+  # JUnit suites cannot run on JDK 8 (Gradle needs 17+, the test frameworks 11+) --
+  # the jre-smoke matrix below is the JRE 8 runtime coverage.
   test:
     runs-on: ${{ matrix.os }}
     strategy:
@@ -38,7 +42,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-java@v5
         with:
-          java-version: '21'
+          java-version: '25'
           java-package: 'jdk'
           distribution: 'temurin'
 
@@ -66,6 +70,8 @@ jobs:
       - uses: codecov/codecov-action@v7
         if: matrix.os == 'ubuntu-latest'
 
+  # Latest LTS only: the harness is JUnit 5 + records, so it cannot run on JDK 8
+  # (same constraints as the unit suite above).
   regression:
     runs-on: ubuntu-latest
     name: Regression test
@@ -73,7 +79,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-java@v5
         with:
-          java-version: '21'
+          java-version: '25'
           java-package: 'jdk'
           distribution: 'temurin'
 

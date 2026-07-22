@@ -78,7 +78,6 @@ compileTestJava {
     // (max supported: V25 / JDK 25). See #36.
     options.release = 21
 }
-
 jreleaser {
     project {
         description = 'rar decompression library in plain java'
@@ -237,6 +236,14 @@ testing {
             }
         }
     }
+}
+
+// Same determinism rationale as compileTestJava: without a pin the harness bytecode
+// tracks whichever JVM launches Gradle. 21, not 8: the harness uses records and
+// JUnit 5. Production stays release 8 either way. (Must sit after the testing block
+// that creates the source set.)
+tasks.named('compileRegressionTestJava') {
+    options.release = 21
 }
 
 //spotless {
