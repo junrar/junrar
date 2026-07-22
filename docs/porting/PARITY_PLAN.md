@@ -1,7 +1,7 @@
 # junrar → unrar 7.2.7 extraction parity plan
 
-Issue citations of the form "issue `#NN`" beside a chunk id are port-tracker issues,
-indexed self-containedly in [`MIGRATION_MANUAL.md`](MIGRATION_MANUAL.md) Appendix A.
+Port-tracker citations use `PT-NN` keys, defined exclusively — with a self-contained
+summary per key — in [`MIGRATION_MANUAL.md` Appendix A](MIGRATION_MANUAL.md#appendix-a-port-tracker-issue-index).
 
 The execution plan for bringing junrar (Java, baseline = C++ unrar 3.7.3 `2e71167`) to
 extraction feature parity with unrar 7.2.7 (`d861246`): RAR 1.5–4 ("RAR3") robustness
@@ -1445,7 +1445,7 @@ version-event column is authoritative for them.
 
 | # | Risk | Impact | Mitigation |
 | --- | --- | --- | --- |
-| R1 | RESOLVED at M4.3 (issue #35): capability 64 GB, `byte[][]` of lazily allocated 256 MB segments above 1 GB, flat layout kept at and below it, `maxDictionarySize` default unmoved at 4 GiB. Positions are `long` and wrap instead of masking, because RAR7 dictionaries are not powers of two. Original entry: | | |
+| R1 | RESOLVED at M4.3 (PT-35, MIGRATION_MANUAL.md Appendix A): capability 64 GB, `byte[][]` of lazily allocated 256 MB segments above 1 GB, flat layout kept at and below it, `maxDictionarySize` default unmoved at 4 GiB. Positions are `long` and wrap instead of masking, because RAR7 dictionaries are not powers of two. Original entry: | | |
 | R1 | **RAR5/RAR7 windows vs Java's 2^31 array cap** — RAR5 alone encodes 4 GB dicts; RAR7 to 64 GB; D1's >2 GB `byte[]` limitation is a *deliberate* divergence for entry extraction and must not be "fixed" sideways | Extraction failures or an accidental D1 regression | Staged (review B-S3): capability = 1 GB flat `byte[]` at M3 (covers the overwhelming majority of real archives — rar default dict is 32 MB), 64 GB segmented+lazy at M4.3; budget = `ArchiveOptions.maxDictionarySize`, default 4 GiB (= upstream `WinSizeLimit`) from P0.8, never moved; allocation = growth-capped (M3.6) / lazy segments (M4.3), so a dict-bomb header allocates KBs even under DEFAULT options. Entry-extraction byte[] paths untouched (D1 pinned in P0.3). |
 | R2 | **Regression-corpus churn** — 345 JSON expectation flips at M3.11 (of 12,475; the rest must stay byte-identical) could smuggle regressions past review | Silent RAR3 regressions | §4.4 procedure: single dedicated commit, scripted three-shape audit, ALL-flipped-members oracle check (B-S2), maintainer-gated corpus run. Intermediate behavior changes (P0.7/M1.5/M2.1) flush their corpus deltas early instead of folding into the big flip. |
 | R3 | **PPMd heap drift** — M1.2 edits pointer-emulation code where a one-byte layout slip corrupts everything downstream | Wrong output, latent corruption | M1.1 rebuilds the byte-diff heap harness BEFORE any guard lands (manual §4.13.4); golden dumps committed; guards land one release-pin at a time. |

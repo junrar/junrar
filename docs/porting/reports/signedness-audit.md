@@ -1,8 +1,7 @@
 # C15 signedness audit — the 5 unsigned-shift files
 
-Issue citations of the form "issue `#NN`" beside a chunk id (M1.4, M2.2, M3.6, M4.2,
-M4.3) are port-tracker issues, indexed self-containedly in
-`../MIGRATION_MANUAL.md` Appendix A.
+Port-tracker citations use `PT-NN` keys, defined exclusively — with a self-contained
+summary per key — in `../MIGRATION_MANUAL.md` Appendix A ("port-tracker issue index").
 
 Date: 2026-07-17. Chunk P0.4 (`docs/porting/PARITY_PLAN.md` §3). Audited tree:
 `~/git/junrar-issue9` at `2f0a493b` (branch `issue/9-pin-c15-signedness`). C++ coordinates
@@ -192,7 +191,7 @@ guard. unrar 7.2.7 (`d861246:unpack15.cpp:291`) masks the write-back too
 `DistancePlace < 256`, so the mask is a no-op there — no shift touched, index-bound only.
 Driven end-to-end by `abnormal/flagsplace-oob.rar` (`UnpackLimitHostileArchiveTest`).
 
-M1.4 FirstWinDone distance validation (issue #18): `Unpack15.oldCopyString`,
+M1.4 FirstWinDone distance validation (PT-18, MIGRATION_MANUAL.md Appendix A): `Unpack15.oldCopyString`,
 `Unpack20.CopyString20`, `Unpack.copyString` gain a `firstWinDone`/`prevPtr` wrap tracker
 and a distance-into-void zero-fill arm (`!firstWinDone && distance > unpPtr || distance >
 MAXWINSIZE`). The added expressions use only `&`, `|=`, `+`, `-`, `>` — **no `>>`/`>>>`
@@ -202,7 +201,7 @@ and no shift audit is required. `prevPtr > unpPtr` and `distance > unpPtr` are p
 `boolean`. Driven end-to-end by `abnormal/void-dist-v15|v20|v29.rar`
 (`UnpackDistanceIntoVoidTest`).
 
-M2.2 interpreter deletion (issue #21): the T3 surface removal deleted `RarVM`'s generic
+M2.2 interpreter deletion (PT-21, MIGRATION_MANUAL.md Appendix A): the T3 surface removal deleted `RarVM`'s generic
 bytecode interpreter (`ExecuteCode`, `getOperand`, `setIP`, `decodeArg`, `optimize`) and
 the parse-only VM types (`VMCommands`, `VMCmdFlags`, `VMOpType`, `VMFlags`,
 `VMPreparedCommand`, `VMPreparedOperand`) — mirroring unrar `1522ee0` (= 5.5.1), which
@@ -326,7 +325,7 @@ Every `>>>` occurrence, by file and line (`grep -n '>>>' <file>`), for future au
   - Deferred, `filterItanium_GetBits`/`SetBits` (private; see "discriminating sites" —
     `GetBits` is NOT pre/post-masked-invariant): 1176, 1184, 1185, 1197, 1198.
 
-## M3.6 ledger extension — RAR5 sibling engine (issue #27, no-go C15)
+## M3.6 ledger extension — RAR5 sibling engine (PT-27, no-go C15)
 
 New files, audited this chunk against the class rule "every shift of a C++-unsigned value is
 Java `>>>`". Pipeline (`grep -oE '>{2,3}' <file> | grep -cx '>>'`):
@@ -349,7 +348,7 @@ No plain-`>>` was introduced; nothing to classify `signed-on-purpose` /
 `getbits`/`decodeNumber`/`makeDecodeTables` paths and would fail on a sign-extension
 regression in the reachable bit widths.
 
-## M4.2 ledger extension — RAR7 extended distances (issue #34, no-go C15)
+## M4.2 ledger extension — RAR7 extended distances (PT-34, no-go C15)
 
 The distance decode is the chunk's whole surface, so it is re-audited in full. Files touched:
 `unpack/Unpack5.java` (the decode arithmetic, `getbits64`, `copyString`, `oldDist`) and
@@ -411,7 +410,7 @@ using `getbits64` at `dbits == 36` as well (its top 32 bits are exactly `getbits
 upstream notes at `unpack50.cpp:95`), and narrowing `unpPtr - distance` before the mask rather
 than after (identical for any `maxWinMask < 2^31`, which the 1 GB capability ceiling enforces).
 
-## M4.3 ledger extension — segmented, long-indexed window (issue #35, no-go C15)
+## M4.3 ledger extension — segmented, long-indexed window (PT-35, no-go C15)
 
 Window positions become C++ `size_t` this chunk, so the whole window-arithmetic surface is
 re-audited. Files touched: `unpack/Unpack5.java` (window pointers, `wrapUp`/`wrapDown`,
