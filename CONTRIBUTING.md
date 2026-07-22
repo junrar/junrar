@@ -60,7 +60,13 @@ The regression tests will run after manual approval from maintainers.
 
 ### Regenerate the bundled corpus
 
-Needed when the parser starts reading regions of an archive it did not read before — the stripped corpus only preserves bytes that the parser read at the time it was generated, so a change that reaches further into a file could read zeros where the original had data. From a payload-bearing corpus:
+Needed when the parser starts reading regions of an archive it did not read before — the stripped corpus only preserves bytes that the parser read at the time it was generated, so a change that reaches further into a file could read zeros where the original had data.
+
+This step needs the original payload-bearing corpus, a ~7 GB zip of over 13,000 RAR files, which is **not** in the repository:
+
+- [original corpus on Google Drive](https://drive.google.com/file/d/1BvUT1jDkXon9-uqu2-QhBHjOthWcCL8G/view?usp=sharing)
+
+Unzip it anywhere (for example `~/corpus`), then:
 
 ```sh
 ./gradlew stripCorpus -PcorpusIn=~/corpus -PcorpusOut=/tmp/stripped
