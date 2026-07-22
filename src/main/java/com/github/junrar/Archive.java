@@ -32,7 +32,6 @@ import com.github.junrar.exception.NotRarArchiveException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.exception.UnsupportedRarMethodException;
-import com.github.junrar.exception.UnsupportedRarV5Exception;
 import com.github.junrar.exception.UnsupportedRarVersionException;
 import com.github.junrar.exception.WrongPasswordException;
 import com.github.junrar.io.Raw;
@@ -286,7 +285,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.channel = channel;
         try {
             readHeaders(length);
-        } catch (UnsupportedRarEncryptedException | UnsupportedRarV5Exception | UnsupportedRarVersionException
+        } catch (UnsupportedRarEncryptedException | UnsupportedRarVersionException
                  | CorruptHeaderException | BadRarArchiveException | WrongPasswordException e) {
             logger.warn("exception in archive constructor maybe file is encrypted, corrupt or support not yet implemented", e);
             throw e;
@@ -829,9 +828,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * the generic {@link #MAX_HEADER_SIZE}); the 2 MB / 3-byte-size-vint bound is enforced by
      * {@link Rar5BaseBlock#checkHeaderSize} <em>before</em> that allocation.
      * <p>
-     * The M3.2-M3.10 V5 extraction gate ({@link UnsupportedRarV5Exception} thrown here before
-     * any parsing) was lifted at M3.11 (issue #32): RAR5 archives parse and extract on every
-     * public path.
+     * The M3.2-M3.10 V5 extraction gate (a dedicated exception thrown here before any parsing)
+     * was lifted at M3.11 (issue #32): RAR5 archives parse and extract on every public path.
+     * That exception type was removed outright for the 8.0 major (PR #289 review).
      */
     private void readHeadersRar5(final long fileLength) throws IOException, RarException {
         // detectFormatAndSeek left the channel at the marker; consume and re-validate it.
