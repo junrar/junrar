@@ -667,6 +667,25 @@ public class FileHeader extends BlockHeader {
         this.fileAttr = fileAttr;
     }
 
+    /**
+     * The stored CRC32 as its raw 32 bits. This is an <em>unsigned</em> quantity in the
+     * format, so any checksum with the high bit set reads back negative here -- unrar prints
+     * {@code ECEDC4E5} where this returns {@code -319961883}. Callers that want unrar's
+     * rendering should widen it themselves:
+     * {@code Integer.toUnsignedLong(getFileCRC())}, or
+     * {@code Integer.toHexString(getFileCRC())} for the hex form.
+     * <p>
+     * The signed {@code int} is deliberate and load-bearing, not an oversight: the extraction
+     * check compares this against {@code ~ComprDataIO.getUnpFileCRC()}, whose backing field
+     * stores {@code (int)(~crc)} widened to {@code long} -- i.e. sign-extended. Both sides of
+     * that comparison are therefore int-shaped, and the sign extension cancels. Returning the
+     * unsigned value from here without masking every comparison site would make
+     * {@code 0xFFFFFFFFECEDC4E5 != 0x00000000ECEDC4E5} and throw
+     * {@link com.github.junrar.exception.CrcErrorException} on every entry whose checksum has
+     * the high bit set.
+     *
+     * @return the stored CRC32, as raw (possibly negative) 32 bits
+     */
     public int getFileCRC() {
         return fileCRC;
     }
