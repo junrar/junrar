@@ -16,7 +16,7 @@ plugins {
     id 'dev.jacomet.logging-capabilities' version '0.11.1'
     id 'io.github.gradle-nexus.publish-plugin' version '2.0.0'
     id 'org.jreleaser' version '1.25.0'
-//    id 'com.diffplug.spotless' version '8.8.0'
+    id 'com.diffplug.spotless' version '8.8.0'
 }
 
 repositories {
@@ -242,27 +242,31 @@ testing {
     }
 }
 
-//spotless {
-//    format 'misc', {
-//        // define the files to apply `misc` to
-//        target '*.gradle', '.gitattributes', '.gitignore'
-//
-//        // define the steps to apply to those files
-//        trimTrailingWhitespace()
-//        leadingTabsToSpaces()
-//        endWithNewline()
-//    }
-//    java {
-//        // don't need to set target, it is inferred from java
-//
-//        // Enable formatting toggles
-//        toggleOffOn()
-//
-//        googleJavaFormat().aosp().reflowLongStrings().skipJavadocFormatting()
-//        // fix formatting of type annotations
-//        formatAnnotations()
-//    }
-//}
+spotless {
+    // GIT_ATTRIBUTES (the default) resolves line endings through JGit, whose buildscript
+    // version is force-pinned to 5.13.x for JReleaser; 'UNIX' keeps Spotless off JGit
+    // entirely (same reason there is no ratchetFrom).
+    lineEndings 'UNIX'
+    format 'misc', {
+        // define the files to apply `misc` to
+        target '*.gradle', '.gitattributes', '.gitignore'
+
+        // define the steps to apply to those files
+        trimTrailingWhitespace()
+        leadingTabsToSpaces()
+        endWithNewline()
+    }
+    java {
+        // don't need to set target, it is inferred from java
+
+        // Enable formatting toggles
+        toggleOffOn()
+
+        googleJavaFormat().aosp().reflowLongStrings().skipJavadocFormatting()
+        // fix formatting of type annotations
+        formatAnnotations()
+    }
+}
 
 // The regression corpus ships in the repository as payload-stripped archives, so
 // `./gradlew regressionTest` needs no download and no configuration. See CONTRIBUTING.md.

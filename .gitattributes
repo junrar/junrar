@@ -1,5 +1,13 @@
 * text=auto
 
+# Spotless enforces LF (lineEndings 'UNIX' keeps it off JGit, which is pinned
+# to 5.13.x for JReleaser); force LF in the working tree on every platform so
+# spotlessCheck does not flag autocrlf'd files on Windows.
+*.java text eol=lf
+*.gradle text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
 # Byte-identical oracle fixtures for round-trip/PPM tests (e.g.
 # PpmMaxMbTest's *-expected.bin): `text=auto` heuristically classifies
 # them as text (pure ASCII, no NUL byte) and autocrlf on Windows
