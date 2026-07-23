@@ -200,7 +200,7 @@ jobs:
           [[ `svu current` != ${{ env.VERSION_NEXT }} || "${{ inputs.perform_release }}" == 'true' ]] && echo "should_release=true" >> $GITHUB_OUTPUT || echo
 
   release:
-    needs: [ version, test, regression ]
+    needs: [ version, test, regression, jre-smoke ]
     runs-on: ubuntu-latest
     if: needs.version.outputs.should_release
     steps:
@@ -246,4 +246,3 @@ jobs:
         with:
           message: 'chore(release): ${{ needs.version.outputs.version_next }} [skip ci]'
           default_author: github_actions
-
