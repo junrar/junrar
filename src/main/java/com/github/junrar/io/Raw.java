@@ -70,7 +70,7 @@ public class Raw {
      * @return the value
      */
     public static long readLongBigEndian(byte[] array, int pos) {
-        int temp = 0;
+        long temp = 0;
         temp |= array[pos] & 0xff;
         temp <<= 8;
         temp |= array[pos + 1] & 0xff;
