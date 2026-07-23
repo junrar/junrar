@@ -39,12 +39,6 @@ dependencies {
     testImplementation 'com.tngtech.archunit:archunit-junit5:1.4.1'
     testImplementation 'org.junit-pioneer:junit-pioneer:1.9.1'
     testImplementation 'org.bouncycastle:bcprov-jdk18on:1.84'
-
-    constraints {
-        implementation('org.eclipse.jgit:org.eclipse.jgit:5.13.5.202508271544-r') {
-            because 'Required to keep JReleaser compatible with the active JGit classpath'
-        }
-    }
 }
 
 group = 'com.github.junrar'
