@@ -39,7 +39,7 @@ class FileHeaderUtf8NameTest {
             // The dead giveaway of the pre-fix bug: fileNameW stays "" even
             // though LHD_UNICODE is set and the whole-name-UTF-8 branch
             // applies -- independent of the running JVM's default charset.
-            assertThat(header.getFileNameW()).isEqualTo(EXPECTED_NAME);
+            assertThat(header.internalGetFileNameW()).isEqualTo(EXPECTED_NAME);
             assertThat(header.getFileName()).isEqualTo(EXPECTED_NAME);
         }
     }
@@ -54,7 +54,7 @@ class FileHeaderUtf8NameTest {
      * decode, and this fixture's half -- valid UTF-8 -- must come out decoded rather
      * than as the ISO-8859-1 view {@code cafÃ©-rÃ©sumÃ©-æ—¥æœ¬èªž.txt}.
      * <p>
-     * Only the deprecated {@link FileHeader#getFileNameString()} exposes it here, since
+     * Only the deprecated {@link FileHeader#internalGetFileNameString()} exposes it here, since
      * {@code fileNameW} is populated and wins in {@link FileHeader#getFileName()} -- which
      * is also why the regression corpus cannot see this site: it records
      * {@code getFileName()} only.
@@ -71,7 +71,7 @@ class FileHeaderUtf8NameTest {
             assertThat(header.isUnicode()).isTrue();
             // The RLE-decoded half is unaffected and still wins getFileName().
             assertThat(header.getFileName()).isEqualTo(EXPECTED_NAME);
-            assertThat(header.getFileNameString()).isEqualTo(EXPECTED_NAME);
+            assertThat(header.internalGetFileNameString()).isEqualTo(EXPECTED_NAME);
         }
     }
 }

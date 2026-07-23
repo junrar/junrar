@@ -716,8 +716,7 @@ public class FileHeader extends BlockHeader {
      * @return the ASCII filename
      * @deprecated As of 7.2.0, replaced by {@link #getFileName()}
      */
-    @Deprecated
-    public String getFileNameString() {
+    String internalGetFileNameString() {
         return fileName;
     }
 
@@ -731,8 +730,7 @@ public class FileHeader extends BlockHeader {
      * @return the Unicode filename, or null if the filename is ASCII only
      * @deprecated As of 7.2.0, replaced by {@link #getFileName()}
      */
-    @Deprecated
-    public String getFileNameW() {
+    String internalGetFileNameW() {
         return fileNameW;
     }
 
