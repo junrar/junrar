@@ -14,8 +14,13 @@ public final class Rar5UnixOwner {
     private final boolean numericOwnerId;
     private final boolean numericGroupId;
 
-    public Rar5UnixOwner(final String userName, final String groupName, final long ownerId, final long groupId,
-                          final boolean numericOwnerId, final boolean numericGroupId) {
+    public Rar5UnixOwner(
+            final String userName,
+            final String groupName,
+            final long ownerId,
+            final long groupId,
+            final boolean numericOwnerId,
+            final boolean numericGroupId) {
         this.userName = userName;
         this.groupName = groupName;
         this.ownerId = ownerId;

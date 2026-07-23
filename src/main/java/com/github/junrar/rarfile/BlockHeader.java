@@ -22,7 +22,6 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * Base class of headers that contain data
  *
@@ -37,9 +36,7 @@ public class BlockHeader extends BaseBlock {
     private long dataSize;
     private long packSize;
 
-    public BlockHeader() {
-
-    }
+    public BlockHeader() {}
 
     public BlockHeader(BlockHeader bh) {
         super(bh);
@@ -52,7 +49,7 @@ public class BlockHeader extends BaseBlock {
         super(bb);
 
         this.packSize = Raw.readIntLittleEndianAsLong(blockHeader, 0);
-        this.dataSize  = this.packSize;
+        this.dataSize = this.packSize;
     }
 
     public long getDataSize() {

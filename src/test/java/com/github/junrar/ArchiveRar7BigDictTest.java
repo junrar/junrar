@@ -1,14 +1,13 @@
 package com.github.junrar;
 
-import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.github.junrar.rarfile.FileHeader;
 import java.io.OutputStream;
 import java.nio.file.Paths;
 import java.util.zip.CRC32;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
 /**
  * M4.3 (issue #35) acceptance row (b): the archive-level RAR7 oracle, deferred here from M4.1 and
@@ -36,20 +35,24 @@ class ArchiveRar7BigDictTest {
     @Test
     void sixGigabyteDictionaryArchiveExtractsToItsRecordedOracle() throws Exception {
         final ArchiveOptions options = ArchiveOptions.builder().maxDictionarySize(8L << 30).build();
-        try (Archive a = new Archive(
-                Paths.get(getClass().getResource("rar7/rar7-md6g.rar").toURI()).toFile(), options)) {
+        try (Archive a =
+                new Archive(
+                        Paths.get(getClass().getResource("rar7/rar7-md6g.rar").toURI()).toFile(),
+                        options)) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getUnpVersion()).as("a genuine RAR7 entry").isEqualTo((byte) 70);
-            assertThat(hd.getRar5WinSize()).as("6 GB, dict bits plus a 5-bit fraction")
-                .isEqualTo(6L << 30);
+            assertThat(hd.getRar5WinSize())
+                    .as("6 GB, dict bits plus a 5-bit fraction")
+                    .isEqualTo(6L << 30);
             assertThat(hd.getFullUnpackSize()).isEqualTo(ORACLE_SIZE);
 
             final DigestSink sink = new DigestSink();
             a.extractFile(hd, sink);
 
             assertThat(sink.size).as("unpacked size").isEqualTo(ORACLE_SIZE);
-            assertThat(sink.crc.getValue()).as("CRC32 recorded by unrar 7.23 at generation time")
-                .isEqualTo(ORACLE_CRC32);
+            assertThat(sink.crc.getValue())
+                    .as("CRC32 recorded by unrar 7.23 at generation time")
+                    .isEqualTo(ORACLE_CRC32);
         }
     }
 

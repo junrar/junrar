@@ -1,11 +1,10 @@
 package com.github.junrar.unpack;
 
-import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.Field;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
+
+import java.lang.reflect.Field;
+import org.junit.jupiter.api.Test;
 
 class Unpack15FlagsBufTest {
 
@@ -28,8 +27,7 @@ class Unpack15FlagsBufTest {
         input[2] = 0;
         unpack.InitBitInput();
 
-        assertThat(unpack.decodeNum(unpack.fgetbits(), 5,
-                getDecHf2(), getPosHf2())).isEqualTo(256);
+        assertThat(unpack.decodeNum(unpack.fgetbits(), 5, getDecHf2(), getPosHf2())).isEqualTo(256);
         unpack.InitBitInput();
         assertThatCode(unpack::getFlagsBuf).doesNotThrowAnyException();
     }
@@ -44,8 +42,7 @@ class Unpack15FlagsBufTest {
         input[2] = 0;
         unpack.InitBitInput();
 
-        assertThat(unpack.decodeNum(unpack.fgetbits(), 5,
-                getDecHf2(), getPosHf2())).isEqualTo(255);
+        assertThat(unpack.decodeNum(unpack.fgetbits(), 5, getDecHf2(), getPosHf2())).isEqualTo(255);
         unpack.InitBitInput();
         unpack.initHuff();
         assertThatCode(unpack::getFlagsBuf).doesNotThrowAnyException();

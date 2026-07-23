@@ -1,7 +1,6 @@
 package com.github.junrar.crypt.blake2;
 
-import org.bouncycastle.crypto.digests.Blake2spDigest;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,8 +8,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.bouncycastle.crypto.digests.Blake2spDigest;
+import org.junit.jupiter.api.Test;
 
 /**
  * M3.5 (issue #26) unit coverage for {@link Blake2sp}: the unrar empty-input constant, the full
@@ -20,9 +19,12 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 class Blake2spTest {
 
-    private static final Pattern KAT_ENTRY = Pattern.compile("\"in\":\\s*\"([0-9a-f]*)\",\\s*\"out\":\\s*\"([0-9a-f]*)\"");
-    private static final String EMPTY_DIGEST = "dd0e891776933f43c7d032b08a917e25741f8aa9a12c12e1cac8801500f2ca4f";
-    private static final String PAYLOAD_DIGEST = "78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83";
+    private static final Pattern KAT_ENTRY =
+            Pattern.compile("\"in\":\\s*\"([0-9a-f]*)\",\\s*\"out\":\\s*\"([0-9a-f]*)\"");
+    private static final String EMPTY_DIGEST =
+            "dd0e891776933f43c7d032b08a917e25741f8aa9a12c12e1cac8801500f2ca4f";
+    private static final String PAYLOAD_DIGEST =
+            "78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83";
 
     private static byte[] hexToBytes(final String hex) {
         final byte[] out = new byte[hex.length() / 2];
@@ -62,13 +64,16 @@ class Blake2spTest {
         assertThat(entries).hasSize(256);
         for (final String[] entry : entries) {
             final byte[] input = hexToBytes(entry[0]);
-            assertThat(bytesToHex(digestOf(input))).as("input length %d", input.length).isEqualTo(entry[1]);
+            assertThat(bytesToHex(digestOf(input)))
+                    .as("input length %d", input.length)
+                    .isEqualTo(entry[1]);
         }
     }
 
     private static byte[] readPayload() throws IOException {
         return hexToBytesFromStream(
-            Blake2spTest.class.getResourceAsStream("/com/github/junrar/blake2/blake2-payload.bin"));
+                Blake2spTest.class.getResourceAsStream(
+                        "/com/github/junrar/blake2/blake2-payload.bin"));
     }
 
     private static byte[] hexToBytesFromStream(final java.io.InputStream in) throws IOException {

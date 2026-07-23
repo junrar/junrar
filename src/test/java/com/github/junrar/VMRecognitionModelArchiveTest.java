@@ -1,16 +1,15 @@
 package com.github.junrar;
 
-import com.github.junrar.exception.CrcErrorException;
-import com.github.junrar.rarfile.FileHeader;
-import org.apache.commons.io.IOUtils;
-import org.junit.jupiter.api.Test;
-
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.catchThrowable;
+
+import com.github.junrar.exception.CrcErrorException;
+import com.github.junrar.rarfile.FileHeader;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import org.apache.commons.io.IOUtils;
+import org.junit.jupiter.api.Test;
 
 /**
  * Acceptance test for M2.1 (issue #20): RAR3 VM programs are now recognized against the
@@ -47,10 +46,12 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 class VMRecognitionModelArchiveTest {
 
     @Test
-    void givenChecksumValidButUnrecognizedVmProgram_whenExtracting_thenNoOpMatchesUnrarOracleNotInterpreter()
-            throws Exception {
+    void
+            givenChecksumValidButUnrecognizedVmProgram_whenExtracting_thenNoOpMatchesUnrarOracleNotInterpreter()
+                    throws Exception {
         byte[] expected;
-        try (InputStream is = getClass().getResourceAsStream("vm/audio-filter-noncanonical.expected")) {
+        try (InputStream is =
+                getClass().getResourceAsStream("vm/audio-filter-noncanonical.expected")) {
             assertThat(is).as("expected-bytes resource").isNotNull();
             try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
                 IOUtils.copy(is, baos);
@@ -59,7 +60,8 @@ class VMRecognitionModelArchiveTest {
         }
         assertThat(expected).hasSize(144);
 
-        InputStream archiveStream = getClass().getResourceAsStream("vm/audio-filter-noncanonical.rar");
+        InputStream archiveStream =
+                getClass().getResourceAsStream("vm/audio-filter-noncanonical.rar");
         assertThat(archiveStream).as("archive resource").isNotNull();
 
         byte[] actual;
@@ -88,7 +90,8 @@ class VMRecognitionModelArchiveTest {
     @Test
     void givenChecksumValidButUnrecognizedVmProgram_whenExtractingSiblingMember_thenUnaffected()
             throws Exception {
-        InputStream archiveStream = getClass().getResourceAsStream("vm/audio-filter-noncanonical.rar");
+        InputStream archiveStream =
+                getClass().getResourceAsStream("vm/audio-filter-noncanonical.rar");
         assertThat(archiveStream).as("archive resource").isNotNull();
 
         try (Archive archive = new Archive(archiveStream)) {

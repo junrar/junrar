@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.github.junrar.rarfile.FileHeader;
-
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.Objects;
@@ -17,9 +16,21 @@ import java.util.Optional;
  * only the annotated accessors are exposed, so bean auto-detection cannot rename them.
  */
 @JsonPropertyOrder({
-    "archivalTime", "lastAccessTime", "lastModifiedTime", "creationTime", "fileCRC",
-    "fileName", "hostOS", "fullPackSize", "fullUnpackSize", "isSolid", "isEncrypted",
-    "isUnicode", "hasExtTime", "isLargeBlock", "isDirectory"
+    "archivalTime",
+    "lastAccessTime",
+    "lastModifiedTime",
+    "creationTime",
+    "fileCRC",
+    "fileName",
+    "hostOS",
+    "fullPackSize",
+    "fullUnpackSize",
+    "isSolid",
+    "isEncrypted",
+    "isUnicode",
+    "hasExtTime",
+    "isLargeBlock",
+    "isDirectory"
 })
 public final class FileHeaderRecord {
     private final Instant archivalTime;
@@ -40,22 +51,21 @@ public final class FileHeaderRecord {
 
     @JsonCreator
     public FileHeaderRecord(
-        @JsonProperty("archivalTime") Instant archivalTime,
-        @JsonProperty("lastAccessTime") Instant lastAccessTime,
-        @JsonProperty("lastModifiedTime") Instant lastModifiedTime,
-        @JsonProperty("creationTime") Instant creationTime,
-        @JsonProperty("fileCRC") int fileCRC,
-        @JsonProperty("fileName") String fileName,
-        @JsonProperty("hostOS") String hostOS,
-        @JsonProperty("fullPackSize") long fullPackSize,
-        @JsonProperty("fullUnpackSize") long fullUnpackSize,
-        @JsonProperty("isSolid") boolean isSolid,
-        @JsonProperty("isEncrypted") boolean isEncrypted,
-        @JsonProperty("isUnicode") boolean isUnicode,
-        @JsonProperty("hasExtTime") boolean hasExtTime,
-        @JsonProperty("isLargeBlock") boolean isLargeBlock,
-        @JsonProperty("isDirectory") boolean isDirectory
-    ) {
+            @JsonProperty("archivalTime") Instant archivalTime,
+            @JsonProperty("lastAccessTime") Instant lastAccessTime,
+            @JsonProperty("lastModifiedTime") Instant lastModifiedTime,
+            @JsonProperty("creationTime") Instant creationTime,
+            @JsonProperty("fileCRC") int fileCRC,
+            @JsonProperty("fileName") String fileName,
+            @JsonProperty("hostOS") String hostOS,
+            @JsonProperty("fullPackSize") long fullPackSize,
+            @JsonProperty("fullUnpackSize") long fullUnpackSize,
+            @JsonProperty("isSolid") boolean isSolid,
+            @JsonProperty("isEncrypted") boolean isEncrypted,
+            @JsonProperty("isUnicode") boolean isUnicode,
+            @JsonProperty("hasExtTime") boolean hasExtTime,
+            @JsonProperty("isLargeBlock") boolean isLargeBlock,
+            @JsonProperty("isDirectory") boolean isDirectory) {
         this.archivalTime = archivalTime;
         this.lastAccessTime = lastAccessTime;
         this.lastModifiedTime = lastModifiedTime;
@@ -75,22 +85,23 @@ public final class FileHeaderRecord {
 
     static FileHeaderRecord fromFileHeader(FileHeader from) {
         return new FileHeaderRecord(
-            Optional.ofNullable(from.getArchivalTime()).map(FileTime::toInstant).orElse(null),
-            Optional.ofNullable(from.getLastAccessTime()).map(FileTime::toInstant).orElse(null),
-            Optional.ofNullable(from.getLastModifiedTime()).map(FileTime::toInstant).orElse(null),
-            Optional.ofNullable(from.getCreationTime()).map(FileTime::toInstant).orElse(null),
-            from.getFileCRC(),
-            from.getFileName(),
-            from.getHostOS().name(),
-            from.getFullPackSize(),
-            from.getFullUnpackSize(),
-            from.isSolid(),
-            from.isEncrypted(),
-            from.isUnicode(),
-            from.hasExtTime(),
-            from.isLargeBlock(),
-            from.isDirectory()
-        );
+                Optional.ofNullable(from.getArchivalTime()).map(FileTime::toInstant).orElse(null),
+                Optional.ofNullable(from.getLastAccessTime()).map(FileTime::toInstant).orElse(null),
+                Optional.ofNullable(from.getLastModifiedTime())
+                        .map(FileTime::toInstant)
+                        .orElse(null),
+                Optional.ofNullable(from.getCreationTime()).map(FileTime::toInstant).orElse(null),
+                from.getFileCRC(),
+                from.getFileName(),
+                from.getHostOS().name(),
+                from.getFullPackSize(),
+                from.getFullUnpackSize(),
+                from.isSolid(),
+                from.isEncrypted(),
+                from.isUnicode(),
+                from.hasExtTime(),
+                from.isLargeBlock(),
+                from.isDirectory());
     }
 
     @JsonProperty("archivalTime")
@@ -178,32 +189,52 @@ public final class FileHeaderRecord {
         }
         FileHeaderRecord that = (FileHeaderRecord) o;
         return fileCRC == that.fileCRC
-            && fullPackSize == that.fullPackSize
-            && fullUnpackSize == that.fullUnpackSize
-            && isSolid == that.isSolid
-            && isEncrypted == that.isEncrypted
-            && isUnicode == that.isUnicode
-            && hasExtTime == that.hasExtTime
-            && isLargeBlock == that.isLargeBlock
-            && isDirectory == that.isDirectory
-            && Objects.equals(archivalTime, that.archivalTime)
-            && Objects.equals(lastAccessTime, that.lastAccessTime)
-            && Objects.equals(lastModifiedTime, that.lastModifiedTime)
-            && Objects.equals(creationTime, that.creationTime)
-            && Objects.equals(fileName, that.fileName)
-            && Objects.equals(hostOS, that.hostOS);
+                && fullPackSize == that.fullPackSize
+                && fullUnpackSize == that.fullUnpackSize
+                && isSolid == that.isSolid
+                && isEncrypted == that.isEncrypted
+                && isUnicode == that.isUnicode
+                && hasExtTime == that.hasExtTime
+                && isLargeBlock == that.isLargeBlock
+                && isDirectory == that.isDirectory
+                && Objects.equals(archivalTime, that.archivalTime)
+                && Objects.equals(lastAccessTime, that.lastAccessTime)
+                && Objects.equals(lastModifiedTime, that.lastModifiedTime)
+                && Objects.equals(creationTime, that.creationTime)
+                && Objects.equals(fileName, that.fileName)
+                && Objects.equals(hostOS, that.hostOS);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(archivalTime, lastAccessTime, lastModifiedTime, creationTime, fileCRC,
-            fileName, hostOS, fullPackSize, fullUnpackSize, isSolid, isEncrypted, isUnicode,
-            hasExtTime, isLargeBlock, isDirectory);
+        return Objects.hash(
+                archivalTime,
+                lastAccessTime,
+                lastModifiedTime,
+                creationTime,
+                fileCRC,
+                fileName,
+                hostOS,
+                fullPackSize,
+                fullUnpackSize,
+                isSolid,
+                isEncrypted,
+                isUnicode,
+                hasExtTime,
+                isLargeBlock,
+                isDirectory);
     }
 
     @Override
     public String toString() {
-        return "FileHeaderRecord[fileName=" + fileName + ", fileCRC=" + fileCRC
-            + ", fullPackSize=" + fullPackSize + ", fullUnpackSize=" + fullUnpackSize + "]";
+        return "FileHeaderRecord[fileName="
+                + fileName
+                + ", fileCRC="
+                + fileCRC
+                + ", fullPackSize="
+                + fullPackSize
+                + ", fullUnpackSize="
+                + fullUnpackSize
+                + "]";
     }
 }

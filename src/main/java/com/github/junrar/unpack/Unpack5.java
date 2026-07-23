@@ -8,7 +8,6 @@ import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.decode.Decode5;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -75,14 +74,14 @@ public class Unpack5 {
     private boolean tablePresent;
 
     // The 5 Huffman tables (struct UnpackBlockTables).
-    private final Decode5 ld = new Decode5(Compress.NC5);   // literals / lengths
+    private final Decode5 ld = new Decode5(Compress.NC5); // literals / lengths
     // Sized for the extended alphabet unconditionally, the way unrar's fixed DecodeTable struct is
     // (unpack.hpp:87): a RAR5 block just fills the first DC5 slots. Sizing it per entry instead
     // would break a solid stream that mixes versions, where the flag flips but the window does not.
-    private final Decode5 dd = new Decode5(Compress.DCX5);  // distances
+    private final Decode5 dd = new Decode5(Compress.DCX5); // distances
     private final Decode5 ldd = new Decode5(Compress.LDC5); // low distance bits
-    private final Decode5 rd = new Decode5(Compress.RC5);   // repeat distances
-    private final Decode5 bd = new Decode5(Compress.BC5);   // bit lengths (table decode)
+    private final Decode5 rd = new Decode5(Compress.RC5); // repeat distances
+    private final Decode5 bd = new Decode5(Compress.BC5); // bit lengths (table decode)
 
     private boolean tablesRead5;
 
@@ -94,11 +93,12 @@ public class Unpack5 {
     // Sliding-window pointers into the per-archive window (wrapped through wrapUp/wrapDown each
     // step). C++ size_t (d861246:unpack.hpp:277-283), so long here: a RAR7 window reaches 64 GB.
     private long maxWinSize;
-    private long unpPtr;   // next window write position
-    private long wrPtr;    // window position up to which output was flushed
+    private long unpPtr; // next window write position
+    private long wrPtr; // window position up to which output was flushed
     private long writeBorder;
-    private long prevPtr;  // previous wrapped unpPtr, to detect a window wrap
-    private boolean firstWinDone; // the window has wrapped at least once (FirstWinDone parity, M1.4)
+    private long prevPtr; // previous wrapped unpPtr, to detect a window wrap
+    private boolean
+            firstWinDone; // the window has wrapped at least once (FirstWinDone parity, M1.4)
 
     // The 4 most-recent LZ distances (OldDist) and the last match length (unpackinline.cpp).
     // 64-bit, as in d861246:unpack.hpp:252 -- an extended distance slot reaches 1 TB, and even a
@@ -107,8 +107,8 @@ public class Unpack5 {
     private final long[] oldDist = new long[4];
     private int lastLength;
 
-    private long destUnpSize;      // remaining bytes this entry must produce (setDestSize)
-    private long writtenFileSize;  // bytes handed to unpWrite so far, this entry
+    private long destUnpSize; // remaining bytes this entry must produce (setDestSize)
+    private long writtenFileSize; // bytes handed to unpWrite so far, this entry
 
     /** Filters applied during the current entry (test seam; see Archive test-only hooks). */
     private int filtersApplied;
@@ -176,22 +176,33 @@ public class Unpack5 {
      */
     void init(final long declaredWinSize, final boolean solid, final long maxDictionarySize)
             throws RarException {
-        // Min-alloc floor: a sub-0x40000 dictionary is bumped up (unrar MinAllocSize, unpack.cpp:85).
-        long winSize = declaredWinSize < Unpack5Window.MIN_ALLOC ? Unpack5Window.MIN_ALLOC : declaredWinSize;
+        // Min-alloc floor: a sub-0x40000 dictionary is bumped up (unrar MinAllocSize,
+        // unpack.cpp:85).
+        long winSize =
+                declaredWinSize < Unpack5Window.MIN_ALLOC
+                        ? Unpack5Window.MIN_ALLOC
+                        : declaredWinSize;
 
         // Caller resource limit — BEFORE any window allocation (the -mdx / CheckWinLimit analog).
         if (winSize > maxDictionarySize) {
             throw new UnsupportedDictionarySizeException(
-                "RAR5 dictionary " + winSize + " exceeds the configured maxDictionarySize " + maxDictionarySize);
+                    "RAR5 dictionary "
+                            + winSize
+                            + " exceeds the configured maxDictionarySize "
+                            + maxDictionarySize);
         }
         // Engine capability ceiling.
         if (winSize > CAPABILITY_MAX_WIN_SIZE) {
             throw new UnsupportedDictionarySizeException(
-                "RAR5 dictionary " + winSize + " exceeds the engine capability " + CAPABILITY_MAX_WIN_SIZE);
+                    "RAR5 dictionary "
+                            + winSize
+                            + " exceeds the engine capability "
+                            + CAPABILITY_MAX_WIN_SIZE);
         }
 
         if (window != null && winSize <= window.size()) {
-            // Reuse: solid streams never shrink, and a non-solid file needing no more room keeps the
+            // Reuse: solid streams never shrink, and a non-solid file needing no more room keeps
+            // the
             // larger buffer (unrar: if (WinSize<=MaxWinSize) return).
             return;
         }
@@ -278,18 +289,20 @@ public class Unpack5 {
 
     /** 16 bits from the current position, highest bit first (8f437ab:getbits.hpp getbits). */
     int getbits() {
-        final int v = ((inBuf[inAddr] & 0xff) << 16)
-            | ((inBuf[inAddr + 1] & 0xff) << 8)
-            | (inBuf[inAddr + 2] & 0xff);
+        final int v =
+                ((inBuf[inAddr] & 0xff) << 16)
+                        | ((inBuf[inAddr + 1] & 0xff) << 8)
+                        | (inBuf[inAddr + 2] & 0xff);
         return (v >>> (8 - inBit)) & 0xffff;
     }
 
     /** 32 bits from the current position, highest bit first (8f437ab:getbits.hpp getbits32). */
     int getbits32() {
-        int v = ((inBuf[inAddr] & 0xff) << 24)
-            | ((inBuf[inAddr + 1] & 0xff) << 16)
-            | ((inBuf[inAddr + 2] & 0xff) << 8)
-            | (inBuf[inAddr + 3] & 0xff);
+        int v =
+                ((inBuf[inAddr] & 0xff) << 24)
+                        | ((inBuf[inAddr + 1] & 0xff) << 16)
+                        | ((inBuf[inAddr + 2] & 0xff) << 8)
+                        | (inBuf[inAddr + 3] & 0xff);
         v <<= inBit;
         v |= (inBuf[inAddr + 4] & 0xff) >>> (8 - inBit);
         return v;
@@ -411,7 +424,7 @@ public class Unpack5 {
         final int tableSize = extraDist ? Compress.HUFF_TABLE_SIZE5X : Compress.HUFF_TABLE_SIZE5;
 
         final int[] table = new int[tableSize];
-        for (int i = 0; i < tableSize;) {
+        for (int i = 0; i < tableSize; ) {
             if (!ensure(5)) {
                 return false;
             }
@@ -464,7 +477,8 @@ public class Unpack5 {
     }
 
     /** Build one decode table from a bit-length slice (8f437ab:unpack.cpp:227 MakeDecodeTables). */
-    void makeDecodeTables(final int[] lengthTable, final int off, final Decode5 dec, final int size) {
+    void makeDecodeTables(
+            final int[] lengthTable, final int off, final Decode5 dec, final int size) {
         dec.setMaxNum(size);
 
         final int[] lengthCount = new int[16];
@@ -499,10 +513,14 @@ public class Unpack5 {
             }
         }
 
-        // Larger alphabets (NC) get more quick-decode bits; everything else -3 (unpack.cpp:303-313).
-        final int quickBits = size == Compress.NC5
-            ? Compress.MAX_QUICK_DECODE_BITS
-            : (Compress.MAX_QUICK_DECODE_BITS > 3 ? Compress.MAX_QUICK_DECODE_BITS - 3 : 0);
+        // Larger alphabets (NC) get more quick-decode bits; everything else -3
+        // (unpack.cpp:303-313).
+        final int quickBits =
+                size == Compress.NC5
+                        ? Compress.MAX_QUICK_DECODE_BITS
+                        : (Compress.MAX_QUICK_DECODE_BITS > 3
+                                ? Compress.MAX_QUICK_DECODE_BITS - 3
+                                : 0);
         dec.setQuickBits(quickBits);
 
         final int quickDataSize = 1 << quickBits;
@@ -656,7 +674,7 @@ public class Unpack5 {
                 // 'while' (not 'if'): an empty block that carries only a Huffman table lands us
                 // back on the block border immediately after reading the table.
                 while (inAddr > blockStart + blockSize - 1
-                    || (inAddr == blockStart + blockSize - 1 && inBit >= blockBitSize)) {
+                        || (inAddr == blockStart + blockSize - 1 && inBit >= blockBitSize)) {
                     if (lastBlockInFile) {
                         fileDone = true;
                         break;
@@ -671,7 +689,8 @@ public class Unpack5 {
             }
 
             // writeBorder == unpPtr means we have a whole maxWinSize of data ahead.
-            if (wrapDown(writeBorder - unpPtr) <= Compress.MAX_INC_LZ_MATCH && writeBorder != unpPtr) {
+            if (wrapDown(writeBorder - unpPtr) <= Compress.MAX_INC_LZ_MATCH
+                    && writeBorder != unpPtr) {
                 unpWriteBuf();
                 if (writtenFileSize > destUnpSize) {
                     return;
@@ -914,68 +933,74 @@ public class Unpack5 {
     byte[] applyFilter(final byte[] data, final int dataSize, final Unpack5Filter flt) {
         switch (flt.getType()) {
             case Compress.FILTER_E8:
-            case Compress.FILTER_E8E9: {
-                final int fileOffset = (int) writtenFileSize; // C++ (uint)WrittenFileSize
-                final int fileSize = 0x1000000;
-                final int cmpByte2 = flt.getType() == Compress.FILTER_E8E9 ? 0xe9 : 0xe8;
-                // C++ guards with "CurPos+4" (not "DataSize-4") against uint underflow for
-                // DataSize<4; dataSize is <= MAX_FILTER_BLOCK_SIZE here, so int stays exact.
-                for (int curPos = 0; curPos + 4 < dataSize;) {
-                    final int curByte = data[curPos] & 0xff;
-                    curPos++;
-                    if (curByte == 0xe8 || curByte == cmpByte2) {
-                        // fileOffset is a truncated uint; the sum can wrap, so unsigned remainder.
-                        final int offset = Integer.remainderUnsigned(curPos + fileOffset, fileSize);
-                        final int addr = rawGet4(data, curPos);
-                        // Upstream tests the 0x80000000 bit rather than '< 0'; addr is a uint.
-                        if ((addr & 0x80000000) != 0) {              // addr < 0
-                            if (((addr + offset) & 0x80000000) == 0) { // addr + offset >= 0
-                                rawPut4(addr + fileSize, data, curPos);
+            case Compress.FILTER_E8E9:
+                {
+                    final int fileOffset = (int) writtenFileSize; // C++ (uint)WrittenFileSize
+                    final int fileSize = 0x1000000;
+                    final int cmpByte2 = flt.getType() == Compress.FILTER_E8E9 ? 0xe9 : 0xe8;
+                    // C++ guards with "CurPos+4" (not "DataSize-4") against uint underflow for
+                    // DataSize<4; dataSize is <= MAX_FILTER_BLOCK_SIZE here, so int stays exact.
+                    for (int curPos = 0; curPos + 4 < dataSize; ) {
+                        final int curByte = data[curPos] & 0xff;
+                        curPos++;
+                        if (curByte == 0xe8 || curByte == cmpByte2) {
+                            // fileOffset is a truncated uint; the sum can wrap, so unsigned
+                            // remainder.
+                            final int offset =
+                                    Integer.remainderUnsigned(curPos + fileOffset, fileSize);
+                            final int addr = rawGet4(data, curPos);
+                            // Upstream tests the 0x80000000 bit rather than '< 0'; addr is a uint.
+                            if ((addr & 0x80000000) != 0) { // addr < 0
+                                if (((addr + offset) & 0x80000000) == 0) { // addr + offset >= 0
+                                    rawPut4(addr + fileSize, data, curPos);
+                                }
+                            } else if (((addr - fileSize) & 0x80000000) != 0) { // addr < fileSize
+                                rawPut4(addr - offset, data, curPos);
                             }
-                        } else if (((addr - fileSize) & 0x80000000) != 0) { // addr < fileSize
-                            rawPut4(addr - offset, data, curPos);
+                            curPos += 4;
                         }
-                        curPos += 4;
                     }
+                    return data;
                 }
-                return data;
-            }
-            case Compress.FILTER_ARM: {
-                final int fileOffset = (int) writtenFileSize;
-                // "CurPos+3" guard as above; BL condition byte 0xEB = '1110' (always).
-                for (int curPos = 0; curPos + 3 < dataSize; curPos += 4) {
-                    if (data[curPos + 3] == (byte) 0xeb) {
-                        int offset = (data[curPos] & 0xff)
-                            | ((data[curPos + 1] & 0xff) << 8)
-                            | ((data[curPos + 2] & 0xff) << 16);
-                        offset -= (fileOffset + curPos) >>> 2; // uint division by 4
-                        data[curPos] = (byte) offset;
-                        data[curPos + 1] = (byte) (offset >>> 8);
-                        data[curPos + 2] = (byte) (offset >>> 16);
+            case Compress.FILTER_ARM:
+                {
+                    final int fileOffset = (int) writtenFileSize;
+                    // "CurPos+3" guard as above; BL condition byte 0xEB = '1110' (always).
+                    for (int curPos = 0; curPos + 3 < dataSize; curPos += 4) {
+                        if (data[curPos + 3] == (byte) 0xeb) {
+                            int offset =
+                                    (data[curPos] & 0xff)
+                                            | ((data[curPos + 1] & 0xff) << 8)
+                                            | ((data[curPos + 2] & 0xff) << 16);
+                            offset -= (fileOffset + curPos) >>> 2; // uint division by 4
+                            data[curPos] = (byte) offset;
+                            data[curPos + 1] = (byte) (offset >>> 8);
+                            data[curPos + 2] = (byte) (offset >>> 16);
+                        }
                     }
+                    return data;
                 }
-                return data;
-            }
-            case Compress.FILTER_DELTA: {
-                // RAR5 stores the channel count in 5 bits, so no excessive-channels rejection
-                // is needed (unlike RAR3).
-                final int channels = flt.getChannels();
-                int srcPos = 0;
-                if (filterDstMemory == null || filterDstMemory.length < dataSize) {
-                    filterDstMemory = new byte[dataSize];
-                }
-                final byte[] dstData = filterDstMemory;
-                // Bytes of one channel are grouped into continual blocks; place them back to
-                // their interleaved positions.
-                for (int curChannel = 0; curChannel < channels; curChannel++) {
-                    byte prevByte = 0;
-                    for (int destPos = curChannel; destPos < dataSize; destPos += channels) {
-                        prevByte -= data[srcPos++];
-                        dstData[destPos] = prevByte;
+            case Compress.FILTER_DELTA:
+                {
+                    // RAR5 stores the channel count in 5 bits, so no excessive-channels rejection
+                    // is needed (unlike RAR3).
+                    final int channels = flt.getChannels();
+                    int srcPos = 0;
+                    if (filterDstMemory == null || filterDstMemory.length < dataSize) {
+                        filterDstMemory = new byte[dataSize];
                     }
+                    final byte[] dstData = filterDstMemory;
+                    // Bytes of one channel are grouped into continual blocks; place them back to
+                    // their interleaved positions.
+                    for (int curChannel = 0; curChannel < channels; curChannel++) {
+                        byte prevByte = 0;
+                        for (int destPos = curChannel; destPos < dataSize; destPos += channels) {
+                            prevByte -= data[srcPos++];
+                            dstData[destPos] = prevByte;
+                        }
+                    }
+                    return dstData;
                 }
-                return dstData;
-            }
             default:
                 return null;
         }
@@ -984,9 +1009,9 @@ public class Unpack5 {
     /** Little-endian 32-bit read (unrar RawGet4). */
     private static int rawGet4(final byte[] d, final int pos) {
         return (d[pos] & 0xff)
-            | ((d[pos + 1] & 0xff) << 8)
-            | ((d[pos + 2] & 0xff) << 16)
-            | ((d[pos + 3] & 0xff) << 24);
+                | ((d[pos + 1] & 0xff) << 8)
+                | ((d[pos + 2] & 0xff) << 16)
+                | ((d[pos + 3] & 0xff) << 24);
     }
 
     /** Little-endian 32-bit write (unrar RawPut4). */
@@ -1104,7 +1129,7 @@ public class Unpack5 {
 
         writeBorder = wrapUp(unpPtr + Math.min(maxWinSize, Compress.UNPACK_MAX_WRITE));
         if (writeBorder == unpPtr
-            || (wrPtr != unpPtr && wrapDown(wrPtr - unpPtr) < wrapDown(writeBorder - unpPtr))) {
+                || (wrPtr != unpPtr && wrapDown(wrPtr - unpPtr) < wrapDown(writeBorder - unpPtr))) {
             writeBorder = wrPtr;
         }
     }
@@ -1130,7 +1155,7 @@ public class Unpack5 {
             return;
         }
         final long writeSize = Math.min(size, destUnpSize - writtenFileSize);
-        for (long p = pos, left = writeSize; left > 0;) {
+        for (long p = pos, left = writeSize; left > 0; ) {
             final int chunk = window.run(p, left);
             unpIO.unpWrite(window.bufferAt(p), window.offsetAt(p), chunk);
             p += chunk;

@@ -41,7 +41,6 @@ public class ProtectHeader extends BlockHeader {
     private final int totalBlocks;
     private final byte[] mark;
 
-
     public ProtectHeader(BlockHeader bh, byte[] protectHeader) {
         super(bh);
 
@@ -57,7 +56,6 @@ public class ProtectHeader extends BlockHeader {
         mark = new byte[MARK_SIZE];
         System.arraycopy(protectHeader, pos, mark, 0, MARK_SIZE);
     }
-
 
     public byte[] getMark() {
         return mark;

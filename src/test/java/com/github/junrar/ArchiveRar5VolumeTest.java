@@ -1,5 +1,9 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+import static org.assertj.core.api.Assertions.entry;
+
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.exception.MissingNextVolumeException;
@@ -11,10 +15,6 @@ import com.github.junrar.rarfile.rar5.Rar5BlockType;
 import com.github.junrar.rarfile.rar5.Rar5HashType;
 import com.github.junrar.rarfile.rar5.Rar5MainHeader;
 import com.github.junrar.volume.InputStreamVolumeManager;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-import org.junit.jupiter.api.io.TempDir;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,10 +28,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
-import static org.assertj.core.api.Assertions.entry;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
  * M3.9 (issue #30) RAR5 multi-volume acceptance: {@code .partN.rar} sets spanning through
@@ -48,9 +47,12 @@ import static org.assertj.core.api.Assertions.entry;
 @Timeout(60)
 class ArchiveRar5VolumeTest {
 
-    private static final String SHA_NOTE = "73445cfe9a3c3b7ed4c6d90a8ce8b44f57421686a3f7e7aae9d1f7de9920c20e";
-    private static final String SHA_SPANNED = "6157b5e54e84c4e31adfe9db24111627c8e080d5d7ba8fc83587e07b40191945";
-    private static final String SHA_SPANNED2 = "a256034eb71944e9499bac3cd7d7f9546afb3ff4cc380bd9f6e3db85de0ab93c";
+    private static final String SHA_NOTE =
+            "73445cfe9a3c3b7ed4c6d90a8ce8b44f57421686a3f7e7aae9d1f7de9920c20e";
+    private static final String SHA_SPANNED =
+            "6157b5e54e84c4e31adfe9db24111627c8e080d5d7ba8fc83587e07b40191945";
+    private static final String SHA_SPANNED2 =
+            "a256034eb71944e9499bac3cd7d7f9546afb3ff4cc380bd9f6e3db85de0ab93c";
     private static final String[] SHA_SOLID = {
         "de7d3a2fa5c711d25a57c2f1e3fbee2357bde7ef7a8c785638270957337fa80f",
         "2ac39336a88a5007b0e0f2dd919f966da0daa49b89444058a2ef757533e0164c",
@@ -60,13 +62,13 @@ class ArchiveRar5VolumeTest {
         "bbe5807f7df08cec918fd6b2289e306f2a91a8ac7c605d3282bc05ab942dca1d",
     };
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     private File part(final String prefix, final int n) throws Exception {
         final String name = prefix + ".part" + n + ".rar";
-        final byte[] bytes = Files.readAllBytes(
-            Paths.get(getClass().getResource("volumes/rar5-part/" + name).toURI()));
+        final byte[] bytes =
+                Files.readAllBytes(
+                        Paths.get(getClass().getResource("volumes/rar5-part/" + name).toURI()));
         final Path p = tempDir.resolve(name);
         Files.write(p, bytes);
         return p.toFile();
@@ -76,7 +78,8 @@ class ArchiveRar5VolumeTest {
         final byte[] d = MessageDigest.getInstance("SHA-256").digest(b);
         final StringBuilder sb = new StringBuilder(d.length * 2);
         for (final byte x : d) {
-            sb.append(Character.forDigit((x >> 4) & 0xf, 16)).append(Character.forDigit(x & 0xf, 16));
+            sb.append(Character.forDigit((x >> 4) & 0xf, 16))
+                    .append(Character.forDigit(x & 0xf, 16));
         }
         return sb.toString();
     }
@@ -105,14 +108,14 @@ class ArchiveRar5VolumeTest {
             assertThat(main.getVolumeNumber()).isZero();
             // HFL_SPLITAFTER topology: the spanned entry continues past this volume.
             final List<FileHeader> files = a.getFileHeaders();
-            assertThat(files).extracting(FileHeader::getFileName)
-                .containsExactly("note.txt", "spanned.bin");
+            assertThat(files)
+                    .extracting(FileHeader::getFileName)
+                    .containsExactly("note.txt", "spanned.bin");
             assertThat(files.get(1).isSplitAfter()).isTrue();
 
             final Map<String, String> digests = extractAll(a);
-            assertThat(digests).containsOnly(
-                entry("note.txt", SHA_NOTE),
-                entry("spanned.bin", SHA_SPANNED));
+            assertThat(digests)
+                    .containsOnly(entry("note.txt", SHA_NOTE), entry("spanned.bin", SHA_SPANNED));
         }
     }
 
@@ -122,11 +125,12 @@ class ArchiveRar5VolumeTest {
         for (int n = 1; n <= 3; n++) {
             streams.add(new FileInputStream(part("vols", n)));
         }
-        try (Archive a = new Archive(new InputStreamVolumeManager(streams), ArchiveOptions.builder().build())) {
+        try (Archive a =
+                new Archive(
+                        new InputStreamVolumeManager(streams), ArchiveOptions.builder().build())) {
             final Map<String, String> digests = extractAll(a);
-            assertThat(digests).containsOnly(
-                entry("note.txt", SHA_NOTE),
-                entry("spanned.bin", SHA_SPANNED));
+            assertThat(digests)
+                    .containsOnly(entry("note.txt", SHA_NOTE), entry("spanned.bin", SHA_SPANNED));
         }
     }
 
@@ -159,9 +163,8 @@ class ArchiveRar5VolumeTest {
             assertThat(files.get(1).getHashType()).isEqualTo(Rar5HashType.BLAKE2);
             assertThat(files.get(1).isSplitAfter()).isTrue();
             final Map<String, String> digests = extractAll(a);
-            assertThat(digests).containsOnly(
-                entry("note.txt", SHA_NOTE),
-                entry("spanned.bin", SHA_SPANNED));
+            assertThat(digests)
+                    .containsOnly(entry("note.txt", SHA_NOTE), entry("spanned.bin", SHA_SPANNED));
         }
     }
 
@@ -198,7 +201,9 @@ class ArchiveRar5VolumeTest {
         // Only the first stream is supplied: the manager's null return is the missing-volume path.
         final List<InputStream> streams = new ArrayList<>();
         streams.add(new FileInputStream(part("vols", 1)));
-        try (Archive a = new Archive(new InputStreamVolumeManager(streams), ArchiveOptions.builder().build())) {
+        try (Archive a =
+                new Archive(
+                        new InputStreamVolumeManager(streams), ArchiveOptions.builder().build())) {
             final Throwable thrown = catchThrowable(() -> extractAll(a));
             assertThat(thrown).isExactlyInstanceOf(MissingNextVolumeException.class);
         }
@@ -237,13 +242,20 @@ class ArchiveRar5VolumeTest {
         }
 
         final byte[] bytes = Files.readAllBytes(first.toPath());
-        final int headerLength = Rar5BaseBlock.checkHeaderSize(
-            Arrays.copyOfRange(bytes, (int) position, (int) position + Rar5BaseBlock.FIRST_READ_SIZE));
-        final byte[] header = Arrays.copyOfRange(bytes, (int) position, (int) position + headerLength);
+        final int headerLength =
+                Rar5BaseBlock.checkHeaderSize(
+                        Arrays.copyOfRange(
+                                bytes,
+                                (int) position,
+                                (int) position + Rar5BaseBlock.FIRST_READ_SIZE));
+        final byte[] header =
+                Arrays.copyOfRange(bytes, (int) position, (int) position + headerLength);
         int crcOffset = -1;
         for (int i = 4; i <= header.length - 4; i++) {
             if (Raw.readIntLittleEndian(header, i) == fileCrc) {
-                assertThat(crcOffset).as("Data CRC32 field must be unique in the header").isEqualTo(-1);
+                assertThat(crcOffset)
+                        .as("Data CRC32 field must be unique in the header")
+                        .isEqualTo(-1);
                 crcOffset = i;
             }
         }
@@ -263,7 +275,7 @@ class ArchiveRar5VolumeTest {
     private static Rar5MainHeader mainHeader(final Archive a) {
         for (final Object block : a.getHeaders()) {
             if (block instanceof Rar5MainHeader
-                && ((Rar5MainHeader) block).getRar5Type() == Rar5BlockType.MAIN) {
+                    && ((Rar5MainHeader) block).getRar5Type() == Rar5BlockType.MAIN) {
                 return (Rar5MainHeader) block;
             }
         }

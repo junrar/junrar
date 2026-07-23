@@ -4,7 +4,6 @@ import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.io.VInt;
-
 import java.nio.charset.StandardCharsets;
 import java.nio.file.attribute.FileTime;
 import java.util.Arrays;
@@ -72,7 +71,8 @@ public final class Rar5MainHeader extends Rar5BaseBlock {
      * @throws CorruptHeaderException on an unsupported CRYPT encryption version, an
      *                                out-of-range KDF iteration count, or a truncated buffer.
      */
-    public static Rar5MainHeader from(final Rar5BaseBlock base, final byte[] header) throws CorruptHeaderException {
+    public static Rar5MainHeader from(final Rar5BaseBlock base, final byte[] header)
+            throws CorruptHeaderException {
         final Rar5MainHeader h = new Rar5MainHeader(base);
         final Rar5BlockType type = base.getRar5Type();
         if (type == Rar5BlockType.MAIN) {
@@ -130,7 +130,8 @@ public final class Rar5MainHeader extends Rar5BaseBlock {
         }
     }
 
-    private void parseMetadata(final byte[] header, final int start, final int end) throws CorruptHeaderException {
+    private void parseMetadata(final byte[] header, final int start, final int end)
+            throws CorruptHeaderException {
         if (start >= end) {
             return;
         }
@@ -152,16 +153,20 @@ public final class Rar5MainHeader extends Rar5BaseBlock {
         }
 
         if ((metaFlags & MHEXTRA_METADATA_CTIME) != 0) {
-            if ((metaFlags & MHEXTRA_METADATA_UNIXTIME) != 0 && (metaFlags & MHEXTRA_METADATA_UNIX_NS) != 0) {
+            if ((metaFlags & MHEXTRA_METADATA_UNIXTIME) != 0
+                    && (metaFlags & MHEXTRA_METADATA_UNIX_NS) != 0) {
                 if (pos + 8 <= end) {
-                    this.metadataTime = Rar5Time.fromUnixNanos(Raw.readLongLittleEndian(header, pos));
+                    this.metadataTime =
+                            Rar5Time.fromUnixNanos(Raw.readLongLittleEndian(header, pos));
                 }
             } else if ((metaFlags & MHEXTRA_METADATA_UNIXTIME) != 0) {
                 if (pos + 4 <= end) {
-                    this.metadataTime = Rar5Time.fromUnixSeconds(Raw.readIntLittleEndianAsLong(header, pos));
+                    this.metadataTime =
+                            Rar5Time.fromUnixSeconds(Raw.readIntLittleEndianAsLong(header, pos));
                 }
             } else if (pos + 8 <= end) {
-                this.metadataTime = Rar5Time.fromWindowsFileTime(Raw.readLongLittleEndian(header, pos));
+                this.metadataTime =
+                        Rar5Time.fromWindowsFileTime(Raw.readLongLittleEndian(header, pos));
             }
         }
     }
@@ -170,7 +175,8 @@ public final class Rar5MainHeader extends Rar5BaseBlock {
         final VInt r = new VInt(header, getFieldsOffset());
         this.cryptVersion = r.read();
         if (this.cryptVersion != CRYPT_VERSION) {
-            throw new CorruptHeaderException("Unsupported RAR5 encryption version " + this.cryptVersion);
+            throw new CorruptHeaderException(
+                    "Unsupported RAR5 encryption version " + this.cryptVersion);
         }
         final long encFlags = r.read();
         this.usePswCheck = (encFlags & CHFL_CRYPT_PSWCHECK) != 0;
@@ -181,7 +187,8 @@ public final class Rar5MainHeader extends Rar5BaseBlock {
         }
         this.lg2Count = header[pos++] & 0xff;
         if (this.lg2Count > CRYPT5_KDF_LG2_COUNT_MAX) {
-            throw new CorruptHeaderException("RAR5 KDF Lg2Count exceeds " + CRYPT5_KDF_LG2_COUNT_MAX);
+            throw new CorruptHeaderException(
+                    "RAR5 KDF Lg2Count exceeds " + CRYPT5_KDF_LG2_COUNT_MAX);
         }
         if (pos + SIZE_SALT50 > header.length) {
             throw new CorruptHeaderException("Truncated RAR5 CRYPT header");
@@ -192,12 +199,17 @@ public final class Rar5MainHeader extends Rar5BaseBlock {
             // unrar arcread.cpp:741-755: a pswcheck whose SHA-256-prefix csum does not match --
             // or that a truncated header cannot supply at all -- is unusable; drop UsePswCheck so
             // a damaged/absent check can't reject a valid password (the header CRC then decides),
-            // and never leave usePswCheck=true with a null pswCheck (a false WrongPasswordException).
+            // and never leave usePswCheck=true with a null pswCheck (a false
+            // WrongPasswordException).
             if (pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM > header.length) {
                 this.usePswCheck = false;
             } else {
                 final byte[] check = Arrays.copyOfRange(header, pos, pos + SIZE_PSWCHECK);
-                final byte[] csum = Arrays.copyOfRange(header, pos + SIZE_PSWCHECK, pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM);
+                final byte[] csum =
+                        Arrays.copyOfRange(
+                                header,
+                                pos + SIZE_PSWCHECK,
+                                pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM);
                 if (Rar5Crypt.pswCheckCsumValid(check, csum)) {
                     this.pswCheck = check;
                 } else {

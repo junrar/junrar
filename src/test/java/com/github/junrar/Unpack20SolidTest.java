@@ -1,15 +1,14 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins no-go row C1 (docs/porting/MIGRATION_MANUAL.md ss7): a solid RAR v20
@@ -30,9 +29,10 @@ public class Unpack20SolidTest {
     private static final String FIXTURE = "solid/v20-solid-negative-backref.rar";
 
     @Test
-    public void givenSolidV20NegativeBackref_whenExtractingSecondMember_thenCrcErrorNotAIOOBE() throws Exception {
+    public void givenSolidV20NegativeBackref_whenExtractingSecondMember_thenCrcErrorNotAIOOBE()
+            throws Exception {
         try (InputStream is = getClass().getResourceAsStream(FIXTURE);
-             Archive archive = new Archive(is)) {
+                Archive archive = new Archive(is)) {
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             assertThat(fileHeaders).hasSize(2);
 
@@ -40,11 +40,13 @@ public class Unpack20SolidTest {
             assertThat(secondMember.getUnpVersion()).isEqualTo((byte) 20);
             assertThat(secondMember.isSolid()).isTrue();
 
-            Throwable thrown = catchThrowable(() -> {
-                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                    archive.extractFile(secondMember, baos);
-                }
-            });
+            Throwable thrown =
+                    catchThrowable(
+                            () -> {
+                                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                                    archive.extractFile(secondMember, baos);
+                                }
+                            });
 
             assertThat(thrown).isNotInstanceOf(ArrayIndexOutOfBoundsException.class);
             assertThat(thrown).isExactlyInstanceOf(CrcErrorException.class);

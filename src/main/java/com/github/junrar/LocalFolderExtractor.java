@@ -5,9 +5,6 @@ import com.github.junrar.exception.UnsafeLinkException;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5RedirType;
 import com.github.junrar.rarfile.rar5.Rar5Redirection;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,6 +12,8 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 class LocalFolderExtractor {
 
@@ -50,10 +49,7 @@ class LocalFolderExtractor {
         return f;
     }
 
-    File extract(
-        final Archive arch,
-        final FileHeader fileHeader
-    ) throws RarException, IOException {
+    File extract(final Archive arch, final FileHeader fileHeader) throws RarException, IOException {
         final Rar5Redirection redir = fileHeader.getRedirection();
         if (redir != null && redir.getType() != null && redir.getType() != Rar5RedirType.NONE) {
             return extractRedirection(fileHeader, redir);
@@ -65,7 +61,8 @@ class LocalFolderExtractor {
         return f;
     }
 
-    private File createFile(final FileHeader fh, final File destination) throws IOException, RarException {
+    private File createFile(final FileHeader fh, final File destination)
+            throws IOException, RarException {
         String name = invariantSeparatorsPathString(fh.getFileName());
         File f = new File(destination, name);
         String dirCanonPath = f.getCanonicalPath();
@@ -99,7 +96,7 @@ class LocalFolderExtractor {
      * Every target passes the three safety layers before anything touches the filesystem.
      */
     private File extractRedirection(final FileHeader fh, final Rar5Redirection redir)
-        throws RarException, IOException {
+            throws RarException, IOException {
         final String srcName = fh.getFileName();
         final File linkFile = resolveLinkDestination(srcName);
         refuseWriteThroughSymlink(srcName); // layer 6.2.3 LinksToDirs
@@ -117,15 +114,17 @@ class LocalFolderExtractor {
         }
     }
 
-    private File createSymlink(final File linkFile, final String srcName, final Rar5Redirection redir)
-        throws RarException, IOException {
+    private File createSymlink(
+            final File linkFile, final String srcName, final Rar5Redirection redir)
+            throws RarException, IOException {
         final String rawTarget = redir.getTarget();
         validateSymlinkTarget(srcName, rawTarget); // layers 5.2.5 depth + 6.1.7 target validation
         if (!isPosix()) {
             // Windows symlink/junction creation is a recorded non-goal on the JVM; the redirection
             // fact still surfaces through FileHeader.getRedirection(). unrar creates reparse points
             // here (CreateReparsePoint); junrar deliberately does not (cross-platform port).
-            logger.info("skipping symlink creation on non-POSIX host: {} -> {}", srcName, rawTarget);
+            logger.info(
+                    "skipping symlink creation on non-POSIX host: {} -> {}", srcName, rawTarget);
             return null;
         }
         final Path linkPath = linkFile.toPath();
@@ -137,7 +136,7 @@ class LocalFolderExtractor {
     }
 
     private File createLink(final File linkFile, final Rar5Redirection redir, final boolean copy)
-        throws RarException, IOException {
+            throws RarException, IOException {
         final File target = resolveTargetWithinDestination(redir.getTarget());
         final Path linkPath = linkFile.toPath();
         Files.createDirectories(linkPath.getParent());
@@ -164,19 +163,29 @@ class LocalFolderExtractor {
      * Unix -- a deliberate divergence, see fixtures README).
      */
     private void validateSymlinkTarget(final String srcName, final String rawTarget)
-        throws UnsafeLinkException, IOException {
+            throws UnsafeLinkException, IOException {
         final String target = invariantSeparatorsPathString(rawTarget); // S5
         if (isAbsolute(target, rawTarget)) {
-            throw new UnsafeLinkException("Rar contains a symlink with an absolute target: '"
-                + rawTarget + "' for '" + srcName + "'");
+            throw new UnsafeLinkException(
+                    "Rar contains a symlink with an absolute target: '"
+                            + rawTarget
+                            + "' for '"
+                            + srcName
+                            + "'");
         }
         final File linkParent =
-            new File(folderDestination, invariantSeparatorsPathString(srcName)).getParentFile();
+                new File(folderDestination, invariantSeparatorsPathString(srcName)).getParentFile();
         final String canon = new File(linkParent, target).getCanonicalPath();
         final String destCanon = folderDestination.getCanonicalPath();
         if (!canon.equals(destCanon) && !canon.startsWith(destCanon + File.separator)) {
-            throw new UnsafeLinkException("Rar contains a symlink escaping the destination: '"
-                + srcName + "' -> '" + rawTarget + "' resolves to '" + canon + "'");
+            throw new UnsafeLinkException(
+                    "Rar contains a symlink escaping the destination: '"
+                            + srcName
+                            + "' -> '"
+                            + rawTarget
+                            + "' resolves to '"
+                            + canon
+                            + "'");
         }
     }
 
@@ -187,16 +196,21 @@ class LocalFolderExtractor {
      * destination root and refuses any target that escapes it.
      */
     private File resolveTargetWithinDestination(final String rawTarget)
-        throws UnsafeLinkException, IOException {
+            throws UnsafeLinkException, IOException {
         final String target = invariantSeparatorsPathString(rawTarget);
         if (isAbsolute(target, rawTarget)) {
-            throw new UnsafeLinkException("Rar contains a link with an absolute target: '" + rawTarget + "'");
+            throw new UnsafeLinkException(
+                    "Rar contains a link with an absolute target: '" + rawTarget + "'");
         }
         final File resolved = new File(folderDestination, target);
         final String canon = resolved.getCanonicalPath();
         if (!canon.startsWith(folderDestination.getCanonicalPath() + File.separator)) {
-            throw new UnsafeLinkException("Rar contains a link escaping the destination: '"
-                + rawTarget + "' resolves to '" + canon + "'");
+            throw new UnsafeLinkException(
+                    "Rar contains a link escaping the destination: '"
+                            + rawTarget
+                            + "' resolves to '"
+                            + canon
+                            + "'");
         }
         return resolved;
     }
@@ -230,13 +244,18 @@ class LocalFolderExtractor {
             }
             p = p.resolve(part);
             if (Files.isSymbolicLink(p)) {
-                throw new UnsafeLinkException("Rar refuses to extract '" + rawName
-                    + "' through the previously-extracted directory symlink: '" + p + "'");
+                throw new UnsafeLinkException(
+                        "Rar refuses to extract '"
+                                + rawName
+                                + "' through the previously-extracted directory symlink: '"
+                                + p
+                                + "'");
             }
         }
     }
 
-    private File resolveLinkDestination(final String rawName) throws UnsafeLinkException, IOException {
+    private File resolveLinkDestination(final String rawName)
+            throws UnsafeLinkException, IOException {
         final File f = new File(folderDestination, invariantSeparatorsPathString(rawName));
         final String canon = f.getCanonicalPath();
         if (!canon.startsWith(folderDestination.getCanonicalPath() + File.separator)) {
@@ -247,15 +266,18 @@ class LocalFolderExtractor {
 
     private static boolean isAbsolute(final String normalized, final String rawTarget) {
         return normalized.startsWith("/") // unix absolute, and normalized UNC / \\?\ prefixes
-            || rawTarget.startsWith("\\") // raw UNC or root-based backslash
-            || (rawTarget.length() >= 2
-                && Character.isLetter(rawTarget.charAt(0))
-                && rawTarget.charAt(1) == ':'); // Windows drive letter
+                || rawTarget.startsWith("\\") // raw UNC or root-based backslash
+                || (rawTarget.length() >= 2
+                        && Character.isLetter(rawTarget.charAt(0))
+                        && rawTarget.charAt(1) == ':'); // Windows drive letter
     }
 
     private boolean isPosix() {
-        return folderDestination.toPath().getFileSystem()
-            .supportedFileAttributeViews().contains("posix");
+        return folderDestination
+                .toPath()
+                .getFileSystem()
+                .supportedFileAttributeViews()
+                .contains("posix");
     }
 
     static String invariantSeparatorsPathString(String path) {

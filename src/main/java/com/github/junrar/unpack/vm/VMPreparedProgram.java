@@ -28,7 +28,6 @@ import java.util.Vector;
 public class VMPreparedProgram {
     private VMStandardFilters Type = VMStandardFilters.VMSF_NONE;
 
-
     private Vector<Byte> GlobalData = new Vector<>();
     private Vector<Byte> StaticData = new Vector<>(); // static data contained in DB operators
     private int[] InitR = new int[7];
@@ -40,13 +39,9 @@ public class VMPreparedProgram {
         return FilteredDataOffset;
     }
 
-
-
     public void setFilteredDataOffset(int filteredDataOffset) {
         FilteredDataOffset = filteredDataOffset;
     }
-
-
 
     public int getFilteredDataSize() {
         return FilteredDataSize;
@@ -87,5 +82,4 @@ public class VMPreparedProgram {
     public void setType(VMStandardFilters type) {
         Type = type;
     }
-
 }

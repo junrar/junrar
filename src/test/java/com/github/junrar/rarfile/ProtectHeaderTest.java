@@ -1,8 +1,8 @@
 package com.github.junrar.rarfile;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins T2 (docs/porting/MIGRATION_MANUAL.md SS6): the ProtectHeader field
@@ -17,10 +17,21 @@ class ProtectHeaderTest {
     @Test
     void parsesFieldsPerUnrarLayout() {
         byte[] body = {
-            0x05,                               // Version
-            (byte) 0xE8, 0x03,                  // RecSectors = 1000 (LE)
-            0x4E, 0x61, (byte) 0xBC, 0x00,       // TotalBlocks = 12345678 (LE)
-            'P', 'R', 'O', 'T', 'M', 'A', 'R', 'K', // Mark[8]
+            0x05, // Version
+            (byte) 0xE8,
+            0x03, // RecSectors = 1000 (LE)
+            0x4E,
+            0x61,
+            (byte) 0xBC,
+            0x00, // TotalBlocks = 12345678 (LE)
+            'P',
+            'R',
+            'O',
+            'T',
+            'M',
+            'A',
+            'R',
+            'K', // Mark[8]
         };
         assertThat(body).hasSize(ProtectHeader.protectHeaderSize);
 

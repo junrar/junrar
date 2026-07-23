@@ -1,11 +1,10 @@
 package com.github.junrar.unpack.vm;
 
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.Arrays;
 import java.util.Vector;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins {@link RarVM#setLowEndianValue(Vector, int, int)} — RarVM's only directly-reachable
@@ -47,8 +46,8 @@ class RarVMSignednessTest {
 
         vm.setLowEndianValue(mem, 0, 0x12345678);
 
-        // 0x12345678 & 0xff = 0x78; >>> 8 & 0xff = 0x56; >>> 16 & 0xff = 0x34; >>> 24 & 0xff = 0x12.
+        // 0x12345678 & 0xff = 0x78; >>> 8 & 0xff = 0x56; >>> 16 & 0xff = 0x34; >>> 24 & 0xff =
+        // 0x12.
         assertThat(mem).containsExactly((byte) 0x78, (byte) 0x56, (byte) 0x34, (byte) 0x12);
     }
-
 }

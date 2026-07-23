@@ -4,14 +4,13 @@
  */
 package com.github.junrar.unpack;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.ArchiveOptions;
 import com.github.junrar.unpack.CraftedRar5Stream.BitWriter;
 import com.github.junrar.unpack.decode.Compress;
-import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * M4.2 (issue #34) ExtraDist acceptance: version 70 selects the 80-slot distance alphabet
@@ -44,7 +43,9 @@ class Unpack5ExtraDistTest {
 
         assertThat(u.decodeNumber(u.dd())).as("top distance slot").isEqualTo(Compress.DCX5 - 1);
         assertThat(u.decodeNumber(u.ldd())).as("LDD slice sits at NC + 80").isEqualTo(1);
-        assertThat(u.decodeNumber(u.rd())).as("RD slice sits at NC + 80 + LDC").isEqualTo(Compress.RC5 - 1);
+        assertThat(u.decodeNumber(u.rd()))
+                .as("RD slice sits at NC + 80 + LDC")
+                .isEqualTo(Compress.RC5 - 1);
     }
 
     @Test
@@ -57,7 +58,9 @@ class Unpack5ExtraDistTest {
 
         assertThat(u.decodeNumber(u.dd())).as("top distance slot").isEqualTo(Compress.DC5 - 1);
         assertThat(u.decodeNumber(u.ldd())).as("LDD slice sits at NC + 64").isEqualTo(1);
-        assertThat(u.decodeNumber(u.rd())).as("RD slice sits at NC + 64 + LDC").isEqualTo(Compress.RC5 - 1);
+        assertThat(u.decodeNumber(u.rd()))
+                .as("RD slice sits at NC + 64 + LDC")
+                .isEqualTo(Compress.RC5 - 1);
     }
 
     /**
@@ -69,32 +72,35 @@ class Unpack5ExtraDistTest {
      */
     @Test
     void topExtendedSlotDecodesAnEightHundredGigabyteDistance() throws Exception {
-        final long raw = (1L << 33) | 1L;         // the 34-bit DBits-4 field, top and bottom bits set
+        final long raw = (1L << 33) | 1L; // the 34-bit DBits-4 field, top and bottom bits set
         final long distance = 1L + (3L << 38) + (raw << 4) + 1L;
         assertThat(distance).as("recomputed independently of the engine").isEqualTo(962072674322L);
 
         final BitWriter content = new BitWriter();
         writeTables(content, Compress.DCX5);
-        content.writeBits(0, 1);                  // LD code for literal 'A'
-        content.writeBits(0b10, 2);               // LD code for slot 262 -> match, base length 2
-        content.writeBits(0b11, 2);               // DD code for slot 79 -> DBits = 38
-        content.writeBits(raw, 38 - 4);           // the DBits-4 raw bits, read through getbits64
-        content.writeBits(0b1, 1);                // LDD code for symbol 1 -> the low distance bits
+        content.writeBits(0, 1); // LD code for literal 'A'
+        content.writeBits(0b10, 2); // LD code for slot 262 -> match, base length 2
+        content.writeBits(0b11, 2); // DD code for slot 79 -> DBits = 38
+        content.writeBits(raw, 38 - 4); // the DBits-4 raw bits, read through getbits64
+        content.writeBits(0b1, 1); // LDD code for symbol 1 -> the low distance bits
 
         // Base length 2, then +1 for each of the >0x100 / >0x2000 / >0x40000 thresholds.
         final int matchLength = 5;
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
-        final Unpack5 u = new Unpack5(CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out), true);
+        final Unpack5 u =
+                new Unpack5(
+                        CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out),
+                        true);
         u.init(Unpack5Window.MIN_ALLOC, false, ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
         u.setDestSize(1 + matchLength);
         u.unpack5(false);
 
         assertThat(u.oldDist()[0])
-            .as("a 34-bit raw field only survives the 64-bit read: getbits32 would shift by -2")
-            .isEqualTo(distance);
+                .as("a 34-bit raw field only survives the 64-bit read: getbits32 would shift by -2")
+                .isEqualTo(distance);
         assertThat(out.toByteArray())
-            .as("the distance is past the window, so the match zero-fills")
-            .containsExactly('A', 0, 0, 0, 0, 0);
+                .as("the distance is past the window, so the match zero-fills")
+                .containsExactly('A', 0, 0, 0, 0, 0);
     }
 
     /**
@@ -104,28 +110,31 @@ class Unpack5ExtraDistTest {
      */
     @Test
     void firstExtendedSlotAboveTheThirtyTwoBitReadKeepsItsFullField() throws Exception {
-        final long raw = (1L << 32) | 1L;         // the 33-bit DBits-4 field, top and bottom bits set
+        final long raw = (1L << 32) | 1L; // the 33-bit DBits-4 field, top and bottom bits set
         final long distance = 1L + (3L << 37) + (raw << 4) + 1L;
         assertThat(distance).as("recomputed independently of the engine").isEqualTo(481036337170L);
 
         final BitWriter content = new BitWriter();
         writeTables(content, Compress.DCX5);
-        content.writeBits(0, 1);                  // LD code for literal 'A'
-        content.writeBits(0b10, 2);               // LD code for slot 262 -> match, base length 2
-        content.writeBits(0b10, 2);               // DD code for slot 77 -> DBits = 77/2 - 1 = 37
-        content.writeBits(raw, 37 - 4);           // the DBits-4 raw bits, read through getbits64
-        content.writeBits(0b1, 1);                // LDD code for symbol 1 -> the low distance bits
+        content.writeBits(0, 1); // LD code for literal 'A'
+        content.writeBits(0b10, 2); // LD code for slot 262 -> match, base length 2
+        content.writeBits(0b10, 2); // DD code for slot 77 -> DBits = 77/2 - 1 = 37
+        content.writeBits(raw, 37 - 4); // the DBits-4 raw bits, read through getbits64
+        content.writeBits(0b1, 1); // LDD code for symbol 1 -> the low distance bits
 
         final int matchLength = 5;
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
-        final Unpack5 u = new Unpack5(CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out), true);
+        final Unpack5 u =
+                new Unpack5(
+                        CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out),
+                        true);
         u.init(Unpack5Window.MIN_ALLOC, false, ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
         u.setDestSize(1 + matchLength);
         u.unpack5(false);
 
         assertThat(u.oldDist()[0])
-            .as("a 33-bit field cannot come out of a 32-bit read")
-            .isEqualTo(distance);
+                .as("a 33-bit field cannot come out of a 32-bit read")
+                .isEqualTo(distance);
         assertThat(out.toByteArray()).containsExactly('A', 0, 0, 0, 0, 0);
     }
 
@@ -138,28 +147,31 @@ class Unpack5ExtraDistTest {
      */
     @Test
     void boundarySlotWithAFullWidthRawFieldTreatsItAsUnsigned() throws Exception {
-        final long raw = 0x80000001L;             // the 32-bit DBits-4 field, bit 31 set
+        final long raw = 0x80000001L; // the 32-bit DBits-4 field, bit 31 set
         final long distance = 1L + (2L << 36) + (raw << 4) + 1L;
         assertThat(distance).as("recomputed independently of the engine").isEqualTo(171798691858L);
 
         final BitWriter content = new BitWriter();
         writeTables(content, Compress.DCX5);
-        content.writeBits(0, 1);                  // LD code for literal 'A'
-        content.writeBits(0b10, 2);               // LD code for slot 262 -> match, base length 2
-        content.writeBits(0b01, 2);               // DD code for slot 74 -> DBits = 74/2 - 1 = 36
-        content.writeBits(raw, 36 - 4);           // the DBits-4 raw bits, read through getbits32
-        content.writeBits(0b1, 1);                // LDD code for symbol 1 -> the low distance bits
+        content.writeBits(0, 1); // LD code for literal 'A'
+        content.writeBits(0b10, 2); // LD code for slot 262 -> match, base length 2
+        content.writeBits(0b01, 2); // DD code for slot 74 -> DBits = 74/2 - 1 = 36
+        content.writeBits(raw, 36 - 4); // the DBits-4 raw bits, read through getbits32
+        content.writeBits(0b1, 1); // LDD code for symbol 1 -> the low distance bits
 
         final int matchLength = 5;
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
-        final Unpack5 u = new Unpack5(CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out), true);
+        final Unpack5 u =
+                new Unpack5(
+                        CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out),
+                        true);
         u.init(Unpack5Window.MIN_ALLOC, false, ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
         u.setDestSize(1 + matchLength);
         u.unpack5(false);
 
         assertThat(u.oldDist()[0])
-            .as("a sign-extended raw field would subtract 34 GB instead of adding it")
-            .isEqualTo(distance);
+                .as("a sign-extended raw field would subtract 34 GB instead of adding it")
+                .isEqualTo(distance);
         assertThat(out.toByteArray()).containsExactly('A', 0, 0, 0, 0, 0);
     }
 
@@ -175,9 +187,11 @@ class Unpack5ExtraDistTest {
         assertThat(u.dd().getMaxNum()).isEqualTo(Compress.DC5);
     }
 
-    // ---- crafting helpers ------------------------------------------------------------------------
+    // ---- crafting helpers
+    // ------------------------------------------------------------------------
 
-    private static Unpack5 readTablesFor(final boolean extraDist, final int dCodes) throws Exception {
+    private static Unpack5 readTablesFor(final boolean extraDist, final int dCodes)
+            throws Exception {
         final Unpack5 u = new Unpack5(extraDist);
         feedTables(u, dCodes);
         return u;
@@ -186,9 +200,9 @@ class Unpack5ExtraDistTest {
     private static void feedTables(final Unpack5 u, final int dCodes) throws Exception {
         final BitWriter bw = new BitWriter();
         writeTables(bw, dCodes);
-        bw.writeBits(0b11, 2);                    // DD code for the top distance slot
-        bw.writeBits(0b1, 1);                     // LDD code for symbol 1
-        bw.writeBits(0b1, 1);                     // RD code for symbol 43
+        bw.writeBits(0b11, 2); // DD code for the top distance slot
+        bw.writeBits(0b1, 1); // LDD code for symbol 1
+        bw.writeBits(0b1, 1); // RD code for symbol 43
         u.feed(CraftedRar5Stream.frame(bw));
         assertThat(u.readBlockHeader()).isTrue();
         assertThat(u.readTables()).isTrue();
@@ -220,13 +234,15 @@ class Unpack5ExtraDistTest {
                 len = 1;
             } else if (i == 262 || i == 300) {
                 len = 2;
-            } else if (i == ddOff + dCodes - 16 || i == ddOff + dCodes - 6
-                || i == ddOff + dCodes - 3 || i == ddOff + dCodes - 1) {
-                len = 2;                                  // DD slots 64, 74, 77, 79 -> DBits 31, 36, 37, 38
+            } else if (i == ddOff + dCodes - 16
+                    || i == ddOff + dCodes - 6
+                    || i == ddOff + dCodes - 3
+                    || i == ddOff + dCodes - 1) {
+                len = 2; // DD slots 64, 74, 77, 79 -> DBits 31, 36, 37, 38
             } else if (i == lddOff || i == lddOff + 1) {
-                len = 1;                                  // LDD symbols 0, 1
+                len = 1; // LDD symbols 0, 1
             } else if (i >= rdOff + Compress.RC5 - 2) {
-                len = 1;                                  // RD symbols 42, 43
+                len = 1; // RD symbols 42, 43
             } else {
                 len = 0;
             }

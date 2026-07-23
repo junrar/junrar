@@ -1,14 +1,13 @@
 package com.github.junrar.io;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
 import com.github.junrar.exception.CorruptHeaderException;
+import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.util.Arrays;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 class VIntTest {
 
@@ -29,8 +28,20 @@ class VIntTest {
     }
 
     @ParameterizedTest
-    @ValueSource(longs = {0, 1, 127, 128, 300, 16383, 16384, 0x7fffffffL, 0xffffffffL,
-        0x123456789abcdefL, Long.MAX_VALUE})
+    @ValueSource(
+            longs = {
+                0,
+                1,
+                127,
+                128,
+                300,
+                16383,
+                16384,
+                0x7fffffffL,
+                0xffffffffL,
+                0x123456789abcdefL,
+                Long.MAX_VALUE
+            })
     void decodesRoundTripAndAdvancesCursor(long value) throws Exception {
         byte[] encoded = encode(value);
         VInt vint = new VInt(encoded, 0);
@@ -78,7 +89,7 @@ class VIntTest {
         byte[] flood = new byte[VInt.MAX_BYTES]; // 10 bytes, continuation bit always set
         Arrays.fill(flood, (byte) 0x80);
         assertThatThrownBy(() -> new VInt(flood, 0).read())
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -86,13 +97,13 @@ class VIntTest {
         byte[] flood = new byte[64];
         Arrays.fill(flood, (byte) 0x80);
         assertThatThrownBy(() -> new VInt(flood, 0).read())
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
     void truncatedVintThrows() {
         // Continuation bit set but the buffer ends before the terminating byte.
-        assertThatThrownBy(() -> new VInt(new byte[]{(byte) 0x80}, 0).read())
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+        assertThatThrownBy(() -> new VInt(new byte[] {(byte) 0x80}, 0).read())
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 }

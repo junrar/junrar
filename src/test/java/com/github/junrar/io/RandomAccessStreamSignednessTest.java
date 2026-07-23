@@ -1,12 +1,11 @@
 package com.github.junrar.io;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.lang.reflect.Field;
 import java.util.Vector;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 /**
  * Extends {@code com.github.junrar.LargeEntryContractTest}'s C13 coverage: that suite's 2^31
@@ -21,14 +20,18 @@ class RandomAccessStreamSignednessTest {
 
     @Test
     @Timeout(60)
-    void givenOffsetWithBitsAboveBit31_whenReadThroughBlockCache_thenUsesShiftBeforeTruncateIndex() throws Exception {
+    void givenOffsetWithBitsAboveBit31_whenReadThroughBlockCache_thenUsesShiftBeforeTruncateIndex()
+            throws Exception {
         int blockShift = getStaticInt("BLOCK_SHIFT");
         int blockSize = getStaticInt("BLOCK_SIZE");
         int correctBlockIndex = (int) (TARGET >>> blockShift);
         int truncateFirstBlockIndex = ((int) TARGET) >>> blockShift;
-        assertThat(TARGET & (blockSize - 1)).as("target must be block-aligned for this seed").isZero();
-        assertThat(correctBlockIndex).as("the two formulas must diverge for this target")
-            .isNotEqualTo(truncateFirstBlockIndex);
+        assertThat(TARGET & (blockSize - 1))
+                .as("target must be block-aligned for this seed")
+                .isZero();
+        assertThat(correctBlockIndex)
+                .as("the two formulas must diverge for this target")
+                .isNotEqualTo(truncateFirstBlockIndex);
 
         byte[] block = new byte[blockSize];
         for (int i = 0; i < blockSize; i++) {
@@ -47,7 +50,9 @@ class RandomAccessStreamSignednessTest {
 
         assertThat(count).isEqualTo(read.length);
         for (int i = 0; i < read.length; i++) {
-            assertThat(read[i]).as("byte at offset %d", TARGET + i).isEqualTo(SyntheticByteChannel.valueAt(TARGET + i));
+            assertThat(read[i])
+                    .as("byte at offset %d", TARGET + i)
+                    .isEqualTo(SyntheticByteChannel.valueAt(TARGET + i));
         }
     }
 
@@ -58,7 +63,8 @@ class RandomAccessStreamSignednessTest {
         return (T) field.get(target);
     }
 
-    private static void setField(Object target, String name, Object value) throws ReflectiveOperationException {
+    private static void setField(Object target, String name, Object value)
+            throws ReflectiveOperationException {
         Field field = RandomAccessInputStream.class.getDeclaredField(name);
         field.setAccessible(true);
         field.set(target, value);
@@ -69,5 +75,4 @@ class RandomAccessStreamSignednessTest {
         field.setAccessible(true);
         return field.getInt(null);
     }
-
 }

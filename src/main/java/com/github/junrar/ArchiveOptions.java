@@ -52,8 +52,7 @@ public final class ArchiveOptions {
         private long maxDictionarySize = DEFAULT_MAX_DICTIONARY_SIZE;
         private UnrarCallback unrarCallback;
 
-        private Builder() {
-        }
+        private Builder() {}
 
         /**
          * @param password the archive password, defensively copied; the caller may
@@ -94,7 +93,8 @@ public final class ArchiveOptions {
          */
         public ArchiveOptions build() {
             if (this.maxDictionarySize <= 0) {
-                throw new IllegalArgumentException("maxDictionarySize must be > 0, was " + this.maxDictionarySize);
+                throw new IllegalArgumentException(
+                        "maxDictionarySize must be > 0, was " + this.maxDictionarySize);
             }
             return new ArchiveOptions(this);
         }

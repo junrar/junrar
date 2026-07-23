@@ -1,15 +1,14 @@
 package com.github.junrar.unpack;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.ArchiveOptions;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.unpack.decode.Compress;
 import com.github.junrar.unpack.decode.Decode5;
-import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
 
 /**
  * M3.6 (issue #27) unit tests for the RAR5 {@link Unpack5} skeleton: window sizing +
@@ -61,8 +60,9 @@ class Unpack5Test {
         u.init(2L << 30, false, DEFAULT);
         assertThat(u.window().size()).isEqualTo(2L << 30);
         assertThat(u.window().isSegmented()).as("past 1 GB the window is segmented").isTrue();
-        assertThat(u.window().capacity()).as("lazy: nothing written, nothing allocated")
-            .isEqualTo(0x40000);
+        assertThat(u.window().capacity())
+                .as("lazy: nothing written, nothing allocated")
+                .isEqualTo(0x40000);
     }
 
     @Test
@@ -111,8 +111,9 @@ class Unpack5Test {
         final Unpack5 u = new Unpack5(false);
         u.init(64L << 30, false, 64L << 30);
         assertThat(u.window().size()).isEqualTo(64L << 30);
-        assertThat(u.window().capacity()).as("a 64 GB claim still allocates only the floor")
-            .isEqualTo(0x40000);
+        assertThat(u.window().capacity())
+                .as("a 64 GB claim still allocates only the floor")
+                .isEqualTo(0x40000);
     }
 
     // ---- hostile row (a): budget check fires before allocation --------------------------------
@@ -189,7 +190,9 @@ class Unpack5Test {
         for (int i = 0; i < n; i++) {
             w.put(i, (byte) i);
         }
-        assertThat(w.capacity()).as("growth-capped: capacity <= 2x bytes written").isLessThanOrEqualTo(2 * n);
+        assertThat(w.capacity())
+                .as("growth-capped: capacity <= 2x bytes written")
+                .isLessThanOrEqualTo(2 * n);
         assertThat(w.capacity()).as("nowhere near the 1 GB cap").isLessThan((int) ONE_GB);
     }
 
@@ -245,8 +248,9 @@ class Unpack5Test {
         }
         assertThat(w.capacity()).as("still only the first segment").isEqualTo(afterFirst);
         w.put(SEG, (byte) 1);
-        assertThat(w.capacity()).as("the second segment appears only once it is written")
-            .isEqualTo(afterFirst + SEG);
+        assertThat(w.capacity())
+                .as("the second segment appears only once it is written")
+                .isEqualTo(afterFirst + SEG);
     }
 
     @Test
@@ -259,8 +263,9 @@ class Unpack5Test {
         for (long i = 0; i < size; i++) {
             w.put(i, (byte) i);
         }
-        assertThat(w.capacity()).as("the tail segment holds the remainder, not a full segment")
-            .isEqualTo(size);
+        assertThat(w.capacity())
+                .as("the tail segment holds the remainder, not a full segment")
+                .isEqualTo(size);
         assertThat(w.run(size - 1, 64)).as("no run reaches past the declared size").isEqualTo(1);
     }
 
@@ -325,7 +330,7 @@ class Unpack5Test {
     @Test
     void getbitsAndGetbits32ReadMsbFirst() {
         final Unpack5 u = new Unpack5(false);
-        u.feed(new byte[]{0x12, 0x34, 0x56, 0x78, (byte) 0x9A});
+        u.feed(new byte[] {0x12, 0x34, 0x56, 0x78, (byte) 0x9A});
         assertThat(u.getbits()).isEqualTo(0x1234);
         assertThat(u.getbits32()).isEqualTo(0x12345678);
         u.addbits(4);
@@ -358,8 +363,12 @@ class Unpack5Test {
     void readTablesBuildsAllFiveTablesAndDecodes() throws Exception {
         // Main bit-length table: LD symbols {0,1,2,3}=len 2; DD symbols {0,1}=len 1; rest length 0.
         final int[] mainLen = new int[Compress.HUFF_TABLE_SIZE5];
-        mainLen[0] = 2; mainLen[1] = 2; mainLen[2] = 2; mainLen[3] = 2;      // LD (offset 0)
-        mainLen[Compress.NC5] = 1; mainLen[Compress.NC5 + 1] = 1;             // DD (offset NC5)
+        mainLen[0] = 2;
+        mainLen[1] = 2;
+        mainLen[2] = 2;
+        mainLen[3] = 2; // LD (offset 0)
+        mainLen[Compress.NC5] = 1;
+        mainLen[Compress.NC5 + 1] = 1; // DD (offset NC5)
 
         final BitWriter bw = new BitWriter();
         // Block header: TablePresent, LastBlock, bitSize=1, ByteCount=1, size=1 (unchecked here).
@@ -428,16 +437,23 @@ class Unpack5Test {
     // ---- crafting helpers --------------------------------------------------------------------
 
     /** RAR5 block header: alignment already at a byte boundary, flags byte, checksum byte, 1 size byte. */
-    private static byte[] blockHeaderBytes(final int flags, final int bitSize, final int blockSize, final boolean corruptChecksum) {
-        final int flagsByte = (flags & ~0x07) | ((bitSize - 1) & 0x07); // ByteCount=1 => flag bits 3,4 clear
-        int checksum = (0x5a ^ flagsByte ^ blockSize ^ (blockSize >>> 8) ^ (blockSize >>> 16)) & 0xff;
+    private static byte[] blockHeaderBytes(
+            final int flags,
+            final int bitSize,
+            final int blockSize,
+            final boolean corruptChecksum) {
+        final int flagsByte =
+                (flags & ~0x07) | ((bitSize - 1) & 0x07); // ByteCount=1 => flag bits 3,4 clear
+        int checksum =
+                (0x5a ^ flagsByte ^ blockSize ^ (blockSize >>> 8) ^ (blockSize >>> 16)) & 0xff;
         if (corruptChecksum) {
             checksum ^= 0xff;
         }
-        return new byte[]{(byte) flagsByte, (byte) checksum, (byte) blockSize};
+        return new byte[] {(byte) flagsByte, (byte) checksum, (byte) blockSize};
     }
 
-    private static void writeBlockHeader(final BitWriter bw, final int flags, final int bitSize, final int blockSize) {
+    private static void writeBlockHeader(
+            final BitWriter bw, final int flags, final int bitSize, final int blockSize) {
         for (final byte b : blockHeaderBytes(flags, bitSize, blockSize, false)) {
             bw.writeBits(b & 0xff, 8);
         }

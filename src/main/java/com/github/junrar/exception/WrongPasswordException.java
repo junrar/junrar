@@ -15,8 +15,7 @@ public class WrongPasswordException extends RarException {
         super(cause);
     }
 
-    public WrongPasswordException() {
-    }
+    public WrongPasswordException() {}
 
     public WrongPasswordException(String message) {
         super(message);

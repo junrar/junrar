@@ -1,18 +1,13 @@
 package com.github.junrar.regression;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.fail;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.github.junrar.Archive;
 import com.github.junrar.exception.RarException;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Timeout;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.platform.commons.logging.Logger;
-import org.junit.platform.commons.logging.LoggerFactory;
-import org.junitpioneer.jupiter.DefaultTimeZone;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -22,16 +17,21 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.fail;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.platform.commons.logging.Logger;
+import org.junit.platform.commons.logging.LoggerFactory;
+import org.junitpioneer.jupiter.DefaultTimeZone;
 
 public class RegressionTest {
     private static final Logger logger = LoggerFactory.getLogger(RegressionTest.class);
 
-    private final ObjectMapper mapper = new ObjectMapper()
-        .registerModule(new JavaTimeModule())
-        .enable(SerializationFeature.INDENT_OUTPUT);
+    private final ObjectMapper mapper =
+            new ObjectMapper()
+                    .registerModule(new JavaTimeModule())
+                    .enable(SerializationFeature.INDENT_OUTPUT);
 
     /**
      * The root of the corpus. Used to compute relative path when storing test output.
@@ -42,6 +42,7 @@ public class RegressionTest {
      * The directory containing files under test. Must be a subdirectory of root, or root itself.
      */
     private static final Path testDir;
+
     private static final String corpus = "corpus";
 
     /**
@@ -55,16 +56,22 @@ public class RegressionTest {
         // The environment variables still win, for running against a payload-bearing corpus.
         String bundled = System.getProperty("regressionTest.bundledCorpus");
         String corpusRoot = envOrDefault("JUNRAR_REGRESSION_TEST_CORPUS_ROOT", bundled);
-        if (corpusRoot == null) throw new IllegalArgumentException("Environment variable not set: JUNRAR_REGRESSION_TEST_CORPUS_ROOT");
+        if (corpusRoot == null)
+            throw new IllegalArgumentException(
+                    "Environment variable not set: JUNRAR_REGRESSION_TEST_CORPUS_ROOT");
         root = Paths.get(corpusRoot);
-        if (!Files.isDirectory(root)) throw new IllegalArgumentException("Corpus root dir is not a directory: " + root);
+        if (!Files.isDirectory(root))
+            throw new IllegalArgumentException("Corpus root dir is not a directory: " + root);
         logger.info(() -> "Corpus root dir: " + root);
 
         String corpusTestDir = envOrDefault("JUNRAR_REGRESSION_TEST_CORPUS_DIR", bundled);
-        if (corpusTestDir == null) throw new IllegalArgumentException("Environment variable not set: JUNRAR_REGRESSION_TEST_CORPUS_DIR");
+        if (corpusTestDir == null)
+            throw new IllegalArgumentException(
+                    "Environment variable not set: JUNRAR_REGRESSION_TEST_CORPUS_DIR");
         testDir = Paths.get(corpusTestDir);
         logger.info(() -> "Corpus test dir: " + testDir);
-        if (!testDir.startsWith(root)) throw new IllegalArgumentException("test directory must be within root");
+        if (!testDir.startsWith(root))
+            throw new IllegalArgumentException("test directory must be within root");
 
         String resourcesDirProp = System.getProperty("regressionTest.resourcesDir");
         resourcesDir = Paths.get(resourcesDirProp, corpus);
@@ -78,7 +85,12 @@ public class RegressionTest {
 
     static List<Path> listTestFiles() throws IOException {
         try (Stream<Path> stream =
-                 Files.find(testDir, 100, (path, attr) -> attr.isRegularFile() && !path.getFileName().toString().startsWith("."))) {
+                Files.find(
+                        testDir,
+                        100,
+                        (path, attr) ->
+                                attr.isRegularFile()
+                                        && !path.getFileName().toString().startsWith("."))) {
             return stream.collect(Collectors.toList());
         }
     }
@@ -89,7 +101,9 @@ public class RegressionTest {
     @DefaultTimeZone("UTC")
     @Timeout(30)
     void generateData(Path filePath) throws Exception {
-        Path relativeFile = root.relativize(filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
+        Path relativeFile =
+                root.relativize(
+                        filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
         Path outputFile = resourcesDir.resolve(relativeFile);
 
         Files.createDirectories(outputFile.getParent());
@@ -108,7 +122,9 @@ public class RegressionTest {
     @DefaultTimeZone("UTC")
     @Timeout(30)
     void check(Path filePath) throws Exception {
-        Path relativeFile = root.relativize(filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
+        Path relativeFile =
+                root.relativize(
+                        filePath.getParent().resolve(filePath.getFileName().toString() + ".json"));
         String resourceName = Paths.get("/", corpus, relativeFile.toString()).toString();
         URL resource = getClass().getResource(resourceName);
 

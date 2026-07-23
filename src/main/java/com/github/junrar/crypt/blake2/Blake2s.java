@@ -1,7 +1,6 @@
 package com.github.junrar.crypt.blake2;
 
 import com.github.junrar.io.Raw;
-
 import java.util.Arrays;
 
 /**
@@ -81,8 +80,15 @@ final class Blake2s {
         f[0] = 0xFFFFFFFF;
     }
 
-    private static void g(final int[] v, final int[] m, final int r, final int i,
-                           final int a, final int b, final int c, final int d) {
+    private static void g(
+            final int[] v,
+            final int[] m,
+            final int r,
+            final int i,
+            final int a,
+            final int b,
+            final int c,
+            final int d) {
         v[a] = v[a] + v[b] + m[SIGMA[r][2 * i]];
         v[d] = Integer.rotateRight(v[d] ^ v[a], 16);
         v[c] = v[c] + v[d];

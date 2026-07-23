@@ -1,14 +1,13 @@
 package com.github.junrar.crypt;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.Archive;
 import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins T4 (docs/porting/MIGRATION_MANUAL.md SS6, Rijndael.java:47): the RAR3
@@ -23,7 +22,10 @@ class RijndaelNonAsciiPasswordTest {
 
     @Test
     void headerEncryptedRar3ArchiveWithNonAsciiPasswordExtractsOracleContent() throws Exception {
-        try (InputStream is = getClass().getResourceAsStream("/com/github/junrar/password/rar3-nonascii-password.rar")) {
+        try (InputStream is =
+                getClass()
+                        .getResourceAsStream(
+                                "/com/github/junrar/password/rar3-nonascii-password.rar")) {
             try (Archive archive = new Archive(is, PASSWORD)) {
                 assertThat(archive.isEncrypted()).isTrue();
                 assertThat(archive.isPasswordProtected()).isTrue();
@@ -33,7 +35,8 @@ class RijndaelNonAsciiPasswordTest {
 
                 try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
                     archive.extractFile(fileHeader, baos);
-                    assertThat(new String(baos.toByteArray(), StandardCharsets.UTF_8)).isEqualTo(EXPECTED_CONTENT);
+                    assertThat(new String(baos.toByteArray(), StandardCharsets.UTF_8))
+                            .isEqualTo(EXPECTED_CONTENT);
                 }
             }
         }

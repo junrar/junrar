@@ -1,20 +1,19 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.BadRarArchiveException;
 import com.github.junrar.exception.UnsupportedRarVersionException;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.io.TempDir;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * M3.1 signature dispatch, SFX-stub scan, and hostile-scan bound. Since the M3.11 gate
@@ -23,8 +22,7 @@ import static org.assertj.core.api.Assertions.catchThrowable;
  */
 class ArchiveSignatureDispatchTest {
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     private static final byte[] MARKER15 = {0x52, 0x61, 0x72, 0x21, 0x1a, 0x07, 0x00};
     private static final byte[] MARKER50 = {0x52, 0x61, 0x72, 0x21, 0x1a, 0x07, 0x01, 0x00};
@@ -76,7 +74,8 @@ class ArchiveSignatureDispatchTest {
     @ValueSource(ints = {0x02, 0x03, 0x04})
     void futureVersionThrowsUnsupportedRarVersion(int version) throws Exception {
         byte[] marker = {0x52, 0x61, 0x72, 0x21, 0x1a, 0x07, (byte) version, 0x00};
-        Throwable thrown = catchThrowable(() -> new Archive(writeTemp("future.rar", marker)).close());
+        Throwable thrown =
+                catchThrowable(() -> new Archive(writeTemp("future.rar", marker)).close());
         assertThat(thrown).isExactlyInstanceOf(UnsupportedRarVersionException.class);
     }
 
@@ -93,8 +92,9 @@ class ArchiveSignatureDispatchTest {
     @ValueSource(ints = {0, 1, 3, 6})
     void inputTooShortForMarkerIsRejected(int length) throws Exception {
         byte[] truncated = java.util.Arrays.copyOf(MARKER15, length);
-        Throwable thrown = catchThrowable(
-            () -> new Archive(writeTemp("short" + length + ".rar", truncated)).close());
+        Throwable thrown =
+                catchThrowable(
+                        () -> new Archive(writeTemp("short" + length + ".rar", truncated)).close());
         assertThat(thrown).isExactlyInstanceOf(BadRarArchiveException.class);
     }
 
@@ -123,7 +123,8 @@ class ArchiveSignatureDispatchTest {
     void signatureFreeGarbageBeyondBoundIsRejected() throws Exception {
         byte[] garbage = new byte[MAXSFXSIZE_PLUS];
         java.util.Arrays.fill(garbage, (byte) 0x01); // no 0x52, so no signature anywhere
-        Throwable thrown = catchThrowable(() -> new Archive(writeTemp("garbage.rar", garbage)).close());
+        Throwable thrown =
+                catchThrowable(() -> new Archive(writeTemp("garbage.rar", garbage)).close());
         assertThat(thrown).isExactlyInstanceOf(BadRarArchiveException.class);
     }
 

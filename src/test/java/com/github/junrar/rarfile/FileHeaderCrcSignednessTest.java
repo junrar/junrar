@@ -1,14 +1,13 @@
 package com.github.junrar.rarfile;
 
-import com.github.junrar.Archive;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.github.junrar.Archive;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins the signedness contract of {@link FileHeader#getFileCRC()} against the recurring
@@ -53,7 +52,8 @@ class FileHeaderCrcSignednessTest {
             final ByteArrayOutputStream out = new ByteArrayOutputStream();
             archive.extractFile(header, out);
 
-            assertThat(new String(out.toByteArray(), StandardCharsets.UTF_8)).isEqualTo(EXPECTED_CONTENT);
+            assertThat(new String(out.toByteArray(), StandardCharsets.UTF_8))
+                    .isEqualTo(EXPECTED_CONTENT);
         }
     }
 }

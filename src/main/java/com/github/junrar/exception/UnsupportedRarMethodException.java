@@ -13,8 +13,7 @@ public class UnsupportedRarMethodException extends RarException {
         super(cause);
     }
 
-    public UnsupportedRarMethodException() {
-    }
+    public UnsupportedRarMethodException() {}
 
     public UnsupportedRarMethodException(String message) {
         super(message);

@@ -1,16 +1,13 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.io.TempDir;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.nio.file.Files;
@@ -18,9 +15,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.stream.Stream;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 /**
  * M4.1 (issue #33) RAR7 compression-info parse acceptance: algorithm version 1 routes to
@@ -52,8 +51,7 @@ class ArchiveRar7HeaderTest {
     private static final long MB = 1024L * KB;
     private static final long GB = 1024L * MB;
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     private static long compInfo(final long algo, final long dictBits, final long frac) {
         return algo | METHOD_M1 | (dictBits << 10) | (frac << 15);
@@ -62,37 +60,39 @@ class ArchiveRar7HeaderTest {
     /** Dictionary encodings that decode to a supported window, with their expected {@code long}. */
     private static Stream<Arguments> dictionaryEncodings() {
         return Stream.of(
-            // algo, dictBits, frac, expected winSize, expected unpVersion
-            Arguments.of(1L, 0L, 0L, 128 * KB, (byte) 70),
-            // The plan's worked fractional example: 256 KB + 256 KB/32*16 = 384 KB.
-            Arguments.of(1L, 1L, 16L, 384 * KB, (byte) 70),
-            Arguments.of(1L, 3L, 0L, MB, (byte) 70),
-            Arguments.of(1L, 13L, 0L, GB, (byte) 70),
-            Arguments.of(1L, 15L, 0L, 4 * GB, (byte) 70),
-            // What the committed fixture really carries: 4 GB + 4 GB/32*16 = 6 GB.
-            Arguments.of(1L, 15L, 16L, 6 * GB, (byte) 70),
-            // 4 GB + 4 GB/32*31 = 7.875 GB — the widest fraction at the RAR5 dict ceiling.
-            Arguments.of(1L, 15L, 31L, 8455716864L, (byte) 70),
-            // 0x20000 << 19 == UNPACK_MAX_DICT exactly: accepted, not refused.
-            Arguments.of(1L, 19L, 0L, 64 * GB, (byte) 70),
-            // algo 0 keeps the RAR5 4-bit dict mask: bits 19 & 0xf == 3 -> 1 MB, NOT 64 GB.
-            Arguments.of(0L, 19L, 0L, MB, (byte) 50)
-        );
+                // algo, dictBits, frac, expected winSize, expected unpVersion
+                Arguments.of(1L, 0L, 0L, 128 * KB, (byte) 70),
+                // The plan's worked fractional example: 256 KB + 256 KB/32*16 = 384 KB.
+                Arguments.of(1L, 1L, 16L, 384 * KB, (byte) 70),
+                Arguments.of(1L, 3L, 0L, MB, (byte) 70),
+                Arguments.of(1L, 13L, 0L, GB, (byte) 70),
+                Arguments.of(1L, 15L, 0L, 4 * GB, (byte) 70),
+                // What the committed fixture really carries: 4 GB + 4 GB/32*16 = 6 GB.
+                Arguments.of(1L, 15L, 16L, 6 * GB, (byte) 70),
+                // 4 GB + 4 GB/32*31 = 7.875 GB — the widest fraction at the RAR5 dict ceiling.
+                Arguments.of(1L, 15L, 31L, 8455716864L, (byte) 70),
+                // 0x20000 << 19 == UNPACK_MAX_DICT exactly: accepted, not refused.
+                Arguments.of(1L, 19L, 0L, 64 * GB, (byte) 70),
+                // algo 0 keeps the RAR5 4-bit dict mask: bits 19 & 0xf == 3 -> 1 MB, NOT 64 GB.
+                Arguments.of(0L, 19L, 0L, MB, (byte) 50));
     }
 
     @ParameterizedTest
     @MethodSource("dictionaryEncodings")
     void dictionaryEncodingDecodesToExpectedWindow(
-        final long algo, final long dictBits, final long frac, final long expectedWinSize,
-        final byte expectedUnpVersion
-    ) throws Exception {
+            final long algo,
+            final long dictBits,
+            final long frac,
+            final long expectedWinSize,
+            final byte expectedUnpVersion)
+            throws Exception {
         final File archive = patched(compInfo(algo, dictBits, frac));
 
         try (Archive a = new Archive(archive)) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getRar5WinSize())
-                .as("dict bits %d + fraction %d", dictBits, frac)
-                .isEqualTo(expectedWinSize);
+                    .as("dict bits %d + fraction %d", dictBits, frac)
+                    .isEqualTo(expectedWinSize);
             assertThat(hd.getUnpVersion()).isEqualTo(expectedUnpVersion);
         }
     }
@@ -102,28 +102,32 @@ class ArchiveRar7HeaderTest {
         // Guards against fixture drift: this row is NOT patched, it is what rar 7.23 wrote.
         try (Archive a = new Archive(fixture())) {
             final FileHeader hd = a.getFileHeaders().get(0);
-            assertThat(hd.getUnpVersion()).as("algorithm version 1 -> VER_PACK7").isEqualTo((byte) 70);
-            assertThat(hd.getRar5WinSize()).as("-md6g, a fraction no RAR5 header can encode").isEqualTo(6 * GB);
+            assertThat(hd.getUnpVersion())
+                    .as("algorithm version 1 -> VER_PACK7")
+                    .isEqualTo((byte) 70);
+            assertThat(hd.getRar5WinSize())
+                    .as("-md6g, a fraction no RAR5 header can encode")
+                    .isEqualTo(6 * GB);
         }
     }
 
     /** Encodings above UNPACK_MAX_DICT (64 GB) are refused as an unknown version. */
     private static Stream<Arguments> oversizedEncodings() {
         return Stream.of(
-            // 64 GB + 64 GB/32*1 == 66 GB: one fraction step past the ceiling.
-            Arguments.of(19L, 1L),
-            // The widest encodable word: 0x20000 << 31, plus the full fraction.
-            Arguments.of(31L, 31L)
-        );
+                // 64 GB + 64 GB/32*1 == 66 GB: one fraction step past the ceiling.
+                Arguments.of(19L, 1L),
+                // The widest encodable word: 0x20000 << 31, plus the full fraction.
+                Arguments.of(31L, 31L));
     }
 
     @ParameterizedTest
     @MethodSource("oversizedEncodings")
-    void dictionaryAboveUnpackMaxDictIsRefused(final long dictBits, final long frac) throws Exception {
+    void dictionaryAboveUnpackMaxDictIsRefused(final long dictBits, final long frac)
+            throws Exception {
         try (Archive a = new Archive(patched(compInfo(1L, dictBits, frac)))) {
             assertThat(a.getFileHeaders().get(0).getUnpVersion())
-                .as("dict bits %d + fraction %d exceeds UNPACK_MAX_DICT", dictBits, frac)
-                .isEqualTo((byte) -1);
+                    .as("dict bits %d + fraction %d exceeds UNPACK_MAX_DICT", dictBits, frac)
+                    .isEqualTo((byte) -1);
         }
     }
 
@@ -145,7 +149,9 @@ class ArchiveRar7HeaderTest {
         try (Archive a = new Archive(patched(compInfo(1L, 1L, 16L) | FCI_RAR5_COMPAT))) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getUnpVersion()).as("RAR5-decodable").isEqualTo((byte) 50);
-            assertThat(hd.getRar5WinSize()).as("still the RAR7 fractional decode").isEqualTo(384 * KB);
+            assertThat(hd.getRar5WinSize())
+                    .as("still the RAR7 fractional decode")
+                    .isEqualTo(384 * KB);
         }
     }
 
@@ -171,7 +177,8 @@ class ArchiveRar7HeaderTest {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getRar5WinSize()).isEqualTo(64 * GB);
 
-            final Throwable thrown = catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
+            final Throwable thrown =
+                    catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
             assertThat(thrown).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
             assertThat(thrown.getMessage()).contains(Long.toString(64 * GB));
         }
@@ -180,8 +187,8 @@ class ArchiveRar7HeaderTest {
     // ---- helpers ------------------------------------------------------------------------------
 
     private File fixture() throws Exception {
-        final byte[] bytes = Files.readAllBytes(
-            Paths.get(getClass().getResource("rar7/rar7-md6g.rar").toURI()));
+        final byte[] bytes =
+                Files.readAllBytes(Paths.get(getClass().getResource("rar7/rar7-md6g.rar").toURI()));
         final Path p = tempDir.resolve("rar7-md6g.rar");
         Files.write(p, bytes);
         return p.toFile();
@@ -201,18 +208,27 @@ class ArchiveRar7HeaderTest {
         }
 
         final byte[] bytes = Files.readAllBytes(archive.toPath());
-        final int headerLength = Rar5BaseBlock.checkHeaderSize(
-            Arrays.copyOfRange(bytes, (int) position, (int) position + Rar5BaseBlock.FIRST_READ_SIZE));
-        final byte[] header = Arrays.copyOfRange(bytes, (int) position, (int) position + headerLength);
+        final int headerLength =
+                Rar5BaseBlock.checkHeaderSize(
+                        Arrays.copyOfRange(
+                                bytes,
+                                (int) position,
+                                (int) position + Rar5BaseBlock.FIRST_READ_SIZE));
+        final byte[] header =
+                Arrays.copyOfRange(bytes, (int) position, (int) position + headerLength);
 
         final byte[] from = vint3(BASE_COMP_INFO);
         final int idx = indexOf(header, from);
-        assertThat(idx).as("compression info %s in the fixture header", Long.toHexString(BASE_COMP_INFO))
-            .isGreaterThanOrEqualTo(0);
-        assertThat(indexOf(header, from, idx + 1)).as("compression info must be unambiguous").isEqualTo(-1);
+        assertThat(idx)
+                .as("compression info %s in the fixture header", Long.toHexString(BASE_COMP_INFO))
+                .isGreaterThanOrEqualTo(0);
+        assertThat(indexOf(header, from, idx + 1))
+                .as("compression info must be unambiguous")
+                .isEqualTo(-1);
 
         System.arraycopy(vint3(newCompInfo), 0, header, idx, 3);
-        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        Raw.writeIntLittleEndian(
+                header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
         System.arraycopy(header, 0, bytes, (int) position, header.length);
         Files.write(archive.toPath(), bytes);
         return archive;
@@ -221,9 +237,10 @@ class ArchiveRar7HeaderTest {
     /** Encode a value as exactly 3 vint bytes (padding with redundant groups when minimal is shorter). */
     private static byte[] vint3(final long value) {
         if ((value >>> 21) != 0) {
-            throw new IllegalArgumentException("value wider than 3 vint bytes: " + Long.toHexString(value));
+            throw new IllegalArgumentException(
+                    "value wider than 3 vint bytes: " + Long.toHexString(value));
         }
-        return new byte[]{
+        return new byte[] {
             (byte) ((value & 0x7f) | 0x80),
             (byte) (((value >>> 7) & 0x7f) | 0x80),
             (byte) ((value >>> 14) & 0x7f),

@@ -1,13 +1,12 @@
 package com.github.junrar.bugfixes;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.Archive;
 import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-
 import java.io.File;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * Regression test for archives containing a legacy RAR3 recovery-record

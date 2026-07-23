@@ -1,10 +1,10 @@
 package com.github.junrar.rarfile;
 
-import com.github.junrar.exception.CorruptHeaderException;
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
+import com.github.junrar.exception.CorruptHeaderException;
+import org.junit.jupiter.api.Test;
 
 /**
  * Unit-level pins for the M1.5 (issue #19) {@link FileNameDecoder#decode(byte[], int, int)}
@@ -21,7 +21,7 @@ class FileNameDecoderBoundsTest {
         // the literal char -> encPos(2) >= name.length(2).
         byte[] name = {0x00, 0x00};
         assertThatThrownBy(() -> FileNameDecoder.decode(name, 0, 0))
-            .isInstanceOf(CorruptHeaderException.class);
+                .isInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -30,7 +30,7 @@ class FileNameDecoderBoundsTest {
         // 3rd byte for the data byte -> encPos(2) >= name.length(2).
         byte[] name = {0x00, 0x40};
         assertThatThrownBy(() -> FileNameDecoder.decode(name, 0, 0))
-            .isInstanceOf(CorruptHeaderException.class);
+                .isInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -39,7 +39,7 @@ class FileNameDecoderBoundsTest {
         // 2 more bytes (low, high) but only 1 remains -> encPos+1(3) >= name.length(3).
         byte[] name = {0x00, (byte) 0x80, 0x11};
         assertThatThrownBy(() -> FileNameDecoder.decode(name, 0, 0))
-            .isInstanceOf(CorruptHeaderException.class);
+                .isInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -48,7 +48,7 @@ class FileNameDecoderBoundsTest {
         // length byte -> encPos(2) >= name.length(2).
         byte[] name = {0x00, (byte) 0xC0};
         assertThatThrownBy(() -> FileNameDecoder.decode(name, 0, 0))
-            .isInstanceOf(CorruptHeaderException.class);
+                .isInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -58,7 +58,7 @@ class FileNameDecoderBoundsTest {
         // encPos(3) >= name.length(3).
         byte[] name = {0x00, (byte) 0xC0, (byte) 0x80};
         assertThatThrownBy(() -> FileNameDecoder.decode(name, 0, 0))
-            .isInstanceOf(CorruptHeaderException.class);
+                .isInstanceOf(CorruptHeaderException.class);
     }
 
     @Test

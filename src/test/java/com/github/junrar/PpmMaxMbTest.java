@@ -1,19 +1,18 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 /**
  * Resolves no-go row S8 (docs/porting/PARITY_PLAN.md P0.5;
@@ -36,18 +35,21 @@ public class PpmMaxMbTest {
     private static final String HOSTILE_FIXTURE = "ppm/hostile-maxmb255.rar";
 
     @Test
-    public void givenLegitMaxMb63Archive_whenExtracting_thenByteIdenticalToRealUnrarOracle() throws Exception {
+    public void givenLegitMaxMb63Archive_whenExtracting_thenByteIdenticalToRealUnrarOracle()
+            throws Exception {
         byte[] expected = readResource(LEGIT_EXPECTED);
         byte[] extracted = extractSoleEntry(LEGIT_FIXTURE);
         assertThat(extracted).isEqualTo(expected);
     }
 
     @Test
-    public void givenLegitMaxMb63Archive_whenDefaultArchiveOptions_thenByteIdenticalToRealUnrarOracle() throws Exception {
+    public void
+            givenLegitMaxMb63Archive_whenDefaultArchiveOptions_thenByteIdenticalToRealUnrarOracle()
+                    throws Exception {
         byte[] expected = readResource(LEGIT_EXPECTED);
         ArchiveOptions options = ArchiveOptions.builder().build();
         try (InputStream is = getClass().getResourceAsStream(LEGIT_FIXTURE);
-             Archive archive = new Archive(is, options)) {
+                Archive archive = new Archive(is, options)) {
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             assertThat(fileHeaders).hasSize(1);
             try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
@@ -58,7 +60,9 @@ public class PpmMaxMbTest {
     }
 
     @Test
-    public void givenLegitMaxMb63Archive_whenMaxDictionarySizeBelowRequirement_thenUnsupportedDictionarySizeException() throws Exception {
+    public void
+            givenLegitMaxMb63Archive_whenMaxDictionarySizeBelowRequirement_thenUnsupportedDictionarySizeException()
+                    throws Exception {
         // MaxMB=63 in the fixture => PPMd needs (63+1) MB = 64 MB of suballocator memory.
         long requiredBytes = 64L * 1024 * 1024;
 
@@ -66,25 +70,29 @@ public class PpmMaxMbTest {
         assertThat(extractSoleEntry(LEGIT_FIXTURE)).isEqualTo(readResource(LEGIT_EXPECTED));
 
         // After: a budget one byte short of the requirement refuses the same fixture.
-        ArchiveOptions options = ArchiveOptions.builder().maxDictionarySize(requiredBytes - 1).build();
+        ArchiveOptions options =
+                ArchiveOptions.builder().maxDictionarySize(requiredBytes - 1).build();
         try (InputStream is = getClass().getResourceAsStream(LEGIT_FIXTURE);
-             Archive archive = new Archive(is, options)) {
+                Archive archive = new Archive(is, options)) {
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             assertThat(fileHeaders).hasSize(1);
             FileHeader fileHeader = fileHeaders.get(0);
 
-            Throwable thrown = catchThrowable(() -> {
-                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                    archive.extractFile(fileHeader, baos);
-                }
-            });
+            Throwable thrown =
+                    catchThrowable(
+                            () -> {
+                                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                                    archive.extractFile(fileHeader, baos);
+                                }
+                            });
 
             assertThat(thrown).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
         }
     }
 
     @Test
-    public void givenPreservedMaxMb0Archive_whenExtracting_thenByteIdenticalAsBeforeTheFix() throws Exception {
+    public void givenPreservedMaxMb0Archive_whenExtracting_thenByteIdenticalAsBeforeTheFix()
+            throws Exception {
         byte[] expected = readResource(PRESERVED_EXPECTED);
         byte[] extracted = extractSoleEntry(PRESERVED_FIXTURE);
         assertThat(extracted).isEqualTo(expected);
@@ -92,21 +100,24 @@ public class PpmMaxMbTest {
 
     @Test
     @Timeout(60)
-    public void givenHostileMaxMb255Archive_whenExtracting_thenBoundedNoOomAiiobeOrHang() throws Exception {
+    public void givenHostileMaxMb255Archive_whenExtracting_thenBoundedNoOomAiiobeOrHang()
+            throws Exception {
         byte[] expected = readResource(LEGIT_EXPECTED);
         try (InputStream is = getClass().getResourceAsStream(HOSTILE_FIXTURE);
-             Archive archive = new Archive(is)) {
+                Archive archive = new Archive(is)) {
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             assertThat(fileHeaders).hasSize(1);
             FileHeader fileHeader = fileHeaders.get(0);
 
             AtomicReference<byte[]> extractedRef = new AtomicReference<>();
-            Throwable thrown = catchThrowable(() -> {
-                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
-                    archive.extractFile(fileHeader, baos);
-                    extractedRef.set(baos.toByteArray());
-                }
-            });
+            Throwable thrown =
+                    catchThrowable(
+                            () -> {
+                                try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                                    archive.extractFile(fileHeader, baos);
+                                    extractedRef.set(baos.toByteArray());
+                                }
+                            });
 
             if (thrown != null) {
                 assertThat(thrown).isInstanceOf(RarException.class);
@@ -118,7 +129,7 @@ public class PpmMaxMbTest {
 
     private byte[] extractSoleEntry(String fixture) throws IOException, RarException {
         try (InputStream is = getClass().getResourceAsStream(fixture);
-             Archive archive = new Archive(is)) {
+                Archive archive = new Archive(is)) {
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             assertThat(fileHeaders).hasSize(1);
             try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {

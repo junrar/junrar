@@ -36,7 +36,6 @@ public class CommentHeader extends BaseBlock {
     private byte unpMethod;
     private final short commCRC;
 
-
     public CommentHeader(BaseBlock bb, byte[] commentHeader) {
         super(bb);
 
@@ -49,7 +48,6 @@ public class CommentHeader extends BaseBlock {
         unpMethod |= commentHeader[pos] & 0xff;
         pos++;
         commCRC = Raw.readShortLittleEndian(commentHeader, pos);
-
     }
 
     public short getCommCRC() {

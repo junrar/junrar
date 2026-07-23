@@ -1,17 +1,16 @@
 package com.github.junrar.crypt;
 
 import com.github.junrar.exception.CorruptHeaderException;
-
-import javax.crypto.Cipher;
-import javax.crypto.Mac;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.security.MessageDigest;
 import java.util.Arrays;
+import javax.crypto.Cipher;
+import javax.crypto.Mac;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
 
 /**
  * RAR5 crypto primitives (M3.4, issue #25). Ports the format math of unrar
@@ -41,8 +40,7 @@ public final class Rar5Crypt {
     private static final int SHA256_DIGEST_SIZE = 32;
     private static final int AES_KEY_SIZE = 32;
 
-    private Rar5Crypt() {
-    }
+    private Rar5Crypt() {}
 
     // ---- KDF cache (unrar KDF5Cache[4], d861246:crypt.hpp:88) ---------------------------
 
@@ -67,8 +65,10 @@ public final class Rar5Crypt {
     public static final class Kdf {
         /** 32-byte AES-256 key (PBKDF2 output at {@code Count} iterations). */
         public final byte[] aesKey;
+
         /** 32-byte HMAC key for {@code ConvertHashToMAC} (at {@code Count+16}). */
         public final byte[] hashKey;
+
         /** 8-byte password check value, folded from the {@code Count+32} output. */
         public final byte[] pswCheck;
 
@@ -89,14 +89,18 @@ public final class Rar5Crypt {
      * @return the derived key material
      * @throws CorruptHeaderException if {@code lg2Count} exceeds {@link #CRYPT5_KDF_LG2_COUNT_MAX}
      */
-    public static synchronized Kdf deriveKey(final byte[] pwdUtf8, final byte[] salt16, final int lg2Count)
-        throws CorruptHeaderException {
+    public static synchronized Kdf deriveKey(
+            final byte[] pwdUtf8, final byte[] salt16, final int lg2Count)
+            throws CorruptHeaderException {
         if (lg2Count > CRYPT5_KDF_LG2_COUNT_MAX) {
-            throw new CorruptHeaderException("RAR5 KDF Lg2Count exceeds " + CRYPT5_KDF_LG2_COUNT_MAX);
+            throw new CorruptHeaderException(
+                    "RAR5 KDF Lg2Count exceeds " + CRYPT5_KDF_LG2_COUNT_MAX);
         }
         for (final CacheItem item : CACHE) {
-            if (item != null && item.lg2Count == lg2Count
-                && Arrays.equals(item.pwd, pwdUtf8) && Arrays.equals(item.salt, salt16)) {
+            if (item != null
+                    && item.lg2Count == lg2Count
+                    && Arrays.equals(item.pwd, pwdUtf8)
+                    && Arrays.equals(item.salt, salt16)) {
                 return item.kdf;
             }
         }
@@ -107,7 +111,8 @@ public final class Rar5Crypt {
             pswCheck[i % SIZE_PSWCHECK] ^= out[2][i];
         }
         final Kdf kdf = new Kdf(out[0], out[1], pswCheck);
-        CACHE[cachePos++ % CACHE.length] = new CacheItem(pwdUtf8.clone(), salt16.clone(), lg2Count, kdf);
+        CACHE[cachePos++ % CACHE.length] =
+                new CacheItem(pwdUtf8.clone(), salt16.clone(), lg2Count, kdf);
         return kdf;
     }
 
@@ -166,9 +171,11 @@ public final class Rar5Crypt {
      * AES-256/CBC decryption cipher for a per-header or per-file 16-byte IV (manual &sect;4.11:
      * primitives from the JDK).
      */
-    public static Cipher buildDecipherer(final byte[] aesKey32, final byte[] iv16) throws GeneralSecurityException {
+    public static Cipher buildDecipherer(final byte[] aesKey32, final byte[] iv16)
+            throws GeneralSecurityException {
         final Cipher cipher = Cipher.getInstance("AES/CBC/NoPadding");
-        cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(aesKey32, "AES"), new IvParameterSpec(iv16));
+        cipher.init(
+                Cipher.DECRYPT_MODE, new SecretKeySpec(aesKey32, "AES"), new IvParameterSpec(iv16));
         return cipher;
     }
 

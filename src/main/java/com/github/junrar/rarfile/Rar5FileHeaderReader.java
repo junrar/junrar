@@ -12,7 +12,6 @@ import com.github.junrar.rarfile.rar5.Rar5HostOS;
 import com.github.junrar.rarfile.rar5.Rar5RedirType;
 import com.github.junrar.rarfile.rar5.Rar5Time;
 import com.github.junrar.rarfile.rar5.Rar5UnixOwner;
-
 import java.nio.charset.StandardCharsets;
 import java.nio.file.attribute.FileTime;
 import java.util.Arrays;
@@ -38,6 +37,7 @@ public final class Rar5FileHeaderReader {
     private static final long FHFL_UNPUNKNOWN = 0x0008;
 
     private static final long FCI_SOLID = 0x40;
+
     /** {@code headers5.hpp:65} — RAR7 compression flags carrying a RAR5 compression algorithm. */
     private static final long FCI_RAR5_COMPAT = 0x00100000;
 
@@ -47,6 +47,7 @@ public final class Rar5FileHeaderReader {
     // Compression algorithm versions, stored as 0 and 1 (d861246:headers.hpp:17-22).
     private static final byte VER_PACK5 = 50;
     private static final byte VER_PACK7 = 70;
+
     /** unrar's {@code VER_UNKNOWN}; junrar's sentinel is {@code -1}, see the parse site. */
     private static final byte VER_UNKNOWN = -1;
 
@@ -82,8 +83,7 @@ public final class Rar5FileHeaderReader {
     private static final long FHEXTRA_UOWNER_NUMUID = 0x04;
     private static final long FHEXTRA_UOWNER_NUMGID = 0x08;
 
-    private Rar5FileHeaderReader() {
-    }
+    private Rar5FileHeaderReader() {}
 
     /**
      * @param base   the already-parsed generic block ({@link Rar5BaseBlock#parse}), of type
@@ -94,7 +94,8 @@ public final class Rar5FileHeaderReader {
      *                                the header buffer, or a name failing {@code
      *                                FileHeader#isFilenameValid} (C10).
      */
-    public static FileHeader read(final Rar5BaseBlock base, final byte[] header) throws CorruptHeaderException {
+    public static FileHeader read(final Rar5BaseBlock base, final byte[] header)
+            throws CorruptHeaderException {
         final Parsed p = new Parsed();
         p.service = base.getRar5Type() == Rar5BlockType.SERVICE;
         p.packSize = base.getDataSize();
@@ -195,7 +196,8 @@ public final class Rar5FileHeaderReader {
         return new FileHeader(p);
     }
 
-    private static void requireBytes(final byte[] header, final int pos, final int len) throws CorruptHeaderException {
+    private static void requireBytes(final byte[] header, final int pos, final int len)
+            throws CorruptHeaderException {
         if (pos + len > header.length) {
             throw new CorruptHeaderException("Truncated RAR5 file header");
         }
@@ -203,7 +205,8 @@ public final class Rar5FileHeaderReader {
 
     // ---- extra-area record loop (manual &sect;5) ----------------------------
 
-    private static void parseExtras(final Rar5BaseBlock base, final byte[] header, final Parsed p) throws CorruptHeaderException {
+    private static void parseExtras(final Rar5BaseBlock base, final byte[] header, final Parsed p)
+            throws CorruptHeaderException {
         final int headerSize = base.getRar5HeaderSize();
         int pos = headerSize - (int) base.getExtraSize();
         final boolean service = p.service;
@@ -234,8 +237,14 @@ public final class Rar5FileHeaderReader {
         }
     }
 
-    private static void dispatchExtra(final Rar5FileExtraType type, final byte[] header, final int start, final int end,
-                                       final Parsed p, final boolean service) throws CorruptHeaderException {
+    private static void dispatchExtra(
+            final Rar5FileExtraType type,
+            final byte[] header,
+            final int start,
+            final int end,
+            final Parsed p,
+            final boolean service)
+            throws CorruptHeaderException {
         switch (type) {
             case CRYPT:
                 parseCrypt(header, start, end, p);
@@ -263,7 +272,9 @@ public final class Rar5FileHeaderReader {
         }
     }
 
-    private static void parseCrypt(final byte[] header, final int start, final int end, final Parsed p) throws CorruptHeaderException {
+    private static void parseCrypt(
+            final byte[] header, final int start, final int end, final Parsed p)
+            throws CorruptHeaderException {
         final VInt v = new VInt(header, start);
         final long encVersion = v.read();
         if (encVersion != CRYPT_VERSION) {
@@ -290,11 +301,14 @@ public final class Rar5FileHeaderReader {
         p.lg2Count = lg2Count;
         p.useHashKey = (flags & FHEXTRA_CRYPT_HASHMAC) != 0;
 
-        boolean usePswCheck = (flags & FHEXTRA_CRYPT_PSWCHECK) != 0
-            && pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM <= end;
+        boolean usePswCheck =
+                (flags & FHEXTRA_CRYPT_PSWCHECK) != 0
+                        && pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM <= end;
         if (usePswCheck) {
             final byte[] check = Arrays.copyOfRange(header, pos, pos + SIZE_PSWCHECK);
-            final byte[] csum = Arrays.copyOfRange(header, pos + SIZE_PSWCHECK, pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM);
+            final byte[] csum =
+                    Arrays.copyOfRange(
+                            header, pos + SIZE_PSWCHECK, pos + SIZE_PSWCHECK + SIZE_PSWCHECK_CSUM);
             // unrar arcread.cpp:1096-1107: a pswcheck whose SHA-256-prefix csum does not match is
             // unusable; a service header with an all-zero pswcheck (RAR 5.21 and earlier) also
             // drops the flag.
@@ -316,7 +330,9 @@ public final class Rar5FileHeaderReader {
         return true;
     }
 
-    private static void parseHash(final byte[] header, final int start, final int end, final Parsed p) throws CorruptHeaderException {
+    private static void parseHash(
+            final byte[] header, final int start, final int end, final Parsed p)
+            throws CorruptHeaderException {
         final VInt v = new VInt(header, start);
         final long type = v.read();
         final int pos = v.position();
@@ -326,7 +342,9 @@ public final class Rar5FileHeaderReader {
         }
     }
 
-    private static void parseHTime(final byte[] header, final int start, final int end, final Parsed p) throws CorruptHeaderException {
+    private static void parseHTime(
+            final byte[] header, final int start, final int end, final Parsed p)
+            throws CorruptHeaderException {
         if (end - start < 5) {
             return;
         }
@@ -371,8 +389,8 @@ public final class Rar5FileHeaderReader {
 
     private static FileTime readTime(final byte[] header, final int pos, final boolean unixTime) {
         return unixTime
-            ? Rar5Time.fromUnixSeconds(Raw.readIntLittleEndianAsLong(header, pos))
-            : Rar5Time.fromWindowsFileTime(Raw.readLongLittleEndian(header, pos));
+                ? Rar5Time.fromUnixSeconds(Raw.readIntLittleEndianAsLong(header, pos))
+                : Rar5Time.fromWindowsFileTime(Raw.readLongLittleEndian(header, pos));
     }
 
     private static FileTime adjustNanos(final FileTime base, final long raw) {
@@ -386,7 +404,9 @@ public final class Rar5FileHeaderReader {
         return FileTime.from(base.toInstant().plusNanos(ns));
     }
 
-    private static void parseVersion(final byte[] header, final int start, final int end, final Parsed p) throws CorruptHeaderException {
+    private static void parseVersion(
+            final byte[] header, final int start, final int end, final Parsed p)
+            throws CorruptHeaderException {
         if (end - start < 1) {
             return;
         }
@@ -401,7 +421,9 @@ public final class Rar5FileHeaderReader {
         }
     }
 
-    private static void parseRedir(final byte[] header, final int start, final int end, final Parsed p) throws CorruptHeaderException {
+    private static void parseRedir(
+            final byte[] header, final int start, final int end, final Parsed p)
+            throws CorruptHeaderException {
         final VInt v = new VInt(header, start);
         final long redirTypeRaw = v.read();
         if (v.position() >= end) {
@@ -431,7 +453,9 @@ public final class Rar5FileHeaderReader {
         p.redirTarget = new String(nameBytes, StandardCharsets.UTF_8);
     }
 
-    private static void parseUOwner(final byte[] header, final int start, final int end, final Parsed p) throws CorruptHeaderException {
+    private static void parseUOwner(
+            final byte[] header, final int start, final int end, final Parsed p)
+            throws CorruptHeaderException {
         VInt v = new VInt(header, start);
         final long flags = v.read();
         int pos = v.position();
@@ -472,10 +496,16 @@ public final class Rar5FileHeaderReader {
             groupId = v.read();
             pos = v.position();
         }
-        p.unixOwner = new Rar5UnixOwner(userName, groupName, ownerId, groupId, numericUid, numericGid);
+        p.unixOwner =
+                new Rar5UnixOwner(userName, groupName, ownerId, groupId, numericUid, numericGid);
     }
 
-    private static void parseSubData(final byte[] header, final int start, final int end, final Parsed p, final boolean service) {
+    private static void parseSubData(
+            final byte[] header,
+            final int start,
+            final int end,
+            final Parsed p,
+            final boolean service) {
         int actualEnd = end;
         if (service && header.length - end == 1) {
             // RAR 5.21 and earlier set FHEXTRA_SUBDATA's declared size 1 byte short for

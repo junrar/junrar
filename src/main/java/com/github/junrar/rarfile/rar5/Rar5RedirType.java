@@ -11,7 +11,6 @@ package com.github.junrar.rarfile.rar5;
  * &sect;4.6).
  */
 public enum Rar5RedirType {
-
     NONE(0),
     UNIX_SYMLINK(1),
     WIN_SYMLINK(2),

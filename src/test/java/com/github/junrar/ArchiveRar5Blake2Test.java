@@ -1,15 +1,14 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.crypt.Rar5Crypt;
 import com.github.junrar.crypt.blake2.Blake2sp;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5HashType;
 import com.github.junrar.unpack.ComprDataIO;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-import org.junit.jupiter.api.io.TempDir;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -17,9 +16,9 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
  * M3.5 (issue #26) archive-level acceptance coverage: RAR5 FHEXTRA_HASH parsing of a BLAKE2sp
@@ -31,8 +30,7 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 @Timeout(30)
 class ArchiveRar5Blake2Test {
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     private File fixture(final String name) throws Exception {
         final Path src = Paths.get(getClass().getResource("blake2/" + name).toURI());
@@ -78,8 +76,10 @@ class ArchiveRar5Blake2Test {
     void htbMacEntryExtractsAndVerifiesHashMac() throws Exception {
         // Encrypted entry stores ConvertHashToMAC(digest, hashKey); verification must compare in
         // MAC space (Rar5Crypt.convertBlake2ToMac), not the raw digest.
-        try (Archive a = new Archive(
-                fixture("rar5-htb-mac.rar"), ArchiveOptions.builder().password("junrar").build())) {
+        try (Archive a =
+                new Archive(
+                        fixture("rar5-htb-mac.rar"),
+                        ArchiveOptions.builder().password("junrar").build())) {
             final ByteArrayOutputStream os = new ByteArrayOutputStream();
             a.extractFile(a.getFileHeaders().get(0), os);
             assertThat(os.toByteArray()).isEqualTo(payload());
@@ -97,7 +97,7 @@ class ArchiveRar5Blake2Test {
         try (Archive a = new Archive(p.toFile())) {
             final FileHeader fh = a.getFileHeaders().get(0);
             assertThat(catchThrowable(() -> a.extractFile(fh, new ByteArrayOutputStream())))
-                .isInstanceOf(CrcErrorException.class);
+                    .isInstanceOf(CrcErrorException.class);
         }
     }
 
@@ -107,7 +107,9 @@ class ArchiveRar5Blake2Test {
             final FileHeader fh = a.getFileHeaders().get(0);
             assertThat(fh.getHashType()).isEqualTo(Rar5HashType.BLAKE2);
             assertThat(fh.getHashDigest())
-                .isEqualTo(hexToBytes("78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83"));
+                    .isEqualTo(
+                            hexToBytes(
+                                    "78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83"));
         }
     }
 
@@ -124,7 +126,9 @@ class ArchiveRar5Blake2Test {
             cdio.unpWrite(payload, 0, payload.length);
 
             assertThat(cdio.getUnpHashDigest())
-                .isEqualTo(hexToBytes("78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83"));
+                    .isEqualTo(
+                            hexToBytes(
+                                    "78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83"));
         }
     }
 
@@ -136,7 +140,7 @@ class ArchiveRar5Blake2Test {
 
             assertThat(fh.isUseHashKey()).isTrue();
             final byte[] storedMac =
-                hexToBytes("28918c0ba5edd97e4f1ffa2214bd76c3b1896e812530fecde38adea725bbd357");
+                    hexToBytes("28918c0ba5edd97e4f1ffa2214bd76c3b1896e812530fecde38adea725bbd357");
             assertThat(fh.getHashDigest()).isEqualTo(storedMac);
 
             final byte[] pwUtf8 = Rar5Crypt.passwordToUtf8("junrar".toCharArray());
@@ -146,7 +150,9 @@ class ArchiveRar5Blake2Test {
             sp.update(payload, 0, payload.length);
             final byte[] rawHash = sp.digest();
             assertThat(rawHash)
-                .isEqualTo(hexToBytes("78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83"));
+                    .isEqualTo(
+                            hexToBytes(
+                                    "78ed63477dbe9caf6ac85c0efcddc626a1a6f73d224a056cf263521153f72c83"));
 
             final byte[] mac = Rar5Crypt.convertBlake2ToMac(rawHash, kdf.hashKey);
             assertThat(mac).isEqualTo(storedMac);

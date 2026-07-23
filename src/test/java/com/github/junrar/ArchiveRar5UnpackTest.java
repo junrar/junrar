@@ -1,11 +1,10 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-import org.junit.jupiter.api.io.TempDir;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.nio.file.Files;
@@ -13,9 +12,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
  * M3.7 (issue #28) archive-level RAR5 decode acceptance. Extracts the core fixture matrix
@@ -31,13 +30,15 @@ import static org.assertj.core.api.Assertions.catchThrowable;
  */
 class ArchiveRar5UnpackTest {
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     // Oracle SHA-256 of each payload (unrar 7.23 `p` output).
-    private static final String SHA_SMALL = "afa47c7795a9476007865eed8bae473d873ae6e80c769f20a42c00bc88cbe09c";
-    private static final String SHA_MED = "ae9df0480568cad2c176c7a0cb228a0676ce927a3fbc7df80ae324edc7bf24b0";
-    private static final String SHA_BIG = "6864d2cd164a21bb287e58a0ae1940c254eb0ff5af61c365b0e8d11119fb2e78";
+    private static final String SHA_SMALL =
+            "afa47c7795a9476007865eed8bae473d873ae6e80c769f20a42c00bc88cbe09c";
+    private static final String SHA_MED =
+            "ae9df0480568cad2c176c7a0cb228a0676ce927a3fbc7df80ae324edc7bf24b0";
+    private static final String SHA_BIG =
+            "6864d2cd164a21bb287e58a0ae1940c254eb0ff5af61c365b0e8d11119fb2e78";
     private static final String[] SHA_SOLID = {
         "d99fac30d0b27a3dd7bc437a716ba05c3574617fa82efa4959650fb576dd9e11",
         "7e753e1f8090deba1687f6ccd5610e105d8b49c6c8a71a4e0b87f1fb7b086126",
@@ -47,7 +48,8 @@ class ArchiveRar5UnpackTest {
     };
 
     private File fixture(final String name) throws Exception {
-        final byte[] bytes = Files.readAllBytes(Paths.get(getClass().getResource("rar5unpack/" + name).toURI()));
+        final byte[] bytes =
+                Files.readAllBytes(Paths.get(getClass().getResource("rar5unpack/" + name).toURI()));
         final Path p = tempDir.resolve(name);
         Files.write(p, bytes);
         return p.toFile();
@@ -57,7 +59,8 @@ class ArchiveRar5UnpackTest {
         final byte[] d = MessageDigest.getInstance("SHA-256").digest(b);
         final StringBuilder sb = new StringBuilder(d.length * 2);
         for (final byte x : d) {
-            sb.append(Character.forDigit((x >> 4) & 0xf, 16)).append(Character.forDigit(x & 0xf, 16));
+            sb.append(Character.forDigit((x >> 4) & 0xf, 16))
+                    .append(Character.forDigit(x & 0xf, 16));
         }
         return sb.toString();
     }
@@ -72,7 +75,9 @@ class ArchiveRar5UnpackTest {
         assertSingleFile(archive, expectedSha, ArchiveOptions.builder().build());
     }
 
-    private void assertSingleFile(final String archive, final String expectedSha, final ArchiveOptions opts) throws Exception {
+    private void assertSingleFile(
+            final String archive, final String expectedSha, final ArchiveOptions opts)
+            throws Exception {
         try (Archive a = new Archive(fixture(archive), opts)) {
             final List<FileHeader> files = a.getFileHeaders();
             assertThat(files).hasSize(1);
@@ -108,29 +113,31 @@ class ArchiveRar5UnpackTest {
 
     @Test
     void m3EncryptedDataExtractsByteIdentical() throws Exception {
-        assertSingleFile("m3-enc-p.rar", SHA_MED, ArchiveOptions.builder().password("junrar").build());
+        assertSingleFile(
+                "m3-enc-p.rar", SHA_MED, ArchiveOptions.builder().password("junrar").build());
     }
 
     @Test
     void m3EncryptedHeadersAndDataExtractsByteIdentical() throws Exception {
-        assertSingleFile("m3-enc-hp.rar", SHA_MED, ArchiveOptions.builder().password("junrar").build());
+        assertSingleFile(
+                "m3-enc-hp.rar", SHA_MED, ArchiveOptions.builder().password("junrar").build());
     }
 
     // ---- solid random access (R8) ------------------------------------------------------------
 
     @Test
     void solidInOrderExtractsByteIdentical() throws Exception {
-        assertSolid("m3-solid-128k.rar", new int[]{0, 1, 2, 3, 4});
+        assertSolid("m3-solid-128k.rar", new int[] {0, 1, 2, 3, 4});
     }
 
     @Test
     void solidOutOfOrderExtractsByteIdentical() throws Exception {
-        assertSolid("m3-solid-128k.rar", new int[]{2, 0, 4, 1, 3});
+        assertSolid("m3-solid-128k.rar", new int[] {2, 0, 4, 1, 3});
     }
 
     @Test
     void solidReverseExtractsByteIdentical() throws Exception {
-        assertSolid("m5-solid-128k.rar", new int[]{4, 3, 2, 1, 0});
+        assertSolid("m5-solid-128k.rar", new int[] {4, 3, 2, 1, 0});
     }
 
     private void assertSolid(final String archive, final int[] order) throws Exception {
@@ -139,7 +146,8 @@ class ArchiveRar5UnpackTest {
             assertThat(files).hasSize(SHA_SOLID.length);
             for (final int idx : order) {
                 assertThat(sha256(extract(a, files.get(idx))))
-                    .as("solid file s%d.bin", idx).isEqualTo(SHA_SOLID[idx]);
+                        .as("solid file s%d.bin", idx)
+                        .isEqualTo(SHA_SOLID[idx]);
             }
         }
     }
@@ -149,32 +157,40 @@ class ArchiveRar5UnpackTest {
     @Test
     @Timeout(30)
     void corruptedCompressedDataThrowsTypedException() throws Exception {
-        final byte[] bytes = Files.readAllBytes(
-            Paths.get(getClass().getResource("rar5unpack/m3-plain-128k.rar").toURI()));
-        bytes[bytes.length / 2] ^= 0xFF; // flip a byte deep in the compressed data (past the header)
+        final byte[] bytes =
+                Files.readAllBytes(
+                        Paths.get(getClass().getResource("rar5unpack/m3-plain-128k.rar").toURI()));
+        bytes[bytes.length / 2] ^=
+                0xFF; // flip a byte deep in the compressed data (past the header)
         final Path p = tempDir.resolve("m3-corrupt.rar");
         Files.write(p, bytes);
         try (Archive a = new Archive(p.toFile())) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream())))
-                .isInstanceOf(RarException.class);
+                    .isInstanceOf(RarException.class);
         }
     }
 
     @Test
     @Timeout(30)
     void truncatedStreamThrowsTypedException() throws Exception {
-        final byte[] full = Files.readAllBytes(
-            Paths.get(getClass().getResource("rar5unpack/m3-plain-128k.rar").toURI()));
+        final byte[] full =
+                Files.readAllBytes(
+                        Paths.get(getClass().getResource("rar5unpack/m3-plain-128k.rar").toURI()));
         final byte[] truncated = new byte[full.length - 4096]; // drop the tail of the packed data
         System.arraycopy(full, 0, truncated, 0, truncated.length);
         final Path p = tempDir.resolve("m3-trunc.rar");
         Files.write(p, truncated);
-        assertThat(catchThrowable(() -> {
-            try (Archive a = new Archive(p.toFile())) {
-                a.extractFile(a.getFileHeaders().get(0), new ByteArrayOutputStream());
-            }
-        })).isInstanceOf(RarException.class);
+        assertThat(
+                        catchThrowable(
+                                () -> {
+                                    try (Archive a = new Archive(p.toFile())) {
+                                        a.extractFile(
+                                                a.getFileHeaders().get(0),
+                                                new ByteArrayOutputStream());
+                                    }
+                                }))
+                .isInstanceOf(RarException.class);
     }
 
     // ---- B-S3: growth-capped window under a byte-patched 1 GB dictionary claim ----------------
@@ -188,9 +204,11 @@ class ArchiveRar5UnpackTest {
         // extracts under DEFAULT options, with no eager gigabyte allocation blowing the heap.
         try (Archive a = new Archive(fixture("m3-1gb-claim.rar"))) {
             final FileHeader hd = a.getFileHeaders().get(0);
-            assertThat(hd.getRar5WinSize()).as("header claims a 1 GB dictionary").isEqualTo(1L << 30);
+            assertThat(hd.getRar5WinSize())
+                    .as("header claims a 1 GB dictionary")
+                    .isEqualTo(1L << 30);
             assertThat(sha256(extract(a, hd)))
-                .isEqualTo("d77aa01d309fea8acfcf79acf0140b83e4f72f413ecc807f603190d4bfa55576");
+                    .isEqualTo("d77aa01d309fea8acfcf79acf0140b83e4f72f413ecc807f603190d4bfa55576");
         }
     }
 }

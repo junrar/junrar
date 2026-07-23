@@ -56,7 +56,6 @@ public enum HostSystem {
         return null;
     }
 
-
     HostSystem(byte hostByte) {
         this.hostByte = hostByte;
     }
@@ -68,5 +67,5 @@ public enum HostSystem {
     public byte getHostByte() {
         return hostByte;
     }
-    //???? public static final byte max = 6;
+    // ???? public static final byte max = 6;
 }

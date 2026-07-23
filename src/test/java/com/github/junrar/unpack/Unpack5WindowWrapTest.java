@@ -4,14 +4,13 @@
  */
 package com.github.junrar.unpack;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.ArchiveOptions;
 import com.github.junrar.unpack.decode.Compress;
+import java.io.ByteArrayOutputStream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
-import java.io.ByteArrayOutputStream;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * M4.3 (issue #35) coverage for LZ matches that straddle the window end — the case
@@ -56,20 +55,23 @@ class Unpack5WindowWrapTest {
         final CraftedRar5Stream.BitWriter content = new CraftedRar5Stream.BitWriter();
         writeTables(content);
         for (int i = 0; i < literals; i++) {
-            content.writeBits(0, 1);      // literal 'A'
+            content.writeBits(0, 1); // literal 'A'
         }
-        content.writeBits(0b10, 2);       // length slot 266 -> length 6
-        content.writeBits(0, 1);          // distance slot 3 -> distance 4 (no extra bits)
+        content.writeBits(0b10, 2); // length slot 266 -> length 6
+        content.writeBits(0, 1); // distance slot 3 -> distance 4 (no extra bits)
         int total = literals + 6;
         if (secondMatch) {
-            content.writeBits(0b10, 2);   // length 6 again
-            content.writeBits(1, 1);      // distance slot 4 -> base 5, one raw bit
-            content.writeBits(1, 1);      //   raw bit set -> distance 6
+            content.writeBits(0b10, 2); // length 6 again
+            content.writeBits(1, 1); // distance slot 4 -> base 5, one raw bit
+            content.writeBits(1, 1); //   raw bit set -> distance 6
             total += 6;
         }
 
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
-        final Unpack5 u = new Unpack5(CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out), false);
+        final Unpack5 u =
+                new Unpack5(
+                        CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out),
+                        false);
         u.init(WIN, false, ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
         u.setDestSize(total);
         u.unpack5(false);

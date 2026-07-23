@@ -1,27 +1,26 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.exception.UnsafeLinkException;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5RedirType;
 import com.github.junrar.rarfile.rar5.Rar5Redirection;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledOnOs;
 import org.junit.jupiter.api.condition.OS;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 public class LocalFolderExtractorTest {
     private static File tempFolder;
@@ -47,15 +46,14 @@ public class LocalFolderExtractorTest {
         when(fileHeader.isUnicode()).thenReturn(true);
         when(fileHeader.getFileName()).thenReturn("../../ops");
 
-
         File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
 
         Throwable thrown = catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
         assertThat(thrown).isInstanceOf(IllegalStateException.class);
         assertThat(thrown.getMessage())
-            .containsIgnoringCase("Rar contains file with invalid path")
-            .containsIgnoringCase(expectedInvalidPath.toString());
+                .containsIgnoringCase("Rar contains file with invalid path")
+                .containsIgnoringCase(expectedInvalidPath.toString());
     }
 
     @Test
@@ -68,14 +66,13 @@ public class LocalFolderExtractorTest {
         when(fileHeader.isUnicode()).thenReturn(true);
         when(fileHeader.getFileName()).thenReturn("../../ops/");
 
-
         File expectedInvalidPath = new File(file.getParentFile().getParentFile(), "ops");
         Throwable thrown = catchThrowable(() -> localFolderExtractor.createDirectory(fileHeader));
 
         assertThat(thrown).isInstanceOf(IllegalStateException.class);
         assertThat(thrown.getMessage())
-            .containsIgnoringCase("Rar contains invalid path")
-            .containsIgnoringCase(expectedInvalidPath.toString());
+                .containsIgnoringCase("Rar contains invalid path")
+                .containsIgnoringCase(expectedInvalidPath.toString());
     }
 
     @Test
@@ -87,12 +84,13 @@ public class LocalFolderExtractorTest {
             FileHeader fileHeader = archive.nextFileHeader();
 
             File expectedInvalidPath = new File(tempFolder.getParentFile().getParentFile(), "tmp");
-            Throwable thrown = catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
+            Throwable thrown =
+                    catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
             assertThat(thrown).isInstanceOf(IllegalStateException.class);
             assertThat(thrown.getMessage())
-                .containsIgnoringCase("Rar contains file with invalid path")
-                .containsIgnoringCase(expectedInvalidPath.toString());
+                    .containsIgnoringCase("Rar contains file with invalid path")
+                    .containsIgnoringCase(expectedInvalidPath.toString());
         }
     }
 
@@ -108,12 +106,13 @@ public class LocalFolderExtractorTest {
             FileHeader fileHeader = archive.nextFileHeader();
 
             String expectedInvalidPath = "/tmp/extract_evil/pwned.txt";
-            Throwable thrown = catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
+            Throwable thrown =
+                    catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
             assertThat(thrown).isInstanceOf(IllegalStateException.class);
             assertThat(thrown.getMessage())
-                .containsIgnoringCase("Rar contains file with invalid path")
-                .containsIgnoringCase(expectedInvalidPath);
+                    .containsIgnoringCase("Rar contains file with invalid path")
+                    .containsIgnoringCase(expectedInvalidPath);
         }
     }
 
@@ -152,14 +151,14 @@ public class LocalFolderExtractorTest {
 
             Path mkdirEscapeDir = root.resolve("extract_evil");
             final Throwable thrown =
-                catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
+                    catchThrowable(() -> localFolderExtractor.extract(archive, fileHeader));
 
             // The security property: no directory outside the destination, whatever the outcome.
             assertThat(mkdirEscapeDir).doesNotExist();
             // And, unlike upstream, the corrupt header is refused rather than extracted.
             assertThat(thrown)
-                .as("a broken FILE header is refused (P0.7, issue #12)")
-                .isExactlyInstanceOf(CorruptHeaderException.class);
+                    .as("a broken FILE header is refused (P0.7, issue #12)")
+                    .isExactlyInstanceOf(CorruptHeaderException.class);
         }
     }
 
@@ -180,9 +179,11 @@ public class LocalFolderExtractorTest {
         new LocalFolderExtractor(dest.toFile()).extract(mock(Archive.class), fh);
 
         assertThat(new File(root.toFile(), "extract_evil"))
-            .as("no directory is created outside the destination").doesNotExist();
+                .as("no directory is created outside the destination")
+                .doesNotExist();
         assertThat(new File(dest.toFile(), "payload.txt"))
-            .as("the entry itself still lands, normalized, inside the destination").exists();
+                .as("the entry itself still lands, normalized, inside the destination")
+                .exists();
     }
 
     // ---- S5/S6/S7 RAR5 twins: the same guards, re-applied to the new symlink-target path -------
@@ -210,8 +211,12 @@ public class LocalFolderExtractorTest {
         final File extract = new File(parent, "extract");
         extract.mkdir();
         final LocalFolderExtractor lfe = new LocalFolderExtractor(extract);
-        final Throwable thrown = catchThrowable(
-            () -> lfe.extract(mock(Archive.class), symlinkHeader("link", "../extract_evil/pwned")));
+        final Throwable thrown =
+                catchThrowable(
+                        () ->
+                                lfe.extract(
+                                        mock(Archive.class),
+                                        symlinkHeader("link", "../extract_evil/pwned")));
         assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
     }
 
@@ -242,7 +247,7 @@ public class LocalFolderExtractorTest {
         final FileHeader fileHeader = mock(FileHeader.class);
         when(fileHeader.getFileName()).thenReturn(name);
         when(fileHeader.getRedirection())
-            .thenReturn(new Rar5Redirection(Rar5RedirType.UNIX_SYMLINK, false, target));
+                .thenReturn(new Rar5Redirection(Rar5RedirType.UNIX_SYMLINK, false, target));
         return fileHeader;
     }
 }

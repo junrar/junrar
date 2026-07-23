@@ -12,6 +12,5 @@ public class UnsupportedRarVersionException extends RarException {
         super(cause);
     }
 
-    public UnsupportedRarVersionException() {
-    }
+    public UnsupportedRarVersionException() {}
 }

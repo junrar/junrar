@@ -1,12 +1,11 @@
 package com.github.junrar.rarfile;
 
-import com.github.junrar.Archive;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.github.junrar.Archive;
 import java.io.File;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins the invalid-input half of the narrow-name decode rule

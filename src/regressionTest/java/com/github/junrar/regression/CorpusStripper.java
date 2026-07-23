@@ -7,7 +7,6 @@ import com.github.junrar.volume.FileVolume;
 import com.github.junrar.volume.FileVolumeManager;
 import com.github.junrar.volume.Volume;
 import com.github.junrar.volume.VolumeManager;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -46,11 +45,11 @@ import java.util.stream.Stream;
  */
 public final class CorpusStripper {
 
-    private CorpusStripper() {
-    }
+    private CorpusStripper() {}
 
     public static void main(final String[] args) throws Exception {
-        if (args.length != 2) throw new IllegalArgumentException("usage: CorpusStripper <inDir> <outDir>");
+        if (args.length != 2)
+            throw new IllegalArgumentException("usage: CorpusStripper <inDir> <outDir>");
         final Path in = Paths.get(args[0]).toAbsolutePath().normalize();
         final Path out = Paths.get(args[1]).toAbsolutePath().normalize();
 
@@ -73,30 +72,47 @@ public final class CorpusStripper {
             total += Files.size(target);
             zeroed += zeroUnread(target, reads.get(file), Files.size(target));
         }
-        System.out.println("pass 2: " + zeroed + " of " + total + " bytes zeroed ("
-            + (total == 0 ? 0 : 100 * zeroed / total) + "%)");
+        System.out.println(
+                "pass 2: "
+                        + zeroed
+                        + " of "
+                        + total
+                        + " bytes zeroed ("
+                        + (total == 0 ? 0 : 100 * zeroed / total)
+                        + "%)");
 
         final List<String> diverged = new ArrayList<>();
         for (final Path file : inputs) {
             final Path target = out.resolve(in.relativize(file));
             final String after = parse(target, new HashMap<>());
             if (!before.get(file).equals(after)) {
-                diverged.add(in.relativize(file) + "\n  before: " + before.get(file) + "\n  after:  " + after);
+                diverged.add(
+                        in.relativize(file)
+                                + "\n  before: "
+                                + before.get(file)
+                                + "\n  after:  "
+                                + after);
             }
         }
-        System.out.println("pass 3: " + (inputs.size() - diverged.size()) + "/" + inputs.size()
-            + " identical, " + diverged.size() + " diverged");
+        System.out.println(
+                "pass 3: "
+                        + (inputs.size() - diverged.size())
+                        + "/"
+                        + inputs.size()
+                        + " identical, "
+                        + diverged.size()
+                        + " diverged");
         diverged.forEach(System.out::println);
-        if (!diverged.isEmpty()) throw new IllegalStateException("stripping changed parser behaviour");
+        if (!diverged.isEmpty())
+            throw new IllegalStateException("stripping changed parser behaviour");
     }
 
     private static List<Path> listArchives(final Path root) throws IOException {
         try (Stream<Path> stream = Files.walk(root)) {
-            return stream
-                .filter(Files::isRegularFile)
-                .filter(p -> !p.getFileName().toString().startsWith("."))
-                .sorted()
-                .collect(java.util.stream.Collectors.toList());
+            return stream.filter(Files::isRegularFile)
+                    .filter(p -> !p.getFileName().toString().startsWith("."))
+                    .sorted()
+                    .collect(java.util.stream.Collectors.toList());
         }
     }
 
@@ -114,7 +130,8 @@ public final class CorpusStripper {
         return record.toString();
     }
 
-    private static long zeroUnread(final Path file, final Reads read, final long length) throws IOException {
+    private static long zeroUnread(final Path file, final Reads read, final long length)
+            throws IOException {
         final List<long[]> keep = read == null ? new ArrayList<>() : read.merged();
         long zeroed = 0;
         final byte[] zeros = new byte[64 * 1024];
@@ -129,8 +146,9 @@ public final class CorpusStripper {
         return zeroed;
     }
 
-    private static long zero(final RandomAccessFile raf, final long from, final long to, final byte[] zeros)
-        throws IOException {
+    private static long zero(
+            final RandomAccessFile raf, final long from, final long to, final byte[] zeros)
+            throws IOException {
         if (to <= from) return 0;
         raf.seek(from);
         long left = to - from;
@@ -147,7 +165,7 @@ public final class CorpusStripper {
         private final List<long[]> ranges = new ArrayList<>();
 
         void add(final long start, final long count) {
-            if (count > 0) ranges.add(new long[]{start, start + count});
+            if (count > 0) ranges.add(new long[] {start, start + count});
         }
 
         List<long[]> merged() {
@@ -158,7 +176,7 @@ public final class CorpusStripper {
                     final long[] last = merged.get(merged.size() - 1);
                     last[1] = Math.max(last[1], range[1]);
                 } else {
-                    merged.add(new long[]{range[0], range[1]});
+                    merged.add(new long[] {range[0], range[1]});
                 }
             }
             return merged;
@@ -194,7 +212,8 @@ public final class CorpusStripper {
         @Override
         public SeekableReadOnlyByteChannel getChannel() throws IOException {
             final Path path = delegate.getFile().toPath().toAbsolutePath().normalize();
-            return new RecordingChannel(delegate.getChannel(), reads.computeIfAbsent(path, p -> new Reads()));
+            return new RecordingChannel(
+                    delegate.getChannel(), reads.computeIfAbsent(path, p -> new Reads()));
         }
 
         @Override

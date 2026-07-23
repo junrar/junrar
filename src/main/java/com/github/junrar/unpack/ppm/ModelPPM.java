@@ -20,10 +20,8 @@ package com.github.junrar.unpack.ppm;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.unpack.Unpack;
-
 import java.io.IOException;
 import java.util.Arrays;
-
 
 /**
  * DOCUMENT ME
@@ -73,7 +71,9 @@ public class ModelPPM {
 
     private final SubAllocator subAlloc = new SubAllocator();
 
-    private static final int[] InitBinEsc = {0x3CDD, 0x1F3F, 0x59BF, 0x48F3, 0x64A1, 0x5ABC, 0x6632, 0x6051};
+    private static final int[] InitBinEsc = {
+        0x3CDD, 0x1F3F, 0x59BF, 0x48F3, 0x64A1, 0x5ABC, 0x6632, 0x6051
+    };
 
     // Temp fields
     private final State tempState1 = new State(null);
@@ -169,7 +169,6 @@ public class ModelPPM {
             HB2Flag[0x40 + j] = 0x08;
         }
         dummySEE2Cont.setShift(PERIOD_BITS);
-
     }
 
     private void clearMask() {
@@ -177,7 +176,7 @@ public class ModelPPM {
         Arrays.fill(charMask, 0);
     }
 
-    public boolean decodeInit(Unpack unpackRead, int escChar/* ref */)
+    public boolean decodeInit(Unpack unpackRead, int escChar /* ref */)
             throws IOException, RarException {
 
         int MaxOrder = unpackRead.getChar() & 0xff;
@@ -213,8 +212,13 @@ public class ModelPPM {
             long budget = unpackRead.getMaxDictionarySize();
             if (requiredBytes > budget) {
                 throw new UnsupportedDictionarySizeException(
-                    "PPMd requires " + requiredBytes + " bytes (MaxMB=" + MaxMB
-                        + ") but the configured maxDictionarySize budget is " + budget + " bytes");
+                        "PPMd requires "
+                                + requiredBytes
+                                + " bytes (MaxMB="
+                                + MaxMB
+                                + ") but the configured maxDictionarySize budget is "
+                                + budget
+                                + " bytes");
             }
             subAlloc.startSubAllocator(MaxMB + 1);
             minContext = new PPMContext(getHeap());
@@ -233,7 +237,7 @@ public class ModelPPM {
 
     public int decodeChar() throws IOException, RarException {
         // Debug
-        //subAlloc.dumpHeap();
+        // subAlloc.dumpHeap();
 
         if (minContext.getAddress() <= subAlloc.getPText()
                 || minContext.getAddress() > subAlloc.getHeapEnd()) {
@@ -275,12 +279,13 @@ public class ModelPPM {
             maxContext.setAddress(addr);
         } else {
             updateModel();
-            //this.foundState.setAddress(foundState.getAddress());//TODO just 4 debugging
+            // this.foundState.setAddress(foundState.getAddress());//TODO just 4 debugging
             if (escCount == 0) {
                 clearMask();
             }
         }
-        coder.ariDecNormalize(); // ARI_DEC_NORMALIZE(Coder.code,Coder.low,Coder.range,Coder.UnpackRead);
+        coder
+                .ariDecNormalize(); // ARI_DEC_NORMALIZE(Coder.code,Coder.low,Coder.range,Coder.UnpackRead);
         return (Symbol);
     }
 
@@ -388,9 +393,8 @@ public class ModelPPM {
         return orderFall;
     }
 
-    private int /* ppmcontext ptr */createSuccessors(boolean Skip,
-            State p1 /* state ptr */) {
-        //State upState = tempState1.init(null);
+    private int /* ppmcontext ptr */ createSuccessors(boolean Skip, State p1 /* state ptr */) {
+        // State upState = tempState1.init(null);
         StateRef upState = tempStateRef2;
         State tempState = tempState1.init(getHeap());
 
@@ -444,15 +448,14 @@ public class ModelPPM {
                 }
                 ps[pps++] = p.getAddress();
             } while (pc.getSuffix() != 0);
-
         } // NO_LOOP:
         if (pps == 0) {
             return pc.getAddress();
         }
         upState.setSymbol(getHeap()[upBranch.getAddress()]); // UpState.Symbol=*(byte*)
-                                                             // UpBranch;
+        // UpBranch;
         // UpState.Successor=(PPM_CONTEXT*) (((byte*) UpBranch)+1);
-        upState.setSuccessor(upBranch.getAddress() + 1); //TODO check if +1 necessary
+        upState.setSuccessor(upBranch.getAddress() + 1); // TODO check if +1 necessary
         if (pc.getNumStats() != 1) {
             if (pc.getAddress() <= subAlloc.getPText()) {
                 return (0);
@@ -466,8 +469,11 @@ public class ModelPPM {
             int cf = p.getFreq() - 1;
             int s0 = pc.getFreqData().getSummFreq() - pc.getNumStats() - cf;
             // UpState.Freq=1+((2*cf <= s0)?(5*cf > s0):((2*cf+3*s0-1)/(2*s0)));
-            upState.setFreq(1 + ((2 * cf <= s0) ? (5 * cf > s0 ? 1 : 0)
-                    : ((2 * cf + 3 * s0 - 1) / (2 * s0))));
+            upState.setFreq(
+                    1
+                            + ((2 * cf <= s0)
+                                    ? (5 * cf > s0 ? 1 : 0)
+                                    : ((2 * cf + 3 * s0 - 1) / (2 * s0))));
         } else {
             upState.setFreq(pc.getOneState().getFreq()); // UpState.Freq=pc->OneState.Freq;
         }
@@ -488,7 +494,7 @@ public class ModelPPM {
     }
 
     private void updateModel() {
-        //System.out.println("ModelPPM.updateModel()");
+        // System.out.println("ModelPPM.updateModel()");
         // STATE fs = *FoundState, *p = NULL;
         StateRef fs = tempStateRef1;
         fs.setValues(foundState);
@@ -541,8 +547,8 @@ public class ModelPPM {
             updateModelRestart();
             return;
         }
-//        // Debug
-//        subAlloc.dumpHeap();
+        //        // Debug
+        //        subAlloc.dumpHeap();
         if (fs.getSuccessor() != 0) {
             if (fs.getSuccessor() <= subAlloc.getPText()) {
                 fs.setSuccessor(createSuccessors(false, p));
@@ -561,8 +567,8 @@ public class ModelPPM {
             foundState.setSuccessor(successor.getAddress());
             fs.setSuccessor(minContext);
         }
-//        // Debug
-//        subAlloc.dumpHeap();
+        //        // Debug
+        //        subAlloc.dumpHeap();
         ns = minContext.getNumStats();
         s0 = minContext.getFreqData().getSummFreq() - (ns) - (fs.getFreq() - 1);
         for (pc.setAddress(maxContext.getAddress());
@@ -570,23 +576,25 @@ public class ModelPPM {
                 pc.setAddress(pc.getSuffix())) {
             if ((ns1 = pc.getNumStats()) != 1) {
                 if ((ns1 & 1) == 0) {
-                    //System.out.println(ns1);
-                    pc.getFreqData().setStats(
-                            subAlloc.expandUnits(pc.getFreqData().getStats(),
-                                    ns1 >>> 1));
+                    // System.out.println(ns1);
+                    pc.getFreqData()
+                            .setStats(subAlloc.expandUnits(pc.getFreqData().getStats(), ns1 >>> 1));
                     if (pc.getFreqData().getStats() == 0) {
                         updateModelRestart();
                         return;
                     }
                 }
                 // bug fixed
-//              int sum = ((2 * ns1 < ns) ? 1 : 0) +
-//                        2 * ((4 * ((ns1 <= ns) ? 1 : 0)) & ((pc.getFreqData()
-//                              .getSummFreq() <= 8 * ns1) ? 1 : 0));
-                int sum = ((2 * ns1 < ns) ? 1 : 0) + 2 * (
-                        ((4 * ns1 <= ns) ? 1 : 0)
-                        & ((pc.getFreqData().getSummFreq() <= 8 * ns1) ? 1 : 0)
-                        );
+                //              int sum = ((2 * ns1 < ns) ? 1 : 0) +
+                //                        2 * ((4 * ((ns1 <= ns) ? 1 : 0)) & ((pc.getFreqData()
+                //                              .getSummFreq() <= 8 * ns1) ? 1 : 0));
+                int sum =
+                        ((2 * ns1 < ns) ? 1 : 0)
+                                + 2
+                                        * (((4 * ns1 <= ns) ? 1 : 0)
+                                                & ((pc.getFreqData().getSummFreq() <= 8 * ns1)
+                                                        ? 1
+                                                        : 0));
                 pc.getFreqData().incSummFreq(sum);
             } else {
                 p.setAddress(subAlloc.allocUnits(1));
@@ -601,8 +609,7 @@ public class ModelPPM {
                 } else {
                     p.setFreq(MAX_FREQ - 4);
                 }
-                pc.getFreqData().setSummFreq(
-                        (p.getFreq() + initEsc + (ns > 3 ? 1 : 0)));
+                pc.getFreqData().setSummFreq((p.getFreq() + initEsc + (ns > 3 ? 1 : 0)));
             }
             cf = 2 * fs.getFreq() * (pc.getFreqData().getSummFreq() + 6);
             sf = s0 + pc.getFreqData().getSummFreq();
@@ -610,8 +617,7 @@ public class ModelPPM {
                 cf = 1 + (cf > sf ? 1 : 0) + (cf >= 4 * sf ? 1 : 0);
                 pc.getFreqData().incSummFreq(3);
             } else {
-                cf = 4 + (cf >= 9 * sf ? 1 : 0) + (cf >= 12 * sf ? 1 : 0)
-                        + (cf >= 15 * sf ? 1 : 0);
+                cf = 4 + (cf >= 9 * sf ? 1 : 0) + (cf >= 12 * sf ? 1 : 0) + (cf >= 15 * sf ? 1 : 0);
                 pc.getFreqData().incSummFreq(cf);
             }
             p.setAddress(pc.getFreqData().getStats() + ns1 * State.size);
@@ -624,13 +630,13 @@ public class ModelPPM {
         int address = fs.getSuccessor();
         maxContext.setAddress(address);
         minContext.setAddress(address);
-        //TODO-----debug
-//        int pos = minContext.getFreqData().getStats();
-//        State a = new State(getHeap());
-//        a.setAddress(pos);
-//        pos+=State.size;
-//        a.setAddress(pos);
-        //--dbg end
+        // TODO-----debug
+        //        int pos = minContext.getFreqData().getStats();
+        //        State a = new State(getHeap());
+        //        a.setAddress(pos);
+        //        pos+=State.size;
+        //        a.setAddress(pos);
+        // --dbg end
     }
 
     // Debug
@@ -664,7 +670,7 @@ public class ModelPPM {
     }
 
     // Debug
-//    public void dumpHeap() {
-//        subAlloc.dumpHeap();
-//    }
+    //    public void dumpHeap() {
+    //        subAlloc.dumpHeap();
+    //    }
 }

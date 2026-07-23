@@ -1,12 +1,11 @@
 package com.github.junrar.rarfile;
 
-import com.github.junrar.Archive;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.github.junrar.Archive;
 import java.io.File;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins T6 (docs/porting/MIGRATION_MANUAL.md SS6, FileHeader.java:157-165): a
@@ -24,7 +23,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 class FileHeaderUtf8NameTest {
 
     private static final String FIXTURE = "/com/github/junrar/unicode/rar3-utf8-name.rar";
-    private static final String SPLIT_FIXTURE = "/com/github/junrar/unicode/rar3-utf8-name-split.rar";
+    private static final String SPLIT_FIXTURE =
+            "/com/github/junrar/unicode/rar3-utf8-name-split.rar";
     private static final String EXPECTED_NAME = "café-résumé-日本語.txt";
 
     @Test

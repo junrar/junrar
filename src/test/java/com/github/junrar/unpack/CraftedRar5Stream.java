@@ -5,7 +5,6 @@
 package com.github.junrar.unpack;
 
 import com.github.junrar.unpack.decode.Compress;
-
 import java.io.ByteArrayOutputStream;
 
 /**
@@ -16,8 +15,7 @@ import java.io.ByteArrayOutputStream;
  */
 final class CraftedRar5Stream {
 
-    private CraftedRar5Stream() {
-    }
+    private CraftedRar5Stream() {}
 
     /**
      * Write the BD (bit-length) table as an identity map — symbols 0..15 carry their own value as
@@ -70,7 +68,8 @@ final class CraftedRar5Stream {
         }
         final int flags = 0x80 | 0x40 | ((byteCount - 1) << 3) | ((lastByteBits - 1) & 7);
         final int checksum =
-            (0x5a ^ flags ^ blockSizeBytes ^ (blockSizeBytes >>> 8) ^ (blockSizeBytes >>> 16)) & 0xff;
+                (0x5a ^ flags ^ blockSizeBytes ^ (blockSizeBytes >>> 8) ^ (blockSizeBytes >>> 16))
+                        & 0xff;
 
         final BitWriter bw = new BitWriter();
         bw.writeBits(flags, 8);

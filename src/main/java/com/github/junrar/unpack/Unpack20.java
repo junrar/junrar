@@ -27,11 +27,8 @@ import com.github.junrar.unpack.decode.LitDecode;
 import com.github.junrar.unpack.decode.LowDistDecode;
 import com.github.junrar.unpack.decode.MultDecode;
 import com.github.junrar.unpack.decode.RepDecode;
-
 import java.io.IOException;
 import java.util.Arrays;
-
-
 
 /**
  * DOCUMENT ME
@@ -59,26 +56,30 @@ public abstract class Unpack20 extends Unpack15 {
 
     protected BitDecode BD = new BitDecode();
 
-    public static final int[] LDecode = {0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12,
-            14, 16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192,
-            224 };
+    public static final int[] LDecode = {
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 96, 112, 128,
+        160, 192, 224
+    };
 
-    public static final byte[] LBits = {0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2,
-            2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5 };
+    public static final byte[] LBits = {
+        0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5
+    };
 
-    public static final int[] DDecode = {0, 1, 2, 3, 4, 6, 8, 12, 16, 24, 32,
-            48, 64, 96, 128, 192, 256, 384, 512, 768, 1024, 1536, 2048, 3072,
-            4096, 6144, 8192, 12288, 16384, 24576, 32768, 49152, 65536, 98304,
-            131072, 196608, 262144, 327680, 393216, 458752, 524288, 589824,
-            655360, 720896, 786432, 851968, 917504, 983040 };
+    public static final int[] DDecode = {
+        0, 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384, 512, 768, 1024, 1536,
+        2048, 3072, 4096, 6144, 8192, 12288, 16384, 24576, 32768, 49152, 65536, 98304, 131072,
+        196608, 262144, 327680, 393216, 458752, 524288, 589824, 655360, 720896, 786432, 851968,
+        917504, 983040
+    };
 
-    public static final int[] DBits = {0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5,
-            5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14,
-            15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16 };
+    public static final int[] DBits = {
+        0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12,
+        13, 13, 14, 14, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16
+    };
 
-    public static final int[] SDDecode = {0, 4, 8, 16, 32, 64, 128, 192 };
+    public static final int[] SDDecode = {0, 4, 8, 16, 32, 64, 128, 192};
 
-    public static final int[] SDBits = {2, 2, 3, 4, 5, 6, 6, 6 };
+    public static final int[] SDBits = {2, 2, 3, 4, 5, 6, 6, 6};
 
     protected void unpack20(boolean solid) throws IOException, RarException {
 
@@ -110,8 +111,7 @@ public abstract class Unpack20 extends Unpack15 {
                     break;
                 }
             }
-            if (((wrPtr - unpPtr) & Compress.MAXWINMASK) < 270
-                    && wrPtr != unpPtr) {
+            if (((wrPtr - unpPtr) & Compress.MAXWINMASK) < 270 && wrPtr != unpPtr) {
                 oldUnpWriteBuf();
                 if (suspended) {
                     return;
@@ -206,7 +206,6 @@ public abstract class Unpack20 extends Unpack15 {
         }
         ReadLastTables();
         oldUnpWriteBuf();
-
     }
 
     protected void CopyString20(int length, final int distance) {
@@ -215,9 +214,12 @@ public abstract class Unpack20 extends Unpack15 {
         destUnpSize -= length;
 
         int destPtr = unpPtr - distance;
-        if (destPtr >= 0 && destPtr < Compress.MAXWINSIZE - 300 && unpPtr < Compress.MAXWINSIZE - 300) {
+        if (destPtr >= 0
+                && destPtr < Compress.MAXWINSIZE - 300
+                && unpPtr < Compress.MAXWINSIZE - 300) {
             if (destPtr + length <= unpPtr) {
-                // Case: array elements to copy from destPtr do not overlap with unpPtr target values
+                // Case: array elements to copy from destPtr do not overlap with unpPtr target
+                // values
                 System.arraycopy(window, destPtr, window, unpPtr, length);
                 // update values for correct crc
                 unpPtr += length;
@@ -245,8 +247,7 @@ public abstract class Unpack20 extends Unpack15 {
         }
     }
 
-    protected void makeDecodeTables(byte[] lenTab, int offset, Decode dec,
-            int size) {
+    protected void makeDecodeTables(byte[] lenTab, int offset, Decode dec, int size) {
         int[] lenCount = new int[16];
         int[] tmpPos = new int[16];
         int i;
@@ -254,21 +255,23 @@ public abstract class Unpack20 extends Unpack15 {
 
         Arrays.fill(lenCount, 0); // memset(LenCount,0,sizeof(LenCount));
 
-        Arrays.fill(dec.getDecodeNum(), 0); // memset(Dec->DecodeNum,0,Size*sizeof(*Dec->DecodeNum));
+        Arrays.fill(
+                dec.getDecodeNum(), 0); // memset(Dec->DecodeNum,0,Size*sizeof(*Dec->DecodeNum));
 
         for (i = 0; i < size; i++) {
             lenCount[(int) (lenTab[offset + i] & 0xF)]++;
         }
         lenCount[0] = 0;
-        for (tmpPos[0] = 0, dec.getDecodePos()[0] = 0, dec.getDecodeLen()[0] = 0, N = 0, i = 1; i < 16; i++) {
+        for (tmpPos[0] = 0, dec.getDecodePos()[0] = 0, dec.getDecodeLen()[0] = 0, N = 0, i = 1;
+                i < 16;
+                i++) {
             N = 2 * (N + lenCount[i]);
             M = N << (15 - i);
             if (M > 0xFFFF) {
                 M = 0xFFFF;
             }
             dec.getDecodeLen()[i] = (int) M;
-            tmpPos[i] = dec.getDecodePos()[i] = dec.getDecodePos()[i - 1]
-                    + lenCount[i - 1];
+            tmpPos[i] = dec.getDecodePos()[i] = dec.getDecodePos()[i - 1] + lenCount[i - 1];
         }
 
         for (i = 0; i < size; i++) {
@@ -282,65 +285,65 @@ public abstract class Unpack20 extends Unpack15 {
     protected int decodeNumber(Decode dec) {
         int bits;
         long bitField = getbits() & 0xfffe;
-//        if (bitField < dec.getDecodeLen()[8]) {
-//            if (bitField < dec.getDecodeLen()[4]) {
-//                if (bitField < dec.getDecodeLen()[2]) {
-//                    if (bitField < dec.getDecodeLen()[1]) {
-//                        bits = 1;
-//                    } else {
-//                        bits = 2;
-//                    }
-//                } else {
-//                    if (bitField < dec.getDecodeLen()[3]) {
-//                        bits = 3;
-//                    } else {
-//                        bits = 4;
-//                    }
-//                }
-//            } else {
-//                if (bitField < dec.getDecodeLen()[6]) {
-//                    if (bitField < dec.getDecodeLen()[5])
-//                        bits = 5;
-//                    else
-//                        bits = 6;
-//                } else {
-//                    if (bitField < dec.getDecodeLen()[7]) {
-//                        bits = 7;
-//                    } else {
-//                        bits = 8;
-//                    }
-//                }
-//            }
-//        } else {
-//            if (bitField < dec.getDecodeLen()[12]) {
-//                if (bitField < dec.getDecodeLen()[10])
-//                    if (bitField < dec.getDecodeLen()[9])
-//                        bits = 9;
-//                    else
-//                        bits = 10;
-//                else if (bitField < dec.getDecodeLen()[11])
-//                    bits = 11;
-//                else
-//                    bits = 12;
-//            } else {
-//                if (bitField < dec.getDecodeLen()[14]) {
-//                    if (bitField < dec.getDecodeLen()[13]) {
-//                        bits = 13;
-//                    } else {
-//                        bits = 14;
-//                    }
-//                } else {
-//                    bits = 15;
-//                }
-//            }
-//        }
-//        addbits(bits);
-//        int N = dec.getDecodePos()[bits]
-//                + (((int) bitField - dec.getDecodeLen()[bits - 1]) >>> (16 - bits));
-//        if (N >= dec.getMaxNum()) {
-//            N = 0;
-//        }
-//        return (dec.getDecodeNum()[N]);
+        //        if (bitField < dec.getDecodeLen()[8]) {
+        //            if (bitField < dec.getDecodeLen()[4]) {
+        //                if (bitField < dec.getDecodeLen()[2]) {
+        //                    if (bitField < dec.getDecodeLen()[1]) {
+        //                        bits = 1;
+        //                    } else {
+        //                        bits = 2;
+        //                    }
+        //                } else {
+        //                    if (bitField < dec.getDecodeLen()[3]) {
+        //                        bits = 3;
+        //                    } else {
+        //                        bits = 4;
+        //                    }
+        //                }
+        //            } else {
+        //                if (bitField < dec.getDecodeLen()[6]) {
+        //                    if (bitField < dec.getDecodeLen()[5])
+        //                        bits = 5;
+        //                    else
+        //                        bits = 6;
+        //                } else {
+        //                    if (bitField < dec.getDecodeLen()[7]) {
+        //                        bits = 7;
+        //                    } else {
+        //                        bits = 8;
+        //                    }
+        //                }
+        //            }
+        //        } else {
+        //            if (bitField < dec.getDecodeLen()[12]) {
+        //                if (bitField < dec.getDecodeLen()[10])
+        //                    if (bitField < dec.getDecodeLen()[9])
+        //                        bits = 9;
+        //                    else
+        //                        bits = 10;
+        //                else if (bitField < dec.getDecodeLen()[11])
+        //                    bits = 11;
+        //                else
+        //                    bits = 12;
+        //            } else {
+        //                if (bitField < dec.getDecodeLen()[14]) {
+        //                    if (bitField < dec.getDecodeLen()[13]) {
+        //                        bits = 13;
+        //                    } else {
+        //                        bits = 14;
+        //                    }
+        //                } else {
+        //                    bits = 15;
+        //                }
+        //            }
+        //        }
+        //        addbits(bits);
+        //        int N = dec.getDecodePos()[bits]
+        //                + (((int) bitField - dec.getDecodeLen()[bits - 1]) >>> (16 - bits));
+        //        if (N >= dec.getMaxNum()) {
+        //            N = 0;
+        //        }
+        //        return (dec.getDecodeNum()[N]);
         int[] decodeLen = dec.getDecodeLen();
         if (bitField < decodeLen[8]) {
             if (bitField < decodeLen[4]) {
@@ -398,8 +401,7 @@ public abstract class Unpack20 extends Unpack15 {
             }
         }
         addbits(bits);
-        int N = dec.getDecodePos()[bits]
-                + (((int) bitField - decodeLen[bits - 1]) >>> (16 - bits));
+        int N = dec.getDecodePos()[bits] + (((int) bitField - decodeLen[bits - 1]) >>> (16 - bits));
         if (N >= dec.getMaxNum()) {
             N = 0;
         }
@@ -480,8 +482,7 @@ public abstract class Unpack20 extends Unpack15 {
         } else {
             makeDecodeTables(Table, 0, LD, Compress.NC20);
             makeDecodeTables(Table, Compress.NC20, DD, Compress.DC20);
-            makeDecodeTables(Table, Compress.NC20 + Compress.DC20, RD,
-                    Compress.RC20);
+            makeDecodeTables(Table, Compress.NC20 + Compress.DC20, RD, Compress.RC20);
         }
         // memcpy(UnpOldTable20,Table,sizeof(UnpOldTable20));
         System.arraycopy(Table, 0, UnpOldTable20, 0, UnpOldTable20.length);
@@ -618,5 +619,4 @@ public abstract class Unpack20 extends Unpack15 {
         }
         return ((byte) Ch);
     }
-
 }

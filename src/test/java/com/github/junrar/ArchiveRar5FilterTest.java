@@ -1,10 +1,8 @@
 package com.github.junrar;
 
-import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-import org.junit.jupiter.api.io.TempDir;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.github.junrar.rarfile.FileHeader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.nio.file.Files;
@@ -12,8 +10,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
  * M3.8 (issue #29) archive-level RAR5 filter acceptance. Each fixture was produced by
@@ -32,16 +31,20 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Timeout(30)
 class ArchiveRar5FilterTest {
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     // Oracle SHA-256 of each payload (unrar 7.23 `p` output == the deterministic source payload).
-    private static final String SHA_DELTA = "808dfc21490452cb7740e316f1255a35578aa3ec3b56e42956d18e43dd7279c1";
-    private static final String SHA_E8 = "65b41504002936b8c0fc5c389ff5d9a191e8d1d7f584458fe0198e442a1397fd";
-    private static final String SHA_E8E9 = "4e53b7d69dc125bf232dff52d9d9d2a183eaecae9dad85bee80358133856f4e3";
+    private static final String SHA_DELTA =
+            "808dfc21490452cb7740e316f1255a35578aa3ec3b56e42956d18e43dd7279c1";
+    private static final String SHA_E8 =
+            "65b41504002936b8c0fc5c389ff5d9a191e8d1d7f584458fe0198e442a1397fd";
+    private static final String SHA_E8E9 =
+            "4e53b7d69dc125bf232dff52d9d9d2a183eaecae9dad85bee80358133856f4e3";
 
     private File fixture(final String name) throws Exception {
-        final byte[] bytes = Files.readAllBytes(Paths.get(getClass().getResource("rar5filters/" + name).toURI()));
+        final byte[] bytes =
+                Files.readAllBytes(
+                        Paths.get(getClass().getResource("rar5filters/" + name).toURI()));
         final Path p = tempDir.resolve(name);
         Files.write(p, bytes);
         return p.toFile();
@@ -51,7 +54,8 @@ class ArchiveRar5FilterTest {
         final byte[] d = MessageDigest.getInstance("SHA-256").digest(b);
         final StringBuilder sb = new StringBuilder(d.length * 2);
         for (final byte x : d) {
-            sb.append(Character.forDigit((x >> 4) & 0xf, 16)).append(Character.forDigit(x & 0xf, 16));
+            sb.append(Character.forDigit((x >> 4) & 0xf, 16))
+                    .append(Character.forDigit(x & 0xf, 16));
         }
         return sb.toString();
     }

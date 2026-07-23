@@ -53,8 +53,14 @@ public class Rar5BaseBlock extends BaseBlock {
     private final long dataSize;
     private int fieldsOffset;
 
-    private Rar5BaseBlock(final Rar5BlockType rar5Type, final long rar5TypeValue, final long rar5Flags,
-                          final int headerCrc32, final int rar5HeaderSize, final long extraSize, final long dataSize) {
+    private Rar5BaseBlock(
+            final Rar5BlockType rar5Type,
+            final long rar5TypeValue,
+            final long rar5Flags,
+            final int headerCrc32,
+            final int rar5HeaderSize,
+            final long extraSize,
+            final long dataSize) {
         this.rar5Type = rar5Type;
         this.rar5TypeValue = rar5TypeValue;
         this.rar5Flags = rar5Flags;
@@ -101,7 +107,8 @@ public class Rar5BaseBlock extends BaseBlock {
         final long blockSize = sizeReader.read();
         final int sizeBytes = sizeReader.position() - 4;
         if (sizeBytes > MAX_SIZE_VINT_BYTES) {
-            throw new CorruptHeaderException("RAR5 header size field exceeds " + MAX_SIZE_VINT_BYTES + " vint bytes");
+            throw new CorruptHeaderException(
+                    "RAR5 header size field exceeds " + MAX_SIZE_VINT_BYTES + " vint bytes");
         }
         if (blockSize == 0) {
             throw new CorruptHeaderException("RAR5 block size is zero");
@@ -136,7 +143,8 @@ public class Rar5BaseBlock extends BaseBlock {
      *                                an unknown non-skippable type, or a vint running past the
      *                                header buffer (truncated mid-header)
      */
-    public static Rar5BaseBlock parse(final byte[] header, final boolean encrypted) throws CorruptHeaderException {
+    public static Rar5BaseBlock parse(final byte[] header, final boolean encrypted)
+            throws CorruptHeaderException {
         final int storedCrc = Raw.readIntLittleEndian(header, 0);
         final int computedCrc = RarCRC.computeHeaderCrc32(header, 4, header.length - 4);
         final boolean broken = storedCrc != computedCrc;
@@ -169,7 +177,9 @@ public class Rar5BaseBlock extends BaseBlock {
         }
         final int fieldsOffset = reader.position();
 
-        final Rar5BaseBlock block = new Rar5BaseBlock(type, typeValue, flags, storedCrc, header.length, extraSize, dataSize);
+        final Rar5BaseBlock block =
+                new Rar5BaseBlock(
+                        type, typeValue, flags, storedCrc, header.length, extraSize, dataSize);
         block.fieldsOffset = fieldsOffset;
         block.setBrokenHeader(broken);
         return block;

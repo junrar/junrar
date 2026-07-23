@@ -1,23 +1,22 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.MissingPreviousVolumeException;
 import com.github.junrar.exception.UnsupportedRarMethodException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.io.TempDir;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
  * Issue #43: a RAR5-container entry whose algorithm version this build does not recognize
@@ -53,19 +52,22 @@ class ArchiveUnknownAlgoVersionTest {
      *  to prove the header parses to {@code VER_UNKNOWN} with no window claim. */
     private static final long COMPRESSED_UNKNOWN_VERSION_COMP_INFO = 0x83c82L;
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     @Test
     void compressedUnknownAlgorithmVersionEntryIsRefusedByName() throws Exception {
-        final File archive = patchCompInfo("rar7/rar7-md6g.rar", COMPRESSED_UNKNOWN_VERSION_COMP_INFO);
+        final File archive =
+                patchCompInfo("rar7/rar7-md6g.rar", COMPRESSED_UNKNOWN_VERSION_COMP_INFO);
 
         try (Archive a = new Archive(archive)) {
             final FileHeader hd = a.getFileHeaders().get(0);
-            assertThat(hd.getUnpVersion()).as("unrecognized algorithm version").isEqualTo((byte) -1);
+            assertThat(hd.getUnpVersion())
+                    .as("unrecognized algorithm version")
+                    .isEqualTo((byte) -1);
             assertThat(hd.getUnpMethod()).as("compressed, not stored").isNotZero();
 
-            final Throwable thrown = catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
+            final Throwable thrown =
+                    catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
             assertThat(thrown).isExactlyInstanceOf(UnsupportedRarMethodException.class);
         }
     }
@@ -77,13 +79,16 @@ class ArchiveUnknownAlgoVersionTest {
         final File patched = patchCompInfo("rar5unpack/m0-plain-128k.rar", 2L);
         try (Archive a = new Archive(patched)) {
             final FileHeader hd = a.getFileHeaders().get(0);
-            assertThat(hd.getUnpVersion()).as("unrecognized algorithm version").isEqualTo((byte) -1);
+            assertThat(hd.getUnpVersion())
+                    .as("unrecognized algorithm version")
+                    .isEqualTo((byte) -1);
             assertThat(hd.getUnpMethod()).as("stored").isZero();
         }
         assertThat(extract(patched))
-            .as("a stored entry carries no version-specific encoding -- it must extract "
-                + "byte-identically regardless of an unrecognized algorithm version")
-            .isEqualTo(oracle);
+                .as(
+                        "a stored entry carries no version-specific encoding -- it must extract"
+                            + " byte-identically regardless of an unrecognized algorithm version")
+                .isEqualTo(oracle);
     }
 
     @Test
@@ -100,11 +105,14 @@ class ArchiveUnknownAlgoVersionTest {
         final File second = new File(first.getParentFile(), "stored.part2.rar");
         try (Archive a = new Archive(second)) {
             final FileHeader hd = a.getFileHeaders().get(0);
-            assertThat(hd.getUnpVersion()).as("unrecognized algorithm version").isEqualTo((byte) -1);
+            assertThat(hd.getUnpVersion())
+                    .as("unrecognized algorithm version")
+                    .isEqualTo((byte) -1);
             assertThat(hd.getUnpMethod()).as("stored").isZero();
             assertThat(hd.isSplitBefore()).as("mid-set start").isTrue();
 
-            final Throwable thrown = catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
+            final Throwable thrown =
+                    catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
             assertThat(thrown).isExactlyInstanceOf(MissingPreviousVolumeException.class);
         }
     }
@@ -134,9 +142,11 @@ class ArchiveUnknownAlgoVersionTest {
      * the same per-volume promotion {@code ArchiveRar7ExtractionTest#compatPromoted}/
      * {@code #promoteToRar7} use to promote this same fixture set to algorithm version 1.
      */
-    private void promoteAllVolumesToUnknownAlgorithmVersion(final File firstVolume) throws Exception {
+    private void promoteAllVolumesToUnknownAlgorithmVersion(final File firstVolume)
+            throws Exception {
         final File dir = firstVolume.getParentFile();
-        final String prefix = firstVolume.getName().substring(0, firstVolume.getName().indexOf(".part"));
+        final String prefix =
+                firstVolume.getName().substring(0, firstVolume.getName().indexOf(".part"));
         for (final File f : dir.listFiles()) {
             if (f.getName().startsWith(prefix + ".part")) {
                 orIntoFirstFileHeaderCompInfo(f, 2L);
@@ -144,7 +154,8 @@ class ArchiveUnknownAlgoVersionTest {
         }
     }
 
-    private void orIntoFirstFileHeaderCompInfo(final File archive, final long orBits) throws Exception {
+    private void orIntoFirstFileHeaderCompInfo(final File archive, final long orBits)
+            throws Exception {
         final long position;
         try (Archive a = new Archive(archive)) {
             position = a.getFileHeaders().get(0).getPositionInFile();
@@ -152,8 +163,9 @@ class ArchiveUnknownAlgoVersionTest {
 
         final byte[] bytes = Files.readAllBytes(archive.toPath());
         final int start = (int) position;
-        final int headerLength = Rar5BaseBlock.checkHeaderSize(
-            Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
+        final int headerLength =
+                Rar5BaseBlock.checkHeaderSize(
+                        Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
         final byte[] header = Arrays.copyOfRange(bytes, start, start + headerLength);
 
         final int[] cursor = {4}; // skip the 4-byte header CRC32
@@ -164,7 +176,8 @@ class ArchiveUnknownAlgoVersionTest {
         final int width = cursor[0] - compInfoStart;
 
         System.arraycopy(vint(compInfo | orBits, width), 0, header, compInfoStart, width);
-        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        Raw.writeIntLittleEndian(
+                header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
         System.arraycopy(header, 0, bytes, start, header.length);
         Files.write(archive.toPath(), bytes);
     }
@@ -178,7 +191,8 @@ class ArchiveUnknownAlgoVersionTest {
     }
 
     private File copyOf(final String resource) throws Exception {
-        final byte[] bytes = Files.readAllBytes(Paths.get(getClass().getResource(resource).toURI()));
+        final byte[] bytes =
+                Files.readAllBytes(Paths.get(getClass().getResource(resource).toURI()));
         final Path p = tempDir.resolve(Paths.get(resource).getFileName().toString());
         Files.write(p, bytes);
         return p.toFile();
@@ -199,8 +213,9 @@ class ArchiveUnknownAlgoVersionTest {
 
         final byte[] bytes = Files.readAllBytes(archive.toPath());
         final int start = (int) position;
-        final int headerLength = Rar5BaseBlock.checkHeaderSize(
-            Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
+        final int headerLength =
+                Rar5BaseBlock.checkHeaderSize(
+                        Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
         final byte[] header = Arrays.copyOfRange(bytes, start, start + headerLength);
 
         final int[] cursor = {4}; // skip the 4-byte header CRC32
@@ -211,7 +226,8 @@ class ArchiveUnknownAlgoVersionTest {
         final int width = cursor[0] - compInfoStart;
 
         System.arraycopy(vint(newCompInfo, width), 0, header, compInfoStart, width);
-        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        Raw.writeIntLittleEndian(
+                header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
         System.arraycopy(header, 0, bytes, start, header.length);
         Files.write(archive.toPath(), bytes);
         return archive;
@@ -266,8 +282,9 @@ class ArchiveUnknownAlgoVersionTest {
             out[i] = (byte) ((v & 0x7f) | (i < width - 1 ? 0x80 : 0));
             v >>>= 7;
         }
-        assertThat(v).as("value %s does not fit %s vint bytes", Long.toHexString(value), width)
-            .isEqualTo(0L);
+        assertThat(v)
+                .as("value %s does not fit %s vint bytes", Long.toHexString(value), width)
+                .isEqualTo(0L);
         return out;
     }
 }

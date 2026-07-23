@@ -4,21 +4,20 @@ import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5RedirType;
 import com.github.junrar.volume.VolumeManager;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Junrar {
 
     private static final Logger logger = LoggerFactory.getLogger(Junrar.class);
 
-    public static List<File> extract(final String rarPath, final String destinationPath) throws IOException, RarException {
+    public static List<File> extract(final String rarPath, final String destinationPath)
+            throws IOException, RarException {
         // Explicit cast disambiguates from the new (String, String, ArchiveOptions) overload.
         return extract(rarPath, destinationPath, (String) null);
     }
@@ -30,7 +29,9 @@ public class Junrar {
      * longer compiles — use the two-argument overload, cast to {@code (String) null}, or an
      * {@code ArchiveOptions} without a password.
      */
-    public static List<File> extract(final String rarPath, final String destinationPath, final String password) throws IOException, RarException {
+    public static List<File> extract(
+            final String rarPath, final String destinationPath, final String password)
+            throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
             throw new IllegalArgumentException("archive and destination must be set");
         }
@@ -43,14 +44,17 @@ public class Junrar {
      * two-argument overload, cast to {@code (String) null}, or pass an {@code ArchiveOptions}
      * without a password.
      */
-    public static List<File> extract(final String rarPath, final String destinationPath, final ArchiveOptions options) throws IOException, RarException {
+    public static List<File> extract(
+            final String rarPath, final String destinationPath, final ArchiveOptions options)
+            throws IOException, RarException {
         if (rarPath == null || destinationPath == null) {
             throw new IllegalArgumentException("archive and destination must be set");
         }
         return extract(new File(rarPath), new File(destinationPath), options);
     }
 
-    public static List<File> extract(final File rar, final File destinationFolder) throws RarException, IOException {
+    public static List<File> extract(final File rar, final File destinationFolder)
+            throws RarException, IOException {
         // Explicit cast disambiguates from the new (File, File, ArchiveOptions) overload.
         return extract(rar, destinationFolder, (String) null);
     }
@@ -62,7 +66,8 @@ public class Junrar {
      * longer compiles — use the two-argument overload, cast to {@code (String) null}, or an
      * {@code ArchiveOptions} without a password.
      */
-    public static List<File> extract(final File rar, final File destinationFolder, final String password)
+    public static List<File> extract(
+            final File rar, final File destinationFolder, final String password)
             throws RarException, IOException {
         validateRarPath(rar);
         validateDestinationPath(destinationFolder);
@@ -80,7 +85,8 @@ public class Junrar {
      *
      * @see ArchiveOptions
      */
-    public static List<File> extract(final File rar, final File destinationFolder, final ArchiveOptions options)
+    public static List<File> extract(
+            final File rar, final File destinationFolder, final ArchiveOptions options)
             throws RarException, IOException {
         validateRarPath(rar);
         validateDestinationPath(destinationFolder);
@@ -90,7 +96,9 @@ public class Junrar {
         return extractArchiveTo(archive, lfe);
     }
 
-    public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder) throws RarException, IOException {
+    public static List<File> extract(
+            final InputStream resourceAsStream, final File destinationFolder)
+            throws RarException, IOException {
         // Explicit cast disambiguates from the new (InputStream, File, ArchiveOptions) overload.
         return extract(resourceAsStream, destinationFolder, (String) null);
     }
@@ -102,7 +110,9 @@ public class Junrar {
      * longer compiles — use the two-argument overload, cast to {@code (String) null}, or an
      * {@code ArchiveOptions} without a password.
      */
-    public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder, final String password) throws RarException, IOException {
+    public static List<File> extract(
+            final InputStream resourceAsStream, final File destinationFolder, final String password)
+            throws RarException, IOException {
         validateDestinationPath(destinationFolder);
 
         final Archive arch = createArchiveOrThrowException(resourceAsStream, password);
@@ -116,7 +126,11 @@ public class Junrar {
      * two-argument overload, cast to {@code (String) null}, or pass an {@code ArchiveOptions}
      * without a password.
      */
-    public static List<File> extract(final InputStream resourceAsStream, final File destinationFolder, final ArchiveOptions options) throws RarException, IOException {
+    public static List<File> extract(
+            final InputStream resourceAsStream,
+            final File destinationFolder,
+            final ArchiveOptions options)
+            throws RarException, IOException {
         validateDestinationPath(destinationFolder);
 
         final Archive arch = createArchiveOrThrowException(resourceAsStream, options);
@@ -124,7 +138,9 @@ public class Junrar {
         return extractArchiveTo(arch, lfe);
     }
 
-    public static List<File> extract(final VolumeManager volumeManager, final File destinationFolder) throws IOException, RarException {
+    public static List<File> extract(
+            final VolumeManager volumeManager, final File destinationFolder)
+            throws IOException, RarException {
         validateDestinationPath(destinationFolder);
 
         // Explicit cast disambiguates from the new (VolumeManager, ArchiveOptions) overload.
@@ -140,7 +156,9 @@ public class Junrar {
      * and no longer compiles — use the two-argument overload, cast to {@code (String) null},
      * or an {@code ArchiveOptions} without a password.
      */
-    public static List<File> extract(final VolumeManager volumeManager, final File destinationFolder, final String password) throws IOException, RarException {
+    public static List<File> extract(
+            final VolumeManager volumeManager, final File destinationFolder, final String password)
+            throws IOException, RarException {
         validateDestinationPath(destinationFolder);
 
         final Archive arch = createArchiveOrThrowException(volumeManager, password);
@@ -154,7 +172,11 @@ public class Junrar {
      * two-argument overload, cast to {@code (String) null}, or pass an {@code ArchiveOptions}
      * without a password.
      */
-    public static List<File> extract(final VolumeManager volumeManager, final File destinationFolder, final ArchiveOptions options) throws IOException, RarException {
+    public static List<File> extract(
+            final VolumeManager volumeManager,
+            final File destinationFolder,
+            final ArchiveOptions options)
+            throws IOException, RarException {
         validateDestinationPath(destinationFolder);
 
         final Archive arch = createArchiveOrThrowException(volumeManager, options);
@@ -162,21 +184,25 @@ public class Junrar {
         return extractArchiveTo(arch, lfe);
     }
 
-
-    public static List<ContentDescription> getContentsDescription(final File rar) throws RarException, IOException {
+    public static List<ContentDescription> getContentsDescription(final File rar)
+            throws RarException, IOException {
         validateRarPath(rar);
-        // Explicit cast disambiguates from the new createArchiveOrThrowException(File, ArchiveOptions) overload.
+        // Explicit cast disambiguates from the new createArchiveOrThrowException(File,
+        // ArchiveOptions) overload.
         final Archive arch = createArchiveOrThrowException(rar, (String) null);
         return getContentsDescriptionFromArchive(arch);
     }
 
-    public static List<ContentDescription> getContentsDescription(final InputStream resourceAsStream) throws RarException, IOException {
-        // Explicit cast disambiguates from the new createArchiveOrThrowException(InputStream, ArchiveOptions) overload.
+    public static List<ContentDescription> getContentsDescription(
+            final InputStream resourceAsStream) throws RarException, IOException {
+        // Explicit cast disambiguates from the new createArchiveOrThrowException(InputStream,
+        // ArchiveOptions) overload.
         final Archive arch = createArchiveOrThrowException(resourceAsStream, (String) null);
         return getContentsDescriptionFromArchive(arch);
     }
 
-    private static List<ContentDescription> getContentsDescriptionFromArchive(final Archive arch) throws RarException, IOException {
+    private static List<ContentDescription> getContentsDescriptionFromArchive(final Archive arch)
+            throws RarException, IOException {
         final List<ContentDescription> contents = new ArrayList<>();
         try {
             if (arch.isEncrypted()) {
@@ -184,7 +210,8 @@ public class Junrar {
                 return new ArrayList<>();
             }
             for (final FileHeader fileHeader : arch) {
-                contents.add(new ContentDescription(fileHeader.getFileName(), fileHeader.getUnpSize()));
+                contents.add(
+                        new ContentDescription(fileHeader.getFileName(), fileHeader.getUnpSize()));
             }
         } finally {
             arch.close();
@@ -192,7 +219,9 @@ public class Junrar {
         return contents;
     }
 
-    private static Archive createArchiveOrThrowException(final VolumeManager volumeManager, final String password) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(
+            final VolumeManager volumeManager, final String password)
+            throws RarException, IOException {
         try {
             return new Archive(volumeManager, null, password);
         } catch (final RarException | IOException e) {
@@ -201,7 +230,9 @@ public class Junrar {
         }
     }
 
-    private static Archive createArchiveOrThrowException(final VolumeManager volumeManager, final ArchiveOptions options) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(
+            final VolumeManager volumeManager, final ArchiveOptions options)
+            throws RarException, IOException {
         try {
             return new Archive(volumeManager, options);
         } catch (final RarException | IOException e) {
@@ -210,7 +241,8 @@ public class Junrar {
         }
     }
 
-    private static Archive createArchiveOrThrowException(final InputStream rarAsStream, final String password) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(
+            final InputStream rarAsStream, final String password) throws RarException, IOException {
         try {
             return new Archive(rarAsStream, password);
         } catch (final RarException | IOException e) {
@@ -219,7 +251,9 @@ public class Junrar {
         }
     }
 
-    private static Archive createArchiveOrThrowException(final InputStream rarAsStream, final ArchiveOptions options) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(
+            final InputStream rarAsStream, final ArchiveOptions options)
+            throws RarException, IOException {
         try {
             return new Archive(rarAsStream, options);
         } catch (final RarException | IOException e) {
@@ -228,7 +262,8 @@ public class Junrar {
         }
     }
 
-    private static Archive createArchiveOrThrowException(final File file, final String password) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(final File file, final String password)
+            throws RarException, IOException {
         try {
             return new Archive(file, password);
         } catch (final RarException | IOException e) {
@@ -237,7 +272,8 @@ public class Junrar {
         }
     }
 
-    private static Archive createArchiveOrThrowException(final File file, final ArchiveOptions options) throws RarException, IOException {
+    private static Archive createArchiveOrThrowException(
+            final File file, final ArchiveOptions options) throws RarException, IOException {
         try {
             return new Archive(file, options);
         } catch (final RarException | IOException e) {
@@ -251,7 +287,8 @@ public class Junrar {
             throw new IllegalArgumentException("archive and destination must me set");
         }
         if (!destinationFolder.exists() || !destinationFolder.isDirectory()) {
-            throw new IllegalArgumentException("the destination must exist and point to a directory: " + destinationFolder);
+            throw new IllegalArgumentException(
+                    "the destination must exist and point to a directory: " + destinationFolder);
         }
     }
 
@@ -263,11 +300,14 @@ public class Junrar {
             throw new IllegalArgumentException("the archive does not exit: " + rar);
         }
         if (!rar.isFile()) {
-            throw new IllegalArgumentException("First argument should be a file but was " + rar.getAbsolutePath());
+            throw new IllegalArgumentException(
+                    "First argument should be a file but was " + rar.getAbsolutePath());
         }
     }
 
-    private static List<File> extractArchiveTo(final Archive arch, final LocalFolderExtractor destination) throws IOException, RarException {
+    private static List<File> extractArchiveTo(
+            final Archive arch, final LocalFolderExtractor destination)
+            throws IOException, RarException {
         final List<File> extractedFiles = new ArrayList<>();
         try {
             for (final FileHeader fh : arch) {
@@ -288,10 +328,8 @@ public class Junrar {
     }
 
     private static File tryToExtract(
-            final LocalFolderExtractor destination,
-            final Archive arch,
-            final FileHeader fileHeader
-    ) throws IOException, RarException {
+            final LocalFolderExtractor destination, final Archive arch, final FileHeader fileHeader)
+            throws IOException, RarException {
         final String fileNameString = fileHeader.getFileName();
 
         Junrar.logger.info("extracting: {}", fileNameString);
@@ -308,5 +346,4 @@ public class Junrar {
             return destination.extract(arch, fileHeader);
         }
     }
-
 }

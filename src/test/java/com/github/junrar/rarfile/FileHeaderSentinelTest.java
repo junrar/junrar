@@ -1,9 +1,9 @@
 package com.github.junrar.rarfile;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.exception.CorruptHeaderException;
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Pins T1 (docs/porting/MIGRATION_MANUAL.md SS6): a non-LHD_LARGE header
@@ -16,15 +16,31 @@ class FileHeaderSentinelTest {
     void unpSizeSentinelPromotesFullUnpackSizeToInt64Max() throws CorruptHeaderException {
         byte[] name = "test".getBytes();
         byte[] body = {
-            (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, // unpSize = 0xFFFFFFFF (sentinel)
-            3,                                                  // hostOS = unix
-            0, 0, 0, 0,                                         // fileCRC
-            0, 0, 0, 0,                                         // fileTime
-            0,                                                  // unpVersion
-            0,                                                  // unpMethod
-            (byte) name.length, 0,                              // nameSize (LE)
-            0, 0, 0, 0,                                         // fileAttr
-            name[0], name[1], name[2], name[3],                 // fileNameBytes; no LHD_LARGE => no high*Size fields
+            (byte) 0xFF,
+            (byte) 0xFF,
+            (byte) 0xFF,
+            (byte) 0xFF, // unpSize = 0xFFFFFFFF (sentinel)
+            3, // hostOS = unix
+            0,
+            0,
+            0,
+            0, // fileCRC
+            0,
+            0,
+            0,
+            0, // fileTime
+            0, // unpVersion
+            0, // unpMethod
+            (byte) name.length,
+            0, // nameSize (LE)
+            0,
+            0,
+            0,
+            0, // fileAttr
+            name[0],
+            name[1],
+            name[2],
+            name[3], // fileNameBytes; no LHD_LARGE => no high*Size fields
         };
 
         // Mirrors ProtectHeaderTest's construction: BaseBlock(headCRC, type=0x74

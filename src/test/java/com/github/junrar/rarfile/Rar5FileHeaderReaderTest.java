@@ -1,13 +1,14 @@
 package com.github.junrar.rarfile;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
 import com.github.junrar.rarfile.rar5.Rar5BlockType;
 import com.github.junrar.rarfile.rar5.Rar5FileExtraType;
 import com.github.junrar.rarfile.rar5.Rar5HashType;
 import com.github.junrar.rarfile.rar5.Rar5RedirType;
-import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.attribute.FileTime;
@@ -15,9 +16,7 @@ import java.security.MessageDigest;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.zip.CRC32;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
 
 /**
  * M3.3 (issue #24) direct-parse unit tests for {@link Rar5FileHeaderReader}: the FILE/SERVICE
@@ -83,8 +82,15 @@ class Rar5FileHeaderReaderTest {
     private static final long FHFL_CRC32 = 0x0004;
 
     /** Builds the FILE/SERVICE fixed-field byte sequence (manual &sect;4b, exact order). */
-    private static byte[] fixedFields(long fileFlags, long unpSize, long fileAttr, Integer mtimeUnix,
-                                       Integer crc32, long compInfo, long hostOS, byte[] nameBytes) {
+    private static byte[] fixedFields(
+            long fileFlags,
+            long unpSize,
+            long fileAttr,
+            Integer mtimeUnix,
+            Integer crc32,
+            long compInfo,
+            long hostOS,
+            byte[] nameBytes) {
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         writeLen(out, vint(fileFlags));
         writeLen(out, vint(unpSize));
@@ -103,8 +109,13 @@ class Rar5FileHeaderReaderTest {
     }
 
     /** Same as {@link #fixedFields}, but omits the name bytes (for the oversized-name row). */
-    private static byte[] fixedFieldsNoNameBytes(long fileFlags, long unpSize, long fileAttr, long compInfo,
-                                                  long hostOS, long declaredNameSize) {
+    private static byte[] fixedFieldsNoNameBytes(
+            long fileFlags,
+            long unpSize,
+            long fileAttr,
+            long compInfo,
+            long hostOS,
+            long declaredNameSize) {
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         writeLen(out, vint(fileFlags));
         writeLen(out, vint(unpSize));
@@ -158,7 +169,8 @@ class Rar5FileHeaderReaderTest {
 
     @Test
     void minimalFileStoreCrc32WindowsHost() throws Exception {
-        final byte[] fixed = fixedFields(FHFL_CRC32, 100, 0x20, null, 0xDEADBEEF, 0, 0, name("MINIMAL.TXT"));
+        final byte[] fixed =
+                fixedFields(FHFL_CRC32, 100, 0x20, null, 0xDEADBEEF, 0, 0, name("MINIMAL.TXT"));
         final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, null));
 
         assertThat(fh.getFileName()).isEqualTo("MINIMAL.TXT");
@@ -232,7 +244,8 @@ class Rar5FileHeaderReaderTest {
         final int cNs = 456_000_000;
         final int aNs = 789_000_000;
         final ByteArrayOutputStream payload = new ByteArrayOutputStream();
-        payload.write((0x01 | 0x10 | 0x02 | 0x04 | 0x08)); // UNIXTIME | UNIX_NS | MTIME | CTIME | ATIME
+        payload.write(
+                (0x01 | 0x10 | 0x02 | 0x04 | 0x08)); // UNIXTIME | UNIX_NS | MTIME | CTIME | ATIME
         writeIntLE(payload, (int) baseSeconds);
         writeIntLE(payload, (int) baseSeconds);
         writeIntLE(payload, (int) baseSeconds);
@@ -244,9 +257,12 @@ class Rar5FileHeaderReaderTest {
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("t.txt"));
         final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
 
-        assertThat(fh.getLastModifiedTime()).isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds, mNs)));
-        assertThat(fh.getCreationTime()).isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds, cNs)));
-        assertThat(fh.getLastAccessTime()).isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds, aNs)));
+        assertThat(fh.getLastModifiedTime())
+                .isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds, mNs)));
+        assertThat(fh.getCreationTime())
+                .isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds, cNs)));
+        assertThat(fh.getLastAccessTime())
+                .isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds, aNs)));
     }
 
     // ---- HASH ---------------------------------------------------------------------
@@ -276,7 +292,8 @@ class Rar5FileHeaderReaderTest {
         final ByteArrayOutputStream payload = new ByteArrayOutputStream();
         writeLen(payload, vint(0)); // flags, unused
         writeLen(payload, vint(7));
-        final byte[] extra = extraRecord(Rar5FileExtraType.VERSION.getValue(), payload.toByteArray());
+        final byte[] extra =
+                extraRecord(Rar5FileExtraType.VERSION.getValue(), payload.toByteArray());
 
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("VERFILE.TXT"));
         final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
@@ -362,7 +379,8 @@ class Rar5FileHeaderReaderTest {
         extra.write(0x00); // byte a correct implementation must never reach
 
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("m.txt"));
-        final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra.toByteArray()));
+        final FileHeader fh =
+                parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra.toByteArray()));
 
         assertThat(fh.getUnixOwner()).isNull();
     }
@@ -381,7 +399,8 @@ class Rar5FileHeaderReaderTest {
         writeLen(payload, group);
         writeLen(payload, vint(501));
         writeLen(payload, vint(20));
-        final byte[] extra = extraRecord(Rar5FileExtraType.UOWNER.getValue(), payload.toByteArray());
+        final byte[] extra =
+                extraRecord(Rar5FileExtraType.UOWNER.getValue(), payload.toByteArray());
 
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 1, name("u.txt"));
         final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
@@ -439,8 +458,8 @@ class Rar5FileHeaderReaderTest {
         payload.write(14);
         writeLen(payload, new byte[16]);
         writeLen(payload, new byte[16]);
-        writeLen(payload, new byte[]{9, 9, 9, 9, 9, 9, 9, 9}); // pswCheck
-        writeLen(payload, new byte[]{0, 0, 0, 0}); // csum that cannot match
+        writeLen(payload, new byte[] {9, 9, 9, 9, 9, 9, 9, 9}); // pswCheck
+        writeLen(payload, new byte[] {0, 0, 0, 0}); // csum that cannot match
         final byte[] extra = extraRecord(Rar5FileExtraType.CRYPT.getValue(), payload.toByteArray());
 
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("enc.txt"));
@@ -476,14 +495,14 @@ class Rar5FileHeaderReaderTest {
     void nonPositiveNameSizeRejected() {
         final byte[] fixed = fixedFieldsNoNameBytes(0, 0, 0, 0, 0, 0);
         assertThat(catchThrowable(() -> parse(craft(Rar5BlockType.FILE.getValue(), fixed, null))))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
     void oversizedNameRunningPastBufferRejected() {
         final byte[] fixed = fixedFieldsNoNameBytes(0, 0, 0, 0, 0, 50);
         assertThat(catchThrowable(() -> parse(craft(Rar5BlockType.FILE.getValue(), fixed, null))))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -499,7 +518,7 @@ class Rar5FileHeaderReaderTest {
         final byte[] nameBytes = {'a', 0x00, 'b'};
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, nameBytes);
         assertThat(catchThrowable(() -> parse(craft(Rar5BlockType.FILE.getValue(), fixed, null))))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     /**
@@ -520,7 +539,8 @@ class Rar5FileHeaderReaderTest {
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("t.txt"));
         final FileHeader fh = parse(craft(Rar5BlockType.FILE.getValue(), fixed, extra));
 
-        assertThat(fh.getLastModifiedTime()).isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds)));
+        assertThat(fh.getLastModifiedTime())
+                .isEqualTo(FileTime.from(Instant.ofEpochSecond(baseSeconds)));
     }
 
     /**
@@ -545,7 +565,8 @@ class Rar5FileHeaderReaderTest {
         final byte[] extra = extraRecord(Rar5FileExtraType.CRYPT.getValue(), payload.toByteArray());
 
         final byte[] serviceFixed = fixedFields(0, 0, 0, null, null, 0, 0, name("CMT"));
-        final FileHeader service = parse(craft(Rar5BlockType.SERVICE.getValue(), serviceFixed, extra));
+        final FileHeader service =
+                parse(craft(Rar5BlockType.SERVICE.getValue(), serviceFixed, extra));
         assertThat(service.isUsePswCheck()).isFalse();
         assertThat(service.getPswCheck()).isNull();
 
@@ -574,9 +595,10 @@ class Rar5FileHeaderReaderTest {
         extra.write(stray); // the byte RAR 5.21 forgot to declare
 
         final byte[] fixed = fixedFields(0, 0, 0, null, null, 0, 0, name("CMT"));
-        final FileHeader fh = parse(craft(Rar5BlockType.SERVICE.getValue(), fixed, extra.toByteArray()));
+        final FileHeader fh =
+                parse(craft(Rar5BlockType.SERVICE.getValue(), fixed, extra.toByteArray()));
 
-        assertThat(fh.getSubData()).isEqualTo(new byte[]{0x11, 0x22, 0x33, 0x44});
+        assertThat(fh.getSubData()).isEqualTo(new byte[] {0x11, 0x22, 0x33, 0x44});
     }
 
     /**

@@ -1,22 +1,21 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.UnsupportedDictionarySizeException;
 import com.github.junrar.io.Raw;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.rarfile.rar5.Rar5BaseBlock;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.io.TempDir;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
  * M4.2 (issue #34) public-path acceptance for RAR7 routing: a version-70 entry now reaches the
@@ -43,10 +42,10 @@ class ArchiveRar7ExtractionTest {
 
     /** Algorithm version 1 plus {@code FCI_RAR5_COMPAT} (bit 20, {@code d861246:headers5.hpp:65}). */
     private static final long ALGO_RAR7 = 1L;
+
     private static final long FCI_RAR5_COMPAT = 1L << 20;
 
-    @TempDir
-    Path tempDir;
+    @TempDir Path tempDir;
 
     @Test
     void rar7StreamIsRefusedByTheDictionaryGateNotByMethodName() throws Exception {
@@ -57,7 +56,8 @@ class ArchiveRar7ExtractionTest {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getUnpVersion()).isEqualTo((byte) 70);
 
-            final Throwable thrown = catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
+            final Throwable thrown =
+                    catchThrowable(() -> a.extractFile(hd, new ByteArrayOutputStream()));
             assertThat(thrown).isExactlyInstanceOf(UnsupportedDictionarySizeException.class);
             assertThat(thrown.getMessage()).contains(Long.toString(6L << 30));
         }
@@ -72,11 +72,14 @@ class ArchiveRar7ExtractionTest {
         try (Archive a = new Archive(compat)) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getUnpVersion())
-                .as("FCI_RAR5_COMPAT demotes algorithm version 1 to the RAR5 decoder").isEqualTo((byte) 50);
+                    .as("FCI_RAR5_COMPAT demotes algorithm version 1 to the RAR5 decoder")
+                    .isEqualTo((byte) 50);
         }
         assertThat(extract(compat))
-            .as("a compat-demoted header must decode with DCB=64, byte-identical to the RAR5 original")
-            .isEqualTo(oracle);
+                .as(
+                        "a compat-demoted header must decode with DCB=64, byte-identical to the"
+                                + " RAR5 original")
+                .isEqualTo(oracle);
     }
 
     @Test
@@ -96,14 +99,17 @@ class ArchiveRar7ExtractionTest {
         try (Archive a = new Archive(patched)) {
             final FileHeader hd = a.getFileHeaders().get(0);
             assertThat(hd.getUnpVersion())
-                .as("FCI_RAR5_COMPAT still demotes the decode to RAR5").isEqualTo((byte) 50);
+                    .as("FCI_RAR5_COMPAT still demotes the decode to RAR5")
+                    .isEqualTo((byte) 50);
             assertThat(hd.getRar5WinSize())
-                .as("256 KB + 1/32 — not a power of two").isEqualTo(0x42000L);
+                    .as("256 KB + 1/32 — not a power of two")
+                    .isEqualTo(0x42000L);
         }
         assertThat(extract(patched))
-            .as("a non-power-of-two window must wrap at its declared size, not at size rounded "
-                + "down to a power of two")
-            .isEqualTo(oracle);
+                .as(
+                        "a non-power-of-two window must wrap at its declared size, not at size"
+                                + " rounded down to a power of two")
+                .isEqualTo(oracle);
     }
 
     @Test
@@ -115,8 +121,9 @@ class ArchiveRar7ExtractionTest {
         final byte[] oracle = extract(rar5Fixture());
         for (int frac = 1; frac <= 5; frac++) {
             final long winSize = 0x40000L + 0x2000L * frac;
-            assertThat(winSize).as("fraction %d still wraps a 300 KB payload", frac)
-                .isLessThan(oracle.length);
+            assertThat(winSize)
+                    .as("fraction %d still wraps a 300 KB payload", frac)
+                    .isLessThan(oracle.length);
             final File patched = compatPatched(rar5Fixture(), (1L << 10) | ((long) frac << 15));
             try (Archive a = new Archive(patched)) {
                 assertThat(a.getFileHeaders().get(0).getRar5WinSize()).isEqualTo(winSize);
@@ -142,8 +149,8 @@ class ArchiveRar7ExtractionTest {
             assertThat(hd.getRar5WinSize()).isEqualTo(2L << 30);
         }
         assertThat(extract(patched))
-            .as("a 2 GB dictionary claim extracts byte-identically to the 128 KB original")
-            .isEqualTo(oracle);
+                .as("a 2 GB dictionary claim extracts byte-identically to the 128 KB original")
+                .isEqualTo(oracle);
         // That the claim allocates only the floor is asserted at the engine level, in
         // Unpack5Test#windowMatrixAccepts2gAsASegmentedWindow.
     }
@@ -156,8 +163,9 @@ class ArchiveRar7ExtractionTest {
         }
         final byte[] bytes = Files.readAllBytes(archive.toPath());
         final int start = (int) position;
-        final int headerLength = Rar5BaseBlock.checkHeaderSize(
-            Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
+        final int headerLength =
+                Rar5BaseBlock.checkHeaderSize(
+                        Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
 
         final int[] cursor = {start + 4};
         readVint(bytes, cursor);
@@ -170,7 +178,8 @@ class ArchiveRar7ExtractionTest {
         System.arraycopy(vint(patched, width), 0, bytes, compInfoStart, width);
 
         final byte[] header = Arrays.copyOfRange(bytes, start, start + headerLength);
-        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        Raw.writeIntLittleEndian(
+                header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
         System.arraycopy(header, 0, bytes, start, header.length);
         Files.write(archive.toPath(), bytes);
     }
@@ -191,8 +200,8 @@ class ArchiveRar7ExtractionTest {
             assertThat(hd.isSplitAfter()).as("the entry really does span volumes").isTrue();
         }
         assertThat(extract(first))
-            .as("a version-70 entry must merge volumes through the RAR5 path, not the RAR3 one")
-            .isEqualTo(oracle);
+                .as("a version-70 entry must merge volumes through the RAR5 path, not the RAR3 one")
+                .isEqualTo(oracle);
     }
 
     // ---- helpers ------------------------------------------------------------------------------
@@ -221,7 +230,8 @@ class ArchiveRar7ExtractionTest {
      */
     private File compatPromoted(final File firstVolume) throws Exception {
         final File dir = firstVolume.getParentFile();
-        final String prefix = firstVolume.getName().substring(0, firstVolume.getName().indexOf(".part"));
+        final String prefix =
+                firstVolume.getName().substring(0, firstVolume.getName().indexOf(".part"));
         for (final File f : dir.listFiles()) {
             if (f.getName().startsWith(prefix + ".part")) {
                 promoteToRar7(f);
@@ -237,11 +247,12 @@ class ArchiveRar7ExtractionTest {
         }
         final byte[] bytes = Files.readAllBytes(archive.toPath());
         final int start = (int) position;
-        final int headerLength = Rar5BaseBlock.checkHeaderSize(
-            Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
+        final int headerLength =
+                Rar5BaseBlock.checkHeaderSize(
+                        Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
 
         final int[] cursor = {start + 4};
-        readVint(bytes, cursor);                       // header size
+        readVint(bytes, cursor); // header size
         final int bodyStart = cursor[0];
 
         final int compInfoStart = compressionInfoOffset(bytes, bodyStart);
@@ -251,7 +262,8 @@ class ArchiveRar7ExtractionTest {
         System.arraycopy(vint(compInfo | ALGO_RAR7, width), 0, bytes, compInfoStart, width);
 
         final byte[] header = Arrays.copyOfRange(bytes, start, start + headerLength);
-        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        Raw.writeIntLittleEndian(
+                header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
         System.arraycopy(header, 0, bytes, start, header.length);
         Files.write(archive.toPath(), bytes);
     }
@@ -273,7 +285,8 @@ class ArchiveRar7ExtractionTest {
     }
 
     private File copyOf(final String resource) throws Exception {
-        final byte[] bytes = Files.readAllBytes(Paths.get(getClass().getResource(resource).toURI()));
+        final byte[] bytes =
+                Files.readAllBytes(Paths.get(getClass().getResource(resource).toURI()));
         final Path p = tempDir.resolve(Paths.get(resource).getFileName().toString());
         Files.write(p, bytes);
         return p.toFile();
@@ -305,8 +318,9 @@ class ArchiveRar7ExtractionTest {
 
         final byte[] bytes = Files.readAllBytes(archive.toPath());
         final int start = (int) position;
-        final int headerLength = Rar5BaseBlock.checkHeaderSize(
-            Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
+        final int headerLength =
+                Rar5BaseBlock.checkHeaderSize(
+                        Arrays.copyOfRange(bytes, start, start + Rar5BaseBlock.FIRST_READ_SIZE));
 
         // CRC32(4) | HeaderSize vint | body of exactly HeaderSize bytes.
         final int[] cursor = {start + 4};
@@ -330,16 +344,24 @@ class ArchiveRar7ExtractionTest {
         final int lead = compInfoStart - bodyStart;
         System.arraycopy(bytes, bodyStart, header, bodyOffset, lead);
         System.arraycopy(newCompInfo, 0, header, bodyOffset + lead, newCompInfo.length);
-        System.arraycopy(bytes, compInfoStart + compInfoWidth,
-            header, bodyOffset + lead + newCompInfo.length,
-            (int) headerSize - lead - compInfoWidth);
-        Raw.writeIntLittleEndian(header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
+        System.arraycopy(
+                bytes,
+                compInfoStart + compInfoWidth,
+                header,
+                bodyOffset + lead + newCompInfo.length,
+                (int) headerSize - lead - compInfoWidth);
+        Raw.writeIntLittleEndian(
+                header, 0, RarCRC.computeHeaderCrc32(header, 4, header.length - 4));
 
         final byte[] out = new byte[bytes.length + delta];
         System.arraycopy(bytes, 0, out, 0, start);
         System.arraycopy(header, 0, out, start, header.length);
-        System.arraycopy(bytes, start + headerLength, out, start + header.length,
-            bytes.length - start - headerLength);
+        System.arraycopy(
+                bytes,
+                start + headerLength,
+                out,
+                start + header.length,
+                bytes.length - start - headerLength);
         Files.write(archive.toPath(), out);
         return archive;
     }
@@ -392,8 +414,9 @@ class ArchiveRar7ExtractionTest {
             out[i] = (byte) ((v & 0x7f) | (i < width - 1 ? 0x80 : 0));
             v >>>= 7;
         }
-        assertThat(v).as("value %s does not fit %s vint bytes", Long.toHexString(value), width)
-            .isEqualTo(0L);
+        assertThat(v)
+                .as("value %s does not fit %s vint bytes", Long.toHexString(value), width)
+                .isEqualTo(0L);
         return out;
     }
 }

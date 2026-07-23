@@ -4,15 +4,14 @@
  */
 package com.github.junrar.unpack;
 
-import com.github.junrar.ArchiveOptions;
-import com.github.junrar.unpack.decode.Compress;
-import com.github.junrar.unpack.CraftedRar5Stream.BitWriter;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.github.junrar.ArchiveOptions;
+import com.github.junrar.unpack.CraftedRar5Stream.BitWriter;
+import com.github.junrar.unpack.decode.Compress;
 import java.io.ByteArrayOutputStream;
 import java.util.Arrays;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * M4.2 (issue #34) distance-width regression: an LZ distance is 64-bit
@@ -47,12 +46,12 @@ class Unpack5DistanceWidthTest {
         // Fill the whole window with 'A' so it wraps: only then does a self-copy read back real
         // bytes instead of the never-written zeros a fresh window would return.
         for (int i = 0; i < WINDOW; i++) {
-            content.writeBits(0, 1);              // LD code for literal 'A'
+            content.writeBits(0, 1); // LD code for literal 'A'
         }
-        content.writeBits(0b10, 2);               // LD code for slot 262 -> match, base length 2
-        content.writeBits(0b1, 1);                // DD code for slot 63 -> DBits = 30
-        content.writeBits(0x3ffffff, 26);         // the DBits-4 raw bits, all ones
-        content.writeBits(0b1, 1);                // LDD code for symbol 15
+        content.writeBits(0b10, 2); // LD code for slot 262 -> match, base length 2
+        content.writeBits(0b1, 1); // DD code for slot 63 -> DBits = 30
+        content.writeBits(0x3ffffff, 26); // the DBits-4 raw bits, all ones
+        content.writeBits(0b1, 1); // LDD code for symbol 15
 
         final long distance = 1L + (3L << 30) + (0x3ffffffL << 4) + 15L;
         assertThat(distance).as("the crafted distance is exactly 4 GB").isEqualTo(1L << 32);
@@ -60,7 +59,10 @@ class Unpack5DistanceWidthTest {
         final int matchLength = 5;
 
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
-        final Unpack5 u = new Unpack5(CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out), false);
+        final Unpack5 u =
+                new Unpack5(
+                        CraftedRar5Stream.collectingIO(CraftedRar5Stream.frame(content), out),
+                        false);
         u.init(WINDOW, false, ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
         u.setDestSize(WINDOW + matchLength);
         u.unpack5(false);
@@ -68,7 +70,9 @@ class Unpack5DistanceWidthTest {
         final byte[] expected = new byte[WINDOW + matchLength];
         Arrays.fill(expected, 0, WINDOW, (byte) 'A');
         assertThat(out.toByteArray())
-            .as("a 4 GB distance is past the window: zero-fill, not a self-copy of the previous pass")
-            .containsExactly(expected);
+                .as(
+                        "a 4 GB distance is past the window: zero-fill, not a self-copy of the"
+                                + " previous pass")
+                .containsExactly(expected);
     }
 }

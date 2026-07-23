@@ -24,9 +24,6 @@ import com.github.junrar.rarfile.rar5.Rar5HashType;
 import com.github.junrar.rarfile.rar5.Rar5HostOS;
 import com.github.junrar.rarfile.rar5.Rar5Redirection;
 import com.github.junrar.rarfile.rar5.Rar5UnixOwner;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -37,7 +34,8 @@ import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * DOCUMENT ME
@@ -186,7 +184,6 @@ public class FileHeader extends BlockHeader {
             if (unpSize == 0xffffffffL) {
                 highUnpackSize = Integer.MAX_VALUE;
             }
-
         }
         fullPackSize |= highPackSize;
         fullPackSize <<= 32;
@@ -209,8 +206,7 @@ public class FileHeader extends BlockHeader {
         if (isFileHeader()) {
             if (isUnicode()) {
                 int length = 0;
-                while (length < fileNameBytes.length
-                    && fileNameBytes[length] != 0) {
+                while (length < fileNameBytes.length && fileNameBytes[length] != 0) {
                     length++;
                 }
                 // junrar keeps both halves of a split name where unrar keeps one, and falls
@@ -251,8 +247,11 @@ public class FileHeader extends BlockHeader {
             }
 
             if (NewSubHeaderType.SUBHEAD_TYPE_RR.byteEquals(fileNameBytes)) {
-                recoverySectors = (subData[8] & 0xff) + ((subData[9] & 0xff) << 8)
-                    + ((subData[10] & 0xff) << 16) + ((subData[11] & 0xff) << 24);
+                recoverySectors =
+                        (subData[8] & 0xff)
+                                + ((subData[9] & 0xff) << 8)
+                                + ((subData[10] & 0xff) << 16)
+                                + ((subData[11] & 0xff) << 24);
             }
         }
 
@@ -272,10 +271,14 @@ public class FileHeader extends BlockHeader {
                 position += 2;
             } else {
                 extTimeFlags = 0;
-                logger.warn("FileHeader for entry '{}' signals extended time data, but does not contain any", (getFileName()));
+                logger.warn(
+                        "FileHeader for entry '{}' signals extended time data, but does not contain"
+                                + " any",
+                        (getFileName()));
             }
 
-            TimePositionTuple mTimeTuple = parseExtTime(12, extTimeFlags, fileHeader, position, mTime);
+            TimePositionTuple mTimeTuple =
+                    parseExtTime(12, extTimeFlags, fileHeader, position, mTime);
             mTime = mTimeTuple.time;
             position = mTimeTuple.position;
 
@@ -314,7 +317,10 @@ public class FileHeader extends BlockHeader {
      *                                (C10) -- a REDIR target is not gated, only the entry name.
      */
     FileHeader(Rar5FileHeaderReader.Parsed p) throws CorruptHeaderException {
-        this.headerType = p.service ? UnrarHeadertype.NewSubHeader.getHeaderByte() : UnrarHeadertype.FileHeader.getHeaderByte();
+        this.headerType =
+                p.service
+                        ? UnrarHeadertype.NewSubHeader.getHeaderByte()
+                        : UnrarHeadertype.FileHeader.getHeaderByte();
 
         short f = 0;
         if (p.directory) {
@@ -351,8 +357,10 @@ public class FileHeader extends BlockHeader {
 
         this.rar5HostOsValue = p.hostOsRaw;
         this.rar5HostOS = p.hostOsEnum;
-        this.hostOS = p.hostOsEnum == Rar5HostOS.WINDOWS ? HostSystem.win32
-            : p.hostOsEnum == Rar5HostOS.UNIX ? HostSystem.unix : null;
+        this.hostOS =
+                p.hostOsEnum == Rar5HostOS.WINDOWS
+                        ? HostSystem.win32
+                        : p.hostOsEnum == Rar5HostOS.UNIX ? HostSystem.unix : null;
 
         this.fileNameBytes = p.fileNameBytes;
         this.fileName = p.fileName;
@@ -372,7 +380,10 @@ public class FileHeader extends BlockHeader {
         this.hashDigest = p.hashDigest;
         this.hashType = p.hashType;
 
-        this.redirection = p.redirType == null ? null : new Rar5Redirection(p.redirType, p.redirIsDirectory, p.redirTarget);
+        this.redirection =
+                p.redirType == null
+                        ? null
+                        : new Rar5Redirection(p.redirType, p.redirIsDirectory, p.redirTarget);
 
         this.fileVersion = p.fileVersion;
         this.unixOwner = p.unixOwner;
@@ -429,9 +440,10 @@ public class FileHeader extends BlockHeader {
         try {
             // newDecoder() reports malformed input rather than replacing it (unlike
             // new String(..., UTF_8)), which is what makes this a validity scan.
-            return StandardCharsets.UTF_8.newDecoder()
-                .decode(ByteBuffer.wrap(bytes, offset, length))
-                .toString();
+            return StandardCharsets.UTF_8
+                    .newDecoder()
+                    .decode(ByteBuffer.wrap(bytes, offset, length))
+                    .toString();
         } catch (CharacterCodingException e) {
             return new String(bytes, offset, length, StandardCharsets.ISO_8859_1);
         }
@@ -456,18 +468,22 @@ public class FileHeader extends BlockHeader {
         }
     }
 
-    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position) {
+    private static TimePositionTuple parseExtTime(
+            int shift, short flags, byte[] fileHeader, int position) {
         return parseExtTime(shift, flags, fileHeader, position, null);
     }
 
-    private static TimePositionTuple parseExtTime(int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
+    private static TimePositionTuple parseExtTime(
+            int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
         int flag = flags >>> shift;
         if ((flag & 0x8) != 0) {
             long seconds;
             if (baseTime != null) {
                 seconds = baseTime.to(TimeUnit.SECONDS);
             } else {
-                seconds = TimeUnit.MILLISECONDS.toSeconds(getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
+                seconds =
+                        TimeUnit.MILLISECONDS.toSeconds(
+                                getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
                 position += 4;
             }
             int count = flag & 0x3;

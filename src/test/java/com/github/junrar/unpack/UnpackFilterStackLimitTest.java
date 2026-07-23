@@ -1,15 +1,14 @@
 package com.github.junrar.unpack;
 
-import com.github.junrar.exception.RarException;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatCode;
 
+import com.github.junrar.exception.RarException;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatCode;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins the RAR3 filter stack limit and the null-hole reuse performed before
@@ -44,11 +43,12 @@ class UnpackFilterStackLimitTest {
     }
 
     @Test
-    void givenUnsignedFilterPosition_whenAddingFilter_thenRejectsWithoutThrowing() throws Exception {
+    void givenUnsignedFilterPosition_whenAddingFilter_thenRejectsWithoutThrowing()
+            throws Exception {
         Unpack unpack = new Unpack(null);
 
-        assertThat(addVmCode(unpack, 0x80,
-                Arrays.asList((byte) 0x40, (byte) 0, (byte) 0))).isFalse();
+        assertThat(addVmCode(unpack, 0x80, Arrays.asList((byte) 0x40, (byte) 0, (byte) 0)))
+                .isFalse();
     }
 
     @Test
@@ -86,8 +86,7 @@ class UnpackFilterStackLimitTest {
             throws Exception {
         Unpack unpack = new Unpack(null);
 
-        assertThatCode(() -> assertThat(addVmCode(unpack, 0,
-                bytes(0x03, 0x80, 0, 0, 0))).isFalse())
+        assertThatCode(() -> assertThat(addVmCode(unpack, 0, bytes(0x03, 0x80, 0, 0, 0))).isFalse())
                 .doesNotThrowAnyException();
     }
 
@@ -95,8 +94,7 @@ class UnpackFilterStackLimitTest {
     void givenUnsignedOptionalDataSize_whenAddingFilter_thenRejects() throws Exception {
         Unpack unpack = withOneFilter();
 
-        assertThat(addVmCode(unpack, 0x08,
-                bytes(0x03, 0xff, 0xff, 0xff, 0xff, 0x04, 0))).isFalse();
+        assertThat(addVmCode(unpack, 0x08, bytes(0x03, 0xff, 0xff, 0xff, 0xff, 0x04, 0))).isFalse();
     }
 
     @Test
@@ -105,8 +103,7 @@ class UnpackFilterStackLimitTest {
         unpack.wrPtr = 2;
         unpack.unpPtr = 1;
 
-        assertThat(addVmCode(unpack, 0,
-                bytes(0xff, 0xff, 0xff, 0xff, 0xc1, 0))).isTrue();
+        assertThat(addVmCode(unpack, 0, bytes(0xff, 0xff, 0xff, 0xff, 0xc1, 0))).isTrue();
         assertThat(lastStackFilter(unpack).isNextWindow()).isTrue();
     }
 
@@ -116,8 +113,7 @@ class UnpackFilterStackLimitTest {
         unpack.wrPtr = 0;
         unpack.unpPtr = 1;
 
-        assertThat(addVmCode(unpack, 0x20,
-                bytes(0x03, 0xff, 0xff, 0xff, 0xff, 0x04, 0))).isTrue();
+        assertThat(addVmCode(unpack, 0x20, bytes(0x03, 0xff, 0xff, 0xff, 0xff, 0x04, 0))).isTrue();
         lastStackFilter(unpack).setBlockStart(0);
         assertThat(lastStackFilter(unpack).getBlockLength()).isEqualTo(-1);
         assertThatCode(() -> unpWriteBuf(unpack)).doesNotThrowAnyException();
@@ -138,8 +134,8 @@ class UnpackFilterStackLimitTest {
 
     private static boolean addVmCode(Unpack unpack, int firstByte, List<Byte> vmCode)
             throws ReflectiveOperationException, RarException {
-        java.lang.reflect.Method addVmCode = Unpack.class.getDeclaredMethod(
-                "addVMCode", int.class, List.class, int.class);
+        java.lang.reflect.Method addVmCode =
+                Unpack.class.getDeclaredMethod("addVMCode", int.class, List.class, int.class);
         addVmCode.setAccessible(true);
         try {
             return (boolean) addVmCode.invoke(unpack, firstByte, vmCode, vmCode.size());
@@ -188,8 +184,7 @@ class UnpackFilterStackLimitTest {
         return lengths;
     }
 
-    private static UnpackFilter lastStackFilter(Unpack unpack)
-            throws ReflectiveOperationException {
+    private static UnpackFilter lastStackFilter(Unpack unpack) throws ReflectiveOperationException {
         List<UnpackFilter> stack = prgStack(unpack);
         return stack.get(stack.size() - 1);
     }
@@ -228,7 +223,8 @@ class UnpackFilterStackLimitTest {
         return (List<Integer>) field("oldFilterLengths").get(unpack);
     }
 
-    private static void setLastFilter(Unpack unpack, int value) throws ReflectiveOperationException {
+    private static void setLastFilter(Unpack unpack, int value)
+            throws ReflectiveOperationException {
         Field field = field("lastFilter");
         field.setInt(unpack, value);
     }

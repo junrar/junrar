@@ -1,14 +1,13 @@
 package com.github.junrar.unpack.vm;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
-import java.util.Arrays;
-import java.util.stream.Stream;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Migrated for M2.1 (recognition model): the DELTA filter is now selected via
@@ -33,9 +32,11 @@ class RarVMDeltaChannelsTest {
 
         vm.execute(program);
 
-        assertThat(Arrays.copyOfRange(vm.getMem(), 0, 16)).containsExactly(bytes(
-                0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
-                0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55));
+        assertThat(Arrays.copyOfRange(vm.getMem(), 0, 16))
+                .containsExactly(
+                        bytes(
+                                0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55,
+                                0x55, 0x55, 0x55, 0x55, 0x55));
     }
 
     @ParameterizedTest

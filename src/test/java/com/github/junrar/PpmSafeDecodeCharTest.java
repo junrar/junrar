@@ -1,10 +1,10 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -15,9 +15,8 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 /** Defensive public-surface coverage for nested PPM decode errors. */
 public class PpmSafeDecodeCharTest {
@@ -96,8 +95,8 @@ public class PpmSafeDecodeCharTest {
             assertThat(result.bytes).isEqualTo(readResource(EXPECTED));
         } else {
             assertThat(result.thrown)
-                .as("hostile PPM input must fail with a typed RarException")
-                .isInstanceOf(RarException.class);
+                    .as("hostile PPM input must fail with a typed RarException")
+                    .isInstanceOf(RarException.class);
         }
     }
 
@@ -113,10 +112,11 @@ public class PpmSafeDecodeCharTest {
         Files.write(archive, readResource(fixture));
         try {
             AtomicReference<byte[]> extracted = new AtomicReference<>();
-            Throwable thrown = catchThrowable(() -> extracted.set(extraction.extract(archive, destination)));
+            Throwable thrown =
+                    catchThrowable(() -> extracted.set(extraction.extract(archive, destination)));
             return thrown == null
-                ? SurfaceResult.success(extracted.get())
-                : SurfaceResult.failure(thrown);
+                    ? SurfaceResult.success(extracted.get())
+                    : SurfaceResult.failure(thrown);
         } finally {
             delete(root.toFile());
         }
@@ -142,7 +142,7 @@ public class PpmSafeDecodeCharTest {
 
     private byte[] extractWithArchiveStream(Path archive, Path destination) throws Exception {
         try (InputStream stream = Files.newInputStream(archive);
-             Archive input = new Archive(stream)) {
+                Archive input = new Archive(stream)) {
             return extractSoleEntry(input);
         }
     }
@@ -166,7 +166,7 @@ public class PpmSafeDecodeCharTest {
 
     private byte[] readResource(String resource) throws IOException {
         try (InputStream input = getClass().getResourceAsStream(resource);
-             ByteArrayOutputStream output = new ByteArrayOutputStream()) {
+                ByteArrayOutputStream output = new ByteArrayOutputStream()) {
             assertThat(input).as("resource %s", resource).isNotNull();
             byte[] buffer = new byte[8192];
             int count;

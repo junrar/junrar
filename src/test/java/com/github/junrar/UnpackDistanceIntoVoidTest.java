@@ -1,15 +1,14 @@
 package com.github.junrar;
 
-import com.github.junrar.exception.RarException;
-import com.github.junrar.rarfile.FileHeader;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
+
+import com.github.junrar.exception.RarException;
+import com.github.junrar.rarfile.FileHeader;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 /**
  * RED coverage for M1.4 (issue #18) FirstWinDone distance-into-void handling across the
@@ -46,16 +45,16 @@ public class UnpackDistanceIntoVoidTest {
     public void v20FirstWindowVoidZeroFillsLikeUnrar() throws Exception {
         // UnRAR 7.23 `unrar x -kb`: AAA + zero-filled length-3 void.
         assertThat(extractFirstMember("/com/github/junrar/abnormal/void-dist-v20.rar"))
-            .as("v20 first-window void must zero-fill (unrar oracle), not leak window bytes")
-            .containsExactly(0x41, 0x41, 0x41, 0x00, 0x00, 0x00);
+                .as("v20 first-window void must zero-fill (unrar oracle), not leak window bytes")
+                .containsExactly(0x41, 0x41, 0x41, 0x00, 0x00, 0x00);
     }
 
     @Test
     @Timeout(5)
     public void v29FirstWindowVoidZeroFillsLikeUnrar() throws Exception {
         assertThat(extractFirstMember("/com/github/junrar/abnormal/void-dist-v29.rar"))
-            .as("v29 first-window void must zero-fill (unrar oracle), not leak window bytes")
-            .containsExactly(0x41, 0x41, 0x41, 0x00, 0x00, 0x00);
+                .as("v29 first-window void must zero-fill (unrar oracle), not leak window bytes")
+                .containsExactly(0x41, 0x41, 0x41, 0x00, 0x00, 0x00);
     }
 
     @Test
@@ -71,16 +70,17 @@ public class UnpackDistanceIntoVoidTest {
         byte[] voidRegion = new byte[5];
         System.arraycopy(out, 34759, voidRegion, 0, 5);
         assertThat(voidRegion)
-            .as("v15 first-window void at offset 34759 must zero-fill (unrar oracle), "
-                + "not leak the WAV's own 'RIFF' header bytes")
-            .containsExactly(0x00, 0x00, 0x00, 0x00, 0x00);
+                .as(
+                        "v15 first-window void at offset 34759 must zero-fill (unrar oracle), "
+                                + "not leak the WAV's own 'RIFF' header bytes")
+                .containsExactly(0x00, 0x00, 0x00, 0x00, 0x00);
     }
 
     /** Extract the first member through the public Archive API, returning bytes produced
      *  before the (expected) data-CRC failure of the deliberately corrupt member. */
     private byte[] extractFirstMember(String resource) throws Exception {
         try (InputStream in = getClass().getResourceAsStream(resource);
-             Archive archive = new Archive(in)) {
+                Archive archive = new Archive(in)) {
             assertThat(in).as("fixture resource %s", resource).isNotNull();
             FileHeader header = archive.nextFileHeader();
             assertThat(header).as("first member of %s", resource).isNotNull();

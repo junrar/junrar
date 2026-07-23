@@ -27,8 +27,7 @@ import java.util.zip.CRC32;
  */
 public class RarCRC {
 
-    private RarCRC() {
-    }
+    private RarCRC() {}
 
     /**
      * Computes the RAR3 16-bit header-CRC check (P0.7, issue #12; unrar
@@ -49,7 +48,8 @@ public class RarCRC {
      * @param length number of bytes to cover, non-positive means "none"
      * @return the 16-bit header CRC
      */
-    public static short computeHeaderCrc16(final byte[] header, final int offset, final int length) {
+    public static short computeHeaderCrc16(
+            final byte[] header, final int offset, final int length) {
         if (length <= 0) {
             return 0;
         }
@@ -106,5 +106,4 @@ public class RarCRC {
         }
         return (startCrc);
     }
-
 }

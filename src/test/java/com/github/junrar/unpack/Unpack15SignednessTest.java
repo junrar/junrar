@@ -1,10 +1,9 @@
 package com.github.junrar.unpack;
 
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.lang.reflect.Field;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins {@link Unpack15#decodeNum(int, int, int[], int[])} — the Huffman-position decoder
@@ -30,7 +29,8 @@ class Unpack15SignednessTest {
     }
 
     @Test
-    void givenMaxMaskedNum_whenDecodeNumWithDecL1_thenReturnsHandDerivedPosition() throws ReflectiveOperationException {
+    void givenMaxMaskedNum_whenDecodeNumWithDecL1_thenReturnsHandDerivedPosition()
+            throws ReflectiveOperationException {
         Unpack15 unpack = newUnpack15();
         int[] decL1 = getStaticIntArray("DecL1");
         int[] posL1 = getStaticIntArray("PosL1");
@@ -42,7 +42,8 @@ class Unpack15SignednessTest {
     }
 
     @Test
-    void givenExactTableBoundaryNum_whenDecodeNumWithDecHf0_thenReturnsHandDerivedPosition() throws ReflectiveOperationException {
+    void givenExactTableBoundaryNum_whenDecodeNumWithDecHf0_thenReturnsHandDerivedPosition()
+            throws ReflectiveOperationException {
         Unpack15 unpack = newUnpack15();
         int[] decHf0 = getStaticIntArray("DecHf0");
         int[] posHf0 = getStaticIntArray("PosHf0");
@@ -61,5 +62,4 @@ class Unpack15SignednessTest {
         field.setAccessible(true);
         return (int[]) field.get(null);
     }
-
 }

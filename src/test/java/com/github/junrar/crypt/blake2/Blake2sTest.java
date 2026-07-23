@@ -1,6 +1,6 @@
 package com.github.junrar.crypt.blake2;
 
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -10,8 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 /**
  * M3.5 (issue #26) unit coverage for the {@link Blake2s} leaf/standalone primitive: the RFC 7693
@@ -20,7 +19,8 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 class Blake2sTest {
 
-    private static final Pattern KAT_ENTRY = Pattern.compile("\"in\":\\s*\"([0-9a-f]*)\",\\s*\"out\":\\s*\"([0-9a-f]*)\"");
+    private static final Pattern KAT_ENTRY =
+            Pattern.compile("\"in\":\\s*\"([0-9a-f]*)\",\\s*\"out\":\\s*\"([0-9a-f]*)\"");
 
     private static byte[] hexToBytes(final String hex) {
         final byte[] out = new byte[hex.length() / 2];
@@ -51,7 +51,7 @@ class Blake2sTest {
     void rfc7693AbcVector() {
         final byte[] digest = blake2s("abc".getBytes(StandardCharsets.US_ASCII));
         assertThat(bytesToHex(digest))
-            .isEqualTo("508c5e8c327c14e2e1a72ba34eeb452f37458b209ed63a294d999b4c86675982");
+                .isEqualTo("508c5e8c327c14e2e1a72ba34eeb452f37458b209ed63a294d999b4c86675982");
     }
 
     // Fixtures live under com/github/junrar/blake2/, one package above this test's own

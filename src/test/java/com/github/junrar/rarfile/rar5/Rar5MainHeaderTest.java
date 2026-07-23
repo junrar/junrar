@@ -1,17 +1,16 @@
 package com.github.junrar.rarfile.rar5;
 
-import com.github.junrar.exception.CorruptHeaderException;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
+import com.github.junrar.exception.CorruptHeaderException;
 import java.io.ByteArrayOutputStream;
 import java.nio.file.attribute.FileTime;
 import java.security.MessageDigest;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.zip.CRC32;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.junit.jupiter.api.Test;
 
 /**
  * M3.3 (issue #24) direct-parse unit tests for {@link Rar5MainHeader}: MAIN archive flags +
@@ -112,7 +111,10 @@ class Rar5MainHeaderTest {
 
     @Test
     void volumeSolidAndVolumeNumberDriveFirstVolume() throws Exception {
-        final long archiveFlags = Rar5MainHeader.MHFL_VOLUME | Rar5MainHeader.MHFL_VOLNUMBER | Rar5MainHeader.MHFL_SOLID;
+        final long archiveFlags =
+                Rar5MainHeader.MHFL_VOLUME
+                        | Rar5MainHeader.MHFL_VOLNUMBER
+                        | Rar5MainHeader.MHFL_SOLID;
         final byte[] fixed = concat(vint(archiveFlags), vint(5));
         final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, null));
         assertThat(h.isVolume()).isTrue();
@@ -143,7 +145,8 @@ class Rar5MainHeaderTest {
         writeLen(payload, nameBytes);
         final long ticks = 0x01CB7AE58359F000L;
         writeLongLE(payload, ticks);
-        final byte[] extra = extraRecord(Rar5MainExtraType.METADATA.getValue(), payload.toByteArray());
+        final byte[] extra =
+                extraRecord(Rar5MainExtraType.METADATA.getValue(), payload.toByteArray());
 
         final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra));
         assertThat(h.getMetadataName()).isEqualTo("Arc");
@@ -158,11 +161,15 @@ class Rar5MainHeaderTest {
         writeLen(payload, vint(metaFlags));
         final long nanosSinceEpoch = 1_700_000_000_123_456_789L;
         writeLongLE(payload, nanosSinceEpoch);
-        final byte[] extra = extraRecord(Rar5MainExtraType.METADATA.getValue(), payload.toByteArray());
+        final byte[] extra =
+                extraRecord(Rar5MainExtraType.METADATA.getValue(), payload.toByteArray());
 
         final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra));
-        final FileTime expected = FileTime.from(Instant.ofEpochSecond(
-            nanosSinceEpoch / 1_000_000_000L, nanosSinceEpoch % 1_000_000_000L));
+        final FileTime expected =
+                FileTime.from(
+                        Instant.ofEpochSecond(
+                                nanosSinceEpoch / 1_000_000_000L,
+                                nanosSinceEpoch % 1_000_000_000L));
         assertThat(h.getMetadataTime()).isEqualTo(expected);
     }
 
@@ -180,10 +187,12 @@ class Rar5MainHeaderTest {
         for (int i = 0; i < 4; i++) {
             payload.write((int) (secondsSinceEpoch >>> (8 * i)) & 0xff);
         }
-        final byte[] extra = extraRecord(Rar5MainExtraType.METADATA.getValue(), payload.toByteArray());
+        final byte[] extra =
+                extraRecord(Rar5MainExtraType.METADATA.getValue(), payload.toByteArray());
 
         final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra));
-        assertThat(h.getMetadataTime()).isEqualTo(FileTime.from(Instant.ofEpochSecond(secondsSinceEpoch)));
+        assertThat(h.getMetadataTime())
+                .isEqualTo(FileTime.from(Instant.ofEpochSecond(secondsSinceEpoch)));
     }
 
     @Test
@@ -223,7 +232,8 @@ class Rar5MainHeaderTest {
         writeLen(extra, payload.toByteArray());
 
         final byte[] fixed = vint(0);
-        final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra.toByteArray()));
+        final Rar5MainHeader h =
+                parse(craft(Rar5BlockType.MAIN.getValue(), fixed, extra.toByteArray()));
 
         assertThat(h.getMetadataName()).isNull();
         assertThat(h.getMetadataTime()).isNull();
@@ -269,7 +279,8 @@ class Rar5MainHeaderTest {
         malformed.write(0x00);
 
         final byte[] fixed = vint(0);
-        final Rar5MainHeader h = parse(craft(Rar5BlockType.MAIN.getValue(), fixed, malformed.toByteArray()));
+        final Rar5MainHeader h =
+                parse(craft(Rar5BlockType.MAIN.getValue(), fixed, malformed.toByteArray()));
 
         assertThat(h.hasLocator()).isFalse();
     }
@@ -294,7 +305,8 @@ class Rar5MainHeaderTest {
         writeLen(fixed, pswCheck);
         writeLen(fixed, sha256Prefix(pswCheck)); // csum, verified in M3.4
 
-        final Rar5MainHeader h = parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
+        final Rar5MainHeader h =
+                parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
         assertThat(h.getCryptVersion()).isEqualTo(0);
         assertThat(h.isUsePswCheck()).isTrue();
         assertThat(h.getLg2Count()).isEqualTo(15);
@@ -315,9 +327,10 @@ class Rar5MainHeaderTest {
         fixed.write(15);
         writeLen(fixed, new byte[16]);
         writeLen(fixed, new byte[8]);
-        writeLen(fixed, new byte[]{1, 2, 3, 4}); // csum that cannot match SHA-256(pswCheck)
+        writeLen(fixed, new byte[] {1, 2, 3, 4}); // csum that cannot match SHA-256(pswCheck)
 
-        final Rar5MainHeader h = parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
+        final Rar5MainHeader h =
+                parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
         assertThat(h.isUsePswCheck()).isFalse();
         assertThat(h.getPswCheck()).isNull();
     }
@@ -335,7 +348,8 @@ class Rar5MainHeaderTest {
         fixed.write(15);
         writeLen(fixed, new byte[16]); // salt, then the header ends -- no pswcheck bytes follow
 
-        final Rar5MainHeader h = parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
+        final Rar5MainHeader h =
+                parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null));
         assertThat(h.isUsePswCheck()).isFalse();
         assertThat(h.getPswCheck()).isNull();
     }
@@ -348,7 +362,7 @@ class Rar5MainHeaderTest {
     void unsupportedCryptVersionRejected() {
         final byte[] fixed = vint(1);
         assertThat(catchThrowable(() -> parse(craft(Rar5BlockType.CRYPT.getValue(), fixed, null))))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -357,8 +371,15 @@ class Rar5MainHeaderTest {
         writeLen(fixed, vint(0));
         writeLen(fixed, vint(0));
         fixed.write(25);
-        assertThat(catchThrowable(() -> parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null))))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+        assertThat(
+                        catchThrowable(
+                                () ->
+                                        parse(
+                                                craft(
+                                                        Rar5BlockType.CRYPT.getValue(),
+                                                        fixed.toByteArray(),
+                                                        null))))
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -372,10 +393,16 @@ class Rar5MainHeaderTest {
         writeLen(fixed, vint(0)); // EncFlags, no PSWCHECK
 
         final Throwable thrown =
-            catchThrowable(() -> parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null)));
+                catchThrowable(
+                        () ->
+                                parse(
+                                        craft(
+                                                Rar5BlockType.CRYPT.getValue(),
+                                                fixed.toByteArray(),
+                                                null)));
         assertThat(thrown)
-            .isExactlyInstanceOf(CorruptHeaderException.class)
-            .hasMessageContaining("Truncated RAR5 CRYPT header");
+                .isExactlyInstanceOf(CorruptHeaderException.class)
+                .hasMessageContaining("Truncated RAR5 CRYPT header");
     }
 
     @Test
@@ -392,10 +419,16 @@ class Rar5MainHeaderTest {
         fixed.write(new byte[8], 0, 8); // half a salt
 
         final Throwable thrown =
-            catchThrowable(() -> parse(craft(Rar5BlockType.CRYPT.getValue(), fixed.toByteArray(), null)));
+                catchThrowable(
+                        () ->
+                                parse(
+                                        craft(
+                                                Rar5BlockType.CRYPT.getValue(),
+                                                fixed.toByteArray(),
+                                                null)));
         assertThat(thrown)
-            .isExactlyInstanceOf(CorruptHeaderException.class)
-            .hasMessageContaining("Truncated RAR5 CRYPT header");
+                .isExactlyInstanceOf(CorruptHeaderException.class)
+                .hasMessageContaining("Truncated RAR5 CRYPT header");
     }
 
     // ---- ENDARC -----------------------------------------------------------------

@@ -1,13 +1,11 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.unpack.Unpack;
 import com.github.junrar.unpack.ppm.ModelPPM;
 import com.github.junrar.unpack.ppm.SubAllocator;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.io.TempDir;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.IOException;
@@ -20,8 +18,9 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 /**
  * Byte-diff oracle for the live PPMd heap produced by the P0.5 fixture.
@@ -43,7 +42,7 @@ public class PpmHeapDumpTest {
     @Test
     @Tag("check")
     void givenLegitPpmFixture_whenExtractedTwice_thenHeapDumpsMatchGolden(@TempDir Path tempDir)
-        throws Exception {
+            throws Exception {
         Path first = tempDir.resolve("legit-maxmb63-heap-1.bin");
         Path second = tempDir.resolve("legit-maxmb63-heap-2.bin");
         dumpHeap(first);
@@ -51,18 +50,22 @@ public class PpmHeapDumpTest {
 
         long consecutiveMismatch = mismatch(first, second);
         assertThat(consecutiveMismatch)
-            .as("consecutive PPMd heap dumps differ at byte offset %d (%s vs %s)",
-                consecutiveMismatch, first, second)
-            .isEqualTo(-1L);
+                .as(
+                        "consecutive PPMd heap dumps differ at byte offset %d (%s vs %s)",
+                        consecutiveMismatch, first, second)
+                .isEqualTo(-1L);
 
-        try (InputStream golden = new GZIPInputStream(
-            new BufferedInputStream(resource(GOLDEN_RESOURCE), BUFFER_SIZE))) {
+        try (InputStream golden =
+                new GZIPInputStream(
+                        new BufferedInputStream(resource(GOLDEN_RESOURCE), BUFFER_SIZE))) {
             long goldenMismatch = mismatch(first, golden);
             assertThat(goldenMismatch)
-                .as("PPMd heap dump differs from committed %s at byte offset %d; "
-                        + "run ./gradlew generatePpmHeapDump only for an intentional oracle update",
-                    GOLDEN_RESOURCE, goldenMismatch)
-                .isEqualTo(-1L);
+                    .as(
+                            "PPMd heap dump differs from committed %s at byte offset %d; run"
+                                + " ./gradlew generatePpmHeapDump only for an intentional oracle"
+                                + " update",
+                            GOLDEN_RESOURCE, goldenMismatch)
+                    .isEqualTo(-1L);
         }
     }
 
@@ -71,15 +74,15 @@ public class PpmHeapDumpTest {
     void generatePpmHeapGolden() throws Exception {
         String output = System.getProperty(GOLDEN_PROPERTY);
         assertThat(output)
-            .as("Gradle must provide -D%s pointing at the committed golden", GOLDEN_PROPERTY)
-            .isNotBlank();
+                .as("Gradle must provide -D%s pointing at the committed golden", GOLDEN_PROPERTY)
+                .isNotBlank();
         Path golden = Paths.get(output);
         Path parent = golden.getParent();
         if (parent != null) {
             Files.createDirectories(parent);
         }
-        try (OutputStream compressed = new GZIPOutputStream(
-            new BufferedOutputStream(Files.newOutputStream(golden)))) {
+        try (OutputStream compressed =
+                new GZIPOutputStream(new BufferedOutputStream(Files.newOutputStream(golden)))) {
             extractAndDumpHeap(compressed);
         }
     }
@@ -91,7 +94,8 @@ public class PpmHeapDumpTest {
     }
 
     private static void extractAndDumpHeap(OutputStream dump) throws Exception {
-        try (InputStream fixture = resource(FIXTURE); Archive archive = new Archive(fixture)) {
+        try (InputStream fixture = resource(FIXTURE);
+                Archive archive = new Archive(fixture)) {
             List<FileHeader> headers = archive.getFileHeaders();
             assertThat(headers).as("PPMd fixture file headers").hasSize(1);
             archive.extractFile(headers.get(0), discardOutput());
@@ -134,7 +138,8 @@ public class PpmHeapDumpTest {
     }
 
     private static long mismatch(Path actual, InputStream expected) throws IOException {
-        try (InputStream input = new BufferedInputStream(Files.newInputStream(actual), BUFFER_SIZE)) {
+        try (InputStream input =
+                new BufferedInputStream(Files.newInputStream(actual), BUFFER_SIZE)) {
             byte[] actualBytes = new byte[BUFFER_SIZE];
             byte[] expectedBytes = new byte[BUFFER_SIZE];
             long offset = 0;

@@ -6,7 +6,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.github.junrar.Archive;
 import com.github.junrar.RarFormat;
 import com.github.junrar.exception.RarException;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -23,7 +22,14 @@ import java.util.stream.Collectors;
  * files use verbatim ({@code isRarV5}, not the bean-convention {@code rarV5}); only the
  * annotated accessors are exposed.
  */
-@JsonPropertyOrder({"isRarV5", "isEncrypted", "isPasswordProtected", "isOldFormat", "fileHeaders", "exception"})
+@JsonPropertyOrder({
+    "isRarV5",
+    "isEncrypted",
+    "isPasswordProtected",
+    "isOldFormat",
+    "fileHeaders",
+    "exception"
+})
 public final class ArchiveRecord {
     /** The 8-byte RAR 5.0 marker (52 61 72 21 1a 07 01 00). */
     private static final byte[] RAR5_SIGNATURE = {0x52, 0x61, 0x72, 0x21, 0x1a, 0x07, 0x01, 0x00};
@@ -37,13 +43,12 @@ public final class ArchiveRecord {
 
     @JsonCreator
     public ArchiveRecord(
-        @JsonProperty("isRarV5") boolean isRarV5,
-        @JsonProperty("isEncrypted") boolean isEncrypted,
-        @JsonProperty("isPasswordProtected") boolean isPasswordProtected,
-        @JsonProperty("isOldFormat") boolean isOldFormat,
-        @JsonProperty("fileHeaders") List<FileHeaderRecord> fileHeaders,
-        @JsonProperty("exception") String exception
-    ) {
+            @JsonProperty("isRarV5") boolean isRarV5,
+            @JsonProperty("isEncrypted") boolean isEncrypted,
+            @JsonProperty("isPasswordProtected") boolean isPasswordProtected,
+            @JsonProperty("isOldFormat") boolean isOldFormat,
+            @JsonProperty("fileHeaders") List<FileHeaderRecord> fileHeaders,
+            @JsonProperty("exception") String exception) {
         this.isRarV5 = isRarV5;
         this.isEncrypted = isEncrypted;
         this.isPasswordProtected = isPasswordProtected;
@@ -54,13 +59,14 @@ public final class ArchiveRecord {
 
     static ArchiveRecord fromArchive(Archive from) throws RarException {
         return new ArchiveRecord(
-            from.getFormat() == RarFormat.RAR50,
-            from.isEncrypted(),
-            from.isPasswordProtected(),
-            from.isOldFormat(),
-            from.getFileHeaders().stream().map(FileHeaderRecord::fromFileHeader).collect(Collectors.toList()),
-            null
-        );
+                from.getFormat() == RarFormat.RAR50,
+                from.isEncrypted(),
+                from.isPasswordProtected(),
+                from.isOldFormat(),
+                from.getFileHeaders().stream()
+                        .map(FileHeaderRecord::fromFileHeader)
+                        .collect(Collectors.toList()),
+                null);
     }
 
     static ArchiveRecord fromException(RarException from, Path filePath) {
@@ -68,13 +74,12 @@ public final class ArchiveRecord {
         // file's leading signature bytes instead (B-S2). Pre-flip this equals the old
         // "instanceof UnsupportedRarV5Exception" result for every corpus record.
         return new ArchiveRecord(
-            hasRar5Signature(filePath),
-            false,
-            false,
-            false,
-            Collections.<FileHeaderRecord>emptyList(),
-            from.getClass().getSimpleName()
-        );
+                hasRar5Signature(filePath),
+                false,
+                false,
+                false,
+                Collections.<FileHeaderRecord>emptyList(),
+                from.getClass().getSimpleName());
     }
 
     private static boolean hasRar5Signature(Path filePath) {
@@ -131,22 +136,33 @@ public final class ArchiveRecord {
         }
         ArchiveRecord that = (ArchiveRecord) o;
         return isRarV5 == that.isRarV5
-            && isEncrypted == that.isEncrypted
-            && isPasswordProtected == that.isPasswordProtected
-            && isOldFormat == that.isOldFormat
-            && Objects.equals(fileHeaders, that.fileHeaders)
-            && Objects.equals(exception, that.exception);
+                && isEncrypted == that.isEncrypted
+                && isPasswordProtected == that.isPasswordProtected
+                && isOldFormat == that.isOldFormat
+                && Objects.equals(fileHeaders, that.fileHeaders)
+                && Objects.equals(exception, that.exception);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(isRarV5, isEncrypted, isPasswordProtected, isOldFormat, fileHeaders, exception);
+        return Objects.hash(
+                isRarV5, isEncrypted, isPasswordProtected, isOldFormat, fileHeaders, exception);
     }
 
     @Override
     public String toString() {
-        return "ArchiveRecord[isRarV5=" + isRarV5 + ", isEncrypted=" + isEncrypted
-            + ", isPasswordProtected=" + isPasswordProtected + ", isOldFormat=" + isOldFormat
-            + ", fileHeaders=" + fileHeaders + ", exception=" + exception + "]";
+        return "ArchiveRecord[isRarV5="
+                + isRarV5
+                + ", isEncrypted="
+                + isEncrypted
+                + ", isPasswordProtected="
+                + isPasswordProtected
+                + ", isOldFormat="
+                + isOldFormat
+                + ", fileHeaders="
+                + fileHeaders
+                + ", exception="
+                + exception
+                + "]";
     }
 }

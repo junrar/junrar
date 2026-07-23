@@ -1,17 +1,16 @@
 package com.github.junrar;
 
-import com.github.junrar.rarfile.FileHeader;
-import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
+import com.github.junrar.rarfile.FileHeader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.Test;
 
 /**
  * P0.8 acceptance rows for the {@link ArchiveOptions} construction-time
@@ -22,11 +21,12 @@ public class ArchiveOptionsTest {
     private static final String ENCRYPTED_FIXTURE = "password/rar4-encrypted-junrar.rar";
 
     @Test
-    public void givenCharArrayPassword_whenOpeningEncryptedRar3Fixture_thenExtractsContent() throws Exception {
+    public void givenCharArrayPassword_whenOpeningEncryptedRar3Fixture_thenExtractsContent()
+            throws Exception {
         char[] password = "junrar".toCharArray();
         ArchiveOptions options = ArchiveOptions.builder().password(password).build();
         try (InputStream is = getClass().getResourceAsStream(ENCRYPTED_FIXTURE);
-             Archive archive = new Archive(is, options)) {
+                Archive archive = new Archive(is, options)) {
             assertThat(archive.isEncrypted()).isTrue();
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             assertThat(fileHeaders).hasSize(1);
@@ -41,12 +41,13 @@ public class ArchiveOptionsTest {
     }
 
     @Test
-    public void givenArchiveWithPassword_whenClosed_thenInternalPasswordCopyIsWiped() throws Exception {
+    public void givenArchiveWithPassword_whenClosed_thenInternalPasswordCopyIsWiped()
+            throws Exception {
         char[] password = "junrar".toCharArray();
         ArchiveOptions options = ArchiveOptions.builder().password(password).build();
         char[] internalCopy;
         try (InputStream is = getClass().getResourceAsStream(ENCRYPTED_FIXTURE);
-             Archive archive = new Archive(is, options)) {
+                Archive archive = new Archive(is, options)) {
             internalCopy = archive.getPasswordChars();
             // Before-state: the live internal copy still holds the real password.
             assertThat(internalCopy).isEqualTo(password);
@@ -56,14 +57,15 @@ public class ArchiveOptionsTest {
     }
 
     @Test
-    public void givenBuilderPasswordArray_whenCallerMutatesAfterBuild_thenExtractionStillWorks() throws Exception {
+    public void givenBuilderPasswordArray_whenCallerMutatesAfterBuild_thenExtractionStillWorks()
+            throws Exception {
         char[] password = "junrar".toCharArray();
         ArchiveOptions options = ArchiveOptions.builder().password(password).build();
         // Mutate the caller's array after build(): the builder must already hold its own copy.
         Arrays.fill(password, 'X');
 
         try (InputStream is = getClass().getResourceAsStream(ENCRYPTED_FIXTURE);
-             Archive archive = new Archive(is, options)) {
+                Archive archive = new Archive(is, options)) {
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             FileHeader fileHeader = fileHeaders.get(0);
             try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
@@ -74,7 +76,9 @@ public class ArchiveOptionsTest {
     }
 
     @Test
-    public void givenBuilderPasswordArray_whenCallerMutatesBetweenPasswordAndBuild_thenExtractionStillWorks() throws Exception {
+    public void
+            givenBuilderPasswordArray_whenCallerMutatesBetweenPasswordAndBuild_thenExtractionStillWorks()
+                    throws Exception {
         char[] password = "junrar".toCharArray();
         ArchiveOptions.Builder builder = ArchiveOptions.builder().password(password);
         // Mutate the caller's array between Builder.password(char[]) and build(): only the
@@ -85,7 +89,7 @@ public class ArchiveOptionsTest {
         ArchiveOptions options = builder.build();
 
         try (InputStream is = getClass().getResourceAsStream(ENCRYPTED_FIXTURE);
-             Archive archive = new Archive(is, options)) {
+                Archive archive = new Archive(is, options)) {
             List<FileHeader> fileHeaders = archive.getFileHeaders();
             FileHeader fileHeader = fileHeaders.get(0);
             try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
@@ -107,14 +111,17 @@ public class ArchiveOptionsTest {
         ArchiveOptions options = ArchiveOptions.builder().build();
 
         assertThat(options.getMaxDictionarySize()).isEqualTo(4L * 1024 * 1024 * 1024);
-        assertThat(options.getMaxDictionarySize()).isEqualTo(ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
+        assertThat(options.getMaxDictionarySize())
+                .isEqualTo(ArchiveOptions.DEFAULT_MAX_DICTIONARY_SIZE);
     }
 
     @Test
-    public void givenJunrarExtractWithOptions_whenPasswordProtectedArchive_thenExtractsContent() throws Exception {
+    public void givenJunrarExtractWithOptions_whenPasswordProtectedArchive_thenExtractsContent()
+            throws Exception {
         File tempFolder = TestCommons.createTempDir();
         try {
-            ArchiveOptions options = ArchiveOptions.builder().password("junrar".toCharArray()).build();
+            ArchiveOptions options =
+                    ArchiveOptions.builder().password("junrar".toCharArray()).build();
             try (InputStream rarStream = getClass().getResourceAsStream(ENCRYPTED_FIXTURE)) {
                 Junrar.extract(rarStream, tempFolder, options);
             }

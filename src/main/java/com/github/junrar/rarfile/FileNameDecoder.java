@@ -38,7 +38,8 @@ public class FileNameDecoder {
      * @param nameSize length of the ANSI name (C++ {@code NameSize}) -- the RLE copy source bound
      * @param encPos   start offset of the encoded stream (just past the NUL separator)
      */
-    public static String decode(byte[] name, int nameSize, int encPos) throws CorruptHeaderException {
+    public static String decode(byte[] name, int nameSize, int encPos)
+            throws CorruptHeaderException {
         int decPos = 0;
         int flags = 0;
         int flagBits = 0;
@@ -85,7 +86,9 @@ public class FileNameDecoder {
                             throw truncated();
                         }
                         int correction = getChar(name, encPos++);
-                        for (length = (length & 0x7f) + 2; length > 0 && decPos < nameSize; length--, decPos++) {
+                        for (length = (length & 0x7f) + 2;
+                                length > 0 && decPos < nameSize;
+                                length--, decPos++) {
                             low = (getChar(name, decPos) + correction) & 0xff;
                             buf.append((char) ((highByte << 8) + low));
                         }

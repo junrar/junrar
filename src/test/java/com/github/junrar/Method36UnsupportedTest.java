@@ -1,14 +1,14 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.RarException;
 import com.github.junrar.exception.UnsupportedRarMethodException;
 import com.github.junrar.rarfile.FileHeader;
 import org.apache.commons.io.output.NullOutputStream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * Public-surface coverage for the M1.5 (issue #19) method-36 drop. The fixture
@@ -33,15 +33,18 @@ class Method36UnsupportedTest {
             FileHeader header = archive.nextFileHeader();
             assertThat(header).as("header parsing must succeed (valid header CRC)").isNotNull();
             assertThat(header.getUnpVersion())
-                .as("fixture must declare unpVersion (method) 36")
-                .isEqualTo((byte) 36);
+                    .as("fixture must declare unpVersion (method) 36")
+                    .isEqualTo((byte) 36);
 
-            Throwable thrown = catchThrowable(() -> archive.extractFile(header, NullOutputStream.INSTANCE));
+            Throwable thrown =
+                    catchThrowable(() -> archive.extractFile(header, NullOutputStream.INSTANCE));
 
             assertThat(thrown)
-                .as("method-36 member must fail extraction with a typed UnsupportedRarMethodException")
-                .isInstanceOf(RarException.class)
-                .isInstanceOf(UnsupportedRarMethodException.class);
+                    .as(
+                            "method-36 member must fail extraction with a typed"
+                                    + " UnsupportedRarMethodException")
+                    .isInstanceOf(RarException.class)
+                    .isInstanceOf(UnsupportedRarMethodException.class);
         }
     }
 }

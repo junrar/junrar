@@ -13,8 +13,7 @@ public class UnsupportedDictionarySizeException extends RarException {
         super(cause);
     }
 
-    public UnsupportedDictionarySizeException() {
-    }
+    public UnsupportedDictionarySizeException() {}
 
     public UnsupportedDictionarySizeException(String message) {
         super(message);

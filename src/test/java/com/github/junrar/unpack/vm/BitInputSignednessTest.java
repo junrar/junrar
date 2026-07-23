@@ -1,8 +1,8 @@
 package com.github.junrar.unpack.vm;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * Pins {@link BitInput#getbits()}/{@link BitInput#fgetbits()} — the class's only
@@ -54,5 +54,4 @@ class BitInputSignednessTest {
 
         assertThat(input.fgetbits()).isEqualTo(0x8081);
     }
-
 }

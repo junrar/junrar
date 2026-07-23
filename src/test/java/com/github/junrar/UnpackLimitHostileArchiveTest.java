@@ -1,19 +1,18 @@
 package com.github.junrar;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.RarException;
 import com.github.junrar.rarfile.FileHeader;
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.io.output.NullOutputStream;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Timeout;
-
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.concurrent.atomic.AtomicReference;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.output.NullOutputStream;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 /**
  * Public-surface coverage for the M1.3 (issue #17) RAR3/RAR1.5 limit guards. Each fixture
@@ -85,45 +84,50 @@ public class UnpackLimitHostileArchiveTest {
         Files.write(archive, readResource(fixture));
         try {
             AtomicReference<Throwable> memberFailure = new AtomicReference<>();
-            Throwable thrown = catchThrowable(() -> extraction.extract(archive, destination, memberFailure));
+            Throwable thrown =
+                    catchThrowable(() -> extraction.extract(archive, destination, memberFailure));
             Throwable failure = thrown != null ? thrown : memberFailure.get();
             assertThat(failure)
-                .as("hostile %s must fail the corrupt member with a typed RarException", fixture)
-                .isInstanceOf(RarException.class);
+                    .as(
+                            "hostile %s must fail the corrupt member with a typed RarException",
+                            fixture)
+                    .isInstanceOf(RarException.class);
             for (Throwable cause = failure; cause != null; cause = cause.getCause()) {
                 assertThat(cause)
-                    .as("%s must not leak a raw bounds/size error (guard defeated)", fixture)
-                    .isNotInstanceOf(ArrayIndexOutOfBoundsException.class)
-                    .isNotInstanceOf(NegativeArraySizeException.class);
+                        .as("%s must not leak a raw bounds/size error (guard defeated)", fixture)
+                        .isNotInstanceOf(ArrayIndexOutOfBoundsException.class)
+                        .isNotInstanceOf(NegativeArraySizeException.class);
             }
         } finally {
             delete(root);
         }
     }
 
-    private void extractWithJunrarFile(Path archive, Path destination, AtomicReference<Throwable> unused)
-        throws Exception {
+    private void extractWithJunrarFile(
+            Path archive, Path destination, AtomicReference<Throwable> unused) throws Exception {
         Junrar.extract(archive.toFile(), destination.toFile());
     }
 
-    private void extractWithJunrarStream(Path archive, Path destination, AtomicReference<Throwable> unused)
-        throws Exception {
+    private void extractWithJunrarStream(
+            Path archive, Path destination, AtomicReference<Throwable> unused) throws Exception {
         try (InputStream input = Files.newInputStream(archive)) {
             Junrar.extract(input, destination.toFile());
         }
     }
 
-    private void extractWithArchiveFile(Path archive, Path destination, AtomicReference<Throwable> memberFailure)
-        throws Exception {
+    private void extractWithArchiveFile(
+            Path archive, Path destination, AtomicReference<Throwable> memberFailure)
+            throws Exception {
         try (Archive input = new Archive(archive.toFile())) {
             drain(input, memberFailure);
         }
     }
 
-    private void extractWithArchiveStream(Path archive, Path destination, AtomicReference<Throwable> memberFailure)
-        throws Exception {
+    private void extractWithArchiveStream(
+            Path archive, Path destination, AtomicReference<Throwable> memberFailure)
+            throws Exception {
         try (InputStream stream = Files.newInputStream(archive);
-             Archive input = new Archive(stream)) {
+                Archive input = new Archive(stream)) {
             drain(input, memberFailure);
         }
     }
@@ -133,7 +137,8 @@ public class UnpackLimitHostileArchiveTest {
         FileHeader header;
         while ((header = archive.nextFileHeader()) != null) {
             final FileHeader current = header;
-            Throwable thrown = catchThrowable(() -> archive.extractFile(current, NullOutputStream.INSTANCE));
+            Throwable thrown =
+                    catchThrowable(() -> archive.extractFile(current, NullOutputStream.INSTANCE));
             if (thrown != null) {
                 memberFailure.compareAndSet(null, thrown);
             }
@@ -155,6 +160,7 @@ public class UnpackLimitHostileArchiveTest {
 
     @FunctionalInterface
     private interface Extraction {
-        void extract(Path archive, Path destination, AtomicReference<Throwable> memberFailure) throws Exception;
+        void extract(Path archive, Path destination, AtomicReference<Throwable> memberFailure)
+                throws Exception;
     }
 }

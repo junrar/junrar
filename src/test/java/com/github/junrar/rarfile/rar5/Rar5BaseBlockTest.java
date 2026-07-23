@@ -1,15 +1,14 @@
 package com.github.junrar.rarfile.rar5;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
+
 import com.github.junrar.exception.CorruptHeaderException;
+import java.io.ByteArrayOutputStream;
+import java.util.zip.CRC32;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
-
-import java.io.ByteArrayOutputStream;
-import java.util.zip.CRC32;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.catchThrowable;
 
 /**
  * M3.2 (issue #23) direct-parse unit tests for the RAR5 block framework: the allocation-free
@@ -41,7 +40,7 @@ class Rar5BaseBlockTest {
 
     /** A 3-byte size vint holding {@code value} (must fit 21 bits), for the boundary rows. */
     private static byte[] vint3(int value) {
-        return new byte[]{
+        return new byte[] {
             (byte) ((value & 0x7f) | 0x80),
             (byte) (((value >>> 7) & 0x7f) | 0x80),
             (byte) ((value >>> 14) & 0x7f)
@@ -102,7 +101,7 @@ class Rar5BaseBlockTest {
         out.write(new byte[4], 0, 4);
         writeLen(out, vint3(0x1FFFF9));
         assertThat(Rar5BaseBlock.checkHeaderSize(out.toByteArray()))
-            .isEqualTo(Rar5BaseBlock.MAX_HEADER_SIZE_RAR5);
+                .isEqualTo(Rar5BaseBlock.MAX_HEADER_SIZE_RAR5);
     }
 
     @Test
@@ -117,8 +116,8 @@ class Rar5BaseBlockTest {
         // parses clean.
         final byte[] first = {0, 0, 0, 0, (byte) 0x81, (byte) 0x80, (byte) 0x80, 0x00};
         assertThat(catchThrowable(() -> Rar5BaseBlock.checkHeaderSize(first)))
-            .isExactlyInstanceOf(CorruptHeaderException.class)
-            .hasMessageContaining("vint bytes");
+                .isExactlyInstanceOf(CorruptHeaderException.class)
+                .hasMessageContaining("vint bytes");
     }
 
     @Test
@@ -128,15 +127,15 @@ class Rar5BaseBlockTest {
         // underrun throw -- not the sizeBytes guard -- is what rejects it.
         final byte[] first = {0, 0, 0, 0, (byte) 0x80, (byte) 0x80, (byte) 0x80};
         assertThat(catchThrowable(() -> Rar5BaseBlock.checkHeaderSize(first)))
-            .isExactlyInstanceOf(CorruptHeaderException.class)
-            .hasMessageContaining("Truncated variable-length integer");
+                .isExactlyInstanceOf(CorruptHeaderException.class)
+                .hasMessageContaining("Truncated variable-length integer");
     }
 
     @Test
     void zeroBlockSizeRejected() {
         final byte[] first = {0, 0, 0, 0, 0x00, 0, 0};
         assertThat(catchThrowable(() -> Rar5BaseBlock.checkHeaderSize(first)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -145,7 +144,7 @@ class Rar5BaseBlockTest {
         // a size field at/under the structural minimum, the framework-level nameSize<=0.)
         final byte[] first = {0, 0, 0, 0, 0x01, 0, 0};
         assertThat(catchThrowable(() -> Rar5BaseBlock.checkHeaderSize(first)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -155,7 +154,7 @@ class Rar5BaseBlockTest {
         // safelyAllocate -- proving the bound fires before any tail buffer is allocated (S1).
         final byte[] first = {0, 0, 0, 0, (byte) 0xFF, (byte) 0xFF, (byte) 0x7F};
         assertThat(catchThrowable(() -> Rar5BaseBlock.checkHeaderSize(first)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     // ---- parse: CRC record-vs-fatal split ---------------------------------
@@ -183,14 +182,15 @@ class Rar5BaseBlockTest {
         final byte[] buf = craft(Rar5BlockType.FILE.getValue(), 0, null, null, 4);
         buf[0] ^= 0xFF;
         assertThat(catchThrowable(() -> Rar5BaseBlock.parse(buf, true)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     // ---- parse: Type / Flags / Extra / Data -------------------------------
 
     @Test
     void dataBlockExposesDataSize() throws Exception {
-        final byte[] buf = craft(Rar5BlockType.FILE.getValue(), Rar5BaseBlock.HFL_DATA, null, 7L, 0);
+        final byte[] buf =
+                craft(Rar5BlockType.FILE.getValue(), Rar5BaseBlock.HFL_DATA, null, 7L, 0);
         final Rar5BaseBlock block = Rar5BaseBlock.parse(buf, false);
         assertThat(block.hasData()).isTrue();
         assertThat(block.getDataSize()).isEqualTo(7L);
@@ -198,9 +198,10 @@ class Rar5BaseBlockTest {
 
     @Test
     void extraSizeGreaterOrEqualHeadSizeRejected() {
-        final byte[] buf = craft(Rar5BlockType.FILE.getValue(), Rar5BaseBlock.HFL_EXTRA, 0x100000L, null, 0);
+        final byte[] buf =
+                craft(Rar5BlockType.FILE.getValue(), Rar5BaseBlock.HFL_EXTRA, 0x100000L, null, 0);
         assertThat(catchThrowable(() -> Rar5BaseBlock.parse(buf, false)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -216,15 +217,16 @@ class Rar5BaseBlockTest {
     void unknownNonSkippableTypeRejected() {
         final byte[] buf = craft(0x40, 0, null, null, 2);
         assertThat(catchThrowable(() -> Rar5BaseBlock.parse(buf, false)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
     void truncatedMidHeaderRejected() {
         // Flags declare packed data, but no DataSize descriptor follows -> vint runs off end.
-        final byte[] buf = craft(Rar5BlockType.FILE.getValue(), Rar5BaseBlock.HFL_DATA, null, null, 0);
+        final byte[] buf =
+                craft(Rar5BlockType.FILE.getValue(), Rar5BaseBlock.HFL_DATA, null, null, 0);
         assertThat(catchThrowable(() -> Rar5BaseBlock.parse(buf, false)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     @Test
@@ -249,7 +251,7 @@ class Rar5BaseBlockTest {
         buf[2] = (byte) (v >>> 16);
         buf[3] = (byte) (v >>> 24);
         assertThat(catchThrowable(() -> Rar5BaseBlock.parse(buf, false)))
-            .isExactlyInstanceOf(CorruptHeaderException.class);
+                .isExactlyInstanceOf(CorruptHeaderException.class);
     }
 
     // ---- wire-value enum round-trip (C11 lesson) --------------------------

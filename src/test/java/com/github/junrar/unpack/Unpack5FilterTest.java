@@ -1,13 +1,12 @@
 package com.github.junrar.unpack;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import com.github.junrar.ArchiveOptions;
 import com.github.junrar.unpack.decode.Compress;
+import java.io.ByteArrayOutputStream;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
-import java.io.ByteArrayOutputStream;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * M3.8 (issue #29) unit tests for the RAR5 filter layer: the four transform kernels against
@@ -34,7 +33,8 @@ class Unpack5FilterTest {
         final Unpack5 u = new Unpack5(false);
         // E8 at 0, addr 0x10 (positive, < 0x1000000): addr -= offset, offset = curPos + 0 = 1.
         final byte[] data = {(byte) 0xE8, 0x10, 0x00, 0x00, 0x00, 0x00};
-        final byte[] out = u.applyFilter(data, data.length, filter(Compress.FILTER_E8, data.length));
+        final byte[] out =
+                u.applyFilter(data, data.length, filter(Compress.FILTER_E8, data.length));
         assertThat(out).isSameAs(data);
         assertThat(out).containsExactly(0xE8, 0x0F, 0x00, 0x00, 0x00, 0x00);
     }
@@ -44,8 +44,11 @@ class Unpack5FilterTest {
         final Unpack5 u = new Unpack5(false);
         // E8 at 1 -> offset = 2; addr = -2 (0xFFFFFFFE): addr + offset = 0 >= 0, so
         // addr += 0x1000000 -> 0x00FFFFFE.
-        final byte[] data = {0x00, (byte) 0xE8, (byte) 0xFE, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, 0x00};
-        final byte[] out = u.applyFilter(data, data.length, filter(Compress.FILTER_E8, data.length));
+        final byte[] data = {
+            0x00, (byte) 0xE8, (byte) 0xFE, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF, 0x00
+        };
+        final byte[] out =
+                u.applyFilter(data, data.length, filter(Compress.FILTER_E8, data.length));
         assertThat(out).containsExactly(0x00, 0xE8, 0xFE, 0xFF, 0xFF, 0x00, 0x00);
     }
 
@@ -54,7 +57,8 @@ class Unpack5FilterTest {
         final Unpack5 u = new Unpack5(false);
         // addr = -0x100000 stays negative after += offset -> untouched.
         final byte[] data = {(byte) 0xE8, 0x00, 0x00, (byte) 0xF0, (byte) 0xFF, 0x00};
-        final byte[] out = u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
+        final byte[] out =
+                u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
         assertThat(out).containsExactly(0xE8, 0x00, 0x00, 0xF0, 0xFF, 0x00);
     }
 
@@ -63,7 +67,8 @@ class Unpack5FilterTest {
         final Unpack5 u = new Unpack5(false);
         // addr = 0x1000000 (== FileSize): (addr - FileSize) has bit 31 clear -> untouched.
         final byte[] data = {(byte) 0xE8, 0x00, 0x00, 0x00, 0x01, 0x00};
-        final byte[] out = u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
+        final byte[] out =
+                u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
         assertThat(out).containsExactly(0xE8, 0x00, 0x00, 0x00, 0x01, 0x00);
     }
 
@@ -71,10 +76,16 @@ class Unpack5FilterTest {
     void e8LeavesJmpOpcodeButE8e9ConvertsIt() {
         final byte[] data = {(byte) 0xE9, 0x10, 0x00, 0x00, 0x00, 0x00};
         final Unpack5 u = new Unpack5(false);
-        final byte[] e8Out = u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
-        assertThat(e8Out).as("E8 filter ignores E9").containsExactly(0xE9, 0x10, 0x00, 0x00, 0x00, 0x00);
-        final byte[] e8e9Out = u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8E9, data.length));
-        assertThat(e8e9Out).as("E8E9 filter converts E9").containsExactly(0xE9, 0x0F, 0x00, 0x00, 0x00, 0x00);
+        final byte[] e8Out =
+                u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
+        assertThat(e8Out)
+                .as("E8 filter ignores E9")
+                .containsExactly(0xE9, 0x10, 0x00, 0x00, 0x00, 0x00);
+        final byte[] e8e9Out =
+                u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8E9, data.length));
+        assertThat(e8e9Out)
+                .as("E8E9 filter converts E9")
+                .containsExactly(0xE9, 0x0F, 0x00, 0x00, 0x00, 0x00);
     }
 
     @Test
@@ -82,7 +93,8 @@ class Unpack5FilterTest {
         final Unpack5 u = new Unpack5(false);
         // E8 at the last position has no room for a 4-byte address (CurPos+4 < DataSize guard).
         final byte[] data = {0x00, 0x00, 0x00, 0x00, (byte) 0xE8};
-        final byte[] out = u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
+        final byte[] out =
+                u.applyFilter(data.clone(), data.length, filter(Compress.FILTER_E8, data.length));
         assertThat(out).containsExactly(0x00, 0x00, 0x00, 0x00, 0xE8);
     }
 
@@ -92,10 +104,11 @@ class Unpack5FilterTest {
     void armConvertsBlAndLeavesOtherConditions() {
         final Unpack5 u = new Unpack5(false);
         final byte[] data = {
-            0x00, 0x00, 0x00, (byte) 0xE1,               // MOV-like word: condition != 0xEB, untouched
-            0x10, 0x00, 0x00, (byte) 0xEB,               // BL imm24=0x10 at curPos=4
+            0x00, 0x00, 0x00, (byte) 0xE1, // MOV-like word: condition != 0xEB, untouched
+            0x10, 0x00, 0x00, (byte) 0xEB, // BL imm24=0x10 at curPos=4
         };
-        final byte[] out = u.applyFilter(data, data.length, filter(Compress.FILTER_ARM, data.length));
+        final byte[] out =
+                u.applyFilter(data, data.length, filter(Compress.FILTER_ARM, data.length));
         assertThat(out).isSameAs(data);
         // offset = 0x10 - (0 + 4)/4 = 0x0F, written back over the low 3 bytes.
         assertThat(out).containsExactly(0x00, 0x00, 0x00, 0xE1, 0x0F, 0x00, 0x00, 0xEB);
@@ -106,7 +119,8 @@ class Unpack5FilterTest {
         final Unpack5 u = new Unpack5(false);
         // imm24 = 0: offset = 0 - 1 wraps to 0xFFFFFF over 3 bytes (uint arithmetic, truncated).
         final byte[] data = {0x00, 0x00, 0x00, (byte) 0xEB, 0x00, 0x00, 0x00, (byte) 0xEB};
-        final byte[] out = u.applyFilter(data, data.length, filter(Compress.FILTER_ARM, data.length));
+        final byte[] out =
+                u.applyFilter(data, data.length, filter(Compress.FILTER_ARM, data.length));
         assertThat(out).containsExactly(0x00, 0x00, 0x00, 0xEB, 0xFF, 0xFF, 0xFF, 0xEB);
     }
 
@@ -122,7 +136,8 @@ class Unpack5FilterTest {
         // Channel 0 (src 1,2,3) -> dst[0],dst[2],dst[4] = -1,-3,-6; channel 1 (src 4,5,6) ->
         // dst[1],dst[3],dst[5] = -4,-9,-15. PrevByte runs per channel.
         assertThat(out).isNotSameAs(data);
-        assertThat(out).startsWith((byte) -1, (byte) -4, (byte) -3, (byte) -9, (byte) -6, (byte) -15);
+        assertThat(out)
+                .startsWith((byte) -1, (byte) -4, (byte) -3, (byte) -9, (byte) -6, (byte) -15);
         assertThat(data).as("source copy untouched by DELTA").containsExactly(1, 2, 3, 4, 5, 6);
     }
 
@@ -131,7 +146,7 @@ class Unpack5FilterTest {
         final Unpack5 u = new Unpack5(false);
         final Unpack5Filter f = filter(Compress.FILTER_DELTA, 4);
         f.setChannels(1);
-        final byte[] out = u.applyFilter(new byte[]{(byte) 0xFF, 1, 1, 1}, 4, f);
+        final byte[] out = u.applyFilter(new byte[] {(byte) 0xFF, 1, 1, 1}, 4, f);
         // prev = 0-0xFF = 1, then 0, -1, -2.
         assertThat(out).startsWith((byte) 1, (byte) 0, (byte) -1, (byte) -2);
     }
@@ -142,7 +157,7 @@ class Unpack5FilterTest {
         final Unpack5Filter f = filter(Compress.FILTER_DELTA, 5);
         f.setChannels(2);
         // dataSize 5, channels 2: channel 0 gets 3 bytes (dst 0,2,4), channel 1 gets 2 (dst 1,3).
-        final byte[] out = u.applyFilter(new byte[]{1, 1, 1, 2, 2}, 5, f);
+        final byte[] out = u.applyFilter(new byte[] {1, 1, 1, 2, 2}, 5, f);
         assertThat(out).startsWith((byte) -1, (byte) -2, (byte) -2, (byte) -4, (byte) -3);
     }
 
@@ -185,7 +200,9 @@ class Unpack5FilterTest {
         final Unpack5Filter f = new Unpack5Filter();
         assertThat(u.readFilter(f)).isTrue();
         assertThat(f.getBlockStart()).isEqualTo(0x1234);
-        assertThat(f.getBlockLength()).as("exactly MAX_FILTER_BLOCK_SIZE is legal").isEqualTo(0x400000);
+        assertThat(f.getBlockLength())
+                .as("exactly MAX_FILTER_BLOCK_SIZE is legal")
+                .isEqualTo(0x400000);
         assertThat(f.getType()).isEqualTo(Compress.FILTER_DELTA);
         assertThat(f.getChannels()).isEqualTo(3);
     }
@@ -212,12 +229,12 @@ class Unpack5FilterTest {
         // 4 bytes; a single wrap would leave it at 0x2C0000 and drop it.
         final BitWriter content = new BitWriter();
         writeCraftedTables(content);
-        content.writeBits(0b10, 2);          // LD code for slot 256 (filter announcement)
-        writeFilterVint(content, 0x300000);  // blockStart, 12 windows away
-        writeFilterVint(content, 4);         // blockLength
+        content.writeBits(0b10, 2); // LD code for slot 256 (filter announcement)
+        writeFilterVint(content, 0x300000); // blockStart, 12 windows away
+        writeFilterVint(content, 4); // blockLength
         content.writeBits(Compress.FILTER_E8, 3);
         for (int i = 0; i < 4; i++) {
-            content.writeBits(0, 1);         // LD code for literal 0x41
+            content.writeBits(0, 1); // LD code for literal 0x41
         }
 
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -228,7 +245,8 @@ class Unpack5FilterTest {
 
         assertThat(out.toByteArray()).containsExactly(0x41, 0x41, 0x41, 0x41);
         assertThat(u.filtersApplied())
-            .as("the remainder folds the start into the window, so the filter runs").isEqualTo(1);
+                .as("the remainder folds the start into the window, so the filter runs")
+                .isEqualTo(1);
     }
 
     @Test
@@ -238,7 +256,7 @@ class Unpack5FilterTest {
         // BlockStart. Without WrapUp on BlockEnd the copy-out runs off the end of the window.
         final int winSize = 0x40000;
         final int blockLength = 0x20;
-        final int leading = winSize - 0x10;  // announce with 0x10 bytes of window left
+        final int leading = winSize - 0x10; // announce with 0x10 bytes of window left
         final int trailing = 0x30;
 
         final BitWriter content = new BitWriter();
@@ -246,8 +264,8 @@ class Unpack5FilterTest {
         for (int i = 0; i < leading; i++) {
             content.writeBits(0, 1);
         }
-        content.writeBits(0b10, 2);          // filter announcement at unpPtr = winSize - 0x10
-        writeFilterVint(content, 0);         // blockStart, relative: right here
+        content.writeBits(0b10, 2); // filter announcement at unpPtr = winSize - 0x10
+        writeFilterVint(content, 0); // blockStart, relative: right here
         writeFilterVint(content, blockLength);
         content.writeBits(Compress.FILTER_E8, 3);
         for (int i = 0; i < trailing; i++) {
@@ -264,7 +282,8 @@ class Unpack5FilterTest {
         final byte[] expected = new byte[total];
         java.util.Arrays.fill(expected, (byte) 0x41);
         assertThat(out.toByteArray())
-            .as("a block wrapping the window end must reassemble byte-identically").isEqualTo(expected);
+                .as("a block wrapping the window end must reassemble byte-identically")
+                .isEqualTo(expected);
         assertThat(u.filtersApplied()).as("the wrapping block really was applied").isEqualTo(1);
     }
 
@@ -278,15 +297,15 @@ class Unpack5FilterTest {
         final BitWriter content = new BitWriter();
         writeCraftedTables(content);
         for (int i = 0; i < Compress.MAX_UNPACK_FILTERS + 1; i++) {
-            content.writeBits(0b10, 2);      // LD code for slot 256 (filter announcement)
-            content.writeBits(0, 2);         // blockStart: 1 byte
-            content.writeBits(0, 8);         //   = 0
-            content.writeBits(0, 2);         // blockLength: 1 byte
-            content.writeBits(4, 8);         //   = 4
+            content.writeBits(0b10, 2); // LD code for slot 256 (filter announcement)
+            content.writeBits(0, 2); // blockStart: 1 byte
+            content.writeBits(0, 8); //   = 0
+            content.writeBits(0, 2); // blockLength: 1 byte
+            content.writeBits(4, 8); //   = 4
             content.writeBits(Compress.FILTER_E8, 3);
         }
         for (int i = 0; i < 4; i++) {
-            content.writeBits(0, 1);         // LD code for literal 0x41
+            content.writeBits(0, 1); // LD code for literal 0x41
         }
         // The block size/bit-size must be exact so the decoder finishes at the block border
         // (LastBlockInFile), the way a real archive ends.
@@ -308,16 +327,18 @@ class Unpack5FilterTest {
 
         assertThat(out.toByteArray()).containsExactly(0x41, 0x41, 0x41, 0x41);
         assertThat(u.pendingFilterCount())
-            .as("the flooded queue was dropped, not accumulated").isLessThanOrEqualTo(1);
+                .as("the flooded queue was dropped, not accumulated")
+                .isLessThanOrEqualTo(1);
         assertThat(u.filtersApplied())
-            .as("only the post-drop filter survives to application").isEqualTo(1);
+                .as("only the post-drop filter survives to application")
+                .isEqualTo(1);
     }
 
     // ---- crafting helpers ----------------------------------------------------------------------
 
     /** Serialize one filter announcement (two vint fields, 3-bit type, DELTA channels). */
-    private static byte[] filterAnnouncement(final long blockStart, final long blockLength,
-            final int type, final int channels) {
+    private static byte[] filterAnnouncement(
+            final long blockStart, final long blockLength, final int type, final int channels) {
         final BitWriter bw = new BitWriter();
         writeFilterVint(bw, blockStart);
         writeFilterVint(bw, blockLength);
@@ -446,10 +467,12 @@ class Unpack5FilterTest {
         return bw.toByteArray();
     }
 
-    private static void writeBlockHeader(final BitWriter bw, final int flags, final int bitSize, final int blockSize) {
+    private static void writeBlockHeader(
+            final BitWriter bw, final int flags, final int bitSize, final int blockSize) {
         final int byteCountBits = blockSize > 0xFFFF ? 2 : (blockSize > 0xFF ? 1 : 0);
         final int flagsByte = (flags & ~0x1F) | (byteCountBits << 3) | ((bitSize - 1) & 0x07);
-        final int checksum = (0x5a ^ flagsByte ^ blockSize ^ (blockSize >>> 8) ^ (blockSize >>> 16)) & 0xff;
+        final int checksum =
+                (0x5a ^ flagsByte ^ blockSize ^ (blockSize >>> 8) ^ (blockSize >>> 16)) & 0xff;
         bw.writeBits(flagsByte, 8);
         bw.writeBits(checksum, 8);
         for (int i = 0; i <= byteCountBits; i++) {

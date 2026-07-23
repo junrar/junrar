@@ -1,8 +1,8 @@
 package com.github.junrar.unpack.vm;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * M2.1 (recognition model) exercises {@link RarVM#execute(VMPreparedProgram)}'s

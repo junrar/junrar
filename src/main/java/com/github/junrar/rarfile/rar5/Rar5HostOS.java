@@ -11,7 +11,6 @@ package com.github.junrar.rarfile.rar5;
  * &sect;4.6).
  */
 public enum Rar5HostOS {
-
     WINDOWS(0),
     UNIX(1);
 

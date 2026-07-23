@@ -18,8 +18,7 @@ public final class Rar5Time {
     /** Seconds between the Windows FILETIME epoch (1601-01-01) and the Unix epoch (1970-01-01). */
     private static final long FILETIME_EPOCH_DIFF_SECONDS = 11_644_473_600L;
 
-    private Rar5Time() {
-    }
+    private Rar5Time() {}
 
     public static FileTime fromUnixSeconds(final long seconds) {
         return FileTime.from(Instant.ofEpochSecond(seconds));
@@ -32,7 +31,9 @@ public final class Rar5Time {
     }
 
     public static FileTime fromWindowsFileTime(final long fileTime100ns) {
-        final long seconds = Math.floorDiv(fileTime100ns, FILETIME_TICKS_PER_SECOND) - FILETIME_EPOCH_DIFF_SECONDS;
+        final long seconds =
+                Math.floorDiv(fileTime100ns, FILETIME_TICKS_PER_SECOND)
+                        - FILETIME_EPOCH_DIFF_SECONDS;
         final long nanos = Math.floorMod(fileTime100ns, FILETIME_TICKS_PER_SECOND) * 100L;
         return FileTime.from(Instant.ofEpochSecond(seconds, nanos));
     }
