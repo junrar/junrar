@@ -1,3 +1,190 @@
+# [8.0.0](https://github.com/junrar/junrar/compare/v7.6.1...v8.0.0) (2026-07-23)
+## 🚀 Features
+**api**
+- 🚨 remove UnsupportedRarV5Exception: *UnsupportedRarV5Exception is removed. It has not been
+thrown since RAR5 extraction landed; callers catching it should catch
+RarException, or UnsupportedRarVersionException for a version this library
+genuinely does not implement.* ([823b42d](https://github.com/junrar/junrar/commits/823b42d)), closes [#289](https://github.com/junrar/junrar/issues/289)
+
+**archive**
+- parse RAR5 main/end/crypt + file/service headers (M3.3) ([9205d23](https://github.com/junrar/junrar/commits/9205d23)), closes [#24](https://github.com/junrar/junrar/issues/24)
+- add RAR5 block-header framework (M3.2) ([9a1916a](https://github.com/junrar/junrar/commits/9a1916a)), closes [#23](https://github.com/junrar/junrar/issues/23)
+- add vint reader, signature dispatch + SFX scan (M3.1) ([4eb0a95](https://github.com/junrar/junrar/commits/4eb0a95)), closes [#22](https://github.com/junrar/junrar/issues/22)
+
+**crypt**
+- RAR5 Blake2s/Blake2sp + DataHash hash seam (M3.5) ([938b8fa](https://github.com/junrar/junrar/commits/938b8fa)), closes [#26](https://github.com/junrar/junrar/issues/26)
+- RAR5 KDF, pswcheck, header + data decryption (M3.4) ([faae8cc](https://github.com/junrar/junrar/commits/faae8cc)), closes [#25](https://github.com/junrar/junrar/issues/25)
+
+**links**
+- RAR5 REDIR extraction + three symlink-safety layers (M3.10) ([410a646](https://github.com/junrar/junrar/commits/410a646)), closes [#31](https://github.com/junrar/junrar/issues/31)
+
+**rar5**
+- segment the window lazily above 1 GB, capability 64 GB (M4.3) ([85b61ad](https://github.com/junrar/junrar/commits/85b61ad)), closes [#35](https://github.com/junrar/junrar/issues/35)
+- decode RAR7 extended distances and route version 70 (M4.2) ([434de0e](https://github.com/junrar/junrar/commits/434de0e)), closes [#34](https://github.com/junrar/junrar/issues/34)
+- parse RAR7 compression info and gate its dictionary (M4.1) ([345c291](https://github.com/junrar/junrar/commits/345c291)), closes [#33](https://github.com/junrar/junrar/issues/33) [#34](https://github.com/junrar/junrar/issues/34)
+- 🚨 lift the V5 extraction gate, delete the pre-gate harness (M3.11): *RAR5 archives now open and extract instead of throwing
+UnsupportedRarV5Exception; the exception class is deprecated.
+
+Refs #32* ([dd64124](https://github.com/junrar/junrar/commits/dd64124)), closes [#32](https://github.com/junrar/junrar/issues/32)
+
+**unpack**
+- RAR5 filters (DELTA/E8/E8E9/ARM) + sweep topology (M3.8) ([8eaea37](https://github.com/junrar/junrar/commits/8eaea37)), closes [#29](https://github.com/junrar/junrar/issues/29)
+- RAR5 Unpack5 decode loop + engine lifecycle (M3.7) ([5abb2d8](https://github.com/junrar/junrar/commits/5abb2d8)), closes [#28](https://github.com/junrar/junrar/issues/28)
+- RAR5 Unpack5 skeleton — window, tables, block header (M3.6) ([ee6386a](https://github.com/junrar/junrar/commits/ee6386a)), closes [#27](https://github.com/junrar/junrar/issues/27)
+
+**volume**
+- RAR5 multi-volume spanning + typed volume errors (M3.9) ([3308906](https://github.com/junrar/junrar/commits/3308906)), closes [#30](https://github.com/junrar/junrar/issues/30)
+
+**unscoped**
+- verify RAR3 header CRCs, refuse extracting broken FILE headers ([a0870d3](https://github.com/junrar/junrar/commits/a0870d3)), closes [#12](https://github.com/junrar/junrar/issues/12)
+- add ArchiveOptions construction-time configuration API (P0.8) ([a9f5af7](https://github.com/junrar/junrar/commits/a9f5af7))
+
+## 🐛 Fixes
+**archive**
+- add unrar's second, unconditional FILE/SERVICE header-CRC check ([9eca3ec](https://github.com/junrar/junrar/commits/9eca3ec)), closes [#12](https://github.com/junrar/junrar/issues/12) [#38](https://github.com/junrar/junrar/issues/38)
+- reject backward-seeking RAR5 DataSize vint ([8974da5](https://github.com/junrar/junrar/commits/8974da5)), closes [#23](https://github.com/junrar/junrar/issues/23)
+
+**build**
+- pin compileTestJava release=21 so ArchUnit can parse test bytecode ([4600a08](https://github.com/junrar/junrar/commits/4600a08)), closes [#36](https://github.com/junrar/junrar/issues/36)
+
+**rar3**
+- decode narrow names as UTF-8 when the bytes are valid ([e00b6c5](https://github.com/junrar/junrar/commits/e00b6c5)), closes [#44](https://github.com/junrar/junrar/issues/44)
+
+**rar5**
+- widen the split-before guard to any RAR5-container entry ([30d1aaf](https://github.com/junrar/junrar/commits/30d1aaf)), closes [#30](https://github.com/junrar/junrar/issues/30) [#43](https://github.com/junrar/junrar/issues/43)
+- route unknown-algorithm-version entries by container, not family ([57d38d8](https://github.com/junrar/junrar/commits/57d38d8)), closes [#43](https://github.com/junrar/junrar/issues/43)
+- wrap window positions instead of masking them (M4.3) ([c60795b](https://github.com/junrar/junrar/commits/c60795b)), closes [#35](https://github.com/junrar/junrar/issues/35)
+
+**rarfile**
+- bounds-check encname decode and drop method 36 ([47198c5](https://github.com/junrar/junrar/commits/47198c5)), closes [#19](https://github.com/junrar/junrar/issues/19)
+
+**unpack**
+- zero-fill distance-into-void via FirstWinDone tracking (7.0.3) ([4c59fe5](https://github.com/junrar/junrar/commits/4c59fe5)), closes [#18](https://github.com/junrar/junrar/issues/18)
+- mask RAR1.5 LongLZ distance write index ([a81a5e9](https://github.com/junrar/junrar/commits/a81a5e9)), closes [#17](https://github.com/junrar/junrar/issues/17)
+- compare RAR filter fields unsigned ([65fe437](https://github.com/junrar/junrar/commits/65fe437))
+- reject unsigned delta sizes ([d2d0f72](https://github.com/junrar/junrar/commits/d2d0f72))
+- reject unsigned filter positions ([146e15b](https://github.com/junrar/junrar/commits/146e15b))
+- bound RAR3 delta channels ([1cfdccd](https://github.com/junrar/junrar/commits/1cfdccd))
+- guard RAR 1.5 flags index ([22f95f9](https://github.com/junrar/junrar/commits/22f95f9))
+- bound RAR3 filter stacks ([4f36413](https://github.com/junrar/junrar/commits/4f36413))
+
+**unscoped**
+- guard PPM state arrays ([af0af77](https://github.com/junrar/junrar/commits/af0af77))
+- latch nested PPM decode errors ([146bc6b](https://github.com/junrar/junrar/commits/146bc6b))
+- mark *.bin oracle fixtures binary to survive Windows checkout ([ea03470](https://github.com/junrar/junrar/commits/ea03470)), closes [#37](https://github.com/junrar/junrar/issues/37)
+- give v20-solid-negative-backref.rar real header CRCs, not 0x0000 ([16a5fc8](https://github.com/junrar/junrar/commits/16a5fc8))
+- decode plain-ANSI names byte-transparently, not as UTF-8 (T6 fix round) ([1171d33](https://github.com/junrar/junrar/commits/1171d33))
+- decode ANSI names with explicit UTF-8, port whole-name branch (T6) ([a58a48a](https://github.com/junrar/junrar/commits/a58a48a))
+- serialize RAR3 KDF passwords as UTF-16LE, not platform charset (T4) ([90e6840](https://github.com/junrar/junrar/commits/90e6840))
+- promote unpSize sentinel to INT64MAX (T1) ([1e32b05](https://github.com/junrar/junrar/commits/1e32b05))
+- honor PPM MaxMB verbatim per unrar policy (S8/P0.5) ([e23273d](https://github.com/junrar/junrar/commits/e23273d))
+- correct ProtectHeader layout to unrar SIZEOF_PROTECTHEAD 26 (T2) ([266f2bb](https://github.com/junrar/junrar/commits/266f2bb))
+
+## 🔄️ Changes
+**vm**
+- delete the dead RAR3 bytecode interpreter (M2.2) ([e2287ab](https://github.com/junrar/junrar/commits/e2287ab)), closes [#20](https://github.com/junrar/junrar/issues/20) [#21](https://github.com/junrar/junrar/issues/21)
+- replace RAR3 interpreter with 5.5.1 fingerprint recognition ([b1ca0f2](https://github.com/junrar/junrar/commits/b1ca0f2)), closes [#20](https://github.com/junrar/junrar/issues/20)
+
+**unscoped**
+- 🚨 rename deprecated methods in FileHeader: *remove deprecated FileHeader#getFileNameString and FileHeader#getFileNameW* ([c78e224](https://github.com/junrar/junrar/commits/c78e224))
+- 🚨 remove deprecated BaseBlock#getHeaderSize(): *remove deprecated BaseBlock#getHeaderSize()* ([81dd982](https://github.com/junrar/junrar/commits/81dd982))
+- apply Spotless formatting ([9ec0986](https://github.com/junrar/junrar/commits/9ec0986))
+- ci: keep the regression test in its own workflow ([0f6ddaa](https://github.com/junrar/junrar/commits/0f6ddaa)), closes [#289](https://github.com/junrar/junrar/issues/289)
+
+## 🧪 Tests
+**archive**
+- pin encrypted-header fatal-at-open to Archive construction ([d86980e](https://github.com/junrar/junrar/commits/d86980e)), closes [#38](https://github.com/junrar/junrar/issues/38)
+- pin short-input rejection, refresh stale VC snapshot ([8712039](https://github.com/junrar/junrar/commits/8712039)), closes [#42](https://github.com/junrar/junrar/issues/42) [#288](https://github.com/junrar/junrar/issues/288)
+
+**corpus**
+- add M3.11 three-shape audit + all-members oracle-check scripts ([b099bcc](https://github.com/junrar/junrar/commits/b099bcc)), closes [#32](https://github.com/junrar/junrar/issues/32)
+- flip 345 RAR5 member expectations for the lifted V5 gate ([6f76df5](https://github.com/junrar/junrar/commits/6f76df5)), closes [#32](https://github.com/junrar/junrar/issues/32)
+
+**ppm**
+- assert reflected unpack/ppm non-null in heap dump oracle ([0e0532d](https://github.com/junrar/junrar/commits/0e0532d))
+
+**rar5**
+- make two vint-guard tests earn their names ([0912a82](https://github.com/junrar/junrar/commits/0912a82))
+- pin the solid-window grow-mid-set rejection ([4bc018c](https://github.com/junrar/junrar/commits/4bc018c))
+- pin file-header compat quirks and crypt-record guards ([85361f3](https://github.com/junrar/junrar/commits/85361f3))
+- pin main-header hostile-input guards ([3272828](https://github.com/junrar/junrar/commits/3272828))
+
+**regression**
+- ship a payload-stripped corpus, drop the 7 GB download ([82f54fa](https://github.com/junrar/junrar/commits/82f54fa)), closes [#41](https://github.com/junrar/junrar/issues/41)
+
+**unpack**
+- drive M1.4 first-window distance-into-void from hostile fixtures ([7ed0a2d](https://github.com/junrar/junrar/commits/7ed0a2d)), closes [#18](https://github.com/junrar/junrar/issues/18)
+- drive M1.3 filter/channel/flags limits from hostile archives ([39d5b8e](https://github.com/junrar/junrar/commits/39d5b8e)), closes [#17](https://github.com/junrar/junrar/issues/17)
+- pin RAR 1.5 flags boundary ([d2cf4eb](https://github.com/junrar/junrar/commits/d2cf4eb))
+- pin RAR3 filter upper bound ([f67e7ae](https://github.com/junrar/junrar/commits/f67e7ae))
+
+**unscoped**
+- make every suite runnable on a real JVM 8 toolchain ([6ca1348](https://github.com/junrar/junrar/commits/6ca1348)), closes [#289](https://github.com/junrar/junrar/issues/289)
+- reconcile upstream regression tests with this branch (R6 sync) ([fb62ab3](https://github.com/junrar/junrar/commits/fb62ab3)), closes [#5](https://github.com/junrar/junrar/issues/5) [#12](https://github.com/junrar/junrar/issues/12)
+- document PPM fixture provenance ([3cff6b6](https://github.com/junrar/junrar/commits/3cff6b6))
+- add PPMd heap dump oracle ([5a540ce](https://github.com/junrar/junrar/commits/5a540ce))
+- refresh 7 corpus reference JSONs for T6 byte-transparent decode ([3efb1bc](https://github.com/junrar/junrar/commits/3efb1bc)), closes [#11](https://github.com/junrar/junrar/issues/11) [#38](https://github.com/junrar/junrar/issues/38)
+- discriminate builder password copy; document null-literal ambiguity (P0.8 fix round) ([7a5f90f](https://github.com/junrar/junrar/commits/7a5f90f)), closes [#13](https://github.com/junrar/junrar/issues/13)
+- pin C15 signedness class rule + audit ledger (P0.4) ([2eae244](https://github.com/junrar/junrar/commits/2eae244))
+- pin C13 long-clean lengths and D1 byte[] refusal (P0.3) ([9f768e6](https://github.com/junrar/junrar/commits/9f768e6))
+- pin C7 protect-header seek-past-data ([2fee927](https://github.com/junrar/junrar/commits/2fee927))
+- pin C1 solid-v20 negative back-ref (P0.1) ([ff86dda](https://github.com/junrar/junrar/commits/ff86dda))
+
+## 🛠  Build
+**regression**
+- retry transient corpus download failures ([1d39cc3](https://github.com/junrar/junrar/commits/1d39cc3))
+- fetch corpus by id via gdown with caching ([5b6ec04](https://github.com/junrar/junrar/commits/5b6ec04))
+
+**unscoped**
+- drop dead JGit dependency constraint ([258a0b0](https://github.com/junrar/junrar/commits/258a0b0))
+- enable Spotless with JGit-free parameters ([0ccc14c](https://github.com/junrar/junrar/commits/0ccc14c))
+- gate release on JRE smoke ([ec5a10a](https://github.com/junrar/junrar/commits/ec5a10a))
+- run the unit and regression suites on a Java 8/25 matrix ([3023d06](https://github.com/junrar/junrar/commits/3023d06)), closes [#289](https://github.com/junrar/junrar/issues/289)
+- build and test on JDK 25, pin the regression harness bytecode ([c168901](https://github.com/junrar/junrar/commits/c168901))
+- compile the smoke runner through a Gradle source set ([904f2a4](https://github.com/junrar/junrar/commits/904f2a4))
+- build the smoke jar with Gradle on JDK 25, keep the JRE 8/25 matrix ([4c8f1c7](https://github.com/junrar/junrar/commits/4c8f1c7)), closes [#36](https://github.com/junrar/junrar/issues/36)
+- build the smoke jar with a real JDK 8 and run it on JRE 8 and 25 ([f7b1704](https://github.com/junrar/junrar/commits/f7b1704)), closes [#289](https://github.com/junrar/junrar/issues/289)
+- keep the regression test in its own workflow ([544b18d](https://github.com/junrar/junrar/commits/544b18d))
+- fold the regression test into the main CI workflow ([560f07d](https://github.com/junrar/junrar/commits/560f07d)), closes [#289](https://github.com/junrar/junrar/issues/289)
+- compile the jre8 smoke runner with explicit -encoding UTF-8 ([43c0afe](https://github.com/junrar/junrar/commits/43c0afe))
+- add JRE 8 runtime extraction smoke job (P0.9) ([d503bff](https://github.com/junrar/junrar/commits/d503bff))
+
+## 📝 Documentation
+**api**
+- explain why getFileCRC() stays a signed int, and pin it ([3b63fa3](https://github.com/junrar/junrar/commits/3b63fa3)), closes [#260](https://github.com/junrar/junrar/issues/260) [#289](https://github.com/junrar/junrar/issues/289)
+
+**contributing**
+- keep the original corpus URL for regeneration ([7515dfc](https://github.com/junrar/junrar/commits/7515dfc)), closes [#289](https://github.com/junrar/junrar/issues/289)
+
+**porting**
+- cite port-tracker issues by PT-NN appendix keys ([cd6323d](https://github.com/junrar/junrar/commits/cd6323d)), closes [#289](https://github.com/junrar/junrar/issues/289)
+- make issue citations survive the port tracker ([d6d3aff](https://github.com/junrar/junrar/commits/d6d3aff)), closes [#31](https://github.com/junrar/junrar/issues/31) [#40](https://github.com/junrar/junrar/issues/40) [#289](https://github.com/junrar/junrar/issues/289)
+- stop claiming checkstyle enforces the house rules ([d9515ab](https://github.com/junrar/junrar/commits/d9515ab)), closes [#289](https://github.com/junrar/junrar/issues/289)
+
+**rar5**
+- close #40 FHEXTRA_REDIR link-path divergences as keep ([6c40209](https://github.com/junrar/junrar/commits/6c40209)), closes [#40](https://github.com/junrar/junrar/issues/40)
+
+**unscoped**
+- update supported RAR version in README ([6c5ca7d](https://github.com/junrar/junrar/commits/6c5ca7d))
+- remap two commit citations the markdown-only sweep missed ([ad35e1b](https://github.com/junrar/junrar/commits/ad35e1b))
+- remap commit citations orphaned by the upstream rebase ([576dbc0](https://github.com/junrar/junrar/commits/576dbc0))
+- correct the M3.10 commit citation in no-go row D3 ([fca2a6c](https://github.com/junrar/junrar/commits/fca2a6c)), closes [#40](https://github.com/junrar/junrar/issues/40)
+- add missing javadoc summary on BaseBlock#setBrokenHeader ([c66cd00](https://github.com/junrar/junrar/commits/c66cd00))
+- record T6 ISO-8859-1 decision and T4 non-BMP divergence (manual §6) ([6ffc2a0](https://github.com/junrar/junrar/commits/6ffc2a0))
+- qualify P0.8 additive claim in plan §5.4 (source-level null-literal caveat) ([656f501](https://github.com/junrar/junrar/commits/656f501)), closes [#13](https://github.com/junrar/junrar/issues/13)
+- reconcile S8 resolution and clear residual UNPINNED markers after P0.5 ([60b1ecc](https://github.com/junrar/junrar/commits/60b1ecc))
+- reconcile C15 pin state and d276f937 attribution after P0.4 ([e47d8d6](https://github.com/junrar/junrar/commits/e47d8d6))
+- precise post-sweep shift-history claim for RarVM (36a58836) ([a3b88de](https://github.com/junrar/junrar/commits/a3b88de))
+- correct signedness-audit claims per verification ([d1c534d](https://github.com/junrar/junrar/commits/d1c534d)), closes [#9](https://github.com/junrar/junrar/issues/9)
+- reconcile pin state after P0.3; snapshot-note the divergences report ([2f0a493](https://github.com/junrar/junrar/commits/2f0a493))
+- reconcile manual UNPINNED/T2 state after P0.1-P0.2 ([34e9fa7](https://github.com/junrar/junrar/commits/34e9fa7))
+- revise parity plan per external review (GPT-5.6 Sol) ([c0abbd9](https://github.com/junrar/junrar/commits/c0abbd9))
+- correct RAR5 KDF snapshot offsets and header-CRC semantics ([72c2d49](https://github.com/junrar/junrar/commits/72c2d49))
+- revise parity plan per independent adversarial review ([3e0022b](https://github.com/junrar/junrar/commits/3e0022b))
+- correct Blake2sp/Bouncy Castle claim in migration manual ([25c4db2](https://github.com/junrar/junrar/commits/25c4db2))
+- add RAR5/RAR7 extraction parity plan ([7a0f936](https://github.com/junrar/junrar/commits/7a0f936))
+- add C++→Java migration manual and porting analysis reports ([55e165e](https://github.com/junrar/junrar/commits/55e165e))
+
 # [7.6.1](https://github.com/junrar/junrar/compare/v7.6.0...v7.6.1) (2026-07-21)
 ## 🐛 Fixes
 
