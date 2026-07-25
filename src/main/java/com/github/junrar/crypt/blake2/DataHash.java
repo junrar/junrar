@@ -13,6 +13,8 @@ package com.github.junrar.crypt.blake2;
  * // ponytail: no Crc32-backed DataHash today; ComprDataIO branches on Rar5HashType inline
  * // instead. Add one if/when the M3.6/M3.7 decode routes CRC verification through this same
  * // seam as BLAKE2sp -- until then a second implementation would be speculative.
+ * // The third unrar hash kind, HASH_NONE, is represented as FileHeader#hasFileCrc() == false
+ * // rather than a type arm (#291).
  */
 public interface DataHash {
 

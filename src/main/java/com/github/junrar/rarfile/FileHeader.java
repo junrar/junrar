@@ -59,6 +59,15 @@ public class FileHeader extends BlockHeader {
 
     private final int fileCRC;
 
+    /**
+     * Whether a CRC32 checksum is stored for this entry. Always {@code true} for a RAR3 entry
+     * (which always carries a CRC32) and for a RAR5 entry with the {@code FHFL_CRC32} flag;
+     * {@code false} for a RAR5 entry that stores no checksum (unrar {@code HASH_NONE}). Such an
+     * entry must skip verification rather than compare the computed CRC against a zero
+     * {@link #fileCRC}, which would spuriously fail every non-empty file.
+     */
+    private boolean hasFileCrc = true;
+
     private byte unpVersion;
 
     private byte unpMethod;
@@ -350,6 +359,7 @@ public class FileHeader extends BlockHeader {
 
         this.fileAttr = (int) p.fileAttr;
         this.fileCRC = p.hasCrc32 ? p.fileCRC : 0;
+        this.hasFileCrc = p.hasCrc32;
 
         this.unpMethod = (byte) p.unpMethod;
         this.unpVersion = p.unpVersion;
@@ -793,6 +803,17 @@ public class FileHeader extends BlockHeader {
      */
     public int getFileCRC() {
         return fileCRC;
+    }
+
+    /**
+     * @return whether this entry stores a CRC32 checksum. When {@code false} (a RAR5
+     *     {@code HASH_NONE} entry with no {@code FHFL_CRC32} flag), {@link #getFileCRC()} returns 0
+     *     and extraction must skip CRC verification -- unrar treats a missing hash as valid
+     *     ({@code d861246:extract.cpp:934}, {@code DataHash::Cmp} of two {@code HASH_NONE} values
+     *     returns true; it prints {@code "?"} rather than {@code "OK"}).
+     */
+    public boolean hasFileCrc() {
+        return hasFileCrc;
     }
 
     public byte[] getFileNameByteArray() {

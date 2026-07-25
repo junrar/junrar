@@ -201,6 +201,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * Canonical constructor: every other {@code Archive} constructor delegates here,
      * directly or transitively. See {@link ArchiveOptions} for the password/resource
      * configuration contract (password hygiene, {@code maxDictionarySize} budget).
+     *
+     * @param volumeManager supplies the first volume and, for a multi-volume set, each
+     *                      continuation as extraction crosses a volume boundary.
+     * @param options       the password/resource configuration; see {@link ArchiveOptions#builder()}.
+     * @throws RarException if the first volume is not a readable RAR archive (bad signature,
+     *                      corrupt or unsupported headers). The partially-opened archive is
+     *                      closed before this propagates.
+     * @throws IOException  if the first volume cannot be opened or read.
      */
     public Archive(final VolumeManager volumeManager, final ArchiveOptions options)
             throws RarException, IOException {
@@ -1732,7 +1740,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     if (actualCRC != expectedCRC) {
                         throw new CrcErrorException();
                     }
-                } else {
+                } else if (hd.hasFileCrc()) {
                     // Verify file CRC
                     final long actualCRC =
                             hd.isSplitAfter()
@@ -1743,6 +1751,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                         throw new CrcErrorException();
                     }
                 }
+                // else: a RAR5 entry that stores no checksum (unrar HASH_NONE). There is nothing
+                // to verify -- unrar treats a missing hash as valid (d861246:extract.cpp:934)
+                // and prints "?", so extraction must succeed rather than compare against a
+                // zero CRC.
             }
             // if (!hd.isSplitAfter()) {
             // // Verify file CRC
