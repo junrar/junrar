@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1525542385.004882800,
+    "creationTime" : null,
+    "fileCRC" : 679409740,
+    "fileName" : "NEW   iptv m3u playlist 6 May 2018.txt",
+    "hostOS" : "win32",
+    "fullPackSize" : 161,
+    "fullUnpackSize" : 201,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

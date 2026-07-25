@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528962045.269393700,
+    "creationTime" : null,
+    "fileCRC" : -1841796718,
+    "fileName" : "программа для вступительного экзамена в магистратуру.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 5650,
+    "fullUnpackSize" : 32768,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

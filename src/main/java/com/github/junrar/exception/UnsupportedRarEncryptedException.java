@@ -5,6 +5,5 @@ public class UnsupportedRarEncryptedException extends RarException {
         super(cause);
     }
 
-    public UnsupportedRarEncryptedException() {
-    }
+    public UnsupportedRarEncryptedException() {}
 }

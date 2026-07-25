@@ -18,7 +18,6 @@
  */
 package com.github.junrar.unsigned;
 
-
 /**
  * DOCUMENT ME
  *

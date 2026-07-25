@@ -19,8 +19,6 @@ package com.github.junrar.unpack.ppm;
 
 import com.github.junrar.io.Raw;
 
-
-
 /**
  * DOCUMENT ME
  *
@@ -28,7 +26,7 @@ import com.github.junrar.io.Raw;
  * @version $LastChangedRevision$
  */
 public class RarNode extends Pointer {
-    private int next; //rarnode pointer
+    private int next; // rarnode pointer
 
     public static final int size = 4;
 
@@ -38,7 +36,7 @@ public class RarNode extends Pointer {
 
     public int getNext() {
         if (mem != null) {
-            next = Raw.readIntLittleEndian(mem,  pos);
+            next = Raw.readIntLittleEndian(mem, pos);
         }
         return next;
     }

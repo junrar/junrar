@@ -4,7 +4,6 @@ package com.github.junrar.rarfile;
  * Known versions of the rar file format.
  */
 public enum RARVersion {
-
     OLD,
     V4,
     V5;

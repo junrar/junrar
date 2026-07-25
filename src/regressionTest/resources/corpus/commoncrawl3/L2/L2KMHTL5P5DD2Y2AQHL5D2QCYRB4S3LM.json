@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1530914321.000000000,
+    "creationTime" : null,
+    "fileCRC" : -732449792,
+    "fileName" : "White.Fang.2018.WEBRip.XviD.AC3-SHITBOX.srt",
+    "hostOS" : "win32",
+    "fullPackSize" : 12359,
+    "fullUnpackSize" : 34925,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

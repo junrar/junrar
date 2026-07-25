@@ -5,8 +5,7 @@ public class RarException extends Exception {
         super(cause);
     }
 
-    public RarException() {
-    }
+    public RarException() {}
 
     public RarException(String message) {
         super(message);

@@ -1,7 +1,6 @@
 package com.github.junrar.volume;
 
 import com.github.junrar.Archive;
-
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
@@ -31,5 +30,4 @@ public class InputStreamVolumeManager implements VolumeManager {
         if (next != null) return new InputStreamVolume(archive, next, nextPosition);
         return null;
     }
-
 }

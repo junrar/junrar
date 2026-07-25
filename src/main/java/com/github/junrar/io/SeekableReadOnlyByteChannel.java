@@ -19,7 +19,6 @@ package com.github.junrar.io;
 
 import java.io.IOException;
 
-
 /**
  * DOCUMENT ME
  *

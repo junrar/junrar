@@ -44,6 +44,4 @@ public class ContentDescription {
     public String toString() {
         return path + ": " + size;
     }
-
-
 }

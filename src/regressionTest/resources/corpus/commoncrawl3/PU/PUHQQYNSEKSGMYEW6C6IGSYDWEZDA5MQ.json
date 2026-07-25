@@ -1,8 +1,24 @@
 {
   "isRarV5" : true,
   "isEncrypted" : false,
-  "isPasswordProtected" : false,
+  "isPasswordProtected" : true,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1521038859.023931200,
+    "creationTime" : null,
+    "fileCRC" : 1872370490,
+    "fileName" : "Adobe.Flash.Player.v29.0.0.113.PPAPI/Setup.exe",
+    "hostOS" : "win32",
+    "fullPackSize" : 20321376,
+    "fullUnpackSize" : 20810712,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

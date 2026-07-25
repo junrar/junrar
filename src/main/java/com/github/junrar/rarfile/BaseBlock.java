@@ -22,8 +22,6 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-
 /**
  * Base class of all rar headers
  *
@@ -36,7 +34,7 @@ public class BaseBlock {
 
     public static final short BaseBlockSize = 7;
 
-    //TODO move somewhere else
+    // TODO move somewhere else
 
     public static final short MHD_VOLUME = 0x0001;
     public static final short MHD_COMMENT = 0x0002;
@@ -50,38 +48,36 @@ public class BaseBlock {
     public static final short MHD_FIRSTVOLUME = 0x0100;
     public static final short MHD_ENCRYPTVER = 0x0200;
 
+    public static final short LHD_SPLIT_BEFORE = 0x0001;
+    public static final short LHD_SPLIT_AFTER = 0x0002;
+    public static final short LHD_PASSWORD = 0x0004;
+    public static final short LHD_COMMENT = 0x0008;
+    public static final short LHD_SOLID = 0x0010;
 
-    public static final short LHD_SPLIT_BEFORE =  0x0001;
-    public static final short LHD_SPLIT_AFTER  =  0x0002;
-    public static final short LHD_PASSWORD     =  0x0004;
-    public static final short LHD_COMMENT      =  0x0008;
-    public static final short LHD_SOLID        =  0x0010;
+    public static final short LHD_WINDOWMASK = 0x00e0;
+    public static final short LHD_WINDOW64 = 0x0000;
+    public static final short LHD_WINDOW128 = 0x0020;
+    public static final short LHD_WINDOW256 = 0x0040;
+    public static final short LHD_WINDOW512 = 0x0060;
+    public static final short LHD_WINDOW1024 = 0x0080;
+    public static final short LHD_WINDOW2048 = 0x00a0;
+    public static final short LHD_WINDOW4096 = 0x00c0;
+    public static final short LHD_DIRECTORY = 0x00e0;
 
-    public static final short LHD_WINDOWMASK   =  0x00e0;
-    public static final short LHD_WINDOW64     =  0x0000;
-    public static final short LHD_WINDOW128    =  0x0020;
-    public static final short LHD_WINDOW256    =  0x0040;
-    public static final short LHD_WINDOW512    =  0x0060;
-    public static final short LHD_WINDOW1024   =  0x0080;
-    public static final short LHD_WINDOW2048   =  0x00a0;
-    public static final short LHD_WINDOW4096   =  0x00c0;
-    public static final short LHD_DIRECTORY    =  0x00e0;
+    public static final short LHD_LARGE = 0x0100;
+    public static final short LHD_UNICODE = 0x0200;
+    public static final short LHD_SALT = 0x0400;
+    public static final short LHD_VERSION = 0x0800;
+    public static final short LHD_EXTTIME = 0x1000;
+    public static final short LHD_EXTFLAGS = 0x2000;
 
-    public static final short LHD_LARGE        =  0x0100;
-    public static final short LHD_UNICODE      =  0x0200;
-    public static final short LHD_SALT         =  0x0400;
-    public static final short LHD_VERSION      =  0x0800;
-    public static final short LHD_EXTTIME      =  0x1000;
-    public static final short LHD_EXTFLAGS     =  0x2000;
+    public static final short SKIP_IF_UNKNOWN = 0x4000;
+    public static final short LONG_BLOCK = -0x8000;
 
-    public static final short SKIP_IF_UNKNOWN  =  0x4000;
-    public static final short LONG_BLOCK       = -0x8000;
-
-    public static final short EARC_NEXT_VOLUME =  0x0001;
-    public static final short EARC_DATACRC     =  0x0002;
-    public static final short EARC_REVSPACE    =  0x0004;
-    public static final short EARC_VOLNUMBER   =  0x0008;
-
+    public static final short EARC_NEXT_VOLUME = 0x0001;
+    public static final short EARC_DATACRC = 0x0002;
+    public static final short EARC_REVSPACE = 0x0004;
+    public static final short EARC_VOLNUMBER = 0x0008;
 
     protected long positionInFile;
 
@@ -90,12 +86,12 @@ public class BaseBlock {
     protected short flags = 0;
     protected short headerSize = 0;
 
+    private boolean brokenHeader;
+
     /**
      *
      */
-    public BaseBlock() {
-
-    }
+    public BaseBlock() {}
 
     public BaseBlock(BaseBlock bb) {
         this.flags = bb.getFlags();
@@ -104,6 +100,7 @@ public class BaseBlock {
         this.headerSize = bb.getHeaderSize(false);
         this.positionInFile = bb.getPositionInFile();
     }
+
     public BaseBlock(byte[] baseBlockHeader) {
 
         int pos = 0;
@@ -116,6 +113,30 @@ public class BaseBlock {
         this.headerSize = Raw.readShortLittleEndian(baseBlockHeader, pos);
     }
 
+    /**
+     * Whether this header's stored CRC failed the P0.7 verification (issue #12): unrar's
+     * "record and continue" tolerance -- a mismatch does not, by itself, abort archive
+     * open. {@link com.github.junrar.rarfile.FileHeader} extraction refuses a broken
+     * header instead (see {@code Archive#doExtractFile}); junrar's one conscious,
+     * narrower-scoped divergence from unrar's own "warn at open, let the file data CRC
+     * decide at extract" tolerance. Always {@code false} for header types exempt from
+     * verification (SIGN, AV, old-Unix-owner sub-blocks) and for {@link MarkHeader},
+     * which has no CRC of its own.
+     *
+     * @return true if the header CRC did not match the computed value.
+     */
+    public boolean isBrokenHeader() {
+        return brokenHeader;
+    }
+
+    /**
+     * Sets whether this header's stored CRC failed verification.
+     *
+     * @param brokenHeader see {@link #isBrokenHeader()}.
+     */
+    public void setBrokenHeader(boolean brokenHeader) {
+        this.brokenHeader = brokenHeader;
+    }
 
     public boolean hasArchiveDataCRC() {
         return (this.flags & EARC_DATACRC) != 0;
@@ -123,6 +144,17 @@ public class BaseBlock {
 
     public boolean hasVolumeNumber() {
         return (this.flags & EARC_VOLNUMBER) != 0;
+    }
+
+    /**
+     * Whether this (EndArc) header signals REV-recovery-volume space (P0.7, issue #12;
+     * unrar {@code EARC_REVSPACE}): its last 7 bytes may legitimately be zero, which
+     * {@code Archive}'s header-CRC verification treats as a recovery, not a mismatch.
+     *
+     * @return isRevSpace
+     */
+    public boolean hasRevSpace() {
+        return (this.flags & EARC_REVSPACE) != 0;
     }
 
     public boolean hasEncryptVersion() {
@@ -140,7 +172,6 @@ public class BaseBlock {
             return (true);
         }
         return (false);
-
     }
 
     public long getPositionInFile() {
@@ -153,17 +184,6 @@ public class BaseBlock {
 
     public short getHeadCRC() {
         return headCRC;
-    }
-
-    /**
-     * The header size.
-     *
-     * @return the header size
-     * @deprecated As of 7.3.0, replaced by {@link #getHeaderSize(boolean)}
-     */
-    @Deprecated
-    public short getHeaderSize() {
-        return headerSize;
     }
 
     /**

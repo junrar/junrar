@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528139498.565622400,
+    "creationTime" : null,
+    "fileCRC" : 335634843,
+    "fileName" : "Processo 048 - RecomposiçãoPoliedrica.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 495303,
+    "fullUnpackSize" : 538598,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1528139443.653000000,
+    "creationTime" : null,
+    "fileCRC" : 1023669080,
+    "fileName" : "Edital RP recomposição poliédrica.doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 170304,
+    "fullUnpackSize" : 996864,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

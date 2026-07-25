@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1522752000.000000000,
+    "creationTime" : null,
+    "fileCRC" : 396238314,
+    "fileName" : "Конференция к 90-летию Б.Н. Вепринцева_Расписание-по Пущину .doc",
+    "hostOS" : "win32",
+    "fullPackSize" : 405154,
+    "fullUnpackSize" : 454144,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

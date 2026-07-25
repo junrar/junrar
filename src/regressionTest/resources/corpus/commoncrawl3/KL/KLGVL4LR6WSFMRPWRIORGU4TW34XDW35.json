@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534818354.480889100,
+    "creationTime" : null,
+    "fileCRC" : -1811742903,
+    "fileName" : "KAB KARAWANG SEP 2018/1. GERTAN JABAR SEPTEMBER 2018.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 179576,
+    "fullUnpackSize" : 317836,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534328718.000000000,
+    "creationTime" : null,
+    "fileCRC" : 384003149,
+    "fileName" : "KAB KARAWANG SEP 2018/24 Kabupaten Karawang.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4035044,
+    "fullUnpackSize" : 4753508,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

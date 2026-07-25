@@ -12,7 +12,7 @@ Code may not be used to develop a RAR (WinRAR) compatible archiver.
 
 ## Supported features
 
-- RAR 4 and lower (there is no RAR 5 support)
+- RAR up to v7
 - password protected archives (also with encrypted headers)
 - multi-part archives
 - extract from `File` and `InputStream`

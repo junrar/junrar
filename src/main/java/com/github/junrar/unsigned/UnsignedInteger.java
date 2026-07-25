@@ -24,6 +24,4 @@ package com.github.junrar.unsigned;
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
  */
-public class UnsignedInteger {
-
-}
+public class UnsignedInteger {}

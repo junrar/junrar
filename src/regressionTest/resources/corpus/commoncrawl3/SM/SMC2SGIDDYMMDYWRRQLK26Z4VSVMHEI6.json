@@ -1,8 +1,24 @@
 {
   "isRarV5" : true,
   "isEncrypted" : false,
-  "isPasswordProtected" : false,
+  "isPasswordProtected" : true,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1508802963.828355600,
+    "creationTime" : null,
+    "fileCRC" : -2039218927,
+    "fileName" : "Call.OF.Duty.WWII.Xbox.One_ParandDl.Com/Call.of.Duty.WWII.Xbox.One_Paranddl.Com/shg2SubmissionENFR_1.0.0.0_x64__ht1qfjb0gaftw",
+    "hostOS" : "win32",
+    "fullPackSize" : 2147483137,
+    "fullUnpackSize" : 48471826432,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

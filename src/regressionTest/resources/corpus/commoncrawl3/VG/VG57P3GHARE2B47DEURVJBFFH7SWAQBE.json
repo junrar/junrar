@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1534230438.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1628165767,
+    "fileName" : "ACEH SEPTEMBER 2018/1 Provinsi Aceh.jpg",
+    "hostOS" : "win32",
+    "fullPackSize" : 4204669,
+    "fullUnpackSize" : 4815368,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

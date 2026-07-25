@@ -3,6 +3,38 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarV5Exception"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529869918.930849900,
+    "creationTime" : null,
+    "fileCRC" : 842709614,
+    "fileName" : "QUADRIX_SEDUCE_2018_Prof_III_MATEMÁTICA_TIPO B.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 392394,
+    "fullUnpackSize" : 407053,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1529869914.825527200,
+    "creationTime" : null,
+    "fileCRC" : -1003733568,
+    "fileName" : "QUADRIX_SEDUCE_2018_Prof_III_MATEMÁTICA_TIPO A.pdf",
+    "hostOS" : "win32",
+    "fullPackSize" : 391951,
+    "fullUnpackSize" : 406551,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

@@ -5,6 +5,5 @@ public class BadRarArchiveException extends RarException {
         super(cause);
     }
 
-    public BadRarArchiveException() {
-    }
+    public BadRarArchiveException() {}
 }

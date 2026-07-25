@@ -22,7 +22,6 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * Base class of headers that contain data
  *
@@ -37,9 +36,7 @@ public class BlockHeader extends BaseBlock {
     private long dataSize;
     private long packSize;
 
-    public BlockHeader() {
-
-    }
+    public BlockHeader() {}
 
     public BlockHeader(BlockHeader bh) {
         super(bh);
@@ -52,7 +49,7 @@ public class BlockHeader extends BaseBlock {
         super(bb);
 
         this.packSize = Raw.readIntLittleEndianAsLong(blockHeader, 0);
-        this.dataSize  = this.packSize;
+        this.dataSize = this.packSize;
     }
 
     public long getDataSize() {
@@ -61,6 +58,20 @@ public class BlockHeader extends BaseBlock {
 
     public long getPackSize() {
         return packSize;
+    }
+
+    /**
+     * Sets both {@link #getPackSize()} and {@link #getDataSize()} to the same value (M3.3,
+     * issue #24): a RAR5 FILE/SERVICE header has a single {@code DataSize} field, unlike RAR3's
+     * separate pack/data sizes, so {@link Rar5FileHeaderReader} drives both from it.
+     * Package-private -- a wire-format detail, not part of the public {@code BlockHeader}
+     * contract.
+     *
+     * @param size the RAR5 block's {@code DataSize}.
+     */
+    void setPackAndDataSize(final long size) {
+        this.packSize = size;
+        this.dataSize = size;
     }
 
     public void print() {

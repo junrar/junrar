@@ -22,7 +22,6 @@ import com.github.junrar.io.Raw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * Mac File attribute header
  *
@@ -78,5 +77,4 @@ public class MacInfoHeader extends SubBlockHeader {
             logger.info("creator: {}", fileCreator);
         }
     }
-
 }

@@ -4,5 +4,5 @@
   "isPasswordProtected" : false,
   "isOldFormat" : false,
   "fileHeaders" : [ ],
-  "exception" : "MainHeaderNullException"
+  "exception" : "BadRarArchiveException"
 }
