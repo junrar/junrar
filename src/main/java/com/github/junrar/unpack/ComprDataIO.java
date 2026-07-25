@@ -253,6 +253,13 @@ public class ComprDataIO {
      * decrypting {@link RawDataIo} seam, while unrar hashes the raw pre-decryption stream —
      * the two are only comparable for unencrypted entries, so encrypted entries skip the
      * per-volume check; their end-to-end unpacked MAC digest still verifies the whole file.
+     *
+     * <p>An entry that stores no checksum at all (unrar {@code HASH_NONE}) has nothing to
+     * compare: unrar arms {@code PackedDataHash} with that same type ({@code
+     * 8f437ab:volume.cpp:182}) and its {@code Cmp} short-circuits to true because {@code
+     * HashValue::operator==} returns true whenever either side is {@code HASH_NONE} ({@code
+     * 8f437ab:hash.cpp:31-32}), so the volume switch must pass rather than measure the packed
+     * chunk against a zero {@link FileHeader#getFileCRC()}.
      */
     private void checkRar5PackedHash(final FileHeader hd) throws RarException {
         if (hd.getSalt16() != null) {
@@ -262,7 +269,7 @@ public class ComprDataIO {
             if (packHash == null || !Arrays.equals(packHash.digest(), hd.getHashDigest())) {
                 throw new CrcErrorException();
             }
-        } else if (this.getPackedCRC() != ~hd.getFileCRC()) {
+        } else if (hd.hasFileCrc() && this.getPackedCRC() != ~hd.getFileCRC()) {
             throw new CrcErrorException();
         }
     }
