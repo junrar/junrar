@@ -247,165 +247,106 @@ public abstract class Unpack20 extends Unpack15 {
         }
     }
 
+    // Faithful port of unrar Unpack::MakeDecodeTables (unpack.cpp): builds the Huffman decode
+    // tables and the quick-decode accelerator shared by the RAR2.0/RAR2.9/RAR3.x decoders. The
+    // RAR5 path has its own copy in Unpack5#makeDecodeTables (over Decode5).
     protected void makeDecodeTables(byte[] lenTab, int offset, Decode dec, int size) {
-        int[] lenCount = new int[16];
-        int[] tmpPos = new int[16];
-        int i;
-        long M, N;
-
-        Arrays.fill(lenCount, 0); // memset(LenCount,0,sizeof(LenCount));
-
-        Arrays.fill(
-                dec.getDecodeNum(), 0); // memset(Dec->DecodeNum,0,Size*sizeof(*Dec->DecodeNum));
-
-        for (i = 0; i < size; i++) {
-            lenCount[(int) (lenTab[offset + i] & 0xF)]++;
-        }
-        lenCount[0] = 0;
-        for (tmpPos[0] = 0, dec.getDecodePos()[0] = 0, dec.getDecodeLen()[0] = 0, N = 0, i = 1;
-                i < 16;
-                i++) {
-            N = 2 * (N + lenCount[i]);
-            M = N << (15 - i);
-            if (M > 0xFFFF) {
-                M = 0xFFFF;
-            }
-            dec.getDecodeLen()[i] = (int) M;
-            tmpPos[i] = dec.getDecodePos()[i] = dec.getDecodePos()[i - 1] + lenCount[i - 1];
-        }
-
-        for (i = 0; i < size; i++) {
-            if (lenTab[offset + i] != 0) {
-                dec.getDecodeNum()[tmpPos[lenTab[offset + i] & 0xF]++] = i;
-            }
-        }
         dec.setMaxNum(size);
+
+        int[] lenCount = new int[16];
+        for (int i = 0; i < size; i++) {
+            lenCount[lenTab[offset + i] & 0xF]++;
+        }
+        lenCount[0] = 0; // do not count zero-length codes
+
+        int[] decodeNum = dec.getDecodeNum();
+        Arrays.fill(decodeNum, 0, size, 0);
+
+        int[] decodePos = dec.getDecodePos();
+        int[] decodeLen = dec.getDecodeLen();
+        decodePos[0] = 0;
+        decodeLen[0] = 0;
+
+        int upperLimit = 0;
+        for (int i = 1; i < 16; i++) {
+            upperLimit += lenCount[i];
+            int leftAligned = upperLimit << (16 - i);
+            upperLimit *= 2;
+            decodeLen[i] = leftAligned;
+            decodePos[i] = decodePos[i - 1] + lenCount[i - 1];
+        }
+
+        int[] copyDecodePos = Arrays.copyOf(decodePos, decodePos.length);
+        for (int i = 0; i < size; i++) {
+            int curBitLength = lenTab[offset + i] & 0xF;
+            if (curBitLength != 0) {
+                decodeNum[copyDecodePos[curBitLength]] = i;
+                copyDecodePos[curBitLength]++;
+            }
+        }
+
+        // Larger alphabets (literal/length: NC for RAR2.9/3.x, NC20 for RAR2.0) get the full
+        // quick-decode width; everything else -3 (unrar MakeDecodeTables switch on Size).
+        int quickBits =
+                (size == Compress.NC || size == Compress.NC20)
+                        ? Compress.MAX_QUICK_DECODE_BITS
+                        : (Compress.MAX_QUICK_DECODE_BITS > 3
+                                ? Compress.MAX_QUICK_DECODE_BITS - 3
+                                : 0);
+        dec.setQuickBits(quickBits);
+
+        int quickDataSize = 1 << quickBits;
+        int[] quickLen = dec.getQuickLen();
+        int[] quickNum = dec.getQuickNum();
+        int curBitLength = 1;
+        for (int code = 0; code < quickDataSize; code++) {
+            int bitField = code << (16 - quickBits);
+            while (curBitLength < decodeLen.length && bitField >= decodeLen[curBitLength]) {
+                curBitLength++;
+            }
+            quickLen[code] = curBitLength;
+
+            int dist = bitField - decodeLen[curBitLength - 1];
+            dist >>>= (16 - curBitLength);
+            int pos;
+            if (curBitLength < decodePos.length && (pos = decodePos[curBitLength] + dist) < size) {
+                quickNum[code] = decodeNum[pos];
+            } else {
+                quickNum[code] = 0;
+            }
+        }
     }
 
+    // Faithful port of unrar Unpack::DecodeNumber (unpackinline.cpp): a quick-decode fast path
+    // for short codes backed by the QuickLen/QuickNum tables, falling back to a linear bit-length
+    // scan. Shared by the RAR2.0/RAR2.9/RAR3.x decoders; the RAR5 path mirrors it in Unpack5.
     protected int decodeNumber(Decode dec) {
-        int bits;
-        long bitField = getbits() & 0xfffe;
-        //        if (bitField < dec.getDecodeLen()[8]) {
-        //            if (bitField < dec.getDecodeLen()[4]) {
-        //                if (bitField < dec.getDecodeLen()[2]) {
-        //                    if (bitField < dec.getDecodeLen()[1]) {
-        //                        bits = 1;
-        //                    } else {
-        //                        bits = 2;
-        //                    }
-        //                } else {
-        //                    if (bitField < dec.getDecodeLen()[3]) {
-        //                        bits = 3;
-        //                    } else {
-        //                        bits = 4;
-        //                    }
-        //                }
-        //            } else {
-        //                if (bitField < dec.getDecodeLen()[6]) {
-        //                    if (bitField < dec.getDecodeLen()[5])
-        //                        bits = 5;
-        //                    else
-        //                        bits = 6;
-        //                } else {
-        //                    if (bitField < dec.getDecodeLen()[7]) {
-        //                        bits = 7;
-        //                    } else {
-        //                        bits = 8;
-        //                    }
-        //                }
-        //            }
-        //        } else {
-        //            if (bitField < dec.getDecodeLen()[12]) {
-        //                if (bitField < dec.getDecodeLen()[10])
-        //                    if (bitField < dec.getDecodeLen()[9])
-        //                        bits = 9;
-        //                    else
-        //                        bits = 10;
-        //                else if (bitField < dec.getDecodeLen()[11])
-        //                    bits = 11;
-        //                else
-        //                    bits = 12;
-        //            } else {
-        //                if (bitField < dec.getDecodeLen()[14]) {
-        //                    if (bitField < dec.getDecodeLen()[13]) {
-        //                        bits = 13;
-        //                    } else {
-        //                        bits = 14;
-        //                    }
-        //                } else {
-        //                    bits = 15;
-        //                }
-        //            }
-        //        }
-        //        addbits(bits);
-        //        int N = dec.getDecodePos()[bits]
-        //                + (((int) bitField - dec.getDecodeLen()[bits - 1]) >>> (16 - bits));
-        //        if (N >= dec.getMaxNum()) {
-        //            N = 0;
-        //        }
-        //        return (dec.getDecodeNum()[N]);
+        int bitField = getbits() & 0xfffe; // left-aligned 15-bit raw field
+        int quickBits = dec.getQuickBits();
         int[] decodeLen = dec.getDecodeLen();
-        if (bitField < decodeLen[8]) {
-            if (bitField < decodeLen[4]) {
-                if (bitField < decodeLen[2]) {
-                    if (bitField < decodeLen[1]) {
-                        bits = 1;
-                    } else {
-                        bits = 2;
-                    }
-                } else {
-                    if (bitField < decodeLen[3]) {
-                        bits = 3;
-                    } else {
-                        bits = 4;
-                    }
-                }
-            } else {
-                if (bitField < decodeLen[6]) {
-                    if (bitField < decodeLen[5]) {
-                        bits = 5;
-                    } else {
-                        bits = 6;
-                    }
-                } else {
-                    if (bitField < decodeLen[7]) {
-                        bits = 7;
-                    } else {
-                        bits = 8;
-                    }
-                }
-            }
-        } else {
-            if (bitField < decodeLen[12]) {
-                if (bitField < decodeLen[10]) {
-                    if (bitField < decodeLen[9]) {
-                        bits = 9;
-                    } else {
-                        bits = 10;
-                    }
-                } else if (bitField < decodeLen[11]) {
-                    bits = 11;
-                } else {
-                    bits = 12;
-                }
-            } else {
-                if (bitField < decodeLen[14]) {
-                    if (bitField < decodeLen[13]) {
-                        bits = 13;
-                    } else {
-                        bits = 14;
-                    }
-                } else {
-                    bits = 15;
-                }
+
+        if (bitField < decodeLen[quickBits]) {
+            int code = bitField >>> (16 - quickBits);
+            addbits(dec.getQuickLen()[code]);
+            return dec.getQuickNum()[code];
+        }
+
+        int bits = 15;
+        for (int i = quickBits + 1; i < 15; i++) {
+            if (bitField < decodeLen[i]) {
+                bits = i;
+                break;
             }
         }
         addbits(bits);
-        int N = dec.getDecodePos()[bits] + (((int) bitField - decodeLen[bits - 1]) >>> (16 - bits));
-        if (N >= dec.getMaxNum()) {
-            N = 0;
+
+        int dist = bitField - decodeLen[bits - 1];
+        dist >>>= (16 - bits);
+        int pos = dec.getDecodePos()[bits] + dist;
+        if (pos >= dec.getMaxNum()) {
+            pos = 0; // out-of-bounds safety for damaged archives
         }
-        return (dec.getDecodeNum()[N]);
+        return dec.getDecodeNum()[pos];
     }
 
     protected boolean ReadTables20() throws IOException, RarException {
@@ -499,9 +440,14 @@ public abstract class Unpack20 extends Unpack15 {
             }
             // memset(UnpOldTable20,0,sizeof(UnpOldTable20));
             Arrays.fill(UnpOldTable20, (byte) 0);
-            // memset(MD,0,sizeof(MD));
+            // memset(MD,0,sizeof(MD)); reset in place rather than reallocating -- each MultDecode
+            // now carries the quick-decode tables, so replacing all four per entry is pure churn.
             for (int i = 0; i < MD.length; i++) {
-                MD[i] = new MultDecode();
+                if (MD[i] == null) {
+                    MD[i] = new MultDecode();
+                } else {
+                    MD[i].reset();
+                }
             }
         }
     }
