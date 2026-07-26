@@ -60,7 +60,16 @@ public class Compress {
     // the entry is version 70 (d861246:unpack.cpp:184, unpack50.cpp:647,710).
     public static final int DCX5 = 80; /* extended distance-slot alphabet */
     public static final int HUFF_TABLE_SIZE5X = (NC5 + DCX5 + RC5 + LDC5); /* 446 */
-    public static final int MAX_QUICK_DECODE_BITS = 10;
+
+    /**
+     * Width of the quick-decode accelerator tables (unrar {@code MAX_QUICK_DECODE_BITS},
+     * {@code unpack.hpp}). Upstream reduced this from 10 to 9 in 7.0 and has kept 9 through
+     * {@code 7168ddb} (7.2.6), so 9 is the current value even though the surrounding RAR4 port
+     * follows the older {@code 8f437ab} (6.2.12) baseline. It is a pure space/time trade in table
+     * construction -- decoded output is bit-identical at either width -- and the narrower table
+     * halves both the per-{@link Decode} footprint and the per-table build cost.
+     */
+    public static final int MAX_QUICK_DECODE_BITS = 9;
 
     // Match-length ceilings (compress.hpp:10,17) — the write-out reserve margin the decode loop
     // keeps between the window pointer and the write border.
