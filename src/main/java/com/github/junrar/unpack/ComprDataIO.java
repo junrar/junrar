@@ -20,7 +20,9 @@ package com.github.junrar.unpack;
 import com.github.junrar.Archive;
 import com.github.junrar.UnrarCallback;
 import com.github.junrar.crc.RarCRC;
+import com.github.junrar.crypt.CryptMethod;
 import com.github.junrar.crypt.Rar5Crypt;
+import com.github.junrar.crypt.RarLegacyCrypt;
 import com.github.junrar.crypt.Rijndael;
 import com.github.junrar.crypt.blake2.Blake2sp;
 import com.github.junrar.crypt.blake2.DataHash;
@@ -141,12 +143,28 @@ public class ComprDataIO {
             initRar5Decipherer(hd);
         } else if (hd.isEncrypted()) {
             try {
-                Cipher cipher = Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+                final Cipher cipher = buildLegacyOrAesDecipherer(hd);
                 this.underlyingDataIo.setCipher(cipher);
             } catch (Exception e) {
                 throw new InitDeciphererFailedException(e);
             }
         }
+    }
+
+    /**
+     * P3 (issue #293): pre-RAR5 encrypted entries are not all AES -- unrar picks CRYPT_RAR13/15/20
+     * for the three legacy generations and only falls back to CRYPT_RAR30 (AES/Rijndael) for
+     * everything else ({@link RarLegacyCrypt#select}, unrar {@code arcread.cpp:290-298,1300}).
+     * Before this method existed, every non-RAR5 encrypted entry ran through {@link
+     * Rijndael#buildDecipherer} unconditionally -- silently wrong (garbage output, caught only by
+     * the downstream CRC compare) for a RAR 1.3/1.4/1.5/2.0 encrypted entry.
+     */
+    private Cipher buildLegacyOrAesDecipherer(final FileHeader hd) throws Exception {
+        final CryptMethod method = RarLegacyCrypt.select(hd.getUnpVersion(), archive.isOldFormat());
+        if (method == CryptMethod.RAR30) {
+            return Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+        }
+        return RarLegacyCrypt.buildDecipherer(method, archive.getPassword());
     }
 
     /**

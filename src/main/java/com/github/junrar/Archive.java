@@ -1651,16 +1651,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             throw new MissingPreviousVolumeException(
                     "Extraction of '" + hd.getFileName() + "' must start from a previous volume");
         }
-        // P2 (issue #293): RAR 1.4 encryption is unrar's legacy CRYPT_RAR13 cipher
-        // (d861246:arcread.cpp:1300), never AES/Rijndael -- P3's scope, not implemented here.
-        // Refuse before ComprDataIO#init(FileHeader) reaches its salt-based Rijndael path,
-        // which is wrong for this entry either way: with no password it fails confusingly
-        // (InitDeciphererFailedException), and with one it would "succeed" while silently
-        // decrypting with the wrong algorithm entirely, corrupting output instead of refusing
-        // it. isOldFormat() (not hd.isRar5Family()/Container()) is what proves the format here.
-        if (this.isOldFormat() && hd.isEncrypted()) {
-            throw new UnsupportedRarEncryptedException();
-        }
+        // P2's temporary guard here (issue #293) refused every RAR 1.4 encrypted entry outright,
+        // since P2 had no CRYPT_RAR13 implementation and the Rijndael/AES path below is wrong
+        // for this entry. P3 removed the guard: ComprDataIO#init(FileHeader) now selects
+        // CRYPT_RAR13/15/20 correctly via RarLegacyCrypt#select (unrar arcread.cpp:1300 for the
+        // RARFMT14 case this guard used to intercept).
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
