@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.CrcErrorException;
+import com.github.junrar.exception.InitDeciphererFailedException;
 import com.github.junrar.exception.RarException;
-import com.github.junrar.exception.UnsupportedRarEncryptedException;
 import com.github.junrar.rarfile.BaseBlock;
 import com.github.junrar.rarfile.FileHeader;
 import com.github.junrar.unpack.Unpack;
@@ -244,11 +244,16 @@ class Rar14ExtractionTest {
         }
     }
 
-    // ---- Row 4: encrypted 1.4 entry -> UnsupportedRarEncryptedException, not NPE/CrcError.
-    // ----
+    // ---- Row 4 (P3 update, issue #293): encrypted 1.4 entry, NO password supplied on the
+    // Archive -> InitDeciphererFailedException, not UnsupportedRarEncryptedException. P3 removed
+    // P2's temporary "old-format encrypted" guard (this class's pre-P3 assertion) and wired real
+    // CRYPT_RAR13 decryption instead (RarLegacyCrypt.select(unpVersion, archiveOldFormat==true)
+    // always returns RAR13 for a RARFMT14 entry, unrar arcread.cpp:1300); with no password this
+    // now fails the ordinary way every other encrypted-without-password entry does (same failure
+    // mode RAR30/AES already has via Rijndael.buildDecipherer's null-password check). ----
 
     @Test
-    void encryptedEntryThrowsUnsupportedRarEncryptedException() throws Exception {
+    void encryptedEntryWithNoPasswordThrowsInitDeciphererFailedException() throws Exception {
         final byte[] payload = "abcd".getBytes(StandardCharsets.US_ASCII);
         final byte[] nameBytes = "SECRET.TXT".getBytes(StandardCharsets.US_ASCII);
         final byte[] entry =
@@ -270,7 +275,7 @@ class Rar14ExtractionTest {
             assertThat(hd.isEncrypted()).isTrue();
             final ByteArrayOutputStream out = new ByteArrayOutputStream();
             final Throwable thrown = catchThrowable(() -> archive.extractFile(hd, out));
-            assertThat(thrown).isExactlyInstanceOf(UnsupportedRarEncryptedException.class);
+            assertThat(thrown).isExactlyInstanceOf(InitDeciphererFailedException.class);
         }
     }
 
