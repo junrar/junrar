@@ -18,17 +18,18 @@ import org.junit.jupiter.api.Test;
  * entries. Every fixture here is a real DOS-era RAR archive -- none hand-built -- per the P3
  * brief's explicit cancellation of the fixture-synthesis path.
  *
- * <p><b>Provenance -- RAR13/RAR14 (rows 4-6):</b> {@code rar14-password-stored.rar} /
- * {@code rar14-password-compressed.rar} are {@code STOREPWD.RAR} / {@code
- * README_password=password.rar} from github.com/bitplane/oldrar
- * ({@code tests/fixtures/rar13/}), MIT OR Apache-2.0 dual-licensed, genuine DOS RAR 1.402
- * archives (same origin already used for {@code rar14-solid.rar} in {@link
- * Rar14ExtractionTest}). unrar 7.23 extracts both with {@code -ppassword}, "All OK" (oracle run
- * 2026-07-27): {@code STOREPWD.RAR} -&gt; {@code SECRET.TXT}, sha256 {@code
- * 576d7f62397081b85cd4430e9db714b6d84a0196bebe43802ab0df7d119a933c} (stored + encrypted);
- * {@code README_password=password.rar} -&gt; {@code README}, sha256 {@code
- * e70e00c521ee53176d194cfc66d2c284e340d50c07667776071b220ed956570e} (compressed + encrypted).
- * Password for both: {@code password}.
+ * <p><b>Provenance -- RAR13/RAR14 (rows 4-6, P5-replaced):</b> {@code rar14-password-stored.rar}
+ * / {@code rar14-password-compressed.rar} are {@code R14PWST.RAR} / {@code R14PWCM.RAR},
+ * authored 2026-07-27 by running the original DOS {@code RAR.EXE} (RAR 1.40.2, extracted from
+ * {@code RAR1_402.EXE} via nfbnet.org) under DOSBox-X 2026.07.02, commands
+ * {@code RAR1402.EXE a -ppassword R14PWST.RAR SECRET.TXT} and {@code RAR1402.EXE a -m3
+ * -ppassword R14PWCM.RAR SECRET.TXT} -- genuine DOS RAR 1.402 archives (same origin now used
+ * for {@code rar14-solid.rar} in {@link Rar14ExtractionTest}; see {@code PROVENANCE.md} in the
+ * P5 brief's {@code rar14-oracle/legacy-matrix/} source material, replacing the prior
+ * third-party fixtures). unrar 7.23 extracts both with {@code -ppassword}, "All OK": both
+ * -&gt; {@code SECRET.TXT}, sha256 {@code
+ * 5f512316b5a4d27c6563b83299c5dd7061fc0c4ee6969a4483363b836c2d6951} (same plaintext payload,
+ * one stored + encrypted, one compressed + encrypted). Password for both: {@code password}.
  *
  * <p><b>Provenance -- RAR15/RAR20 (rows 8/8b, 9/9b):</b> {@code rar15-password-*.rar} /
  * {@code rar20-password-*.rar} are genuine period archives authored 2026-07-27 by running the
@@ -54,10 +55,12 @@ import org.junit.jupiter.api.Test;
  */
 class Rar14EncryptedExtractionTest {
 
+    // Both R14PWST.RAR (stored) and R14PWCM.RAR (compressed) wrap the same SECRET.TXT
+    // plaintext, so they share one oracle digest (PROVENANCE.md).
     private static final String ORACLE_SHA256_RAR14_STORED =
-            "576d7f62397081b85cd4430e9db714b6d84a0196bebe43802ab0df7d119a933c";
+            "5f512316b5a4d27c6563b83299c5dd7061fc0c4ee6969a4483363b836c2d6951";
     private static final String ORACLE_SHA256_RAR14_COMPRESSED =
-            "e70e00c521ee53176d194cfc66d2c284e340d50c07667776071b220ed956570e";
+            "5f512316b5a4d27c6563b83299c5dd7061fc0c4ee6969a4483363b836c2d6951";
     private static final String ORACLE_SHA256_RAR15_RAR20 =
             "5f512316b5a4d27c6563b83299c5dd7061fc0c4ee6969a4483363b836c2d6951";
 
@@ -175,6 +178,45 @@ class Rar14EncryptedExtractionTest {
                 Archive archive = new Archive(is, "password")) {
             final byte[] content = extractFirstEntry(archive);
             assertThat(sha256(content)).isEqualTo(ORACLE_SHA256_RAR15_RAR20);
+        }
+    }
+
+    // ---- Row 10 (bonus, P5): real RAR 1.4 SOLID + ENCRYPTED archive, 3 entries -- CRYPT_RAR13
+    // composing with the solid-routing seam {@link Rar14ExtractionTest} pins separately.
+    // {@code rar14-solid-password.rar} provenance: {@code R14SLDPW.RAR}, authored 2026-07-27 by
+    // running the original DOS {@code RAR.EXE} (RAR 1.40.2) under DOSBox-X 2026.07.02, command
+    // {@code RAR1402.EXE a -m3 -s -ppassword R14SLDPW.RAR BIG.TXT SECOND.TXT THIRD.TXT} (main
+    // flags 0x88, file flags 0x04 -- see {@code PROVENANCE.md} in the P5 brief's
+    // {@code rar14-oracle/legacy-matrix/} source material). unrar 7.23 extracted it with
+    // {@code -ppassword}, "All OK"; the three per-entry SHA-256 digests below match
+    // {@link Rar14ExtractionTest}'s unencrypted solid fixture (same plaintext payloads). ----
+
+    @Test
+    void rar14SolidEncryptedArchiveExtractsAllThreeEntriesByteExactWithCorrectPassword()
+            throws Exception {
+        try (InputStream is = getClass().getResourceAsStream("rar14-solid-password.rar");
+                Archive archive = new Archive(is, "password")) {
+            assertThat(archive.isOldFormat()).isTrue();
+            assertThat(archive.getMainHeader().isSolid()).isTrue();
+            final List<FileHeader> files = archive.getFileHeaders();
+            assertThat(files)
+                    .extracting(FileHeader::getFileName)
+                    .containsExactly("BIG.TXT", "SECOND.TXT", "THIRD.TXT");
+
+            final String[] expectedSha = {
+                "26eea139ab8117eed88aa434760f5d9bc93e7d9f07de774442e2005880eb1a99",
+                "865961ac8bce35f5d514086c45bcddefa5e4cdcee4a19b8441e605d21e1d211d",
+                "9860a4c20e692b8e23aa233227de5b7cb3fed718fbe6bae4172eccc14514df4e"
+            };
+            for (int i = 0; i < files.size(); i++) {
+                final ByteArrayOutputStream out = new ByteArrayOutputStream();
+                archive.extractFile(files.get(i), out);
+                assertThat(sha256(out.toByteArray()))
+                        .as(
+                                "entry %d (%s) decompressed bytes vs unrar 7.x oracle",
+                                i, files.get(i).getFileName())
+                        .isEqualTo(expectedSha[i]);
+            }
         }
     }
 }
