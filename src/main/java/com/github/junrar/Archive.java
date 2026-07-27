@@ -114,6 +114,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     // Signature classification (unrar RARFORMAT, d861246:archive.cpp:100-126).
     private static final int SIG_NONE = 0;
+    private static final int SIG_RAR14 = 4;
     private static final int SIG_RAR15 = 1;
     private static final int SIG_RAR50 = 2;
     private static final int SIG_FUTURE = 3;
@@ -412,7 +413,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      *
      * @param fileLength the current volume's length (bounds the SFX scan).
      * @return the detected {@link RarFormat}.
-     * @throws UnsupportedRarVersionException for a future RAR format (version byte 2..4).
+     * @throws UnsupportedRarVersionException for a RAR format junrar cannot read: the ancient
+     *                                        RAR 1.4 one, or a future one (version byte 2..4).
      * @throws BadRarArchiveException         if no signature is found within the bound.
      */
     private RarFormat detectFormatAndSeek(final long fileLength) throws IOException, RarException {
@@ -469,6 +471,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         switch (signatureType) {
             case SIG_RAR50:
                 return RarFormat.RAR50;
+            case SIG_RAR14:
+            // Parsing it as RAR15 would misread the 1.4 header bytes as a BaseBlock and
+            // surface a misleading CorruptHeaderException (issue #293).
             case SIG_FUTURE:
                 throw new UnsupportedRarVersionException();
             default:
@@ -479,19 +484,22 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     /**
      * unrar {@code Archive::IsSignature} ({@code d861246:archive.cpp:100-126}): classify the
      * bytes at {@code d[off..off+len)} as a RAR marker. Returns one of {@link #SIG_NONE},
-     * {@link #SIG_RAR15}, {@link #SIG_RAR50}, {@link #SIG_FUTURE}. {@code len} is the number
-     * of readable bytes from {@code off}, so short buffers never read past their content.
+     * {@link #SIG_RAR14}, {@link #SIG_RAR15}, {@link #SIG_RAR50}, {@link #SIG_FUTURE}.
+     * {@code len} is the number of readable bytes from {@code off}, so short buffers never
+     * read past their content.
      */
     private static int signatureType(final byte[] d, final int off, final int len) {
         if (len < 1 || (d[off] & 0xff) != 0x52) {
             return SIG_NONE;
         }
-        // Old RAR 1.4 marker: 52 45 7e 5e (RARFMT14 -- part of the classic family).
+        // Old RAR 1.4 marker: 52 45 7e 5e (unrar RARFMT14). NOT part of the RAR 1.5+ family:
+        // its headers predate the BaseBlock layout and need unrar's dedicated ReadHeader14
+        // (d861246:arcread.cpp:1258), which junrar does not implement.
         if (len >= 4
                 && (d[off + 1] & 0xff) == 0x45
                 && (d[off + 2] & 0xff) == 0x7e
                 && (d[off + 3] & 0xff) == 0x5e) {
-            return SIG_RAR15;
+            return SIG_RAR14;
         }
         // Modern marker: 52 61 72 21 1a 07 + version byte.
         if (len >= 7
