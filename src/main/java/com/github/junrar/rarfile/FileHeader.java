@@ -412,9 +412,10 @@ public class FileHeader extends BlockHeader {
      * every existing predicate ({@link #isDirectory()}, {@link #isSplitBefore()}, {@link
      * #isSplitAfter()}, {@link #isEncrypted()}) works unmodified.
      * <p>
-     * Extraction-only facts a RAR 1.4 entry also carries -- the fixed 0x10000 decode window,
-     * the on-disk header size / data start offset -- are deliberately left unset: P1 lists
-     * headers, P2 extracts them (see the P1 brief's non-goals).
+     * Extraction-only fact a RAR 1.4 entry also carries -- the fixed 0x10000 decode window --
+     * is deliberately left unset (P2 wires the window through {@code Unpack15}'s existing
+     * shared {@code MAXWINSIZE} allocation instead, see {@code Archive.doExtractFile}; no
+     * per-entry window size field exists in the RAR 1.4 wire format to carry).
      *
      * @param p the parsed RAR 1.4 fields.
      * @throws CorruptHeaderException if the entry name fails the same {@link
@@ -423,6 +424,12 @@ public class FileHeader extends BlockHeader {
      */
     FileHeader(Rar14HeaderReader.Parsed p) throws CorruptHeaderException {
         this.headerType = UnrarHeadertype.FileHeader.getHeaderByte();
+        // P2 (issue #293) data-offset wiring: reuse the inherited BaseBlock#headerSize field
+        // (never populated by P1, which only listed headers) so the EXISTING
+        // getDataStartOffset() fallback formula (positionInFile + getHeaderSize(...)), already
+        // correct for RAR3, becomes correct for RAR 1.4 too -- no new field/formula. This was
+        // P1's flagged "UNWIRED" seam and the most likely first extraction failure (P2 brief).
+        this.headerSize = (short) p.headSize;
 
         short f = 0;
         if (p.directory) {

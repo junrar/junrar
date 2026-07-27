@@ -79,31 +79,61 @@ public class RarCRC {
     }
 
     /**
-     * Computes the legacy 16-bit checksum used by RAR 1.5 archives.
+     * Computes the legacy 16-bit checksum used by RAR 1.4 archives (unrar {@code Checksum14},
+     * {@code d861246:crc.cpp:155-164}).
      * <p>
      * This is not a standard CRC-16 algorithm. It is a simple rotating-add
-     * checksum equivalent to the {@code OldCRC16} function in the original
+     * checksum equivalent to the {@code Checksum14} function in the original
      * unrar source code. For each byte, it adds the byte value to the
-     * accumulator and then rotates the result left by 1 bit:
+     * accumulator (masked to 16 bits) and then rotates the result left by 1 bit:
      * <pre>
-     *   crc = crc + byte;
-     *   crc = (crc &lt;&lt; 1) | (crc &gt;&gt;&gt; 15);
+     *   crc = (crc + byte) &amp; 0xffff;
+     *   crc = ((crc &lt;&lt; 1) | (crc &gt;&gt;&gt; 15)) &amp; 0xffff;
      * </pre>
      * <p>
-     * Only used for RAR 1.5 (method 15) archives. RAR 2.0 and later use
+     * Only used for RAR 1.4 (unrar {@code HASH_RAR14}) archives. RAR 1.5 and later use
      * standard CRC-32 (polynomial 0xEDB88320).
      *
-     * @param startCrc initial CRC value (typically 0 for RAR 1.5)
-     * @param data     data to compute the checksum over
+     * @param startCrc initial CRC value (typically 0 for RAR 1.4)
+     * @param data     data to compute the checksum over, from index 0
      * @param count    number of bytes to process
      * @return the 16-bit rotating-add checksum
      */
-    public static short checkOldCrc(short startCrc, byte[] data, int count) {
-        int n = Math.min(data.length, count);
+    public static short checkOldCrc(final short startCrc, final byte[] data, final int count) {
+        return checkOldCrc(startCrc, data, 0, count);
+    }
+
+    /**
+     * {@link #checkOldCrc(short, byte[], int)}, but starting at {@code offset} instead of index
+     * 0 (P2 fix round 3, issue #293). {@code ComprDataIO#unpWrite}'s old-format branch used to
+     * call the 3-arg overload directly with a nonzero {@code offset} silently dropped -- correct
+     * for the common case ({@code offset==0}, e.g. every RAR3+ archive and a RAR 1.4 archive's
+     * FIRST flush of a fresh decode window), but wrong for a SOLID RAR 1.4 entry's flush, which
+     * starts wherever the shared circular window pointer ({@code Unpack15}'s {@code wrPtr})
+     * already sits after the previous entry -- always hashing {@code data[0, count)} instead of
+     * {@code data[offset, offset+count)} corrupted the checksum (while leaving the actual output
+     * bytes, written via {@code outputStream.write(addr, offset, count)}, correct) for exactly
+     * the case P2 is the first code path to exercise. The 3-arg overload above now delegates
+     * here with {@code offset=0}, so both share one implementation.
+     *
+     * @param startCrc initial CRC value (typically 0 for RAR 1.4)
+     * @param data     data to compute the checksum over
+     * @param offset   start offset within {@code data}
+     * @param count    number of bytes to process
+     * @return the 16-bit rotating-add checksum
+     */
+    public static short checkOldCrc(
+            final short startCrc, final byte[] data, final int offset, final int count) {
+        // P2 fix round (issue #293): the accumulator lives in an `int` masked to 16 bits
+        // (`& 0xffff`) after every step, per crc.cpp:155-164, replacing a `short` accumulator
+        // whose `>>> 15` sign-extended through `int` promotion once bit 15 was set, corrupting
+        // the rotate for the majority of real (non-trivial) inputs.
+        int crc = startCrc & 0xffff;
+        final int n = Math.min(data.length - offset, count);
         for (int i = 0; i < n; i++) {
-            startCrc = (short) ((short) (startCrc + (short) (data[i] & 0x00ff)) & -1);
-            startCrc = (short) (((startCrc << 1) | (startCrc >>> 15)) & -1);
+            crc = (crc + (data[offset + i] & 0xff)) & 0xffff;
+            crc = ((crc << 1) | (crc >>> 15)) & 0xffff;
         }
-        return (startCrc);
+        return (short) crc;
     }
 }
