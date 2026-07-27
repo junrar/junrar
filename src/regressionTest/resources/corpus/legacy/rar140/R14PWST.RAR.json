@@ -1,0 +1,24 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : true,
+  "isOldFormat" : true,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1785149244.000000000,
+    "creationTime" : null,
+    "fileCRC" : 62508,
+    "fileName" : "SECRET.TXT",
+    "hostOS" : "msdos",
+    "fullPackSize" : 87,
+    "fullUnpackSize" : 87,
+    "isSolid" : false,
+    "isEncrypted" : true,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}
