@@ -345,7 +345,21 @@ public class ComprDataIO {
                 if ((callback != null) && !callback.isNextVolumeReady(nextVolume)) {
                     return -1;
                 }
-                archive.setVolume(nextVolume);
+                // unrar MergeArchive's missing-volume signal (8f437ab:volume.cpp), mirrored here
+                // the same way mergeRar5Volume already converts it below (P4, issue #293): a
+                // FileVolumeManager-built Volume always exists as an object even when the file
+                // underneath it does not (VolumeHelper only computes a name, never checks
+                // existence), so a genuinely absent continuation surfaces as an IOException from
+                // Volume#getChannel() -- previously uncaught here, wrapped into a generic
+                // RarException by doExtractFile's catch-all instead of the typed
+                // MissingNextVolumeException callers must be able to distinguish from a corrupt
+                // archive.
+                try {
+                    archive.setVolume(nextVolume);
+                } catch (IOException e) {
+                    nextVolumeMissing = true;
+                    throw new MissingNextVolumeException(e);
+                }
                 hd = archive.nextFileHeader();
                 if (hd == null) {
                     return -1;
