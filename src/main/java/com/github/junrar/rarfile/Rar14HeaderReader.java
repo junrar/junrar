@@ -64,6 +64,7 @@ public final class Rar14HeaderReader {
         if (headSize < SIZEOF_FILEHEAD14 + nameBytes.length) {
             throw new CorruptHeaderException("RAR 1.4 file name runs past HeadSize");
         }
+        p.headSize = headSize;
 
         final int fileTimeDos = Raw.readIntLittleEndian(fixed, 12);
         p.fileAttr = fixed[16] & 0xff;
@@ -140,5 +141,18 @@ public final class Rar14HeaderReader {
         FileTime mTime;
         byte[] fileNameBytes;
         String fileName;
+
+        /**
+         * The wire {@code HeadSize} field (P2, issue #293): distance from this header's start
+         * to where its packed data begins -- {@code SIZEOF_FILEHEAD14 + NameSize} for a
+         * well-formed entry, but the DECLARED field is what unrar itself uses for positioning
+         * ({@code NextBlockPos=CurBlockPos+HeadSize+PackSize}, {@code
+         * d861246:arcread.cpp:1322}), so this reader threads the same declared value through
+         * rather than recomputing {@code 21 + nameBytes.length}. Fed to {@link
+         * FileHeader#headerSize} so the inherited {@link FileHeader#getDataStartOffset} formula
+         * ({@code positionInFile + getHeaderSize(...)}) -- already correct for RAR3 -- becomes
+         * correct for RAR 1.4 too, with no new field or seek formula needed.
+         */
+        int headSize;
     }
 }

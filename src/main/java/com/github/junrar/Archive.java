@@ -167,6 +167,20 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private int lastProcessedFileIndex = -1;
 
     /**
+     * RAR 1.4 extraction-session ordinal (P2, issue #293; unrar {@code FileCount},
+     * {@code d861246:extract.cpp:773}, incremented for every entry -- stored or compressed,
+     * actually written or solid-skipped -- BEFORE its {@code Method==0} branch). RAR 1.4 has no
+     * per-file solid flag ({@link com.github.junrar.rarfile.FileHeader#isSolid()} is always
+     * false for a RAR14-container entry), unlike RAR3/RAR5's {@code hd.isSolid()} convention, so
+     * {@code doExtractFile}'s old-format branch derives the effective solid flag from this
+     * counter instead: the first entry extracted this session always gets {@code solid=false}
+     * (forcing a fresh {@code Unpack.init}); every entry after that gets the archive-level
+     * {@code MHD_SOLID} flag ({@code d861246:extract.cpp:920}: {@code FileCount>1 && Arc.Solid}).
+     * Not reset on volume switch -- RAR 1.4 multi-volume extraction is out of scope (P4).
+     */
+    private int oldFormatExtractedCount = 0;
+
+    /**
      * Size of packed data in current file.
      */
     private long totalPackedSize = 0L;
@@ -1637,6 +1651,16 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             throw new MissingPreviousVolumeException(
                     "Extraction of '" + hd.getFileName() + "' must start from a previous volume");
         }
+        // P2 (issue #293): RAR 1.4 encryption is unrar's legacy CRYPT_RAR13 cipher
+        // (d861246:arcread.cpp:1300), never AES/Rijndael -- P3's scope, not implemented here.
+        // Refuse before ComprDataIO#init(FileHeader) reaches its salt-based Rijndael path,
+        // which is wrong for this entry either way: with no password it fails confusingly
+        // (InitDeciphererFailedException), and with one it would "succeed" while silently
+        // decrypting with the wrong algorithm entirely, corrupting output instead of refusing
+        // it. isOldFormat() (not hd.isRar5Family()/Container()) is what proves the format here.
+        if (this.isOldFormat() && hd.isEncrypted()) {
+            throw new UnsupportedRarEncryptedException();
+        }
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
@@ -1660,11 +1684,40 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 if (this.unpack == null) {
                     this.unpack = new Unpack(this.dataIO);
                 }
-                if (!hd.isSolid()) {
+                final int effectiveUnpVersion;
+                final boolean effectiveSolid;
+                if (this.format == RarFormat.RAR14) {
+                    // unrar extract.cpp:773 (FileCount++, before the Method==0 split) +
+                    // :917-921 (P2, issue #293): every RAR 1.3-1.5 entry this session --
+                    // stored or compressed -- advances the ordinal; RAR 1.4 carries no
+                    // per-file solid flag (hd.isSolid() is always false for a RAR14-container
+                    // entry -- LHD_SOLID is never set by Rar14HeaderReader), so the first
+                    // entry extracted always forces solid=false and every later one inherits
+                    // the archive-level MHD_SOLID flag instead. Scoped to format==RAR14 only
+                    // (not every UnpVer<=15 entry, which would also match unrar's condition)
+                    // to leave the shipped RAR15 per-file hd.isSolid() semantic in the else
+                    // branch below untouched -- real RAR15 headers carry a meaningful solid
+                    // bit RAR 1.4 never had (P2 brief scoping decision, extract.cpp:918).
+                    this.oldFormatExtractedCount++;
+                    effectiveSolid = this.oldFormatExtractedCount > 1 && this.newMhd.isSolid();
+                    // unrar never calls DoUnpack at all for Method==0 (UnstoreFile only,
+                    // extract.cpp:903-904); junrar's Unpack.doUnpack instead folds both paths
+                    // into one call, with no `return` after its own internal unstoreFile()
+                    // shortcut (getUnpMethod()==0x30). Hardcoding version 15 for a stored 1.4
+                    // entry too would make that switch's `case 15` run unpack15() a second
+                    // time on top of the already-unstored bytes -- so only the compressed
+                    // branch reroutes; the stored branch keeps the entry's own non-matching
+                    // (10 or 13) UnpVer, the existing safe no-op RAR3's stored entries rely on.
+                    effectiveUnpVersion = hd.getUnpMethod() == 0x30 ? hd.getUnpVersion() : 15;
+                } else {
+                    effectiveSolid = hd.isSolid();
+                    effectiveUnpVersion = hd.getUnpVersion();
+                }
+                if (!effectiveSolid) {
                     this.unpack.init(null);
                 }
                 this.unpack.setDestSize(hd.getFullUnpackSize());
-                this.unpack.doUnpack(hd.getUnpVersion(), hd.isSolid());
+                invokeDoUnpack(effectiveUnpVersion, effectiveSolid);
             }
             if (!skip) {
                 hd = this.dataIO.getSubHeader();
@@ -1672,6 +1725,16 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     // A BLAKE2 entry carries no CRC32 word: verify the 32-byte digest instead
                     // (MAC-space for encrypted entries — ConvertHashToMAC, M3.8 issue #29).
                     if (!Arrays.equals(this.dataIO.getUnpHashDigest(), hd.getHashDigest())) {
+                        throw new CrcErrorException();
+                    }
+                } else if (this.isOldFormat()) {
+                    // RAR 1.4 Checksum14 (P2, issue #293; unrar hash.cpp:33-35 HASH_RAR14 arm):
+                    // RAW 16-bit equality, unlike the ~crc convention every later format uses.
+                    // ComprDataIO#unpWrite already routes through RarCRC.checkOldCrc for
+                    // isOldFormat() (dormant since before P1); this is the missing compare site.
+                    final long actualCRC = this.dataIO.getUnpFileCRC() & 0xffffL;
+                    final long expectedCRC = hd.getFileCRC() & 0xffffL;
+                    if (actualCRC != expectedCRC) {
                         throw new CrcErrorException();
                     }
                 } else {
@@ -1702,6 +1765,29 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 throw new RarException(e);
             }
         }
+    }
+
+    /**
+     * The ONLY call site that invokes {@link Unpack#doUnpack(int, boolean)} (P2 fix round 3,
+     * issue #293, gate finding on coverage row 7): isolated into its own package-private,
+     * overridable method so a same-package test can observe the EXACT {@code (version, solid)}
+     * argument pair {@link #doExtractFile} computed and passed for the old-format (RAR 1.4)
+     * routing branch, rather than only an indirect side effect ({@link
+     * #getOldFormatExtractedCount()} alone, gate-proven insufficient -- both a hardcoded
+     * {@code effectiveSolid=false} and, separately, {@code effectiveSolid=true} survived the
+     * whole suite against it). {@link Unpack} itself is {@code final} and cannot be subclassed,
+     * so this method -- not the {@code unpack} field -- is the narrowest available injection
+     * point that still pins the real argument seam. Default behavior is the unmodified real
+     * call; no production caller overrides this.
+     *
+     * @param unpVersion the algorithm version to decode with (unrar {@code UnpVer}, hardcoded
+     *                    15 for a compressed RAR 1.4 entry -- see the {@link #doExtractFile}
+     *                    routing comment).
+     * @param solid      whether to continue the LZ window from the previous entry.
+     */
+    void invokeDoUnpack(final int unpVersion, final boolean solid)
+            throws IOException, RarException {
+        this.unpack.doUnpack(unpVersion, solid);
     }
 
     /**
@@ -1740,6 +1826,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     public boolean isOldFormat() {
         return this.markHead != null && this.markHead.isOldFormat();
+    }
+
+    /**
+     * Test-observable seam for the {@link #oldFormatExtractedCount} solid-routing ordinal (P2,
+     * issue #293, coverage row 7): package-private rather than reflection, per the P2 brief's
+     * "add a package-private getter and say so." Not part of the public API.
+     *
+     * @return how many old-format (RAR 1.4) entries {@link #doExtractFile} has processed (fully
+     *         extracted or solid-skipped) so far this session.
+     */
+    int getOldFormatExtractedCount() {
+        return this.oldFormatExtractedCount;
     }
 
     /**

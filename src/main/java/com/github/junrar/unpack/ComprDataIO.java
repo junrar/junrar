@@ -354,7 +354,11 @@ public class ComprDataIO {
 
         if (!skipUnpCRC) {
             if (archive.isOldFormat()) {
-                unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, count);
+                // P2 fix round 3 (issue #293): the offset-aware overload -- omitting `offset`
+                // silently hashed addr[0, count) instead of addr[offset, offset+count), wrong
+                // for any flush whose start isn't the array's first byte (a SOLID RAR 1.4
+                // entry's write, continuing the shared window's `wrPtr`, RarCRC.java for detail).
+                unpFileCRC = RarCRC.checkOldCrc((short) unpFileCRC, addr, offset, count);
             } else if (unpHash != null) {
                 unpHash.update(addr, offset, count);
             } else {
