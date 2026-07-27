@@ -2,7 +2,7 @@
   "isRarV5" : false,
   "isEncrypted" : false,
   "isPasswordProtected" : false,
-  "isOldFormat" : false,
+  "isOldFormat" : true,
   "fileHeaders" : [ ],
-  "exception" : "UnsupportedRarVersionException"
+  "exception" : null
 }

@@ -8,8 +8,15 @@ package com.github.junrar;
 public enum RarFormat {
 
     /**
-     * The classic format family (RAR 1.5 through 4.x, signature version byte {@code 0x00};
-     * the old RAR 1.4 marker maps here too). unrar {@code RARFMT15}/{@code RARFMT14}.
+     * The ancient RAR 1.4 format (marker {@code 52 45 7e 5e}, unrar {@code RARFMT14}): a
+     * pre-{@code BaseBlock} header layout read by {@code Archive}'s dedicated RAR 1.4 loop
+     * (P1, issue #293). Headers and listing only -- extraction is a later phase.
+     */
+    RAR14,
+
+    /**
+     * The classic format family (RAR 1.5 through 4.x, signature version byte {@code 0x00}).
+     * unrar {@code RARFMT15}.
      */
     RAR15,
 
