@@ -457,28 +457,34 @@ class Rar14ExtractionTest {
     // the same contract, complementing the argument-seam test above. ----
 
     /**
-     * {@code src/test/resources/com/github/junrar/rar14-solid.rar} provenance: {@code
-     * SOLID.RAR} from github.com/bitplane/oldrar ({@code tests/fixtures/rar13/SOLID.RAR}), MIT
-     * OR Apache-2.0 dual-licensed, a genuine DOS-era RAR-1.402-produced archive (session-probed:
-     * main header Flags byte 0x88 -&gt; {@code MHD_SOLID} set; 3 entries; first file header
-     * method 3 [compressed], {@code unpVerByte} 0x02 -&gt; {@code UnpVer} 13). unrar 7.x
-     * extracted it "All OK" (oracle run 2026-07-27); the three per-entry SHA-256 digests below
-     * are that run's output.
+     * {@code src/test/resources/com/github/junrar/rar14-solid.rar} provenance (P5, replacing the
+     * prior third-party fixture -- see {@code PROVENANCE.md} in the P5 brief's
+     * {@code rar14-oracle/legacy-matrix/} source material): {@code R14SOLID.RAR}, authored
+     * 2026-07-27 by running the original DOS {@code RAR.EXE} (RAR 1.40.2, extracted from
+     * {@code RAR1_402.EXE} via nfbnet.org) under DOSBox-X 2026.07.02, command
+     * {@code RAR1402.EXE a -m3 -s R14SOLID.RAR BIG.TXT SECOND.TXT THIRD.TXT} -- a genuine
+     * DOS-era RAR-1.402-produced archive (session-probed: main header Flags byte 0x88 -&gt;
+     * {@code MHD_SOLID} set; 3 entries; first file header method 3 [compressed],
+     * {@code unpVerByte} 0x02 -&gt; {@code UnpVer} 13). unrar 7.23 extracted it "All OK"; the
+     * three per-entry SHA-256 digests below are that run's output.
      *
      * <p>This is the decoder-observable half of the solid-routing proof: entries 2 and 3
-     * ({@code HELLO.TXT}, {@code TINY.TXT}) only decode to the correct bytes AND pass the
+     * ({@code SECOND.TXT}, {@code THIRD.TXT}) only decode to the correct bytes AND pass the
      * Checksum14 compare if Unpack15's LZ window and {@code ComprDataIO}'s CRC accumulator both
-     * correctly carry over from entry 1 ({@code BIG80K.TXT}) -- i.e. only if {@code solid=true}
+     * correctly carry over from entry 1 ({@code BIG.TXT}) -- i.e. only if {@code solid=true}
      * was genuinely passed to {@code doUnpack} for them (unrar {@code extract.cpp:919}). This
      * fixture is what surfaced the P2 fix-round-3 finding below (not a byte-content bug: SHA-256
      * matched the oracle on the FIRST run against pre-fix code -- it was the CRC compare itself
      * that was wrong).
      *
-     * <p><b>Fix-round-3 finding (in scope, fixed in this round):</b> RED against the pre-fix
-     * code threw {@code CrcErrorException} on both {@code HELLO.TXT} and {@code TINY.TXT} (never
-     * on {@code BIG80K.TXT}), despite decompressed bytes matching the oracle SHA-256 exactly on
-     * every entry (verified by reflection probe before writing this test, and reproduced by this
-     * test's own strict assertions). Root cause: {@code ComprDataIO.unpWrite}'s old-format CRC
+     * <p><b>Fix-round-3 finding (in scope, fixed in this round; historical -- found against the
+     * prior third-party fixture this one replaces, entries {@code BIG80K.TXT}/{@code
+     * HELLO.TXT}/{@code TINY.TXT}, same solid-routing shape as this fixture's {@code
+     * BIG.TXT}/{@code SECOND.TXT}/{@code THIRD.TXT}):</b> RED against the pre-fix code threw
+     * {@code CrcErrorException} on both the second and third entries (never on the first),
+     * despite decompressed bytes matching the oracle SHA-256 exactly on every entry (verified by
+     * reflection probe before writing this test, and reproduced by this test's own strict
+     * assertions). Root cause: {@code ComprDataIO.unpWrite}'s old-format CRC
      * branch called {@code RarCRC.checkOldCrc(startCrc, addr, count)}, silently dropping the
      * {@code offset} parameter -- so it always hashed {@code addr[0, count)} instead of {@code
      * addr[offset, offset+count)}. For the first flush of a fresh window ({@code offset==0}, the
@@ -501,12 +507,13 @@ class Rar14ExtractionTest {
             final List<FileHeader> files = archive.getFileHeaders();
             assertThat(files)
                     .extracting(FileHeader::getFileName)
-                    .containsExactly("BIG80K.TXT", "HELLO.TXT", "TINY.TXT");
+                    .containsExactly("BIG.TXT", "SECOND.TXT", "THIRD.TXT");
 
+            // Oracle: unrar 7.23 `x` against R14SOLID.RAR, 2026-07-27 (PROVENANCE.md).
             final String[] expectedSha = {
-                "00c17390322bed4ba19a0b208a133be120891e6e64426838928e211b14ee3e23",
-                "f04a81f40cf9f9523a368dd16166e79dca9701b4f91dbd18e339c3b8106f07e0",
-                "d206dc60246d939acc46587b8aa30421d8331c98b7142673efda41f94cfa3655"
+                "26eea139ab8117eed88aa434760f5d9bc93e7d9f07de774442e2005880eb1a99",
+                "865961ac8bce35f5d514086c45bcddefa5e4cdcee4a19b8441e605d21e1d211d",
+                "9860a4c20e692b8e23aa233227de5b7cb3fed718fbe6bae4172eccc14514df4e"
             };
             for (int i = 0; i < files.size(); i++) {
                 final ByteArrayOutputStream out = new ByteArrayOutputStream();
