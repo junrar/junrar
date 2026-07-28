@@ -158,11 +158,16 @@ public class ComprDataIO {
      * Before this method existed, every non-RAR5 encrypted entry ran through {@link
      * Rijndael#buildDecipherer} unconditionally -- silently wrong (garbage output, caught only by
      * the downstream CRC compare) for a RAR 1.3/1.4/1.5/2.0 encrypted entry.
+     *
+     * <p>The RAR30 arm goes through the archive's {@link Rijndael.Kdf3Cache} rather than the static
+     * uncached {@link Rijndael#buildDecipherer}: that derivation is 262,144 SHA-1 rounds and every
+     * encrypted entry of an archive reuses one password. The legacy engines are stateful and their
+     * key setup is cheap, so they stay per-entry and uncached, as in unrar.
      */
     private Cipher buildLegacyOrAesDecipherer(final FileHeader hd) throws Exception {
         final CryptMethod method = RarLegacyCrypt.select(hd.getUnpVersion(), archive.isOldFormat());
         if (method == CryptMethod.RAR30) {
-            return Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+            return archive.buildRar4Decipherer(hd.getSalt());
         }
         return RarLegacyCrypt.buildDecipherer(method, archive.getPassword());
     }

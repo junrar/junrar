@@ -195,6 +195,14 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private FileHeader nextFileHeader;
     private char[] passwordChars;
+
+    /**
+     * Per-archive RAR4 key-derivation cache (unrar {@code CryptData::KDF3Cache}). Scoped here, not
+     * globally, so the password bytes and derived AES key die with {@link #close()} alongside
+     * {@link #passwordChars}.
+     */
+    private final Rijndael.Kdf3Cache rar4KdfCache = new Rijndael.Kdf3Cache();
+
     private final long maxDictionarySize;
 
     /**
@@ -626,7 +634,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 byte[] salt = new byte[8];
                 rawData.readFully(salt, 8);
                 try {
-                    Cipher cipher = Rijndael.buildDecipherer(passwordAsString(), salt);
+                    Cipher cipher = this.rar4KdfCache.buildDecipherer(passwordAsString(), salt);
                     rawData.setCipher(cipher);
                 } catch (Exception e) {
                     throw new InitDeciphererFailedException(e);
@@ -1852,7 +1860,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     }
 
     /**
-     * Close the underlying compressed file and wipe the internal password copy.
+     * Close the underlying compressed file and wipe the internal password copy along with any
+     * derived RAR4 key material.
      */
     @Override
     public void close() throws IOException {
@@ -1860,6 +1869,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         if (this.passwordChars != null) {
             Arrays.fill(this.passwordChars, '\0');
         }
+        this.rar4KdfCache.wipe();
     }
 
     /**
@@ -1898,6 +1908,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     private String passwordAsString() {
         return this.passwordChars == null ? null : new String(this.passwordChars);
+    }
+
+    /**
+     * Build an AES decipherer for a RAR4 encrypted header or file, reusing this archive's derived
+     * key when the salt repeats (unrar {@code CryptData::KDF3Cache}). Exposed for
+     * {@code ComprDataIO}; the cache stays owned by this archive so {@link #close()} can wipe it.
+     *
+     * @param salt the entry's 8-byte RAR3 salt
+     */
+    public Cipher buildRar4Decipherer(final byte[] salt) throws GeneralSecurityException {
+        return this.rar4KdfCache.buildDecipherer(passwordAsString(), salt);
     }
 
     /**
