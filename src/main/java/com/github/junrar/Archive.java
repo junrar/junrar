@@ -48,6 +48,7 @@ import com.github.junrar.rarfile.MacInfoHeader;
 import com.github.junrar.rarfile.MainHeader;
 import com.github.junrar.rarfile.MarkHeader;
 import com.github.junrar.rarfile.ProtectHeader;
+import com.github.junrar.rarfile.Rar14HeaderReader;
 import com.github.junrar.rarfile.Rar5FileHeaderReader;
 import com.github.junrar.rarfile.SignHeader;
 import com.github.junrar.rarfile.SubBlockHeader;
@@ -112,8 +113,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     /** RAR5 marker length (unrar {@code SIZEOF_MARKHEAD5}, {@code d861246:headers5.hpp:4}). */
     private static final int SIZEOF_MARKHEAD5 = 8;
 
+    /**
+     * unrar {@code SIZEOF_MAINHEAD14} (P1, issue #293; {@code d861246:headers.hpp}): the
+     * entire RAR 1.4 main header, marker included -- mark(4) + HeadSize u16(2) + Flags u8(1).
+     * unrar's {@code ReadHeader14} re-reads the marker as part of this block ({@code
+     * Raw.GetB(Mark,4)}, {@code arcread.cpp:1263}); junrar re-validates it the same way.
+     */
+    private static final int SIZEOF_MAINHEAD14 = 7;
+
     // Signature classification (unrar RARFORMAT, d861246:archive.cpp:100-126).
     private static final int SIG_NONE = 0;
+    private static final int SIG_RAR14 = 4;
     private static final int SIG_RAR15 = 1;
     private static final int SIG_RAR50 = 2;
     private static final int SIG_FUTURE = 3;
@@ -155,6 +165,20 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * Tracks the highest file index processed in the current solid stream.
      */
     private int lastProcessedFileIndex = -1;
+
+    /**
+     * RAR 1.4 extraction-session ordinal (P2, issue #293; unrar {@code FileCount},
+     * {@code d861246:extract.cpp:773}, incremented for every entry -- stored or compressed,
+     * actually written or solid-skipped -- BEFORE its {@code Method==0} branch). RAR 1.4 has no
+     * per-file solid flag ({@link com.github.junrar.rarfile.FileHeader#isSolid()} is always
+     * false for a RAR14-container entry), unlike RAR3/RAR5's {@code hd.isSolid()} convention, so
+     * {@code doExtractFile}'s old-format branch derives the effective solid flag from this
+     * counter instead: the first entry extracted this session always gets {@code solid=false}
+     * (forcing a fresh {@code Unpack.init}); every entry after that gets the archive-level
+     * {@code MHD_SOLID} flag ({@code d861246:extract.cpp:920}: {@code FileCount>1 && Arc.Solid}).
+     * Not reset on volume switch -- RAR 1.4 multi-volume extraction is out of scope (P4).
+     */
+    private int oldFormatExtractedCount = 0;
 
     /**
      * Size of packed data in current file.
@@ -412,7 +436,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      *
      * @param fileLength the current volume's length (bounds the SFX scan).
      * @return the detected {@link RarFormat}.
-     * @throws UnsupportedRarVersionException for a future RAR format (version byte 2..4).
+     * @throws UnsupportedRarVersionException for a future RAR format junrar predates
+     *                                        (signature version byte {@code 2}..{@code 4}).
      * @throws BadRarArchiveException         if no signature is found within the bound.
      */
     private RarFormat detectFormatAndSeek(final long fileLength) throws IOException, RarException {
@@ -438,12 +463,46 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 continue;
             }
             final int type = signatureType(buffer, i, filled - i);
-            if (type != SIG_NONE) {
-                this.channel.setPosition(1L + i);
-                return toFormat(type);
+            if (type == SIG_NONE) {
+                continue;
             }
+            if (type == SIG_RAR14 && !rsfxCorroborated(i, buffer, filled)) {
+                // unrar Archive::IsArchive (d861246:archive.cpp:160-166): a RAR 1.4 match
+                // past the RSFX-exempt first scanned byte needs corroboration, or a stub
+                // binary's arbitrary bytes can false-positive as the bare 4-byte 1.4 marker.
+                // unrar `continue`s the scan rather than failing outright -- there may be a
+                // real signature (of any format) further in.
+                continue;
+            }
+            this.channel.setPosition(1L + i);
+            return toFormat(type);
         }
         throw new BadRarArchiveException();
+    }
+
+    /**
+     * unrar's RSFX corroboration guard for an SFX-scanned RAR 1.4 match ({@code
+     * d861246:archive.cpp:165-166}: {@code Format==RARFMT14 && I>0 && CurPos<28 &&
+     * ReadSize>31}, then reject unless the 4 bytes at {@code Buffer[28-CurPos]} read {@code
+     * 52 53 46 58} ("RSFX")). {@code CurPos} (the scan buffer's absolute start offset) is
+     * always {@code 1} in this port ({@link #detectFormatAndSeek}'s SFX path always seeks
+     * there first), so {@code CurPos<28} is unconditionally true and only {@code I>0} /
+     * {@code ReadSize>31} are live guards here; {@code Buffer[28-CurPos]} is therefore always
+     * {@code buffer[27]} -- the fixed absolute file offset 28, independent of the match
+     * position {@code i}. A match at {@code i==0} (absolute file offset 1, immediately after
+     * the already-ruled-out offset 0) is exempt and always accepted, matching unrar exactly.
+     *
+     * @param i      the scan offset of the matched marker, relative to the scan buffer.
+     * @param buffer the scan buffer (absolute file offset 1 at index 0).
+     * @param filled the number of valid bytes in {@code buffer}.
+     * @return true if the match needs no corroboration ({@code i==0}) or the corroboration
+     *         bytes are present and equal to "RSFX".
+     */
+    private static boolean rsfxCorroborated(final int i, final byte[] buffer, final int filled) {
+        if (i == 0 || filled <= 31) {
+            return true;
+        }
+        return buffer[27] == 0x52 && buffer[28] == 0x53 && buffer[29] == 0x46 && buffer[30] == 0x58;
     }
 
     /**
@@ -469,6 +528,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         switch (signatureType) {
             case SIG_RAR50:
                 return RarFormat.RAR50;
+            case SIG_RAR14:
+                // Headers only (readHeaders14, P1, issue #293); extraction is a later phase.
+                // Parsing it as RAR15 would misread the 1.4 header bytes as a BaseBlock and
+                // surface a misleading CorruptHeaderException.
+                return RarFormat.RAR14;
             case SIG_FUTURE:
                 throw new UnsupportedRarVersionException();
             default:
@@ -479,19 +543,22 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     /**
      * unrar {@code Archive::IsSignature} ({@code d861246:archive.cpp:100-126}): classify the
      * bytes at {@code d[off..off+len)} as a RAR marker. Returns one of {@link #SIG_NONE},
-     * {@link #SIG_RAR15}, {@link #SIG_RAR50}, {@link #SIG_FUTURE}. {@code len} is the number
-     * of readable bytes from {@code off}, so short buffers never read past their content.
+     * {@link #SIG_RAR14}, {@link #SIG_RAR15}, {@link #SIG_RAR50}, {@link #SIG_FUTURE}.
+     * {@code len} is the number of readable bytes from {@code off}, so short buffers never
+     * read past their content.
      */
     private static int signatureType(final byte[] d, final int off, final int len) {
         if (len < 1 || (d[off] & 0xff) != 0x52) {
             return SIG_NONE;
         }
-        // Old RAR 1.4 marker: 52 45 7e 5e (RARFMT14 -- part of the classic family).
+        // Old RAR 1.4 marker: 52 45 7e 5e (unrar RARFMT14). NOT part of the RAR 1.5+ family:
+        // its headers predate the BaseBlock layout, so readHeaders14 (P1, issue #293) is a
+        // dedicated loop, not a dispatch through the RAR3 BaseBlock loop below.
         if (len >= 4
                 && (d[off + 1] & 0xff) == 0x45
                 && (d[off + 2] & 0xff) == 0x7e
                 && (d[off + 3] & 0xff) == 0x5e) {
-            return SIG_RAR15;
+            return SIG_RAR14;
         }
         // Modern marker: 52 61 72 21 1a 07 + version byte.
         if (len >= 7
@@ -535,6 +602,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         // dispatch to the dedicated RAR5 framework (M3.2, issue #23).
         if (this.format == RarFormat.RAR50) {
             readHeadersRar5(fileLength);
+            return;
+        }
+
+        // RAR 1.4 predates the BaseBlock layout entirely (P1, issue #293); dispatch to its own
+        // dedicated loop.
+        if (this.format == RarFormat.RAR14) {
+            readHeaders14(fileLength);
             return;
         }
 
@@ -888,6 +962,114 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     }
             }
             // logger.info("\n--------end header--------");
+        }
+    }
+
+    /**
+     * RAR 1.4 header-read loop (P1, issue #293; unrar {@code Archive::ReadHeader14},
+     * {@code d861246:arcread.cpp:1256-1331}). The RAR 1.4 wire format predates the RAR15+
+     * {@code BaseBlock} layout entirely: a bare 4-byte marker, a 3-byte main header ({@code
+     * HeadSize} u16 + {@code Flags} u8), then one {@link Rar14HeaderReader#SIZEOF_FILEHEAD14}
+     * file header per entry, its OEM name bytes, and packed data -- inline, no {@code
+     * BaseBlock}, no header CRC. Extraction of these entries is a later phase (P1 brief
+     * non-goals); this loop only lists them through the unified {@link FileHeader}.
+     */
+    private void readHeaders14(final long fileLength) throws IOException, RarException {
+        // detectFormatAndSeek left the channel at the marker (offset 0, or the SFX offset).
+        final long markerPos = this.channel.getPosition();
+
+        final byte[] mainBuf = new byte[SIZEOF_MAINHEAD14];
+        if (fill(mainBuf, 0, SIZEOF_MAINHEAD14) < SIZEOF_MAINHEAD14) {
+            throw new CorruptHeaderException("Truncated RAR 1.4 main header");
+        }
+        if (signatureType(mainBuf, 0, 4) != SIG_RAR14) {
+            throw new CorruptHeaderException("Invalid RAR 1.4 marker");
+        }
+        final int mainHeadSize = Raw.readShortLittleEndian(mainBuf, 4) & 0xffff;
+        // unrar: if (HeadSize<7) return 0 -- a broken header (arcread.cpp:1266).
+        if (mainHeadSize < SIZEOF_MAINHEAD14) {
+            throw new CorruptHeaderException("RAR 1.4 main header too small");
+        }
+        final int mainFlags = mainBuf[6] & 0xff;
+
+        // Synthesize a MainHeader so isEncrypted()/isPasswordProtected() (this.newMhd == null
+        // would otherwise throw MainHeaderNullException) and FileVolumeManager's `mainHeader
+        // != null` old-naming test both see one, same as every RAR3 archive. unrar's
+        // ReadHeader14 interprets exactly 4 bits of this Flags byte -- MHD_VOLUME, MHD_SOLID,
+        // MHD_LOCK, MHD_COMMENT (d861246:arcread.cpp:1274-1278; MHD_PACK_COMMENT/0x10 feeds
+        // MainHead.PackComment there too, but junrar's MainHeader has no accessor for it) --
+        // so mask down to exactly those before constructing the synthetic header, dropping
+        // every other bit including 0x80 (MHD_PASSWORD in the RAR15+ vocabulary: RAR 1.4 has
+        // no main-header encryption concept at all, only per-file LHD_PASSWORD, so a stray
+        // 0x80 must never reach MainHeader.isEncrypted()) and 0x10 (which would otherwise
+        // read back as MHD_NEWNUMBERING on a real RAR15+ main header and could defeat
+        // FileVolumeManager's `!mainHeader.isNewNumbering() || archive.isOldFormat()`
+        // old-naming test for a 1.4 volume archive that happens to carry a packed comment --
+        // isOldFormat() alone already forces old naming; this just keeps both terms honest).
+        final int interpretedMainFlags =
+                mainFlags
+                        & (BaseBlock.MHD_VOLUME
+                                | BaseBlock.MHD_COMMENT
+                                | BaseBlock.MHD_LOCK
+                                | BaseBlock.MHD_SOLID);
+        final byte[] baseBlockBuf = new byte[BaseBlock.BaseBlockSize];
+        baseBlockBuf[2] = UnrarHeadertype.MainHeader.getHeaderByte();
+        Raw.writeShortLittleEndian(baseBlockBuf, 3, (short) interpretedMainFlags);
+        final BaseBlock mainBase = new BaseBlock(baseBlockBuf);
+        this.newMhd = new MainHeader(mainBase, new byte[MainHeader.mainHeaderSize]);
+
+        this.markHead = MarkHeader.old();
+        this.headers.add(this.markHead);
+
+        long position = markerPos + mainHeadSize;
+        if (position <= markerPos) {
+            throw new CorruptHeaderException("RAR 1.4 main header does not advance");
+        }
+        this.channel.setPosition(position);
+
+        final Set<Long> processedPositions = new HashSet<>();
+        while (true) {
+            if (position >= fileLength) {
+                break;
+            }
+
+            final byte[] fixed = new byte[Rar14HeaderReader.SIZEOF_FILEHEAD14];
+            final int gotFixed = fill(fixed, 0, fixed.length);
+            if (gotFixed == 0) {
+                break;
+            }
+            if (gotFixed < fixed.length) {
+                throw new CorruptHeaderException("Truncated RAR 1.4 file header");
+            }
+
+            final int nameSize = fixed[19] & 0xff;
+            final byte[] nameBytes = new byte[nameSize];
+            if (nameSize > 0 && fill(nameBytes, 0, nameSize) < nameSize) {
+                throw new CorruptHeaderException("Truncated RAR 1.4 file name");
+            }
+
+            final FileHeader fh = Rar14HeaderReader.read(fixed, nameBytes);
+            fh.setPositionInFile(position);
+            this.headers.add(fh);
+
+            final long headSize = Raw.readShortLittleEndian(fixed, 10) & 0xffffL;
+            final long packSize = Raw.readIntLittleEndianAsLong(fixed, 0);
+            final long nextPos = position + headSize + packSize;
+            // unrar's final check, ported directly: NextBlockPos>CurBlockPos ? ... : 0 (a
+            // broken header). headSize is already floor-validated to SIZEOF_FILEHEAD14 (21)
+            // above and packSize is an unsigned 32-bit read (never negative), so this cannot
+            // currently trip for a fixed-width RAR 1.4 header -- kept as defense in depth,
+            // matching the identical guard in readHeadersRar5, whose vint DataSize CAN encode
+            // a value that defeats a floor check the way RAR 1.4's fixed fields cannot.
+            if (nextPos <= position) {
+                throw new CorruptHeaderException("RAR 1.4 file header does not advance");
+            }
+            this.channel.setPosition(nextPos);
+            if (processedPositions.contains(nextPos)) {
+                throw new BadRarArchiveException();
+            }
+            processedPositions.add(nextPos);
+            position = nextPos;
         }
     }
 
@@ -1469,6 +1651,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             throw new MissingPreviousVolumeException(
                     "Extraction of '" + hd.getFileName() + "' must start from a previous volume");
         }
+        // P2's temporary guard here (issue #293) refused every RAR 1.4 encrypted entry outright,
+        // since P2 had no CRYPT_RAR13 implementation and the Rijndael/AES path below is wrong
+        // for this entry. P3 removed the guard: ComprDataIO#init(FileHeader) now selects
+        // CRYPT_RAR13/15/20 correctly via RarLegacyCrypt#select (unrar arcread.cpp:1300 for the
+        // RARFMT14 case this guard used to intercept).
         this.dataIO.init(os);
         this.dataIO.init(hd);
         this.dataIO.setUnpFileCRC(this.isOldFormat() ? 0 : 0xffFFffFF);
@@ -1492,11 +1679,40 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 if (this.unpack == null) {
                     this.unpack = new Unpack(this.dataIO);
                 }
-                if (!hd.isSolid()) {
+                final int effectiveUnpVersion;
+                final boolean effectiveSolid;
+                if (this.format == RarFormat.RAR14) {
+                    // unrar extract.cpp:773 (FileCount++, before the Method==0 split) +
+                    // :917-921 (P2, issue #293): every RAR 1.3-1.5 entry this session --
+                    // stored or compressed -- advances the ordinal; RAR 1.4 carries no
+                    // per-file solid flag (hd.isSolid() is always false for a RAR14-container
+                    // entry -- LHD_SOLID is never set by Rar14HeaderReader), so the first
+                    // entry extracted always forces solid=false and every later one inherits
+                    // the archive-level MHD_SOLID flag instead. Scoped to format==RAR14 only
+                    // (not every UnpVer<=15 entry, which would also match unrar's condition)
+                    // to leave the shipped RAR15 per-file hd.isSolid() semantic in the else
+                    // branch below untouched -- real RAR15 headers carry a meaningful solid
+                    // bit RAR 1.4 never had (P2 brief scoping decision, extract.cpp:918).
+                    this.oldFormatExtractedCount++;
+                    effectiveSolid = this.oldFormatExtractedCount > 1 && this.newMhd.isSolid();
+                    // unrar never calls DoUnpack at all for Method==0 (UnstoreFile only,
+                    // extract.cpp:903-904); junrar's Unpack.doUnpack instead folds both paths
+                    // into one call, with no `return` after its own internal unstoreFile()
+                    // shortcut (getUnpMethod()==0x30). Hardcoding version 15 for a stored 1.4
+                    // entry too would make that switch's `case 15` run unpack15() a second
+                    // time on top of the already-unstored bytes -- so only the compressed
+                    // branch reroutes; the stored branch keeps the entry's own non-matching
+                    // (10 or 13) UnpVer, the existing safe no-op RAR3's stored entries rely on.
+                    effectiveUnpVersion = hd.getUnpMethod() == 0x30 ? hd.getUnpVersion() : 15;
+                } else {
+                    effectiveSolid = hd.isSolid();
+                    effectiveUnpVersion = hd.getUnpVersion();
+                }
+                if (!effectiveSolid) {
                     this.unpack.init(null);
                 }
                 this.unpack.setDestSize(hd.getFullUnpackSize());
-                this.unpack.doUnpack(hd.getUnpVersion(), hd.isSolid());
+                invokeDoUnpack(effectiveUnpVersion, effectiveSolid);
             }
             if (!skip) {
                 hd = this.dataIO.getSubHeader();
@@ -1504,6 +1720,16 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     // A BLAKE2 entry carries no CRC32 word: verify the 32-byte digest instead
                     // (MAC-space for encrypted entries — ConvertHashToMAC, M3.8 issue #29).
                     if (!Arrays.equals(this.dataIO.getUnpHashDigest(), hd.getHashDigest())) {
+                        throw new CrcErrorException();
+                    }
+                } else if (this.isOldFormat()) {
+                    // RAR 1.4 Checksum14 (P2, issue #293; unrar hash.cpp:33-35 HASH_RAR14 arm):
+                    // RAW 16-bit equality, unlike the ~crc convention every later format uses.
+                    // ComprDataIO#unpWrite already routes through RarCRC.checkOldCrc for
+                    // isOldFormat() (dormant since before P1); this is the missing compare site.
+                    final long actualCRC = this.dataIO.getUnpFileCRC() & 0xffffL;
+                    final long expectedCRC = hd.getFileCRC() & 0xffffL;
+                    if (actualCRC != expectedCRC) {
                         throw new CrcErrorException();
                     }
                 } else {
@@ -1534,6 +1760,29 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 throw new RarException(e);
             }
         }
+    }
+
+    /**
+     * The ONLY call site that invokes {@link Unpack#doUnpack(int, boolean)} (P2 fix round 3,
+     * issue #293, gate finding on coverage row 7): isolated into its own package-private,
+     * overridable method so a same-package test can observe the EXACT {@code (version, solid)}
+     * argument pair {@link #doExtractFile} computed and passed for the old-format (RAR 1.4)
+     * routing branch, rather than only an indirect side effect ({@link
+     * #getOldFormatExtractedCount()} alone, gate-proven insufficient -- both a hardcoded
+     * {@code effectiveSolid=false} and, separately, {@code effectiveSolid=true} survived the
+     * whole suite against it). {@link Unpack} itself is {@code final} and cannot be subclassed,
+     * so this method -- not the {@code unpack} field -- is the narrowest available injection
+     * point that still pins the real argument seam. Default behavior is the unmodified real
+     * call; no production caller overrides this.
+     *
+     * @param unpVersion the algorithm version to decode with (unrar {@code UnpVer}, hardcoded
+     *                    15 for a compressed RAR 1.4 entry -- see the {@link #doExtractFile}
+     *                    routing comment).
+     * @param solid      whether to continue the LZ window from the previous entry.
+     */
+    void invokeDoUnpack(final int unpVersion, final boolean solid)
+            throws IOException, RarException {
+        this.unpack.doUnpack(unpVersion, solid);
     }
 
     /**
@@ -1572,6 +1821,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     public boolean isOldFormat() {
         return this.markHead != null && this.markHead.isOldFormat();
+    }
+
+    /**
+     * Test-observable seam for the {@link #oldFormatExtractedCount} solid-routing ordinal (P2,
+     * issue #293, coverage row 7): package-private rather than reflection, per the P2 brief's
+     * "add a package-private getter and say so." Not part of the public API.
+     *
+     * @return how many old-format (RAR 1.4) entries {@link #doExtractFile} has processed (fully
+     *         extracted or solid-skipped) so far this session.
+     */
+    int getOldFormatExtractedCount() {
+        return this.oldFormatExtractedCount;
     }
 
     /**

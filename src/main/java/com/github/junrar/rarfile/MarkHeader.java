@@ -38,6 +38,28 @@ public class MarkHeader extends BaseBlock {
         super(bb);
     }
 
+    /**
+     * A synthetic RAR 1.4 mark header (P1, issue #293). The RAR 1.4 marker is a bare 4-byte
+     * signature ({@code 52 45 7e 5e}, unrar {@code RARFMT14}) with no {@link BaseBlock}-shaped
+     * payload behind it, so {@link #isSignature()}/{@link #isValid()} -- built around the
+     * RAR15+ 7-byte BaseBlock layout -- do not apply; {@code Archive}'s RAR 1.4 loop uses this
+     * factory instead of the byte-parsing constructor above, purely so
+     * {@link #isOldFormat()} (and therefore {@code Archive.isOldFormat()}) is truthful.
+     *
+     * @return a mark header whose {@link #getVersion()} is {@link RARVersion#OLD}.
+     */
+    public static MarkHeader old() {
+        // Not `new BaseBlock()`: its default headerType (0) matches no UnrarHeadertype, and
+        // the BaseBlock(BaseBlock) copy constructor this class's own constructor uses
+        // dereferences getHeaderType().getHeaderByte() unconditionally -- an NPE. Seed a real
+        // MarkHeader type byte through the byte[] constructor instead.
+        final byte[] seed = new byte[BaseBlock.BaseBlockSize];
+        seed[2] = UnrarHeadertype.MarkHeader.getHeaderByte();
+        final MarkHeader mh = new MarkHeader(new BaseBlock(seed));
+        mh.version = RARVersion.OLD;
+        return mh;
+    }
+
     public boolean isValid() {
         if (!(getHeadCRC() == 0x6152)) {
             return false;

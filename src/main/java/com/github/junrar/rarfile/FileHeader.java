@@ -403,6 +403,89 @@ public class FileHeader extends BlockHeader {
     }
 
     /**
+     * RAR 1.4 FILE header constructor (P1, issue #293). Populates the SAME unified header the
+     * RAR3/RAR5 constructors build, from a {@link Rar14HeaderReader.Parsed} field bag -- see
+     * that reader for the wire-format transcription (unrar {@code Archive::ReadHeader14}'s
+     * file-header branch, {@code d861246:arcread.cpp:1277-1320}). Normalizes the 1.4 facts
+     * (directory from {@code FileAttr&0x10}, NOT from a window-size flags field like RAR3/
+     * RAR5) onto the inherited {@code flags} short exactly like the RAR5 constructor does, so
+     * every existing predicate ({@link #isDirectory()}, {@link #isSplitBefore()}, {@link
+     * #isSplitAfter()}, {@link #isEncrypted()}) works unmodified.
+     * <p>
+     * Extraction-only fact a RAR 1.4 entry also carries -- the fixed 0x10000 decode window --
+     * is deliberately left unset (P2 wires the window through {@code Unpack15}'s existing
+     * shared {@code MAXWINSIZE} allocation instead, see {@code Archive.doExtractFile}; no
+     * per-entry window size field exists in the RAR 1.4 wire format to carry).
+     *
+     * @param p the parsed RAR 1.4 fields.
+     * @throws CorruptHeaderException if the entry name fails the same {@link
+     *                                #isFilenameValid} gate the RAR3/RAR5 constructors apply
+     *                                (C10).
+     */
+    FileHeader(Rar14HeaderReader.Parsed p) throws CorruptHeaderException {
+        this.headerType = UnrarHeadertype.FileHeader.getHeaderByte();
+        // P2 (issue #293) data-offset wiring: reuse the inherited BaseBlock#headerSize field
+        // (never populated by P1, which only listed headers) so the EXISTING
+        // getDataStartOffset() fallback formula (positionInFile + getHeaderSize(...)), already
+        // correct for RAR3, becomes correct for RAR 1.4 too -- no new field/formula. This was
+        // P1's flagged "UNWIRED" seam and the most likely first extraction failure (P2 brief).
+        this.headerSize = (short) p.headSize;
+
+        short f = 0;
+        if (p.directory) {
+            f |= LHD_DIRECTORY;
+        }
+        if (p.splitBefore) {
+            f |= LHD_SPLIT_BEFORE;
+        }
+        if (p.splitAfter) {
+            f |= LHD_SPLIT_AFTER;
+        }
+        if (p.encrypted) {
+            f |= LHD_PASSWORD;
+        }
+        this.flags = f;
+
+        setPackAndDataSize(p.packSize);
+        this.fullPackSize = p.packSize;
+        this.highPackSize = 0;
+
+        this.unpSize = p.unpSize;
+        this.fullUnpackSize = p.unpSize;
+
+        this.fileAttr = p.fileAttr;
+        // RAR 1.4's only checksum: unrar sets FileHash.Type=HASH_RAR14 for the 16-bit CRC
+        // read here (arcread.cpp:1284) -- junrar has no separate hash-type/has-CRC facts for
+        // the RAR3 family either, so it lands in the same unconditional fileCRC field.
+        this.fileCRC = p.fileCRC;
+
+        this.unpMethod = (byte) p.unpMethod;
+        this.unpVersion = p.unpVersion;
+
+        // unrar: FileHead.HostOS=HOST_MSDOS (arcread.cpp:1273) -- unconditional, no per-entry
+        // host byte in the RAR 1.4 wire format.
+        this.hostOS = HostSystem.msdos;
+
+        this.fileNameBytes = p.fileNameBytes;
+        this.fileName = p.fileName;
+        this.fileNameW = "";
+        this.nameSize = (short) p.fileNameBytes.length;
+
+        if (isFileHeader() && !isFilenameValid(getFileName())) {
+            throw new CorruptHeaderException("Invalid filename: " + getFileName());
+        }
+
+        this.mTime = p.mTime;
+
+        // This constructor is only ever invoked from Rar14HeaderReader.read, which is only
+        // ever invoked from Archive.readHeaders14 -- i.e. exactly when Format==RARFMT14, never
+        // the RAR5 container.
+        this.rar5Container = false;
+
+        this.parsedLength = 0;
+    }
+
+    /**
      * Decodes a RAR3 narrow (non-RLE-encoded) name field, the port of unrar 7.2.7's
      * {@code ArcCharToWide(FileName.data(),hd->FileName,ACTW_OEM)}
      * ({@code d861246:arcread.cpp:359-360}). On Unix that is a strict multibyte decode in the
@@ -538,7 +621,13 @@ public class FileHeader extends BlockHeader {
         }
     }
 
-    private static long getDateDos(int time) {
+    /**
+     * Decodes an MS-DOS 32-bit packed timestamp to epoch millis. Package-private (not
+     * {@code private}) so {@link Rar14HeaderReader} can reuse it for the RAR 1.4 {@code
+     * FileTime} field, which is the same DOS format (P1, issue #293) -- one decoder, no
+     * duplicated bit-shift logic to drift out of sync.
+     */
+    static long getDateDos(int time) {
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR, (time >>> 25) + 1980);
         cal.set(Calendar.MONTH, ((time >>> 21) & 0x0f) - 1);

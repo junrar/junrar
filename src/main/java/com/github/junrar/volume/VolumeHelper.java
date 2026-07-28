@@ -82,8 +82,20 @@ public class VolumeHelper {
             } else {
                 char[] ext = new char[3];
                 arcName.getChars(off, len, ext, 0);
+                // unrar NextVolumeName old-numbering arm (issue #293 P4; d861246:pathfn.cpp
+                // :481-489): `while (++ArcName[NumPos]=='9'+1) if (NumPos==0 ||
+                // ArcName[NumPos-1]=='.') { ArcName[NumPos]='a'; break; } else
+                // ArcName[NumPos--]='0';`. `i==0` here is that `ArcName[NumPos-1]=='.'` test --
+                // `ext[0]` is always the character immediately after the dot, since `ext` is
+                // exactly the 3-char extension. Carrying out of `ext[0]` (e.g. "x.999") lands on
+                // 'a', not an out-of-bounds decrement: "From .999 to .a00 if started from .001
+                // or for too short names" (unrar comment, same lines).
                 int i = ext.length - 1;
                 while ((++ext[i]) == '9' + 1) {
+                    if (i == 0) {
+                        ext[i] = 'a';
+                        break;
+                    }
                     ext[i] = '0';
                     i--;
                 }

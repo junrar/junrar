@@ -1,0 +1,40 @@
+{
+  "isRarV5" : false,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1785149698.000000000,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "SUB",
+    "hostOS" : "msdos",
+    "fullPackSize" : 0,
+    "fullUnpackSize" : 0,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : true
+  }, {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1785149698.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1331645091,
+    "fileName" : "SUB\\NESTED.TXT",
+    "hostOS" : "msdos",
+    "fullPackSize" : 23,
+    "fullUnpackSize" : 23,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}
