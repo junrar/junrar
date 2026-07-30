@@ -158,11 +158,16 @@ public class ComprDataIO {
      * Before this method existed, every non-RAR5 encrypted entry ran through {@link
      * Rijndael#buildDecipherer} unconditionally -- silently wrong (garbage output, caught only by
      * the downstream CRC compare) for a RAR 1.3/1.4/1.5/2.0 encrypted entry.
+     *
+     * <p>The RAR30 arm goes through the archive's {@link Rijndael.Kdf3Cache} rather than the static
+     * uncached {@link Rijndael#buildDecipherer}: that derivation is 262,144 SHA-1 rounds and every
+     * encrypted entry of an archive reuses one password. The legacy engines are stateful and their
+     * key setup is cheap, so they stay per-entry and uncached, as in unrar.
      */
     private Cipher buildLegacyOrAesDecipherer(final FileHeader hd) throws Exception {
         final CryptMethod method = RarLegacyCrypt.select(hd.getUnpVersion(), archive.isOldFormat());
         if (method == CryptMethod.RAR30) {
-            return Rijndael.buildDecipherer(archive.getPassword(), hd.getSalt());
+            return archive.buildRar4Decipherer(hd.getSalt());
         }
         return RarLegacyCrypt.buildDecipherer(method, archive.getPassword());
     }
@@ -253,6 +258,13 @@ public class ComprDataIO {
      * decrypting {@link RawDataIo} seam, while unrar hashes the raw pre-decryption stream —
      * the two are only comparable for unencrypted entries, so encrypted entries skip the
      * per-volume check; their end-to-end unpacked MAC digest still verifies the whole file.
+     *
+     * <p>An entry that stores no checksum at all (unrar {@code HASH_NONE}) has nothing to
+     * compare: unrar arms {@code PackedDataHash} with that same type ({@code
+     * 8f437ab:volume.cpp:182}) and its {@code Cmp} short-circuits to true because {@code
+     * HashValue::operator==} returns true whenever either side is {@code HASH_NONE} ({@code
+     * 8f437ab:hash.cpp:31-32}), so the volume switch must pass rather than measure the packed
+     * chunk against a zero {@link FileHeader#getFileCRC()}.
      */
     private void checkRar5PackedHash(final FileHeader hd) throws RarException {
         if (hd.getSalt16() != null) {
@@ -262,7 +274,7 @@ public class ComprDataIO {
             if (packHash == null || !Arrays.equals(packHash.digest(), hd.getHashDigest())) {
                 throw new CrcErrorException();
             }
-        } else if (this.getPackedCRC() != ~hd.getFileCRC()) {
+        } else if (hd.hasFileCrc() && this.getPackedCRC() != ~hd.getFileCRC()) {
             throw new CrcErrorException();
         }
     }
