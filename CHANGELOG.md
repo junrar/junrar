@@ -1,3 +1,39 @@
+# [8.1.0](https://github.com/junrar/junrar/compare/v8.0.0...v8.1.0) (2026-08-03)
+## 🚀 Features
+**crypt**
+- decrypt legacy RAR 1.3/1.5/2.0 encrypted entries ([5da2cb6](https://github.com/junrar/junrar/commits/5da2cb6))
+
+**rar14**
+- extract entries spanning multiple RAR 1.4 volumes ([a4b9591](https://github.com/junrar/junrar/commits/a4b9591))
+- extract RAR 1.4 entries with Checksum14 verification ([11f1d23](https://github.com/junrar/junrar/commits/11f1d23))
+- parse RAR 1.4 headers and list entries ([7ac5a8c](https://github.com/junrar/junrar/commits/7ac5a8c))
+
+## 🐛 Fixes
+**rar5**
+- skip CRC verification when no checksum is stored ([62170ff](https://github.com/junrar/junrar/commits/62170ff))
+
+**unscoped**
+- reject RAR 1.4 archives with UnsupportedRarVersionException ([e0bc027](https://github.com/junrar/junrar/commits/e0bc027)), closes [#293](https://github.com/junrar/junrar/issues/293)
+
+## 🏎 Perf
+
+- buffer RAR decryption without per-byte allocation ([5e66082](https://github.com/junrar/junrar/commits/5e66082))
+- speed up and cache the RAR4 key derivation ([ae6bcc5](https://github.com/junrar/junrar/commits/ae6bcc5))
+- backport unrar quick-decode table to the RAR4 decoder ([68555aa](https://github.com/junrar/junrar/commits/68555aa))
+
+## 🧪 Tests
+**rar14**
+- replace third-party fixtures with self-authored archives ([56d43d8](https://github.com/junrar/junrar/commits/56d43d8))
+
+**regression**
+- add legacy RAR era matrix to the corpus ([e7392d1](https://github.com/junrar/junrar/commits/e7392d1))
+
+## 🛠  Build
+**deps**
+- bump com.fasterxml.jackson.core:jackson-databind ([57091f9](https://github.com/junrar/junrar/commits/57091f9))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([58ea9cf](https://github.com/junrar/junrar/commits/58ea9cf))
+- bump org.bouncycastle:bcprov-jdk18on from 1.84 to 1.85 ([5a80ee1](https://github.com/junrar/junrar/commits/5a80ee1))
+
 # [8.0.0](https://github.com/junrar/junrar/compare/v7.6.1...v8.0.0) (2026-07-23)
 ## 🚀 Features
 **api**
