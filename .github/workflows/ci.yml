@@ -49,7 +49,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v6
+        uses: gradle/actions/setup-gradle@v6.2.0
       - name: Build
         run: ./gradlew build -PtestJvm=${{ matrix.java }}
 
@@ -87,7 +87,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v6
+        uses: gradle/actions/setup-gradle@v6.2.0
 
       # The corpus ships in the repository as payload-stripped archives, so there is
       # nothing to download and nothing to configure. See CONTRIBUTING.md. Kept out of
@@ -119,7 +119,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v6
+        uses: gradle/actions/setup-gradle@v6.2.0
       - name: Build jar and smoke runner
         run: ./gradlew jar compileJre8smokeJava
 
@@ -218,7 +218,7 @@ jobs:
           java-package: 'jdk'
           distribution: 'temurin'
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v6
+        uses: gradle/actions/setup-gradle@v6.2.0
       - name: Maven publish
         if: inputs.maven_publish || github.event_name == 'push'
         env:
