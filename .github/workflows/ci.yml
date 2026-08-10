@@ -181,7 +181,7 @@ jobs:
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@main
       - name: Install svu
-        run: brew install --cask caarlos0/tap/svu
+        run: brew install svu
       - name: Compute next version for release
         if: inputs.perform_release
         run: |
