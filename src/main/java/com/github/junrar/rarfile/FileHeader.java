@@ -561,12 +561,12 @@ public class FileHeader extends BlockHeader {
         }
     }
 
-    private static TimePositionTuple parseExtTime(
+    private TimePositionTuple parseExtTime(
             int shift, short flags, byte[] fileHeader, int position) {
         return parseExtTime(shift, flags, fileHeader, position, null);
     }
 
-    private static TimePositionTuple parseExtTime(
+    private TimePositionTuple parseExtTime(
             int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
         int flag = flags >>> shift;
         if ((flag & 0x8) != 0) {
@@ -574,6 +574,12 @@ public class FileHeader extends BlockHeader {
             if (baseTime != null) {
                 seconds = baseTime.to(TimeUnit.SECONDS);
             } else {
+                if (fileHeader.length - position < 4) {
+                    // Leave the time unset rather than report the 1980 epoch that the zero bytes
+                    // standing in for an absent DOS time would decode to.
+                    setBrokenHeader(true);
+                    return new TimePositionTuple(position, null);
+                }
                 seconds =
                         TimeUnit.MILLISECONDS.toSeconds(
                                 getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
@@ -581,10 +587,19 @@ public class FileHeader extends BlockHeader {
             }
             int count = flag & 0x3;
             long remainder = 0;
-            for (int i = 0; i < count; i++) {
-                int b = fileHeader[position] & 0xff;
-                remainder = (b << 16) | (remainder >>> 8);
-                position++;
+            if (count > fileHeader.length - position) {
+                // The accumulator below scales by how many bytes it consumed, so a partial read
+                // yields a sub-second value the header never carried. Keep the whole seconds --
+                // those were read in full, here or from the fixed DOS time -- drop the precision
+                // the header does not hold, and mark it broken.
+                setBrokenHeader(true);
+                position = fileHeader.length;
+            } else {
+                for (int i = 0; i < count; i++) {
+                    int b = fileHeader[position] & 0xff;
+                    remainder = (b << 16) | (remainder >>> 8);
+                    position++;
+                }
             }
             long nanos = remainder * NANOS_PER_UNIT;
             if ((flag & 0x4) != 0) {
