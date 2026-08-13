@@ -18,6 +18,7 @@
  */
 package com.github.junrar.rarfile;
 
+import com.github.junrar.exception.CorruptHeaderException;
 import com.github.junrar.io.Raw;
 
 /**
@@ -41,20 +42,31 @@ public class ProtectHeader extends BlockHeader {
     private final int totalBlocks;
     private final byte[] mark;
 
-    public ProtectHeader(BlockHeader bh, byte[] protectHeader) {
+    public ProtectHeader(BlockHeader bh, byte[] protectHeader) throws CorruptHeaderException {
         super(bh);
 
-        int pos = 0;
-        version |= protectHeader[pos] & 0xff;
-        pos++;
-
-        recSectors = Raw.readShortLittleEndian(protectHeader, pos);
-        pos += 2;
-        totalBlocks = Raw.readIntLittleEndian(protectHeader, pos);
-        pos += 4;
-
         mark = new byte[MARK_SIZE];
-        System.arraycopy(protectHeader, pos, mark, 0, MARK_SIZE);
+        if (protectHeader.length < protectHeaderSize) {
+            // The buffer is sized from the header's own declared size, so it can be shorter than
+            // this fixed layout. Reject rather than stand values in for the fields it does not
+            // hold: `mark` is a byte[8] and `version` a byte, neither of which has a way to say
+            // "not there", and a zero mark is indistinguishable from a genuine one
+            // (MIGRATION_MANUAL section 4.7). Archive skips such a block and reports it through
+            // Archive.getHeaderFailures().
+            throw new CorruptHeaderException(
+                    "Recovery record header shorter than its fixed layout");
+        } else {
+            int pos = 0;
+            version |= protectHeader[pos] & 0xff;
+            pos++;
+
+            recSectors = Raw.readShortLittleEndian(protectHeader, pos);
+            pos += 2;
+            totalBlocks = Raw.readIntLittleEndian(protectHeader, pos);
+            pos += 4;
+
+            System.arraycopy(protectHeader, pos, mark, 0, MARK_SIZE);
+        }
     }
 
     public byte[] getMark() {

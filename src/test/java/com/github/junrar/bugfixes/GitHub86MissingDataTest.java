@@ -135,6 +135,14 @@ public class GitHub86MissingDataTest {
                 FileHeader hd = fileHeaders.get(i);
                 assertThat(hd.getFileName().replace('\\', '/')).isEqualTo(names[i]);
                 assertThat(hd.getHostOS()).isEqualTo(HostSystem.win32);
+                // Most of these headers announce extended time and do not carry the 2-byte
+                // flags field that says which times follow; the rest do carry it, and are where
+                // the sub-second values asserted below come from. Treating the flags as zero and
+                // carrying on --
+                // rather than marking the header broken, as an announced-but-absent field
+                // otherwise would (MIGRATION_MANUAL section 4.7) -- is what keeps this
+                // real-world archive listable, and is the standing exception to that rule.
+                assertThat(hd.isBrokenHeader()).isFalse();
                 assertThat(hd.getLastAccessTime()).isNull();
                 assertThat(hd.getCreationTime()).isNull();
                 assertThat(hd.getArchivalTime()).isNull();

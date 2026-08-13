@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "CorruptHeaderException"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1324355378.203125000,
+    "creationTime" : null,
+    "fileCRC" : -390747254,
+    "fileName" : "19 04 40 05 05 .bin",
+    "hostOS" : "win32",
+    "fullPackSize" : 66363,
+    "fullUnpackSize" : 131072,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : true,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

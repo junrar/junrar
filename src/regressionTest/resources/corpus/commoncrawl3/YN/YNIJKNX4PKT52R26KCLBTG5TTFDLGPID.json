@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "CorruptHeaderException"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1068392086.000000000,
+    "creationTime" : null,
+    "fileCRC" : 1688836174,
+    "fileName" : "FIRSTSVD.DOC",
+    "hostOS" : "msdos",
+    "fullPackSize" : 19072,
+    "fullUnpackSize" : 73216,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

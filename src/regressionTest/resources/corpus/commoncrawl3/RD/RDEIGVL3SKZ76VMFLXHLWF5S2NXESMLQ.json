@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "CorruptHeaderException"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1363873406.000000000,
+    "creationTime" : null,
+    "fileCRC" : -1051677889,
+    "fileName" : "coremods\\DynamicLights_1.5.1.jar",
+    "hostOS" : "win32",
+    "fullPackSize" : 37994,
+    "fullUnpackSize" : 43494,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

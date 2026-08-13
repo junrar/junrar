@@ -4,7 +4,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
 
 import com.github.junrar.exception.CorruptHeaderException;
-import com.github.junrar.exception.RarException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -31,45 +30,41 @@ class HostileEncnameArchiveTest {
 
     @Test
     @Timeout(5)
-    void openingHostileEncnameArchiveThrowsCorruptHeaderNotRawBounds() throws Exception {
+    void openingHostileEncnameArchiveNeverLeaksRawBounds() throws Exception {
         Path archive = writeFixtureToTempFile();
         try {
             Throwable thrown =
                     catchThrowable(
                             () -> {
                                 try (Archive ignored = new Archive(archive.toFile())) {
-                                    // constructor eagerly parses headers; failure happens here
+                                    // constructor eagerly parses headers; a defeated guard
+                                    // would surface here
                                 }
                             });
             assertThat(thrown)
-                    .as(
-                            "hostile encname archive must fail header parsing with a typed"
-                                    + " RarException")
-                    .isInstanceOf(RarException.class)
-                    .isInstanceOf(CorruptHeaderException.class);
-            for (Throwable cause = thrown; cause != null; cause = cause.getCause()) {
-                assertThat(cause)
-                        .as("must not leak a raw bounds error (guard defeated)")
-                        .isNotInstanceOf(ArrayIndexOutOfBoundsException.class);
-            }
+                    .as("a bounds guard must not turn a hostile name into a thrown error at all")
+                    .isNull();
         } finally {
             Files.deleteIfExists(archive);
         }
     }
 
+    /**
+     * The truncation is still corruption, and still has to be reported -- the entry it belongs to
+     * simply does not survive header parsing, so it is skipped like any other header that cannot
+     * be parsed and the archive says so through {@link Archive#hasBrokenHeaders()}. Before the
+     * GHSA-h76x-7cgm-p442 rework this was a CorruptHeaderException at open; before the fix it was
+     * a raw {@link ArrayIndexOutOfBoundsException} that {@code Archive.setChannel} swallowed
+     * whole.
+     */
     @Test
     @Timeout(5)
-    void getFileHeadersSurfaceNeverLeaksRawBoundsError() throws Exception {
+    void getFileHeadersSurfaceReportsTheTruncatedNameAsABrokenHeader() throws Exception {
         Path archive = writeFixtureToTempFile();
-        try {
-            Throwable thrown =
-                    catchThrowable(
-                            () -> {
-                                try (Archive a = new Archive(archive.toFile())) {
-                                    a.getFileHeaders();
-                                }
-                            });
-            assertThat(thrown).isInstanceOf(CorruptHeaderException.class);
+        try (Archive a = new Archive(archive.toFile())) {
+            assertThat(a.getFileHeaders()).isEmpty();
+            assertThat(a.hasBrokenHeaders()).isTrue();
+            assertThat(a.getHeaderFailures()).isNotEmpty();
         } finally {
             Files.deleteIfExists(archive);
         }
