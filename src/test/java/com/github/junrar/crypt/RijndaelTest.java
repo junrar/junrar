@@ -1,11 +1,11 @@
 package com.github.junrar.crypt;
 
-import org.junit.jupiter.api.Test;
-import javax.crypto.Cipher;
-import java.security.InvalidAlgorithmParameterException;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
+import java.security.InvalidAlgorithmParameterException;
+import javax.crypto.Cipher;
+import org.junit.jupiter.api.Test;
 
 public class RijndaelTest {
 
@@ -19,7 +19,7 @@ public class RijndaelTest {
     @Test
     public void testBuildDecipherer() throws Exception {
         String password = "password";
-        byte[] salt = new byte[]{1, 2, 3, 4, 5, 6, 7, 8};
+        byte[] salt = new byte[] {1, 2, 3, 4, 5, 6, 7, 8};
 
         Cipher cipher = Rijndael.buildDecipherer(password, salt);
 
@@ -35,7 +35,7 @@ public class RijndaelTest {
     @Test
     public void testConsistency() throws Exception {
         String password = "secret_password";
-        byte[] salt = new byte[]{8, 7, 6, 5, 4, 3, 2, 1};
+        byte[] salt = new byte[] {8, 7, 6, 5, 4, 3, 2, 1};
 
         Cipher cipher1 = Rijndael.buildDecipherer(password, salt);
         Cipher cipher2 = Rijndael.buildDecipherer(password, salt);
