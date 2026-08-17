@@ -10,6 +10,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
+import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import org.slf4j.Logger;
@@ -76,6 +77,18 @@ class LocalFolderExtractor {
                 f = makeFile(f.toPath().normalize());
             } catch (final IOException e) {
                 logger.error("error creating the new file: {}", f.getName(), e);
+            } catch (final InvalidPathException e) {
+                // The entry name contains characters that sun.jnu.encoding cannot
+                // represent, so it has no Path on this JVM. Fall back to the File
+                // API, which encodes lossily instead of refusing, and keep going:
+                // that is what this method did before Path was introduced here.
+                // The containment check above has already run on the same File.
+                logger.warn("entry name is not representable in {}: {}",
+                        System.getProperty("sun.jnu.encoding"), name);
+                final File parent = f.getParentFile();
+                if (parent != null && !parent.exists()) {
+                    parent.mkdirs();
+                }
             }
         }
         return f;
