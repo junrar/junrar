@@ -5,7 +5,7 @@
 plugins {
     // Auto-provisions JDKs for toolchain requests (the -PtestJvm=8 test matrix).
     id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
-    id("io.github.ben-manes.versions.settings") version "0.59.0"
+    id("io.github.ben-manes.versions.settings") version "0.61.0"
 }
 
 rootProject.name = 'junrar'
