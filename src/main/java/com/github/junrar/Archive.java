@@ -77,6 +77,7 @@ import java.io.PipedOutputStream;
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -160,6 +161,29 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private Unpack5 unpack5;
 
     private int currentHeaderIndex;
+
+    /**
+     * Headers this read could not use, in the order they were met. Without it a short
+     * {@link #getFileHeaders()} is indistinguishable from a complete one. Read through
+     * {@link #getHeaderFailures()} and {@link #hasBrokenHeaders()}.
+     */
+    private final List<BrokenHeader> headerFailures = new ArrayList<>();
+
+    /** RAR3 blocks read this pass, marker included; used to tell a marker-only file apart. */
+    private int rar3BlocksSeen;
+
+    /**
+     * Cap on the skipped headers kept in {@link #headerFailures}. How many there are is decided
+     * by the archive being read, so a crafted file of minimal blocks would otherwise let a
+     * caller's memory be sized by its attacker. Past this point a skipped header is still logged
+     * and still counted by {@link #hasBrokenHeaders()}; it is simply not accumulated. A terminal
+     * failure is exempt -- there is at most one per read, and it is the entry that separates
+     * losing one entry from losing every entry after it.
+     */
+    private static final int MAX_RECORDED_HEADER_FAILURES = 100;
+
+    /** Position for a failure that belongs to the read rather than to one identifiable block. */
+    private static final long UNATTRIBUTED_POSITION = -1L;
 
     /**
      * Tracks the highest file index processed in the current solid stream.
@@ -343,10 +367,17 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             + " not yet implemented",
                     e);
             // ignore exceptions to allow extraction of working files in corrupt archive
+            //
+            // This catch is what made GHSA-h76x-7cgm-p442 exploitable rather than merely a
+            // crash: an unchecked bounds error out of header parsing landed here and the
+            // archive opened "successfully" with no headers and nothing to say so. Guarding
+            // the reads fixed the instances; recording the stop here covers whatever escapes
+            // next, including from parsing paths this change never touched.
+            recordHeaderFailure(UNATTRIBUTED_POSITION, null, 0, "header read failed: " + e, true);
         }
         // Calculate size of packed data
         for (final BaseBlock block : this.headers) {
-            if (block.getHeaderType() == UnrarHeadertype.FileHeader) {
+            if (isFileEntry(block)) {
                 this.totalPackedSize += ((FileHeader) block).getFullPackSize();
             }
         }
@@ -384,23 +415,93 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     public List<FileHeader> getFileHeaders() {
         final List<FileHeader> list = new ArrayList<>();
         for (final BaseBlock block : this.headers) {
-            // UnrarHeadertype.equals(BaseBlock) rather than the reverse (M3.3, issue #24): a
-            // RAR5 MAIN/CRYPT/ENDARC block's inherited RAR3 headerType byte is never set (those
-            // facts live on Rar5MainHeader's getRar5Type() instead), so getHeaderType() is null
-            // for them -- null.equals(...) would NPE, UnrarHeadertype.FileHeader.equals(null)
-            // is just false.
-            if (UnrarHeadertype.FileHeader.equals(block.getHeaderType())) {
+            if (isFileEntry(block)) {
                 list.add((FileHeader) block);
             }
         }
         return list;
     }
 
+    /**
+     * Whether {@code block} is a listable file entry. A block whose body could not be parsed is
+     * not added to {@link #headers} at all (see {@link #skipBlock}), so the header-type byte
+     * still answers this on its own; the {@code instanceof} is kept as the guard that makes that
+     * invariant hold at the cast rather than by convention, since every site casting out of
+     * {@link #headers} relies on it.
+     *
+     * <p>{@code UnrarHeadertype.FileHeader.equals(block)} rather than the reverse (M3.3, issue
+     * #24): a RAR5 MAIN/CRYPT/ENDARC block's inherited RAR3 header-type byte is never set (those
+     * facts live on {@code Rar5MainHeader.getRar5Type()} instead), so {@code getHeaderType()} is
+     * null for them -- {@code null.equals(...)} would NPE.
+     */
+    private static boolean isFileEntry(final BaseBlock block) {
+        return block instanceof FileHeader
+                && UnrarHeadertype.FileHeader.equals(block.getHeaderType());
+    }
+
+    /**
+     * Every header this archive could not use, in the order they were met -- the detail behind
+     * {@link #hasBrokenHeaders()}. Each entry says where the header was, what it claimed to be,
+     * and why it was unusable, and whether it merely cost its own entry or ended the read (see
+     * {@link BrokenHeader#isTerminal()}). A failure that belongs to the read rather than to one
+     * identifiable block reports a position of {@code -1}.
+     *
+     * <p>Skipped headers are capped at {@value #MAX_RECORDED_HEADER_FAILURES}, because how many
+     * of them there are is chosen by the archive being read and an unbounded list would let a
+     * hostile one size a caller's memory. A terminal failure is recorded whatever the count, so
+     * the list holds at most {@value #MAX_RECORDED_HEADER_FAILURES} + 1. Skipped headers past
+     * the cap are still logged and still make {@link #hasBrokenHeaders()} true.
+     *
+     * <p>Scoped to the volume currently open, not to the whole archive. Reading a multi-volume
+     * archive re-enters the header read on each volume switch, which happens during extraction,
+     * and each read starts a fresh list -- so this reports the volume in hand at the moment it
+     * is called.
+     *
+     * @return an unmodifiable snapshot; never null.
+     */
+    public List<BrokenHeader> getHeaderFailures() {
+        return Collections.unmodifiableList(new ArrayList<>(this.headerFailures));
+    }
+
+    private void recordHeaderFailure(
+            final long position,
+            final UnrarHeadertype headerType,
+            final int declaredSize,
+            final String reason,
+            final boolean terminal) {
+        // A terminal failure is always kept. It is what separates losing one entry from losing
+        // every entry after it, and the cap is there to bound skipped headers, of which an
+        // archive can declare any number; a read has at most one stop.
+        if (terminal || this.headerFailures.size() < MAX_RECORDED_HEADER_FAILURES) {
+            this.headerFailures.add(
+                    new BrokenHeader(position, headerType, declaredSize, reason, terminal));
+        }
+    }
+
+    /**
+     * Whether anything about this archive's headers was found wrong -- the analogue of unrar's
+     * {@code BrokenHeader} flag, and the one call that answers "is this archive intact?".
+     * Upstream pairs that flag with {@code RARX_WARNING} for a RAR3 file-header CRC mismatch
+     * ({@code d861246:arcread.cpp:434-435}) and with {@code RARX_CRC} elsewhere ({@code :120-121},
+     * {@code :538-539}); this method does not distinguish them.
+     *
+     * <p>Two disjoint things make it true, and a caller needs both. A header that could not be
+     * used at all was skipped or ended the read, and is in {@link #getHeaderFailures()}. A header
+     * that was used but found wrong -- a CRC that did not match, or a field clamped to the bytes
+     * that were actually there -- is still listed, carries {@link BaseBlock#isBrokenHeader()},
+     * and is deliberately not a failure, because nothing was lost from
+     * {@link #getFileHeaders()} for it.
+     */
+    public boolean hasBrokenHeaders() {
+        return !this.headerFailures.isEmpty()
+                || this.headers.stream().anyMatch(BaseBlock::isBrokenHeader);
+    }
+
     public FileHeader nextFileHeader() {
         final int n = this.headers.size();
         while (this.currentHeaderIndex < n) {
             final BaseBlock block = this.headers.get(this.currentHeaderIndex++);
-            if (block.getHeaderType() == UnrarHeadertype.FileHeader) {
+            if (isFileEntry(block)) {
                 return (FileHeader) block;
             }
         }
@@ -608,7 +709,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.newMhd = null;
         this.headers.clear();
         this.currentHeaderIndex = 0;
-        int toRead = 0;
+        this.headerFailures.clear();
+        this.rar3BlocksSeen = 0;
 
         // Locate the marker (skipping any SFX stub) and classify the format before the
         // header loop; also seeks the channel to the marker.
@@ -627,6 +729,63 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             readHeaders14(fileLength);
             return;
         }
+
+        try {
+            readHeaders3(fileLength);
+        } catch (CorruptHeaderException | BadRarArchiveException e) {
+            // Enumeration stops here and keeps whatever it read, as unrar's Archive::ReadHeader
+            // does when it returns 0. It does not rethrow, and it does not make a case of having
+            // read nothing: an archive whose every header is unusable is the same event as one
+            // with a single unusable header, and an empty list is that event's consequence
+            // rather than a separate failure to report. What tells a caller is what tells them
+            // in every other degree of the same damage -- getHeaderFailures(), hasBrokenHeaders()
+            // and the warning each skipped header logs.
+            recordHeaderFailure(UNATTRIBUTED_POSITION, null, 0, String.valueOf(e), true);
+            // One thing here is not damage to skip past. When an encrypted header's CRC fails,
+            // unrar sets FailedHeaderDecryption and refuses to read another header for the rest
+            // of the archive (d861246:arcread.cpp, ReadHeader15): the password is wrong or the
+            // bytes are not headers, so every block after this one would be parsed out of
+            // wrongly-decrypted plaintext. That is an unusable key rather than a bad header, and
+            // junrar matches it deliberately (P0.7, issue #12).
+            if (this.newMhd != null && this.newMhd.isEncrypted()) {
+                throw e;
+            }
+            logger.warn(
+                    "Stopped reading RAR3 headers at a corrupt block; keeping the {} entries"
+                            + " already read",
+                    getFileHeaders().size(),
+                    e);
+        }
+        // The main archive header is the archive's own record -- volume, solid, locked,
+        // encrypted -- and every RAR format carries one. This reader answers "are the headers
+        // encrypted?" from it, so without one there is nothing to answer with, and every block
+        // read after this point would be read on a guess. A file holding nothing but a marker is
+        // not this case: it declares no blocks to describe, and it opens today.
+        if (this.newMhd == null && this.rar3BlocksSeen > 1) {
+            throw new CorruptHeaderException(
+                    "Archive declares blocks but no readable main archive header, so nothing"
+                            + " describes the archive itself");
+        }
+    }
+
+    /**
+     * RAR3 header-read loop (unrar {@code Archive::ReadHeader15}). A RAR3 header declares its own
+     * size, so enumeration can always advance past one whose body it cannot parse: unrar fixes
+     * {@code NextBlockPos} from that declared size before reading a single field, and treats a
+     * field-level problem as a warning rather than a stop.
+     *
+     * <p>junrar reaches the headers behind a broken one the same way, but not by the same
+     * mechanism. unrar's {@code RawRead::Get*} returns zero past the end of its buffer and {@code
+     * GetB} zero-fills a short copy, so a header too short for its own mandatory fields is listed
+     * upstream as a wholly invented entry -- size 0, CRC 0, 1980 mtime, empty name -- flagged only
+     * as a side effect of the CRC then mismatching. {@code MIGRATION_MANUAL.md} §4.7 forbids
+     * replicating that zero-fill, and this loop extends the rule from how bytes are read to what is
+     * published: a header that cannot be parsed soundly is {@linkplain #skipBlock
+     * skipped} and recorded in {@link #getHeaderFailures()}, never reaching {@link
+     * #getFileHeaders()} carrying a value that was never on the wire.
+     */
+    private void readHeaders3(final long fileLength) throws IOException, RarException {
+        int toRead = 0;
 
         // keep track of positions already processed for
         // more robustness against corrupt files
@@ -662,14 +821,30 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             if (size == 0) {
                 break;
             }
+            this.rar3BlocksSeen++;
             final BaseBlock block = new BaseBlock(baseBlockBuffer);
 
             block.setPositionInFile(position);
 
             UnrarHeadertype headerType = block.getHeaderType();
             if (headerType == null) {
-                logger.warn("unknown block header!");
-                throw new CorruptHeaderException();
+                // An unrecognised type is not a stop, only an unreadable one is; unrar's
+                // default: arm likewise advances and keeps going, and further than this does:
+                // for a LONG_BLOCK it reads a 4-byte data size out of the header it has already
+                // buffered and adds that value, clearing the block's payload as well
+                // (d861246:arcread.cpp:503-507). This clears only the header.
+                // Landing there costs extra recorded failures, not correctness -- those bytes
+                // are parsed as blocks and skipped -- and reading that size would mean trusting
+                // a length out of a block whose type we do not know.
+                skipBlock(block, "unknown block type");
+                // Not isEncrypted(): an unknown block can be the first one after the marker, and
+                // that throws MainHeaderNullException before any main header has been read. The
+                // block was read as plaintext either way, so this is the size to advance by.
+                advanceTo(
+                        position + block.getHeaderSize(headersAreEncrypted()),
+                        position,
+                        processedPositions);
+                continue;
             }
             switch (headerType) {
                 case MarkHeader:
@@ -727,13 +902,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     verifyHeaderCrc(commHead, fileLength, baseBlockBuffer, commBuff);
                     this.headers.add(commHead);
 
-                    newpos = commHead.getPositionInFile() + commHead.getHeaderSize(isEncrypted());
-                    this.channel.setPosition(newpos);
-
-                    if (processedPositions.contains(newpos)) {
-                        throw new BadRarArchiveException();
-                    }
-                    processedPositions.add(newpos);
+                    newpos =
+                            commHead.getPositionInFile()
+                                    + commHead.getHeaderSize(headersAreEncrypted());
+                    advanceTo(newpos, position, processedPositions);
 
                     break;
                 case EndArcHeader:
@@ -754,7 +926,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                         endArchBuff = new byte[0];
                         endArcHead = new EndArcHeader(block, null);
                     }
-                    if (!this.newMhd.isMultiVolume() && !endArcHead.isValid()) {
+                    if ((this.newMhd == null || !this.newMhd.isMultiVolume())
+                            && !endArcHead.isValid()) {
                         throw new CorruptHeaderException("Invalid End Archive Header");
                     }
                     verifyHeaderCrc(endArcHead, fileLength, baseBlockBuffer, endArchBuff);
@@ -774,6 +947,18 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     blockHead.getHeaderSize(false)
                                             - BlockHeader.BaseBlockSize
                                             - BlockHeader.blockHeaderSize;
+                            // The archive can end inside the body. unrar reads whatever is
+                            // there and parses on, so size the buffer to the bytes that exist
+                            // and let the header's own bounds checks decide what that leaves.
+                            toRead =
+                                    (int)
+                                            Math.max(
+                                                    0,
+                                                    Math.min(
+                                                            toRead,
+                                                            fileLength
+                                                                    - this.channel.getPosition()
+                                                                    + rawData.bufferedBytes()));
                             final byte[] fileHeaderBuffer = safelyAllocate(toRead, MAX_HEADER_SIZE);
                             try {
                                 rawData.readFully(fileHeaderBuffer, fileHeaderBuffer.length);
@@ -781,7 +966,22 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                 throw new CorruptHeaderException("Unexpected end of file");
                             }
 
-                            final FileHeader fh = new FileHeader(blockHead, fileHeaderBuffer);
+                            final FileHeader fh;
+                            try {
+                                fh = new FileHeader(blockHead, fileHeaderBuffer);
+                            } catch (CorruptHeaderException e) {
+                                // A mandatory field the body does not hold. Keep the block that
+                                // framed it -- its own bytes were all present -- rather than a
+                                // file entry whose name or size nothing on the wire supplied.
+                                skipBlock(blockHead, e.getMessage());
+                                advanceTo(
+                                        blockHead.getPositionInFile()
+                                                + blockHead.getHeaderSize(headersAreEncrypted())
+                                                + blockHead.getPackSize(),
+                                        position,
+                                        processedPositions);
+                                break;
+                            }
                             if (fh.isFileHeader() && fh.hasComment()) {
                                 // unrar runs the FILE/SERVICE header through TWO CRC checks
                                 // (issue #38 item 2, P0.7 Finding A). First, the inline
@@ -826,14 +1026,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             this.headers.add(fh);
                             newpos =
                                     fh.getPositionInFile()
-                                            + fh.getHeaderSize(isEncrypted())
+                                            + fh.getHeaderSize(headersAreEncrypted())
                                             + fh.getFullPackSize();
-                            this.channel.setPosition(newpos);
-
-                            if (processedPositions.contains(newpos)) {
-                                throw new BadRarArchiveException();
-                            }
-                            processedPositions.add(newpos);
+                            advanceTo(newpos, position, processedPositions);
                             break;
 
                         case ProtectHeader:
@@ -841,27 +1036,72 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                     blockHead.getHeaderSize(false)
                                             - BlockHeader.BaseBlockSize
                                             - BlockHeader.blockHeaderSize;
+                            // The archive can end inside the body, and a stream-backed read pads
+                            // a short read with zeroes rather than failing -- so without this
+                            // the header would parse from bytes the file never held. Size the
+                            // buffer to what exists and let the rejection above handle the rest,
+                            // as the file-header arm does.
+                            toRead =
+                                    (int)
+                                            Math.max(
+                                                    0,
+                                                    Math.min(
+                                                            toRead,
+                                                            fileLength
+                                                                    - this.channel.getPosition()
+                                                                    + rawData.bufferedBytes()));
                             final byte[] protectHeaderBuffer =
                                     safelyAllocate(toRead, MAX_HEADER_SIZE);
                             rawData.readFully(protectHeaderBuffer, protectHeaderBuffer.length);
-                            final ProtectHeader ph =
-                                    new ProtectHeader(blockHead, protectHeaderBuffer);
+                            final ProtectHeader ph;
+                            try {
+                                ph = new ProtectHeader(blockHead, protectHeaderBuffer);
+                            } catch (CorruptHeaderException e) {
+                                // Too short to hold its fixed layout: skipped like any other
+                                // header that cannot be parsed, rather than listed with fields
+                                // nothing on the wire supplied.
+                                skipBlock(blockHead, e.getMessage());
+                                // Past the payload as well as the header -- no-go row C7
+                                // (8e91d695), "the + dataSize is the fix". The length is in the
+                                // block header ahead of the body, which parsed, so it is known
+                                // here even though the ProtectHeader is not; landing inside the
+                                // recovery data would have the parser read it as blocks.
+                                advanceTo(
+                                        blockHead.getPositionInFile()
+                                                + blockHead.getHeaderSize(headersAreEncrypted())
+                                                + blockHead.getDataSize(),
+                                        position,
+                                        processedPositions);
+                                break;
+                            }
                             verifyHeaderCrc(
                                     ph,
                                     fileLength,
                                     baseBlockBuffer,
                                     blockHeaderBuffer,
                                     protectHeaderBuffer);
+                            // Listed like the other headers this reader parses but does not
+                            // consume -- SIGN, AV, MAC, EA and the Unix owners sub-block are all
+                            // kept the same way. Listing it always, rather than only when it is
+                            // broken, is what makes a broken one visible through the ordinary
+                            // channel: getHeaders() carries the flag verifyHeaderCrc sets, and
+                            // hasBrokenHeaders() reads it from there.
+                            //
+                            // unrar flags this block too when its CRC does not match --
+                            // HEAD3_PROTECT is on no exemption list, so the generic check sets
+                            // BrokenHeader and RARX_CRC. What upstream cannot see is a body too
+                            // short for the layout: RawRead zero-fills the missing fields and
+                            // the CRC over the bytes present still matches, so `unrar t` reports
+                            // All OK. Nor could it report one if it wanted to: ProtectHead is
+                            // write-only there (only DataSize is read, to advance), its "data
+                            // recovery header is corrupt" string is defined and never emitted,
+                            // and its DLL surfaces no non-file header at all.
+                            this.headers.add(ph);
                             newpos =
                                     ph.getPositionInFile()
-                                            + ph.getHeaderSize(isEncrypted())
+                                            + ph.getHeaderSize(headersAreEncrypted())
                                             + ph.getDataSize();
-                            this.channel.setPosition(newpos);
-
-                            if (processedPositions.contains(newpos)) {
-                                throw new BadRarArchiveException();
-                            }
-                            processedPositions.add(newpos);
+                            advanceTo(newpos, position, processedPositions);
                             break;
 
                         case SubHeader:
@@ -961,14 +1201,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                                 // reads.
                                 newpos =
                                         subHead.getPositionInFile()
-                                                + subHead.getHeaderSize(isEncrypted())
+                                                + subHead.getHeaderSize(headersAreEncrypted())
                                                 + subHead.getDataSize();
-                                this.channel.setPosition(newpos);
-
-                                if (processedPositions.contains(newpos)) {
-                                    throw new BadRarArchiveException();
-                                }
-                                processedPositions.add(newpos);
+                                advanceTo(newpos, position, processedPositions);
 
                                 break;
                             }
@@ -979,6 +1214,68 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             }
             // logger.info("\n--------end header--------");
         }
+    }
+
+    /**
+     * Whether RAR3 headers are encrypted, answering {@code false} when no main header has been
+     * read yet. Not {@link #isEncrypted()}: that throws {@link MainHeaderNullException} in
+     * exactly that case, and every block before the main header would advance by calling it --
+     * a checked exception of a type neither caught below nor rethrown by {@link #setChannel},
+     * so it would be swallowed and the archive would open reporting nothing. The block was read
+     * as plaintext either way, so this is the size to advance by.
+     */
+    private boolean headersAreEncrypted() {
+        return this.newMhd != null && this.newMhd.isEncrypted();
+    }
+
+    /**
+     * Records a RAR3 block whose body could not be parsed soundly and leaves it out of
+     * {@link #headers}. The block itself came off the wire whole -- its type, flags and declared
+     * size sit in a fixed prefix -- but nothing behind it can be trusted, so it is reported
+     * through {@link #getHeaderFailures()} rather than published as a header. Keeping it out is
+     * what preserves the invariant that a block in {@link #headers} carrying the FILE type byte
+     * is a {@link FileHeader}, and what keeps an entry with no name of its own away from
+     * extraction, where {@code new File(destDir, "")} resolves to the destination directory.
+     */
+    private void skipBlock(final BaseBlock block, final String reason) {
+        recordHeaderFailure(
+                block.getPositionInFile(),
+                block.getHeaderType(),
+                block.getHeaderSize(false),
+                reason,
+                false);
+        logger.warn(
+                "Unparseable {} header of declared size {} at position {} ({}); skipping to the"
+                        + " next block",
+                block.getHeaderType(),
+                block.getHeaderSize(false),
+                block.getPositionInFile(),
+                reason);
+    }
+
+    /**
+     * Moves to the next RAR3 block, refusing an advance that does not move forward. unrar stops on
+     * {@code NextBlockPos <= CurBlockPos} ({@code Archive::ReadHeader}); the caller in {@link
+     * #readHeaders} turns that into a stop which keeps the headers already read.
+     *
+     * <p>The already-read check is belt-and-braces and is not independently reachable today: the
+     * only positions ever registered are previous {@code newpos} values, each of which had to
+     * exceed the position it was reached from, and the read position never decreases -- so the
+     * largest registered value is always at most the current {@code position}, and a {@code
+     * newpos} that clears the forward-progress test cannot collide with one. It is kept because
+     * that argument is a property of the current call sites rather than of the format, and a
+     * block type added later that advanced differently would need it. Mutation testing confirms
+     * it: removing this half leaves the whole suite and the regression corpus green, while
+     * removing the forward-progress half is caught by {@code
+     * ArchiveCorruptRecoveryTest.aBlockThatWouldNotMoveForwardIsRefusedRatherThanReRead}.
+     */
+    private void advanceTo(
+            final long newpos, final long position, final Set<Long> processedPositions)
+            throws IOException, BadRarArchiveException {
+        if (newpos <= position || !processedPositions.add(newpos)) {
+            throw new BadRarArchiveException();
+        }
+        this.channel.setPosition(newpos);
     }
 
     /**
@@ -1654,8 +1951,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         // decide at extract time for a broken FILE/NEWSUB header; junrar has no CLI
         // warning channel, so silent garbage extraction would be worse -- refuse instead.
         if (hd.isBrokenHeader()) {
+            // Not "CRC mismatch": isBrokenHeader() also covers a header that announced a field
+            // its own declared size did not hold, whose checksum may never have been reached.
             throw new CorruptHeaderException(
-                    "Cannot extract '" + hd.getFileName() + "': header CRC mismatch");
+                    "Cannot extract '" + hd.getFileName() + "': its header is broken");
         }
         // Started mid-set: the entry's data begins in a volume this extraction never saw
         // (M3.9, issue #30; unrar UIERROR_NEEDPREVVOL, 8f437ab:extract.cpp:471-482 — the

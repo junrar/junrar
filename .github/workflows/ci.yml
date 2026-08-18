@@ -241,7 +241,7 @@ jobs:
             build/jreleaser/trace.log
             build/jreleaser/output.properties
       - name: Release commit and push
-        uses: EndBug/add-and-commit@v10
+        uses: EndBug/add-and-commit@v11
         if: inputs.perform_release
         with:
           message: 'chore(release): ${{ needs.version.outputs.version_next }} [skip ci]'

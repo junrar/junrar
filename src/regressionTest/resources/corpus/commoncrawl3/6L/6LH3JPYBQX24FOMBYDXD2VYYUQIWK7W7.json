@@ -3,6 +3,22 @@
   "isEncrypted" : false,
   "isPasswordProtected" : false,
   "isOldFormat" : false,
-  "fileHeaders" : [ ],
-  "exception" : "CorruptHeaderException"
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : 1068298888.000000000,
+    "creationTime" : null,
+    "fileCRC" : 548574178,
+    "fileName" : "GAMEBIDE.DOC",
+    "hostOS" : "msdos",
+    "fullPackSize" : 8018,
+    "fullUnpackSize" : 39424,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
 }

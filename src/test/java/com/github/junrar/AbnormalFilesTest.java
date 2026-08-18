@@ -103,14 +103,38 @@ public class AbnormalFilesTest {
         }
     }
 
+    /**
+     * Archives from which no entry survives header parsing. Skipping a header that cannot be
+     * parsed is the same event whether it happens to one header or to every one of them, so
+     * these open and list nothing rather than raising a failure of their own -- an empty list
+     * is that event's consequence, and {@link Archive#hasBrokenHeaders()} is what reports it
+     * (GHSA-h76x-7cgm-p442). Each was previously a CorruptHeaderException at open.
+     */
+    @ParameterizedTest
+    @MethodSource("provideFilesWithNoRecoverableEntries")
+    public void archiveWithNoRecoverableEntriesOpensAndSaysSo(String filePath) throws Exception {
+        File file = new File(getClass().getResource(filePath).toURI());
+
+        try (Archive archive = new Archive(file)) {
+            assertThat(archive.getFileHeaders()).isEmpty();
+            assertThat(archive.hasBrokenHeaders()).isTrue();
+        }
+
+        assertThat(Junrar.extract(file, tempDir)).isEmpty();
+    }
+
+    private static Stream<Arguments> provideFilesWithNoRecoverableEntries() {
+        return Stream.of(
+                Arguments.of("abnormal/corrupt-header.rar"),
+                Arguments.of("abnormal/loop1.rar"),
+                Arguments.of("abnormal/loop3.rar"));
+    }
+
     private static Stream<Arguments> provideFilesAndExpectedExceptionType() {
         return Stream.of(
-                Arguments.of("abnormal/corrupt-header.rar", CorruptHeaderException.class),
                 Arguments.of("abnormal/mainHeaderNull.rar", BadRarArchiveException.class),
                 Arguments.of("abnormal/loop.rar", CorruptHeaderException.class),
-                Arguments.of("abnormal/loop1.rar", CorruptHeaderException.class),
                 Arguments.of("abnormal/loop2.rar", CorruptHeaderException.class),
-                Arguments.of("abnormal/loop3.rar", CorruptHeaderException.class),
                 // P0.7 / issue #12: the archive OPENS and lists fine (record + continue,
                 // unencrypted FILE header -- FileHeader.isBrokenHeader() is true, see
                 // HeaderCrcVerificationTest), but *extracting* the broken-header entry is
@@ -144,7 +168,7 @@ public class AbnormalFilesTest {
         // Issue #38 item 3 (P0.7 Finding B): Junrar.extract opens AND extracts in one call,
         // so a bare exception-type assertion here also passes if the fatal-at-open throw is
         // removed -- doExtractFile's separate, unconditional isBrokenHeader() refusal at
-        // extract time (Archive.java "Cannot extract '...': header CRC mismatch") still
+        // extract time (Archive.java "Cannot extract '...': its header is broken") still
         // fires and is caught by the assertions above. Pin the message too: only the
         // open-time throw (Archive.java "Header CRC mismatch on encrypted header at
         // position ...") proves construction itself failed, not extraction.

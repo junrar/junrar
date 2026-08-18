@@ -346,6 +346,39 @@ deliberately differs from C++: `RawRead::Get*` silently zero-fills past the end
 `safelyAllocate(len, MAX_HEADER_SIZE)` (`Archive.java:92,557-565`), never replicate
 the zero-fill.
 
+**RULE — absent is not zero, and truncated is not absent.** A header buffer is sized
+from the size the header itself declares, so it can be shorter than the fields it
+announces. Three outcomes, and they are not interchangeable:
+
+- *Partially present* (a name, subheader data): keep the bytes that are there at their
+  real length and mark the header broken. Truncation is not fabrication.
+- *Absent, with an absent value available* (an extended time): leave it unset and mark
+  the header broken. Never the value its zero bytes would decode to — a zero DOS time is
+  1980, not "no time". **Two standing exceptions, both deliberate and load-bearing:**
+  an `LHD_EXTTIME` header whose 2-byte flags field is itself absent warns and treats the
+  flags as zero *without* marking the header broken — the issue #86 real-world archive
+  depends on it, pinned by `GitHub86MissingDataTest`; and an old-Unix-owner sub-block whose
+  declared name lengths its own header size does not span leaves those names unset, also
+  without marking broken, because unrar excluded those string fields from the header size
+  while including them in the CRC (`d861246:arcread.cpp:517-519`), so a genuine old
+  sub-block legitimately declares names the buffer cannot hold — marking them would flag
+  well-formed archives. Both are divergences to preserve, not gaps to close.
+- *Absent, with no absent value available* (the `LHD_LARGE` high size halves, a salt):
+  reject the header. A `long` and a `byte[8]` have no way to say "not there", and a zero
+  salt is a key the header never carried.
+
+**Per-format split (deliberate).** RAR3 is tolerant; RAR5, RAR 1.4 and `VInt` are strict
+and throw on truncation. That is not an inconsistency to unify: only RAR3 has unrar's
+declared-size-first framing (`ReadHeader15` fixes `NextBlockPos` from `HeadSize` before
+parsing a field), which is what makes it possible to skip a header and carry on. A RAR5
+block's length is itself vint-encoded, so a truncated one leaves nothing trustworthy to
+advance by.
+
+A RAR3 header that cannot be parsed is skipped, not thrown — see `Archive.readHeaders3`
+and `Archive.hasBrokenHeaders()`. The two exceptions are the main archive header, whose
+absence is a bad archive rather than a skipped header, and a failed header decryption,
+which unrar treats as terminal (`FailedHeaderDecryption`).
+
 ### 4.8 Struct sizes — the off-by-N trap
 
 C++ `SIZEOF_*` constants (`headers.hpp:4-19`) are **absolute block sizes**
@@ -382,6 +415,13 @@ archive-open behavior** — an uncaught new type gets swallowed and the archive 
 "successfully" with partial headers. Every new `RarException` subclass thrown from
 `readHeaders` must consciously update (or consciously not update) that filter list,
 and say so in the PR.
+
+The swallow itself is why GHSA-h76x-7cgm-p442 was worth reporting rather than merely a
+crash: an unchecked bounds error out of header parsing landed there and the archive
+opened with no headers and nothing to say so. The catch stays — removing it would turn
+every partially readable archive into an open failure — but it now records the discard,
+so `Archive.hasBrokenHeaders()` is true for whatever escapes next. **Anything added to
+that catch's blast radius must keep that recording intact.**
 
 ### 4.10 Logging
 

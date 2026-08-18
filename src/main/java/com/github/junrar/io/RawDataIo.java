@@ -68,6 +68,18 @@ public class RawDataIo implements SeekableReadOnlyByteChannel {
         return size;
     }
 
+    /**
+     * Decrypted bytes already read from the underlying channel but not yet handed out. Encrypted
+     * headers are read block-aligned, so the channel's position runs ahead of the logical read
+     * position by this much; a caller sizing a read against the channel's position must add it
+     * back or it will undercount what remains by up to a block.
+     *
+     * @return 0..15; always 0 when the archive's headers are not encrypted.
+     */
+    public int bufferedBytes() {
+        return leftoverLen;
+    }
+
     @Override
     public int readFully(byte[] buffer, int count) throws IOException {
         if (!isEncrypted) {

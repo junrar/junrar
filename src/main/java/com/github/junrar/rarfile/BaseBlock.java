@@ -114,23 +114,32 @@ public class BaseBlock {
     }
 
     /**
-     * Whether this header's stored CRC failed the P0.7 verification (issue #12): unrar's
-     * "record and continue" tolerance -- a mismatch does not, by itself, abort archive
-     * open. {@link com.github.junrar.rarfile.FileHeader} extraction refuses a broken
-     * header instead (see {@code Archive#doExtractFile}); junrar's one conscious,
-     * narrower-scoped divergence from unrar's own "warn at open, let the file data CRC
-     * decide at extract" tolerance. Always {@code false} for header types exempt from
-     * verification (SIGN, AV, old-Unix-owner sub-blocks) and for {@link MarkHeader},
-     * which has no CRC of its own.
+     * Whether anything about this header was found wrong while reading it. Two things set it,
+     * and neither aborts archive open on its own -- unrar's "record and continue" tolerance:
      *
-     * @return true if the header CRC did not match the computed value.
+     * <ul>
+     *   <li>the stored CRC failed the P0.7 verification (issue #12), or
+     *   <li>the header announced a field that its own declared size did not hold, so what was
+     *       read is short of what it claims (GHSA-h76x-7cgm-p442).
+     * </ul>
+     *
+     * <p>{@link com.github.junrar.rarfile.FileHeader} extraction refuses a broken header (see
+     * {@code Archive#doExtractFile}); junrar's one conscious, narrower-scoped divergence from
+     * unrar's own "warn at open, let the file data CRC decide at extract" tolerance.
+     *
+     * <p>Not set by the CRC check for header types exempt from it (SIGN, AV, old-Unix-owner
+     * sub-blocks) or for {@link MarkHeader}, which has no CRC of its own. Exemption from the CRC
+     * check is not exemption from the flag: such a header can still be marked for the second
+     * reason above.
+     *
+     * @return true if this header's CRC did not match, or it did not hold a field it announced.
      */
     public boolean isBrokenHeader() {
         return brokenHeader;
     }
 
     /**
-     * Sets whether this header's stored CRC failed verification.
+     * Sets whether this header was found wrong while reading it.
      *
      * @param brokenHeader see {@link #isBrokenHeader()}.
      */

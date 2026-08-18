@@ -51,6 +51,9 @@ public class FileHeader extends BlockHeader {
 
     private static final byte NEWLHD_SIZE = 32;
 
+    /** The two high size halves LHD_LARGE adds between fileAttr and the name. */
+    private static final byte HIGH_SIZE_FIELDS_SIZE = 8;
+
     private static final long NANOS_PER_UNIT = 100L; // 100ns units
 
     private final long unpSize;
@@ -160,6 +163,16 @@ public class FileHeader extends BlockHeader {
     public FileHeader(BlockHeader bh, byte[] fileHeader) throws CorruptHeaderException {
         super(bh);
 
+        // A header buffer is sized from the header's own declared size, so it can be shorter than
+        // the fields it announces. Reads below therefore check what is left, and a header that
+        // announced a field it does not hold is marked broken (setBrokenHeader) rather
+        // than reported with a value that was never in it -- the treatment a header with a bad
+        // CRC already gets (issue #12), which keeps the entry listable while Archive refuses to
+        // extract it. The fields up to fileAttr are the ones no file header can be missing.
+        if (fileHeader.length < NEWLHD_SIZE - BaseBlockSize - blockHeaderSize) {
+            throw new CorruptHeaderException("File header shorter than its mandatory fields");
+        }
+
         int position = 0;
         unpSize = Raw.readIntLittleEndianAsLong(fileHeader, position);
         position += 4;
@@ -182,6 +195,14 @@ public class FileHeader extends BlockHeader {
         fileAttr = Raw.readIntLittleEndian(fileHeader, position);
         position += 4;
         if (isLargeBlock()) {
+            // The LHD_LARGE flag makes the high halves of the two sizes mandatory. unrar reads
+            // them as zero when they are not there, which reports a 4 GiB-truncated size as if
+            // it had been read; there is no absent value a long can carry instead, so the
+            // header is rejected and Archive keeps the block that framed it.
+            if (fileHeader.length - position < HIGH_SIZE_FIELDS_SIZE) {
+                throw new CorruptHeaderException(
+                        "File header announces high size fields it does not hold");
+            }
             highPackSize = Raw.readIntLittleEndian(fileHeader, position);
             position += 4;
 
@@ -202,10 +223,34 @@ public class FileHeader extends BlockHeader {
         fullUnpackSize <<= 32;
         fullUnpackSize += unpSize;
 
+        // Both sizes are unsigned 64-bit on the wire and signed here, so the top bit of a high
+        // half makes them read as negative. unrar carries them in a signed int64 too and cannot
+        // express such a size either; it refuses the archive rather than the value, since
+        // SafeAdd(NextBlockPos, PackSize, 0) yields 0 for a negative size and forces its
+        // no-forward-progress stop (d861246:arcread.cpp, Archive::ReadHeader15). So there is no
+        // archive to stay compatible with here, and nothing is gained by handing a caller the
+        // negative number those bits read as.
+        if (fullPackSize < 0 || fullUnpackSize < 0) {
+            throw new CorruptHeaderException(
+                    "File header declares a size that does not fit a signed 64-bit count");
+        }
+
         nameSize = nameSize > 4 * 1024 ? 4 * 1024 : nameSize;
 
         if (nameSize <= 0) {
             throw new CorruptHeaderException("Invalid file name with negative size");
+        }
+
+        if (nameSize > fileHeader.length - position) {
+            nameSize = (short) (fileHeader.length - position);
+            setBrokenHeader(true);
+        }
+
+        // The clamp above can take the name down to nothing, which the check before it can no
+        // longer catch. A nameless entry is not one: an empty name passes isFilenameValid and
+        // would resolve `new File(destDir, "")` to destDir itself at extraction.
+        if (nameSize <= 0) {
+            throw new CorruptHeaderException("File header holds none of the name it announces");
         }
 
         fileNameBytes = new byte[nameSize];
@@ -247,6 +292,18 @@ public class FileHeader extends BlockHeader {
             if (hasSalt()) {
                 datasize -= SALT_SIZE;
             }
+            if (isLargeBlock()) {
+                // NEWLHD_SIZE covers the fixed layout without the high size fields, so under
+                // LHD_LARGE this over-counts by their eight bytes and would clamp -- and so mark
+                // broken -- a sub-block that is entirely well formed. unrar subtracts the same
+                // way (HeadSize-NameSize-SIZEOF_FILEHEAD3) and never notices, because it
+                // zero-fills the eight bytes it then believes are missing.
+                datasize -= HIGH_SIZE_FIELDS_SIZE;
+            }
+            if (datasize > fileHeader.length - position) {
+                datasize = fileHeader.length - position;
+                setBrokenHeader(true);
+            }
             if (datasize > 0) {
                 subData = new byte[datasize];
                 for (int i = 0; i < datasize; i++) {
@@ -255,7 +312,11 @@ public class FileHeader extends BlockHeader {
                 }
             }
 
-            if (NewSubHeaderType.SUBHEAD_TYPE_RR.byteEquals(fileNameBytes)) {
+            // The sector count sits at offset 8, past the end of a shorter RR subheader -- and
+            // a declared size leaving no subheader data at all allocates no array to read.
+            if (NewSubHeaderType.SUBHEAD_TYPE_RR.byteEquals(fileNameBytes)
+                    && subData != null
+                    && subData.length >= 12) {
                 recoverySectors =
                         (subData[8] & 0xff)
                                 + ((subData[9] & 0xff) << 8)
@@ -265,6 +326,12 @@ public class FileHeader extends BlockHeader {
         }
 
         if (hasSalt()) {
+            // An eight-byte array has no absent value to stand in for a salt that is not there,
+            // and the all-zero one left behind is a key the header never carried: it would
+            // decrypt to garbage rather than fail. Reject, as for the high size fields above.
+            if (fileHeader.length - position < SALT_SIZE) {
+                throw new CorruptHeaderException("File header announces a salt it does not hold");
+            }
             for (int i = 0; i < SALT_SIZE; i++) {
                 salt[i] = fileHeader[position];
                 position++;
@@ -561,12 +628,12 @@ public class FileHeader extends BlockHeader {
         }
     }
 
-    private static TimePositionTuple parseExtTime(
+    private TimePositionTuple parseExtTime(
             int shift, short flags, byte[] fileHeader, int position) {
         return parseExtTime(shift, flags, fileHeader, position, null);
     }
 
-    private static TimePositionTuple parseExtTime(
+    private TimePositionTuple parseExtTime(
             int shift, short flags, byte[] fileHeader, int position, FileTime baseTime) {
         int flag = flags >>> shift;
         if ((flag & 0x8) != 0) {
@@ -574,6 +641,12 @@ public class FileHeader extends BlockHeader {
             if (baseTime != null) {
                 seconds = baseTime.to(TimeUnit.SECONDS);
             } else {
+                if (fileHeader.length - position < 4) {
+                    // Leave the time unset rather than report the 1980 epoch that the zero bytes
+                    // standing in for an absent DOS time would decode to.
+                    setBrokenHeader(true);
+                    return new TimePositionTuple(position, null);
+                }
                 seconds =
                         TimeUnit.MILLISECONDS.toSeconds(
                                 getDateDos(Raw.readIntLittleEndian(fileHeader, position)));
@@ -581,10 +654,19 @@ public class FileHeader extends BlockHeader {
             }
             int count = flag & 0x3;
             long remainder = 0;
-            for (int i = 0; i < count; i++) {
-                int b = fileHeader[position] & 0xff;
-                remainder = (b << 16) | (remainder >>> 8);
-                position++;
+            if (count > fileHeader.length - position) {
+                // The accumulator below scales by how many bytes it consumed, so a partial read
+                // yields a sub-second value the header never carried. Keep the whole seconds --
+                // those were read in full, here or from the fixed DOS time -- drop the precision
+                // the header does not hold, and mark it broken.
+                setBrokenHeader(true);
+                position = fileHeader.length;
+            } else {
+                for (int i = 0; i < count; i++) {
+                    int b = fileHeader[position] & 0xff;
+                    remainder = (b << 16) | (remainder >>> 8);
+                    position++;
+                }
             }
             long nanos = remainder * NANOS_PER_UNIT;
             if ((flag & 0x4) != 0) {
