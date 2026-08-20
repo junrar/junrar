@@ -83,8 +83,10 @@ class LocalFolderExtractor {
                 // API, which encodes lossily instead of refusing, and keep going:
                 // that is what this method did before Path was introduced here.
                 // The containment check above has already run on the same File.
-                logger.warn("entry name is not representable in {}: {}",
-                        System.getProperty("sun.jnu.encoding"), name);
+                logger.warn(
+                        "entry name is not representable in {}: {}",
+                        System.getProperty("sun.jnu.encoding"),
+                        name);
                 final File parent = f.getParentFile();
                 if (parent != null && !parent.exists()) {
                     parent.mkdirs();
