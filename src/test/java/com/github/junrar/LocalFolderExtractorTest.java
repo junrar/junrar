@@ -35,6 +35,46 @@ public class LocalFolderExtractorTest {
         FileUtils.deleteDirectory(tempFolder);
     }
 
+    /**
+     * An entry name the platform cannot encode must not abort the extraction with an exception
+     * {@code Junrar.extract} does not declare. {@link java.io.File#toPath()} throws {@link
+     * java.nio.file.InvalidPathException}, which is unchecked, so a caller honouring the signature
+     * cannot catch it.
+     *
+     * <p>In the field this is reached through the platform encoding: {@code sun.jnu.encoding}
+     * follows the locale, a container started without {@code LANG} reports {@code
+     * ANSI_X3.4-1968}, and an ordinary CJK entry name then has no {@code Path}. That route only
+     * reproduces where the JVM was started with such a locale, so a test using it has to skip
+     * itself everywhere else.
+     *
+     * <p>A lone surrogate has no representation in any charset, UTF-8 included, so it reproduces
+     * the same refusal on every host without touching the environment. Measured in
+     * {@code eclipse-temurin:17-jdk}: on a UTF-8 JVM {@code "\ud800.txt"} throws while a valid
+     * surrogate pair and the CJK name both pass; under {@code LANG=C} all three throw.
+     *
+     * <p>Setting the variable from inside the test does not work: {@code sun.jnu.encoding} is
+     * derived once when the JVM starts, so junit-pioneer's {@code @SetEnvironmentVariable} changes
+     * what {@code System.getenv} reports and nothing that {@code File.toPath()} consults.
+     */
+    @Test
+    public void loneSurrogateEntryName_isLocaleIndependent() throws IOException {
+        final File dest = TestCommons.createTempDir();
+        final LocalFolderExtractor extractor = new LocalFolderExtractor(dest);
+
+        final Archive archive = mock(Archive.class);
+        final FileHeader fileHeader = mock(FileHeader.class);
+        when(fileHeader.isFileHeader()).thenReturn(true);
+        when(fileHeader.isUnicode()).thenReturn(true);
+        when(fileHeader.getFileName()).thenReturn("\ud800.txt");
+
+        final Throwable thrown = catchThrowable(() -> extractor.extract(archive, fileHeader));
+
+        assertThat(thrown)
+                .describedAs("extract declares RarException and IOException only")
+                .isNull();
+        assertThat(dest.listFiles()).isNotEmpty();
+    }
+
     @Test
     public void rarWithDirectoriesOutsideTarget_ShouldThrowException() throws IOException {
         File file = TestCommons.createTempDir();
