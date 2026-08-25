@@ -2,6 +2,8 @@ package com.github.junrar.io;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.nio.ByteBuffer;
+import java.util.Random;
 import org.junit.jupiter.api.Test;
 
 public class RawTest {
@@ -40,6 +42,66 @@ public class RawTest {
                             (byte) 0xEF
                         });
         assertThat(Raw.readLongBigEndian(array, 0)).isEqualTo(value);
+    }
+
+    @Test
+    public void testReadLongBigEndianRandomInputs() {
+        Random random = new Random(42);
+        for (int i = 0; i < 1000; i++) {
+            int offset = random.nextInt(64);
+            int totalLength = offset + 8 + random.nextInt(64);
+            byte[] array = new byte[totalLength];
+            random.nextBytes(array);
+
+            long expected = ByteBuffer.wrap(array).getLong(offset);
+            long actual = Raw.readLongBigEndian(array, offset);
+
+            assertThat(actual)
+                    .as("trial %d with offset %d in buffer length %d", i, offset, totalLength)
+                    .isEqualTo(expected);
+        }
+    }
+
+    @Test
+    public void testReadLongBigEndianRandomExpectedOutputs() {
+        Random random = new Random(1337);
+        long[] edgeCases = {
+            0L,
+            -1L,
+            1L,
+            Long.MIN_VALUE,
+            Long.MAX_VALUE,
+            0x0102030405060708L,
+            0x8080808080808080L,
+            0x7F80000000000000L,
+            0x00000000FFFFFFFFL,
+            0xFFFFFFFF00000000L,
+            0x5555555555555555L,
+            0xAAAAAAAAAAAAAAAAL
+        };
+
+        for (long expected : edgeCases) {
+            for (int offset = 0; offset <= 16; offset++) {
+                byte[] array = new byte[offset + 8 + 16];
+                ByteBuffer.wrap(array).putLong(offset, expected);
+                assertThat(Raw.readLongBigEndian(array, offset))
+                        .as("edge case %d with offset %d", expected, offset)
+                        .isEqualTo(expected);
+            }
+        }
+
+        for (int i = 0; i < 1000; i++) {
+            long expected = random.nextLong();
+            int offset = random.nextInt(64);
+            int totalLength = offset + 8 + random.nextInt(64);
+            byte[] array = new byte[totalLength];
+            ByteBuffer.wrap(array).putLong(offset, expected);
+
+            long actual = Raw.readLongBigEndian(array, offset);
+            assertThat(actual)
+                    .as("trial %d with expected output %d at offset %d", i, expected, offset)
+                    .isEqualTo(expected);
+        }
     }
 
     @Test
