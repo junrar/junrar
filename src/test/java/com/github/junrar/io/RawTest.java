@@ -122,6 +122,13 @@ public class RawTest {
     }
 
     @Test
+    public void testIntLittleEndian_checkTopBits() {
+        byte[] array = new byte[] {(byte) 0xFF, (byte) 0xFF, (byte) 0xFF, (byte) 0xFF};
+        assertThat(Raw.readIntLittleEndian(array, 0)).isEqualTo(-1);
+        assertThat(Raw.readIntLittleEndianAsLong(array, 0)).isEqualTo(4294967295L);
+    }
+
+    @Test
     public void testLongLittleEndian() {
         byte[] array = new byte[8];
         long value = 0x1234567890ABCDEFL;
