@@ -42,7 +42,7 @@ jobs:
     name: Test on ${{ matrix.os }} Java ${{ matrix.java }}
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-java@v5
+      - uses: actions/setup-java@v6
         with:
           java-version: '25'
           java-package: 'jdk'
@@ -80,7 +80,7 @@ jobs:
     name: Regression test Java ${{ matrix.java }}
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-java@v5
+      - uses: actions/setup-java@v6
         with:
           java-version: '25'
           java-package: 'jdk'
@@ -112,7 +112,7 @@ jobs:
     name: Build smoke jar on JDK 25
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-java@v5
+      - uses: actions/setup-java@v6
         with:
           java-version: '25'
           java-package: 'jdk'
@@ -148,7 +148,7 @@ jobs:
     steps:
       # Checked out for the committed RAR fixtures the runner reads from src/test/resources.
       - uses: actions/checkout@v7
-      - uses: actions/setup-java@v5
+      - uses: actions/setup-java@v6
         with:
           java-version: ${{ matrix.java }}
           java-package: 'jre'
@@ -212,7 +212,7 @@ jobs:
           echo "Current version: ${{ needs.version.outputs.version_current }}, should release: ${{ needs.version.outputs.version_next }}"
       - name: Update version in gradle.properties
         run: echo "version=${{ needs.version.outputs.version_next }}" > gradle.properties
-      - uses: actions/setup-java@v5
+      - uses: actions/setup-java@v6
         with:
           java-version: '21'
           java-package: 'jdk'
