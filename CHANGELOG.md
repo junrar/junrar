@@ -1,3 +1,42 @@
+# [8.1.1](https://github.com/junrar/junrar/compare/v8.1.0...v8.1.1) (2026-08-31)
+## 🐛 Fixes
+**io**
+- readLongBigEndian returned only the low 32 bits ([efdbd79](https://github.com/junrar/junrar/commits/efdbd79))
+
+**rar3**
+- read the Unix owners sub-block names within its bounds ([27d7755](https://github.com/junrar/junrar/commits/27d7755))
+- bound the remaining header reads and keep reading past a broken header ([8301bcb](https://github.com/junrar/junrar/commits/8301bcb)), closes [#12](https://github.com/junrar/junrar/issues/12)
+- bound the extended-time reads left unguarded by v7.5.1 ([da5ef82](https://github.com/junrar/junrar/commits/da5ef82)), closes [#12](https://github.com/junrar/junrar/issues/12) [#86](https://github.com/junrar/junrar/issues/86) [#87](https://github.com/junrar/junrar/issues/87)
+
+**unscoped**
+- keep extracting when an entry name has no Path on this JVM ([510b792](https://github.com/junrar/junrar/commits/510b792))
+
+## 🔄️ Changes
+
+- satisfy spotless in the changed method ([6557837](https://github.com/junrar/junrar/commits/6557837))
+
+## 🧪 Tests
+
+- reproduce the unrepresentable name without a locale ([06aefef](https://github.com/junrar/junrar/commits/06aefef))
+
+## 🛠  Build
+**deps**
+- bump gradle from 9.6.1 to 9.7.1 ([1de660e](https://github.com/junrar/junrar/commits/1de660e))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([d79e3a5](https://github.com/junrar/junrar/commits/d79e3a5))
+- bump com.diffplug.spotless from 8.9.0 to 8.10.0 ([8787a21](https://github.com/junrar/junrar/commits/8787a21))
+- bump com.fasterxml.jackson.core:jackson-databind ([facf4d5](https://github.com/junrar/junrar/commits/facf4d5))
+- bump io.github.ben-manes.versions.settings ([a17162c](https://github.com/junrar/junrar/commits/a17162c))
+- bump EndBug/add-and-commit from 10 to 11 ([c866a6f](https://github.com/junrar/junrar/commits/c866a6f))
+- bump org.bouncycastle:bcprov-jdk18on from 1.85 to 1.85.2 ([8017539](https://github.com/junrar/junrar/commits/8017539))
+- bump gradle/actions from 6.2.0 to 6.3.0 ([1397fab](https://github.com/junrar/junrar/commits/1397fab))
+- bump com.github.ben-manes.versions from 0.58.0 to 0.59.0 ([a16c9f4](https://github.com/junrar/junrar/commits/a16c9f4))
+- bump com.github.ben-manes.versions from 0.54.0 to 0.58.0 ([dcb0afb](https://github.com/junrar/junrar/commits/dcb0afb))
+- bump com.diffplug.spotless from 8.8.0 to 8.9.0 ([5829d84](https://github.com/junrar/junrar/commits/5829d84))
+- bump gradle/actions from 6 to 6.2.0 ([0b3f663](https://github.com/junrar/junrar/commits/0b3f663))
+
+**unscoped**
+- update svu install ([09ad661](https://github.com/junrar/junrar/commits/09ad661))
+
 # [8.1.0](https://github.com/junrar/junrar/compare/v8.0.0...v8.1.0) (2026-08-03)
 ## 🚀 Features
 **crypt**
