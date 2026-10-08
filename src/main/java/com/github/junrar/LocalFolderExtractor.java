@@ -42,7 +42,7 @@ class LocalFolderExtractor {
                 String errorMessage = "Rar contains invalid path: '" + fileCanonPath + "'";
                 throw new IllegalStateException(errorMessage);
             }
-            refuseWriteThroughSymlink(fileName);
+            refuseWriteThroughSymlink(folderDestination.toPath(), fileName);
         } catch (IOException e) {
             throw new IllegalStateException(e);
         }
@@ -71,7 +71,7 @@ class LocalFolderExtractor {
             String errorMessage = "Rar contains file with invalid path: '" + dirCanonPath + "'";
             throw new IllegalStateException(errorMessage);
         }
-        refuseWriteThroughSymlink(fh.getFileName());
+        refuseWriteThroughSymlink(destination.toPath(), fh.getFileName());
         if (!f.exists()) {
             try {
                 f = makeFile(f.toPath().normalize());
@@ -114,7 +114,6 @@ class LocalFolderExtractor {
             throws RarException, IOException {
         final String srcName = fh.getFileName();
         final File linkFile = resolveLinkDestination(srcName);
-        refuseWriteThroughSymlink(srcName); // layer 6.2.3 LinksToDirs
         switch (redir.getType()) {
             case UNIX_SYMLINK:
             case WIN_SYMLINK:
@@ -133,7 +132,7 @@ class LocalFolderExtractor {
             final File linkFile, final String srcName, final Rar5Redirection redir)
             throws RarException, IOException {
         final String rawTarget = redir.getTarget();
-        validateSymlinkTarget(srcName, rawTarget); // layers 5.2.5 depth + 6.1.7 target validation
+        validateSymlinkTarget(linkFile, srcName, rawTarget); // layers 5.2.5 + 6.1.7
         if (!isPosix()) {
             // Windows symlink/junction creation is a recorded non-goal on the JVM; the redirection
             // fact still surfaces through FileHeader.getRedirection(). unrar creates reparse points
@@ -177,7 +176,8 @@ class LocalFolderExtractor {
      * so a {@code ..\..\x} backslash target is caught cross-platform (unrar keeps it literal on
      * Unix -- a deliberate divergence, see fixtures README).
      */
-    private void validateSymlinkTarget(final String srcName, final String rawTarget)
+    private void validateSymlinkTarget(
+            final File linkFile, final String srcName, final String rawTarget)
             throws UnsafeLinkException, IOException {
         final String target = invariantSeparatorsPathString(rawTarget); // S5
         if (isAbsolute(target, rawTarget)) {
@@ -188,9 +188,7 @@ class LocalFolderExtractor {
                             + srcName
                             + "'");
         }
-        final File linkParent =
-                new File(folderDestination, invariantSeparatorsPathString(srcName)).getParentFile();
-        final String canon = new File(linkParent, target).getCanonicalPath();
+        final String canon = new File(linkFile.getParentFile(), target).getCanonicalPath();
         final String destCanon = folderDestination.getCanonicalPath();
         if (!canon.equals(destCanon) && !canon.startsWith(destCanon + File.separator)) {
             throw new UnsafeLinkException(
@@ -237,12 +235,13 @@ class LocalFolderExtractor {
      * acceptance rows. A legitimate archive never writes a member through its own symlink, so
      * benign extraction is unaffected; RAR3/RAR4 never create symlinks, so this is a no-op there.
      */
-    private void refuseWriteThroughSymlink(final String rawName) throws UnsafeLinkException {
+    private void refuseWriteThroughSymlink(final Path base, final String rawName)
+            throws UnsafeLinkException {
         final String[] parts = invariantSeparatorsPathString(rawName).split("/");
         // ponytail: no LastCheckedSymlink cache -- we re-check every component each entry (unrar
         // caches for perf and resets it after each link). Correctness needs no cache; add one
         // only if a deep-tree extraction ever shows up as a hotspot.
-        Path p = folderDestination.toPath();
+        Path p = base;
         for (int i = 0; i < parts.length - 1; i++) {
             final String part = parts[i];
             if (part.isEmpty() || ".".equals(part)) {
@@ -273,16 +272,19 @@ class LocalFolderExtractor {
      * Resolve the link entry against the canonical destination root and normalize it lexically, so
      * the returned path is exactly what {@code Files.createDirectories} walks on every JVM (Java 8's
      * {@code Path.relativize} keeps interposed '..', GHSA-ccq9-hw6f-p9cm). Both the lexical path and
-     * its canonical (symlink-resolved) form must stay inside the root.
+     * its canonical (symlink-resolved) form must stay inside the root, and no component of the name
+     * may be a previously-extracted symlink (layer 6.2.3 LinksToDirs, walked from the same root).
      */
     private File resolveLinkDestination(final String rawName)
             throws UnsafeLinkException, IOException {
-        final Path root = folderDestination.getCanonicalFile().toPath();
-        final Path p = root.resolve(invariantSeparatorsPathString(rawName)).normalize();
+        final File root = folderDestination.getCanonicalFile();
+        // File(parent, child), not Path.resolve: an absolute name stays under the root.
+        final Path p = new File(root, invariantSeparatorsPathString(rawName)).toPath().normalize();
         final String canon = p.toFile().getCanonicalPath();
-        if (!p.startsWith(root) || !canon.startsWith(root + File.separator)) {
+        if (!p.startsWith(root.toPath()) || !canon.startsWith(root + File.separator)) {
             throw new UnsafeLinkException("Rar contains a link with invalid path: '" + canon + "'");
         }
+        refuseWriteThroughSymlink(root.toPath(), rawName);
         return p.toFile();
     }
 

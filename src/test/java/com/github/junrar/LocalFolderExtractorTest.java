@@ -267,6 +267,44 @@ public class LocalFolderExtractorTest {
         assertThat(real.resolve("sub/link")).exists();
     }
 
+    /** A symlink already extracted under a symlinked destination is still refused as a parent. */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void linkThroughEarlierSymlinkUnderSymlinkedDestinationRejected() throws Exception {
+        final Path root = Files.createTempDirectory("link-symlinked-dest-dlnk");
+        final Path real = Files.createDirectories(root.resolve("b/ex"));
+        Files.createDirectory(real.resolve("inside"));
+        Files.createSymbolicLink(real.resolve("dlnk"), Paths.get("inside"));
+        final Path dest =
+                Files.createSymbolicLink(
+                        Files.createDirectories(root.resolve("a")).resolve("lnk"), real);
+
+        final Throwable thrown =
+                catchThrowable(
+                        () -> extractLink(Rar5RedirType.FILE_COPY, dest, "../ex/dlnk/sub/copy"));
+
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+        assertThat(real.resolve("inside/sub")).doesNotExist();
+    }
+
+    /**
+     * An absolute entry name stays under the destination, as for regular files. Resolving it as an
+     * absolute path would let the symlink-target check measure '..' from the wrong directory.
+     */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void absoluteLinkNameStaysUnderDestination() throws Exception {
+        final Path root = Files.createTempDirectory("link-absolute-name");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+        Files.write(root.resolve("secret"), new byte[] {7});
+        final FileHeader fh = symlinkHeader(dest.resolve("link").toString(), "../secret");
+
+        catchThrowable(
+                () -> new LocalFolderExtractor(dest.toFile()).extract(mock(Archive.class), fh));
+
+        assertThat(Files.exists(dest.resolve("link"), LinkOption.NOFOLLOW_LINKS)).isFalse();
+    }
+
     private static void assertInterposedDotDotStaysInside(final Rar5RedirType type)
             throws Exception {
         final Path root = Files.createTempDirectory("link-mkdir-escape");
