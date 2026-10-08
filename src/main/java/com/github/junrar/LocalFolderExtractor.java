@@ -269,14 +269,21 @@ class LocalFolderExtractor {
         }
     }
 
+    /**
+     * Resolve the link entry against the canonical destination root and normalize it lexically, so
+     * the returned path is exactly what {@code Files.createDirectories} walks on every JVM (Java 8's
+     * {@code Path.relativize} keeps interposed '..', GHSA-ccq9-hw6f-p9cm). Both the lexical path and
+     * its canonical (symlink-resolved) form must stay inside the root.
+     */
     private File resolveLinkDestination(final String rawName)
             throws UnsafeLinkException, IOException {
-        final File f = new File(folderDestination, invariantSeparatorsPathString(rawName));
-        final String canon = f.getCanonicalPath();
-        if (!canon.startsWith(folderDestination.getCanonicalPath() + File.separator)) {
+        final Path root = folderDestination.getCanonicalFile().toPath();
+        final Path p = root.resolve(invariantSeparatorsPathString(rawName)).normalize();
+        final String canon = p.toFile().getCanonicalPath();
+        if (!p.startsWith(root) || !canon.startsWith(root + File.separator)) {
             throw new UnsafeLinkException("Rar contains a link with invalid path: '" + canon + "'");
         }
-        return f;
+        return p.toFile();
     }
 
     private static boolean isAbsolute(final String normalized, final String rawTarget) {

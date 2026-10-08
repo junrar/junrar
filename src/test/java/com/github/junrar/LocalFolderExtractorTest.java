@@ -13,6 +13,7 @@ import com.github.junrar.rarfile.rar5.Rar5Redirection;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import org.apache.commons.io.FileUtils;
@@ -224,6 +225,66 @@ public class LocalFolderExtractorTest {
         assertThat(new File(dest.toFile(), "payload.txt"))
                 .as("the entry itself still lands, normalized, inside the destination")
                 .exists();
+    }
+
+    /**
+     * GHSA-ccq9-hw6f-p9cm: the RAR5 link twin of the guard above. Containment passes on the
+     * canonical path; on a JVM whose {@code Path.relativize} keeps interposed '..' (Java 8), an
+     * un-normalized link path made {@code Files.createDirectories} create the sibling directory.
+     */
+    @Test
+    public void fileCopyEntryCannotMkdirOutsideDestination() throws Exception {
+        assertInterposedDotDotStaysInside(Rar5RedirType.FILE_COPY);
+    }
+
+    @Test
+    public void hardlinkEntryCannotMkdirOutsideDestination() throws Exception {
+        assertInterposedDotDotStaysInside(Rar5RedirType.HARDLINK);
+    }
+
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void symlinkEntryCannotMkdirOutsideDestination() throws Exception {
+        assertInterposedDotDotStaysInside(Rar5RedirType.UNIX_SYMLINK);
+    }
+
+    /**
+     * The lexical normalization must be anchored on the canonical destination: with a symlinked
+     * destination, '..' popped lexically from the symlink would leave the real root.
+     */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void linkEntryUnderSymlinkedDestinationStaysInside() throws Exception {
+        final Path root = Files.createTempDirectory("link-symlinked-dest");
+        final Path real = Files.createDirectories(root.resolve("b/ex"));
+        final Path dest =
+                Files.createSymbolicLink(
+                        Files.createDirectories(root.resolve("a")).resolve("lnk"), real);
+
+        extractLink(Rar5RedirType.FILE_COPY, dest, "../ex/sub/link");
+
+        assertThat(root.resolve("a/ex")).doesNotExist();
+        assertThat(real.resolve("sub/link")).exists();
+    }
+
+    private static void assertInterposedDotDotStaysInside(final Rar5RedirType type)
+            throws Exception {
+        final Path root = Files.createTempDirectory("link-mkdir-escape");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+
+        extractLink(type, dest, "../extract_evil/../extract/sub/link");
+
+        assertThat(root.resolve("extract_evil")).doesNotExist();
+        assertThat(Files.exists(dest.resolve("sub/link"), LinkOption.NOFOLLOW_LINKS)).isTrue();
+    }
+
+    private static void extractLink(final Rar5RedirType type, final Path dest, final String name)
+            throws Exception {
+        Files.write(dest.resolve("a.txt"), new byte[] {1});
+        final FileHeader fh = mock(FileHeader.class);
+        when(fh.getFileName()).thenReturn(name);
+        when(fh.getRedirection()).thenReturn(new Rar5Redirection(type, false, "a.txt"));
+        new LocalFolderExtractor(dest.toFile()).extract(mock(Archive.class), fh);
     }
 
     // ---- S5/S6/S7 RAR5 twins: the same guards, re-applied to the new symlink-target path -------

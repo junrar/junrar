@@ -180,6 +180,17 @@ corrupt headers — `unrar 7.23` reports "the file header is corrupt", `Total er
 upstream ignores and this branch refuses; that refusal is asserted separately and is not the
 security property.
 
+The RAR5 link extraction added by M3.10 missed this twin (GHSA-ccq9-hw6f-p9cm): `createSymlink`
+and `createLink` passed the un-normalized link path to `Files.createDirectories`, which on Java 8
+(whose `Path.relativize` keeps interposed `..`) created `extract_evil`. `resolveLinkDestination`
+now resolves the name against the canonical destination, normalizes it, and requires both that
+lexical path and its canonical form to stay inside; the sinks use the path it returns. Anchoring on
+the canonical root matters: lexically popping `..` off a symlinked destination would leave the real
+root. Pinned by `fileCopyEntryCannotMkdirOutsideDestination`,
+`hardlinkEntryCannotMkdirOutsideDestination`, `symlinkEntryCannotMkdirOutsideDestination` (fail on
+JVM 8 without the fix) and `linkEntryUnderSymlinkedDestinationStaysInside` (fails with a bare
+`normalize()`).
+
 ### `687a09c4` — "better handling of RarVM VM_JMP" — SUPERSEDED by M2.2, not adopted
 
 Upstream's `setIP(int)` returned `void` and early-returned when `ip >= codeSize` or `maxOpCount`
