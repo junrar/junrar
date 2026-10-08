@@ -287,22 +287,59 @@ public class LocalFolderExtractorTest {
         assertThat(real.resolve("inside/sub")).doesNotExist();
     }
 
-    /**
-     * An absolute entry name stays under the destination, as for regular files. Resolving it as an
-     * absolute path would let the symlink-target check measure '..' from the wrong directory.
-     */
+    /** An absolute entry name is placed under the destination, as for regular files. */
     @DisabledOnOs(OS.WINDOWS)
     @Test
     public void absoluteLinkNameStaysUnderDestination() throws Exception {
         final Path root = Files.createTempDirectory("link-absolute-name");
         final Path dest = Files.createDirectories(root.resolve("extract"));
-        Files.write(root.resolve("secret"), new byte[] {7});
-        final FileHeader fh = symlinkHeader(dest.resolve("link").toString(), "../secret");
+        final Path nested = dest.toRealPath().resolve(dest.toString().substring(1)).resolve("link");
 
-        catchThrowable(
-                () -> new LocalFolderExtractor(dest.toFile()).extract(mock(Archive.class), fh));
+        final File written =
+                new LocalFolderExtractor(dest.toFile())
+                        .extract(
+                                mock(Archive.class),
+                                symlinkHeader(dest.resolve("link").toString(), "../secret"));
 
+        assertThat(written.toPath()).isEqualTo(nested);
+        assertThat(Files.isSymbolicLink(nested)).isTrue();
         assertThat(Files.exists(dest.resolve("link"), LinkOption.NOFOLLOW_LINKS)).isFalse();
+    }
+
+    /** A symlink outside the root pointing into it must not let a link entry replace it. */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void linkEntryCannotReplaceOutsideSymlinkPointingInside() throws Exception {
+        final Path root = Files.createTempDirectory("link-outside-symlink");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+        Files.createDirectory(dest.resolve("sub"));
+        final Path current =
+                Files.createSymbolicLink(root.resolve("current"), Paths.get("extract/sub"));
+
+        final Throwable thrown =
+                catchThrowable(() -> extractLink(Rar5RedirType.FILE_COPY, dest, "../current"));
+
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+        assertThat(Files.isSymbolicLink(current)).isTrue();
+    }
+
+    /** A name that collapses to the destination itself must not replace the destination. */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void linkEntryNamingTheDestinationRejected() throws Exception {
+        final Path root = Files.createTempDirectory("link-names-root");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+
+        final Throwable thrown =
+                catchThrowable(
+                        () ->
+                                new LocalFolderExtractor(dest.toFile())
+                                        .extract(
+                                                mock(Archive.class),
+                                                symlinkHeader("sub/..", "extract")));
+
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+        assertThat(Files.isDirectory(dest, LinkOption.NOFOLLOW_LINKS)).isTrue();
     }
 
     private static void assertInterposedDotDotStaysInside(final Rar5RedirType type)
