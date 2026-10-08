@@ -3,11 +3,13 @@ package com.github.junrar;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.rarfile.FileHeader;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -28,6 +30,13 @@ class ArchiveStreamFailureTest {
     /** Offset of the first stored data byte; the header's file CRC is left as it was. */
     private static final int DATA_OFFSET = 60;
 
+    private static final String EMPTY_FIXTURE = "/com/github/junrar/bugfixes/gh-88-empty.rar";
+
+    /** Offset and size of the RAR3 file header of {@code empty.txt}, the fixture's 2nd member. */
+    private static final int EMPTY_HEADER = 0x43;
+
+    private static final int EMPTY_HEADER_SIZE = 46;
+
     @TempDir Path tempDir;
 
     @Test
@@ -47,6 +56,39 @@ class ArchiveStreamFailureTest {
             }
             // The bytes produced before the CRC check still arrive; only the EOF changes.
             assertThat(received.size()).isEqualTo(header.getFullUnpackSize());
+            // Single-byte reads take their own path to EOF.
+            try (InputStream in = archive.getInputStream(header)) {
+                assertThatThrownBy(
+                                () -> {
+                                    while (in.read() != -1) {}
+                                })
+                        .isInstanceOf(IOException.class)
+                        .hasCauseInstanceOf(CrcErrorException.class);
+            }
+        }
+    }
+
+    /** An empty member is still extracted and checked, not answered with an empty stream. */
+    @Test
+    void anEmptyMemberFailingItsCrcDoesNotEndInANormalEof() throws Exception {
+        byte[] bytes = Files.readAllBytes(Paths.get(getClass().getResource(EMPTY_FIXTURE).toURI()));
+        assertThat(new String(bytes, EMPTY_HEADER + 32, 9, StandardCharsets.US_ASCII))
+                .isEqualTo("empty.txt");
+        // Give empty.txt a nonzero file CRC, then re-seal its header so only the data check fails.
+        bytes[EMPTY_HEADER + 16] = 1;
+        short crc = RarCRC.computeHeaderCrc16(bytes, EMPTY_HEADER + 2, EMPTY_HEADER_SIZE - 2);
+        bytes[EMPTY_HEADER] = (byte) crc;
+        bytes[EMPTY_HEADER + 1] = (byte) (crc >>> 8);
+        Path file = Files.write(tempDir.resolve("empty-crc-mismatch.rar"), bytes);
+
+        try (Archive archive = new Archive(file.toFile())) {
+            FileHeader header = archive.getFileHeaders().get(1);
+            assertThat(header.getFullUnpackSize()).isZero();
+            try (InputStream in = archive.getInputStream(header)) {
+                assertThatThrownBy(in::read)
+                        .isInstanceOf(IOException.class)
+                        .hasCauseInstanceOf(CrcErrorException.class);
+            }
         }
     }
 }
