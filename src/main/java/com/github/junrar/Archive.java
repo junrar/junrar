@@ -1898,7 +1898,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * Defaults to using the {@link ThreadPoolExecutor}.
      *
      * @param hd the header to be extracted
-     * @return an {@link InputStream} from which you can read the uncompressed bytes
+     * @return an {@link InputStream} from which you can read the uncompressed bytes. If extraction
+     *     fails (for example a {@link com.github.junrar.exception.CrcErrorException}), reading
+     *     past the bytes already produced throws an {@link IOException} whose cause is that
+     *     failure, instead of returning end of stream.
      * @throws IOException if any I/O error occur
      * @see ExtractorExecutorHolder
      */
@@ -1914,16 +1917,20 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         final int bufferSize =
                 (int) Math.max(Math.min(hd.getFullUnpackSize(), PIPE_BUFFER_SIZE), 1);
 
-        final PipedInputStream in = new PipedInputStream(bufferSize);
+        final FailurePropagatingPipedInputStream in =
+                new FailurePropagatingPipedInputStream(bufferSize);
         final PipedOutputStream out = new PipedOutputStream(in);
 
         // Data will be available in another InputStream, connected to the OutputStream
         // Delegates execution to the cached executor service.
+        // GHSA-frq4-6xmx-hm4g: a failure must not close the pipe into a normal EOF; record it
+        // first so the reader's EOF turns into an IOException carrying it.
         Runnable r =
                 () -> {
                     try {
                         extractFile(hd, out);
-                    } catch (final RarException ignored) {
+                    } catch (final Throwable t) {
+                        in.failure = t;
                     } finally {
                         try {
                             out.close();
@@ -1938,6 +1945,33 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         }
 
         return in;
+    }
+
+    /** A pipe whose EOF throws instead when the extraction feeding it failed. */
+    private static final class FailurePropagatingPipedInputStream extends PipedInputStream {
+        private volatile Throwable failure;
+
+        FailurePropagatingPipedInputStream(final int pipeSize) {
+            super(pipeSize);
+        }
+
+        @Override
+        public int read() throws IOException {
+            return checkEof(super.read());
+        }
+
+        @Override
+        public int read(final byte[] b, final int off, final int len) throws IOException {
+            return checkEof(super.read(b, off, len));
+        }
+
+        private int checkEof(final int n) throws IOException {
+            final Throwable t = failure;
+            if (n == -1 && t != null) {
+                throw new IOException("Extraction failed", t);
+            }
+            return n;
+        }
     }
 
     private void doExtractFile(FileHeader hd, final OutputStream os)

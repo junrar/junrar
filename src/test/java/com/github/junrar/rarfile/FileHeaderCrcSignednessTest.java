@@ -45,10 +45,6 @@ class FileHeaderCrcSignednessTest {
             assertThat(header.getFileCRC()).isNegative();
             assertThat(Integer.toUnsignedLong(header.getFileCRC())).isEqualTo(0xECEDC4E5L);
 
-            // extractFile, not getInputStream: the latter runs extraction on an executor
-            // thread, so a CrcErrorException never reaches the reader and the check would be
-            // invisible here. Verified by mutation -- through getInputStream this test passes
-            // even with the comparison deliberately broken.
             final ByteArrayOutputStream out = new ByteArrayOutputStream();
             archive.extractFile(header, out);
 
