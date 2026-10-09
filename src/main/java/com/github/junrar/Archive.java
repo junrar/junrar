@@ -71,6 +71,7 @@ import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InterruptedIOException;
 import java.io.OutputStream;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
@@ -83,6 +84,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -95,6 +97,9 @@ import org.slf4j.LoggerFactory;
 
 /**
  * The Main Rar Class; represents a rar Archive
+ *
+ * <p>An {@code Archive} is not thread-safe: use one from a single thread at a time, and do not
+ * read two streams from {@link #getInputStream(FileHeader)} concurrently.
  *
  * @author $LastChangedBy$
  * @version $LastChangedRevision$
@@ -1883,9 +1888,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      *
      * @param hd the header to be extracted
      * @return an {@link InputStream} from which you can read the uncompressed bytes. If extraction
-     *     fails (for example a {@link com.github.junrar.exception.CrcErrorException}), reading
-     *     past the bytes already produced throws an {@link IOException} whose cause is that
-     *     failure, instead of returning end of stream.
+     *     fails (for example a {@link com.github.junrar.exception.CrcErrorException}), the stream
+     *     reports it as an {@link IOException} whose cause is that failure: reading past the bytes
+     *     already produced throws it instead of returning end of stream, and so does
+     *     {@link InputStream#close()} once the entry's full unpacked size has been read. Closing
+     *     the stream earlier abandons the entry without reporting.
      * @throws IOException if any I/O error occur
      * @see ExtractorExecutorHolder
      */
@@ -1896,7 +1903,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                 (int) Math.max(Math.min(hd.getFullUnpackSize(), PIPE_BUFFER_SIZE), 1);
 
         final FailurePropagatingPipedInputStream in =
-                new FailurePropagatingPipedInputStream(bufferSize);
+                new FailurePropagatingPipedInputStream(bufferSize, hd.getFullUnpackSize());
         final PipedOutputStream out = new PipedOutputStream(in);
 
         // Data will be available in another InputStream, connected to the OutputStream
@@ -1914,6 +1921,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                             out.close();
                         } catch (final IOException ignored) {
                         }
+                        in.done.countDown();
                     }
                 };
         if (USE_EXECUTOR) {
@@ -1925,27 +1933,65 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         return in;
     }
 
-    /** A pipe whose EOF throws instead when the extraction feeding it failed. */
+    /**
+     * A pipe that reports a failure of the extraction feeding it, instead of a normal end of
+     * stream, on read or on a close after the entry's full size was read.
+     */
     private static final class FailurePropagatingPipedInputStream extends PipedInputStream {
+        private final long size;
+        private final CountDownLatch done = new CountDownLatch(1);
         private volatile Throwable failure;
+        private volatile long consumed;
+        private volatile boolean reported;
 
-        FailurePropagatingPipedInputStream(final int pipeSize) {
+        FailurePropagatingPipedInputStream(final int pipeSize, final long size) {
             super(pipeSize);
+            this.size = size;
         }
 
         @Override
-        public int read() throws IOException {
-            return checkEof(super.read());
+        public synchronized int read() throws IOException {
+            final int b = checkEof(super.read());
+            if (b >= 0) {
+                consumed++;
+            }
+            return b;
         }
 
         @Override
-        public int read(final byte[] b, final int off, final int len) throws IOException {
-            return checkEof(super.read(b, off, len));
+        public synchronized int read(final byte[] b, final int off, final int len)
+                throws IOException {
+            // super may take its first byte through read(), which already counted it
+            final long before = consumed;
+            final int n = checkEof(super.read(b, off, len));
+            if (n > 0) {
+                consumed = before + n;
+            }
+            return n;
+        }
+
+        @Override
+        public void close() throws IOException {
+            // Close first: a worker still writing then fails fast instead of blocking on the pipe.
+            super.close();
+            if (consumed < size || reported) {
+                return; // abandoned early, or the failure was already thrown
+            }
+            // The CRC check runs after the last byte, so wait for the verdict. Not under the
+            // monitor: the worker's out.close() needs it.
+            try {
+                done.await();
+            } catch (final InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new InterruptedIOException("Interrupted waiting for extraction to finish");
+            }
+            checkEof(-1);
         }
 
         private int checkEof(final int n) throws IOException {
             final Throwable t = failure;
             if (n == -1 && t != null) {
+                reported = true;
                 throw new IOException("Extraction failed", t);
             }
             return n;

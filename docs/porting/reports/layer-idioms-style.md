@@ -35,7 +35,7 @@ Purpose: migration manual input for porting newer unrar (RAR5) into junrar.
 
 - House habit: `private` fields + getters/setters — FileHeader has ~25 private fields, all accessor-exposed (rarfile/FileHeader.java:41-92, getters below).
 - One grandfathered exception: `ContentDescription.path`/`.size` are **public fields** (ContentDescription.java:4-5) — old API kept for compat; do not imitate.
-- Internal classes are package-private: `class LocalFolderExtractor` (LocalFolderExtractor.java:13), private static nested helpers (`ExtractorExecutorHolder`, `NullOutputStream`, `EmptyInputStream` in Archive.java:645+).
+- Internal classes are package-private: `class LocalFolderExtractor` (LocalFolderExtractor.java:13), private static nested helpers (`ExtractorExecutorHolder`, `NullOutputStream`, `FailurePropagatingPipedInputStream` in Archive.java).
 
 ### Javadoc habits
 

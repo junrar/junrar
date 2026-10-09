@@ -7,6 +7,7 @@ import com.github.junrar.crc.RarCRC;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.rarfile.FileHeader;
 import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -41,12 +42,7 @@ class ArchiveStreamFailureTest {
 
     @Test
     void aMemberFailingItsCrcDoesNotEndInANormalEof() throws Exception {
-        byte[] bytes = Files.readAllBytes(Paths.get(getClass().getResource(FIXTURE).toURI()));
-        assertThat(bytes[DATA_OFFSET]).isEqualTo((byte) 'u');
-        bytes[DATA_OFFSET] = 'U';
-        Path file = Files.write(tempDir.resolve("crc-mismatch.rar"), bytes);
-
-        try (Archive archive = new Archive(file.toFile())) {
+        try (Archive archive = new Archive(crcMismatch().toFile())) {
             FileHeader header = archive.getFileHeaders().get(0);
             ByteArrayOutputStream received = new ByteArrayOutputStream();
             try (InputStream in = archive.getInputStream(header)) {
@@ -56,7 +52,7 @@ class ArchiveStreamFailureTest {
             }
             // The bytes produced before the CRC check still arrive; only the EOF changes.
             assertThat(received.size()).isEqualTo(header.getFullUnpackSize());
-            // Single-byte reads take their own path to EOF.
+            // Single-byte reads too, so the check cannot move into the bulk read alone.
             try (InputStream in = archive.getInputStream(header)) {
                 assertThatThrownBy(
                                 () -> {
@@ -66,6 +62,37 @@ class ArchiveStreamFailureTest {
                         .hasCauseInstanceOf(CrcErrorException.class);
             }
         }
+    }
+
+    /** Reading exactly the declared size never reaches EOF, so close() must report instead. */
+    @Test
+    void closingAfterReadingTheDeclaredSizeReportsTheFailure() throws Exception {
+        try (Archive archive = new Archive(crcMismatch().toFile())) {
+            FileHeader header = archive.getFileHeaders().get(0);
+            InputStream in = archive.getInputStream(header);
+            new DataInputStream(in).readFully(new byte[(int) header.getFullUnpackSize()]);
+            assertThatThrownBy(in::close)
+                    .isInstanceOf(IOException.class)
+                    .hasCauseInstanceOf(CrcErrorException.class);
+        }
+    }
+
+    /** Closing before the end abandons the entry: that is cancellation, not a failure. */
+    @Test
+    void closingEarlyDoesNotReportTheFailure() throws Exception {
+        try (Archive archive = new Archive(crcMismatch().toFile())) {
+            InputStream in = archive.getInputStream(archive.getFileHeaders().get(0));
+            assertThat(in.read()).isEqualTo('U');
+            in.close();
+        }
+    }
+
+    /** The fixture's single member with one stored data byte changed and its file CRC kept. */
+    private Path crcMismatch() throws Exception {
+        byte[] bytes = Files.readAllBytes(Paths.get(getClass().getResource(FIXTURE).toURI()));
+        assertThat(bytes[DATA_OFFSET]).isEqualTo((byte) 'u');
+        bytes[DATA_OFFSET] = 'U';
+        return Files.write(tempDir.resolve("crc-mismatch.rar"), bytes);
     }
 
     /** An empty member is still extracted and checked, not answered with an empty stream. */
