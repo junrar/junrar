@@ -92,6 +92,15 @@ while (true) {
 }
 ```
 
+If extraction fails (for example on a CRC mismatch), the stream throws an `IOException` whose cause is the original
+exception. Read to the end of the stream, or read the entry's full size and then close it, to be sure the entry was
+verified. Closing the stream earlier abandons the entry without a verdict.
+
+### Thread safety
+
+`Archive` is not thread-safe. Use each instance from one thread at a time, and read the streams it returns one at
+a time. The static `Junrar` methods open their own `Archive` on each call.
+
 ### List files
 ```java
 final List<ContentDescription> contentDescriptions = Junrar.getContentsDescription(testDocuments);    
