@@ -1748,7 +1748,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             boolean isSolidStream = (newMhd != null && newMhd.isSolid()) || hd.isSolid();
 
             if (isSolidStream) {
-                if (targetIdx < lastProcessedFileIndex) {
+                // <=: re-extracting the entry just processed also needs a replay; the decoder
+                // state is already past its data.
+                if (targetIdx <= lastProcessedFileIndex) {
                     // Reset the dictionary unconditionally: doExtractFile only resets it when
                     // the first file is non-solid, which malformed archives may violate.
                     if (unpack != null) {

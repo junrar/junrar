@@ -140,6 +140,12 @@ class ArchiveRar5UnpackTest {
         assertSolid("m5-solid-128k.rar", new int[] {4, 3, 2, 1, 0});
     }
 
+    @Test
+    void solidReExtractSameEntryExtractsByteIdentical() throws Exception {
+        assertSolid("m3-solid-128k.rar", new int[] {0, 1, 1, 2, 0, 3, 3, 4, 4});
+        assertSolid("m5-solid-128k.rar", new int[] {0, 1, 1, 2, 0, 3, 3, 4, 4});
+    }
+
     private void assertSolid(final String archive, final int[] order) throws Exception {
         try (Archive a = new Archive(fixture(archive))) {
             final List<FileHeader> files = a.getFileHeaders();
