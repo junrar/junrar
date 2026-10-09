@@ -1940,6 +1940,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         private long consumed;
         // PipedInputStream's bulk read takes its first byte through read(); counted there.
         private boolean inBulkRead;
+        // A byte the look-ahead read past the declared size, returned by the next read.
+        private int pending = -1;
 
         FailurePropagatingPipedInputStream(final int pipeSize, final long size) {
             super(pipeSize);
@@ -1951,6 +1953,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             if (inBulkRead) {
                 return super.read();
             }
+            if (pending >= 0) {
+                final int b = pending;
+                pending = -1;
+                return b;
+            }
             final int b = checkEof(super.read());
             if (b >= 0) {
                 consumed(1);
@@ -1961,6 +1968,11 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         @Override
         public synchronized int read(final byte[] b, final int off, final int len)
                 throws IOException {
+            if (len > 0 && pending >= 0) {
+                b[off] = (byte) pending;
+                pending = -1;
+                return 1;
+            }
             final int n;
             inBulkRead = true;
             try {
@@ -1978,9 +1990,10 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         private void consumed(final int n) throws IOException {
             final long before = consumed;
             consumed += n;
-            // Extraction stops at the declared size, so anything but the end here is a failure.
-            if (before < size && consumed >= size && checkEof(super.read()) != -1) {
-                throw new IOException("Extraction produced more data than the declared size");
+            if (before < size && consumed >= size) {
+                // Output may exceed the declared size (RAR5 filter blocks are written whole,
+                // as in unrar d861246:unpack50.cpp:359): keep the byte rather than reject it.
+                pending = checkEof(super.read());
             }
         }
 
