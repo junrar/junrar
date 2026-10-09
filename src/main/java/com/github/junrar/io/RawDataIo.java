@@ -98,8 +98,8 @@ public class RawDataIo implements SeekableReadOnlyByteChannel {
         }
 
         // Decrypt more ciphertext if the request isn't satisfied yet. Read the
-        // shortfall rounded up to the AES block size and carry the surplus
-        // (< 16 bytes) over to the next call.
+        // shortfall rounded up to the cipher's block size (16 for AES and RAR 2.0, none for the
+        // RAR 1.3/1.5 byte ciphers) and carry the surplus over to the next call.
         if (written < count) {
             int need = count - written;
             final int block = Math.max(1, cipher.getBlockSize());
@@ -120,7 +120,7 @@ public class RawDataIo implements SeekableReadOnlyByteChannel {
             int got = underlyingByteChannel.readFully(cipherScratch, blockAligned);
             // A well-formed encrypted stream always yields the full block-aligned amount. If the
             // underlying channel reports fewer bytes (truncated/corrupt archive), decrypt only the
-            // complete 16-byte blocks actually read.
+            // complete blocks actually read.
             int available = got < 0 ? 0 : got - got % block;
             if (available <= 0) {
                 return written;
