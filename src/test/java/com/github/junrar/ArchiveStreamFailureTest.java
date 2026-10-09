@@ -43,47 +43,36 @@ class ArchiveStreamFailureTest {
     @Test
     void aMemberFailingItsCrcDoesNotEndInANormalEof() throws Exception {
         try (Archive archive = new Archive(crcMismatch().toFile())) {
-            FileHeader header = archive.getFileHeaders().get(0);
-            ByteArrayOutputStream received = new ByteArrayOutputStream();
-            try (InputStream in = archive.getInputStream(header)) {
-                assertThatThrownBy(() -> IOUtils.copy(in, received))
-                        .isInstanceOf(IOException.class)
-                        .hasCauseInstanceOf(CrcErrorException.class);
-            }
-            // The bytes produced before the CRC check still arrive; only the EOF changes.
-            assertThat(received.size()).isEqualTo(header.getFullUnpackSize());
-            // Single-byte reads too, so the check cannot move into the bulk read alone.
-            try (InputStream in = archive.getInputStream(header)) {
-                assertThatThrownBy(
-                                () -> {
-                                    while (in.read() != -1) {}
-                                })
+            try (InputStream in = archive.getInputStream(archive.getFileHeaders().get(0))) {
+                assertThatThrownBy(() -> IOUtils.copy(in, new ByteArrayOutputStream()))
                         .isInstanceOf(IOException.class)
                         .hasCauseInstanceOf(CrcErrorException.class);
             }
         }
     }
 
-    /** Reading exactly the declared size never reaches EOF, so close() must report instead. */
+    /**
+     * Reading exactly the declared size never asks for EOF, so the read reaching that size must
+     * already report the failure; close() is not a channel callers are guaranteed to check.
+     */
     @Test
-    void closingAfterReadingTheDeclaredSizeReportsTheFailure() throws Exception {
+    void readingExactlyTheDeclaredSizeReportsTheFailure() throws Exception {
         try (Archive archive = new Archive(crcMismatch().toFile())) {
             FileHeader header = archive.getFileHeaders().get(0);
-            InputStream in = archive.getInputStream(header);
-            new DataInputStream(in).readFully(new byte[(int) header.getFullUnpackSize()]);
-            assertThatThrownBy(in::close)
-                    .isInstanceOf(IOException.class)
-                    .hasCauseInstanceOf(CrcErrorException.class);
-        }
-    }
-
-    /** Closing before the end abandons the entry: that is cancellation, not a failure. */
-    @Test
-    void closingEarlyDoesNotReportTheFailure() throws Exception {
-        try (Archive archive = new Archive(crcMismatch().toFile())) {
-            InputStream in = archive.getInputStream(archive.getFileHeaders().get(0));
-            assertThat(in.read()).isEqualTo('U');
-            in.close();
+            int size = (int) header.getFullUnpackSize();
+            try (InputStream in = archive.getInputStream(header)) {
+                assertThatThrownBy(() -> new DataInputStream(in).readFully(new byte[size]))
+                        .isInstanceOf(IOException.class)
+                        .hasCauseInstanceOf(CrcErrorException.class);
+            }
+            try (InputStream in = archive.getInputStream(header)) {
+                for (int i = 1; i < size; i++) {
+                    assertThat(in.read()).isNotNegative();
+                }
+                assertThatThrownBy(in::read)
+                        .isInstanceOf(IOException.class)
+                        .hasCauseInstanceOf(CrcErrorException.class);
+            }
         }
     }
 

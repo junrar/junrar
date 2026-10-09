@@ -92,9 +92,9 @@ while (true) {
 }
 ```
 
-If extraction fails (for example on a CRC mismatch), the stream throws an `IOException` whose cause is the original
-exception. Read to the end of the stream, or read the entry's full size and then close it, to be sure the entry was
-verified. Closing the stream earlier abandons the entry without a verdict.
+If extraction fails (for example on a CRC mismatch), a read throws an `IOException` whose cause is the original
+exception, at the latest the read that reaches the entry's declared size. An entry whose stream you read up to its
+full size without an exception has been verified; closing the stream earlier abandons the entry.
 
 ### Thread safety
 
