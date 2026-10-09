@@ -1,3 +1,49 @@
+# [8.1.2](https://github.com/junrar/junrar/compare/v8.1.1...v8.1.2) (2026-10-09)
+## 🐛 Fixes
+**rar5**
+- refuse symlink targets with '..' after a name ([19e06c1](https://github.com/junrar/junrar/commits/19e06c1))
+- keep absolute link names under the destination and walk symlinks from the canonical root ([43b325e](https://github.com/junrar/junrar/commits/43b325e))
+- anchor link paths on the canonical destination before creating directories ([6bebb62](https://github.com/junrar/junrar/commits/6bebb62))
+
+**unscoped**
+- replay a solid stream after a failed extraction ([b9b61ce](https://github.com/junrar/junrar/commits/b9b61ce))
+- restart the RAR 1.4 solid ordinal when replaying a solid stream ([fdc86db](https://github.com/junrar/junrar/commits/fdc86db))
+- replay solid stream when re-extracting the same entry ([d3bdab3](https://github.com/junrar/junrar/commits/d3bdab3))
+- create regular files under the canonical destination ([fd18ff6](https://github.com/junrar/junrar/commits/fd18ff6))
+- deliver output past the declared size instead of rejecting it ([82a623b](https://github.com/junrar/junrar/commits/82a623b))
+- extract RAR5 entries of unknown size instead of an empty file ([763b881](https://github.com/junrar/junrar/commits/763b881))
+- report a stream failure on the read reaching the declared size ([46bbc83](https://github.com/junrar/junrar/commits/46bbc83))
+- report a stream failure on close once the full entry was read ([683a91b](https://github.com/junrar/junrar/commits/683a91b))
+- extract empty entries through getInputStream too ([f4f2059](https://github.com/junrar/junrar/commits/f4f2059))
+- report extraction failures through getInputStream instead of a normal EOF ([67474bd](https://github.com/junrar/junrar/commits/67474bd))
+
+## 🧪 Tests
+**rar5**
+- pin each link-destination guard with a failing-without test ([c9c80bd](https://github.com/junrar/junrar/commits/c9c80bd))
+
+**unscoped**
+- pin a RAR5 unknown-size entry in the regression corpus ([8d471c3](https://github.com/junrar/junrar/commits/8d471c3))
+
+## 🛠  Build
+**deps**
+- bump com.fasterxml.jackson.core:jackson-databind ([d756daf](https://github.com/junrar/junrar/commits/d756daf))
+- bump com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ([014c70a](https://github.com/junrar/junrar/commits/014c70a))
+- bump io.github.ben-manes.versions.settings ([394d5aa](https://github.com/junrar/junrar/commits/394d5aa))
+- bump org.bouncycastle:bcprov-jdk18on from 1.85.2 to 1.86 ([1677f5a](https://github.com/junrar/junrar/commits/1677f5a))
+- bump com.diffplug.spotless from 8.10.1 to 8.10.2 ([55450fc](https://github.com/junrar/junrar/commits/55450fc))
+- bump gradle/actions from 6.3.0 to 6.4.0 ([4611f3f](https://github.com/junrar/junrar/commits/4611f3f))
+- bump org.jreleaser from 1.25.0 to 1.26.0 ([1d10acc](https://github.com/junrar/junrar/commits/1d10acc))
+- bump actions/setup-java from 5 to 6 ([ac678ad](https://github.com/junrar/junrar/commits/ac678ad))
+- bump com.diffplug.spotless from 8.10.0 to 8.10.1 ([682b75f](https://github.com/junrar/junrar/commits/682b75f))
+
+**unscoped**
+- enable immutable github releases with jreleaser ([c29e60f](https://github.com/junrar/junrar/commits/c29e60f))
+
+## 📝 Documentation
+
+- record the regular-file and symlink-chain follow-ups to GHSA-ccq9-hw6f-p9cm ([e22b8c5](https://github.com/junrar/junrar/commits/e22b8c5))
+- state that Archive is not thread-safe and how stream failures surface ([621f6de](https://github.com/junrar/junrar/commits/621f6de))
+
 # [8.1.1](https://github.com/junrar/junrar/compare/v8.1.0...v8.1.1) (2026-08-31)
 ## 🐛 Fixes
 **io**
