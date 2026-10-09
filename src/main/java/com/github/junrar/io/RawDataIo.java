@@ -102,7 +102,8 @@ public class RawDataIo implements SeekableReadOnlyByteChannel {
         // (< 16 bytes) over to the next call.
         if (written < count) {
             int need = count - written;
-            int blockAligned = need + ((16 - (need & 0xF)) & 0xF);
+            final int block = Math.max(1, cipher.getBlockSize());
+            int blockAligned = need + ((block - need % block) % block);
             if (cipherScratch == null || cipherScratch.length < blockAligned) {
                 cipherScratch = new byte[blockAligned];
                 // +16 headroom: NoPadding produces exactly `available` bytes for a block-aligned
@@ -120,7 +121,7 @@ public class RawDataIo implements SeekableReadOnlyByteChannel {
             // A well-formed encrypted stream always yields the full block-aligned amount. If the
             // underlying channel reports fewer bytes (truncated/corrupt archive), decrypt only the
             // complete 16-byte blocks actually read.
-            int available = got < 0 ? 0 : got - (got & 0xF);
+            int available = got < 0 ? 0 : got - got % block;
             if (available <= 0) {
                 return written;
             }

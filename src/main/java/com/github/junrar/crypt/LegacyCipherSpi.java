@@ -43,7 +43,9 @@ final class LegacyCipherSpi extends CipherSpi {
 
     @Override
     protected int engineGetBlockSize() {
-        return RarLegacyCrypt.CRYPT_BLOCK_SIZE;
+        // RAR 1.3/1.5 are byte-stream ciphers (JCE reports 0): their packed data is not padded,
+        // so the reader must not round up to a block (d861246:crypt.cpp:25-31).
+        return method == CryptMethod.RAR20 ? RarLegacyCrypt.CRYPT_BLOCK_SIZE : 0;
     }
 
     @Override
