@@ -191,6 +191,20 @@ root. Pinned by `fileCopyEntryCannotMkdirOutsideDestination`,
 JVM 8 without the fix) and `linkEntryUnderSymlinkedDestinationStaysInside` (fails with a bare
 `normalize()`).
 
+Two related flaws surfaced in review and are fixed alongside it:
+
+- **Regular files under a symlinked destination.** `makeFile` normalized under the destination as
+  the caller spelled it, so with `a/lnk -> b/ex` the entry `../ex/sub/payload.txt` passed the
+  canonical check (`b/ex/sub`) but was created and written at `a/ex/sub`, outside. `createFile`
+  now checks, creates, and walks for symlinks under the canonical root, and still returns the path
+  under the caller's spelling. Pinned by `fileEntryUnderSymlinkedDestinationStaysInside`.
+- **Symlink chains.** The canonical target check only describes the filesystem at check time.
+  `L -> d/../x` passes while `d` is absent; a later entry `d -> .` makes `L` resolve to
+  `<dest>/../x`. A `..` after a name in a symlink target is now refused; leading `..` only climb
+  the link's own parent directories, which stay real directories. unrar's
+  `IsRelativeSymlinkSafe` counts every `..` against the link's depth instead; junrar's rule is
+  stricter for targets such as `sub/../x`. Pinned by `symlinkChainCannotEscapeThroughLaterLink`.
+
 ### `687a09c4` — "better handling of RarVM VM_JMP" — SUPERSEDED by M2.2, not adopted
 
 Upstream's `setIP(int)` returned `void` and early-returned when `ip >= codeSize` or `maxOpCount`
