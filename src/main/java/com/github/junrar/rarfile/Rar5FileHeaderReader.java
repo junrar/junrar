@@ -113,7 +113,10 @@ public final class Rar5FileHeaderReader {
         final long rawUnpSize = v.read();
         pos = v.position();
         p.unknownUnpSize = (fileFlags & FHFL_UNPUNKNOWN) != 0;
-        p.unpSize = p.unknownUnpSize ? -1L : rawUnpSize;
+        // Unknown size means "unpack until the data ends" (unrar INT64NDF, d861246:arcread.cpp:
+        // 818-819), the same unbounded value the RAR3 reader gives its 0xffffffff marker. A -1 here
+        // capped every write at nothing and silently extracted such entries as empty.
+        p.unpSize = p.unknownUnpSize ? Long.MAX_VALUE : rawUnpSize;
 
         v = new VInt(header, pos);
         p.fileAttr = v.read();
