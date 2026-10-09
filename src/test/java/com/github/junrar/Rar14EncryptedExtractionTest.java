@@ -6,11 +6,14 @@ import static org.assertj.core.api.Assertions.catchThrowable;
 import com.github.junrar.exception.CrcErrorException;
 import com.github.junrar.rarfile.FileHeader;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 /**
  * P3 (issue #293) coverage matrix rows 4-6, 8/8b, 9/9b: real, genuine period-archive extraction
@@ -218,5 +221,43 @@ class Rar14EncryptedExtractionTest {
                         .isEqualTo(expectedSha[i]);
             }
         }
+    }
+
+    // Issue #331: the same archives opened from a File (FileVolume) must extract like the
+    // InputStream-backed ones above; the last entry used to fail with EOFException.
+    @ParameterizedTest
+    @ValueSource(
+            strings = {
+                "rar14-password-stored.rar",
+                "rar15-password-compressed.rar",
+                "rar15-password-stored.rar"
+            })
+    void singleEntryEncryptedArchiveExtractsFromFile(final String name) throws Exception {
+        try (Archive archive = new Archive(resourceFile(name), "password")) {
+            assertThat(sha256(extractFirstEntry(archive))).isEqualTo(ORACLE_SHA256_RAR15_RAR20);
+        }
+    }
+
+    @Test
+    void rar14SolidEncryptedArchiveExtractsAllEntriesFromFile() throws Exception {
+        final String[] expectedSha = {
+            "26eea139ab8117eed88aa434760f5d9bc93e7d9f07de774442e2005880eb1a99",
+            "865961ac8bce35f5d514086c45bcddefa5e4cdcee4a19b8441e605d21e1d211d",
+            "9860a4c20e692b8e23aa233227de5b7cb3fed718fbe6bae4172eccc14514df4e"
+        };
+        try (Archive archive = new Archive(resourceFile("rar14-solid-password.rar"), "password")) {
+            final List<FileHeader> files = archive.getFileHeaders();
+            for (int i = 0; i < files.size(); i++) {
+                final ByteArrayOutputStream out = new ByteArrayOutputStream();
+                archive.extractFile(files.get(i), out);
+                assertThat(sha256(out.toByteArray()))
+                        .as("entry %s", files.get(i).getFileName())
+                        .isEqualTo(expectedSha[i]);
+            }
+        }
+    }
+
+    private File resourceFile(final String name) throws Exception {
+        return new File(getClass().getResource(name).toURI());
     }
 }
