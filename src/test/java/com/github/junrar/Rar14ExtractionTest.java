@@ -14,6 +14,7 @@ import com.github.junrar.unpack.Unpack;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -548,6 +549,38 @@ class Rar14ExtractionTest {
                 }
                 assertThat(actual).as("entry %d", i).isEqualTo(sha[i]);
             }
+        }
+    }
+
+    /**
+     * An extraction that fails partway leaves the solid decoder mid-entry; the next extraction
+     * must replay rather than continue from there.
+     */
+    @Test
+    void realSolidArchiveRecoversAfterAnInterruptedExtraction() throws Exception {
+        final File file =
+                new File(getClass().getResource("/com/github/junrar/rar14-solid.rar").toURI());
+        try (Archive archive = new Archive(file)) {
+            final List<FileHeader> files = archive.getFileHeaders();
+            final ByteArrayOutputStream first = new ByteArrayOutputStream();
+            archive.extractFile(files.get(1), first);
+
+            final Throwable interrupted =
+                    catchThrowable(
+                            () ->
+                                    archive.extractFile(
+                                            files.get(1),
+                                            new OutputStream() {
+                                                @Override
+                                                public void write(final int b) throws IOException {
+                                                    throw new IOException("caller stops reading");
+                                                }
+                                            }));
+            assertThat(interrupted).isInstanceOf(RarException.class);
+
+            final ByteArrayOutputStream again = new ByteArrayOutputStream();
+            archive.extractFile(files.get(1), again);
+            assertThat(again.toByteArray()).isEqualTo(first.toByteArray());
         }
     }
 }
