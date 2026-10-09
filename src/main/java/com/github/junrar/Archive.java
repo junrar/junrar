@@ -1777,6 +1777,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             final int processedIdx = getFileHeaders().indexOf(this.dataIO.getSubHeader());
             lastProcessedFileIndex = processedIdx >= 0 ? processedIdx : targetIdx;
         } catch (final Exception e) {
+            // The decoder may have stopped mid-entry: make the next solid extraction replay.
+            lastProcessedFileIndex = Integer.MAX_VALUE;
             if (e instanceof RarException) {
                 throw (RarException) e;
             } else {
