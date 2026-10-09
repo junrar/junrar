@@ -1,0 +1,24 @@
+{
+  "isRarV5" : true,
+  "isEncrypted" : false,
+  "isPasswordProtected" : false,
+  "isOldFormat" : false,
+  "fileHeaders" : [ {
+    "archivalTime" : null,
+    "lastAccessTime" : null,
+    "lastModifiedTime" : null,
+    "creationTime" : null,
+    "fileCRC" : 0,
+    "fileName" : "nochecksum.txt",
+    "hostOS" : "unix",
+    "fullPackSize" : 24,
+    "fullUnpackSize" : 9223372036854775807,
+    "isSolid" : false,
+    "isEncrypted" : false,
+    "isUnicode" : false,
+    "hasExtTime" : false,
+    "isLargeBlock" : false,
+    "isDirectory" : false
+  } ],
+  "exception" : null
+}
