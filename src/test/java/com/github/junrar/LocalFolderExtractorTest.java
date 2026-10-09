@@ -205,9 +205,9 @@ public class LocalFolderExtractorTest {
 
     /**
      * The mkdir-escape guard itself, independent of the PoC fixture's corrupt headers: the same
-     * escaping name driven through a well-formed header, so nothing but {@code makeFile} can be
-     * what stops it. Reverting {@code makeFile} to its pre-fix per-component {@code mkdir} loop
-     * makes this fail (executed negative control), so the guard is load-bearing, not decorative.
+     * escaping name driven through a well-formed header, so nothing but {@code createFile} can be
+     * what stops it. Reverting it to the pre-fix per-component {@code mkdir} loop makes this fail
+     * (executed negative control), so the guard is load-bearing, not decorative.
      */
     @DisabledOnOs(OS.WINDOWS)
     @Test
@@ -225,6 +225,30 @@ public class LocalFolderExtractorTest {
         assertThat(new File(dest.toFile(), "payload.txt"))
                 .as("the entry itself still lands, normalized, inside the destination")
                 .exists();
+    }
+
+    /**
+     * With a symlinked destination, popping '..' lexically off the symlink leaves the real root:
+     * {@code a/lnk/../ex} is {@code a/ex}, while the kernel resolves it to {@code b/ex}. The file
+     * must land where the containment check looked, and keep the caller's spelling of the path.
+     */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void fileEntryUnderSymlinkedDestinationStaysInside() throws Exception {
+        final Path root = Files.createTempDirectory("file-symlinked-dest");
+        final Path real = Files.createDirectories(root.resolve("b/ex"));
+        final Path dest =
+                Files.createSymbolicLink(
+                        Files.createDirectories(root.resolve("a")).resolve("lnk"), real);
+        final FileHeader fh = mock(FileHeader.class);
+        when(fh.getFileName()).thenReturn("../ex/sub/payload.txt");
+
+        final File written =
+                new LocalFolderExtractor(dest.toFile()).extract(mock(Archive.class), fh);
+
+        assertThat(root.resolve("a/ex")).doesNotExist();
+        assertThat(real.resolve("sub/payload.txt")).exists();
+        assertThat(written).isEqualTo(new File(dest.toFile(), "sub/payload.txt"));
     }
 
     /**

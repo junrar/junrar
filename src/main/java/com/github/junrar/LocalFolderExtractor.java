@@ -66,15 +66,22 @@ class LocalFolderExtractor {
             throws IOException, RarException {
         String name = invariantSeparatorsPathString(fh.getFileName());
         File f = new File(destination, name);
-        String dirCanonPath = f.getCanonicalPath();
-        if (!dirCanonPath.startsWith(destination.getCanonicalPath() + File.separator)) {
+        // Create under the canonical root, where a lexical '..' (Files.createDirectories) and a
+        // physical one (the containment check) agree even when the destination is a symlink.
+        final File root = destination.getCanonicalFile();
+        final File physical = new File(root, name);
+        String dirCanonPath = physical.getCanonicalPath();
+        if (!dirCanonPath.startsWith(root + File.separator)) {
             String errorMessage = "Rar contains file with invalid path: '" + dirCanonPath + "'";
             throw new IllegalStateException(errorMessage);
         }
-        refuseWriteThroughSymlink(destination.toPath(), fh.getFileName());
-        if (!f.exists()) {
+        refuseWriteThroughSymlink(root.toPath(), fh.getFileName());
+        if (!physical.exists()) {
             try {
-                f = makeFile(f.toPath().normalize());
+                final Path file = physical.toPath().normalize();
+                Files.createDirectories(file.getParent());
+                // Same file under the caller's own spelling of the destination, as before.
+                f = new File(destination, root.toPath().relativize(file).toString());
             } catch (final IOException e) {
                 logger.error("error creating the new file: {}", f.getName(), e);
             } catch (final InvalidPathException e) {
@@ -87,19 +94,13 @@ class LocalFolderExtractor {
                         "entry name is not representable in {}: {}",
                         System.getProperty("sun.jnu.encoding"),
                         name);
-                final File parent = f.getParentFile();
+                final File parent = physical.getParentFile();
                 if (parent != null && !parent.exists()) {
                     parent.mkdirs();
                 }
             }
         }
         return f;
-    }
-
-    private File makeFile(final Path file) throws IOException {
-        if (file.getParent() == null) return null;
-        Files.createDirectories(file.getParent());
-        return file.toFile();
     }
 
     // ---- RAR5 FHEXTRA_REDIR link extraction (M3.10, issue #31) ---------------------------------
