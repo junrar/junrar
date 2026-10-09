@@ -420,6 +420,27 @@ public class LocalFolderExtractorTest {
         assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
     }
 
+    /**
+     * A '..' after a name in a symlink target resolves through whatever that name is when the link
+     * is followed, not when it is checked. {@code L -> d/../x} is inside while {@code d} is absent;
+     * a later {@code d -> .} turns it into {@code <dest>/../x}. Such targets are refused.
+     */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void symlinkChainCannotEscapeThroughLaterLink() throws Exception {
+        final Path root = Files.createTempDirectory("symlink-chain");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+        final LocalFolderExtractor lfe = new LocalFolderExtractor(dest.toFile());
+
+        final Throwable thrown =
+                catchThrowable(
+                        () -> lfe.extract(mock(Archive.class), symlinkHeader("L", "d/../x")));
+        lfe.extract(mock(Archive.class), symlinkHeader("d", "."));
+
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+        assertThat(Files.exists(dest.resolve("L"), LinkOption.NOFOLLOW_LINKS)).isFalse();
+    }
+
     @DisabledOnOs(OS.WINDOWS)
     @Test
     public void layer3_writeThroughDirSymlinkViaDotDotRejected() throws Exception {

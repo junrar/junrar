@@ -170,12 +170,17 @@ class LocalFolderExtractor {
 
     /**
      * Layers 5.2.5 ({@code IsRelativeSymlinkSafe} up-level depth) and 6.1.7 (absolute-target
-     * validation). Rejects a symlink whose target is absolute/drive-qualified/UNC, or whose
-     * target -- resolved against the link's own directory and canonicalized -- escapes the
-     * destination folder. The canonical-containment check subsumes the up-level ".." depth
-     * count and re-applies S6/S7 to the new path; separator-normalization first re-applies S5,
-     * so a {@code ..\..\x} backslash target is caught cross-platform (unrar keeps it literal on
-     * Unix -- a deliberate divergence, see fixtures README).
+     * validation). Rejects a symlink whose target is absolute/drive-qualified/UNC, has a '..'
+     * after a name, or -- resolved against the link's own directory and canonicalized -- escapes
+     * the destination folder. Separator-normalization first re-applies S5, so a {@code ..\..\x}
+     * backslash target is caught cross-platform (unrar keeps it literal on Unix -- a deliberate
+     * divergence, see fixtures README).
+     *
+     * <p>The canonical check only holds for the filesystem as it is now. A '..' after a name is
+     * resolved through whatever that name is when the link is followed: {@code L -> d/../x} is
+     * inside while {@code d} is absent, and escapes once a later entry makes {@code d -> .}.
+     * Leading '..' only climb the link's own parent directories, which stay real directories
+     * (LinksToDirs refused symlinks there, and a directory holding the link cannot be replaced).
      */
     private void validateSymlinkTarget(
             final File linkFile, final String srcName, final String rawTarget)
@@ -188,6 +193,18 @@ class LocalFolderExtractor {
                             + "' for '"
                             + srcName
                             + "'");
+        }
+        boolean named = false;
+        for (final String part : target.split("/")) {
+            if (named && "..".equals(part)) {
+                throw new UnsafeLinkException(
+                        "Rar contains a symlink with '..' after a name: '"
+                                + srcName
+                                + "' -> '"
+                                + rawTarget
+                                + "'");
+            }
+            named |= !part.isEmpty() && !".".equals(part) && !"..".equals(part);
         }
         final String canon = new File(linkFile.getParentFile(), target).getCanonicalPath();
         final String destCanon = folderDestination.getCanonicalPath();
