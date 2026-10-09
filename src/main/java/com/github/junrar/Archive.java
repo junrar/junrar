@@ -1760,6 +1760,9 @@ public class Archive implements Closeable, Iterable<FileHeader> {
                     // the start with a fresh window, so drop it (re-created lazily in
                     // doExtractFile).
                     this.unpack5 = null;
+                    // RAR 1.4 routes its first replayed entry non-solid by this ordinal
+                    // (unrar FileCount, extract.cpp:917-921), so the replay restarts it too.
+                    this.oldFormatExtractedCount = 0;
                     lastProcessedFileIndex = -1;
                 }
                 for (int i = lastProcessedFileIndex + 1; i < targetIdx; i++) {

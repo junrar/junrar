@@ -527,4 +527,27 @@ class Rar14ExtractionTest {
             }
         }
     }
+
+    /**
+     * Re-extracting an entry, or going back to an earlier one, rewinds and replays the solid
+     * stream; the replayed first entry must again be routed non-solid (junrar/junrar#328).
+     */
+    @Test
+    void realSolidArchiveReExtractsAndRewindsByteExact() throws Exception {
+        final File file =
+                new File(getClass().getResource("/com/github/junrar/rar14-solid.rar").toURI());
+        try (Archive archive = new Archive(file)) {
+            final List<FileHeader> files = archive.getFileHeaders();
+            final String[] sha = new String[files.size()];
+            for (final int i : new int[] {0, 0, 1, 0, 2, 2}) {
+                final ByteArrayOutputStream out = new ByteArrayOutputStream();
+                archive.extractFile(files.get(i), out);
+                final String actual = sha256(out.toByteArray());
+                if (sha[i] == null) {
+                    sha[i] = actual;
+                }
+                assertThat(actual).as("entry %d", i).isEqualTo(sha[i]);
+            }
+        }
+    }
 }
