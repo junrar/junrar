@@ -441,6 +441,29 @@ public class LocalFolderExtractorTest {
         assertThat(Files.exists(dest.resolve("L"), LinkOption.NOFOLLOW_LINKS)).isFalse();
     }
 
+    /**
+     * Linux link(2) does not follow a symlink, so a hardlink to an extracted symlink is a copy of
+     * that symlink. {@code a/b/c/S -> ../../../x} stays inside, but the same target read from
+     * {@code L} climbs three levels above the destination.
+     */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void hardlinkToSymlinkCannotEscapeDestination() throws Exception {
+        final Path root = Files.createTempDirectory("hardlink-to-symlink");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+        final LocalFolderExtractor lfe = new LocalFolderExtractor(dest.toFile());
+        lfe.extract(mock(Archive.class), symlinkHeader("a/b/c/S", "../../../x"));
+        final FileHeader fh = mock(FileHeader.class);
+        when(fh.getFileName()).thenReturn("L");
+        when(fh.getRedirection())
+                .thenReturn(new Rar5Redirection(Rar5RedirType.HARDLINK, false, "a/b/c/S"));
+
+        final Throwable thrown = catchThrowable(() -> lfe.extract(mock(Archive.class), fh));
+
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+        assertThat(Files.exists(dest.resolve("L"), LinkOption.NOFOLLOW_LINKS)).isFalse();
+    }
+
     @DisabledOnOs(OS.WINDOWS)
     @Test
     public void layer3_writeThroughDirSymlinkViaDotDotRejected() throws Exception {

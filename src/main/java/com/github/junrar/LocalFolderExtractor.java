@@ -121,9 +121,9 @@ class LocalFolderExtractor {
             case JUNCTION:
                 return createSymlink(linkFile, srcName, redir);
             case HARDLINK:
-                return createLink(linkFile, redir, false);
+                return createLink(linkFile, srcName, redir, false);
             case FILE_COPY:
-                return createLink(linkFile, redir, true);
+                return createLink(linkFile, srcName, redir, true);
             default:
                 return null;
         }
@@ -150,9 +150,19 @@ class LocalFolderExtractor {
         return linkFile;
     }
 
-    private File createLink(final File linkFile, final Rar5Redirection redir, final boolean copy)
+    private File createLink(
+            final File linkFile,
+            final String srcName,
+            final Rar5Redirection redir,
+            final boolean copy)
             throws RarException, IOException {
         final File target = resolveTargetWithinDestination(redir.getTarget());
+        if (!copy && Files.isSymbolicLink(target.toPath())) {
+            // Linux link(2) does not follow a symlink: the new name is a second symlink with the
+            // same relative target, now resolved from the link's own directory. Check it there.
+            validateSymlinkTarget(
+                    linkFile, srcName, Files.readSymbolicLink(target.toPath()).toString());
+        }
         final Path linkPath = linkFile.toPath();
         Files.createDirectories(linkPath.getParent());
         Files.deleteIfExists(linkPath);
