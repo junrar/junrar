@@ -190,7 +190,7 @@ public class ComprDataIO {
         final byte[] pwdUtf8 = Rar5Crypt.passwordToUtf8(pw);
         try {
             final Rar5Crypt.Kdf kdf =
-                    Rar5Crypt.deriveKey(pwdUtf8, hd.getSalt16(), hd.getLg2Count());
+                    archive.deriveRar5Key(pwdUtf8, hd.getSalt16(), hd.getLg2Count());
             if (hd.isUsePswCheck() && !Arrays.equals(kdf.pswCheck, hd.getPswCheck())) {
                 throw new WrongPasswordException(
                         "RAR5 password check failed for " + hd.getFileName());
