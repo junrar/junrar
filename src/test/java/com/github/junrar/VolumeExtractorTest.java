@@ -1,7 +1,9 @@
 package com.github.junrar;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.catchThrowable;
 
+import com.github.junrar.exception.MissingNextVolumeException;
 import com.github.junrar.exception.RarException;
 import com.github.junrar.volume.InputStreamVolumeManager;
 import java.io.File;
@@ -18,6 +20,7 @@ import java.util.stream.Stream;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -77,6 +80,28 @@ public class VolumeExtractorTest {
         Junrar.extract(new InputStreamVolumeManager(streams), unpackedDir);
 
         checkContent(unpackedDir);
+    }
+
+    /**
+     * A first volume whose file name holds no volume number has no next volume to open. The
+     * name used to be derived from the whole path, so 41/archive.rar continued from
+     * 42/archive.rar and 43/archive.rar in the sibling directories.
+     */
+    @Test
+    public void nextVolumeIsNotTakenFromASiblingDirectory() throws IOException {
+        final File dir = new File(getClass().getResource("volumes/new-part").getPath());
+        final File first = new File(tempFolder, "41/archive.rar");
+        FileUtils.copyFile(new File(dir, "test-documents.part1.rar"), first);
+        FileUtils.copyFile(
+                new File(dir, "test-documents.part2.rar"), new File(tempFolder, "42/archive.rar"));
+        FileUtils.copyFile(
+                new File(dir, "test-documents.part3.rar"), new File(tempFolder, "43/archive.rar"));
+        final File unpackedDir = new File(tempFolder, "test-documents");
+        unpackedDir.mkdir();
+
+        final Throwable thrown = catchThrowable(() -> Junrar.extract(first, unpackedDir));
+
+        assertThat(thrown).isInstanceOf(MissingNextVolumeException.class);
     }
 
     private static Stream<Arguments> volumeArgs() {
