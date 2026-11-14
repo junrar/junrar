@@ -343,8 +343,13 @@ public class ComprDataIO {
                 Volume nextVolume =
                         archive.getVolumeManager().nextVolume(archive, archive.getVolume());
                 if (nextVolume == null) {
+                    // A manager with no next volume is the same missing continuation as the
+                    // setVolume failure below and as mergeRar5Volume's null: returning -1 here
+                    // ended the entry early and the part's own packed CRC still matched, so the
+                    // file came back truncated with no error.
                     nextVolumeMissing = true;
-                    return -1;
+                    throw new MissingNextVolumeException(
+                            "Next volume of '" + subHead.getFileName() + "' not supplied");
                 }
 
                 FileHeader hd = this.getSubHeader();

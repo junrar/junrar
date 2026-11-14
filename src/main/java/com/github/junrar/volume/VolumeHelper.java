@@ -1,5 +1,7 @@
 package com.github.junrar.volume;
 
+import java.io.File;
+
 /**
  *
  * @author alban
@@ -37,11 +39,16 @@ public class VolumeHelper {
     // }
 
     public static String nextVolumeName(String arcName, boolean oldNumbering) {
+        // Only the file name carries the volume number: unrar's GetVolNumPart and GetExt both
+        // start at PointToName, so a digit or a dot in a parent directory is never edited and
+        // the next volume always sits next to the current one.
+        final int nameStart =
+                Math.max(arcName.lastIndexOf('/'), arcName.lastIndexOf(File.separatorChar)) + 1;
         if (!oldNumbering) {
             // part1.rar, part2.rar, ...
             int len = arcName.length();
             int indexR = len - 1;
-            while ((indexR >= 0) && !isDigit(arcName.charAt(indexR))) {
+            while ((indexR >= nameStart) && !isDigit(arcName.charAt(indexR))) {
                 indexR--;
             }
             int index = indexR + 1;
@@ -49,7 +56,7 @@ public class VolumeHelper {
             while ((indexL >= 0) && isDigit(arcName.charAt(indexL))) {
                 indexL--;
             }
-            if (indexL < 0) {
+            if (indexR < nameStart || indexL < 0) {
                 return null;
             }
             indexL++;
@@ -71,7 +78,7 @@ public class VolumeHelper {
         } else {
             // .rar, .r00, .r01, ...
             int len = arcName.length();
-            if ((len <= 4) || (arcName.charAt(len - 4) != '.')) {
+            if ((len <= 4) || (len - 4 < nameStart) || (arcName.charAt(len - 4) != '.')) {
                 return null;
             }
             StringBuilder buffer = new StringBuilder();

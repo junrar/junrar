@@ -27,6 +27,10 @@ public class FileVolumeManager implements VolumeManager {
         final String nextName =
                 VolumeHelper.nextVolumeName(
                         lastFileVolume.getFile().getAbsolutePath(), oldNumbering);
+        if (nextName == null) {
+            // The file name holds no volume number to advance, so no next volume can be named.
+            return null;
+        }
         final File nextVolume = new File(nextName);
 
         return new FileVolume(archive, nextVolume);
