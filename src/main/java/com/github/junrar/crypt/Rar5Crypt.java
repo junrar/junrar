@@ -27,7 +27,9 @@ import javax.crypto.spec.SecretKeySpec;
  * the {@code {Count-1,16,16}} segment loop of {@code crypt5.cpp:104-122}.
  * <p>
  * A 4-entry KDF cache ({@code d861246:crypt.hpp:88}, {@code KDF5Cache[4]}) avoids re-running
- * the ~2^15 HMAC iterations for every header/file of a same-password archive.
+ * the ~2^15 HMAC iterations for every header/file of a same-password archive. Like the RAR4
+ * {@link Rijndael.Kdf3Cache}, it is an instance ({@link Kdf5Cache}) owned and wiped by the
+ * archive, not a JVM-global table.
  */
 public final class Rar5Crypt {
 
@@ -44,6 +46,59 @@ public final class Rar5Crypt {
 
     // ---- KDF cache (unrar KDF5Cache[4], d861246:crypt.hpp:88) ---------------------------
 
+    /**
+     * RAR5 key-derivation cache -- unrar {@code CryptData::KDF5Cache[4]}. An instance for the same
+     * reason as {@link Rijndael.Kdf3Cache}: it holds the password bytes and the derived keys, so
+     * {@link com.github.junrar.Archive} owns one and {@link #wipe()}s it on close. Entries are
+     * cloned on the way in and out, and an evicted entry is zeroed as it is dropped.
+     */
+    public static final class Kdf5Cache {
+
+        private final CacheItem[] cache = new CacheItem[4];
+        private int cachePos = 0;
+
+        /**
+         * Cached {@link Rar5Crypt#deriveKey}: derives only on a miss and returns a copy the caller
+         * owns, so a later eviction or {@link #wipe()} cannot zero key material still in use.
+         *
+         * @param pwdUtf8 the password as UTF-8 bytes
+         * @param salt16 the 16-byte KDF salt
+         * @param lg2Count the KDF iteration count log2
+         * @return a copy of the derived key material
+         * @throws CorruptHeaderException if {@code lg2Count} exceeds {@link #CRYPT5_KDF_LG2_COUNT_MAX}
+         */
+        public synchronized Kdf deriveKey(
+                final byte[] pwdUtf8, final byte[] salt16, final int lg2Count)
+                throws CorruptHeaderException {
+            for (final CacheItem item : cache) {
+                if (item != null
+                        && item.lg2Count == lg2Count
+                        && Arrays.equals(item.pwd, pwdUtf8)
+                        && Arrays.equals(item.salt, salt16)) {
+                    return item.kdf.copy();
+                }
+            }
+            final Kdf kdf = Rar5Crypt.deriveKey(pwdUtf8, salt16, lg2Count);
+            if (cache[cachePos] != null) {
+                cache[cachePos].wipe();
+            }
+            cache[cachePos] = new CacheItem(pwdUtf8.clone(), salt16.clone(), lg2Count, kdf);
+            cachePos = (cachePos + 1) % cache.length;
+            return kdf.copy();
+        }
+
+        /** Zero every cached password and key and drop the entries. */
+        public synchronized void wipe() {
+            for (int i = 0; i < cache.length; i++) {
+                if (cache[i] != null) {
+                    cache[i].wipe();
+                    cache[i] = null;
+                }
+            }
+            cachePos = 0;
+        }
+    }
+
     private static final class CacheItem {
         final byte[] pwd;
         final byte[] salt;
@@ -56,10 +111,16 @@ public final class Rar5Crypt {
             this.lg2Count = lg2Count;
             this.kdf = kdf;
         }
-    }
 
-    private static final CacheItem[] CACHE = new CacheItem[4];
-    private static int cachePos = 0;
+        /** Callers must hold the {@code Kdf5Cache} monitor. */
+        void wipe() {
+            Arrays.fill(pwd, (byte) 0);
+            Arrays.fill(salt, (byte) 0);
+            Arrays.fill(kdf.aesKey, (byte) 0);
+            Arrays.fill(kdf.hashKey, (byte) 0);
+            Arrays.fill(kdf.pswCheck, (byte) 0);
+        }
+    }
 
     /** The three derived KDF values for one (password, salt, iteration count). */
     public static final class Kdf {
@@ -77,11 +138,16 @@ public final class Rar5Crypt {
             this.hashKey = hashKey;
             this.pswCheck = pswCheck;
         }
+
+        Kdf copy() {
+            return new Kdf(aesKey.clone(), hashKey.clone(), pswCheck.clone());
+        }
     }
 
     /**
      * Derives the AES key, HMAC hash key and password-check value for a RAR5 password
-     * (unrar {@code SetKey50}, {@code d861246:crypt5.cpp:131-190}). Result-cached across calls.
+     * (unrar {@code SetKey50}, {@code d861246:crypt5.cpp:131-190}). Uncached: retains no key
+     * material past the call. Use {@link Kdf5Cache#deriveKey} for a repeated (password, salt).
      *
      * @param pwdUtf8  the password as UTF-8 bytes (see {@link #passwordToUtf8})
      * @param salt16   the 16-byte KDF salt
@@ -89,20 +155,11 @@ public final class Rar5Crypt {
      * @return the derived key material
      * @throws CorruptHeaderException if {@code lg2Count} exceeds {@link #CRYPT5_KDF_LG2_COUNT_MAX}
      */
-    public static synchronized Kdf deriveKey(
-            final byte[] pwdUtf8, final byte[] salt16, final int lg2Count)
+    public static Kdf deriveKey(final byte[] pwdUtf8, final byte[] salt16, final int lg2Count)
             throws CorruptHeaderException {
         if (lg2Count > CRYPT5_KDF_LG2_COUNT_MAX) {
             throw new CorruptHeaderException(
                     "RAR5 KDF Lg2Count exceeds " + CRYPT5_KDF_LG2_COUNT_MAX);
-        }
-        for (final CacheItem item : CACHE) {
-            if (item != null
-                    && item.lg2Count == lg2Count
-                    && Arrays.equals(item.pwd, pwdUtf8)
-                    && Arrays.equals(item.salt, salt16)) {
-                return item.kdf;
-            }
         }
         final byte[][] out = pbkdf2(pwdUtf8, salt16, 1 << lg2Count);
         final byte[] pswCheck = new byte[SIZE_PSWCHECK];
@@ -110,10 +167,7 @@ public final class Rar5Crypt {
         for (int i = 0; i < SHA256_DIGEST_SIZE; i++) {
             pswCheck[i % SIZE_PSWCHECK] ^= out[2][i];
         }
-        final Kdf kdf = new Kdf(out[0], out[1], pswCheck);
-        CACHE[cachePos++ % CACHE.length] =
-                new CacheItem(pwdUtf8.clone(), salt16.clone(), lg2Count, kdf);
-        return kdf;
+        return new Kdf(out[0], out[1], pswCheck);
     }
 
     /**

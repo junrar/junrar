@@ -7,6 +7,7 @@ import com.github.junrar.rarfile.FileHeader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
@@ -54,6 +55,31 @@ public class ArchiveOptionsTest {
         }
         // After try-with-resources closes the archive: the SAME array reference is zeroed in place.
         assertThat(internalCopy).containsOnly('\0');
+    }
+
+    @Test
+    public void givenRar5EncryptedArchive_whenClosed_thenDerivedKeyMaterialIsWiped()
+            throws Exception {
+        ArchiveOptions options = ArchiveOptions.builder().password("junrar".toCharArray()).build();
+        Object[] slots;
+        try (InputStream is = getClass().getResourceAsStream("password/rar5-encrypted-junrar.rar");
+                Archive archive = new Archive(is, options)) {
+            FileHeader fileHeader = archive.getFileHeaders().get(0);
+            try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
+                archive.extractFile(fileHeader, baos);
+                assertThat(baos.toString()).isEqualTo("file1\n");
+            }
+            Field cacheField = Archive.class.getDeclaredField("rar5KdfCache");
+            cacheField.setAccessible(true);
+            Object cache = cacheField.get(archive);
+            Field slotsField = cache.getClass().getDeclaredField("cache");
+            slotsField.setAccessible(true);
+            slots = (Object[]) slotsField.get(cache);
+            // Before-state: header decryption populated this archive's own cache.
+            assertThat(slots[0]).isNotNull();
+        }
+        // RAR5 key material lives only in the archive's cache, which close() empties.
+        assertThat(slots).containsOnlyNulls();
     }
 
     @Test
