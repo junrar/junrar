@@ -154,6 +154,14 @@ class LocalFolderExtractor {
             throws RarException, IOException {
         final File target = resolveTargetWithinDestination(redir.getTarget());
         final Path linkPath = linkFile.toPath();
+        if (!copy && Files.isSymbolicLink(target.toPath())) {
+            // link(2) does not follow a symlink on Linux: the new name is the same symlink, and
+            // its relative target now resolves from the new name's directory.
+            validateSymlinkTarget(
+                    linkFile,
+                    linkFile.getPath(),
+                    Files.readSymbolicLink(target.toPath()).toString());
+        }
         Files.createDirectories(linkPath.getParent());
         Files.deleteIfExists(linkPath);
         if (copy) {
