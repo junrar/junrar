@@ -79,8 +79,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.IdentityHashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ExecutorService;
@@ -145,6 +147,15 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     private final ComprDataIO dataIO;
 
     private final List<BaseBlock> headers = new ArrayList<>();
+
+    /**
+     * The file entries of {@link #headers} and their positions, for {@link #extractFile}. Built
+     * on first use and dropped by {@link #readHeaders}, so a volume switch rebuilds it. Rebuilding
+     * the list per call made extracting every entry of an archive quadratic in its entry count.
+     */
+    private List<FileHeader> fileHeaderCache;
+
+    private Map<FileHeader, Integer> fileHeaderIndex;
 
     private MarkHeader markHead = null;
 
@@ -423,6 +434,26 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             }
         }
         return list;
+    }
+
+    private List<FileHeader> cachedFileHeaders() {
+        if (this.fileHeaderCache == null) {
+            final List<FileHeader> list = getFileHeaders();
+            final Map<FileHeader, Integer> index = new IdentityHashMap<>();
+            for (int i = 0; i < list.size(); i++) {
+                index.putIfAbsent(list.get(i), i);
+            }
+            this.fileHeaderCache = list;
+            this.fileHeaderIndex = index;
+        }
+        return this.fileHeaderCache;
+    }
+
+    /** {@code cachedFileHeaders().indexOf(hd)} without the linear scan. */
+    private int fileHeaderIndexOf(final FileHeader hd) {
+        cachedFileHeaders();
+        final Integer index = this.fileHeaderIndex.get(hd);
+        return index != null ? index : -1;
     }
 
     /**
@@ -711,6 +742,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         this.markHead = null;
         this.newMhd = null;
         this.headers.clear();
+        this.fileHeaderCache = null;
+        this.fileHeaderIndex = null;
         this.currentHeaderIndex = 0;
         this.headerFailures.clear();
         this.rar3BlocksSeen = 0;
@@ -1740,8 +1773,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      * @throws RarException .
      */
     public void extractFile(final FileHeader hd, final OutputStream os) throws RarException {
-        List<FileHeader> fileHeaders = getFileHeaders();
-        int targetIdx = fileHeaders.indexOf(hd);
+        List<FileHeader> fileHeaders = cachedFileHeaders();
+        int targetIdx = fileHeaderIndexOf(hd);
         if (targetIdx < 0) {
             throw new HeaderNotInArchiveException();
         }
@@ -1777,7 +1810,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             // header's index can go stale; track solid progress by the entry the dataIO
             // actually finished on (the continuation header in the final volume) as located
             // in the *current* list (M3.9, issue #30).
-            final int processedIdx = getFileHeaders().indexOf(this.dataIO.getSubHeader());
+            final int processedIdx = fileHeaderIndexOf(this.dataIO.getSubHeader());
             lastProcessedFileIndex = processedIdx >= 0 ? processedIdx : targetIdx;
         } catch (final Exception e) {
             // The decoder may have stopped mid-entry: make the next solid extraction replay.
