@@ -252,6 +252,43 @@ public class LocalFolderExtractorTest {
     }
 
     /**
+     * A symlink already sitting at the entry's own path is followed by {@code FileOutputStream},
+     * and containment cannot see where that lands when the link is broken: {@code
+     * File.getCanonicalPath} canonicalizes the parent and re-appends the name once {@code
+     * realpath} fails, so the link reads as an ordinary file name. The entry must be refused.
+     */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void fileEntryCannotWriteThroughBrokenSymlinkLeavingDestination() throws Exception {
+        assertBrokenSymlinkNameRejected("cache");
+    }
+
+    /** The same link, reached through an interposed '..' whose directory does not exist yet. */
+    @DisabledOnOs(OS.WINDOWS)
+    @Test
+    public void fileEntryCannotWriteThroughBrokenSymlinkBehindInterposedDotDot() throws Exception {
+        assertBrokenSymlinkNameRejected("sub/../cache");
+    }
+
+    private static void assertBrokenSymlinkNameRejected(final String entryName) throws Exception {
+        final Path root = Files.createTempDirectory("file-broken-symlink");
+        final Path dest = Files.createDirectories(root.resolve("extract"));
+        final Path outside = Files.createDirectories(root.resolve("outside"));
+        Files.createSymbolicLink(dest.resolve("cache"), Paths.get("../outside/pwned.txt"));
+        final FileHeader fh = mock(FileHeader.class);
+        when(fh.getFileName()).thenReturn(entryName);
+
+        final Throwable thrown =
+                catchThrowable(
+                        () ->
+                                new LocalFolderExtractor(dest.toFile())
+                                        .extract(mock(Archive.class), fh));
+
+        assertThat(thrown).isExactlyInstanceOf(UnsafeLinkException.class);
+        assertThat(outside.resolve("pwned.txt")).doesNotExist();
+    }
+
+    /**
      * GHSA-ccq9-hw6f-p9cm: the RAR5 link twin of the guard above. Containment passes on the
      * canonical path; on a JVM whose {@code Path.relativize} keeps interposed '..' (Java 8), an
      * un-normalized link path made {@code Files.createDirectories} create the sibling directory.

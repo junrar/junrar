@@ -76,6 +76,7 @@ class LocalFolderExtractor {
             throw new IllegalStateException(errorMessage);
         }
         refuseWriteThroughSymlink(root.toPath(), fh.getFileName());
+        refuseWriteThroughSymlinkedName(physical, fh.getFileName());
         if (!physical.exists()) {
             try {
                 final Path file = physical.toPath().normalize();
@@ -283,6 +284,41 @@ class LocalFolderExtractor {
                                 + p
                                 + "'");
             }
+        }
+    }
+
+    /**
+     * The entry's own last component, which {@link #refuseWriteThroughSymlink} leaves out because
+     * only a directory symlink can hide a whole subtree. For a single entry a file symlink does
+     * the same job: {@code FileOutputStream} follows it and the bytes land on its target. The
+     * containment check above covers that for a link whose target exists, but
+     * {@code File.getCanonicalPath} falls back to canonicalizing the parent and re-appending the
+     * name when {@code realpath} fails, so a <em>broken</em> link reads as an ordinary name and
+     * the write escapes the destination unseen. Refuse it, as layer 6.2.3 refuses every other
+     * symlink on the write path. The link entries never reach here: they replace whatever is at
+     * their own path ({@code Files.deleteIfExists}) before creating theirs.
+     *
+     * <p>The lexically normalized path is the one to test, because that is what the write uses
+     * once {@code createFile} has relativized it; testing the raw spelling would miss a link
+     * behind an interposed '..' whose directory does not exist yet.
+     */
+    private void refuseWriteThroughSymlinkedName(final File physical, final String rawName)
+            throws UnsafeLinkException {
+        final Path target;
+        try {
+            target = physical.toPath().normalize();
+        } catch (final InvalidPathException e) {
+            // The name has no Path on this JVM, so there is nothing to look at -- the same case
+            // createFile falls back to the File API for.
+            return;
+        }
+        if (Files.isSymbolicLink(target)) {
+            throw new UnsafeLinkException(
+                    "Rar refuses to extract '"
+                            + rawName
+                            + "' through the symlink already at: '"
+                            + target
+                            + "'");
         }
     }
 
