@@ -230,6 +230,13 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     private final Rijndael.Kdf3Cache rar4KdfCache = new Rijndael.Kdf3Cache();
 
+    /**
+     * Per-archive RAR5 key-derivation cache (unrar {@code CryptData::KDF5Cache}). Scoped here for
+     * the same reason {@link #rar4KdfCache} is: it holds the password bytes, the AES key and the
+     * HMAC hash key, which die with {@link #close()} alongside {@link #passwordChars}.
+     */
+    private final Rar5Crypt.Kdf5Cache rar5KdfCache = new Rar5Crypt.Kdf5Cache();
+
     private final long maxDictionarySize;
 
     /**
@@ -1530,7 +1537,8 @@ public class Archive implements Closeable, Iterable<FileHeader> {
     /**
      * The archive-level RAR5 header-encryption facts carried from the HEAD_CRYPT block to every
      * subsequent encrypted header (M3.4). The KDF salt/count are the same for the whole archive;
-     * only the per-header IV varies, so the derived key is served from {@link Rar5Crypt}'s cache.
+     * only the per-header IV varies, so the derived key is served from this archive's
+     * {@link Rar5Crypt.Kdf5Cache}.
      */
     private static final class Rar5HeaderCrypt {
         final byte[] salt16;
@@ -1583,7 +1591,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
         final Rar5Crypt.Kdf kdf;
         final Cipher cipher;
         try {
-            kdf = Rar5Crypt.deriveKey(pwdUtf8, crypto.salt16, crypto.lg2Count);
+            kdf = this.rar5KdfCache.deriveKey(pwdUtf8, crypto.salt16, crypto.lg2Count);
             cipher = Rar5Crypt.buildDecipherer(kdf.aesKey, iv);
         } catch (final GeneralSecurityException e) {
             throw new InitDeciphererFailedException(e);
@@ -2245,7 +2253,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
 
     /**
      * Close the underlying compressed file and wipe the internal password copy along with any
-     * derived RAR4 key material.
+     * derived RAR4 and RAR5 key material.
      */
     @Override
     public void close() throws IOException {
@@ -2254,6 +2262,7 @@ public class Archive implements Closeable, Iterable<FileHeader> {
             Arrays.fill(this.passwordChars, '\0');
         }
         this.rar4KdfCache.wipe();
+        this.rar5KdfCache.wipe();
     }
 
     /**
@@ -2303,6 +2312,21 @@ public class Archive implements Closeable, Iterable<FileHeader> {
      */
     public Cipher buildRar4Decipherer(final byte[] salt) throws GeneralSecurityException {
         return this.rar4KdfCache.buildDecipherer(passwordAsString(), salt);
+    }
+
+    /**
+     * Derive the RAR5 key material for an entry, reusing this archive's derivation when the
+     * (password, salt, count) triple repeats (unrar {@code CryptData::KDF5Cache}). Exposed for
+     * {@code ComprDataIO}; the cache stays owned by this archive so {@link #close()} can wipe it.
+     *
+     * @param pwdUtf8 the password as UTF-8 bytes ({@link Rar5Crypt#passwordToUtf8})
+     * @param salt16 the entry's 16-byte KDF salt
+     * @param lg2Count the entry's KDF iteration count log2
+     */
+    public Rar5Crypt.Kdf deriveRar5Key(
+            final byte[] pwdUtf8, final byte[] salt16, final int lg2Count)
+            throws CorruptHeaderException {
+        return this.rar5KdfCache.deriveKey(pwdUtf8, salt16, lg2Count);
     }
 
     /**
